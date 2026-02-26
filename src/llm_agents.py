@@ -63,7 +63,22 @@ def run_agent(role, prompt, model, context):
         )
         return response.choices[0].message.content
     except Exception as e:
-        print(f"Error running {role}: {e}")
+        print(f"Error running {role} with {model}: {e}")
+        if "gemini-1.5" in model:
+            print(f"Falling back to gemini/gemini-pro for {role}...")
+            try:
+                fallback_model = "gemini/gemini-pro"
+                response = litellm.completion(
+                    model=fallback_model,
+                    messages=[
+                        {"role": "system", "content": f"You are an expert {role} in a quantitative hedge fund."},
+                        {"role": "user", "content": f"Here is the context:\n{context}\n\nTask: {prompt}"}
+                    ]
+                )
+                return response.choices[0].message.content
+            except Exception as e2:
+                print(f"Error running fallback {role}: {e2}")
+                return f"Error: {e2}"
         return f"Error: {e}"
 
 def generate_reports():
@@ -122,11 +137,14 @@ The JSON format MUST be exactly this structure:
     
     # Extract JSON trades
     trades = []
+    display_report = pm_report
     try:
         # Simple extraction looking for ```json ... ```
         if "```json" in pm_report:
             json_str = pm_report.split("```json")[1].split("```")[0].strip()
             trades = json.loads(json_str)
+            # Remove the JSON block from the display report so the website looks clean
+            display_report = pm_report.split("```json")[0].strip()
     except Exception as e:
         print(f"Failed to extract JSON trades from PM report: {e}")
 
@@ -149,7 +167,7 @@ The JSON format MUST be exactly this structure:
         f.write(f"# Macro Strategist Report - {date_str}\n\n{macro_report}")
         
     with open(f'docs/index.md', 'w') as f:
-        f.write(f"# AlphaOracle Daily Synthesis - {date_str}\n\n{pm_report}")
+        f.write(f"# AlphaOracle Daily Synthesis - {date_str}\n\n{display_report}")
         
     print("Reports generated successfully.")
 
