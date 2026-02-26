@@ -1,9 +1,24 @@
 # Technical Analyst Report - 2026-02-26
 
-Error: litellm.NotFoundError: GeminiException - {
+Error: litellm.BadRequestError: GeminiException BadRequestError - {
   "error": {
-    "code": 404,
-    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
-    "status": "NOT_FOUND"
+    "code": 400,
+    "message": "API key expired. Please renew the API key.",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+        "locale": "en-US",
+        "message": "API key expired. Please renew the API key."
+      }
+    ]
   }
 }
