@@ -439,11 +439,11 @@
 
 
 <h1 id="risk-manager-report-2026-02-26">Risk Manager Report - 2026-02-26</h1>
-<p>Error: litellm.NotFoundError: GeminiException - {
+<p>Error: litellm.BadRequestError: GeminiException BadRequestError - {
   "error": {
-    "code": 404,
-    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
-    "status": "NOT_FOUND"
+    "code": 403,
+    "message": "Your API key was reported as leaked. Please use another API key.",
+    "status": "PERMISSION_DENIED"
   }
 }</p>
 
