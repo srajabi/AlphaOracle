@@ -146,20 +146,20 @@ The JSON format MUST be exactly this structure:
 
     
     # Save reports
-    os.makedirs('docs', exist_ok=True)
-    os.makedirs('docs/reports', exist_ok=True)
+    reports_dir = 'frontend/src/content/reports'
+    os.makedirs(reports_dir, exist_ok=True)
     
-    with open('docs/reports/risk.md', 'w') as f:
-        f.write(f"# Risk Manager Report - {date_str}\n\n{risk_report}")
+    with open(f'{reports_dir}/risk.md', 'w') as f:
+        f.write(f"---\ntitle: Risk Manager Report\ndate: \"{date_str}\"\n---\n\n{risk_report}")
         
-    with open('docs/reports/tech.md', 'w') as f:
-        f.write(f"# Technical Analyst Report - {date_str}\n\n{tech_report}")
+    with open(f'{reports_dir}/tech.md', 'w') as f:
+        f.write(f"---\ntitle: Technical Analyst Report\ndate: \"{date_str}\"\n---\n\n{tech_report}")
         
-    with open('docs/reports/macro.md', 'w') as f:
-        f.write(f"# Macro Strategist Report - {date_str}\n\n{macro_report}")
+    with open(f'{reports_dir}/macro.md', 'w') as f:
+        f.write(f"---\ntitle: Macro Strategist Report\ndate: \"{date_str}\"\n---\n\n{macro_report}")
         
-    with open('docs/index.md', 'w') as f:
-        f.write(f"# AlphaOracle Daily Synthesis - {date_str}\n\n{display_report}")
+    with open(f'{reports_dir}/pm_synthesis.md', 'w') as f:
+        f.write(f"---\ntitle: AlphaOracle Daily Synthesis\ndate: \"{date_str}\"\n---\n\n{display_report}")
         
     print("Reports generated successfully.")
 

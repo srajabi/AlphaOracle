@@ -67,6 +67,27 @@ def fetch_data():
             if df.empty:
                 continue
 
+            # Save history for charts
+            history_data = []
+            for date, row in df.iterrows():
+                history_data.append({
+                    'time': date.strftime('%Y-%m-%d'),
+                    'open': float(row['Open']),
+                    'high': float(row['High']),
+                    'low': float(row['Low']),
+                    'close': float(row['Close']),
+                    'volume': float(row['Volume']),
+                    'sma20': float(row['SMA_20']) if not pd.isna(row['SMA_20']) else None,
+                    'sma50': float(row['SMA_50']) if not pd.isna(row['SMA_50']) else None,
+                    'sma200': float(row['SMA_200']) if not pd.isna(row['SMA_200']) else None,
+                })
+            
+            # Save to both locations
+            for base_dir in ['data/history', 'frontend/public/data/history']:
+                os.makedirs(base_dir, exist_ok=True)
+                with open(f'{base_dir}/{ticker}.json', 'w') as f:
+                    json.dump(history_data, f, indent=4)
+
             latest = df.iloc[-1]
             
             def get_val(col_name):
@@ -116,11 +137,13 @@ def fetch_data():
         'data': market_data
     }
     
-    os.makedirs('data', exist_ok=True)
-    with open('data/market_context.json', 'w') as f:
-        json.dump(output, f, indent=4)
+    # Save to both locations
+    for base_path in ['data/market_context.json', 'frontend/public/data/market_context.json']:
+        os.makedirs(os.path.dirname(base_path), exist_ok=True)
+        with open(base_path, 'w') as f:
+            json.dump(output, f, indent=4)
         
-    print("Market data fetched and saved to data/market_context.json")
+    print(f"Market data fetched and saved to {len(market_data)} tickers.")
 
 if __name__ == "__main__":
     fetch_data()

@@ -1,10 +1,44 @@
 Ticker,Sector,Notes
-MSFT,Technology,Core hold
+MSFT,Technology,FAANG Hyperscaler
+AAPL,Technology,FAANG Hyperscaler
+AMZN,Consumer Discretionary,FAANG Hyperscaler
+META,Technology,FAANG Hyperscaler
+NFLX,Communication Services,FAANG core
+GOOGL,Technology,FAANG Hyperscaler
+NVDA,Semiconductors,AI Chips leader
+TSM,Semiconductors,Foundry leader
+AVGO,Semiconductors,Custom AI silicon
+AMD,Semiconductors,GPU competitor
+MU,Semiconductors,AI Memory (HBM)
+KLAC,Semiconductors,Semi equipment
+INTC,Semiconductors,Foundry turnaround
+PLTR,Software,AI Data platforms
+CRWD,Cybersecurity,AI-driven security
+NBIS,Cloud,AI infrastructure
+ORCL,Cloud,Database/Cloud AI
+PSTG,Storage,All-flash AI storage
+CEG,Energy,Nuclear for Data Centers
+TLN,Energy,Power for Data Centers
+MTZ,Infrastructure,Grid/Center construction
+WDC,Storage,Memory/Storage cycle
+STX,Storage,HDD/Data storage
+HXSC.F,Semiconductors,SK Hynix (Memory)
+KXIAY,Storage,Kioxia (Memory)
 TSLA,Consumer Discretionary,High volatility swing trade
+QQQ,Technology,Nasdaq 100 proxy
+VOO,Equity,S&P 500 proxy
+VTI,Equity,Total US Market
+VT,Equity,Total World Stock
+VXUS,International,Total International
+SCHD,Equity,Dividend Growth
+QUAL,Equity,Quality Factor
+XLU,Utilities,Defensive Sector
 XLF,Financials,Sector ETF
 XLE,Energy,Sector ETF
 TLT,Bonds,Interest rate proxy
 GLD,Commodity,Gold tracking
+IAU,Commodity,Gold tracking (Alt)
+IBIT,Crypto,Bitcoin ETF proxy
 EWC,International,Canada TSX proxy
 VGK,International,Europe proxy
 EWA,International,Australia proxy

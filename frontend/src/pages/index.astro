@@ -1,0 +1,218 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { getCollection } from 'astro:content';
+
+// Load Market Context
+const contextPath = path.resolve('./public/data/market_context.json');
+let contextData = { regime: 'Unknown', date: '', data: {} };
+try {
+  const content = await fs.readFile(contextPath, 'utf-8');
+  contextData = JSON.parse(content);
+} catch (e) {
+  console.error('Error loading market context:', e);
+}
+
+// Load Watchlist
+const watchlistPath = path.resolve('../watchlist.csv');
+const fileContent = await fs.readFile(watchlistPath, 'utf-8');
+const lines = fileContent.trim().split('\n');
+const watchlist = lines.slice(1).map(line => {
+  const values = line.split(',');
+  return {
+    Ticker: values[0],
+    Sector: values[1],
+    Notes: values[2]
+  };
+});
+
+// Load Reports
+const reports = await getCollection('reports');
+const pmSynthesis = reports.find(r => r.slug === 'pm_synthesis');
+const otherReports = reports.filter(r => r.slug !== 'pm_synthesis');
+---
+
+<Layout title="AlphaOracle Dashboard">
+	<main>
+		<header>
+            <h1>AlphaOracle</h1>
+            <div class={`regime-badge ${contextData.regime.toLowerCase().replace(' ', '-')}`}>
+                {contextData.regime} Regime
+            </div>
+            <p class="date">Last updated: {contextData.date}</p>
+        </header>
+
+        {pmSynthesis && (
+            <section class="pm-highlight">
+                <h2>Daily Synthesis</h2>
+                <div class="synthesis-card">
+                    <p>{pmSynthesis.data.title} - {pmSynthesis.data.date}</p>
+                    <a href={`/reports/${pmSynthesis.slug}`} class="btn">Read Full Analysis →</a>
+                </div>
+                <div class="analyst-links">
+                    {otherReports.map(report => (
+                        <a href={`/reports/${report.slug}`} class="report-link">
+                            {report.data.title.replace(' Report', '')}
+                        </a>
+                    ))}
+                </div>
+            </section>
+        )}
+
+        <section class="grid">
+            {watchlist.map(item => {
+                const stockData = contextData.data[item.Ticker] || {};
+                const rsi = stockData.rsi_14;
+                const rsiClass = rsi > 70 ? 'overbought' : rsi < 30 ? 'oversold' : '';
+                
+                return (
+                    <a href={`/stocks/${item.Ticker}`} class="card">
+                        <div class="card-header">
+                            <h3>{item.Ticker}</h3>
+                            <span class="sector">{item.Sector}</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="price">
+                                {stockData.close ? `$${stockData.close.toFixed(2)}` : 'N/A'}
+                            </div>
+                            {rsi && (
+                                <div class={`rsi ${rsiClass}`}>
+                                    RSI: {rsi.toFixed(1)}
+                                </div>
+                            )}
+                        </div>
+                        <p class="notes">{item.Notes}</p>
+                    </a>
+                );
+            })}
+        </section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 3rem 1.5rem;
+        color: #f8f9fa;
+	}
+    header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    h1 {
+        margin: 0;
+        font-size: 3.5rem;
+        letter-spacing: -0.02em;
+        font-weight: 800;
+        color: #fff;
+    }
+    .date {
+        color: #8f949e;
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+    .regime-badge {
+        display: inline-block;
+        margin: 1rem 0;
+        padding: 0.5rem 1.25rem;
+        border-radius: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-size: 0.85rem;
+    }
+    /* Regime Colors */
+    .bull-quiet { background: rgba(40, 167, 69, 0.2); color: #28a745; border: 1px solid #28a745; }
+    .bull-volatile { background: rgba(255, 193, 7, 0.2); color: #ffc107; border: 1px solid #ffc107; }
+    .bear-quiet { background: rgba(220, 53, 69, 0.2); color: #dc3545; border: 1px solid #dc3545; }
+    .bear-volatile { background: rgba(220, 53, 69, 0.3); color: #dc3545; border: 2px solid #dc3545; }
+    .unknown { background: #2a2e39; color: #8f949e; }
+
+    /* Reports Section */
+    .pm-highlight {
+        background: #131722;
+        padding: 2rem;
+        border-radius: 16px;
+        margin-bottom: 3rem;
+        border: 1px solid #2a2e39;
+    }
+    .pm-highlight h2 { margin-top: 0; font-size: 1.5rem; color: #8f949e; text-transform: uppercase; letter-spacing: 0.05em; }
+    .synthesis-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #1c212d;
+        padding: 1.5rem;
+        border-radius: 12px;
+        border: 1px solid #2a2e39;
+        margin-bottom: 1.5rem;
+    }
+    .synthesis-card p { margin: 0; font-weight: 600; color: #d1d4dc; }
+    .btn {
+        background: #2962FF;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: background 0.2s;
+    }
+    .btn:hover { background: #1e4bd8; }
+    
+    .analyst-links {
+        display: flex;
+        gap: 1.5rem;
+    }
+    .report-link {
+        color: #8f949e;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+    .report-link:hover { color: #fff; text-decoration: underline; }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+    .card {
+        background: #131722;
+        border: 1px solid #2a2e39;
+        border-radius: 16px;
+        padding: 1.5rem;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+    }
+    .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+        border-color: #2962FF;
+    }
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+    h3 { margin: 0; font-size: 1.75rem; font-weight: 800; color: #fff; }
+    .sector { font-size: 0.75rem; color: #8f949e; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+    .price { font-size: 2.25rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff; }
+    .rsi { font-size: 0.9rem; font-weight: 700; }
+    .overbought { color: #ef5350; }
+    .oversold { color: #26a69a; }
+    .notes { 
+        font-size: 0.9rem; 
+        color: #8f949e; 
+        margin-top: 1.5rem; 
+        border-top: 1px solid #2a2e39; 
+        padding-top: 1rem;
+        font-style: italic;
+    }
+</style>

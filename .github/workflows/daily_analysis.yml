@@ -49,24 +49,33 @@ jobs:
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
         run: python src/fetch_alpaca_portfolio.py
         
-      - name: Setup MkDocs
-        run: pip install mkdocs-material
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install Frontend Dependencies
+        working-directory: frontend
+        run: npm ci
         
-      - name: Build MkDocs Site
-        run: mkdocs build
+      - name: Build Astro Site
+        working-directory: frontend
+        run: npm run build
         
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          publish_dir: ./frontend/dist
           
-      - name: Commit newly generated reports back to repo
+      - name: Commit newly generated data and content back to repo
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add docs/ data/
+          git add data/ frontend/src/content/reports/ portfolio.csv watchlist.csv
           git commit -m "chore: Daily AI analysis reports for $(date +'%Y-%m-%d')" || exit 0
           git push

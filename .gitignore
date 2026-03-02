@@ -50,3 +50,8 @@ tests/
 
 # IDE Files
 .idea/
+
+# Astro files
+frontend/node_modules/
+frontend/dist/
+.astro/
