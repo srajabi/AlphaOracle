@@ -47,3 +47,6 @@ run_local.sh
 
 # Tests directory
 tests/
+
+# IDE Files
+.idea/
