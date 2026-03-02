@@ -7,6 +7,31 @@
 *   **MDX:** Extends Markdown to include JSX components. This allows us to write our analytical reports in Markdown but embed interactive React/Vue/Svelte components directly within them, where our charts can reside.
 *   **Lightweight Charts:** A fast, responsive, and customizable charting library specifically designed for financial data. It's client-side, making it perfect for Astro's interactive "islands".
 
+## Detailed Architecture Brief (User Provided)
+
+### System Overview
+We are building a static dashboard hosted on GitHub Pages to display daily AI-generated financial reports and interactive market data. A daily GitHub Actions cron job handles data ingestion, multi-LLM consensus generation, and the final Astro static site build. 
+
+Your objective is to scaffold the frontend architecture using Astro, MDX, and Lightweight Charts.
+
+### Astro Configuration
+Set up the Astro project to support MDX and React. We need MDX to allow the LLMs to author markdown reports that seamlessly embed interactive React components.
+
+### Data Pipeline Contract
+The backend Python scripts will generate two types of artifacts during the daily build process. The first artifact type includes standard MDX files containing the textual LLM analysis. The second artifact type includes JSON files containing the time-series financial data (OHLCV for candlesticks and arrays for technical indicator overlays). Decide the optimal directory structure for these artifacts so the frontend can easily consume them.
+
+### Chart Component Design
+Build a React wrapper for TradingView Lightweight Charts. This component must accept a reference to a specific JSON data file, fetch or import that data on the client side, and render the canvas. 
+
+### Client-Side Execution
+Lightweight Charts requires browser APIs like HTML5 Canvas. Ensure Astro defers the rendering of these chart components entirely to the client using the appropriate hydration directives.
+
+### Data Schema Requirements
+Design the React chart component to accept a flexible JSON structure. We need to plot primary candlestick series alongside multiple potential line series for technical indicators (Moving Averages, RSI) or prediction market probability curves from Polymarket. 
+
+### Implementation Handoff
+Examine the current repository state. Implement the Astro scaffolding, the MDX integration, and the base React chart component. Structure the component props and data loading mechanism to handle static JSON files generated at build time.
+
 ## Core Functionality to Replicate / Migrate
 1.  **Daily Synthesis (Homepage):** The main `index.md` report from the Portfolio Manager.
 2.  **Live Portfolio:** The `portfolio.md` page with Alpaca data.
