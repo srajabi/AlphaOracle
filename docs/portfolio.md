@@ -1,4 +1,3 @@
 # Current Portfolio
 
-*Error fetching data: {"message": "unauthorized."}
-*
+*API keys not configured. Cannot display live portfolio data.*

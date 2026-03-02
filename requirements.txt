@@ -1,8 +1,8 @@
 yfinance
-pandas==2.2.0
-ta==0.11.0
+pandas
+ta
 litellm
-feedparser==6.0.11
-python-dotenv==1.0.1
+feedparser
+python-dotenv
 alpaca-py
 pytest
