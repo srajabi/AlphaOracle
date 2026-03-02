@@ -5,10 +5,10 @@ from datetime import datetime
 
 # Defaulting to Gemini 2.0 Flash via LiteLLM for all agents for simplicity,
 # but can be overridden by environment variables to use different models.
-RISK_MODEL = os.getenv("RISK_MODEL", "gemini/gemini-2.0-flash")
-TECH_MODEL = os.getenv("TECH_MODEL", "gemini/gemini-2.0-flash")
-MACRO_MODEL = os.getenv("MACRO_MODEL", "gemini/gemini-2.0-flash")
-PM_MODEL = os.getenv("PM_MODEL", "gemini/gemini-2.0-flash")
+RISK_MODEL = os.getenv("RISK_MODEL", "gemini/gemini-2.5-flash")
+TECH_MODEL = os.getenv("TECH_MODEL", "gemini/gemini-2.5-flash")
+MACRO_MODEL = os.getenv("MACRO_MODEL", "gemini/gemini-2.5-flash")
+PM_MODEL = os.getenv("PM_MODEL", "gemini/gemini-2.5-flash")
 
 def load_text_file(filepath):
     if os.path.exists(filepath):
@@ -53,6 +53,13 @@ def build_context():
 
 def run_agent(role, prompt, model, context):
     print(f"Running {role} agent with model {model}...")
+    
+    if os.getenv("MOCK_LLM") == "true":
+        print(f"MOCK_LLM is true. Using mocked completion for {role}.")
+        # Provide a simple mocked response structure
+        mock_content = f"Mocked {role} report: Market looks stable for {role}. No strong signals. AI is the future. {model} was used."
+        return mock_content
+
     try:
         response = litellm.completion(
             model=model,
@@ -64,21 +71,6 @@ def run_agent(role, prompt, model, context):
         return response.choices[0].message.content
     except Exception as e:
         print(f"Error running {role} with {model}: {e}")
-        if "gemini-1.5" in model:
-            print(f"Falling back to gemini/gemini-1.5-flash for {role}...")
-            try:
-                fallback_model = "gemini/gemini-1.5-flash"
-                response = litellm.completion(
-                    model=fallback_model,
-                    messages=[
-                        {"role": "system", "content": f"You are an expert {role} in a quantitative hedge fund."},
-                        {"role": "user", "content": f"Here is the context:\n{context}\n\nTask: {prompt}"}
-                    ]
-                )
-                return response.choices[0].message.content
-            except Exception as e2:
-                print(f"Error running fallback {role}: {e2}")
-                return f"Error: {e2}"
         return f"Error: {e}"
 
 def generate_reports():

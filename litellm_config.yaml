@@ -1,0 +1,17 @@
+# litellm_config.yaml
+# This file configures caching for LiteLLM
+# For more details: https://litellm.ai/docs/caching
+
+caching:
+  # Enable caching
+  enabled: true
+  # Choose a cache type: "local" (default, stores in memory or on disk), "redis"
+  cache_type: "local" 
+  # Time to live for cached responses in seconds (e.g., 1 day)
+  ttl: 86400 
+  # Path for disk cache if cache_type is "local" (defaults to .litellm_cache.json)
+  # file_path: ".litellm_cache.json"
+
+# Optionally, you can configure model aliases here, but for now, we'll keep it simple
+# model_aliases:
+#   "gpt-4": "gpt-4-0613"
