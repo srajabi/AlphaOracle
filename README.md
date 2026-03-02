@@ -71,31 +71,40 @@ The system runs daily via GitHub Actions:
 
 ### 4. Local Development & Testing
 
-#### Run Full Pipeline Locally
-Execute the `run_local.sh` script to perform the entire analysis, trade generation, and website build process:
-```bash
-# Ensure .venv is activated and .env is sourced
-./run_local.sh
+To prevent broken builds and failed GitHub Actions runs, always follow this local validation process before committing and pushing code.
 
-# To run without consuming Gemini credits (using mocked LLM responses)
-./run_local.sh --mock
-```
+#### Run Full Pipeline Locally
+Execute the `run_local.sh` script to perform the entire analysis, trade generation, and website build process. This script will automatically activate your virtual environment, install dependencies, and run all Python steps before building the MkDocs site.
+
+*   **To run with LIVE API calls (uses your actual API key, consumes credits):**
+    ```bash
+    # Ensure .venv is activated and .env is sourced
+    ./run_local.sh
+    ```
+    *Expected output:* You should see agent reports being generated from actual Gemini API calls.
+
+*   **To run in MOCK mode (no API calls, saves credits):**
+    ```bash
+    # Ensure .venv is activated and .env is sourced
+    ./run_local.sh --mock
+    ```
+    *Expected output:* You will see `MOCK_LLM is true. Using mocked completion for [Agent Name].` for each agent.
 
 #### Run Unit Tests
 ```bash
 # Run all tests (including mocked LLM calls)
 pytest
 
-# Run only tests that make live API calls (requires GEMINI_API_KEY)
+# Run only tests that make live API calls (requires GEMINI_API_KEY set)
 pytest -m live_api tests/test_gemini.py
 ```
 
 #### Preview Site Locally
-After `run_local.sh` completes, you can preview the generated website:
+After `run_local.sh` completes (either live or mocked), you can preview the generated website:
 ```bash
 mkdocs serve
 ```
-Open the provided local URL in your browser.
+Open the provided local URL (usually `http://127.0.0.1:8000`) in your browser to inspect the generated reports and portfolio dashboard.
 
 ### 5. GitHub Actions & Deployment
 The `daily_analysis.yml` workflow is configured to run automatically every weekday at 22:00 UTC and on `workflow_dispatch` (manual trigger).
