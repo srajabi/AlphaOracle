@@ -11,11 +11,12 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title={entry.data.title}>
   <main>
-    <a href="/">← Back to Dashboard</a>
+    <a href={base}>← Back to Dashboard</a>
     <header>
         <h1>{entry.data.title}</h1>
         <p class="date">{entry.data.date}</p>

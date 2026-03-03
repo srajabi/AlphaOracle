@@ -31,6 +31,7 @@ const watchlist = lines.slice(1).map(line => {
 const reports = await getCollection('reports');
 const pmSynthesis = reports.find(r => r.slug === 'pm_synthesis');
 const otherReports = reports.filter(r => r.slug !== 'pm_synthesis');
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title="AlphaOracle Dashboard">
@@ -48,11 +49,11 @@ const otherReports = reports.filter(r => r.slug !== 'pm_synthesis');
                 <h2>Daily Synthesis</h2>
                 <div class="synthesis-card">
                     <p>{pmSynthesis.data.title} - {pmSynthesis.data.date}</p>
-                    <a href={`/reports/${pmSynthesis.slug}`} class="btn">Read Full Analysis →</a>
+                    <a href={`${base}reports/${pmSynthesis.slug}/`} class="btn">Read Full Analysis →</a>
                 </div>
                 <div class="analyst-links">
                     {otherReports.map(report => (
-                        <a href={`/reports/${report.slug}`} class="report-link">
+                        <a href={`${base}reports/${report.slug}/`} class="report-link">
                             {report.data.title.replace(' Report', '')}
                         </a>
                     ))}
@@ -67,7 +68,7 @@ const otherReports = reports.filter(r => r.slug !== 'pm_synthesis');
                 const rsiClass = rsi > 70 ? 'overbought' : rsi < 30 ? 'oversold' : '';
                 
                 return (
-                    <a href={`/stocks/${item.Ticker}`} class="card">
+                    <a href={`${base}stocks/${item.Ticker}/`} class="card">
                         <div class="card-header">
                             <h3>{item.Ticker}</h3>
                             <span class="sector">{item.Sector}</span>
