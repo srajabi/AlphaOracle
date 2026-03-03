@@ -60,6 +60,10 @@ jobs:
         working-directory: frontend
         run: |
           npm ci
+          # Work around npm optional-dependency resolution bug on CI runners.
+          ROLLUP_VERSION=$(node -p "require('./node_modules/rollup/package.json').version")
+          ROLLUP_PKG="@rollup/rollup-linux-x64-gnu"
+          node -e "require.resolve(process.argv[1])" "$ROLLUP_PKG" >/dev/null 2>&1 || npm i --no-save "${ROLLUP_PKG}@${ROLLUP_VERSION}"
           npm run build
         
       - name: Deploy to GitHub Pages
