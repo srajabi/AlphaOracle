@@ -1,6 +1,27 @@
 ---
 title: Technical Analyst Report
-date: "2026-03-01"
+date: "2026-03-03"
 ---
 
-Mocked Technical Analyst report: Market looks stable for Technical Analyst. No strong signals. AI is the future. gemini/gemini-2.5-flash was used.
+Error: litellm.AuthenticationError: GeminiException - {
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+        "locale": "en-US",
+        "message": "API key not valid. Please pass a valid API key."
+      }
+    ]
+  }
+}
