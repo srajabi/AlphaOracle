@@ -1,0 +1,60 @@
+{
+  "last_updated_utc": "2026-03-04T07:26:17.707473+00:00",
+  "error": "",
+  "results": [
+    {
+      "trade": {
+        "ticker": "MSFT",
+        "action": "buy",
+        "notional_value": 100000
+      },
+      "status": "failed",
+      "reason": "{\"buying_power\":\"0\",\"code\":40310000,\"cost_basis\":\"100000\",\"message\":\"insufficient buying power\"}"
+    },
+    {
+      "trade": {
+        "ticker": "AMZN",
+        "action": "buy",
+        "notional_value": 100000
+      },
+      "status": "failed",
+      "reason": "{\"buying_power\":\"0\",\"code\":40310000,\"cost_basis\":\"100000\",\"message\":\"insufficient buying power\"}"
+    },
+    {
+      "trade": {
+        "ticker": "GOOGL",
+        "action": "buy",
+        "notional_value": 100000
+      },
+      "status": "failed",
+      "reason": "{\"buying_power\":\"0\",\"code\":40310000,\"cost_basis\":\"100000\",\"message\":\"insufficient buying power\"}"
+    },
+    {
+      "trade": {
+        "ticker": "AVGO",
+        "action": "buy",
+        "notional_value": 100000
+      },
+      "status": "failed",
+      "reason": "{\"buying_power\":\"0\",\"code\":40310000,\"cost_basis\":\"100000\",\"message\":\"insufficient buying power\"}"
+    },
+    {
+      "trade": {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 100000
+      },
+      "status": "failed",
+      "reason": "{\"buying_power\":\"0\",\"code\":40310000,\"cost_basis\":\"100000\",\"message\":\"insufficient buying power\"}"
+    },
+    {
+      "trade": {
+        "ticker": "TLT",
+        "action": "buy",
+        "notional_value": 100000
+      },
+      "status": "failed",
+      "reason": "{\"buying_power\":\"0\",\"code\":40310000,\"cost_basis\":\"100000\",\"message\":\"insufficient buying power\"}"
+    }
+  ]
+}
