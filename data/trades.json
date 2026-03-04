@@ -1,31 +1,26 @@
 [
     {
-        "ticker": "MSFT",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 100000
-    },
-    {
-        "ticker": "AMZN",
-        "action": "buy",
-        "notional_value": 100000
-    },
-    {
-        "ticker": "GOOGL",
-        "action": "buy",
-        "notional_value": 100000
-    },
-    {
-        "ticker": "AVGO",
-        "action": "buy",
-        "notional_value": 100000
+        "notional_value": 200000
     },
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 100000
+        "notional_value": 200000
+    },
+    {
+        "ticker": "EWC",
+        "action": "buy",
+        "notional_value": 150000
     },
     {
         "ticker": "TLT",
+        "action": "buy",
+        "notional_value": 150000
+    },
+    {
+        "ticker": "QUAL",
         "action": "buy",
         "notional_value": 100000
     }
