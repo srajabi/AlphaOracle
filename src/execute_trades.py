@@ -3,6 +3,9 @@ import json
 from alpaca.trading.client import TradingClient
 from alpaca.trading.requests import MarketOrderRequest
 from alpaca.trading.enums import OrderSide, TimeInForce
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def execute_trades():
     print("Initializing Alpaca client...")

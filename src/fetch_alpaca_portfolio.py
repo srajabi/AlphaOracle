@@ -1,5 +1,8 @@
 import os
 from alpaca.trading.client import TradingClient
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def fetch_portfolio():
     api_key = os.getenv("ALPACA_API_KEY")

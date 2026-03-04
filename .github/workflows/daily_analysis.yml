@@ -35,6 +35,13 @@ jobs:
         run: python src/data_ingestion.py
         
       - name: Run LLM Agents
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          RISK_MODELS: "deepseek/deepseek-reasoner,gemini/gemini-2.5-flash"
+          TECH_MODELS: "deepseek/deepseek-reasoner,gemini/gemini-2.5-flash"
+          MACRO_MODELS: "deepseek/deepseek-reasoner,gemini/gemini-2.5-flash"
+          PM_MODEL: "deepseek/deepseek-reasoner"
         run: python src/llm_agents.py
         
       - name: Execute Trades (Alpaca Paper)
