@@ -39,7 +39,8 @@ const base = import.meta.env.BASE_URL.endsWith('/')
 <Layout title={`${ticker} - AlphaOracle Analysis`}>
   <main>
     <nav>
-      <a href={base}>← Dashboard</a>
+      <a href={base}>← Daily Analysis</a>
+      <a href={`${base}tickers/`}>Ticker Dashboard</a>
     </nav>
 
     <header class="ticker-header">
@@ -105,7 +106,7 @@ const base = import.meta.env.BASE_URL.endsWith('/')
     background: #0b0e14;
     min-height: 100vh;
   }
-  nav { margin-bottom: 1.5rem; }
+  nav { margin-bottom: 1.5rem; display: flex; gap: 1rem; }
   nav a { color: #8f949e; text-decoration: none; font-size: 0.9rem; font-weight: 500; }
   nav a:hover { color: #fff; }
 

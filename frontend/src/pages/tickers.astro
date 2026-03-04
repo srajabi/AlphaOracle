@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+
+let contextData = { data: {} };
+try {
+  const content = await fs.readFile(path.resolve('./public/data/market_context.json'), 'utf-8');
+  contextData = JSON.parse(content);
+} catch (e) {
+  console.error('Error loading market context:', e);
+}
+
+const watchlistPath = path.resolve('../watchlist.csv');
+const fileContent = await fs.readFile(watchlistPath, 'utf-8');
+const lines = fileContent.trim().split('\n');
+const watchlist = lines.slice(1).map((line) => {
+  const values = line.split(',');
+  return { ticker: values[0], sector: values[1], notes: values[2] };
+});
+---
+
+<Layout title="AlphaOracle - Ticker Dashboard">
+  <main>
+    <nav>
+      <a href={base}>← Back to Daily Analysis</a>
+      <a href={`${base}portfolio/`}>Paper Trading Status</a>
+    </nav>
+
+    <header>
+      <h1>Ticker Dashboard</h1>
+      <p class="muted">Ticker-by-ticker details, metrics, and technical context.</p>
+    </header>
+
+    <section class="grid">
+      {watchlist.map((item) => {
+        const stockData = contextData.data[item.ticker] || {};
+        const rsi = stockData.rsi_14;
+        const rsiClass = rsi > 70 ? 'overbought' : rsi < 30 ? 'oversold' : '';
+        return (
+          <a href={`${base}stocks/${item.ticker}/`} class="card">
+            <div class="card-header">
+              <h2>{item.ticker}</h2>
+              <span class="sector">{item.sector}</span>
+            </div>
+            <div class="metrics">
+              <div><span>Close</span><strong>{stockData.close ? `$${stockData.close.toFixed(2)}` : 'N/A'}</strong></div>
+              <div><span>RSI 14</span><strong class={rsiClass}>{rsi ? rsi.toFixed(1) : 'N/A'}</strong></div>
+              <div><span>SMA 20</span><strong>{stockData.sma_20 ? `$${stockData.sma_20.toFixed(2)}` : 'N/A'}</strong></div>
+              <div><span>SMA 50</span><strong>{stockData.sma_50 ? `$${stockData.sma_50.toFixed(2)}` : 'N/A'}</strong></div>
+              <div><span>SMA 200</span><strong>{stockData.sma_200 ? `$${stockData.sma_200.toFixed(2)}` : 'N/A'}</strong></div>
+            </div>
+            <p class="notes">{item.notes}</p>
+          </a>
+        );
+      })}
+    </section>
+  </main>
+</Layout>
+
+<style>
+  main { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
+  nav { display: flex; gap: 1rem; margin-bottom: 1rem; }
+  nav a { color: #8f949e; text-decoration: none; }
+  nav a:hover { color: #fff; }
+  h1 { margin: 0; font-size: 2.2rem; }
+  .muted { color: #8f949e; margin-top: 0.4rem; }
+  .grid {
+    margin-top: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  .card {
+    text-decoration: none;
+    color: inherit;
+    background: #131722;
+    border: 1px solid #2a2e39;
+    border-radius: 12px;
+    padding: 1rem;
+  }
+  .card:hover { border-color: #2962ff; }
+  .card-header { display: flex; justify-content: space-between; align-items: center; }
+  h2 { margin: 0; font-size: 1.4rem; }
+  .sector { color: #8f949e; font-size: 0.75rem; text-transform: uppercase; }
+  .metrics { margin-top: 0.8rem; display: grid; gap: 0.45rem; }
+  .metrics div { display: flex; justify-content: space-between; }
+  .metrics span { color: #8f949e; font-size: 0.85rem; }
+  .metrics strong { font-size: 0.9rem; }
+  .overbought { color: #ef5350; }
+  .oversold { color: #26a69a; }
+  .notes { margin: 0.75rem 0 0; color: #8f949e; font-size: 0.85rem; border-top: 1px solid #2a2e39; padding-top: 0.75rem; }
+</style>

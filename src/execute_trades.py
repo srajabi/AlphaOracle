@@ -4,6 +4,7 @@ from alpaca.trading.client import TradingClient
 from alpaca.trading.requests import MarketOrderRequest
 from alpaca.trading.enums import OrderSide, TimeInForce
 from dotenv import load_dotenv
+from datetime import datetime, timezone
 
 load_dotenv()
 
@@ -15,6 +16,7 @@ def execute_trades():
     
     if not api_key or not secret_key:
         print("Error: ALPACA_API_KEY or ALPACA_SECRET_KEY not found in environment. Skipping execution.")
+        write_execution_log([], "Missing Alpaca API keys.")
         return
 
     # Initialize the trading client. paper=True means we are using paper trading.
@@ -24,6 +26,7 @@ def execute_trades():
     trades_file = "data/trades.json"
     if not os.path.exists(trades_file):
         print(f"No {trades_file} found. No trades to execute.")
+        write_execution_log([], "No trades file found.")
         return
 
     with open(trades_file, "r") as f:
@@ -31,18 +34,26 @@ def execute_trades():
             trades = json.load(f)
         except json.JSONDecodeError:
             print(f"Error parsing {trades_file}. Invalid JSON.")
+            write_execution_log([], "Invalid trades.json payload.")
             return
 
     if not trades:
         print("No actionable trades found in JSON array.")
+        write_execution_log([], "")
         return
 
+    execution_results = []
     for trade in trades:
         ticker = trade.get("ticker")
         action = trade.get("action", "").lower()
         
         if not ticker or action not in ["buy", "sell"]:
             print(f"Invalid trade block: {trade}. Skipping.")
+            execution_results.append({
+                "trade": trade,
+                "status": "skipped",
+                "reason": "Invalid ticker/action."
+            })
             continue
             
         side = OrderSide.BUY if action == "buy" else OrderSide.SELL
@@ -55,6 +66,11 @@ def execute_trades():
                 print(f"Closing entire position for {ticker}")
                 trading_client.close_position(ticker)
                 print(f"Successfully sent order to close {ticker}")
+                execution_results.append({
+                    "trade": trade,
+                    "status": "submitted",
+                    "order_type": "close_position"
+                })
                 continue
 
             # Prepare the order request
@@ -71,6 +87,11 @@ def execute_trades():
                 order_data["qty"] = float(trade["qty"])
             else:
                 print(f"Trade must specify 'qty' or 'notional_value': {trade}. Skipping.")
+                execution_results.append({
+                    "trade": trade,
+                    "status": "skipped",
+                    "reason": "Missing qty/notional_value."
+                })
                 continue
                 
             market_order_data = MarketOrderRequest(**order_data)
@@ -78,9 +99,32 @@ def execute_trades():
             # Submit the order
             market_order = trading_client.submit_order(order_data=market_order_data)
             print(f"Order submitted successfully: {market_order.id}")
+            execution_results.append({
+                "trade": trade,
+                "status": "submitted",
+                "order_id": str(market_order.id)
+            })
 
         except Exception as e:
             print(f"Failed to execute trade for {ticker}: {e}")
+            execution_results.append({
+                "trade": trade,
+                "status": "failed",
+                "reason": str(e)
+            })
+
+    write_execution_log(execution_results, "")
+
+
+def write_execution_log(results, error):
+    payload = {
+        "last_updated_utc": datetime.now(timezone.utc).isoformat(),
+        "error": error,
+        "results": results
+    }
+    os.makedirs("data", exist_ok=True)
+    with open("data/last_execution.json", "w") as f:
+        json.dump(payload, f, indent=2)
 
 if __name__ == "__main__":
     execute_trades()

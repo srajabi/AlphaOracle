@@ -1,0 +1,165 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+
+let portfolioStatus = {
+  ok: false,
+  error: 'No portfolio status file found.',
+  paper_trading: true,
+  last_updated_utc: '',
+  account: null,
+  positions: []
+};
+
+let execution = { error: '', results: [], last_updated_utc: '' };
+
+try {
+  await fs.access(path.resolve('../data/portfolio_status.json'));
+  portfolioStatus = JSON.parse(await fs.readFile(path.resolve('../data/portfolio_status.json'), 'utf-8'));
+} catch {
+  // Expected on first run before portfolio fetch has executed.
+}
+
+try {
+  await fs.access(path.resolve('../data/last_execution.json'));
+  execution = JSON.parse(await fs.readFile(path.resolve('../data/last_execution.json'), 'utf-8'));
+} catch {
+  // Expected until execute_trades.py writes first execution log.
+}
+---
+
+<Layout title="AlphaOracle - Paper Trading Status">
+  <main>
+    <nav>
+      <a href={base}>← Back to Daily Analysis</a>
+      <a href={`${base}tickers/`}>Ticker Dashboard</a>
+    </nav>
+
+    <header>
+      <h1>Paper Trading Status</h1>
+      <p class="muted">Last portfolio update: {portfolioStatus.last_updated_utc || 'N/A'}</p>
+    </header>
+
+    {!portfolioStatus.ok && (
+      <section class="panel error">
+        <h2>Portfolio Connection</h2>
+        <p>{portfolioStatus.error || 'Unable to read paper trading status.'}</p>
+      </section>
+    )}
+
+    {portfolioStatus.ok && portfolioStatus.account && (
+      <section class="panel">
+        <h2>Account Snapshot</h2>
+        <div class="kpis">
+          <div><span>Status</span><strong>{portfolioStatus.account.status}</strong></div>
+          <div><span>Cash</span><strong>${portfolioStatus.account.cash.toLocaleString()}</strong></div>
+          <div><span>Equity</span><strong>${portfolioStatus.account.equity.toLocaleString()}</strong></div>
+          <div><span>Buying Power</span><strong>${portfolioStatus.account.buying_power.toLocaleString()}</strong></div>
+        </div>
+      </section>
+    )}
+
+    <section class="panel">
+      <h2>Open Positions</h2>
+      {portfolioStatus.positions.length > 0 ? (
+        <table>
+          <thead>
+            <tr>
+              <th>Ticker</th>
+              <th>Qty</th>
+              <th>Current Price</th>
+              <th>Avg Entry</th>
+              <th>Market Value</th>
+              <th>Unrealized P/L</th>
+            </tr>
+          </thead>
+          <tbody>
+            {portfolioStatus.positions.map((p) => (
+              <tr>
+                <td>{p.symbol}</td>
+                <td>{p.qty}</td>
+                <td>${p.current_price.toLocaleString()}</td>
+                <td>${p.avg_entry_price.toLocaleString()}</td>
+                <td>${p.market_value.toLocaleString()}</td>
+                <td class={p.unrealized_pl >= 0 ? 'gain' : 'loss'}>${p.unrealized_pl.toLocaleString()}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ) : (
+        <p class="muted">No open positions.</p>
+      )}
+    </section>
+
+    <section class="panel">
+      <h2>Latest Execution Attempt</h2>
+      <p class="muted">Last execution update: {execution.last_updated_utc || 'N/A'}</p>
+      {execution.error && <p class="error-text">{execution.error}</p>}
+      {execution.results.length > 0 ? (
+        <table>
+          <thead>
+            <tr>
+              <th>Ticker</th>
+              <th>Action</th>
+              <th>Status</th>
+              <th>Reason / Order ID</th>
+            </tr>
+          </thead>
+          <tbody>
+            {execution.results.map((r) => (
+              <tr>
+                <td>{r.trade?.ticker || '-'}</td>
+                <td>{(r.trade?.action || '-').toUpperCase()}</td>
+                <td>{r.status}</td>
+                <td>{r.order_id || r.reason || '-'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ) : (
+        <p class="muted">No execution results recorded.</p>
+      )}
+    </section>
+  </main>
+</Layout>
+
+<style>
+  main { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+  nav { display: flex; gap: 1rem; margin-bottom: 1rem; }
+  nav a { color: #8f949e; text-decoration: none; }
+  nav a:hover { color: #fff; }
+  h1 { margin: 0; font-size: 2.2rem; }
+  .muted { color: #8f949e; }
+  .panel {
+    background: #131722;
+    border: 1px solid #2a2e39;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .panel.error { border-color: #dc3545; }
+  .kpis {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  .kpis div {
+    background: #1c212d;
+    border: 1px solid #2a2e39;
+    border-radius: 8px;
+    padding: 0.75rem;
+  }
+  .kpis span { display: block; color: #8f949e; font-size: 0.8rem; }
+  .kpis strong { display: block; margin-top: 0.2rem; font-size: 1rem; }
+  table { width: 100%; border-collapse: collapse; margin-top: 0.6rem; }
+  th, td { border: 1px solid #2a2e39; padding: 0.6rem; text-align: left; }
+  th { color: #8f949e; font-size: 0.78rem; text-transform: uppercase; }
+  .gain { color: #26a69a; }
+  .loss { color: #ef5350; }
+  .error-text { color: #ef5350; }
+</style>
