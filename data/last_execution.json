@@ -1,51 +1,60 @@
 {
-  "last_updated_utc": "2026-03-04T22:17:36.572714+00:00",
+  "last_updated_utc": "2026-03-05T19:03:56.354316+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 200000
-      },
-      "status": "failed",
-      "reason": "{\"buying_power\":\"0\",\"code\":40310000,\"cost_basis\":\"200000\",\"message\":\"insufficient buying power\"}"
-    },
-    {
-      "trade": {
         "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 200000
-      },
-      "status": "failed",
-      "reason": "{\"buying_power\":\"0\",\"code\":40310000,\"cost_basis\":\"200000\",\"message\":\"insufficient buying power\"}"
-    },
-    {
-      "trade": {
-        "ticker": "EWC",
         "action": "buy",
         "notional_value": 150000
       },
-      "status": "failed",
-      "reason": "{\"buying_power\":\"0\",\"code\":40310000,\"cost_basis\":\"150000\",\"message\":\"insufficient buying power\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
         "ticker": "TLT",
         "action": "buy",
-        "notional_value": 150000
+        "notional_value": 100000
       },
-      "status": "failed",
-      "reason": "{\"buying_power\":\"0\",\"code\":40310000,\"cost_basis\":\"150000\",\"message\":\"insufficient buying power\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "QUAL",
+        "ticker": "EWA",
         "action": "buy",
         "notional_value": 100000
       },
-      "status": "failed",
-      "reason": "{\"buying_power\":\"0\",\"code\":40310000,\"cost_basis\":\"100000\",\"message\":\"insufficient buying power\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 75000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLE",
+        "action": "buy",
+        "notional_value": 75000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "MSFT",
+        "action": "buy",
+        "notional_value": 50000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
     }
   ]
 }
