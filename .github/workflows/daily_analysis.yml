@@ -2,8 +2,10 @@ name: AlphaOracle Daily Run
 
 on:
   schedule:
-    # Run daily at 22:00 UTC (after US market close)
-    - cron: '0 22 * * 1-5'
+    # 10:00 AM ET and 3:30 PM ET, Monday-Friday.
+    # NOTE: GitHub cron uses UTC; these map exactly during EST (UTC-5).
+    - cron: '0 15 * * 1-5'
+    - cron: '30 20 * * 1-5'
   workflow_dispatch: # Allow manual triggering
 
 jobs:

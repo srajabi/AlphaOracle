@@ -43,6 +43,8 @@ def execute_trades():
         return
 
     execution_results = []
+    account = trading_client.get_account()
+    available_buying_power = float(account.buying_power)
     for trade in trades:
         ticker = trade.get("ticker")
         action = trade.get("action", "").lower()
@@ -82,7 +84,33 @@ def execute_trades():
 
             # Alpaca allows specifying EITHER fractional quantities OR notional dollar amounts
             if "notional_value" in trade:
-                order_data["notional"] = float(trade["notional_value"])
+                requested_notional = float(trade["notional_value"])
+                if action == "buy":
+                    if available_buying_power <= 0:
+                        execution_results.append({
+                            "trade": trade,
+                            "status": "skipped",
+                            "reason": "No available buying power."
+                        })
+                        continue
+                    # Keep a small cushion to avoid rounding/rejection edge cases.
+                    max_notional = max(0.0, available_buying_power * 0.98)
+                    capped_notional = min(requested_notional, max_notional)
+                    if capped_notional <= 0:
+                        execution_results.append({
+                            "trade": trade,
+                            "status": "skipped",
+                            "reason": "Capped notional is zero."
+                        })
+                        continue
+                    if capped_notional < requested_notional:
+                        print(
+                            f"Capping {ticker} BUY notional from {requested_notional} to {capped_notional} "
+                            "based on account buying power."
+                        )
+                    order_data["notional"] = round(capped_notional, 2)
+                else:
+                    order_data["notional"] = requested_notional
             elif "qty" in trade:
                 order_data["qty"] = float(trade["qty"])
             else:
@@ -104,6 +132,8 @@ def execute_trades():
                 "status": "submitted",
                 "order_id": str(market_order.id)
             })
+            if action == "buy" and "notional" in order_data:
+                available_buying_power = max(0.0, available_buying_power - float(order_data["notional"]))
 
         except Exception as e:
             print(f"Failed to execute trade for {ticker}: {e}")

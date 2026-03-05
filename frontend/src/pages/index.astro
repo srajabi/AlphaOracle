@@ -26,7 +26,20 @@ try {
 
 const reports = await getCollection('reports');
 const pmSynthesis = reports.find((r) => r.slug === 'pm_synthesis');
-const otherReports = reports.filter((r) => r.slug !== 'pm_synthesis');
+const reportBySlug = Object.fromEntries(reports.map((r) => [r.slug, r]));
+
+const buyCount = trades.filter((t) => (t.action || '').toLowerCase() === 'buy').length;
+const sellCount = trades.filter((t) => (t.action || '').toLowerCase() === 'sell').length;
+const totalNotional = trades
+  .filter((t) => (t.action || '').toLowerCase() === 'buy' && t.notional_value)
+  .reduce((sum, t) => sum + Number(t.notional_value || 0), 0);
+
+const bias = buyCount > sellCount ? 'Long bias' : sellCount > buyCount ? 'Risk-off / trim bias' : 'Neutral bias';
+const digestItems = [
+  `${bias} under a ${contextData.regime} regime.`,
+  `Planned entries: ${buyCount}. Planned exits/reductions: ${sellCount}.`,
+  `Target capital deployment today: $${totalNotional.toLocaleString(undefined, { maximumFractionDigits: 0 })}.`
+];
 ---
 
 <Layout title="AlphaOracle - Daily Analysis">
@@ -59,37 +72,22 @@ const otherReports = reports.filter((r) => r.slug !== 'pm_synthesis');
         </div>
         <p class="report-meta">{pmSynthesis.data.title} ({pmSynthesis.data.date})</p>
         <div class="analyst-links">
-          {otherReports.map((report) => (
-            <a href={`${base}reports/${report.slug}/`}>{report.data.title.replace(' Report', '')}</a>
-          ))}
+          {reportBySlug.macro && <a href={`${base}reports/macro/`}>Macro Strategist</a>}
+          {reportBySlug.tech && <a href={`${base}reports/tech/`}>Technical Analyst</a>}
+          {reportBySlug.risk && <a href={`${base}reports/risk/`}>Risk Manager</a>}
+          <a href={`${base}portfolio-action-items/`}>Portfolio Action Items</a>
         </div>
       </section>
     )}
 
     <section class="panel">
-      <h2>Today&apos;s Recommendations</h2>
-      {trades.length > 0 ? (
-        <table>
-          <thead>
-            <tr>
-              <th>Action</th>
-              <th>Ticker</th>
-              <th>Qty / Notional</th>
-            </tr>
-          </thead>
-          <tbody>
-            {trades.map((trade) => (
-              <tr>
-                <td>{(trade.action || '').toUpperCase()}</td>
-                <td>{trade.ticker || '-'}</td>
-                <td>{trade.notional_value ? `$${trade.notional_value}` : (trade.qty || '-')}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      ) : (
-        <p class="muted">No actionable recommendations for today.</p>
-      )}
+      <h2>Today&apos;s Actionable Digest</h2>
+      <ul class="digest">
+        {digestItems.map((item) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+      <p class="muted">Details by ticker are in the <a href={`${base}tickers/`}>Ticker Dashboard</a>.</p>
     </section>
   </main>
 </Layout>
@@ -167,16 +165,14 @@ const otherReports = reports.filter((r) => r.slug !== 'pm_synthesis');
   .analyst-links a { color: #c4d4ff; text-decoration: none; }
   .analyst-links a:hover { text-decoration: underline; }
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid #2a2e39;
+  .digest {
+    margin: 0;
+    padding-left: 1.1rem;
+    display: grid;
+    gap: 0.45rem;
   }
-  th, td {
-    border: 1px solid #2a2e39;
-    padding: 0.7rem;
-    text-align: left;
-  }
-  th { color: #8f949e; font-size: 0.8rem; text-transform: uppercase; }
-  .muted { color: #8f949e; margin: 0; }
+  .digest li { color: #d1d4dc; }
+  .muted { color: #8f949e; margin: 0.8rem 0 0; }
+  .muted a { color: #c4d4ff; text-decoration: none; }
+  .muted a:hover { text-decoration: underline; }
 </style>

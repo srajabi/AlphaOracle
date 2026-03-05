@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+
+const portfolioCsv = await fs.readFile(path.resolve('../portfolio.csv'), 'utf-8');
+const rows = portfolioCsv.trim().split('\n');
+const holdings = rows.slice(1).map((line) => {
+  const [ticker, quantity, costBasis, type] = line.split(',');
+  return {
+    ticker,
+    quantity: Number(quantity || 0),
+    costBasis: Number(costBasis || 0),
+    type: type || ''
+  };
+});
+
+let trades = [];
+try {
+  trades = JSON.parse(await fs.readFile(path.resolve('../data/trades.json'), 'utf-8'));
+} catch {
+  // No trade recommendations found yet.
+}
+
+const actionable = holdings
+  .filter((h) => h.ticker !== 'CASH')
+  .map((h) => {
+    const related = trades.filter((t) => (t.ticker || '').toUpperCase() === h.ticker.toUpperCase());
+    return { ...h, related };
+  });
+---
+
+<Layout title="AlphaOracle - Portfolio Action Items">
+  <main>
+    <nav>
+      <a href={base}>← Daily Analysis</a>
+      <a href={`${base}reports/risk/`}>Risk Manager</a>
+    </nav>
+
+    <header>
+      <h1>Portfolio Action Items</h1>
+      <p class="muted">Portfolio CSV holdings mapped against today&apos;s recommendation set.</p>
+    </header>
+
+    <section class="panel">
+      <h2>Cash Position</h2>
+      {holdings.find((h) => h.ticker === 'CASH') ? (
+        <p>Configured cash budget: <strong>${holdings.find((h) => h.ticker === 'CASH')?.costBasis.toLocaleString()}</strong></p>
+      ) : (
+        <p class="muted">No CASH row found in portfolio.csv.</p>
+      )}
+    </section>
+
+    <section class="panel">
+      <h2>Holdings + Recommended Actions</h2>
+      {actionable.length > 0 ? (
+        <table>
+          <thead>
+            <tr>
+              <th>Ticker</th>
+              <th>Quantity</th>
+              <th>Cost Basis</th>
+              <th>Today&apos;s Action Item</th>
+            </tr>
+          </thead>
+          <tbody>
+            {actionable.map((h) => (
+              <tr>
+                <td>{h.ticker}</td>
+                <td>{h.quantity}</td>
+                <td>${h.costBasis.toLocaleString()}</td>
+                <td>
+                  {h.related.length > 0
+                    ? h.related.map((t) => `${(t.action || '').toUpperCase()} (${t.qty || `$${t.notional_value || 0}`})`).join(', ')
+                    : 'No direct action; monitor'}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ) : (
+        <p class="muted">No non-cash holdings in portfolio.csv yet.</p>
+      )}
+    </section>
+  </main>
+</Layout>
+
+<style>
+  main { max-width: 1000px; margin: 0 auto; padding: 2rem 1.5rem; }
+  nav { display: flex; gap: 1rem; margin-bottom: 1rem; }
+  nav a { color: #8f949e; text-decoration: none; }
+  nav a:hover { color: #fff; }
+  h1 { margin: 0; font-size: 2.1rem; }
+  .panel {
+    background: #131722;
+    border: 1px solid #2a2e39;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .panel h2 { margin-top: 0; font-size: 1.1rem; }
+  .muted { color: #8f949e; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { border: 1px solid #2a2e39; padding: 0.65rem; text-align: left; }
+  th { color: #8f949e; font-size: 0.8rem; text-transform: uppercase; }
+</style>
