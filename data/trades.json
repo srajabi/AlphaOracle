@@ -1,17 +1,22 @@
 [
     {
+        "ticker": "NFLX",
+        "action": "sell",
+        "notional_value": 100000
+    },
+    {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 150000
+        "notional_value": 100000
     },
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 75000
+        "notional_value": 100000
     },
     {
-        "ticker": "CEG",
+        "ticker": "SCHD",
         "action": "buy",
-        "notional_value": 75000
+        "notional_value": 100000
     }
 ]
