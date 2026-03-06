@@ -1,66 +1,30 @@
 {
-  "last_updated_utc": "2026-03-05T20:56:13.556442+00:00",
+  "last_updated_utc": "2026-03-06T15:16:31.234492+00:00",
   "error": "",
   "results": [
     {
       "trade": {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 150000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 50000
+        "notional_value": 75000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "XLE",
+        "ticker": "CEG",
         "action": "buy",
-        "notional_value": 40000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "EWC",
-        "action": "buy",
-        "notional_value": 30000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "EWA",
-        "action": "buy",
-        "notional_value": 30000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "GOOGL",
-        "action": "buy",
-        "notional_value": 30000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "QUAL",
-        "action": "buy",
-        "notional_value": 40000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "TLT",
-        "action": "buy",
-        "notional_value": 30000
+        "notional_value": 75000
       },
       "status": "skipped",
       "reason": "No available buying power."
