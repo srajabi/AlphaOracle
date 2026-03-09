@@ -1,33 +1,5 @@
 {
-  "last_updated_utc": "2026-03-09T15:34:50.405839+00:00",
+  "last_updated_utc": "2026-03-09T20:52:55.775224+00:00",
   "error": "",
-  "results": [
-    {
-      "trade": {
-        "ticker": "IAU",
-        "action": "buy",
-        "notional_value": 200000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 100000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "VGK",
-        "action": "buy",
-        "notional_value": 100000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    }
-  ]
+  "results": []
 }
