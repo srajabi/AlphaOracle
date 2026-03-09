@@ -1,15 +1,15 @@
 {
-  "last_updated_utc": "2026-03-06T20:52:37.459836+00:00",
+  "last_updated_utc": "2026-03-09T15:34:50.405839+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "NFLX",
-        "action": "sell",
-        "notional_value": 100000
+        "ticker": "IAU",
+        "action": "buy",
+        "notional_value": 200000
       },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"fractional orders cannot be sold short\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
@@ -22,16 +22,7 @@
     },
     {
       "trade": {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 100000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "SCHD",
+        "ticker": "VGK",
         "action": "buy",
         "notional_value": 100000
       },

@@ -1,8 +1,8 @@
 [
     {
-        "ticker": "NFLX",
-        "action": "sell",
-        "notional_value": 100000
+        "ticker": "IAU",
+        "action": "buy",
+        "notional_value": 200000
     },
     {
         "ticker": "XLU",
@@ -10,12 +10,7 @@
         "notional_value": 100000
     },
     {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 100000
-    },
-    {
-        "ticker": "SCHD",
+        "ticker": "VGK",
         "action": "buy",
         "notional_value": 100000
     }
