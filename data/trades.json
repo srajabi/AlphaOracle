@@ -2,21 +2,21 @@
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 50000
-    },
-    {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 75000
+        "notional_value": 150000
     },
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 75000
+        "notional_value": 100000
     },
     {
-        "ticker": "VTI",
+        "ticker": "AVGO",
         "action": "buy",
-        "notional_value": 150000
+        "notional_value": 100000
+    },
+    {
+        "ticker": "VGK",
+        "action": "buy",
+        "notional_value": 50000
     }
 ]
