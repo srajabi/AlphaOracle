@@ -1,37 +1,32 @@
 [
     {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 150000
-    },
-    {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 150000
-    },
-    {
         "ticker": "XLU",
         "action": "buy",
         "notional_value": 100000
     },
     {
-        "ticker": "CRWD",
-        "action": "buy",
-        "notional_value": 125000
-    },
-    {
-        "ticker": "AVGO",
+        "ticker": "GLD",
         "action": "buy",
         "notional_value": 100000
     },
     {
-        "ticker": "CEG",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 75000
+        "notional_value": 100000
+    },
+    {
+        "ticker": "SCHD",
+        "action": "buy",
+        "notional_value": 100000
     },
     {
         "ticker": "XLF",
         "action": "buy",
-        "notional_value": 75000
+        "notional_value": 50000
+    },
+    {
+        "ticker": "AVGO",
+        "action": "buy",
+        "notional_value": 50000
     }
 ]
