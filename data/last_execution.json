@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-03-10T20:51:40.787079+00:00",
+  "last_updated_utc": "2026-03-11T15:20:52.913744+00:00",
   "error": "",
   "results": [
     {
@@ -15,7 +15,25 @@
       "trade": {
         "ticker": "XLE",
         "action": "buy",
+        "notional_value": 150000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLU",
+        "action": "buy",
         "notional_value": 100000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "CRWD",
+        "action": "buy",
+        "notional_value": 125000
       },
       "status": "skipped",
       "reason": "No available buying power."
@@ -31,9 +49,18 @@
     },
     {
       "trade": {
-        "ticker": "VGK",
+        "ticker": "CEG",
         "action": "buy",
-        "notional_value": 50000
+        "notional_value": 75000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLF",
+        "action": "buy",
+        "notional_value": 75000
       },
       "status": "skipped",
       "reason": "No available buying power."
