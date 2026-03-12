@@ -1,32 +1,32 @@
 [
     {
-        "ticker": "GLD",
+        "ticker": "CRWD",
         "action": "buy",
-        "notional_value": 150000
+        "notional_value": 25000
     },
     {
-        "ticker": "XLU",
+        "ticker": "NBIS",
         "action": "buy",
-        "notional_value": 150000
+        "notional_value": 25000
     },
     {
-        "ticker": "NVDA",
+        "ticker": "PLTR",
         "action": "buy",
-        "notional_value": 125000
+        "notional_value": 25000
     },
     {
         "ticker": "AVGO",
         "action": "buy",
-        "notional_value": 125000
+        "notional_value": 25000
     },
     {
-        "ticker": "MU",
+        "ticker": "TLT",
         "action": "buy",
-        "notional_value": 125000
+        "notional_value": 25000
     },
     {
-        "ticker": "XLF",
+        "ticker": "IAU",
         "action": "buy",
-        "notional_value": 75000
+        "notional_value": 50000
     }
 ]
