@@ -1,48 +1,30 @@
 {
-  "last_updated_utc": "2026-03-11T20:51:33.115539+00:00",
+  "last_updated_utc": "2026-03-12T15:30:27.694975+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 100000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 100000
+        "notional_value": 150000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "XLE",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 100000
+        "notional_value": 150000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "SCHD",
+        "ticker": "NVDA",
         "action": "buy",
-        "notional_value": 100000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "XLF",
-        "action": "buy",
-        "notional_value": 50000
+        "notional_value": 125000
       },
       "status": "skipped",
       "reason": "No available buying power."
@@ -51,7 +33,25 @@
       "trade": {
         "ticker": "AVGO",
         "action": "buy",
-        "notional_value": 50000
+        "notional_value": 125000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "MU",
+        "action": "buy",
+        "notional_value": 125000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLF",
+        "action": "buy",
+        "notional_value": 75000
       },
       "status": "skipped",
       "reason": "No available buying power."
