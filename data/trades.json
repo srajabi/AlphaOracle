@@ -1,32 +1,12 @@
 [
     {
-        "ticker": "SPY",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 100000
+        "notional_value": 40000
     },
     {
         "ticker": "CRWD",
         "action": "buy",
-        "notional_value": 140000
-    },
-    {
-        "ticker": "AVGO",
-        "action": "buy",
-        "notional_value": 140000
-    },
-    {
-        "ticker": "PLTR",
-        "action": "buy",
-        "notional_value": 140000
-    },
-    {
-        "ticker": "NBIS",
-        "action": "buy",
-        "notional_value": 140000
-    },
-    {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 100000
+        "notional_value": 10000
     }
 ]

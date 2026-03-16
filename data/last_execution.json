@@ -1,12 +1,12 @@
 {
-  "last_updated_utc": "2026-03-13T20:57:09.018913+00:00",
+  "last_updated_utc": "2026-03-16T15:38:34.920093+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "SPY",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 100000
+        "notional_value": 40000
       },
       "status": "skipped",
       "reason": "No available buying power."
@@ -15,43 +15,7 @@
       "trade": {
         "ticker": "CRWD",
         "action": "buy",
-        "notional_value": 140000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "AVGO",
-        "action": "buy",
-        "notional_value": 140000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "PLTR",
-        "action": "buy",
-        "notional_value": 140000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "NBIS",
-        "action": "buy",
-        "notional_value": 140000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 100000
+        "notional_value": 10000
       },
       "status": "skipped",
       "reason": "No available buying power."
