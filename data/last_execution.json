@@ -1,12 +1,21 @@
 {
-  "last_updated_utc": "2026-03-16T15:38:34.920093+00:00",
+  "last_updated_utc": "2026-03-16T20:55:28.897064+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "XLE",
+        "ticker": "SPY",
         "action": "buy",
-        "notional_value": 40000
+        "notional_value": 80000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "MSFT",
+        "action": "buy",
+        "notional_value": 100000
       },
       "status": "skipped",
       "reason": "No available buying power."
@@ -15,7 +24,34 @@
       "trade": {
         "ticker": "CRWD",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 80000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "PLTR",
+        "action": "buy",
+        "notional_value": 80000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 100000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLF",
+        "action": "buy",
+        "notional_value": 40000
       },
       "status": "skipped",
       "reason": "No available buying power."

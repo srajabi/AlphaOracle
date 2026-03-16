@@ -5,117 +5,177 @@ date: "2026-03-16"
 
 ## Model: deepseek/deepseek-reasoner
 
-## Technical Analysis Summary
-**Current Regime:** Bull Volatile → Favors opportunistic mean-reversion plays and breakout setups with tight risk management.
+Based on the technical analysis of the provided market data, the following mean reversion bounce setups have been identified. These selections prioritize oversold conditions (RSI near or below 30), price at or below the lower Bollinger Band, and alignment with the "Bull Volatile" regime and sector preferences. Each trade is allocated approximately 10% of the starting capital ($1,000,000), resulting in a total allocation of 70% to equities, leaving 30% in cash for flexibility.
 
-Based purely on price action, moving averages, RSI, and MACD analysis, here are the clearest setups, categorized by opportunity type.
+**Trades:**
+- **SPY**: Broad U.S. market ETF, oversold (RSI 33.54) and below the lower Bollinger Band, indicating a high-probability bounce in a bullish regime.
+- **QQQ**: Nasdaq 100 ETF, slightly below the lower band with RSI 39.85, offering exposure to oversold tech sectors.
+- **AAPL**: Oversold (RSI 34.59) and below the lower band, with strong fundamentals and liquidity.
+- **META**: Similarly oversold (RSI 35.82) and below the lower band, poised for a technical rebound.
+- **MSFT**: Near support (lower band) with a bullish MACD crossover (positive histogram), despite a less extreme RSI (38.93).
+- **XLF**: Financials ETF, deeply oversold (RSI 29.42) at the lower band, aligning with value and yield themes.
+- **VGK**: Europe ETF, oversold (RSI 28.42) near the lower band, providing international diversification.
 
-### 1. Strongest Mean Reversion / Oversold Bounce Candidates
-These securities are deeply oversold on daily RSI and trading at or near key support levels, suggesting a high-probability technical bounce is likely.
+**Execution:**
+All orders are set as market orders at the closing price. Position sizes are calculated to approximate $100,000 each, with slight rounding for practical lot sizes.
 
-*   **VGK (Europe ETF):**
-    *   **Setup:** Extreme oversold bounce.
-    *   **Rationale:** RSI at **28.42** (deepest oversold condition in the dataset). Price ($82.16) is below all SMAs (20, 50, 200), indicating a washed-out state. MACD is negative but histogram is stabilizing. Price is hovering just above its Bollinger Band lower boundary ($81.92).
-    *   **Action:** High-conviction long for a bounce to the 20-SMA ($87.29).
+```csv
+Ticker,Action,Quantity,Price
+SPY,BUY,151,662.29
+QQQ,BUY,168,593.72
+AAPL,BUY,400,250.12
+META,BUY,163,613.71
+MSFT,BUY,253,395.55
+XLF,BUY,2045,48.89
+VGK,BUY,1217,82.16
+```
 
-*   **VXUS (International ex-US ETF):**
-    *   **Setup:** Oversold bounce.
-    *   **Rationale:** RSI at **33.22**. Price ($76.74) is below all SMAs, sitting directly on its Bollinger Band lower boundary ($76.37). MACD histogram shows decelerating negative momentum.
-    *   **Action:** Strong long candidate for reversion toward the 20-SMA ($81.08).
-
-*   **VT (Total World Stock ETF):**
-    *   **Setup:** Oversold bounce.
-    *   **Rationale:** RSI at **32.38**. Price ($139.52) is below all SMAs, testing the Bollinger Band lower boundary ($139.98). Structure similar to VXUS and VGK.
-    *   **Action:** Long for a bounce, targeting the 20-SMA ($145.25).
-
-*   **XLF (Financials ETF):**
-    *   **Setup:** Oversold bounce at key level.
-    *   **Rationale:** RSI at **29.42**. Price ($48.89) is precisely at its **Bollinger Band lower boundary** ($48.92) and well below all declining SMAs. This is a clean support test.
-    *   **Action:** Tactical long, with a stop below the day's low. Target initial move to $50.50 (prior minor resistance).
-
-*   **AAPL:**
-    *   **Setup:** Oversold bounce from major moving average support.
-    *   **Rationale:** RSI at **34.59**. Price ($250.12) is testing its **rising 200-SMA ($245.20)** as major support. It's below the 20 & 50 SMA, but the 200-SMA should provide a floor. MACD is negative but histogram is flat.
-    *   **Action:** High-probability long near the 200-SMA, targeting a move back toward the 20-SMA ($262.75).
-
-### 2. Momentum / Bullish Continuation Setups
-These are showing relative strength and bullish momentum characteristics within the volatile regime.
-
-*   **CRWD:**
-    *   **Setup:** Strong momentum breakout.
-    *   **Rationale:** Price ($441.78) is above all SMAs (20, 50, 200). RSI at **59.48** is strong but not overbought. **MACD histogram is powerfully positive at +8.46**, indicating strong accelerating upside momentum. Trading near the upper Bollinger Band suggests continuation.
-    *   **Action:** Hold/add on pullbacks. Pure momentum play.
-
-*   **NBIS (Cloud/AI Infrastructure):**
-    *   **Setup:** Breakout and momentum.
-    *   **Rationale:** Price ($112.95) is above all SMAs, with the 20-SMA > 50-SMA > 200-SMA (bullish alignment). RSI at **60.46** shows strength. MACD is positive and above its signal line (bullish crossover confirmed). Recently broke to new highs.
-    *   **Action:** Momentum long. Use the 20-SMA ($99.66) as a trailing stop.
-
-*   **MU:**
-    *   **Setup:** Strong uptrend consolidation.
-    *   **Rationale:** Price ($426.13) is above all sharply rising SMAs (bullish alignment). RSI at **57.07** is healthy. MACD is positive. It is consolidating near highs after a powerful run, which is a bullish flag.
-    *   **Action:** Look for a breakout above recent highs for continuation.
-
-*   **XLE (Energy ETF):**
-    *   **Setup:** Powerful bullish trend, but extended.
-    *   **Rationale:** Price ($57.70) is above all rising SMAs. RSI at **70.23** is **overbought**, suggesting a pullback is imminent. However, the trend is unequivocally strong (200-SMA at $45.45). MACD is positive.
-    *   **Action:** Not a buy here due to overbought RSI. Wait for a pullback to the 20-SMA ($55.80) or a Bollinger Band mid-line touch for a better risk/reward entry.
-
-### 3. Volatility Contraction / Squeeze Setups
-These are trading in tight ranges with converging Bollinger Bands and neutral momentum, suggesting a significant move is being coiled.
-
-*   **INTC:**
-    *   **Setup:** Symmetrical triangle / low-volatility coil.
-    *   **Rationale:** Price ($45.77) is sandwiched between the 20-SMA ($45.49) and 50-SMA ($46.01), with the 200-SMA far below ($33.56). RSI is neutral at **49.98**. Bollinger Band width is relatively tight. MACD histogram is positive, suggesting underlying bid.
-    *   **Action:** Watch for a directional breakout above $46.50 or below $44.50. Bias is slightly bullish for a test of the 50-SMA/200-SMA gap.
-
-*   **SCHD:**
-    *   **Setup:** Tight range at key moving averages.
-    *   **Rationale:** Price ($30.80) is compressing between the 20-SMA ($31.38) and 50-SMA ($30.21). RSI is neutral at **46.08**. Very tight Bollinger Bands. This is a classic volatility squeeze.
-    *   **Action:** The breakout direction will be telling for the dividend/value segment. Monitor for a move outside $30.75-$31.40.
-
-*   **NVDA:**
-    *   **Setup:** Coiling after a pullback.
-    *   **Rationale:** Price ($180.25) is between the 20-SMA ($184.95) and 200-SMA ($177.37). RSI is neutral at **45.23**. Bollinger Bands are narrowing. MACD histogram is slightly negative but flattening. It's digesting its recent decline.
-    *   **Action:** A critical watch. A hold above the 200-SMA and move above the 20-SMA would be very bullish. A break below the 200-SMA could trigger further selling.
-
-### 4. Bearish / Avoid Setups (For Now)
-Weak structure suggests further downside or absent momentum.
-
-*   **META:** Deeply oversold (RSI 35.82) but with strong negative momentum (MACD -5.37). It's a falling knife; wait for a base formation.
-*   **TSM:** Below all major SMAs, negative MACD crossover, RSI weak at 42.68. In a downtrend.
-*   **KLAC:** Similar to TSM: below SMAs, strong negative MACD histogram, RSI weak.
-*   **TLN:** In a severe downtrend, below all SMAs, massive negative MACD. Avoid.
-
----
-
-## Actionable Trade Ideas for Portfolio & Watchlist
-
-**Given the "Bull Volatile" regime and your empty portfolio, the priority is to establish initial positions with a focus on risk-adjusted mean reversion and clear momentum.**
-
-1.  **Primary Entry (Mean Reversion Basket):** Allocate ~40% of intended equity capital.
-    *   **VGK, VXUS, VT:** Buy equal weights. These are highly correlated, deep oversold ETFs. The thesis is a synchronized bounce in international equities. Set stops below their respective Bollinger Band lows (3-4% risk).
-    *   **XLF:** Tactical buy at current level ($48.89) with a tight stop at $48.50. Target $50.50.
-
-2.  **Secondary Entry (Momentum / Trend):** Allocate ~30%.
-    *   **CRWD & NBIS:** Buy on any minor dip. These are leading momentum names. Use a trailing stop below the 10-period SMA or a recent swing low (e.g., -5% from entry).
-    *   **MU:** Buy a breakout above $430 for continuation.
-
-3.  **Watchlist for Pullback Entries (High Priority):**
-    *   **AAPL:** **Set a buy limit order at $247.00** (near the 200-SMA). This automates entry at a key support level.
-    *   **XLE:** Set alert for a pullback to $56.00 (near 20-SMA) for a trend-following entry.
-    *   **NVDA:** Monitor for a bullish MACD crossover and close above the 20-SMA ($185) as a signal to enter.
-
-**Summary:** The market shows clear bifurcation: **International & Financials are oversold and ripe for a bounce**, while **AI Infrastructure & Semiconductors (CRWD, NBIS, MU) show commanding strength**. Start by fishing in the oversold pond for higher probability wins, then allocate to confirmed strength. Avoid stocks in clear downtrends (TLN, TSM, KLAC) despite seemingly "cheap" prices.
+**Risk Management:**
+Consider implementing trailing stops (e.g., 5-8% below entry) or profit targets (e.g., upper Bollinger Band or RSI > 60) to manage volatility. Monitor broader market indicators (VIX, yield curves) for any regime shifts.
 
 ---
 
 ## Model: gemini/gemini-2.5-flash
 
-Error: litellm.ServiceUnavailableError: GeminiException - {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
+Based on the provided market data for 2026-03-16 and the "Bull Volatile" regime, I have analyzed each ticker for potential mean reversion bounces or volatility contraction squeezes, purely using price action, SMAs, RSI, MACD, and Bollinger Bands.
+
+Here are the identified setups:
+
+---
+
+### **A. Mean Reversion Bounce Candidates (from Oversold Conditions)**
+
+These assets are showing signs of being oversold, typically indicated by their price falling below the lower Bollinger Band or their RSI entering oversold territory (<35-40), suggesting a potential bounce back towards their mean.
+
+1.  **XLF (Financials ETF)**
+    *   **Price Action**: Close (48.89) is slightly *below* its Bollinger Band Lower (48.92), indicating an oversold condition. It is well below SMA_20 (51.11), SMA_50 (52.90), and SMA_200 (52.60), showing a strong short-to-long term downtrend.
+    *   **RSI (14)**: **29.42 (OVERSOLD)**. This is a strong oversold signal.
+    *   **MACD**: Bearish (MACD: -0.99, Signal: -0.79, Hist: -0.21), with negative momentum.
+    *   **Setup**: Strong candidate for a mean reversion bounce due to price below BB_lower and deeply oversold RSI.
+
+2.  **VGK (Europe ETF)**
+    *   **Price Action**: Close (82.16) is very close to its Bollinger Band Lower (81.92). It is well below SMA_20 (87.29) and SMA_50 (87.03), and just above SMA_200 (80.54), suggesting a critical support test.
+    *   **RSI (14)**: **28.42 (OVERSOLD)**. This is a very strong oversold signal.
+    *   **MACD**: Bearish (MACD: -1.18, Signal: -0.46, Hist: -0.72), with negative momentum.
+    *   **Setup**: Excellent candidate for a mean reversion bounce due to deeply oversold RSI and proximity to BB_lower and SMA_200 support.
+
+3.  **VOO (S&P 500 Proxy)**
+    *   **Price Action**: Close (609.09) is slightly *below* its Bollinger Band Lower (612.85), indicating an oversold condition. It is well below SMA_20 (626.73) and SMA_50 (631.25), but just above SMA_200 (603.55), at a critical support level.
+    *   **RSI (14)**: 33.53 (Approaching oversold).
+    *   **MACD**: Bearish (MACD: -4.43, Signal: -2.43, Hist: -1.99), with negative momentum.
+    *   **Setup**: Strong candidate for a mean reversion bounce, primarily driven by being below BB_lower and testing SMA_200, with RSI nearing oversold.
+
+4.  **META (Technology)**
+    *   **Price Action**: Close (613.71) is *below* its Bollinger Band Lower (624.92), indicating an oversold condition. It is well below all key SMAs (SMA_20: 647.41, SMA_50: 654.26, SMA_200: 691.02), implying a strong downtrend.
+    *   **RSI (14)**: 35.82 (Approaching oversold).
+    *   **MACD**: Strongly bearish (MACD: -5.37, Signal: -2.63, Hist: -2.74), with strong negative momentum.
+    *   **Setup**: Strong candidate for a mean reversion bounce due to price being below BB_lower and RSI nearing oversold.
+
+5.  **AAPL (Technology)**
+    *   **Price Action**: Close (250.12) is *below* its Bollinger Band Lower (251.25), indicating an oversold condition. It is well below SMA_20 (262.75) and SMA_50 (262.58), but just above SMA_200 (245.20), at a critical support level.
+    *   **RSI (14)**: 34.59 (Approaching oversold).
+    *   **MACD**: Bearish (MACD: -2.57, Signal: -1.11, Hist: -1.46), with negative momentum.
+    *   **Setup**: Strong candidate for a mean reversion bounce, driven by price below BB_lower and RSI nearing oversold, while testing SMA_200.
+
+6.  **SPY (S&P 500 Proxy)**
+    *   **Price Action**: Close (662.29) is *below* its Bollinger Band Lower (666.38), indicating an oversold condition. It is well below SMA_20 (681.43) and SMA_50 (686.38), but above SMA_200 (656.41), suggesting a critical support test.
+    *   **RSI (14)**: 33.54 (Approaching oversold).
+    *   **MACD**: Bearish (MACD: -4.82, Signal: -2.66, Hist: -2.15), with negative momentum.
+    *   **Setup**: Strong candidate for a mean reversion bounce due to price below BB_lower and RSI nearing oversold, while testing SMA_200.
+
+7.  **QQQ (Nasdaq 100 Proxy)**
+    *   **Price Action**: Close (593.72) is *below* its Bollinger Band Lower (595.10), indicating an oversold condition. It is well below SMA_20 (605.35) and SMA_50 (613.33), but above SMA_200 (590.15), suggesting a critical support test.
+    *   **RSI (14)**: 39.85 (Weak, but combined with BB_lower, supports a bounce idea).
+    *   **MACD**: Bearish (MACD: -3.29, Signal: -2.58, Hist: -0.71), with negative momentum.
+    *   **Setup**: Strong candidate for a mean reversion bounce due to price below BB_lower, testing SMA_200, and weak RSI.
+
+8.  **VTI (Total US Market ETF)**
+    *   **Price Action**: Close (326.13) is *below* its Bollinger Band Lower (328.17), indicating an oversold condition. It is well below SMA_20 (336.16) and SMA_50 (338.64), but above SMA_200 (323.39), suggesting a critical support test.
+    *   **RSI (14)**: 33.25 (Approaching oversold).
+    *   **MACD**: Bearish (MACD: -2.53, Signal: -1.37, Hist: -1.16), with negative momentum.
+    *   **Setup**: Strong candidate for a mean reversion bounce due to price below BB_lower, RSI nearing oversold, and testing SMA_200.
+
+9.  **VT (Total World Stock ETF)**
+    *   **Price Action**: Close (139.52) is *below* its Bollinger Band Lower (139.98), indicating an oversold condition. It is well below SMA_20 (145.25) and SMA_50 (145.13), but above SMA_200 (136.26), suggesting a critical support test.
+    *   **RSI (14)**: 32.38 (Approaching oversold).
+    *   **MACD**: Bearish (MACD: -1.20, Signal: -0.41, Hist: -0.79), with negative momentum.
+    *   **Setup**: Strong candidate for a mean reversion bounce due to price below BB_lower, RSI nearing oversold, and testing SMA_200.
+
+10. **TLT (Bonds ETF)**
+    *   **Price Action**: Close (86.54) is *below* its Bollinger Band Lower (86.97), indicating an oversold condition. It is below SMA_20 (88.97) and SMA_50 (87.84), and just below SMA_200 (86.63), indicating a breakdown of long-term support.
+    *   **RSI (14)**: 35.19 (Approaching oversold).
+    *   **MACD**: Bearish (MACD: -0.17, Signal: 0.23, Hist: -0.40), with negative momentum.
+    *   **Setup**: Strong candidate for a mean reversion bounce due to price below BB_lower and RSI nearing oversold, despite breaking SMA_200.
+
+11. **VXUS (Total International ETF)**
+    *   **Price Action**: Close (76.74) is *below* its Bollinger Band Lower (76.37), indicating an oversold condition. It is well below SMA_20 (81.08) and SMA_50 (80.02), but well above SMA_200 (72.95), suggesting a deep pullback within a long-term uptrend.
+    *   **RSI (14)**: 33.22 (Approaching oversold).
+    *   **MACD**: Strongly bearish (MACD: -0.77, Signal: -0.09, Hist: -0.68), with negative momentum.
+    *   **Setup**: Strong candidate for a mean reversion bounce due to price below BB_lower and RSI nearing oversold.
+
+12. **EWA (Australia ETF)**
+    *   **Price Action**: Close (27.98) is *below* its Bollinger Band Lower (28.05), indicating an oversold condition. It is below SMA_20 (29.24) and SMA_50 (28.13), but above SMA_200 (26.58).
+    *   **RSI (14)**: 40.39 (Neutral to weak, but combined with BB_lower, supports a bounce idea).
+    *   **MACD**: Bearish (MACD: 0.05, Signal: 0.28, Hist: -0.23), with negative momentum.
+    *   **Setup**: Strong candidate for a mean reversion bounce due to price below BB_lower.
+
+13. **EWC (Canada ETF)**
+    *   **Price Action**: Close (55.03) is *below* its Bollinger Band Lower (55.28), indicating an oversold condition. It is below SMA_20 (56.84) and SMA_50 (55.82), but above SMA_200 (50.47).
+    *   **RSI (14)**: 39.19 (Weak, but combined with BB_lower, supports a bounce idea).
+    *   **MACD**: Bearish (MACD: 0.07, Signal: 0.37, Hist: -0.30), with negative momentum.
+    *   **Setup**: Strong candidate for a mean reversion bounce due to price below BB_lower.
+
+14. **QUAL (Quality Factor ETF)**
+    *   **Price Action**: Close (195.15) is *below* its Bollinger Band Lower (196.43), indicating an oversold condition. It is below SMA_20 (201.93) and SMA_50 (202.28), but above SMA_200 (192.48).
+    *   **RSI (14)**: 33.32 (Approaching oversold).
+    *   **MACD**: Strongly bearish (MACD: -1.33, Signal: -0.43, Hist: -0.90), with negative momentum.
+    *   **Setup**: Strong candidate for a mean reversion bounce due to price below BB_lower and RSI nearing oversold.
+
+15. **SCHD (Dividend Growth ETF)**
+    *   **Price Action**: Close (30.80) is *below* its Bollinger Band Lower (30.75), indicating an oversold condition. It is below SMA_20 (31.38) but above SMA_50 (30.21) and SMA_200 (27.58).
+    *   **RSI (14)**: 46.08 (Neutral, but combined with BB_lower, supports a bounce idea).
+    *   **MACD**: Bearish (MACD: 0.15, Signal: 0.34, Hist: -0.19), with negative momentum.
+    *   **Setup**: Moderate candidate for a mean reversion bounce due to price below BB_lower, also a volatility contraction squeeze candidate (see below).
+
+---
+
+### **B. Volatility Contraction Squeeze Candidates**
+
+These assets are showing narrow Bollinger Bands, indicating low volatility and consolidation, which often precedes a significant price move (breakout).
+
+1.  **SCHD (Dividend Growth ETF)**
+    *   **Bollinger Band Width**: **4.10%** (`(BB_upper - BB_lower) / close * 100`). This is a very tight band width, indicating strong volatility contraction.
+    *   **Price Action**: Close (30.80) is just *below* BB_lower, suggesting a possible false breakdown or an attempt to move lower, but within a very tight range. Price is between SMA_20 and SMA_50, above SMA_200.
+    *   **RSI (14)**: 46.08 (Neutral).
+    *   **MACD**: Bearish momentum (MACD: 0.15, Signal: 0.34, Hist: -0.19).
+    *   **Setup**: Very strong volatility contraction squeeze. The direction of the impending breakout is not clear, but a large move is likely. The slight breach of BB_lower could indicate a downward bias or a swift snapback if the squeeze resolves upwards.
+
+2.  **XLU (Utilities Sector ETF)**
+    *   **Bollinger Band Width**: **4.28%** (`(BB_upper - BB_lower) / close * 100`). This is a very tight band width, indicating strong volatility contraction.
+    *   **Price Action**: Close (46.96) is above SMA_20, SMA_50, and SMA_200, within an uptrend. Price is near the BB_upper.
+    *   **RSI (14)**: 60.48 (Strong, but not overbought).
+    *   **MACD**: Momentum is turning bearish (MACD: 0.60, Signal: 0.77, Hist: -0.17).
+    *   **Setup**: Strong volatility contraction squeeze. Given the MACD turning bearish and price near BB_upper (and XLE being overbought), a consolidation or slight pullback within the squeeze is likely before a directional move.
+
+---
+
+### **C. Potential Momentum Shift for Bounce (MACD Crossover)**
+
+These assets show a bullish MACD crossover with positive MACD Histogram, indicating a recent shift in momentum to the upside, which could lead to a bounce or continuation of a nascent uptrend. Note these are not necessarily from deep oversold positions like the 'mean reversion bounce' candidates above.
+
+*   **AMZN**: Bullish MACD crossover (MACD: -2.51 > Signal: -3.35, Hist: 0.84).
+*   **GOOGL**: Bullish MACD crossover (MACD: -4.03 > Signal: -4.34, Hist: 0.31).
+*   **AMD**: Bullish MACD crossover (MACD: -5.12 > Signal: -5.57, Hist: 0.45).
+*   **MSFT**: Strong bullish MACD crossover (MACD: -6.08 > Signal: -8.26, Hist: 2.17).
+*   **AVGO**: Bullish MACD crossover (MACD: 0.13 > Signal: -0.90, Hist: 1.03).
+*   **PLTR**: Strong bullish MACD crossover (MACD: 1.14 > Signal: -1.11, Hist: 2.25).
+*   **IBIT**: Bullish MACD crossover (MACD: -0.88 > Signal: -1.49, Hist: 0.61).
+*   **ORCL**: Strong bullish MACD crossover (MACD: -2.25 > Signal: -4.43, Hist: 2.17).
+
+---
+
+**Summary of Actionable Setups:**
+
+*   **For Mean Reversion Bounce opportunities**: Focus on **XLF**, **VGK**, **VOO**, **META**, **AAPL**, **SPY**, **QQQ**, **VTI**, **VT**, **TLT**, **VXUS**, **EWA**, **EWC**, and **QUAL**. These assets are significantly oversold based on Bollinger Bands and/or RSI, indicating a higher probability of a short-term upward correction.
+*   **For Volatility Contraction Squeeze opportunities**: Monitor **SCHD** and **XLU**. These are consolidating tightly and an explosive move in either direction is imminent. While SCHD is showing an immediate oversold signal (below BB_lower), XLU is in an uptrend with MACD turning bearish, indicating potential consolidation or pullback before its next move.
+*   **For Momentum Plays**: **MSFT**, **PLTR**, and **ORCL** show strong bullish MACD crossovers, suggesting they could be initiating or resuming an uptrend.
