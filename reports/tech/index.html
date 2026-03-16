@@ -1,72 +1,159 @@
 <!DOCTYPE html><html lang="en" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/AlphaOracle/favicon.svg"><link rel="icon" href="/AlphaOracle/favicon.ico"><meta name="generator" content="Astro v5.18.0"><title>Technical Analyst Report</title><style>html,body{margin:0;width:100%;height:100%;background:#0b0e14;color:#f8f9fa;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
 main[data-astro-cid-ipuyqs4v]{max-width:850px;margin:0 auto;padding:3rem 1.5rem;line-height:1.7;color:#d1d4dc}a[data-astro-cid-ipuyqs4v]{text-decoration:none;color:#8f949e;font-size:.9rem;font-weight:500}a[data-astro-cid-ipuyqs4v]:hover{color:#fff}header[data-astro-cid-ipuyqs4v]{margin:2rem 0 3rem;border-bottom:1px solid #2a2e39;padding-bottom:1.5rem}h1[data-astro-cid-ipuyqs4v]{margin:0;font-size:3rem;color:#fff;font-weight:800;letter-spacing:-.02em}.date[data-astro-cid-ipuyqs4v]{color:#8f949e;margin-top:.5rem}article[data-astro-cid-ipuyqs4v]{font-size:1.15rem}article[data-astro-cid-ipuyqs4v] h2{margin-top:3rem;color:#fff;font-size:1.75rem;border-bottom:1px solid #2a2e39;padding-bottom:.5rem}article[data-astro-cid-ipuyqs4v] h3{margin-top:2rem;color:#fff}article[data-astro-cid-ipuyqs4v] p{margin-bottom:1.5rem}article[data-astro-cid-ipuyqs4v] table{width:100%;border-collapse:collapse;margin:2.5rem 0;background:#131722;border-radius:8px;overflow:hidden;border:1px solid #2a2e39}article[data-astro-cid-ipuyqs4v] th,article[data-astro-cid-ipuyqs4v] td{border:1px solid #2a2e39;padding:1rem;text-align:left}article[data-astro-cid-ipuyqs4v] th{background:#1c212d;color:#8f949e;text-transform:uppercase;font-size:.8rem;letter-spacing:.05em}article[data-astro-cid-ipuyqs4v] strong{color:#fff}
-</style></head> <body data-astro-cid-sckkx6r4>  <main data-astro-cid-ipuyqs4v> <a href="/AlphaOracle/" data-astro-cid-ipuyqs4v>← Back to Dashboard</a> <header data-astro-cid-ipuyqs4v> <h1 data-astro-cid-ipuyqs4v>Technical Analyst Report</h1> <p class="date" data-astro-cid-ipuyqs4v>2026-03-13</p> </header> <article data-astro-cid-ipuyqs4v> <h2 id="model-deepseekdeepseek-reasoner">Model: deepseek/deepseek-reasoner</h2>
-<p>Based on the technical analysis of price action, moving averages, RSI, and MACD in the current “Bull Volatile” regime, I have identified several oversold mean reversion bounce setups. The strategy focuses on high-quality, liquid instruments with strong long-term trends (above SMA_200) that are experiencing short-term weakness, providing favorable risk/reward entry points.</p>
-<p>The selected positions align with the investment thesis: broad market exposure (SPY, QQQ), AI infrastructure (TSM, KLAC), international diversification (VGK), and a fixed income hedge (TLT). Each setup shows oversold RSI, proximity to lower Bollinger Bands, and bullish MACD divergences or histogram extremes, indicating potential for near-term rebounds.</p>
-<p>Here are the calculated trades to deploy 90% of the capital, leaving 10% in cash for flexibility:</p>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="csv"><code><span class="line"><span style="color:#E1E4E8">Ticker,</span><span style="color:#F97583">Action,</span><span style="color:#B392F0">Quantity,</span><span style="color:#6A737D">Price,</span><span style="color:#9ECBFF">Type</span></span>
-<span class="line"><span style="color:#E1E4E8">SPY,</span><span style="color:#F97583">BUY,</span><span style="color:#B392F0">225,</span><span style="color:#6A737D">666.06,</span><span style="color:#9ECBFF">Equity</span></span>
-<span class="line"><span style="color:#E1E4E8">QQQ,</span><span style="color:#F97583">BUY,</span><span style="color:#B392F0">251,</span><span style="color:#6A737D">597.26,</span><span style="color:#9ECBFF">Equity</span></span>
-<span class="line"><span style="color:#E1E4E8">TSM,</span><span style="color:#F97583">BUY,</span><span style="color:#B392F0">445,</span><span style="color:#6A737D">336.71,</span><span style="color:#9ECBFF">Equity</span></span>
-<span class="line"><span style="color:#E1E4E8">KLAC,</span><span style="color:#F97583">BUY,</span><span style="color:#B392F0">106,</span><span style="color:#6A737D">1409.57,</span><span style="color:#9ECBFF">Equity</span></span>
-<span class="line"><span style="color:#E1E4E8">VGK,</span><span style="color:#F97583">BUY,</span><span style="color:#B392F0">1800,</span><span style="color:#6A737D">83.30,</span><span style="color:#9ECBFF">Equity</span></span>
-<span class="line"><span style="color:#E1E4E8">TLT,</span><span style="color:#F97583">BUY,</span><span style="color:#B392F0">1724,</span><span style="color:#6A737D">86.97,</span><span style="color:#9ECBFF">Fixed Income</span></span></code></pre>
-<p><em>Note: Prices are based on the provided closing prices and are intended as limit order levels for execution. Position sizes are calculated to allocate approximately $150,000 per position, totaling ~$898,902 invested, with ~$101,098 remaining in cash.</em></p>
+</style></head> <body data-astro-cid-sckkx6r4>  <main data-astro-cid-ipuyqs4v> <a href="/AlphaOracle/" data-astro-cid-ipuyqs4v>← Back to Dashboard</a> <header data-astro-cid-ipuyqs4v> <h1 data-astro-cid-ipuyqs4v>Technical Analyst Report</h1> <p class="date" data-astro-cid-ipuyqs4v>2026-03-16</p> </header> <article data-astro-cid-ipuyqs4v> <h2 id="model-deepseekdeepseek-reasoner">Model: deepseek/deepseek-reasoner</h2>
+<h2 id="technical-analysis-summary">Technical Analysis Summary</h2>
+<p><strong>Current Regime:</strong> Bull Volatile → Favors opportunistic mean-reversion plays and breakout setups with tight risk management.</p>
+<p>Based purely on price action, moving averages, RSI, and MACD analysis, here are the clearest setups, categorized by opportunity type.</p>
+<h3 id="1-strongest-mean-reversion--oversold-bounce-candidates">1. Strongest Mean Reversion / Oversold Bounce Candidates</h3>
+<p>These securities are deeply oversold on daily RSI and trading at or near key support levels, suggesting a high-probability technical bounce is likely.</p>
+<ul>
+<li>
+<p><strong>VGK (Europe ETF):</strong></p>
+<ul>
+<li><strong>Setup:</strong> Extreme oversold bounce.</li>
+<li><strong>Rationale:</strong> RSI at <strong>28.42</strong> (deepest oversold condition in the dataset). Price ($82.16) is below all SMAs (20, 50, 200), indicating a washed-out state. MACD is negative but histogram is stabilizing. Price is hovering just above its Bollinger Band lower boundary ($81.92).</li>
+<li><strong>Action:</strong> High-conviction long for a bounce to the 20-SMA ($87.29).</li>
+</ul>
+</li>
+<li>
+<p><strong>VXUS (International ex-US ETF):</strong></p>
+<ul>
+<li><strong>Setup:</strong> Oversold bounce.</li>
+<li><strong>Rationale:</strong> RSI at <strong>33.22</strong>. Price ($76.74) is below all SMAs, sitting directly on its Bollinger Band lower boundary ($76.37). MACD histogram shows decelerating negative momentum.</li>
+<li><strong>Action:</strong> Strong long candidate for reversion toward the 20-SMA ($81.08).</li>
+</ul>
+</li>
+<li>
+<p><strong>VT (Total World Stock ETF):</strong></p>
+<ul>
+<li><strong>Setup:</strong> Oversold bounce.</li>
+<li><strong>Rationale:</strong> RSI at <strong>32.38</strong>. Price ($139.52) is below all SMAs, testing the Bollinger Band lower boundary ($139.98). Structure similar to VXUS and VGK.</li>
+<li><strong>Action:</strong> Long for a bounce, targeting the 20-SMA ($145.25).</li>
+</ul>
+</li>
+<li>
+<p><strong>XLF (Financials ETF):</strong></p>
+<ul>
+<li><strong>Setup:</strong> Oversold bounce at key level.</li>
+<li><strong>Rationale:</strong> RSI at <strong>29.42</strong>. Price ($48.89) is precisely at its <strong>Bollinger Band lower boundary</strong> ($48.92) and well below all declining SMAs. This is a clean support test.</li>
+<li><strong>Action:</strong> Tactical long, with a stop below the day’s low. Target initial move to $50.50 (prior minor resistance).</li>
+</ul>
+</li>
+<li>
+<p><strong>AAPL:</strong></p>
+<ul>
+<li><strong>Setup:</strong> Oversold bounce from major moving average support.</li>
+<li><strong>Rationale:</strong> RSI at <strong>34.59</strong>. Price ($250.12) is testing its <strong>rising 200-SMA ($245.20)</strong> as major support. It’s below the 20 &#x26; 50 SMA, but the 200-SMA should provide a floor. MACD is negative but histogram is flat.</li>
+<li><strong>Action:</strong> High-probability long near the 200-SMA, targeting a move back toward the 20-SMA ($262.75).</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-momentum--bullish-continuation-setups">2. Momentum / Bullish Continuation Setups</h3>
+<p>These are showing relative strength and bullish momentum characteristics within the volatile regime.</p>
+<ul>
+<li>
+<p><strong>CRWD:</strong></p>
+<ul>
+<li><strong>Setup:</strong> Strong momentum breakout.</li>
+<li><strong>Rationale:</strong> Price ($441.78) is above all SMAs (20, 50, 200). RSI at <strong>59.48</strong> is strong but not overbought. <strong>MACD histogram is powerfully positive at +8.46</strong>, indicating strong accelerating upside momentum. Trading near the upper Bollinger Band suggests continuation.</li>
+<li><strong>Action:</strong> Hold/add on pullbacks. Pure momentum play.</li>
+</ul>
+</li>
+<li>
+<p><strong>NBIS (Cloud/AI Infrastructure):</strong></p>
+<ul>
+<li><strong>Setup:</strong> Breakout and momentum.</li>
+<li><strong>Rationale:</strong> Price ($112.95) is above all SMAs, with the 20-SMA > 50-SMA > 200-SMA (bullish alignment). RSI at <strong>60.46</strong> shows strength. MACD is positive and above its signal line (bullish crossover confirmed). Recently broke to new highs.</li>
+<li><strong>Action:</strong> Momentum long. Use the 20-SMA ($99.66) as a trailing stop.</li>
+</ul>
+</li>
+<li>
+<p><strong>MU:</strong></p>
+<ul>
+<li><strong>Setup:</strong> Strong uptrend consolidation.</li>
+<li><strong>Rationale:</strong> Price ($426.13) is above all sharply rising SMAs (bullish alignment). RSI at <strong>57.07</strong> is healthy. MACD is positive. It is consolidating near highs after a powerful run, which is a bullish flag.</li>
+<li><strong>Action:</strong> Look for a breakout above recent highs for continuation.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLE (Energy ETF):</strong></p>
+<ul>
+<li><strong>Setup:</strong> Powerful bullish trend, but extended.</li>
+<li><strong>Rationale:</strong> Price ($57.70) is above all rising SMAs. RSI at <strong>70.23</strong> is <strong>overbought</strong>, suggesting a pullback is imminent. However, the trend is unequivocally strong (200-SMA at $45.45). MACD is positive.</li>
+<li><strong>Action:</strong> Not a buy here due to overbought RSI. Wait for a pullback to the 20-SMA ($55.80) or a Bollinger Band mid-line touch for a better risk/reward entry.</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-volatility-contraction--squeeze-setups">3. Volatility Contraction / Squeeze Setups</h3>
+<p>These are trading in tight ranges with converging Bollinger Bands and neutral momentum, suggesting a significant move is being coiled.</p>
+<ul>
+<li>
+<p><strong>INTC:</strong></p>
+<ul>
+<li><strong>Setup:</strong> Symmetrical triangle / low-volatility coil.</li>
+<li><strong>Rationale:</strong> Price ($45.77) is sandwiched between the 20-SMA ($45.49) and 50-SMA ($46.01), with the 200-SMA far below ($33.56). RSI is neutral at <strong>49.98</strong>. Bollinger Band width is relatively tight. MACD histogram is positive, suggesting underlying bid.</li>
+<li><strong>Action:</strong> Watch for a directional breakout above $46.50 or below $44.50. Bias is slightly bullish for a test of the 50-SMA/200-SMA gap.</li>
+</ul>
+</li>
+<li>
+<p><strong>SCHD:</strong></p>
+<ul>
+<li><strong>Setup:</strong> Tight range at key moving averages.</li>
+<li><strong>Rationale:</strong> Price ($30.80) is compressing between the 20-SMA ($31.38) and 50-SMA ($30.21). RSI is neutral at <strong>46.08</strong>. Very tight Bollinger Bands. This is a classic volatility squeeze.</li>
+<li><strong>Action:</strong> The breakout direction will be telling for the dividend/value segment. Monitor for a move outside $30.75-$31.40.</li>
+</ul>
+</li>
+<li>
+<p><strong>NVDA:</strong></p>
+<ul>
+<li><strong>Setup:</strong> Coiling after a pullback.</li>
+<li><strong>Rationale:</strong> Price ($180.25) is between the 20-SMA ($184.95) and 200-SMA ($177.37). RSI is neutral at <strong>45.23</strong>. Bollinger Bands are narrowing. MACD histogram is slightly negative but flattening. It’s digesting its recent decline.</li>
+<li><strong>Action:</strong> A critical watch. A hold above the 200-SMA and move above the 20-SMA would be very bullish. A break below the 200-SMA could trigger further selling.</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-bearish--avoid-setups-for-now">4. Bearish / Avoid Setups (For Now)</h3>
+<p>Weak structure suggests further downside or absent momentum.</p>
+<ul>
+<li><strong>META:</strong> Deeply oversold (RSI 35.82) but with strong negative momentum (MACD -5.37). It’s a falling knife; wait for a base formation.</li>
+<li><strong>TSM:</strong> Below all major SMAs, negative MACD crossover, RSI weak at 42.68. In a downtrend.</li>
+<li><strong>KLAC:</strong> Similar to TSM: below SMAs, strong negative MACD histogram, RSI weak.</li>
+<li><strong>TLN:</strong> In a severe downtrend, below all SMAs, massive negative MACD. Avoid.</li>
+</ul>
+<hr>
+<h2 id="actionable-trade-ideas-for-portfolio--watchlist">Actionable Trade Ideas for Portfolio &#x26; Watchlist</h2>
+<p><strong>Given the “Bull Volatile” regime and your empty portfolio, the priority is to establish initial positions with a focus on risk-adjusted mean reversion and clear momentum.</strong></p>
+<ol>
+<li>
+<p><strong>Primary Entry (Mean Reversion Basket):</strong> Allocate ~40% of intended equity capital.</p>
+<ul>
+<li><strong>VGK, VXUS, VT:</strong> Buy equal weights. These are highly correlated, deep oversold ETFs. The thesis is a synchronized bounce in international equities. Set stops below their respective Bollinger Band lows (3-4% risk).</li>
+<li><strong>XLF:</strong> Tactical buy at current level ($48.89) with a tight stop at $48.50. Target $50.50.</li>
+</ul>
+</li>
+<li>
+<p><strong>Secondary Entry (Momentum / Trend):</strong> Allocate ~30%.</p>
+<ul>
+<li><strong>CRWD &#x26; NBIS:</strong> Buy on any minor dip. These are leading momentum names. Use a trailing stop below the 10-period SMA or a recent swing low (e.g., -5% from entry).</li>
+<li><strong>MU:</strong> Buy a breakout above $430 for continuation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Watchlist for Pullback Entries (High Priority):</strong></p>
+<ul>
+<li><strong>AAPL:</strong> <strong>Set a buy limit order at $247.00</strong> (near the 200-SMA). This automates entry at a key support level.</li>
+<li><strong>XLE:</strong> Set alert for a pullback to $56.00 (near 20-SMA) for a trend-following entry.</li>
+<li><strong>NVDA:</strong> Monitor for a bullish MACD crossover and close above the 20-SMA ($185) as a signal to enter.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Summary:</strong> The market shows clear bifurcation: <strong>International &#x26; Financials are oversold and ripe for a bounce</strong>, while <strong>AI Infrastructure &#x26; Semiconductors (CRWD, NBIS, MU) show commanding strength</strong>. Start by fishing in the oversold pond for higher probability wins, then allocate to confirmed strength. Avoid stocks in clear downtrends (TLN, TSM, KLAC) despite seemingly “cheap” prices.</p>
 <hr>
 <h2 id="model-geminigemini-25-flash">Model: gemini/gemini-2.5-flash</h2>
-<p><strong>Technical Analysis Report: 2026-03-13</strong></p>
-<p><strong>Market Regime:</strong> Bull Volatile</p>
-<p>The market is exhibiting characteristics of a “Bull Volatile” regime, implying an underlying bullish trend punctuated by significant short-term swings and corrections. This environment often creates opportunities for mean reversion trades (buying oversold dips) and continuation plays in strong-momentum names.</p>
-<p><strong>Broad Market &#x26; Sector Overview:</strong></p>
-<ul>
-<li><strong>Broad Market ETFs (SPY, QQQ, VOO, VTI, VT, VXUS):</strong> The overwhelming signal from broad market ETFs is <strong>oversold</strong>. SPY, VOO, VTI, and VT are all trading <em>below</em> their lower Bollinger Bands, a strong indication of short-term price dislocation and a high probability of a mean reversion bounce. QQQ and VXUS are at or very near their lower Bollinger Bands, also indicating oversold conditions. RSI levels for these ETFs are generally low (mid-30s), reinforcing the oversold thesis. MACD signals are mostly bearish, but the extreme price action suggests a potential turn.</li>
-<li><strong>Volatility (^VIX):</strong> The VIX is high (27.29) and approaching its upper Bollinger Band, with a bullish MACD cross and positive momentum. This confirms the “Volatile” aspect of the current regime. A peak in VIX often coincides with a short-term bottom in equities.</li>
-</ul>
-<p><strong>Identified Setups:</strong></p>
-<p>Based on the technical indicators (Price Action relative to SMAs, RSI, MACD, Bollinger Bands), here are the noteworthy setups:</p>
-<p><strong>1. High Conviction Mean Reversion Bounce Candidates (Oversold):</strong>
-These assets are trading at or below their lower Bollinger Bands, often with low RSI, suggesting they are stretched to the downside and ripe for a short-term rebound. This aligns well with the “Bull Volatile” regime.</p>
-<ul>
-<li><strong>SPY (S&#x26;P 500 Proxy):</strong> Close well <em>below</em> lower BB, RSI 35.73. Strong oversold signal.</li>
-<li><strong>VOO (S&#x26;P 500 Proxy):</strong> Close well <em>below</em> lower BB, RSI 35.67. Strong oversold signal.</li>
-<li><strong>VTI (Total US Market):</strong> Close well <em>below</em> lower BB, RSI 35.25. Strong oversold signal.</li>
-<li><strong>XLF (Financials Sector ETF):</strong> <strong>RSI (28.76) is oversold (&#x3C;30)</strong> and close is <em>below</em> lower BB. <strong>Highest conviction bounce candidate.</strong></li>
-<li><strong>QUAL (Quality Factor ETF):</strong> Close <em>below</em> lower BB, RSI 35.22. Strong oversold signal.</li>
-<li><strong>TLT (Bonds):</strong> Close <em>below</em> lower BB, RSI 37.69. Strong oversold signal.</li>
-<li><strong>TSM (Semiconductors):</strong> Close <em>at</em> lower BB. Bearish MACD momentum, but price is extreme.</li>
-<li><strong>AAPL (FAANG Hyperscaler):</strong> Close <em>just above</em> lower BB, RSI 39.79. Significant short-term weakness.</li>
-<li><strong>SCHD (Dividend Growth ETF):</strong> Close <em>just below</em> lower BB. Short-term dip in an otherwise bullish SMA trend.</li>
-<li><strong>VGK (Europe Proxy):</strong> Close <em>just above</em> lower BB, RSI 31.80. Significant weakness, near oversold.</li>
-<li><strong>META (FAANG Hyperscaler):</strong> Close <em>just above</em> lower BB. MACD bearish. Potential for a bounce.</li>
-<li><strong>TSLA (Consumer Discretionary):</strong> Close <em>just above</em> lower BB, coupled with a fresh bullish MACD crossover (positive hist). Indicates a potential bounce initiation from oversold.</li>
-<li><strong>GOOGL (FAANG Hyperscaler):</strong> Close <em>just above</em> lower BB, coupled with a fresh bullish MACD crossover (positive hist). Indicates a potential bounce initiation.</li>
-<li><strong>AMD (Semiconductors):</strong> Close closer to lower BB, with a fresh bullish MACD crossover (positive hist). Potential for a bounce.</li>
-<li><strong>EWC (Canada TSX Proxy) &#x26; EWA (Australia Proxy):</strong> Both near lower BB/50-SMA support, suggesting potential for a bounce.</li>
-</ul>
-<p><strong>2. Strong Trend Continuation Candidates (Momentum Plays):</strong>
-These assets show robust upward momentum with strong bullish MACD crossovers, prices above key short-term moving averages, and usually moderate RSI, indicating room for further upside without being immediately overbought.</p>
-<ul>
-<li><strong>CRWD (Cybersecurity):</strong> <strong>Extremely strong bullish MACD crossover (hist = 9.01)</strong> from deeply negative territory, price well above 20/50 SMAs. High momentum.</li>
-<li><strong>AVGO (Semiconductors):</strong> Strong bullish MACD crossover (hist = 2.25), price above all SMAs (bullish order), moderate RSI.</li>
-<li><strong>NBIS (Cloud):</strong> Strong bullish MACD crossover (hist = 1.15), price well above all SMAs (bullish order), strong RSI.</li>
-<li><strong>NFLX (FAANG Core):</strong> Strong bullish MACD crossover (hist = 0.93), price above 20/50 SMAs, strong RSI.</li>
-<li><strong>PLTR (AI Data Platforms):</strong> Strong bullish MACD crossover (hist = 2.73), price above 20-SMA, strong RSI.</li>
-<li><strong>MSFT (FAANG Hyperscaler):</strong> Strong bullish MACD crossover (hist = 2.98), price reclaiming 20-SMA. Suggests a strong bounce within a longer-term downtrend.</li>
-<li><strong>AMZN (FAANG Hyperscaler):</strong> Strong bullish MACD crossover (hist = 1.23), price reclaiming 20-SMA. Similar to MSFT, bouncing within a downtrend.</li>
-<li><strong>ORCL (Database/Cloud AI):</strong> Strong bullish MACD crossover (hist = 2.44), price above 20-SMA. Bouncing within a downtrend.</li>
-<li><strong>IBIT (Bitcoin ETF Proxy):</strong> Bullish MACD crossover (hist = 0.61), price above 20-SMA. Bouncing within a downtrend.</li>
-</ul>
-<p><strong>3. Potential Pullback / Consolidation Candidates (Extended):</strong>
-These assets appear stretched to the upside and may be due for a short-term pullback or consolidation, despite their strong underlying trends.</p>
-<ul>
-<li><strong>XLE (Energy Sector ETF):</strong> Close <em>at</em> upper Bollinger Band, RSI (69.47) near overbought. MACD shows a recent bearish cross (loss of momentum). Potential for a short-term mean reversion downward.</li>
-</ul>
-<p><strong>Key Observations for Portfolio Strategy:</strong></p>
-<ul>
-<li>The broad market is flashing short-term oversold signals. A mean reversion bounce in indices (SPY, QQQ) seems likely given the “Bull Volatile” regime and extreme BB readings.</li>
-<li>Despite the market weakness, several AI-related technology names (CRWD, AVGO, NBIS, PLTR) are showing exceptional strength and momentum, suggesting potential leadership during a market rebound.</li>
-<li>Financials (XLF) and Bonds (TLT) are particularly oversold, presenting significant bounce opportunities if broader market sentiment improves.</li>
-<li>Monitoring the VIX for a reversal from its high levels will be crucial to confirm a potential market bottom.</li>
-</ul>
-<p><strong>Recommendations:</strong></p>
-<p>Prioritize trades that capitalize on the high conviction mean reversion opportunities in oversold broad market indices and sectors (XLF, QUAL, TLT). Simultaneously, consider strategic long positions or additions to the strong momentum names (CRWD, AVGO, NBIS, NFLX, PLTR) that appear to be leading. Carefully manage risk, especially given the “Volatile” aspect of the current regime.</p> </article> </main>  </body></html> 
+<p>Error: litellm.ServiceUnavailableError: GeminiException - {
+“error”: {
+“code”: 503,
+“message”: “This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.”,
+“status”: “UNAVAILABLE”
+}
+}</p> </article> </main>  </body></html> 
