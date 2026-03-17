@@ -1,32 +1,32 @@
 [
     {
-        "ticker": "SPY",
+        "ticker": "XLE",
+        "action": "buy",
+        "notional_value": 120000
+    },
+    {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 120000
+    },
+    {
+        "ticker": "NBIS",
+        "action": "buy",
+        "notional_value": 80000
+    },
+    {
+        "ticker": "STX",
         "action": "buy",
         "notional_value": 80000
     },
     {
         "ticker": "MSFT",
         "action": "buy",
-        "notional_value": 100000
-    },
-    {
-        "ticker": "CRWD",
-        "action": "buy",
-        "notional_value": 80000
-    },
-    {
-        "ticker": "PLTR",
-        "action": "buy",
         "notional_value": 80000
     },
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 100000
-    },
-    {
-        "ticker": "XLF",
-        "action": "buy",
-        "notional_value": 40000
+        "notional_value": 80000
     }
 ]

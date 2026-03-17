@@ -1,10 +1,37 @@
 {
-  "last_updated_utc": "2026-03-16T20:55:28.897064+00:00",
+  "last_updated_utc": "2026-03-17T15:29:38.983574+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "SPY",
+        "ticker": "XLE",
+        "action": "buy",
+        "notional_value": 120000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 120000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "NBIS",
+        "action": "buy",
+        "notional_value": 80000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "STX",
         "action": "buy",
         "notional_value": 80000
       },
@@ -15,24 +42,6 @@
       "trade": {
         "ticker": "MSFT",
         "action": "buy",
-        "notional_value": 100000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "CRWD",
-        "action": "buy",
-        "notional_value": 80000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "PLTR",
-        "action": "buy",
         "notional_value": 80000
       },
       "status": "skipped",
@@ -42,16 +51,7 @@
       "trade": {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 100000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "XLF",
-        "action": "buy",
-        "notional_value": 40000
+        "notional_value": 80000
       },
       "status": "skipped",
       "reason": "No available buying power."
