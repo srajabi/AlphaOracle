@@ -1,31 +1,31 @@
 {
   "paper_trading": true,
-  "last_updated_utc": "2026-03-17T15:29:39.577854+00:00",
+  "last_updated_utc": "2026-03-17T20:15:08.552850+00:00",
   "ok": true,
   "error": "",
   "account": {
     "status": "ACTIVE",
     "cash": -100363.5,
-    "equity": 97311.26,
+    "equity": 96810.68,
     "buying_power": 0.0,
-    "portfolio_value": 97311.26
+    "portfolio_value": 96810.68
   },
   "positions": [
     {
       "symbol": "GLD",
       "qty": 210.958737039,
-      "market_value": 96851.156175,
-      "current_price": 459.1,
+      "market_value": 96977.731417,
+      "current_price": 459.7,
       "avg_entry_price": 475.715685,
-      "unrealized_pl": -3505.223922
+      "unrealized_pl": -3378.64868
     },
     {
       "symbol": "XLU",
       "qty": 2125.958981463,
-      "market_value": 100823.604696,
-      "current_price": 47.425,
+      "market_value": 100196.446796,
+      "current_price": 47.13,
       "avg_entry_price": 47.040855,
-      "unrealized_pl": 816.676513
+      "unrealized_pl": 189.518613
     }
   ]
 }

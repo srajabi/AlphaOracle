@@ -1,32 +1,27 @@
 [
     {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 120000
-    },
-    {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 120000
+        "notional_value": 150000
     },
     {
-        "ticker": "NBIS",
+        "ticker": "IAU",
         "action": "buy",
-        "notional_value": 80000
+        "notional_value": 100000
     },
     {
-        "ticker": "STX",
+        "ticker": "MU",
         "action": "buy",
-        "notional_value": 80000
+        "notional_value": 75000
     },
     {
-        "ticker": "MSFT",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 80000
+        "notional_value": 25000
     },
     {
-        "ticker": "GLD",
+        "ticker": "WDC",
         "action": "buy",
-        "notional_value": 80000
+        "notional_value": 20000
     }
 ]

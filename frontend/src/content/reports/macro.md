@@ -5,106 +5,148 @@ date: "2026-03-17"
 
 ## Model: deepseek/deepseek-reasoner
 
-Based on the provided market data, investment thesis, and seasonality rules, here is the macro-strategic analysis for March 17, 2026.
+## Macro Strategy Analysis: Seasonality & Sector Rotation
 
-### 1. Seasonality & Date Context Assessment
-**Current Date:** March 17, 2026.
-*   **Presidential Cycle:** 2026 is a **midterm election year**. According to our thesis, these are historically weak and volatile during the summer (Q2-Q3), with a typical bottom in October. We are currently in **late Q1**, approaching this historically weak period. Caution is warranted.
-*   **"Sell in May" Window:** We are still within the historically stronger "November to April" period, but **we are nearing its end**. The transition into the weaker seasonal period (May-Oct) is approximately 6 weeks away. This suggests we should be evaluating positions for potential de-risking or rotation in the coming month.
-*   **Global Seasonality:**
-    *   **Australia (EWA):** The strong July seasonal tailwind is ~4 months away. No immediate catalyst from this rule.
-    *   **Europe (VGK):** The strong "Halloween Effect" (Nov-Apr) is still in force but nearing its end.
-    *   **Commodities (GLD/IAU):** We are in a **seasonal lull** for Gold. Major demand catalysts (Diwali, Lunar New Year) are in H2 2026 and Q1 2027, respectively. Current price action is driven by macro (de-dollarization hedge, central bank buying) rather than seasonal factors.
+### **Seasonality Assessment (March 17, 2026)**
 
-**Conclusion:** The calendar is a **neutral-to-cautionary** signal. We are in the final innings of the historically strong period, heading into a midterm election year summer which is typically weak. This supports a more defensive posture or a search for relative strength.
+**1. U.S. Market Calendar Position:**
+- Current date falls within the historically strong **"November to April"** period.
+- However, we are approaching the end of this favorable window. The **"Sell in May"** period begins in ~6 weeks.
+- **Critical Timing Alert:** This is a **midterm election year** (2026). Historical patterns suggest:
+  - Increased volatility typically emerges in Q2-Q3
+  - Potential for a summer correction with October bottom
+  - The current "Bull Volatile" regime aligns with this historical pattern
 
-### 2. Sector Rotation & Regime Analysis (Evidence from Data)
-The market regime is labeled **"Bull Volatile"** (VIX at 23.5, above its 200-DMA of 17.6). The data shows clear sector rotation aligning with a cautious, rate-sensitive, and politically-aware macro backdrop.
+**2. Global/Commodity Seasonality:**
+- **Gold (GLD/IAU):** No immediate seasonal catalyst. Diwali (Q3/Q4) and Lunar New Year (Q1) are distant.
+- **Australia (EWA):** July strength (financial year start) is ~3.5 months away. Current weakness may present accumulation opportunity ahead of seasonal tailwind.
+- **Europe (VGK):** Still within "Halloween Effect" window (Nov-Apr), but showing significant technical weakness (RSI 37).
 
-*   **Leadership (Outperforming / Bullish Structure):**
-    *   **Energy (XLE):** **Clear leader.** Price (57.90) is above all key SMAs (20, 50, 200). RSI is elevated at 71, showing strong momentum. This aligns perfectly with the macro view of Energy as an **inflation/geopolitical hedge** and may be pricing in potential Trump-era policies favoring domestic fossil fuels.
-    *   **Utilities (XLU):** **Defensive leadership.** Price (47.26) above all SMAs, with a healthy RSI (63). This is a classic **"bond proxy"** sector performing well, suggesting market participants are seeking yield and safety, which is consistent with a "Bull Volatile" regime.
-    *   **Specific Cyclical Strength:** **MU** and **WDC** (AI memory/storage) and **MTZ** (infrastructure) show powerful uptrends well above rising SMAs, indicating strong capital expenditure (CAPEX) cycles are overriding broader tech weakness. **STX** also shows strength. This validates the "**shovel sellers**" thesis within AI/Infrastructure.
+**3. Political Cycle Implications:**
+- Trump administration policies (protectionism, Fed pressure) create structural headwinds.
+- Current elevated VIX (23.5) reflects this political uncertainty.
+- **Action:** Defensive positioning warranted as we approach historically weak midterm summer.
 
-*   **Lagardship / Caution (Underperforming / Bearish Structure):**
-    *   **Broad Tech & Growth:** **QQQ, VOO, SPY, VTI** are all trading **below** their 20 and 50-day SMAs, with RSI in bearish territory (40-45). This indicates broad-based institutional distribution.
-    *   **Mega-Cap Tech (FAANG):** **AAPL, MSFT, META, GOOGL, AMZN** are all below their 50-day SMAs, with weak RSIs (38-47). This confirms the pressure on growth stocks.
-    *   **Semiconductors (Mixed):** While MU/WDC are strong, leaders **NVDA, AMD, AVGO, KLAC** are struggling, trading near or below key SMAs with weak momentum. This suggests **selectivity** within the semi space; it's not a blanket buy.
-    *   **Financials (XLF):** Notably weak (RSI 34, below all SMAs). This contradicts the "value" angle and suggests the market is concerned about credit quality or net interest margins in a volatile rate environment.
+---
 
-*   **Neutral / Transitional:**
-    *   **Gold (GLD/IAU):** Trading between SMAs, with middling RSI. It's consolidating after a major run (200-DMA far below). This is **holding firm as a hedge** without a clear seasonal catalyst, which is constructive.
-    *   **International (VXUS, EWC, VGK):** Mostly trading below 20-DMAs with weak RSI. They are **not showing relative strength** vs. the US currently, offering no clear diversification benefit at this moment.
+### **Sector Rotation Analysis**
 
-### 3. Macro & Cross-Asset Implications
-1.  **Rate Regime:** The strength in XLU and weakness in long-duration growth (tech) implies the market is still pricing in a **"higher-for-longer"** interest rate environment or heightened uncertainty around Fed policy. TLT (long bonds) is weak (below 20-DMA), supporting this.
-2.  **Political Hedge in Play:** The dominance of **Energy (XLE)** and **Domestic Infrastructure (MTZ)** aligns with positioning for a Trump-influenced policy landscape favoring energy independence and industrial rebuild.
-3.  **AI Trade Divergence:** The market is brutally separating the **"infrastructure builders" (MU, WDC, STX)** from the **"hyped beneficiaries" (many software names)** and even some chip designers. Our "shovel sellers" thesis is **validated by this rotation**.
-4.  **Volatility as an Asset:** The elevated VIX, trending above its medium-term averages, confirms the "volatile" regime. This environment favors tactical trading, option overwriting on core holdings, and a focus on momentum.
+**Clear Rotation into Defensives & Value:**
+1. **STRONG SECTORS (Outperformance):**
+   - **Utilities (XLU):** RSI 62.97, above all SMAs, MACD positive. Classic defensive rotation.
+   - **Energy (XLE):** RSI 71.05 (overbought), strong uptrend vs. SMAs. Inflation hedge attracting flows.
+   - **Gold (GLD/IAU):** Holding above rising 50/200 SMAs. Strategic de-dollarization hedge.
 
-### Strategic Summary & Actionable Insights
-*   **Timing:** Reduce broad market (SPY/QQQ) exposure into any strength before May. The seasonal and cyclical backdrop suggests **raising cash** for better entries in the volatile summer.
-*   **Sector Actions:**
-    *   **Overweight:** Energy (XLE), Utilities (XLU), and specific AI infrastructure (MU, WDC). These are in confirmed uptrends and align with macro narratives.
-    *   **Underweight / Be Selective:** Broad-cap Tech and Growth. If adding to tech, focus on companies with demonstrated FCF, strong balance sheets, and tangible AI infrastructure exposure (e.g., ORCL, PLTR showing relative strength here).
-    *   **Hold:** Maintain core Gold (GLD/IAU) position as a strategic hedge against de-dollarization friction and future seasonal catalysts.
-    *   **Monitor for Entry:** International markets (EWC, VGK) are weak but becoming oversold. Watch for a **relative strength turnaround** vs. SPY as a signal for diversification.
-*   **Risk Management:** In a "Bull Volatile" midterm year, **trailing stops are essential** on all cyclical positions. The leadership in defensive sectors (Utilities) is a warning sign that risk appetite is narrowing.
+2. **WEAK SECTORS (Under pressure):**
+   - **Technology/Growth:** Most tech names below 20/50 SMAs, weak RSIs (40-49 range).
+   - **Semiconductors:** TSM, KLAC, AMD all below key SMAs despite AI narrative.
+   - **Financials (XLF):** RSI 33.9 (approaching oversold), below all SMAs. Rate uncertainty pressure.
 
-The data strongly reflects a market transitioning from a pure growth bull market to a more selective, macro-driven, and volatile environment. Positioning should favor real assets, defense, and tangible capex beneficiaries while reducing exposure to expensive, long-duration growth.
+3. **Divergences Within AI Thesis:**
+   - **Infrastructure Winners:** MU (+25% above 50 SMA), WDC (+12% above 50 SMA) showing relative strength.
+   - **AI Pure Plays:** NVDA consolidating near SMAs, PLTR showing momentum (RSI 55).
+   - **Software/Storage:** PSTG, CRWD mixed but not breaking down severely.
+   - **Confirmation:** "Shovel sellers" thesis holding better than application layer.
+
+---
+
+### **Portfolio Implications & Action Plan**
+
+**Current Positioning (All Cash):** **PRUDENT** given:
+1. Approaching seasonally weak period (May-October)
+2. Midterm election year volatility ahead
+3. Mixed technical signals with defensive rotation
+
+**Recommended Action Sequence:**
+
+1. **Immediate (Next 2-4 weeks):**
+   - Deploy 20-30% into defensive hedges:
+     - **XLU** (Utilities) - Already showing strength
+     - **GLD/IAU** (Gold) - Strategic currency hedge
+     - **XLE** (Energy) - But wait for RSI pullback from 71
+
+2. **May-June (Enter Seasonal Weakness):**
+   - Prepare shopping list for oversold quality:
+     - **MSFT/AAPL** when RSI approaches 35-40
+     - **TSM/KLAC** on semiconductor washout
+     - **VTI/VOO** if SPY tests 200 SMA (~656)
+
+3. **July Onward:**
+   - **EWA** accumulation for Australian FY seasonality
+   - **International diversification (VXUS/EWC)** if USD weakens
+   - **TLT** if 10-year yield spikes above 4.5%
+
+**Risk Management Priority:**
+- Maintain 25-30% cash through summer
+- Use **trailing stops** on any new positions (7-10% below entry)
+- Monitor **VIX > 25** as signal for increased hedging
+- Watch **10-year Treasury yield** - Break above 4.5% would pressure growth further
+
+---
+
+### **Key Watchpoints Next 30 Days:**
+
+1. **Technical Levels:**
+   - SPY holding 200 SMA (656) - Critical support
+   - XLE RSI cooling from overbought
+   - Financials (XLF) showing stabilization
+
+2. **Macro Catalysts:**
+   - Fed commentary on rate path
+   - Early Q2 earnings guidance (especially semi CAPEX)
+   - Political policy announcements
+
+3. **Contrarian Opportunity:**
+   - Summer weakness in quality tech (AAPL, MSFT, GOOGL) could present **best entry since October** for Q4 rally.
+
+**Bottom Line:** The data confirms defensive rotation aligning with seasonality. **Patience is the premium strategy** - wait for better entries during expected summer volatility, while maintaining gold/utilities exposure for current regime.
 
 ---
 
 ## Model: gemini/gemini-2.5-flash
 
 **Date:** 2026-03-17
-**Regime:** Bull Volatile
+**Market Regime:** Bull Volatile (confirmed by VIX > 20 and rising short-term averages).
 
----
+**Macroeconomic View & Alignment:**
 
-### **Macroeconomic & Seasonality Alignment:**
+1.  **Political Landscape (Trump Impact):** The thesis warns of a net negative impact from a Trump administration (protectionism, Fed independence, deficit spending leading to steeper yield curve and inflation). While no direct news confirms this today, the prevailing "Bull Volatile" regime with broad market weakness (SPY, QQQ) and VIX elevation could be an early manifestation of policy uncertainty or market participants pricing in these risks. The relative strength in defensive sectors and commodities could also be an indirect signal.
 
-1.  **Regime & Volatility:** The market is currently in a "Bull Volatile" regime, and the VIX at 23.51 confirms elevated volatility, consistent with this description. The VIX is above its 20, 50, and 200-day SMAs, and its MACD histogram is positive, indicating continued upward pressure on volatility. This suggests market participants are anticipating or reacting to uncertainty.
+2.  **Currency Dynamics (USD & De-dollarization):** The "TINA" thesis for USD holds, but a strategic Gold position is maintained as a hedge against de-dollarization friction.
+    *   **Gold (GLD, IAU):** Both Gold ETFs, while showing short-term cooling (below SMA20), remain significantly above their 50-day and 200-day moving averages. Their positive MACD but negative MACD Hist suggests a recent pullback after a stronger rally. This aligns with our strategy to hold Gold as a hedge against the ongoing friction from the slow de-dollarization trend, particularly with Asian central bank buying narratives.
 
-2.  **U.S. Market Seasonality:**
-    *   **Presidential Cycle:** Assuming a 2024 Presidential election, 2026 would be a mid-term year. Our thesis suggests midterm years are historically weak and volatile in Q2-Q3, often bottoming in October. While we are still in Q1 (March 17th), the current volatility aligns with the broader *character* of a mid-term year, even if the absolute weakness is traditionally later.
-    *   **Monthly Trends:** March falls within the historically strong "November to April" window. However, broad market indices like SPY, VOO, VTI, and QQQ are currently showing weakness, trading below their 20 and 50-day SMAs, with RSIs in the low 40s and negative MACD signals. This suggests a near-term deviation from typical seasonal strength, possibly indicating that the "volatile" aspect of the regime is dominating the "bull" trend.
+3.  **Key Metrics (Inferred):**
+    *   **10-Year Treasury Yield (Inferred from TLT):** TLT (bonds) is trading below its 20-day and 50-day SMAs, with negative MACD. This suggests that bond prices are weakening in the short-to-medium term, implying that yields are likely not falling, and may even be rising or expected to remain elevated. This aligns with our guideline that "in periods of rising rates, prefer value and defensive sectors."
+    *   **Inflation (Inferred from XLE, XLU strength):** The strong performance of Energy (XLE) and Utilities (XLU) (discussed below) suggests that the market might be anticipating persistent inflation or seeking defensive exposure in a high-rate environment.
 
-3.  **Global Equity Seasonality:**
-    *   **Europe (VGK):** March is within the "Halloween Effect" (Nov-Apr outperformance) window for Europe. However, VGK is currently showing significant weakness, with its close well below its 20 and 50-day SMAs, a low RSI (37.08), and a sharply negative MACD histogram. This indicates a strong deviation from expected seasonal strength in Europe.
-    *   **Canada (EWC) & Australia (EWA):** Both are showing short-term weakness, trading below their 20-day SMAs with negative MACD histograms. This does not suggest relative strength for international markets at this time.
+**Seasonality Rules Alignment:**
 
-4.  **Commodity Seasonality (Gold - GLD, IAU):**
-    *   **Lunar New Year:** The seasonal tailwind from Lunar New Year (Late January / February) would likely be waning by mid-March. Both GLD and IAU are trading below their 20-day SMAs, with RSIs around 47 and declining MACD histograms. While our macro view positions Gold as a strategic hedge against de-dollarization friction, the current price action suggests short-term consolidation or pullback after potential earlier seasonal strength.
+*   **Date (March 17, 2026):** We are currently in March, which falls within the "November to April: Historically the strongest six months." However, the broad market indices (SPY, QQQ, VOO, VTI) are showing significant short-term weakness, trading below their 20-day and 50-day moving averages, and with RSIs approaching oversold levels (low 40s). This indicates that the typical seasonal strength for this period is either not materializing or is facing a significant mid-period correction.
+*   **Presidential Cycle:** Assuming 2026 is a midterm year (following a 2024 election and 2025 post-election year), our thesis states that "Midterm years are historically weak and volatile during the summer (Q2-Q3), often bottoming in October." The current "Bull Volatile" regime, coupled with the early signs of broad market weakness and high VIX in March, suggests that the anticipated midterm year volatility and weakness might be commencing earlier than the traditional Q2/Q3 period. This warrants caution as we approach Q2 and the "Sell in May" period.
+*   **Global Equity/Commodity Seasonality:** No specific March seasonality rules are explicitly aligning for Australia, Europe, or Gold (Diwali and Lunar New Year are past or yet to come).
 
-### **Sector Rotations Evident from Market Data:**
+**Sector Rotations Evident:**
 
-The market data, interpreted through our macroeconomic and sector theses, reveals distinct rotations:
+The current market data shows clear signs of sector rotation, aligning with our macro and sector theses:
 
-1.  **Defensive & Value Rotation (Strong):**
-    *   **Energy (XLE):** XLE is very strong, with an RSI of 71.05 and trading above its 20, 50, and 200-day SMAs, nearing its upper Bollinger Band. This aligns perfectly with our thesis to hold Energy as an inflation hedge and a play against geopolitical shocks, especially if rates are seen as rising or staying high.
-    *   **Utilities (XLU):** XLU is also showing robust strength, with an RSI of 62.97 and trading above all key moving averages, near its upper Bollinger Band. This confirms a rotation into defensive sectors, validating our "prefer value and defensive sectors in periods of rising rates" guideline.
-    *   **Infrastructure (MTZ):** MTZ, related to grid/data center construction, is performing well (RSI 60.77, above all SMAs, positive MACD signal), indicating specific demand for physical infrastructure.
+1.  **Rotation OUT of Broad Large-Cap Technology & Growth:**
+    *   **QQQ (Nasdaq 100 proxy):** Showing weakness, trading below its 20-day and 50-day SMAs.
+    *   **FAANG Hyperscalers (MSFT, AAPL, META, GOOGL):** Most are showing significant short-term weakness, trading below their 20-day and 50-day SMAs. MSFT and META are notably below their 200-day SMAs, suggesting a deeper correction or potential long-term downtrend. AAPL and QUAL also show RSIs in oversold territory (low 30s/high 30s).
+    *   **Broad Semiconductors (NVDA, TSM, AMD, KLAC, AVGO):** Generally showing short-term weakness (below SMA20/50), even NVDA, which is a core "shovel seller" holding. This suggests a temporary cooling or profit-taking even within this strong sub-sector.
+    *   **Financials (XLF):** Trading below all its key moving averages with a low RSI, indicating weakness and a rotation out of this sector.
 
-2.  **Selective AI/Tech Infrastructure (Mixed but Specific Strengths):**
-    *   **Hyperscaler AI "Shovel Sellers" (NVDA, AMD, TSM, KLAC, INTC, AVGO):** NVDA and AMD are showing short-term weakness (below SMA20/50, negative MACD hist for NVDA, positive for AMD but still below SMAs). TSM, KLAC, INTC are also generally weak. AVGO is trading flat. This could suggest some normalization or increased competition for "shovel sellers" earlier than our 6-12 month expectation, or a general tech pullback.
-    *   **Specific AI Data/Cloud Infrastructure (NBIS, PLTR, CRWD):**
-        *   **NBIS (Cloud/AI Infrastructure):** Stands out with exceptional strength (RSI 68.17, well above all SMAs, strong MACD histogram). This is a clear indicator of targeted investment in specific AI infrastructure plays beyond just chip manufacturers.
-        *   **PLTR (AI Data Platforms):** Strong performance (above SMA20/50, positive MACD histogram), suggesting continued belief in its AI data capabilities.
-        *   **CRWD (AI-driven Security):** Shows a very strong MACD histogram (6.56), indicating a recent surge in bullish momentum despite an RSI around 51 and trading below SMA50. This reinforces the "SaaS apocalypse is too bearish" for sticky enterprise solutions that integrate AI effectively.
-    *   **Traditional Tech/FAANG (MSFT, AAPL, AMZN, META, GOOGL, ORCL, PSTG):** Generally exhibiting weakness, trading below SMAs with low RSIs and negative MACDs (except NFLX which shows strength, and AMZN/GOOGL/MSFT with positive MACD hist but still below SMAs). This aligns with the "inflation re-accelerates, growth stocks suffer" aspect of our macro thesis, especially given broader market weakness. ORCL and PSTG, our cloud/storage plays, are also showing weakness.
+2.  **Rotation INTO Defensive and Value Sectors:**
+    *   **Utilities (XLU):** Demonstrating strong performance, trading above all its key moving averages with a robust RSI of 62.96. This is a clear rotation into a defensive sector, consistent with rising rate environments and increased market volatility.
+    *   **Energy (XLE):** Exhibiting exceptional strength, trading well above all its moving averages with an RSI of 71.05 (overbought). This confirms Energy as a strong inflation hedge and a beneficiary of geopolitical dynamics, aligning with our strategy.
 
-3.  **Financials (XLF - Weakness):** XLF is notably weak, with an RSI of 33.89 and trading below all key moving averages. Its MACD histogram is negative. This contradicts a direct "accumulate near book value" strategy if the sector is experiencing significant negative momentum. It suggests financial headwinds are present, perhaps due to yield curve dynamics or credit concerns not explicitly detailed.
+3.  **Targeted Strength WITHIN Technology (AI Infrastructure & Resilient Software):**
+    *   Despite the broader tech weakness, our specific AI-related infrastructure and sticky software plays are showing remarkable relative strength:
+        *   **MU (AI Memory):** A standout performer, significantly above all its SMAs, with a strong RSI (60.42) and positive MACD/MACD Hist. This validates the "AI Shovel Sellers" thesis for critical components.
+        *   **NBIS (AI Infrastructure):** Another strong performer, well above all its SMAs, with a high RSI (68.17) and strongly positive MACD/MACD Hist. This reinforces the focus on AI infrastructure.
+        *   **PLTR (AI Data platforms) & CRWD (AI-driven security):** Both are showing recent positive momentum and strength (above SMA20), with positive MACD/MACD Hist. While CRWD is still below its SMA200, its current bounce is notable. This supports our nuanced view that the "SaaS Apocalypse" is too bearish for sticky enterprise software leveraging AI.
 
-4.  **Bonds (TLT - Weakness):** TLT is showing weakness (below SMA20/50, negative MACD hist), implying bond prices are falling or yields are rising. This supports the environment where defensive and value equities might be preferred over growth.
+4.  **International Equities (VXUS, VGK, EWC, EWA):** These broad international ETFs are generally showing weakness (below short/medium-term SMAs) and no clear signs of relative strength compared to the US market. This indicates no current rotation into international markets.
 
-### **Summary of Actionable Insights:**
+**Summary:**
 
-*   **Broad Market Caution:** Despite being in the historically strong "Nov-Apr" window, broad U.S. and European markets are showing near-term weakness and elevated volatility. This suggests being cautious with broad market long positions and perhaps deploying capital more selectively.
-*   **Sector Rotation Confirmed:** There is a clear rotation into **Energy** and **Utilities**, validating our thesis for defensive and inflation-hedging sectors. MTZ and NBIS also confirm strong demand for specific infrastructure plays.
-*   **Selective AI Plays:** While broad tech is suffering, specific AI infrastructure and sticky enterprise SaaS players (e.g., NBIS, PLTR, CRWD, NFLX) are showing resilience or strength, reinforcing the nuanced view on the AI hype cycle. Maintain strategic positions in NVDA but be aware of increasing competition or demand normalization.
-*   **Financial Sector Underperform:** The significant weakness in XLF warrants re-evaluation or extreme caution. Accumulation should only occur if strong value signals (e.g., P/B, dividend yield) clearly emerge amidst the weakness.
-*   **Gold Consolidation:** Gold is consolidating after previous strength. This could present accumulation opportunities for long-term strategic hedging if prices dip further.
-*   **International Markets Lagging:** International markets (EWC, VGK, EWA, VXUS) are not showing relative strength, suggesting U.S. market trends are currently dominating global sentiment. Avoid new positions in these regions for now.
-*   **Watch Key Macro Metrics:** Closely monitor the 10-Year Treasury Yield and inflation data (CPI/PCE). A sustained rise in yields will likely continue to pressure broader equities and favor value/defensive plays over growth. The current market action appears to be anticipating or reacting to higher rates.
-*   **Trump Impact:** While no direct news, the current "Bull Volatile" regime and observed sector rotations (defensive, energy strong; growth weaker) are consistent with a market pricing in potential policy shifts that could lead to higher inflation and increased volatility, as hypothesized under the Trump impact thesis.
+The market is exhibiting characteristics of an early midterm year correction, with broad US indices and large-cap tech showing short-term weakness and increased volatility, despite being in the traditionally "stronger six months." However, this weakness is accompanied by clear sector rotations: a flight to defensives (Utilities) and inflation hedges (Energy), while within the tech sector, there's a discerning move away from broad, potentially overhyped applications towards the fundamental "shovel sellers" of AI infrastructure and sticky enterprise software. Gold maintains its role as a strategic hedge. Our strategy should therefore prioritize these stronger sectors and niche AI plays while exercising caution with broader market exposure, especially as we approach the historically weaker Q2/Q3 period.

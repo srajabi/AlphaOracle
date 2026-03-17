@@ -1,57 +1,48 @@
 {
-  "last_updated_utc": "2026-03-17T15:29:38.983574+00:00",
+  "last_updated_utc": "2026-03-17T20:15:07.970884+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 120000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 120000
+        "notional_value": 150000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "NBIS",
+        "ticker": "IAU",
         "action": "buy",
-        "notional_value": 80000
+        "notional_value": 100000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "STX",
+        "ticker": "MU",
         "action": "buy",
-        "notional_value": 80000
+        "notional_value": 75000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "MSFT",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 80000
+        "notional_value": 25000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "GLD",
+        "ticker": "WDC",
         "action": "buy",
-        "notional_value": 80000
+        "notional_value": 20000
       },
       "status": "skipped",
       "reason": "No available buying power."
