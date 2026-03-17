@@ -46,23 +46,12 @@ const digestItems = [
   <main>
     <header>
       <h1>AlphaOracle</h1>
-      <p class="subtitle">Daily Analysis and Trade Recommendations</p>
+      <p class="subtitle">AI-Powered Trading Analysis + Validated Rotation Strategies</p>
       <div class={`regime-badge ${contextData.regime.toLowerCase().replace(' ', '-')}`}>
         {contextData.regime} Regime
       </div>
       <p class="date">Last updated: {contextData.date || 'N/A'}</p>
     </header>
-
-    <section class="nav-grid">
-      <a class="nav-card" href={`${base}portfolio/`}>
-        <h2>Paper Trading Status</h2>
-        <p>Account equity, positions, and latest execution results.</p>
-      </a>
-      <a class="nav-card" href={`${base}tickers/`}>
-        <h2>Ticker Dashboard</h2>
-        <p>Ticker-by-ticker metrics, technicals, and chart drill-downs.</p>
-      </a>
-    </section>
 
     {pmSynthesis && (
       <section class="panel">
@@ -79,6 +68,21 @@ const digestItems = [
         </div>
       </section>
     )}
+
+    <section class="nav-grid">
+      <a class="nav-card" href={`${base}portfolio/`}>
+        <h2>Paper Trading Status</h2>
+        <p>Live forward validation: tracking strategy performance in real-time.</p>
+      </a>
+      <a class="nav-card" href={`${base}tickers/`}>
+        <h2>Ticker Dashboard</h2>
+        <p>Per-ticker metrics, technicals, strategy ratings, and chart drill-downs.</p>
+      </a>
+      <a class="nav-card" href={`${base}backtests/`}>
+        <h2>Strategy Backtests</h2>
+        <p>33-year validation: Reddit vs regime rotation, tolerance bands, tax impact.</p>
+      </a>
+    </section>
 
     <section class="panel">
       <h2>Today&apos;s Actionable Digest</h2>

@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { getConsensus, getStatusClass, getStatusLabel, getTechnicalSignals } from '../lib/technicals';
 
 const base = import.meta.env.BASE_URL.endsWith('/')
   ? import.meta.env.BASE_URL
@@ -39,20 +40,37 @@ const watchlist = lines.slice(1).map((line) => {
     <section class="grid">
       {watchlist.map((item) => {
         const stockData = contextData.data[item.ticker] || {};
-        const rsi = stockData.rsi_14;
-        const rsiClass = rsi > 70 ? 'overbought' : rsi < 30 ? 'oversold' : '';
+        const signals = getTechnicalSignals(item.ticker, stockData);
+        const consensus = getConsensus(signals);
+        const primarySignals = signals.filter((signal) => signal.status !== 'n/a').slice(0, 5);
         return (
           <a href={`${base}stocks/${item.ticker}/`} class="card">
             <div class="card-header">
               <h2>{item.ticker}</h2>
               <span class="sector">{item.sector}</span>
             </div>
+            <div class="consensus-row">
+              <span class={`consensus-pill ${getStatusClass(consensus.status)}`}>
+                {getStatusLabel(consensus.status)}
+              </span>
+              <span class="consensus-meta">
+                {consensus.buyCount} buy / {consensus.sellCount} sell / {consensus.holdCount} hold
+              </span>
+            </div>
             <div class="metrics">
               <div><span>Close</span><strong>{stockData.close ? `$${stockData.close.toFixed(2)}` : 'N/A'}</strong></div>
-              <div><span>RSI 14</span><strong class={rsiClass}>{rsi ? rsi.toFixed(1) : 'N/A'}</strong></div>
+              <div><span>RSI 14</span><strong>{stockData.rsi_14 ? stockData.rsi_14.toFixed(1) : 'N/A'}</strong></div>
               <div><span>SMA 20</span><strong>{stockData.sma_20 ? `$${stockData.sma_20.toFixed(2)}` : 'N/A'}</strong></div>
               <div><span>SMA 50</span><strong>{stockData.sma_50 ? `$${stockData.sma_50.toFixed(2)}` : 'N/A'}</strong></div>
               <div><span>SMA 200</span><strong>{stockData.sma_200 ? `$${stockData.sma_200.toFixed(2)}` : 'N/A'}</strong></div>
+            </div>
+            <div class="signal-grid">
+              {primarySignals.map((signal) => (
+                <div class="signal-chip">
+                  <span>{signal.label}</span>
+                  <strong class={getStatusClass(signal.status)}>{getStatusLabel(signal.status)}</strong>
+                </div>
+              ))}
             </div>
             <p class="notes">{item.notes}</p>
           </a>
@@ -85,13 +103,50 @@ const watchlist = lines.slice(1).map((line) => {
   }
   .card:hover { border-color: #2962ff; }
   .card-header { display: flex; justify-content: space-between; align-items: center; }
+  .consensus-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-top: 0.85rem;
+  }
+  .consensus-pill {
+    border-radius: 999px;
+    padding: 0.3rem 0.65rem;
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+  }
+  .consensus-meta { color: #8f949e; font-size: 0.75rem; }
   h2 { margin: 0; font-size: 1.4rem; }
   .sector { color: #8f949e; font-size: 0.75rem; text-transform: uppercase; }
   .metrics { margin-top: 0.8rem; display: grid; gap: 0.45rem; }
   .metrics div { display: flex; justify-content: space-between; }
   .metrics span { color: #8f949e; font-size: 0.85rem; }
   .metrics strong { font-size: 0.9rem; }
-  .overbought { color: #ef5350; }
-  .oversold { color: #26a69a; }
+  .signal-grid {
+    margin-top: 0.9rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.55rem;
+  }
+  .signal-chip {
+    background: #1a1f2b;
+    border: 1px solid #2a2e39;
+    border-radius: 10px;
+    padding: 0.55rem 0.65rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .signal-chip span { color: #8f949e; font-size: 0.74rem; }
+  .signal-chip strong { font-size: 0.8rem; }
+  .is-buy { color: #26a69a; border-color: rgba(38, 166, 154, 0.4); background: rgba(38, 166, 154, 0.12); }
+  .is-sell { color: #ef5350; border-color: rgba(239, 83, 80, 0.4); background: rgba(239, 83, 80, 0.12); }
+  .is-hold { color: #ffc107; border-color: rgba(255, 193, 7, 0.4); background: rgba(255, 193, 7, 0.12); }
+  .is-na { color: #8f949e; border-color: rgba(143, 148, 158, 0.3); background: rgba(143, 148, 158, 0.08); }
   .notes { margin: 0.75rem 0 0; color: #8f949e; font-size: 0.85rem; border-top: 1px solid #2a2e39; padding-top: 0.75rem; }
 </style>

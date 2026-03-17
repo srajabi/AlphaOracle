@@ -7,4 +7,9 @@ export default defineConfig({
   site: 'https://srajabi.github.io',
   base: '/AlphaOracle',
   integrations: [mdx(), react()],
+  vite: {
+    optimizeDeps: {
+      include: ['lightweight-charts'],
+    },
+  },
 });

@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import StockChart from '../../components/StockChart.tsx';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { getConsensus, getStatusClass, getStatusLabel, getTechnicalSignals } from '../../lib/technicals';
 
 export async function getStaticPaths() {
   const watchlistPath = path.resolve('../watchlist.csv');
@@ -30,6 +31,16 @@ try {
   console.error(`Error loading history for ${ticker} at ${historyPath}:`, e);
 }
 
+let contextData = { data: {} };
+try {
+  contextData = JSON.parse(await fs.readFile(path.resolve('./public/data/market_context.json'), 'utf-8'));
+} catch (e) {
+  console.error('Error loading market context on ticker page:', e);
+}
+
+const stockData = contextData.data?.[ticker] || {};
+const signals = getTechnicalSignals(ticker, stockData, historyData);
+const consensus = getConsensus(signals);
 const latest = historyData[historyData.length - 1] || {};
 const base = import.meta.env.BASE_URL.endsWith('/')
   ? import.meta.env.BASE_URL
@@ -51,11 +62,14 @@ const base = import.meta.env.BASE_URL.endsWith('/')
       <div class="price-hero">
         <span class="label">Latest Price</span>
         <span class="value">${latest.close?.toFixed(2)}</span>
+        <span class={`detail-consensus ${getStatusClass(consensus.status)}`}>
+          {getStatusLabel(consensus.status)}: {consensus.buyCount} buy / {consensus.sellCount} sell / {consensus.holdCount} hold
+        </span>
       </div>
     </header>
 
     <div class="dashboard-grid">
-      <section class="main-chart">
+      <section class="main-chart stack">
         <div class="chart-container">
           <StockChart client:load data={historyData} />
         </div>
@@ -63,6 +77,24 @@ const base = import.meta.env.BASE_URL.endsWith('/')
           <span class="legend-item"><i class="blue"></i> SMA 20</span>
           <span class="legend-item"><i class="orange"></i> SMA 50</span>
           <span class="legend-item"><i class="red"></i> SMA 200</span>
+        </div>
+        <div class="chart-stats">
+          <div class="chart-stat">
+            <span>Price vs 20 SMA</span>
+            <strong>{stockData.close && stockData.sma_20 ? `${(((stockData.close - stockData.sma_20) / stockData.sma_20) * 100).toFixed(1)}%` : 'N/A'}</strong>
+          </div>
+          <div class="chart-stat">
+            <span>Price vs 50 SMA</span>
+            <strong>{stockData.close && stockData.sma_50 ? `${(((stockData.close - stockData.sma_50) / stockData.sma_50) * 100).toFixed(1)}%` : 'N/A'}</strong>
+          </div>
+          <div class="chart-stat">
+            <span>Price vs 200 SMA</span>
+            <strong>{stockData.close && stockData.sma_200 ? `${(((stockData.close - stockData.sma_200) / stockData.sma_200) * 100).toFixed(1)}%` : 'N/A'}</strong>
+          </div>
+          <div class="chart-stat">
+            <span>RSI / MACD</span>
+            <strong>{stockData.rsi_14?.toFixed(1) ?? 'N/A'} / {stockData.macd?.toFixed(2) ?? 'N/A'}</strong>
+          </div>
         </div>
       </section>
 
@@ -87,12 +119,53 @@ const base = import.meta.env.BASE_URL.endsWith('/')
             <span class="val">${latest.sma200?.toFixed(2)}</span>
           </div>
           <div class="stat-row">
+            <span>RSI 14</span>
+            <span class="val">{stockData.rsi_14?.toFixed(1) ?? 'N/A'}</span>
+          </div>
+          <div class="stat-row">
+            <span>MACD</span>
+            <span class="val">{stockData.macd?.toFixed(2) ?? 'N/A'}</span>
+          </div>
+          <div class="stat-row">
+            <span>MACD Signal</span>
+            <span class="val">{stockData.macd_signal?.toFixed(2) ?? 'N/A'}</span>
+          </div>
+          <div class="stat-row">
+            <span>Bollinger Low</span>
+            <span class="val">${stockData.bb_lower?.toFixed(2) ?? 'N/A'}</span>
+          </div>
+          <div class="stat-row">
+            <span>Bollinger High</span>
+            <span class="val">${stockData.bb_upper?.toFixed(2) ?? 'N/A'}</span>
+          </div>
+          <div class="stat-row">
             <span>Volume</span>
             <span class="val">{(latest.volume / 1000000).toFixed(1)}M</span>
           </div>
         </div>
       </aside>
     </div>
+
+    <section class="why-panel">
+      <div class="why-header">
+        <h3>Why This Rating</h3>
+        <p>Each technical signal contributes a buy, sell, or hold call.</p>
+      </div>
+      <div class="signal-list">
+        {signals.map((signal) => (
+          <article class="signal-card">
+            <div class="signal-card-top">
+              <div>
+                <h4>{signal.label}</h4>
+                <p>{signal.value}</p>
+              </div>
+              <span class={`signal-badge ${getStatusClass(signal.status)}`}>{getStatusLabel(signal.status)}</span>
+            </div>
+            <p class="signal-reason">{signal.reason}</p>
+          </article>
+        ))}
+      </div>
+    </section>
   </main>
 </Layout>
 
@@ -133,6 +206,17 @@ const base = import.meta.env.BASE_URL.endsWith('/')
   .price-hero { text-align: right; }
   .price-hero .label { display: block; font-size: 0.8rem; color: #8f949e; text-transform: uppercase; margin-bottom: 0.25rem; }
   .price-hero .value { font-size: 2.5rem; font-weight: 700; color: #fff; }
+  .detail-consensus {
+    display: inline-block;
+    margin-top: 0.65rem;
+    border-radius: 999px;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border: 1px solid transparent;
+  }
 
   .dashboard-grid {
     display: grid;
@@ -145,6 +229,11 @@ const base = import.meta.env.BASE_URL.endsWith('/')
     border-radius: 12px;
     border: 1px solid #2a2e39;
     padding: 1rem;
+  }
+  .stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
   .chart-container { border-radius: 8px; overflow: hidden; }
   
@@ -159,6 +248,86 @@ const base = import.meta.env.BASE_URL.endsWith('/')
   .legend-item .blue { background: #2962FF; }
   .legend-item .orange { background: #FF9800; }
   .legend-item .red { background: #F44336; }
+  .chart-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+  .chart-stat {
+    background: #1a1f2b;
+    border: 1px solid #2a2e39;
+    border-radius: 10px;
+    padding: 0.8rem;
+  }
+  .chart-stat span {
+    display: block;
+    color: #8f949e;
+    font-size: 0.76rem;
+    margin-bottom: 0.25rem;
+  }
+  .chart-stat strong {
+    color: #fff;
+    font-size: 0.95rem;
+  }
+  .why-panel {
+    margin-top: 1.5rem;
+    background: #131722;
+    border: 1px solid #2a2e39;
+    border-radius: 12px;
+    padding: 1rem;
+  }
+  .why-header h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #fff;
+  }
+  .why-header p {
+    margin: 0.35rem 0 0;
+    color: #8f949e;
+    font-size: 0.88rem;
+  }
+  .signal-list {
+    margin-top: 0.9rem;
+    display: grid;
+    gap: 0.8rem;
+  }
+  .signal-card {
+    background: #1a1f2b;
+    border: 1px solid #2a2e39;
+    border-radius: 12px;
+    padding: 0.9rem;
+  }
+  .signal-card-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .signal-card h4 {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+  .signal-card-top p {
+    margin: 0.3rem 0 0;
+    color: #8f949e;
+    font-size: 0.82rem;
+  }
+  .signal-badge {
+    border-radius: 999px;
+    padding: 0.3rem 0.65rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  .signal-reason {
+    margin: 0.75rem 0 0;
+    color: #d1d4dc;
+    line-height: 1.55;
+    font-size: 0.92rem;
+  }
 
   .sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
   .info-card {
@@ -179,4 +348,18 @@ const base = import.meta.env.BASE_URL.endsWith('/')
   .stat-row:last-child { border-bottom: none; }
   .stat-row span { color: #8f949e; font-size: 0.9rem; }
   .stat-row .val { color: #fff; font-weight: 600; }
+  .is-buy { color: #26a69a; border-color: rgba(38, 166, 154, 0.4); background: rgba(38, 166, 154, 0.12); }
+  .is-sell { color: #ef5350; border-color: rgba(239, 83, 80, 0.4); background: rgba(239, 83, 80, 0.12); }
+  .is-hold { color: #ffc107; border-color: rgba(255, 193, 7, 0.4); background: rgba(255, 193, 7, 0.12); }
+  .is-na { color: #8f949e; border-color: rgba(143, 148, 158, 0.3); background: rgba(143, 148, 158, 0.08); }
+  @media (max-width: 1100px) {
+    .dashboard-grid { grid-template-columns: 1fr; }
+    .chart-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 720px) {
+    .ticker-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+    .price-hero { text-align: left; }
+    .chart-stats { grid-template-columns: 1fr; }
+    .signal-card-top { flex-direction: column; }
+  }
 </style>
