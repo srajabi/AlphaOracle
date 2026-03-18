@@ -6,6 +6,34 @@ A spike is a time-boxed investigation to explore a technical approach, evaluate 
 
 ---
 
+## 🔥 Latest Research (2026-03-17)
+
+### Intermarket Indicator System
+
+**Key Development:** Built comprehensive intermarket analysis system for market regime detection using 7 uncorrelated markets.
+
+**Philosophy:** Build individual reusable indicators first, combine into strategies later. Focus on regime change detection for dashboards.
+
+**New Spike:**
+- **[intermarket_indicators.md](intermarket_indicators.md)** - Individual indicators (Risk Sentiment, Dollar Strength, Real Rates, Commodity Strength) + Market Regime Detector
+
+**Current Market State (2026-03-17):**
+- **Regime:** Bear Volatile (high confidence)
+- **Risk:** Risk-off (SPY downtrend + VIX 23.5 elevated)
+- **Dollar:** Strong and rising (+3.4% momentum)
+- **Rates:** Rising (TLT falling, headwind for growth)
+- **Commodities:** Defensive rally (gold leading)
+
+**Advantages:**
+- 7 uncorrelated markets (less saturated than single-asset technicals)
+- Individual indicators are testable and reusable
+- Display-ready for ticker dashboards
+- Foundation for future trading strategies
+
+**Next:** Display on frontend, build per-ticker indicators, validate predictive power historically.
+
+---
+
 ## 🔥 Latest Research (2026-03-16)
 
 ### Zero-Fee Leveraged Strategy Breakthrough

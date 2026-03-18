@@ -60,6 +60,12 @@ jobs:
       - name: Generate Strategy Ratings
         run: python src/generate_strategy_ratings.py
 
+      - name: Generate Intermarket Indicators
+        run: python src/generate_indicators.py
+
+      - name: Generate Per-Ticker Indicators
+        run: python src/generate_ticker_indicators.py
+
       - name: Run LLM Agents
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

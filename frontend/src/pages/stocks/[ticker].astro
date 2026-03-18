@@ -38,6 +38,14 @@ try {
   console.error('Error loading market context on ticker page:', e);
 }
 
+let tickerIndicators = null;
+try {
+  const indicatorsData = JSON.parse(await fs.readFile(path.resolve('./public/data/ticker_indicators.json'), 'utf-8'));
+  tickerIndicators = indicatorsData.tickers?.[ticker];
+} catch (e) {
+  console.error('Error loading ticker indicators:', e);
+}
+
 const stockData = contextData.data?.[ticker] || {};
 const signals = getTechnicalSignals(ticker, stockData, historyData);
 const consensus = getConsensus(signals);
@@ -99,6 +107,56 @@ const base = import.meta.env.BASE_URL.endsWith('/')
       </section>
 
       <aside class="sidebar">
+        {tickerIndicators && (
+          <div class="info-card indicators">
+            <h3>Technical Indicators</h3>
+            <div class="indicator-item">
+              <span class="indicator-label">Trend Strength</span>
+              <span class={`indicator-value ${tickerIndicators.trend_strength?.signal?.replace(/_/g, '-')}`}>
+                {tickerIndicators.trend_strength?.signal?.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) || 'N/A'}
+              </span>
+              <p class="indicator-explain">{tickerIndicators.trend_strength?.interpretation || ''}</p>
+            </div>
+            <div class="indicator-item">
+              <span class="indicator-label">Price Momentum</span>
+              <span class={`indicator-value ${tickerIndicators.price_momentum?.signal?.replace(/_/g, '-')}`}>
+                {tickerIndicators.price_momentum?.signal?.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) || 'N/A'}
+              </span>
+              {tickerIndicators.price_momentum?.periods && (
+                <p class="indicator-explain">
+                  5d: {tickerIndicators.price_momentum.periods['5d'] ? `${tickerIndicators.price_momentum.periods['5d'].toFixed(1)}%` : 'N/A'} |
+                  20d: {tickerIndicators.price_momentum.periods['20d'] ? `${tickerIndicators.price_momentum.periods['20d'].toFixed(1)}%` : 'N/A'}
+                </p>
+              )}
+            </div>
+            <div class="indicator-item">
+              <span class="indicator-label">Relative Strength vs SPY</span>
+              <span class={`indicator-value ${tickerIndicators.relative_strength?.signal?.replace(/_/g, '-')}`}>
+                {tickerIndicators.relative_strength?.signal?.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) || 'N/A'}
+              </span>
+              {tickerIndicators.relative_strength?.periods && tickerIndicators.relative_strength.periods['60d'] && (
+                <p class="indicator-explain">
+                  60d: {tickerIndicators.relative_strength.periods['60d'].outperformance > 0 ? '+' : ''}{tickerIndicators.relative_strength.periods['60d'].outperformance.toFixed(1)}% vs SPY
+                </p>
+              )}
+            </div>
+            <div class="indicator-item">
+              <span class="indicator-label">Volume Profile</span>
+              <span class={`indicator-value ${tickerIndicators.volume_profile?.signal?.replace(/_/g, '-')}`}>
+                {tickerIndicators.volume_profile?.signal?.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) || 'N/A'}
+              </span>
+              <p class="indicator-explain">{tickerIndicators.volume_profile?.interpretation || ''}</p>
+            </div>
+            <div class="indicator-item">
+              <span class="indicator-label">Support/Resistance</span>
+              <span class={`indicator-value ${tickerIndicators.support_resistance?.signal?.replace(/_/g, '-')}`}>
+                {tickerIndicators.support_resistance?.signal?.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) || 'N/A'}
+              </span>
+              <p class="indicator-explain">{tickerIndicators.support_resistance?.interpretation || ''}</p>
+            </div>
+          </div>
+        )}
+
         <div class="info-card">
           <h3>Thesis & Notes</h3>
           <p>{notes}</p>
@@ -352,6 +410,106 @@ const base = import.meta.env.BASE_URL.endsWith('/')
   .is-sell { color: #ef5350; border-color: rgba(239, 83, 80, 0.4); background: rgba(239, 83, 80, 0.12); }
   .is-hold { color: #ffc107; border-color: rgba(255, 193, 7, 0.4); background: rgba(255, 193, 7, 0.12); }
   .is-na { color: #8f949e; border-color: rgba(143, 148, 158, 0.3); background: rgba(143, 148, 158, 0.08); }
+
+  /* Ticker Indicators */
+  .indicator-item {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid #2a2e39;
+  }
+  .indicator-item:last-child {
+    border-bottom: none;
+  }
+  .indicator-label {
+    display: block;
+    color: #8f949e;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 0.4rem;
+  }
+  .indicator-value {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .indicator-value.strong-uptrend,
+  .indicator-value.uptrend {
+    color: #26a69a;
+    background: rgba(38, 166, 154, 0.12);
+  }
+  .indicator-value.strong-downtrend,
+  .indicator-value.downtrend {
+    color: #ef5350;
+    background: rgba(239, 83, 80, 0.12);
+  }
+  .indicator-value.choppy,
+  .indicator-value.neutral {
+    color: #ffc107;
+    background: rgba(255, 193, 7, 0.12);
+  }
+  .indicator-value.strong-positive,
+  .indicator-value.positive,
+  .indicator-value.slightly-positive {
+    color: #26a69a;
+    background: rgba(38, 166, 154, 0.12);
+  }
+  .indicator-value.strong-negative,
+  .indicator-value.negative,
+  .indicator-value.slightly-negative {
+    color: #ef5350;
+    background: rgba(239, 83, 80, 0.12);
+  }
+  .indicator-value.strong-outperformance,
+  .indicator-value.outperformance {
+    color: #26a69a;
+    background: rgba(38, 166, 154, 0.12);
+  }
+  .indicator-value.strong-underperformance,
+  .indicator-value.underperformance {
+    color: #ef5350;
+    background: rgba(239, 83, 80, 0.12);
+  }
+  .indicator-value.bullish-volume,
+  .indicator-value.volume-confirming-uptrend {
+    color: #26a69a;
+    background: rgba(38, 166, 154, 0.12);
+  }
+  .indicator-value.bearish-volume,
+  .indicator-value.volume-confirming-downtrend {
+    color: #ef5350;
+    background: rgba(239, 83, 80, 0.12);
+  }
+  .indicator-value.weak-uptrend {
+    color: #ffc107;
+    background: rgba(255, 193, 7, 0.12);
+  }
+  .indicator-value.at-resistance {
+    color: #ef5350;
+    background: rgba(239, 83, 80, 0.12);
+  }
+  .indicator-value.at-support {
+    color: #26a69a;
+    background: rgba(38, 166, 154, 0.12);
+  }
+  .indicator-value.closer-to-resistance,
+  .indicator-value.closer-to-support {
+    color: #8f949e;
+    background: rgba(143, 148, 158, 0.12);
+  }
+  .indicator-value.no-data {
+    color: #8f949e;
+    background: rgba(143, 148, 158, 0.08);
+  }
+  .indicator-explain {
+    margin: 0.4rem 0 0;
+    font-size: 0.8rem;
+    color: #d1d4dc;
+    line-height: 1.4;
+  }
+
   @media (max-width: 1100px) {
     .dashboard-grid { grid-template-columns: 1fr; }
     .chart-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }

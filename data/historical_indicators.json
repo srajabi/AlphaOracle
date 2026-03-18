@@ -1,0 +1,38 @@
+[
+  {
+    "date": "2026-03-12",
+    "regime": "Bull Volatile",
+    "confidence": "medium",
+    "spy_close": 666.06,
+    "indicators": {
+      "risk_sentiment": "risk_off",
+      "dollar_strength": "neutral",
+      "real_rates": "neutral",
+      "commodity_strength": "neutral"
+    }
+  },
+  {
+    "date": "2026-03-13",
+    "regime": "Bull Volatile",
+    "confidence": "medium",
+    "spy_close": 662.29,
+    "indicators": {
+      "risk_sentiment": "risk_off",
+      "dollar_strength": "neutral",
+      "real_rates": "neutral",
+      "commodity_strength": "neutral"
+    }
+  },
+  {
+    "date": "2026-03-16",
+    "regime": "Bull Volatile",
+    "confidence": "medium",
+    "spy_close": 669.03,
+    "indicators": {
+      "risk_sentiment": "risk_off",
+      "dollar_strength": "neutral",
+      "real_rates": "neutral",
+      "commodity_strength": "neutral"
+    }
+  }
+]

@@ -24,6 +24,13 @@ try {
   console.error('Error loading trades:', e);
 }
 
+let indicators = null;
+try {
+  indicators = JSON.parse(await fs.readFile(path.resolve('./public/data/indicators.json'), 'utf-8'));
+} catch (e) {
+  console.error('Error loading indicators:', e);
+}
+
 const reports = await getCollection('reports');
 const pmSynthesis = reports.find((r) => r.slug === 'pm_synthesis');
 const reportBySlug = Object.fromEntries(reports.map((r) => [r.slug, r]));
@@ -69,7 +76,70 @@ const digestItems = [
       </section>
     )}
 
+    {indicators && (
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Intermarket Analysis</h2>
+          <a class="btn" href={`${base}indicators/`}>View Details</a>
+        </div>
+        <div class={`regime-indicator ${indicators.market_regime.regime.toLowerCase().replace(' ', '-')}`}>
+          <div class="regime-main">
+            <span class="regime-label">Market Regime:</span>
+            <span class="regime-value">{indicators.market_regime.regime}</span>
+            <span class="confidence-badge">{indicators.market_regime.confidence} confidence</span>
+          </div>
+          <p class="regime-interpretation">{indicators.market_regime.interpretation}</p>
+        </div>
+        <div class="indicators-grid">
+          <div class="indicator-card">
+            <div class="indicator-name">Risk Sentiment</div>
+            <div class={`indicator-signal ${indicators.indicators.risk_sentiment.signal.replace('_', '-')}`}>
+              {indicators.indicators.risk_sentiment.signal.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+            </div>
+            <div class="indicator-details">
+              SPY: {indicators.indicators.risk_sentiment.components.spy_trend} |
+              VIX: {indicators.indicators.risk_sentiment.components.vix_value.toFixed(1)} ({indicators.indicators.risk_sentiment.components.vix_level})
+            </div>
+          </div>
+          <div class="indicator-card">
+            <div class="indicator-name">Dollar Strength</div>
+            <div class={`indicator-signal ${indicators.indicators.dollar_strength.signal.replace('_', '-')}`}>
+              {indicators.indicators.dollar_strength.signal.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+            </div>
+            <div class="indicator-details">
+              UUP: ${indicators.indicators.dollar_strength.components.uup_price.toFixed(2)} |
+              Momentum: {indicators.indicators.dollar_strength.components.momentum > 0 ? '+' : ''}{indicators.indicators.dollar_strength.components.momentum.toFixed(1)}%
+            </div>
+          </div>
+          <div class="indicator-card">
+            <div class="indicator-name">Real Rates</div>
+            <div class={`indicator-signal ${indicators.indicators.real_rates.signal.replace('_', '-')}`}>
+              {indicators.indicators.real_rates.signal.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+            </div>
+            <div class="indicator-details">
+              TLT: ${indicators.indicators.real_rates.components.tlt_price.toFixed(2)} |
+              Momentum: {indicators.indicators.real_rates.components.momentum > 0 ? '+' : ''}{indicators.indicators.real_rates.components.momentum.toFixed(1)}%
+            </div>
+          </div>
+          <div class="indicator-card">
+            <div class="indicator-name">Commodities</div>
+            <div class={`indicator-signal ${indicators.indicators.commodity_strength.signal.replace('_', '-')}`}>
+              {indicators.indicators.commodity_strength.signal.replace(/commodities_/g, '').replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+            </div>
+            <div class="indicator-details">
+              GLD: {indicators.indicators.commodity_strength.components.gld.trend} |
+              XLE: {indicators.indicators.commodity_strength.components.xle.trend}
+            </div>
+          </div>
+        </div>
+      </section>
+    )}
+
     <section class="nav-grid">
+      <a class="nav-card" href={`${base}indicators/`}>
+        <h2>Intermarket Indicators</h2>
+        <p>7-market regime detection using SPY, VIX, TLT, UUP, GLD, SLV, XLE.</p>
+      </a>
       <a class="nav-card" href={`${base}paper-trading/`}>
         <h2>Paper Trading Dashboard</h2>
         <p>Mode 3: Track forward performance of 7 strategies with $100k each.</p>
@@ -183,4 +253,94 @@ const digestItems = [
   .muted { color: #8f949e; margin: 0.8rem 0 0; }
   .muted a { color: #c4d4ff; text-decoration: none; }
   .muted a:hover { text-decoration: underline; }
+
+  /* Intermarket Indicators */
+  .regime-indicator {
+    background: #1e2230;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  .regime-indicator.bear-volatile {
+    border: 2px solid rgba(220, 53, 69, 0.4);
+  }
+  .regime-indicator.bear-quiet {
+    border: 2px solid rgba(220, 53, 69, 0.3);
+  }
+  .regime-indicator.bull-volatile {
+    border: 2px solid rgba(255, 193, 7, 0.4);
+  }
+  .regime-indicator.bull-quiet {
+    border: 2px solid rgba(40, 167, 69, 0.4);
+  }
+  .regime-main {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+  }
+  .regime-label {
+    color: #8f949e;
+    font-size: 0.9rem;
+  }
+  .regime-value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #f8f9fa;
+  }
+  .confidence-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #8f949e;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  .regime-interpretation {
+    color: #c4d4ff;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  .indicators-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  .indicator-card {
+    background: #131722;
+    border: 1px solid #2a2e39;
+    border-radius: 8px;
+    padding: 0.85rem;
+  }
+  .indicator-name {
+    font-size: 0.85rem;
+    color: #8f949e;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  .indicator-signal {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+  }
+  .indicator-signal.risk-on { color: #28a745; }
+  .indicator-signal.risk-off { color: #dc3545; }
+  .indicator-signal.cautious { color: #ffc107; }
+  .indicator-signal.strong-dollar { color: #2962ff; }
+  .indicator-signal.weak-dollar { color: #f8961e; }
+  .indicator-signal.rising-rates { color: #dc3545; }
+  .indicator-signal.falling-rates { color: #28a745; }
+  .indicator-signal.stable-rates { color: #8f949e; }
+  .indicator-signal.strong-defensive { color: #ffc107; }
+  .indicator-signal.strong-cyclical { color: #28a745; }
+  .indicator-details {
+    font-size: 0.8rem;
+    color: #8f949e;
+  }
 </style>

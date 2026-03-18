@@ -44,6 +44,9 @@ TLT,Bonds,Interest rate proxy
 GLD,Commodity,Gold tracking
 IAU,Commodity,Gold tracking (Alt)
 IBIT,Crypto,Bitcoin ETF proxy
+UUP,Currency,US Dollar Index ETF (for intermarket analysis)
+SLV,Commodity,Silver ETF (for intermarket analysis)
+^VIX,Volatility,CBOE Volatility Index (for risk sentiment)
 EWC,International,Canada TSX proxy
 VGK,International,Europe proxy
 EWA,International,Australia proxy

@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-17T19:49:45.216993",
+    "start_date": "2026-03-12",
+    "end_date": "2026-03-16",
+    "total_days": 3
+  },
+  "regime_transitions": {
+    "total_transitions": 0,
+    "transitions": [],
+    "regime_durations": {
+      "mean_days": 0,
+      "median_days": 0
+    }
+  },
+  "predictive_power": {
+    "risk_sentiment_analysis": {
+      "risk_on": {
+        "count": 0,
+        "avg_fwd_return_20d": null,
+        "positive_rate": null
+      },
+      "risk_off": {
+        "count": 3,
+        "avg_fwd_return_20d": NaN,
+        "negative_rate": 0.0
+      }
+    },
+    "regime_bull_volatile": {
+      "count": 3,
+      "avg_fwd_return_20d": NaN,
+      "positive_rate_20d": 0.0
+    }
+  }
+}

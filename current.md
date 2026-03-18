@@ -2,6 +2,135 @@
 
 ## What Changed
 
+### Comprehensive Indicator System (NEW - 2026-03-17)
+* **✅ COMPLETED: Built full intermarket + per-ticker indicator system**
+* **Philosophy:** Build individual reusable indicators first, combine into strategies later
+* **Focus:** Market regime change detection + per-ticker technical analysis for dashboards
+
+#### Intermarket Indicators (Market-Wide)
+* **Implementation:**
+  * Created `src/indicators/intermarket.py` - Market regime calculations
+  * Created `src/generate_indicators.py` - Daily market indicator generation
+  * Added to workflow: Runs after data ingestion, before LLM analysis
+  * Outputs: `data/indicators.json` and `frontend/public/data/indicators.json`
+
+* **Individual Indicators:**
+  1. **Risk Sentiment** (SPY trend + VIX level) - risk_on, risk_off, cautious, neutral
+  2. **Dollar Strength** (UUP trend) - Impacts commodities and international assets
+  3. **Real Rates** (TLT as proxy) - TLT rising = rates falling = good for growth
+  4. **Commodity Strength** (GLD, SLV, XLE) - Distinguishes defensive vs cyclical
+  5. **Market Regime Detector** - Bull Quiet, Bull Volatile, Bear Quiet, Bear Volatile, Transitional
+
+* **Current Market State (2026-03-17):**
+  * **Regime:** Bear Volatile (high confidence)
+  * **Risk:** Risk-off (SPY downtrend + VIX 23.5 elevated)
+  * **Dollar:** Strong and rising (+3.4% momentum)
+  * **Rates:** Rising (TLT falling -2.5%)
+  * **Commodities:** Defensive rally (gold leading, XLE +6.5%)
+
+#### Per-Ticker Indicators
+* **Implementation:**
+  * Created `src/indicators/ticker_indicators.py` - Individual stock/ETF analysis
+  * Created `src/generate_ticker_indicators.py` - Daily per-ticker calculation
+  * Added to workflow: Runs after intermarket indicators
+  * Outputs: `data/ticker_indicators.json` and `frontend/public/data/ticker_indicators.json`
+  * Calculated for all 51 tickers in watchlist
+
+* **Individual Indicators (5 per ticker):**
+  1. **Relative Strength** - Performance vs SPY over 5d, 20d, 60d periods
+  2. **Trend Strength** - Direction consistency and SMA alignment (ADX-like)
+  3. **Volume Profile** - Volume confirmation of price moves (accumulation/distribution)
+  4. **Support/Resistance** - Key price levels using swing points and pivots
+  5. **Price Momentum** - Rate of change over multiple periods (5d, 10d, 20d, 60d)
+
+* **Signals Generated:**
+  - Trend: strong_uptrend, uptrend, neutral, downtrend, strong_downtrend, choppy
+  - Momentum: strong_positive, positive, slightly_positive, slightly_negative, negative, strong_negative
+  - Relative Strength: strong_outperformance, outperformance, underperformance, strong_underperformance
+  - Volume: bullish_volume, bearish_volume, volume_confirming_uptrend/downtrend, weak_uptrend, neutral
+  - Support/Resistance: at_resistance, at_support, closer_to_resistance, closer_to_support
+
+#### Frontend Display
+* **Homepage (`frontend/src/pages/index.astro`):**
+  * Added Intermarket Analysis panel showing current regime + 4 indicators
+  * Color-coded regime badge (Bear Volatile in red)
+  * Quick view of all indicator signals
+
+* **Indicators Detail Page (`frontend/src/pages/indicators.astro`):**
+  * Complete breakdown of all intermarket indicators
+  * Regime classification system explanation
+  * Component details with current values
+  * Educational content about why intermarket analysis works
+  * The 7 markets explained
+
+* **Ticker Pages (`frontend/src/pages/stocks/[ticker].astro`):**
+  * Added Technical Indicators card to sidebar
+  * Shows all 5 per-ticker indicators with color-coded signals
+  * Displays interpretation and key metrics for each
+  * Fully styled with green (bullish), red (bearish), yellow (neutral)
+
+#### Historical Analysis
+* **Implementation:**
+  * Created `src/analyze_historical_indicators.py` - Historical backtesting tool
+  * Calculates indicators daily from 1993-2026 (33 years)
+  * Measures regime transitions and durations
+  * Analyzes predictive power (forward returns by signal)
+  * Outputs: `data/historical_indicators.json` and `data/indicator_analysis.json`
+
+* **Analysis Capabilities:**
+  * Regime transition detection
+  * Mean/median regime duration
+  * Forward return analysis (5d, 20d, 60d)
+  * Accuracy metrics for risk-on vs risk-off signals
+  * False positive/negative rates
+
+* **Usage:**
+  ```bash
+  python src/analyze_historical_indicators.py  # Heavy computation, run offline
+  ```
+
+#### Key Advantages
+* **7 Uncorrelated Markets:** SPY, VIX, UUP, TLT, GLD, SLV, XLE
+* **Less Saturated Signals:** Intermarket relationships less crowded than single-asset technicals
+* **Reusable Components:** Each indicator standalone, testable, combinable
+* **Display-Ready:** Structured JSON output for frontend dashboards
+* **Iterative Development:** Build indicators → test → display → combine into strategies
+
+#### Files Created
+**Backend:**
+  * `src/indicators/intermarket.py` - Market regime calculations
+  * `src/indicators/ticker_indicators.py` - Per-ticker technical analysis
+  * `src/generate_indicators.py` - Daily intermarket generation
+  * `src/generate_ticker_indicators.py` - Daily per-ticker generation
+  * `src/analyze_historical_indicators.py` - Historical analysis tool
+
+**Frontend:**
+  * `frontend/src/pages/indicators.astro` - Intermarket detail page
+  * Updated `frontend/src/pages/index.astro` - Added indicator panel
+  * Updated `frontend/src/pages/stocks/[ticker].astro` - Added ticker indicators
+
+**Data:**
+  * `data/indicators.json` + `frontend/public/data/indicators.json` - Current intermarket readings
+  * `data/ticker_indicators.json` + `frontend/public/data/ticker_indicators.json` - Current per-ticker readings
+  * `data/historical_indicators.json` - 33 years of daily indicator values
+  * `data/indicator_analysis.json` - Predictive power metrics
+
+**Documentation:**
+  * `spikes/intermarket_indicators.md` - Complete indicator system documentation
+
+**Updated:**
+  * `watchlist.csv` - Added UUP, SLV, ^VIX
+  * `.github/workflows/daily_analysis.yml` - Added both indicator generation steps
+  * `spikes/index.md` - Added reference to new spike
+
+#### Next Steps
+  * Test indicator predictive power with historical forward returns
+  * Create visualization of historical regime changes
+  * Build strategies based on indicator combinations
+  * Monitor indicator accuracy in real-time paper trading
+
+## What Changed
+
 ### Important Correction: Regime Dependency (LATEST - 2026-03-16)
 * **✅ CRITICAL CORRECTION: Changed "validated/not overfit" to "regime-dependent"**
 * **User's insight:** Walk-forward test doesn't prove strategies aren't overfit - it shows they work better in bull markets

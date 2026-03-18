@@ -1,0 +1,424 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+
+let indicators = null;
+try {
+  indicators = JSON.parse(await fs.readFile(path.resolve('./public/data/indicators.json'), 'utf-8'));
+} catch (e) {
+  console.error('Error loading indicators:', e);
+}
+---
+
+<Layout title="Intermarket Indicators - AlphaOracle">
+  <main>
+    <header>
+      <h1>Intermarket Indicators</h1>
+      <p class="subtitle">7-Market Regime Detection System</p>
+      <p class="date">Last updated: {indicators?.metadata?.generated_at ? new Date(indicators.metadata.generated_at).toLocaleString() : 'N/A'}</p>
+    </header>
+
+    {indicators && (
+      <>
+        <section class="panel">
+          <h2>Current Market Regime</h2>
+          <div class={`regime-indicator ${indicators.market_regime.regime.toLowerCase().replace(' ', '-')}`}>
+            <div class="regime-main">
+              <span class="regime-value">{indicators.market_regime.regime}</span>
+              <span class="confidence-badge">{indicators.market_regime.confidence} confidence</span>
+            </div>
+            <p class="regime-interpretation">{indicators.market_regime.interpretation}</p>
+          </div>
+          <div class="regime-explanation">
+            <h3>Regime Classification</h3>
+            <ul>
+              <li><strong>Bull Quiet:</strong> Risk-on environment with low volatility and rising equities</li>
+              <li><strong>Bull Volatile:</strong> Rising equities but elevated volatility signals uncertainty</li>
+              <li><strong>Bear Quiet:</strong> Declining equities with rising bonds (orderly decline)</li>
+              <li><strong>Bear Volatile:</strong> Risk-off with high VIX and flight to safety</li>
+              <li><strong>Transitional:</strong> Mixed signals, regime change in progress</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>Individual Indicators</h2>
+
+          <div class="indicator-detail">
+            <div class="indicator-header">
+              <h3>Risk Sentiment</h3>
+              <div class={`indicator-signal ${indicators.indicators.risk_sentiment.signal.replace('_', '-')}`}>
+                {indicators.indicators.risk_sentiment.signal.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+              </div>
+            </div>
+            <p class="indicator-interpretation">{indicators.indicators.risk_sentiment.interpretation}</p>
+            <div class="indicator-components">
+              <div class="component">
+                <span class="component-label">SPY Trend:</span>
+                <span class="component-value">{indicators.indicators.risk_sentiment.components.spy_trend}</span>
+              </div>
+              <div class="component">
+                <span class="component-label">SPY Price:</span>
+                <span class="component-value">${indicators.indicators.risk_sentiment.components.spy_price.toFixed(2)}</span>
+              </div>
+              <div class="component">
+                <span class="component-label">VIX Level:</span>
+                <span class="component-value">{indicators.indicators.risk_sentiment.components.vix_value.toFixed(1)} ({indicators.indicators.risk_sentiment.components.vix_level})</span>
+              </div>
+              <div class="component">
+                <span class="component-label">VIX Trend:</span>
+                <span class="component-value">{indicators.indicators.risk_sentiment.components.vix_trend}</span>
+              </div>
+            </div>
+            <p class="indicator-note">
+              <strong>How it works:</strong> Combines equity momentum (SPY) with volatility (VIX) to gauge market risk appetite.
+              High VIX + falling SPY = Risk-off. Low VIX + rising SPY = Risk-on.
+            </p>
+          </div>
+
+          <div class="indicator-detail">
+            <div class="indicator-header">
+              <h3>Dollar Strength</h3>
+              <div class={`indicator-signal ${indicators.indicators.dollar_strength.signal.replace('_', '-')}`}>
+                {indicators.indicators.dollar_strength.signal.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+              </div>
+            </div>
+            <p class="indicator-interpretation">{indicators.indicators.dollar_strength.interpretation}</p>
+            <div class="indicator-components">
+              <div class="component">
+                <span class="component-label">UUP Price:</span>
+                <span class="component-value">${indicators.indicators.dollar_strength.components.uup_price.toFixed(2)}</span>
+              </div>
+              <div class="component">
+                <span class="component-label">Trend:</span>
+                <span class="component-value">{indicators.indicators.dollar_strength.components.trend}</span>
+              </div>
+              <div class="component">
+                <span class="component-label">20-Day Momentum:</span>
+                <span class="component-value">{indicators.indicators.dollar_strength.components.momentum > 0 ? '+' : ''}{indicators.indicators.dollar_strength.components.momentum.toFixed(2)}%</span>
+              </div>
+            </div>
+            <p class="indicator-note">
+              <strong>How it works:</strong> Tracks UUP (US Dollar Index ETF). Strong dollar typically negative for commodities (priced in USD) and international stocks.
+            </p>
+          </div>
+
+          <div class="indicator-detail">
+            <div class="indicator-header">
+              <h3>Real Rates</h3>
+              <div class={`indicator-signal ${indicators.indicators.real_rates.signal.replace('_', '-')}`}>
+                {indicators.indicators.real_rates.signal.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+              </div>
+            </div>
+            <p class="indicator-interpretation">{indicators.indicators.real_rates.interpretation}</p>
+            <div class="indicator-components">
+              <div class="component">
+                <span class="component-label">TLT Price:</span>
+                <span class="component-value">${indicators.indicators.real_rates.components.tlt_price.toFixed(2)}</span>
+              </div>
+              <div class="component">
+                <span class="component-label">Trend:</span>
+                <span class="component-value">{indicators.indicators.real_rates.components.trend}</span>
+              </div>
+              <div class="component">
+                <span class="component-label">20-Day Momentum:</span>
+                <span class="component-value">{indicators.indicators.real_rates.components.momentum > 0 ? '+' : ''}{indicators.indicators.real_rates.components.momentum.toFixed(2)}%</span>
+              </div>
+            </div>
+            <p class="indicator-note">
+              <strong>How it works:</strong> TLT (20+ Year Treasury) price inversely related to yields.
+              Rising TLT = Falling rates = Good for growth stocks. Falling TLT = Rising rates = Good for value/financials.
+            </p>
+          </div>
+
+          <div class="indicator-detail">
+            <div class="indicator-header">
+              <h3>Commodity Strength</h3>
+              <div class={`indicator-signal ${indicators.indicators.commodity_strength.signal.replace('_', '-')}`}>
+                {indicators.indicators.commodity_strength.signal.replace(/commodities_/g, '').replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+              </div>
+            </div>
+            <p class="indicator-interpretation">{indicators.indicators.commodity_strength.interpretation}</p>
+            <div class="indicator-components">
+              <div class="component">
+                <span class="component-label">Gold (GLD):</span>
+                <span class="component-value">
+                  ${indicators.indicators.commodity_strength.components.gld.price.toFixed(2)}
+                  ({indicators.indicators.commodity_strength.components.gld.trend})
+                </span>
+              </div>
+              <div class="component">
+                <span class="component-label">Silver (SLV):</span>
+                <span class="component-value">
+                  ${indicators.indicators.commodity_strength.components.slv.price.toFixed(2)}
+                  ({indicators.indicators.commodity_strength.components.slv.trend})
+                </span>
+              </div>
+              <div class="component">
+                <span class="component-label">Energy (XLE):</span>
+                <span class="component-value">
+                  ${indicators.indicators.commodity_strength.components.xle.price.toFixed(2)}
+                  ({indicators.indicators.commodity_strength.components.xle.trend})
+                </span>
+              </div>
+            </div>
+            <p class="indicator-note">
+              <strong>How it works:</strong> Different commodities signal different regimes.
+              Gold leading = defensive/inflation concerns. Energy/silver leading = risk-on/economic growth.
+            </p>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>Why Intermarket Analysis?</h2>
+          <div class="explanation-grid">
+            <div class="explanation-card">
+              <h3>Uncorrelated Signals</h3>
+              <p>Using 7 different asset classes provides confirmation. If multiple uncorrelated signals align, it's likely a real regime change, not noise.</p>
+            </div>
+            <div class="explanation-card">
+              <h3>Less Crowded Trades</h3>
+              <p>Single-asset technical indicators (RSI, MACD) are widely used and saturated. Intermarket relationships are less common among retail traders.</p>
+            </div>
+            <div class="explanation-card">
+              <h3>Leading Indicators</h3>
+              <p>Intermarket relationships often lead equity moves. Dollar strength can predict commodity weakness. Bond strength can predict equity risk-off.</p>
+            </div>
+            <div class="explanation-card">
+              <h3>Regime Context</h3>
+              <p>Understanding which regime you're in helps all strategies. Risk-on favors growth/cyclicals. Risk-off favors defensives/quality.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>The 7 Markets</h2>
+          <ul class="markets-list">
+            <li><strong>SPY</strong> - S&P 500 (US equity market)</li>
+            <li><strong>^VIX</strong> - Volatility Index (fear gauge)</li>
+            <li><strong>TLT</strong> - 20+ Year Treasury Bonds (interest rates)</li>
+            <li><strong>UUP</strong> - US Dollar Index (currency strength)</li>
+            <li><strong>GLD</strong> - Gold (safe haven / inflation hedge)</li>
+            <li><strong>SLV</strong> - Silver (industrial metal / inflation)</li>
+            <li><strong>XLE</strong> - Energy Sector (economic growth / oil)</li>
+          </ul>
+        </section>
+      </>
+    )}
+
+    {!indicators && (
+      <section class="panel">
+        <p style="color: #ffc107;">No indicator data available. Run: <code>python src/generate_indicators.py</code></p>
+      </section>
+    )}
+  </main>
+</Layout>
+
+<style>
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+    color: #f8f9fa;
+  }
+  header { text-align: center; margin-bottom: 2rem; }
+  h1 { margin: 0; font-size: 2.5rem; font-weight: 800; }
+  .subtitle { color: #8f949e; margin-top: 0.4rem; font-size: 1.1rem; }
+  .date { color: #8f949e; font-size: 0.85rem; margin-top: 0.5rem; }
+
+  .panel {
+    background: #131722;
+    border: 1px solid #2a2e39;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .panel h2 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    color: #f8f9fa;
+    border-bottom: 1px solid #2a2e39;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  .panel h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: #f8f9fa;
+  }
+
+  /* Regime Indicator */
+  .regime-indicator {
+    background: #1e2230;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  .regime-indicator.bear-volatile {
+    border: 2px solid rgba(220, 53, 69, 0.5);
+  }
+  .regime-indicator.bear-quiet {
+    border: 2px solid rgba(220, 53, 69, 0.3);
+  }
+  .regime-indicator.bull-volatile {
+    border: 2px solid rgba(255, 193, 7, 0.5);
+  }
+  .regime-indicator.bull-quiet {
+    border: 2px solid rgba(40, 167, 69, 0.5);
+  }
+  .regime-main {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+  }
+  .regime-value {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #f8f9fa;
+  }
+  .confidence-badge {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #8f949e;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+  }
+  .regime-interpretation {
+    color: #c4d4ff;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+  .regime-explanation {
+    margin-top: 1rem;
+  }
+  .regime-explanation ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.5rem;
+  }
+  .regime-explanation li {
+    color: #d1d4dc;
+    margin-bottom: 0.4rem;
+    line-height: 1.5;
+  }
+
+  /* Individual Indicators */
+  .indicator-detail {
+    background: #1e2230;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  .indicator-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .indicator-signal {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .indicator-signal.risk-on { color: #28a745; background: rgba(40, 167, 69, 0.15); }
+  .indicator-signal.risk-off { color: #dc3545; background: rgba(220, 53, 69, 0.15); }
+  .indicator-signal.cautious { color: #ffc107; background: rgba(255, 193, 7, 0.15); }
+  .indicator-signal.strong-dollar { color: #2962ff; background: rgba(41, 98, 255, 0.15); }
+  .indicator-signal.weak-dollar { color: #f8961e; background: rgba(248, 150, 30, 0.15); }
+  .indicator-signal.dollar-rising { color: #5e8fff; background: rgba(94, 143, 255, 0.15); }
+  .indicator-signal.rising-rates { color: #dc3545; background: rgba(220, 53, 69, 0.15); }
+  .indicator-signal.falling-rates { color: #28a745; background: rgba(40, 167, 69, 0.15); }
+  .indicator-signal.stable-rates { color: #8f949e; background: rgba(143, 148, 158, 0.15); }
+  .indicator-signal.strong-defensive { color: #ffc107; background: rgba(255, 193, 7, 0.15); }
+  .indicator-signal.strong-cyclical { color: #28a745; background: rgba(40, 167, 69, 0.15); }
+
+  .indicator-interpretation {
+    color: #c4d4ff;
+    font-size: 0.95rem;
+    margin: 0 0 1rem;
+    line-height: 1.5;
+  }
+  .indicator-components {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  .component {
+    background: #131722;
+    border-radius: 6px;
+    padding: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .component-label {
+    color: #8f949e;
+    font-size: 0.85rem;
+  }
+  .component-value {
+    color: #f8f9fa;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .indicator-note {
+    color: #8f949e;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin: 0;
+    padding-top: 0.75rem;
+    border-top: 1px solid #2a2e39;
+  }
+
+  /* Explanation Grid */
+  .explanation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+  .explanation-card {
+    background: #1e2230;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  .explanation-card h3 {
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+    color: #2962ff;
+  }
+  .explanation-card p {
+    color: #d1d4dc;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* Markets List */
+  .markets-list {
+    margin: 0;
+    padding-left: 1.5rem;
+  }
+  .markets-list li {
+    color: #d1d4dc;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  .markets-list strong {
+    color: #2962ff;
+    font-weight: 700;
+  }
+</style>
