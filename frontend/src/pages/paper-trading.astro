@@ -22,6 +22,7 @@ let performance = {
 };
 
 let trades = { trades: [] };
+let alpacaTrades = { ok: false, trades: [], error: '' };
 
 try {
   positions = JSON.parse(await fs.readFile(path.resolve('./public/data/paper_positions.json'), 'utf-8'));
@@ -39,6 +40,13 @@ try {
   trades = JSON.parse(await fs.readFile(path.resolve('./public/data/paper_trades.json'), 'utf-8'));
 } catch {
   console.log('No paper_trades.json found');
+}
+
+// Try to load real Alpaca trade history
+try {
+  alpacaTrades = JSON.parse(await fs.readFile(path.resolve('./public/data/alpaca_trades.json'), 'utf-8'));
+} catch {
+  console.log('No alpaca_trades.json found');
 }
 
 const formatDate = (isoString: string) => {
@@ -61,8 +69,10 @@ const formatCurrency = (value: number) => {
   return `$${value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 };
 
-// Get recent trades (last 20)
-const recentTrades = trades.trades.slice(-20).reverse();
+// Use real Alpaca trades if available, otherwise fall back to simulated
+const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
+  ? alpacaTrades.trades.slice(0, 20)  // Already sorted by most recent
+  : trades.trades.slice(-20).reverse();
 ---
 
 <Layout title="AlphaOracle - Paper Trading">
@@ -185,34 +195,38 @@ const recentTrades = trades.trades.slice(-20).reverse();
 
     <!-- Recent Trades -->
     <section class="panel">
-      <h2>📝 Recent Trades (Last 20)</h2>
+      <h2>📝 Recent Trades (Last 20)
+        {alpacaTrades.ok && <span class="badge-live">Live from Alpaca</span>}
+      </h2>
       {recentTrades.length > 0 ? (
         <table>
           <thead>
             <tr>
               <th>Timestamp</th>
-              <th>Strategy</th>
+              {!alpacaTrades.ok && <th>Strategy</th>}
               <th>Action</th>
               <th>Ticker</th>
               <th>Shares</th>
               <th>Price</th>
               <th>Notional</th>
-              <th>Rationale</th>
+              {!alpacaTrades.ok && <th>Rationale</th>}
+              {alpacaTrades.ok && <th>Type</th>}
             </tr>
           </thead>
           <tbody>
             {recentTrades.map((trade) => (
               <tr>
                 <td>{formatDate(trade.timestamp)}</td>
-                <td>{trade.strategy.replace(/_/g, ' ')}</td>
-                <td class={trade.action === 'buy' ? 'buy-action' : 'sell-action'}>
-                  {trade.action.toUpperCase()}
+                {!alpacaTrades.ok && <td>{trade.strategy?.replace(/_/g, ' ')}</td>}
+                <td class={trade.side === 'buy' || trade.action === 'buy' ? 'buy-action' : 'sell-action'}>
+                  {(trade.side || trade.action || '').toUpperCase()}
                 </td>
-                <td><strong>{trade.ticker}</strong></td>
-                <td>{trade.shares.toFixed(2)}</td>
+                <td><strong>{trade.symbol || trade.ticker}</strong></td>
+                <td>{trade.qty?.toFixed(2) || trade.shares?.toFixed(2)}</td>
                 <td>{formatCurrency(trade.price)}</td>
                 <td>{formatCurrency(trade.notional)}</td>
-                <td class="rationale">{trade.rationale}</td>
+                {!alpacaTrades.ok && <td class="rationale">{trade.rationale}</td>}
+                {alpacaTrades.ok && <td>{trade.type}</td>}
               </tr>
             ))}
           </tbody>
@@ -386,6 +400,19 @@ const recentTrades = trades.trades.slice(-20).reverse();
   .info-footer p {
     margin: 0.5rem 0;
     color: #d1d4dc;
+  }
+
+  .badge-live {
+    display: inline-block;
+    background: #28a745;
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
 
   @media (max-width: 768px) {

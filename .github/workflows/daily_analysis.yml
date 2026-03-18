@@ -50,7 +50,13 @@ jobs:
           ALPACA_API_KEY: ${{ secrets.ALPACA_DEV_API_KEY }}
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_DEV_SECRET_KEY }}
         run: python src/fetch_alpaca_portfolio.py
-          
+
+      - name: Fetch Trade History From Alpaca (Dev Account)
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_DEV_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_DEV_SECRET_KEY }}
+        run: python src/fetch_alpaca_trades.py
+
       - name: Run Data Ingestion
         run: python src/data_ingestion.py
 
