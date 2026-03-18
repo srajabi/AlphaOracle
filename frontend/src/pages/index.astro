@@ -35,12 +35,12 @@ const reports = await getCollection('reports');
 const pmSynthesis = reports.find((r) => r.slug === 'pm_synthesis');
 const reportBySlug = Object.fromEntries(reports.map((r) => [r.slug, r]));
 
-// General market insights for digest
+// System overview highlights
 const digestItems = [
-  `Current market regime: ${contextData.regime}. This classification drives strategy selection and risk management.`,
-  `Intermarket analysis tracks 7 uncorrelated markets (SPY, VIX, UUP, TLT, GLD, SLV, XLE) to detect regime changes before they're obvious.`,
-  `Paper trading 7 strategies across $700k in simulation. Real capital deployment planned after 6-12 months of validation.`,
-  `Backtests validated over 33 years (1993-2026) covering dot-com crash, GFC, COVID, inflation bear, and AI bull markets.`
+  `Current market regime: ${contextData.regime}. Understanding regime changes helps anticipate which strategies work and when.`,
+  `Intermarket analysis tracks 7 uncorrelated markets (SPY, VIX, UUP, TLT, GLD, SLV, XLE) to detect regime shifts before they're obvious.`,
+  `Multiple automated strategies running forward across different accounts to build intuition about what works in real-time.`,
+  `Backtests cover 33 years (1993-2026): dot-com crash, GFC, COVID, inflation bear, AI bull. See how strategies perform across all conditions.`
 ];
 ---
 

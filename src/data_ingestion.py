@@ -80,10 +80,9 @@ EVENT_RULES = [
 ]
 
 def load_tickers():
-    """Load tickers from watchlist and paper trading portfolio (if exists)."""
+    """Load tickers from watchlist and portfolio."""
     tickers = set(['SPY', '^VIX'])
     if os.path.exists('portfolio.csv'):
-        # portfolio.csv is auto-generated from Alpaca paper trading account
         df_p = pd.read_csv('portfolio.csv')
         tickers.update(df_p[df_p['Type'] == 'Equity']['Ticker'].tolist())
     if os.path.exists('watchlist.csv'):

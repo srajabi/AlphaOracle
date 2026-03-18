@@ -49,7 +49,6 @@ def build_context():
     seasonality = load_text_file('thesis/seasonality_rules.md')
     
     # Load Portfolio & Watchlist
-    # Note: portfolio.csv reflects paper trading account state (validation phase only)
     portfolio = load_text_file('portfolio.csv')
     watchlist = load_text_file('watchlist.csv')
 
@@ -60,7 +59,7 @@ def build_context():
 # OPTIONS IDEAS AND CHAIN SNAPSHOT (JSON)
 {options_data_str}
 
-# PAPER TRADING PORTFOLIO STATE
+# CURRENT PORTFOLIO STATE
 {portfolio}
 
 # WATCHLIST

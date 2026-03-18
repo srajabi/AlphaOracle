@@ -42,16 +42,16 @@ const actionable = holdings
     </nav>
 
     <header>
-      <h1>Paper Trading Action Items</h1>
-      <p class="muted">Paper trading account holdings mapped against today&apos;s recommendation set. This is for validation only - no live capital deployed.</p>
+      <h1>Portfolio Action Items</h1>
+      <p class="muted">Current holdings mapped against today&apos;s recommendation set.</p>
     </header>
 
     <section class="panel">
-      <h2>Paper Trading Cash Position</h2>
+      <h2>Cash Position</h2>
       {holdings.find((h) => h.ticker === 'CASH') ? (
-        <p>Paper trading account cash: <strong>${holdings.find((h) => h.ticker === 'CASH')?.costBasis.toLocaleString()}</strong></p>
+        <p>Available cash: <strong>${holdings.find((h) => h.ticker === 'CASH')?.costBasis.toLocaleString()}</strong></p>
       ) : (
-        <p class="muted">No CASH row found in paper trading portfolio.</p>
+        <p class="muted">No CASH row found.</p>
       )}
     </section>
 
@@ -83,7 +83,7 @@ const actionable = holdings
           </tbody>
         </table>
       ) : (
-        <p class="muted">No holdings in paper trading account yet.</p>
+        <p class="muted">No current holdings.</p>
       )}
     </section>
   </main>

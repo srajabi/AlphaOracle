@@ -1,9 +1,16 @@
 # AlphaOracle: Automated AI Investment Analyst & Portfolio Manager
 
 ## Overview
-AlphaOracle is an AI-driven system designed to automate stock analysis, backtest trading strategies, and validate them through paper trading. It leverages large language models (LLMs) to analyze market data, news, and predefined investment theses, publishing daily insights and strategy validation results to a static website hosted on GitHub Pages.
+AlphaOracle is a personal learning system for developing market intuition through systematic analysis and automated strategy testing. It combines AI-driven market commentary with rule-based technical strategies, helping you understand market regimes, intermarket dynamics, and trading system performance.
 
-**Current Phase**: Paper trading and backtesting validation. No live capital deployment yet. After 6-12 months of validation, the system may be used with real capital.
+**What it does:**
+- Analyzes market data, news, and technical indicators through multiple LLM "agents" (Risk Manager, Technical Analyst, Macro Strategist)
+- Tracks intermarket relationships across 7 uncorrelated markets to detect regime changes
+- Backtests trading strategies across 33 years of market history
+- Runs strategies forward in automated paper trading accounts to build real-time intuition
+- Publishes everything to a personal dashboard where you can study the analysis and results
+
+**Philosophy:** Learn by watching systems think and trade. See what works, what doesn't, and why. Build intuition through observation and iteration.
 
 ## Features
 *   **Automated Data Ingestion:** Fetches EOD stock prices, technical indicators, and news.
@@ -71,7 +78,7 @@ The system runs daily via GitHub Actions:
 ### 3. Customize Investment Theses & Watchlist
 *   Edit `watchlist.csv` to define the tickers you want the AI to analyze.
 *   Modify the Markdown files in the `thesis/` directory to define your investment philosophy, macro views, and sector preferences.
-*   Note: `portfolio.csv` is auto-generated from your Alpaca paper trading account state and should not be manually edited.
+*   `portfolio.csv` is auto-generated from your Alpaca account and reflects current positions.
 
 ### 4. Local Development & Testing
 
