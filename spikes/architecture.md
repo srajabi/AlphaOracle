@@ -7,7 +7,7 @@ AlphaOracle is an automated, AI-driven stock analysis and portfolio management s
 
 ### 1. The Knowledge Base (State & Inputs)
 Stored directly in the GitHub repository:
-*   `portfolio.csv`: Current positions, cost basis, quantities, and cash balance.
+*   `portfolio.csv`: Paper trading account state (auto-generated from Alpaca). Current system is validation-only; no live capital deployed.
 *   `watchlist.csv`: Tickers categorized by sector, ETF, or specific trade setup.
 *   `thesis/`: A directory of Markdown files detailing the investment philosophy.
     *   `macro_view.md`: Long-term economic outlook (e.g., inflation expectations, interest rates).
@@ -33,7 +33,7 @@ The core intelligence layer. Uses multiple diverse LLMs (via a library like `lit
 *   **The Macro Strategist (e.g., Claude 3.5 Sonnet):** Focuses on interest rates, currency pairs, global markets, and geopolitical news.
 
 ### 5. Synthesis & Portfolio Manager (The Final LLM)
-A highly capable model (e.g., GPT-4o or Claude 3.5 Sonnet) takes the outputs from the three agents, the original context, and the `portfolio.csv`.
+A highly capable model (e.g., GPT-4o or Claude 3.5 Sonnet) takes the outputs from the three agents, the original context, and the paper trading portfolio state.
 *   **Task:** Debate disagreements between the agents, weigh them against the user's `thesis/`, and output a definitive, actionable plan.
 *   **Output:** A structured JSON or strict Markdown table containing:
     *   **Action:** Buy/Sell/Hold/Options Strategy

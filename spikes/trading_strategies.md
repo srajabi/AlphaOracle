@@ -29,7 +29,7 @@ Options should be used carefully to enhance returns or hedge risk, not for reckl
     *   *Strategy:* Sell puts on stocks/ETFs we *want* to own, at a price we are happy to pay (e.g., 5% below current price).
     *   *LLM Prompting:* Identify high-quality stocks in our watchlist that have elevated implied volatility (higher premiums) but are near strong support levels.
 *   **Covered Calls (Yield Enhancement):**
-    *   *Strategy:* Sell upside calls against existing positions in `portfolio.csv` to generate income, especially during "Bull Quiet" or "Bear Quiet" regimes.
+    *   *Strategy:* Sell upside calls against existing positions in the paper trading portfolio to generate income, especially during "Bull Quiet" or "Bear Quiet" regimes.
 *   **Directional Plays (Long Calls/Puts):**
     *   *Strategy:* Use to capitalize on high-conviction swing setups with defined risk. Buy SPY Puts to hedge the portfolio if the LLMs detect an impending high-volatility event.
 

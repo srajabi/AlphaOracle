@@ -16,9 +16,9 @@ The system runs daily via GitHub Actions, analyzes market data, generates trade 
 
 ### Three Modes of Operation
 
-1. **LLM Analysis Mode**: Multi-agent system provides nuanced market commentary, considering macro news, technicals, portfolio state, and risk
+1. **LLM Analysis Mode**: Multi-agent system provides nuanced market commentary, considering macro news, technicals, and risk
 2. **Strategy Rating Mode**: Rule-based strategies provide buy/sell/hold signals per ticker (200 SMA, dual momentum, RSI mean reversion, etc.)
-3. **Paper Trading Mode**: Forward validation of strategies to track real-world performance without capital risk
+3. **Paper Trading Mode** (Current Focus): Forward validation of strategies to track real-world performance without capital risk
 
 ### Design Principles
 
@@ -61,7 +61,8 @@ Data Sources → Ingestion → Analysis → Execution → Frontend Display
 - Outputs: `data/options_context.json`
 
 #### Portfolio State (`src/fetch_alpaca_portfolio.py`)
-- Syncs current holdings from Alpaca
+- Syncs current holdings from Alpaca paper trading account
+- Used for validation and tracking only - no live capital deployment yet
 - Outputs: `data/portfolio_status.json`, `portfolio.csv`
 
 #### LLM Analysis (`src/llm_agents.py`)
@@ -207,14 +208,17 @@ python3 src/fetch_alpaca_portfolio.py
 - **GitHub Actions**: Daily automation
 - **GitHub Pages**: Hosting
 
-## Current Portfolio State
+## Paper Trading Validation Phase (Current State)
 
-As of last sync:
-- CASH: -100,000.00 (margin used)
-- GLD: 210.216523018 shares
-- XLU: 2,125.806740615 shares
+**Important**: This system is currently in a validation phase using paper trading only. No live capital is deployed.
 
-The negative cash indicates margin borrowing for positions.
+The paper trading account is used to:
+- Test strategy execution in a realistic environment
+- Track performance of backtested strategies in real-time
+- Validate the full system pipeline (data → analysis → execution)
+- Build confidence before any real capital deployment
+
+**Future Plan**: After 6-12 months of successful paper trading validation, the system may be used with live capital across multiple accounts with strict risk controls.
 
 ## Watchlist
 

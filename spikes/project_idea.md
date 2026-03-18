@@ -10,8 +10,8 @@
 ## High-Level Architecture
 The system is a static site generated daily via GitHub Actions, driven by a multi-agent LLM pipeline.
 
-1.  **State/Input Repository:** 
-    *   `portfolio.csv`: Current holdings, cost basis, quantities.
+1.  **State/Input Repository:**
+    *   `portfolio.csv`: Paper trading account holdings (auto-generated). System is currently validation-only.
     *   `watchlist.csv`: Tickers of interest.
     *   `thesis/`: Markdown files detailing macro views, vertical interests (e.g., AI, biotech), and seasonality rules (e.g., "Midterm summer dips").
 2.  **Data Ingestion Engine (Python Scripts):**

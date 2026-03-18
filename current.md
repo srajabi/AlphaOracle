@@ -392,13 +392,13 @@
 * CLI args still work and override config settings.
 * Example usage: `python3 backtesting/run_backtests.py --config backtesting/configs/quick_test.yaml`
 
-### Portfolio state sync
-* `src/fetch_alpaca_portfolio.py` now writes both `data/portfolio_status.json` and `portfolio.csv` when the Alpaca fetch succeeds.
-* `.github/workflows/daily_analysis.yml` now syncs Alpaca portfolio state before `src/data_ingestion.py`, so the LLMs see actual holdings before analysis.
-* `portfolio.csv` was updated from the checked-in Alpaca snapshot to reflect:
-  * `CASH = -100000.00`
-  * `GLD = 210.216523018`
-  * `XLU = 2125.806740615`
+### Paper Trading Focus (Current State)
+* **System currently focused on paper trading and backtesting validation**
+* No live capital deployment yet - validating strategies in simulation first
+* `src/fetch_alpaca_portfolio.py` syncs paper trading account state (dev account only)
+* Paper trading tracks 7 strategies independently with $100k each
+* **Plan:** Deploy real capital only after 6-12 months of successful paper trading
+* **Future:** Will add multi-account live trading once strategies proven in forward validation
 
 ### News ingestion
 * `src/data_ingestion.py` was expanded beyond ticker-only Yahoo headlines.

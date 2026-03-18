@@ -16,6 +16,7 @@ LONG_OPTION_UNDERLYINGS = {"SPY", "QQQ", "GLD", "TLT", "XLE"}
 
 
 def load_portfolio():
+    """Load paper trading portfolio holdings (auto-generated from Alpaca)."""
     if not os.path.exists("portfolio.csv"):
         return pd.DataFrame(columns=["Ticker", "Quantity", "CostBasis", "Type"])
     return pd.read_csv("portfolio.csv")

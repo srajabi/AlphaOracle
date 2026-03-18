@@ -35,17 +35,12 @@ const reports = await getCollection('reports');
 const pmSynthesis = reports.find((r) => r.slug === 'pm_synthesis');
 const reportBySlug = Object.fromEntries(reports.map((r) => [r.slug, r]));
 
-const buyCount = trades.filter((t) => (t.action || '').toLowerCase() === 'buy').length;
-const sellCount = trades.filter((t) => (t.action || '').toLowerCase() === 'sell').length;
-const totalNotional = trades
-  .filter((t) => (t.action || '').toLowerCase() === 'buy' && t.notional_value)
-  .reduce((sum, t) => sum + Number(t.notional_value || 0), 0);
-
-const bias = buyCount > sellCount ? 'Long bias' : sellCount > buyCount ? 'Risk-off / trim bias' : 'Neutral bias';
+// General market insights for digest
 const digestItems = [
-  `${bias} under a ${contextData.regime} regime.`,
-  `Planned entries: ${buyCount}. Planned exits/reductions: ${sellCount}.`,
-  `Target capital deployment today: $${totalNotional.toLocaleString(undefined, { maximumFractionDigits: 0 })}.`
+  `Current market regime: ${contextData.regime}. This classification drives strategy selection and risk management.`,
+  `Intermarket analysis tracks 7 uncorrelated markets (SPY, VIX, UUP, TLT, GLD, SLV, XLE) to detect regime changes before they're obvious.`,
+  `Paper trading 7 strategies across $700k in simulation. Real capital deployment planned after 6-12 months of validation.`,
+  `Backtests validated over 33 years (1993-2026) covering dot-com crash, GFC, COVID, inflation bear, and AI bull markets.`
 ];
 ---
 
@@ -141,12 +136,8 @@ const digestItems = [
         <p>7-market regime detection using SPY, VIX, TLT, UUP, GLD, SLV, XLE.</p>
       </a>
       <a class="nav-card" href={`${base}paper-trading/`}>
-        <h2>Paper Trading Dashboard</h2>
-        <p>Mode 3: Track forward performance of 7 strategies with $100k each.</p>
-      </a>
-      <a class="nav-card" href={`${base}portfolio/`}>
-        <h2>Live Portfolio Status</h2>
-        <p>Real broker account positions and execution logs.</p>
+        <h2>Paper Trading Simulator</h2>
+        <p>Forward validation: 7 strategies, $100k each, tracking real-time performance.</p>
       </a>
       <a class="nav-card" href={`${base}tickers/`}>
         <h2>Ticker Dashboard</h2>
@@ -159,13 +150,13 @@ const digestItems = [
     </section>
 
     <section class="panel">
-      <h2>Today&apos;s Actionable Digest</h2>
+      <h2>System Overview</h2>
       <ul class="digest">
         {digestItems.map((item) => (
           <li>{item}</li>
         ))}
       </ul>
-      <p class="muted">Details by ticker are in the <a href={`${base}tickers/`}>Ticker Dashboard</a>.</p>
+      <p class="muted">View detailed analysis in <a href={`${base}indicators/`}>Intermarket Indicators</a> and <a href={`${base}backtests/`}>Strategy Backtests</a>.</p>
     </section>
   </main>
 </Layout>

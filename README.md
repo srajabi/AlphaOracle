@@ -1,14 +1,18 @@
 # AlphaOracle: Automated AI Investment Analyst & Portfolio Manager
 
 ## Overview
-AlphaOracle is an AI-driven system designed to automate stock analysis, generate investment recommendations, and execute trades in a paper trading environment. It leverages large language models (LLMs) to analyze market data, news, and predefined investment theses, publishing daily insights and portfolio updates to a static website hosted on GitHub Pages.
+AlphaOracle is an AI-driven system designed to automate stock analysis, backtest trading strategies, and validate them through paper trading. It leverages large language models (LLMs) to analyze market data, news, and predefined investment theses, publishing daily insights and strategy validation results to a static website hosted on GitHub Pages.
+
+**Current Phase**: Paper trading and backtesting validation. No live capital deployment yet. After 6-12 months of validation, the system may be used with real capital.
 
 ## Features
-*   **Automated Data Ingestion:** Fetches real-time stock prices, technical indicators, and news.
+*   **Automated Data Ingestion:** Fetches EOD stock prices, technical indicators, and news.
+*   **Intermarket Regime Detection:** Tracks 7 uncorrelated markets (SPY, VIX, UUP, TLT, GLD, SLV, XLE) to detect regime changes.
 *   **Multi-Agent LLM Analysis:** Uses a "Mixture of Experts" approach where multiple LLMs (Risk Manager, Technical Analyst, Macro Strategist) provide specialized insights.
-*   **Portfolio Management LLM:** A final LLM synthesizes agent reports against a user-defined investment thesis to generate actionable trade recommendations.
-*   **Alpaca Paper Trading Integration:** Automatically executes recommended trades on an Alpaca paper trading account.
-*   **GitHub Pages Deployment:** Publishes daily analysis reports and a live portfolio dashboard to a static website.
+*   **Portfolio Management LLM:** A final LLM synthesizes agent reports against a user-defined investment thesis.
+*   **Strategy Backtesting:** Validates trading strategies across 33 years of market history (1993-2026) covering all major market regimes.
+*   **Paper Trading Validation:** Forward-tests strategies in simulation across multiple accounts ($100k each) to track real-time performance.
+*   **GitHub Pages Deployment:** Publishes daily analysis reports, backtest results, and paper trading performance to a static website.
 *   **Secure API Handling:** Uses `.env` for local secrets and GitHub Secrets for CI/CD.
 *   **Local Development Workflow:** Includes scripts and unit tests for efficient local testing and iteration.
 
@@ -65,9 +69,9 @@ The system runs daily via GitHub Actions:
 2.  Click **New repository secret** and add your `GEMINI_API_KEY`, `ALPACA_API_KEY`, and `ALPACA_SECRET_KEY`.
 
 ### 3. Customize Investment Theses & Watchlist
-*   Edit `portfolio.csv` to reflect your starting capital and any initial holdings.
 *   Edit `watchlist.csv` to define the tickers you want the AI to analyze.
 *   Modify the Markdown files in the `thesis/` directory to define your investment philosophy, macro views, and sector preferences.
+*   Note: `portfolio.csv` is auto-generated from your Alpaca paper trading account state and should not be manually edited.
 
 ### 4. Local Development & Testing
 
