@@ -1,0 +1,264 @@
+{
+  "downloaded_at": "2026-03-17T03:34:57.988288Z",
+  "total_tickers": 43,
+  "successful": 42,
+  "failed": 1,
+  "tickers": {
+    "MSFT": {
+      "success": true,
+      "days": 10079,
+      "start_date": "1986-03-13",
+      "end_date": "2026-03-16"
+    },
+    "AAPL": {
+      "success": true,
+      "days": 11405,
+      "start_date": "1980-12-12",
+      "end_date": "2026-03-16"
+    },
+    "AMZN": {
+      "success": true,
+      "days": 7253,
+      "start_date": "1997-05-15",
+      "end_date": "2026-03-16"
+    },
+    "META": {
+      "success": true,
+      "days": 3475,
+      "start_date": "2012-05-18",
+      "end_date": "2026-03-16"
+    },
+    "NFLX": {
+      "success": true,
+      "days": 5991,
+      "start_date": "2002-05-23",
+      "end_date": "2026-03-16"
+    },
+    "GOOGL": {
+      "success": true,
+      "days": 5427,
+      "start_date": "2004-08-19",
+      "end_date": "2026-03-16"
+    },
+    "NVDA": {
+      "success": true,
+      "days": 6828,
+      "start_date": "1999-01-22",
+      "end_date": "2026-03-16"
+    },
+    "TSM": {
+      "success": true,
+      "days": 7151,
+      "start_date": "1997-10-09",
+      "end_date": "2026-03-16"
+    },
+    "AVGO": {
+      "success": true,
+      "days": 4177,
+      "start_date": "2009-08-06",
+      "end_date": "2026-03-16"
+    },
+    "AMD": {
+      "success": true,
+      "days": 11593,
+      "start_date": "1980-03-17",
+      "end_date": "2026-03-16"
+    },
+    "MU": {
+      "success": true,
+      "days": 10528,
+      "start_date": "1984-06-01",
+      "end_date": "2026-03-16"
+    },
+    "KLAC": {
+      "success": true,
+      "days": 11450,
+      "start_date": "1980-10-08",
+      "end_date": "2026-03-16"
+    },
+    "INTC": {
+      "success": true,
+      "days": 11593,
+      "start_date": "1980-03-17",
+      "end_date": "2026-03-16"
+    },
+    "PLTR": {
+      "success": true,
+      "days": 1370,
+      "start_date": "2020-09-30",
+      "end_date": "2026-03-16"
+    },
+    "CRWD": {
+      "success": true,
+      "days": 1699,
+      "start_date": "2019-06-12",
+      "end_date": "2026-03-16"
+    },
+    "NBIS": {
+      "success": true,
+      "days": 350,
+      "start_date": "2024-10-21",
+      "end_date": "2026-03-16"
+    },
+    "ORCL": {
+      "success": true,
+      "days": 10080,
+      "start_date": "1986-03-12",
+      "end_date": "2026-03-16"
+    },
+    "PSTG": {
+      "success": true,
+      "days": 2625,
+      "start_date": "2015-10-06",
+      "end_date": "2026-03-16"
+    },
+    "CEG": {
+      "success": true,
+      "days": 1042,
+      "start_date": "2022-01-19",
+      "end_date": "2026-03-16"
+    },
+    "TLN": {
+      "success": true,
+      "days": 698,
+      "start_date": "2023-06-02",
+      "end_date": "2026-03-16"
+    },
+    "MTZ": {
+      "success": true,
+      "days": 13379,
+      "start_date": "1973-02-21",
+      "end_date": "2026-03-16"
+    },
+    "WDC": {
+      "success": true,
+      "days": 11940,
+      "start_date": "1978-10-31",
+      "end_date": "2026-03-16"
+    },
+    "STX": {
+      "success": true,
+      "days": 5851,
+      "start_date": "2002-12-11",
+      "end_date": "2026-03-16"
+    },
+    "HXSC.F": {
+      "success": false,
+      "error": "Failed to download"
+    },
+    "KXIAY": {
+      "success": true,
+      "days": 85,
+      "start_date": "2025-10-06",
+      "end_date": "2026-03-16"
+    },
+    "TSLA": {
+      "success": true,
+      "days": 3952,
+      "start_date": "2010-06-29",
+      "end_date": "2026-03-16"
+    },
+    "QQQ": {
+      "success": true,
+      "days": 6796,
+      "start_date": "1999-03-10",
+      "end_date": "2026-03-16"
+    },
+    "VOO": {
+      "success": true,
+      "days": 3902,
+      "start_date": "2010-09-09",
+      "end_date": "2026-03-16"
+    },
+    "VTI": {
+      "success": true,
+      "days": 6223,
+      "start_date": "2001-06-15",
+      "end_date": "2026-03-16"
+    },
+    "VT": {
+      "success": true,
+      "days": 4457,
+      "start_date": "2008-06-26",
+      "end_date": "2026-03-16"
+    },
+    "VXUS": {
+      "success": true,
+      "days": 3804,
+      "start_date": "2011-01-28",
+      "end_date": "2026-03-16"
+    },
+    "SCHD": {
+      "success": true,
+      "days": 3620,
+      "start_date": "2011-10-20",
+      "end_date": "2026-03-16"
+    },
+    "QUAL": {
+      "success": true,
+      "days": 3184,
+      "start_date": "2013-07-18",
+      "end_date": "2026-03-16"
+    },
+    "XLU": {
+      "success": true,
+      "days": 6848,
+      "start_date": "1998-12-22",
+      "end_date": "2026-03-16"
+    },
+    "XLF": {
+      "success": true,
+      "days": 6848,
+      "start_date": "1998-12-22",
+      "end_date": "2026-03-16"
+    },
+    "XLE": {
+      "success": true,
+      "days": 6848,
+      "start_date": "1998-12-22",
+      "end_date": "2026-03-16"
+    },
+    "TLT": {
+      "success": true,
+      "days": 5945,
+      "start_date": "2002-07-30",
+      "end_date": "2026-03-16"
+    },
+    "GLD": {
+      "success": true,
+      "days": 5363,
+      "start_date": "2004-11-18",
+      "end_date": "2026-03-16"
+    },
+    "IAU": {
+      "success": true,
+      "days": 5315,
+      "start_date": "2005-01-28",
+      "end_date": "2026-03-16"
+    },
+    "IBIT": {
+      "success": true,
+      "days": 545,
+      "start_date": "2024-01-11",
+      "end_date": "2026-03-16"
+    },
+    "EWC": {
+      "success": true,
+      "days": 7547,
+      "start_date": "1996-03-18",
+      "end_date": "2026-03-16"
+    },
+    "VGK": {
+      "success": true,
+      "days": 5287,
+      "start_date": "2005-03-10",
+      "end_date": "2026-03-16"
+    },
+    "EWA": {
+      "success": true,
+      "days": 7547,
+      "start_date": "1996-03-18",
+      "end_date": "2026-03-16"
+    }
+  }
+}

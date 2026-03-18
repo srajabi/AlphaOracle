@@ -1,0 +1,37 @@
+# Quick Test Configuration
+# Minimal backtest for rapid iteration during development
+
+name: "Quick Test - Recent Data Only"
+description: "Fast backtest using only recent data for development testing"
+
+# Just test SPY and one defensive asset
+tickers:
+  - SPY
+  - GLD
+
+# Test one strategy of each type
+strategies:
+  - buy_and_hold
+
+portfolio_strategies:
+  - regime_defensive_rotation
+
+# Only recent periods
+periods:
+  lookback_days:
+    - 20
+    - 40
+  full_sample: true
+  market_regimes: []
+
+rolling_windows:
+  enabled: false
+
+transaction_cost_bps: 5.0
+
+data_source:
+  use_long_history: false  # Use recent data only for speed
+
+output:
+  directory: "backtesting/results/quick"
+  save_trades: false

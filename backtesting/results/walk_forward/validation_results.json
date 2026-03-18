@@ -1,0 +1,226 @@
+[
+  {
+    "strategy": "reddit_200sma_spy",
+    "in_sample": {
+      "strategy": "reddit_200sma_spy",
+      "ticker": "PORTFOLIO",
+      "period": "in_sample",
+      "observations": 4516,
+      "trades": 15,
+      "total_return": 29.907766,
+      "annualized_return": 0.211011,
+      "annualized_volatility": 0.367294,
+      "sharpe": 0.574502,
+      "max_drawdown": -0.513587,
+      "win_rate": 0.543262
+    },
+    "out_of_sample": {
+      "strategy": "reddit_200sma_spy",
+      "ticker": "PORTFOLIO",
+      "period": "out_of_sample",
+      "observations": 3822,
+      "trades": 11,
+      "total_return": 40.789696,
+      "annualized_return": 0.279039,
+      "annualized_volatility": 0.341877,
+      "sharpe": 0.816195,
+      "max_drawdown": -0.584354,
+      "win_rate": 0.556966
+    },
+    "return_degradation": 0.3638496630654253,
+    "sharpe_degradation": 0.4207006563106085,
+    "verdict": "\u274c OVERFIT - Significant degradation out-of-sample"
+  },
+  {
+    "strategy": "reddit_200sma_tqqq",
+    "in_sample": {
+      "strategy": "reddit_200sma_tqqq",
+      "ticker": "PORTFOLIO",
+      "period": "in_sample",
+      "observations": 4516,
+      "trades": 17,
+      "total_return": -0.136366,
+      "annualized_return": -0.008147,
+      "annualized_volatility": 0.422668,
+      "sharpe": -0.019276,
+      "max_drawdown": -0.902976,
+      "win_rate": 0.539089
+    },
+    "out_of_sample": {
+      "strategy": "reddit_200sma_tqqq",
+      "ticker": "PORTFOLIO",
+      "period": "out_of_sample",
+      "observations": 3822,
+      "trades": 15,
+      "total_return": 102.84071,
+      "annualized_return": 0.358149,
+      "annualized_volatility": 0.448443,
+      "sharpe": 0.79865,
+      "max_drawdown": -0.659944,
+      "win_rate": 0.567803
+    },
+    "return_degradation": -755.1538645264206,
+    "sharpe_degradation": -42.431752572241564,
+    "verdict": "\u274c OVERFIT - Significant degradation out-of-sample"
+  },
+  {
+    "strategy": "regime_defensive_rotation",
+    "in_sample": {
+      "strategy": "regime_defensive_rotation",
+      "ticker": "PORTFOLIO",
+      "period": "in_sample",
+      "observations": 4516,
+      "trades": 522,
+      "total_return": 1.425984,
+      "annualized_return": 0.050697,
+      "annualized_volatility": 0.122851,
+      "sharpe": 0.412669,
+      "max_drawdown": -0.511434,
+      "win_rate": 0.472682
+    },
+    "out_of_sample": {
+      "strategy": "regime_defensive_rotation",
+      "ticker": "PORTFOLIO",
+      "period": "out_of_sample",
+      "observations": 3822,
+      "trades": 541,
+      "total_return": 4.673478,
+      "annualized_return": 0.121255,
+      "annualized_volatility": 0.129316,
+      "sharpe": 0.937667,
+      "max_drawdown": -0.259944,
+      "win_rate": 0.54719
+    },
+    "return_degradation": 2.277371215555921,
+    "sharpe_degradation": 1.272200608828222,
+    "verdict": "\u274c OVERFIT - Significant degradation out-of-sample"
+  },
+  {
+    "strategy": "regime_defensive_rotation_with_bands",
+    "in_sample": {
+      "strategy": "regime_defensive_rotation_with_bands",
+      "ticker": "PORTFOLIO",
+      "period": "in_sample",
+      "observations": 4516,
+      "trades": 136,
+      "total_return": 1.557689,
+      "annualized_return": 0.053801,
+      "annualized_volatility": 0.117035,
+      "sharpe": 0.4597,
+      "max_drawdown": -0.383251,
+      "win_rate": 0.43305
+    },
+    "out_of_sample": {
+      "strategy": "regime_defensive_rotation_with_bands",
+      "ticker": "PORTFOLIO",
+      "period": "out_of_sample",
+      "observations": 3822,
+      "trades": 200,
+      "total_return": 3.193937,
+      "annualized_return": 0.099137,
+      "annualized_volatility": 0.128888,
+      "sharpe": 0.769173,
+      "max_drawdown": -0.32193,
+      "win_rate": 0.543743
+    },
+    "return_degradation": 1.0504337526750922,
+    "sharpe_degradation": 0.67320655093036,
+    "verdict": "\u274c OVERFIT - Significant degradation out-of-sample"
+  },
+  {
+    "strategy": "regime_defensive_rotation_2x",
+    "in_sample": {
+      "strategy": "regime_defensive_rotation_2x",
+      "ticker": "PORTFOLIO",
+      "period": "in_sample",
+      "observations": 4516,
+      "trades": 522,
+      "total_return": 3.482586,
+      "annualized_return": 0.087317,
+      "annualized_volatility": 0.245701,
+      "sharpe": 0.35538,
+      "max_drawdown": -0.780813,
+      "win_rate": 0.472682
+    },
+    "out_of_sample": {
+      "strategy": "regime_defensive_rotation_2x",
+      "ticker": "PORTFOLIO",
+      "period": "out_of_sample",
+      "observations": 3822,
+      "trades": 541,
+      "total_return": 23.911908,
+      "annualized_return": 0.236149,
+      "annualized_volatility": 0.258631,
+      "sharpe": 0.913072,
+      "max_drawdown": -0.472999,
+      "win_rate": 0.54719
+    },
+    "return_degradation": 5.866135845583397,
+    "sharpe_degradation": 1.5692834413874557,
+    "verdict": "\u274c OVERFIT - Significant degradation out-of-sample"
+  },
+  {
+    "strategy": "dual_momentum_rotation",
+    "in_sample": {
+      "strategy": "dual_momentum_rotation",
+      "ticker": "PORTFOLIO",
+      "period": "in_sample",
+      "observations": 4516,
+      "trades": 690,
+      "total_return": 0.253744,
+      "annualized_return": 0.012699,
+      "annualized_volatility": 0.217709,
+      "sharpe": 0.058328,
+      "max_drawdown": -0.771149,
+      "win_rate": 0.514088
+    },
+    "out_of_sample": {
+      "strategy": "dual_momentum_rotation",
+      "ticker": "PORTFOLIO",
+      "period": "out_of_sample",
+      "observations": 3822,
+      "trades": 724,
+      "total_return": 7.010471,
+      "annualized_return": 0.147049,
+      "annualized_volatility": 0.197718,
+      "sharpe": 0.74373,
+      "max_drawdown": -0.390854,
+      "win_rate": 0.538279
+    },
+    "return_degradation": 26.628083840291293,
+    "sharpe_degradation": 11.750742715473235,
+    "verdict": "\u274c OVERFIT - Significant degradation out-of-sample"
+  },
+  {
+    "strategy": "top2_relative_strength_rotation",
+    "in_sample": {
+      "strategy": "top2_relative_strength_rotation",
+      "ticker": "PORTFOLIO",
+      "period": "in_sample",
+      "observations": 4516,
+      "trades": 1097,
+      "total_return": 3.801179,
+      "annualized_return": 0.091491,
+      "annualized_volatility": 0.158466,
+      "sharpe": 0.577357,
+      "max_drawdown": -0.572667,
+      "win_rate": 0.532207
+    },
+    "out_of_sample": {
+      "strategy": "top2_relative_strength_rotation",
+      "ticker": "PORTFOLIO",
+      "period": "out_of_sample",
+      "observations": 3822,
+      "trades": 1222,
+      "total_return": 5.517619,
+      "annualized_return": 0.131556,
+      "annualized_volatility": 0.148225,
+      "sharpe": 0.887544,
+      "max_drawdown": -0.250641,
+      "win_rate": 0.546296
+    },
+    "return_degradation": 0.45155476233679426,
+    "sharpe_degradation": 0.5372541888696012,
+    "verdict": "\u274c OVERFIT - Significant degradation out-of-sample"
+  }
+]

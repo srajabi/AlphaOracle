@@ -41,6 +41,7 @@ def load_text_file(filepath):
 def build_context():
     # Load Market Data
     market_data_str = load_text_file('data/market_context.json')
+    options_data_str = load_text_file('data/options_context.json')
     
     # Load Thesis
     macro_view = load_text_file('thesis/macro_view.md')
@@ -54,6 +55,9 @@ def build_context():
     context = f"""
 # MARKET DATA (JSON)
 {market_data_str}
+
+# OPTIONS IDEAS AND CHAIN SNAPSHOT (JSON)
+{options_data_str}
 
 # CURRENT PORTFOLIO
 {portfolio}
@@ -128,15 +132,32 @@ def generate_reports():
     )
     
     # 1. Risk Manager
-    risk_prompt = "Focus entirely on downside protection. Analyze the market regime, volatility (VIX), and highlight any bearish divergence or macro risks from the news. What should we sell or hedge?"
+    risk_prompt = (
+        "Focus entirely on downside protection. Analyze the market regime, volatility (VIX), "
+        "ticker-level weakness, and especially the structured `macro_news` and `theme_news` in the "
+        "market context JSON. Identify macro shocks, geopolitical risks, inflationary impulses, "
+        "shipping or commodity disruptions, and other risk-off catalysts. Explain what should be sold, "
+        "trimmed, hedged, or avoided."
+    )
     risk_reports = run_role_agents("Risk Manager", risk_prompt, RISK_MODELS, context)
     
     # 2. Technical Analyst
-    tech_prompt = "Ignore the news. Evaluate the setups purely based on price action, moving averages (SMA_20, SMA_50, SMA_200), RSI, and MACD. Identify mean reversion bounces or volatility contraction squeezes."
+    tech_prompt = (
+        "Ignore the news and focus on price action only. Evaluate the setups purely based on "
+        "price, moving averages (SMA_20, SMA_50, SMA_200), RSI, MACD, and Bollinger Bands. "
+        "Identify mean reversion bounces, trend continuation, failed setups, or volatility "
+        "contraction squeezes."
+    )
     tech_reports = run_role_agents("Technical Analyst", tech_prompt, TECH_MODELS, context)
     
     # 3. Macro Strategist
-    macro_prompt = "Focus on the macro view, seasonality rules, and global equity/commodity trends. How does the current date and news align with our seasonality rules? Are there any sector rotations evident?"
+    macro_prompt = (
+        "Focus on the macro view, seasonality rules, global equity and commodity trends, and the "
+        "structured `macro_news` and `theme_news` in the market context JSON. Determine whether any "
+        "recent events imply regime change, sector rotation, inflation pressure, risk-off behavior, "
+        "or new hedging demand. Be explicit about second-order effects, such as how oil-shipping or "
+        "geopolitical events could affect energy, gold, bonds, broad equities, and defensives."
+    )
     macro_reports = run_role_agents("Macro Strategist", macro_prompt, MACRO_MODELS, context)
 
     risk_report_site = format_role_report_for_site(risk_reports)
@@ -158,6 +179,11 @@ Note: The source model used to generate each report is provided. When debating d
 {format_role_report_for_pm("Macro Strategist", macro_reports)}
 
 Weigh these inputs against our investment thesis and portfolio constraints.
+Explicitly incorporate the structured macro and theme news from the market context, especially when
+recent geopolitical, commodity, inflation, shipping, sanctions, or policy events could materially
+change positioning.
+Use the options context only for idea generation and hedging suggestions. Do not emit options trades
+in the final executable JSON array because the execution layer is currently equity-only.
 Debate disagreements. Output a definitive, actionable plan.
 
 FIRST, provide your analysis and a strict Markdown table containing:

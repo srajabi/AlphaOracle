@@ -1,0 +1,41 @@
+# Rolling Window Validation Configuration
+# Tests strategies across rolling windows to avoid overfitting
+
+name: "Rolling Window Validation"
+description: "Evaluates strategies on rolling 20-day windows to test consistency"
+
+tickers:
+  - SPY
+  - QQQ
+  - GLD
+  - TLT
+  - XLE
+  - XLU
+
+strategies:
+  - buy_and_hold
+
+portfolio_strategies:
+  - dual_momentum_rotation
+  - regime_defensive_rotation
+
+# No named periods, only rolling windows
+periods:
+  lookback_days: []
+  full_sample: false
+  market_regimes: []
+
+# Rolling window settings
+rolling_windows:
+  enabled: true
+  window: 20   # 20 trading days (~1 month)
+  step: 10     # Step 10 days forward each time
+
+transaction_cost_bps: 5.0
+
+data_source:
+  use_long_history: true
+
+output:
+  directory: "backtesting/results/rolling"
+  save_trades: false

@@ -16,7 +16,19 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+        with:
+          fetch-depth: 0  # Full history for proper git operations
+
+      - name: Pull latest changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin main || {
+            echo "Pull failed, checking status..."
+            git status
+            exit 1
+          }
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -32,10 +44,22 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Sync Portfolio State From Alpaca (Dev Account)
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_DEV_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_DEV_SECRET_KEY }}
+        run: python src/fetch_alpaca_portfolio.py
           
       - name: Run Data Ingestion
         run: python src/data_ingestion.py
-        
+
+      - name: Run Options Ingestion
+        run: python src/options_ingestion.py
+
+      - name: Generate Strategy Ratings
+        run: python src/generate_strategy_ratings.py
+
       - name: Run LLM Agents
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -46,17 +70,40 @@ jobs:
           PM_MODEL: "deepseek/deepseek-reasoner"
         run: python src/llm_agents.py
         
-      - name: Execute Trades (Alpaca Paper)
+      - name: Execute Trades (Dev Account - Legacy Script)
         env:
-          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
-          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          ALPACA_API_KEY: ${{ secrets.ALPACA_DEV_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_DEV_SECRET_KEY }}
         run: python src/execute_trades.py
-        
-      - name: Fetch Live Portfolio State
+
+      - name: Execute Multi-Account Trades
         env:
-          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
-          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          # Dev account (for manual/testing runs)
+          ALPACA_DEV_API_KEY: ${{ secrets.ALPACA_DEV_API_KEY }}
+          ALPACA_DEV_SECRET_KEY: ${{ secrets.ALPACA_DEV_SECRET_KEY }}
+          # Prod accounts (for scheduled runs)
+          ALPACA_PROD_1_API_KEY: ${{ secrets.ALPACA_PROD_1_API_KEY }}
+          ALPACA_PROD_1_SECRET_KEY: ${{ secrets.ALPACA_PROD_1_SECRET_KEY }}
+          ALPACA_PROD_2_API_KEY: ${{ secrets.ALPACA_PROD_2_API_KEY }}
+          ALPACA_PROD_2_SECRET_KEY: ${{ secrets.ALPACA_PROD_2_SECRET_KEY }}
+          ALPACA_PROD_3_API_KEY: ${{ secrets.ALPACA_PROD_3_API_KEY }}
+          ALPACA_PROD_3_SECRET_KEY: ${{ secrets.ALPACA_PROD_3_SECRET_KEY }}
+          ALPACA_PROD_4_API_KEY: ${{ secrets.ALPACA_PROD_4_API_KEY }}
+          ALPACA_PROD_4_SECRET_KEY: ${{ secrets.ALPACA_PROD_4_SECRET_KEY }}
+          ALPACA_PROD_5_API_KEY: ${{ secrets.ALPACA_PROD_5_API_KEY }}
+          ALPACA_PROD_5_SECRET_KEY: ${{ secrets.ALPACA_PROD_5_SECRET_KEY }}
+          # Environment selection: dev for manual, prod for scheduled
+          ALPACA_ENVIRONMENT: ${{ github.event_name == 'workflow_dispatch' && 'dev' || 'prod' }}
+        run: python src/execute_multi_account.py
+
+      - name: Fetch Live Portfolio State (Dev Account)
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_DEV_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_DEV_SECRET_KEY }}
         run: python src/fetch_alpaca_portfolio.py
+
+      - name: Update Paper Trading
+        run: python src/execute_paper_trades.py
         
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -87,6 +134,20 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add data/ frontend/src/content/reports/ portfolio.csv watchlist.csv
-          git commit -m "chore: Daily AI analysis reports for $(date +'%Y-%m-%d')" || exit 0
-          git push
+
+          # Add all generated data
+          git add data/ frontend/src/content/reports/ frontend/public/data/ portfolio.csv watchlist.csv
+
+          # Commit and push with retry logic
+          if git commit -m "chore: Daily AI analysis reports for $(date +'%Y-%m-%d')"; then
+            echo "Pushing changes..."
+            git pull --rebase origin main || true
+            git push || {
+              echo "Push failed, retrying once..."
+              sleep 5
+              git pull --rebase origin main
+              git push
+            }
+          else
+            echo "No changes to commit"
+          fi

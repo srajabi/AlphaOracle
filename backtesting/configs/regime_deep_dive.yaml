@@ -1,0 +1,53 @@
+# Regime Deep Dive Configuration
+# Comprehensive testing across all major market regimes
+
+name: "Regime Deep Dive - All Strategies Across Market Cycles"
+description: "Tests all strategies across every major market regime since 1993"
+
+tickers:
+  - SPY
+  - QQQ
+  - GLD
+  - TLT
+  - XLE
+  - XLU
+
+strategies:
+  - buy_and_hold
+  - sma_trend_following
+  - rsi_mean_reversion
+  - breakout_20d
+
+portfolio_strategies:
+  - top2_relative_strength_rotation
+  - dual_momentum_rotation
+  - regime_defensive_rotation
+
+# Test ONLY market regimes (no lookback days)
+periods:
+  lookback_days: []
+  full_sample: true
+
+  market_regimes:
+    - dotcom_bear
+    - post_dotcom_bull
+    - gfc_bear
+    - post_gfc_bull
+    - covid_crash
+    - covid_rebound
+    - inflation_bear_2022
+    - ai_bull_2023_2024
+    - chop_2015_2016
+    - chop_2018
+
+rolling_windows:
+  enabled: false
+
+transaction_cost_bps: 5.0
+
+data_source:
+  use_long_history: true
+
+output:
+  directory: "backtesting/results/regime_analysis"
+  save_trades: false

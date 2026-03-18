@@ -1,0 +1,103 @@
+{
+  "date": "2026-03-17",
+  "positions": {
+    "initialized_at": "2026-03-18T01:07:22.308371Z",
+    "updated_at": "2026-03-18T01:07:22.313009Z",
+    "strategies": {
+      "dual_momentum": {
+        "starting_capital": 100000.0,
+        "current_cash": 100000.0,
+        "current_positions": {},
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      },
+      "sma_200_trend": {
+        "starting_capital": 100000.0,
+        "current_cash": 100000.0,
+        "current_positions": {},
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      },
+      "sma_trend_20_50": {
+        "starting_capital": 100000.0,
+        "current_cash": 100000.0,
+        "current_positions": {},
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      },
+      "rsi_mean_reversion": {
+        "starting_capital": 100000.0,
+        "current_cash": 100000.0,
+        "current_positions": {},
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      },
+      "breakout_20d": {
+        "starting_capital": 100000.0,
+        "current_cash": 100000.0,
+        "current_positions": {},
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      },
+      "leveraged_etf_timing": {
+        "starting_capital": 100000.0,
+        "current_cash": 100000.0,
+        "current_positions": {},
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      },
+      "llm_recommendations": {
+        "starting_capital": 100000.0,
+        "current_cash": 5405.405405405402,
+        "current_positions": {
+          "XLU": {
+            "shares": 857.8193394067249,
+            "avg_entry_price": 47.2599983215332,
+            "current_price": 47.2599983215332,
+            "market_value": 40540.54054054054,
+            "unrealized_pnl": 0.0,
+            "unrealized_pnl_pct": 0.0,
+            "entry_date": "2026-03-17"
+          },
+          "IAU": {
+            "shares": 286.5157055274155,
+            "avg_entry_price": 94.33000183105469,
+            "current_price": 94.33000183105469,
+            "market_value": 27027.02702702703,
+            "unrealized_pnl": 0.0,
+            "unrealized_pnl_pct": 0.0,
+            "entry_date": "2026-03-17"
+          },
+          "MU": {
+            "shares": 45.88110192472231,
+            "avg_entry_price": 441.79998779296875,
+            "current_price": 441.79998779296875,
+            "market_value": 20270.27027027027,
+            "unrealized_pnl": 0.0,
+            "unrealized_pnl_pct": 0.0,
+            "entry_date": "2026-03-17"
+          },
+          "XLE": {
+            "shares": 116.69700481332055,
+            "avg_entry_price": 57.900001525878906,
+            "current_price": 57.900001525878906,
+            "market_value": 6756.756756756758,
+            "unrealized_pnl": 0.0,
+            "unrealized_pnl_pct": 0.0,
+            "entry_date": "2026-03-17"
+          }
+        },
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      }
+    }
+  },
+  "trades_today": []
+}

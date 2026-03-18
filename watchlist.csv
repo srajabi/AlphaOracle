@@ -26,7 +26,12 @@ HXSC.F,Semiconductors,SK Hynix (Memory)
 KXIAY,Storage,Kioxia (Memory)
 TSLA,Consumer Discretionary,High volatility swing trade
 QQQ,Technology,Nasdaq 100 proxy
+TQQQ,Technology,3x Leveraged QQQ (for Reddit 200 SMA strategy)
+SPY,Equity,S&P 500 ETF (1993 - longest history)
+UPRO,Equity,3x Leveraged SPY (for Reddit 200 SMA strategy)
 VOO,Equity,S&P 500 proxy
+IWM,Equity,Russell 2000 small caps
+DIA,Equity,Dow Jones 30
 VTI,Equity,Total US Market
 VT,Equity,Total World Stock
 VXUS,International,Total International

@@ -1,5 +1,6 @@
 import os
 import json
+import csv
 from alpaca.trading.client import TradingClient
 from dotenv import load_dotenv
 from datetime import datetime, timezone
@@ -62,6 +63,31 @@ def write_portfolio_outputs(status_payload):
     os.makedirs("data", exist_ok=True)
     with open("data/portfolio_status.json", "w") as f:
         json.dump(status_payload, f, indent=2)
+    if status_payload.get("ok") and status_payload.get("account") is not None:
+        write_portfolio_csv(status_payload)
+
+
+def write_portfolio_csv(status_payload):
+    rows = [["Ticker", "Quantity", "CostBasis", "Type"]]
+
+    account = status_payload.get("account") or {}
+    cash = float(account.get("cash") or 0.0)
+    rows.append(["CASH", "1", f"{cash:.2f}", "Currency"])
+
+    for position in status_payload.get("positions", []):
+        qty = float(position.get("qty") or 0.0)
+        avg_entry_price = float(position.get("avg_entry_price") or 0.0)
+        cost_basis = qty * avg_entry_price
+        rows.append([
+            position.get("symbol", ""),
+            f"{qty:.12f}".rstrip("0").rstrip("."),
+            f"{cost_basis:.2f}",
+            "Equity",
+        ])
+
+    with open("portfolio.csv", "w", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerows(rows)
 
 if __name__ == "__main__":
     fetch_portfolio()

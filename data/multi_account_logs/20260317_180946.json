@@ -1,0 +1,92 @@
+[
+  {
+    "account_id": "account_1_llm",
+    "account_name": "LLM Recommendations",
+    "strategy": "llm_recommendations",
+    "timestamp": "2026-03-18T01:09:46.079922+00:00",
+    "signals": [
+      {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 0.0,
+        "rationale": "(scaled 0.0%)"
+      },
+      {
+        "ticker": "IAU",
+        "action": "buy",
+        "notional_value": 0.0,
+        "rationale": "(scaled 0.0%)"
+      },
+      {
+        "ticker": "MU",
+        "action": "buy",
+        "notional_value": 0.0,
+        "rationale": "(scaled 0.0%)"
+      },
+      {
+        "ticker": "XLE",
+        "action": "buy",
+        "notional_value": 0.0,
+        "rationale": "(scaled 0.0%)"
+      },
+      {
+        "ticker": "WDC",
+        "action": "buy",
+        "notional_value": 0.0,
+        "rationale": "(scaled 0.0%)"
+      }
+    ],
+    "results": [
+      {
+        "signal": {
+          "ticker": "XLU",
+          "action": "buy",
+          "notional_value": 0.0,
+          "rationale": "(scaled 0.0%)"
+        },
+        "status": "skipped",
+        "reason": "Missing qty/notional_value"
+      },
+      {
+        "signal": {
+          "ticker": "IAU",
+          "action": "buy",
+          "notional_value": 0.0,
+          "rationale": "(scaled 0.0%)"
+        },
+        "status": "skipped",
+        "reason": "Missing qty/notional_value"
+      },
+      {
+        "signal": {
+          "ticker": "MU",
+          "action": "buy",
+          "notional_value": 0.0,
+          "rationale": "(scaled 0.0%)"
+        },
+        "status": "skipped",
+        "reason": "Missing qty/notional_value"
+      },
+      {
+        "signal": {
+          "ticker": "XLE",
+          "action": "buy",
+          "notional_value": 0.0,
+          "rationale": "(scaled 0.0%)"
+        },
+        "status": "skipped",
+        "reason": "Missing qty/notional_value"
+      },
+      {
+        "signal": {
+          "ticker": "WDC",
+          "action": "buy",
+          "notional_value": 0.0,
+          "rationale": "(scaled 0.0%)"
+        },
+        "status": "skipped",
+        "reason": "Missing qty/notional_value"
+      }
+    ]
+  }
+]

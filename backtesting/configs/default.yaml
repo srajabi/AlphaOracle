@@ -1,0 +1,71 @@
+# Default Backtest Configuration
+# This config tests rotation strategies across 33 years of SPY history
+
+name: "Default 33-Year Rotation Strategy Backtest"
+description: "Tests portfolio rotation strategies using 33-year SPY data with regime analysis"
+
+# Ticker universe
+tickers:
+  - SPY
+  - QQQ
+  - GLD
+  - TLT
+  - XLE
+  - XLU
+
+# Single-asset strategies to test
+# These run on individual tickers
+strategies:
+  - buy_and_hold
+  - sma_trend_following
+  - rsi_mean_reversion
+  - breakout_20d
+
+# Portfolio strategies to test
+# These run on the entire ticker universe
+portfolio_strategies:
+  - top2_relative_strength_rotation
+  - dual_momentum_rotation
+  - regime_defensive_rotation
+
+# Time periods to test
+# Can be: lookback days, "full", or named market regimes
+periods:
+  lookback_days:
+    - 10
+    - 20
+    - 30
+    - 40
+  full_sample: true
+
+  # Named market regimes from backtesting/periods.py
+  market_regimes:
+    - dotcom_bear
+    - post_dotcom_bull
+    - gfc_bear
+    - post_gfc_bull
+    - covid_crash
+    - covid_rebound
+    - inflation_bear_2022
+    - ai_bull_2023_2024
+    - chop_2015_2016
+    - chop_2018
+
+# Rolling window analysis
+rolling_windows:
+  enabled: false
+  window: 20
+  step: 10
+
+# Transaction costs (basis points)
+transaction_cost_bps: 5.0
+
+# Data source
+data_source:
+  use_long_history: true  # Use data/historical_long/ (33 years)
+  # use_long_history: false  # Use data/history/ (recent only)
+
+# Output settings
+output:
+  directory: "backtesting/results"
+  save_trades: false  # Set to true to save detailed trade log

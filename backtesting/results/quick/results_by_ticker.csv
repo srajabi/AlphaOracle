@@ -1,0 +1,10 @@
+strategy,ticker,period,observations,trades,total_return,annualized_return,annualized_volatility,sharpe,max_drawdown,win_rate
+buy_and_hold,SPY,last_20d,20,1,-0.02903,-0.310088,0.112364,-2.759685,-0.044521,0.421053
+buy_and_hold,SPY,last_40d,40,1,-0.043744,-0.245572,0.126501,-1.941261,-0.047736,0.435897
+buy_and_hold,SPY,full_sample,51,1,-0.036464,-0.167683,0.117463,-1.427543,-0.047736,0.46
+buy_and_hold,GLD,last_20d,20,1,-0.004346,-0.053397,0.283044,-0.188653,-0.05951,0.526316
+buy_and_hold,GLD,last_40d,40,1,0.088063,0.701844,0.443234,1.583461,-0.138677,0.589744
+buy_and_hold,GLD,full_sample,51,1,0.154728,1.035747,0.400577,2.585638,-0.138677,0.6
+regime_defensive_rotation,PORTFOLIO,last_20d,20,1,-0.01343,-0.156648,0.044701,-3.504333,-0.01343,0.0
+regime_defensive_rotation,PORTFOLIO,last_40d,40,1,-0.01343,-0.081658,0.032055,-2.547417,-0.01343,0.0
+regime_defensive_rotation,PORTFOLIO,full_sample,51,1,-0.01343,-0.064629,0.028473,-2.269822,-0.01343,0.0

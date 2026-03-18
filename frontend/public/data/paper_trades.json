@@ -1,0 +1,76 @@
+{
+  "trades": [
+    {
+      "id": "trade_20260318_010722_XLU",
+      "timestamp": "2026-03-18T01:07:22.309026Z",
+      "strategy": "llm_recommendations",
+      "ticker": "XLU",
+      "action": "buy",
+      "shares": 857.8193394067249,
+      "price": 47.2599983215332,
+      "notional": 40540.54054054054,
+      "commission": 0.0,
+      "rationale": "LLM recommendation (scaled 27.0%)",
+      "signal_data": {
+        "source": "llm",
+        "notional_requested": 150000,
+        "notional_scaled": 40540.54054054054,
+        "scale_factor": 0.2702702702702703
+      }
+    },
+    {
+      "id": "trade_20260318_010722_IAU",
+      "timestamp": "2026-03-18T01:07:22.309750Z",
+      "strategy": "llm_recommendations",
+      "ticker": "IAU",
+      "action": "buy",
+      "shares": 286.5157055274155,
+      "price": 94.33000183105469,
+      "notional": 27027.02702702703,
+      "commission": 0.0,
+      "rationale": "LLM recommendation (scaled 27.0%)",
+      "signal_data": {
+        "source": "llm",
+        "notional_requested": 100000,
+        "notional_scaled": 27027.02702702703,
+        "scale_factor": 0.2702702702702703
+      }
+    },
+    {
+      "id": "trade_20260318_010722_MU",
+      "timestamp": "2026-03-18T01:07:22.310634Z",
+      "strategy": "llm_recommendations",
+      "ticker": "MU",
+      "action": "buy",
+      "shares": 45.88110192472231,
+      "price": 441.79998779296875,
+      "notional": 20270.27027027027,
+      "commission": 0.0,
+      "rationale": "LLM recommendation (scaled 27.0%)",
+      "signal_data": {
+        "source": "llm",
+        "notional_requested": 75000,
+        "notional_scaled": 20270.27027027027,
+        "scale_factor": 0.2702702702702703
+      }
+    },
+    {
+      "id": "trade_20260318_010722_XLE",
+      "timestamp": "2026-03-18T01:07:22.311731Z",
+      "strategy": "llm_recommendations",
+      "ticker": "XLE",
+      "action": "buy",
+      "shares": 116.69700481332055,
+      "price": 57.900001525878906,
+      "notional": 6756.756756756758,
+      "commission": 0.0,
+      "rationale": "LLM recommendation (scaled 27.0%)",
+      "signal_data": {
+        "source": "llm",
+        "notional_requested": 25000,
+        "notional_scaled": 6756.756756756758,
+        "scale_factor": 0.2702702702702703
+      }
+    }
+  ]
+}

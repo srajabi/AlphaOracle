@@ -1,0 +1,46 @@
+# Tax-Adjusted Return Comparison
+# Compares key strategies with and without tax drag
+
+name: "Tax Impact Analysis"
+description: "Measures tax drag on high-turnover vs low-turnover strategies"
+
+tickers:
+  - SPY
+  - QQQ
+  - GLD
+  - TLT
+  - XLE
+  - XLU
+
+strategies:
+  - buy_and_hold
+
+portfolio_strategies:
+  # High turnover (714 trades)
+  - regime_defensive_rotation
+  - regime_defensive_rotation_2x
+
+  # Medium turnover (243 trades)
+  - regime_defensive_rotation_with_bands
+  - regime_defensive_rotation_with_bands_2x
+
+  # Low turnover (17-23 trades)
+  - reddit_200sma_spy
+  - reddit_200sma_tqqq
+
+periods:
+  lookback_days: []
+  full_sample: true
+  market_regimes: []
+
+rolling_windows:
+  enabled: false
+
+transaction_cost_bps: 0
+
+data_source:
+  use_long_history: true
+
+output:
+  directory: "backtesting/results/tax_comparison"
+  save_trades: false

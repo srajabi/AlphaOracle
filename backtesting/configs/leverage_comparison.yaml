@@ -1,0 +1,59 @@
+# Proper comparison: Timing strategies vs Buy & Hold at same leverage levels
+#
+# This addresses the apples-to-oranges comparison issue:
+# - Compare reddit_200sma_spy (3x) vs Buy & Hold SPY 3x
+# - Compare reddit_200sma_tqqq (3x) vs Buy & Hold QQQ 3x
+# - Show if timing adds value at each leverage level
+
+name: "Leverage Comparison: Timing vs Buy & Hold"
+description: "Compares timing strategies vs buy-and-hold at same leverage levels (1x, 2x, 3x)"
+
+tickers:
+  - SPY
+  - QQQ
+  - GLD
+  - TLT
+  - XLE
+  - XLU
+
+strategies:
+  - buy_and_hold
+
+portfolio_strategies:
+  # Buy & Hold SPY at different leverage levels
+  - buy_hold_spy
+  - buy_hold_spy_2x
+  - buy_hold_spy_3x
+
+  # Reddit 200 SMA SPY strategy (3x leverage with timing)
+  - reddit_200sma_spy
+
+  # Buy & Hold QQQ at different leverage levels
+  - buy_hold_qqq
+  - buy_hold_qqq_2x
+  - buy_hold_qqq_3x
+
+  # Reddit 200 SMA TQQQ strategy (3x leverage with timing)
+  - reddit_200sma_tqqq
+
+  # Regime strategies for reference (multi-asset, not single-ticker)
+  - regime_defensive_rotation
+  - regime_defensive_rotation_2x
+  - regime_defensive_rotation_3x
+
+periods:
+  lookback_days: []
+  full_sample: true
+  market_regimes: []
+
+rolling_windows:
+  enabled: false
+
+transaction_cost_bps: 0  # Zero-fee broker with limit orders
+
+data_source:
+  use_long_history: true
+
+output:
+  directory: "backtesting/results/leverage_comparison"
+  save_trades: false

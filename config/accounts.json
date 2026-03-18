@@ -1,0 +1,94 @@
+{
+  "accounts": [
+    {
+      "id": "dev_account",
+      "name": "Development/Testing Account",
+      "description": "For local testing and manual workflow runs - expected to have random trades",
+      "strategy": "llm_recommendations",
+      "env_prefix": "ALPACA_DEV",
+      "environment": "dev",
+      "paper_trading": true,
+      "enabled": true,
+      "config": {
+        "auto_scale_to_buying_power": true,
+        "max_buying_power_usage": 0.98,
+        "trades_source": "data/trades.json"
+      }
+    },
+    {
+      "id": "prod_1_llm",
+      "name": "LLM Recommendations",
+      "description": "Follows LLM trade recommendations with auto-scaling to fit buying power",
+      "strategy": "llm_recommendations",
+      "env_prefix": "ALPACA_PROD_1",
+      "environment": "prod",
+      "paper_trading": true,
+      "enabled": true,
+      "config": {
+        "auto_scale_to_buying_power": true,
+        "max_buying_power_usage": 0.98,
+        "trades_source": "data/trades.json"
+      }
+    },
+    {
+      "id": "prod_2_tqqq",
+      "name": "Reddit 200 SMA on TQQQ",
+      "description": "3x leveraged QQQ with 200-day SMA timing",
+      "strategy": "reddit_200sma_tqqq",
+      "env_prefix": "ALPACA_PROD_2",
+      "environment": "prod",
+      "paper_trading": true,
+      "enabled": true,
+      "config": {
+        "ticker": "TQQQ",
+        "sma_period": 200,
+        "rebalance_frequency": "daily",
+        "max_position_size": 1.0
+      }
+    },
+    {
+      "id": "prod_3_spy",
+      "name": "Reddit 200 SMA on UPRO (SPY)",
+      "description": "3x leveraged SPY with 200-day SMA timing",
+      "strategy": "reddit_200sma_spy",
+      "env_prefix": "ALPACA_PROD_3",
+      "environment": "prod",
+      "paper_trading": true,
+      "enabled": true,
+      "config": {
+        "ticker": "UPRO",
+        "sma_period": 200,
+        "rebalance_frequency": "daily",
+        "max_position_size": 1.0
+      }
+    },
+    {
+      "id": "prod_4_reserved",
+      "name": "Reserved Production Account 4",
+      "description": "Reserved for future strategy",
+      "strategy": null,
+      "env_prefix": "ALPACA_PROD_4",
+      "environment": "prod",
+      "paper_trading": true,
+      "enabled": false,
+      "config": {}
+    },
+    {
+      "id": "prod_5_reserved",
+      "name": "Reserved Production Account 5",
+      "description": "Reserved for future strategy",
+      "strategy": null,
+      "env_prefix": "ALPACA_PROD_5",
+      "environment": "prod",
+      "paper_trading": true,
+      "enabled": false,
+      "config": {}
+    }
+  ],
+  "global_settings": {
+    "dry_run": false,
+    "log_level": "INFO",
+    "max_retries": 3,
+    "retry_delay_seconds": 5
+  }
+}

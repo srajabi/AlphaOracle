@@ -1,0 +1,5 @@
+strategy,ticker,period,observations,trades,total_return,annualized_return,annualized_volatility,sharpe,max_drawdown,win_rate
+buy_and_hold,SPY,full_sample,8338,1,26.586447,0.105458,0.185981,0.567038,-0.551947,0.540242
+top2_relative_strength_rotation,PORTFOLIO,full_sample,8338,792,3.613957,0.047298,0.109322,0.432648,-0.460278,0.536155
+dual_momentum_rotation,PORTFOLIO,full_sample,8338,792,3.613957,0.047298,0.109322,0.432648,-0.460278,0.536155
+regime_defensive_rotation,PORTFOLIO,full_sample,8338,742,2.693569,0.040279,0.099957,0.402966,-0.431013,0.537257

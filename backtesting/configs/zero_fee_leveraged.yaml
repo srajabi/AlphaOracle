@@ -1,0 +1,59 @@
+# Zero-Fee Leveraged Strategy Backtest
+# Tests 1x, 2x, 3x leverage with zero transaction costs
+
+name: "Zero-Fee Leveraged Rotation Strategies"
+description: "Tests leveraged rotation strategies assuming zero-fee broker and minimal slippage"
+
+tickers:
+  - SPY
+  - QQQ
+  - GLD
+  - TLT
+  - XLE
+  - XLU
+
+# No single-asset strategies for this test
+strategies: []
+
+# Test unleveraged + 2x + 3x versions
+portfolio_strategies:
+  # Unleveraged baselines
+  - regime_defensive_rotation
+  - dual_momentum_rotation
+  - top2_relative_strength_rotation
+  # 2x leveraged
+  - regime_defensive_rotation_2x
+  - dual_momentum_rotation_2x
+  - top2_relative_strength_rotation_2x
+  # 3x leveraged
+  - regime_defensive_rotation_3x
+  - dual_momentum_rotation_3x
+
+periods:
+  lookback_days: []
+  full_sample: true
+  market_regimes:
+    - covid_crash
+    - covid_rebound
+    - inflation_bear_2022
+    - ai_bull_2023_2024
+    - gfc_bear
+    - post_gfc_bull
+    - dotcom_bear
+    - post_dotcom_bull
+    - chop_2015_2016
+    - chop_2018
+
+rolling_windows:
+  enabled: false
+
+# Zero transaction costs (modern zero-fee broker)
+# Could use 0.5-1.0 bps to model bid-ask spread with limit orders
+transaction_cost_bps: 0.0
+
+data_source:
+  use_long_history: true
+
+output:
+  directory: "backtesting/results/zero_fee_leveraged"
+  save_trades: false

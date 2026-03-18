@@ -1,0 +1,56 @@
+# Realistic Cost Model Backtest
+# Uses 1 bps transaction cost (bid-ask spread capture with limit orders)
+
+name: "Realistic Cost Model - Zero Commissions + Limit Orders"
+description: "More realistic than 5 bps: zero commissions + tight bid-ask spreads on liquid ETFs"
+
+tickers:
+  - SPY
+  - QQQ
+  - GLD
+  - TLT
+  - XLE
+  - XLU
+
+strategies:
+  - buy_and_hold
+  - sma_trend_following
+  - rsi_mean_reversion
+  - breakout_20d
+
+portfolio_strategies:
+  - regime_defensive_rotation
+  - dual_momentum_rotation
+  - top2_relative_strength_rotation
+  - regime_defensive_rotation_2x
+  - regime_defensive_rotation_3x
+  - dual_momentum_rotation_2x
+  - top2_relative_strength_rotation_2x
+
+periods:
+  lookback_days: []
+  full_sample: true
+  market_regimes:
+    - covid_crash
+    - covid_rebound
+    - inflation_bear_2022
+    - ai_bull_2023_2024
+    - gfc_bear
+    - post_gfc_bull
+    - dotcom_bear
+    - post_dotcom_bull
+    - chop_2015_2016
+    - chop_2018
+
+rolling_windows:
+  enabled: false
+
+# Realistic: Zero commissions + 1 bps for bid-ask spread (limit orders)
+transaction_cost_bps: 1.0
+
+data_source:
+  use_long_history: true
+
+output:
+  directory: "backtesting/results/realistic_costs"
+  save_trades: false

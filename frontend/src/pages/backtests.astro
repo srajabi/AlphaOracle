@@ -1,0 +1,602 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/backtests.css';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+
+// Load comprehensive backtest results
+let resultsData: any = {};
+try {
+  const content = await fs.readFile(path.resolve('./public/data/backtest_results_comprehensive.json'), 'utf-8');
+  resultsData = JSON.parse(content);
+} catch (e) {
+  console.error('Failed to load backtest results:', e);
+}
+
+// Load leverage comparison results
+let leverageData: any = {};
+try {
+  const content = await fs.readFile(path.resolve('./public/data/backtest_results_leverage_comparison.json'), 'utf-8');
+  leverageData = JSON.parse(content);
+} catch (e) {
+  console.error('Failed to load leverage comparison results:', e);
+}
+
+const fullSampleResults = resultsData?.summary_by_period
+  ?.filter((r: any) => r.period === 'full_sample')
+  ?.sort((a: any, b: any) => b.total_return - a.total_return) || [];
+
+const leverageResults = leverageData?.summary || [];
+const findResult = (name: string) => leverageResults.find((r: any) => r.strategy === name);
+
+const formatPercent = (val: number) => (val * 100).toFixed(1) + '%';
+const formatSharpe = (val: number) => val.toFixed(2);
+const formatDollar = (val: number) => '$' + (10000 * (1 + val)).toLocaleString(undefined, { maximumFractionDigits: 0 });
+---
+
+<Layout title="Backtest Results - AlphaOracle">
+  <main>
+  <div class="backtests-container">
+    <header class="backtests-header">
+      <h1>Strategy Backtest Results</h1>
+      <p class="subtitle">33-year comprehensive analysis (1993-2026) with zero-fee assumptions</p>
+      <div class="validation-badge">⚠️ Regime-Dependent: Excelled in 2011-2026 Bull Market</div>
+    </header>
+
+    <!-- Executive Summary -->
+    <section class="executive-summary">
+      <h2>🎯 Executive Summary</h2>
+      <div class="summary-cards">
+        <div class="summary-card highlight">
+          <h3>🚀 Best Absolute Returns</h3>
+          <div class="stat">reddit_200sma_tqqq</div>
+          <div class="value">+26,860%</div>
+          <div class="detail">$10k → $2.7M with only 23 trades (0.7/year)</div>
+        </div>
+        <div class="summary-card highlight">
+          <h3>⚖️ Best Risk-Adjusted</h3>
+          <div class="stat">regime_defensive</div>
+          <div class="value">Sharpe 0.93</div>
+          <div class="detail">+1,106% return with -26% max drawdown</div>
+        </div>
+        <div class="summary-card highlight">
+          <h3>💰 Best Tax Efficiency</h3>
+          <div class="stat">reddit_200sma_spy</div>
+          <div class="value">17 trades in 33 years</div>
+          <div class="detail">+8,709% with minimal tax drag</div>
+        </div>
+      </div>
+
+      <div class="key-insights">
+        <h3>Key Findings</h3>
+        <ul>
+          <li><strong>Reddit strategies dominate</strong> in absolute returns (3-27x advantage) with ultra-low turnover</li>
+          <li><strong>Tolerance bands reduce trades 66%</strong> (714 → 243) but lower returns 28%</li>
+          <li><strong>Tax efficiency is critical:</strong> High-turnover strategies lose ~75% of returns in taxable accounts</li>
+          <li><strong>⚠️ Regime-dependent performance:</strong> All strategies excelled in 2011-2026 bull market but struggled 1993-2010</li>
+          <li><strong>reddit_200sma_tqqq LOST MONEY 1993-2010</strong> (-0.8% CAGR) but dominated 2011-2026 (+35.8% CAGR)</li>
+          <li><strong>ETF liquidity matters:</strong> Stick to TQQQ/UPRO/TMF for live trading</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Full Results Table -->
+    <section class="results-section">
+      <h2>📊 Full 33-Year Performance</h2>
+      <p class="section-description">All strategies tested with zero transaction costs (realistic for modern brokers)</p>
+
+      <div class="results-table-wrapper">
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th>Strategy</th>
+              <th>Total Return</th>
+              <th>$10k →</th>
+              <th>CAGR</th>
+              <th>Sharpe</th>
+              <th>Max DD</th>
+              <th>Trades</th>
+              <th>Trades/Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            {fullSampleResults.map((result: any) => {
+              const isReddit = result.strategy.includes('reddit');
+              const isBestReturn = result === fullSampleResults[0];
+              const isBestSharpe = fullSampleResults.every((r: any) => result.sharpe >= r.sharpe);
+              const tradesPerYear = (result.trades / 33).toFixed(1);
+
+              return (
+                <tr class={isReddit ? 'reddit-strategy' : isBestSharpe ? 'best-sharpe' : ''}>
+                  <td class="strategy-name">
+                    {result.strategy.replace(/_/g, ' ')}
+                    {isBestReturn && <span class="badge best-return">Highest Return</span>}
+                    {isBestSharpe && <span class="badge best-sharpe">Best Sharpe</span>}
+                    {isReddit && <span class="badge reddit">Reddit Strategy</span>}
+                  </td>
+                  <td class={result.total_return > 0 ? 'positive' : 'negative'}>
+                    {formatPercent(result.total_return)}
+                  </td>
+                  <td class="dollar-value">{formatDollar(result.total_return)}</td>
+                  <td class={result.annualized_return > 0 ? 'positive' : 'negative'}>
+                    {formatPercent(result.annualized_return)}
+                  </td>
+                  <td class={result.sharpe > 0.5 ? 'positive' : result.sharpe > 0 ? 'neutral' : 'negative'}>
+                    {formatSharpe(result.sharpe)}
+                  </td>
+                  <td class="negative">{formatPercent(result.max_drawdown)}</td>
+                  <td>{Math.round(result.trades)}</td>
+                  <td class={parseFloat(tradesPerYear) < 2 ? 'positive' : parseFloat(tradesPerYear) < 10 ? 'neutral' : 'warning'}>
+                    {tradesPerYear}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Leverage Comparison -->
+    <section class="leverage-comparison">
+      <h2>⚖️ Leverage Comparison: Timing vs Buy & Hold</h2>
+      <div class="correction-notice">
+        <strong>⚠️ APPLES-TO-APPLES FIX:</strong> Previously compared different leverage levels. Now properly comparing timing strategies vs buy-and-hold at the SAME leverage level.
+      </div>
+
+      <div class="comparison-grid">
+        <!-- SPY 3x Comparison -->
+        <div class="comparison-card highlight">
+          <h3>SPY 3x: Timing vs Buy & Hold</h3>
+          <div class="comparison-table">
+            <div class="comparison-row header">
+              <div>Metric</div>
+              <div>reddit_200sma_spy (3x)</div>
+              <div>buy_hold_spy_3x</div>
+            </div>
+            <div class="comparison-row">
+              <div>33-Year Return</div>
+              <div class="positive">+8,809%</div>
+              <div class="neutral">+5,572%</div>
+            </div>
+            <div class="comparison-row">
+              <div>Sharpe Ratio</div>
+              <div class="positive">0.686</div>
+              <div class="negative">0.367</div>
+            </div>
+            <div class="comparison-row">
+              <div>Max Drawdown</div>
+              <div class="positive">-58%</div>
+              <div class="negative">-95%</div>
+            </div>
+            <div class="comparison-row">
+              <div>Trades (33 years)</div>
+              <div class="positive">17 (0.5/year)</div>
+              <div class="neutral">0</div>
+            </div>
+          </div>
+          <div class="verdict positive">
+            ✅ Timing adds +58% better returns with 87% better Sharpe and avoids catastrophic -95% drawdown
+          </div>
+        </div>
+
+        <!-- QQQ 3x Comparison -->
+        <div class="comparison-card highlight">
+          <h3>QQQ 3x: Timing vs Buy & Hold</h3>
+          <div class="comparison-table">
+            <div class="comparison-row header">
+              <div>Metric</div>
+              <div>reddit_200sma_tqqq (3x)</div>
+              <div>buy_hold_qqq_3x</div>
+            </div>
+            <div class="comparison-row">
+              <div>33-Year Return</div>
+              <div class="neutral">+26,960%</div>
+              <div class="positive">+29,323%</div>
+            </div>
+            <div class="comparison-row">
+              <div>Sharpe Ratio</div>
+              <div class="positive">0.686</div>
+              <div class="negative">0.474</div>
+            </div>
+            <div class="comparison-row">
+              <div>Max Drawdown</div>
+              <div class="positive">-66%</div>
+              <div class="negative">-94%</div>
+            </div>
+            <div class="comparison-row">
+              <div>Trades (33 years)</div>
+              <div class="positive">23 (0.7/year)</div>
+              <div class="neutral">0</div>
+            </div>
+          </div>
+          <div class="verdict neutral">
+            ⚠️ Timing sacrifices 8% returns to DRAMATICALLY reduce risk (Sharpe +45%, max DD -30%)
+          </div>
+        </div>
+
+        <!-- Leverage Scaling SPY -->
+        <div class="comparison-card">
+          <h3>SPY: Leverage Scaling</h3>
+          <div class="comparison-table leverage-scaling">
+            <div class="comparison-row header">
+              <div>Leverage</div>
+              <div>Return</div>
+              <div>Sharpe</div>
+              <div>Max DD</div>
+            </div>
+            <div class="comparison-row">
+              <div>1x (buy-hold)</div>
+              <div>+735%</div>
+              <div>0.553</div>
+              <div>-55%</div>
+            </div>
+            <div class="comparison-row">
+              <div>2x (buy-hold)</div>
+              <div>+3,123%</div>
+              <div class="warning">0.468</div>
+              <div class="warning">-84%</div>
+            </div>
+            <div class="comparison-row">
+              <div>3x (buy-hold)</div>
+              <div>+5,572%</div>
+              <div class="negative">0.367</div>
+              <div class="negative">-95%</div>
+            </div>
+            <div class="comparison-row highlight-row">
+              <div><strong>3x (timing)</strong></div>
+              <div class="positive"><strong>+8,809%</strong></div>
+              <div class="positive"><strong>0.686</strong></div>
+              <div class="positive"><strong>-58%</strong></div>
+            </div>
+          </div>
+          <div class="insight">
+            📊 Returns scale with leverage, but Sharpe declines. Timing at 3x beats buy-and-hold on ALL metrics.
+          </div>
+        </div>
+
+        <!-- Leverage Scaling QQQ -->
+        <div class="comparison-card">
+          <h3>QQQ: Leverage Scaling</h3>
+          <div class="comparison-table leverage-scaling">
+            <div class="comparison-row header">
+              <div>Leverage</div>
+              <div>Return</div>
+              <div>Sharpe</div>
+              <div>Max DD</div>
+            </div>
+            <div class="comparison-row">
+              <div>1x (buy-hold)</div>
+              <div>+1,708%</div>
+              <div>0.676</div>
+              <div>-53%</div>
+            </div>
+            <div class="comparison-row">
+              <div>2x (buy-hold)</div>
+              <div>+11,991%</div>
+              <div class="warning">0.586</div>
+              <div class="warning">-82%</div>
+            </div>
+            <div class="comparison-row">
+              <div>3x (buy-hold)</div>
+              <div>+29,323%</div>
+              <div class="negative">0.474</div>
+              <div class="negative">-94%</div>
+            </div>
+            <div class="comparison-row highlight-row">
+              <div><strong>3x (timing)</strong></div>
+              <div class="neutral"><strong>+26,960%</strong></div>
+              <div class="positive"><strong>0.686</strong></div>
+              <div class="positive"><strong>-66%</strong></div>
+            </div>
+          </div>
+          <div class="insight">
+            📊 Timing achieves similar returns with MUCH better risk-adjusted performance. -94% drawdown would destroy most investors.
+          </div>
+        </div>
+      </div>
+
+      <div class="key-takeaway">
+        <h3>🎯 Key Takeaway</h3>
+        <p><strong>Timing adds significant value at 3x leverage:</strong></p>
+        <ul>
+          <li>SPY: +58% better returns, 87% better Sharpe, avoids -95% catastrophic drawdown</li>
+          <li>QQQ: -8% lower returns BUT 45% better Sharpe and avoids -94% catastrophic drawdown</li>
+          <li>Leverage scales returns but DESTROYS Sharpe ratio without timing</li>
+          <li>Only 17-23 trades over 33 years = ultra-low tax drag even in taxable accounts</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Comparison Panels -->
+    <section class="comparison-panels">
+      <h2>🔬 Additional Strategy Comparisons</h2>
+
+      <div class="comparison-grid">
+        <!-- Reddit vs Regime -->
+        <div class="comparison-card">
+          <h3>Reddit 200 SMA vs Regime Rotation</h3>
+          <div class="comparison-table">
+            <div class="comparison-row header">
+              <div>Metric</div>
+              <div>Reddit (TQQQ)</div>
+              <div>Regime 2x</div>
+            </div>
+            <div class="comparison-row">
+              <div>33-Year Return</div>
+              <div class="positive">+26,860%</div>
+              <div class="positive">+9,785%</div>
+            </div>
+            <div class="comparison-row">
+              <div>Trades (33 years)</div>
+              <div class="positive">23 (0.7/year)</div>
+              <div class="warning">714 (22/year)</div>
+            </div>
+            <div class="comparison-row">
+              <div>Sharpe Ratio</div>
+              <div class="neutral">0.69</div>
+              <div class="positive">0.90</div>
+            </div>
+            <div class="comparison-row">
+              <div>Tax Drag (est.)</div>
+              <div class="positive">-5%</div>
+              <div class="negative">-75%</div>
+            </div>
+          </div>
+          <p class="comparison-verdict">
+            <strong>Verdict:</strong> Reddit wins for taxable accounts (tax efficiency).
+            Regime wins for IRA accounts (better risk-adjusted returns).
+          </p>
+        </div>
+
+        <!-- Tolerance Bands Impact -->
+        <div class="comparison-card">
+          <h3>Tolerance Bands Impact</h3>
+          <div class="comparison-table">
+            <div class="comparison-row header">
+              <div>Metric</div>
+              <div>No Bands</div>
+              <div>With Bands</div>
+            </div>
+            <div class="comparison-row">
+              <div>33-Year Return</div>
+              <div class="positive">+1,106%</div>
+              <div class="neutral">+692%</div>
+            </div>
+            <div class="comparison-row">
+              <div>Trades (33 years)</div>
+              <div class="warning">714</div>
+              <div class="positive">243</div>
+            </div>
+            <div class="comparison-row">
+              <div>Sharpe Ratio</div>
+              <div class="positive">0.93</div>
+              <div class="neutral">0.82</div>
+            </div>
+            <div class="comparison-row">
+              <div>Max Drawdown</div>
+              <div class="positive">-26%</div>
+              <div class="negative">-32%</div>
+            </div>
+          </div>
+          <p class="comparison-verdict">
+            <strong>Verdict:</strong> Bands reduce trades 66% but also reduce returns 28%.
+            Trade-off isn't worth it for most investors.
+          </p>
+        </div>
+
+        <!-- Leverage Comparison -->
+        <div class="comparison-card">
+          <h3>Leverage Impact (Regime Defensive)</h3>
+          <div class="comparison-table">
+            <div class="comparison-row header">
+              <div>Leverage</div>
+              <div>33-Year Return</div>
+              <div>Max DD</div>
+            </div>
+            <div class="comparison-row">
+              <div>1x (unleveraged)</div>
+              <div class="positive">+1,106%</div>
+              <div class="positive">-26%</div>
+            </div>
+            <div class="comparison-row">
+              <div>2x (leveraged ETFs)</div>
+              <div class="positive">+9,785%</div>
+              <div class="warning">-47%</div>
+            </div>
+            <div class="comparison-row">
+              <div>3x (leveraged ETFs)</div>
+              <div class="positive">+54,693%</div>
+              <div class="negative">-64%</div>
+            </div>
+          </div>
+          <p class="comparison-verdict">
+            <strong>Verdict:</strong> 2x leverage offers best risk/reward balance.
+            3x is extreme but works for aggressive risk tolerance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Regime Sensitivity Results -->
+    <section class="validation-section">
+      <h2>⚠️ Regime Sensitivity Analysis</h2>
+      <p class="section-description">Performance across different market periods: 1993-2010 vs 2011-2026</p>
+
+      <div class="validation-grid">
+        <div class="validation-card">
+          <h3>reddit_200sma_spy</h3>
+          <div class="validation-stats">
+            <div class="stat-pair">
+              <span>1993-2010 CAGR:</span>
+              <span class="value">21.1%</span>
+            </div>
+            <div class="stat-pair">
+              <span>2011-2026 CAGR:</span>
+              <span class="value positive">27.9%</span>
+            </div>
+            <div class="stat-pair">
+              <span>Change:</span>
+              <span class="value positive">+36%</span>
+            </div>
+          </div>
+          <div class="verdict-badge success">Better in bull market</div>
+        </div>
+
+        <div class="validation-card">
+          <h3>reddit_200sma_tqqq</h3>
+          <div class="validation-stats">
+            <div class="stat-pair">
+              <span>1993-2010 CAGR:</span>
+              <span class="value negative">-0.8%</span>
+            </div>
+            <div class="stat-pair">
+              <span>2011-2026 CAGR:</span>
+              <span class="value positive">35.8%</span>
+            </div>
+            <div class="stat-pair">
+              <span>Change:</span>
+              <span class="value positive">Spectacular</span>
+            </div>
+          </div>
+          <div class="verdict-badge success">Thrives in tech bull runs</div>
+        </div>
+
+        <div class="validation-card">
+          <h3>regime_defensive_2x</h3>
+          <div class="validation-stats">
+            <div class="stat-pair">
+              <span>1993-2010 CAGR:</span>
+              <span class="value">8.7%</span>
+            </div>
+            <div class="stat-pair">
+              <span>2011-2026 CAGR:</span>
+              <span class="value positive">23.6%</span>
+            </div>
+            <div class="stat-pair">
+              <span>Change:</span>
+              <span class="value positive">+171%</span>
+            </div>
+          </div>
+          <div class="verdict-badge success">Major improvement in bulls</div>
+        </div>
+      </div>
+
+      <div class="validation-summary">
+        <p><strong>Critical Understanding:</strong> These strategies use <strong>fixed parameters</strong> (200 SMA, 50 SMA, etc.) -
+        not optimized on historical data. The improvement from 1993-2010 to 2011-2026 is primarily due to <strong>more favorable
+        market conditions</strong>, not validation against overfitting.</p>
+
+        <p><strong>1993-2010:</strong> Dot-com crash (-50%), 9/11, GFC (-56%), slow recoveries = Difficult environment</p>
+        <p><strong>2011-2026:</strong> Longest bull market, QE infinity, fast recoveries, AI boom = Easy environment</p>
+
+        <p><strong>The Real Question:</strong> Will the future resemble the 2011-2026 bull market period, or return to
+        1993-2010 style severe bear markets? Your answer determines which strategies to use.</p>
+      </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="recommendations-section">
+      <h2>💡 Strategy Recommendations by Account Type</h2>
+
+      <div class="recommendations-grid">
+        <div class="recommendation-card taxable">
+          <h3>🏦 Taxable Accounts</h3>
+          <div class="recommended-strategy">
+            <div class="strategy-name">reddit_200sma_spy</div>
+            <div class="strategy-stats">
+              <div>Return: +8,709%</div>
+              <div>Trades: 0.5/year</div>
+              <div>Tax drag: -3%</div>
+            </div>
+          </div>
+          <p><strong>Why:</strong> Ultra-low turnover (17 trades in 33 years) means minimal tax drag.
+          Long holding periods qualify for LTCG rates.</p>
+          <p><strong>Alternative:</strong> reddit_200sma_tqqq for more aggressive approach (+26,860% but higher volatility).</p>
+        </div>
+
+        <div class="recommendation-card ira">
+          <h3>📈 IRA/Roth Accounts</h3>
+          <div class="recommended-strategy">
+            <div class="strategy-name">regime_defensive_2x</div>
+            <div class="strategy-stats">
+              <div>Return: +9,785%</div>
+              <div>Sharpe: 0.90</div>
+              <div>Max DD: -47%</div>
+            </div>
+          </div>
+          <p><strong>Why:</strong> Best risk-adjusted returns (high Sharpe). No tax drag in IRA means
+          frequent trading doesn't hurt performance.</p>
+          <p><strong>Alternative:</strong> regime_defensive_3x for aggressive growth (+54,693% but -64% drawdown).</p>
+        </div>
+
+        <div class="recommendation-card conservative">
+          <h3>🛡️ Conservative / Near Retirement</h3>
+          <div class="recommended-strategy">
+            <div class="strategy-name">regime_defensive (1x)</div>
+            <div class="strategy-stats">
+              <div>Return: +1,106%</div>
+              <div>Sharpe: 0.93</div>
+              <div>Max DD: -26%</div>
+            </div>
+          </div>
+          <p><strong>Why:</strong> Lowest drawdowns (-26% vs -47%+ for leveraged). Still beats buy-and-hold
+          SPY on risk-adjusted basis.</p>
+          <p><strong>Note:</strong> Matches SPY absolute returns but with better Sharpe and lower volatility.</p>
+        </div>
+      </div>
+
+      <div class="important-note">
+        <h4>⚠️ Critical Caveats</h4>
+        <p><strong>1. Regime Dependency:</strong> These strategies excelled during the 2011-2026 bull market period
+        (QE, fast recoveries, AI boom). The reddit_200sma_tqqq LOST MONEY during 1993-2010 (dot-com crash, GFC).
+        Future performance depends on whether markets resemble 2011-2026 or 1993-2010.</p>
+        <p><strong>2. Paper Trade First:</strong> All strategies should be paper traded for 6-12 months before
+        deploying real capital. This validates that backtest assumptions (execution quality, slippage, regime detection)
+        match reality and that the bull market continues.</p>
+      </div>
+    </section>
+
+    <!-- Methodology -->
+    <section class="methodology-section">
+      <h2>📋 Methodology</h2>
+      <div class="methodology-content">
+        <h3>Test Parameters</h3>
+        <ul>
+          <li><strong>Time period:</strong> 33 years (1993-2026), daily EOD data</li>
+          <li><strong>Transaction costs:</strong> 0 bps (realistic for zero-fee brokers with limit orders)</li>
+          <li><strong>Tickers:</strong> SPY, QQQ, GLD, TLT, XLE, XLU (all ETFs to avoid survivorship bias)</li>
+          <li><strong>Leverage:</strong> Simulated using 2x/3x leveraged ETFs (SSO, UPRO, TQQQ, etc.)</li>
+          <li><strong>Validation:</strong> Walk-forward testing (train 1993-2010, test 2011-2026)</li>
+        </ul>
+
+        <h3>Strategy Descriptions</h3>
+        <dl>
+          <dt>reddit_200sma_spy / reddit_200sma_tqqq</dt>
+          <dd>Simple 200-day SMA with 5%/3% asymmetric tolerance bands. Buy when price > 5% above SMA,
+          sell when price < 3% below SMA. 100% allocated when in, 100% cash when out.</dd>
+
+          <dt>regime_defensive_rotation</dt>
+          <dd>Multi-factor regime detection (50 SMA + momentum). Risk-on: rotate SPY/QQQ/XLE.
+          Defensive: rotate GLD/TLT/XLU based on relative strength.</dd>
+
+          <dt>regime_defensive_rotation_with_bands</dt>
+          <dd>Same as above but with 5%/3% tolerance bands to reduce whipsaws.</dd>
+
+          <dt>Leveraged versions (_2x, _3x)</dt>
+          <dd>Apply 2x or 3x leverage using leveraged ETFs. Captures higher returns but increases drawdowns.</dd>
+        </dl>
+
+        <h3>Data Sources</h3>
+        <p>All code and data available in the repository. Backtesting engine is custom-built in Python
+        with full transparency. Results are reproducible using the provided configuration files.</p>
+      </div>
+    </section>
+
+  </div>
+  </main>
+</Layout>

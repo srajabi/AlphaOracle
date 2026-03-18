@@ -1,0 +1,226 @@
+{
+  "tickers": [
+    "SPY",
+    "GLD"
+  ],
+  "strategies": [
+    "buy_and_hold"
+  ],
+  "portfolio_strategies": [
+    "regime_defensive_rotation"
+  ],
+  "periods": "20,40,full",
+  "market_periods": "",
+  "rolling_window": 0,
+  "rolling_step": 10,
+  "transaction_cost_bps": 5.0,
+  "summary": [
+    {
+      "strategy": "buy_and_hold",
+      "total_return": 0.0215345,
+      "annualized_return": 0.16014183333333334,
+      "annualized_volatility": 0.2471971666666667,
+      "sharpe": -0.3580071666666667,
+      "max_drawdown": -0.07947616666666667,
+      "win_rate": 0.5055016666666666,
+      "trades": 1.0
+    },
+    {
+      "strategy": "regime_defensive_rotation",
+      "total_return": -0.01343,
+      "annualized_return": -0.10097833333333334,
+      "annualized_volatility": 0.03507633333333333,
+      "sharpe": -2.7738573333333334,
+      "max_drawdown": -0.01343,
+      "win_rate": 0.0,
+      "trades": 1.0
+    }
+  ],
+  "summary_by_period": [
+    {
+      "period": "full_sample",
+      "strategy": "buy_and_hold",
+      "total_return": 0.059132000000000004,
+      "annualized_return": 0.434032,
+      "annualized_volatility": 0.25902000000000003,
+      "sharpe": 0.5790474999999999,
+      "max_drawdown": -0.0932065,
+      "win_rate": 0.53,
+      "trades": 1.0
+    },
+    {
+      "period": "full_sample",
+      "strategy": "regime_defensive_rotation",
+      "total_return": -0.01343,
+      "annualized_return": -0.064629,
+      "annualized_volatility": 0.028473,
+      "sharpe": -2.269822,
+      "max_drawdown": -0.01343,
+      "win_rate": 0.0,
+      "trades": 1.0
+    },
+    {
+      "period": "last_20d",
+      "strategy": "buy_and_hold",
+      "total_return": -0.016688,
+      "annualized_return": -0.18174249999999997,
+      "annualized_volatility": 0.19770400000000002,
+      "sharpe": -1.474169,
+      "max_drawdown": -0.0520155,
+      "win_rate": 0.4736845,
+      "trades": 1.0
+    },
+    {
+      "period": "last_20d",
+      "strategy": "regime_defensive_rotation",
+      "total_return": -0.01343,
+      "annualized_return": -0.156648,
+      "annualized_volatility": 0.044701,
+      "sharpe": -3.504333,
+      "max_drawdown": -0.01343,
+      "win_rate": 0.0,
+      "trades": 1.0
+    },
+    {
+      "period": "last_40d",
+      "strategy": "buy_and_hold",
+      "total_return": 0.022159500000000002,
+      "annualized_return": 0.228136,
+      "annualized_volatility": 0.2848675,
+      "sharpe": -0.17889999999999995,
+      "max_drawdown": -0.0932065,
+      "win_rate": 0.5128205,
+      "trades": 1.0
+    },
+    {
+      "period": "last_40d",
+      "strategy": "regime_defensive_rotation",
+      "total_return": -0.01343,
+      "annualized_return": -0.081658,
+      "annualized_volatility": 0.032055,
+      "sharpe": -2.547417,
+      "max_drawdown": -0.01343,
+      "win_rate": 0.0,
+      "trades": 1.0
+    }
+  ],
+  "results_by_ticker": [
+    {
+      "strategy": "buy_and_hold",
+      "ticker": "SPY",
+      "period": "last_20d",
+      "observations": 20,
+      "trades": 1,
+      "total_return": -0.02903,
+      "annualized_return": -0.310088,
+      "annualized_volatility": 0.112364,
+      "sharpe": -2.759685,
+      "max_drawdown": -0.044521,
+      "win_rate": 0.421053
+    },
+    {
+      "strategy": "buy_and_hold",
+      "ticker": "SPY",
+      "period": "last_40d",
+      "observations": 40,
+      "trades": 1,
+      "total_return": -0.043744,
+      "annualized_return": -0.245572,
+      "annualized_volatility": 0.126501,
+      "sharpe": -1.941261,
+      "max_drawdown": -0.047736,
+      "win_rate": 0.435897
+    },
+    {
+      "strategy": "buy_and_hold",
+      "ticker": "SPY",
+      "period": "full_sample",
+      "observations": 51,
+      "trades": 1,
+      "total_return": -0.036464,
+      "annualized_return": -0.167683,
+      "annualized_volatility": 0.117463,
+      "sharpe": -1.427543,
+      "max_drawdown": -0.047736,
+      "win_rate": 0.46
+    },
+    {
+      "strategy": "buy_and_hold",
+      "ticker": "GLD",
+      "period": "last_20d",
+      "observations": 20,
+      "trades": 1,
+      "total_return": -0.004346,
+      "annualized_return": -0.053397,
+      "annualized_volatility": 0.283044,
+      "sharpe": -0.188653,
+      "max_drawdown": -0.05951,
+      "win_rate": 0.526316
+    },
+    {
+      "strategy": "buy_and_hold",
+      "ticker": "GLD",
+      "period": "last_40d",
+      "observations": 40,
+      "trades": 1,
+      "total_return": 0.088063,
+      "annualized_return": 0.701844,
+      "annualized_volatility": 0.443234,
+      "sharpe": 1.583461,
+      "max_drawdown": -0.138677,
+      "win_rate": 0.589744
+    },
+    {
+      "strategy": "buy_and_hold",
+      "ticker": "GLD",
+      "period": "full_sample",
+      "observations": 51,
+      "trades": 1,
+      "total_return": 0.154728,
+      "annualized_return": 1.035747,
+      "annualized_volatility": 0.400577,
+      "sharpe": 2.585638,
+      "max_drawdown": -0.138677,
+      "win_rate": 0.6
+    },
+    {
+      "strategy": "regime_defensive_rotation",
+      "ticker": "PORTFOLIO",
+      "period": "last_20d",
+      "observations": 20,
+      "trades": 1,
+      "total_return": -0.01343,
+      "annualized_return": -0.156648,
+      "annualized_volatility": 0.044701,
+      "sharpe": -3.504333,
+      "max_drawdown": -0.01343,
+      "win_rate": 0.0
+    },
+    {
+      "strategy": "regime_defensive_rotation",
+      "ticker": "PORTFOLIO",
+      "period": "last_40d",
+      "observations": 40,
+      "trades": 1,
+      "total_return": -0.01343,
+      "annualized_return": -0.081658,
+      "annualized_volatility": 0.032055,
+      "sharpe": -2.547417,
+      "max_drawdown": -0.01343,
+      "win_rate": 0.0
+    },
+    {
+      "strategy": "regime_defensive_rotation",
+      "ticker": "PORTFOLIO",
+      "period": "full_sample",
+      "observations": 51,
+      "trades": 1,
+      "total_return": -0.01343,
+      "annualized_return": -0.064629,
+      "annualized_volatility": 0.028473,
+      "sharpe": -2.269822,
+      "max_drawdown": -0.01343,
+      "win_rate": 0.0
+    }
+  ]
+}
