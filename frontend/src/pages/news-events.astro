@@ -1,0 +1,548 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+
+let marketContext = { macro_news: {}, theme_news: {}, regime: 'Unknown', date: '' };
+
+try {
+  const content = await fs.readFile(path.resolve('./public/data/market_context.json'), 'utf-8');
+  marketContext = JSON.parse(content);
+} catch {
+  console.log('No market_context.json found');
+}
+
+// Event type to display info mapping
+const eventTypeInfo = {
+  'geopolitical_supply_shock': {
+    icon: '🚨',
+    color: 'red',
+    label: 'Geopolitical Supply Shock'
+  },
+  'china_taiwan_tension': {
+    icon: '⚠️',
+    color: 'orange',
+    label: 'China-Taiwan Tension'
+  },
+  'policy_rate_shift': {
+    icon: '🏦',
+    color: 'blue',
+    label: 'Fed Policy Shift'
+  },
+  'trade_policy_shock': {
+    icon: '📉',
+    color: 'orange',
+    label: 'Trade Policy Shock'
+  },
+  'recession_signal': {
+    icon: '📊',
+    color: 'red',
+    label: 'Recession Signal'
+  }
+};
+
+// Flatten and categorize all news
+const allNews = [];
+
+// Macro news
+for (const [topic, items] of Object.entries(marketContext.macro_news || {})) {
+  for (const item of items) {
+    allNews.push({
+      ...item,
+      category: 'macro',
+      topic,
+      displayTopic: topic.replace(/_/g, ' ').toUpperCase()
+    });
+  }
+}
+
+// Theme news
+for (const [topic, items] of Object.entries(marketContext.theme_news || {})) {
+  for (const item of items) {
+    allNews.push({
+      ...item,
+      category: 'theme',
+      topic,
+      displayTopic: topic.replace(/_/g, ' ').toUpperCase()
+    });
+  }
+}
+
+// Sort by published date, most recent first
+allNews.sort((a, b) => {
+  const dateA = a.published_utc || a.published || '';
+  const dateB = b.published_utc || b.published || '';
+  return dateB.localeCompare(dateA);
+});
+
+const formatDate = (isoString) => {
+  if (!isoString) return 'N/A';
+  try {
+    return new Date(isoString).toLocaleString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+  } catch {
+    return 'N/A';
+  }
+};
+---
+
+<Layout title="AlphaOracle - News Events">
+  <main>
+    <nav>
+      <a href={base}>← Back to Analysis</a>
+      <a href={`${base}indicators/`}>Intermarket Indicators</a>
+    </nav>
+
+    <header>
+      <h1>📰 News Events & Market Implications</h1>
+      <p class="subtitle">Geopolitical events, Fed policy, and macro catalysts</p>
+      <p class="muted">Last updated: {marketContext.date || 'N/A'}</p>
+    </header>
+
+    <section class="panel">
+      <h2>Event Categories Being Monitored</h2>
+      <div class="event-types">
+        <div class="event-type-card red">
+          <span class="icon">🚨</span>
+          <div>
+            <strong>Geopolitical Supply Shocks</strong>
+            <p>Strait of Hormuz, oil shipping, Middle East tensions</p>
+            <p class="implications">→ Long XLE, GLD | Short Airlines, Cyclicals</p>
+          </div>
+        </div>
+        <div class="event-type-card orange">
+          <span class="icon">⚠️</span>
+          <div>
+            <strong>China-Taiwan Tensions</strong>
+            <p>Semiconductor supply chain, export controls, military activity</p>
+            <p class="implications">→ Long INTC, Defense | Short TSM, Tech w/ China exposure</p>
+          </div>
+        </div>
+        <div class="event-type-card blue">
+          <span class="icon">🏦</span>
+          <div>
+            <strong>Fed Policy Shifts</strong>
+            <p>Rate decisions, CPI surprises, hawkish/dovish pivots</p>
+            <p class="implications">→ Dovish: Long TLT, Growth | Hawkish: Short Duration</p>
+          </div>
+        </div>
+        <div class="event-type-card orange">
+          <span class="icon">📉</span>
+          <div>
+            <strong>Trade Policy Shocks</strong>
+            <p>Tariffs, sanctions, trade wars</p>
+            <p class="implications">→ Long GLD, Defensives | Short Multinationals</p>
+          </div>
+        </div>
+        <div class="event-type-card red">
+          <span class="icon">📊</span>
+          <div>
+            <strong>Recession Signals</strong>
+            <p>Layoffs, unemployment, economic slowdown</p>
+            <p class="implications">→ Long TLT, XLU, XLP | Short Cyclicals, Small Caps</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Recent News ({allNews.length} items)</h2>
+
+      {allNews.length > 0 ? (
+        <div class="news-list">
+          {allNews.map((item) => {
+            const impactTags = item.impact_tags || [];
+            const hasHighImpact = impactTags.length > 0;
+            const eventInfo = impactTags.length > 0 && eventTypeInfo[impactTags[0].event_type];
+
+            return (
+              <article class={`news-item ${hasHighImpact ? 'high-impact' : ''}`}>
+                <div class="news-header">
+                  <div class="news-meta">
+                    <span class={`category-badge ${item.category}`}>{item.displayTopic}</span>
+                    <span class="date">{formatDate(item.published_utc || item.published)}</span>
+                  </div>
+                  {hasHighImpact && (
+                    <div class="impact-badge">
+                      <span class={`event-indicator ${eventInfo ? eventInfo.color : 'gray'}`}>
+                        {eventInfo ? eventInfo.icon : '⚡'} HIGH IMPACT
+                      </span>
+                    </div>
+                  )}
+                </div>
+
+                <h3>
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    {item.title}
+                  </a>
+                </h3>
+
+                {item.summary && (
+                  <p class="summary">{item.summary}</p>
+                )}
+
+                {hasHighImpact && impactTags.map((tag) => {
+                  const info = eventTypeInfo[tag.event_type];
+                  return (
+                    <div class={`impact-analysis ${info ? info.color : 'gray'}`}>
+                      <div class="impact-header">
+                        <strong>{info ? info.label : tag.event_type}</strong>
+                        <span class="direction">{tag.direction?.replace(/_/g, ' ')}</span>
+                      </div>
+                      {tag.implications && (
+                        <p class="implications-text">{tag.implications}</p>
+                      )}
+                      <div class="assets">
+                        {tag.bullish && tag.bullish.length > 0 && (
+                          <div class="asset-list bullish">
+                            <span class="label">Bullish:</span>
+                            <span class="tickers">{tag.bullish.join(', ')}</span>
+                          </div>
+                        )}
+                        {tag.bearish && tag.bearish.length > 0 && (
+                          <div class="asset-list bearish">
+                            <span class="label">Bearish:</span>
+                            <span class="tickers">{tag.bearish.join(', ')}</span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+
+                {item.source && (
+                  <p class="source">Source: {item.source}</p>
+                )}
+              </article>
+            );
+          })}
+        </div>
+      ) : (
+        <p class="muted">No news items found</p>
+      )}
+    </section>
+  </main>
+</Layout>
+
+<style>
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    color: #f8f9fa;
+  }
+
+  nav {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  nav a {
+    color: #c4d4ff;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  header {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    color: #d1d4dc;
+    margin-top: 0.5rem;
+  }
+
+  .muted {
+    color: #8f949e;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+  .panel {
+    background: #131722;
+    border: 1px solid #2a2e39;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .panel h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+  }
+
+  /* Event Type Cards */
+  .event-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .event-type-card {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 2px solid;
+  }
+
+  .event-type-card.red {
+    border-color: rgba(220, 53, 69, 0.4);
+    background: rgba(220, 53, 69, 0.05);
+  }
+
+  .event-type-card.orange {
+    border-color: rgba(255, 193, 7, 0.4);
+    background: rgba(255, 193, 7, 0.05);
+  }
+
+  .event-type-card.blue {
+    border-color: rgba(41, 98, 255, 0.4);
+    background: rgba(41, 98, 255, 0.05);
+  }
+
+  .event-type-card .icon {
+    font-size: 2rem;
+  }
+
+  .event-type-card strong {
+    color: #f8f9fa;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .event-type-card p {
+    margin: 0.25rem 0;
+    font-size: 0.85rem;
+    color: #c4d4ff;
+  }
+
+  .event-type-card .implications {
+    color: #8f949e;
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+
+  /* News List */
+  .news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .news-item {
+    background: #0d111b;
+    border: 1px solid #2a2e39;
+    border-radius: 8px;
+    padding: 1.25rem;
+  }
+
+  .news-item.high-impact {
+    border-left: 4px solid #ff6b6b;
+  }
+
+  .news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .news-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .category-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .category-badge.macro {
+    background: rgba(220, 53, 69, 0.2);
+    color: #dc3545;
+  }
+
+  .category-badge.theme {
+    background: rgba(41, 98, 255, 0.2);
+    color: #2962ff;
+  }
+
+  .date {
+    color: #8f949e;
+    font-size: 0.85rem;
+  }
+
+  .impact-badge {
+    display: flex;
+    align-items: center;
+  }
+
+  .event-indicator {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .event-indicator.red {
+    background: rgba(220, 53, 69, 0.3);
+    color: #ff6b6b;
+  }
+
+  .event-indicator.orange {
+    background: rgba(255, 193, 7, 0.3);
+    color: #ffc107;
+  }
+
+  .event-indicator.blue {
+    background: rgba(41, 98, 255, 0.3);
+    color: #5a9eff;
+  }
+
+  .news-item h3 {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .news-item h3 a {
+    color: #f8f9fa;
+    text-decoration: none;
+  }
+
+  .news-item h3 a:hover {
+    color: #2962ff;
+  }
+
+  .summary {
+    color: #d1d4dc;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+  }
+
+  .impact-analysis {
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+  }
+
+  .impact-analysis.red {
+    border-color: #dc3545;
+  }
+
+  .impact-analysis.orange {
+    border-color: #ffc107;
+  }
+
+  .impact-analysis.blue {
+    border-color: #2962ff;
+  }
+
+  .impact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .impact-header strong {
+    color: #f8f9fa;
+  }
+
+  .direction {
+    font-size: 0.8rem;
+    color: #8f949e;
+    text-transform: capitalize;
+  }
+
+  .implications-text {
+    color: #c4d4ff;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+  }
+
+  .assets {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  .asset-list {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .asset-list .label {
+    font-weight: 600;
+  }
+
+  .asset-list.bullish .label {
+    color: #28a745;
+  }
+
+  .asset-list.bearish .label {
+    color: #dc3545;
+  }
+
+  .asset-list .tickers {
+    color: #d1d4dc;
+  }
+
+  .source {
+    color: #8f949e;
+    font-size: 0.8rem;
+    margin: 0.75rem 0 0 0;
+  }
+
+  @media (max-width: 768px) {
+    main {
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    .event-types {
+      grid-template-columns: 1fr;
+    }
+
+    .news-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>

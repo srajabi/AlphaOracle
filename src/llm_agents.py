@@ -133,11 +133,21 @@ def generate_reports():
     
     # 1. Risk Manager
     risk_prompt = (
-        "Focus entirely on downside protection. Analyze the market regime, volatility (VIX), "
+        "Focus entirely on downside protection and geopolitical risk. Analyze the market regime, volatility (VIX), "
         "ticker-level weakness, and especially the structured `macro_news` and `theme_news` in the "
-        "market context JSON. Identify macro shocks, geopolitical risks, inflationary impulses, "
-        "shipping or commodity disruptions, and other risk-off catalysts. Explain what should be sold, "
-        "trimmed, hedged, or avoided."
+        "market context JSON.\n\n"
+        "**CRITICAL: Look for these specific geopolitical catalysts:**\n"
+        "- Strait of Hormuz / Middle East tensions (Iran-Israel, oil shipping disruption)\n"
+        "- China-Taiwan escalation (semiconductor supply chain risk)\n"
+        "- Trade war / sanctions / export controls\n"
+        "- Fed policy surprises (hawkish/dovish pivot)\n"
+        "- Recession signals (layoffs, unemployment, economic slowdown)\n\n"
+        "For any geopolitical event, specify:\n"
+        "1. What happened and severity (1-10)\n"
+        "2. Which sectors/tickers are most exposed (bullish/bearish)\n"
+        "3. Recommended hedges (protective puts, safe havens, sector rotation)\n"
+        "4. Time horizon (immediate, days, weeks)\n\n"
+        "Explain what should be sold, trimmed, hedged, or avoided."
     )
     risk_reports = run_role_agents("Risk Manager", risk_prompt, RISK_MODELS, context)
     
@@ -152,11 +162,24 @@ def generate_reports():
     
     # 3. Macro Strategist
     macro_prompt = (
-        "Focus on the macro view, seasonality rules, global equity and commodity trends, and the "
-        "structured `macro_news` and `theme_news` in the market context JSON. Determine whether any "
-        "recent events imply regime change, sector rotation, inflation pressure, risk-off behavior, "
-        "or new hedging demand. Be explicit about second-order effects, such as how oil-shipping or "
-        "geopolitical events could affect energy, gold, bonds, broad equities, and defensives."
+        "Focus on the macro view, geopolitical events, and global market regime. Review the structured "
+        "`macro_news` and `theme_news` in the market context JSON carefully.\n\n"
+        "**Key areas to analyze:**\n"
+        "1. **Geopolitical Events**: Strait of Hormuz tensions, China-Taiwan, Middle East conflicts\n"
+        "   - Map events to sectors: Energy (XLE), Safe havens (GLD, TLT), Defensives (XLU, XLP)\n"
+        "   - Identify risk-on vs risk-off positioning\n\n"
+        "2. **Fed Policy & Rates**: Any hawkish/dovish signals, CPI surprises, yield curve changes\n"
+        "   - Duration trade: TLT behavior\n"
+        "   - Growth vs Value rotation signals\n\n"
+        "3. **Cross-Asset Signals**: Dollar strength, commodities, credit spreads\n"
+        "   - Flight to safety indicators\n"
+        "   - Stagflation vs reflationary signals\n\n"
+        "4. **Sector Rotation**: Which sectors are showing leadership changes?\n"
+        "   - Energy, Tech, Defensives, Financials, International\n\n"
+        "Be explicit about second-order effects. For example:\n"
+        "- Hormuz tensions → Oil up → XLE bullish, airlines bearish, inflation concerns → TLT demand\n"
+        "- Taiwan tensions → TSM risk → INTC opportunity, tech supply chain disruption\n\n"
+        "Determine whether events imply regime change, sector rotation, or positioning adjustments."
     )
     macro_reports = run_role_agents("Macro Strategist", macro_prompt, MACRO_MODELS, context)
 

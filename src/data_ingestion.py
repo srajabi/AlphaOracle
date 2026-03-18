@@ -24,16 +24,23 @@ MAX_TICKER_NEWS_ITEMS = 5
 
 MACRO_NEWS_TOPICS = {
     "fed_rates": [
-        "Federal Reserve OR FOMC OR interest rates OR CPI OR inflation"
+        "Federal Reserve OR FOMC OR interest rates OR CPI OR inflation OR Powell"
     ],
     "energy_geopolitics": [
-        "Strait of Hormuz OR oil shipping OR tanker attacks OR OPEC OR Brent crude OR WTI"
+        "Strait of Hormuz OR oil shipping OR tanker attacks OR OPEC OR Brent crude OR WTI",
+        "Iran Israel OR Middle East tension OR Persian Gulf OR Red Sea shipping"
+    ],
+    "china_taiwan": [
+        "China Taiwan OR Taiwan Strait OR semiconductor export controls OR China military"
     ],
     "trade_policy": [
         "tariffs OR sanctions OR trade war OR export controls"
     ],
     "bonds_usd": [
         "Treasury yields OR bond market OR US dollar OR dollar index"
+    ],
+    "recession_signals": [
+        "recession OR economic slowdown OR layoffs OR unemployment rising"
     ],
 }
 
@@ -62,20 +69,47 @@ EVENT_RULES = [
     {
         "event_type": "geopolitical_supply_shock",
         "direction": "inflationary_risk_off",
-        "keywords": ["strait of hormuz", "shipping", "tanker", "opec", "oil"],
+        "keywords": ["strait of hormuz", "shipping", "tanker", "opec", "oil", "iran", "persian gulf"],
         "assets_impacted": ["XLE", "GLD", "TLT", "SPY"],
+        "bullish": ["XLE", "GLD", "XLU"],
+        "bearish": ["Airlines", "XLF", "Consumer Discretionary"],
+        "implications": "Oil supply shock: Long energy, safe havens. Short cyclicals, transports."
+    },
+    {
+        "event_type": "china_taiwan_tension",
+        "direction": "risk_off",
+        "keywords": ["china taiwan", "taiwan strait", "semiconductor", "tsm", "military exercise"],
+        "assets_impacted": ["TSM", "NVDA", "AMD", "INTC", "GLD", "^VIX"],
+        "bullish": ["INTC", "Defense stocks", "GLD"],
+        "bearish": ["TSM", "Tech with China exposure"],
+        "implications": "Semiconductor supply risk: Long domestic chips (INTC), short TSM. Safe haven bid."
     },
     {
         "event_type": "policy_rate_shift",
         "direction": "rates_sensitive",
-        "keywords": ["federal reserve", "fomc", "interest rates", "cpi", "inflation"],
+        "keywords": ["federal reserve", "fomc", "interest rates", "cpi", "inflation", "powell"],
         "assets_impacted": ["SPY", "QQQ", "TLT", "^VIX"],
+        "bullish": ["TLT if dovish", "Growth tech if dovish"],
+        "bearish": ["Financials if dovish", "Tech if hawkish"],
+        "implications": "Fed policy shift: Dovish = long duration/growth. Hawkish = short duration/growth."
     },
     {
         "event_type": "trade_policy_shock",
         "direction": "risk_off",
         "keywords": ["tariffs", "sanctions", "export controls", "trade war"],
         "assets_impacted": ["SPY", "GLD", "^VIX"],
+        "bullish": ["GLD", "Defensive sectors"],
+        "bearish": ["Multinationals", "China exposure"],
+        "implications": "Trade tensions: Flight to safety, avoid companies with international revenue exposure."
+    },
+    {
+        "event_type": "recession_signal",
+        "direction": "risk_off",
+        "keywords": ["recession", "layoffs", "unemployment", "economic slowdown"],
+        "assets_impacted": ["SPY", "QQQ", "TLT", "GLD", "XLU"],
+        "bullish": ["TLT", "GLD", "XLU", "XLP"],
+        "bearish": ["Cyclicals", "Discretionary", "Small caps"],
+        "implications": "Recession fears: Rotate to defensives (utilities, staples), duration (TLT), gold."
     },
 ]
 
