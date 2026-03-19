@@ -108,7 +108,11 @@ const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
             return (
               <tr>
                 <td>{idx + 1}</td>
-                <td><strong>{item.strategy.replace(/_/g, ' ')}</strong></td>
+                <td>
+                  <a href={`${base}paper-trading/${item.strategy}/`} class="strategy-link">
+                    <strong>{item.strategy.replace(/_/g, ' ')}</strong>
+                  </a>
+                </td>
                 <td class={item.return_pct >= 0 ? 'positive' : 'negative'}>
                   {formatPercent(item.return_pct)}
                 </td>
@@ -323,6 +327,17 @@ const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
   .negative {
     color: #ef4444;
     font-weight: 600;
+  }
+
+  .strategy-link {
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .strategy-link:hover {
+    color: #2962ff;
+    text-decoration: underline;
   }
 
   .strategy-card {
