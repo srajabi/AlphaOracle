@@ -108,6 +108,71 @@ jobs:
           ALPACA_ENVIRONMENT: ${{ github.event_name == 'workflow_dispatch' && 'dev' || 'prod' }}
         run: python src/execute_multi_account.py
 
+      # ========================================================================
+      # EOD STRATEGY EXECUTION (3:30 PM ET run only)
+      # ========================================================================
+
+      - name: Check if this is the EOD execution run
+        id: check_time
+        run: |
+          HOUR=$(date -u +%H)
+          echo "Current UTC hour: $HOUR"
+          if [ "$HOUR" = "20" ]; then
+            echo "is_eod=true" >> $GITHUB_OUTPUT
+            echo "This is the 3:30 PM ET (20:30 UTC) run - executing strategies"
+          else
+            echo "is_eod=false" >> $GITHUB_OUTPUT
+            echo "This is the 10:00 AM ET (15:00 UTC) run - skipping strategy execution"
+          fi
+
+      - name: Execute TQQQ Momentum Strategy (Account 2)
+        if: steps.check_time.outputs.is_eod == 'true'
+        env:
+          ALPACA_PROD_2_API_KEY: ${{ secrets.ALPACA_PROD_2_API_KEY }}
+          ALPACA_PROD_2_SECRET_KEY: ${{ secrets.ALPACA_PROD_2_SECRET_KEY }}
+        run: |
+          echo "=================================================="
+          echo "EXECUTING: TQQQ Momentum Strategy (Account 2)"
+          echo "=================================================="
+          python src/strategies/strategy_executor.py --strategy tqqq --account 2 --dry-run
+          echo ""
+
+      - name: Execute Dual Momentum Strategy (Account 3)
+        if: steps.check_time.outputs.is_eod == 'true'
+        env:
+          ALPACA_PROD_3_API_KEY: ${{ secrets.ALPACA_PROD_3_API_KEY }}
+          ALPACA_PROD_3_SECRET_KEY: ${{ secrets.ALPACA_PROD_3_SECRET_KEY }}
+        run: |
+          echo "=================================================="
+          echo "EXECUTING: Dual Momentum Strategy (Account 3)"
+          echo "=================================================="
+          python src/strategies/strategy_executor.py --strategy dual --account 3 --dry-run
+          echo ""
+
+      - name: Execute Sector Rotation Strategy (Account 4)
+        if: steps.check_time.outputs.is_eod == 'true'
+        env:
+          ALPACA_PROD_4_API_KEY: ${{ secrets.ALPACA_PROD_4_API_KEY }}
+          ALPACA_PROD_4_SECRET_KEY: ${{ secrets.ALPACA_PROD_4_SECRET_KEY }}
+        run: |
+          echo "=================================================="
+          echo "EXECUTING: Sector Rotation Strategy (Account 4)"
+          echo "=================================================="
+          python src/strategies/strategy_executor.py --strategy sector --account 4 --dry-run
+          echo ""
+
+      - name: Execute Mean Reversion Strategy (Account 5)
+        if: steps.check_time.outputs.is_eod == 'true'
+        env:
+          ALPACA_PROD_5_API_KEY: ${{ secrets.ALPACA_PROD_5_API_KEY }}
+          ALPACA_PROD_5_SECRET_KEY: ${{ secrets.ALPACA_PROD_5_SECRET_KEY }}
+        run: |
+          echo "=================================================="
+          echo "EXECUTING: Mean Reversion Strategy (Account 5)"
+          echo "=================================================="
+          python src/strategies/strategy_executor.py --strategy mean --account 5 --dry-run
+          echo ""
+
       - name: Fetch Live Portfolio State (Dev Account)
         env:
           ALPACA_API_KEY: ${{ secrets.ALPACA_DEV_API_KEY }}
