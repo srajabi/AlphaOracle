@@ -1,24 +1,15 @@
 {
-  "last_updated_utc": "2026-03-19T15:28:54.050782+00:00",
+  "last_updated_utc": "2026-03-19T20:58:48.940917+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 4364
-      },
-      "status": "submitted",
-      "order_id": "3fad31f0-0873-45fd-90a9-d8ca7d95b9e6"
-    },
-    {
-      "trade": {
         "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 2182
+        "action": "sell",
+        "notional_value": 1100
       },
       "status": "submitted",
-      "order_id": "84d053e0-ea8b-47ea-af71-9f91b2be19fd"
+      "order_id": "3cff1b09-716d-4063-b0f9-ffbc25372206"
     }
   ]
 }

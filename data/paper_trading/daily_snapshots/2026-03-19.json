@@ -2,7 +2,7 @@
   "date": "2026-03-19",
   "positions": {
     "initialized_at": "2026-03-18T01:07:22.308371Z",
-    "updated_at": "2026-03-19T15:28:55.976842Z",
+    "updated_at": "2026-03-19T20:59:00.434680Z",
     "strategies": {
       "dual_momentum": {
         "starting_capital": 100000.0,
@@ -54,27 +54,8 @@
       },
       "llm_recommendations": {
         "starting_capital": 100000.0,
-        "current_cash": 93055.90237895832,
-        "current_positions": {
-          "XLP": {
-            "shares": 52.807358,
-            "avg_entry_price": 82.63999938964844,
-            "current_price": 82.63999938964844,
-            "market_value": 4364.000032888946,
-            "unrealized_pnl": 0.0,
-            "unrealized_pnl_pct": 0.0,
-            "entry_date": "2026-03-19"
-          },
-          "XLE": {
-            "shares": 37.34383,
-            "avg_entry_price": 58.43000030517578,
-            "current_price": 58.43000030517578,
-            "market_value": 2181.9999982964323,
-            "unrealized_pnl": 0.0,
-            "unrealized_pnl_pct": 0.0,
-            "entry_date": "2026-03-19"
-          }
-        },
+        "current_cash": 99601.9024101437,
+        "current_positions": {},
         "total_portfolio_value": 99601.9024101437,
         "total_return": -398.0975898563047,
         "total_return_pct": -0.003980975898563047
@@ -260,6 +241,36 @@
         "notional_requested": 2182,
         "notional_scaled": 2182.0,
         "scale_factor": 1.0
+      }
+    },
+    {
+      "id": "trade_20260319_205900_XLP",
+      "timestamp": "2026-03-19T20:59:00.434231Z",
+      "strategy": "llm_recommendations",
+      "ticker": "XLP",
+      "action": "sell",
+      "shares": 52.807358,
+      "price": 82.63999938964844,
+      "notional": 4364.000032888946,
+      "commission": 0.0,
+      "rationale": "LLM recommendation: Exit XLP (not in new portfolio)",
+      "signal_data": {
+        "source": "llm"
+      }
+    },
+    {
+      "id": "trade_20260319_205900_XLE",
+      "timestamp": "2026-03-19T20:59:00.434662Z",
+      "strategy": "llm_recommendations",
+      "ticker": "XLE",
+      "action": "sell",
+      "shares": 37.34383,
+      "price": 58.43000030517578,
+      "notional": 2181.9999982964323,
+      "commission": 0.0,
+      "rationale": "LLM recommendation: Exit XLE (not in new portfolio)",
+      "signal_data": {
+        "source": "llm"
       }
     }
   ]

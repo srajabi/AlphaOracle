@@ -251,6 +251,36 @@
         "notional_scaled": 2182.0,
         "scale_factor": 1.0
       }
+    },
+    {
+      "id": "trade_20260319_205900_XLP",
+      "timestamp": "2026-03-19T20:59:00.434231Z",
+      "strategy": "llm_recommendations",
+      "ticker": "XLP",
+      "action": "sell",
+      "shares": 52.807358,
+      "price": 82.63999938964844,
+      "notional": 4364.000032888946,
+      "commission": 0.0,
+      "rationale": "LLM recommendation: Exit XLP (not in new portfolio)",
+      "signal_data": {
+        "source": "llm"
+      }
+    },
+    {
+      "id": "trade_20260319_205900_XLE",
+      "timestamp": "2026-03-19T20:59:00.434662Z",
+      "strategy": "llm_recommendations",
+      "ticker": "XLE",
+      "action": "sell",
+      "shares": 37.34383,
+      "price": 58.43000030517578,
+      "notional": 2181.9999982964323,
+      "commission": 0.0,
+      "rationale": "LLM recommendation: Exit XLE (not in new portfolio)",
+      "signal_data": {
+        "source": "llm"
+      }
     }
   ]
 }
