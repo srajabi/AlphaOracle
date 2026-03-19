@@ -50,25 +50,29 @@ const allNews = [];
 
 // Macro news
 for (const [topic, items] of Object.entries(marketContext.macro_news || {})) {
-  for (const item of items) {
-    allNews.push({
-      ...item,
-      category: 'macro',
-      topic,
-      displayTopic: topic.replace(/_/g, ' ').toUpperCase()
-    });
+  if (Array.isArray(items)) {
+    for (const item of items) {
+      allNews.push({
+        ...item,
+        category: 'macro',
+        topic,
+        displayTopic: topic.replace(/_/g, ' ').toUpperCase()
+      });
+    }
   }
 }
 
 // Theme news
 for (const [topic, items] of Object.entries(marketContext.theme_news || {})) {
-  for (const item of items) {
-    allNews.push({
-      ...item,
-      category: 'theme',
-      topic,
-      displayTopic: topic.replace(/_/g, ' ').toUpperCase()
-    });
+  if (Array.isArray(items)) {
+    for (const item of items) {
+      allNews.push({
+        ...item,
+        category: 'theme',
+        topic,
+        displayTopic: topic.replace(/_/g, ' ').toUpperCase()
+      });
+    }
   }
 }
 
