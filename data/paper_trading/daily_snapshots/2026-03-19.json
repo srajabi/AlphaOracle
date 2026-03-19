@@ -1,0 +1,167 @@
+{
+  "date": "2026-03-19",
+  "positions": {
+    "initialized_at": "2026-03-18T01:07:22.308371Z",
+    "updated_at": "2026-03-19T03:56:34.379504Z",
+    "strategies": {
+      "dual_momentum": {
+        "starting_capital": 100000.0,
+        "current_cash": 100000.0,
+        "current_positions": {},
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      },
+      "sma_200_trend": {
+        "starting_capital": 100000.0,
+        "current_cash": 100000.0,
+        "current_positions": {},
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      },
+      "sma_trend_20_50": {
+        "starting_capital": 100000.0,
+        "current_cash": 100000.0,
+        "current_positions": {},
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      },
+      "rsi_mean_reversion": {
+        "starting_capital": 100000.0,
+        "current_cash": 100000.0,
+        "current_positions": {},
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      },
+      "breakout_20d": {
+        "starting_capital": 100000.0,
+        "current_cash": 100000.0,
+        "current_positions": {},
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      },
+      "leveraged_etf_timing": {
+        "starting_capital": 100000.0,
+        "current_cash": 100000.0,
+        "current_positions": {},
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      },
+      "llm_recommendations": {
+        "starting_capital": 100000.0,
+        "current_cash": 32783.296457338874,
+        "current_positions": {
+          "XLE": {
+            "shares": 630.1318818133205,
+            "avg_entry_price": 58.33184740753048,
+            "current_price": 58.43000030517578,
+            "market_value": 36818.60604665331,
+            "unrealized_pnl": 61.849270098662636,
+            "unrealized_pnl_pct": 0.0016826639650131536,
+            "entry_date": "2026-03-17"
+          },
+          "CEG": {
+            "shares": 94.57159,
+            "avg_entry_price": 317.2200012207031,
+            "current_price": 317.2200012207031,
+            "market_value": 29999.999895243836,
+            "unrealized_pnl": 0.0,
+            "unrealized_pnl_pct": 0.0,
+            "entry_date": "2026-03-19"
+          }
+        },
+        "total_portfolio_value": 99601.90239923602,
+        "total_return": -398.0976007639838,
+        "total_return_pct": -0.003980976007639838
+      }
+    }
+  },
+  "trades_today": [
+    {
+      "id": "trade_20260319_035634_IAU",
+      "timestamp": "2026-03-19T03:56:34.376872Z",
+      "strategy": "llm_recommendations",
+      "ticker": "IAU",
+      "action": "sell",
+      "shares": 286.515706,
+      "price": 91.12000274658203,
+      "notional": 26107.31191765889,
+      "commission": 0.0,
+      "rationale": "LLM recommendation: Exit IAU (not in new portfolio)",
+      "signal_data": {
+        "source": "llm"
+      }
+    },
+    {
+      "id": "trade_20260319_035634_XLU",
+      "timestamp": "2026-03-19T03:56:34.377583Z",
+      "strategy": "llm_recommendations",
+      "ticker": "XLU",
+      "action": "sell",
+      "shares": 857.819339,
+      "price": 46.72999954223633,
+      "notional": 40085.89731879147,
+      "commission": 0.0,
+      "rationale": "LLM recommendation: Exit XLU (not in new portfolio)",
+      "signal_data": {
+        "source": "llm"
+      }
+    },
+    {
+      "id": "trade_20260319_035634_MU",
+      "timestamp": "2026-03-19T03:56:34.378090Z",
+      "strategy": "llm_recommendations",
+      "ticker": "MU",
+      "action": "sell",
+      "shares": 45.881102,
+      "price": 461.7300109863281,
+      "notional": 21184.68173052484,
+      "commission": 0.0,
+      "rationale": "LLM recommendation: Exit MU (not in new portfolio)",
+      "signal_data": {
+        "source": "llm"
+      }
+    },
+    {
+      "id": "trade_20260319_035634_XLE",
+      "timestamp": "2026-03-19T03:56:34.378635Z",
+      "strategy": "llm_recommendations",
+      "ticker": "XLE",
+      "action": "buy",
+      "shares": 513.434877,
+      "price": 58.43000030517578,
+      "notional": 30000.00001979789,
+      "commission": 0.0,
+      "rationale": "LLM recommendation (scaled 100.0%)",
+      "signal_data": {
+        "source": "llm",
+        "notional_requested": 30000,
+        "notional_scaled": 30000.0,
+        "scale_factor": 1.0
+      }
+    },
+    {
+      "id": "trade_20260319_035634_CEG",
+      "timestamp": "2026-03-19T03:56:34.379152Z",
+      "strategy": "llm_recommendations",
+      "ticker": "CEG",
+      "action": "buy",
+      "shares": 94.57159,
+      "price": 317.2200012207031,
+      "notional": 29999.999895243836,
+      "commission": 0.0,
+      "rationale": "LLM recommendation (scaled 100.0%)",
+      "signal_data": {
+        "source": "llm",
+        "notional_requested": 30000,
+        "notional_scaled": 30000.0,
+        "scale_factor": 1.0
+      }
+    }
+  ]
+}

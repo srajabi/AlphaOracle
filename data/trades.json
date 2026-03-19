@@ -1,27 +1,17 @@
 [
     {
+        "ticker": "GLD",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 100000
+        "notional_value": 30000
     },
     {
-        "ticker": "XLU",
+        "ticker": "CEG",
         "action": "buy",
-        "notional_value": 100000
-    },
-    {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 150000
-    },
-    {
-        "ticker": "MU",
-        "action": "buy",
-        "notional_value": 125000
-    },
-    {
-        "ticker": "NBIS",
-        "action": "buy",
-        "notional_value": 125000
+        "notional_value": 30000
     }
 ]

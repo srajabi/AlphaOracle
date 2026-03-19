@@ -71,6 +71,87 @@
         "notional_scaled": 6756.756756756758,
         "scale_factor": 0.2702702702702703
       }
+    },
+    {
+      "id": "trade_20260319_035634_IAU",
+      "timestamp": "2026-03-19T03:56:34.376872Z",
+      "strategy": "llm_recommendations",
+      "ticker": "IAU",
+      "action": "sell",
+      "shares": 286.515706,
+      "price": 91.12000274658203,
+      "notional": 26107.31191765889,
+      "commission": 0.0,
+      "rationale": "LLM recommendation: Exit IAU (not in new portfolio)",
+      "signal_data": {
+        "source": "llm"
+      }
+    },
+    {
+      "id": "trade_20260319_035634_XLU",
+      "timestamp": "2026-03-19T03:56:34.377583Z",
+      "strategy": "llm_recommendations",
+      "ticker": "XLU",
+      "action": "sell",
+      "shares": 857.819339,
+      "price": 46.72999954223633,
+      "notional": 40085.89731879147,
+      "commission": 0.0,
+      "rationale": "LLM recommendation: Exit XLU (not in new portfolio)",
+      "signal_data": {
+        "source": "llm"
+      }
+    },
+    {
+      "id": "trade_20260319_035634_MU",
+      "timestamp": "2026-03-19T03:56:34.378090Z",
+      "strategy": "llm_recommendations",
+      "ticker": "MU",
+      "action": "sell",
+      "shares": 45.881102,
+      "price": 461.7300109863281,
+      "notional": 21184.68173052484,
+      "commission": 0.0,
+      "rationale": "LLM recommendation: Exit MU (not in new portfolio)",
+      "signal_data": {
+        "source": "llm"
+      }
+    },
+    {
+      "id": "trade_20260319_035634_XLE",
+      "timestamp": "2026-03-19T03:56:34.378635Z",
+      "strategy": "llm_recommendations",
+      "ticker": "XLE",
+      "action": "buy",
+      "shares": 513.434877,
+      "price": 58.43000030517578,
+      "notional": 30000.00001979789,
+      "commission": 0.0,
+      "rationale": "LLM recommendation (scaled 100.0%)",
+      "signal_data": {
+        "source": "llm",
+        "notional_requested": 30000,
+        "notional_scaled": 30000.0,
+        "scale_factor": 1.0
+      }
+    },
+    {
+      "id": "trade_20260319_035634_CEG",
+      "timestamp": "2026-03-19T03:56:34.379152Z",
+      "strategy": "llm_recommendations",
+      "ticker": "CEG",
+      "action": "buy",
+      "shares": 94.57159,
+      "price": 317.2200012207031,
+      "notional": 29999.999895243836,
+      "commission": 0.0,
+      "rationale": "LLM recommendation (scaled 100.0%)",
+      "signal_data": {
+        "source": "llm",
+        "notional_requested": 30000,
+        "notional_scaled": 30000.0,
+        "scale_factor": 1.0
+      }
     }
   ]
 }

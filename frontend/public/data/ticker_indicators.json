@@ -8,7 +8,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.877012"
+        "timestamp": "2026-03-19T03:45:58.696771"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -16,26 +16,26 @@
         "strength": "moderate",
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 50.0,
-          "price_range_pct": 6.553316828381721,
-          "close": 399.95001220703125,
-          "sma20": 400.17981109619143,
-          "sma50": 427.0403814697266
+          "direction_consistency": 55.00000000000001,
+          "price_range_pct": 6.6898059887795585,
+          "close": 391.7900085449219,
+          "sma20": 400.0074996948242,
+          "sma50": 423.99165771484377
         },
-        "timestamp": "2026-03-17T19:47:44.878319"
+        "timestamp": "2026-03-19T03:45:58.699369"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 27733700,
-          "avg_volume_20d": 33643815,
-          "avg_volume_60d": 35820563,
-          "volume_vs_avg": -17.566720658760016,
-          "price_change_20d": 1.0086403579151915
+          "latest_volume": 25784138,
+          "avg_volume_20d": 33479326,
+          "avg_volume_60d": 36252608,
+          "volume_vs_avg": -22.984897285972615,
+          "price_change_20d": -1.6739404339690678
         },
-        "timestamp": "2026-03-17T19:47:44.879089"
+        "timestamp": "2026-03-19T03:45:58.700900"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -45,7 +45,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.880276"
+      "timestamp": "2026-03-19T03:45:58.703262"
     },
     "AAPL": {
       "ticker": "AAPL",
@@ -55,34 +55,34 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.881479"
+        "timestamp": "2026-03-19T03:45:58.705627"
       },
       "trend_strength": {
         "name": "Trend Strength",
-        "signal": "choppy",
-        "strength": "weak",
-        "interpretation": "Choppy/sideways: No clear trend, 9.5% 20-day range",
+        "signal": "downtrend",
+        "strength": "moderate",
+        "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 50.0,
-          "price_range_pct": 9.536435080559789,
-          "close": 252.82000732421875,
-          "sma20": 262.6014991760254,
-          "sma50": 262.2048391723633
+          "direction_consistency": 55.00000000000001,
+          "price_range_pct": 9.7183357236368,
+          "close": 249.94000244140625,
+          "sma20": 261.39849853515625,
+          "sma50": 261.53290283203125
         },
-        "timestamp": "2026-03-17T19:47:44.882404"
+        "timestamp": "2026-03-19T03:45:58.707676"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 32074200,
-          "avg_volume_20d": 40207090,
-          "avg_volume_60d": 47964930,
-          "volume_vs_avg": -20.227502164419263,
-          "price_change_20d": -4.191298072586225
+          "latest_volume": 34652568,
+          "avg_volume_20d": 38924178,
+          "avg_volume_60d": 48303026,
+          "volume_vs_avg": -10.974182566175884,
+          "price_change_20d": -4.083193138053454
         },
-        "timestamp": "2026-03-17T19:47:44.883120"
+        "timestamp": "2026-03-19T03:45:58.709032"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -92,7 +92,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.884239"
+      "timestamp": "2026-03-19T03:45:58.711323"
     },
     "AMZN": {
       "ticker": "AMZN",
@@ -102,34 +102,34 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.886065"
+        "timestamp": "2026-03-19T03:45:58.713457"
       },
       "trend_strength": {
         "name": "Trend Strength",
-        "signal": "uptrend",
+        "signal": "downtrend",
         "strength": "moderate",
-        "interpretation": "Uptrend: Price above key moving averages",
+        "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 65.0,
-          "price_range_pct": 8.401817362518308,
-          "close": 211.74000549316406,
-          "sma20": 209.94000015258788,
-          "sma50": 222.9243997192383
+          "direction_consistency": 60.0,
+          "price_range_pct": 6.708916071205261,
+          "close": 209.8699951171875,
+          "sma20": 210.89650039672853,
+          "sma50": 222.234599609375
         },
-        "timestamp": "2026-03-17T19:47:44.887186"
+        "timestamp": "2026-03-19T03:45:58.715473"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 42209300,
-          "avg_volume_20d": 48321670,
-          "avg_volume_60d": 51045794,
-          "volume_vs_avg": -12.649335174053377,
-          "price_change_20d": 5.264733740001759
+          "latest_volume": 37711795,
+          "avg_volume_20d": 46411629,
+          "avg_volume_60d": 51745553,
+          "volume_vs_avg": -18.744945602777506,
+          "price_change_20d": 2.445569897446731
         },
-        "timestamp": "2026-03-17T19:47:44.887917"
+        "timestamp": "2026-03-19T03:45:58.716810"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -139,7 +139,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.889051"
+      "timestamp": "2026-03-19T03:45:58.719011"
     },
     "META": {
       "ticker": "META",
@@ -149,7 +149,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.890376"
+        "timestamp": "2026-03-19T03:45:58.721134"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -157,26 +157,26 @@
         "strength": "moderate",
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 65.0,
-          "price_range_pct": 8.60208045784586,
-          "close": 627.4500122070312,
-          "sma20": 646.2655456542968,
-          "sma50": 653.0600061035157
+          "direction_consistency": 60.0,
+          "price_range_pct": 8.76652733967193,
+          "close": 615.6799926757812,
+          "sma20": 644.1119018554688,
+          "sma50": 651.665205078125
         },
-        "timestamp": "2026-03-17T19:47:44.891334"
+        "timestamp": "2026-03-19T03:45:58.723083"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 15134900,
-          "avg_volume_20d": 12269150,
-          "avg_volume_60d": 14891817,
-          "volume_vs_avg": 23.357363794557905,
-          "price_change_20d": -1.7680176532299918
+          "latest_volume": 11622275,
+          "avg_volume_20d": 12001508,
+          "avg_volume_60d": 14984955,
+          "volume_vs_avg": -3.1598839604228934,
+          "price_change_20d": -4.431418964913347
         },
-        "timestamp": "2026-03-17T19:47:44.892051"
+        "timestamp": "2026-03-19T03:45:58.724431"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -186,7 +186,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.893269"
+      "timestamp": "2026-03-19T03:45:58.726555"
     },
     "NFLX": {
       "ticker": "NFLX",
@@ -196,7 +196,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.894748"
+        "timestamp": "2026-03-19T03:45:58.728695"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -204,26 +204,26 @@
         "strength": "moderate",
         "interpretation": "Uptrend: Price above key moving averages",
         "components": {
-          "direction_consistency": 60.0,
-          "price_range_pct": 24.31722927309018,
-          "close": 95.19999694824219,
-          "sma20": 89.74299850463868,
-          "sma50": 86.99639999389649
+          "direction_consistency": 55.00000000000001,
+          "price_range_pct": 24.445620139281974,
+          "close": 94.69999694824219,
+          "sma20": 91.44649848937988,
+          "sma50": 87.12860000610351
         },
-        "timestamp": "2026-03-17T19:47:44.895604"
+        "timestamp": "2026-03-19T03:45:58.730629"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 34931800,
-          "avg_volume_20d": 53221425,
-          "avg_volume_60d": 50825934,
-          "volume_vs_avg": -34.36515463462319,
-          "price_change_20d": 23.636359673041806
+          "latest_volume": 27264739,
+          "avg_volume_20d": 52614156,
+          "avg_volume_60d": 50956358,
+          "volume_vs_avg": -48.179842497694914,
+          "price_change_20d": 22.98700902369115
         },
-        "timestamp": "2026-03-17T19:47:44.896203"
+        "timestamp": "2026-03-19T03:45:58.731939"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -233,7 +233,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.897279"
+      "timestamp": "2026-03-19T03:45:58.734079"
     },
     "GOOGL": {
       "ticker": "GOOGL",
@@ -243,34 +243,34 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.898660"
+        "timestamp": "2026-03-19T03:45:58.736195"
       },
       "trend_strength": {
         "name": "Trend Strength",
-        "signal": "downtrend",
-        "strength": "moderate",
-        "interpretation": "Downtrend: Price below key moving averages",
+        "signal": "choppy",
+        "strength": "weak",
+        "interpretation": "Choppy/sideways: No clear trend, 5.3% 20-day range",
         "components": {
           "direction_consistency": 60.0,
-          "price_range_pct": 5.383042749178784,
-          "close": 305.55999755859375,
-          "sma20": 306.0355972290039,
-          "sma50": 318.60652893066407
+          "price_range_pct": 5.345778271135424,
+          "close": 307.69000244140625,
+          "sma20": 306.7198913574219,
+          "sma50": 318.35381591796875
         },
-        "timestamp": "2026-03-17T19:47:44.899595"
+        "timestamp": "2026-03-19T03:45:58.738125"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 23519700,
-          "avg_volume_20d": 31241005,
-          "avg_volume_60d": 34122309,
-          "volume_vs_avg": -24.715290049087734,
-          "price_change_20d": 1.2433327883179413
+          "latest_volume": 19852916,
+          "avg_volume_20d": 29944925,
+          "avg_volume_60d": 34277108,
+          "volume_vs_avg": -33.70190284458812,
+          "price_change_20d": 1.6696703213372688
         },
-        "timestamp": "2026-03-17T19:47:44.900447"
+        "timestamp": "2026-03-19T03:45:58.739528"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -280,7 +280,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.901696"
+      "timestamp": "2026-03-19T03:45:58.741699"
     },
     "NVDA": {
       "ticker": "NVDA",
@@ -290,7 +290,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.902841"
+        "timestamp": "2026-03-19T03:45:58.743817"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -298,26 +298,26 @@
         "strength": "moderate",
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 65.0,
-          "price_range_pct": 10.025645625328023,
-          "close": 183.22000122070312,
-          "sma20": 184.96697235107422,
-          "sma50": 185.38575927734374
+          "direction_consistency": 55.00000000000001,
+          "price_range_pct": 10.182366218731534,
+          "close": 180.39999389648438,
+          "sma20": 184.43698120117188,
+          "sma50": 185.09336700439454
         },
-        "timestamp": "2026-03-17T19:47:44.903788"
+        "timestamp": "2026-03-19T03:45:58.745730"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 217307400,
-          "avg_volume_20d": 194509560,
-          "avg_volume_60d": 177766536,
-          "volume_vs_avg": 11.720678407786234,
-          "price_change_20d": -0.94073870823983
+          "latest_volume": 154378417,
+          "avg_volume_20d": 195002070,
+          "avg_volume_60d": 180056698,
+          "volume_vs_avg": -20.832421765022502,
+          "price_change_20d": -3.986292171841943
         },
-        "timestamp": "2026-03-17T19:47:44.904420"
+        "timestamp": "2026-03-19T03:45:58.747078"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -327,7 +327,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.905470"
+      "timestamp": "2026-03-19T03:45:58.749206"
     },
     "TSM": {
       "ticker": "TSM",
@@ -337,7 +337,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.906963"
+        "timestamp": "2026-03-19T03:45:58.751353"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -345,26 +345,26 @@
         "strength": "weak",
         "interpretation": "Choppy/sideways: No clear trend, 15.0% 20-day range",
         "components": {
-          "direction_consistency": 60.0,
-          "price_range_pct": 14.995743433491585,
-          "close": 340.2300109863281,
-          "sma20": 359.5165023803711,
-          "sma50": 346.02699890136716
+          "direction_consistency": 55.00000000000001,
+          "price_range_pct": 14.982668331082058,
+          "close": 339.57000732421875,
+          "sma20": 356.56286773681643,
+          "sma50": 345.9645770263672
         },
-        "timestamp": "2026-03-17T19:47:44.907899"
+        "timestamp": "2026-03-19T03:45:58.753262"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 11123500,
-          "avg_volume_20d": 12619030,
-          "avg_volume_60d": 13894628,
-          "volume_vs_avg": -11.85138635853944,
-          "price_change_20d": -6.581548714248053
+          "latest_volume": 12511381,
+          "avg_volume_20d": 12947614,
+          "avg_volume_60d": 14078865,
+          "volume_vs_avg": -3.369215735929365,
+          "price_change_20d": -5.5115723173345454
         },
-        "timestamp": "2026-03-17T19:47:44.908572"
+        "timestamp": "2026-03-19T03:45:58.754582"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -374,7 +374,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.909792"
+      "timestamp": "2026-03-19T03:45:58.756737"
     },
     "AVGO": {
       "ticker": "AVGO",
@@ -384,7 +384,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.911125"
+        "timestamp": "2026-03-19T03:45:58.758838"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -392,26 +392,26 @@
         "strength": "moderate",
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 60.0,
-          "price_range_pct": 9.820879706816365,
-          "close": 324.9200134277344,
-          "sma20": 329.42350006103516,
-          "sma50": 332.6383996582031
+          "direction_consistency": 70.0,
+          "price_range_pct": 10.100340075928331,
+          "close": 315.92999267578125,
+          "sma20": 327.9829986572266,
+          "sma50": 331.56239929199216
         },
-        "timestamp": "2026-03-17T19:47:44.912101"
+        "timestamp": "2026-03-19T03:45:58.760673"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 31363100,
-          "avg_volume_20d": 27100190,
-          "avg_volume_60d": 26329228,
-          "volume_vs_avg": 15.730184917522717,
-          "price_change_20d": -2.2914521324907344
+          "latest_volume": 22971289,
+          "avg_volume_20d": 28298329,
+          "avg_volume_60d": 26887269,
+          "volume_vs_avg": -18.824575703001432,
+          "price_change_20d": -5.4073469525000695
         },
-        "timestamp": "2026-03-17T19:47:44.912775"
+        "timestamp": "2026-03-19T03:45:58.761961"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -421,7 +421,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.913877"
+      "timestamp": "2026-03-19T03:45:58.764139"
     },
     "AMD": {
       "ticker": "AMD",
@@ -431,7 +431,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.915146"
+        "timestamp": "2026-03-19T03:45:58.766316"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -439,26 +439,26 @@
         "strength": "moderate",
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 65.0,
-          "price_range_pct": 11.6441139365339,
-          "close": 196.5800018310547,
-          "sma20": 200.69399871826172,
-          "sma50": 215.77399993896483
+          "direction_consistency": 60.0,
+          "price_range_pct": 11.475984467645684,
+          "close": 199.4600067138672,
+          "sma20": 200.32249908447267,
+          "sma50": 214.7983999633789
         },
-        "timestamp": "2026-03-17T19:47:44.915988"
+        "timestamp": "2026-03-19T03:45:58.768171"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 30285200,
-          "avg_volume_20d": 35628575,
-          "avg_volume_60d": 37987161,
-          "volume_vs_avg": -14.997442361924385,
-          "price_change_20d": -3.200709051306516
+          "latest_volume": 28258166,
+          "avg_volume_20d": 34711658,
+          "avg_volume_60d": 38314789,
+          "volume_vs_avg": -18.591714184971675,
+          "price_change_20d": -1.922598464472236
         },
-        "timestamp": "2026-03-17T19:47:44.916654"
+        "timestamp": "2026-03-19T03:45:58.769509"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -468,7 +468,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.917885"
+      "timestamp": "2026-03-19T03:45:58.771734"
     },
     "MU": {
       "ticker": "MU",
@@ -478,7 +478,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.919233"
+        "timestamp": "2026-03-19T03:45:58.773867"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -486,26 +486,26 @@
         "strength": "moderate",
         "interpretation": "Uptrend: Price above key moving averages",
         "components": {
-          "direction_consistency": 50.0,
-          "price_range_pct": 16.183794018913716,
-          "close": 441.79998779296875,
-          "sma20": 410.3514999389648,
-          "sma50": 390.9995989990234
+          "direction_consistency": 55.00000000000001,
+          "price_range_pct": 19.801620214820005,
+          "close": 461.7300109863281,
+          "sma20": 415.48600006103516,
+          "sma50": 396.9165991210937
         },
-        "timestamp": "2026-03-17T19:47:44.920082"
+        "timestamp": "2026-03-19T03:45:58.775759"
       },
       "volume_profile": {
         "name": "Volume Profile",
-        "signal": "neutral",
-        "interpretation": "Volume patterns neutral",
+        "signal": "bullish_volume",
+        "interpretation": "Bullish: High volume (+61%) on price rise",
         "components": {
-          "latest_volume": 43067600,
-          "avg_volume_20d": 32112960,
-          "avg_volume_60d": 35420269,
-          "volume_vs_avg": 34.11283170408459,
-          "price_change_20d": 10.51077821351174
+          "latest_volume": 54674120,
+          "avg_volume_20d": 33954756,
+          "avg_volume_60d": 36517611,
+          "volume_vs_avg": 61.020506228935936,
+          "price_change_20d": 10.633761647005912
         },
-        "timestamp": "2026-03-17T19:47:44.920815"
+        "timestamp": "2026-03-19T03:45:58.777074"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -515,7 +515,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.921946"
+      "timestamp": "2026-03-19T03:45:58.779196"
     },
     "KLAC": {
       "ticker": "KLAC",
@@ -525,34 +525,34 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.923243"
+        "timestamp": "2026-03-19T03:45:58.781354"
       },
       "trend_strength": {
         "name": "Trend Strength",
-        "signal": "downtrend",
+        "signal": "uptrend",
         "strength": "moderate",
-        "interpretation": "Downtrend: Price below key moving averages",
+        "interpretation": "Uptrend: Price above key moving averages",
         "components": {
           "direction_consistency": 65.0,
-          "price_range_pct": 14.053983080381006,
-          "close": 1438.239990234375,
-          "sma20": 1467.2925048828124,
-          "sma50": 1456.8729711914064
+          "price_range_pct": 13.635689500541565,
+          "close": 1482.3599853515625,
+          "sma20": 1467.9535034179687,
+          "sma50": 1463.676953125
         },
-        "timestamp": "2026-03-17T19:47:44.924102"
+        "timestamp": "2026-03-19T03:45:58.783194"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 955700,
-          "avg_volume_20d": 930150,
-          "avg_volume_60d": 1127450,
-          "volume_vs_avg": 2.746868784604639,
-          "price_change_20d": -2.173185264845068
+          "latest_volume": 880787,
+          "avg_volume_20d": 953159,
+          "avg_volume_60d": 1141718,
+          "volume_vs_avg": -7.592890947353137,
+          "price_change_20d": 0.8476740411285322
         },
-        "timestamp": "2026-03-17T19:47:44.924797"
+        "timestamp": "2026-03-19T03:45:58.784538"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -562,7 +562,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.925933"
+      "timestamp": "2026-03-19T03:45:58.786662"
     },
     "INTC": {
       "ticker": "INTC",
@@ -572,34 +572,34 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.927200"
+        "timestamp": "2026-03-19T03:45:58.788768"
       },
       "trend_strength": {
         "name": "Trend Strength",
-        "signal": "choppy",
-        "strength": "weak",
-        "interpretation": "Choppy/sideways: No clear trend, 10.7% 20-day range",
+        "signal": "downtrend",
+        "strength": "moderate",
+        "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 55.00000000000001,
-          "price_range_pct": 10.664338389669172,
-          "close": 45.7599983215332,
-          "sma20": 45.43699989318848,
-          "sma50": 46.18240020751953
+          "direction_consistency": 50.0,
+          "price_range_pct": 10.837222297147559,
+          "close": 45.029998779296875,
+          "sma20": 45.30949993133545,
+          "sma50": 46.38920021057129
         },
-        "timestamp": "2026-03-17T19:47:44.928076"
+        "timestamp": "2026-03-19T03:45:58.790633"
       },
       "volume_profile": {
         "name": "Volume Profile",
-        "signal": "neutral",
-        "interpretation": "Volume patterns neutral",
+        "signal": "weak_uptrend",
+        "interpretation": "Volume decreasing on uptrend (weak/exhaustion)",
         "components": {
-          "latest_volume": 114199400,
-          "avg_volume_20d": 78979450,
-          "avg_volume_60d": 109259646,
-          "volume_vs_avg": 44.59381522661907,
-          "price_change_20d": -0.9094889148268503
+          "latest_volume": 77134216,
+          "avg_volume_20d": 80733825,
+          "avg_volume_60d": 110273796,
+          "volume_vs_avg": -4.45861417358967,
+          "price_change_20d": 0.9188701417003564
         },
-        "timestamp": "2026-03-17T19:47:44.928730"
+        "timestamp": "2026-03-19T03:45:58.791961"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -609,7 +609,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.929776"
+      "timestamp": "2026-03-19T03:45:58.794086"
     },
     "PLTR": {
       "ticker": "PLTR",
@@ -619,34 +619,34 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.931164"
+        "timestamp": "2026-03-19T03:45:58.796192"
       },
       "trend_strength": {
         "name": "Trend Strength",
-        "signal": "uptrend",
-        "strength": "moderate",
-        "interpretation": "Uptrend: Price above key moving averages",
+        "signal": "choppy",
+        "strength": "weak",
+        "interpretation": "Choppy/sideways: No clear trend, 18.5% 20-day range",
         "components": {
-          "direction_consistency": 65.0,
-          "price_range_pct": 18.54374482572988,
-          "close": 152.72000122070312,
-          "sma20": 143.85200119018555,
-          "sma50": 153.35080047607423
+          "direction_consistency": 60.0,
+          "price_range_pct": 18.53767528454789,
+          "close": 152.77000427246094,
+          "sma20": 145.82450103759766,
+          "sma50": 152.66980072021485
         },
-        "timestamp": "2026-03-17T19:47:44.932017"
+        "timestamp": "2026-03-19T03:45:58.798054"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 32898900,
-          "avg_volume_20d": 52296750,
-          "avg_volume_60d": 50553903,
-          "volume_vs_avg": -37.09188429491317,
-          "price_change_20d": 14.809800267252493
+          "latest_volume": 32322026,
+          "avg_volume_20d": 50364566,
+          "avg_volume_60d": 50998265,
+          "volume_vs_avg": -35.82387703396147,
+          "price_change_20d": 13.255248694281363
         },
-        "timestamp": "2026-03-17T19:47:44.932632"
+        "timestamp": "2026-03-19T03:45:58.799360"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -656,7 +656,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.933756"
+      "timestamp": "2026-03-19T03:45:58.801542"
     },
     "CRWD": {
       "ticker": "CRWD",
@@ -666,7 +666,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.935080"
+        "timestamp": "2026-03-19T03:45:58.803733"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -674,26 +674,26 @@
         "strength": "moderate",
         "interpretation": "Uptrend: Price above key moving averages",
         "components": {
-          "direction_consistency": 65.0,
-          "price_range_pct": 21.65439778508508,
-          "close": 423.8399963378906,
-          "sma20": 405.82575073242185,
-          "sma50": 428.50080017089846
+          "direction_consistency": 70.0,
+          "price_range_pct": 21.059635917819268,
+          "close": 435.80999755859375,
+          "sma20": 407.7740005493164,
+          "sma50": 427.67840087890625
         },
-        "timestamp": "2026-03-17T19:47:44.935939"
+        "timestamp": "2026-03-19T03:45:58.805618"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "volume_confirming_uptrend",
         "interpretation": "Volume increasing on uptrend (healthy)",
         "components": {
-          "latest_volume": 3666400,
-          "avg_volume_20d": 5274715,
-          "avg_volume_60d": 3872751,
-          "volume_vs_avg": -30.49103126898799,
-          "price_change_20d": 2.3063814985623488
+          "latest_volume": 2538609,
+          "avg_volume_20d": 5189180,
+          "avg_volume_60d": 3923540,
+          "volume_vs_avg": -51.078806673604895,
+          "price_change_20d": 3.238258027147878
         },
-        "timestamp": "2026-03-17T19:47:44.936591"
+        "timestamp": "2026-03-19T03:45:58.806936"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -703,7 +703,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.937717"
+      "timestamp": "2026-03-19T03:45:58.809136"
     },
     "NBIS": {
       "ticker": "NBIS",
@@ -713,7 +713,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.939045"
+        "timestamp": "2026-03-19T03:45:58.811243"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -722,25 +722,25 @@
         "interpretation": "Uptrend: Price above key moving averages",
         "components": {
           "direction_consistency": 55.00000000000001,
-          "price_range_pct": 33.1536396058685,
-          "close": 129.85000610351562,
-          "sma20": 101.25025100708008,
-          "sma50": 97.35360092163086
+          "price_range_pct": 36.31073206667535,
+          "close": 118.55999755859375,
+          "sma20": 103.02875099182128,
+          "sma50": 98.39580093383789
         },
-        "timestamp": "2026-03-17T19:47:44.939954"
+        "timestamp": "2026-03-19T03:45:58.813094"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "bullish_volume",
-        "interpretation": "Bullish: High volume (+146%) on price rise",
+        "interpretation": "Bullish: High volume (+103%) on price rise",
         "components": {
-          "latest_volume": 34657700,
-          "avg_volume_20d": 14100600,
-          "avg_volume_60d": 13615321,
-          "volume_vs_avg": 145.78883168092136,
-          "price_change_20d": 33.152184755276906
+          "latest_volume": 35449848,
+          "avg_volume_20d": 17493397,
+          "avg_volume_60d": 15149849,
+          "volume_vs_avg": 102.64701698253309,
+          "price_change_20d": 10.175631341078951
         },
-        "timestamp": "2026-03-17T19:47:44.940644"
+        "timestamp": "2026-03-19T03:45:58.814433"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -750,7 +750,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.941729"
+      "timestamp": "2026-03-19T03:45:58.816600"
     },
     "ORCL": {
       "ticker": "ORCL",
@@ -760,34 +760,34 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.942846"
+        "timestamp": "2026-03-19T03:45:58.818720"
       },
       "trend_strength": {
         "name": "Trend Strength",
         "signal": "choppy",
         "strength": "weak",
-        "interpretation": "Choppy/sideways: No clear trend, 14.0% 20-day range",
+        "interpretation": "Choppy/sideways: No clear trend, 14.3% 20-day range",
         "components": {
-          "direction_consistency": 50.0,
-          "price_range_pct": 13.983456682629516,
-          "close": 155.97000122070312,
-          "sma20": 151.92549819946288,
-          "sma50": 165.68753997802733
+          "direction_consistency": 55.00000000000001,
+          "price_range_pct": 14.264223956319743,
+          "close": 152.89999389648438,
+          "sma20": 151.797998046875,
+          "sma50": 164.09381439208985
         },
-        "timestamp": "2026-03-17T19:47:44.943679"
+        "timestamp": "2026-03-19T03:45:58.820577"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 21607700,
-          "avg_volume_20d": 29487780,
-          "avg_volume_60d": 27817544,
-          "volume_vs_avg": -26.723205341331223,
-          "price_change_20d": 1.2989543314565255
+          "latest_volume": 17914839,
+          "avg_volume_20d": 29859401,
+          "avg_volume_60d": 28150341,
+          "volume_vs_avg": -40.00268649051091,
+          "price_change_20d": -2.325283982218551
         },
-        "timestamp": "2026-03-17T19:47:44.944305"
+        "timestamp": "2026-03-19T03:45:58.821901"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -797,7 +797,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.945418"
+      "timestamp": "2026-03-19T03:45:58.824238"
     },
     "PSTG": {
       "ticker": "PSTG",
@@ -807,7 +807,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.946778"
+        "timestamp": "2026-03-19T03:45:58.826414"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -815,26 +815,26 @@
         "strength": "moderate",
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 60.0,
-          "price_range_pct": 20.73189991350925,
-          "close": 62.849998474121094,
-          "sma20": 65.7370002746582,
-          "sma50": 68.875
+          "direction_consistency": 50.0,
+          "price_range_pct": 20.23605979625405,
+          "close": 64.38999938964844,
+          "sma20": 64.8640001296997,
+          "sma50": 68.65819984436035
         },
-        "timestamp": "2026-03-17T19:47:44.947597"
+        "timestamp": "2026-03-19T03:45:58.828237"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 2958700,
-          "avg_volume_20d": 3940715,
-          "avg_volume_60d": 3719938,
-          "volume_vs_avg": -24.91971634589154,
-          "price_change_20d": -13.536942683716314
+          "latest_volume": 2122140,
+          "avg_volume_20d": 3843357,
+          "avg_volume_60d": 3719764,
+          "volume_vs_avg": -44.784208180504706,
+          "price_change_20d": -12.501695075510167
         },
-        "timestamp": "2026-03-17T19:47:44.948207"
+        "timestamp": "2026-03-19T03:45:58.829549"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -844,7 +844,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.949217"
+      "timestamp": "2026-03-19T03:45:58.831659"
     },
     "CEG": {
       "ticker": "CEG",
@@ -854,34 +854,34 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.950486"
+        "timestamp": "2026-03-19T03:45:58.833807"
       },
       "trend_strength": {
         "name": "Trend Strength",
-        "signal": "choppy",
-        "strength": "weak",
-        "interpretation": "Choppy/sideways: No clear trend, 13.2% 20-day range",
+        "signal": "uptrend",
+        "strength": "moderate",
+        "interpretation": "Uptrend: Price above key moving averages",
         "components": {
-          "direction_consistency": 50.0,
-          "price_range_pct": 13.206338205047416,
-          "close": 305.5799865722656,
-          "sma20": 311.95388946533205,
-          "sma50": 304.68826446533205
+          "direction_consistency": 55.00000000000001,
+          "price_range_pct": 12.721747165493069,
+          "close": 317.2200012207031,
+          "sma20": 313.38634185791017,
+          "sma50": 302.7819674682617
         },
-        "timestamp": "2026-03-17T19:47:44.951320"
+        "timestamp": "2026-03-19T03:45:58.835701"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 2208300,
-          "avg_volume_20d": 3403045,
-          "avg_volume_60d": 3809380,
-          "volume_vs_avg": -35.1081164075115,
-          "price_change_20d": 0.9832948490804183
+          "latest_volume": 2625164,
+          "avg_volume_20d": 3181993,
+          "avg_volume_60d": 3851674,
+          "volume_vs_avg": -17.49938371961324,
+          "price_change_20d": 8.90937808593064
         },
-        "timestamp": "2026-03-17T19:47:44.951915"
+        "timestamp": "2026-03-19T03:45:58.837020"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -891,7 +891,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.952933"
+      "timestamp": "2026-03-19T03:45:58.839123"
     },
     "TLN": {
       "ticker": "TLN",
@@ -901,7 +901,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.954244"
+        "timestamp": "2026-03-19T03:45:58.841306"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -909,26 +909,26 @@
         "strength": "moderate",
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 65.0,
-          "price_range_pct": 25.18261301376741,
-          "close": 317.6000061035156,
-          "sma20": 352.0564987182617,
-          "sma50": 359.63519897460935
+          "direction_consistency": 60.0,
+          "price_range_pct": 23.62078530036966,
+          "close": 338.6000061035156,
+          "sma20": 346.9149993896484,
+          "sma50": 357.11139892578126
         },
-        "timestamp": "2026-03-17T19:47:44.955090"
+        "timestamp": "2026-03-19T03:45:58.843115"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 684300,
-          "avg_volume_20d": 770585,
-          "avg_volume_60d": 877586,
-          "volume_vs_avg": -11.19733708805648,
-          "price_change_20d": -18.203356572058873
+          "latest_volume": 706195,
+          "avg_volume_20d": 784304,
+          "avg_volume_60d": 895561,
+          "volume_vs_avg": -9.959107094531817,
+          "price_change_20d": -10.90880169483931
         },
-        "timestamp": "2026-03-17T19:47:44.955704"
+        "timestamp": "2026-03-19T03:45:58.844440"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -938,7 +938,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.956805"
+      "timestamp": "2026-03-19T03:45:58.846630"
     },
     "MTZ": {
       "ticker": "MTZ",
@@ -948,7 +948,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.958109"
+        "timestamp": "2026-03-19T03:45:58.848761"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -956,26 +956,26 @@
         "strength": "moderate",
         "interpretation": "Uptrend: Price above key moving averages",
         "components": {
-          "direction_consistency": 55.00000000000001,
-          "price_range_pct": 13.438355022705744,
-          "close": 300.260009765625,
-          "sma20": 290.4964965820312,
-          "sma50": 261.7313986206055
+          "direction_consistency": 60.0,
+          "price_range_pct": 9.588552932947927,
+          "close": 303.07000732421875,
+          "sma20": 294.27799835205076,
+          "sma50": 264.681399230957
         },
-        "timestamp": "2026-03-17T19:47:44.959083"
+        "timestamp": "2026-03-19T03:45:58.850603"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 632300,
-          "avg_volume_20d": 1081810,
-          "avg_volume_60d": 962634,
-          "volume_vs_avg": -41.55165879405811,
-          "price_change_20d": 12.06659126399705
+          "latest_volume": 564729,
+          "avg_volume_20d": 1075881,
+          "avg_volume_60d": 972871,
+          "volume_vs_avg": -47.51010903664154,
+          "price_change_20d": 9.963362516647866
         },
-        "timestamp": "2026-03-17T19:47:44.959818"
+        "timestamp": "2026-03-19T03:45:58.851949"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -985,7 +985,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.961079"
+      "timestamp": "2026-03-19T03:45:58.854180"
     },
     "WDC": {
       "ticker": "WDC",
@@ -995,7 +995,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.962448"
+        "timestamp": "2026-03-19T03:45:58.856416"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1003,26 +1003,26 @@
         "strength": "moderate",
         "interpretation": "Uptrend: Price above key moving averages",
         "components": {
-          "direction_consistency": 50.0,
-          "price_range_pct": 17.877824976603474,
-          "close": 286.2099914550781,
-          "sma20": 272.8096862792969,
-          "sma50": 254.5492709350586
+          "direction_consistency": 55.00000000000001,
+          "price_range_pct": 22.486060653012128,
+          "close": 304.8999938964844,
+          "sma20": 274.72557678222654,
+          "sma50": 259.4154641723633
         },
-        "timestamp": "2026-03-17T19:47:44.963335"
+        "timestamp": "2026-03-19T03:45:58.858272"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 8565000,
-          "avg_volume_20d": 8756090,
-          "avg_volume_60d": 9821869,
-          "volume_vs_avg": -2.182366787001966,
-          "price_change_20d": 0.7873717043109574
+          "latest_volume": 11337790,
+          "avg_volume_20d": 9150494,
+          "avg_volume_60d": 10130044,
+          "volume_vs_avg": 23.90357701433512,
+          "price_change_20d": 7.157724935794674
         },
-        "timestamp": "2026-03-17T19:47:44.963950"
+        "timestamp": "2026-03-19T03:45:58.859585"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1032,7 +1032,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.965032"
+      "timestamp": "2026-03-19T03:45:58.861940"
     },
     "STX": {
       "ticker": "STX",
@@ -1042,7 +1042,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.966371"
+        "timestamp": "2026-03-19T03:45:58.864112"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1051,25 +1051,25 @@
         "interpretation": "Uptrend: Price above key moving averages",
         "components": {
           "direction_consistency": 55.00000000000001,
-          "price_range_pct": 17.889569956830154,
-          "close": 398.7799987792969,
-          "sma20": 391.8144989013672,
-          "sma50": 376.92180236816404
+          "price_range_pct": 16.975199787471553,
+          "close": 406.7699890136719,
+          "sma20": 391.2034973144531,
+          "sma50": 381.93160217285157
         },
-        "timestamp": "2026-03-17T19:47:44.967240"
+        "timestamp": "2026-03-19T03:45:58.866031"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 3120200,
-          "avg_volume_20d": 3188830,
-          "avg_volume_60d": 4105800,
-          "volume_vs_avg": -2.152200023206008,
-          "price_change_20d": -4.125595893971923
+          "latest_volume": 3727039,
+          "avg_volume_20d": 3263396,
+          "avg_volume_60d": 4182835,
+          "volume_vs_avg": 14.207344589201742,
+          "price_change_20d": -0.537939751195593
         },
-        "timestamp": "2026-03-17T19:47:44.967873"
+        "timestamp": "2026-03-19T03:45:58.867383"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1079,7 +1079,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.969022"
+      "timestamp": "2026-03-19T03:45:58.869550"
     },
     "HXSC.F": {
       "ticker": "HXSC.F",
@@ -1089,7 +1089,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.969917"
+        "timestamp": "2026-03-19T03:45:58.870650"
       },
       "trend_strength": {
         "signal": "no_data",
@@ -1108,7 +1108,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.969941"
+      "timestamp": "2026-03-19T03:45:58.870711"
     },
     "KXIAY": {
       "ticker": "KXIAY",
@@ -1118,7 +1118,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.970503"
+        "timestamp": "2026-03-19T03:45:58.871784"
       },
       "trend_strength": {
         "signal": "no_data",
@@ -1137,7 +1137,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.970526"
+      "timestamp": "2026-03-19T03:45:58.871843"
     },
     "TSLA": {
       "ticker": "TSLA",
@@ -1147,7 +1147,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.971744"
+        "timestamp": "2026-03-19T03:45:58.873991"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1156,25 +1156,25 @@
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
           "direction_consistency": 55.00000000000001,
-          "price_range_pct": 6.623516495894447,
-          "close": 395.55999755859375,
-          "sma20": 403.73300018310545,
-          "sma50": 419.5611999511719
+          "price_range_pct": 6.67039609218363,
+          "close": 392.7799987792969,
+          "sma20": 402.23799896240234,
+          "sma50": 417.6073992919922
         },
-        "timestamp": "2026-03-17T19:47:44.972561"
+        "timestamp": "2026-03-19T03:45:58.875852"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 58068300,
-          "avg_volume_20d": 58823455,
-          "avg_volume_60d": 61061442,
-          "volume_vs_avg": -1.2837651239628767,
-          "price_change_20d": -3.6699722730976547
+          "latest_volume": 49612648,
+          "avg_volume_20d": 58368602,
+          "avg_volume_60d": 60834262,
+          "volume_vs_avg": -15.00113766643828,
+          "price_change_20d": -4.597894894140964
         },
-        "timestamp": "2026-03-17T19:47:44.973180"
+        "timestamp": "2026-03-19T03:45:58.877152"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1184,7 +1184,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.974247"
+      "timestamp": "2026-03-19T03:45:58.879343"
     },
     "QQQ": {
       "ticker": "QQQ",
@@ -1194,7 +1194,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.975537"
+        "timestamp": "2026-03-19T03:45:58.881449"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1203,25 +1203,25 @@
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
           "direction_consistency": 55.00000000000001,
-          "price_range_pct": 3.8242482737475227,
-          "close": 600.3800048828125,
-          "sma20": 605.2759948730469,
-          "sma50": 613.0533984375
+          "price_range_pct": 3.85947571531374,
+          "close": 594.9000244140625,
+          "sma20": 604.831997680664,
+          "sma50": 612.3953991699219
         },
-        "timestamp": "2026-03-17T19:47:44.976400"
+        "timestamp": "2026-03-19T03:45:58.883285"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 49077200,
-          "avg_volume_20d": 71385005,
-          "avg_volume_60d": 63160884,
-          "volume_vs_avg": -31.249987304756786,
-          "price_change_20d": -0.15299899032643616
+          "latest_volume": 55253316,
+          "avg_volume_20d": 69839775,
+          "avg_volume_60d": 63745242,
+          "volume_vs_avg": -20.885605133915675,
+          "price_change_20d": -1.420111472833907
         },
-        "timestamp": "2026-03-17T19:47:44.977035"
+        "timestamp": "2026-03-19T03:45:58.884577"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1231,7 +1231,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.978134"
+      "timestamp": "2026-03-19T03:45:58.886690"
     },
     "TQQQ": {
       "ticker": "TQQQ",
@@ -1241,7 +1241,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.979508"
+        "timestamp": "2026-03-19T03:45:58.888843"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1250,25 +1250,25 @@
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
           "direction_consistency": 55.00000000000001,
-          "price_range_pct": 12.515800129149929,
-          "close": 47.459999084472656,
-          "sma20": 48.992499923706056,
-          "sma50": 51.53459991455078
+          "price_range_pct": 12.88502998550746,
+          "close": 46.099998474121094,
+          "sma20": 48.81849994659424,
+          "sma50": 51.3007999420166
         },
-        "timestamp": "2026-03-17T19:47:44.980449"
+        "timestamp": "2026-03-19T03:45:58.890766"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 81421500,
-          "avg_volume_20d": 108952010,
-          "avg_volume_60d": 99413671,
-          "volume_vs_avg": -25.268473706910044,
-          "price_change_20d": -1.8407433665686757
+          "latest_volume": 102381822,
+          "avg_volume_20d": 107876581,
+          "avg_volume_60d": 100967050,
+          "volume_vs_avg": -5.093560663464514,
+          "price_change_20d": -5.5908319773958715
         },
-        "timestamp": "2026-03-17T19:47:44.981068"
+        "timestamp": "2026-03-19T03:45:58.892087"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1278,7 +1278,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.982071"
+      "timestamp": "2026-03-19T03:45:58.894219"
     },
     "SPY": {
       "ticker": "SPY",
@@ -1288,7 +1288,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.983121"
+        "timestamp": "2026-03-19T03:45:58.896350"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1296,26 +1296,26 @@
         "strength": "moderate",
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 55.00000000000001,
-          "price_range_pct": 4.612654893705067,
-          "close": 669.030029296875,
-          "sma20": 680.7959991455078,
-          "sma50": 686.1245971679688
+          "direction_consistency": 60.0,
+          "price_range_pct": 4.7956748392916815,
+          "close": 661.4299926757812,
+          "sma20": 678.95,
+          "sma50": 685.3511975097656
         },
-        "timestamp": "2026-03-17T19:47:44.983942"
+        "timestamp": "2026-03-19T03:45:58.898172"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 82023100,
-          "avg_volume_20d": 85449540,
-          "avg_volume_60d": 83778644,
-          "volume_vs_avg": -4.0098987074711046,
-          "price_change_20d": -2.0238627492376926
+          "latest_volume": 80910028,
+          "avg_volume_20d": 86105191,
+          "avg_volume_60d": 84677346,
+          "volume_vs_avg": -6.033507754330369,
+          "price_change_20d": -3.367518181785756
         },
-        "timestamp": "2026-03-17T19:47:44.984561"
+        "timestamp": "2026-03-19T03:45:58.899521"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1325,7 +1325,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.985622"
+      "timestamp": "2026-03-19T03:45:58.901723"
     },
     "UPRO": {
       "ticker": "UPRO",
@@ -1335,7 +1335,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.987368"
+        "timestamp": "2026-03-19T03:45:58.903993"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1343,26 +1343,26 @@
         "strength": "moderate",
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 55.00000000000001,
-          "price_range_pct": 15.023558003065995,
-          "close": 106.0999984741211,
-          "sma20": 112.55899963378906,
-          "sma50": 116.26559982299804
+          "direction_consistency": 60.0,
+          "price_range_pct": 16.08275156749918,
+          "close": 102.47000122070312,
+          "sma20": 111.53699989318848,
+          "sma50": 115.75499984741211
         },
-        "timestamp": "2026-03-17T19:47:44.988386"
+        "timestamp": "2026-03-19T03:45:58.905870"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 4607100,
-          "avg_volume_20d": 4900490,
-          "avg_volume_60d": 4645934,
-          "volume_vs_avg": -5.986952325175643,
-          "price_change_20d": -6.978782443322007
+          "latest_volume": 4954266,
+          "avg_volume_20d": 4847053,
+          "avg_volume_60d": 4676957,
+          "volume_vs_avg": 2.2119150206167504,
+          "price_change_20d": -10.810338789212626
         },
-        "timestamp": "2026-03-17T19:47:44.989156"
+        "timestamp": "2026-03-19T03:45:58.907190"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1372,7 +1372,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.990416"
+      "timestamp": "2026-03-19T03:45:58.909368"
     },
     "VOO": {
       "ticker": "VOO",
@@ -1382,7 +1382,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.991807"
+        "timestamp": "2026-03-19T03:45:58.911447"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1390,26 +1390,26 @@
         "strength": "moderate",
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 55.00000000000001,
-          "price_range_pct": 4.622962390243821,
-          "close": 615.1900024414062,
-          "sma20": 626.140005493164,
-          "sma50": 631.0106030273438
+          "direction_consistency": 60.0,
+          "price_range_pct": 4.791417235955583,
+          "close": 608.3800048828125,
+          "sma20": 624.4465057373047,
+          "sma50": 630.3008032226562
         },
-        "timestamp": "2026-03-17T19:47:44.992783"
+        "timestamp": "2026-03-19T03:45:58.913237"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 8303200,
-          "avg_volume_20d": 11460450,
-          "avg_volume_60d": 9860561,
-          "volume_vs_avg": -27.549092749412107,
-          "price_change_20d": -2.038247104574331
+          "latest_volume": 5638017,
+          "avg_volume_20d": 11328050,
+          "avg_volume_60d": 9972919,
+          "volume_vs_avg": -50.22959311663047,
+          "price_change_20d": -3.359652983938677
         },
-        "timestamp": "2026-03-17T19:47:44.993447"
+        "timestamp": "2026-03-19T03:45:58.914536"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1419,7 +1419,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.994600"
+      "timestamp": "2026-03-19T03:45:58.916796"
     },
     "IWM": {
       "ticker": "IWM",
@@ -1429,7 +1429,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.995964"
+        "timestamp": "2026-03-19T03:45:58.918909"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1437,26 +1437,26 @@
         "strength": "moderate",
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 55.00000000000001,
-          "price_range_pct": 7.793666253893085,
-          "close": 248.9199981689453,
-          "sma20": 258.3624977111816,
-          "sma50": 260.4589990234375
+          "direction_consistency": 50.0,
+          "price_range_pct": 7.92523578029056,
+          "close": 246.02000427246094,
+          "sma20": 256.4025199890137,
+          "sma50": 259.90551818847655
         },
-        "timestamp": "2026-03-17T19:47:44.996796"
+        "timestamp": "2026-03-19T03:45:58.920884"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 48755700,
-          "avg_volume_20d": 47320755,
-          "avg_volume_60d": 42452257,
-          "volume_vs_avg": 3.0323797665527508,
-          "price_change_20d": -5.368008636437205
+          "latest_volume": 42582237,
+          "avg_volume_20d": 47993531,
+          "avg_volume_60d": 42947439,
+          "volume_vs_avg": -11.275050285760546,
+          "price_change_20d": -6.85652610503249
         },
-        "timestamp": "2026-03-17T19:47:44.997475"
+        "timestamp": "2026-03-19T03:45:58.922231"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1466,7 +1466,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:44.998586"
+      "timestamp": "2026-03-19T03:45:58.924454"
     },
     "DIA": {
       "ticker": "DIA",
@@ -1476,7 +1476,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:44.999865"
+        "timestamp": "2026-03-19T03:45:58.926624"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1484,26 +1484,26 @@
         "strength": "moderate",
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 55.00000000000001,
-          "price_range_pct": 6.373320251589957,
-          "close": 470.29998779296875,
-          "sma20": 484.6347946166992,
-          "sma50": 489.2927166748047
+          "direction_consistency": 60.0,
+          "price_range_pct": 7.144705523167522,
+          "close": 463.0,
+          "sma20": 481.7488494873047,
+          "sma50": 488.53389221191406
         },
-        "timestamp": "2026-03-17T19:47:45.000715"
+        "timestamp": "2026-03-19T03:45:58.928538"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 7059900,
-          "avg_volume_20d": 7140550,
-          "avg_volume_60d": 6860544,
-          "volume_vs_avg": -1.129464817135939,
-          "price_change_20d": -5.0350181595041565
+          "latest_volume": 6813327,
+          "avg_volume_20d": 7229001,
+          "avg_volume_60d": 6985892,
+          "volume_vs_avg": -5.750093683410363,
+          "price_change_20d": -6.23107627636188
         },
-        "timestamp": "2026-03-17T19:47:45.001377"
+        "timestamp": "2026-03-19T03:45:58.929895"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1513,7 +1513,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.002482"
+      "timestamp": "2026-03-19T03:45:58.932060"
     },
     "VTI": {
       "ticker": "VTI",
@@ -1523,7 +1523,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:45.003632"
+        "timestamp": "2026-03-19T03:45:58.934212"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1531,26 +1531,26 @@
         "strength": "moderate",
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 55.00000000000001,
-          "price_range_pct": 4.765368207566962,
-          "close": 329.4599914550781,
-          "sma20": 335.80549774169924,
-          "sma50": 338.52399780273436
+          "direction_consistency": 60.0,
+          "price_range_pct": 4.8493951571572955,
+          "close": 326.0199890136719,
+          "sma20": 334.83999786376955,
+          "sma50": 338.1527978515625
         },
-        "timestamp": "2026-03-17T19:47:45.004458"
+        "timestamp": "2026-03-19T03:45:58.936111"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 3766900,
-          "avg_volume_20d": 6821190,
-          "avg_volume_60d": 6815165,
-          "volume_vs_avg": -44.77649794244113,
-          "price_change_20d": -2.2576959396511165
+          "latest_volume": 3845255,
+          "avg_volume_20d": 6530992,
+          "avg_volume_60d": 6814333,
+          "volume_vs_avg": -41.122963273845315,
+          "price_change_20d": -3.5985727963211755
         },
-        "timestamp": "2026-03-17T19:47:45.005064"
+        "timestamp": "2026-03-19T03:45:58.937485"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1560,7 +1560,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.006126"
+      "timestamp": "2026-03-19T03:45:58.939631"
     },
     "VT": {
       "ticker": "VT",
@@ -1570,7 +1570,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:45.007373"
+        "timestamp": "2026-03-19T03:45:58.941954"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1579,25 +1579,25 @@
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
           "direction_consistency": 65.0,
-          "price_range_pct": 6.6365107252060325,
-          "close": 141.49000549316406,
-          "sma20": 145.01199798583986,
-          "sma50": 145.13499877929686
+          "price_range_pct": 6.715776639801363,
+          "close": 139.82000732421875,
+          "sma20": 144.4389991760254,
+          "sma50": 145.063798828125
         },
-        "timestamp": "2026-03-17T19:47:45.008236"
+        "timestamp": "2026-03-19T03:45:58.943867"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 4340800,
-          "avg_volume_20d": 6996020,
-          "avg_volume_60d": 5931236,
-          "volume_vs_avg": -37.95329344398672,
-          "price_change_20d": -3.281145678624997
+          "latest_volume": 3499161,
+          "avg_volume_20d": 6867513,
+          "avg_volume_60d": 5933280,
+          "volume_vs_avg": -49.04762503509185,
+          "price_change_20d": -4.676837806179668
         },
-        "timestamp": "2026-03-17T19:47:45.008872"
+        "timestamp": "2026-03-19T03:45:58.945215"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1607,7 +1607,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.009974"
+      "timestamp": "2026-03-19T03:45:58.947384"
     },
     "VXUS": {
       "ticker": "VXUS",
@@ -1617,34 +1617,34 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:45.011324"
+        "timestamp": "2026-03-19T03:45:58.949525"
       },
       "trend_strength": {
         "name": "Trend Strength",
         "signal": "choppy",
         "strength": "weak",
-        "interpretation": "Choppy/sideways: No clear trend, 9.5% 20-day range",
+        "interpretation": "Choppy/sideways: No clear trend, 9.7% 20-day range",
         "components": {
           "direction_consistency": 60.0,
-          "price_range_pct": 9.531109498435764,
-          "close": 78.2699966430664,
-          "sma20": 80.86999969482422,
-          "sma50": 80.0783999633789
+          "price_range_pct": 9.656956743653925,
+          "close": 77.25,
+          "sma20": 80.42599945068359,
+          "sma50": 80.11779998779296
         },
-        "timestamp": "2026-03-17T19:47:45.012165"
+        "timestamp": "2026-03-19T03:45:58.951371"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 5760400,
-          "avg_volume_20d": 10346630,
-          "avg_volume_60d": 10214851,
-          "volume_vs_avg": -44.32583362892072,
-          "price_change_20d": -4.815768639432116
+          "latest_volume": 6492385,
+          "avg_volume_20d": 9875094,
+          "avg_volume_60d": 10193270,
+          "volume_vs_avg": -34.25495660459139,
+          "price_change_20d": -6.2272364948459895
         },
-        "timestamp": "2026-03-17T19:47:45.012759"
+        "timestamp": "2026-03-19T03:45:58.952700"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1654,7 +1654,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.013802"
+      "timestamp": "2026-03-19T03:45:58.955002"
     },
     "SCHD": {
       "ticker": "SCHD",
@@ -1664,34 +1664,34 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:45.014889"
+        "timestamp": "2026-03-19T03:45:58.957096"
       },
       "trend_strength": {
         "name": "Trend Strength",
         "signal": "choppy",
         "strength": "weak",
-        "interpretation": "Choppy/sideways: No clear trend, 3.4% 20-day range",
+        "interpretation": "Choppy/sideways: No clear trend, 4.2% 20-day range",
         "components": {
           "direction_consistency": 60.0,
-          "price_range_pct": 3.4337588094388236,
-          "close": 30.8700008392334,
-          "sma20": 31.34550008773804,
-          "sma50": 30.279800033569337
+          "price_range_pct": 4.185744571088874,
+          "close": 30.579999923706055,
+          "sma20": 31.273000144958495,
+          "sma50": 30.397600059509276
         },
-        "timestamp": "2026-03-17T19:47:45.015722"
+        "timestamp": "2026-03-19T03:45:58.958972"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 30596500,
-          "avg_volume_20d": 24305545,
-          "avg_volume_60d": 22994369,
-          "volume_vs_avg": 25.882797526243493,
-          "price_change_20d": -1.7504749704807199
+          "latest_volume": 26234396,
+          "avg_volume_20d": 24274989,
+          "avg_volume_60d": 23403565,
+          "volume_vs_avg": 8.071707614064572,
+          "price_change_20d": -3.135887807057758
         },
-        "timestamp": "2026-03-17T19:47:45.016389"
+        "timestamp": "2026-03-19T03:45:58.960295"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1701,7 +1701,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.017501"
+      "timestamp": "2026-03-19T03:45:58.962447"
     },
     "QUAL": {
       "ticker": "QUAL",
@@ -1711,7 +1711,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:45.018766"
+        "timestamp": "2026-03-19T03:45:58.964578"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1719,26 +1719,26 @@
         "strength": "moderate",
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 55.00000000000001,
-          "price_range_pct": 5.228958917231719,
-          "close": 196.97999572753906,
-          "sma20": 201.69449996948242,
-          "sma50": 202.2477996826172
+          "direction_consistency": 60.0,
+          "price_range_pct": 5.63270079227299,
+          "close": 194.0800018310547,
+          "sma20": 200.56920471191407,
+          "sma50": 201.6454443359375
         },
-        "timestamp": "2026-03-17T19:47:45.019602"
+        "timestamp": "2026-03-19T03:45:58.966443"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 2161500,
-          "avg_volume_20d": 2314120,
-          "avg_volume_60d": 1961115,
-          "volume_vs_avg": -6.595163604307464,
-          "price_change_20d": -2.6008750112513246
+          "latest_volume": 1518756,
+          "avg_volume_20d": 2238072,
+          "avg_volume_60d": 1983524,
+          "volume_vs_avg": -32.140009029196904,
+          "price_change_20d": -4.203961858809146
         },
-        "timestamp": "2026-03-17T19:47:45.020245"
+        "timestamp": "2026-03-19T03:45:58.967764"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1748,7 +1748,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.021380"
+      "timestamp": "2026-03-19T03:45:58.969907"
     },
     "XLU": {
       "ticker": "XLU",
@@ -1758,34 +1758,34 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:45.022679"
+        "timestamp": "2026-03-19T03:45:58.972026"
       },
       "trend_strength": {
         "name": "Trend Strength",
-        "signal": "uptrend",
-        "strength": "moderate",
-        "interpretation": "Uptrend: Price above key moving averages",
+        "signal": "choppy",
+        "strength": "weak",
+        "interpretation": "Choppy/sideways: No clear trend, 3.5% 20-day range",
         "components": {
           "direction_consistency": 55.00000000000001,
-          "price_range_pct": 4.4858210054544685,
-          "close": 47.2599983215332,
-          "sma20": 46.81150016784668,
-          "sma50": 44.677200088500975
+          "price_range_pct": 3.466721480321329,
+          "close": 46.72999954223633,
+          "sma20": 46.90500011444092,
+          "sma50": 44.8368000793457
         },
-        "timestamp": "2026-03-17T19:47:45.023538"
+        "timestamp": "2026-03-19T03:45:58.973894"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 19775400,
-          "avg_volume_20d": 29583920,
-          "avg_volume_60d": 27631857,
-          "volume_vs_avg": -33.154903068964494,
-          "price_change_20d": 1.8973635902370445
+          "latest_volume": 29799065,
+          "avg_volume_20d": 28735713,
+          "avg_volume_60d": 28187955,
+          "volume_vs_avg": 3.700453650650215,
+          "price_change_20d": 1.3446083792624686
         },
-        "timestamp": "2026-03-17T19:47:45.024173"
+        "timestamp": "2026-03-19T03:45:58.975221"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1795,7 +1795,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.025294"
+      "timestamp": "2026-03-19T03:45:58.977428"
     },
     "XLF": {
       "ticker": "XLF",
@@ -1805,7 +1805,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:45.026536"
+        "timestamp": "2026-03-19T03:45:58.979529"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1813,26 +1813,26 @@
         "strength": "moderate",
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 55.00000000000001,
-          "price_range_pct": 7.626771561299904,
-          "close": 49.29999923706055,
-          "sma20": 50.99000015258789,
-          "sma50": 52.791000061035156
+          "direction_consistency": 60.0,
+          "price_range_pct": 7.494380390976469,
+          "close": 48.970001220703125,
+          "sma20": 50.67700023651123,
+          "sma50": 52.54040008544922
         },
-        "timestamp": "2026-03-17T19:47:45.027380"
+        "timestamp": "2026-03-19T03:45:58.981442"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 45720100,
-          "avg_volume_20d": 63285015,
-          "avg_volume_60d": 54279521,
-          "volume_vs_avg": -27.755251381389414,
-          "price_change_20d": -5.5555583974968625
+          "latest_volume": 48710052,
+          "avg_volume_20d": 63104782,
+          "avg_volume_60d": 55366577,
+          "volume_vs_avg": -22.81083938002506,
+          "price_change_20d": -6.097795229397529
         },
-        "timestamp": "2026-03-17T19:47:45.027991"
+        "timestamp": "2026-03-19T03:45:58.982749"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1842,7 +1842,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.029083"
+      "timestamp": "2026-03-19T03:45:58.984935"
     },
     "XLE": {
       "ticker": "XLE",
@@ -1852,7 +1852,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:45.030345"
+        "timestamp": "2026-03-19T03:45:58.987152"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1861,25 +1861,25 @@
         "interpretation": "Uptrend: Price above key moving averages",
         "components": {
           "direction_consistency": 60.0,
-          "price_range_pct": 7.167532671003518,
-          "close": 57.900001525878906,
-          "sma20": 55.97449970245361,
-          "sma50": 52.164199676513675
+          "price_range_pct": 6.229675458902921,
+          "close": 58.43000030517578,
+          "sma20": 56.39499969482422,
+          "sma50": 52.65219963073731
         },
-        "timestamp": "2026-03-17T19:47:45.031175"
+        "timestamp": "2026-03-19T03:45:58.989017"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 39474300,
-          "avg_volume_20d": 67267030,
-          "avg_volume_60d": 57660709,
-          "volume_vs_avg": -41.31701667220925,
-          "price_change_20d": 7.720933071402625
+          "latest_volume": 42786228,
+          "avg_volume_20d": 65928441,
+          "avg_volume_60d": 58570389,
+          "volume_vs_avg": -35.10201804952725,
+          "price_change_20d": 5.8898151178429
         },
-        "timestamp": "2026-03-17T19:47:45.031797"
+        "timestamp": "2026-03-19T03:45:58.990346"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1889,7 +1889,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.032884"
+      "timestamp": "2026-03-19T03:45:58.992668"
     },
     "TLT": {
       "ticker": "TLT",
@@ -1899,7 +1899,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:45.034189"
+        "timestamp": "2026-03-19T03:45:58.994836"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1908,25 +1908,25 @@
         "interpretation": "Choppy/sideways: No clear trend, 4.6% 20-day range",
         "components": {
           "direction_consistency": 55.00000000000001,
-          "price_range_pct": 4.562545944991199,
-          "close": 87.20999908447266,
-          "sma20": 88.85992774963378,
-          "sma50": 87.85205017089844
+          "price_range_pct": 4.575925700727694,
+          "close": 86.95500183105469,
+          "sma20": 88.63990631103516,
+          "sma50": 87.87516967773438
         },
-        "timestamp": "2026-03-17T19:47:45.035137"
+        "timestamp": "2026-03-19T03:45:58.996691"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 37341500,
-          "avg_volume_20d": 42640735,
-          "avg_volume_60d": 40952644,
-          "volume_vs_avg": -12.427635217826339,
-          "price_change_20d": -2.6371501280067045
+          "latest_volume": 37561977,
+          "avg_volume_20d": 42109133,
+          "avg_volume_60d": 40866745,
+          "volume_vs_avg": -10.798504823674971,
+          "price_change_20d": -2.6510321119136426
         },
-        "timestamp": "2026-03-17T19:47:45.035785"
+        "timestamp": "2026-03-19T03:45:58.997998"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1936,7 +1936,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.036801"
+      "timestamp": "2026-03-19T03:45:59.000329"
     },
     "GLD": {
       "ticker": "GLD",
@@ -1946,34 +1946,34 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:45.038119"
+        "timestamp": "2026-03-19T03:45:59.002502"
       },
       "trend_strength": {
         "name": "Trend Strength",
         "signal": "choppy",
         "strength": "weak",
-        "interpretation": "Choppy/sideways: No clear trend, 9.1% 20-day range",
+        "interpretation": "Choppy/sideways: No clear trend, 10.2% 20-day range",
         "components": {
-          "direction_consistency": 50.0,
-          "price_range_pct": 9.078467618942202,
-          "close": 460.42999267578125,
-          "sma20": 470.4779998779297,
-          "sma50": 453.80040161132814
+          "direction_consistency": 55.00000000000001,
+          "price_range_pct": 10.176734892172227,
+          "close": 444.739990234375,
+          "sma20": 470.3544982910156,
+          "sma50": 455.73980102539065
         },
-        "timestamp": "2026-03-17T19:47:45.038964"
+        "timestamp": "2026-03-19T03:45:59.004356"
       },
       "volume_profile": {
         "name": "Volume Profile",
-        "signal": "weak_uptrend",
-        "interpretation": "Volume decreasing on uptrend (weak/exhaustion)",
+        "signal": "neutral",
+        "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 8964100,
-          "avg_volume_20d": 12543880,
-          "avg_volume_60d": 18935576,
-          "volume_vs_avg": -28.538059994196374,
-          "price_change_20d": 2.7286881159433785
+          "latest_volume": 18276540,
+          "avg_volume_20d": 12778092,
+          "avg_volume_60d": 19041595,
+          "volume_vs_avg": 43.030274003348865,
+          "price_change_20d": -3.224825355328975
         },
-        "timestamp": "2026-03-17T19:47:45.039624"
+        "timestamp": "2026-03-19T03:45:59.005655"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -1983,7 +1983,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.040646"
+      "timestamp": "2026-03-19T03:45:59.007787"
     },
     "IAU": {
       "ticker": "IAU",
@@ -1993,34 +1993,34 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:45.041884"
+        "timestamp": "2026-03-19T03:45:59.009887"
       },
       "trend_strength": {
         "name": "Trend Strength",
         "signal": "choppy",
         "strength": "weak",
-        "interpretation": "Choppy/sideways: No clear trend, 9.1% 20-day range",
+        "interpretation": "Choppy/sideways: No clear trend, 10.2% 20-day range",
         "components": {
-          "direction_consistency": 50.0,
-          "price_range_pct": 9.074522837309736,
-          "close": 94.33000183105469,
-          "sma20": 96.366499710083,
-          "sma50": 92.94659973144532
+          "direction_consistency": 55.00000000000001,
+          "price_range_pct": 10.162416843411789,
+          "close": 91.12000274658203,
+          "sma20": 96.34249992370606,
+          "sma50": 93.34499984741211
         },
-        "timestamp": "2026-03-17T19:47:45.042696"
+        "timestamp": "2026-03-19T03:45:59.011770"
       },
       "volume_profile": {
         "name": "Volume Profile",
-        "signal": "weak_uptrend",
-        "interpretation": "Volume decreasing on uptrend (weak/exhaustion)",
+        "signal": "neutral",
+        "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 9700300,
-          "avg_volume_20d": 12105805,
-          "avg_volume_60d": 16799528,
-          "volume_vs_avg": -19.87067361484841,
-          "price_change_20d": 2.7336115710877795
+          "latest_volume": 18354671,
+          "avg_volume_20d": 12509218,
+          "avg_volume_60d": 16989949,
+          "volume_vs_avg": 46.72915759394098,
+          "price_change_20d": -3.187420221477788
         },
-        "timestamp": "2026-03-17T19:47:45.043288"
+        "timestamp": "2026-03-19T03:45:59.013083"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -2030,7 +2030,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.044299"
+      "timestamp": "2026-03-19T03:45:59.015230"
     },
     "IBIT": {
       "ticker": "IBIT",
@@ -2040,34 +2040,34 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:45.045757"
+        "timestamp": "2026-03-19T03:45:59.017380"
       },
       "trend_strength": {
         "name": "Trend Strength",
         "signal": "choppy",
         "strength": "weak",
-        "interpretation": "Choppy/sideways: No clear trend, 12.9% 20-day range",
+        "interpretation": "Choppy/sideways: No clear trend, 14.3% 20-day range",
         "components": {
-          "direction_consistency": 50.0,
-          "price_range_pct": 12.899380125317448,
-          "close": 41.939998626708984,
-          "sma20": 38.98374938964844,
-          "sma50": 44.14489974975586
+          "direction_consistency": 55.00000000000001,
+          "price_range_pct": 14.257332135547399,
+          "close": 40.2599983215332,
+          "sma20": 39.31374931335449,
+          "sma50": 43.707499771118165
         },
-        "timestamp": "2026-03-17T19:47:45.046675"
+        "timestamp": "2026-03-19T03:45:59.019232"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 61056300,
-          "avg_volume_20d": 63848510,
-          "avg_volume_60d": 70447757,
-          "volume_vs_avg": -4.373179577722331,
-          "price_change_20d": 9.24719795129192
+          "latest_volume": 62924857,
+          "avg_volume_20d": 63809022,
+          "avg_volume_60d": 70953106,
+          "volume_vs_avg": -1.3856439270014675,
+          "price_change_20d": 5.752557510544776
         },
-        "timestamp": "2026-03-17T19:47:45.047405"
+        "timestamp": "2026-03-19T03:45:59.020600"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -2077,7 +2077,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.048508"
+      "timestamp": "2026-03-19T03:45:59.022788"
     },
     "UUP": {
       "ticker": "UUP",
@@ -2087,7 +2087,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:45.049893"
+        "timestamp": "2026-03-19T03:45:59.024916"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -2095,26 +2095,26 @@
         "strength": "moderate",
         "interpretation": "Uptrend: Price above key moving averages",
         "components": {
-          "direction_consistency": 55.00000000000001,
-          "price_range_pct": 3.53407702276974,
-          "close": 27.729999542236328,
-          "sma20": 27.32849988937378,
-          "sma50": 27.14939998626709
+          "direction_consistency": 50.0,
+          "price_range_pct": 2.9084361035819732,
+          "close": 27.850000381469727,
+          "sma20": 27.405499935150146,
+          "sma50": 27.176399993896485
         },
-        "timestamp": "2026-03-17T19:47:45.050891"
+        "timestamp": "2026-03-19T03:45:59.026810"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "bullish_volume",
-        "interpretation": "Bullish: High volume (+185%) on price rise",
+        "interpretation": "Bullish: High volume (+52%) on price rise",
         "components": {
-          "latest_volume": 7286100,
-          "avg_volume_20d": 2558760,
-          "avg_volume_60d": 1775328,
-          "volume_vs_avg": 184.7512076161891,
-          "price_change_20d": 3.047193234759815
+          "latest_volume": 4273968,
+          "avg_volume_20d": 2806713,
+          "avg_volume_60d": 1903597,
+          "volume_vs_avg": 52.27660936097003,
+          "price_change_20d": 2.6917386417638633
         },
-        "timestamp": "2026-03-17T19:47:45.051603"
+        "timestamp": "2026-03-19T03:45:59.028145"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -2124,7 +2124,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.052785"
+      "timestamp": "2026-03-19T03:45:59.030340"
     },
     "SLV": {
       "ticker": "SLV",
@@ -2134,7 +2134,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:45.054134"
+        "timestamp": "2026-03-19T03:45:59.032431"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -2142,26 +2142,26 @@
         "strength": "moderate",
         "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 60.0,
-          "price_range_pct": 25.430203232395815,
-          "close": 73.22000122070312,
-          "sma20": 76.48350028991699,
-          "sma50": 78.4168000793457
+          "direction_consistency": 55.00000000000001,
+          "price_range_pct": 23.7117927789721,
+          "close": 68.69999694824219,
+          "sma20": 76.67850036621094,
+          "sma50": 78.52740005493165
         },
-        "timestamp": "2026-03-17T19:47:45.055027"
+        "timestamp": "2026-03-19T03:45:59.034290"
       },
       "volume_profile": {
         "name": "Volume Profile",
-        "signal": "weak_uptrend",
-        "interpretation": "Volume decreasing on uptrend (weak/exhaustion)",
+        "signal": "neutral",
+        "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 37193100,
-          "avg_volume_20d": 57543725,
-          "avg_volume_60d": 112884511,
-          "volume_vs_avg": -35.3654981494507,
-          "price_change_20d": 10.320925404020498
+          "latest_volume": 44377881,
+          "avg_volume_20d": 54096654,
+          "avg_volume_60d": 109901149,
+          "volume_vs_avg": -17.965571476966414,
+          "price_change_20d": -3.2530701570133824
         },
-        "timestamp": "2026-03-17T19:47:45.055640"
+        "timestamp": "2026-03-19T03:45:59.035610"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -2171,7 +2171,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.056687"
+      "timestamp": "2026-03-19T03:45:59.037724"
     },
     "^VIX": {
       "ticker": "^VIX",
@@ -2181,7 +2181,7 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:45.058097"
+        "timestamp": "2026-03-19T03:45:59.039820"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -2189,13 +2189,13 @@
         "strength": "moderate",
         "interpretation": "Uptrend: Price above key moving averages",
         "components": {
-          "direction_consistency": 55.00000000000001,
-          "price_range_pct": 49.17056296639684,
-          "close": 23.510000228881836,
-          "sma20": 22.413000106811523,
-          "sma50": 19.170400066375734
+          "direction_consistency": 50.0,
+          "price_range_pct": 46.07413071199218,
+          "close": 25.09000015258789,
+          "sma20": 22.79050006866455,
+          "sma50": 19.531400089263915
         },
-        "timestamp": "2026-03-17T19:47:45.059015"
+        "timestamp": "2026-03-19T03:45:59.041676"
       },
       "volume_profile": {
         "name": "Volume Profile",
@@ -2206,9 +2206,9 @@
           "avg_volume_20d": 0,
           "avg_volume_60d": 0,
           "volume_vs_avg": NaN,
-          "price_change_20d": 15.869882543427206
+          "price_change_20d": 24.023730698583655
         },
-        "timestamp": "2026-03-17T19:47:45.059821"
+        "timestamp": "2026-03-19T03:45:59.043106"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -2218,7 +2218,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.060949"
+      "timestamp": "2026-03-19T03:45:59.045492"
     },
     "EWC": {
       "ticker": "EWC",
@@ -2228,34 +2228,34 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:45.062114"
+        "timestamp": "2026-03-19T03:45:59.047652"
       },
       "trend_strength": {
         "name": "Trend Strength",
         "signal": "choppy",
         "strength": "weak",
-        "interpretation": "Choppy/sideways: No clear trend, 5.6% 20-day range",
+        "interpretation": "Choppy/sideways: No clear trend, 6.1% 20-day range",
         "components": {
           "direction_consistency": 55.00000000000001,
-          "price_range_pct": 5.604299290295533,
-          "close": 55.849998474121094,
-          "sma20": 56.826499938964844,
-          "sma50": 55.86199981689453
+          "price_range_pct": 6.112020416320501,
+          "close": 54.810001373291016,
+          "sma20": 56.746000099182126,
+          "sma50": 55.90059989929199
         },
-        "timestamp": "2026-03-17T19:47:45.062945"
+        "timestamp": "2026-03-19T03:45:59.049548"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 4001500,
-          "avg_volume_20d": 3323300,
-          "avg_volume_60d": 3084526,
-          "volume_vs_avg": 20.40742635332351,
-          "price_change_20d": -0.017905721663413754
+          "latest_volume": 1983166,
+          "avg_volume_20d": 3341328,
+          "avg_volume_60d": 3115520,
+          "volume_vs_avg": -40.64737667352232,
+          "price_change_20d": -3.4184997827471086
         },
-        "timestamp": "2026-03-17T19:47:45.063561"
+        "timestamp": "2026-03-19T03:45:59.050866"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -2265,7 +2265,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.064610"
+      "timestamp": "2026-03-19T03:45:59.053009"
     },
     "VGK": {
       "ticker": "VGK",
@@ -2275,34 +2275,34 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:45.066038"
+        "timestamp": "2026-03-19T03:45:59.055123"
       },
       "trend_strength": {
         "name": "Trend Strength",
-        "signal": "choppy",
-        "strength": "weak",
-        "interpretation": "Choppy/sideways: No clear trend, 10.0% 20-day range",
+        "signal": "downtrend",
+        "strength": "moderate",
+        "interpretation": "Downtrend: Price below key moving averages",
         "components": {
-          "direction_consistency": 55.00000000000001,
-          "price_range_pct": 9.972458186752382,
-          "close": 83.52999877929688,
-          "sma20": 87.03099975585937,
-          "sma50": 87.0247998046875
+          "direction_consistency": 60.0,
+          "price_range_pct": 10.126421085991325,
+          "close": 82.26000213623047,
+          "sma20": 86.40099983215332,
+          "sma50": 86.95219985961914
         },
-        "timestamp": "2026-03-17T19:47:45.067002"
+        "timestamp": "2026-03-19T03:45:59.057031"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 3086300,
-          "avg_volume_20d": 4055430,
-          "avg_volume_60d": 3651848,
-          "volume_vs_avg": -23.897095992286886,
-          "price_change_20d": -6.387990993159365
+          "latest_volume": 4247574,
+          "avg_volume_20d": 4154968,
+          "avg_volume_60d": 3708074,
+          "volume_vs_avg": 2.228784539339612,
+          "price_change_20d": -7.71819306767566
         },
-        "timestamp": "2026-03-17T19:47:45.067696"
+        "timestamp": "2026-03-19T03:45:59.058442"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -2312,7 +2312,7 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.068804"
+      "timestamp": "2026-03-19T03:45:59.060631"
     },
     "EWA": {
       "ticker": "EWA",
@@ -2322,34 +2322,34 @@
         "vs_spy": null,
         "interpretation": "Insufficient data",
         "periods": {},
-        "timestamp": "2026-03-17T19:47:45.070071"
+        "timestamp": "2026-03-19T03:45:59.062751"
       },
       "trend_strength": {
         "name": "Trend Strength",
         "signal": "choppy",
         "strength": "weak",
-        "interpretation": "Choppy/sideways: No clear trend, 7.6% 20-day range",
+        "interpretation": "Choppy/sideways: No clear trend, 7.8% 20-day range",
         "components": {
           "direction_consistency": 50.0,
-          "price_range_pct": 7.6011167433020015,
-          "close": 28.68000030517578,
-          "sma20": 29.216000175476076,
-          "sma50": 28.17820011138916
+          "price_range_pct": 7.78571537562779,
+          "close": 28.0,
+          "sma20": 29.119500255584718,
+          "sma50": 28.25060012817383
         },
-        "timestamp": "2026-03-17T19:47:45.070897"
+        "timestamp": "2026-03-19T03:45:59.064711"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 3130300,
-          "avg_volume_20d": 6397095,
-          "avg_volume_60d": 6024411,
-          "volume_vs_avg": -51.06685143803554,
-          "price_change_20d": -2.1828083093787143
+          "latest_volume": 7038786,
+          "avg_volume_20d": 6257519,
+          "avg_volume_60d": 6104236,
+          "volume_vs_avg": 12.485246349939349,
+          "price_change_20d": -4.6646264899090735
         },
-        "timestamp": "2026-03-17T19:47:45.071520"
+        "timestamp": "2026-03-19T03:45:59.066040"
       },
       "support_resistance": {
         "signal": "no_data",
@@ -2359,11 +2359,11 @@
         "signal": "no_data",
         "interpretation": "Insufficient data"
       },
-      "timestamp": "2026-03-17T19:47:45.072659"
+      "timestamp": "2026-03-19T03:45:59.068164"
     }
   },
   "metadata": {
-    "generated_at": "2026-03-17T19:47:45.072661",
+    "generated_at": "2026-03-19T03:45:59.068171",
     "ticker_count": 51,
     "successful": 51
   }

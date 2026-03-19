@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T01:07:22.313582Z",
+  "updated_at": "2026-03-19T03:56:34.380333Z",
   "period_start": "2026-03-18T01:07:22.308371Z",
-  "period_end": "2026-03-17",
+  "period_end": "2026-03-19",
   "strategies": {
     "dual_momentum": {
       "starting_capital": 100000.0,
@@ -71,14 +71,14 @@
     },
     "llm_recommendations": {
       "starting_capital": 100000.0,
-      "current_value": 100000.0,
-      "total_return": 0.0,
-      "total_return_pct": 0.0,
-      "current_positions": 4,
-      "cash_pct": 0.05405405405405402,
-      "equity_pct": 0.9459459459459459,
-      "trades_total": 4,
-      "trades_executed": 4
+      "current_value": 99601.90239923602,
+      "total_return": -398.0976007639838,
+      "total_return_pct": -0.003980976007639838,
+      "current_positions": 2,
+      "cash_pct": 0.32914327605845345,
+      "equity_pct": 0.6708567239415466,
+      "trades_total": 9,
+      "trades_executed": 9
     }
   },
   "rankings": {
@@ -109,7 +109,7 @@
       },
       {
         "strategy": "llm_recommendations",
-        "return_pct": 0.0
+        "return_pct": -0.003980976007639838
       }
     ],
     "by_sharpe": [

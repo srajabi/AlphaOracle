@@ -1,48 +1,30 @@
 {
-  "last_updated_utc": "2026-03-17T20:52:37.902429+00:00",
+  "last_updated_utc": "2026-03-19T03:56:32.270084+00:00",
   "error": "",
   "results": [
     {
       "trade": {
+        "ticker": "GLD",
+        "action": "sell",
+        "qty": "all"
+      },
+      "status": "failed",
+      "reason": "{\"available\":\"0\",\"code\":40310000,\"existing_qty\":\"210.958737039\",\"held_for_orders\":\"210.958737039\",\"message\":\"insufficient qty available for order (requested: 210.958737039, available: 0)\",\"symbol\":\"GLD\"}"
+    },
+    {
+      "trade": {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 100000
+        "notional_value": 30000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "XLU",
+        "ticker": "CEG",
         "action": "buy",
-        "notional_value": 100000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 150000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "MU",
-        "action": "buy",
-        "notional_value": 125000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "NBIS",
-        "action": "buy",
-        "notional_value": 125000
+        "notional_value": 30000
       },
       "status": "skipped",
       "reason": "No available buying power."
