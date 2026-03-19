@@ -134,7 +134,7 @@ jobs:
           echo "=================================================="
           echo "EXECUTING: TQQQ Momentum Strategy (Account 2)"
           echo "=================================================="
-          python src/strategies/strategy_executor.py --strategy tqqq --account 2 --dry-run
+          python src/strategies/strategy_executor.py --strategy tqqq --account 2
           echo ""
 
       - name: Execute Dual Momentum Strategy (Account 3)
@@ -146,7 +146,7 @@ jobs:
           echo "=================================================="
           echo "EXECUTING: Dual Momentum Strategy (Account 3)"
           echo "=================================================="
-          python src/strategies/strategy_executor.py --strategy dual --account 3 --dry-run
+          python src/strategies/strategy_executor.py --strategy dual --account 3
           echo ""
 
       - name: Execute Sector Rotation Strategy (Account 4)
@@ -158,7 +158,7 @@ jobs:
           echo "=================================================="
           echo "EXECUTING: Sector Rotation Strategy (Account 4)"
           echo "=================================================="
-          python src/strategies/strategy_executor.py --strategy sector --account 4 --dry-run
+          python src/strategies/strategy_executor.py --strategy sector --account 4
           echo ""
 
       - name: Execute Mean Reversion Strategy (Account 5)
@@ -170,7 +170,7 @@ jobs:
           echo "=================================================="
           echo "EXECUTING: Mean Reversion Strategy (Account 5)"
           echo "=================================================="
-          python src/strategies/strategy_executor.py --strategy mean --account 5 --dry-run
+          python src/strategies/strategy_executor.py --strategy mean --account 5
           echo ""
 
       - name: Fetch Live Portfolio State (Dev Account)
