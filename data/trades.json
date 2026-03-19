@@ -1,12 +1,12 @@
 [
     {
-        "ticker": "XLU",
-        "action": "sell",
-        "qty": 1500
+        "ticker": "XLP",
+        "action": "buy",
+        "notional_value": 4364
     },
     {
-        "ticker": "XLV",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 20000
+        "notional_value": 2182
     }
 ]

@@ -200,6 +200,57 @@
         "notional_scaled": 20000.0,
         "scale_factor": 1.0
       }
+    },
+    {
+      "id": "trade_20260319_152855_XLV",
+      "timestamp": "2026-03-19T15:28:55.975424Z",
+      "strategy": "llm_recommendations",
+      "ticker": "XLV",
+      "action": "sell",
+      "shares": 135.92497,
+      "price": 147.13999938964844,
+      "notional": 20000.000002837984,
+      "commission": 0.0,
+      "rationale": "LLM recommendation: Exit XLV (not in new portfolio)",
+      "signal_data": {
+        "source": "llm"
+      }
+    },
+    {
+      "id": "trade_20260319_152855_XLP",
+      "timestamp": "2026-03-19T15:28:55.975839Z",
+      "strategy": "llm_recommendations",
+      "ticker": "XLP",
+      "action": "buy",
+      "shares": 52.807358,
+      "price": 82.63999938964844,
+      "notional": 4364.000032888946,
+      "commission": 0.0,
+      "rationale": "LLM recommendation (scaled 100.0%)",
+      "signal_data": {
+        "source": "llm",
+        "notional_requested": 4364,
+        "notional_scaled": 4364.0,
+        "scale_factor": 1.0
+      }
+    },
+    {
+      "id": "trade_20260319_152855_XLE",
+      "timestamp": "2026-03-19T15:28:55.976463Z",
+      "strategy": "llm_recommendations",
+      "ticker": "XLE",
+      "action": "buy",
+      "shares": 37.34383,
+      "price": 58.43000030517578,
+      "notional": 2181.9999982964323,
+      "commission": 0.0,
+      "rationale": "LLM recommendation (scaled 100.0%)",
+      "signal_data": {
+        "source": "llm",
+        "notional_requested": 2182,
+        "notional_scaled": 2182.0,
+        "scale_factor": 1.0
+      }
     }
   ]
 }

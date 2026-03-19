@@ -1,8 +1,28 @@
 {
-  "last_updated_utc": "2026-03-19T08:08:41.830916+00:00",
+  "last_updated_utc": "2026-03-19T15:13:58.899834+00:00",
   "ok": true,
   "error": "",
   "trades": [
+    {
+      "id": "7d2f52de-4a71-47b5-ac4d-6772e31a6703",
+      "timestamp": "2026-03-19T13:34:54.138114+00:00",
+      "side": "sell",
+      "symbol": "XLU",
+      "qty": 1850.0,
+      "price": 46.55187,
+      "notional": 86120.9595,
+      "type": "market"
+    },
+    {
+      "id": "abe0bf77-3eb5-4a89-822b-cc0516dd7da0",
+      "timestamp": "2026-03-19T13:34:13.263343+00:00",
+      "side": "sell",
+      "symbol": "GLD",
+      "qty": 210.958737039,
+      "price": 420.110003,
+      "notional": 88625.8756503305,
+      "type": "market"
+    },
     {
       "id": "956e0f0f-cc88-41f0-8a11-4677336c36cd",
       "timestamp": "2026-03-10T15:21:34.336293+00:00",
@@ -44,6 +64,6 @@
       "type": "market"
     }
   ],
-  "total_trades": 4,
+  "total_trades": 6,
   "period_days": 30
 }

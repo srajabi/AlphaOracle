@@ -1,31 +1,39 @@
 {
   "paper_trading": true,
-  "last_updated_utc": "2026-03-19T08:19:59.107089+00:00",
+  "last_updated_utc": "2026-03-19T15:28:55.545625+00:00",
   "ok": true,
   "error": "",
   "account": {
     "status": "ACTIVE",
-    "cash": -100363.5,
-    "equity": 90582.79,
-    "buying_power": 0.0,
-    "portfolio_value": 90582.79
+    "cash": 68015.77,
+    "equity": 87243.03,
+    "buying_power": 155080.37,
+    "portfolio_value": 87243.03
   },
   "positions": [
     {
-      "symbol": "GLD",
-      "qty": 210.958737039,
-      "market_value": 91621.489083,
-      "current_price": 434.31,
-      "avg_entry_price": 475.715685,
-      "unrealized_pl": -8734.891014
+      "symbol": "XLE",
+      "qty": 36.734006734,
+      "market_value": 2182.0,
+      "current_price": 59.4,
+      "avg_entry_price": 59.4,
+      "unrealized_pl": 0.0
+    },
+    {
+      "symbol": "XLP",
+      "qty": 51.0,
+      "market_value": 4185.57,
+      "current_price": 82.07,
+      "avg_entry_price": 82.07,
+      "unrealized_pl": 0.0
     },
     {
       "symbol": "XLU",
-      "qty": 2125.958981463,
-      "market_value": 99324.803614,
-      "current_price": 46.72,
+      "qty": 275.958981463,
+      "market_value": 12859.688536,
+      "current_price": 46.6,
       "avg_entry_price": 47.040855,
-      "unrealized_pl": -682.124569
+      "unrealized_pl": -121.657897
     }
   ]
 }

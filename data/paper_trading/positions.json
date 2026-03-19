@@ -1,6 +1,6 @@
 {
   "initialized_at": "2026-03-18T01:07:22.308371Z",
-  "updated_at": "2026-03-19T08:19:59.699663Z",
+  "updated_at": "2026-03-19T15:28:55.976842Z",
   "strategies": {
     "dual_momentum": {
       "starting_capital": 100000.0,
@@ -52,13 +52,22 @@
     },
     "llm_recommendations": {
       "starting_capital": 100000.0,
-      "current_cash": 79601.90240730571,
+      "current_cash": 93055.90237895832,
       "current_positions": {
-        "XLV": {
-          "shares": 135.92497,
-          "avg_entry_price": 147.13999938964844,
-          "current_price": 147.13999938964844,
-          "market_value": 20000.000002837984,
+        "XLP": {
+          "shares": 52.807358,
+          "avg_entry_price": 82.63999938964844,
+          "current_price": 82.63999938964844,
+          "market_value": 4364.000032888946,
+          "unrealized_pnl": 0.0,
+          "unrealized_pnl_pct": 0.0,
+          "entry_date": "2026-03-19"
+        },
+        "XLE": {
+          "shares": 37.34383,
+          "avg_entry_price": 58.43000030517578,
+          "current_price": 58.43000030517578,
+          "market_value": 2181.9999982964323,
           "unrealized_pnl": 0.0,
           "unrealized_pnl_pct": 0.0,
           "entry_date": "2026-03-19"

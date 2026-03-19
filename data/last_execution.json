@@ -1,24 +1,24 @@
 {
-  "last_updated_utc": "2026-03-19T08:19:57.411800+00:00",
+  "last_updated_utc": "2026-03-19T15:28:54.050782+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "XLU",
-        "action": "sell",
-        "qty": 1500
+        "ticker": "XLP",
+        "action": "buy",
+        "notional_value": 4364
       },
-      "status": "failed",
-      "reason": "{\"available\":\"275.958981463\",\"code\":40310000,\"existing_qty\":\"2125.958981463\",\"held_for_orders\":\"1850\",\"message\":\"insufficient qty available for order (requested: 1500, available: 275.958981463)\",\"related_orders\":[\"7d2f52de-4a71-47b5-ac4d-6772e31a6703\"],\"symbol\":\"XLU\"}"
+      "status": "submitted",
+      "order_id": "3fad31f0-0873-45fd-90a9-d8ca7d95b9e6"
     },
     {
       "trade": {
-        "ticker": "XLV",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 20000
+        "notional_value": 2182
       },
-      "status": "skipped",
-      "reason": "No available buying power."
+      "status": "submitted",
+      "order_id": "84d053e0-ea8b-47ea-af71-9f91b2be19fd"
     }
   ]
 }
