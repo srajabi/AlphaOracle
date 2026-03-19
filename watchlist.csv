@@ -28,6 +28,7 @@ TSLA,Consumer Discretionary,High volatility swing trade
 QQQ,Technology,Nasdaq 100 proxy
 TQQQ,Technology,3x Leveraged QQQ (for Reddit 200 SMA strategy)
 SPY,Equity,S&P 500 ETF (1993 - longest history)
+SSO,Equity,2x Leveraged SPY (for backtesting)
 UPRO,Equity,3x Leveraged SPY (for Reddit 200 SMA strategy)
 VOO,Equity,S&P 500 proxy
 IWM,Equity,Russell 2000 small caps
@@ -40,7 +41,16 @@ QUAL,Equity,Quality Factor
 XLU,Utilities,Defensive Sector
 XLF,Financials,Sector ETF
 XLE,Energy,Sector ETF
+XLV,Healthcare,Healthcare Sector ETF
+XLI,Industrials,Industrials Sector ETF
+XLK,Technology,Technology Sector ETF
+XLY,Consumer Discretionary,Consumer Discretionary Sector ETF
+XLP,Consumer Staples,Consumer Staples Sector ETF
+XLB,Materials,Materials Sector ETF
+XLRE,Real Estate,Real Estate Sector ETF
+XLC,Communication,Communication Services Sector ETF
 TLT,Bonds,Interest rate proxy
+TMF,Bonds,3x Leveraged TLT (for defensive hedging)
 GLD,Commodity,Gold tracking
 IAU,Commodity,Gold tracking (Alt)
 IBIT,Crypto,Bitcoin ETF proxy

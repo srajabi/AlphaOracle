@@ -1,0 +1,38 @@
+============================================================
+HISTORICAL DATA - QUICK REFERENCE FOR AI AGENTS
+============================================================
+
+📁 Location: data/historical_long/
+
+📊 What We Have:
+- 60 tickers with up to 33 years of daily OHLCV data
+- Total size: 59 MB (fast to load!)
+- Includes High/Low for accurate stop loss backtesting
+
+✅ Critical Tickers for Strategies:
+TQQQ  - 16 years (2010-2026) - For TQQQ Momentum strategy
+UPRO  - 16 years (2009-2026) - For leveraged SPY strategies
+SPY   - 33 years (1993-2026) - Longest history, S&P 500
+QQQ   - 27 years (1999-2026) - Nasdaq, tech proxy
+GLD   - 21 years (2004-2026) - Gold, defensive rotation
+TLT   - 23 years (2002-2026) - Bonds, defensive rotation
+TMF   - 16 years (2009-2026) - 3x leveraged bonds
+XLE/XLF/XLU/XLV/XLI/XLK (and more) - 27 years (1998-2026)
+
+📖 Full Documentation: data/HISTORICAL_DATA_README.md
+
+🔑 Key Insight:
+DATA INCLUDES HIGH/LOW - you can test stop losses accurately!
+
+Example:
+  if daily_bar['low'] <= stop_price:
+      # Stop was hit intraday!
+
+💻 Usage in Python:
+from backtesting.run_backtests import load_history
+df = load_history("SPY", use_long_history=True)
+
+🔄 To Update:
+python3 src/download_long_history.py
+
+============================================================
