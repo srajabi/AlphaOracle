@@ -3,6 +3,31 @@ import Layout from '../../layouts/Layout.astro';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
+// Generate static paths for all strategies
+export async function getStaticPaths() {
+  try {
+    const positionsData = await fs.readFile(path.resolve('./public/data/paper_positions.json'), 'utf-8');
+    const positions = JSON.parse(positionsData);
+
+    // Extract all strategy names
+    const strategies = Object.keys(positions.strategies || {});
+
+    return strategies.map(strategy => ({
+      params: { strategy }
+    }));
+  } catch (error) {
+    console.log('No paper_positions.json found, using default strategies');
+    // Return default strategies if file doesn't exist
+    return [
+      { params: { strategy: 'LLM_Strategy' } },
+      { params: { strategy: 'TQQQ_Momentum' } },
+      { params: { strategy: 'Dual_Momentum' } },
+      { params: { strategy: 'Sector_Rotation' } },
+      { params: { strategy: 'Mean_Reversion' } }
+    ];
+  }
+}
+
 const { strategy } = Astro.params;
 
 const base = import.meta.env.BASE_URL.endsWith('/')
