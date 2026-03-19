@@ -1,30 +1,21 @@
 {
-  "last_updated_utc": "2026-03-19T03:56:32.270084+00:00",
+  "last_updated_utc": "2026-03-19T08:19:57.411800+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "GLD",
+        "ticker": "XLU",
         "action": "sell",
-        "qty": "all"
+        "qty": 1500
       },
       "status": "failed",
-      "reason": "{\"available\":\"0\",\"code\":40310000,\"existing_qty\":\"210.958737039\",\"held_for_orders\":\"210.958737039\",\"message\":\"insufficient qty available for order (requested: 210.958737039, available: 0)\",\"symbol\":\"GLD\"}"
+      "reason": "{\"available\":\"275.958981463\",\"code\":40310000,\"existing_qty\":\"2125.958981463\",\"held_for_orders\":\"1850\",\"message\":\"insufficient qty available for order (requested: 1500, available: 275.958981463)\",\"related_orders\":[\"7d2f52de-4a71-47b5-ac4d-6772e31a6703\"],\"symbol\":\"XLU\"}"
     },
     {
       "trade": {
-        "ticker": "XLE",
+        "ticker": "XLV",
         "action": "buy",
-        "notional_value": 30000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "CEG",
-        "action": "buy",
-        "notional_value": 30000
+        "notional_value": 20000
       },
       "status": "skipped",
       "reason": "No available buying power."

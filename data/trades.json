@@ -1,17 +1,12 @@
 [
     {
-        "ticker": "GLD",
+        "ticker": "XLU",
         "action": "sell",
-        "qty": "all"
+        "qty": 1500
     },
     {
-        "ticker": "XLE",
+        "ticker": "XLV",
         "action": "buy",
-        "notional_value": 30000
-    },
-    {
-        "ticker": "CEG",
-        "action": "buy",
-        "notional_value": 30000
+        "notional_value": 20000
     }
 ]

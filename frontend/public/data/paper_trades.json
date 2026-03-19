@@ -152,6 +152,54 @@
         "notional_scaled": 30000.0,
         "scale_factor": 1.0
       }
+    },
+    {
+      "id": "trade_20260319_081959_CEG",
+      "timestamp": "2026-03-19T08:19:59.698551Z",
+      "strategy": "llm_recommendations",
+      "ticker": "CEG",
+      "action": "sell",
+      "shares": 94.57159,
+      "price": 317.2200012207031,
+      "notional": 29999.999895243836,
+      "commission": 0.0,
+      "rationale": "LLM recommendation: Exit CEG (not in new portfolio)",
+      "signal_data": {
+        "source": "llm"
+      }
+    },
+    {
+      "id": "trade_20260319_081959_XLE",
+      "timestamp": "2026-03-19T08:19:59.698969Z",
+      "strategy": "llm_recommendations",
+      "ticker": "XLE",
+      "action": "sell",
+      "shares": 630.131882,
+      "price": 58.43000030517578,
+      "notional": 36818.60605756099,
+      "commission": 0.0,
+      "rationale": "LLM recommendation: Exit XLE (not in new portfolio)",
+      "signal_data": {
+        "source": "llm"
+      }
+    },
+    {
+      "id": "trade_20260319_081959_XLV",
+      "timestamp": "2026-03-19T08:19:59.699452Z",
+      "strategy": "llm_recommendations",
+      "ticker": "XLV",
+      "action": "buy",
+      "shares": 135.92497,
+      "price": 147.13999938964844,
+      "notional": 20000.000002837984,
+      "commission": 0.0,
+      "rationale": "LLM recommendation (scaled 100.0%)",
+      "signal_data": {
+        "source": "llm",
+        "notional_requested": 20000,
+        "notional_scaled": 20000.0,
+        "scale_factor": 1.0
+      }
     }
   ]
 }

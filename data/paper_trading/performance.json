@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-19T03:56:34.380333Z",
+  "updated_at": "2026-03-19T08:19:59.700737Z",
   "period_start": "2026-03-18T01:07:22.308371Z",
   "period_end": "2026-03-19",
   "strategies": {
@@ -71,14 +71,14 @@
     },
     "llm_recommendations": {
       "starting_capital": 100000.0,
-      "current_value": 99601.90239923602,
-      "total_return": -398.0976007639838,
-      "total_return_pct": -0.003980976007639838,
-      "current_positions": 2,
-      "cash_pct": 0.32914327605845345,
-      "equity_pct": 0.6708567239415466,
-      "trades_total": 9,
-      "trades_executed": 9
+      "current_value": 99601.9024101437,
+      "total_return": -398.0975898563047,
+      "total_return_pct": -0.003980975898563047,
+      "current_positions": 1,
+      "cash_pct": 0.7992006224893036,
+      "equity_pct": 0.20079937751069643,
+      "trades_total": 12,
+      "trades_executed": 12
     }
   },
   "rankings": {
@@ -109,7 +109,7 @@
       },
       {
         "strategy": "llm_recommendations",
-        "return_pct": -0.003980976007639838
+        "return_pct": -0.003980975898563047
       }
     ],
     "by_sharpe": [
