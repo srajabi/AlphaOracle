@@ -1,8 +1,28 @@
 {
-  "last_updated_utc": "2026-03-19T15:13:58.899834+00:00",
+  "last_updated_utc": "2026-03-19T20:47:22.380804+00:00",
   "ok": true,
   "error": "",
   "trades": [
+    {
+      "id": "3fad31f0-0873-45fd-90a9-d8ca7d95b9e6",
+      "timestamp": "2026-03-19T15:28:56.008430+00:00",
+      "side": "buy",
+      "symbol": "XLP",
+      "qty": 53.174384596,
+      "price": 82.069591,
+      "notional": 4363.999995470421,
+      "type": "market"
+    },
+    {
+      "id": "84d053e0-ea8b-47ea-af71-9f91b2be19fd",
+      "timestamp": "2026-03-19T15:28:55.284484+00:00",
+      "side": "buy",
+      "symbol": "XLE",
+      "qty": 36.734006734,
+      "price": 59.4,
+      "notional": 2181.9999999996,
+      "type": "market"
+    },
     {
       "id": "7d2f52de-4a71-47b5-ac4d-6772e31a6703",
       "timestamp": "2026-03-19T13:34:54.138114+00:00",
@@ -64,6 +84,6 @@
       "type": "market"
     }
   ],
-  "total_trades": 6,
+  "total_trades": 8,
   "period_days": 30
 }
