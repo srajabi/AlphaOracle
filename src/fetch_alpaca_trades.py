@@ -70,7 +70,7 @@ def fetch_trades(days_back=30):
             trade_time = order.filled_at if hasattr(order, 'filled_at') and order.filled_at else order.created_at
 
             trade_data = {
-                "id": order.id,
+                "id": str(order.id),  # Convert UUID to string for JSON serialization
                 "timestamp": trade_time.isoformat() if hasattr(trade_time, 'isoformat') else str(trade_time),
                 "side": order.side.value if hasattr(order, 'side') else None,
                 "symbol": order.symbol,
