@@ -1,0 +1,146 @@
+{
+  "updated_at": "2026-03-19T03:56:34.380333Z",
+  "period_start": "2026-03-18T01:07:22.308371Z",
+  "period_end": "2026-03-19",
+  "strategies": {
+    "dual_momentum": {
+      "starting_capital": 100000.0,
+      "current_value": 100000.0,
+      "total_return": 0.0,
+      "total_return_pct": 0.0,
+      "current_positions": 0,
+      "cash_pct": 1.0,
+      "equity_pct": 0.0,
+      "trades_total": 0,
+      "trades_executed": 0
+    },
+    "sma_200_trend": {
+      "starting_capital": 100000.0,
+      "current_value": 100000.0,
+      "total_return": 0.0,
+      "total_return_pct": 0.0,
+      "current_positions": 0,
+      "cash_pct": 1.0,
+      "equity_pct": 0.0,
+      "trades_total": 0,
+      "trades_executed": 0
+    },
+    "sma_trend_20_50": {
+      "starting_capital": 100000.0,
+      "current_value": 100000.0,
+      "total_return": 0.0,
+      "total_return_pct": 0.0,
+      "current_positions": 0,
+      "cash_pct": 1.0,
+      "equity_pct": 0.0,
+      "trades_total": 0,
+      "trades_executed": 0
+    },
+    "rsi_mean_reversion": {
+      "starting_capital": 100000.0,
+      "current_value": 100000.0,
+      "total_return": 0.0,
+      "total_return_pct": 0.0,
+      "current_positions": 0,
+      "cash_pct": 1.0,
+      "equity_pct": 0.0,
+      "trades_total": 0,
+      "trades_executed": 0
+    },
+    "breakout_20d": {
+      "starting_capital": 100000.0,
+      "current_value": 100000.0,
+      "total_return": 0.0,
+      "total_return_pct": 0.0,
+      "current_positions": 0,
+      "cash_pct": 1.0,
+      "equity_pct": 0.0,
+      "trades_total": 0,
+      "trades_executed": 0
+    },
+    "leveraged_etf_timing": {
+      "starting_capital": 100000.0,
+      "current_value": 100000.0,
+      "total_return": 0.0,
+      "total_return_pct": 0.0,
+      "current_positions": 0,
+      "cash_pct": 1.0,
+      "equity_pct": 0.0,
+      "trades_total": 0,
+      "trades_executed": 0
+    },
+    "llm_recommendations": {
+      "starting_capital": 100000.0,
+      "current_value": 99601.90239923602,
+      "total_return": -398.0976007639838,
+      "total_return_pct": -0.003980976007639838,
+      "current_positions": 2,
+      "cash_pct": 0.32914327605845345,
+      "equity_pct": 0.6708567239415466,
+      "trades_total": 9,
+      "trades_executed": 9
+    }
+  },
+  "rankings": {
+    "by_total_return": [
+      {
+        "strategy": "dual_momentum",
+        "return_pct": 0.0
+      },
+      {
+        "strategy": "sma_200_trend",
+        "return_pct": 0.0
+      },
+      {
+        "strategy": "sma_trend_20_50",
+        "return_pct": 0.0
+      },
+      {
+        "strategy": "rsi_mean_reversion",
+        "return_pct": 0.0
+      },
+      {
+        "strategy": "breakout_20d",
+        "return_pct": 0.0
+      },
+      {
+        "strategy": "leveraged_etf_timing",
+        "return_pct": 0.0
+      },
+      {
+        "strategy": "llm_recommendations",
+        "return_pct": -0.003980976007639838
+      }
+    ],
+    "by_sharpe": [
+      {
+        "strategy": "dual_momentum",
+        "sharpe": 0.0
+      },
+      {
+        "strategy": "sma_200_trend",
+        "sharpe": 0.0
+      },
+      {
+        "strategy": "sma_trend_20_50",
+        "sharpe": 0.0
+      },
+      {
+        "strategy": "rsi_mean_reversion",
+        "sharpe": 0.0
+      },
+      {
+        "strategy": "breakout_20d",
+        "sharpe": 0.0
+      },
+      {
+        "strategy": "leveraged_etf_timing",
+        "sharpe": 0.0
+      },
+      {
+        "strategy": "llm_recommendations",
+        "sharpe": 0.0
+      }
+    ]
+  }
+}
