@@ -1,0 +1,587 @@
+---
+/**
+ * HIDDEN TEST PAGE - Not linked from main navigation
+ * Used to test paper trading chart visualization with mock data
+ * before deploying to real accounts.
+ */
+import Layout from '../layouts/Layout.astro';
+
+// Mock data generator functions
+function generateMockPriceHistory(days: number, startPrice: number, trend: 'up' | 'down' | 'flat' | 'volatile'): any[] {
+  const data = [];
+  let price = startPrice;
+  const startDate = new Date();
+  startDate.setDate(startDate.getDate() - days);
+
+  for (let i = 0; i < days; i++) {
+    const date = new Date(startDate);
+    date.setDate(date.getDate() + i);
+
+    // Apply trend
+    let change = 0;
+    switch (trend) {
+      case 'up':
+        change = (Math.random() * 2 - 0.5) * price * 0.01; // +0.5% to +1.5% average
+        break;
+      case 'down':
+        change = (Math.random() * 2 - 2.5) * price * 0.01; // -2.5% to -0.5% average
+        break;
+      case 'flat':
+        change = (Math.random() * 2 - 1) * price * 0.005; // -0.5% to +0.5%
+        break;
+      case 'volatile':
+        change = (Math.random() * 2 - 1) * price * 0.05; // -5% to +5%
+        break;
+    }
+
+    price += change;
+    data.push({
+      date: date.toISOString().split('T')[0],
+      close: parseFloat(price.toFixed(2)),
+      equity: parseFloat((price * (i < 10 ? 0 : 100)).toFixed(2)) // Start with 0, then 100 shares
+    });
+  }
+
+  return data;
+}
+
+function generateMockTrades(priceHistory: any[], numTrades: number): any[] {
+  const trades = [];
+  const interval = Math.floor(priceHistory.length / (numTrades + 1));
+
+  for (let i = 1; i <= numTrades; i++) {
+    const idx = i * interval;
+    if (idx >= priceHistory.length) break;
+
+    const isBuy = i % 2 === 1;
+    trades.push({
+      id: `mock-${i}`,
+      timestamp: `${priceHistory[idx].date}T14:30:00Z`,
+      side: isBuy ? 'buy' : 'sell',
+      symbol: 'TQQQ',
+      qty: 100,
+      price: priceHistory[idx].close,
+      notional: priceHistory[idx].close * 100,
+      type: 'market'
+    });
+  }
+
+  return trades;
+}
+
+// Generate test scenarios
+const scenarios = [
+  {
+    name: 'TQQQ Momentum (Winning)',
+    description: 'Strong uptrend with profitable trades',
+    data: generateMockPriceHistory(90, 50, 'up'),
+    trades: [],
+    startingCapital: 10000,
+    strategy: 'TQQQ 200 SMA'
+  },
+  {
+    name: 'Dual Momentum (Choppy)',
+    description: 'Sideways market with frequent rotations',
+    data: generateMockPriceHistory(90, 100, 'volatile'),
+    trades: [],
+    startingCapital: 10000,
+    strategy: 'Dual Momentum'
+  },
+  {
+    name: 'Sector Rotation (Losing)',
+    description: 'Downtrend with losing trades',
+    data: generateMockPriceHistory(90, 150, 'down'),
+    trades: [],
+    startingCapital: 10000,
+    strategy: 'Sector Rotation'
+  },
+  {
+    name: 'Mean Reversion (Flat)',
+    description: 'Range-bound market',
+    data: generateMockPriceHistory(90, 75, 'flat'),
+    trades: [],
+    startingCapital: 10000,
+    strategy: 'Mean Reversion'
+  }
+];
+
+// Generate trades for each scenario
+scenarios[0].trades = generateMockTrades(scenarios[0].data, 6); // 6 trades
+scenarios[1].trades = generateMockTrades(scenarios[1].data, 12); // Many trades
+scenarios[2].trades = generateMockTrades(scenarios[2].data, 8); // 8 trades
+scenarios[3].trades = generateMockTrades(scenarios[3].data, 4); // Few trades
+
+// Calculate performance metrics
+function calculateMetrics(data: any[], trades: any[], startingCapital: number) {
+  const currentEquity = data[data.length - 1]?.equity || startingCapital;
+  const totalReturn = ((currentEquity - startingCapital) / startingCapital) * 100;
+
+  let totalPnL = 0;
+  let wins = 0;
+  let losses = 0;
+
+  for (let i = 0; i < trades.length; i += 2) {
+    if (i + 1 < trades.length) {
+      const buyPrice = trades[i].price;
+      const sellPrice = trades[i + 1].price;
+      const pnl = (sellPrice - buyPrice) * trades[i].qty;
+      totalPnL += pnl;
+      if (pnl > 0) wins++;
+      else losses++;
+    }
+  }
+
+  return {
+    currentEquity,
+    totalReturn: totalReturn.toFixed(2),
+    totalPnL: totalPnL.toFixed(2),
+    numTrades: trades.length,
+    wins,
+    losses,
+    winRate: trades.length > 0 ? ((wins / (wins + losses)) * 100).toFixed(1) : '0.0'
+  };
+}
+
+scenarios.forEach(scenario => {
+  scenario.metrics = calculateMetrics(scenario.data, scenario.trades, scenario.startingCapital);
+});
+---
+
+<Layout title="AlphaOracle - Trading Charts Test">
+  <main>
+    <header>
+      <h1>🧪 Paper Trading Charts Test Page</h1>
+      <p class="subtitle">Hidden test page for validating chart functionality with mock data</p>
+      <p class="warning">⚠️ This page uses simulated data only. Not linked from main navigation.</p>
+    </header>
+
+    {scenarios.map((scenario) => (
+      <section class="test-scenario">
+        <div class="scenario-header">
+          <div>
+            <h2>{scenario.name}</h2>
+            <p class="description">{scenario.description}</p>
+            <p class="strategy-tag">{scenario.strategy}</p>
+          </div>
+          <div class="metrics-grid">
+            <div class="metric">
+              <span class="label">Total Return</span>
+              <span class={`value ${parseFloat(scenario.metrics.totalReturn) >= 0 ? 'positive' : 'negative'}`}>
+                {parseFloat(scenario.metrics.totalReturn) >= 0 ? '+' : ''}{scenario.metrics.totalReturn}%
+              </span>
+            </div>
+            <div class="metric">
+              <span class="label">Current Equity</span>
+              <span class="value">${scenario.metrics.currentEquity.toFixed(2)}</span>
+            </div>
+            <div class="metric">
+              <span class="label">Total P&L</span>
+              <span class={`value ${parseFloat(scenario.metrics.totalPnL) >= 0 ? 'positive' : 'negative'}`}>
+                ${scenario.metrics.totalPnL}
+              </span>
+            </div>
+            <div class="metric">
+              <span class="label">Trades</span>
+              <span class="value">{scenario.metrics.numTrades}</span>
+            </div>
+            <div class="metric">
+              <span class="label">Win Rate</span>
+              <span class="value">{scenario.metrics.winRate}%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-container">
+          <canvas id={`chart-${scenario.name.replace(/\s+/g, '-').toLowerCase()}`}></canvas>
+        </div>
+
+        <div class="trades-list">
+          <h3>Trade History ({scenario.trades.length} trades)</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Side</th>
+                <th>Symbol</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Notional</th>
+              </tr>
+            </thead>
+            <tbody>
+              {scenario.trades.map((trade) => (
+                <tr class={trade.side}>
+                  <td>{new Date(trade.timestamp).toLocaleDateString()}</td>
+                  <td class={`side-badge ${trade.side}`}>{trade.side.toUpperCase()}</td>
+                  <td>{trade.symbol}</td>
+                  <td>{trade.qty}</td>
+                  <td>${trade.price.toFixed(2)}</td>
+                  <td>${trade.notional.toFixed(2)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    ))}
+  </main>
+</Layout>
+
+<script define:vars={{ scenarios }}>
+  // Import Chart.js from CDN
+  const script = document.createElement('script');
+  script.src = 'https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js';
+  script.onload = () => {
+    scenarios.forEach((scenario) => {
+      const chartId = `chart-${scenario.name.replace(/\s+/g, '-').toLowerCase()}`;
+      const ctx = document.getElementById(chartId);
+      if (!ctx) return;
+
+      // Prepare data
+      const labels = scenario.data.map(d => d.date);
+      const prices = scenario.data.map(d => d.close);
+      const equity = scenario.data.map(d => d.equity);
+
+      // Create buy/sell annotations
+      const buyPoints = [];
+      const sellPoints = [];
+
+      scenario.trades.forEach((trade) => {
+        const tradeDate = trade.timestamp.split('T')[0];
+        const idx = labels.indexOf(tradeDate);
+        if (idx !== -1) {
+          if (trade.side === 'buy') {
+            buyPoints.push({ x: idx, y: prices[idx] });
+          } else {
+            sellPoints.push({ x: idx, y: prices[idx] });
+          }
+        }
+      });
+
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: 'Asset Price',
+              data: prices,
+              borderColor: '#2962ff',
+              backgroundColor: 'rgba(41, 98, 255, 0.1)',
+              borderWidth: 2,
+              pointRadius: 0,
+              yAxisID: 'y'
+            },
+            {
+              label: 'Portfolio Equity',
+              data: equity,
+              borderColor: '#28a745',
+              backgroundColor: 'rgba(40, 167, 69, 0.1)',
+              borderWidth: 2,
+              pointRadius: 0,
+              yAxisID: 'y1'
+            },
+            {
+              label: 'Buy',
+              data: buyPoints,
+              type: 'scatter',
+              backgroundColor: '#28a745',
+              borderColor: '#28a745',
+              pointRadius: 8,
+              pointStyle: 'triangle',
+              yAxisID: 'y'
+            },
+            {
+              label: 'Sell',
+              data: sellPoints,
+              type: 'scatter',
+              backgroundColor: '#dc3545',
+              borderColor: '#dc3545',
+              pointRadius: 8,
+              pointStyle: 'rectRot',
+              yAxisID: 'y'
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: {
+            mode: 'index',
+            intersect: false
+          },
+          plugins: {
+            legend: {
+              display: true,
+              labels: {
+                color: '#f8f9fa',
+                usePointStyle: true
+              }
+            },
+            tooltip: {
+              backgroundColor: 'rgba(0, 0, 0, 0.8)',
+              titleColor: '#f8f9fa',
+              bodyColor: '#f8f9fa',
+              borderColor: '#2a2e39',
+              borderWidth: 1
+            }
+          },
+          scales: {
+            x: {
+              grid: {
+                color: 'rgba(255, 255, 255, 0.1)'
+              },
+              ticks: {
+                color: '#8f949e',
+                maxRotation: 45,
+                minRotation: 45
+              }
+            },
+            y: {
+              type: 'linear',
+              display: true,
+              position: 'left',
+              title: {
+                display: true,
+                text: 'Asset Price ($)',
+                color: '#2962ff'
+              },
+              grid: {
+                color: 'rgba(255, 255, 255, 0.1)'
+              },
+              ticks: {
+                color: '#8f949e',
+                callback: function(value) {
+                  return '$' + value.toFixed(2);
+                }
+              }
+            },
+            y1: {
+              type: 'linear',
+              display: true,
+              position: 'right',
+              title: {
+                display: true,
+                text: 'Portfolio Equity ($)',
+                color: '#28a745'
+              },
+              grid: {
+                drawOnChartArea: false
+              },
+              ticks: {
+                color: '#8f949e',
+                callback: function(value) {
+                  return '$' + value.toFixed(0);
+                }
+              }
+            }
+          }
+        }
+      });
+    });
+  };
+  document.head.appendChild(script);
+</script>
+
+<style>
+  main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    color: #f8f9fa;
+  }
+
+  header {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    color: #d1d4dc;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .warning {
+    background: rgba(255, 193, 7, 0.2);
+    color: #ffc107;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    display: inline-block;
+    font-weight: 600;
+  }
+
+  .test-scenario {
+    background: #131722;
+    border: 2px solid #2a2e39;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .scenario-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .scenario-header h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+  }
+
+  .description {
+    color: #d1d4dc;
+    margin: 0.25rem 0;
+  }
+
+  .strategy-tag {
+    display: inline-block;
+    background: rgba(41, 98, 255, 0.2);
+    color: #2962ff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+  }
+
+  .metric {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .metric .label {
+    color: #8f949e;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .metric .value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #f8f9fa;
+  }
+
+  .metric .value.positive {
+    color: #28a745;
+  }
+
+  .metric .value.negative {
+    color: #dc3545;
+  }
+
+  .chart-container {
+    height: 400px;
+    margin-bottom: 1.5rem;
+    background: #0d111b;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .trades-list {
+    margin-top: 1.5rem;
+  }
+
+  .trades-list h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #0d111b;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  thead {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    color: #d1d4dc;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  td {
+    padding: 0.75rem 1rem;
+    border-top: 1px solid #2a2e39;
+    color: #f8f9fa;
+  }
+
+  tr.buy {
+    background: rgba(40, 167, 69, 0.05);
+  }
+
+  tr.sell {
+    background: rgba(220, 53, 69, 0.05);
+  }
+
+  .side-badge {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .side-badge.buy {
+    background: rgba(40, 167, 69, 0.3);
+    color: #28a745;
+  }
+
+  .side-badge.sell {
+    background: rgba(220, 53, 69, 0.3);
+    color: #dc3545;
+  }
+
+  @media (max-width: 768px) {
+    main {
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    .metrics-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .chart-container {
+      height: 300px;
+    }
+
+    table {
+      font-size: 0.85rem;
+    }
+
+    th, td {
+      padding: 0.5rem;
+    }
+  }
+</style>
