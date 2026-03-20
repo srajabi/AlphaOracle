@@ -199,9 +199,6 @@ jobs:
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_DEV_SECRET_KEY }}
         run: python src/fetch_alpaca_portfolio.py
 
-      - name: Update Paper Trading
-        run: python src/execute_paper_trades.py
-        
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:

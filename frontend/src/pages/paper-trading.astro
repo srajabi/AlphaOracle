@@ -7,50 +7,17 @@ const base = import.meta.env.BASE_URL.endsWith('/')
   ? import.meta.env.BASE_URL
   : `${import.meta.env.BASE_URL}/`;
 
-let positions = {
-  initialized_at: '',
-  updated_at: '',
-  strategies: {}
-};
-
-let performance = {
-  updated_at: '',
-  period_start: '',
-  period_end: '',
-  strategies: {},
-  rankings: { by_total_return: [], by_sharpe: [] }
-};
-
-let trades = { trades: [] };
 let alpacaTrades = { ok: false, trades: [], error: '' };
-let alpacaPortfolio = { ok: false, account: null, positions: [], error: '' };
+let alpacaPortfolio = { ok: false, account: null, positions: [], error: '', paper_trading: false, last_updated_utc: '' };
 
-try {
-  positions = JSON.parse(await fs.readFile(path.resolve('./public/data/paper_positions.json'), 'utf-8'));
-} catch {
-  console.log('No paper_positions.json found');
-}
-
-try {
-  performance = JSON.parse(await fs.readFile(path.resolve('./public/data/paper_performance.json'), 'utf-8'));
-} catch {
-  console.log('No paper_performance.json found');
-}
-
-try {
-  trades = JSON.parse(await fs.readFile(path.resolve('./public/data/paper_trades.json'), 'utf-8'));
-} catch {
-  console.log('No paper_trades.json found');
-}
-
-// Try to load real Alpaca trade history
+// Load real Alpaca trade history
 try {
   alpacaTrades = JSON.parse(await fs.readFile(path.resolve('./public/data/alpaca_trades.json'), 'utf-8'));
 } catch {
   console.log('No alpaca_trades.json found');
 }
 
-// Try to load real Alpaca portfolio (Dev account)
+// Load real Alpaca portfolio (Dev account)
 try {
   alpacaPortfolio = JSON.parse(await fs.readFile(path.resolve('./public/data/portfolio_status.json'), 'utf-8'));
 } catch {
@@ -77,10 +44,9 @@ const formatCurrency = (value: number) => {
   return `$${value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 };
 
-// Use real Alpaca trades if available, otherwise fall back to simulated
 const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
-  ? alpacaTrades.trades.slice(0, 20)  // Already sorted by most recent
-  : trades.trades.slice(-20).reverse();
+  ? alpacaTrades.trades.slice(0, 20)
+  : [];
 ---
 
 <Layout title="AlphaOracle - Paper Trading">
@@ -92,54 +58,21 @@ const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
 
     <header>
       <h1>📊 Paper Trading Dashboard</h1>
-      <p class="muted">Mode 3: Forward Performance Tracking</p>
-      <p class="muted">Period: {formatDate(performance.period_start)} - {formatDate(performance.period_end)}</p>
+      <p class="muted">Real-time Alpaca Paper Trading Accounts</p>
+      {alpacaPortfolio.last_updated_utc && (
+        <p class="muted">Last updated: {formatDate(alpacaPortfolio.last_updated_utc)}</p>
+      )}
     </header>
 
-    <!-- Performance Rankings -->
-    <section class="panel">
-      <h2>🏆 Strategy Rankings by Total Return</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Rank</th>
-            <th>Strategy</th>
-            <th>Return</th>
-            <th>Portfolio Value</th>
-            <th>Positions</th>
-            <th>Equity %</th>
-          </tr>
-        </thead>
-        <tbody>
-          {performance.rankings.by_total_return.map((item, idx) => {
-            const stratPerf = performance.strategies[item.strategy];
-            return (
-              <tr>
-                <td>{idx + 1}</td>
-                <td>
-                  <a href={`${base}paper-trading/${item.strategy}/`} class="strategy-link">
-                    <strong>{item.strategy.replace(/_/g, ' ')}</strong>
-                  </a>
-                </td>
-                <td class={item.return_pct >= 0 ? 'positive' : 'negative'}>
-                  {formatPercent(item.return_pct)}
-                </td>
-                <td>{formatCurrency(stratPerf.current_value)}</td>
-                <td>{stratPerf.current_positions}</td>
-                <td>{formatPercent(stratPerf.equity_pct)}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </section>
-
     <!-- Alpaca Dev Account (Live Paper Trading) -->
-    {alpacaPortfolio.ok && alpacaPortfolio.account && (
+    {alpacaPortfolio.ok && alpacaPortfolio.account ? (
       <section class="panel">
-        <h2>📡 Alpaca Dev Account (Live Paper Trading)
+        <h2>📡 Alpaca Dev Account (Advanced LLM Strategy)
           <span class="badge-live">Live Data</span>
         </h2>
+        <p class="muted" style="margin-bottom: 1rem;">
+          Sophisticated LLM agent trading 2x daily (10 AM & 3:30 PM ET) with multi-source analysis and dynamic position sizing
+        </p>
         <div class="strategy-kpis" style="margin-bottom: 1rem;">
           <div>
             <span>Portfolio Value</span>
@@ -150,7 +83,7 @@ const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
             <strong>{formatCurrency(alpacaPortfolio.account.cash)}</strong>
           </div>
           <div>
-            <span>Equity</span>
+            <span>Equity (Positions)</span>
             <strong>{formatCurrency(alpacaPortfolio.account.equity)}</strong>
           </div>
           <div>
@@ -192,127 +125,62 @@ const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
           </div>
         )}
       </section>
+    ) : (
+      <section class="panel">
+        <h2>📡 Alpaca Dev Account</h2>
+        <div class="status-message">
+          <p class="status-text">⚠️ Unable to load Alpaca portfolio data. Check if fetch_alpaca_portfolio.py ran successfully.</p>
+        </div>
+      </section>
     )}
-
-    <!-- Strategy Details -->
-    <section class="panel">
-      <h2>📈 Strategy Details</h2>
-      {Object.entries(positions.strategies).map(([strategyName, strategy]) => {
-        const perf = performance.strategies[strategyName];
-        const hasPositions = Object.keys(strategy.current_positions).length > 0;
-
-        return (
-          <div class="strategy-card">
-            <div class="strategy-header">
-              <h3>{strategyName.replace(/_/g, ' ')}</h3>
-              <div class="strategy-kpis">
-                <div>
-                  <span>Portfolio Value</span>
-                  <strong>{formatCurrency(strategy.total_portfolio_value)}</strong>
-                </div>
-                <div>
-                  <span>Return</span>
-                  <strong class={strategy.total_return >= 0 ? 'positive' : 'negative'}>
-                    {formatPercent(strategy.total_return_pct)}
-                  </strong>
-                </div>
-                <div>
-                  <span>Cash</span>
-                  <strong>{formatCurrency(strategy.current_cash)}</strong>
-                </div>
-                <div>
-                  <span>Trades</span>
-                  <strong>{perf.trades_executed}</strong>
-                </div>
-              </div>
-            </div>
-
-            {hasPositions ? (
-              <table class="positions-table">
-                <thead>
-                  <tr>
-                    <th>Ticker</th>
-                    <th>Shares</th>
-                    <th>Entry Price</th>
-                    <th>Current Price</th>
-                    <th>Market Value</th>
-                    <th>Unrealized P/L</th>
-                    <th>Entry Date</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {Object.entries(strategy.current_positions).map(([ticker, position]) => (
-                    <tr>
-                      <td><strong>{ticker}</strong></td>
-                      <td>{position.shares.toFixed(2)}</td>
-                      <td>{formatCurrency(position.avg_entry_price)}</td>
-                      <td>{formatCurrency(position.current_price)}</td>
-                      <td>{formatCurrency(position.market_value)}</td>
-                      <td class={position.unrealized_pnl >= 0 ? 'positive' : 'negative'}>
-                        {formatCurrency(position.unrealized_pnl)} ({formatPercent(position.unrealized_pnl_pct)})
-                      </td>
-                      <td>{position.entry_date}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            ) : (
-              <div class="status-message">
-                <p class="status-text">{strategy.status_message || "No open positions - waiting for entry signal"}</p>
-              </div>
-            )}
-          </div>
-        );
-      })}
-    </section>
 
     <!-- Recent Trades -->
     <section class="panel">
-      <h2>📝 Recent Trades (Last 20)
-        {alpacaTrades.ok && <span class="badge-live">Live from Alpaca</span>}
+      <h2>📝 Recent Trades from Alpaca Dev Account (Last 20)
+        {alpacaTrades.ok && <span class="badge-live">Live Data</span>}
       </h2>
       {recentTrades.length > 0 ? (
         <table>
           <thead>
             <tr>
               <th>Timestamp</th>
-              {!alpacaTrades.ok && <th>Strategy</th>}
               <th>Action</th>
               <th>Ticker</th>
               <th>Shares</th>
               <th>Price</th>
               <th>Notional</th>
-              {!alpacaTrades.ok && <th>Rationale</th>}
-              {alpacaTrades.ok && <th>Type</th>}
+              <th>Type</th>
             </tr>
           </thead>
           <tbody>
             {recentTrades.map((trade) => (
               <tr>
                 <td>{formatDate(trade.timestamp)}</td>
-                {!alpacaTrades.ok && <td>{trade.strategy?.replace(/_/g, ' ')}</td>}
-                <td class={trade.side === 'buy' || trade.action === 'buy' ? 'buy-action' : 'sell-action'}>
-                  {(trade.side || trade.action || '').toUpperCase()}
+                <td class={trade.side === 'buy' ? 'buy-action' : 'sell-action'}>
+                  {trade.side.toUpperCase()}
                 </td>
-                <td><strong>{trade.symbol || trade.ticker}</strong></td>
-                <td>{trade.qty?.toFixed(2) || trade.shares?.toFixed(2)}</td>
+                <td><strong>{trade.symbol}</strong></td>
+                <td>{trade.qty.toFixed(2)}</td>
                 <td>{formatCurrency(trade.price)}</td>
                 <td>{formatCurrency(trade.notional)}</td>
-                {!alpacaTrades.ok && <td class="rationale">{trade.rationale}</td>}
-                {alpacaTrades.ok && <td>{trade.type}</td>}
+                <td>{trade.type}</td>
               </tr>
             ))}
           </tbody>
         </table>
       ) : (
-        <p class="muted">No trades executed yet</p>
+        <div class="status-message">
+          <p class="status-text">No trades executed yet on the Alpaca Dev account</p>
+        </div>
       )}
     </section>
 
     <footer class="info-footer">
-      <p><strong>About Paper Trading:</strong> Virtual portfolios track strategy performance without risking capital.
-      Each strategy starts with $100,000 and executes trades based on signals. Performance is updated daily with live market data.</p>
-      <p class="muted">Last updated: {formatDate(positions.updated_at)}</p>
+      <p><strong>About Paper Trading:</strong> All 6 Alpaca accounts (Dev, PROD_1-5) are paper trading accounts using Alpaca's API.
+      No real capital is at risk. The system executes trades automatically based on LLM analysis and rule-based strategies.</p>
+      <p><strong>Dev Account:</strong> Advanced LLM strategy with 2x daily execution (10 AM & 3:30 PM ET)</p>
+      <p><strong>PROD_1:</strong> Standard LLM strategy with EOD execution (3:30 PM ET only)</p>
+      <p><strong>PROD_2-5:</strong> Rule-based strategies (TQQQ Momentum, Dual Momentum, Sector Rotation, Mean Reversion) - EOD only</p>
     </footer>
   </main>
 </Layout>
