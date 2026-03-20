@@ -1,129 +1,230 @@
-# AlphaOracle: Automated AI Investment Analyst & Portfolio Manager
+# AlphaOracle
 
-## Overview
-AlphaOracle is a personal learning system for developing market intuition through systematic analysis and automated strategy testing. It combines AI-driven market commentary with rule-based technical strategies, helping you understand market regimes, intermarket dynamics, and trading system performance.
+AI-powered paper trading system running 6 automated strategies across Alpaca accounts with live analysis dashboard.
 
-**What it does:**
-- Analyzes market data, news, and technical indicators through multiple LLM "agents" (Risk Manager, Technical Analyst, Macro Strategist)
-- Tracks intermarket relationships across 7 uncorrelated markets to detect regime changes
-- Backtests trading strategies across 33 years of market history
-- Runs strategies forward in automated paper trading accounts to build real-time intuition
-- Publishes everything to a personal dashboard where you can study the analysis and results
+**Live Dashboard:** [https://srajabi.github.io/AlphaOracle/](https://srajabi.github.io/AlphaOracle/)
 
-**Philosophy:** Learn by watching systems think and trade. See what works, what doesn't, and why. Build intuition through observation and iteration.
+## What It Does
 
-## Features
-*   **Automated Data Ingestion:** Fetches EOD stock prices, technical indicators, and news.
-*   **Intermarket Regime Detection:** Tracks 7 uncorrelated markets (SPY, VIX, UUP, TLT, GLD, SLV, XLE) to detect regime changes.
-*   **Multi-Agent LLM Analysis:** Uses a "Mixture of Experts" approach where multiple LLMs (Risk Manager, Technical Analyst, Macro Strategist) provide specialized insights.
-*   **Portfolio Management LLM:** A final LLM synthesizes agent reports against a user-defined investment thesis.
-*   **Strategy Backtesting:** Validates trading strategies across 33 years of market history (1993-2026) covering all major market regimes.
-*   **Paper Trading Validation:** Forward-tests strategies in simulation across multiple accounts ($100k each) to track real-time performance.
-*   **GitHub Pages Deployment:** Publishes daily analysis reports, backtest results, and paper trading performance to a static website.
-*   **Secure API Handling:** Uses `.env` for local secrets and GitHub Secrets for CI/CD.
-*   **Local Development Workflow:** Includes scripts and unit tests for efficient local testing and iteration.
+AlphaOracle runs fully automated paper trading with daily AI analysis:
 
-## Architecture Highlights
-The system runs daily via GitHub Actions:
-1.  **Data Ingestion:** Python scripts gather market data (yfinance) and news.
-2.  **Context Generation:** Market data and predefined investment theses are compiled into LLM prompts.
-3.  **LLM Agents:** Multiple Gemini 2.5 Flash agents generate specialized reports.
-4.  **Portfolio Manager:** A final Gemini 2.5 Flash agent synthesizes reports, generates markdown summaries, and a JSON list of trades.
-5.  **Trade Execution:** Python script executes trades via Alpaca's API.
-6.  **Website Generation:** MkDocs builds a static site from the generated markdown reports.
-7.  **Deployment:** The static site is deployed to GitHub Pages.
+- **Multi-Agent LLM Analysis**: Risk Manager, Technical Analyst, and Macro Strategist agents analyze markets using multiple AI models (DeepSeek, Gemini, Claude, GPT, GLM-5)
+- **6 Automated Paper Trading Accounts**: Each running different strategies on Alpaca's API
+- **Options Analysis**: Monitors unusual options flow and institutional activity
+- **Intermarket Regime Detection**: Tracks 7 markets (SPY, VIX, USD, TLT, GLD, SLV, XLE) to detect regime changes
+- **Comprehensive Backtesting**: Validates strategies across 30+ years of market data
+- **Live Dashboard**: Astro-based static site deployed to GitHub Pages twice daily
 
-## Getting Started
+## Trading Accounts
 
-### 1. Repository Setup
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/srajabi/AlphaOracle.git
-    cd AlphaOracle
-    ```
-2.  **Create Python Virtual Environment:**
-    ```bash
-    python -m venv .venv
-    source .venv/bin/activate
-    ```
-3.  **Install Python Dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-4.  **Install Node.js Dependencies (for Astro - *Future*):**
-    *(Note: This step will be added once Astro is integrated.)*
+All 6 accounts trade on Alpaca's **paper trading API** (no real money):
 
-### 2. API Key Configuration
+| Account | Strategy | Execution Schedule |
+|---------|----------|-------------------|
+| **Dev** | Advanced LLM | 2x Daily (10 AM & 3:30 PM ET) |
+| **Account 1** | Standard LLM | EOD (3:30 PM ET) |
+| **Account 2** | TQQQ Momentum | EOD (3:30 PM ET) |
+| **Account 3** | Dual Momentum | EOD (3:30 PM ET) |
+| **Account 4** | Sector Rotation | EOD (3:30 PM ET) |
+| **Account 5** | Mean Reversion | EOD (3:30 PM ET) |
 
-*   **Google Gemini:** Obtain a `GEMINI_API_KEY` from [Google AI Studio](https://aistudio.google.com/).
-*   **Alpaca:** Sign up for an Alpaca Paper Trading account and get your `ALPACA_API_KEY` (Key ID) and `ALPACA_SECRET_KEY` (Secret Key).
+## Architecture
 
-#### Local Development (`.env` file)
-1.  Create a file named `.env` in the root of your project:
-    ```bash
-    touch .env
-    ```
-2.  Edit `.env` and add your API keys (this file is ignored by Git):
-    ```ini
-    GEMINI_API_KEY="your_actual_gemini_api_key"
-    ALPACA_API_KEY="your_actual_alpaca_key_id"
-    ALPACA_SECRET_KEY="your_actual_alpaca_secret_key"
-    ```
-3.  **Load Keys into Environment:** In your terminal, run `source .env` before executing any scripts.
-
-#### GitHub Actions (Repository Secrets)
-1.  Go to your GitHub repository **Settings > Secrets and variables > Actions**.
-2.  Click **New repository secret** and add your `GEMINI_API_KEY`, `ALPACA_API_KEY`, and `ALPACA_SECRET_KEY`.
-
-### 3. Customize Investment Theses & Watchlist
-*   Edit `watchlist.csv` to define the tickers you want the AI to analyze.
-*   Modify the Markdown files in the `thesis/` directory to define your investment philosophy, macro views, and sector preferences.
-*   `portfolio.csv` is auto-generated from your Alpaca account and reflects current positions.
-
-### 4. Local Development & Testing
-
-To prevent broken builds and failed GitHub Actions runs, always follow this local validation process before committing and pushing code.
-
-#### Run Full Pipeline Locally
-Execute the `run_local.sh` script to perform the entire analysis, trade generation, and website build process. This script will automatically activate your virtual environment, install dependencies, and run all Python steps before building the MkDocs site.
-
-*   **To run with LIVE API calls (uses your actual API key, consumes credits):**
-    ```bash
-    # Ensure .venv is activated and .env is sourced
-    ./run_local.sh
-    ```
-    *Expected output:* You should see agent reports being generated from actual Gemini API calls.
-
-*   **To run in MOCK mode (no API calls, saves credits):**
-    ```bash
-    # Ensure .venv is activated and .env is sourced
-    ./run_local.sh --mock
-    ```
-    *Expected output:* You will see `MOCK_LLM is true. Using mocked completion for [Agent Name].` for each agent.
-
-#### Run Unit Tests
-```bash
-# Run all tests (including mocked LLM calls)
-pytest
-
-# Run only tests that make live API calls (requires GEMINI_API_KEY set)
-pytest -m live_api tests/test_gemini.py
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    GitHub Actions (2x daily)                 │
+│                   10 AM ET & 3:30 PM ET                      │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│  1. Data Ingestion (Python)                                  │
+│     - Stock prices (yfinance)                                │
+│     - Options data (yfinance)                                │
+│     - Technical indicators                                   │
+│     - Intermarket signals                                    │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│  2. Multi-Agent LLM Analysis (Python + LiteLLM)             │
+│     - Risk Manager (deepseek, gemini, glm-5)                │
+│     - Technical Analyst (deepseek, gemini, claude)          │
+│     - Macro Strategist (deepseek, gemini, gpt-4o-mini)      │
+│     - Portfolio Manager (glm-5) synthesizes all reports     │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│  3. Trade Execution (Python + Alpaca API)                    │
+│     - Advanced LLM strategy (Dev account, 2x daily)         │
+│     - Standard LLM strategy (Account 1, EOD)                │
+│     - Rule-based strategies (Accounts 2-5, EOD)             │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│  4. Dashboard Generation (Astro + TypeScript)                │
+│     - Analysis reports                                       │
+│     - Portfolio positions                                    │
+│     - Paper trading performance                              │
+│     - Backtest results                                       │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+                       GitHub Pages
 ```
 
-#### Preview Site Locally
-After `run_local.sh` completes (either live or mocked), you can preview the generated website:
+## Tech Stack
+
+**Backend (Python)**
+- Data: yfinance, pandas, numpy
+- LLM: litellm (unified API for all AI providers)
+- Trading: alpaca-py
+- Analysis: ta-lib, pandas-ta
+
+**Frontend (TypeScript/Astro)**
+- Framework: Astro (static site generator)
+- UI: Custom CSS with TradingView-inspired design
+- Charts: Lightweight-charts
+- Deployment: GitHub Pages
+
+**Infrastructure**
+- CI/CD: GitHub Actions (2x daily: 10 AM & 3:30 PM ET)
+- Secrets: GitHub Secrets (API keys)
+- Storage: GitHub Pages (static site)
+
+## Quick Start
+
+### 1. Clone and Setup
+
 ```bash
-mkdocs serve
+git clone https://github.com/srajabi/AlphaOracle.git
+cd AlphaOracle
+
+# Create Python virtual environment
+python3 -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+pip install -r requirements.txt
 ```
-Open the provided local URL (usually `http://127.0.0.1:8000`) in your browser to inspect the generated reports and portfolio dashboard.
 
-### 5. GitHub Actions & Deployment
-The `daily_analysis.yml` workflow is configured to run automatically every weekday at 22:00 UTC and on `workflow_dispatch` (manual trigger).
-*   **Trigger Manually:** Go to your GitHub repository **Actions > AlphaOracle Daily Run > Run workflow**.
-*   **View Live Site:** Once the action completes successfully, your site will be live at `https://<YOUR_GITHUB_USERNAME>.github.io/AlphaOracle/`.
+### 2. Configure API Keys
 
-## Future Enhancements
-*   Integration with Astro + MDX for advanced charting.
-*   Backtesting and performance tracking.
-*   Expanded data sources (FRED, options data, alternative data).
-*   More sophisticated LLM agent orchestration.
+Create a `.env` file:
+
+```bash
+# LLM API Keys
+GEMINI_API_KEY=your_gemini_key
+DEEPSEEK_API_KEY=your_deepseek_key
+ANTHROPIC_API_KEY=your_anthropic_key
+OPENAI_API_KEY=your_openai_key
+GLM_API_KEY=your_glm_key
+
+# Alpaca Paper Trading (6 accounts)
+ALPACA_DEV_API_KEY=your_dev_key
+ALPACA_DEV_SECRET_KEY=your_dev_secret
+ALPACA_PROD_1_API_KEY=your_prod1_key
+ALPACA_PROD_1_SECRET_KEY=your_prod1_secret
+ALPACA_PROD_2_API_KEY=your_prod2_key
+ALPACA_PROD_2_SECRET_KEY=your_prod2_secret
+ALPACA_PROD_3_API_KEY=your_prod3_key
+ALPACA_PROD_3_SECRET_KEY=your_prod3_secret
+ALPACA_PROD_4_API_KEY=your_prod4_key
+ALPACA_PROD_4_SECRET_KEY=your_prod4_secret
+ALPACA_PROD_5_API_KEY=your_prod5_key
+ALPACA_PROD_5_SECRET_KEY=your_prod5_secret
+```
+
+See `.env.example` for full configuration options.
+
+### 3. Run Data Ingestion & Analysis
+
+```bash
+# Activate virtual environment
+source .venv/bin/activate
+
+# Fetch market data
+python src/data_ingestion.py
+python src/options_ingestion.py
+
+# Generate indicators
+python src/generate_indicators.py
+python src/generate_ticker_indicators.py
+python src/generate_strategy_ratings.py
+
+# Run LLM analysis
+python src/llm_agents.py
+```
+
+### 4. Run Frontend Locally
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Visit `http://localhost:4321` to see the dashboard.
+
+## Project Structure
+
+```
+AlphaOracle/
+├── src/                        # Python backend
+│   ├── data_ingestion.py       # Fetch market data
+│   ├── options_ingestion.py    # Fetch options data
+│   ├── generate_indicators.py  # Intermarket indicators
+│   ├── llm_agents.py           # Multi-agent LLM analysis
+│   ├── execute_advanced_llm.py # Advanced LLM trading (Dev)
+│   ├── execute_trades.py       # Standard LLM trading (PROD_1)
+│   └── strategies/             # Rule-based strategies
+├── frontend/                   # Astro dashboard
+│   ├── src/
+│   │   ├── pages/              # Dashboard pages
+│   │   ├── content/reports/    # LLM-generated reports
+│   │   └── layouts/            # Page layouts
+│   └── public/data/            # Static data for frontend
+├── backtesting/                # Backtesting framework
+├── spikes/                     # Research & experiments
+├── tools/                      # Manual/ad-hoc scripts
+├── .github/workflows/          # GitHub Actions
+├── agents.md                   # AI coding agent docs
+├── context.md                  # Detailed architecture
+└── current.md                  # Current work status
+```
+
+## Documentation
+
+- **For Developers**: See `agents.md` for AI coding conventions
+- **Architecture Deep Dive**: See `context.md`
+- **Research & Spikes**: Browse `spikes/` directory
+- **Backtesting**: See `backtesting/` directory
+
+## GitHub Actions Workflow
+
+The system runs automatically twice daily via GitHub Actions:
+
+**Schedule:**
+- 10:00 AM ET (15:00 UTC) - Morning run
+- 3:30 PM ET (20:30 UTC) - End of day run
+
+**Both runs execute:**
+1. Data ingestion (stocks, options, indicators)
+2. Multi-agent LLM analysis
+3. Advanced LLM trading (Dev account)
+4. Portfolio fetch from all accounts
+5. Dashboard build & deployment
+
+**EOD run only (3:30 PM ET):**
+- Standard LLM trading (Account 1)
+- Rule-based strategy execution (Accounts 2-5)
+
+**Manual trigger:** Go to Actions → AlphaOracle Daily Run → Run workflow
+
+## License
+
+Personal project for educational purposes. Use at your own risk.
+
+## Disclaimer
+
+**This system trades with paper money only (Alpaca paper trading API).** No real capital is deployed. This is an experimental learning project to understand algorithmic trading, AI-driven analysis, and systematic portfolio management. Past performance does not guarantee future results.
