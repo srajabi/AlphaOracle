@@ -42,8 +42,9 @@ const actionable = holdings
     </nav>
 
     <header>
-      <h1>Portfolio Action Items</h1>
-      <p class="muted">Current holdings mapped against today&apos;s recommendation set.</p>
+      <h1>Paper Trading Action Items</h1>
+      <p class="muted">Live positions from Alpaca Dev Account mapped against LLM recommendations.</p>
+      <p class="muted validation-note">⚠️ Validation Phase: This page shows paper trading positions for strategy validation only. No live capital deployed.</p>
     </header>
 
     <section class="panel">
@@ -56,7 +57,7 @@ const actionable = holdings
     </section>
 
     <section class="panel">
-      <h2>Holdings + Recommended Actions</h2>
+      <h2>Live Alpaca Positions + LLM Recommended Actions</h2>
       {actionable.length > 0 ? (
         <table>
           <thead>
@@ -104,6 +105,13 @@ const actionable = holdings
   }
   .panel h2 { margin-top: 0; font-size: 1.1rem; }
   .muted { color: #8f949e; }
+  .validation-note {
+    background: rgba(255, 193, 7, 0.1);
+    border-left: 3px solid #ffc107;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+  }
   table { width: 100%; border-collapse: collapse; }
   th, td { border: 1px solid #2a2e39; padding: 0.65rem; text-align: left; }
   th { color: #8f949e; font-size: 0.8rem; text-transform: uppercase; }
