@@ -9,13 +9,14 @@ from datetime import datetime, timezone
 load_dotenv()
 
 def execute_trades():
-    print("Initializing Alpaca client...")
+    print("Initializing Alpaca client for PROD_1 (Standard LLM Strategy)...")
     # Load API keys from environment variables
-    api_key = os.getenv("ALPACA_API_KEY")
-    secret_key = os.getenv("ALPACA_SECRET_KEY")
-    
+    # Priority: PROD_1 keys > generic keys (for backward compatibility)
+    api_key = os.getenv("ALPACA_PROD_1_API_KEY") or os.getenv("ALPACA_API_KEY")
+    secret_key = os.getenv("ALPACA_PROD_1_SECRET_KEY") or os.getenv("ALPACA_SECRET_KEY")
+
     if not api_key or not secret_key:
-        print("Error: ALPACA_API_KEY or ALPACA_SECRET_KEY not found in environment. Skipping execution.")
+        print("Error: ALPACA_PROD_1_API_KEY/SECRET_KEY or ALPACA_API_KEY/SECRET_KEY not found in environment. Skipping execution.")
         write_execution_log([], "Missing Alpaca API keys.")
         return
 

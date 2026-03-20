@@ -82,11 +82,18 @@ jobs:
           PM_MODEL: "deepseek/deepseek-reasoner"
         run: python src/llm_agents.py
         
-      - name: Execute Trades (Dev Account - Legacy Script)
+      - name: Execute Advanced LLM Strategy (Dev Account - 2x Daily)
         env:
           ALPACA_API_KEY: ${{ secrets.ALPACA_DEV_API_KEY }}
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_DEV_SECRET_KEY }}
-        run: python src/execute_trades.py
+        run: |
+          echo "=================================================="
+          echo "EXECUTING: Advanced LLM Strategy (Dev Account)"
+          echo "Frequency: 2x daily (10 AM and 3:30 PM ET)"
+          echo "Note: This uses a more sophisticated/active LLM approach"
+          echo "=================================================="
+          python src/execute_advanced_llm.py
+          echo ""
 
       - name: Execute Multi-Account Trades
         env:
@@ -124,6 +131,19 @@ jobs:
             echo "is_eod=false" >> $GITHUB_OUTPUT
             echo "This is the 10:00 AM ET (15:00 UTC) run - skipping strategy execution"
           fi
+
+      - name: Execute LLM Strategy (Account 1 - EOD)
+        if: steps.check_time.outputs.is_eod == 'true'
+        env:
+          ALPACA_PROD_1_API_KEY: ${{ secrets.ALPACA_PROD_1_API_KEY }}
+          ALPACA_PROD_1_SECRET_KEY: ${{ secrets.ALPACA_PROD_1_SECRET_KEY }}
+        run: |
+          echo "=================================================="
+          echo "EXECUTING: LLM Strategy (Account 1 - EOD)"
+          echo "Using recommendations from data/trades.json"
+          echo "=================================================="
+          python src/execute_trades.py
+          echo ""
 
       - name: Execute TQQQ Momentum Strategy (Account 2)
         if: steps.check_time.outputs.is_eod == 'true'
