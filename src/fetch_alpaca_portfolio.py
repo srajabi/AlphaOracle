@@ -33,11 +33,14 @@ def fetch_portfolio():
         account = trading_client.get_account()
         positions = trading_client.get_all_positions()
 
+        # Calculate total market value of positions (equities only, excluding cash)
+        total_positions_value = sum(float(p.market_value) for p in positions)
+
         status_payload["ok"] = True
         status_payload["account"] = {
             "status": account.status.value,
             "cash": float(account.cash),
-            "equity": float(account.equity),
+            "equity": total_positions_value,  # Equities only (excluding cash)
             "buying_power": float(account.buying_power),
             "portfolio_value": float(account.portfolio_value),
         }
