@@ -347,6 +347,24 @@
       "signal_data": {
         "source": "llm"
       }
+    },
+    {
+      "id": "trade_20260320_021103_XLP",
+      "timestamp": "2026-03-20T02:11:03.568280Z",
+      "strategy": "llm_recommendations",
+      "ticker": "XLP",
+      "action": "buy",
+      "shares": 121.99585,
+      "price": 81.97000122070312,
+      "notional": 9999.999973420716,
+      "commission": 0.0,
+      "rationale": "LLM recommendation (scaled 100.0%)",
+      "signal_data": {
+        "source": "llm",
+        "notional_requested": 10000,
+        "notional_scaled": 10000.0,
+        "scale_factor": 1.0
+      }
     }
   ]
 }
