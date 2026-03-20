@@ -1,0 +1,13 @@
+{
+  "downloaded_at": "2026-03-19T07:25:04.896713Z",
+  "total_tickers": 1,
+  "years_requested": 1,
+  "successful": 0,
+  "failed": 1,
+  "tickers": {
+    "TQQQ": {
+      "success": false,
+      "error": "Failed to download"
+    }
+  }
+}

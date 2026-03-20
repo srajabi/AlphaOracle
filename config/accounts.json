@@ -2,87 +2,96 @@
   "accounts": [
     {
       "id": "dev_account",
-      "name": "Development/Testing Account",
-      "description": "For local testing and manual workflow runs - expected to have random trades",
-      "strategy": "llm_recommendations",
+      "name": "Dev Account",
+      "description": "Advanced LLM strategy with 2x daily execution (10 AM & 3:30 PM ET) for testing and development",
+      "strategy": "advanced_llm",
       "env_prefix": "ALPACA_DEV",
       "environment": "dev",
       "paper_trading": true,
       "enabled": true,
+      "frequency": "2x daily",
+      "executor": "src/execute_advanced_llm.py",
       "config": {
-        "auto_scale_to_buying_power": true,
-        "max_buying_power_usage": 0.98,
-        "trades_source": "data/trades.json"
+        "multi_source_analysis": true,
+        "dynamic_position_sizing": true,
+        "stop_loss_enabled": true
       }
     },
     {
       "id": "prod_1_llm",
-      "name": "LLM Recommendations",
-      "description": "Follows LLM trade recommendations with auto-scaling to fit buying power",
+      "name": "Account 1 - Standard LLM",
+      "description": "Standard LLM strategy following data/trades.json recommendations at EOD",
       "strategy": "llm_recommendations",
       "env_prefix": "ALPACA_PROD_1",
       "environment": "prod",
       "paper_trading": true,
       "enabled": true,
+      "frequency": "EOD (3:30 PM ET)",
+      "executor": "src/execute_trades.py",
       "config": {
-        "auto_scale_to_buying_power": true,
-        "max_buying_power_usage": 0.98,
         "trades_source": "data/trades.json"
       }
     },
     {
       "id": "prod_2_tqqq",
-      "name": "Reddit 200 SMA on TQQQ",
-      "description": "3x leveraged QQQ with 200-day SMA timing",
-      "strategy": "reddit_200sma_tqqq",
+      "name": "Account 2 - TQQQ Momentum",
+      "description": "TQQQ momentum strategy at EOD",
+      "strategy": "tqqq",
       "env_prefix": "ALPACA_PROD_2",
       "environment": "prod",
       "paper_trading": true,
       "enabled": true,
+      "frequency": "EOD (3:30 PM ET)",
+      "executor": "src/strategies/strategy_executor.py --strategy tqqq --account 2",
       "config": {
         "ticker": "TQQQ",
-        "sma_period": 200,
-        "rebalance_frequency": "daily",
-        "max_position_size": 1.0
+        "momentum_based": true
       }
     },
     {
-      "id": "prod_3_spy",
-      "name": "Reddit 200 SMA on UPRO (SPY)",
-      "description": "3x leveraged SPY with 200-day SMA timing",
-      "strategy": "reddit_200sma_spy",
+      "id": "prod_3_dual",
+      "name": "Account 3 - Dual Momentum",
+      "description": "Dual momentum strategy at EOD",
+      "strategy": "dual",
       "env_prefix": "ALPACA_PROD_3",
       "environment": "prod",
       "paper_trading": true,
       "enabled": true,
+      "frequency": "EOD (3:30 PM ET)",
+      "executor": "src/strategies/strategy_executor.py --strategy dual --account 3",
       "config": {
-        "ticker": "UPRO",
-        "sma_period": 200,
-        "rebalance_frequency": "daily",
-        "max_position_size": 1.0
+        "dual_momentum": true
       }
     },
     {
-      "id": "prod_4_reserved",
-      "name": "Reserved Production Account 4",
-      "description": "Reserved for future strategy",
-      "strategy": null,
+      "id": "prod_4_sector",
+      "name": "Account 4 - Sector Rotation",
+      "description": "Sector rotation strategy at EOD",
+      "strategy": "sector",
       "env_prefix": "ALPACA_PROD_4",
       "environment": "prod",
       "paper_trading": true,
-      "enabled": false,
-      "config": {}
+      "enabled": true,
+      "frequency": "EOD (3:30 PM ET)",
+      "executor": "src/strategies/strategy_executor.py --strategy sector --account 4",
+      "config": {
+        "sector_rotation": true
+      }
     },
     {
-      "id": "prod_5_reserved",
-      "name": "Reserved Production Account 5",
-      "description": "Reserved for future strategy",
-      "strategy": null,
+      "id": "prod_5_mean",
+      "name": "Account 5 - Mean Reversion",
+      "description": "Mean reversion strategy at EOD",
+      "strategy": "mean",
       "env_prefix": "ALPACA_PROD_5",
       "environment": "prod",
       "paper_trading": true,
-      "enabled": false,
-      "config": {}
+      "enabled": true,
+      "frequency": "EOD (3:30 PM ET)",
+      "executor": "src/strategies/strategy_executor.py --strategy mean --account 5",
+      "config": {
+        "mean_reversion": true
+      }
     }
   ],
   "global_settings": {
@@ -90,5 +99,10 @@
     "log_level": "INFO",
     "max_retries": 3,
     "retry_delay_seconds": 5
-  }
+  },
+  "notes": [
+    "This config file is for documentation purposes.",
+    "Actual execution is controlled by .github/workflows/daily_analysis.yml",
+    "execute_multi_account.py can be used for manual testing but is not used in automated workflows"
+  ]
 }
