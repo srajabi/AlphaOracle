@@ -1,0 +1,39 @@
+{
+  "paper_trading": true,
+  "last_updated_utc": "2026-03-20T01:06:50.043318+00:00",
+  "ok": true,
+  "error": "",
+  "account": {
+    "status": "ACTIVE",
+    "cash": 67837.34,
+    "equity": 87358.6,
+    "buying_power": 150195.94,
+    "portfolio_value": 87358.6
+  },
+  "positions": [
+    {
+      "symbol": "XLE",
+      "qty": 36.734006734,
+      "market_value": 2183.46936,
+      "current_price": 59.44,
+      "avg_entry_price": 59.4,
+      "unrealized_pl": 1.46936
+    },
+    {
+      "symbol": "XLP",
+      "qty": 53.174384596,
+      "market_value": 4513.973508,
+      "current_price": 84.89,
+      "avg_entry_price": 82.069591,
+      "unrealized_pl": 149.973513
+    },
+    {
+      "symbol": "XLU",
+      "qty": 275.958981463,
+      "market_value": 12823.813869,
+      "current_price": 46.47,
+      "avg_entry_price": 47.040855,
+      "unrealized_pl": -157.532564
+    }
+  ]
+}

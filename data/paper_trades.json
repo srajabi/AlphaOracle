@@ -281,6 +281,42 @@
       "signal_data": {
         "source": "llm"
       }
+    },
+    {
+      "id": "trade_20260320_010650_QQQ",
+      "timestamp": "2026-03-20T01:06:50.795776Z",
+      "strategy": "llm_recommendations",
+      "ticker": "QQQ",
+      "action": "buy",
+      "shares": 3.372567,
+      "price": 593.02001953125,
+      "notional": 1999.9997482104493,
+      "commission": 0.0,
+      "rationale": "LLM recommendation (scaled 100.0%)",
+      "signal_data": {
+        "source": "llm",
+        "notional_requested": 2000,
+        "notional_scaled": 2000.0,
+        "scale_factor": 1.0
+      }
+    },
+    {
+      "id": "trade_20260320_010650_IAU",
+      "timestamp": "2026-03-20T01:06:50.796407Z",
+      "strategy": "llm_recommendations",
+      "ticker": "IAU",
+      "action": "buy",
+      "shares": 34.336728,
+      "price": 87.37000274658203,
+      "notional": 3000.00001966864,
+      "commission": 0.0,
+      "rationale": "LLM recommendation (scaled 100.0%)",
+      "signal_data": {
+        "source": "llm",
+        "notional_requested": 3000,
+        "notional_scaled": 3000.0,
+        "scale_factor": 1.0
+      }
     }
   ]
 }
