@@ -69,7 +69,8 @@ class PaperTradingEngine:
                     "current_positions": {},
                     "total_portfolio_value": self.starting_capital,
                     "total_return": 0.0,
-                    "total_return_pct": 0.0
+                    "total_return_pct": 0.0,
+                    "status_message": "Waiting for entry signal"
                 }
                 for strategy in strategies
             }
@@ -237,6 +238,15 @@ class PaperTradingEngine:
         current_holdings = set(strategy['current_positions'].keys())
         target_holdings = set(target_positions.keys())
 
+        # Update status based on target positions
+        if len(target_positions) == 0:
+            strategy['status_message'] = "Entry conditions not met - staying in cash"
+        else:
+            tickers_list = ', '.join(list(target_positions.keys())[:3])
+            if len(target_positions) > 3:
+                tickers_list += f" +{len(target_positions) - 3} more"
+            strategy['status_message'] = f"Holding {len(target_positions)} position(s): {tickers_list}"
+
         # Sell positions no longer in target
         to_sell = current_holdings - target_holdings
         for ticker in to_sell:
@@ -276,6 +286,15 @@ class PaperTradingEngine:
 
         # Get tickers we want to buy
         buy_tickers = set(t.get('ticker', '') for t in buy_trades if t.get('ticker', ''))
+
+        # Update status
+        if len(buy_tickers) == 0:
+            strategy['status_message'] = "No LLM buy recommendations today - staying in cash"
+        else:
+            tickers_list = ', '.join(list(buy_tickers)[:3])
+            if len(buy_tickers) > 3:
+                tickers_list += f" +{len(buy_tickers) - 3} more"
+            strategy['status_message'] = f"LLM recommended {len(buy_tickers)} position(s): {tickers_list}"
 
         # Sell positions not in buy list (unless explicitly in sell list)
         current_holdings = set(strategy['current_positions'].keys())

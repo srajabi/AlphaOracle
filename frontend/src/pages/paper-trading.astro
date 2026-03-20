@@ -189,7 +189,9 @@ const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
                 </tbody>
               </table>
             ) : (
-              <p class="muted">No open positions</p>
+              <div class="status-message">
+                <p class="status-text">{strategy.status_message || "No open positions - waiting for entry signal"}</p>
+              </div>
             )}
           </div>
         );
@@ -427,6 +429,20 @@ const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+  }
+
+  .status-message {
+    background: rgba(255, 193, 7, 0.1);
+    border-left: 3px solid #ffc107;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+  }
+
+  .status-text {
+    margin: 0;
+    color: #f8f9fa;
+    font-size: 0.95rem;
   }
 
   @media (max-width: 768px) {
