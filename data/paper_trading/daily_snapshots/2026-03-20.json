@@ -1,0 +1,123 @@
+{
+  "date": "2026-03-20",
+  "positions": {
+    "initialized_at": "2026-03-18T01:07:22.308371Z",
+    "updated_at": "2026-03-20T01:06:50.796792Z",
+    "strategies": {
+      "dual_momentum": {
+        "starting_capital": 100000.0,
+        "current_cash": 100000.0,
+        "current_positions": {},
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      },
+      "sma_200_trend": {
+        "starting_capital": 100000.0,
+        "current_cash": 100000.0,
+        "current_positions": {},
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      },
+      "sma_trend_20_50": {
+        "starting_capital": 100000.0,
+        "current_cash": 100000.0,
+        "current_positions": {},
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      },
+      "rsi_mean_reversion": {
+        "starting_capital": 100000.0,
+        "current_cash": 100000.0,
+        "current_positions": {},
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      },
+      "breakout_20d": {
+        "starting_capital": 100000.0,
+        "current_cash": 100000.0,
+        "current_positions": {},
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      },
+      "leveraged_etf_timing": {
+        "starting_capital": 100000.0,
+        "current_cash": 100000.0,
+        "current_positions": {},
+        "total_portfolio_value": 100000.0,
+        "total_return": 0.0,
+        "total_return_pct": 0.0
+      },
+      "llm_recommendations": {
+        "starting_capital": 100000.0,
+        "current_cash": 94601.9026422646,
+        "current_positions": {
+          "QQQ": {
+            "shares": 3.372567,
+            "avg_entry_price": 593.02001953125,
+            "current_price": 593.02001953125,
+            "market_value": 1999.9997482104493,
+            "unrealized_pnl": 0.0,
+            "unrealized_pnl_pct": 0.0,
+            "entry_date": "2026-03-20"
+          },
+          "IAU": {
+            "shares": 34.336728,
+            "avg_entry_price": 87.37000274658203,
+            "current_price": 87.37000274658203,
+            "market_value": 3000.00001966864,
+            "unrealized_pnl": 0.0,
+            "unrealized_pnl_pct": 0.0,
+            "entry_date": "2026-03-20"
+          }
+        },
+        "total_portfolio_value": 99601.9024101437,
+        "total_return": -398.0975898563047,
+        "total_return_pct": -0.003980975898563047,
+        "status_message": "LLM recommended 2 position(s): IAU, QQQ"
+      }
+    }
+  },
+  "trades_today": [
+    {
+      "id": "trade_20260320_010650_QQQ",
+      "timestamp": "2026-03-20T01:06:50.795776Z",
+      "strategy": "llm_recommendations",
+      "ticker": "QQQ",
+      "action": "buy",
+      "shares": 3.372567,
+      "price": 593.02001953125,
+      "notional": 1999.9997482104493,
+      "commission": 0.0,
+      "rationale": "LLM recommendation (scaled 100.0%)",
+      "signal_data": {
+        "source": "llm",
+        "notional_requested": 2000,
+        "notional_scaled": 2000.0,
+        "scale_factor": 1.0
+      }
+    },
+    {
+      "id": "trade_20260320_010650_IAU",
+      "timestamp": "2026-03-20T01:06:50.796407Z",
+      "strategy": "llm_recommendations",
+      "ticker": "IAU",
+      "action": "buy",
+      "shares": 34.336728,
+      "price": 87.37000274658203,
+      "notional": 3000.00001966864,
+      "commission": 0.0,
+      "rationale": "LLM recommendation (scaled 100.0%)",
+      "signal_data": {
+        "source": "llm",
+        "notional_requested": 3000,
+        "notional_scaled": 3000.0,
+        "scale_factor": 1.0
+      }
+    }
+  ]
+}

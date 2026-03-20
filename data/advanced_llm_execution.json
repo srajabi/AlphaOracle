@@ -1,0 +1,37 @@
+{
+  "last_updated_utc": "2026-03-20T01:06:48.548786+00:00",
+  "account": "dev",
+  "strategy": "advanced_llm",
+  "results": [
+    {
+      "trade": {
+        "ticker": "XLE",
+        "action": "sell",
+        "qty": "all",
+        "reason": "not in top opportunities"
+      },
+      "status": "failed",
+      "reason": "{\"available\":\"18.238840698\",\"code\":40310000,\"existing_qty\":\"36.734006734\",\"held_for_orders\":\"18.495166036\",\"message\":\"insufficient qty available for order (requested: 36.734006734, available: 18.238840698)\",\"symbol\":\"XLE\"}"
+    },
+    {
+      "trade": {
+        "ticker": "XLP",
+        "action": "sell",
+        "qty": "all",
+        "reason": "not in top opportunities"
+      },
+      "status": "submitted",
+      "order_type": "close_position"
+    },
+    {
+      "trade": {
+        "ticker": "XLU",
+        "action": "sell",
+        "qty": "all",
+        "reason": "not in top opportunities"
+      },
+      "status": "submitted",
+      "order_type": "close_position"
+    }
+  ]
+}

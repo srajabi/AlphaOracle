@@ -2,6 +2,16 @@
     {
         "ticker": "XLE",
         "action": "sell",
-        "notional_value": 1100
+        "qty": 9
+    },
+    {
+        "ticker": "QQQ",
+        "action": "buy",
+        "notional_value": 2000
+    },
+    {
+        "ticker": "IAU",
+        "action": "buy",
+        "notional_value": 3000
     }
 ]
