@@ -1,6 +1,6 @@
 {
   "initialized_at": "2026-03-18T01:07:22.308371Z",
-  "updated_at": "2026-03-20T01:06:50.796792Z",
+  "updated_at": "2026-03-20T01:44:45.556562Z",
   "strategies": {
     "dual_momentum": {
       "starting_capital": 100000.0,
@@ -52,31 +52,12 @@
     },
     "llm_recommendations": {
       "starting_capital": 100000.0,
-      "current_cash": 94601.9026422646,
-      "current_positions": {
-        "QQQ": {
-          "shares": 3.372567,
-          "avg_entry_price": 593.02001953125,
-          "current_price": 593.02001953125,
-          "market_value": 1999.9997482104493,
-          "unrealized_pnl": 0.0,
-          "unrealized_pnl_pct": 0.0,
-          "entry_date": "2026-03-20"
-        },
-        "IAU": {
-          "shares": 34.336728,
-          "avg_entry_price": 87.37000274658203,
-          "current_price": 87.37000274658203,
-          "market_value": 3000.00001966864,
-          "unrealized_pnl": 0.0,
-          "unrealized_pnl_pct": 0.0,
-          "entry_date": "2026-03-20"
-        }
-      },
+      "current_cash": 99601.9024101437,
+      "current_positions": {},
       "total_portfolio_value": 99601.9024101437,
       "total_return": -398.0975898563047,
       "total_return_pct": -0.003980975898563047,
-      "status_message": "LLM recommended 2 position(s): IAU, QQQ"
+      "status_message": "No LLM buy recommendations today - staying in cash"
     }
   }
 }
