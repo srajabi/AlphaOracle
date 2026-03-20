@@ -1,6 +1,8 @@
 import os
 import json
 import csv
+import shutil
+from pathlib import Path
 from alpaca.trading.client import TradingClient
 from dotenv import load_dotenv
 from datetime import datetime, timezone
@@ -61,10 +63,16 @@ def fetch_portfolio():
 
 def write_portfolio_outputs(status_payload):
     os.makedirs("data", exist_ok=True)
-    with open("data/portfolio_status.json", "w") as f:
+    portfolio_status_file = "data/portfolio_status.json"
+    with open(portfolio_status_file, "w") as f:
         json.dump(status_payload, f, indent=2)
     if status_payload.get("ok") and status_payload.get("account") is not None:
         write_portfolio_csv(status_payload)
+
+    # Copy to frontend
+    frontend_data = Path('frontend/public/data')
+    frontend_data.mkdir(parents=True, exist_ok=True)
+    shutil.copy(portfolio_status_file, frontend_data / 'portfolio_status.json')
 
 
 def write_portfolio_csv(status_payload):

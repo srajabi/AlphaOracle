@@ -23,6 +23,7 @@ let performance = {
 
 let trades = { trades: [] };
 let alpacaTrades = { ok: false, trades: [], error: '' };
+let alpacaPortfolio = { ok: false, account: null, positions: [], error: '' };
 
 try {
   positions = JSON.parse(await fs.readFile(path.resolve('./public/data/paper_positions.json'), 'utf-8'));
@@ -47,6 +48,13 @@ try {
   alpacaTrades = JSON.parse(await fs.readFile(path.resolve('./public/data/alpaca_trades.json'), 'utf-8'));
 } catch {
   console.log('No alpaca_trades.json found');
+}
+
+// Try to load real Alpaca portfolio (Dev account)
+try {
+  alpacaPortfolio = JSON.parse(await fs.readFile(path.resolve('./public/data/portfolio_status.json'), 'utf-8'));
+} catch {
+  console.log('No portfolio_status.json found');
 }
 
 const formatDate = (isoString: string) => {
@@ -125,6 +133,66 @@ const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
         </tbody>
       </table>
     </section>
+
+    <!-- Alpaca Dev Account (Live Paper Trading) -->
+    {alpacaPortfolio.ok && alpacaPortfolio.account && (
+      <section class="panel">
+        <h2>📡 Alpaca Dev Account (Live Paper Trading)
+          <span class="badge-live">Live Data</span>
+        </h2>
+        <div class="strategy-kpis" style="margin-bottom: 1rem;">
+          <div>
+            <span>Portfolio Value</span>
+            <strong>{formatCurrency(alpacaPortfolio.account.portfolio_value)}</strong>
+          </div>
+          <div>
+            <span>Cash</span>
+            <strong>{formatCurrency(alpacaPortfolio.account.cash)}</strong>
+          </div>
+          <div>
+            <span>Equity</span>
+            <strong>{formatCurrency(alpacaPortfolio.account.equity)}</strong>
+          </div>
+          <div>
+            <span>Buying Power</span>
+            <strong>{formatCurrency(alpacaPortfolio.account.buying_power)}</strong>
+          </div>
+        </div>
+
+        {alpacaPortfolio.positions.length > 0 ? (
+          <table class="positions-table">
+            <thead>
+              <tr>
+                <th>Ticker</th>
+                <th>Shares</th>
+                <th>Entry Price</th>
+                <th>Current Price</th>
+                <th>Market Value</th>
+                <th>Unrealized P/L</th>
+              </tr>
+            </thead>
+            <tbody>
+              {alpacaPortfolio.positions.map((position) => (
+                <tr>
+                  <td><strong>{position.symbol}</strong></td>
+                  <td>{position.qty.toFixed(2)}</td>
+                  <td>{formatCurrency(position.avg_entry_price)}</td>
+                  <td>{formatCurrency(position.current_price)}</td>
+                  <td>{formatCurrency(position.market_value)}</td>
+                  <td class={position.unrealized_pl >= 0 ? 'positive' : 'negative'}>
+                    {formatCurrency(position.unrealized_pl)}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        ) : (
+          <div class="status-message">
+            <p class="status-text">No open positions - 100% cash</p>
+          </div>
+        )}
+      </section>
+    )}
 
     <!-- Strategy Details -->
     <section class="panel">
