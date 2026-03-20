@@ -9,8 +9,61 @@ from datetime import datetime, timezone
 
 load_dotenv()
 
-def fetch_portfolio():
+ACCOUNTS = {
+    "dev": {
+        "name": "Dev Account",
+        "strategy": "Advanced LLM Strategy",
+        "frequency": "2x Daily (10 AM & 3:30 PM ET)",
+        "api_key_env": "ALPACA_DEV_API_KEY",
+        "secret_key_env": "ALPACA_DEV_SECRET_KEY",
+    },
+    "prod_1": {
+        "name": "Account 1",
+        "strategy": "Standard LLM Strategy",
+        "frequency": "EOD (3:30 PM ET)",
+        "api_key_env": "ALPACA_PROD_1_API_KEY",
+        "secret_key_env": "ALPACA_PROD_1_SECRET_KEY",
+    },
+    "prod_2": {
+        "name": "Account 2",
+        "strategy": "TQQQ Momentum",
+        "frequency": "EOD (3:30 PM ET)",
+        "api_key_env": "ALPACA_PROD_2_API_KEY",
+        "secret_key_env": "ALPACA_PROD_2_SECRET_KEY",
+    },
+    "prod_3": {
+        "name": "Account 3",
+        "strategy": "Dual Momentum",
+        "frequency": "EOD (3:30 PM ET)",
+        "api_key_env": "ALPACA_PROD_3_API_KEY",
+        "secret_key_env": "ALPACA_PROD_3_SECRET_KEY",
+    },
+    "prod_4": {
+        "name": "Account 4",
+        "strategy": "Sector Rotation",
+        "frequency": "EOD (3:30 PM ET)",
+        "api_key_env": "ALPACA_PROD_4_API_KEY",
+        "secret_key_env": "ALPACA_PROD_4_SECRET_KEY",
+    },
+    "prod_5": {
+        "name": "Account 5",
+        "strategy": "Mean Reversion",
+        "frequency": "EOD (3:30 PM ET)",
+        "api_key_env": "ALPACA_PROD_5_API_KEY",
+        "secret_key_env": "ALPACA_PROD_5_SECRET_KEY",
+    },
+}
+
+def fetch_single_account(account_id, config):
+    """Fetch portfolio data for a single Alpaca account"""
+    api_key = os.getenv(config["api_key_env"])
+    secret_key = os.getenv(config["secret_key_env"])
+
     status_payload = {
+        "account_id": account_id,
+        "name": config["name"],
+        "strategy": config["strategy"],
+        "frequency": config["frequency"],
         "paper_trading": True,
         "last_updated_utc": datetime.now(timezone.utc).isoformat(),
         "ok": False,
@@ -19,14 +72,11 @@ def fetch_portfolio():
         "positions": []
     }
 
-    api_key = os.getenv("ALPACA_API_KEY")
-    secret_key = os.getenv("ALPACA_SECRET_KEY")
-    
     if not api_key or not secret_key:
-        print("ALPACA_API_KEY or ALPACA_SECRET_KEY not found. Skipping portfolio fetch.")
-        status_payload["error"] = "ALPACA_API_KEY or ALPACA_SECRET_KEY not found."
-        write_portfolio_outputs(status_payload)
-        return
+        error_msg = f"{config['api_key_env']} or {config['secret_key_env']} not found"
+        print(f"⚠️  {config['name']}: {error_msg}")
+        status_payload["error"] = error_msg
+        return status_payload
 
     try:
         trading_client = TradingClient(api_key, secret_key, paper=True)
@@ -55,22 +105,49 @@ def fetch_portfolio():
             }
             for p in positions
         ]
-        write_portfolio_outputs(status_payload)
-        print("Successfully fetched and saved Alpaca portfolio status.")
+        print(f"✅ {config['name']}: ${float(account.portfolio_value):,.2f} ({len(positions)} positions)")
 
     except Exception as e:
-        print(f"Error fetching Alpaca portfolio: {e}")
+        print(f"❌ {config['name']}: Error - {e}")
         status_payload["error"] = str(e)
-        write_portfolio_outputs(status_payload)
+
+    return status_payload
+
+def fetch_portfolio():
+    """Fetch portfolio data from all 6 Alpaca accounts"""
+    print("=" * 60)
+    print("Fetching Portfolio Data from All Alpaca Accounts")
+    print("=" * 60)
+
+    all_accounts = {}
+
+    for account_id, config in ACCOUNTS.items():
+        account_data = fetch_single_account(account_id, config)
+        all_accounts[account_id] = account_data
+
+    # Save aggregated data
+    output_data = {
+        "last_updated_utc": datetime.now(timezone.utc).isoformat(),
+        "accounts": all_accounts
+    }
+
+    write_portfolio_outputs(output_data)
+
+    # Also write portfolio.csv for Dev account (backward compatibility)
+    if all_accounts["dev"]["ok"]:
+        write_portfolio_csv(all_accounts["dev"])
+
+    print("=" * 60)
+    print("Portfolio fetch complete!")
+    print("=" * 60)
 
 
-def write_portfolio_outputs(status_payload):
+def write_portfolio_outputs(output_data):
+    """Write portfolio data to JSON files"""
     os.makedirs("data", exist_ok=True)
     portfolio_status_file = "data/portfolio_status.json"
     with open(portfolio_status_file, "w") as f:
-        json.dump(status_payload, f, indent=2)
-    if status_payload.get("ok") and status_payload.get("account") is not None:
-        write_portfolio_csv(status_payload)
+        json.dump(output_data, f, indent=2)
 
     # Copy to frontend
     frontend_data = Path('frontend/public/data')

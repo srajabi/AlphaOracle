@@ -8,7 +8,7 @@ const base = import.meta.env.BASE_URL.endsWith('/')
   : `${import.meta.env.BASE_URL}/`;
 
 let alpacaTrades = { ok: false, trades: [], error: '' };
-let alpacaPortfolio = { ok: false, account: null, positions: [], error: '', paper_trading: false, last_updated_utc: '' };
+let portfolioData = { last_updated_utc: '', accounts: {} };
 
 // Load real Alpaca trade history
 try {
@@ -17,9 +17,9 @@ try {
   console.log('No alpaca_trades.json found');
 }
 
-// Load real Alpaca portfolio (Dev account)
+// Load all Alpaca portfolios (all 6 accounts)
 try {
-  alpacaPortfolio = JSON.parse(await fs.readFile(path.resolve('./public/data/portfolio_status.json'), 'utf-8'));
+  portfolioData = JSON.parse(await fs.readFile(path.resolve('./public/data/portfolio_status.json'), 'utf-8'));
 } catch {
   console.log('No portfolio_status.json found');
 }
@@ -35,11 +35,6 @@ const formatDate = (isoString: string) => {
   });
 };
 
-const formatPercent = (value: number) => {
-  const sign = value >= 0 ? '+' : '';
-  return `${sign}${(value * 100).toFixed(2)}%`;
-};
-
 const formatCurrency = (value: number) => {
   return `$${value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 };
@@ -47,6 +42,14 @@ const formatCurrency = (value: number) => {
 const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
   ? alpacaTrades.trades.slice(0, 20)
   : [];
+
+// Calculate total portfolio value across all accounts
+const totalPortfolioValue = Object.values(portfolioData.accounts || {}).reduce((sum, account: any) => {
+  return sum + (account.ok && account.account ? account.account.portfolio_value : 0);
+}, 0);
+
+// Order accounts for display (dev first, then prod_1-5)
+const accountOrder = ['dev', 'prod_1', 'prod_2', 'prod_3', 'prod_4', 'prod_5'];
 ---
 
 <Layout title="AlphaOracle - Paper Trading">
@@ -58,85 +61,98 @@ const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
 
     <header>
       <h1>📊 Paper Trading Dashboard</h1>
-      <p class="muted">Real-time Alpaca Paper Trading Accounts</p>
-      {alpacaPortfolio.last_updated_utc && (
-        <p class="muted">Last updated: {formatDate(alpacaPortfolio.last_updated_utc)}</p>
+      <p class="muted">Real-time Alpaca Paper Trading - 6 Accounts</p>
+      {portfolioData.last_updated_utc && (
+        <p class="muted">Last updated: {formatDate(portfolioData.last_updated_utc)}</p>
       )}
+      <div class="total-value">
+        <span>Total Portfolio Value (All Accounts)</span>
+        <strong>{formatCurrency(totalPortfolioValue)}</strong>
+      </div>
     </header>
 
-    <!-- Alpaca Dev Account (Live Paper Trading) -->
-    {alpacaPortfolio.ok && alpacaPortfolio.account ? (
-      <section class="panel">
-        <h2>📡 Alpaca Dev Account (Advanced LLM Strategy)
-          <span class="badge-live">Live Data</span>
-        </h2>
-        <p class="muted" style="margin-bottom: 1rem;">
-          Sophisticated LLM agent trading 2x daily (10 AM & 3:30 PM ET) with multi-source analysis and dynamic position sizing
-        </p>
-        <div class="strategy-kpis" style="margin-bottom: 1rem;">
-          <div>
-            <span>Portfolio Value</span>
-            <strong>{formatCurrency(alpacaPortfolio.account.portfolio_value)}</strong>
-          </div>
-          <div>
-            <span>Cash</span>
-            <strong>{formatCurrency(alpacaPortfolio.account.cash)}</strong>
-          </div>
-          <div>
-            <span>Equity (Positions)</span>
-            <strong>{formatCurrency(alpacaPortfolio.account.equity)}</strong>
-          </div>
-          <div>
-            <span>Buying Power</span>
-            <strong>{formatCurrency(alpacaPortfolio.account.buying_power)}</strong>
-          </div>
-        </div>
+    <!-- Display all 6 Alpaca accounts -->
+    {accountOrder.map(accountId => {
+      const account = portfolioData.accounts?.[accountId];
+      if (!account) return null;
 
-        {alpacaPortfolio.positions.length > 0 ? (
-          <table class="positions-table">
-            <thead>
-              <tr>
-                <th>Ticker</th>
-                <th>Shares</th>
-                <th>Entry Price</th>
-                <th>Current Price</th>
-                <th>Market Value</th>
-                <th>Unrealized P/L</th>
-              </tr>
-            </thead>
-            <tbody>
-              {alpacaPortfolio.positions.map((position) => (
-                <tr>
-                  <td><strong>{position.symbol}</strong></td>
-                  <td>{position.qty.toFixed(2)}</td>
-                  <td>{formatCurrency(position.avg_entry_price)}</td>
-                  <td>{formatCurrency(position.current_price)}</td>
-                  <td>{formatCurrency(position.market_value)}</td>
-                  <td class={position.unrealized_pl >= 0 ? 'positive' : 'negative'}>
-                    {formatCurrency(position.unrealized_pl)}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        ) : (
-          <div class="status-message">
-            <p class="status-text">No open positions - 100% cash</p>
+      return (
+        <section class="panel">
+          <h2>
+            {accountId === 'dev' ? '📡' : '💼'} {account.name}
+            {account.ok && <span class="badge-live">Live Data</span>}
+          </h2>
+          <div class="account-meta">
+            <span class="strategy-name">{account.strategy}</span>
+            <span class="frequency-badge">{account.frequency}</span>
           </div>
-        )}
-      </section>
-    ) : (
-      <section class="panel">
-        <h2>📡 Alpaca Dev Account</h2>
-        <div class="status-message">
-          <p class="status-text">⚠️ Unable to load Alpaca portfolio data. Check if fetch_alpaca_portfolio.py ran successfully.</p>
-        </div>
-      </section>
-    )}
 
-    <!-- Recent Trades -->
+          {account.ok && account.account ? (
+            <>
+              <div class="strategy-kpis" style="margin: 1rem 0;">
+                <div>
+                  <span>Portfolio Value</span>
+                  <strong>{formatCurrency(account.account.portfolio_value)}</strong>
+                </div>
+                <div>
+                  <span>Cash</span>
+                  <strong>{formatCurrency(account.account.cash)}</strong>
+                </div>
+                <div>
+                  <span>Equity (Positions)</span>
+                  <strong>{formatCurrency(account.account.equity)}</strong>
+                </div>
+                <div>
+                  <span>Buying Power</span>
+                  <strong>{formatCurrency(account.account.buying_power)}</strong>
+                </div>
+              </div>
+
+              {account.positions.length > 0 ? (
+                <table class="positions-table">
+                  <thead>
+                    <tr>
+                      <th>Ticker</th>
+                      <th>Shares</th>
+                      <th>Entry Price</th>
+                      <th>Current Price</th>
+                      <th>Market Value</th>
+                      <th>Unrealized P/L</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {account.positions.map((position) => (
+                      <tr>
+                        <td><strong>{position.symbol}</strong></td>
+                        <td>{position.qty.toFixed(2)}</td>
+                        <td>{formatCurrency(position.avg_entry_price)}</td>
+                        <td>{formatCurrency(position.current_price)}</td>
+                        <td>{formatCurrency(position.market_value)}</td>
+                        <td class={position.unrealized_pl >= 0 ? 'positive' : 'negative'}>
+                          {formatCurrency(position.unrealized_pl)}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              ) : (
+                <div class="status-message">
+                  <p class="status-text">No open positions - 100% cash</p>
+                </div>
+              )}
+            </>
+          ) : (
+            <div class="status-message error">
+              <p class="status-text">⚠️ Unable to load account data: {account.error}</p>
+            </div>
+          )}
+        </section>
+      );
+    })}
+
+    <!-- Recent Trades from Dev Account -->
     <section class="panel">
-      <h2>📝 Recent Trades from Alpaca Dev Account (Last 20)
+      <h2>📝 Recent Trades from Dev Account (Last 20)
         {alpacaTrades.ok && <span class="badge-live">Live Data</span>}
       </h2>
       {recentTrades.length > 0 ? (
@@ -170,17 +186,22 @@ const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
         </table>
       ) : (
         <div class="status-message">
-          <p class="status-text">No trades executed yet on the Alpaca Dev account</p>
+          <p class="status-text">No trades executed yet on the Dev account</p>
         </div>
       )}
     </section>
 
     <footer class="info-footer">
-      <p><strong>About Paper Trading:</strong> All 6 Alpaca accounts (Dev, PROD_1-5) are paper trading accounts using Alpaca's API.
+      <p><strong>About Paper Trading:</strong> All 6 Alpaca accounts are paper trading accounts using Alpaca's API.
       No real capital is at risk. The system executes trades automatically based on LLM analysis and rule-based strategies.</p>
-      <p><strong>Dev Account:</strong> Advanced LLM strategy with 2x daily execution (10 AM & 3:30 PM ET)</p>
-      <p><strong>PROD_1:</strong> Standard LLM strategy with EOD execution (3:30 PM ET only)</p>
-      <p><strong>PROD_2-5:</strong> Rule-based strategies (TQQQ Momentum, Dual Momentum, Sector Rotation, Mean Reversion) - EOD only</p>
+      <ul>
+        <li><strong>Dev Account:</strong> Advanced LLM strategy with 2x daily execution (10 AM & 3:30 PM ET)</li>
+        <li><strong>Account 1:</strong> Standard LLM strategy with EOD execution (3:30 PM ET)</li>
+        <li><strong>Account 2:</strong> TQQQ Momentum - EOD only</li>
+        <li><strong>Account 3:</strong> Dual Momentum - EOD only</li>
+        <li><strong>Account 4:</strong> Sector Rotation - EOD only</li>
+        <li><strong>Account 5:</strong> Mean Reversion - EOD only</li>
+      </ul>
     </footer>
   </main>
 </Layout>
@@ -222,6 +243,28 @@ const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
     font-size: 0.9rem;
   }
 
+  .total-value {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #1e2230;
+    border-radius: 6px;
+    border: 2px solid #2962ff;
+  }
+
+  .total-value span {
+    color: #8f949e;
+    font-size: 0.9rem;
+  }
+
+  .total-value strong {
+    color: #2962ff;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
   .panel {
     background: #131722;
     border: 1px solid #2a2e39;
@@ -232,7 +275,29 @@ const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
 
   h2 {
     font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .account-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
     margin-bottom: 1rem;
+  }
+
+  .strategy-name {
+    color: #c4d4ff;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .frequency-badge {
+    background: rgba(41, 98, 255, 0.2);
+    color: #2962ff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
   }
 
   table {
@@ -265,36 +330,6 @@ const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
   .negative {
     color: #ef4444;
     font-weight: 600;
-  }
-
-  .strategy-link {
-    color: #f8f9fa;
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-
-  .strategy-link:hover {
-    color: #2962ff;
-    text-decoration: underline;
-  }
-
-  .strategy-card {
-    border: 1px solid #2a2e39;
-    border-radius: 6px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    background: #0d111b;
-  }
-
-  .strategy-header {
-    margin-bottom: 1rem;
-  }
-
-  .strategy-header h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
-    text-transform: capitalize;
-    color: #f8f9fa;
   }
 
   .strategy-kpis {
@@ -335,12 +370,6 @@ const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
     font-weight: 600;
   }
 
-  .rationale {
-    font-size: 0.85rem;
-    color: #8f949e;
-    max-width: 300px;
-  }
-
   .info-footer {
     background: #131722;
     border: 1px solid #2a2e39;
@@ -350,6 +379,16 @@ const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
   }
 
   .info-footer p {
+    margin: 0.5rem 0;
+    color: #d1d4dc;
+  }
+
+  .info-footer ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .info-footer li {
     margin: 0.5rem 0;
     color: #d1d4dc;
   }
@@ -375,6 +414,11 @@ const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
     margin-top: 0.5rem;
   }
 
+  .status-message.error {
+    background: rgba(239, 68, 68, 0.1);
+    border-left-color: #ef4444;
+  }
+
   .status-text {
     margin: 0;
     color: #f8f9fa;
@@ -396,6 +440,10 @@ const recentTrades = alpacaTrades.ok && alpacaTrades.trades.length > 0
 
     .strategy-kpis {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .total-value strong {
+      font-size: 1.4rem;
     }
   }
 </style>
