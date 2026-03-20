@@ -2,16 +2,11 @@
     {
         "ticker": "XLE",
         "action": "sell",
-        "qty": 9
+        "qty": 18.367
     },
     {
-        "ticker": "QQQ",
-        "action": "buy",
-        "notional_value": 2000
-    },
-    {
-        "ticker": "IAU",
-        "action": "buy",
-        "notional_value": 3000
+        "ticker": "XLP",
+        "action": "sell",
+        "qty": "all"
     }
 ]

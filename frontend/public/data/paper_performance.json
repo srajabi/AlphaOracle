@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T01:06:50.797798Z",
+  "updated_at": "2026-03-20T01:44:45.557554Z",
   "period_start": "2026-03-18T01:07:22.308371Z",
   "period_end": "2026-03-20",
   "strategies": {
@@ -74,11 +74,11 @@
       "current_value": 99601.9024101437,
       "total_return": -398.0975898563047,
       "total_return_pct": -0.003980975898563047,
-      "current_positions": 2,
-      "cash_pct": 0.9498001579599359,
-      "equity_pct": 0.05019984204006411,
-      "trades_total": 19,
-      "trades_executed": 19
+      "current_positions": 0,
+      "cash_pct": 1.0,
+      "equity_pct": 0.0,
+      "trades_total": 21,
+      "trades_executed": 21
     }
   },
   "rankings": {
