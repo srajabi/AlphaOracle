@@ -1,8 +1,98 @@
 {
-  "last_updated_utc": "2026-03-20T02:00:55.401386+00:00",
+  "last_updated_utc": "2026-03-27T20:47:12.952921+00:00",
   "ok": true,
   "error": "",
   "trades": [
+    {
+      "id": "40f8095c-6587-48fb-9e45-0b55181ea208",
+      "timestamp": "2026-03-20T15:23:46.157334+00:00",
+      "side": "sell",
+      "symbol": "XLE",
+      "qty": 9.286916344,
+      "price": 60.077537,
+      "notional": 557.9350602725647,
+      "type": "market"
+    },
+    {
+      "id": "4a6b6655-1a7e-46a5-90bf-e641f95f5052",
+      "timestamp": "2026-03-20T15:23:45.053771+00:00",
+      "side": "sell",
+      "symbol": "QQQ",
+      "qty": 3.3932327,
+      "price": 587.291258,
+      "notional": 1992.8159010697366,
+      "type": "market"
+    },
+    {
+      "id": "401d6cad-fa8c-480a-b07e-71bed579671d",
+      "timestamp": "2026-03-20T15:23:44.218142+00:00",
+      "side": "sell",
+      "symbol": "IAU",
+      "qty": 34.191930704,
+      "price": 86.04,
+      "notional": 2941.8737177721605,
+      "type": "market"
+    },
+    {
+      "id": "2e4bd588-ba41-4cd9-9705-a30eea1857e8",
+      "timestamp": "2026-03-20T13:33:46.540585+00:00",
+      "side": "sell",
+      "symbol": "XLE",
+      "qty": 9.0,
+      "price": 59.755556,
+      "notional": 537.800004,
+      "type": "market"
+    },
+    {
+      "id": "1f3d12bb-14f6-481c-b46f-b1f741e050dc",
+      "timestamp": "2026-03-20T13:33:41.746729+00:00",
+      "side": "sell",
+      "symbol": "XLP",
+      "qty": 53.174384596,
+      "price": 82.208077,
+      "notional": 4371.3639032955825,
+      "type": "market"
+    },
+    {
+      "id": "531ad32c-d9f8-4a04-97f6-3b91a3411284",
+      "timestamp": "2026-03-20T13:32:27.167561+00:00",
+      "side": "buy",
+      "symbol": "QQQ",
+      "qty": 3.3932327,
+      "price": 589.408442,
+      "notional": 1999.9999990504534,
+      "type": "market"
+    },
+    {
+      "id": "56c8f12a-ec6b-4d94-9b4b-7d7d50b27440",
+      "timestamp": "2026-03-20T13:32:15.427708+00:00",
+      "side": "sell",
+      "symbol": "XLU",
+      "qty": 275.958981463,
+      "price": 46.551373,
+      "notional": 12846.269478784197,
+      "type": "market"
+    },
+    {
+      "id": "3cff1b09-716d-4063-b0f9-ffbc25372206",
+      "timestamp": "2026-03-20T13:31:17.861043+00:00",
+      "side": "sell",
+      "symbol": "XLE",
+      "qty": 18.44709039,
+      "price": 59.63,
+      "notional": 1099.9999999557,
+      "type": "market"
+    },
+    {
+      "id": "bb2a2f0a-905c-4227-b893-a3cf4d6ec31b",
+      "timestamp": "2026-03-20T13:30:13.819211+00:00",
+      "side": "buy",
+      "symbol": "IAU",
+      "qty": 34.191930704,
+      "price": 87.74,
+      "notional": 2999.99999996896,
+      "type": "market"
+    },
     {
       "id": "3fad31f0-0873-45fd-90a9-d8ca7d95b9e6",
       "timestamp": "2026-03-19T15:28:56.008430+00:00",
@@ -84,6 +174,6 @@
       "type": "market"
     }
   ],
-  "total_trades": 8,
+  "total_trades": 17,
   "period_days": 30
 }

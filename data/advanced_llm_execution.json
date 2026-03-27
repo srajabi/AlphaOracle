@@ -1,37 +1,6 @@
 {
-  "last_updated_utc": "2026-03-20T02:11:01.033255+00:00",
+  "last_updated_utc": "2026-03-27T21:02:42.382365+00:00",
   "account": "dev",
   "strategy": "advanced_llm",
-  "results": [
-    {
-      "trade": {
-        "ticker": "XLE",
-        "action": "sell",
-        "qty": "all",
-        "reason": "not in top opportunities"
-      },
-      "status": "failed",
-      "reason": "{\"available\":\"9.238840698\",\"code\":40310000,\"existing_qty\":\"36.734006734\",\"held_for_orders\":\"27.495166036\",\"message\":\"insufficient qty available for order (requested: 36.734006734, available: 9.238840698)\",\"symbol\":\"XLE\"}"
-    },
-    {
-      "trade": {
-        "ticker": "XLP",
-        "action": "sell",
-        "qty": "all",
-        "reason": "not in top opportunities"
-      },
-      "status": "failed",
-      "reason": "{\"available\":\"0\",\"code\":40310000,\"existing_qty\":\"53.174384596\",\"held_for_orders\":\"53.174384596\",\"message\":\"insufficient qty available for order (requested: 53.174384596, available: 0)\",\"symbol\":\"XLP\"}"
-    },
-    {
-      "trade": {
-        "ticker": "XLU",
-        "action": "sell",
-        "qty": "all",
-        "reason": "not in top opportunities"
-      },
-      "status": "failed",
-      "reason": "{\"available\":\"0\",\"code\":40310000,\"existing_qty\":\"275.958981463\",\"held_for_orders\":\"275.958981463\",\"message\":\"insufficient qty available for order (requested: 275.958981463, available: 0)\",\"symbol\":\"XLU\"}"
-    }
-  ]
+  "results": []
 }

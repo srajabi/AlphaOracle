@@ -1,7 +1,17 @@
 [
     {
+        "ticker": "XLE",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
         "ticker": "XLP",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 5000
+    },
+    {
+        "ticker": "XLV",
+        "action": "buy",
+        "notional_value": 5000
     }
 ]
