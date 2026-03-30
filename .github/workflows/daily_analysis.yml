@@ -45,10 +45,20 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Sync Portfolio State From Alpaca (Dev Account)
+      - name: Sync Portfolio State From Alpaca (All 6 Accounts)
         env:
-          ALPACA_API_KEY: ${{ secrets.ALPACA_DEV_API_KEY }}
-          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_DEV_SECRET_KEY }}
+          ALPACA_DEV_API_KEY: ${{ secrets.ALPACA_DEV_API_KEY }}
+          ALPACA_DEV_SECRET_KEY: ${{ secrets.ALPACA_DEV_SECRET_KEY }}
+          ALPACA_PROD_1_API_KEY: ${{ secrets.ALPACA_PROD_1_API_KEY }}
+          ALPACA_PROD_1_SECRET_KEY: ${{ secrets.ALPACA_PROD_1_SECRET_KEY }}
+          ALPACA_PROD_2_API_KEY: ${{ secrets.ALPACA_PROD_2_API_KEY }}
+          ALPACA_PROD_2_SECRET_KEY: ${{ secrets.ALPACA_PROD_2_SECRET_KEY }}
+          ALPACA_PROD_3_API_KEY: ${{ secrets.ALPACA_PROD_3_API_KEY }}
+          ALPACA_PROD_3_SECRET_KEY: ${{ secrets.ALPACA_PROD_3_SECRET_KEY }}
+          ALPACA_PROD_4_API_KEY: ${{ secrets.ALPACA_PROD_4_API_KEY }}
+          ALPACA_PROD_4_SECRET_KEY: ${{ secrets.ALPACA_PROD_4_SECRET_KEY }}
+          ALPACA_PROD_5_API_KEY: ${{ secrets.ALPACA_PROD_5_API_KEY }}
+          ALPACA_PROD_5_SECRET_KEY: ${{ secrets.ALPACA_PROD_5_SECRET_KEY }}
         run: python src/fetch_alpaca_portfolio.py
 
       - name: Fetch Trade History From Alpaca (Dev Account)
@@ -173,10 +183,20 @@ jobs:
           python src/strategies/strategy_executor.py --strategy mean --account 5
           echo ""
 
-      - name: Fetch Live Portfolio State (Dev Account)
+      - name: Fetch Live Portfolio State (All 6 Accounts)
         env:
-          ALPACA_API_KEY: ${{ secrets.ALPACA_DEV_API_KEY }}
-          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_DEV_SECRET_KEY }}
+          ALPACA_DEV_API_KEY: ${{ secrets.ALPACA_DEV_API_KEY }}
+          ALPACA_DEV_SECRET_KEY: ${{ secrets.ALPACA_DEV_SECRET_KEY }}
+          ALPACA_PROD_1_API_KEY: ${{ secrets.ALPACA_PROD_1_API_KEY }}
+          ALPACA_PROD_1_SECRET_KEY: ${{ secrets.ALPACA_PROD_1_SECRET_KEY }}
+          ALPACA_PROD_2_API_KEY: ${{ secrets.ALPACA_PROD_2_API_KEY }}
+          ALPACA_PROD_2_SECRET_KEY: ${{ secrets.ALPACA_PROD_2_SECRET_KEY }}
+          ALPACA_PROD_3_API_KEY: ${{ secrets.ALPACA_PROD_3_API_KEY }}
+          ALPACA_PROD_3_SECRET_KEY: ${{ secrets.ALPACA_PROD_3_SECRET_KEY }}
+          ALPACA_PROD_4_API_KEY: ${{ secrets.ALPACA_PROD_4_API_KEY }}
+          ALPACA_PROD_4_SECRET_KEY: ${{ secrets.ALPACA_PROD_4_SECRET_KEY }}
+          ALPACA_PROD_5_API_KEY: ${{ secrets.ALPACA_PROD_5_API_KEY }}
+          ALPACA_PROD_5_SECRET_KEY: ${{ secrets.ALPACA_PROD_5_SECRET_KEY }}
         run: python src/fetch_alpaca_portfolio.py
 
       - name: Setup Node.js
