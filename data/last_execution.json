@@ -1,15 +1,24 @@
 {
-  "last_updated_utc": "2026-03-19T20:58:48.940917+00:00",
+  "last_updated_utc": "2026-03-30T20:57:20.056014+00:00",
   "error": "",
   "results": [
     {
       "trade": {
         "ticker": "XLE",
         "action": "sell",
-        "notional_value": 1100
+        "notional_value": 1150
+      },
+      "status": "failed",
+      "reason": "{\"code\":42210000,\"message\":\"fractional orders cannot be sold short\"}"
+    },
+    {
+      "trade": {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 4350
       },
       "status": "submitted",
-      "order_id": "3cff1b09-716d-4063-b0f9-ffbc25372206"
+      "order_id": "5cef740e-6423-475c-837a-993d7bf00772"
     }
   ]
 }
