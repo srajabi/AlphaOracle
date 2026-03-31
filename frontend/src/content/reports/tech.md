@@ -5,269 +5,220 @@ date: "2026-03-31"
 
 ## Model: deepseek/deepseek-reasoner
 
-**Technical Market Overview - Bear Volatile Regime**
+## Technical Analysis Summary
+Based on price action and technical indicators (moving averages, RSI, MACD, Bollinger Bands) as of 2026-03-31 close.
 
-**Broad Market Condition:**
-- **SPY/QQQ/VOO:** All deeply oversold (RSI < 28), trading below lower Bollinger Bands, and below all key moving averages. This suggests an extreme short-term oversold condition ripe for a mean-reversion bounce, but within a clear medium-term downtrend.
-- **VIX Elevated (30.61):** Above all SMAs with RSI > 60, confirming high fear and potential for volatility contraction on any market stabilization.
-- **Sector Rotation:** Defensive/commodity sectors (XLE, UUP) show relative strength and overbought conditions (RSI > 65), while growth/technology sectors (XLK, XLC) are deeply oversold.
+### Key Observations:
+- **Broad Market Oversold**: Major indices (SPY, QQQ, VTI, IWM, DIA) and leveraged ETFs (SSO, UPRO, TQQQ) show extreme oversold conditions (RSI <30, price at or below lower Bollinger Band), suggesting a potential mean-reversion bounce.
+- **Sector Divergence**: Energy (XLE) remains in a strong uptrend but overbought; Utilities (XLU) hold uptrend; Technology (XLK) and Communications (XLC) are oversold.
+- **Volatility Elevated**: VIX above all moving averages and near upper Bollinger Band, indicating heightened fear but potential for a pullback.
+- **Dollar Strength**: UUP in uptrend and overbought, consistent with risk-off flows.
 
-**High-Probability Mean-Reversion Bounce Setups (Oversold & High Liquidity):**
+---
 
-| Ticker | Price | Setup Rationale |
-|--------|-------|-----------------|
-| **SPY** | 631.97 | RSI 27.7, below lower BB, extreme oversold in broad market ETF. High liquidity bounce candidate. |
-| **QQQ** | 558.28 | RSI 28.9, below lower BB, Nasdaq 100 proxy showing capitulation-like selling. |
-| **MSFT** | 358.96 | RSI 24.8, near lower BB, mega-cap with institutional support likely near-term. |
-| **GOOGL** | 273.50 | RSI 24.9, below lower BB, extreme oversold in a core tech name. |
-| **META** | 536.38 | RSI 27.3, near lower BB, oversold after severe decline. |
+### Detailed Setups by Category:
 
-**Trend Continuation Candidates (Uptrend but Overbought):**
+#### 1. Mean Reversion Bounce Candidates (Oversold)
+*These tickers show oversold RSI (<30) and/or price at or below lower Bollinger Band, suggesting potential for a tactical bounce. Note: many are in downtrends, so any bounce may be short-term.*
 
-| Ticker | Price | Setup Rationale |
-|--------|-------|-----------------|
-| **XLE** | 61.96 | RSI 77.4, above all SMAs, strong uptrend but extended. Wait for pullback to SMA20 (58.26) for entry. |
-| **UUP** | 27.98 | RSI 66.9, above all SMAs, dollar strength trend intact but overbought. Potential consolidation. |
+| Ticker | Close | RSI | Setup Rationale |
+|--------|-------|-----|-----------------|
+| **SPY** | 631.97 | 27.7 | RSI oversold, price at lower BB, MACD negative. |
+| **QQQ** | 558.28 | 28.9 | RSI oversold, price below lower BB, strong downtrend. |
+| **VTI** | 311.68 | 28.6 | RSI oversold, price at lower BB, below all MAs. |
+| **IWM** | 239.61 | 35.6 | Price at lower BB, RSI near oversold, below all MAs. |
+| **DIA** | 452.06 | 30.4 | RSI oversold, price at lower BB, below all MAs. |
+| **SSO** | 49.06 | 27.3 | RSI oversold, price at lower BB, 2x leveraged SPY. |
+| **UPRO** | 89.29 | 27.2 | RSI oversold, price at lower BB, 3x leveraged SPY. |
+| **TQQQ** | 37.89 | 28.6 | RSI oversold, price below lower BB, 3x leveraged QQQ. |
+| **META** | 536.38 | 27.3 | RSI oversold, price at lower BB, steep downtrend. |
+| **MSFT** | 358.96 | 24.8 | RSI oversold, price at lower BB, below all MAs. |
+| **GOOGL** | 273.50 | 24.9 | RSI oversold, price below lower BB, above SMA200. |
+| **NVDA** | 165.17 | 34.0 | Price below lower BB, RSI neutral but extreme selloff. |
+| **PLTR** | 137.55 | 38.7 | Price below lower BB, RSI neutral but oversold relative to bands. |
+| **AVGO** | 293.41 | 33.8 | Price below lower BB, RSI neutral but oversold relative to bands. |
+| **MU** | 321.80 | 31.7 | Price below lower BB, RSI oversold, above SMA200. |
+| **TSLA** | 355.28 | 31.8 | Price below lower BB, RSI oversold, below all MAs. |
+| **INTC** | 41.19 | 40.3 | Price below lower BB, RSI neutral but oversold relative to bands. |
+| **TSM** | 316.50 | 36.7 | Price below lower BB, RSI neutral but oversold relative to bands. |
+| **XLK** | 127.50 | 29.9 | Price below lower BB, RSI oversold, below all MAs. |
+| **XLC** | 107.96 | 28.5 | RSI oversold, price at lower BB, below all MAs. |
+| **PSTG** | 56.99 | 35.1 | Price below lower BB, RSI neutral but oversold relative to bands. |
+| **ORCL** | 138.80 | 36.2 | Price at lower BB, RSI neutral but oversold relative to bands. |
+| **QUAL** | 186.49 | 27.3 | RSI oversold, price at lower BB, below all MAs. |
+| **XLI** | 156.61 | 29.4 | RSI oversold, price at lower BB, near SMA200 support. |
+| **XLY** | 105.66 | 31.0 | RSI oversold, price at lower BB, below all MAs. |
+| **XLV** | 143.82 | 30.6 | RSI oversold, price near lower BB, above SMA200. |
+| **VT** | 134.19 | 31.9 | RSI oversold, price at lower BB, below all MAs. |
+| **VOO** | 580.93 | 27.8 | RSI oversold, price at lower BB, below all MAs. |
 
-**Cash-Secured Put Opportunities (Oversold with Long-Term Support):**
+#### 2. Overbought / Pullback Candidates
+*These tickers show overbought RSI (>70) and/or price at upper Bollinger Band, suggesting potential for a pullback.*
 
-| Ticker | Strike (Put) | Rationale |
-|--------|--------------|-----------|
-| **AAPL** | 232.5 (Apr17) | Above SMA200 (247.94), oversold condition. Selling puts below current spot offers 2.5-3% premium for 17 DTE. |
-| **AMZN** | 195.0 (Apr17) | Above SMA200 (224.61), RSI near 40. Premiums ~1.5% for 17 DTE to enter at ~5.5% discount. |
+| Ticker | Close | RSI | Setup Rationale |
+|--------|-------|-----|-----------------|
+| **XLE** | 61.96 | 77.4 | RSI overbought, price near upper BB, strong uptrend. |
+| **^VIX** | 30.61 | 62.9 | Price at upper BB, RSI elevated, uptrend but extended. |
+| **UUP** | 27.98 | 66.9 | RSI overbought, price at upper BB, strong uptrend. |
 
-**Cautionary Notes:**
-1. **Trend is Your Friend:** Most bounces in a bear volatile regime are short-lived. Consider shorter-duration trades (1-2 weeks) for oversold reversions.
-2. **Volatility Contraction Likely:** As VIX is elevated, any stabilization could lead to rapid volatility compression, benefiting option sellers.
-3. **Sector Divergence:** Energy (XLE) and Utilities (XLU) show relative strength, suggesting defensive positioning remains.
+#### 3. Trend Continuation (Uptrend)
+*Price above all key moving averages with bullish alignment (SMA20 > SMA50 > SMA200).*
 
-**Actionable Summary:**
-- **Aggressive Traders:** Consider short-duration long calls on SPY/QQQ/MSFT for oversold bounce (use April 17/24 expirations).
-- **Income/Entry Focused:** Sell cash-secured puts on AAPL/AMZN at strikes 5-6% below spot to capitalize on elevated premiums.
-- **Risk-Averse:** Wait for SPY/QQQ to reclaim 5-day moving average or VIX to break below 25 before considering long equity exposure.
+| Ticker | Close | SMA Alignment | Notes |
+|--------|-------|---------------|-------|
+| **XLE** | 61.96 | 20>50>200 | Strong uptrend, but overbought. |
+| **MTZ** | 305.80 | 20>50>200 | Uptrend intact, but MACD histogram turning negative. |
+| **XLU** | 45.92 | 20>50>200 | Steady uptrend, defensive sector. |
+| **UUP** | 27.98 | 20>50>200 | USD strength trend, but overbought. |
 
-*Note: All setups based solely on price action. Monitor for any breakdown below recent lows (violation of lower BB) which would invalidate bounce thesis and suggest further downside.*
+#### 4. Trend Continuation (Downtrend)
+*Price below all key moving averages with bearish alignment (SMA20 < SMA50 < SMA200).*
+
+| Ticker | Close | SMA Alignment | Notes |
+|--------|-------|---------------|-------|
+| **SPY** | 631.97 | 20<50<200 | Broad market downtrend. |
+| **QQQ** | 577.18 | 20<50<200 | Tech-heavy downtrend. |
+| **XLK** | 127.50 | 20<50<200 | Technology sector downtrend. |
+| **CRWD** | 380.06 | 20<50<200 | Cybersecurity downtrend. |
+| **TLN** | 313.03 | 20<50<200 | Energy/power downtrend. |
+| *Many others* | | | Majority of tickers are in downtrends. |
+
+#### 5. Volatility Contraction Squeeze Candidates
+*Bollinger Band width (upper-lower) is relatively narrow compared to recent history, indicating low volatility and potential for a sharp move. Note: requires historical comparison not fully available in snapshot, but these show below-average band width relative to recent price range.*
+
+| Ticker | BB Width (% of close) | Squeeze Potential |
+|--------|-----------------------|-------------------|
+| **SCHD** | ~3.9% | Low volatility, dividend ETF often coils before move. |
+| **XLU** | ~6.4% | Defensive sector in tight range. |
+| **XLP** | ~9.6% | Consumer staples in narrow band. |
+| **TLT** | ~5.3% | Bonds in low volatility zone. |
+
+#### 6. Failed Setups / Breakdowns
+*Price broke below support (lower Bollinger Band or key moving average) and remains weak, suggesting continuation of downtrend.*
+
+| Ticker | Close | Breakdown Level | Rationale |
+|--------|-------|-----------------|-----------|
+| **NVDA** | 165.17 | Below lower BB | Breakdown from consolidation, no bounce yet. |
+| **PLTR** | 137.55 | Below lower BB | Broke below support, volume elevated. |
+| **TSLA** | 355.28 | Below lower BB | Breakdown from volatile range. |
+| **INTC** | 41.19 | Below lower BB | Broke below recent support. |
+
+#### 7. Neutral / Mixed Signals
+*Price between moving averages, RSI neutral (40-60), no clear directional bias.*
+
+| Ticker | Close | RSI | Rationale |
+|--------|-------|-----|-----------|
+| **IAU** | 84.93 | 38.3 | Between MAs, RSI neutral. |
+| **CEG** | 298.61 | 47.3 | Above SMA50 but below SMA20, mixed. |
+| **EWC** | 53.42 | 37.2 | Near SMA200, neutral. |
+| **KLAC** | 1382.58 | 41.0 | Above SMA200 but below others, neutral. |
+| **AMD** | 196.04 | 44.7 | Above SMA200 but below others, neutral. |
+| **NFLX** | 92.97 | 53.5 | Between MAs, RSI neutral. |
+| **GLD** | 414.58 | 38.4 | Above SMA200 but below others, neutral. |
+| **SLV** | 63.52 | 40.1 | Above SMA200 but below others, neutral. |
+
+---
+
+### Overall Market Implication:
+The market is in a **broad oversold condition** with extreme fear (VIX elevated). This sets up for a potential relief rally (mean reversion bounce), but the underlying trend remains bearish for most sectors except Energy and Utilities. Any bounce should be viewed as tactical unless key resistance levels (e.g., SMA20) are reclaimed. Watch for volatility contraction in defensive sectors (XLU, XLP) for next directional move.
+
+**Next Key Levels:** 
+- SPY: Resistance at SMA20 (~662), support at lower BB (~634).
+- QQQ: Resistance at SMA20 (~593), support at lower BB (~564).
+- XLE: Support at SMA20 (~58.26), resistance at upper BB (~62.66).
 
 ---
 
 ## Model: gemini/gemini-2.5-flash
 
-As a Technical Analyst, I am focusing purely on price action and technical indicators as instructed, disregarding any fundamental or news-driven narratives. The market is currently in a "Bear Volatile" regime, which means we should generally expect downward pressure, but also potential for sharp, corrective bounces from oversold conditions.
+Here's a technical analysis of the provided assets, focusing purely on price action and the specified technical indicators, ignoring all external news and macroeconomic context:
 
-Here's an evaluation of the technical setups for each ticker:
+**Overall Market Technical Posture (Based on Indices & Broad Market ETFs):**
 
----
+The market is in a pronounced **downtrend continuation** with many assets showing signs of being **extended to the downside and ripe for a mean reversion bounce**. Volatility remains elevated.
 
-**Technical Setups by Ticker (2026-03-31):**
+*   **SPY, VOO, QQQ, VTI, SSO, UPRO, TQQQ (Broad Market & Leveraged ETFs):** All these core market indices and their leveraged counterparts are exhibiting very similar technical patterns:
+    *   **Price Action:** Significantly below 20-SMA, 50-SMA, and 200-SMA (where applicable to their short-term nature), indicating strong downtrends across all relevant timeframes.
+    *   **RSI (14):** Deeply oversold, mostly in the 27-29 range (e.g., SPY 27.73, VOO 27.76, QQQ 28.86, VTI 28.60, SSO 27.32, UPRO 27.21, TQQQ 28.62). This suggests these assets are technically oversold and could be due for a short-term bounce.
+    *   **MACD:** Shows strong, consistently negative, and often widening MACD histograms (e.g., SPY -2.86, QQQ -3.54, VTI -1.34), indicating significant and accelerating bearish momentum.
+    *   **Bollinger Bands:** Price is at or slightly below the lower Bollinger Band for most, confirming an extended move to the downside.
+    *   **Setup:** **Mean Reversion Bounce (in a strong downtrend).** While oversold conditions point to a potential short-term bounce, the powerful bearish momentum signaled by MACD suggests that any rebound may be a relief rally within a larger, ongoing downtrend rather than a true reversal.
 
-1.  **STX (Seagate Technology):**
-    *   **Analysis:** Price is in a short-to-medium term downtrend (below SMA_20, SMA_50), but remains well above SMA_200, suggesting a long-term bullish trend undergoing a severe correction. RSI is bearish but not oversold (42.52). MACD histogram is deeply negative, indicating strong bearish momentum. Price is within the Bollinger Bands, with room to the downside.
-    *   **Setup:** **Trend Continuation (Bearish)**. The strong negative momentum suggests further downside is likely before a significant bounce, despite the long-term bullish trend.
+*   **IWM (Russell 2000 Small Caps):** Similar to large-cap indices, IWM is in a strong downtrend, below all major SMAs, RSI at 35.62 (approaching oversold), strong bearish MACD momentum, and near the lower Bollinger Band.
+    *   **Setup:** **Strong downtrend continuation / Extended to downside.** Likely to follow the broader market indices for a potential mean reversion bounce.
 
-2.  **VOO (Vanguard S&P 500 ETF):**
-    *   **Analysis:** Price is in a strong bearish trend across all timeframes (below SMA_20, SMA_50, and SMA_200). RSI is significantly oversold (27.76). Price has breached the lower Bollinger Band. MACD shows strong bearish momentum but the histogram's magnitude implies it might be peaking.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. The combination of oversold RSI and breaching the lower Bollinger Band suggests an imminent corrective bounce. However, the overall long-term trend is severely bearish.
+*   **DIA (Dow Jones 30 ETF):** Also in a strong downtrend, below all major SMAs, RSI at 30.39 (near oversold), strong bearish MACD momentum, and just above the lower Bollinger Band.
+    *   **Setup:** **Strong downtrend continuation / Approaching oversold levels.** Similar outlook to other major indices.
 
-3.  **AMZN (Amazon):**
-    *   **Analysis:** Price is in a bearish trend across all timeframes (below SMA_20, SMA_50, and SMA_200). RSI is bearish (39.79), nearing oversold. Price is very close to the lower Bollinger Band. MACD shows bearish momentum, but the histogram is relatively small, possibly indicating deceleration.
-    *   **Setup:** **Potential Mean Reversion Bounce Candidate / Short-term Stabilization**. Downtrend is clear, but price is at an extreme low on the Bollinger Bands, which could lead to a minor bounce or consolidation.
+*   **^VIX (CBOE Volatility Index):**
+    *   **Price Action:** Significantly above all three SMAs (20, 50, 200), indicating a strong uptrend in volatility.
+    *   **RSI (14):** At 62.90, in bullish territory, not yet overbought, but confirming strong momentum.
+    *   **MACD:** Bullish crossover with a positive and widening histogram (0.35), indicating increasing volatility.
+    *   **Bollinger Bands:** Price near the upper band.
+    *   **Setup:** **Volatility continuation / Extended to upside.** The technicals are very bullish for volatility, confirming a market environment of high fear and uncertainty. This is consistent with the "Bear Volatile" regime noted in the market data.
 
-4.  **SSO (ProShares Ultra S&P500):**
-    *   **Analysis:** As a 2x leveraged S&P 500 ETF, its movements are amplified. Price is in a strong bearish trend (below all SMAs, including SMA_200). RSI is significantly oversold (27.32). Price has breached the lower Bollinger Band. MACD shows strong bearish momentum.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate (Amplified)**. Similar to VOO, the extreme oversold conditions and breaching of the Bollinger Band signal a high probability of an amplified corrective bounce. High risk/reward due to leverage.
+**Sector & Individual Stock Technical Analysis:**
 
-5.  **AAPL (Apple):**
-    *   **Analysis:** Price is in a short-to-medium term downtrend (below SMA_20, SMA_50) and has recently broken below the SMA_200, marking a significant bearish shift for the long term. RSI is bearish (35.56), nearing oversold. Price is very close to the lower Bollinger Band. MACD shows bearish momentum, but the histogram is small, suggesting potential deceleration.
-    *   **Setup:** **Potential Mean Reversion Bounce Candidate**. The recent breach of the SMA_200 is a significant bearish signal, but current price extremes (near lower BB, RSI nearing oversold) could trigger a short-term bounce.
+*   **Technology & AI-Related Stocks (AAPL, AMZN, AVGO, CRWD, GOOGL, INTC, KLAC, META, MSFT, MU, NBIS, NVDA, ORCL, PLTR, PSTG, STX, TSM, XLK, XLC):** A broad and severe sell-off is evident across this group.
+    *   **Common Pattern:** Most are significantly below all major SMAs, signaling strong downtrends. Many are deeply oversold on RSI (e.g., MSFT 24.80, META 27.29, GOOGL 24.85, NVDA 34.00), and several are trading below their lower Bollinger Bands (NVDA, ORCL, PLTR, PSTG, TSM, INTC, AMZN, MSFT, QQQ, XLK, XLC).
+    *   **MACD:** Characterized by strong to exceptionally strong bearish momentum with large, negative, and widening MACD histograms (e.g., META -9.57, MU -12.02, MSFT -2.98, NVDA -1.43).
+    *   **Setups:** Predominantly **Strong Downtrend Continuation / Extended to Downside**. While deeply oversold readings suggest potential for short-term bounces (mean reversion), the overwhelming bearish momentum indicates that these assets are facing aggressive selling pressure, and any rallies are likely to be temporary within a larger downward move. KLAC, WDC, STX, TSM, INTC, GOOGL, MU are in sharp short-term corrections within still longer-term uptrends (above 200-SMA), but the short-term pain is significant. NBIS, while showing short-term bearishness, is still above its 200-SMA.
 
-6.  **PSTG (Pure Storage):**
-    *   **Analysis:** Price is in a strong bearish trend across all timeframes (well below all SMAs, including SMA_200). RSI is bearish (35.08), nearing oversold. Price has breached the lower Bollinger Band. MACD shows bearish momentum with a small negative histogram.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. The price moving below the lower Bollinger Band with RSI nearing oversold indicates high potential for a corrective bounce from current lows, despite the severe downtrend.
+*   **Energy (XLE, CEG, TLN):**
+    *   **XLE:** Strong uptrend, above all SMAs, SMAs in bullish order. However, RSI is 77.44 (significantly overbought), and price is near the upper Bollinger Band. MACD shows bullish momentum but histogram is narrowing, suggesting waning thrust.
+        *   **Setup:** **Overbought / Potential short-term pullback** in a strong uptrend.
+    *   **CEG:** Downtrend, below 20-SMA and 200-SMA, just above 50-SMA. Strong bearish MACD.
+        *   **Setup:** **Downtrend continuation.**
+    *   **TLN:** Strong downtrend below all SMAs. However, MACD has just produced a bullish crossover (0.66 hist) from deeply negative territory, suggesting potential momentum shift. Price is above lower Bollinger Band.
+        *   **Setup:** **Potential mean reversion bounce / Momentum shift** in a strong downtrend.
 
-7.  **TLT (iShares 20+ Year Treasury Bond ETF):**
-    *   **Analysis:** Price is tightly consolidated around all key SMAs (SMA_20, SMA_50, SMA_200). RSI is perfectly neutral (46.57). MACD histogram is extremely flat and near zero, and Bollinger Bands are relatively narrow.
-    *   **Setup:** **Volatility Contraction Squeeze Candidate**. The tight consolidation around SMAs with compressed volatility (narrow BB, flat MACD) suggests a significant breakout in either direction is imminent.
+*   **Financials & Real Estate (XLF, XLRE):**
+    *   **XLF:** Downtrend, below all SMAs. RSI neutral (36.44), near lower Bollinger Band. MACD has a very slight bullish crossover (0.02 hist), suggesting minor abating selling pressure.
+        *   **Setup:** **Downtrend continuation (with potential for a small bounce).**
+    *   **XLRE:** Downtrend across all timeframes, below all SMAs. Bearish MACD momentum.
+        *   **Setup:** **Downtrend continuation.**
 
-8.  **GOOGL (Alphabet Class A):**
-    *   **Analysis:** Price is in a severe bearish trend across all timeframes (well below all SMAs, including SMA_200). RSI is extremely oversold (24.85). Price has breached the lower Bollinger Band. MACD shows strong bearish momentum with a significant negative histogram.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. Extremely oversold RSI and breaching of the lower Bollinger Band indicate a high probability of a sharp corrective bounce from these depressed levels.
+*   **Healthcare (XLV):** Downtrend across short-to-medium term, below 20-SMA, 50-SMA, and slightly below 200-SMA. RSI near oversold (30.61), strong bearish MACD.
+    *   **Setup:** **Downtrend continuation / Potential oversold bounce.**
 
-9.  **ORCL (Oracle):**
-    *   **Analysis:** Price is in a strong bearish trend across all timeframes (well below all SMAs, including SMA_200). RSI is bearish (36.21), nearing oversold. Price is very close to the lower Bollinger Band. MACD shows bearish momentum with a negative histogram.
-    *   **Setup:** **Potential Mean Reversion Bounce Candidate**. While in a strong downtrend, proximity to the lower Bollinger Band and RSI nearing oversold suggests a possible corrective bounce.
+*   **Consumer Discretionary & Staples (XLY, XLP):**
+    *   **XLY:** Strong downtrend, below all SMAs. RSI near oversold (30.99), strong bearish MACD, near lower Bollinger Band.
+        *   **Setup:** **Strong Downtrend Continuation / Extended to Downside.**
+    *   **XLP:** Short-term downtrend within longer-term uptrend, below 20-SMA and 50-SMA, above 200-SMA. Bearish MACD.
+        *   **Setup:** **Downtrend continuation (short-term correction).**
 
-10. **KLAC (KLA Corp):**
-    *   **Analysis:** Price is in a short-to-medium term downtrend (below SMA_20, SMA_50) but maintains a long-term bullish trend (well above SMA_200). RSI is bearish (41.03). MACD has recently crossed bearishly with a strong negative histogram, indicating robust selling pressure. Price is approaching the lower Bollinger Band.
-    *   **Setup:** **Trend Continuation (Bearish) / Potential Minor Bounce**. Strong bearish momentum suggests further downside, but the approach to the lower Bollinger Band might offer short-term stabilization or a minor bounce before resuming the correction within the long-term bullish trend.
+*   **Materials (XLB):** Price below short-term SMAs, above 200-SMA. MACD just had a slight bullish crossover (0.04 hist), suggesting potential abating pressure.
+    *   **Setup:** **Potential mean reversion bounce / Momentum shift** within a longer-term uptrend.
 
-11. **GLD (SPDR Gold Shares):**
-    *   **Analysis:** Price is undergoing a sharp correction (below SMA_20, SMA_50) but remains in a strong long-term bullish trend (well above SMA_200). RSI is bearish (38.36), nearing oversold. MACD shows strong, sustained bearish momentum with a deeply negative histogram. Price is well within wide Bollinger Bands.
-    *   **Setup:** **Trend Continuation (Bearish)**. Despite the long-term bullish trend, the short-term momentum is overwhelmingly bearish. Indicators do not yet signal an immediate bounce, suggesting further price erosion is possible.
+*   **Utilities (XLU):** Price consolidating below 20-SMA but above 50-SMA and 200-SMA (uptrend). MACD shows short-term bearish momentum (-0.15 hist).
+    *   **Setup:** **Short-term pullback/consolidation** in a longer-term uptrend.
 
-12. **EWC (iShares MSCI Canada ETF):**
-    *   **Analysis:** Price is in a short-to-medium term downtrend (below SMA_20, SMA_50) but remains in a long-term bullish trend (above SMA_200). RSI is bearish (37.21), nearing oversold. Price is approaching the lower Bollinger Band. MACD shows bearish momentum.
-    *   **Setup:** **Potential Mean Reversion Bounce Candidate**. A corrective pullback within a larger uptrend, with indicators suggesting it's nearing a level where a bounce could occur.
+*   **Bonds (TLT, TMF):**
+    *   **TLT:** Downtrend across all SMAs. Bearish MACD momentum.
+        *   **Setup:** **Downtrend continuation.**
+    *   **TMF:** Stronger downtrend (being leveraged). Bearish MACD momentum.
+        *   **Setup:** **Downtrend continuation.**
 
-13. **TSM (Taiwan Semiconductor):**
-    *   **Analysis:** Price is in a significant correction (well below SMA_20, SMA_50) but remains in a long-term bullish trend (well above SMA_200). RSI is bearish (36.73), nearing oversold. Price has breached the lower Bollinger Band. MACD shows strong bearish momentum.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. Breaching the lower Bollinger Band and RSI nearing oversold, despite strong bearish MACD, signals a high probability of a corrective bounce.
+*   **Commodities (GLD, IAU, SLV):**
+    *   **GLD, IAU:** Short-term downtrends (corrections) within longer-term uptrends. Price below 20-SMA and 50-SMA, but well above 200-SMA. Extremely strong bearish MACD momentum (GLD -4.87, IAU -0.99 hist).
+        *   **Setup:** **Extremely strong short-term downtrend continuation** (correction in uptrend). Further downside expected before reaching major support.
+    *   **SLV:** Similar to Gold, strong short-term downtrend within a longer-term uptrend. Strong bearish MACD momentum (-0.83 hist).
+        *   **Setup:** **Strong short-term downtrend continuation.**
 
-14. **DIA (SPDR Dow Jones Industrial Average ETF):**
-    *   **Analysis:** Price is in a strong bearish trend across all timeframes (below all SMAs, including SMA_200). RSI is oversold (30.39). Price is very close to the lower Bollinger Band. MACD shows strong bearish momentum, but the histogram is small, suggesting momentum might be decelerating.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. Oversold RSI and proximity to the lower Bollinger Band make it a good candidate for a corrective bounce.
+*   **Currencies (UUP):**
+    *   **UUP:** Strong uptrend, above all SMAs, SMAs in bullish order. RSI at 66.92 (approaching overbought). MACD shows bullish momentum (0.01 hist). Price slightly above upper Bollinger Band.
+        *   **Setup:** **Strong uptrend continuation / Extended to upside.**
 
-15. **INTC (Intel):**
-    *   **Analysis:** Price is in a short-to-medium term downtrend (below SMA_20, SMA_50) but maintains a long-term bullish trend (well above SMA_200). RSI is bearish (40.30). Price has breached the lower Bollinger Band. MACD shows bearish momentum.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. The price moving below the lower Bollinger Band indicates it's oversold in the short term, hinting at a corrective bounce.
+*   **International Equities (EWC, VGK, VXUS):**
+    *   **EWC, VGK, VXUS:** Short-term downtrends, below 20-SMA and 50-SMA. VXUS and VGK are slightly below 200-SMA, suggesting a breakdown of long-term support. EWC is still above 200-SMA. All show bearish MACD momentum. VXUS and EWC are near their lower Bollinger Bands.
+        *   **Setup:** **Downtrend continuation / Testing critical support.**
 
-16. **TQQQ (ProShares UltraPro QQQ):**
-    *   **Analysis:** As a 3x leveraged QQQ ETF, its movements are highly amplified. Price is in a severe bearish trend (below all SMAs, including SMA_200). RSI is significantly oversold (28.62). Price has breached the lower Bollinger Band. MACD shows strong bearish momentum.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate (Amplified)**. Extremely oversold conditions with a breach of the Bollinger Band point to an amplified corrective bounce. High risk/reward due to leverage.
+**Summary of Setups:**
 
-17. **NBIS (Nebius Group):**
-    *   **Analysis:** Price is in a short-to-medium term downtrend (below SMA_20, SMA_50) but remains in a long-term bullish trend (above SMA_200). RSI is bearish (40.82). MACD has bearishly crossed its signal line with a strong negative histogram. Price is well within the Bollinger Bands.
-    *   **Setup:** **Trend Continuation (Bearish)**. Strong bearish MACD momentum suggests continued selling pressure within this corrective phase, despite the long-term bullish trend.
-
-18. **SCHD (Schwab US Dividend Equity ETF):**
-    *   **Analysis:** Price is tightly consolidated around SMA_20 and SMA_50, while remaining well above SMA_200 (strong long-term bullish trend). RSI is neutral (47.96). MACD histogram is extremely flat and near zero. Bollinger Bands are very narrow.
-    *   **Setup:** **Strong Volatility Contraction Squeeze Candidate**. The tight consolidation and narrow Bollinger Bands imply a significant breakout (likely to the upside given the long-term trend) is imminent.
-
-19. **WDC (Western Digital):**
-    *   **Analysis:** Price is in a deep correction (well below SMA_20, SMA_50) but remains in a strong long-term bullish trend (well above SMA_200). RSI is bearish (41.44). MACD has bearishly crossed its signal line with a deeply negative histogram. Price is well within wide Bollinger Bands.
-    *   **Setup:** **Trend Continuation (Bearish)**. Strong negative momentum suggests further downside in the short-term correction, despite the long-term bullish trend.
-
-20. **XLB (Materials Select Sector SPDR Fund):**
-    *   **Analysis:** Price is in a short-to-medium term pullback (below SMA_20, SMA_50) but maintains a long-term bullish trend (above SMA_200). RSI is neutral (46.59). MACD histogram is slightly positive, indicating a potential bullish shift or failed bearish setup. Price is within the Bollinger Bands.
-    *   **Setup:** **Failed Bearish Setup / Potential Mean Reversion Bounce**. The bullish MACD crossover suggests a potential turn in momentum for a bounce back towards its SMAs.
-
-21. **XLRE (Real Estate Select Sector SPDR Fund):**
-    *   **Analysis:** Price is in a downtrend (below SMA_20, SMA_50) and has recently dipped below SMA_200, signaling a long-term bearish shift. RSI is oversold (32.71). Price is approaching the lower Bollinger Band. MACD shows bearish momentum.
-    *   **Setup:** **Potential Mean Reversion Bounce Candidate**. While the long-term trend has turned bearish, the oversold RSI and proximity to the lower Bollinger Band suggest a corrective bounce could be in play.
-
-22. **SPY (SPDR S&P 500 ETF Trust):**
-    *   **Analysis:** Price is in a strong bearish trend across all timeframes (below all SMAs, including SMA_200). RSI is significantly oversold (27.73). Price has breached the lower Bollinger Band. MACD shows strong, sustained bearish momentum.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. The combination of oversold RSI and breaching the lower Bollinger Band provides a strong signal for an imminent corrective bounce.
-
-23. **EWA (iShares MSCI Australia ETF):**
-    *   **Analysis:** Price is in a short-to-medium term downtrend (below SMA_20, SMA_50) but maintains a long-term bullish trend (above SMA_200). RSI is bearish (39.39). Price is approaching the lower Bollinger Band. MACD shows bearish momentum.
-    *   **Setup:** **Potential Mean Reversion Bounce Candidate**. A corrective pullback within a larger uptrend, with indicators suggesting it's nearing a level where a bounce could occur.
-
-24. **IAU (iShares Gold Trust):**
-    *   **Analysis:** Similar to GLD. Price is undergoing a sharp correction (below SMA_20, SMA_50) but remains in a strong long-term bullish trend (well above SMA_200). RSI is bearish (38.31), nearing oversold. MACD shows strong, sustained bearish momentum. Price is well within wide Bollinger Bands.
-    *   **Setup:** **Trend Continuation (Bearish)**. Short-term momentum is strongly bearish, suggesting continued price decline.
-
-25. **VGK (Vanguard FTSE Europe ETF):**
-    *   **Analysis:** Price is in a downtrend (below SMA_20, SMA_50) and has recently dipped below SMA_200, signaling a long-term bearish shift. RSI is oversold (36.56). Price is approaching the lower Bollinger Band. MACD shows bearish momentum.
-    *   **Setup:** **Potential Mean Reversion Bounce Candidate**. Similar to XLRE, the overall trend is weakening, but current price levels might trigger a short-term bounce.
-
-26. **IWM (iShares Russell 2000 ETF):**
-    *   **Analysis:** Price is in a downtrend (below SMA_20, SMA_50) and has recently dipped below SMA_200, signaling a long-term bearish shift. RSI is oversold (35.62). Price is very close to the lower Bollinger Band. MACD shows bearish momentum.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. Oversold RSI and proximity to the lower Bollinger Band make it a good candidate for a corrective bounce.
-
-27. **AMD (Advanced Micro Devices):**
-    *   **Analysis:** Price is in a short-to-medium term downtrend (below SMA_20, SMA_50) and is hovering just above the critical SMA_200 support. RSI is neutral (44.65). MACD has recently made a bullish crossover and the histogram is positive, indicating a shift in momentum.
-    *   **Setup:** **Failed Bearish Setup / Potential Trend Reversal / Mean Reversion Bounce**. The bullish MACD crossover at critical support suggests a strong potential for a bounce or even a reversal of the short-term downtrend, assuming SMA_200 holds.
-
-28. **VT (Vanguard Total World Stock ETF):**
-    *   **Analysis:** Price is in a downtrend (below SMA_20, SMA_50) and has recently dipped below SMA_200, signaling a long-term bearish shift. RSI is oversold (31.87). Price is very close to the lower Bollinger Band. MACD shows bearish momentum.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. Oversold RSI and proximity to the lower Bollinger Band make it a good candidate for a corrective bounce.
-
-29. **UUP (Invesco DB US Dollar Index Bullish Fund):**
-    *   **Analysis:** Price is in a strong bullish trend across all timeframes (above all SMAs, including SMA_200). RSI is significantly overbought (66.92). Price has just breached the upper Bollinger Band. MACD shows strong bullish momentum, but the histogram suggests deceleration.
-    *   **Setup:** **Strong Mean Reversion Pullback Candidate**. The combination of overbought RSI and breaching the upper Bollinger Band suggests an imminent corrective pullback for the dollar index.
-
-30. **NFLX (Netflix):**
-    *   **Analysis:** Price is below SMA_20 but above SMA_50. It is below SMA_200, indicating a long-term bearish trend but some short-term strength. RSI is neutral-bullish (53.49). MACD has recently made a bearish crossover with a negative histogram. Price is within the Bollinger Bands.
-    *   **Setup:** **Consolidation / Short-term Bearish Momentum**. Mixed signals suggest consolidation or continued short-term bearishness after the MACD cross, but not at an extreme for a strong bounce or pullback.
-
-31. **XLK (Technology Select Sector SPDR Fund):**
-    *   **Analysis:** Price is in a strong downtrend (below SMA_20, SMA_50) and has recently dipped below SMA_200, signaling a long-term bearish shift. RSI is significantly oversold (29.91). Price has breached the lower Bollinger Band. MACD shows strong bearish momentum.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. The combination of oversold RSI and breaching the lower Bollinger Band strongly points to an imminent corrective bounce.
-
-32. **META (Meta Platforms):**
-    *   **Analysis:** Price is in a severe bearish trend across all timeframes (dramatically below all SMAs, including SMA_200). RSI is extremely oversold (27.29). Price is very close to the lower Bollinger Band. MACD shows extremely strong and sustained bearish momentum with a deeply negative histogram.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. The extreme oversold RSI and proximity to the lower Bollinger Band indicate a high probability of a sharp corrective bounce, despite the severe downtrend and bearish MACD.
-
-33. **TLN (Talen Energy):**
-    *   **Analysis:** Price is in a strong bearish trend across all timeframes (well below all SMAs, including SMA_200). RSI is bearish (41.82). MACD has recently made a bullish crossover and the histogram is positive, indicating a shift in momentum. Price is within the Bollinger Bands.
-    *   **Setup:** **Failed Bearish Setup / Potential Mean Reversion Bounce**. The bullish MACD crossover, despite the overall downtrend, suggests a potential for a corrective bounce or short-term reversal.
-
-34. **SLV (iShares Silver Trust):**
-    *   **Analysis:** Price is undergoing a sharp correction (below SMA_20, SMA_50) but remains in a strong long-term bullish trend (well above SMA_200). RSI is bearish (40.08). MACD shows strong bearish momentum with a negative histogram. Price is well within wide Bollinger Bands.
-    *   **Setup:** **Trend Continuation (Bearish)**. Short-term momentum is strongly bearish, suggesting continued price decline before finding support.
-
-35. **MSFT (Microsoft):**
-    *   **Analysis:** Price is in a severe bearish trend across all timeframes (dramatically below all SMAs, including SMA_200). RSI is extremely oversold (24.80). Price is very close to the lower Bollinger Band. MACD shows extremely strong and sustained bearish momentum with a deeply negative histogram.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. Similar to META, the extreme oversold RSI and proximity to the lower Bollinger Band indicate a high probability of a sharp corrective bounce.
-
-36. **^VIX (CBOE Volatility Index):**
-    *   **Analysis:** Price is in a strong bullish trend (above all SMAs), indicating high market fear. RSI is overbought (62.90). Price is very close to the upper Bollinger Band. MACD shows strong bullish momentum.
-    *   **Setup:** **Strong Mean Reversion Pullback Candidate (for VIX)**. Overbought RSI and proximity to the upper Bollinger Band suggest a short-term pullback in volatility, which could provide relief for equity markets.
-
-37. **QUAL (iShares MSCI USA Quality Factor ETF):**
-    *   **Analysis:** Price is in a downtrend (below SMA_20, SMA_50) and has recently dipped below SMA_200, signaling a long-term bearish shift. RSI is significantly oversold (27.33). Price has breached the lower Bollinger Band. MACD shows strong bearish momentum.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. Oversold RSI and breaching the lower Bollinger Band strongly point to an imminent corrective bounce.
-
-38. **XLF (Financial Select Sector SPDR Fund):**
-    *   **Analysis:** Price is in a bearish trend across all timeframes (below all SMAs, including SMA_200). RSI is bearish (36.44), nearing oversold. MACD has recently made a bullish crossover and the histogram is slightly positive, indicating a potential shift in momentum. Price is within the Bollinger Bands.
-    *   **Setup:** **Failed Bearish Setup / Potential Mean Reversion Bounce**. The bullish MACD crossover, despite the overall downtrend, suggests a potential for a corrective bounce.
-
-39. **IBIT (iShares Bitcoin Trust):**
-    *   **Analysis:** Price is in a strong bearish trend across all timeframes (well below all SMAs, including SMA_200). RSI is bearish (40.68). Price is very close to the lower Bollinger Band. MACD shows bearish momentum, but the histogram is small, suggesting deceleration.
-    *   **Setup:** **Potential Mean Reversion Bounce Candidate / Short-term Stabilization**. Downtrend is clear, but proximity to the lower Bollinger Band and slowing bearish MACD momentum could lead to a minor bounce or consolidation.
-
-40. **XLU (Utilities Select Sector SPDR Fund):**
-    *   **Analysis:** Price is consolidating (around SMA_20) within a strong long-term bullish trend (above SMA_50, SMA_200). RSI is neutral-bullish (52.77). MACD has recently made a bearish crossover with a negative histogram. Bollinger Bands are relatively narrow.
-    *   **Setup:** **Volatility Contraction Squeeze Candidate**. The narrow Bollinger Bands suggest low volatility and a potential for a breakout. The recent bearish MACD cross indicates short-term weakness, but the strong long-term trend favors an upside resolution from the squeeze.
-
-41. **MU (Micron Technology):**
-    *   **Analysis:** Price is in a severe correction (dramatically below SMA_20, SMA_50) but remains in a strong long-term bullish trend (well above SMA_200). RSI is oversold (31.67). Price has breached the lower Bollinger Band. MACD shows extremely strong and sustained bearish momentum with a deeply negative histogram.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. Despite the overwhelming bearish momentum, the significantly oversold RSI and breach of the lower Bollinger Band make it a strong candidate for a corrective bounce.
-
-42. **QQQ (Invesco QQQ Trust):**
-    *   **Analysis:** Price is in a strong bearish trend across all timeframes (below all SMAs, including SMA_200). RSI is significantly oversold (28.86). Price has breached the lower Bollinger Band. MACD shows strong, sustained bearish momentum.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. The combination of oversold RSI and breaching the lower Bollinger Band provides a strong signal for an imminent corrective bounce.
-
-43. **VXUS (Vanguard Total International Stock Index Fund ETF Shares):**
-    *   **Analysis:** Price is in a short-to-medium term downtrend (below SMA_20, SMA_50) but maintains a long-term bullish trend (above SMA_200). RSI is oversold (36.55). Price is very close to the lower Bollinger Band. MACD shows bearish momentum.
-    *   **Setup:** **Potential Mean Reversion Bounce Candidate**. A corrective pullback within a larger uptrend, with indicators suggesting it's nearing a level where a bounce could occur.
-
-44. **XLV (Health Care Select Sector SPDR Fund):**
-    *   **Analysis:** Price is in a downtrend (below SMA_20, SMA_50) and has recently dipped just below SMA_200, signaling a long-term bearish shift. RSI is oversold (30.61). MACD shows bearish momentum. Price is well within the Bollinger Bands.
-    *   **Setup:** **Trend Continuation (Bearish)**. While RSI is nearing oversold, the lack of a lower Bollinger Band breach and the recent break of SMA_200 suggest continued short-term bearish pressure towards the lower band before a bounce is likely.
-
-45. **XLI (Industrial Select Sector SPDR Fund):**
-    *   **Analysis:** Price is in a strong short-to-medium term downtrend (below SMA_20, SMA_50) and is hovering just above the critical SMA_200 support. RSI is significantly oversold (29.38). Price is very close to the lower Bollinger Band. MACD shows strong bearish momentum.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. The price is at critical long-term support (SMA_200), with oversold RSI and touching the lower Bollinger Band, indicating a high potential for a corrective bounce.
-
-46. **XLE (Energy Select Sector SPDR Fund):**
-    *   **Analysis:** Price is in a strong bullish trend across all timeframes (well above all SMAs, including SMA_200). RSI is highly overbought (77.44). Price is very close to the upper Bollinger Band. MACD shows strong bullish momentum.
-    *   **Setup:** **Strong Mean Reversion Pullback Candidate**. Highly overbought RSI and sustained price movement at the upper Bollinger Band indicate an overextension, making a corrective pullback highly probable.
-
-47. **NVDA (NVIDIA):**
-    *   **Analysis:** Price is in a strong downtrend (below SMA_20, SMA_50) and has recently dipped below SMA_200, signaling a long-term bearish shift. RSI is oversold (34.00). Price has breached the lower Bollinger Band. MACD shows strong bearish momentum.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. Oversold RSI and breaching the lower Bollinger Band strongly point to an imminent corrective bounce.
-
-48. **MTZ (MasTec):**
-    *   **Analysis:** Price is in a strong bullish trend across all timeframes (above all SMAs, including SMA_200). RSI is neutral-bullish (54.05). MACD has recently made a bearish crossover with a negative histogram, indicating a short-term pullback. Price is within the Bollinger Bands.
-    *   **Setup:** **Trend Continuation (Bullish) Pullback**. A temporary pullback within a larger, strong uptrend, likely to find support at a lower SMA before continuing its upward trajectory.
-
-49. **UPRO (ProShares UltraPro S&P 500):**
-    *   **Analysis:** As a 3x leveraged S&P 500 ETF, its movements are highly amplified. Price is in a severe bearish trend (below all SMAs, including SMA_200). RSI is significantly oversold (27.21). Price has breached the lower Bollinger Band. MACD shows strong bearish momentum.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate (Amplified)**. Extremely oversold conditions with a breach of the Bollinger Band signal an amplified corrective bounce. High risk/reward due to leverage.
-
-50. **XLC (Communication Services Select Sector SPDR Fund):**
-    *   **Analysis:** Price is in a strong downtrend (below SMA_20, SMA_50) and has recently dipped below SMA_200, signaling a long-term bearish shift. RSI is significantly oversold (28.50). Price is very close to the lower Bollinger Band. MACD shows strong bearish momentum.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. Oversold RSI and proximity to the lower Bollinger Band strongly point to an imminent corrective bounce.
-
-51. **TMF (Direxion Daily 20+ Year Treasury Bull 3X Shares):**
-    *   **Analysis:** As a 3x leveraged TLT ETF, its movements are amplified. Price is in an amplified downtrend (below all SMAs, including SMA_200). RSI is neutral (44.62). MACD shows bearish momentum, but the histogram is small. Bollinger Bands are narrowing.
-    *   **Setup:** **Volatility Contraction Squeeze Candidate (Amplified)**. The narrowing Bollinger Bands and flat MACD, amplified by leverage, suggest a significant breakout is imminent.
-
-52. **AVGO (Broadcom):**
-    *   **Analysis:** Price is in a strong downtrend (below SMA_20, SMA_50) and has recently dipped below SMA_200, signaling a long-term bearish shift. RSI is oversold (33.75). Price has breached the lower Bollinger Band. MACD shows strong bearish momentum.
-    *   **Setup:** **Strong Mean Reversion Bounce Candidate**. Oversold RSI and breaching the lower Bollinger Band strongly point to an imminent corrective bounce.
-
-53. **CRWD (CrowdStrike):**
-    *   **Analysis:** Price is in a strong bearish trend across all timeframes (significantly below all SMAs, including SMA_200). RSI is bearish (39.57). MACD shows extremely strong and sustained bearish momentum with a deeply negative histogram. Price is well within wide Bollinger Bands.
-    *   **Setup:** **Trend Continuation (Bearish)**. Overwhelming bearish momentum suggests further downside is likely before reaching oversold extremes for a bounce.
+*   **Mean Reversion Bounce (Oversold in Downtrend):** SPY, VOO, QQQ, VTI, SSO, UPRO, TQQQ, MSFT, META, GOOGL, XLK, XLC, QUAL (These are very stretched to the downside and statistically likely for a bounce, but strong bearish momentum suggests it may be temporary).
+*   **Strong Downtrend Continuation:** AVGO, CRWD, MU, NVDA, ORCL, PLTR, PSTG, STX, TSM, AMZN, XLY, XLV, XLRE, TLT, TMF, IWM. (These show strong and often accelerating bearish momentum across multiple indicators).
+*   **Short-Term Downtrend / Consolidation in Longer-Term Uptrend:** NBIS, EWA, EWC, XLP, XLU, NFLX, GLD, IAU, SLV (Price below short-term SMAs, but often still above 200-SMA, with bearish MACD for short term).
+*   **Overbought / Potential Pullback in Uptrend:** XLE (Very strong uptrend, but overextended).
+*   **Volatility Continuation / Extended to Upside:** ^VIX (Confirming market fear).
+*   **Potential Momentum Shift / Bounce from Deeply Negative MACD:** AMD, TLN, XLB (These are notable for showing a potential MACD bullish crossover from deeply negative territory, suggesting selling pressure might be abating for a short-term relief rally, even if the overall trend is down).
+*   **Strong Uptrend Continuation / Extended to Upside:** UUP (US Dollar is strong and extended).
