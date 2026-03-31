@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-03-30T20:57:28.261452+00:00",
+  "last_updated_utc": "2026-03-31T15:39:06.786998+00:00",
   "accounts": {
     "dev": {
       "account_id": "dev",
@@ -7,10 +7,16 @@
       "strategy": "Advanced LLM Strategy",
       "frequency": "2x Daily (10 AM & 3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-03-30T20:57:28.261400+00:00",
-      "ok": false,
-      "error": "ALPACA_DEV_API_KEY or ALPACA_DEV_SECRET_KEY not found",
-      "account": null,
+      "last_updated_utc": "2026-03-31T15:39:05.383345+00:00",
+      "ok": true,
+      "error": "",
+      "account": {
+        "status": "ACTIVE",
+        "cash": 87184.98,
+        "equity": 0,
+        "buying_power": 174369.96,
+        "portfolio_value": 87184.98
+      },
       "positions": []
     },
     "prod_1": {
@@ -19,11 +25,50 @@
       "strategy": "Standard LLM Strategy",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-03-30T20:57:28.261423+00:00",
-      "ok": false,
-      "error": "ALPACA_PROD_1_API_KEY or ALPACA_PROD_1_SECRET_KEY not found",
-      "account": null,
-      "positions": []
+      "last_updated_utc": "2026-03-31T15:39:06.119109+00:00",
+      "ok": true,
+      "error": "",
+      "account": {
+        "status": "ACTIVE",
+        "cash": 42576.25,
+        "equity": 58022.507000000005,
+        "buying_power": 143175.01,
+        "portfolio_value": 100598.76
+      },
+      "positions": [
+        {
+          "symbol": "GLD",
+          "qty": 45.591909342,
+          "market_value": 19341.4557,
+          "current_price": 424.23,
+          "avg_entry_price": 410.401765,
+          "unrealized_pl": 630.455636
+        },
+        {
+          "symbol": "XLP",
+          "qty": 229.400793788,
+          "market_value": 18698.504582,
+          "current_price": 81.5102,
+          "avg_entry_price": 81.625698,
+          "unrealized_pl": -26.495333
+        },
+        {
+          "symbol": "XLU",
+          "qty": 111.830879071,
+          "market_value": 5077.681064,
+          "current_price": 45.405,
+          "avg_entry_price": 44.71037,
+          "unrealized_pl": 77.681083
+        },
+        {
+          "symbol": "XLV",
+          "qty": 102.551710842,
+          "market_value": 14904.865654,
+          "current_price": 145.34,
+          "avg_entry_price": 146.267672,
+          "unrealized_pl": -95.13435
+        }
+      ]
     },
     "prod_2": {
       "account_id": "prod_2",
@@ -31,10 +76,16 @@
       "strategy": "TQQQ Momentum",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-03-30T20:57:28.261431+00:00",
-      "ok": false,
-      "error": "ALPACA_PROD_2_API_KEY or ALPACA_PROD_2_SECRET_KEY not found",
-      "account": null,
+      "last_updated_utc": "2026-03-31T15:39:06.171586+00:00",
+      "ok": true,
+      "error": "",
+      "account": {
+        "status": "ACTIVE",
+        "cash": 100000.0,
+        "equity": 0,
+        "buying_power": 200000.0,
+        "portfolio_value": 100000.0
+      },
       "positions": []
     },
     "prod_3": {
@@ -43,11 +94,26 @@
       "strategy": "Dual Momentum",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-03-30T20:57:28.261437+00:00",
-      "ok": false,
-      "error": "ALPACA_PROD_3_API_KEY or ALPACA_PROD_3_SECRET_KEY not found",
-      "account": null,
-      "positions": []
+      "last_updated_utc": "2026-03-31T15:39:06.229100+00:00",
+      "ok": true,
+      "error": "",
+      "account": {
+        "status": "ACTIVE",
+        "cash": -90104.84,
+        "equity": 188777.9,
+        "buying_power": 8568.22,
+        "portfolio_value": 98673.06
+      },
+      "positions": [
+        {
+          "symbol": "GLD",
+          "qty": 445.0,
+          "market_value": 188777.9,
+          "current_price": 424.22,
+          "avg_entry_price": 427.201888,
+          "unrealized_pl": -1326.94016
+        }
+      ]
     },
     "prod_4": {
       "account_id": "prod_4",
@@ -55,11 +121,26 @@
       "strategy": "Sector Rotation",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-03-30T20:57:28.261443+00:00",
-      "ok": false,
-      "error": "ALPACA_PROD_4_API_KEY or ALPACA_PROD_4_SECRET_KEY not found",
-      "account": null,
-      "positions": []
+      "last_updated_utc": "2026-03-31T15:39:06.675215+00:00",
+      "ok": true,
+      "error": "",
+      "account": {
+        "status": "ACTIVE",
+        "cash": 71086.27,
+        "equity": 27833.05,
+        "buying_power": 170005.59,
+        "portfolio_value": 98919.32
+      },
+      "positions": [
+        {
+          "symbol": "XLB",
+          "qty": 562.0,
+          "market_value": 27833.05,
+          "current_price": 49.525,
+          "avg_entry_price": 49.513826,
+          "unrealized_pl": 6.279788
+        }
+      ]
     },
     "prod_5": {
       "account_id": "prod_5",
@@ -67,11 +148,26 @@
       "strategy": "Mean Reversion",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-03-30T20:57:28.261448+00:00",
-      "ok": false,
-      "error": "ALPACA_PROD_5_API_KEY or ALPACA_PROD_5_SECRET_KEY not found",
-      "account": null,
-      "positions": []
+      "last_updated_utc": "2026-03-31T15:39:06.736050+00:00",
+      "ok": true,
+      "error": "",
+      "account": {
+        "status": "ACTIVE",
+        "cash": -1263.62,
+        "equity": 98703.22,
+        "buying_power": 96175.98,
+        "portfolio_value": 97439.6
+      },
+      "positions": [
+        {
+          "symbol": "SPY",
+          "qty": 154.0,
+          "market_value": 98703.22,
+          "current_price": 640.93,
+          "avg_entry_price": 657.555974,
+          "unrealized_pl": -2560.399996
+        }
+      ]
     }
   }
 }
