@@ -2,16 +2,11 @@
     {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 13077
+        "notional_value": 20000
     },
     {
         "ticker": "XLP",
         "action": "buy",
-        "notional_value": 8718
-    },
-    {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 8718
+        "notional_value": 15000
     }
 ]
