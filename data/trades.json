@@ -1,22 +1,32 @@
 [
     {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 17437
-    },
-    {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 13078
+        "notional_value": 8700
     },
     {
         "ticker": "XLP",
         "action": "buy",
-        "notional_value": 8718
+        "notional_value": 8700
     },
     {
-        "ticker": "TLT",
+        "ticker": "XLV",
         "action": "buy",
-        "notional_value": 4359
+        "notional_value": 8700
+    },
+    {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 8700
+    },
+    {
+        "ticker": "XLE",
+        "action": "buy",
+        "notional_value": 8700
+    },
+    {
+        "ticker": "MSFT",
+        "action": "buy",
+        "notional_value": 4350
     }
 ]
