@@ -1,42 +1,33 @@
 {
-  "last_updated_utc": "2026-04-06T20:55:59.429616+00:00",
+  "last_updated_utc": "2026-04-07T20:57:08.711683+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "GLD",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 13000
+        "notional_value": 21796
       },
       "status": "submitted",
-      "order_id": "466c26c4-a6d1-4a62-aebc-86b66c52d12a"
+      "order_id": "39fbc094-cead-4a19-a24a-7c73e9c6a6f1"
     },
     {
       "trade": {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 20000
+        "notional_value": 17437
       },
       "status": "submitted",
-      "order_id": "2c71d554-ff7d-4a4a-a66a-6c5ec86520f9"
+      "order_id": "28a6a456-30c6-4c75-914d-b7ad48131ef9"
     },
     {
       "trade": {
-        "ticker": "VGK",
+        "ticker": "GLD",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 4359
       },
       "status": "submitted",
-      "order_id": "f787831e-ddd1-423a-8607-44b3c0aff876"
-    },
-    {
-      "trade": {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 10000
-      },
-      "status": "submitted",
-      "order_id": "7b24587c-d399-4008-9201-b651d129351a"
+      "order_id": "a8e177ad-56d7-4038-a2d3-079a32067036"
     }
   ]
 }
