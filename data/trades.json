@@ -2,16 +2,26 @@
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 21796
+        "notional_value": 8000
     },
     {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 17437
+        "notional_value": 6000
     },
     {
-        "ticker": "GLD",
+        "ticker": "SCHD",
         "action": "buy",
-        "notional_value": 4359
+        "notional_value": 6000
+    },
+    {
+        "ticker": "INTC",
+        "action": "buy",
+        "notional_value": 5000
+    },
+    {
+        "ticker": "MTZ",
+        "action": "buy",
+        "notional_value": 4000
     }
 ]
