@@ -1,33 +1,51 @@
 {
-  "last_updated_utc": "2026-04-07T20:57:08.711683+00:00",
+  "last_updated_utc": "2026-04-08T20:58:24.418341+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 21796
-      },
-      "status": "submitted",
-      "order_id": "39fbc094-cead-4a19-a24a-7c73e9c6a6f1"
-    },
-    {
-      "trade": {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 17437
+        "notional_value": 20000
       },
       "status": "submitted",
-      "order_id": "28a6a456-30c6-4c75-914d-b7ad48131ef9"
+      "order_id": "5b322dc5-e7e3-4fc2-ad32-907c4a2e464b"
     },
     {
       "trade": {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 4359
+        "notional_value": 15000
       },
       "status": "submitted",
-      "order_id": "a8e177ad-56d7-4038-a2d3-079a32067036"
+      "order_id": "e6a1d8b3-6a18-42b3-86f1-40644db782e5"
+    },
+    {
+      "trade": {
+        "ticker": "TLT",
+        "action": "buy",
+        "notional_value": 10000
+      },
+      "status": "failed",
+      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+    },
+    {
+      "trade": {
+        "ticker": "VXUS",
+        "action": "buy",
+        "notional_value": 10000
+      },
+      "status": "failed",
+      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+    },
+    {
+      "trade": {
+        "ticker": "QQQ",
+        "action": "buy",
+        "notional_value": 5000
+      },
+      "status": "failed",
+      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
     }
   ]
 }
