@@ -1,170 +1,55 @@
 ---
 title: Technical Analyst Report
-date: "2026-04-08"
+date: "2026-04-09"
 ---
 
 ## Model: deepseek/deepseek-reasoner
 
-## Technical Analysis & Price Action Setups
+## Technical Setup Analysis (Price Action Only)
 
-Based purely on price action and technical indicators, I'm identifying the following setups:
+Based solely on price action, moving averages, RSI, MACD, and Bollinger Bands, here are the most compelling setups from your watchlist:
 
-### **STRONG TREND CONTINUATION (BULLISH)**
-**Criteria:** Price above all moving averages (20, 50, 200), bullish MACD, RSI 50-70
+### 1. **Strong Trend Continuation Setups**
+*Stocks trading above key moving averages with momentum confirming the trend.*
 
-1. **XLE (Energy Select Sector SPDR)**
-   - Price: 60.16 (above all MAs)
-   - SMA order: 20>50>200 (59.22 > 55.77 > 46.67) - Clear uptrend
-   - RSI: 60.45 (bullish momentum)
-   - MACD: Positive but histogram slightly negative (-0.28)
-   - BB: Price near upper band (62.96)
-   - Setup: Strong uptrend, though near resistance
+- **AMD** (`close: 231.82`): Trading above all SMAs (20, 50, 200). RSI 64.7 shows bullish momentum but not overbought. MACD histogram positive (+3.30) and rising. Price near upper Bollinger Band suggests continued strength. **Action:** Bullish continuation likely; watch for pullback to SMA_20 (~206.5) for entry.
+- **AVGO** (`close: 350.63`): Above all SMAs. RSI 64.5, MACD histogram turned positive (+3.67) after crossover. Price just broke above upper Bollinger Band — expect volatility expansion. **Action:** Strong uptrend; any dip to SMA_20 (~319.3) is a buy.
+- **KLAC** (`close: 1672.34`): Well above rising SMAs. RSI 66.5 (approaching overbought). MACD histogram strongly positive (+15.09). Price above upper Bollinger Band signals powerful momentum. **Action:** Trend intact but extended; wait for mean reversion toward SMA_20 (~1493.7).
 
-2. **MTZ (MasTec)**
-   - Price: 338.19 (well above all MAs)
-   - SMA order: 20>50>200 (313.24 > 287.31 > 220.96) - Strong uptrend
-   - RSI: 65.76 (approaching overbought)
-   - MACD: Bullish with positive histogram (1.49)
-   - BB: Price near upper band (341.89)
-   - Setup: Powerful uptrend continuation
+### 2. **Mean Reversion Bounce Candidates**
+*Stocks at or near key support levels with oversold/neutral momentum.*
 
-3. **KLAC (KLA Corporation)**
-   - Price: 1548.85 (above all MAs)
-   - SMA order: 20>50>200 (1482.73 > 1475.99 > 1179.15) - Strong uptrend
-   - RSI: 57.25 (bullish momentum)
-   - MACD: Bullish with strong positive histogram (6.30)
-   - Setup: Clear uptrend continuation
+- **TSLA** (`close: 343.25`): Below all SMAs (bearish structure). RSI 33.7 (oversold). MACD histogram negative but improving (-2.39). Price near lower Bollinger Band. **Action:** Oversold bounce likely; first resistance at SMA_20 (~376.3). High-risk mean reversion play.
+- **PLTR** (`close: 140.76`): Below SMAs but above SMA_200. RSI 42.6 (neutral-oversold). MACD histogram negative (-0.78) but slowing. Price near lower Bollinger Band. **Action:** Potential bounce toward SMA_20 (~150.1). Monitor for RSI reversal above 45.
+- **XLU** (`close: 46.78`): Above all SMAs. RSI 60.9 (mildly overbought). MACD histogram positive but small (+0.057). Price at upper Bollinger Band. **Action:** Pullback toward SMA_20 (~45.94) expected for mean reversion entry in defensive sector.
 
-### **MEAN REVERSION BOUNCE CANDIDATES (OVERSOLD)**
-**Criteria:** RSI < 40, price near lower BB or oversold conditions
+### 3. **Volatility Contraction / Squeeze Setups**
+*Tightening Bollinger Bands with low RSI, suggesting impending directional move.*
 
-1. **XLP (Consumer Staples Select Sector SPDR)**
-   - Price: 81.26
-   - RSI: 38.92 (oversold)
-   - Price near lower BB (79.73)
-   - MACD: Negative but histogram turning positive (0.056)
-   - Setup: Oversold bounce potential from support
+- **TLT** (`close: 86.92`): Price compressed between SMA_20 (86.41) and SMA_50 (87.39). Bollinger Band width narrow (2.04 points). RSI 50.6 (neutral). MACD histogram slightly positive (+0.12). **Action:** Impending volatility expansion; direction will resolve break above 87.4 or below 86.4.
+- **QUAL** (`close: 199.01`): Price hugging SMA_20 (~193.64). Bollinger Bands tightening. RSI 57.7 (neutral). MACD histogram positive (+0.83) but flattening. **Action:** Watch for breakout above 200 or breakdown below SMA_50 (~198.9).
 
-2. **TSLA (Tesla)**
-   - Price: 346.65
-   - RSI: 34.70 (deeply oversold)
-   - Price at lower BB (345.17)
-   - All MAs above price (bearish structure)
-   - MACD: Bearish but histogram near zero
-   - Setup: Extreme oversold, potential dead cat bounce
+### 4. **Failed Setups / Warning Signs**
+*Breaking below support or showing bearish momentum divergence.*
 
-3. **CEG (Constellation Energy)**
-   - Price: 272.58
-   - RSI: 37.45 (oversold)
-   - Price above lower BB (267.24)
-   - MACD: Bearish with negative histogram (-3.33)
-   - Setup: Oversold but still in downtrend structure
+- **MSFT** (`close: 374.33`): Below SMA_20 and SMA_50; SMA_200 far above (473.72) indicating long-term downtrend. RSI 40.9 (bearish). MACD histogram positive but weak (+1.18). **Action:** Avoid — trend is down until it reclaims SMA_20 (~380.27).
+- **INTC** (`close: 58.95`): Extreme RSI 72.2 (overbought) after huge run. Price far above upper Bollinger Band. MACD histogram positive but may be peaking. **Action:** High probability of pullback; not a buy here.
+- **XLE** (`close: 58.05`): Below SMA_20, above SMA_50/200. RSI 48.5 (neutral-bearish). MACD histogram negative (-0.43). Price testing middle Bollinger Band. **Action:** Energy sector losing short-term momentum; wait for break above SMA_20 (~59.36) or below SMA_50 (~55.96).
 
-### **TREND REVERSAL/FAILED SETUPS**
-**Criteria:** Breakdown below key MAs, bearish momentum, negative divergences
-
-1. **META (Meta Platforms)**
-   - Price: 575.05 (below all MAs)
-   - SMA order: 200>50>20 (682.77 > 636.09 > 595.01) - Strong downtrend
-   - RSI: 41.70 (bearish momentum)
-   - MACD: Bearish but histogram slightly positive (0.33)
-   - Setup: Clear downtrend, failed to hold support
-
-2. **MSFT (Microsoft)**
-   - Price: 372.29 (below all MAs)
-   - SMA order: 200>50>20 (474.22 > 399.84 > 381.84) - Strong downtrend
-   - RSI: 38.80 (oversold)
-   - MACD: Bearish but histogram slightly positive (0.70)
-   - Setup: Breakdown below key support levels
-
-3. **ORCL (Oracle)**
-   - Price: 143.17 (below all MAs)
-   - SMA order: 200>50>20 (216.91 > 152.84 > 149.58) - Downtrend
-   - RSI: 42.45 (bearish momentum)
-   - Setup: Failed to maintain uptrend, now in correction
-
-### **VOLATILITY CONTRACTION/SQUEEZE SETUPS**
-**Criteria:** Tight Bollinger Bands (narrow range), low RSI divergence, coiled price action
-
-1. **SCHD (Schwab US Dividend Equity ETF)**
-   - BB Width: (30.82 - 30.21)/30.56 = 2.0% (very tight)
-   - RSI: 49.90 (neutral)
-   - MACD: Near zero line (-0.013)
-   - Setup: Extremely tight range, volatility compression
-
-2. **UUP (Invesco DB US Dollar Index Bullish Fund)**
-   - BB Width: (27.99 - 27.47)/27.75 = 1.9% (very tight)
-   - RSI: 55.07 (neutral)
-   - MACD: Near zero line
-   - Setup: Tight consolidation, imminent volatility expansion
-
-3. **XLU (Utilities Select Sector SPDR)**
-   - BB Width: (47.23 - 44.61)/46.27 = 5.7% (moderately tight)
-   - RSI: 55.83 (neutral)
-   - Setup: Consolidation with potential breakout
-
-### **TREND CONTINUATION (BEARISH)**
-**Criteria:** Price below all MAs, bearish momentum, negative MACD
-
-1. **XLY (Consumer Discretionary Select Sector SPDR)**
-   - Price: 107.77 (below all MAs)
-   - SMA order: 200>50>20 (115.71 > 114.49 > 109.84) - Downtrend
-   - RSI: 40.96 (bearish momentum)
-   - Setup: Consistent downtrend continuation
-
-2. **XLV (Health Care Select Sector SPDR)**
-   - Price: 146.57 (below 20 & 50 MAs)
-   - RSI: 42.73 (bearish momentum)
-   - MACD: Bearish but histogram positive (0.36)
-   - Setup: Breaking down from consolidation
-
-### **NEUTRAL/CONSOLIDATION PATTERNS**
-**Criteria:** Mixed signals, range-bound, conflicting indicators
-
-1. **SPY (SPDR S&P 500 ETF Trust)**
-   - Price: 659.22 (between 20 & 200 SMA)
-   - RSI: 48.73 (neutral)
-   - MACD: Bearish but histogram positive (1.74)
-   - Setup: Sideways consolidation within broader range
-
-2. **QQQ (Invesco QQQ Trust)**
-   - Price: 588.59 (between 20 & 200 SMA)
-   - RSI: 49.03 (neutral)
-   - MACD: Bearish but histogram positive (1.35)
-   - Setup: Range-bound consolidation
-
-3. **VTI (Vanguard Total Stock Market ETF)**
-   - Price: 325.43 (between 20 & 200 SMA)
-   - RSI: 49.21 (neutral)
-   - MACD: Bearish but histogram positive (0.91)
-   - Setup: Neutral consolidation pattern
+### 5. **Broad Market ETFs — Key Levels**
+- **SPY** (`close: 676.01`): Above SMA_20 (656.68) and SMA_200 (660.16). RSI 58.9, MACD histogram positive (+3.13). **Action:** Bullish above 660 support.
+- **QQQ** (`close: 606.09`): Above all SMAs. RSI 58.4, MACD histogram positive (+2.85). **Action:** Tech trend healthy; support at SMA_20 (~587.52).
+- **IWM** (`close: 260.47`): Above all SMAs. RSI 60.4, MACD histogram positive (+1.72). **Action:** Small-cap breakout; target upper Bollinger Band (~257.35).
 
 ---
 
-## **TOP ACTIONABLE SETUPS (Price Action Only)**
+## Top 3 Actionable Trade Ideas (Pure Technicals)
 
-### **Momentum Plays (Trend Continuation):**
-1. **XLE** - Strongest sector trend, though near resistance
-2. **MTZ** - Powerful infrastructure uptrend
-3. **KLAC** - Semiconductor equipment leader in clear uptrend
+1.  **AMD Long on Pullback:** Wait for dip to SMA_20 (~206.5) with RSI holding above 50. Stop below SMA_50 (~209.8). Target previous high ~232.
+2.  **TLT Volatility Break Trade:** Place buy stop above 87.40 (break SMA_50) and sell stop below 86.40 (break SMA_20). Squeeze suggests a 2–3 point move upon resolution.
+3.  **TSLA Oversold Bounce:** High-risk mean reversion. Enter near current level (~343) with tight stop below 340 (lower Bollinger Band). Target SMA_20 (~376) for 9% potential rebound.
 
-### **Mean Reversal Candidates:**
-1. **XLP** - Best oversold bounce setup with RSI<40 and at lower BB
-2. **TSLA** - Extreme oversold, though risky given bearish structure
-
-### **Breakout/Squeeze Watch:**
-1. **SCHD** - Extremely tight compression (2% BB width) - expect volatility expansion
-2. **UUP** - Dollar index coiled for directional move
-
-### **Avoid/Short Candidates:**
-1. **META** - Cleanest downtrend with all MAs providing resistance
-2. **XLY** - Consistent bearish momentum in consumer discretionary
-
-### **Monitor for Confirmation:**
-1. **SPY/QQQ** - Neutral, awaiting directional break from consolidation
-2. **XLU** - Defensive sector tightening for potential breakout
-
-**Note:** In the current "Bear Volatile" regime, the strongest trends are in energy/infrastructure (XLE, MTZ) while tech (META, MSFT) shows clear breakdowns. Oversold conditions in staples (XLP) and extreme oversold in TSLA present contrarian opportunities, though risk remains elevated until broader market confirms direction.
+**Risk Note:** Current regime is "Bull Volatile" — expect larger swings. Position sizes should account for elevated volatility (VIX at 21).
 
 ---
 
