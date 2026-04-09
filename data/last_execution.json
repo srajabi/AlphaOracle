@@ -1,48 +1,48 @@
 {
-  "last_updated_utc": "2026-04-08T20:58:24.418341+00:00",
+  "last_updated_utc": "2026-04-09T20:56:24.588378+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 20000
-      },
-      "status": "submitted",
-      "order_id": "5b322dc5-e7e3-4fc2-ad32-907c4a2e464b"
-    },
-    {
-      "trade": {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 15000
-      },
-      "status": "submitted",
-      "order_id": "e6a1d8b3-6a18-42b3-86f1-40644db782e5"
-    },
-    {
-      "trade": {
-        "ticker": "TLT",
+        "ticker": "SPY",
         "action": "buy",
         "notional_value": 10000
       },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
-    },
-    {
-      "trade": {
-        "ticker": "VXUS",
-        "action": "buy",
-        "notional_value": 10000
-      },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+      "status": "submitted",
+      "order_id": "b3ff9e6a-be93-4029-8db2-d4455ec16cec"
     },
     {
       "trade": {
         "ticker": "QQQ",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 10000
+      },
+      "status": "submitted",
+      "order_id": "60a44545-10ea-4a0e-8c3b-f06475df9cab"
+    },
+    {
+      "trade": {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 8000
+      },
+      "status": "failed",
+      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+    },
+    {
+      "trade": {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 7500
+      },
+      "status": "failed",
+      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+    },
+    {
+      "trade": {
+        "ticker": "VGK",
+        "action": "buy",
+        "notional_value": 8000
       },
       "status": "failed",
       "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
