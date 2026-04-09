@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-04-09T15:35:05.047814+00:00",
+  "last_updated_utc": "2026-04-09T20:56:37.308541+00:00",
   "accounts": {
     "dev": {
       "account_id": "dev",
@@ -7,7 +7,7 @@
       "strategy": "Advanced LLM Strategy",
       "frequency": "2x Daily (10 AM & 3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-04-09T15:35:03.381795+00:00",
+      "last_updated_utc": "2026-04-09T20:56:35.196203+00:00",
       "ok": true,
       "error": "",
       "account": {
@@ -25,72 +25,72 @@
       "strategy": "Standard LLM Strategy",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-04-09T15:35:03.454616+00:00",
+      "last_updated_utc": "2026-04-09T20:56:35.647908+00:00",
       "ok": true,
       "error": "",
       "account": {
         "status": "ACTIVE",
         "cash": -103530.22,
-        "equity": 208923.010206,
-        "buying_power": 1862.57,
-        "portfolio_value": 105392.79
+        "equity": 207440.551713,
+        "buying_power": 0.15,
+        "portfolio_value": 103910.33
       },
       "positions": [
         {
           "symbol": "GLD",
           "qty": 86.240806169,
-          "market_value": 37954.578795,
-          "current_price": 440.1,
+          "market_value": 37769.161062,
+          "current_price": 437.95,
           "avg_entry_price": 418.77148,
-          "unrealized_pl": 1839.388759
+          "unrealized_pl": 1653.971026
         },
         {
           "symbol": "TLT",
           "qty": 50.394174083,
-          "market_value": 4369.678835,
-          "current_price": 86.71,
+          "market_value": 4379.75767,
+          "current_price": 86.91,
           "avg_entry_price": 86.498094,
-          "unrealized_pl": 10.678828
+          "unrealized_pl": 20.757663
         },
         {
           "symbol": "VGK",
           "qty": 181.071945919,
-          "market_value": 15688.073394,
-          "current_price": 86.64,
+          "market_value": 15709.802028,
+          "current_price": 86.76,
           "avg_entry_price": 82.84,
-          "unrealized_pl": 688.073394
+          "unrealized_pl": 709.802028
         },
         {
           "symbol": "XLE",
           "qty": 803.804569946,
-          "market_value": 46853.768382,
-          "current_price": 58.29,
+          "market_value": 45824.898533,
+          "current_price": 57.01,
           "avg_entry_price": 57.935787,
-          "unrealized_pl": 284.718028
+          "unrealized_pl": -744.151821
         },
         {
           "symbol": "XLP",
           "qty": 457.14363153,
-          "market_value": 37970.395749,
-          "current_price": 83.0601,
+          "market_value": 38113.070277,
+          "current_price": 83.3722,
           "avg_entry_price": 81.906424,
-          "unrealized_pl": 527.395636
+          "unrealized_pl": 670.070164
         },
         {
           "symbol": "XLU",
           "qty": 1065.714496345,
-          "market_value": 50791.952896,
-          "current_price": 47.66,
+          "market_value": 50312.381372,
+          "current_price": 47.21,
           "avg_entry_price": 46.031306,
-          "unrealized_pl": 1735.722806
+          "unrealized_pl": 1256.151282
         },
         {
           "symbol": "XLV",
           "qty": 102.551710842,
-          "market_value": 15294.562155,
-          "current_price": 149.14,
+          "market_value": 15331.480771,
+          "current_price": 149.5,
           "avg_entry_price": 146.267672,
-          "unrealized_pl": 294.562151
+          "unrealized_pl": 331.480767
         }
       ]
     },
@@ -100,7 +100,7 @@
       "strategy": "TQQQ Momentum",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-04-09T15:35:03.537425+00:00",
+      "last_updated_utc": "2026-04-09T20:56:36.120110+00:00",
       "ok": true,
       "error": "",
       "account": {
@@ -118,24 +118,24 @@
       "strategy": "Dual Momentum",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-04-09T15:35:03.612015+00:00",
+      "last_updated_utc": "2026-04-09T20:56:36.369044+00:00",
       "ok": true,
       "error": "",
       "account": {
         "status": "ACTIVE",
         "cash": -90104.84,
-        "equity": 195844.5,
-        "buying_power": 15634.82,
-        "portfolio_value": 105739.66
+        "equity": 194887.75,
+        "buying_power": 14678.07,
+        "portfolio_value": 104782.91
       },
       "positions": [
         {
           "symbol": "GLD",
           "qty": 445.0,
-          "market_value": 195844.5,
-          "current_price": 440.1,
+          "market_value": 194887.75,
+          "current_price": 437.95,
           "avg_entry_price": 427.201888,
-          "unrealized_pl": 5739.65984
+          "unrealized_pl": 4782.90984
         }
       ]
     },
@@ -145,24 +145,24 @@
       "strategy": "Sector Rotation",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-04-09T15:35:04.362914+00:00",
+      "last_updated_utc": "2026-04-09T20:56:36.616326+00:00",
       "ok": true,
       "error": "",
       "account": {
         "status": "ACTIVE",
         "cash": 74351.71,
-        "equity": 28337.08,
-        "buying_power": 177040.5,
-        "portfolio_value": 102688.79
+        "equity": 28445.7484,
+        "buying_power": 65188.69,
+        "portfolio_value": 102797.46
       },
       "positions": [
         {
           "symbol": "XLB",
           "qty": 548.0,
-          "market_value": 28337.08,
-          "current_price": 51.71,
+          "market_value": 28445.7484,
+          "current_price": 51.9083,
           "avg_entry_price": 51.651168,
-          "unrealized_pl": 32.239936
+          "unrealized_pl": 140.908336
         }
       ]
     },
@@ -172,7 +172,7 @@
       "strategy": "Mean Reversion",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-04-09T15:35:04.662304+00:00",
+      "last_updated_utc": "2026-04-09T20:56:37.063292+00:00",
       "ok": true,
       "error": "",
       "account": {
