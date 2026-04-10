@@ -1,51 +1,52 @@
 {
-  "last_updated_utc": "2026-04-09T20:56:24.588378+00:00",
+  "last_updated_utc": "2026-04-10T20:54:26.531078+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "SPY",
-        "action": "buy",
-        "notional_value": 10000
-      },
-      "status": "submitted",
-      "order_id": "b3ff9e6a-be93-4029-8db2-d4455ec16cec"
-    },
-    {
-      "trade": {
-        "ticker": "QQQ",
-        "action": "buy",
-        "notional_value": 10000
-      },
-      "status": "submitted",
-      "order_id": "60a44545-10ea-4a0e-8c3b-f06475df9cab"
-    },
-    {
-      "trade": {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 8000
+        "notional_value": 17000
       },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "GLD",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 7500
+        "notional_value": 17000,
+        "limit_price": 56.12
       },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
         "ticker": "VGK",
         "action": "buy",
-        "notional_value": 8000
+        "notional_value": 17000
       },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "EWC",
+        "action": "buy",
+        "notional_value": 17000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 17000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
     }
   ]
 }
