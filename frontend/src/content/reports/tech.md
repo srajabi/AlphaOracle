@@ -1,79 +1,60 @@
 ---
 title: Technical Analyst Report
-date: "2026-04-10"
+date: "2026-04-13"
 ---
 
 ## Model: deepseek/deepseek-reasoner
 
-## Technical Analysis: Price Action & Indicator-Based Setups
+Based on a purely technical analysis of price action and indicators, here are the key setups categorized by pattern and probability.
 
-Based purely on price action and technical indicators (SMA, RSI, MACD, Bollinger Bands), here are the identified setups for key assets in the watchlist. All narrative, news, and macro context has been excluded.
+### **1. Strong Momentum / Trend Continuation**
+These assets show robust uptrends with price above key moving averages and strong momentum indicators. Look for pullbacks to dynamic support.
 
-### **Strong Uptrend / Momentum Continuation Candidates**
-These assets are above their key moving averages, with bullish momentum and structure suggesting further upside is probable.
+*   **KLAC**: Price ($1,737) well above all SMAs (20/50/200). RSI (70.1) elevated but not extreme. MACD histogram positive. **Setup**: Uptrend intact. Wait for pullback toward $1,650-$1,700 for entry.
+*   **INTC**: Explosive move to $62.38, far above rising SMAs. RSI (75.4) is overbought, suggesting a pause or pullback is due. **Setup**: Strong trend but extended. High-risk entry here. Better to wait for a consolidation or pullback to the 20-SMA (~$48).
+*   **AMD**: Price ($245) above all SMAs. RSI (70.1) elevated, MACD positive. **Setup**: In a strong uptrend. A pullback to the 20-SMA (~$210) would be a higher-probability entry.
+*   **STX & WDC**: Both show powerful breakouts above all SMAs with high RSI (68.9 & 66.0). **Setup**: Trend continuation likely, but positions are extended. Wait for a retest of breakout levels (~$420 for STX, ~$300 for WDC).
+*   **MTZ**: Price ($361) surging above sharply rising SMAs. RSI (72.9) overbought. **Setup**: Powerful trend, but entry here is chasing. Let it consolidate.
+*   **AVGO**: Price ($371.55) breaking above a consolidating range, above all SMAs. RSI (71.0) high. **Setup**: Bullish continuation signal. Initial target near $390. Risk a close below $350.
+*   **AMZN**: Price ($238.38) has broken above the 20 & 50 SMA, with the 20-SMA turning up. RSI (71.5) overbought. **Setup**: Mean reversion complete, trend resuming. A pullback to $225 (previous resistance, now support) is an ideal entry.
+*   **TSM**: Price ($370.60) above all rising SMAs. RSI (62.7) bullish, MACD turning up. **Setup**: Steady uptrend. Support at the 20-SMA (~$342).
 
-| Ticker | Close | Key Technicals | Setup Rationale |
-| :--- | :--- | :--- | :--- |
-| **INTC** | $61.72 | **Price > All SMAs** (SMA20: $47.32). RSI: **74.8 (Overbought)**. MACD: **Bullish & Rising**. BB: Price at Upper Band. | Powerful breakout above all major averages. Overbought RSI suggests caution, but strong MACD momentum supports trend continuation. Watch for consolidation near the upper Bollinger Band. |
-| **KLAC** | $1727.26 | **Price > All SMAs**. RSI: **69.6 (Bullish)**. MACD: **Bullish & Rising**. BB: Price above Upper Band. | Extremely strong parabolic move. Trading outside the upper Bollinger Band indicates intense momentum. A pullback to the SMA20 (~$1507) would be a healthy consolidation before potential next leg up. |
-| **STX** | $500.77 | **Price > All SMAs**. RSI: **68.6 (Bullish)**. MACD: **Bullish & Rising**. BB: Price near Upper Band. | Sustained uptrend with all indicators aligned. The recent break above a long-term consolidation signals strong buying pressure. Trend is intact. |
-| **WDC** | $337.88 | **Price > All SMAs**. RSI: **64.8 (Bullish)**. MACD: **Bullish & Rising**. BB: Price near Upper Band. | Clear uptrend following a massive base breakout. Momentum remains strong, though RSI is not yet overbought, leaving room for further gains. |
-| **MTZ** | $357.37 | **Price > All SMAs**. RSI: **71.8 (Overbought)**. MACD: **Bullish & Rising**. BB: Price at Upper Band. | Another powerful breakout play. Overbought conditions are present, but the trend is undeniable. A move below the SMA20 (~$318) would be the first sign of trend weakness. |
-| **NBIS** | $136.33 | **Price > All SMAs**. RSI: **66.5 (Bullish)**. MACD: **Bullish & Rising**. BB: Price near Upper Band. | Strong, steady uptrend with consistent higher highs and higher lows. Well above all support levels, indicating strong institutional accumulation. |
-| **AMD** | $236.64 | **Price > All SMAs**. RSI: **66.8 (Bullish)**. MACD: **Bullish & Rising**. BB: Price near Upper Band. | Recent powerful surge above the SMA50 and SMA200. Bullish MACD crossover and rising RSI confirm new uptrend initiation. |
-| **AVGO** | $354.91 | **Price > All SMAs**. RSI: **65.9 (Bullish)**. MACD: **Bullish & Rising** (Histogram > 0). BB: Price at Upper Band. | Successfully reclaimed all major averages in a sharp V-shaped recovery. Momentum is accelerating, targeting a test of prior highs. |
+### **2. Mean Reversion / Oversold Bounce Candidates**
+These assets are at or near potential support levels with oversold RSI, suggesting a counter-trend bounce may be imminent.
 
-### **Bullish Resumption / Breakout Watch**
-These assets are in established uptrends but are at a critical juncture (testing resistance, coiling), suggesting a decisive move is imminent.
+*   **TSLA**: Price ($348.95) below all major SMAs (bearish structure), but RSI is deeply oversold (37.1). Trading at the lower Bollinger Band. **Setup**: **High-Probability Mean Reversion**. A bounce toward the 20-SMA (~$371) is likely. Stop below $335.
+*   **PLTR**: Price ($128.06) below declining SMAs. RSI is extremely oversold (34.1). **Setup**: **Classic Oversold Bounce**. Expect a relief rally toward $140-$145 (20-SMA). Stop below $125.
+*   **XLE**: Price ($56.94) below the 20-SMA but above the rising 50 & 200 SMA. RSI (43.5) is neutral. Trading near the lower BB. **Setup**: Testing key support at the 50-SMA (~$56.26). Hold here could see bounce to $59 (20-SMA).
+*   **ORCL**: Price ($138.09) below all major SMAs (bearish). RSI is oversold (38.4). **Setup**: Oversold and due for a bounce. Resistance at the 20-SMA (~$146.5). A break above could signal short-term bottom.
+*   **MSFT**: Price ($370.87) below declining 50 & 200 SMA, but holding near the 20-SMA. RSI oversold (38.4). **Setup**: Bounce/consolidation likely after a steep fall. Resistance at $390.
+*   **CEG**: Price ($286.50) testing the 20 & 50 SMA cluster. RSI neutral (46.5). **Setup**: At critical support. Hold above $285 suggests continuation of prior uptrend. Break below targets $265.
 
-| Ticker | Close | Key Technicals | Setup Rationale |
-| :--- | :--- | :--- | :--- |
-| **SPY** | $679.91 | **Price > All SMAs**. RSI: **60.8 (Bullish)**. MACD: **Bullish Crossover** (Histogram > 0). BB: Price at Upper Band. | Reclaimed all major averages. The MACD bullish crossover and price at the upper Bollinger Band signal a resumption of the primary uptrend. A close above $680 confirms. |
-| **QQQ** | $610.19 | **Price > All SMAs**. RSI: **60.3 (Bullish)**. MACD: **Bullish Crossover** (Histogram > 0). BB: Price near Upper Band. | Mirroring SPY. Successful test and hold above the SMA200. Bullish momentum is building for a test of the recent high (~$629). |
-| **NVDA** | $183.91 | **Price > All SMAs**. RSI: **56.6 (Neutral/Bullish)**. MACD: **Bullish Crossover** (Histogram > 0). BB: Price in upper half. | Coiling above all key SMAs after a correction. The bullish MACD histogram flip and neutral RSI provide a clean risk/reward for a breakout above $188 (upper BB). |
-| **GOOGL** | $318.49 | **Price > All SMAs**. RSI: **62.7 (Bullish)**. MACD: **Bullish Crossover** (Histogram > 0). BB: Price at Upper Band. | Leading the mega-cap rebound. Strong momentum with price pushing against the upper Bollinger Band. The path of least resistance is up. |
-| **TSM** | $365.49 | **Price > All SMAs**. RSI: **60.7 (Bullish)**. MACD: **Bullish Crossover** (Histogram > 0). BB: Price near Upper Band. | Broke out from a multi-week consolidation. All indicators support further upside towards the all-time high. |
-| **AMZN** | $233.65 | **Price > All SMAs**. RSI: **69.0 (Bullish)**. MACD: **Bullish & Rising**. BB: Price at Upper Band. | Explosive move from the lows, now extended. While overbought short-term, the trend is powerful. A pullback to the SMA20 (~$211) would be a high-probability continuation entry. |
-| **IWM** | $261.96 | **Price > All SMAs**. RSI: **61.8 (Bullish)**. MACD: **Bullish Crossover** (Histogram > 0). BB: Price at Upper Band. | Small-caps are participating in the rally, a bullish breadth signal. Break above the SMA200 with conviction suggests a sustained move. |
+### **3. Weak / Breakdown in Progress**
+These assets show bearish structure and may have further to fall. Avoid catching the falling knife.
 
-### **Potential Mean Reversion / Oversold Bounce Candidates**
-These assets are at or near oversold conditions, trading below key moving averages, and may be due for a counter-trend bounce.
+*   **CRWD**: Price ($379.02) below all major SMAs which are rolling over. RSI weak (41.3). **Setup**: Downtrend intact. Any bounce is likely a sell into resistance (~$405).
+*   **XLF**: Price ($50.77) is stalling at the 50-SMA resistance. MACD weak, RSI neutral. **Setup**: Failed to break above 50-SMA. Bias turns negative below $50.50.
+*   **XLK & XLC**: Both are at a technical inflection point—testing the 20 & 50 SMA from below. RSI neutral. **Setup**: Need a decisive close above the 50-SMA to turn bias positive. Failure here resumes downtrend.
 
-| Ticker | Close | Key Technicals | Setup Rationale |
-| :--- | :--- | :--- | :--- |
-| **TSLA** | $345.62 | **Price < All SMAs**. RSI: **35.1 (Oversold)**. MACD: **Bearish but Histogram Improving**. BB: Price at Lower Band. | Deeply oversold and pressing the lower Bollinger Band. The slowing negative momentum (MACD histogram) suggests selling exhaustion. A bounce towards the SMA20 (~$373) is the play. |
-| **PLTR** | $130.49 | **Price < All SMAs**. RSI: **35.6 (Oversold)**. MACD: **Bearish**. BB: Price below Lower Band. | Severely oversold and trading outside the lower band—a classic "rubber band" setup. The probability of a sharp, swift mean reversion bounce is high. |
-| **ORCL** | $137.86 | **Price < All SMAs**. RSI: **38.1 (Oversold)**. MACD: **Bearish but Flat**. BB: Price near Lower Band. | In a persistent downtrend but now oversold and at support of the lower Bollinger Band. Any positive momentum could spark a significant short-covering rally. |
-| **CEG** | $280.25 | **Price < SMA20 & SMA50**. RSI: **42.9 (Neutral/Oversold)**. MACD: **Bearish**. BB: Price near Lower Band. | Correcting within a larger uptrend. Testing the lower Bollinger Band and the rising SMA200. This is a logical level for the longer-term trend to reassert itself. |
-| **CRWD** | $394.68 | **Price < SMA20 & SMA50**. RSI: **45.7 (Neutral)**. MACD: **Bullish Crossover** (Histogram > 0). BB: Price at Lower Band. | Interesting divergence: Price is weak, but MACD has turned positive. This suggests underlying buying pressure and a high-probability bounce from the lower band support. |
-| **PSTG** | $60.19 | **Price < SMA20 & SMA50**. RSI: **43.6 (Neutral)**. MACD: **Bullish Crossover** (Histogram > 0). BB: Price near Lower Band. | Similar to CRWD—bearish price structure but a bullish MACD divergence at lower Bollinger Band support. Signals selling pressure is waning. |
+### **4. Neutral / Consolidation & Breakout Setups**
+These assets are coiling or trading in a range, awaiting a directional catalyst.
 
-### **Sideways / Volatility Contraction (Potential Squeeze)**
-These assets are in consolidation patterns with tightening Bollinger Bands, indicating a period of low volatility that often precedes a significant directional move.
+*   **SPY/QQQ/VOO (Broad Market)**: All show similar structure: Price above rising 20 & 200 SMA, but slightly below or at the 50-SMA. RSI ~60, MACD improving. **Setup**: **Bullish Consolidation**. The market is digesting gains near all-time highs. A close above the 50-SMA (SPY $673, QQQ $600) confirms resumption of the primary uptrend.
+*   **IWM**: Price ($261.30) above all rising SMAs—the most bullish broad market chart. RSI healthy (60.8). **Setup**: Leading the market. Support at 20-SMA (~$250). Uptrend intact.
+*   **TLT**: Price ($86.49) trapped between the 20 & 50 SMA. RSI and MACD neutral. **Setup**: Symmetrical compression. A break above $87.50 is bullish for bonds (bearish for yields). A break below $85.50 is bearish.
+*   **GLD/IAU**: Price trapped between the 20 & 50 SMA. RSI neutral (~50). **Setup**: Consolidating after a pullback. A move above the 50-SMA ($451/$92.4) signals next leg up. A break below the 200-SMA fails the thesis.
+*   **GOOGL**: Price ($317.24) above all SMAs in a steady uptrend channel. RSI healthy (61.5). **Setup**: **Quiet Uptrend**. Buy dips toward the 20-SMA (~$299).
+*   **AAPL**: Price ($260.48) hovering at the 50-SMA, above the 20 & 200 SMA. RSI neutral (55.6). **Setup**: At a decision point. Bullish above $262 (50-SMA), bearish below $253 (20-SMA).
 
-| Ticker | Close | Key Technicals | Setup Rationale |
-| :--- | :--- | :--- | :--- |
-| **TLT** | $86.70 | **Price ~ All SMAs**. RSI: **48.8 (Neutral)**. MACD: **Neutral Crossover** (Histogram ~0). BB: **Extremely Tight**. | Textbook volatility contraction. Price is compressed between all major SMAs, and the Bollinger Bands have pinched to a multi-month tight range. An explosive move is imminent; direction will be key. |
-| **GLD** | $437.91 | **Price between SMA20 & SMA50**. RSI: **50.4 (Neutral)**. MACD: **Bearish but Histogram Improving**. BB: **Narrowing**. | Coiling in a neutral range after a pullback. The narrowing bands and improving momentum hint at a resolution soon. A break above the SMA50 ($452.33) is bullish, below SMA20 ($430.79) is bearish. |
-| **MSFT** | $373.07 | **Price < SMA20 & SMA50**. RSI: **40.0 (Neutral/Oversold)**. MACD: **Bullish Crossover** (Histogram > 0). BB: Price in middle. | Contradictory signals: Price is weak, but MACD is turning up. This creates a volatility "spring" setup. A move above the SMA20 (~$379) would trigger a powerful short squeeze. |
-| **XLF** | $51.33 | **Price > SMA20, < SMA50**. RSI: **62.2 (Bullish)**. MACD: **Bullish Crossover** (Histogram > 0). BB: **Narrowing**. | Digesting recent gains in a tight range. The bullish bias from the MACD and RSI suggests the squeeze resolution is likely upward towards the SMA50 (~$50.86). |
+### **Summary of High-Conviction Technical Setups:**
 
-### **Failed Breakout / Bearish Rejection**
-These assets showed promise but have encountered rejection at resistance, with momentum turning negative.
+1.  **Best Oversold Bounce**: **TSLA** & **PLTR**. Deeply oversold with prices at lower BB, high probability of a technical bounce.
+2.  **Best Trend Continuation**: **IWM**, **KLAC**, **AMZN**. Strong price structure, holding above key moving averages with healthy momentum.
+3.  **Key Inflection Point**: **Broad Market (SPY/QQQ)**. Coiling beneath the 50-SMA. The direction of the next break (above 50-SMA or below 20-SMA) will set the tone.
+4.  **Failed Setup**: **XLF**. Rejection at the 50-SMA suggests underlying weakness in financials.
+5.  **Watch for Breakout**: **TLT** and **GLD**. Both in tight compressions; the direction of the breakout will guide the next macro move in rates and real assets.
 
-| Ticker | Close | Key Technicals | Setup Rationale |
-| :--- | :--- | :--- | :--- |
-| **XLE** | $57.33 | **Price < SMA20, > SMA50**. RSI: **45.2 (Bearish)**. MACD: **Bearish Crossover** (Histogram < 0). BB: Price near Lower Band. | Failed at the SMA20 resistance and rolled over. The bearish MACD crossover and RSI below 50 suggest the recent breakout attempt has failed. Next support is the SMA50 (~$56.12). |
-| **META** | $628.39 | **Price < SMA50, > SMA200**. RSI: **57.2 (Neutral)**. MACD: **Bearish but Histogram Improving**. BB: Price in middle. | Struggling below the declining SMA50. While there's been a bounce, it lacks the momentum (MACD still negative) to be considered a true trend resumption. It remains in a corrective phase. |
-
----
-### **Summary of Actionable Signals:**
-
-*   **For Momentum Traders:** Focus on **INTC, KLAC, STX, WDC**. Tighten stops due to overbought readings.
-*   **For Breakout Traders:** Watch **SPY, QQQ, NVDA** for a confirmed close above their respective upper Bollinger Bands.
-*   **For Mean Reversion Traders:** **TSLA, PLTR, CRWD** offer high-probability bounce setups from oversold extremes.
-*   **For Volatility Traders:** **TLT** is the prime candidate for an impending large move. Prepare for a directional bet on the breakout.
-*   **Avoid/Caution:** **XLE** shows failed momentum. **META** and **ORCL** require a clear catalyst to reverse their current bearish structures.
+**Actionable View**: The market (SPY/QQQ) is in a bullish consolidation. Favor long setups in assets with strong relative strength (IWM, Semis) or deep oversold bounces (TSLA, PLTR). Wait for a confirmed break above the 50-SMA in the majors to add broad market exposure aggressively.
 
 ---
 

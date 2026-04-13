@@ -1,28 +1,32 @@
 [
     {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 17000
-    },
-    {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 17000,
-        "limit_price": 56.12
+        "notional_value": 8718.5
     },
     {
-        "ticker": "VGK",
+        "ticker": "XLP",
         "action": "buy",
-        "notional_value": 17000
+        "notional_value": 8718.5
     },
     {
-        "ticker": "EWC",
+        "ticker": "XLV",
         "action": "buy",
-        "notional_value": 17000
+        "notional_value": 8718.5
+    },
+    {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 8718.5
     },
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 17000
+        "notional_value": 4359.25
+    },
+    {
+        "ticker": "EWC",
+        "action": "buy",
+        "notional_value": 4359.25
     }
 ]
