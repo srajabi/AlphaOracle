@@ -1,21 +1,21 @@
 {
-  "last_updated_utc": "2026-04-13T20:55:58.485951+00:00",
+  "last_updated_utc": "2026-04-15T20:58:43.193774+00:00",
   "error": "",
   "results": [
     {
       "trade": {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 12000
+        "notional_value": 15000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "EWC",
+        "ticker": "VGK",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 15000
       },
       "status": "skipped",
       "reason": "No available buying power."
@@ -24,7 +24,7 @@
       "trade": {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 15000
       },
       "status": "skipped",
       "reason": "No available buying power."
@@ -33,7 +33,25 @@
       "trade": {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 8000
+        "notional_value": 10000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "IWM",
+        "action": "buy",
+        "notional_value": 10000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "INTC",
+        "action": "buy",
+        "notional_value": 5000
       },
       "status": "skipped",
       "reason": "No available buying power."
