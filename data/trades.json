@@ -1,32 +1,27 @@
 [
     {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 15000
-    },
-    {
-        "ticker": "VGK",
-        "action": "buy",
-        "notional_value": 15000
-    },
-    {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 13077.75
+    },
+    {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 13077.75
     },
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 8718.5
     },
     {
-        "ticker": "IWM",
+        "ticker": "VXUS",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 13077.75
     },
     {
-        "ticker": "INTC",
+        "ticker": "XLV",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 8718.5
     }
 ]
