@@ -1,16 +1,31 @@
 [
     {
-        "ticker": "VXUS",
+        "ticker": "VGK",
+        "action": "buy",
+        "notional_value": 13000
+    },
+    {
+        "ticker": "EWC",
+        "action": "buy",
+        "notional_value": 13000
+    },
+    {
+        "ticker": "XLP",
         "action": "buy",
         "notional_value": 10000
     },
     {
-        "ticker": "XLF",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 10000
     },
     {
-        "ticker": "IWM",
+        "ticker": "CEG",
+        "action": "buy",
+        "notional_value": 7000
+    },
+    {
+        "ticker": "TLT",
         "action": "buy",
         "notional_value": 5000
     }
