@@ -1,10 +1,5 @@
 [
     {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 10000
-    },
-    {
         "ticker": "XLE",
         "action": "buy",
         "notional_value": 10000
@@ -15,8 +10,18 @@
         "notional_value": 10000
     },
     {
-        "ticker": "VXUS",
+        "ticker": "GLD",
         "action": "buy",
         "notional_value": 10000
+    },
+    {
+        "ticker": "VGK",
+        "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "EWC",
+        "action": "buy",
+        "notional_value": 5000
     }
 ]
