@@ -1,27 +1,37 @@
 [
     {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 5000
-    },
-    {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 5000
-    },
-    {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 8718
+    },
+    {
+        "ticker": "XLV",
+        "action": "buy",
+        "notional_value": 8719
+    },
+    {
+        "ticker": "XLE",
+        "action": "buy",
+        "notional_value": 6539
+    },
+    {
+        "ticker": "XLB",
+        "action": "buy",
+        "notional_value": 6539
     },
     {
         "ticker": "VXUS",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 6539
     },
     {
-        "ticker": "QUAL",
+        "ticker": "VGK",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 6539
+    },
+    {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 8718
     }
 ]
