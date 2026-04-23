@@ -2,36 +2,11 @@
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 17437
+        "notional_value": 25000
     },
     {
-        "ticker": "XLF",
+        "ticker": "VXUS",
         "action": "buy",
-        "notional_value": 13078
-    },
-    {
-        "ticker": "IWM",
-        "action": "buy",
-        "notional_value": 8718
-    },
-    {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 8718
-    },
-    {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 8718
-    },
-    {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 4359
-    },
-    {
-        "ticker": "EWC",
-        "action": "buy",
-        "notional_value": 4359
+        "notional_value": 10000
     }
 ]
