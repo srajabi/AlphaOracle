@@ -1,97 +1,81 @@
 ---
 title: Technical Analyst Report
-date: "2026-04-24"
+date: "2026-04-27"
 ---
 
 ## Model: deepseek/deepseek-reasoner
 
-**Technical Analysis & Trade Setups (Price Action Only)**
-
-**Market Overview**  
-SPY (708.45) and QQQ (651.42) are both above all major moving averages with strong MACD momentum. RSI on QQQ (71) is overbought; SPY (68) is near overbought. Bollinger Bands are wide, indicating the trend is intact but extended. A pullback to the 20‑day SMA (SPY ~677, QQQ ~611) would be a normal mean reversion level.
+**Price Action Technical Assessment – April 27, 2026**  
+*Ignoring news. Evaluating only price, MAs, RSI, MACD, and Bollinger Bands.*
 
 ---
 
-### 1. Mean Reversion Bounces
+### 1. Overextended / Mean Reversion Candidates (RSI > 70, price near/above upper BB)
 
-| Ticker | Close | RSI | SMA20 | SMA200 | BB Position | Signal |
-|--------|-------|-----|-------|--------|-------------|--------|
-| **XLV** (Healthcare) | 146.24 | 44.2 | 146.95 | 145.65 | Near lower BB (143.78) | RSI oversold (below 45) and price at 200‑day SMA. MACD histogram just turned positive. This is a classic rebound setup. |
-| **TLT** (Bonds) | 86.55 | 47.6 | 86.57 | 86.72 | BB tight (85.70–87.43) | Volatility contraction squeeze. MACD histogram turning positive. Price hugging 20‑day and 200‑day. A breakout above 87.40 would trigger a mean reversion higher. |
-| **TSLA** | 373.72 | 47.7 | 368.92 | 400.45 | Below 50‑day (388) | RSI recovering from oversold (was 43 last week). Price above 20‑day for first time in 3 weeks. Short‑term bounce potential toward 50‑day. |
-
-**Trade Ideas:**  
-- Buy XLV at market (~146.20) with stop below 200‑day (145.50). Target 149 (50‑day).  
-- Buy TLT calls (e.g., May 15 87.50) for a squeeze to upper BB.  
-
----
-
-### 2. Trend Continuation (Strong Momentum, Not Overbought)
-
-| Ticker | Close | RSI | MACD | Notes |
-|--------|-------|-----|------|-------|
-| **NVDA** | 199.64 | 64.7 | Positive, rising | Above all MAs, no divergence. |
-| **KLAC** | 1815 | 68.9 | Positive, rising | Still below 70 RSI; room to run. |
-| **MU** | 481.72 | 66.2 | Positive, rising | Strong uptrend, recent consolidation above 20‑day. |
-| **GOOGL** | 338.89 | 66.3 | Positive | Above 200‑day, MACD expanding. |
-
-**Trade Ideas:**  
-- Hold existing longs or add on dips to 20‑day.  
-- Use trailing stops at 20‑day SMA to protect gains.  
+- **AMD** – RSI 88.9 (extreme), price $347.81 above upper BB ($329.91), massive MACD hist (8.98). **High risk of mean reversion pullback.**  
+- **INTC** – RSI 82.2, price $82.54 above upper BB ($80.20). Extended after +90% April rally. **Pullback likely.**  
+- **AMZN** – RSI 80.4, price $263.99 near upper BB ($273.84), but still inside band. **Overbought but not screaming reversal yet.**  
+- **AVGO** – RSI 77.8, price $422.76 within upper BB ($451.48). **Extended but room to run.**  
+- **WDC** – RSI 77.1, price $404.00 inside upper BB ($428.39). **Momentum strong; watch for bearish divergence.**  
+- **KLAC** – RSI 75.7, price $1935 inside upper BB ($1978). **Trend continuation intact, not yet overstretched by BB.**  
+- **TQQQ / QQQ** – RSI 74.9, QQQ inside upper BB ($679). **3x leveraged ETF extreme; QQQ itself is overbought but not above band.**  
+- **NVDA** – RSI 71.5, price $208.27 just inside upper BB ($213.78). **Healthy uptrend; minor overbought.**  
+- **STX** – RSI 75.4, price $586.25 inside upper BB ($629.82). **Room to run; momentum strong.**  
+- **MU** – RSI 68.9 (close to 70), price $496.72 inside upper BB ($520.64). **Not yet extreme, but watch for overextension.**
 
 ---
 
-### 3. Failed Setups (Below 200‑Day MA – Bearish Bias)
+### 2. Strong Trend Continuations (Price above all SMAs, MACD positive, RSI 55–70)
 
-| Ticker | Close | SMA200 | 20‑day | 50‑day | RSI | Signal |
-|--------|-------|--------|--------|--------|-----|--------|
-| **MSFT** | 415.75 | 469.03 | 389.04 | 393.56 | 59.8 | Rally from 20‑day is a dead cat bounce; price still 11% below 200‑day. Resistance at 50‑day (393) and 200‑day (469). |
-| **META** | 659.15 | 679.31 | 618.09 | 629.49 | 57.6 | Similar pattern – short‑term uptrend but below 200‑day. |
-| **CRWD** | 445.39 | 458.50 | 409.80 | 409.36 | 58.4 | Broken below 200‑day in early April; retest likely fails. |
-| **ORCL** | 176.28 | 213.04 | 156.41 | 153.70 | 61.7 | Large gap below 200‑day; recent rally on low volume. |
-
-**Trade Ideas:**  
-- Short MSFT/META/CRWD if they break below 20‑day (bear flag breakdown).  
-- Buy puts (e.g., MSFT May 15 400 put) to hedge a market pullback.  
+- **NVDA** – All SMAs rising, MACD bullish, RSI 71 (slightly high but acceptable). **Clean uptrend.**  
+- **AVGO** – Same profile, MACD hist rising. **Continue long as long as price holds above SMA-20 ($364).**  
+- **KLAC** – RSI 75.7, but still below upper BB. **Trend is powerful; no reversal signal.**  
+- **SPY / VOO / VTI** – All three are above all SMAs, RSI ~70, MACD bullish. **Broad market uptrend, though approaching exhaustion.**  
+- **IWM (small caps)** – RSI 69.5, price above all SMAs, MACD positive. **Lagging large caps but catching up.**  
+- **XLK** – RSI 76.2, price above all MAs. **Sector momentum strong.**  
+- **MSFT / GOOGL / META** – All in uptrends, RSI 59–69, MACD positive. **Healthy, not overbought.**  
+- **CEG** – RSI 60.2, MACD hist positive (2.41), price above SMA-20 ($288) but below SMA-50 ($299). **Recovery after pullback; potential trend continuation.**
 
 ---
 
-### 4. Overbought Pullback Risks (RSI > 75)
+### 3. Mean Reversion Bounces / Oversold Recoveries
 
-| Ticker | Close | RSI | Upper BB | Implication |
-|--------|-------|-----|----------|-------------|
-| **AMD** | 305.33 | 83.6 | 311.52 | Extreme overbought; pullback to 20‑day (243) likely. Cash‑secured puts at 310 are high premium but risky. |
-| **AVGO** | 419.94 | 77.2 | 444.61 | Similar; RSI >75, price extended. |
-| **WDC** | 403.12 | 76.9 | 421.23 | Up 135% YTD; momentum fading. |
-| **STX** | 587.62 | 75.9 | 621.80 | Same pattern. |
-| **MTZ** | 382.88 | 75.9 | 395.66 | Overbought, but still above 20‑day. |
-
-**Strategy:** Avoid buying calls here. Selling **cash‑secured puts** at strikes ~5–10% below current price is appropriate (e.g., AMD 310 put – 10.9% downside protection, collecting ~2% premium).  
+- **GLD / IAU** – RSI ~47, price below SMA-50 ($447) and SMA-20 ($433), MACD hist slightly positive. **Gold in a pullback, nearing support; possible bounce from SMA-200 ($388) area.**  
+- **XLV** – RSI 38.8, price below SMA-20 ($146.9) and SMA-50 ($150.3), MACD neutral. **Healthcare is weak; not yet oversold enough for a bounce.**  
+- **NFLX** – RSI 40.8, price near lower BB ($88.3), MACD negative. **Could be oversold but no reversal candle yet.**  
+- **^VIX** – RSI 41.9, price below SMA-20 ($21.57) and SMA-50 ($22.51). **Volatility declining; bullish for equities.**
 
 ---
 
-### Options-Linked Recommendations (from provided chain)
+### 4. Volatility Contraction / Bollinger Squeeze Setups
 
-| Type | Ticker | Strike/Exp | Rationale (Technical) |
-|------|--------|------------|-----------------------|
-| Sell Put | AMD | 310, May 15 | Overbought (RSI 84), premium high. If assigned, good entry near 20‑day. |
-| Sell Put | AVGO | 395, May 8 | Similar – 6.6% below spot, RSI 77. |
-| Sell Put | CEG | 295, May 8 | Neutral RSI (50.5); price at 20‑day support. |
-| Buy Call | SPY | 735, May 15 | Trend up, but only if a pullback to 700 occurs first. Not now. |
-| Buy Put | SPY | 693, May 8 | Hedge if VIX spikes above 20. Current VIX below 19, so wait for confirmation. |
-| Buy Call | TLT | 87, May 15 | Volatility squeeze setup – BB tight, MACD turning. |
+- **TLT** – BB width very narrow (85.83–87.40), price in middle, RSI 49.2, MACD flat. **Bonds are coiling; a breakout in yields or rates will trigger a strong move.**  
+- **XLE** – BB width moderate (53.49–62.30), price $56.87, RSI 48.4, MACD slightly negative. **Energy in consolidation; watch for breakout above SMA-50 ($57.09) or breakdown below lower BB.**  
+- **UUP** – BB narrow (27.14–27.98), price middle, RSI 49.0, MACD slightly negative. **Dollar indecisive; watch for catalyst.**  
+- **SLV** – BB moderate (63.15–73.97), price $68.79, RSI 48.2, MACD hist positive. **Silver in a range; no squeeze yet.**
 
 ---
 
-### Summary of Actionable Setups (No News, Pure Price)
+### 5. Failed Setups / Warning Signs
 
-1. **Long XLV** – mean reversion from 200‑day support.  
-2. **Long TLT calls** – volatility squeeze, upside breakout likely.  
-3. **Short MSFT/META/CRWD** if they break below 20‑day – failed rallies below 200‑day.  
-4. **Sell puts on AMD, AVGO** – collect premium while waiting for overbought pullback.  
-5. **Hold NVDA, KLAC, MU** – trend intact. Use 20‑day as trailing stop.
+- **NFLX** – Despite being on watchlist, price below SMA-20 and SMA-50, MACD bearish cross, RSI weak. **Avoid until it reclaims SMA-50 (~$93).**  
+- **PLTR** – Price below SMA-200 ($164.43), RSI 48.6, MACD hist positive but small. **Still in a downtrend; not a buy yet.**  
+- **TSLA** – Price below SMA-50 ($387) and SMA-200 ($400), RSI 48.9, MACD hist positive but weak. **Needs to break above $400 to confirm reversal.**  
+- **XLU** – RSI 52.3, MACD slightly negative, price range-bound. **Utilities not yet providing shelter; wait for volatility expansion.**
 
-*Current cash position ($87k) allows for 1–2 small positions. Prioritize XLV and TLT call for mean reversion, and a put sale on AMD for income.*
+---
+
+### Summary of Best Setups (Pure Price Action)
+
+| Setup Type | Ticker | Key Levels |
+|---|---|---|
+| **Trend Continuation** | NVDA, AVGO, KLAC, SPY, QQQ | Hold long; use SMA-20 as trailing stop |
+| **Mean Reversion (Short)** | AMD, INTC | Risk reward favors pullback; consider put spreads or short-term short |
+| **Potential Bounce** | GLD, NFLX | Oversold conditions; wait for bullish MACD cross or price above SMA-20 |
+| **Squeeze Watch** | TLT, XLE, UUP | Low volatility; prepare for breakout in either direction |
+| **Avoid** | PLTR, TSLA | Still below key MAs; no confirmed trend reversal |
+
+**Actionable Note:** With the portfolio in 100% cash, the most attractive entry on pure technicals would be to **buy the QQQ/SPY dip** on a pullback to SMA-20 (~615 and ~681 respectively) or **short-term short overextended semiconductors** (AMD, INTC) for a mean reversion trade. The volatility contraction in TLT suggests a pending move; long-duration bonds could rally if rates fall, but the trend is still uncertain.
 
 ---
 

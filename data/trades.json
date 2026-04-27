@@ -2,31 +2,16 @@
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 4000
-    },
-    {
-        "ticker": "TLT",
-        "action": "buy",
-        "notional_value": 1700
-    },
-    {
-        "ticker": "SPY",
-        "action": "buy",
-        "notional_value": 3500
-    },
-    {
-        "ticker": "VXUS",
-        "action": "buy",
-        "notional_value": 1000
+        "notional_value": 21750
     },
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 1100
+        "notional_value": 13050
     },
     {
-        "ticker": "XLU",
+        "ticker": "TLT",
         "action": "buy",
-        "notional_value": 1000
+        "notional_value": 8700
     }
 ]
