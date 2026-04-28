@@ -2,11 +2,21 @@
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 13000
+        "notional_value": 17400
+    },
+    {
+        "ticker": "XLE",
+        "action": "buy",
+        "notional_value": 17400
     },
     {
         "ticker": "XLU",
         "action": "buy",
         "notional_value": 13000
+    },
+    {
+        "ticker": "PLTR",
+        "action": "buy",
+        "notional_value": 8700
     }
 ]
