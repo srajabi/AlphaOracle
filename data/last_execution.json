@@ -1,12 +1,21 @@
 {
-  "last_updated_utc": "2026-04-27T20:57:41.195404+00:00",
+  "last_updated_utc": "2026-04-28T20:59:55.422243+00:00",
   "error": "",
   "results": [
     {
       "trade": {
+        "ticker": "XLE",
+        "action": "buy",
+        "notional_value": 15000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 13000
+        "notional_value": 15000
       },
       "status": "skipped",
       "reason": "No available buying power."
@@ -15,7 +24,43 @@
       "trade": {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 13000
+        "notional_value": 10000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "QUAL",
+        "action": "buy",
+        "notional_value": 10000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLP",
+        "action": "buy",
+        "notional_value": 7000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLV",
+        "action": "buy",
+        "notional_value": 5000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "EWC",
+        "action": "buy",
+        "notional_value": 5000
       },
       "status": "skipped",
       "reason": "No available buying power."
