@@ -1,24 +1,15 @@
 {
-  "last_updated_utc": "2026-04-30T20:54:28.026095+00:00",
+  "last_updated_utc": "2026-05-01T20:55:34.051881+00:00",
   "error": "",
   "results": [
     {
       "trade": {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 20000
+        "notional_value": 10000
       },
-      "status": "submitted",
-      "order_id": "397fb10d-1d44-4e43-8917-3f5870afae85"
-    },
-    {
-      "trade": {
-        "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 15000
-      },
-      "status": "submitted",
-      "order_id": "2f4d6ce0-06e9-4731-a206-6fd0af89258f"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
@@ -26,17 +17,26 @@
         "action": "buy",
         "notional_value": 10000
       },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "XLE",
+        "ticker": "VXUS",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 10000
       },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "QUAL",
+        "action": "buy",
+        "notional_value": 10000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
     }
   ]
 }
