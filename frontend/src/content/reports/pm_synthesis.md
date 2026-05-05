@@ -3,25 +3,25 @@ title: AlphaOracle Daily Synthesis
 date: "2026-05-05"
 ---
 
-## Analysis & Final Decision
+## Synthesis & Decision
 
-The portfolio is 100% cash ($87,185) in a “Bull Quiet” regime that is fragile due to acute geopolitical risk (Strait of Hormuz, Fed credibility, recession signals) and overextended tech momentum. Both risk managers emphasize hedging and defensive rotation, but options are not executable. The technical analysts identify oversold mean‑reversion candidates (GLD, TLT) and warn of overbought tech names (STX, MU, GOOGL). The macro strategists favor AI infrastructure (CEG, TLN, STX) and energy (XLE) but acknowledge tail risks. Given the constraints, I will deploy a **cautious, barbell approach**: 60% into defensive/hedge positions (gold, energy, utilities, international) and 40% into trend‑following broad‑market exposure (QQQ, IWM) with a large cash reserve to pounce on drawdowns.
+I have weighed the inputs from the Risk Manager, Technical Analyst, and Macro Strategist against our investment thesis. The core tension is between the bullish technicals/macro (new highs, AI momentum, earnings) and the accumulating geopolitical tail risks (Strait of Hormuz, Fed politicization, recession signals). The thesis calls for a cautiously optimistic posture with volatility awareness. Given the 100% cash portfolio, I will deploy 60-70% into core positions that align with the macro framework, while retaining significant dry powder for potential drawdown entries. I prioritize the Macro Strategist’s framework (stronger model) but incorporate the Risk Manager’s concerns by avoiding overexposed tech and maintaining cash. The Technical Analyst’s mean‑reversion ideas (GLD, TLT) are noted but secondary; I will take a small tactical GLD position as a reopening hedge.
 
-**Key Disagreements & Resolution**  
-- Risk managers want heavy put hedges – not possible, so we replace with outright safe‑haven assets (GLD) and energy (XLE).  
-- Technicals show QQQ/SPY overbought but still in strong uptrend – we take a small QQQ position to capture momentum but set a tight mental stop.  
-- Macro suggests AI infrastructure is secular – we allocate to XLE (energy) as a proxy for the “shovel sellers” theme and avoid individual overbought semis.
+**Key decisions:**
+- **Core long (SPY, QQQ, XLE):** Capture the bull trend with a bias toward AI infrastructure and energy, as per Macro Strategist.
+- **Tactical hedge (GLD):** Gold is oversold at lower Bollinger Band; a small position serves as a geopolitical hedge and mean‑reversion play.
+- **Avoid overbought momentum names (MU, STX, WDC, INTC):** Risk of pullback is high; wait for consolidation.
+- **No options in final JSON** – trades are equity‑only. The cash‑secured put ideas from the Macro Strategist are deferred; we will consider them when options become available or when we have larger cash reserves.
+- **Retain ~$22k cash (~25% of portfolio)** for potential dips.
 
 ### Action Plan
 
-| Action | Ticker/Asset | Conviction | Timeframe | Justification |
-|--------|--------------|------------|-----------|---------------|
-| **Buy** | GLD | High | 2‑4 weeks | Mean‑reversion bounce from oversold (RSI 38.6, below lower BB). Central bank buying and geopolitical risk provide support. |
-| **Buy** | XLE | High | 4‑8 weeks | Structural supply risk from Hormuz conflict; oil stays above $100. Energy is the best inflation hedge. |
-| **Buy** | QQQ | Medium | 2‑4 weeks | Strong trend continuation (RSI 73.7, above all MAs). Small tactical position to capture AI‑led rally, but sized cautiously due to overbought. |
-| **Buy** | IWM | Medium | 1‑3 months | Domestic small caps benefit from weaker USD and tariff resilience. Strong technical trend (RSI 64.7). |
-| **Buy** | VXUS | Medium | 1‑3 months | International outperformance; diversification against US‑specific shocks (Fed, tariffs). |
-| **Buy** | XLU | Low | 1‑2 months | Defensive sector with mild uptrend; AI power demand tailwind. Small allocation for stability. |
-| **Hold** | Cash | – | – | ~25% reserve for opportunistic buying on any 5%+ market drawdown. |
+| Action | Ticker/Asset | Conviction Level | Timeframe | Justification |
+|--------|--------------|------------------|-----------|---------------|
+| **Buy** | SPY | High | 1–3 months | Core S&P 500 exposure; trend intact, RSI 68 not overbought, above all MAs. |
+| **Buy** | QQQ | Medium | 1–3 months | Tech/AI momentum; RSI 73.7 extended but secular AI buildout supports; limit order at SMA20 ($642) preferred if possible. |
+| **Buy** | XLE | High | 2–4 months | Tactical energy hedge against geopolitical supply shock; structural production ramp, RSI 60 healthy. |
+| **Buy** | GLD | Medium | 1–2 months | Mean‑reversion setup: price below lower BB, RSI 38, above 200‑day MA. Safe‑haven hedge with upside to SMA20 ($432). |
+| **Hold** | Cash | High | Indefinite | Approximately $22k (25% of portfolio) for opportunistic entries or to cover CSP assignment risk if options added later. |
 
-### Execution (Equity‑Only, No Options)
+### Executable Trades
