@@ -1,88 +1,112 @@
 ---
 title: Risk Manager Report
-date: "2026-05-05"
+date: "2026-05-06"
 ---
 
 ## Model: deepseek/deepseek-reasoner
 
-## Downside Protection & Geopolitical Risk Analysis
-
-### 1. Current Regime vs. Underlying Stress
-
-| Metric | Value | Signal |
-|--------|-------|--------|
-| **Regime** | Bull Quiet | Surface calm, but risk events accumulating |
-| **VIX (close)** | 18.29 | Elevated, not panic but above historical median |
-| **VIX RSI(14)** | 44.0 | Neutral with room to spike |
-| **SPY (close)** | 723.77 | Near all‑time high – complacency risk |
-| **GLD (close)** | 414.71 | Dropped from 432 SMA(20) – safe haven being sold |
-
-**Key tension:** Equities at record highs while geopolitical risk events have **medium confidence** tags and are concentrated in the last 24h. This is a classic “buy the rumor, sell the fact” setup if ceasefire fails or Fed/political risk materialises.
+## Geopolitical Risk & Downside Protection Analysis  
+### Date: 2026-05-06 | Regime: Bull Quiet | VIX: ~17.4 (low)
 
 ---
 
-### 2. Geopolitical Catalyst Breakdown
+### 1. Key Geopolitical Catalysts & Severity
 
-#### 🔴 Strait of Hormuz / Iran War Ceasefire (Severity: 8/10)
-- **What happened:** US attempts to open Hormuz; Iran attacks UAE oil facility; oil hit 2026 high then pulled back; fragile ceasefire tested hourly.
-- **Assets impacted (bullish):** XLE, oil producers (EOG, COP), gold (GLD/IAU), defence (if escalation widens).
-- **Assets impacted (bearish):** Broad equity indices (SPY, QQQ) via oil‑induced inflation shock; airlines, consumer discretionary (higher fuel costs); TLT (yields up on inflation fears).
-- **Recommended hedges:** Long GLD calls (May 22 $430→$4.28 ask, IV 24% – cheap), long XLE calls or short SPY puts. Tail risk: buy VIX call spread (e.g., May 22 20/25).
+| Catalyst | Description | Severity (1-10) | Exposed Sectors/Tickers | Bullish Impact | Bearish Impact |
+|----------|-------------|----------------|------------------------|----------------|----------------|
+| **Strait of Hormuz / US-Iran Tensions** | Hopes of a peace deal surged (oil crashed 8%), but earlier strikes/attacks remain unresolved. Deal is not final. | **7** (binary tail risk) | Energy (XLE, XLE, OIH), Shipping, Defense (LMT, RTX), Gold (GLD, IAU) | Peace → lower oil, disinflation, risk-on for equities | Deal collapse → oil spike, inflation, risk-off, energy wins |
+| **Fed Policy Uncertainty** | Musalem (hawkish) sees rates on hold; Warsh replacement speculation. Independence debate. | **6** | Treasuries (TLT, TMF), Growth stocks (QQQ, NVDA), Financials (XLF) | Hawkish pivot → yields up, growth stocks down | Dovish shift → bonds rally, growth re-rates |
+| **China-Taiwan / Semiconductors** | Apple exploring chip suppliers outside TSMC; packaging bottlenecks. No new escalation. | **5** (latent) | Semis (TSM, NVDA, AMD, KLAC, INTC), Tech supply chain | US-based fabs / Intel packaging gains | Taiwan blockade → catastrophic semi disruption |
+| **Trade War / Sanctions** | US warns China over Iranian oil; EU Russia sanctions; China export controls. | **4** | Industrials (XLI), Materials (XLB), Multinationals | US energy producers, defense | Margin pressure, supply chain friction |
+| **Recession Signals** | Layoffs (Coinbase), rising unemployment in some regions, slowing jobs. | **4** | Consumer discretionary (XLY), Technology | Defensives (XLP, XLU, XLV) | Broad equity drawdown |
 
-#### 🟠 Fed Political Intervention (Severity: 7/10)
-- **What happened:** DOJ subpoenas Fed, Powell staying despite attacks, Pirro asking to vacate ruling. Fed independence under question – historically negative for USD, bonds, and equities.
-- **Assets impacted (bearish):** TLT (yields could spike on credibility loss), SPY, QQQ, USD (UUP). Bullish for gold (debasement hedge) and Bitcoin (IBIT).
-- **Recommended hedges:** Long TLT puts (or TMF puts) if yields break out. Long GLD calls. Consider small long VIX position.
-
-#### 🟡 China‑Taiwan / Semiconductor Supply Chain (Severity: 6/10)
-- **What happened:** Ongoing Taiwan blockade risk; TSMC trades near highs but multiple “$10 trillion risk” articles. Intel pop on Apple deal may be short‑lived.
-- **Assets impacted:** Bearish for high‑multiple semis (NVDA, AMD, TSM); bullish for domestic fabs (INTC) and memory (MU, STX, WDC) as demand shifts? Currently memory stocks surging on AI – **be careful of sudden reversal**.
-- **Hedge:** Buy QQQ puts (e.g., May 22 $670→$7.35 ask) to protect tech exposure. Gold also buys protection.
-
-#### 🟢 Recession Signals (Severity: 5/10)
-- **What happened:** Iran’s labour market cracking; US unemployment rising in some demographics; Fed rate‑cut window narrowing.
-- **Assets impacted:** Bullish for TLT (flight to safety), XLU, consumer staples (XLP). Bearish for cyclicals (XLY, XLI) and high‑beta tech.
-- **Hedge:** Buy TLT calls (or reduce duration risk in bond proxies). Add defensive sector ETF puts? Better to use index puts.
+**Assessment:** The market is pricing in a benign outcome (peace deal, soft landing), leaving it vulnerable to a negative surprise. VIX is near its lower band, making tail hedges cheap.
 
 ---
 
-### 3. Recommended Hedging Actions (given $87k cash)
+### 2. Ticker-Level Weakness & Safe Haven Signals
 
-| Action | Instrument | Rationale | Cost / Risk |
-|--------|-----------|-----------|-------------|
-| **BUY** | SPY May 29 $702 Put (mid $4.21) | Core downside protection on S&P 500 | $421 per contract (100 shares). Efficient hedge. |
-| **BUY** | GLD May 22 $430 Call (mid $4.175) | Safe haven rebound after gold pullback | $417.50 per contract. IV low (24%). |
-| **BUY** | VIX May 22 $20 Call (if available, else use UVXY) | Tail risk spike if ceasefire breaks | Cheap insurance. |
-| **SELL** | QQQ May 22 $700 Call (mid $4.50) | Covered call on QQQ if owned (not yet). Instead, sell put spread? Not recommended now. |
-| **AVOID** | High‑beta tech (NVDA, AMD, PLTR) until geopolitical clarity | They will get crushed in risk‑off | – |
+| Ticker | Technical Signal | Interpretation |
+|--------|------------------|----------------|
+| **GLD** | RSI 41, below 50 & 20 SMA, near lower BB. | **Gold has sold off** despite geopolitical noise; potential for sharp reversal if fear returns. |
+| **SLV** | RSI 44, below 50 SMA. | Silver underperforming gold; industrial demand risk. |
+| **TLT** | RSI 43, below all SMAs. | Bond market pricing in hawkish Fed; safe-haven bid missing. |
+| **XLE** | RSI 60, above 50 SMA but volatile. | Energy choppy on binary oil outlook. |
+| **^VIX** | RSI 41, below 20 SMA. | Complacency; low vol environment ripe for a spike. |
 
-**Sector Rotation (if we had positions):**
-- **Underweight / Trim:** QQQ, XLK, XLY, consumer cyclicals.
-- **Overweight / Hold:** XLE, GLD, XLU, cash.
-- **Neutral:** XLV, defensive staples.
+**Key Insight:** The traditional safe havens (gold, bonds) are near technical support. A geopolitical shock could trigger a violent reversal higher in GLD and TLT, while VIX surges.
 
 ---
 
-### 4. Time Horizon & Scenarios
+### 3. Recommended Hedges & Risk Mitigation
 
-| Scenario | Likelihood | Action |
-|----------|-----------|--------|
-| **Ceasefire holds, oil stabilises** | 50% | Hedges expire worthless. Roll forward or reduce. |
-| **Iran hostilities escalate (shipping disruption)** | 30% | VIX spikes to 25+, equities fall 3‑5%. Puts pay out. Add more gold. |
-| **Fed independence attacked (DOJ escalates)** | 15% | Bond yields jump, equities correct. TLT puts + gold. |
-| **Taiwan blockade rhetoric intensifies** | 5% | Tech crash. QQQ puts become highly profitable. |
+Given the **all-cash portfolio**, we have flexibility to initiate small, cost-effective tail hedges. **Do not deploy full cash** – keep 80%+ in cash until uncertainty clears.
 
-**Immediate (next 1‑3 days):** Buy SPY puts and GLD calls. Keep 80%+ cash.
+#### a) Protective Puts on Broad Market (Best Tail Hedge)
+- Buy **SPY 5/22 $709 Put** (bid/ask 2.64–2.66, mid ~2.65). Cost: ~$265 per contract.
+- Buy **QQQ 5/22 $671 Put** (bid/ask 5.35–5.41, mid ~5.38). Cost: ~$538 per contract.
+- **Why:** Cheap (low IV), covers a >3% drop in 16 days. Scale 1–2 contracts each.
 
-**Next 1‑2 weeks:** Monitor oil prices and Fed news. If VIX drops below 16, consider adding VIX calls.
+#### b) Long Volatility via VIX Options
+- Buy **VIX 5/22 $20 Call** (if available) or **VXX** call for a volatility spike.
+- Given cash, simplest: allocate 1% to **TVIX** or **UVXY** as a short-term volatility hedge. **Caution:** decay in contango; hold only during crisis.
 
-**Next 2‑4 weeks:** Roll hedges if no escalation. Use cash to sell OTM put spreads on XLE or GLD to generate income.
+#### c) Gold Upside Hedge (Safe-Haven & Inflation Hedge)
+- Buy **GLD 5/22 $445 Call** (mid 3.975). Cost: ~$398 per contract.
+- If geopolitical risk materializes (deal fails, Iran escalation), gold likely rallies. This call gives leveraged upside.
+- Alternatively, buy **IAU** or use **GDX** for miners.
+
+#### d) Bond Hedge (Fed Surprise / Risk-Off)
+- Buy **TLT 5/22 $87 Call** (or 5/29). TLT near $85.4; if yields fall on flight-to-quality, TLT rallies.
+- Or use a small position in **TMF** (3x TLT) for leveraged exposure.
+
+#### e) Sector Rotation (Avoid / Trim – If We Had Holdings)
+- **Avoid:** Overweight energy (XLE) near binary oil event.
+- **Trim:** High-beta tech (NVDA, AMD, MU) if they extend recent gains. Use trailing stops.
+- **Preferred:** Defensive sectors (XLU, XLP, XLV) are at neutral levels; can add on weakness.
 
 ---
 
-### 5. Bottom Line
+### 4. Specific Trade Recommendations (Priority Order)
 
-The market is pricing **zero geopolitical risk** at all‑time highs. The news flow is too concentrated and too recent to ignore. **Act now to buy cheap protection** on SPY, GLD, and VIX. The cash position is already a strong hedge – use a small portion (2‑3% of NAV) for options tail risk. Avoid adding new beta exposure until the Strait of Hormuz ceasefire is confirmed beyond 48 hours.
+| Trade | Ticker | Strategy | Expiry | Strike | Max Risk | Time Horizon |
+|-------|--------|----------|--------|--------|----------|--------------|
+| **Tail Put** | SPY | Long put | 5/22 | 709 | ~$265/ct | 16 days |
+| **Tail Put** | QQQ | Long put | 5/22 | 671 | ~$538/ct | 16 days |
+| **Gold Call** | GLD | Long call | 5/22 | 445 | ~$398/ct | 16 days |
+| **Bond Call** | TLT | Long call | 5/22 | 87 | ~$250/ct | 16 days |
+| **Volatility** | VIX | Long call | 5/22 | 20 | ~$150/ct | 16 days |
+
+**Implementation:**
+- Use **1 contract each** for SPY, QQQ, GLD (total ~$1,200).
+- Skip VIX call if tight on capital.
+- Keep rest in cash or high-yield savings.
+
+---
+
+### 5. Scenarios & Expected Outcomes
+
+| Scenario | Probability | Likely Market Move | Hedge Performance |
+|----------|-------------|--------------------|-------------------|
+| Iran peace deal confirmed (oil stays down) | 40% | Equities rally, VIX drops | Put hedge loses, gold call loses, TLT flat/negative |
+| Iran deal collapses, Strait disruption | 30% | Oil spikes, equities sell off, VIX surges | **Puts profit big, gold call profits, TLT profit** |
+| Fed hawkish surprise (rates up) | 15% | Bonds fall, growth stocks dive | Puts profit, TLT loses, gold mixed |
+| Recession scare / earnings miss | 15% | Broad sell-off | Puts profit, gold call profits |
+
+**Net:** The hedges are asymmetric – cost is ~1.5% of cash but can offset a 5–10% drawdown. Ideal for a “low-volatility bearish skew” environment.
+
+---
+
+### 6. What to Sell / Avoid (For Existing or Future Positions)
+
+- **Avoid initiating** any long equity position now without a hedge.
+- **Do not chase** the semiconductor rally (AMD, MU, NVDA) – extended, AI capex concerns.
+- **Avoid** energy stocks (XLE) until Strait of Hormuz direction is clear.
+- **Do not short** gold or bonds – they are oversold and could reverse violently.
+
+---
+
+**Final Recommendation:** Deploy 2–3% of cash into the tail hedges above. Monitor macro news hourly. If a peace deal is formally signed, unwind puts and buy dips in semis. If tensions escalate, add to hedges or move to cash. **Discipline over prediction.**
 
 ---
 

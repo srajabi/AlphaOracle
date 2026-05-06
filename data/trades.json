@@ -1,22 +1,22 @@
 [
     {
-        "ticker": "SPY",
+        "ticker": "AMD",
         "action": "buy",
-        "notional_value": 30000
+        "notional_value": 3500
     },
     {
-        "ticker": "QQQ",
+        "ticker": "IAU",
         "action": "buy",
-        "notional_value": 20000
+        "notional_value": 850
     },
     {
-        "ticker": "XLE",
+        "ticker": "VGK",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 2600
     },
     {
-        "ticker": "GLD",
+        "ticker": "NFLX",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 850
     }
 ]
