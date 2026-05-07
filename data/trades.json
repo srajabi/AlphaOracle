@@ -2,16 +2,16 @@
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 13050
     },
     {
-        "ticker": "XLU",
+        "ticker": "TLT",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 8718
     },
     {
-        "ticker": "NVDA",
+        "ticker": "NFLX",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 4359
     }
 ]
