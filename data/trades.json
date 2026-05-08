@@ -2,11 +2,16 @@
     {
         "ticker": "GLD",
         "action": "buy",
-        "qty": 20
+        "notional_value": 13000
     },
     {
         "ticker": "XLE",
         "action": "buy",
-        "qty": 150
+        "notional_value": 8700
+    },
+    {
+        "ticker": "TLT",
+        "action": "buy",
+        "notional_value": 4500
     }
 ]
