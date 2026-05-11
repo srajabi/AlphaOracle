@@ -1,26 +1,42 @@
 ---
 title: AlphaOracle Daily Synthesis
-date: "2026-05-08"
+date: "2026-05-11"
 ---
 
-## Analysis & Final Plan
+# Analysis and Decision
 
-Given the conflicting signals—bullish momentum in tech/AI versus escalating geopolitical risks, a hawkish Fed, and overbought conditions in major indices—the optimal approach is to **preserve capital** while deploying a small tactical allocation to hedges and contrarian positions. The portfolio is 100% cash ($87k), which is a strength. We will not chase the overbought tech rally. Instead, we will:
+## Synthesis of Reports
 
-- **Buy gold (GLD)** as a direct safe-haven hedge against Middle East escalation and currency debasement. Technicals show consolidation near the 20-day SMA with neutral RSI, offering a reasonable entry.
-- **Add a small position in consumer staples (XLP)** as a defensive play: XLP has a neutral RSI and positive MACD, making it a better defensive choice than utilities or healthcare, which are in downtrends.
-- **Avoid energy (XLE)** for now: it is oversold but the direction is binary on Hormuz; we prefer to wait for a confirmed bounce or a clear risk-off spike.
-- **Do not buy overbought tech** (QQQ, NVDA, etc.) or leveraged ETFs—the risk of a sharp pullback is too high given the VIX at 40th percentile.
-- **Hold most of the cash** for opportunistic deployment after a 5%+ correction.
+We have three substantive reports from DeepSeek-reasoner (Risk, Technical, Macro), all pointing toward a cautious approach given overbought tech, elevated geopolitical risks (Iran oil spike, Fed transition, Trump-Xi summit), and a low VIX (17.19). The missing Gemini reports do not change the consensus view.
 
-We cannot execute options (the execution layer is equity-only), so we forgo the recommended tail puts and VIX call spreads. However, our equity positions serve as partial substitutes: gold provides negative correlation to equities, and staples offer downside resilience.
+**Key disagreements resolved:**
+- **NFLX**: Risk Manager flags it as a "value trap"; Technical Analyst sees an oversold bounce. With RSI 33.9 and price below all key moving averages, the risk of further downside (fundamental weakness, rising unemployment) outweighs any short-term technical mean reversion. **We avoid NFLX.**
+- **Leveraged ETFs (TQQQ, UPRO)**: Both Macro and Risk warn against leveraged longs when RSI >80. We agree – no leveraged positions until a pullback.
+- **Core deployment**: Macro wants to sell SPY puts to enter; Risk wants to wait. Since we are equity-only, we wait for a pullback or start small with high-quality, low-relative-risk names.
 
-### Trade Table
+**Regime: Bull Quiet** – but with a "powder keg" of geopolitical catalysts. Cash is a strategic asset. We will deploy 25% of cash into a diversified mix of AI infrastructure, quality, and defensive positions, leaving 75% dry powder for a better entry (expected 5-10% pullback).
 
-| Action | Ticker/Asset | Conviction Level | Timeframe | Justification |
-|--------|-------------|------------------|-----------|---------------|
-| Buy | GLD | High | 1-3 months | Geopolitical tension, central bank buying, neutral technicals. Core hedge. |
-| Buy | XLP | Medium | 1-3 months | Defensive sector with positive momentum; consumer staples insulate against stagflation risks. |
-| Hold | CASH | High | Ongoing | Flexibility to deploy on drawdowns; 90% cash keeps dry powder for opportunities. |
+## Actionable Plan
 
-### Executable Trades (Equity-Only)
+| Action (Buy/Sell/Hold) | Ticker/Asset | Conviction Level | Timeframe | Justification |
+|------------------------|--------------|------------------|-----------|----------------|
+| Buy | NVDA | High | 3-6 months | AI kingpin; RSI 65.9 not overbought; strong uptrend; accumulate on small pullback |
+| Buy | ORCL | High | 3-6 months | Quality SaaS/cloud with AI infrastructure tailwind; RSI 69.5 healthy; strong cash flow |
+| Buy | CRWD | Medium | 3-6 months | AI security leader; RSI 74.1 but not extreme; expanding partnerships; good risk/reward |
+| Buy | XLP | Medium | 6-12 months | Defensive consumer staples; sticky inflation supports pricing power; RSI 56.9 neutral; hedge against tech overbought |
+| Buy | GLD | Medium | 6-12 months | Strategic gold position; de-dollarization hedge; central bank buying; underperforming recently but offers portfolio insurance |
+| Hold | CASH | High | Ongoing | 75% cash reserve for better entry points during expected pullback |
+
+**Reasoning for selected tickers:**
+- **NVDA, ORCL, CRWD** – High-quality AI/digital infrastructure with strong fundamentals, not extremely overbought, and align with the AI infrastructure boom theme.
+- **XLP** – Defensive sector to balance aggressive tech exposure; benefits from sticky inflation.
+- **GLD** – Hedge against geopolitical/monetary risk; our thesis calls for a strategic gold allocation.
+
+**Avoided:**
+- QQQ/SPY – Wait for pullback to mid-Bollinger or 20-day SMA.
+- Overbought semis (MU, AMD, INTC, WDC, TSM) – RSI >80, blow-off risk.
+- Downtrending (META, PLTR, NFLX) – Weak price action.
+- Leveraged ETFs (TQQQ, UPRO, TMF) – Too risky in current volatility regime.
+- Small caps (IWM) – Recession risk rising.
+
+## Executable Trades (Equity Only)

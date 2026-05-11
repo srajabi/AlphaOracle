@@ -1,12 +1,27 @@
 [
     {
-        "ticker": "GLD",
+        "ticker": "NVDA",
         "action": "buy",
-        "notional_value": 8000
+        "notional_value": 5000
+    },
+    {
+        "ticker": "ORCL",
+        "action": "buy",
+        "notional_value": 5000
+    },
+    {
+        "ticker": "CRWD",
+        "action": "buy",
+        "notional_value": 5000
     },
     {
         "ticker": "XLP",
         "action": "buy",
-        "notional_value": 3000
+        "notional_value": 5000
+    },
+    {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 5000
     }
 ]
