@@ -5,22 +5,7 @@
         "notional_value": 5000
     },
     {
-        "ticker": "IAU",
-        "action": "buy",
-        "notional_value": 4000
-    },
-    {
-        "ticker": "QUAL",
-        "action": "buy",
-        "notional_value": 5000
-    },
-    {
-        "ticker": "CEG",
-        "action": "buy",
-        "notional_value": 5000
-    },
-    {
-        "ticker": "VXUS",
+        "ticker": "GLD",
         "action": "buy",
         "notional_value": 5000
     }
