@@ -2,11 +2,21 @@
     {
         "ticker": "XLE",
         "action": "buy",
+        "notional_value": 15000
+    },
+    {
+        "ticker": "XLP",
+        "action": "buy",
         "notional_value": 10000
     },
     {
-        "ticker": "QQQ",
+        "ticker": "NVDA",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 15000
+    },
+    {
+        "ticker": "MU",
+        "action": "buy",
+        "notional_value": 10000
     }
 ]
