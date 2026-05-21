@@ -1,22 +1,17 @@
 [
     {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 4360
+    },
+    {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 4360
     },
     {
-        "ticker": "XLP",
+        "ticker": "SGOV",
         "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "NVDA",
-        "action": "buy",
-        "notional_value": 15000
-    },
-    {
-        "ticker": "MU",
-        "action": "buy",
-        "notional_value": 10000
+        "notional_value": 20000
     }
 ]

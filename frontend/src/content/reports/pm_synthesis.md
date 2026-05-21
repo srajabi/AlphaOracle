@@ -1,35 +1,27 @@
 ---
 title: AlphaOracle Daily Synthesis
-date: "2026-05-20"
+date: "2026-05-21"
 ---
 
-## Lead Portfolio Manager Analysis
+## Lead Portfolio Manager – Final Decision
 
-The current environment is a complex crosscurrent: hawkish Fed minutes (highly negative for duration and growth) collide with strong AI infrastructure earnings (NVDA beat) and trade de-escalation (China tariffs). The "Bull Quiet" regime is under threat, but liquidity remains supportive. Our 100% cash position is a strength – we can be selective.
+After reviewing the reports (all from DeepSeek-Reasoner due to Gemini unavailability), I find a tension between the more nuanced macro outlook (base case = Iran deal, bullish for risk) and the immediate risk-off signals from the latest news (Iran re‑escalation, oil surge, falling stocks). The **most recent headlines** clearly indicate a higher probability of near‑term geopolitical shock, so I override the macro strategist’s optimistic tilt and adopt a **defensive, tail‑risk‑aware stance**.
 
-**Key disagreements between analysts:**
-- Risk managers (both) advocate heavy caution, hedges, and defensive rotation; one suggests buying SPY puts, the other suggests avoiding bonds/gold. I agree with the overall defensive tilt but note that technicals show mean-reversion potential in TLT/GLD; however, macro headwinds (rising yields, strong dollar) overwhelm that. I side with macro risk-off on bonds and gold.
-- Technical analysts highlight strong uptrends in NVDA, MU, XLE, XLP – this aligns with macro catalysts (AI demand, energy supply risk, defensive rotation). I'll overweight these.
-- One technical analyst flags CRWD as overbought (RSI 84) – avoid.
-- Macro strategists recommend energy and value, underweight tech except selective AI. I concur.
+Key decisions:
 
-**Final posture:** Cautiously bullish on energy and defensives, selectively long AI infrastructure (NVDA, MU), avoid bonds/gold, maintain substantial cash. No options in equity-only execution.
+1. **Do not deploy into broad equity risk (QQQ, NVDA) yet** – the “Bull Quiet” regime is fragile; a sustained risk‑off move would punish these.
+2. **Avoid cash‑secured puts** – assignment risk is elevated with unresolved Iran headlines and a hawkish Fed.
+3. **Establish small tactical longs in safe‑haven / inflation‑hedge assets** – gold (GLD) and energy (XLE) benefit directly from the current shock.
+4. **Allocate a portion of cash to short‑term T‑bills (SGOV)** for safe yield and optionality.
+5. **Keep the majority in cash** – allows rapid deployment if a catalyst (e.g., Iran deal) shifts the regime back to risk‑on.
 
-## Action Plan
+The existing options ideas (long puts on SPY/QQQ, long calls on GLD) are consistent with this view, but since the execution layer is equity‑only, I do not include them in the final JSON.
 
 | Action | Ticker/Asset | Conviction Level | Timeframe | Justification |
 |--------|--------------|------------------|-----------|---------------|
-| Buy | XLE | High | 3-6 months | Energy sector benefits from structural supply risk (Hormuz), oil above $100, strong technicals (RSI 66, positive MACD). Inflation hedge and value play. |
-| Buy | XLP | High | 3-6 months | Consumer staples defensive play with strong uptrend (RSI 65, positive MACD, price above all SMAs). Safe haven during rate-driven risk-off. |
-| Buy | NVDA | Medium | 1-3 months | AI infrastructure leader beat earnings and raised guidance ($80B buyback). Strong uptrend (RSI 60, above SMAs). However, rate sensitivity and post-earnings volatility warrant medium conviction. |
-| Buy | MU | Medium | 1-3 months | Memory cycle beneficiary – AI HBM demand, potential supply shock from Samsung strike. Strong uptrend (RSI 61, positive MACD). Cyclical but with tailwinds. |
-| Hold | Cash (remaining) | High | Ongoing | ~$37k (42%) cash provides optionality for dips in high-quality names (AAPL, AMZN, AVGO) or to add to positions on weakness. |
+| **Buy** | GLD (Gold ETF) | High | 1–2 weeks | Safe‑haven demand from Iran crisis; oversold near lower Bollinger Band ($410 support). |
+| **Buy** | XLE (Energy ETF) | High | 1–2 weeks | Oil prices surging on Hormuz supply fears; XLE has relative strength and benefits from geopolitical risk. |
+| **Buy** | SGOV (0–3 Month T‑Bills) | Medium | 1–3 months | 4.3% yield with zero rate risk; ideal for parking cash while waiting for better entry points. |
+| **Hold** | Cash | High | Indefinite | Maintain ~65% cash to retain flexibility; avoid being forced into risk assets during uncertain regime. |
 
-**Concrete reasoning for avoiding other assets:**
-- **TLT/TMF**: 30-year yield at 19-year high, hawkish Fed, deeply oversold but no reversal signal. Avoid.
-- **GLD/IAU**: Rising real yields and strong dollar overwhelm safe-haven demand. RSI 37, below all SMAs. Avoid until yields peak.
-- **CRWD**: RSI 84, extremely overbought. Potential mean reversion. Not a buy here.
-- **PLTR, META**: Weak technicals (below SMAs, negative MACD). Avoid.
-- **Leveraged ETFs (SSO, UPRO, TQQQ)**: High vol environment erodes returns. Avoid.
-
-**Execution:** Use limit orders near current prices. Monitor NVDA post-earnings volatility for better entry if dip occurs.
+### Executable Trades (Equity‑Only)
