@@ -1,17 +1,27 @@
 [
     {
-        "ticker": "XLE",
+        "ticker": "VTI",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 35000
     },
     {
-        "ticker": "XLF",
+        "ticker": "NVDA",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 15000
     },
     {
-        "ticker": "SCHD",
+        "ticker": "MU",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 10000
+    },
+    {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 10000
     }
 ]
