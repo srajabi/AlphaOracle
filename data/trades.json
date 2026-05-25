@@ -1,21 +1,21 @@
 [
     {
-        "ticker": "VTI",
+        "ticker": "VOO",
         "action": "buy",
-        "notional_value": 35000
+        "notional_value": 20000
     },
     {
-        "ticker": "NVDA",
+        "ticker": "QQQ",
         "action": "buy",
         "notional_value": 15000
     },
     {
-        "ticker": "MU",
+        "ticker": "AAPL",
         "action": "buy",
         "notional_value": 10000
     },
     {
-        "ticker": "GLD",
+        "ticker": "AMZN",
         "action": "buy",
         "notional_value": 10000
     },
@@ -23,5 +23,15 @@
         "ticker": "XLU",
         "action": "buy",
         "notional_value": 10000
+    },
+    {
+        "ticker": "VGK",
+        "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "EWA",
+        "action": "buy",
+        "notional_value": 7000
     }
 ]
