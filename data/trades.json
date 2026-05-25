@@ -1,37 +1,17 @@
 [
     {
-        "ticker": "VOO",
-        "action": "buy",
-        "notional_value": 20000
-    },
-    {
-        "ticker": "QQQ",
-        "action": "buy",
-        "notional_value": 15000
-    },
-    {
-        "ticker": "AAPL",
-        "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "AMZN",
+        "ticker": "VTI",
         "action": "buy",
         "notional_value": 10000
     },
     {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 5000
     },
     {
         "ticker": "VGK",
         "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "EWA",
-        "action": "buy",
-        "notional_value": 7000
+        "notional_value": 3000
     }
 ]

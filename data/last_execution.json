@@ -1,21 +1,30 @@
 {
-  "last_updated_utc": "2026-05-15T20:56:12.921132+00:00",
+  "last_updated_utc": "2026-05-25T20:59:28.593178+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "XLE",
+        "ticker": "VTI",
         "action": "buy",
-        "notional_value": 20000
+        "notional_value": 10000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "GLD",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 5000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "VGK",
+        "action": "buy",
+        "notional_value": 3000
       },
       "status": "skipped",
       "reason": "No available buying power."
