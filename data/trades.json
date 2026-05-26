@@ -1,11 +1,11 @@
 [
     {
-        "ticker": "XLE",
+        "ticker": "GLD",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 5000
     },
     {
-        "ticker": "GLD",
+        "ticker": "XLV",
         "action": "buy",
         "notional_value": 5000
     }
