@@ -1,11 +1,31 @@
 [
     {
-        "ticker": "GLD",
+        "ticker": "SPY",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 10000
     },
     {
-        "ticker": "XLV",
+        "ticker": "QQQ",
+        "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "CEG",
+        "action": "buy",
+        "notional_value": 6000
+    },
+    {
+        "ticker": "TLN",
+        "action": "buy",
+        "notional_value": 6000
+    },
+    {
+        "ticker": "MTZ",
+        "action": "buy",
+        "notional_value": 6000
+    },
+    {
+        "ticker": "VXUS",
         "action": "buy",
         "notional_value": 5000
     }
