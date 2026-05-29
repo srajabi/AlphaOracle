@@ -2,21 +2,21 @@
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 17437
-    },
-    {
-        "ticker": "TLT",
-        "action": "buy",
-        "notional_value": 13078
+        "notional_value": 8000
     },
     {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 8718
+        "notional_value": 8000
     },
     {
-        "ticker": "XLE",
+        "ticker": "CEG",
         "action": "buy",
-        "notional_value": 4359
+        "notional_value": 5000
+    },
+    {
+        "ticker": "VXUS",
+        "action": "buy",
+        "notional_value": 12000
     }
 ]

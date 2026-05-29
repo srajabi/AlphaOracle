@@ -1,31 +1,36 @@
 ---
 title: AlphaOracle Daily Synthesis
-date: "2026-05-28"
+date: "2026-05-29"
 ---
 
-## Analysis & Decision
+## Analysis & Disagreement Resolution
 
-The macro, risk, and technical reports present a strong consensus that the current “Bull Quiet” regime is fragile, with escalating geopolitical risks (Strait of Hormuz, US-Iran strikes), rising inflation (PCE +4.4% QoQ), and nascent recession signals (rising jobless claims, low savings rate). The VIX at 16.3 reflects complacency that is likely to unwind. The advanced frontier models (deepseek-reasoner) correctly identify the need for defensive positioning and tail hedges, while the faster models (gemini-2.5-flash) are overly cautious against any deployment. I side with the deeper reasoning: we should **deploy meaningfully into safe havens and defensive equities**, while maintaining ample cash for opportunistic buys if a selloff materializes.
+**Regime:** Bull Quiet (complacent VIX, record equity highs) but with severe underlying tail risks from Iran/Hormuz, sticky inflation, and overbought tech. Reports show consensus on hedging but divergence on entry timing.
 
-**Key disagreements resolved:**
-- **Cash‑secured puts**: The technical reports both warn that most CSPs are on overbought or extended names (AAPL, AMD, CRWD, etc.). Macro risks are too high to accept assignment risk here. **Avoid all CSPs**.
-- **Protective puts**: Cheap SPY/QQQ puts align with technical mean‑reversion signals and macro tail risks. I recommend buying them, but the execution layer is equity‑only, so they remain advisory.
-- **Gold**: Technically oversold (RSI 36) with strong macro support (geopolitical risk, inflation, central bank buying). **Buy GLD**.
-- **Treasuries**: TLT is near support but faces headwinds from inflation. However, a recession flight‑to‑safety could trigger a rally. A moderate allocation is warranted as a non‑correlated hedge.
-- **Energy**: XLE is oversold (RSI 44) and directly benefits from oil supply shock. A small position hedges the portfolio against the most immediate geopolitical trigger.
-- **Utilities (XLU)**: Defensive with AI-driven power demand tailwind. No major conflict with reports.
+**Key debates resolved:**
+- **Risk Managers** (both) vs. **Technical/Macro optimists**: The risk of a 3-5% geopolitical shock is underpriced. I overweight the risk view because VIX at 15.7 with SPY RSI >73 is historically fragile. However, I reject full cash-as-hedge and instead deploy ~40% into long-term themes at discounted prices via cash-secured put analogies (direct buys on pullbacks).
+- **Technical Analyst 1** (deepseek) recommends buying NFLX, XLE, and selling CSPs on AMD/CEG. **Technical Analyst 2** (gemini flash) confirms defensive/mean reversion setups on CEG, NFLX, TLT. I favor CEG (AI power demand intact) over NFLX (structural headwinds, below all SMAs). NFLX shows oversold but has negative momentum (RSI 38, price below 200 SMA) – avoid until confirmed reversal.
+- **Macro Strategist 1** (deepseek) suggests CSPs on AAPL, AMZN, SPY. I agree with the idea of entering at a discount but cannot execute options. Instead, I buy the underlying for long-term holds only if they are not overbought. AAPL and AMZN are overbought (RSI 80, 64) – wait for pullbacks.
+- **Macro Strategist 2** (gemini flash) overweight AI infrastructure and utilities. I concur and initiate positions in CEG (nuclear for data centers) and XLU (defensive + AI demand).
 
-**Final allocation (of $87,185):**  
-- **50% cash** – dry powder for volatility expansion  
-- **20% GLD** – gold inflation/geo‑hedge  
-- **15% TLT** – long‑duration flight‑to‑safety  
-- **10% XLU** – defensive growth (AI power demand)  
-- **5% XLE** – energy supply shock hedge  
+**Final posture:**  
+- Use ~38% of cash to build core positions in **GLD** (hedge), **XLU** (defensive + AI power), **CEG** (AI infrastructure on pullback), and **VXUS** (international diversification at lower RSI).  
+- Keep ~62% cash for tactical dip-buying or hedging (options not allowed).  
+- Avoid overbought tech (AAPL, NVDA, MU, AMD) until a 5-10% correction.  
+- No options in equity-only execution.
 
-| Action | Ticker/Asset | Conviction Level | Timeframe | Justification |
-|--------|--------------|------------------|-----------|---------------|
-| Buy | GLD | High | 1–3 months | Oversold RSI; inflation/geopolitical hedge; central bank buying supports. |
-| Buy | TLT | Medium | 1–3 months | Flight‑to‑safety if recession fears dominate; low correlation to equity tail risk. |
-| Buy | XLU | High | 1–3 months | Defensive sector with structural AI data center demand; low rate sensitivity. |
-| Buy | XLE | Medium | 1–3 months | Direct hedge against oil supply shock; recent pullback offers entry. |
-| Hold | Cash | High | N/A | 50% cash preserves optionality for panic‑buying or further deterioration. |
+---
+
+## Action Plan (Equity Trades)
+
+| Action (Buy/Sell/Hold) | Ticker/Asset | Conviction Level | Timeframe | Justification |
+|------------------------|--------------|------------------|-----------|---------------|
+| **Buy** | GLD | High | 3-6 months | Strategic gold hedge against geopolitics and inflation. RSI 41 oversold, central bank buying supports. |
+| **Buy** | XLU | High | 3-6 months | Defensive sector with structural tailwind from AI data center power demand. MACD bullish crossover. |
+| **Buy** | CEG | Medium | 1-3 months | Nuclear power operator benefiting from AI infrastructure. Pulled back to SMA20, mean reversion setup. |
+| **Buy** | VXUS | Medium | 6-12 months | International diversification at lower overbought levels (RSI 61). Outperforming US YTD, weaker USD tailwind. |
+| **Hold** | Cash | N/A | N/A | Remain ~62% liquid for tactical opportunities or tail risk hedging. |
+
+---
+
+## Executable Trades (JSON)
