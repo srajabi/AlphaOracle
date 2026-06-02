@@ -2,21 +2,11 @@
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 4500
     },
     {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 5000
-    },
-    {
-        "ticker": "TSM",
-        "action": "buy",
-        "notional_value": 10000
+        "notional_value": 4500
     }
 ]
