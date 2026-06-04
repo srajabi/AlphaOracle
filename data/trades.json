@@ -1,12 +1,17 @@
 [
     {
-        "ticker": "GLD",
+        "ticker": "IAU",
         "action": "buy",
-        "notional_value": 8718.5
+        "notional_value": 5000
     },
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 4359.25
+        "notional_value": 5000
+    },
+    {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 5000
     }
 ]
