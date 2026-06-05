@@ -1,26 +1,21 @@
 [
     {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 10000
-    },
-    {
         "ticker": "XLE",
         "action": "buy",
         "notional_value": 10000
     },
     {
-        "ticker": "XLU",
+        "ticker": "XLF",
+        "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "XLV",
         "action": "buy",
         "notional_value": 5000
     },
     {
-        "ticker": "QUAL",
-        "action": "buy",
-        "notional_value": 5000
-    },
-    {
-        "ticker": "VXUS",
+        "ticker": "VGK",
         "action": "buy",
         "notional_value": 5000
     }
