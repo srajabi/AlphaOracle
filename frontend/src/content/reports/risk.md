@@ -1,181 +1,133 @@
 ---
 title: Risk Manager Report
-date: "2026-06-05"
+date: "2026-06-08"
 ---
 
 ## Model: deepseek/deepseek-reasoner
 
-# Risk Management Report – June 5, 2026 (EOD)
+## Risk Management & Geopolitical Analysis
 
-## 1. Market Regime Assessment
-
-| Metric | Value | Signal |
-|--------|-------|--------|
-| Regime | Bull Quiet (conflicting) | **Deteriorating** |
-| VIX (close) | 15.4 | Low absolute, but intraday spike likely >18 |
-| SPY Δ week | –2.6% (first weekly loss since March) | **Stalling** |
-| Nasdaq Δ day | –4.2% (worst day in 13 months) | **Capitulation** |
-| 10Y Yield | ~4.45% (est.) | **Hawkish repricing** |
-| DXY | 6‑week high | **Risk‑off USD strength** |
-
-**Key takeaway:** The "Bull Quiet" label is now misleading. A **rate‑hike shock** following the +172K jobs report (vs 88K expected) has triggered a violent rotation out of tech/AI into defensives. The VIX remains subdued because the sell‑off was concentrated in mega‑cap growth, not broad fear (yet). However, the Nasdaq lost $1.1T in a single day – action that typically precedes wider volatility expansion.
+**Date:** 2026-06-08  
+**Regime:** Bull Volatile  
+**Portfolio:** 100% Cash ($87,184.98)  
+**VIX:** 21.51 (above 20-SMA of 17.12 – elevated)  
 
 ---
 
-## 2. Geopolitical Catalysts – Severity & Exposure
+### 1. Market Regime Assessment
 
-### 2a. FED RATE HIKE SHOCK (Severity: 8/10)
-**What happened:** May employment blew past estimates. Prediction markets now price a >50% chance of a hike by December. New Fed Chair Warsh is seen as hawkish.
+- **VIX structure:** 21.51 > 20-SMA (17.12) and 50-SMA (18.99) – **complacency breaking.** Friday’s 4.8% QQQ drop, 6.6% XLK drop, and leveraged ETF wipeouts (TQQQ -14%, TECL -20%) confirm a volatility regime shift.
+- **Bond markets:** 10Y yield near 5% (based on rising rate expectations). TLT stuck at $85, failing to rally on risk-off – **no safe haven bid** due to Fed hawkishness.
+- **Commodities:** Oil > $97 (Brent), gold melting down (-5% on Friday, now at 5-month lows). **Inflationary supply shock dominating safe haven dynamics.**
+- **Macro news density:** 8 of 8 `fed_rates` headlines tagged as “rates_sensitive”, 5 of 8 `energy_geopolitics` headlines tagged as “geopolitical_supply_shock”. **Dual threat: monetary tightening + supply disruption.**
 
-**Impact:**
-- **Bearish** → Tech/growth (QQQ, NVDA, AVGO, ARKK), long‑duration bonds (TLT), crypto (IBIT)
-- **Bullish** → Financials (XLF, banks benefit from steepening), value/defensives (XLV, XLU, XLP), short‑term Treasuries
-- **Mixed** → Energy (XLE) – rate hike slows demand, but geopolitical supply risk offsets
-
-**Hedging time horizon:** Days to weeks (next CPI release June 10, FOMC June 17–18)
-
-### 2b. STRAIT OF HORMUZ / MIDDLE EAST (Severity: 7/10)
-**What happened:** Iran demands frozen assets, ceasefire hopes fade; oil prices volatile (Brent >$97). Goldman sees $90 even after reopening.
-
-**Impact:**
-- **Bullish** → XLE, oil producers, defense stocks (but defense hit by Pentagon budget uncertainty)
-- **Bearish** → Airlines, consumer discretionary (AMZN – shipping costs), India/China importers
-
-**Hedging time horizon:** Immediate (oil spike risk), but also ceasefire relief (unwind hedges quickly)
-
-### 2c. CHINA‑TAIWAN TENSIONS (Severity: 6/10)
-**What happened:** Persistent rhetoric. Chatham House warns a Taiwan crisis would dwarf Hormuz disruption. No new escalation today, but the risk is a constant tail.
-
-**Impact:**
-- **Bearish** → TSM, NVDA, AMD, INTC (semi supply chain), GLD (safe haven bid)
-- **Bullish** → GLD, ^VIX, US‑based manufacturing (INTC? not yet)
-
-**Hedging time horizon:** Weeks to months (structural underweight semi’s)
-
-### 2d. TRADE POLICY / TARIFFS (Severity: 5/10)
-**What happened:** 15% gold tariffs, EU demands de‑coupling from China, US reciprocal deals.
-
-**Impact:**
-- **Bearish** → SPY, materials (XLB), semi equipment (KLAC)
-- **Bullish** → UUP (USD), domestic small caps (IWM)
-
-**Hedging time horizon:** Days (tariff headlines move fast)
-
-### 2e. RECESSION SIGNALS (Severity: 6/10)
-**What happened:** Jobless claims rising (225K), regional slowdowns, wage pressure. Contradicts the strong NFP – the labor market is bifurcated (high‑skill tight, low‑skill weakening).
-
-**Impact:**
-- **Bearish** → Consumer discretionary (XLY), small caps (IWM)
-- **Bullish** → XLU, XLP, healthcare (XLV), long‑dated Treasuries (TLT) – *but* rate hike fear overrides TLT bid for now
-
-**Hedging time horizon:** Weeks to months
+**Conclusion:** The regime is *not* a typical “risk-off” where bonds and gold rally. It’s a **stagflationary squeeze** – oil up, rates up, equities down, gold down. This requires non‑traditional hedges.
 
 ---
 
-## 3. Ticker‑Level Weakness Assessment (Watchlist)
+### 2. Geopolitical Catalysts (Severity 1–10)
 
-### 🔴 HIGH RISK – AVOID / TRIM
-| Ticker | Reason | Action |
-|--------|--------|--------|
-| NVDA | –6%, broken below 20‑day SMA, rate‑sensitive AI hype | **Do not buy**; wait for $200 support |
-| AVGO | –13% (worst in sector), weak guidance, IV 0.52 | **Avoid** – further downside likely |
-| MU | –20% from highs, memory cycle peak fear | **Avoid** – high beta |
-| CEG | –7%, below 50 & 200 SMA, data center spending fear | **Avoid** – nuclear/hyperscaler premium fading |
-| NBIS | –15%, extreme valuation, AI infrastructure rotation | **Avoid** |
-| PLTR | near flat but high IV, defense budget uncertainty | **Hedge** or reduce |
-| IBIT | Bitcoin –40% from high, contagion risk | **Avoid** – no support yet |
+#### Catalyst A: Strait of Hormuz / Iran‑Israel Escalation (Severity 9)
+- **What happened:** Iran attacked Israel again. Shipping through Hormuz nearly halted. Oil surged >3% after Israeli strikes. Trump trying to hold ceasefire but fresh clashes.
+- **Exposed sectors:**
+  - **Bullish:** Energy (XLE, XOM, CVX, OIH), defense (LMT, GD), shipping (tanker rates), US refiners (VLO, MPC).
+  - **Bearish:** Airlines (JETS), consumer discretionary (XLY – cost pressures), tech (higher input costs, rate hike risk), emerging markets (higher oil imports).
+- **Time horizon:** Immediate – days to weeks. Ceasefire talks are fragile; any breakdown sends oil higher.
+- **Recommended hedges:**
+  - **Protective put on QQQ** (see options chain: QQQ 700 strike, 22 DTE, mid $9.44 – $944 risk per contract).
+  - **Long XLE / short SPY** pair trade.
+  - **Avoid** sectors sensitive to oil: XLY, XLB, industrial companies with heavy transport costs.
 
-### 🟡 MODERATE RISK – CAUTIOUS / HEDGE
-| Ticker | Reason | Action |
-|--------|--------|--------|
-| QQQ | –4.2% but long‑term uptrend intact | Buy protective puts (see below) |
-| SPY | –2.6% weekly, but support at 730 | Buy protective puts |
-| TSM | –2%, less volatile, but China‑Taiwan risk | Hold if owned, do not add |
-| GOOGL | –5%, weak MACD, but Google+SpaceX deal positive | Wait for $360 support |
-| META | –6%, equity raise rumor | Avoid until capital plan clear |
-| AMZN | –4%, near 50‑day SMA, shipping cost headwind | Cash‑secured put may work (see options) |
+#### Catalyst B: Fed Hawkish Pivot / Rate Hike Expectations (Severity 8)
+- **What happened:** Goldman Sachs pushed rate‑cut call to 2027. Forbes: “Fed Signals Shift… Markets Pricing in 2026 Hike.” Strong jobs data (+172K) fuels rate hike bets.
+- **Exposed sectors:**
+  - **Bearish:** Long‑duration growth (QQQ, ARKK), real estate (XLRE), bonds (TLT).
+  - **Bullish:** Financials (XLF – wider NIM), value/cyclicals (XLI, XLB), short‑duration cash.
+- **Time horizon:** Weeks to months – FOMC meeting this month.
+- **Recommended hedges:**
+  - **Long put on TLT** (or short TMF) – yields likely to rise further.
+  - **Sector rotation** out of XLK / QQQ into XLF, XLV (healthcare considered “value” per Mizuho).
+  - **Cash‑secured puts on defensive names** (e.g., AAPL – 295 strike, 18 DTE, $1.59 credit – writes at 6% below spot with moderate IV).
 
-### 🟢 LOW RISK – DEFENSIVE / SAFE HAVEN
-| Ticker | Reason | Action |
-|--------|--------|--------|
-| XLV | +1.2% today, rotation into healthcare | **Buy** or add |
-| XLU | near support, AI power demand long‑term | **Hold/Accumulate** on pullback |
-| XLP | RSI 40, oversold, defensive | **Buy** |
-| QUAL | Quality factor outperforming | **Buy** |
-| SCHD | Strong dividend growth, low beta | **Buy** |
-| GLD | Down –2% on USD spike, but long‑term uptrend | **Accumulate** on weakness ($390 support) |
-| VXUS | Outperforming US, international rotation | **Buy** |
+#### Catalyst C: Recession Signals (Severity 6)
+- **What happened:** Moody’s Zandi warns of recession. Jobless claims rising (225K). Virginia/Indiana forecasts show slower growth. Consumer sentiment weakening.
+- **Exposed sectors:**
+  - **Bearish:** Cyclicals (XLY, XLI), small caps (IWM – Russell 2000 already underperforming).
+  - **Bullish:** Defensives (XLU, XLP, XLV), healthcare.
+- **Time horizon:** 3–6 months.
+- **Recommended hedges:**
+  - **Increase allocation to XLU, XLP** (utilities and staples) – they provide earnings stability.
+  - **Avoid** high‑beta / leverage‑dependent names: IWM, TQQQ, UPRO.
 
----
-
-## 4. Recommended Hedges (From Options Chain)
-
-All prices as of EOD June 5. Our portfolio is 100% cash – no existing positions to protect. However, we can **pre‑position** hedges to enter the market with a risk‑managed approach, or simply buy tail protection on indices.
-
-### 4a. Protective Puts on Broad Market (Cash Allocated)
-
-**Option A: SPY 6/30 Put $715**  
-- Mid price: $7.30 × 100 = **$730 per contract**  
-- Cost as % of notional (1 contract = $73,755 notional): 0.99%  
-- Strategy: Buy 1 put per 100 shares of equivalent SPY exposure you plan to enter. For a $87k cash portfolio, 1 contract covers ~$73k notional. This is a 3% OTM hedge against a deeper sell‑off.
-
-**Option B: QQQ 6/30 Put $685**  
-- Mid price: $13.86 × 100 = **$1,386 per contract**  
-- Cost as % of notional (1 contract = $70,506 notional): 1.97%  
-- More expensive due to higher IV, but provides tech‑specific tail risk.
-
-**Recommendation:** Use **SPY 6/30 $715 put** for broad coverage. QQQ skew is expensive – prefer to hedge tech exposure indirectly (e.g., buy SPY puts and overweight defensive sectors).
-
-### 4b. Cash‑Secured Puts (Entry Strategy)
-
-For traders wanting to buy high‑quality names at a discount, consider these (with strong conviction):
-
-| Ticker | Strike | DTE | Premium | Yield (annualized) | Risk |
-|--------|--------|-----|---------|--------------------|------|
-| AAPL | $290 | 21 | $209 | 12.5% | Low – Apple is defensive, strong cash flow |
-| AMZN | $230 | 21 | $262 | 18.5% | Moderate – shipping costs, but e‑commerce resilient |
-| AVGO | $370 | 21 | $1,165 | 51% | High – stock just crashed, could fall further |
-
-**Only consider AAPL $290 put** if you want to start a position. The 5.6% OTM strike offers a good risk/reward. AVGO premium is tempting but binary risk is high.
-
-### 4c. Geopolitical Hedge – Gold (GLD) & VIX
-
-- **GLD 6/30 Put $385** (mid $5.38): Cost $538 per contract. Bearish on gold? Not recommended – gold is a long‑term safe haven. Instead, if you want to hedge a portfolio, consider **buying GLD calls** (bet on rebound after USD spike fades). But with rate hikes, gold headwinds may persist.
-
-- **VIX** is at 15.4 – too low relative to realized volatility. Buying VIX calls (not provided in chain) or VXX puts is risky due to contango. Better to use **SPY puts** as a clean hedge.
+#### Catalyst D: China‑Taiwan Tensions (Severity 5)
+- **What happened:** China bans dual‑use tech exports to Japan over Taiwan remarks. US weighs financial stakes in AI firms. Google/Nvidia turning to Intel as TSMC strains.
+- **Exposed sectors:**
+  - **Bearish:** Semiconductors (TSM, NVDA, AMD), AI hardware supply chain.
+  - **Bullish:** Intel (INTC – foundry beneficiary), US ‑based manufacturing.
+- **Time horizon:** Weeks to months.
+- **Recommended hedges:**
+  - **Protective put on SMH** or individual semis (e.g., AMD 460 put, $17.75 credit – only 6% OTM, but high IV suggests risk).
+  - **Consider long INTC** as a hedge against Taiwan disruption (though execution risk remains).
 
 ---
 
-## 5. Action Plan for the $87k Cash Portfolio
+### 3. Ticker‑Level Weakness & Opportunities
 
-### Immediate (Today – June 5)
-1. **Stay in cash** – do not chase the dip. The Nasdaq lost –4.2% in a single session; V-bottom is unlikely with rate hike overhang.
-2. **Allocate 2% of cash ($1,740) to SPY 6/30 $715 put** (buy 2 contracts). Cost ~$1,460. This provides tail protection against a further 5–10% sell‑off.
-3. **Identify entry points** for defensive rotation: XLV (healthcare), XLU (utilities), QUAL (quality factor). Place limit orders near 20‑day SMA support.
-
-### Short‑Term (Next Week – CPI June 10, FOMC June 17–18)
-- If CPI comes hot, increase hedge (add SPY puts or buy VIX calls).
-- If CPI eases, the rate hike fear may moderate. Begin scaling into beaten‑down tech (AAPL, MSFT, TSM) via cash‑secured puts at deep OTM strikes.
-- Monitor **Strait of Hormuz** headlines. Any ceasefire news × rate hike relief could trigger a powerful rally in energy and risk‑on. Be ready to unwind hedges.
-
-### Watchlist Risk Adjustments
-- **Delete** from high‑conviction buy list: NVDA, AVGO, MU, CEG, NBIS, IBIT (until trend stabilizes).
-- **Add** to defensive watch: XLV, XLU, XLP, QUAL, SCHD.
-- **Maintain** but hedge: QQQ, SPY (via puts), TSM (Taiwan risk).
+| Ticker | Signal | Action | Rationale |
+|--------|--------|--------|-----------|
+| **NVDA** | RSI 44, below 20-SMA, MACD negative | **Avoid new longs** | AI trade is unwinding; BTIG sees 10% more downside. Wait for support at $188 (200-SMA). |
+| **META** | RSI 41, below all SMAs, MACD negative | **Do not buy dip** | Weakness in advertising revenue and rising costs. |
+| **NFLX** | RSI 30.5, oversold, below 200-SMA | **Avoid** | Subscriber growth slowing, competition; no AI catalyst. |
+| **GLD** | RSI 33, below 20/50/200 SMA | **Do not buy gold** | Strong USD and rising yields crushing gold. Wait for dollar reversal. |
+| **TLT** | RSI 50, neutral, but yield pressure | **Do not buy bonds** | Fed hawkishness = higher yields; TLT may fall to $80. |
+| **XLE** | RSI 48, near 20-SMA, oil support | **Buy on pullback** | Best direct hedge for geopolitical supply shock. Strong premarket. |
+| **XLF** | RSI 58, above SMAs | **Accumulate** | Beneficiary of higher rates and stable credit. |
+| **XLV** | RSI 64, bullish momentum | **Add to positions** | Sector rotation into healthcare as value. |
+| **CRWD** | RSI 58, above SMAs, strong earnings | **Consider CSP** | 600 put (18 DTE) yields $9.42 credit at 9% below spot. Good risk/reward. |
+| **AAPL** | RSI 61, above SMAs, WWDC catalyst | **Sell put** | 295 put (18 DTE) yields $1.59 credit at 6% below spot. Defensive quality. |
 
 ---
 
-## 6. Summary Risk Matrix
+### 4. Recommended Portfolio Actions (All‑Cash Portfolio)
 
-| Risk Factor | Severity | Direction | Time Horizon | Recommended Hedge |
-|-------------|----------|-----------|--------------|-------------------|
-| Fed Hike | 8/10 | Bearish growth | 1–3 weeks | SPY puts, overweight XLV/XLU |
-| Hormuz Spike | 7/10 | Bullish energy | Days | Long XLE, short airlines |
-| Taiwan Escalation | 6/10 | Bearish semi | Weeks | Reduce TSM/NVDA, long GLD |
-| Trade War Tariffs | 5/10 | Bearish SPY | Days | Short XLB, long UUP |
-| Recession | 6/10 | Bearish cyclicals | Months | Long TLT (rate cut later), short IWM |
+**Primary Strategy: Stay Defensive, Use Options for Premium**
 
-**Bottom Line:** The setup is dangerous for a fully invested long-only portfolio. Our cash is a blessing. Deploy defensive sectors now (XLU, XLV, QUAL) with size, use SPY puts to protect the stash, and wait for the rate‑hike fear to climax before re‑entering tech. Do not catch the falling knife on NVDA or AVGO – the sword is still dropping.
+1. **Immediate (today):**
+   - **Sell 1 cash‑secured put on AAPL** – 6/26 expiry, 295 strike, $1.59 credit.
+     - *Reason:* Strong technicals, WWDC catalyst, defensive moat. If assigned, cost basis $293.41 (6.8% below spot). Good entry for core position.
+   - **Sell 1 cash‑secured put on CRWD** – 6/26 expiry, 600 strike, $9.42 credit.
+     - *Reason:* High IV (52%), good earnings, 8.7% downside protection. If assigned, cost basis $590.58.
+   - **Buy 1 protective put on QQQ** – 6/30 expiry, 700 strike, $9.44 debit.
+     - *Reason:* Hedge against tech selloff. Cost 1.3% of notional. If market drops another 5%, put gains significantly.
+
+2. **Short‑term (this week):**
+   - **Initiate 5% position in XLE** (energy ETF) – use limit order near $57. If oil stays above $95, XLE should rally.
+   - **Initiate 5% position in XLF** (financials) – current RSI 58, above SMAs. Provides yield and rate exposure.
+   - **Avoid** new tech longs (NVDA, META, AMZN) until VIX falls below 18 and QQQ recovers above 20‑SMA (~722).
+
+3. **Geopolitical tail‑risk hedge:**
+   - **Consider a diagonal put spread on SPY** – buy the 721 put (6/30) for $4.70, sell a 735 put (6/26) for ~$2.00 (net $2.70). Protects against a 3%+ drop in the next 22 days at a lower cost.
+   - **Avoid** gold, silver, and bitcoin ETFs (IBIT RSI 18 – extreme oversold but no catalyst to reverse).
+
+4. **Watchlist for entry:**
+   - **XLU** – if yields pause, utilities become attractive. Current RSI 46, neutral.
+   - **INTC** – if Google/Nvidia foundry deal materializes, could break out. Place limit order near $95.
+   - **PSTG** – AI storage theme, but RSI 43 and below 20-SMA. Wait for $72 support.
+
+---
+
+### 5. Time Horizon Summary
+
+| Action | Horizon | Expected Outcome |
+|--------|---------|------------------|
+| Sell AAPL put | 18 days | Collect premium, may be assigned if market drops. |
+| Sell CRWD put | 18 days | Collect premium, high IV benefits seller. |
+| Buy QQQ put | 22 days | Hedge against 5-10% tech selloff. |
+| Buy XLE | 1-2 weeks | Oil rally continuation. |
+| Buy XLF | 1-2 weeks | Rate + value rotation. |
+| Avoid NVDA/META | Until VIX < 18 | Downside risk still present. |
+
+**Bottom Line:** The current macro environment demands a defensive posture with tactical hedges. Use the volatility to sell premium on quality names (AAPL, CRWD) while buying cheap protection on the most vulnerable sector (tech). Maintain at least 50% cash to deploy if a real capitulation event occurs (e.g., VIX > 30, SPY below 700). Do not chase the AI dip – the “shovel sellers” narrative is intact long‑term, but the next 2-4 weeks are too risky for new longs.
 
 ---
 

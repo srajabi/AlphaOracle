@@ -1,22 +1,27 @@
 [
     {
+        "ticker": "XLF",
+        "action": "buy",
+        "notional_value": 8000
+    },
+    {
         "ticker": "XLV",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 8000
     },
     {
-        "ticker": "XLU",
+        "ticker": "XLE",
+        "action": "buy",
+        "notional_value": 6000
+    },
+    {
+        "ticker": "SPY",
+        "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "ORCL",
         "action": "buy",
         "notional_value": 3000
-    },
-    {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 3000
-    },
-    {
-        "ticker": "QUAL",
-        "action": "buy",
-        "notional_value": 4000
     }
 ]
