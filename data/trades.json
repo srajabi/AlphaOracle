@@ -1,17 +1,27 @@
 [
     {
-        "ticker": "SPY",
+        "ticker": "XLV",
+        "action": "buy",
+        "notional_value": 12000
+    },
+    {
+        "ticker": "DIA",
         "action": "buy",
         "notional_value": 10000
     },
     {
-        "ticker": "XLV",
+        "ticker": "XLF",
         "action": "buy",
         "notional_value": 8000
     },
     {
-        "ticker": "XLF",
+        "ticker": "QUAL",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 8000
+    },
+    {
+        "ticker": "IBIT",
+        "action": "buy",
+        "notional_value": 3000
     }
 ]
