@@ -1,12 +1,17 @@
 [
     {
-        "ticker": "XLE",
+        "ticker": "SPY",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 10000
     },
     {
         "ticker": "XLV",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 8000
+    },
+    {
+        "ticker": "XLF",
+        "action": "buy",
+        "notional_value": 5000
     }
 ]

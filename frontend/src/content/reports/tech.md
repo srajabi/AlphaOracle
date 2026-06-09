@@ -1,57 +1,74 @@
 ---
 title: Technical Analyst Report
-date: "2026-06-08"
+date: "2026-06-09"
 ---
 
 ## Model: deepseek/deepseek-reasoner
 
-**Price Action Technical Analysis – June 8, 2026 (News Ignored)**
+**Price Action Analysis – June 9, 2026**  
+*Ignoring news; focusing on technicals (SMA, RSI, MACD, Bollinger Bands). Regime: Bull Quiet.*
 
-**Mean Reversion Bounce Candidates (Oversold / Below BB Lower Band)**  
-These tickers show extreme RSI (<35) and/or price trading below the Bollinger Band lower, suggesting a snap-back rally is probable within 1–3 sessions.
+---
 
-| Ticker | Close | RSI (14) | BB Lower | BB Upper | SMA_20 | SMA_50 | SMA_200 | Pattern |
-|--------|-------|----------|----------|----------|--------|--------|---------|--------|
-| **GLD** | 396.24 | **33.0** | 397.89 | 436.66 | 417.27 | 424.63 | 404.68 | Below lower band, RSI < 35, below all MAs. Classic oversold bounce. |
-| **IAU** | 81.22 | **33.0** | 81.55 | 89.46 | 85.51 | 87.01 | 82.89 | Mirroring GLD; below lower band. |
-| **IBIT** | 34.14 | **18.6** | 35.45 | 49.16 | 42.31 | 42.18 | 50.47 | Extremely oversold, well below lower band. High risk, high reward. |
-| **NFLX** | 82.18 | **30.5** | 81.58 | 91.31 | 86.45 | 92.12 | 100.21 | RSI near 30, price touching lower band. Oversold in a downtrend. |
-| **SLV** | 61.57 | **35.2** | 61.17 | 78.94 | 70.06 | 68.82 | 60.61 | Price just above lower band, RSI < 35, but above SMA_200 (support). |
+### 1. Mean Reversion Bounces (Oversold / Near Lower Bollinger Band)
+These names show RSI <35, price near or below lower BB, and are at potential support levels. A bounce is probable, but trend is against them.
 
-**Trend Continuation (Strong Uptrend – Price Above All MAs, RSI > 55, MACD Positive)**  
-These are in established uptrends with momentum supporting further gains.
+- **XLC** (RSI 32.5, close **below** lower BB) – Most oversold sector ETF.  
+- **IBIT** (RSI 29.3, near lower BB) – Bitcoin proxy at extreme oversold.  
+- **GLD** (RSI 34.1, just above lower BB) – Gold at 5‑month lows, potential short-term bounce.  
+- **NFLX** (RSI 32.8, near lower BB) – Below all MAs; classic mean-reversion setup.  
+- **AMZN** (RSI 37.3, close **below** lower BB) – Heavy pullback; watch for reclaim of lower BB.  
+- **CEG** (RSI 34.9, near lower BB) – Below all MAs; oversold in a strong prior uptrend.  
+- **IAU** (RSI 33.8, near lower BB) – Similar to GLD, but further below 200 SMA.
 
-| Ticker | Close | RSI | MACD Hist | SMA_20 | SMA_50 | SMA_200 | Notes |
-|--------|-------|-----|-----------|--------|--------|---------|-------|
-| **MU** | 864.01 | 55.2 | +1.94 | 849.82 | 617.35 | 360.72 | Steep uptrend, price well above MAs. Strength intact. |
-| **KLAC** | 1929.20 | 52.6 | +9.84 | 1905.21 | 1781.42 | 1374.14 | Bull flag? Pulling back to SMA_20 but still above all MAs. |
-| **NBIS** | 227.81 | 56.1 | +0.92 | 217.64 | 172.62 | 117.16 | Strong momentum, all MAs sloping up. |
-| **DIA** | 509.70 | 58.7 | +0.30 | 503.68 | 490.62 | 476.72 | Dow relative strength, above all MAs. |
-| **XLV** | 153.01 | 64.0 | +0.48 | 147.68 | 146.77 | 147.88 | Healthcare sector trending strongly. |
-| **XLF** | 52.30 | 58.3 | +0.04 | 51.50 | 51.26 | 52.27 | Finance sector near all‑time highs. |
+*Caveat:* These are in downtrends on the daily. Bounces may be sharp but short‑lived. Best used for quick scalps or as a sign to tighten shorts.
 
-**Failed Setups / Weakness (Price Below All Key MAs, Negative MACD Histogram)**  
-These show technical deterioration and are likely to underperform.
+---
 
-| Ticker | Close | RSI | MACD Hist | SMA_20 | SMA_50 | SMA_200 | Pattern |
-|--------|-------|-----|-----------|--------|--------|---------|---------|
-| **PLTR** | 135.53 | 44.8 | +0.30 (but price below MAs) | 139.58 | 140.90 | 161.07 | MACD bull cross failed – price rejected at MAs. Bearish. |
-| **CEG** | 254.83 | 36.3 | -2.54 | 279.26 | 288.97 | 320.87 | Severe breakdown, below all MAs, negative MACD. |
-| **TSLA** | 391.00 | 40.4 | -4.46 | 425.87 | 395.29 | 414.14 | Below MAs, RSI < 40, momentum negative. |
-| **META** | 593.00 | 41.6 | -0.27 | 612.72 | 619.52 | 661.75 | Below all MAs, MACD negative. Avoid. |
-| **NFLX** (already listed) | 82.18 | 30.5 | -0.41 | 86.45 | 92.12 | 100.21 | Downtrend but oversold bounce possible. |
+### 2. Trend Continuation / Pullback to Support
+These names remain in up‑trends (price > SMA50 & SMA200) and have pulled back to the SMA20 or other support. The pullback is healthy if volume declines.
 
-**Volatility Contraction Squeezes**  
-No tickers exhibit extreme Bollinger Band compression (width < 2% of SMA_20). Most bands are moderately wide. However, **SPY** and **QQQ** have RSI near 50 and price hugging SMA_20, which could precede a breakout/breakdown, but the bands are not tight enough to call a squeeze.
+- **SPY / VOO / VTI** – Price above SMA50/200, RSI ~50, MACD flat. Pulling back to SMA20. Bullish if SMA20 holds.  
+- **QQQ / TQQQ** – Same structure; Nasdaq proxy holding above SMA50. MACD bearish cross but 20-day is not broken.  
+- **NVDA** – Above SMA50 & SMA200, RSI 47, lower BB tested. AI chip leader still in uptrend.  
+- **KLAC / STX / ORCL** – All above all MAs, RSI >55, strong momentum. Pullbacks have been shallow.  
+- **XLV** – Healthcare sector ETF at new highs, RSI 62, volume average. No reversal signs.  
+- **DIA** – Dow Jones above all MAs, RSI 57. Value rotation keeps it bid.  
+- **XLK / TSM** – Tech sector and foundry remain in steady uptrends.
 
-**Portfolio Implications (100% cash, $87k)**  
-- **Defensive cash position** is wise given the broad market (SPY) is below its 20‑day SMA and MACD is negative.  
-- **Immediate opportunity**: Deploy 15–25% into the **GLD/IAU mean reversion bounce** (buy near $397 with a stop below $393). GLD is below lower BB and 200‑day MA, a high‑probability snap‑back.  
-- **Trend continuation**: Allocate 10–15% to **MU** or **NBIS** on a pullback to their 20‑day SMA (MU ~$850, NBIS ~$218) for momentum continuation.  
-- **Avoid** the failed setups (CEG, PLTR, META, TSLA) until they reclaim key moving averages.
+*Verdict:* The broader market (SPY, QQQ) is in a normal pullback within a bull trend. The 20‑day SMA is the line in the sand. A break below SMA50 would turn this into a failed setup.
 
-**Execution Note**  
-Use limit orders. For mean reversion, wait for a daily close above the lower BB or a bullish RSI divergence. For trend continuation, enter on a bounce off SMA_20 with increasing volume.
+---
+
+### 3. Volatility Contraction / Squeeze Candidate
+Look for narrowing Bollinger Bands, RSI near 50, and MACD near zero – suggesting a pending breakout.
+
+- **XLF** (RSI 54, BB width ~1.5 pts / price ~52) – Very tight range. Financials are coiled.  
+- **XLE** (RSI 51, BB width ~5 pts / price ~58) – Oil sector in neutral with moderate contraction.  
+- **XLU** (RSI 40, BB width ~2.5 pts / price ~43) – Utilities near lower band; could squeeze up if rates stabilize.
+
+Best squeeze candidate: **XLF** – low volatility, central bank policy catalyst ahead.
+
+---
+
+### 4. Failed / Warning Setups
+- **AVGO** – Below SMA50 for the first time in months. Could signal deeper correction if it loses SMA200 (355).  
+- **MSFT** – Below both SMA20 and SMA200. Relative weakness in a megacap.  
+- **UUP** (RSI 69, overbought, above all MAs) – Dollar rally is extended. A pullback would boost risk assets.  
+- **^VIX** – Above SMA20 but below SMA50/200. Not extreme, but rising VIX during a pullback warns of fragility.
+
+---
+
+### Summary of Most Tactical Setups
+
+| Setup Type | Best Candidates | Key Level |
+|------------|----------------|-----------|
+| **Mean Reversion Bounce** | XLC, IBIT, GLD, AMZN, CEG | Lower BB or prior swing low |
+| **Trend Continuation** | SPY, QQQ, NVDA, KLAC, XLV | SMA20 / SMA50 |
+| **Volatility Squeeze** | XLF | Narrow BB, RSI ~50 |
+| **Caution / Failed** | AVGO, MSFT, UUP | Watch for breakdowns |
+
+**Execution Bias:** The regime is “Bull Quiet”, so trend continuation has the highest probability. Mean reversion bounces should be taken only with tight stops. The squeeze in XLF may offer a low‑risk entry. Avoid adding to names that have lost their SMA50 (AVGO, MSFT).
 
 ---
 
