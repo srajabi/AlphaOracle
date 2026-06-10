@@ -2,11 +2,16 @@
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 20000
+        "notional_value": 15000
     },
     {
-        "ticker": "XLV",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 10000
+    },
+    {
+        "ticker": "CEG",
+        "action": "buy",
+        "notional_value": 5000
     }
 ]
