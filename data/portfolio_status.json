@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-06-10T16:22:42.360611+00:00",
+  "last_updated_utc": "2026-06-10T21:26:27.358797+00:00",
   "accounts": {
     "dev": {
       "account_id": "dev",
@@ -7,7 +7,7 @@
       "strategy": "Advanced LLM Strategy",
       "frequency": "2x Daily (10 AM & 3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-06-10T16:22:40.681821+00:00",
+      "last_updated_utc": "2026-06-10T21:26:24.964580+00:00",
       "ok": true,
       "error": "",
       "account": {
@@ -25,88 +25,88 @@
       "strategy": "Standard LLM Strategy",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-06-10T16:22:40.947883+00:00",
+      "last_updated_utc": "2026-06-10T21:26:25.591406+00:00",
       "ok": true,
       "error": "",
       "account": {
         "status": "ACTIVE",
         "cash": -104666.84,
-        "equity": 202956.026592,
-        "buying_power": 149609.51,
-        "portfolio_value": 98289.19
+        "equity": 201878.97303000002,
+        "buying_power": 146593.76,
+        "portfolio_value": 97212.13
       },
       "positions": [
         {
           "symbol": "GLD",
           "qty": 88.001636001,
-          "market_value": 33371.100388,
-          "current_price": 379.21,
+          "market_value": 32885.331357,
+          "current_price": 373.69,
           "avg_entry_price": 418.821873,
-          "unrealized_pl": -3485.909629
+          "unrealized_pl": -3971.67866
         },
         {
           "symbol": "QQQ",
           "qty": 0.012177978,
-          "market_value": 8.508144,
-          "current_price": 698.65,
+          "market_value": 8.431301,
+          "current_price": 692.34,
           "avg_entry_price": 611.76,
-          "unrealized_pl": 1.058144
+          "unrealized_pl": 0.981301
         },
         {
           "symbol": "SPY",
           "qty": 0.546795643,
-          "market_value": 399.390474,
-          "current_price": 730.42,
+          "market_value": 396.317482,
+          "current_price": 724.8,
           "avg_entry_price": 681.26,
-          "unrealized_pl": 26.880474
+          "unrealized_pl": 23.807482
         },
         {
           "symbol": "TLT",
           "qty": 50.394174083,
-          "market_value": 4288.544214,
-          "current_price": 85.1,
+          "market_value": 4275.945671,
+          "current_price": 84.85,
           "avg_entry_price": 86.498094,
-          "unrealized_pl": -70.455793
+          "unrealized_pl": -83.054336
         },
         {
           "symbol": "VGK",
           "qty": 181.071945919,
-          "market_value": 15801.243361,
-          "current_price": 87.265,
+          "market_value": 15697.126992,
+          "current_price": 86.69,
           "avg_entry_price": 82.84,
-          "unrealized_pl": 801.243361
+          "unrealized_pl": 697.126992
         },
         {
           "symbol": "XLE",
           "qty": 803.804569946,
-          "market_value": 47219.499461,
-          "current_price": 58.745,
+          "market_value": 47011.474839,
+          "current_price": 58.4862,
           "avg_entry_price": 57.935787,
-          "unrealized_pl": 650.449107
+          "unrealized_pl": 442.424485
         },
         {
           "symbol": "XLP",
           "qty": 457.14363153,
-          "market_value": 39010.351797,
-          "current_price": 85.335,
+          "market_value": 39021.780387,
+          "current_price": 85.36,
           "avg_entry_price": 81.906424,
-          "unrealized_pl": 1567.351684
+          "unrealized_pl": 1578.780274
         },
         {
           "symbol": "XLU",
           "qty": 1065.714496345,
-          "market_value": 47067.280731,
-          "current_price": 44.165,
+          "market_value": 46915.096701,
+          "current_price": 44.0222,
           "avg_entry_price": 46.031306,
-          "unrealized_pl": -1988.949359
+          "unrealized_pl": -2141.133389
         },
         {
           "symbol": "XLV",
           "qty": 102.653153182,
-          "market_value": 15790.108022,
-          "current_price": 153.82,
+          "market_value": 15667.4683,
+          "current_price": 152.6253,
           "avg_entry_price": 146.267694,
-          "unrealized_pl": 775.268024
+          "unrealized_pl": 652.628302
         }
       ]
     },
@@ -116,24 +116,24 @@
       "strategy": "TQQQ Momentum",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-06-10T16:22:41.357202+00:00",
+      "last_updated_utc": "2026-06-10T21:26:25.971074+00:00",
       "ok": true,
       "error": "",
       "account": {
         "status": "ACTIVE",
         "cash": -92862.5,
-        "equity": 265350.0,
-        "buying_power": 79587.88,
-        "portfolio_value": 172450.38
+        "equity": 258171.75,
+        "buying_power": 72446.75,
+        "portfolio_value": 165309.25
       },
       "positions": [
         {
           "symbol": "TQQQ",
           "qty": 3750.0,
-          "market_value": 265350.0,
-          "current_price": 70.76,
+          "market_value": 258171.75,
+          "current_price": 68.8458,
           "avg_entry_price": 51.43,
-          "unrealized_pl": 72487.5
+          "unrealized_pl": 65309.25
         }
       ]
     },
@@ -143,24 +143,24 @@
       "strategy": "Dual Momentum",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-06-10T16:22:41.603737+00:00",
+      "last_updated_utc": "2026-06-10T21:26:26.275417+00:00",
       "ok": true,
       "error": "",
       "account": {
         "status": "ACTIVE",
         "cash": 67079.72,
-        "equity": 36335.52,
-        "buying_power": 370052.51,
-        "portfolio_value": 103413.16
+        "equity": 36001.68,
+        "buying_power": 369123.58,
+        "portfolio_value": 103081.4
       },
       "positions": [
         {
           "symbol": "QQQ",
           "qty": 52.0,
-          "market_value": 36335.52,
-          "current_price": 698.76,
+          "market_value": 36001.68,
+          "current_price": 692.34,
           "avg_entry_price": 724.82,
-          "unrealized_pl": -1355.12
+          "unrealized_pl": -1688.96
         }
       ]
     },
@@ -170,24 +170,24 @@
       "strategy": "Sector Rotation",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-06-10T16:22:41.839633+00:00",
+      "last_updated_utc": "2026-06-10T21:26:26.758211+00:00",
       "ok": true,
       "error": "",
       "account": {
         "status": "ACTIVE",
         "cash": 72471.16,
-        "equity": 30075.24,
-        "buying_power": 374095.31,
-        "portfolio_value": 102546.4
+        "equity": 29708.51,
+        "buying_power": 373068.47,
+        "portfolio_value": 102179.67
       },
       "positions": [
         {
           "symbol": "XLK",
           "qty": 169.0,
-          "market_value": 30075.24,
-          "current_price": 177.96,
+          "market_value": 29708.51,
+          "current_price": 175.79,
           "avg_entry_price": 183.090118,
-          "unrealized_pl": -866.989942
+          "unrealized_pl": -1233.719942
         }
       ]
     },
@@ -197,7 +197,7 @@
       "strategy": "Mean Reversion",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-06-10T16:22:42.094420+00:00",
+      "last_updated_utc": "2026-06-10T21:26:27.061649+00:00",
       "ok": true,
       "error": "",
       "account": {
