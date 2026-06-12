@@ -2,6 +2,11 @@
 
 ## What Changed
 
+### Allocation Study (2026-06-12, session 12b)
+* `spikes/allocation_study_2026.md`: the family scenario (user 750k risk-willing; parents 55/60, 1.25M, working "until they can't") evaluated against our evidence - explicitly NOT financial advice, structures-vs-evidence only, with a licensed-planner checklist.
+* New sim: 75/25 at-top entries - lump worst 0.94x/-40% maxDD; +SMA200 overlay worst 1.16x/-17%.
+* Key analytical points: stochastic horizon ("until they can't") is the real argument against parents' 100% equity, not returns; core-satellite blend math (low downside-corr satellites improve blended maxDD); tournament division gates double as sizing rules; entry timing matters less than having the overlay live from tranche one.
+
 ### Market Thesis 2026 H2 (NEW - 2026-06-12, session 12)
 * `thesis/market_thesis_2026H2.md`: researched scenario framework (Iran war, 4.2% CPI, BoJ June 15-16 carry risk, SpaceX mega-IPO, AI capex 2nd derivative) with probabilities (grind 50/slow bear 30/fast crash 20), tripwires mapped to our daily signals, division positioning, falsifiable markers for 2026-07-12 review.
 * `thesis/macro_view.md` replaced with the distilled version - the daily LLM analysts now reason from this thesis.
