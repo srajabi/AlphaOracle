@@ -55,3 +55,7 @@ run_local.sh
 frontend/node_modules/
 frontend/dist/
 .astro/
+
+# personally-licensed papers/books - never push to the public repo
+papers/private/*
+!papers/private/README.md

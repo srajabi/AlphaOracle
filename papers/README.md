@@ -99,8 +99,21 @@ QuantEcon ([quantecon.org](https://quantecon.org)).
   OAuth app. Scrapers that fight anti-bot walls are fragile and usually
   against ToS; if there's no API, paste content into chat or browse manually.
 - **Policy: legal sources only.** No sci-hub - author pages, arXiv, NBER,
-  SSRN-ungated, and publisher OA cover nearly everything we need; gated
-  papers get notes-with-links.
+  SSRN, and publisher OA cover nearly everything we need; gated papers get
+  notes-with-links.
+- **`private/` shelf (gitignored):** personally-licensed material - purchased
+  books, free-SSRN-login downloads, library scans. Mined into committed
+  notes; the source files never reach the public repo.
+- **The gated list & how to unlock it legally:** most "gated" SSRN papers
+  (Keller VAA [2959708](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2959708),
+  DAA [3212862](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3212862),
+  BAA [4166845](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4166845),
+  Antonacci [2042750](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2042750),
+  Blitz/van Vliet [980865](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=980865))
+  are FREE with a free SSRN account - our automated fetches fail on
+  anti-bot walls, not paywalls. Download in a browser, drop in `private/`.
+  For truly paywalled journal articles: email the author (works remarkably
+  often), check their university page, or use library/ILL access.
 - **Out of scope for AlphaOracle** (noted so we stop re-evaluating them):
   market-making (Avellaneda-Stoikov), optimal execution (Almgren-Chriss),
   rough-volatility option pricing, Cartea's HFT book, institutional intraday
