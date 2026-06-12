@@ -30,6 +30,7 @@ notes-only with links.
 | [lo_quants_august_2007.md](lo_quants_august_2007.md) | Khandani & Lo (2007) | warning label | Factor crowding risk; pairs with deflated Sharpe as the two live-failure modes |
 | [peterson_strategy_development.md](peterson_strategy_development.md) | Peterson (2017) | methodology bible | Exposes our gaps: parameter-stability tests, DSR, cost stress tests. His 60-entry .bib included |
 | [slow_momentum_fast_reversion.md](slow_momentum_fast_reversion.md) | Wood, Roberts & Zohren (2021) | not yet - round-4 candidate | Changepoint gate fixes trend's regime-turn bleed (our COVID failure mode) |
+| [volatility_effect_low_vol.md](volatility_effect_low_vol.md) | Blitz & van Vliet (2007) | partially via risk parity / XLU-XLP | Low-vol anomaly; inverse-vol sector basket flagged as round-4-adjacent |
 
 ## Paper sources (recurring hunting grounds)
 
@@ -67,6 +68,21 @@ notes-only with links.
   ML-heavy momentum/vol/regime research; mostly arXiv-free PDFs
 - **AQR Insights/Research** ([aqr.com](https://www.aqr.com/Insights)) -
   accessible practitioner whitepapers (Asness et al.)
+- **#QuantLinkADay roundups** ([Turnleaf Analytics](https://turnleafanalytics.com/hundreds-of-quant-papers-from-quantlinkaday-in-2025/)) -
+  Saeed Amen's ~365 papers/year, compiled annually since 2016; heavy on
+  macro/FX/ML but includes TAA and trend-following
+- **[Quantpedia](https://quantpedia.com/)** - encyclopedia of published
+  strategies with backtest summaries; free tier covers strategy descriptions
+- **Robeco's [most important quant papers](https://www.robeco.com/en-us/about-us/key-strengths/quant/our-most-important-quant-papers)** -
+  the low-vol/conservative-investing canon (Blitz, van Vliet)
+- **Journals**: [PM-Research](https://www.pm-research.com/topic/quantitative-finance)
+  (JPM etc., paywalled - notes-with-links), Journal of Financial Data Science,
+  JFE/JF/RFS via author preprint pages
+- **Blocked-site technique**: prefer OFFICIAL APIs over scraping -
+  Hacker News via `hn.algolia.com/api/v1/items/<id>`, StackExchange via
+  `api.stackexchange.com` (both tested, work from plain curl), Reddit via
+  OAuth app. Scrapers that fight anti-bot walls are fragile and usually
+  against ToS; if there's no API, paste content into chat or browse manually.
 - **Policy: legal sources only.** No sci-hub - author pages, arXiv, NBER,
   SSRN-ungated, and publisher OA cover nearly everything we need; gated
   papers get notes-with-links.
