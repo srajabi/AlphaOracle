@@ -39,6 +39,15 @@ notes-only with links.
   out-of-sample tracking of published TAA strategies (Keller, Faber, etc.)
 - **Author sites** for legal PDFs: davidhbailey.com, LSE/NYU personal pages,
   NBER working papers, mebfaber.com
+- **Internet Archive**: [scholar.archive.org](https://scholar.archive.org)
+  full-text searches open-access journal papers; the
+  [Wayback Machine](https://web.archive.org) recovers PDFs from dead
+  author-page links. Tested 2026-06: neither unlocks SSRN-only working papers
+  (Keller/Antonacci remain gated) - SSRN landing pages are archived, the
+  Delivery.cfm PDFs are not.
+- **Reddit**: unauthenticated access is fully closed (web, old.reddit, and
+  .json all blocked). Reading r/quant / r/algotrading programmatically needs
+  official API OAuth credentials (free personal app at reddit.com/prefs/apps).
 
 ## Conventions
 
