@@ -34,6 +34,7 @@ notes-only with links.
 | [day_trading_evidence.md](day_trading_evidence.md) | Barber/Lee/Liu/Odean (2014), Chague et al (2020) | out of scope, by evidence | 97-99% of persistent day traders lose; winners run institutional mechanics |
 | [gao_intraday_momentum.md](gao_intraday_momentum.md) | Gao, Han, Li & Zhou (2018) | blocked on intraday data | First half-hour predicts last; Alpaca bars flagged for future replication |
 | [rockafellar_uryasev_cvar.md](rockafellar_uryasev_cvar.md) | Rockafellar & Uryasev (2000) | adopted - `cvar()` in validation.py | Expected shortfall now on every scoreboard row |
+| [silicon_crowd_llm_ensembles.md](silicon_crowd_llm_ensembles.md) | Schoenegger et al. (2024) | shaped LLM pipeline design | LLM crowds rival human crowds; role diversity > provider diversity for us |
 
 ## Books (`books/`)
 
