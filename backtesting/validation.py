@@ -241,12 +241,112 @@ def parameter_stability(strategy_factory, prices: pd.DataFrame,
     return {"sharpe_by_param": sharpes, "plateau_score": plateau}
 
 
-def risk_report(returns: pd.Series) -> dict:
+# ---------------------------------------------------------------------------
+# Distribution-shape and consistency metrics
+# ---------------------------------------------------------------------------
+
+def omega_ratio(returns: pd.Series, threshold: float = 0.0) -> float:
+    """Sum of gains above threshold / sum of losses below it. Uses the whole
+    distribution (all moments), unlike Sharpe's mean/std."""
+    r = np.asarray(returns, dtype=float) - threshold
+    losses = -r[r < 0].sum()
+    if losses == 0:
+        return 0.0
+    return float(r[r > 0].sum() / losses)
+
+
+def martin_ratio(returns: pd.Series) -> float:
+    """CAGR / Ulcer Index - return per unit of depth-x-duration pain."""
+    ui = ulcer_index(returns)
+    if ui == 0:
+        return 0.0
+    return float(cagr(returns) / ui)
+
+
+def gain_to_pain(returns: pd.Series) -> float:
+    """Schwager's GPR on monthly returns: sum(monthly gains)/|sum(monthly
+    losses)|. > 1 good, > 1.5 excellent, > 2 suspicious."""
+    r = pd.Series(np.asarray(returns, dtype=float))
+    monthly = (1.0 + r).groupby(np.arange(len(r)) // 21).prod() - 1.0
+    losses = -monthly[monthly < 0].sum()
+    if losses == 0:
+        return 0.0
+    return float(monthly[monthly > 0].sum() / losses)
+
+
+def k_ratio(returns: pd.Series) -> float:
+    """Consistency of equity growth: slope / stderr of the log-equity
+    regression on time (Lars Kestner). High = straight-line growth."""
+    log_equity = np.log(_equity_curve(returns))
+    n = len(log_equity)
+    if n < 12:
+        return 0.0
+    t = np.arange(n, dtype=float)
+    t_mean = t.mean()
+    denom = ((t - t_mean) ** 2).sum()
+    slope = ((t - t_mean) * (log_equity - log_equity.mean())).sum() / denom
+    resid = log_equity - (log_equity.mean() + slope * (t - t_mean))
+    se = math.sqrt((resid ** 2).sum() / (n - 2) / denom)
+    if se == 0:
+        return 0.0
+    return float(slope / se / math.sqrt(n))
+
+
+def rolling_sharpe_consistency(returns: pd.Series, window: int = 252) -> float:
+    """Fraction of rolling 1y windows with positive Sharpe - 'how often was
+    holding this thing rewarding', the lived-experience consistency metric."""
+    r = pd.Series(np.asarray(returns, dtype=float))
+    if len(r) <= window:
+        return 0.0
+    mu = r.rolling(window).mean()
+    sd = r.rolling(window).std(ddof=0)
+    rolling = (mu / sd).dropna()
+    return float((rolling > 0).mean())
+
+
+# ---------------------------------------------------------------------------
+# Benchmark-relative metrics (vs SPY by convention)
+# ---------------------------------------------------------------------------
+
+def capture_ratios(returns: pd.Series, benchmark: pd.Series) -> dict:
+    """Up/down capture: strategy's mean return on benchmark-up days divided
+    by benchmark's, same for down days. The defensive ideal is up > down -
+    a direct print of convexity."""
+    r = np.asarray(returns, dtype=float)
+    b = np.asarray(benchmark, dtype=float)
+    up, down = b > 0, b < 0
+    out = {}
+    out["up_capture"] = float(r[up].mean() / b[up].mean()) if up.any() and b[up].mean() != 0 else 0.0
+    out["down_capture"] = float(r[down].mean() / b[down].mean()) if down.any() and b[down].mean() != 0 else 0.0
+    return out
+
+
+def downside_correlation(returns: pd.Series, benchmark: pd.Series) -> float:
+    """Correlation with the benchmark CONDITIONAL on benchmark-down days -
+    'is it still diversifying when it matters'. Full-sample correlation
+    hides exactly this."""
+    r = np.asarray(returns, dtype=float)
+    b = np.asarray(benchmark, dtype=float)
+    mask = b < 0
+    if mask.sum() < 20:
+        return 0.0
+    rr, bb = r[mask], b[mask]
+    if rr.std() == 0 or bb.std() == 0:
+        return 0.0
+    return float(np.corrcoef(rr, bb)[0, 1])
+
+
+def risk_report(returns: pd.Series, benchmark: pd.Series = None) -> dict:
     """All risk metrics for one return series in a single dict."""
-    return {
+    r = np.asarray(returns, dtype=float)
+    report = {
         "sharpe": sharpe_ratio(returns),
         "sortino": sortino_ratio(returns),
         "calmar": calmar_ratio(returns),
+        "martin": martin_ratio(returns),
+        "omega": omega_ratio(returns),
+        "gain_to_pain": gain_to_pain(returns),
+        "k_ratio": k_ratio(returns),
         "cagr": cagr(returns),
         "max_dd": max_drawdown(returns),
         "max_dd_duration_days": max_drawdown_duration(returns),
@@ -254,7 +354,14 @@ def risk_report(returns: pd.Series) -> dict:
         "cvar_95": cvar(returns, 0.95),
         "cdar_95": cdar(returns, 0.95),
         "tail_ratio": tail_ratio(returns),
+        "skew": float(skew(r)) if len(r) > 2 else 0.0,
+        "kurtosis": float(kurtosis(r, fisher=False)) if len(r) > 2 else 0.0,
+        "rolling_1y_sharpe_pos": rolling_sharpe_consistency(returns),
     }
+    if benchmark is not None:
+        report.update(capture_ratios(returns, benchmark))
+        report["downside_corr"] = downside_correlation(returns, benchmark)
+    return report
 
 
 # ---------------------------------------------------------------------------

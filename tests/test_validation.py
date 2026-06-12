@@ -138,10 +138,12 @@ class TestRiskMetrics:
     def test_risk_report_keys_complete(self):
         r = pd.Series(np.random.default_rng(5).normal(0.0003, 0.01, 1000))
         report = risk_report(r)
+        # subset check: the core keys must always exist; new metrics may be
+        # added without breaking this test
         expected = {"sharpe", "sortino", "calmar", "cagr", "max_dd",
                     "max_dd_duration_days", "ulcer_index", "cvar_95",
                     "cdar_95", "tail_ratio"}
-        assert set(report) == expected
+        assert expected <= set(report)
         assert all(np.isfinite(v) for v in report.values())
 
 

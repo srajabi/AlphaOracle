@@ -102,7 +102,7 @@ def main():
             "perm_p_value": perm["p_value"],
             "gap_loss_15pct": gap_risk(weights, 0.15),
         }
-        row.update(risk_report(returns))
+        row.update(risk_report(returns, benchmark=asset_returns["SPY"]))
         costs = cost_sensitivity(prices, weights)
         row["sharpe_at_5bps"] = costs["sharpe_at_5bps"]
         row["breakeven_cost_bps"] = min(costs["breakeven_cost_bps"], 9999.0)
@@ -140,10 +140,11 @@ def main():
 
     print(f"\nPBO across {active.shape[1]} non-baseline strategies: "
           f"{pbo['pbo']:.2f} ({pbo['n_combinations']} combinations)")
-    print(f"\nTop 12 by Sharpe (with validation + risk + execution realism):")
-    cols = ["strategy", "cagr", "sharpe", "calmar", "max_dd", "cdar_95",
-            "sharpe_at_5bps", "breakeven_cost_bps", "lag_sharpe_drop",
-            "gap_loss_15pct", "deflated_sharpe_prob", "perm_p_value"]
+    print(f"\nTop 12 by Sharpe (validation + risk + execution + benchmark-relative):")
+    cols = ["strategy", "cagr", "sharpe", "martin", "gain_to_pain",
+            "up_capture", "down_capture", "downside_corr",
+            "rolling_1y_sharpe_pos", "breakeven_cost_bps",
+            "deflated_sharpe_prob"]
     print(scoreboard[cols].head(12).round(3).to_string(index=False))
     print(f"\nSaved to {out_dir}")
 

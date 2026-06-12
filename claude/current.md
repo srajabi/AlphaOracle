@@ -2,6 +2,11 @@
 
 ## What Changed
 
+### Metrics Expansion + Options/VRP Research (NEW - 2026-06-12, session 9)
+* **8 new metrics in validation.py** (+18 tests): Omega, Martin (CAGR/Ulcer), gain-to-pain (Schwager), K-ratio (equity-curve straightness), rolling-1y-Sharpe consistency, up/down capture, downside correlation, skew/kurtosis reporting. risk_report() takes an optional benchmark (SPY in the sweep).
+* **Scoreboard v4 insights:** convexity now printed directly - every winner captures more up than down (canary_daa_2x 0.57/0.45); canary family downside-corr to SPY just 0.20-0.28 (diversifies when it matters); winners' rolling 1y Sharpe positive 83-92% of windows.
+* **Options/"Renaissance" question answered** (`spikes/options_data_vrp_plan.md`): Medallion-type returns not replicable (edge geometry = tiny edge x 100k trades/day x capacity cap). The real options edge is the volatility risk premium (IV 19.3% vs realized 15.1% since 1990; PUT index 2/3 SPY vol, beta 0.56). Realistic: Sharpe 0.5-0.9 income sleeve with crash skew. Vendor plan (ORATS/Theta ~$50-100/mo) documented; awaiting go/no-go on data spend.
+
 ### Documentation Hub: claude/ + CLAUDE.md + Findings Registry (NEW - 2026-06-11, session 8)
 * Created `claude/` agent-context hub: moved agents.md, context.md, current.md here; added **`claude/findings.md`** - the canonical registry of every empirical result (entry research, decumulation, XEQT, LETF, strategy lab, validation, overnight, day-trading evidence, bugs-found, data assets) with numbers + caveats + pointers. **Update findings.md in every session that produces a result.**
 * Added root **CLAUDE.md** (auto-loaded by Claude Code): reading order, hard rules (never touch forward test, tests non-negotiable, document religiously, legal sources), environment notes.

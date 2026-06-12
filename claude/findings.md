@@ -136,6 +136,32 @@ stated (gold-friendly - standing caveat). Detailed session narrative:
 - ^TNX/^IRX (1962+/1960+): yield-curve inversion with 60y of history
 - Alpaca intraday bars: accessible, unpulled (Gao replication)
 
+## 11. Benchmark-relative + distribution metrics (scoreboard v4)
+
+- **Convexity confirmed directly**: every lab winner captures more upside
+  than downside (canary_daa_2x up/down capture 0.57/0.45; blend 0.45/0.38).
+  Downside correlation to SPY stays 0.20-0.40 for the canary family - still
+  diversifying when it matters.
+- **Rolling 1y Sharpe positive 83-92%** of windows for the winners - the
+  lived-experience consistency number.
+- Metrics now reported per strategy: Sharpe, Sortino, Calmar, Martin, Omega,
+  gain-to-pain, K-ratio, CAGR, maxDD, DD-duration, Ulcer, CVaR/CDaR-95,
+  tail ratio, skew/kurtosis, rolling consistency, up/down capture, downside
+  corr + the execution suite (costs/breakeven/lag/gap) + the statistical
+  suite (DSR/bootstrap/permutation/PBO/plateau).
+
+## 12. Options / volatility risk premium (researched, not started)
+
+- **Renaissance-type returns: not replicable** - Medallion's edge geometry
+  (tiny edge x ~100k trades/day x capacity cap) cannot be bought with data;
+  even RenTech's public funds are ordinary.
+- **The real options edge is the VRP**: IV (19.3% avg) > realized (15.1%),
+  1990-2018. PUT index: 2/3 of SPY vol, beta 0.56, maxDD -33% vs -51%, with
+  violent negative skew; weaker post-2012 (crowded). Realistic sleeve:
+  Sharpe ~0.5-0.9, income overlay +1-3%/yr - diversifier, not money printer.
+- Blocker: no historical chains in free data. Plan + vendor costs
+  (~$50-100/mo): `spikes/options_data_vrp_plan.md`. Awaiting go/no-go.
+
 ## 10. System state (operational)
 
 - 6 Alpaca paper accounts; forward test UNCHANGED by user instruction
