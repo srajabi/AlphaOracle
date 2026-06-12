@@ -2,6 +2,10 @@
 
 ## What Changed
 
+### Fund Path + Data ROI (NEW - 2026-06-12, session 9c)
+* `spikes/fund_path_and_data_roi.md`: data hurdle math ($100/mo = 1.2%/yr net-edge hurdle on $100k; smarter = one-time research purchase), the Canadian registration ladder (NI 31-103: PM + IFM registration, CFA+12mo for AR, $100k IFM capital, realistic breakeven AUM $5-15M+), track-record requirements (real verifiable capital, 3-5 years; paper doesn't market but gates), learning resources, and 6 concrete experiments (data-ROI trial, attribution backfill, GIPS-style composites, graduation criteria IPS, meta-allocator A/B, decay alarms).
+* Key warning documented: informally pooling friends/family money while unregistered = enforcement + permanent bar. Own money only until registered.
+
 ### Maturity Roadmap (NEW - 2026-06-12, session 9b)
 * `spikes/maturity_roadmap.md` - strategic assessment: where we stand, what funds do that we don't (ranked by adoptability), the small-player edges, and a 3-tier roadmap.
 * **The open loop identified as the #1 maturity gap:** we validate strategies but never reconcile live Alpaca account behavior against backtest expectations. Attribution monitor (live curves vs bootstrap percentile bands) is the top Tier-1 item, followed by a portfolio-level risk governor and monthly decay-alarm re-validation.
