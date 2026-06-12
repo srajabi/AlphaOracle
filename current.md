@@ -2,6 +2,19 @@
 
 ## What Changed
 
+### Strategy Lab: 27 Strategies Researched + Backtested (NEW - 2026-06-11, session 4)
+* **Goal:** minimize downturns + maximize returns. Full writeup: `spikes/strategy_lab_2026_06.md`; scoreboard: `backtesting/results_lab_final/scoreboard.csv`.
+* Implemented 27 strategies across 4 families (trend/momentum, vol-based, allocation/rotation, hybrids) in `backtesting/portfolio_strategies.py` with new helpers: `_aux_close()` (non-investable signals like ^VIX), `_monthly()` (month-end evaluation, no lookahead), `_mom_13612w()` (Keller momentum).
+* **Winners:**
+  * `lab_winners_blend` (40% canary DAA + 30% risk parity + 30% monthly SMA200): Sharpe 1.21, -24% maxDD
+  * `canary_daa_2x`: 18.0% CAGR, Sharpe 1.08, POSITIVE through GFC (+12.6%)
+  * `canary_daa_smart_defense`: 14.1% CAGR, worst regime -27% (fixed 2022 by routing defense to best of TLT/GLD/cash)
+  * `gtaa_5_faber`: -12% maxDD over 21 years (defense champion, matches Faber's published claims)
+  * `sma200_monthly_spy`: monthly beats daily SMA200 (Sharpe 0.79 vs ~0.56 B&H, 41 trades/33y)
+* **Confirmed failures:** VIX-laddered TQQQ (-95% DD), Reddit TQQQ rule from 1999 (-90% DD - dot-com kills it), VIX-spike leverage buying, Donchian 55/20, GEM/VAA with EWA proxies.
+* **Key insights:** canary universe (Keller DAA) best idea tested; blending uncorrelated engines beats any single engine; vol targeting is the only leverage that survived dot-com; monthly evaluation cuts whipsaw.
+* **Next:** assign forward-test candidates to Alpaca accounts 4/5 (currently sector rotation + mean reversion - underperformers in the lab).
+
 ### Market-Entry + LETF Research, /research Page (NEW - 2026-06-11, session 2)
 
 #### Entry-strategy backtest (`backtesting/entry_strategies.py`)

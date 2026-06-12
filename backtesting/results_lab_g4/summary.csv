@@ -1,0 +1,4 @@
+strategy,total_return,annualized_return,annualized_volatility,sharpe,max_drawdown,win_rate,trades,excess_total_return,excess_annualized_return,excess_sharpe,excess_max_drawdown,is_baseline
+sector_momentum_top3_filtered,7.862173,0.083574,0.150211,0.556376,-0.256643,0.540436,220.0,-2.2407579999999996,-0.009023000000000003,0.04761599999999999,0.26862800000000003,False
+equal_weight_buy_hold,10.102931,0.092597,0.182005,0.50876,-0.525271,0.547817,0.0,0.0,0.0,0.0,0.0,True
+buy_and_hold,7.915026000000001,0.0820771111111111,0.2252341111111111,0.37743133333333334,-0.6050295555555556,0.5190052222222222,1.0,0.0,0.0,0.0,0.0,True
