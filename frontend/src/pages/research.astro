@@ -1,0 +1,371 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+
+async function loadJson(rel) {
+  try {
+    return JSON.parse(await fs.readFile(path.resolve(rel), 'utf-8'));
+  } catch (e) {
+    console.error(`Error loading ${rel}:`, e.message);
+    return null;
+  }
+}
+
+const entrySpy = await loadJson('./public/data/entry_strategies_spy.json');
+const entry6040 = await loadJson('./public/data/entry_strategies_6040.json');
+const letf = await loadJson('./public/data/letf_comparison.json');
+
+const strategyLabels = {
+  lump_sum: 'Lump sum (day 1)',
+  dca_6m: 'DCA over 6 months',
+  dca_12m: 'DCA over 12 months',
+  dca_24m: 'DCA over 24 months',
+  sma_gated_12m: 'DCA 12m, gated by SMA200',
+  dip_buy_10: 'Wait for a 10% dip',
+  ls_sma_managed: 'Lump sum + SMA200 overlay',
+};
+
+const letfLabels = {
+  reddit_200sma_tqqq: 'TQQQ + 200 SMA bands',
+  reddit_200sma_spy: 'UPRO + 200 SMA bands',
+  hfea_55_45: 'HFEA 55/45 (UPRO/TMF)',
+  hfea_lite_2x: 'HFEA-lite 2x (SSO/UBT)',
+  regime_defensive_rotation_2x: 'Regime rotation 2x',
+  buy_hold_qqq_3x: 'TQQQ buy & hold',
+  buy_hold_spy: 'SPY buy & hold (baseline)',
+  spy_tlt_60_40: '60/40 SPY/TLT (baseline)',
+  equal_weight_buy_hold: 'Equal-weight universe (baseline)',
+};
+
+function entryRows(data, cohort) {
+  if (!data) return [];
+  return data.summary.filter((r) => r.cohort === cohort);
+}
+
+function letfRows(period) {
+  if (!letf) return [];
+  return letf.summary_by_period
+    .filter((r) => r.period === period)
+    .sort((a, b) => b.sharpe - a.sharpe);
+}
+
+const pct = (x) => `${(x * 100).toFixed(1)}%`;
+const mult = (x) => `${x.toFixed(2)}x`;
+---
+
+<Layout title="AlphaOracle - Research">
+  <main>
+    <header>
+      <h1>Research Notes</h1>
+      <p class="subtitle">Backtest-driven answers to real allocation questions</p>
+      <p class="muted">All results are simulations on historical data. Past performance does not predict future results. Nothing here is financial advice.</p>
+    </header>
+
+    <!-- ============== 1. ENTERING THE MARKET FROM CASH ============== -->
+    <section class="panel">
+      <h2>1. Deploying Cash Near Market Highs</h2>
+      <p>
+        <strong>Question:</strong> a large cash position needs to enter the market, but the market
+        looks toppy. Lump sum? Dollar-cost average? Wait for a dip? Use a trend signal?
+      </p>
+      <p>
+        <strong>Method:</strong> every entry rule was simulated from every monthly start date with a
+        5-year horizon (SPY 1993&ndash;2021 starts, 328 windows; 60/40 SPY/TLT 2003&ndash;2021 starts).
+        Cash earns 3%/yr while undeployed. &ldquo;At the top&rdquo; = the start date was within 2% of the
+        prior all-time high &mdash; the scenario that feels scariest. Wealth = ending value per $1 after
+        5 years. Worst max DD = deepest account drawdown across all start dates in the cohort.
+      </p>
+
+      {entrySpy && (
+        <>
+          <h3>100% equities (SPY), entries at the top ({entryRows(entrySpy, 'at_top_starts')[0]?.starts} start dates)</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Entry rule</th><th>Median wealth (5y)</th><th>5th pctile</th>
+                  <th>Worst case</th><th>Median max DD</th><th>Worst max DD</th>
+                </tr>
+              </thead>
+              <tbody>
+                {entryRows(entrySpy, 'at_top_starts').map((r) => (
+                  <tr class={r.strategy === 'ls_sma_managed' ? 'highlight' : ''}>
+                    <td>{strategyLabels[r.strategy]}</td>
+                    <td>{mult(r.median_wealth)}</td>
+                    <td>{mult(r.p5_wealth)}</td>
+                    <td>{mult(r.worst_wealth)}</td>
+                    <td class="neg">{pct(r.median_max_dd)}</td>
+                    <td class="neg">{pct(r.worst_max_dd)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
+      )}
+
+      {entry6040 && (
+        <>
+          <h3>60/40 SPY/TLT, entries at the top ({entryRows(entry6040, 'at_top_starts')[0]?.starts} start dates)</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Entry rule</th><th>Median wealth (5y)</th><th>5th pctile</th>
+                  <th>Worst case</th><th>Median max DD</th><th>Worst max DD</th>
+                </tr>
+              </thead>
+              <tbody>
+                {entryRows(entry6040, 'at_top_starts').map((r) => (
+                  <tr class={r.strategy === 'ls_sma_managed' ? 'highlight' : ''}>
+                    <td>{strategyLabels[r.strategy]}</td>
+                    <td>{mult(r.median_wealth)}</td>
+                    <td>{mult(r.p5_wealth)}</td>
+                    <td>{mult(r.worst_wealth)}</td>
+                    <td class="neg">{pct(r.median_max_dd)}</td>
+                    <td class="neg">{pct(r.worst_max_dd)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
+      )}
+
+      <div class="findings">
+        <h3>Key findings</h3>
+        <ul>
+          <li><strong>Lump sum wins the median, even at all-time highs.</strong> This matches the
+            published research (Morgan Stanley, Vanguard: lump sum beats DCA in 56&ndash;75% of periods).</li>
+          <li><strong>DCA barely protects the tail.</strong> Spreading entries over 6&ndash;24 months
+            still ends with a worst-case drawdown of -50%+ on equities &mdash; once fully invested, the
+            crash hits you anyway. DCA is mostly a psychological tool.</li>
+          <li><strong>Waiting for a dip is the worst rule.</strong> The 10%-dip rule has the lowest
+            median wealth: markets often run 20%+ before the dip arrives, and the dip you finally
+            get may be the start of something worse.</li>
+          <li><strong>What actually truncates the left tail is the ongoing SMA200 overlay, not the
+            entry schedule.</strong> On equities at tops: worst case 0.94x vs 0.82x and max drawdown
+            capped near -22% vs -55%, costing ~0.14x median wealth.</li>
+          <li><strong>On a 60/40 portfolio the overlay is close to free.</strong> At-the-top entries:
+            worst 5-year outcome was <em>+21%</em>, worst drawdown -11% (vs -30%), and it beat lump
+            sum 53% of the time. For money that cannot tolerate deep drawdowns (e.g. retirement
+            funds), allocation choice + trend overlay matters far more than entry timing.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============== 2. LEVERAGED ETF PLAYBOOK ============== -->
+    <section class="panel">
+      <h2>2. Leveraged ETF Strategy Comparison</h2>
+      <p>
+        <strong>Question:</strong> for an aggressive sleeve of the portfolio, which leveraged ETF
+        strategy from the r/LETFs playbook holds up best across regimes?
+      </p>
+      <p>
+        <strong>Method:</strong> 33 years (1993&ndash;2026), zero transaction fees, clean leverage
+        (3x daily index returns). <strong>Important:</strong> clean leverage ignores ~1% expense ratio
+        and financing drag (roughly 2&times; the T-bill rate for a 3x fund &mdash; at 4% short rates
+        that is ~8%/yr). Real-world results will be meaningfully lower than these numbers; use them
+        to compare strategies, not as expected returns.
+      </p>
+
+      {letf && (
+        <>
+          <h3>Full sample (33 years)</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Strategy</th><th>Total return</th><th>CAGR</th><th>Sharpe</th>
+                  <th>Max DD</th><th>Trades</th>
+                </tr>
+              </thead>
+              <tbody>
+                {letfRows('full_sample').map((r) => (
+                  <tr class={r.is_baseline ? 'baseline' : ''}>
+                    <td>{letfLabels[r.strategy] ?? r.strategy}</td>
+                    <td>{pct(r.total_return)}</td>
+                    <td>{pct(r.annualized_return)}</td>
+                    <td>{r.sharpe.toFixed(2)}</td>
+                    <td class="neg">{pct(r.max_drawdown)}</td>
+                    <td>{Math.round(r.trades)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Stress tests: how each strategy handled the three killers</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Strategy</th>
+                  <th>GFC 2008 (return)</th>
+                  <th>COVID crash (max DD)</th>
+                  <th>2022 inflation bear (return)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {letfRows('full_sample').map((r) => {
+                  const gfc = letf.summary_by_period.find((x) => x.period === 'gfc_bear' && x.strategy === r.strategy);
+                  const covid = letf.summary_by_period.find((x) => x.period === 'covid_crash' && x.strategy === r.strategy);
+                  const inf = letf.summary_by_period.find((x) => x.period === 'inflation_bear_2022' && x.strategy === r.strategy);
+                  return (
+                    <tr class={r.is_baseline ? 'baseline' : ''}>
+                      <td>{letfLabels[r.strategy] ?? r.strategy}</td>
+                      <td class="neg">{gfc ? pct(gfc.total_return) : '-'}</td>
+                      <td class="neg">{covid ? pct(covid.max_drawdown) : '-'}</td>
+                      <td class="neg">{inf ? pct(inf.total_return) : '-'}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </>
+      )}
+
+      <div class="findings">
+        <h3>Key findings</h3>
+        <ul>
+          <li><strong>TQQQ buy &amp; hold is uninvestable:</strong> -94% max drawdown (GFC). The CAGR
+            looks similar to the 200 SMA version, but nobody holds through -94%.</li>
+          <li><strong>The 200 SMA filter is what makes leveraged equity survivable:</strong> it turned
+            the GFC from -94% into -36% on TQQQ, with only ~0.7 trades/year.</li>
+          <li><strong>HFEA died in 2022 exactly as its critics predicted:</strong> -62% in one year
+            because stocks and long bonds crashed together when rates rose. Its 33-year numbers are
+            carried by a 30-year bond bull market that is not guaranteed to repeat.</li>
+          <li><strong>No timing signal saves you from a gap-crash:</strong> COVID hit faster than the
+            200 SMA could react (-61% for TQQQ+SMA during the crash window). The SMA filter protects
+            against slow bears (2000, 2008, 2022), not fast ones.</li>
+          <li><strong>Regime rotation 2x had the best risk-adjusted profile</strong> (Sharpe 0.89,
+            -47% max DD) but trades 22x/year &mdash; only suitable for tax-sheltered accounts.</li>
+          <li><strong>These strategies excelled mostly in 2011+ bull markets.</strong> The same SMA200
+            rule lost money on TQQQ from 1993&ndash;2010. Regime dependency is the biggest risk.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============== 3. SMA200 ON DIVERSIFIED FUNDS ============== -->
+    <section class="panel">
+      <h2>3. Does SMA200 Timing Work on XEQT / VEQT?</h2>
+      <p>
+        <strong>Question:</strong> SMA200 looks great on the TQQQ forward test &mdash; should the same
+        rule manage a diversified all-equity fund (XEQT/VEQT)?
+      </p>
+      <p>
+        <strong>Short answer: no.</strong> Timing earns its whipsaw costs on leveraged funds where
+        drawdowns are existential. On unleveraged diversified funds it mostly locks in whipsaw losses.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>VT 2010+ (fair test, signal live throughout)</th>
+              <th>CAGR</th><th>Sharpe</th><th>Max DD</th><th>Trades</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="baseline">
+              <td>Buy &amp; hold</td><td>9.8%</td><td>0.56</td><td class="neg">-34.2%</td><td>1</td>
+            </tr>
+            <tr>
+              <td>SMA200 in/out</td><td>6.4%</td><td>0.56</td><td class="neg">-19.0%</td><td>99</td>
+            </tr>
+            <tr>
+              <td>SMA200 with 5%/3% bands</td><td>5.3%</td><td>0.47</td><td class="neg">-24.1%</td><td>21</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="findings">
+        <h3>Key findings</h3>
+        <ul>
+          <li><strong>SMA200 gave up a third of CAGR for an identical Sharpe.</strong> The only benefit
+            is a shallower max drawdown (-19% vs -34%).</li>
+          <li><strong>Watch out for the warmup artifact in short backtests:</strong> the naive
+            XEQT/VEQT backtest (2019+) flattered SMA200 because the signal sat in cash during its
+            200-day warmup &mdash; which happened to cover the COVID crash. Skill was actually luck.</li>
+          <li><strong>In taxable accounts it is strictly worse:</strong> every SMA exit realizes
+            capital gains. Inside TFSA/RRSP the rule costs return but no tax.</li>
+          <li><strong>Verdict:</strong> hold XEQT/VEQT as buy-and-hold; if -30% drawdowns are
+            intolerable, fix the allocation (add bonds), not the timing.</li>
+        </ul>
+      </div>
+    </section>
+
+    <p class="muted footer-note">
+      Generated from <code>backtesting/entry_strategies.py</code> and
+      <code>backtesting/run_backtests.py</code>. See the
+      <a href={`${base}backtests/`}>Backtests</a> page for the full strategy library.
+    </p>
+  </main>
+</Layout>
+
+<style>
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+    color: #f8f9fa;
+  }
+  header { text-align: center; margin-bottom: 2rem; }
+  h1 { margin: 0; font-size: 2.6rem; font-weight: 800; }
+  .subtitle { color: #8f949e; margin-top: 0.4rem; }
+  .muted { color: #8f949e; font-size: 0.9rem; }
+
+  .panel {
+    background: #131722;
+    border: 1px solid #2a2e39;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .panel h2 { margin-top: 0; font-size: 1.4rem; }
+  .panel h3 { margin: 1.5rem 0 0.75rem; font-size: 1.05rem; color: #c4d4ff; }
+  .panel p { color: #d1d4dc; line-height: 1.6; }
+
+  .table-wrap { overflow-x: auto; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin: 0.5rem 0 1rem;
+  }
+  th, td {
+    border: 1px solid #2a2e39;
+    padding: 0.55rem 0.7rem;
+    text-align: left;
+    white-space: nowrap;
+  }
+  th {
+    background: #1c212d;
+    color: #8f949e;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  tr.highlight td { background: rgba(41, 98, 255, 0.12); }
+  tr.baseline td { background: rgba(255, 255, 255, 0.04); color: #8f949e; }
+  td.neg { color: #f6465d; }
+
+  .findings {
+    background: #1e2230;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-top: 1rem;
+  }
+  .findings h3 { margin: 0 0 0.5rem; color: #f8f9fa; }
+  .findings ul { margin: 0; padding-left: 1.2rem; }
+  .findings li { color: #d1d4dc; margin-bottom: 0.5rem; line-height: 1.55; }
+
+  .footer-note { text-align: center; margin-top: 2rem; }
+  .footer-note a { color: #c4d4ff; }
+  code { background: #1c212d; padding: 0.1rem 0.35rem; border-radius: 4px; font-size: 0.85em; }
+</style>

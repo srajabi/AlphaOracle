@@ -54,11 +54,6 @@ const accountOrder = ['dev', 'prod_1', 'prod_2', 'prod_3', 'prod_4', 'prod_5'];
 
 <Layout title="AlphaOracle - Paper Trading">
   <main>
-    <nav>
-      <a href={base}>← Back to Analysis</a>
-      <a href={`${base}backtests/`}>Backtests</a>
-    </nav>
-
     <header>
       <h1>📊 Paper Trading Dashboard</h1>
       <p class="muted">Real-time Alpaca Paper Trading - 6 Accounts</p>
@@ -212,21 +207,6 @@ const accountOrder = ['dev', 'prod_1', 'prod_2', 'prod_3', 'prod_4', 'prod_5'];
     margin: 0 auto;
     padding: 2rem;
     color: #f8f9fa;
-  }
-
-  nav {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  nav a {
-    color: #c4d4ff;
-    text-decoration: none;
-  }
-
-  nav a:hover {
-    text-decoration: underline;
   }
 
   header {

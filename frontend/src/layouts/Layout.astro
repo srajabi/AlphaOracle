@@ -7,6 +7,29 @@ const { title = "AlphaOracle" } = Astro.props;
 const base = import.meta.env.BASE_URL.endsWith('/')
 	? import.meta.env.BASE_URL
 	: `${import.meta.env.BASE_URL}/`;
+
+const navItems = [
+	{ label: 'Analysis', href: base },
+	{ label: 'News', href: `${base}news-events/` },
+	{ label: 'Indicators', href: `${base}indicators/` },
+	{ label: 'Tickers', href: `${base}tickers/` },
+	{ label: 'Backtests', href: `${base}backtests/` },
+	{ label: 'Research', href: `${base}research/` },
+	{ label: 'Paper Trading', href: `${base}paper-trading/` },
+];
+
+const currentPath = Astro.url.pathname.endsWith('/')
+	? Astro.url.pathname
+	: `${Astro.url.pathname}/`;
+
+function isActive(href: string): boolean {
+	if (href === base) return currentPath === base;
+	// Ticker detail pages live under /stocks/ but belong to the Tickers section.
+	if (href === `${base}tickers/`) {
+		return currentPath.startsWith(href) || currentPath.startsWith(`${base}stocks/`);
+	}
+	return currentPath.startsWith(href);
+}
 ---
 <!doctype html>
 <html lang="en">
@@ -19,6 +42,18 @@ const base = import.meta.env.BASE_URL.endsWith('/')
 		<title>{title}</title>
 	</head>
 	<body>
+		<header class="site-header">
+			<div class="site-header-inner">
+				<a class="brand" href={base}>AlphaOracle</a>
+				<nav class="site-nav">
+					{navItems.map((item) => (
+						<a href={item.href} class:list={[{ active: isActive(item.href) }]}>
+							{item.label}
+						</a>
+					))}
+				</nav>
+			</div>
+		</header>
 		<slot />
 	</body>
 </html>
@@ -32,5 +67,52 @@ const base = import.meta.env.BASE_URL.endsWith('/')
 		background: #0b0e14;
 		color: #f8f9fa;
 		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	}
+
+	.site-header {
+		position: sticky;
+		top: 0;
+		z-index: 100;
+		background: rgba(11, 14, 20, 0.92);
+		backdrop-filter: blur(8px);
+		border-bottom: 1px solid #2a2e39;
+	}
+	.site-header-inner {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 0.7rem 1.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+	.brand {
+		color: #f8f9fa;
+		text-decoration: none;
+		font-weight: 800;
+		font-size: 1.1rem;
+		letter-spacing: 0.01em;
+	}
+	.site-nav {
+		display: flex;
+		gap: 0.25rem;
+		flex-wrap: wrap;
+	}
+	.site-nav a {
+		color: #8f949e;
+		text-decoration: none;
+		font-size: 0.9rem;
+		font-weight: 600;
+		padding: 0.35rem 0.7rem;
+		border-radius: 8px;
+	}
+	.site-nav a:hover {
+		color: #f8f9fa;
+		background: #1e2230;
+	}
+	.site-nav a.active {
+		color: #f8f9fa;
+		background: #1e2230;
 	}
 </style>

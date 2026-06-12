@@ -12,8 +12,24 @@ Outputs:
 
 import json
 import csv
+import math
 from pathlib import Path
 from indicators.ticker_indicators import calculate_all_ticker_indicators
+
+
+def sanitize_nan(obj):
+    """Replace NaN/Infinity with None so the output is strict JSON.
+
+    Python's json.dump writes bare NaN tokens, which JavaScript's JSON.parse
+    rejects - the frontend would silently drop the whole indicators file.
+    """
+    if isinstance(obj, dict):
+        return {key: sanitize_nan(value) for key, value in obj.items()}
+    if isinstance(obj, list):
+        return [sanitize_nan(item) for item in obj]
+    if isinstance(obj, float) and not math.isfinite(obj):
+        return None
+    return obj
 
 
 def load_watchlist() -> list:
@@ -48,20 +64,20 @@ def main():
     print("\nCalculating ticker indicators...")
 
     # Calculate all indicators
-    indicators = calculate_all_ticker_indicators(tickers)
+    indicators = sanitize_nan(calculate_all_ticker_indicators(tickers))
 
     # Save to backend data directory
     backend_path = Path('data/ticker_indicators.json')
     backend_path.parent.mkdir(parents=True, exist_ok=True)
     with open(backend_path, 'w') as f:
-        json.dump(indicators, indent=2, fp=f, default=str)
+        json.dump(indicators, indent=2, fp=f, default=str, allow_nan=False)
     print(f"\n✓ Saved to {backend_path}")
 
     # Save to frontend data directory
     frontend_path = Path('frontend/public/data/ticker_indicators.json')
     frontend_path.parent.mkdir(parents=True, exist_ok=True)
     with open(frontend_path, 'w') as f:
-        json.dump(indicators, indent=2, fp=f, default=str)
+        json.dump(indicators, indent=2, fp=f, default=str, allow_nan=False)
     print(f"✓ Saved to {frontend_path}")
 
     # Print summary

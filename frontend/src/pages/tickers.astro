@@ -27,11 +27,6 @@ const watchlist = lines.slice(1).map((line) => {
 
 <Layout title="AlphaOracle - Ticker Dashboard">
   <main>
-    <nav>
-      <a href={base}>← Back to Daily Analysis</a>
-      <a href={`${base}portfolio/`}>Paper Trading Status</a>
-    </nav>
-
     <header>
       <h1>Ticker Dashboard</h1>
       <p class="muted">Ticker-by-ticker details, metrics, and technical context.</p>
@@ -82,9 +77,6 @@ const watchlist = lines.slice(1).map((line) => {
 
 <style>
   main { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
-  nav { display: flex; gap: 1rem; margin-bottom: 1rem; }
-  nav a { color: #8f949e; text-decoration: none; }
-  nav a:hover { color: #fff; }
   h1 { margin: 0; font-size: 2.2rem; }
   .muted { color: #8f949e; margin-top: 0.4rem; }
   .grid {
