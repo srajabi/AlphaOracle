@@ -35,8 +35,13 @@ Companion: Blitz & van Vliet (2008), *Global Tactical Cross-Asset Allocation*
 (the lowest-vol sectors) and `risk_parity_spy_tlt_gld` (inverse-vol
 weighting IS a low-vol tilt across assets) - Sharpe 1.05, the lab's #5.
 
-**Not yet tested directly:** a min-vol equity sleeve (USMV-style) as the
-growth engine of a defensive allocation - we lack USMV history in the repo
-(2011+ only via download). Flagged as a round-4-adjacent idea: compare
-SPLV/USMV-proxy (inverse-vol weighted sector basket from our 9 SPDRs,
-1999+) vs SPY as the risky sleeve inside canary DAA.
+**TESTED (2026-06, `low_vol_sector_basket` + `canary_daa_low_vol_sleeve`):**
+the inverse-vol weighted 9-SPDR basket scored Sharpe 0.52-0.59 - barely above
+the equal-weight sector baseline (0.51), and using it as canary DAA's risky
+sleeve (0.98) did NOT beat the top-2 momentum sleeve (1.06).
+
+**Honest negative result with a clean explanation:** the low-vol anomaly is a
+SINGLE-STOCK effect (lottery preference, leverage constraints on individual
+names); sector ETFs diversify away exactly the high-vol junk the anomaly
+shorts. Replicating it properly needs USMV/SPLV or stock-level data. The
+anomaly itself stands; our sector-granularity proxy was the wrong instrument.

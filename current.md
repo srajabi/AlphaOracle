@@ -2,6 +2,19 @@
 
 ## What Changed
 
+### Validation Framework + Round-4 Paper Strategies (NEW - 2026-06-11, session 5)
+* **`backtesting/validation.py`** - the statistical toolkit our papers prescribe: deflated Sharpe ratio (Bailey/Lopez de Prado), stationary block-bootstrap Monte Carlo (Sharpe/CAGR/maxDD confidence intervals), circular-shift permutation tests (timing skill vs random alignment), PBO via CSCV. `run_validation.py` sweeps every registered strategy on one uniform 21y window.
+* **46 pytest tests** (`tests/` - was gitignored, now tracked) incl. per-strategy no-lookahead causality checks. **The suite immediately caught a real engine bug:** initial position entry cost was never charged (`diff()` row-0 NaN silently summed to 0; fixed with min_count=1).
+* **Gauntlet results (`results_validation/scoreboard_v2.csv`):**
+  * **PBO = 0.36** across 48 strategies (noise = 0.5): rankings carry real signal.
+  * Top strategies survive deflation: lab_winners_blend DSR prob 1.000, bootstrap 5th-pctile Sharpe 0.85, perm p=0.000. Canary family p~0.01.
+  * Permutation test exposes fakes: vix_spike_buyer p=0.977 (worse than random timing).
+* **Round-4 strategies from the papers, all verdicts recorded in papers/ notes:**
+  * `dual_channel_cash_overlay` (Xiong arXiv): Sharpe 1.07, **-15.8% maxDD**, single-digit-to-teens losses in ALL three crisis shapes - generalizes to the GFC its paper never tested. Best defensive candidate alongside GTAA.
+  * `changepoint_gated_momentum` (Wood/Zohren simplified): 0.73 vs 0.69 plain trend, -28% vs -34% maxDD.
+  * `low_vol_sector_basket`: honest negative - the anomaly is single-stock; sector granularity diversifies it away.
+  * `overnight_decomposition.py` (Lou/Polk/Skouras): replicates dramatically - ALL of SPY/QQQ's premium was overnight (QQQ intraday-only NEGATIVE over 27y, maxDD -88%); 1bp/leg costs kill the tradable version.
+
 ### Papers Library (NEW - 2026-06-11, session 4)
 * Created `papers/` - research papers library. One note per paper: citation, links, claims, criticisms, and **our backtest verdict** with pointers to results.
 * Seeded with 8 papers behind the strategy lab: Beyond the Status Quo (Cederburg), Faber QTAA, Time Series Momentum (Moskowitz/Ooi/Pedersen), Volatility-Managed Portfolios (Moreira/Muir), Keller VAA/DAA/BAA, Antonacci Dual Momentum.

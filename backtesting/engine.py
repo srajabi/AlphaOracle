@@ -178,6 +178,28 @@ def calculate_tax_adjusted_returns(
     return tax_adjusted_returns, taxes_as_pct_of_gains
 
 
+def compute_weighted_returns(
+    prices: pd.DataFrame,
+    weights: pd.DataFrame,
+    transaction_cost_bps: float = 0.0,
+) -> pd.Series:
+    """Daily strategy returns for a weights matrix (weights applied next day).
+
+    Single source of truth for the return calculation - used by the backtest
+    metrics below and by backtesting/validation.py (bootstrap, permutation,
+    PBO all need the raw daily series).
+    """
+    asset_returns = prices.pct_change().fillna(0.0)
+    weights = weights.reindex(prices.index).fillna(0.0)
+    applied_weights = weights.shift(1).fillna(0.0)
+    turnover = (
+        weights.diff().abs().sum(axis=1, min_count=1)
+        .fillna(weights.abs().sum(axis=1))
+    )  # min_count=1 keeps row 0 as NaN so the initial entry cost is charged
+    transaction_cost = turnover * (transaction_cost_bps / 10000.0)
+    return (applied_weights * asset_returns).sum(axis=1) - transaction_cost
+
+
 def run_weighted_backtest(
     prices: pd.DataFrame,
     strategy_name: str,
@@ -190,10 +212,13 @@ def run_weighted_backtest(
     asset_returns = prices.pct_change().fillna(0.0)
     weights = weights.reindex(prices.index).fillna(0.0)
     applied_weights = weights.shift(1).fillna(0.0)
-    turnover = weights.diff().abs().sum(axis=1).fillna(weights.abs().sum(axis=1))
+    turnover = (
+        weights.diff().abs().sum(axis=1, min_count=1)
+        .fillna(weights.abs().sum(axis=1))
+    )  # min_count=1 keeps row 0 as NaN so the initial entry cost is charged
     transaction_cost = turnover * (transaction_cost_bps / 10000.0)
 
-    strategy_returns = (applied_weights * asset_returns).sum(axis=1) - transaction_cost
+    strategy_returns = compute_weighted_returns(prices, weights, transaction_cost_bps)
     equity_curve = (1.0 + strategy_returns).cumprod()
     running_max = equity_curve.cummax()
     drawdown = (equity_curve / running_max) - 1.0

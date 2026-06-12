@@ -1,0 +1,6 @@
+strategy,ticker,period,observations,trades,total_return,annualized_return,annualized_volatility,sharpe,max_drawdown,win_rate,is_baseline,baseline_total_return,excess_total_return,baseline_annualized_return,excess_annualized_return,baseline_sharpe,excess_sharpe,baseline_max_drawdown,excess_max_drawdown
+buy_and_hold,SPY,full_sample,8340,1,26.286716,0.105067,0.185975,0.564949,-0.551947,0.540233,True,26.286716,0.0,0.105067,0.0,0.564949,0.0,-0.551947,0.0
+changepoint_gated_momentum,PORTFOLIO,full_sample,8340,228,14.274544,0.085862,0.117069,0.733428,-0.275512,0.545947,False,26.286716,-12.012171999999998,0.105067,-0.019205,0.564949,0.16847899999999993,-0.551947,0.276435
+golden_cross_spy,PORTFOLIO,full_sample,8340,31,18.427729,0.093782,0.136422,0.687439,-0.337182,0.549048,False,26.286716,-7.858986999999999,0.105067,-0.01128499999999999,0.564949,0.12248999999999999,-0.551947,0.21476499999999998
+buy_hold_spy,PORTFOLIO,full_sample,8340,1,26.286716,0.105067,0.185975,0.564949,-0.551947,0.540233,True,26.286716,0.0,0.105067,0.0,0.564949,0.0,-0.551947,0.0
+equal_weight_buy_hold,PORTFOLIO,full_sample,8340,1,26.286716,0.105067,0.185975,0.564949,-0.551947,0.540233,True,26.286716,0.0,0.105067,0.0,0.564949,0.0,-0.551947,0.0

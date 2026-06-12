@@ -32,10 +32,13 @@ Detection.* Journal of Financial Data Science 4(1). Oxford-Man Institute.
 
 ## AlphaOracle verdict
 
-**Not yet implemented.** The IDEA maps directly onto our known failure mode:
-every trend strategy in our lab (SMA200, TSMOM, GTAA) bleeds at fast regime
-turns - COVID hit them before the signal could move. A simplified version is
-testable with our stack: a changepoint proxy (e.g. rolling z-score of 5-day
-returns breaching a threshold, or realized-vol step changes) that temporarily
-flips the trend rule toward mean-reversion. Flagged as a strategy-lab round-4
-candidate alongside the cash-overlay and overnight papers.
+**TESTED (2026-06, `changepoint_gated_momentum`):** simplified version - 200d
+SMA trend on SPY, exposure halved while 20d realized vol exceeds 2x its 100d
+median (the changepoint proxy). 1993-2026:
+
+- Sharpe 0.73 vs 0.69 for the plain golden cross; maxDD -27.6% vs -33.7%.
+- A real but modest improvement - consistent with the paper's claim that the
+  gains concentrate at regime turns. Our crude vol-step proxy captures part
+  of what their Bayesian CPD captures; the deep-learning layer remains
+  unreplicated (and per our note, probably unnecessary for the retail
+  version).

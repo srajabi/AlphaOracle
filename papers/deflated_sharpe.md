@@ -41,7 +41,19 @@ Mitigating factors: our strategies are implementations of PUBLISHED rules
 the top performers replicate their papers' claims out-of-sample relative to
 the papers' own samples.
 
-**Next step (flagged):** implement DSR over the lab scoreboard
-(`backtesting/results_lab_final/scoreboard.csv`) and report deflated Sharpes
-alongside raw ones. Until then, treat scoreboard rankings as ordinal, not as
-expected live performance.
+**IMPLEMENTED (2026-06, `backtesting/validation.py` + `run_validation.py`):**
+DSR, stationary-bootstrap Monte Carlo, circular-shift permutation tests, and
+CSCV PBO now run over every registered strategy on one uniform 21y window
+(scoreboard: `backtesting/results_validation/scoreboard_v2.csv`). Findings:
+
+- **PBO = 0.36** across 48 strategies - below the 0.5 noise level: in-sample
+  winners genuinely tend to stay above-median out-of-sample. Selection bias
+  exists but the rankings carry real signal.
+- The top strategies (lab_winners_blend, canary family, dual-channel
+  overlay, risk parity) survive deflation with DSR prob >= 0.998 and have
+  bootstrap 5th-percentile Sharpes of 0.67-0.85.
+- Permutation tests split real timing (canary p~0.01, vol-target p=0.007,
+  blend p=0.000) from structureless luck (vix_spike_buyer p=0.977).
+- 46 pytest tests cover the framework, including per-strategy no-lookahead
+  causality checks - which immediately caught a real engine bug (initial
+  entry cost never charged).

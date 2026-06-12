@@ -769,6 +769,118 @@ def dd_guard_qqq_2x(prices: pd.DataFrame) -> pd.DataFrame:
     return weights
 
 
+# ---- Round 4: strategies from the papers library ----
+
+def dual_channel_cash_overlay(prices: pd.DataFrame) -> pd.DataFrame:
+    """Xiong (2026, papers/cash_overlay_filters.md): a 50/50 growth/defensive
+    sleeve with TWO continuous cash channels combined by max():
+
+    - slow channel: scales to cash as the sleeve's trailing 12m Sharpe
+      deteriorates below a threshold,
+    - fast channel (crash brake): scales to cash proportionally to the
+      sleeve's drawdown beyond -5%, releasing on recovery.
+
+    Tested on 2004+ (through GFC) rather than the paper's 2017+ window.
+    """
+    weights = _empty_weights(prices)
+    growth = [t for t in ("SPY", "QQQ") if t in prices.columns]
+    defensive = [t for t in ("TLT", "GLD") if t in prices.columns]
+    if not growth or not defensive:
+        return weights
+
+    base = _empty_weights(prices)
+    for t in growth:
+        base[t] = 0.5 / len(growth)
+    for t in defensive:
+        base[t] = 0.5 / len(defensive)
+
+    sleeve_returns = (prices.pct_change().fillna(0.0) * base.shift(1)).sum(axis=1)
+
+    # slow channel: trailing 252d Sharpe mapped to cash fraction
+    mu = sleeve_returns.rolling(252).mean()
+    sd = sleeve_returns.rolling(252).std()
+    trailing_sharpe = (mu / sd * (252 ** 0.5)).fillna(1.0)
+    slow_cash = ((0.5 - trailing_sharpe) / 1.0).clip(0.0, 1.0)
+
+    # fast channel: sleeve drawdown beyond -5% scales linearly to full cash
+    # at -20%
+    equity = (1.0 + sleeve_returns).cumprod()
+    drawdown = equity / equity.cummax() - 1.0
+    fast_cash = ((-drawdown - 0.05) / 0.15).clip(0.0, 1.0)
+
+    invested = 1.0 - pd.concat([slow_cash, fast_cash], axis=1).max(axis=1)
+    return base.mul(invested, axis=0)
+
+
+def changepoint_gated_momentum(prices: pd.DataFrame) -> pd.DataFrame:
+    """Wood/Roberts/Zohren (2021, papers/slow_momentum_fast_reversion.md),
+    simplified without the deep-learning layer: follow the 200d SMA trend on
+    SPY, but when a volatility changepoint fires (20d realized vol more than
+    doubles its 100d median), cut exposure in half for the gate's duration.
+    Targets trend's known weakness: fast regime turns.
+    """
+    weights = _empty_weights(prices)
+    if "SPY" not in prices.columns:
+        return weights
+    spy = prices["SPY"]
+    sma200 = spy.rolling(200).mean()
+    trend = ((spy > sma200) & sma200.notna()).astype(float)
+
+    vol_fast = spy.pct_change().rolling(20).std()
+    vol_slow = vol_fast.rolling(100).median()
+    changepoint = (vol_fast > 2.0 * vol_slow).fillna(False)
+
+    exposure = trend.where(~changepoint, trend * 0.5)
+    weights["SPY"] = exposure
+    return weights
+
+
+def low_vol_sector_basket(prices: pd.DataFrame) -> pd.DataFrame:
+    """Blitz & van Vliet (2007, papers/volatility_effect_low_vol.md):
+    inverse-volatility weighted basket of the 9 SPDR sectors, monthly -
+    a retail-implementable low-vol equity tilt."""
+    weights = _empty_weights(prices)
+    sectors = [t for t in ("XLB", "XLE", "XLF", "XLI", "XLK", "XLP", "XLU",
+                           "XLV", "XLY") if t in prices.columns]
+    if len(sectors) < 3:
+        return weights
+    vol = prices[sectors].pct_change().rolling(63).std()
+    inv = (1.0 / vol).replace([float("inf")], float("nan"))
+    norm = inv.div(inv.sum(axis=1), axis=0).fillna(0.0)
+    for t in sectors:
+        weights[t] = norm[t]
+    return _monthly(weights)
+
+
+def canary_daa_low_vol_sleeve(prices: pd.DataFrame) -> pd.DataFrame:
+    """Hybrid: canary DAA risk switching, but the risky sleeve is the
+    inverse-vol sector basket instead of top-2 momentum assets."""
+    weights = _empty_weights(prices)
+    canary = [t for t in ("EWA", "TLT") if t in prices.columns]
+    sectors = [t for t in ("XLB", "XLE", "XLF", "XLI", "XLK", "XLP", "XLU",
+                           "XLV", "XLY") if t in prices.columns]
+    defensive = [t for t in ("TLT", "GLD") if t in prices.columns]
+    if len(canary) < 2 or len(sectors) < 3 or not defensive:
+        return weights
+
+    sleeve = low_vol_sector_basket(prices)
+    mom = _mom_13612w(prices)
+    canary_neg = (mom[canary] < 0).sum(axis=1)
+    cash_frac = _monthly(pd.DataFrame({"x": canary_neg / 2.0},
+                                      index=prices.index))["x"]
+    risk_frac = 1.0 - cash_frac
+
+    out = sleeve.mul(risk_frac, axis=0)
+    def_scores = mom[defensive]
+    for idx in prices.index:
+        cf = cash_frac.loc[idx]
+        if cf > 0:
+            scores = def_scores.loc[idx].dropna()
+            if not scores.empty and scores.max() > 0:
+                out.loc[idx, scores.idxmax()] += cf
+    return out
+
+
 # ---- Round 2: hybrids of the round-1 winners ----
 
 def canary_daa_2x(prices: pd.DataFrame) -> pd.DataFrame:
@@ -897,4 +1009,9 @@ PORTFOLIO_STRATEGIES = {
     "canary_daa_vol_target": canary_daa_vol_target,
     "canary_daa_smart_defense": canary_daa_smart_defense,
     "lab_winners_blend": lab_winners_blend,
+    # Round 4 (papers library)
+    "dual_channel_cash_overlay": dual_channel_cash_overlay,
+    "changepoint_gated_momentum": changepoint_gated_momentum,
+    "low_vol_sector_basket": low_vol_sector_basket,
+    "canary_daa_low_vol_sleeve": canary_daa_low_vol_sleeve,
 }

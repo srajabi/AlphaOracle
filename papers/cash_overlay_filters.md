@@ -39,6 +39,15 @@ tested rather than the headline numbers:
 2. Distinct slow vs fast de-risking channels combined by max() - our
    `target_dd_guard_spy` has the fast brake but no slow channel.
 
-Candidate for strategy-lab round 4: a max(slow, fast) cash overlay on our
-existing growth/defensive sleeve, tested on 2004+ (through GFC) rather than
-the paper's 2017+ window. Treat the paper's own numbers as unvalidated.
+**TESTED (2026-06, `dual_channel_cash_overlay` in portfolio_strategies.py)**
+on 2004+ - through the GFC the paper never saw:
+
+- Full sample: 9.3% CAGR, Sharpe 1.07, **maxDD -15.8%** (vs SPY -55%)
+- GFC: -5.8% | COVID crash maxDD: -14.1% | 2022: -12.7%
+
+The max(slow, fast) two-channel design GENERALIZES - single-digit-to-teens
+losses in all three crisis shapes, which no single-channel strategy in our
+lab achieved. Returns are defensive-class (like GTAA) but with ~2pts more
+CAGR. The paper's specific 2017+ numbers remain untrustworthy, but its
+architecture is validated and adopted. Best defensive candidate in the lab
+alongside gtaa_5_faber.

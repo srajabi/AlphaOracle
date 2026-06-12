@@ -36,8 +36,19 @@ overnight return = open/prev_close - 1, intraday = close/open - 1. The
 backtest engine is close-to-close, so testing this needs a small variant
 (daily strategy returns built from the two legs separately).
 
-**Not yet implemented.** Flagged as a strategy-lab round-4 candidate:
-overnight-only SPY/QQQ holding vs intraday-only vs buy-hold, zero-cost first,
-then with a realistic spread assumption (the honest version likely kills it
-for daily ETF trading - worth quantifying anyway for the decomposition
-insight alone).
+**TESTED (2026-06, `backtesting/overnight_decomposition.py`) - the effect
+replicates dramatically on our data:**
+
+| | CAGR | Sharpe (90% CI) | MaxDD |
+|---|---|---|---|
+| SPY overnight-only | 9.8% | 0.94 [0.65, 1.24] | -33% |
+| SPY intraday-only | 0.7% | 0.12 [-0.13, 0.38] | -69% |
+| QQQ overnight-only | 13.5% | 0.96 [0.64, 1.31] | -33% |
+| QQQ intraday-only | **-2.9%** | -0.01 | **-88%** |
+
+Essentially ALL of the 27-33y equity premium was earned overnight; the CIs
+don't overlap. BUT with just 1bp/leg switching cost, QQQ overnight drops to
+7.9% CAGR / 0.61 Sharpe - below buy-and-hold's return. As predicted, costs
+eat the tradable edge; the decomposition survives as an insight (drawdowns
+are an intraday phenomenon; overnight holding is where the premium lives),
+not as a retail strategy. Results: `data/overnight_decomposition.json`.

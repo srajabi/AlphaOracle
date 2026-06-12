@@ -46,7 +46,7 @@ Thumbs.db
 run_local.sh
 
 # Tests directory
-tests/
+# tests/ intentionally tracked since 2026-06 (validation suite)
 
 # IDE Files
 .idea/

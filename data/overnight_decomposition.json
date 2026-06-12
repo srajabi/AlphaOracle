@@ -1,0 +1,74 @@
+[
+  {
+    "ticker": "SPY",
+    "leg": "overnight_only",
+    "cagr": 0.0979,
+    "sharpe": 0.935,
+    "sharpe_ci90": [
+      0.647,
+      1.235
+    ],
+    "max_dd": -0.3282,
+    "cost_bps_per_leg": 0.0
+  },
+  {
+    "ticker": "SPY",
+    "leg": "intraday_only",
+    "cagr": 0.0065,
+    "sharpe": 0.119,
+    "sharpe_ci90": [
+      -0.133,
+      0.378
+    ],
+    "max_dd": -0.6863,
+    "cost_bps_per_leg": 0.0
+  },
+  {
+    "ticker": "SPY",
+    "leg": "buy_hold",
+    "cagr": 0.1051,
+    "sharpe": 0.63,
+    "sharpe_ci90": [
+      0.389,
+      0.886
+    ],
+    "max_dd": -0.5519,
+    "cost_bps_per_leg": 0.0
+  },
+  {
+    "ticker": "QQQ",
+    "leg": "overnight_only",
+    "cagr": 0.1351,
+    "sharpe": 0.96,
+    "sharpe_ci90": [
+      0.639,
+      1.309
+    ],
+    "max_dd": -0.3301,
+    "cost_bps_per_leg": 0.0
+  },
+  {
+    "ticker": "QQQ",
+    "leg": "intraday_only",
+    "cagr": -0.029,
+    "sharpe": -0.012,
+    "sharpe_ci90": [
+      -0.273,
+      0.277
+    ],
+    "max_dd": -0.8817,
+    "cost_bps_per_leg": 0.0
+  },
+  {
+    "ticker": "QQQ",
+    "leg": "buy_hold",
+    "cagr": 0.1022,
+    "sharpe": 0.495,
+    "sharpe_ci90": [
+      0.21,
+      0.798
+    ],
+    "max_dd": -0.8297,
+    "cost_bps_per_leg": 0.0
+  }
+]
