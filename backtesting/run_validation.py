@@ -35,7 +35,10 @@ from backtesting.run_backtests import load_price_matrix
 from backtesting.validation import (
     bootstrap_metrics,
     cagr,
+    cost_sensitivity,
     deflated_sharpe_ratio,
+    gap_risk,
+    lag_sensitivity,
     max_drawdown,
     permutation_test_timing,
     probability_of_backtest_overfitting,
@@ -97,8 +100,14 @@ def main():
             "max_dd_p5": boot["max_dd"]["p5"],
             "prob_negative_cagr": boot["prob_negative_cagr"],
             "perm_p_value": perm["p_value"],
+            "gap_loss_15pct": gap_risk(weights, 0.15),
         }
         row.update(risk_report(returns))
+        costs = cost_sensitivity(prices, weights)
+        row["sharpe_at_5bps"] = costs["sharpe_at_5bps"]
+        row["breakeven_cost_bps"] = min(costs["breakeven_cost_bps"], 9999.0)
+        lag = lag_sensitivity(prices, weights)
+        row["lag_sharpe_drop"] = lag["lag_sharpe_drop"]
         rows.append(row)
         print(f"  {name}: sharpe {rows[-1]['sharpe']:.2f} "
               f"[{boot['sharpe']['p5']:.2f}, {boot['sharpe']['p95']:.2f}] "
@@ -131,10 +140,10 @@ def main():
 
     print(f"\nPBO across {active.shape[1]} non-baseline strategies: "
           f"{pbo['pbo']:.2f} ({pbo['n_combinations']} combinations)")
-    print(f"\nTop 12 by Sharpe (with validation + risk metrics):")
-    cols = ["strategy", "cagr", "sharpe", "sortino", "calmar", "max_dd",
-            "max_dd_duration_days", "ulcer_index", "cvar_95",
-            "deflated_sharpe_prob", "perm_p_value"]
+    print(f"\nTop 12 by Sharpe (with validation + risk + execution realism):")
+    cols = ["strategy", "cagr", "sharpe", "calmar", "max_dd", "cdar_95",
+            "sharpe_at_5bps", "breakeven_cost_bps", "lag_sharpe_drop",
+            "gap_loss_15pct", "deflated_sharpe_prob", "perm_p_value"]
     print(scoreboard[cols].head(12).round(3).to_string(index=False))
     print(f"\nSaved to {out_dir}")
 

@@ -2,6 +2,20 @@
 
 ## What Changed
 
+### Execution-Realism Layer (GitHub-inspired) (NEW - 2026-06-11, session 7)
+* **Surveyed the OSS quant stack** (pysystemtrade 3.3k stars, skfolio, quantstats 7.3k, Riskfolio-Lib 4.3k, vectorbt 7.9k) and adopted the concepts we lacked:
+  * **Cost sensitivity + breakeven cost (Carver/pysystemtrade):** Sharpe at 0/2/5/10bps + the cost level where Sharpe hits zero. `cost_sensitivity()` in validation.py.
+  * **Position buffering (Carver):** `apply_buffer()` - only trade when target drifts > buffer; cuts turnover with minimal signal loss. Available for any strategy.
+  * **CDaR (Riskfolio):** conditional drawdown at risk added to risk_report.
+  * **Lag sensitivity (original):** T+1 vs T+2 execution - fragility detector.
+  * **Gap risk (original):** worst-case overnight gap loss = max gross exposure x shock; the risk monthly signals can't react to.
+  * **Parameter stability (Peterson, finally implemented):** `run_parameter_stability.py` sweeps key params; plateau score = min/max Sharpe over sweep.
+* **16 new tests** (test_execution_realism.py), incl. a foresight-cheat strategy that the lag test correctly destroys (drop > 1.0 Sharpe).
+* **Scoreboard v3 findings:**
+  * **Parameter plateaus 0.96-0.97** for SMA window / vol target / changepoint multiplier - headline numbers are properties of the ideas, not the parameters.
+  * **Cost fragility exposed: regime_defensive family breakeven is only 24bps** (Sharpe 0.93 -> 0.74 at 5bps) vs canary family 130-155bps, dual_channel 354bps, risk_parity 992bps. The old lab star is cost-fragile; the new winners are cost-robust.
+  * Lag drops <= 0.11 everywhere (no instant-execution dependence); gap risk flags the levered sleeves (3x = -45% on a 15% gap day).
+
 ### Risk Metrics, Day-Trading Evidence, Data Expansion (NEW - 2026-06-11, session 6)
 * **Risk metrics added to `validation.py`** (+11 tests, all passing): Sortino, Calmar, CVaR-95 (Rockafellar-Uryasev, paper in library), Ulcer Index, max-DD duration, tail ratio. `risk_report()` runs on every scoreboard row. Fixed a semantic bug found by the tests: equity curves now include the 1.0 starting point, so first-day losses count as drawdowns.
 * **Scoreboard v2 re-run with full risk picture.** New insights: dual_channel_cash_overlay has the best Calmar (0.59) + lowest ulcer/CVaR - the defensive crown confirmed across every lens. Sobering: even the best strategies spent **2.2-3.2 YEARS underwater** at their worst (543-806 trading days) - the behavioral metric nobody publishes.

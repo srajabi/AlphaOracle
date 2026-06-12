@@ -132,6 +132,115 @@ def tail_ratio(returns: pd.Series) -> float:
     return float(abs(p95) / abs(p5))
 
 
+def cdar(returns: pd.Series, alpha: float = 0.95) -> float:
+    """Conditional Drawdown at Risk (Riskfolio-style): mean of the worst
+    (1-alpha) of DAILY drawdown observations. Where CVaR sees bad days,
+    CDaR sees bad sustained periods."""
+    equity = _equity_curve(returns)
+    running_max = np.maximum.accumulate(equity)
+    dd = np.sort(equity / running_max - 1.0)
+    n_tail = max(1, int(math.floor(len(dd) * (1.0 - alpha))))
+    return float(dd[:n_tail].mean())
+
+
+# ---------------------------------------------------------------------------
+# Execution-realism tests (Carver / pysystemtrade-inspired)
+# ---------------------------------------------------------------------------
+
+def cost_sensitivity(prices: pd.DataFrame, weights: pd.DataFrame,
+                     bps_levels=(0.0, 2.0, 5.0, 10.0)) -> dict:
+    """Sharpe at several one-way cost levels + the breakeven cost.
+
+    Costs scale linearly with turnover, so the breakeven (Sharpe = 0) cost
+    solves mean_gross = c * mean_turnover. A strategy whose breakeven is
+    under ~20bps has no real-world margin for error."""
+    from backtesting.engine import compute_weighted_returns
+
+    out = {}
+    for bps in bps_levels:
+        r = compute_weighted_returns(prices, weights, bps)
+        out[f"sharpe_at_{int(bps)}bps"] = sharpe_ratio(r)
+
+    gross = compute_weighted_returns(prices, weights, 0.0)
+    w = weights.reindex(prices.index).fillna(0.0)
+    turnover = w.diff().abs().sum(axis=1, min_count=1).fillna(
+        w.abs().sum(axis=1))
+    mean_turnover = float(turnover.mean())
+    if mean_turnover > 1e-12:
+        out["breakeven_cost_bps"] = float(gross.mean() / mean_turnover * 1e4)
+    else:
+        out["breakeven_cost_bps"] = float("inf")
+    return out
+
+
+def lag_sensitivity(prices: pd.DataFrame, weights: pd.DataFrame) -> dict:
+    """Sharpe with the normal 1-day execution lag vs an EXTRA day of delay.
+
+    A robust monthly signal barely notices T+2; a fragile timing edge
+    collapses. Large drops flag strategies that depend on executing the
+    instant the signal fires."""
+    from backtesting.engine import compute_weighted_returns
+
+    base = sharpe_ratio(compute_weighted_returns(prices, weights, 0.0))
+    delayed = sharpe_ratio(
+        compute_weighted_returns(prices, weights.shift(1), 0.0))
+    return {
+        "sharpe_lag1": base,
+        "sharpe_lag2": delayed,
+        "lag_sharpe_drop": base - delayed,
+    }
+
+
+def gap_risk(weights: pd.DataFrame, shock: float = 0.15) -> float:
+    """Worst-case overnight gap loss: max gross applied exposure x shock.
+
+    Monthly/trend signals cannot react to a gap - this is the loss if every
+    held asset gapped down `shock` on the strategy's most-exposed day.
+    For a 3x levered sleeve this is 3 x shock; cash-heavy overlays score
+    well here. Returns a negative number."""
+    applied = weights.shift(1).fillna(0.0)
+    max_gross = float(applied.abs().sum(axis=1).max())
+    return -max_gross * shock
+
+
+def apply_buffer(weights: pd.DataFrame, buffer: float = 0.05) -> pd.DataFrame:
+    """Carver-style position buffering: only trade when the target weight
+    drifts more than `buffer` from the current position; otherwise hold.
+    Cuts turnover (and so costs/taxes) with minimal signal loss."""
+    out = weights.copy()
+    values = weights.to_numpy()
+    buffered = np.empty_like(values)
+    cur = values[0].copy()
+    buffered[0] = cur
+    for i in range(1, len(values)):
+        target = values[i]
+        move = np.abs(target - cur) > buffer
+        cur = np.where(move, target, cur)
+        buffered[i] = cur
+    out.iloc[:, :] = buffered
+    return out
+
+
+def parameter_stability(strategy_factory, prices: pd.DataFrame,
+                        param_values, transaction_cost_bps: float = 0.0) -> dict:
+    """Sharpe across a parameter sweep + a plateau score.
+
+    strategy_factory(param) -> weights DataFrame. plateau_score =
+    min(sharpe)/max(sharpe) over the sweep (1.0 = totally flat surface;
+    low values = the headline number lives on a knife's edge - Peterson's
+    curve-fitting tell)."""
+    from backtesting.engine import compute_weighted_returns
+
+    sharpes = {}
+    for p in param_values:
+        weights = strategy_factory(p)
+        r = compute_weighted_returns(prices, weights, transaction_cost_bps)
+        sharpes[p] = sharpe_ratio(r)
+    vals = np.array(list(sharpes.values()))
+    plateau = float(vals.min() / vals.max()) if vals.max() > 0 else 0.0
+    return {"sharpe_by_param": sharpes, "plateau_score": plateau}
+
+
 def risk_report(returns: pd.Series) -> dict:
     """All risk metrics for one return series in a single dict."""
     return {
@@ -143,6 +252,7 @@ def risk_report(returns: pd.Series) -> dict:
         "max_dd_duration_days": max_drawdown_duration(returns),
         "ulcer_index": ulcer_index(returns),
         "cvar_95": cvar(returns, 0.95),
+        "cdar_95": cdar(returns, 0.95),
         "tail_ratio": tail_ratio(returns),
     }
 
