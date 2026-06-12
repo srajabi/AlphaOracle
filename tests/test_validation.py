@@ -140,7 +140,7 @@ class TestRiskMetrics:
         report = risk_report(r)
         expected = {"sharpe", "sortino", "calmar", "cagr", "max_dd",
                     "max_dd_duration_days", "ulcer_index", "cvar_95",
-                    "tail_ratio"}
+                    "cdar_95", "tail_ratio"}
         assert set(report) == expected
         assert all(np.isfinite(v) for v in report.values())
 
