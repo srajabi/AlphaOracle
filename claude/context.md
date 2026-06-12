@@ -130,7 +130,7 @@ Located in `backtesting/` directory:
   - Chop periods (2015-2016, 2018)
 
 #### Current Limitation
-Only ~4 months of recent cached data available. Long historical data needed to validate strategies across all defined regimes.
+(Resolved 2026-06) 33 years of history for SPY, 20+ for most ETFs, in data/historical_long/. All defined regimes testable.
 
 ## Data Flow
 
@@ -285,17 +285,10 @@ Metrics to track:
 
 ## Major Remaining Gaps
 
-### 1. Historical Data for Backtesting
-Current data only covers ~4 months (late 2025 - March 2026). Need multi-year data to validate strategies across:
-- 2000-2002 dot-com crash
-- 2007-2009 GFC
-- 2015-2016 sideways market
-- 2018 correction
-- 2020 COVID crash and recovery
-- 2022 inflation bear market
-- 2023-2024 AI bull market
-
-**Solution needed**: Long-history downloader that fetches 20+ years of data for backtesting purposes
+### 1. Historical Data for Backtesting (RESOLVED 2026-06)
+33 years downloaded (data/historical_long/); regime slices in
+backtesting/periods.py all populated. Validation framework
+(backtesting/validation.py) adds DSR/bootstrap/PBO/cost-realism on top.
 
 ### 2. Technical Analysis Improvements
 Current technical indicators are basic (SMAs, RSI, MACD, Bollinger Bands). Missing:
@@ -406,7 +399,7 @@ No systematic performance tracking yet. Trades are recommended and sometimes exe
 ## Deployment
 
 ### Current Setup
-- GitHub repository: `sohail.rajabi/github_io_stock_analysis`
+- GitHub repository: `srajabi/AlphaOracle`
 - Automation: GitHub Actions (daily cron)
 - Hosting: GitHub Pages
 - Broker: Alpaca (paper trading and live)

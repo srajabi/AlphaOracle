@@ -136,7 +136,7 @@ stated (gold-friendly - standing caveat). Detailed session narrative:
 - ^TNX/^IRX (1962+/1960+): yield-curve inversion with 60y of history
 - Alpaca intraday bars: accessible, unpulled (Gao replication)
 
-## 11. Benchmark-relative + distribution metrics (scoreboard v4)
+## 10. Benchmark-relative + distribution metrics (scoreboard v4)
 
 - **Convexity confirmed directly**: every lab winner captures more upside
   than downside (canary_daa_2x up/down capture 0.57/0.45; blend 0.45/0.38).
@@ -150,7 +150,7 @@ stated (gold-friendly - standing caveat). Detailed session narrative:
   corr + the execution suite (costs/breakeven/lag/gap) + the statistical
   suite (DSR/bootstrap/permutation/PBO/plateau).
 
-## 12. Options / volatility risk premium (researched, not started)
+## 11. Options / volatility risk premium (researched, not started)
 
 - **Renaissance-type returns: not replicable** - Medallion's edge geometry
   (tiny edge x ~100k trades/day x capacity cap) cannot be bought with data;
@@ -162,7 +162,7 @@ stated (gold-friendly - standing caveat). Detailed session narrative:
 - Blocker: no historical chains in free data. Plan + vendor costs
   (~$50-100/mo): `spikes/options_data_vrp_plan.md`. Awaiting go/no-go.
 
-## 13. Attribution monitor + track record (built 2026-06-12)
+## 12. Attribution monitor + track record (built 2026-06-12)
 
 - `src/attribution.py` closes the forward-test loop: pulls each Alpaca
   account's daily equity (REST), computes live Sharpe/maxDD, places them in
@@ -176,7 +176,7 @@ stated (gold-friendly - standing caveat). Detailed session narrative:
   backtest analogue (reported without bands).
 - First real data lands on the next workflow run (backfills up to 1 year).
 
-## 14. Round 5: macro-signal strategies (2026-06-12)
+## 13. Round 5: macro-signal strategies (2026-06-12)
 
 - **VIX term structure is the best FAST-crash defense ever tested here**:
   COVID -7.6% vs SMA200-monthly -12.1% vs SPY -33.4%. Backwardation fires in
@@ -198,11 +198,19 @@ stated (gold-friendly - standing caveat). Detailed session narrative:
   VIX3M/HYG signals only live from 2006/2007; earlier periods fall back to
   long (the GFC+ slices are the fair test windows).
 
-## 10. System state (operational)
+## 14. System state (operational, 2026-06-12)
 
-- 6 Alpaca paper accounts; forward test UNCHANGED by user instruction
-  (candidates queued: lab_winners_blend, canary_daa_smart_defense,
-  dual_channel_cash_overlay).
-- LLM pipeline single-provider (deepseek-v4-flash; aliases retire
-  2026-07-24). Workflow failure-isolated; stale-trades guard active.
-- 268 tests green. Site: /research page carries sections 1-4 above.
+- 6 Alpaca paper accounts; forward test UNCHANGED by user instruction.
+  Promotion candidates queued: lab_winners_blend, canary_daa_smart_defense,
+  dual_channel_cash_overlay, trend_plus_vix_term_spy.
+- **Attribution monitor + GIPS-style track record live in the daily
+  workflow** (first real data backfills ~1y on next run); panel on
+  /paper-trading; git history = audit trail.
+- LLM pipeline single-provider deepseek-v4-flash. **DEADLINE: legacy
+  deepseek aliases retire 2026-07-24** - already migrated, nothing to do.
+- Workflow failure-isolated; stale-trades guard active; 296 tests green.
+- Site: /research page sections 1-4; shared nav; all rendering bugs fixed.
+- User procuring options data -> VRP thread next (finding 11).
+- Strategic docs: spikes/maturity_roadmap.md (3-tier plan),
+  spikes/fund_path_and_data_roi.md (registration ladder + experiments),
+  spikes/options_data_vrp_plan.md.

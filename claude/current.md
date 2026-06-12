@@ -2,6 +2,14 @@
 
 ## What Changed
 
+### Documentation Completeness Pass (2026-06-12, session 10c - end of chat)
+* findings.md renumbered (System State now last, sections sequential 1-14) and refreshed with attribution/round-5/strategic-doc pointers.
+* agents.md: stale March-era "Current Focus" and "Backtesting Gap" sections replaced with live pointers to claude/ docs.
+* context.md: fixed stale facts (4-months-of-data claims -> resolved; repo name corrected to srajabi/AlphaOracle).
+* Root README: What-It-Does now covers the validation gauntlet, attribution monitor, papers library; structure includes tests/.
+* claude/README: strategic spike entry points listed (maturity_roadmap, fund_path, options plan, strategy lab).
+* **Handoff state for the next session:** user procuring options data (VRP thread queued); next research candidates: VIX-term gate on canary family, meta-allocator A/B, decay-alarm CI, risk governor (build unwired). Forward test still untouched per user instruction. reddit_skills.pdf still untracked in repo root.
+
 ### Round 5: Macro-Signal Strategies (NEW - 2026-06-12, session 10b)
 * 5 new strategies on the expanded data: vix_term_structure_spy, credit_stress_overlay_spy, yield_curve_regime_spy, macro_composite_spy, and the winner **trend_plus_vix_term_spy** (slow trend channel x fast VIX-backwardation channel).
 * Headline: VIX term structure = best fast-crash defense tested (COVID -7.6%); combined with monthly trend it posts the best crisis profile of any SPY-only strategy (worst crisis -16.6%; GFC -1.8% beats both parents).

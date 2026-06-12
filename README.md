@@ -12,7 +12,10 @@ AlphaOracle runs fully automated paper trading with daily AI analysis:
 - **6 Automated Paper Trading Accounts**: Each running different strategies on Alpaca's API
 - **Options Analysis**: Monitors unusual options flow and institutional activity
 - **Intermarket Regime Detection**: Tracks 7 markets (SPY, VIX, USD, TLT, GLD, SLV, XLE) to detect regime changes
-- **Comprehensive Backtesting**: Validates strategies across 30+ years of market data
+- **Comprehensive Backtesting**: 50+ strategies across 30+ years of market data, with always-on baselines
+- **Statistical Validation Gauntlet**: deflated Sharpe, bootstrap Monte Carlo, permutation tests, PBO, cost/lag/gap realism, parameter-stability sweeps (`backtesting/validation.py`, 296 tests)
+- **Attribution Monitor**: live paper-account behavior reconciled daily against backtest expectation bands; GIPS-style monthly track record committed to git
+- **Research Papers Library**: 25+ papers with our own backtest verdicts (`papers/`), published findings on the site's /research page
 - **Live Dashboard**: Astro-based static site deployed to GitHub Pages twice daily
 
 ## Trading Accounts
@@ -180,9 +183,10 @@ AlphaOracle/
 │   │   ├── content/reports/    # LLM-generated reports
 │   │   └── layouts/            # Page layouts
 │   └── public/data/            # Static data for frontend
-├── backtesting/                # Backtesting framework
+├── backtesting/                # Engine + 50 strategies + validation gauntlet
 ├── papers/                     # Research papers library (notes + PDFs + our verdicts)
-├── spikes/                     # Research & experiments
+├── tests/                      # 296 tests incl. no-lookahead causality checks
+├── spikes/                     # Research & experiments (start: maturity_roadmap.md)
 ├── tools/                      # Manual/ad-hoc scripts
 ├── .github/workflows/          # GitHub Actions
 ├── claude/                     # Agent context hub

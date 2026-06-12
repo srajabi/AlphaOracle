@@ -176,17 +176,11 @@ AlphaOracle is designed to support three distinct modes:
    - Max drawdown acceptable
    - Logic is robust (not curve-fit)
 
-### Current Backtesting Gap
-- Backtester exists with good strategy framework
-- Only has ~4 months of recent data (late 2025 - March 2026)
-- Need long-history downloader to test across:
-  - 2001 dot-com bear
-  - 2008 GFC
-  - 2015-2016 chop
-  - 2018 chop
-  - COVID crash/rebound
-  - 2022 inflation bear
-  - 2023-2024 AI bull
+### Backtest Data (updated 2026-06)
+- 60+ tickers in data/historical_long/, SPY from 1993 (33y), signal series
+  ^VIX/^VIX3M/^VIX9D, HYG/LQD, ^TNX/^IRX (1960s+). All major regimes covered
+  (dot-com, GFC, COVID, 2022). Standing caveat: multi-asset joint window is
+  GLD-bound (2004-11+) and gold-friendly.
 
 ## Git Workflow
 
@@ -342,10 +336,9 @@ layer.
 
 ## Current Focus
 
-As of the latest session, we are focusing on:
-1. Building out the backtester with long historical data
-2. Validating strategies for paper trading deployment
-3. Creating the strategy rating system (buy/sell/hold per strategy)
-4. Designing the forward paper trading tracker
-
-See `current.md` for detailed status and next steps.
+See `claude/current.md` (session log) and `claude/findings.md` (results
+registry) - those are the live documents. As of 2026-06: validation-gated
+strategy research (52+ strategies, scoreboard v4), attribution monitor live,
+papers library at 25+ notes, maturity roadmap in spikes/maturity_roadmap.md.
+Next threads: VRP/options (awaiting data), VIX-term gate on the canary
+family, meta-allocator A/B, decay-alarm CI.

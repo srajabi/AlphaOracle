@@ -15,9 +15,14 @@ rebuild full context, in reading order:
 
 Related, outside this folder:
 
-- `../spikes/` - deep research docs and design explorations (one per topic)
+- `../spikes/` - deep research docs and design explorations. Strategic
+  entry points: `maturity_roadmap.md` (the 3-tier plan),
+  `fund_path_and_data_roi.md` (managed-money ladder + experiments),
+  `options_data_vrp_plan.md` (the next research thread, awaiting data),
+  `strategy_lab_2026_06.md` (the 27-strategy lab writeup)
 - `../papers/` - the papers library: per-paper notes with OUR backtest
   verdicts; `papers/private/` (gitignored) for personally-licensed material
+- `../tests/` - 296 tests; `python -m pytest tests/ -q` before commits
 - `../CLAUDE.md` (repo root) - auto-loaded by Claude Code each session;
   points here.
 
