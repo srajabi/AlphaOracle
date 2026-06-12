@@ -26,6 +26,10 @@ notes-only with links.
 | [cash_overlay_filters.md](cash_overlay_filters.md) | Xiong (2026, arXiv) | not yet - round-4 candidate | Continuous slow+fast cash overlay; retest on 2004+ before trusting |
 | [factor_zoo_census.md](factor_zoo_census.md) | Harvey & Liu (2019) | meta-source | 400+ factor catalog + t>3 multiple-testing bar; use to vet new ideas |
 | [lazy_prices.md](lazy_prices.md) | Cohen, Malloy & Nguyen (2020) | not implementable (long-only ETFs) | Filing-change alpha; possible future LLM-analyst risk signal |
+| [asness_why_not_100_equities.md](asness_why_not_100_equities.md) | Asness (1996, upd. 2023) | `hfea_lite_2x`, `spy_tlt_60_40` | Diversify-then-lever beats concentration on Sharpe - confirmed; needs a crisis gate (2022) |
+| [lo_quants_august_2007.md](lo_quants_august_2007.md) | Khandani & Lo (2007) | warning label | Factor crowding risk; pairs with deflated Sharpe as the two live-failure modes |
+| [peterson_strategy_development.md](peterson_strategy_development.md) | Peterson (2017) | methodology bible | Exposes our gaps: parameter-stability tests, DSR, cost stress tests. His 60-entry .bib included |
+| [slow_momentum_fast_reversion.md](slow_momentum_fast_reversion.md) | Wood, Roberts & Zohren (2021) | not yet - round-4 candidate | Changepoint gate fixes trend's regime-turn bleed (our COVID failure mode) |
 
 ## Paper sources (recurring hunting grounds)
 
@@ -55,10 +59,22 @@ notes-only with links.
   community compilation of papers from WifeyAlpha's threads. Canvas-rendered,
   so browse manually and bring papers back by citation. (The companion GitHub
   repo from the r/quant thread is gone.)
+- **Peterson's bibliography** ([peterson_bibliography.bib](peterson_bibliography.bib),
+  60 entries) - curated practitioner reading list from the quantstrat author;
+  the braverock.com HTML version 403s but the source lives in
+  [braverock/quantstrat](https://github.com/braverock/quantstrat/tree/master/sandbox/backtest_musings)
+- **Oxford-Man Institute** ([selected publications](https://oxford-man.ox.ac.uk/selected-publications/)) -
+  ML-heavy momentum/vol/regime research; mostly arXiv-free PDFs
+- **AQR Insights/Research** ([aqr.com](https://www.aqr.com/Insights)) -
+  accessible practitioner whitepapers (Asness et al.)
+- **Policy: legal sources only.** No sci-hub - author pages, arXiv, NBER,
+  SSRN-ungated, and publisher OA cover nearly everything we need; gated
+  papers get notes-with-links.
 - **Out of scope for AlphaOracle** (noted so we stop re-evaluating them):
   market-making (Avellaneda-Stoikov), optimal execution (Almgren-Chriss),
-  rough-volatility option pricing, Cartea's HFT book - all require
-  order-book access / market-maker infrastructure we don't have.
+  rough-volatility option pricing, Cartea's HFT book, institutional intraday
+  stat-arb (Kakushadze mean-reversion - PDF kept for reference) - all require
+  order-book access / infrastructure we don't have.
 
 ## Conventions
 
