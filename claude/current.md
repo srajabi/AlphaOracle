@@ -2,6 +2,13 @@
 
 ## What Changed
 
+### Thesis-Aware LLM Pipeline + Daily Newsletter (2026-06-12, session 14)
+* **LLM context enriched**: agents now read the FULL scenario thesis (market_thesis_2026H2.md), today's rule-based signal states (family_signals.json - marked authoritative, agents may not contradict), and intermarket indicators.
+* **New agent: Thesis Sentinel** - daily brief with tripwire status table, falsifiable-marker watch (BoJ/CPI/SpaceX-$135/capex/Hormuz), day-over-day delta, and scenario pressure (weights only change at monthly review). Publishes to the site as thesis_sentinel.md.
+* **`src/generate_newsletter.py`**: assembles signals table -> sentinel -> PM synthesis -> attribution status into data/newsletter.md.
+* **Email step in workflow** (dawidd6/action-send-mail, markdown converted): activates when MAIL_TO/MAIL_USERNAME/MAIL_PASSWORD secrets are set (Gmail app password works). Until then the newsletter just lives in the repo + site data.
+* Mock pipeline verified end-to-end; YAML valid. USER ACTION: add the three MAIL_* secrets to receive the email.
+
 ### IPS-as-Code: Family Case Study + Signal Feed SHIPPED (2026-06-12, session 13)
 * User reframe accepted: no advisors, no psychology - rules grounded in our evidence, automatable. Correction: capital is in T-bills (inflation-neutral), so entries are rule-gated not calendar-rushed.
 * **`claude/ips_case_study.md`**: Mandate P (stochastic horizon: 75/25 + two-channel overlay; monthly SMA200 slow channel + daily VIX-term fast channel; entry rule = management rule) and Mandate Y (core + ONE aggressive-division champion satellite; sizing = gap math; promotion requires tournament champion + on-script attribution).

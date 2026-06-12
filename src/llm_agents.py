@@ -45,12 +45,17 @@ def build_context():
     # Load Market Data
     market_data_str = load_text_file('data/market_context.json')
     options_data_str = load_text_file('data/options_context.json')
-    
+
     # Load Thesis
     macro_view = load_text_file('thesis/macro_view.md')
     sectors = load_text_file('thesis/sectors.md')
     seasonality = load_text_file('thesis/seasonality_rules.md')
-    
+    full_thesis = load_text_file('thesis/market_thesis_2026H2.md')
+
+    # Rule-based signal states (computed earlier in the pipeline)
+    family_signals = load_text_file('data/family_signals.json')
+    indicators = load_text_file('data/indicators.json')
+
     # Load Portfolio & Watchlist
     portfolio = load_text_file('portfolio.csv')
     watchlist = load_text_file('watchlist.csv')
@@ -68,9 +73,19 @@ def build_context():
 # WATCHLIST
 {watchlist}
 
+# RULE-BASED SIGNAL STATES TODAY (JSON - authoritative, do not contradict)
+## Mandate signals (slow/fast channel, credit, canary)
+{family_signals}
+
+## Intermarket indicators
+{indicators}
+
 # INVESTMENT THESIS
-## Macro View
+## Macro View (distilled)
 {macro_view}
+
+## FULL SCENARIO THESIS (probabilities, tripwires, falsifiable markers)
+{full_thesis}
 
 ## Sectors
 {sectors}
@@ -193,6 +208,32 @@ def generate_reports():
     )
     macro_reports = run_role_agents("Macro Strategist", macro_prompt, MACRO_MODELS, context)
 
+    # 3b. Thesis Sentinel - tracks the scenario thesis daily
+    sentinel_prompt = (
+        "You are the Thesis Sentinel. The context contains our FULL SCENARIO "
+        "THESIS (scenarios with probabilities, a tripwire table, and dated "
+        "falsifiable markers) plus today's authoritative rule-based signal "
+        "states and news.\n\n"
+        "Produce a SHORT daily brief (under 500 words) with exactly these "
+        "sections:\n"
+        "1. **Tripwire status** - a table of each thesis tripwire with "
+        "today's reading (use the rule-based signal JSON; never contradict "
+        "it) and FIRED/CLEAR.\n"
+        "2. **Marker watch** - any news touching the falsifiable markers "
+        "(BoJ guidance, CPI, SpaceX vs $135, hyperscaler capex, Hormuz). "
+        "One line each; 'no news' is a valid entry.\n"
+        "3. **Delta** - what materially changed since yesterday, if anything.\n"
+        "4. **Scenario pressure** - whether today's evidence pushes toward "
+        "scenario A, B, or C, WITHOUT changing the official weights (weights "
+        "change only at the monthly review).\n"
+        "Be terse, specific, numeric. If signals and headlines disagree, say "
+        "so explicitly and note that the rules govern positioning."
+    )
+    sentinel_report = run_agent("Thesis Sentinel", sentinel_prompt,
+                                PM_MODEL, context)
+    if sentinel_report is None:
+        sentinel_report = "_Thesis Sentinel unavailable this run._"
+
     risk_report_site = format_role_report_for_site(risk_reports)
     tech_report_site = format_role_report_for_site(tech_reports)
     macro_report_site = format_role_report_for_site(macro_reports)
@@ -289,6 +330,9 @@ The JSON format MUST be exactly this structure:
         
     with open(f'{reports_dir}/pm_synthesis.md', 'w') as f:
         f.write(f"---\ntitle: AlphaOracle Daily Synthesis\ndate: \"{date_str}\"\n---\n\n{display_report}")
+
+    with open(f'{reports_dir}/thesis_sentinel.md', 'w') as f:
+        f.write(f"---\ntitle: Thesis Sentinel Daily Brief\ndate: \"{date_str}\"\n---\n\n{sentinel_report}")
         
     print("Reports generated successfully.")
 
