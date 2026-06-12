@@ -1,7 +1,8 @@
 import os
+import sys
 import json
 import litellm
-from datetime import datetime
+from datetime import datetime, timezone
 from dotenv import load_dotenv
 
 # Load local .env automatically for development.
@@ -24,8 +25,10 @@ def parse_models(models_env_var, model_env_var, default_model):
     return [default_model]
 
 
-DEFAULT_ROLE_MODEL = os.getenv("DEFAULT_ROLE_MODEL", "deepseek/deepseek-reasoner")
-DEFAULT_PM_MODEL = os.getenv("DEFAULT_PM_MODEL", "deepseek/deepseek-reasoner")
+# deepseek-v4-flash replaces the deepseek-chat/deepseek-reasoner aliases,
+# which DeepSeek retires on 2026-07-24. Thinking mode is the default.
+DEFAULT_ROLE_MODEL = os.getenv("DEFAULT_ROLE_MODEL", "deepseek/deepseek-v4-flash")
+DEFAULT_PM_MODEL = os.getenv("DEFAULT_PM_MODEL", "deepseek/deepseek-v4-flash")
 
 RISK_MODELS = parse_models("RISK_MODELS", "RISK_MODEL", DEFAULT_ROLE_MODEL)
 TECH_MODELS = parse_models("TECH_MODELS", "TECH_MODEL", DEFAULT_ROLE_MODEL)
@@ -97,18 +100,23 @@ def run_agent(role, prompt, model, context):
         return response.choices[0].message.content
     except Exception as e:
         print(f"Error running {role} with {model}: {e}")
-        return f"Error: {e}"
+        return None
 
 
 def run_role_agents(role, prompt, models, context):
     reports = []
     for model in models:
         content = run_agent(role, prompt, model, context)
+        if content is None:
+            print(f"Skipping failed {role} report from {model}.")
+            continue
         reports.append({"model": model, "content": content})
     return reports
 
 
 def format_role_report_for_site(role_reports):
+    if not role_reports:
+        return "_No report generated this run (all model calls failed)._"
     sections = []
     for report in role_reports:
         sections.append(f"## Model: {report['model']}\n\n{report['content']}")
@@ -116,6 +124,8 @@ def format_role_report_for_site(role_reports):
 
 
 def format_role_report_for_pm(role_name, role_reports):
+    if not role_reports:
+        return f"### {role_name}: no report available this run."
     blocks = []
     for idx, report in enumerate(role_reports, start=1):
         blocks.append(
@@ -229,7 +239,14 @@ The JSON format MUST be exactly this structure:
 ]
 """
     pm_report = run_agent("Portfolio Manager", pm_prompt, PM_MODEL, context)
-    
+
+    if pm_report is None:
+        # Exit non-zero WITHOUT touching trades.json/trades_meta.json: the
+        # stale-trades guard in execute_trades.py then refuses yesterday's
+        # trades, and the workflow surfaces this step as failed.
+        print("Portfolio Manager call failed; not updating trades.json.")
+        sys.exit(1)
+
     # Extract JSON trades
     trades = []
     display_report = pm_report
@@ -246,6 +263,15 @@ The JSON format MUST be exactly this structure:
     with open('data/trades.json', 'w') as f:
         json.dump(trades, f, indent=4)
         print("Trades saved to data/trades.json")
+
+    # Sidecar timestamp so executors can refuse stale recommendations.
+    # trades.json is committed back to the repo, so without this a failed
+    # LLM run would leave yesterday's trades in place for re-execution.
+    with open('data/trades_meta.json', 'w') as f:
+        json.dump({
+            "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+            "trade_count": len(trades),
+        }, f, indent=4)
 
     
     # Save reports

@@ -8,6 +8,32 @@ from datetime import datetime, timezone
 
 load_dotenv()
 
+# Refuse to execute LLM recommendations older than this. trades.json is
+# committed back to the repo, so if the LLM step fails the previous run's
+# trades would otherwise be silently re-executed.
+MAX_TRADES_AGE_HOURS = 12
+
+
+def trades_are_fresh(meta_file="data/trades_meta.json"):
+    """Return (is_fresh, reason). Missing/unreadable metadata counts as stale."""
+    if not os.path.exists(meta_file):
+        return False, f"No {meta_file} found; cannot verify trades.json freshness."
+    try:
+        with open(meta_file, "r") as f:
+            meta = json.load(f)
+        generated_at = datetime.fromisoformat(meta["generated_at_utc"])
+    except (json.JSONDecodeError, KeyError, ValueError) as e:
+        return False, f"Could not parse {meta_file}: {e}"
+
+    age_hours = (datetime.now(timezone.utc) - generated_at).total_seconds() / 3600
+    if age_hours > MAX_TRADES_AGE_HOURS:
+        return False, (
+            f"trades.json is {age_hours:.1f}h old (limit {MAX_TRADES_AGE_HOURS}h). "
+            "Refusing to execute stale recommendations."
+        )
+    return True, f"trades.json is {age_hours:.1f}h old."
+
+
 def execute_trades():
     print("Initializing Alpaca client for PROD_1 (Standard LLM Strategy)...")
     # Load API keys from environment variables
@@ -28,6 +54,12 @@ def execute_trades():
     if not os.path.exists(trades_file):
         print(f"No {trades_file} found. No trades to execute.")
         write_execution_log([], "No trades file found.")
+        return
+
+    fresh, reason = trades_are_fresh()
+    print(reason)
+    if not fresh:
+        write_execution_log([], reason)
         return
 
     with open(trades_file, "r") as f:

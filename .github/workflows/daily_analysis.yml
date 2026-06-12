@@ -46,6 +46,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: Sync Portfolio State From Alpaca (All 6 Accounts)
+        id: sync_portfolio
+        continue-on-error: true
         env:
           ALPACA_DEV_API_KEY: ${{ secrets.ALPACA_DEV_API_KEY }}
           ALPACA_DEV_SECRET_KEY: ${{ secrets.ALPACA_DEV_SECRET_KEY }}
@@ -62,37 +64,65 @@ jobs:
         run: python src/fetch_alpaca_portfolio.py
 
       - name: Fetch Trade History From Alpaca (Dev Account)
+        id: fetch_trades
+        continue-on-error: true
         env:
           ALPACA_API_KEY: ${{ secrets.ALPACA_DEV_API_KEY }}
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_DEV_SECRET_KEY }}
         run: python src/fetch_alpaca_trades.py
 
+      # ========================================================================
+      # ANALYSIS STEPS
+      # All use continue-on-error so a failure (e.g. exhausted LLM credits,
+      # yfinance outage) never blocks the rule-based strategy execution below.
+      # The "Report step failures" step at the end still fails the run for
+      # visibility if anything broke.
+      # ========================================================================
+
       - name: Run Data Ingestion
+        id: data_ingestion
+        continue-on-error: true
         run: python src/data_ingestion.py
 
       - name: Run Options Ingestion
+        id: options_ingestion
+        continue-on-error: true
         run: python src/options_ingestion.py
 
       - name: Generate Strategy Ratings
+        id: strategy_ratings
+        continue-on-error: true
         run: python src/generate_strategy_ratings.py
 
       - name: Generate Intermarket Indicators
+        id: intermarket_indicators
+        continue-on-error: true
         run: python src/generate_indicators.py
 
       - name: Generate Per-Ticker Indicators
+        id: ticker_indicators
+        continue-on-error: true
         run: python src/generate_ticker_indicators.py
 
       - name: Run LLM Agents
+        id: llm_agents
+        # Skip (rather than analyze stale data) if ingestion failed.
+        if: steps.data_ingestion.outcome == 'success'
+        continue-on-error: true
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-          RISK_MODELS: "deepseek/deepseek-reasoner,gemini/gemini-2.5-flash"
-          TECH_MODELS: "deepseek/deepseek-reasoner,gemini/gemini-2.5-flash"
-          MACRO_MODELS: "deepseek/deepseek-reasoner,gemini/gemini-2.5-flash"
-          PM_MODEL: "deepseek/deepseek-reasoner"
+          # deepseek-v4-flash ($0.14/$0.28 per 1M tokens) replaces both the
+          # deepseek-reasoner alias (retired by DeepSeek on 2026-07-24) and
+          # gemini-2.5-flash ($0.15/$0.60). Thinking mode is the default.
+          RISK_MODELS: "deepseek/deepseek-v4-flash"
+          TECH_MODELS: "deepseek/deepseek-v4-flash"
+          MACRO_MODELS: "deepseek/deepseek-v4-flash"
+          PM_MODEL: "deepseek/deepseek-v4-flash"
         run: python src/llm_agents.py
-        
+
       - name: Execute Advanced LLM Strategy (Dev Account - 2x Daily)
+        id: advanced_llm
+        continue-on-error: true
         env:
           ALPACA_API_KEY: ${{ secrets.ALPACA_DEV_API_KEY }}
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_DEV_SECRET_KEY }}
@@ -123,7 +153,11 @@ jobs:
           fi
 
       - name: Execute LLM Strategy (Account 1 - EOD)
-        if: steps.check_time.outputs.is_eod == 'true'
+        id: execute_llm_account1
+        # Only execute on fresh LLM output; execute_trades.py also refuses
+        # stale trades.json via data/trades_meta.json as a second guard.
+        if: steps.check_time.outputs.is_eod == 'true' && steps.llm_agents.outcome == 'success'
+        continue-on-error: true
         env:
           ALPACA_PROD_1_API_KEY: ${{ secrets.ALPACA_PROD_1_API_KEY }}
           ALPACA_PROD_1_SECRET_KEY: ${{ secrets.ALPACA_PROD_1_SECRET_KEY }}
@@ -135,8 +169,14 @@ jobs:
           python src/execute_trades.py
           echo ""
 
+      # Rule-based strategies (Accounts 2-5) have no LLM dependency: they
+      # fetch their own data and only need Alpaca keys. Each is isolated so
+      # one failure cannot block the others.
+
       - name: Execute TQQQ Momentum Strategy (Account 2)
+        id: execute_tqqq
         if: steps.check_time.outputs.is_eod == 'true'
+        continue-on-error: true
         env:
           ALPACA_PROD_2_API_KEY: ${{ secrets.ALPACA_PROD_2_API_KEY }}
           ALPACA_PROD_2_SECRET_KEY: ${{ secrets.ALPACA_PROD_2_SECRET_KEY }}
@@ -148,7 +188,9 @@ jobs:
           echo ""
 
       - name: Execute Dual Momentum Strategy (Account 3)
+        id: execute_dual
         if: steps.check_time.outputs.is_eod == 'true'
+        continue-on-error: true
         env:
           ALPACA_PROD_3_API_KEY: ${{ secrets.ALPACA_PROD_3_API_KEY }}
           ALPACA_PROD_3_SECRET_KEY: ${{ secrets.ALPACA_PROD_3_SECRET_KEY }}
@@ -160,7 +202,9 @@ jobs:
           echo ""
 
       - name: Execute Sector Rotation Strategy (Account 4)
+        id: execute_sector
         if: steps.check_time.outputs.is_eod == 'true'
+        continue-on-error: true
         env:
           ALPACA_PROD_4_API_KEY: ${{ secrets.ALPACA_PROD_4_API_KEY }}
           ALPACA_PROD_4_SECRET_KEY: ${{ secrets.ALPACA_PROD_4_SECRET_KEY }}
@@ -172,7 +216,9 @@ jobs:
           echo ""
 
       - name: Execute Mean Reversion Strategy (Account 5)
+        id: execute_mean
         if: steps.check_time.outputs.is_eod == 'true'
+        continue-on-error: true
         env:
           ALPACA_PROD_5_API_KEY: ${{ secrets.ALPACA_PROD_5_API_KEY }}
           ALPACA_PROD_5_SECRET_KEY: ${{ secrets.ALPACA_PROD_5_SECRET_KEY }}
@@ -184,6 +230,8 @@ jobs:
           echo ""
 
       - name: Fetch Live Portfolio State (All 6 Accounts)
+        id: fetch_portfolio_final
+        continue-on-error: true
         env:
           ALPACA_DEV_API_KEY: ${{ secrets.ALPACA_DEV_API_KEY }}
           ALPACA_DEV_SECRET_KEY: ${{ secrets.ALPACA_DEV_SECRET_KEY }}
@@ -245,3 +293,35 @@ jobs:
           else
             echo "No changes to commit"
           fi
+
+      # continue-on-error above keeps trading alive through partial failures,
+      # but we still want the run marked red when something broke.
+      - name: Report step failures
+        if: always()
+        run: |
+          failed=""
+          check() {
+            if [ "$2" = "failure" ]; then
+              failed="$failed $1"
+            fi
+          }
+          check "sync_portfolio"          "${{ steps.sync_portfolio.outcome }}"
+          check "fetch_trades"            "${{ steps.fetch_trades.outcome }}"
+          check "data_ingestion"          "${{ steps.data_ingestion.outcome }}"
+          check "options_ingestion"       "${{ steps.options_ingestion.outcome }}"
+          check "strategy_ratings"        "${{ steps.strategy_ratings.outcome }}"
+          check "intermarket_indicators"  "${{ steps.intermarket_indicators.outcome }}"
+          check "ticker_indicators"       "${{ steps.ticker_indicators.outcome }}"
+          check "llm_agents"              "${{ steps.llm_agents.outcome }}"
+          check "advanced_llm"            "${{ steps.advanced_llm.outcome }}"
+          check "execute_llm_account1"    "${{ steps.execute_llm_account1.outcome }}"
+          check "execute_tqqq"            "${{ steps.execute_tqqq.outcome }}"
+          check "execute_dual"            "${{ steps.execute_dual.outcome }}"
+          check "execute_sector"          "${{ steps.execute_sector.outcome }}"
+          check "execute_mean"            "${{ steps.execute_mean.outcome }}"
+          check "fetch_portfolio_final"   "${{ steps.fetch_portfolio_final.outcome }}"
+          if [ -n "$failed" ]; then
+            echo "::error::Steps failed (run continued so other strategies still executed):$failed"
+            exit 1
+          fi
+          echo "All steps healthy."
