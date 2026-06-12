@@ -59,11 +59,14 @@ const digestItems = [
           <a class="btn" href={`${base}reports/${pmSynthesis.slug}/`}>Open Full Report</a>
         </div>
         <div class="llm-regime-assessment">
-          <div class="assessment-label">LLM Market Assessment:</div>
+          <div class="assessment-label">Price/VIX Regime Read:</div>
           <div class={`regime-badge ${contextData.regime.toLowerCase().replace(' ', '-')}`}>
             {contextData.regime} Regime
           </div>
-          <p class="assessment-note">Based on macro analysis, news sentiment, and Fed policy</p>
+          <p class="assessment-note">
+            Rule-based read from SPY trend + VIX. The Intermarket Analysis panel below uses a
+            different 7-market model &mdash; when they disagree, the market is between regimes.
+          </p>
         </div>
         <p class="report-meta">{pmSynthesis.data.title} ({pmSynthesis.data.date})</p>
         <div class="analyst-links">
@@ -188,6 +191,7 @@ const digestItems = [
   .bull-volatile { background: rgba(255, 193, 7, 0.2); color: #ffc107; border: 1px solid #ffc107; }
   .bear-quiet { background: rgba(220, 53, 69, 0.2); color: #dc3545; border: 1px solid #dc3545; }
   .bear-volatile { background: rgba(220, 53, 69, 0.3); color: #dc3545; border: 2px solid #dc3545; }
+  .transitional { background: rgba(143, 148, 158, 0.2); color: #c4d4ff; border: 1px solid #8f949e; }
   .unknown { background: #2a2e39; color: #8f949e; }
 
   .nav-grid {
@@ -287,6 +291,9 @@ const digestItems = [
   }
   .regime-indicator.bull-quiet {
     border: 2px solid rgba(40, 167, 69, 0.4);
+  }
+  .regime-indicator.transitional {
+    border: 2px solid rgba(143, 148, 158, 0.4);
   }
   .regime-main {
     display: flex;

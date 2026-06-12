@@ -1,0 +1,47 @@
+/* Shared design tokens and utility classes for all pages.
+   Imported once by Layout.astro. Page-scoped styles override these. */
+
+:root {
+  --bg: #0b0e14;
+  --panel-bg: #131722;
+  --panel-bg-raised: #1e2230;
+  --border: #2a2e39;
+  --text: #f8f9fa;
+  --text-body: #d1d4dc;
+  --text-muted: #8f949e;
+  --accent: #2962ff;
+  --accent-soft: #c4d4ff;
+  --green: #28a745;
+  --red: #dc3545;
+  --red-bright: #f6465d;
+  --yellow: #ffc107;
+}
+
+/* Horizontal-scroll guard for wide tables (critical on mobile). */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Shared panel card. */
+.panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  background: var(--accent);
+  border-radius: 8px;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}

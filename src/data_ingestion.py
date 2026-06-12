@@ -297,7 +297,11 @@ def fetch_data():
     theme_news_by_topic = fetch_news_topic_bucket(THEME_NEWS_TOPICS, MAX_THEME_NEWS_ITEMS)
     
     end_date = datetime.now()
-    start_date = end_date - timedelta(days=365) # 1 year data for 200 SMA
+    # Fetch 2 years: the dropna() after the SMA_200 calc discards the first
+    # ~200 trading days of warmup, so 1 year of fetched data left only ~52
+    # usable days - starving the per-ticker indicators (which need 60-120d)
+    # and showing "No Data" on every ticker page.
+    start_date = end_date - timedelta(days=730)
 
     for ticker in tickers:
         print(f"Fetching data for {ticker}...")

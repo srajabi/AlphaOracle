@@ -32,6 +32,24 @@
 #### Current market state (system read, 2026-06-11)
 * Regime: **Transitional (low confidence)**, risk sentiment cautious, strong dollar, rates declining, commodities mixed.
 
+### Site Audit + Decumulation Research (NEW - 2026-06-11, session 3)
+
+#### Decumulation (4% rule) simulation
+* Added `--withdrawal-rate` mode to `backtesting/entry_strategies.py`: inflation-adjusted monthly withdrawals, ruin tracking, real ending balances.
+* SPY, 25y retirements, starts 1993-2001 (every window contains dot-com AND GFC; windows overlap - illustrative only):
+  * 100% equity: 4.5% ruin rate (matches the Cederburg paper's US estimates), 5th-pctile ending ~0.01x
+  * equity + SMA200 overlay: 0% ruin, maxDD -31% vs -64%, lower median ending for at-top retirees (1.42x vs 1.89x)
+* Research page section 4 covers "Beyond the Status Quo" (Anarkulova/Cederburg/O'Doherty): claims, criticisms (ERN), our horizon tests, bucketed synthesis.
+
+#### Full-site visual audit (preview server + DOM checks)
+* All 71 internal links OK; no undefined/NaN/mojibake text on any page; backtests CSS loads.
+* **Fixed: data starvation bug in `src/data_ingestion.py`** - it fetched 365d then dropna()'d the 200-SMA warmup, leaving only ~52 days of history. This starved 3 of 5 per-ticker indicators (RS, S/R, momentum need 60-120d) - "No Data" on every ticker page since inception. Now fetches 730d. Data heals on next workflow run.
+* Fixed: `.transitional` regime class had no CSS on index + indicators pages (the CURRENT regime rendered unstyled).
+* Fixed: homepage regime panel mislabeled "LLM Market Assessment" - it's the rule-based SPY/VIX read; relabeled and explained why it can disagree with the intermarket panel.
+* Fixed: paper-trading tables overflowed mobile by 89px - wrapped in .table-wrap.
+* Added `frontend/src/styles/global.css` (design tokens + shared .panel/.btn/.muted/.table-wrap), imported by Layout.
+* `.claude/launch.json` (in C:\W, outside repo) defines the astro-preview server for future visual checks.
+
 ### Resilience, LLM Costs, Backtest Baselines, Website Cleanup (NEW - 2026-06-11)
 
 #### 1. Non-LLM strategies survive LLM/API failures
