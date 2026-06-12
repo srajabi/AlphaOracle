@@ -2,7 +2,87 @@
 
 ## What Changed
 
-### Comprehensive Indicator System (NEW - 2026-03-17)
+### Market-Entry + LETF Research, /research Page (NEW - 2026-06-11, session 2)
+
+#### Entry-strategy backtest (`backtesting/entry_strategies.py`)
+* **Question:** large cash position (retirement money) entering near market highs - lump sum, DCA, dip-buying, or signal-gated?
+* **Method:** every monthly start date 1993-2021 (SPY) / 2003-2021 (60/40 SPY/TLT), 5y horizon, 3% cash yield, cohorts split by "at the top" (within 2% of ATH). Strategies: lump_sum, dca_6/12/24m, sma_gated_12m, dip_buy_10, ls_sma_managed (lump sum + permanent SMA200 in/out overlay).
+* **Findings (at-top entries):**
+  * Lump sum wins the median even at ATHs (matches Morgan Stanley/Vanguard research).
+  * DCA does NOT protect the tail: worst maxDD still -50%+ once fully deployed.
+  * Waiting for a 10% dip is the worst rule (lowest median wealth).
+  * The SMA200 overlay (not the entry schedule) is what truncates the left tail: SPY at-top worst case 0.94x vs 0.82x, maxDD -22% vs -55%, costs ~0.14x median.
+  * On 60/40 the overlay is nearly free: at-top worst 5y outcome +21%, worst maxDD -11% (vs -30%), beat lump sum 53% of the time.
+* Outputs: `data/entry_strategies_spy.json`, `data/entry_strategies_6040.json` (+ copies in frontend/public/data/).
+
+#### LETF strategy comparison (`backtesting/results_letf/`)
+* Added `hfea_55_45` (3x 55/45 SPY/TLT) and `hfea_lite_2x` to portfolio strategies.
+* Compared vs reddit_200sma_tqqq/spy, regime_defensive_2x, buy_hold_qqq_3x + baselines over 33y + GFC/COVID/2022 regimes (zero fees, clean leverage).
+* **Findings:** TQQQ B&H -94% maxDD (uninvestable); 200SMA filter turns GFC -94% into -36% with 0.7 trades/yr; HFEA -62% in 2022 (stock/bond correlation breakdown), its 33y record rides the bond bull; COVID-speed crashes beat the SMA filter (-61%); regime_defensive_2x best Sharpe 0.89 but 22 trades/yr (IRA only).
+* **Caveat documented:** clean leverage ignores ~1% ER + financing (~2x short rate ≈ 8%/yr at 2026 rates for 3x). Use for strategy comparison, not return forecasts.
+
+#### Website: new /research page
+* `frontend/src/pages/research.astro` - three sections: deploying cash near highs, LETF comparison + stress tests, SMA200-on-XEQT/VEQT verdict. Added to shared nav + homepage card.
+* Data files: `frontend/public/data/{entry_strategies_spy,entry_strategies_6040,letf_comparison}.json`.
+
+#### GitHub CLI connected
+* `gh` installed + authenticated (account srajabi, workflow scope). Agent can now `gh run list/view/watch` and trigger via `gh workflow run`. Recent runs all green.
+* Note: gh.exe at `C:\Program Files\GitHub CLI\gh.exe` (may need PATH export in shells started before install).
+
+#### Current market state (system read, 2026-06-11)
+* Regime: **Transitional (low confidence)**, risk sentiment cautious, strong dollar, rates declining, commodities mixed.
+
+### Resilience, LLM Costs, Backtest Baselines, Website Cleanup (NEW - 2026-06-11)
+
+#### 1. Non-LLM strategies survive LLM/API failures
+* **Problem:** GitHub Actions aborts the job on the first failed step, so exhausted LLM credits (or a yfinance hiccup) blocked rule-based strategy execution for accounts 2-5.
+* **Workflow (`daily_analysis.yml`):** every analysis step now has `continue-on-error: true` + step ids; rule-based accounts 2-5 are isolated from each other; LLM agents skip if data ingestion failed; Account 1 execution gates on LLM success. A final "Report step failures" step still turns the run red for visibility.
+* **Stale-trades guard (defense in depth):** `trades.json` is committed back to the repo, so a failed LLM run used to leave yesterday's trades in place for re-execution. `src/llm_agents.py` now writes `data/trades_meta.json` with a UTC timestamp; `src/execute_trades.py` refuses trades older than 12h. A failed PM call exits non-zero WITHOUT touching trades.json.
+* **LLM error handling:** failed model calls no longer inject "Error: ..." strings into published reports; they're filtered out with a "no report available" note.
+
+#### 2. LLM costs: single provider, Gemini Flash removed
+* **All roles + PM now use `deepseek/deepseek-v4-flash`** ($0.14/$0.28 per 1M tokens) - cheaper than gemini-2.5-flash ($0.15/$0.60), and DeepSeek is now the only required LLM key.
+* **Forced migration anyway:** DeepSeek retires the `deepseek-chat`/`deepseek-reasoner` aliases on **2026-07-24**; the workflow would have broken then.
+* Calls per run drop from 7 (2 models x 3 roles + PM) to 4. Multi-model ensembles still supported via `*_MODELS` env lists (e.g. add GLM-5 at $0.60/$1.92 for a second opinion).
+* Updated: workflow env, `llm_agents.py` defaults, `.env.example`, README.
+
+#### 3. Backtest baselines (always-on)
+* Baselines now run automatically in every backtest, regardless of requested strategy lists:
+  * Single-asset: `buy_and_hold` (same ticker, same period)
+  * Portfolio: `buy_hold_spy`, `equal_weight_buy_hold` (new), `spy_tlt_60_40` (new)
+* Every result row gets `is_baseline`, `baseline_*` and `excess_*` columns (total return, annualized, sharpe, max drawdown) vs its matched benchmark; summaries include the excess columns.
+* **Immediate insight:** equal-weight buy-and-hold of the 6-ticker universe (Sharpe 0.85) beats ALL active rotation strategies over the full 33-year sample (best active: regime_defensive at 0.70). The rotation strategies' edge is drawdown control, not returns.
+
+#### 4. Website cleanup
+* **Shared navigation:** `Layout.astro` now renders a sticky site-wide header (Analysis / News / Indicators / Tickers / Backtests / Paper Trading) with active-page highlighting. Removed all per-page ad-hoc "← Back to..." navs and their duplicated CSS (6 pages).
+* **Deleted test pages** that were shipping to production: `test-chart.mdx`, `test-trading-charts.astro`.
+* **Fixed broken link:** tickers page linked to non-existent `/portfolio/`.
+* **Fixed NaN bug:** `ticker_indicators.json` contained literal `NaN` (Python json.dump default), which JS `JSON.parse` rejects - every ticker detail page was silently dropping its indicators panel. Generator now sanitizes NaN→null (`allow_nan=False`); committed data files repaired in place.
+* Build verified: 70 pages, zero errors (was erroring on every stock page).
+
+#### Validation done locally
+* Workflow YAML parses; all edited Python compiles.
+* `trades_are_fresh()` unit-tested: missing/stale/corrupt meta all refuse execution.
+* `MOCK_LLM=true` pipeline run end-to-end OK (writes trades.json + trades_meta.json).
+* Full backtest run with new baselines OK (`--periods full`, 6 tickers).
+* Astro build clean with Node 20.
+
+#### Next Steps
+* Push and watch one full workflow run (esp. the new failure-report step).
+* Consider adding a second-opinion model (GLM-5) to one role if single-model reports feel thin.
+* Frontend: consider extracting shared panel/btn CSS into a global stylesheet (still duplicated per page).
+
+### SMA200 on XEQT/VEQT Backtest (NEW - 2026-06-11)
+* **Question:** the forward test shows SMA200 (Account 2, TQQQ) doing best - does SMA200 timing work on XEQT/VEQT (Canadian all-equity one-fund ETFs)?
+* **Added strategies:** `sma_200_trend` (plain crossover, same rule Account 2 executes) and `sma_200_trend_bands` (5%/3% asymmetric bands) to `backtesting/strategies.py`.
+* **Data:** downloaded XEQT.TO (2019-08+) and VEQT.TO (2019-02+) to `data/historical_long/`; used VT (2008+) as a long-history proxy (same global all-equity exposure).
+* **Headline (XEQT/VEQT, zero fees, CAD):** SMA200 lags buy-and-hold by ~3%/yr (11.2% vs 14.3% CAGR) but halves max drawdown (-14% vs -30%) with better Sharpe (1.13 vs 0.91).
+* **CRITICAL warmup artifact found:** the SMA signal sits in cash for its first 200 trading days. For XEQT that window covered the COVID crash; for VT it covered the GFC tail - flattering SMA200's drawdown numbers by accident, not skill.
+* **Fair test (VT 2010+, signal live throughout):** buy_and_hold 9.8% CAGR / Sharpe 0.56 / -34% maxDD vs sma_200_trend 6.4% CAGR / Sharpe 0.56 (identical!) / -19% maxDD / 99 trades. Bands variant worse on both.
+* **Conclusion:** on unleveraged diversified funds, SMA200 timing buys drawdown reduction at the cost of ~1/3 of CAGR with NO Sharpe improvement. It works on TQQQ because 3x leverage makes bear-market avoidance existential (vol decay); XEQT/VEQT drawdowns are shallow enough that exiting mostly locks in whipsaw losses (~6 trades/yr on VT). If holding XEQT/VEQT: buy-and-hold wins unless the -30% drawdowns are behaviorally intolerable.
+* Results saved to `backtesting/results_xeqt_veqt/` and `backtesting/results_vt_proxy/`.
+
+### Comprehensive Indicator System (2026-03-17)
 * **✅ COMPLETED: Built full intermarket + per-ticker indicator system**
 * **Philosophy:** Build individual reusable indicators first, combine into strategies later
 * **Focus:** Market regime change detection + per-ticker technical analysis for dashboards
