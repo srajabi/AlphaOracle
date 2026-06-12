@@ -1,0 +1,48 @@
+{
+  "ticker": "SPY",
+  "horizon_years": 25.0,
+  "withdrawal_rate": 0.04,
+  "inflation": 0.03,
+  "start_range": [
+    "1993-11-12",
+    "2001-02-08"
+  ],
+  "summary": [
+    {
+      "cohort": "all_starts",
+      "strategy": "all_equity",
+      "starts": 88,
+      "ruin_rate_pct": 4.5,
+      "median_ending_real": 0.984,
+      "p5_ending_real": 0.011,
+      "median_max_dd": -0.6406
+    },
+    {
+      "cohort": "all_starts",
+      "strategy": "equity_sma_managed",
+      "starts": 88,
+      "ruin_rate_pct": 0.0,
+      "median_ending_real": 1.024,
+      "p5_ending_real": 0.28,
+      "median_max_dd": -0.3073
+    },
+    {
+      "cohort": "at_top_starts",
+      "strategy": "all_equity",
+      "starts": 47,
+      "ruin_rate_pct": 4.3,
+      "median_ending_real": 1.893,
+      "p5_ending_real": 0.032,
+      "median_max_dd": -0.6203
+    },
+    {
+      "cohort": "at_top_starts",
+      "strategy": "equity_sma_managed",
+      "starts": 47,
+      "ruin_rate_pct": 0.0,
+      "median_ending_real": 1.423,
+      "p5_ending_real": 0.221,
+      "median_max_dd": -0.3121
+    }
+  ]
+}

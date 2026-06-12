@@ -152,6 +152,131 @@ def simulate(prices, sma200, daily_returns, start_idx, horizon_days, strategy,
     return float(values[-1]), max_dd
 
 
+def simulate_decumulation(prices, sma200, daily_returns, start_idx, horizon_days,
+                          managed, withdrawal_rate, inflation, cash_daily_yield):
+    """Retirement mode: withdraw an inflation-adjusted X%/yr of the initial
+    balance, monthly. Returns (ending_balance_real, ruined, max_drawdown).
+
+    managed=False: 100% invested throughout.
+    managed=True: SMA200 overlay - fully invested above the SMA, cash below.
+    Balances are tracked nominally; the ending balance is deflated back to
+    start-date dollars.
+    """
+    n = len(prices)
+    end_idx = start_idx + horizon_days
+    if end_idx >= n:
+        return None
+
+    monthly_withdrawal = withdrawal_rate / 12.0  # of initial balance
+    daily_inflation = (1.0 + inflation) ** (1.0 / TRADING_DAYS_PER_YEAR) - 1.0
+
+    cash = 0.0
+    invested = 1.0
+    price_level = 1.0
+    values = []
+    days_since_withdrawal = 0
+
+    for step, i in enumerate(range(start_idx, end_idx + 1)):
+        if step > 0:
+            invested *= 1.0 + daily_returns[i]
+            cash *= 1.0 + cash_daily_yield
+            price_level *= 1.0 + daily_inflation
+            days_since_withdrawal += 1
+
+        if managed and not math.isnan(sma200[i]):
+            if prices[i] <= sma200[i] and invested > 0:
+                cash += invested
+                invested = 0.0
+            elif prices[i] > sma200[i] and cash > 0:
+                invested += cash
+                cash = 0.0
+
+        if days_since_withdrawal >= TRADING_DAYS_PER_MONTH:
+            days_since_withdrawal = 0
+            need = monthly_withdrawal * price_level
+            take_cash = min(cash, need)
+            cash -= take_cash
+            invested -= (need - take_cash)
+            if invested < 0:  # portfolio exhausted
+                return 0.0, True, -1.0
+
+        values.append(cash + invested)
+
+    series = np.array(values)
+    running_max = np.maximum.accumulate(series)
+    max_dd = float(np.min(series / running_max - 1.0))
+    return float((series[-1]) / price_level), False, max_dd
+
+
+def run_decumulation(args, prices, sma200, daily_returns, dates, running_ath,
+                     cash_daily_yield):
+    horizon_days = int(args.horizon_years * TRADING_DAYS_PER_YEAR)
+    n = len(prices)
+    start_indices = list(range(200, n - horizon_days - 1, TRADING_DAYS_PER_MONTH))
+    if not start_indices:
+        print("Not enough history for this horizon.")
+        return
+
+    print(f"DECUMULATION: {args.withdrawal_rate:.1%}/yr withdrawal "
+          f"(inflation-adjusted at {args.inflation:.1%}), "
+          f"{args.horizon_years:.0f}y horizon, {len(start_indices)} start dates "
+          f"({dates[start_indices[0]].date()} to {dates[start_indices[-1]].date()})")
+    print("NOTE: start windows overlap heavily; treat rates as illustrative, "
+          "not independent samples.")
+
+    rows = []
+    for start_idx in start_indices:
+        at_top = prices[start_idx] >= running_ath[start_idx] * (1 - args.ath_threshold)
+        for managed, name in [(False, "all_equity"), (True, "equity_sma_managed")]:
+            result = simulate_decumulation(
+                prices, sma200, daily_returns, start_idx, horizon_days,
+                managed, args.withdrawal_rate, args.inflation, cash_daily_yield)
+            if result is None:
+                continue
+            ending, ruined, max_dd = result
+            rows.append({"start": str(dates[start_idx].date()), "strategy": name,
+                         "at_top": bool(at_top), "ending_real": ending,
+                         "ruined": ruined, "max_drawdown": max_dd})
+
+    results = pd.DataFrame(rows)
+    summary = []
+    for cohort, subset in [("all_starts", results),
+                           ("at_top_starts", results[results.at_top])]:
+        for name in ["all_equity", "equity_sma_managed"]:
+            s = subset[subset.strategy == name]
+            survivors = s[~s.ruined]
+            summary.append({
+                "cohort": cohort,
+                "strategy": name,
+                "starts": len(s),
+                "ruin_rate_pct": round(float(s["ruined"].mean()) * 100, 1),
+                "median_ending_real": round(float(s["ending_real"].median()), 3),
+                "p5_ending_real": round(float(s["ending_real"].quantile(0.05)), 3),
+                "median_max_dd": round(float(survivors["max_drawdown"].median()), 4)
+                if len(survivors) else None,
+            })
+    summary_df = pd.DataFrame(summary)
+    for cohort in ["all_starts", "at_top_starts"]:
+        block = summary_df[summary_df.cohort == cohort]
+        print(f"\n=== {cohort} ({block['starts'].iloc[0]} start dates) ===")
+        print(block.drop(columns=["cohort"]).to_string(index=False))
+
+    if args.output:
+        out_path = Path(args.output)
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(out_path, "w") as f:
+            json.dump({
+                "ticker": args.ticker,
+                "horizon_years": args.horizon_years,
+                "withdrawal_rate": args.withdrawal_rate,
+                "inflation": args.inflation,
+                "start_range": [str(dates[start_indices[0]].date()),
+                                str(dates[start_indices[-1]].date())],
+                "summary": summary,
+            }, f, indent=2)
+        print(f"\nSaved JSON to {out_path}")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--ticker", default="SPY")
@@ -165,6 +290,11 @@ def main():
                         help="Within this fraction of ATH counts as 'at the top'")
     parser.add_argument("--output", default=None,
                         help="Optional JSON output path")
+    parser.add_argument("--withdrawal-rate", type=float, default=None,
+                        help="Switch to decumulation mode: annual withdrawal "
+                             "as a fraction of the initial balance (e.g. 0.04)")
+    parser.add_argument("--inflation", type=float, default=0.03,
+                        help="Annual inflation for withdrawal adjustment")
     args = parser.parse_args()
 
     if args.mix:
@@ -192,6 +322,12 @@ def main():
     cash_daily_yield = (1.0 + args.cash_yield) ** (1.0 / TRADING_DAYS_PER_YEAR) - 1.0
 
     running_ath = np.maximum.accumulate(prices)
+
+    if args.withdrawal_rate is not None:
+        run_decumulation(args, prices, sma200, daily_returns, dates,
+                         running_ath, cash_daily_yield)
+        return
+
     strategies = [
         "lump_sum", "dca_6m", "dca_12m", "dca_24m",
         "sma_gated_12m", "dip_buy_10", "ls_sma_managed",

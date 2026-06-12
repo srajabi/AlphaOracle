@@ -19,6 +19,7 @@ async function loadJson(rel) {
 const entrySpy = await loadJson('./public/data/entry_strategies_spy.json');
 const entry6040 = await loadJson('./public/data/entry_strategies_6040.json');
 const letf = await loadJson('./public/data/letf_comparison.json');
+const decum = await loadJson('./public/data/decumulation_spy.json');
 
 const strategyLabels = {
   lump_sum: 'Lump sum (day 1)',
@@ -296,6 +297,78 @@ const mult = (x) => `${x.toFixed(2)}x`;
             capital gains. Inside TFSA/RRSP the rule costs return but no tax.</li>
           <li><strong>Verdict:</strong> hold XEQT/VEQT as buy-and-hold; if -30% drawdowns are
             intolerable, fix the allocation (add bonds), not the timing.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============== 4. THE MOST CONTROVERSIAL PAPER ============== -->
+    <section class="panel">
+      <h2>4. &ldquo;Beyond the Status Quo&rdquo; &mdash; Should Retirees Hold 100% Equities?</h2>
+      <p>
+        <strong>The paper:</strong> Anarkulova, Cederburg &amp; O'Doherty (2023) &mdash; often called
+        the most controversial paper in finance &mdash; argues a fixed ~33/67 domestic/international
+        all-equity portfolio beats every stock/bond lifecycle strategy <em>including in retirement</em>,
+        and that target-date fund investors need 63% more savings for the same retirement outcome.
+        Method: block-bootstrap over ~2,500 country-years across 38 developed markets.
+      </p>
+      <p>
+        <strong>The pushback:</strong> the paper's own US-only table shows 60/40 with a <em>lower</em>
+        ruin rate than 100% stocks (4.5% vs ~5%); the bootstrap mixes in post-war Germany/Japan return
+        sequences; real retirement cohorts (1972, 2000, 2007) did better with bonds; the worst equity
+        crashes were deflationary (when bonds shine); only static allocations were compared; and it
+        assumes retirees hold through 50%+ drawdowns without capitulating.
+      </p>
+
+      <h3>Our test: 4% rule, 25-year retirements, SPY (starts 1993&ndash;2001)</h3>
+      <p class="muted">
+        Every start window below lived through BOTH the dot-com crash and the GFC. Windows overlap
+        heavily &mdash; treat as illustrative, not independent samples. Withdrawals are 4%/yr of the
+        starting balance, inflation-adjusted at 3%. Ending balances are in real (start-date) dollars.
+      </p>
+      {decum && (
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Strategy (all starts)</th><th>Ruin rate</th><th>Median ending (real)</th>
+                <th>5th pctile ending</th><th>Median max DD</th>
+              </tr>
+            </thead>
+            <tbody>
+              {decum.summary.filter((r) => r.cohort === 'all_starts').map((r) => (
+                <tr class={r.strategy === 'equity_sma_managed' ? 'highlight' : ''}>
+                  <td>{r.strategy === 'all_equity' ? '100% equities (paper’s advice)' : '100% equities + SMA200 overlay'}</td>
+                  <td class={r.ruin_rate_pct > 0 ? 'neg' : ''}>{r.ruin_rate_pct}%</td>
+                  <td>{r.median_ending_real.toFixed(2)}x</td>
+                  <td>{r.p5_ending_real.toFixed(2)}x</td>
+                  <td class="neg">{pct(r.median_max_dd)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+
+      <div class="findings">
+        <h3>Key findings</h3>
+        <ul>
+          <li><strong>Both sides are right at their own horizon.</strong> Equities dominate long
+            horizons (10y at-top median 2.53x vs 60/40's 2.26x) &mdash; the paper's core logic holds.
+            But a 2000-top all-equity entry was still underwater ten years later (0.72x), and a
+            retiree withdrawing through that does not recover.</li>
+          <li><strong>Our ruin test matches the paper's US numbers</strong> (~4.5% all-equity ruin) and
+            its critics' point: the 5th-percentile retiree ended with ~1% of their starting wealth.</li>
+          <li><strong>The SMA200 overlay answered the behavioral critique:</strong> zero ruin across
+            windows containing two 50% crashes, drawdowns capped at -31% (vs -64%), at the cost of
+            lower median ending wealth for at-top retirees (1.42x vs 1.89x).</li>
+          <li><strong>Synthesis for real retirement money:</strong> bucket by horizon. The paper's
+            logic for the 10+ year bucket (more equity than old-school glide paths), cash/bonds for
+            years 0&ndash;5 of spending, and a trend overlay on the equity sleeve as the disaster
+            brake. No single static allocation wins both games.</li>
+          <li><strong>Caveats:</strong> US-only data (the paper's international claim is untested
+            here); ~88 overlapping windows are far fewer independent samples; the overlay has whipsaw
+            and tax costs; 2026 bonds at positive real yields differ from the 2021 bonds the paper's
+            critics were defending.</li>
         </ul>
       </div>
     </section>
