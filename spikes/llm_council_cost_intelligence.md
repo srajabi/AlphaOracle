@@ -68,3 +68,27 @@ key, one bill). Self-consistency on the chair (sample 2x, reconcile,
 Config change when approved: PM_MODEL + sentinel -> deepseek/deepseek-v4-pro
 in the workflow env. ~$10/mo total. Revisit at the monthly thesis review
 alongside AA index updates.
+
+
+## ADDENDUM 2026-06-12: corrected pricing (user-supplied table)
+
+Corrections vs the table above: Kimi K2.6 is $0.60/$2.50 (the $0.95/$4.00
+was K2.7-Code); GLM-5.1 is $1.40/$4.40. Chair economics recomputed
+(~89M in + 4M out/yr):
+
+| Chair | Index | GDPval | $/yr |
+|---|---|---|---|
+| deepseek-v4-pro (applied) | 52 | 1554 | $168 |
+| **kimi-k2.6** | **54** | 1484 | **$63** |
+| glm-5.1 | 51 | 1535 | $142 (dominated by Kimi) |
+| gemini-3.1-pro | 57.2 | - | $225 (frontier value) |
+| sonnet-4.6 | ~54 | - | $326 (dominated) |
+| gpt-5.5 | 60.2 | - | $563 (ceiling-ish; Opus 4.8 61.4 unpriced) |
+
+Revised view: **Kimi K2.6 chair dominates v4-pro on index and cost**;
+v4-pro retains the GDPval edge (1554 vs 1484 ~ 60/40 head-to-head on
+agentic tasks) and same-provider simplicity. Either defensible; Kimi adds
+cross-provider judge-vs-analyst decorrelation for free. The monthly thesis
+review (12 runs/yr, cost rounds to zero) should use the smartest available
+model regardless - frontier intelligence is effectively free at monthly
+cadence. GLM eliminated: Kimi is smarter AND cheaper.
