@@ -2,6 +2,12 @@
 
 ## What Changed
 
+### Attribution Monitor + Track Record SHIPPED (NEW - 2026-06-12, session 10)
+* `src/attribution.py` (+12 tests, 296 total green): Alpaca portfolio history via REST, live metrics vs gauntlet bootstrap bands, on_script/watch/off_script statuses, GIPS-style monthly composites. Wired into the daily workflow (continue-on-error + failure-report visibility); outputs committed daily so git history is the audit trail.
+* /paper-trading page: attribution panel (status badges per account, expected bands, breach notes) - verified in preview with sample data, gracefully absent until the workflow generates real data.
+* First real attribution lands on the next scheduled run (auto-backfills up to 1y of account history) - that run answers "were we ever off-script?" retroactively.
+* User is procuring options data on their end; VRP thread (spikes/options_data_vrp_plan.md) ready to start when it arrives.
+
 ### Fund Path + Data ROI (NEW - 2026-06-12, session 9c)
 * `spikes/fund_path_and_data_roi.md`: data hurdle math ($100/mo = 1.2%/yr net-edge hurdle on $100k; smarter = one-time research purchase), the Canadian registration ladder (NI 31-103: PM + IFM registration, CFA+12mo for AR, $100k IFM capital, realistic breakeven AUM $5-15M+), track-record requirements (real verifiable capital, 3-5 years; paper doesn't market but gates), learning resources, and 6 concrete experiments (data-ROI trial, attribution backfill, GIPS-style composites, graduation criteria IPS, meta-allocator A/B, decay alarms).
 * Key warning documented: informally pooling friends/family money while unregistered = enforcement + permanent bar. Own money only until registered.

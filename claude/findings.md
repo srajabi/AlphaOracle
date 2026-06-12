@@ -162,6 +162,20 @@ stated (gold-friendly - standing caveat). Detailed session narrative:
 - Blocker: no historical chains in free data. Plan + vendor costs
   (~$50-100/mo): `spikes/options_data_vrp_plan.md`. Awaiting go/no-go.
 
+## 13. Attribution monitor + track record (built 2026-06-12)
+
+- `src/attribution.py` closes the forward-test loop: pulls each Alpaca
+  account's daily equity (REST), computes live Sharpe/maxDD, places them in
+  the mapped strategy's bootstrap bands from the gauntlet -> on_script /
+  watch / off_script. Runs daily in the workflow; panel on /paper-trading.
+- GIPS-style monthly composites per account -> `data/track_record.json`,
+  committed daily: **git history is the tamper-evident track record** - the
+  evidence file for any future managed-money ambition starts accumulating now.
+- Account->strategy expectation mapping: prod_2->reddit_200sma_tqqq,
+  prod_3->dual_momentum, prod_4->sector_momentum; LLM accounts have no
+  backtest analogue (reported without bands).
+- First real data lands on the next workflow run (backfills up to 1 year).
+
 ## 10. System state (operational)
 
 - 6 Alpaca paper accounts; forward test UNCHANGED by user instruction

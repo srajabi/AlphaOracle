@@ -247,6 +247,24 @@ jobs:
           ALPACA_PROD_5_SECRET_KEY: ${{ secrets.ALPACA_PROD_5_SECRET_KEY }}
         run: python src/fetch_alpaca_portfolio.py
 
+      - name: Attribution Monitor + Track Record (All 6 Accounts)
+        id: attribution
+        continue-on-error: true
+        env:
+          ALPACA_DEV_API_KEY: ${{ secrets.ALPACA_DEV_API_KEY }}
+          ALPACA_DEV_SECRET_KEY: ${{ secrets.ALPACA_DEV_SECRET_KEY }}
+          ALPACA_PROD_1_API_KEY: ${{ secrets.ALPACA_PROD_1_API_KEY }}
+          ALPACA_PROD_1_SECRET_KEY: ${{ secrets.ALPACA_PROD_1_SECRET_KEY }}
+          ALPACA_PROD_2_API_KEY: ${{ secrets.ALPACA_PROD_2_API_KEY }}
+          ALPACA_PROD_2_SECRET_KEY: ${{ secrets.ALPACA_PROD_2_SECRET_KEY }}
+          ALPACA_PROD_3_API_KEY: ${{ secrets.ALPACA_PROD_3_API_KEY }}
+          ALPACA_PROD_3_SECRET_KEY: ${{ secrets.ALPACA_PROD_3_SECRET_KEY }}
+          ALPACA_PROD_4_API_KEY: ${{ secrets.ALPACA_PROD_4_API_KEY }}
+          ALPACA_PROD_4_SECRET_KEY: ${{ secrets.ALPACA_PROD_4_SECRET_KEY }}
+          ALPACA_PROD_5_API_KEY: ${{ secrets.ALPACA_PROD_5_API_KEY }}
+          ALPACA_PROD_5_SECRET_KEY: ${{ secrets.ALPACA_PROD_5_SECRET_KEY }}
+        run: python src/attribution.py
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -320,6 +338,7 @@ jobs:
           check "execute_sector"          "${{ steps.execute_sector.outcome }}"
           check "execute_mean"            "${{ steps.execute_mean.outcome }}"
           check "fetch_portfolio_final"   "${{ steps.fetch_portfolio_final.outcome }}"
+          check "attribution"             "${{ steps.attribution.outcome }}"
           if [ -n "$failed" ]; then
             echo "::error::Steps failed (run continued so other strategies still executed):$failed"
             exit 1
