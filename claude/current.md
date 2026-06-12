@@ -2,6 +2,10 @@
 
 ## What Changed
 
+### LLM Council Cost/Intelligence Study (2026-06-12, session 14b)
+* `spikes/llm_council_cost_intelligence.md`: AA Intelligence Index + our measured pipeline load (88k context, 222M in/yr) -> annual cost per model. v4-flash $34/yr (current); Kimi K2.6 smartest open (54) at $251; GLM mid-pack (user's hunch checked); v4-pro leads GDPval (the best proxy for our analyst task).
+* **Recommendation: Design B "smart chair"** - keep v4-flash for role agents, upgrade PM + Sentinel to deepseek-v4-pro (~$120/yr total). Silicon-crowd evidence says provider diversity < chair quality. Self-consistency on the chair is the next dollar after that. NOT applied - awaiting user approval (one env-var change).
+
 ### Thesis-Aware LLM Pipeline + Daily Newsletter (2026-06-12, session 14)
 * **LLM context enriched**: agents now read the FULL scenario thesis (market_thesis_2026H2.md), today's rule-based signal states (family_signals.json - marked authoritative, agents may not contradict), and intermarket indicators.
 * **New agent: Thesis Sentinel** - daily brief with tripwire status table, falsifiable-marker watch (BoJ/CPI/SpaceX-$135/capex/Hormuz), day-over-day delta, and scenario pressure (weights only change at monthly review). Publishes to the site as thesis_sentinel.md.
