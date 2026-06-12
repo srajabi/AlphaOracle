@@ -8,7 +8,7 @@ AI-powered paper trading system running 6 automated strategies across Alpaca acc
 
 AlphaOracle runs fully automated paper trading with daily AI analysis:
 
-- **Multi-Agent LLM Analysis**: Risk Manager, Technical Analyst, and Macro Strategist agents analyze markets using multiple AI models (DeepSeek, Gemini, Claude, GPT, GLM-5)
+- **Multi-Agent LLM Analysis**: Risk Manager, Technical Analyst, and Macro Strategist agents analyze markets using DeepSeek V4 Flash (other providers pluggable via LiteLLM)
 - **6 Automated Paper Trading Accounts**: Each running different strategies on Alpaca's API
 - **Options Analysis**: Monitors unusual options flow and institutional activity
 - **Intermarket Regime Detection**: Tracks 7 markets (SPY, VIX, USD, TLT, GLD, SLV, XLE) to detect regime changes
@@ -48,10 +48,10 @@ All 6 accounts trade on Alpaca's **paper trading API** (no real money):
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
 │  2. Multi-Agent LLM Analysis (Python + LiteLLM)             │
-│     - Risk Manager (deepseek, gemini, glm-5)                │
-│     - Technical Analyst (deepseek, gemini, claude)          │
-│     - Macro Strategist (deepseek, gemini, gpt-4o-mini)      │
-│     - Portfolio Manager (glm-5) synthesizes all reports     │
+│     - Risk Manager (deepseek-v4-flash)                      │
+│     - Technical Analyst (deepseek-v4-flash)                 │
+│     - Macro Strategist (deepseek-v4-flash)                  │
+│     - Portfolio Manager synthesizes all reports             │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
@@ -113,12 +113,8 @@ pip install -r requirements.txt
 Create a `.env` file:
 
 ```bash
-# LLM API Keys
-GEMINI_API_KEY=your_gemini_key
+# LLM API Keys (DeepSeek is the only provider the default pipeline needs)
 DEEPSEEK_API_KEY=your_deepseek_key
-ANTHROPIC_API_KEY=your_anthropic_key
-OPENAI_API_KEY=your_openai_key
-GLM_API_KEY=your_glm_key
 
 # Alpaca Paper Trading (6 accounts)
 ALPACA_DEV_API_KEY=your_dev_key
