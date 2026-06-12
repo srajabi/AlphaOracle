@@ -2,6 +2,12 @@
 
 ## What Changed
 
+### Round 5: Macro-Signal Strategies (NEW - 2026-06-12, session 10b)
+* 5 new strategies on the expanded data: vix_term_structure_spy, credit_stress_overlay_spy, yield_curve_regime_spy, macro_composite_spy, and the winner **trend_plus_vix_term_spy** (slow trend channel x fast VIX-backwardation channel).
+* Headline: VIX term structure = best fast-crash defense tested (COVID -7.6%); combined with monthly trend it posts the best crisis profile of any SPY-only strategy (worst crisis -16.6%; GFC -1.8% beats both parents).
+* Honest negatives: credit overlay adds nothing standalone; yield-curve de-risking is actively harmful as a trigger (12-18mo lead = misses melt-ups).
+* All registered + auto-covered by contract tests (234 strategy tests green).
+
 ### Attribution Monitor + Track Record SHIPPED (NEW - 2026-06-12, session 10)
 * `src/attribution.py` (+12 tests, 296 total green): Alpaca portfolio history via REST, live metrics vs gauntlet bootstrap bands, on_script/watch/off_script statuses, GIPS-style monthly composites. Wired into the daily workflow (continue-on-error + failure-report visibility); outputs committed daily so git history is the audit trail.
 * /paper-trading page: attribution panel (status badges per account, expected bands, breach notes) - verified in preview with sample data, gracefully absent until the workflow generates real data.

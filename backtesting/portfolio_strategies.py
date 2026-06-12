@@ -881,6 +881,96 @@ def canary_daa_low_vol_sleeve(prices: pd.DataFrame) -> pd.DataFrame:
     return out
 
 
+# ---- Round 5: strategies on the expanded signal data (2026-06) ----
+
+def _aux_for(ticker: str, index: pd.Index) -> pd.Series:
+    return _aux_close(ticker).reindex(index).ffill()
+
+
+def vix_term_structure_spy(prices: pd.DataFrame) -> pd.DataFrame:
+    """Long SPY except when the VIX curve is in backwardation (VIX > VIX3M,
+    5d-median smoothed) - the market's own stress flag, cleaner than the
+    VIX level. Before VIX3M data exists (2006) the strategy is simply long."""
+    weights = _empty_weights(prices)
+    if "SPY" not in prices.columns:
+        return weights
+    vix = _aux_for("^VIX", prices.index)
+    vix3m = _aux_for("^VIX3M", prices.index)
+    ratio = (vix / vix3m).rolling(5).median()
+    backwardation = ratio > 1.0
+    weights["SPY"] = (~backwardation.fillna(False)).astype(float)
+    return weights
+
+
+def credit_stress_overlay_spy(prices: pd.DataFrame) -> pd.DataFrame:
+    """Long SPY except when credit is under stress: HYG underperforms LQD
+    by >2% over 63d (high-yield spread widening proxy - the signal class
+    the Xiong cash-overlay paper uses). Long before HYG exists (2007)."""
+    weights = _empty_weights(prices)
+    if "SPY" not in prices.columns:
+        return weights
+    hyg = _aux_for("HYG", prices.index)
+    lqd = _aux_for("LQD", prices.index)
+    rel_mom = (hyg / hyg.shift(63)) - (lqd / lqd.shift(63))
+    stress = rel_mom < -0.02
+    weights["SPY"] = (~stress.fillna(False)).astype(float)
+    return weights
+
+
+def yield_curve_regime_spy(prices: pd.DataFrame) -> pd.DataFrame:
+    """Half SPY exposure while the yield curve (10y minus 13w, 21d-smoothed)
+    is inverted; full exposure otherwise. Inversion leads recessions by
+    ~12-18 months - this is the slow channel, deliberately mild. Data from
+    1962 covers the entire SPY history."""
+    weights = _empty_weights(prices)
+    if "SPY" not in prices.columns:
+        return weights
+    tnx = _aux_for("^TNX", prices.index)   # 10y yield, %
+    irx = _aux_for("^IRX", prices.index)   # 13-week bill, %
+    curve = (tnx - irx).rolling(21).mean()
+    inverted = curve < 0
+    weights["SPY"] = inverted.fillna(False).map({True: 0.5, False: 1.0})
+    return weights
+
+
+def macro_composite_spy(prices: pd.DataFrame) -> pd.DataFrame:
+    """All three macro flags at once: exposure = 1 - penalty, where each of
+    {VIX backwardation, credit stress, curve inversion} subtracts a third.
+    The cross-asset version of composite_regime_spy."""
+    weights = _empty_weights(prices)
+    if "SPY" not in prices.columns:
+        return weights
+    vix = _aux_for("^VIX", prices.index)
+    vix3m = _aux_for("^VIX3M", prices.index)
+    backwardation = ((vix / vix3m).rolling(5).median() > 1.0).fillna(False)
+    hyg = _aux_for("HYG", prices.index)
+    lqd = _aux_for("LQD", prices.index)
+    stress = (((hyg / hyg.shift(63)) - (lqd / lqd.shift(63))) < -0.02).fillna(False)
+    tnx = _aux_for("^TNX", prices.index)
+    irx = _aux_for("^IRX", prices.index)
+    inverted = ((tnx - irx).rolling(21).mean() < 0).fillna(False)
+    penalty = (backwardation.astype(float) + stress.astype(float)
+               + inverted.astype(float)) / 3.0
+    weights["SPY"] = 1.0 - penalty
+    return weights
+
+
+def trend_plus_vix_term_spy(prices: pd.DataFrame) -> pd.DataFrame:
+    """Slow channel x fast channel: monthly SMA200 trend (wins slow bears -
+    GFC) gated by VIX term-structure backwardation (wins fast crashes -
+    COVID). Exposure = trend AND not-backwardation. The two signals'
+    crisis profiles are complementary (see results_lab_g9)."""
+    trend = sma200_monthly_spy(prices)
+    if "SPY" not in prices.columns:
+        return trend
+    vix = _aux_for("^VIX", prices.index)
+    vix3m = _aux_for("^VIX3M", prices.index)
+    backwardation = ((vix / vix3m).rolling(5).median() > 1.0).fillna(False)
+    out = trend.copy()
+    out["SPY"] = trend["SPY"].where(~backwardation, 0.0)
+    return out
+
+
 # ---- Round 2: hybrids of the round-1 winners ----
 
 def canary_daa_2x(prices: pd.DataFrame) -> pd.DataFrame:
@@ -1014,4 +1104,10 @@ PORTFOLIO_STRATEGIES = {
     "changepoint_gated_momentum": changepoint_gated_momentum,
     "low_vol_sector_basket": low_vol_sector_basket,
     "canary_daa_low_vol_sleeve": canary_daa_low_vol_sleeve,
+    # Round 5 (expanded signal data)
+    "vix_term_structure_spy": vix_term_structure_spy,
+    "credit_stress_overlay_spy": credit_stress_overlay_spy,
+    "yield_curve_regime_spy": yield_curve_regime_spy,
+    "macro_composite_spy": macro_composite_spy,
+    "trend_plus_vix_term_spy": trend_plus_vix_term_spy,
 }

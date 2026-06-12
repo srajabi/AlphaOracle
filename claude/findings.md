@@ -176,6 +176,28 @@ stated (gold-friendly - standing caveat). Detailed session narrative:
   backtest analogue (reported without bands).
 - First real data lands on the next workflow run (backfills up to 1 year).
 
+## 14. Round 5: macro-signal strategies (2026-06-12)
+
+- **VIX term structure is the best FAST-crash defense ever tested here**:
+  COVID -7.6% vs SMA200-monthly -12.1% vs SPY -33.4%. Backwardation fires in
+  days - it covers exactly the gap-risk hole every trend rule has. But it
+  loses slow bears (GFC -28%) and grinding bears (2022 -25%).
+- **Trend and VIX-term are complementary channels** -> `trend_plus_vix_term_spy`
+  (monthly SMA200 AND not-backwardation): COVID -7.6%, **GFC -1.8% (beats
+  both parents)**, 2022 -16.6%. Worst crisis = -16.6% - the best crisis
+  profile of any SPY-only strategy in the lab. Cost: ~0.02 Sharpe vs plain
+  trend (0.77 vs 0.79) from extra whipsaws.
+- **Credit-stress overlay (HYG/LQD)**: standalone Sharpe 0.56 = no better
+  than buy-and-hold; helped COVID (-11%) but late/wrong in 2022 (-31%).
+  Verdict: input signal, not a strategy.
+- **Yield-curve de-risking is actively harmful as a timing rule** (Sharpe
+  0.53 < B&H 0.56): inversion leads recessions by 12-18 months, so halving
+  exposure at inversion misses late-cycle melt-ups (2006-07, 2019, 2023-24).
+  Keep as context, never as a trigger.
+- Results: `backtesting/results_lab_g9/`, `results_lab_g9b/`. Caveat:
+  VIX3M/HYG signals only live from 2006/2007; earlier periods fall back to
+  long (the GFC+ slices are the fair test windows).
+
 ## 10. System state (operational)
 
 - 6 Alpaca paper accounts; forward test UNCHANGED by user instruction
