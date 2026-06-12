@@ -2,6 +2,13 @@
 
 ## What Changed
 
+### IPS-as-Code: Family Case Study + Signal Feed SHIPPED (2026-06-12, session 13)
+* User reframe accepted: no advisors, no psychology - rules grounded in our evidence, automatable. Correction: capital is in T-bills (inflation-neutral), so entries are rule-gated not calendar-rushed.
+* **`claude/ips_case_study.md`**: Mandate P (stochastic horizon: 75/25 + two-channel overlay; monthly SMA200 slow channel + daily VIX-term fast channel; entry rule = management rule) and Mandate Y (core + ONE aggressive-division champion satellite; sizing = gap math; promotion requires tournament champion + on-script attribution).
+* **`src/family_signals.py`** (+13 tests): daily signal feed -> data/family_signals.json (slow/fast channels, credit, canary, per-mandate instruction). Wired into the workflow; signal tickers (^VIX3M, HYG, LQD, ^TNX, ^IRX, XEQT.TO) added to watchlist for daily refresh.
+* **First live read (2026-06-12): ALL FOUR SIGNALS RISK-ON** (XEQT +10.2% over 200dma at May month-end, VIX ratio 0.932 contango, credit clear, canaries positive) - despite BoJ/war/IPO week. Rules vs vibes, demonstrated on day one.
+* User consumes the JSON from their own GitHub Action; this repo only emits signals, never touches accounts.
+
 ### Allocation Study (2026-06-12, session 12b)
 * `spikes/allocation_study_2026.md`: the family scenario (user 750k risk-willing; parents 55/60, 1.25M, working "until they can't") evaluated against our evidence - explicitly NOT financial advice, structures-vs-evidence only, with a licensed-planner checklist.
 * New sim: 75/25 at-top entries - lump worst 0.94x/-40% maxDD; +SMA200 overlay worst 1.16x/-17%.

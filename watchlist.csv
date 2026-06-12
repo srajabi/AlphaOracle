@@ -58,3 +58,9 @@ SLV,Commodity,Silver ETF (for intermarket analysis)
 EWC,International,Canada TSX proxy
 VGK,International,Europe proxy
 EWA,International,Australia proxy
+^VIX3M,Index,3M VIX - term structure signal
+HYG,Bond,HY credit - stress signal
+LQD,Bond,IG credit - stress signal
+^TNX,Index,10y yield - curve signal
+^IRX,Index,13w bill - curve signal
+XEQT.TO,ETF,Family case study - global equity CAD

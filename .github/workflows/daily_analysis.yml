@@ -104,6 +104,11 @@ jobs:
         continue-on-error: true
         run: python src/generate_ticker_indicators.py
 
+      - name: Family Mandate Signals (IPS case study)
+        id: family_signals
+        continue-on-error: true
+        run: python src/family_signals.py
+
       - name: Run LLM Agents
         id: llm_agents
         # Skip (rather than analyze stale data) if ingestion failed.
@@ -339,6 +344,7 @@ jobs:
           check "execute_mean"            "${{ steps.execute_mean.outcome }}"
           check "fetch_portfolio_final"   "${{ steps.fetch_portfolio_final.outcome }}"
           check "attribution"             "${{ steps.attribution.outcome }}"
+          check "family_signals"          "${{ steps.family_signals.outcome }}"
           if [ -n "$failed" ]; then
             echo "::error::Steps failed (run continued so other strategies still executed):$failed"
             exit 1
