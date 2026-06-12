@@ -2,6 +2,12 @@
 
 ## What Changed
 
+### Documentation Hub: claude/ + CLAUDE.md + Findings Registry (NEW - 2026-06-11, session 8)
+* Created `claude/` agent-context hub: moved agents.md, context.md, current.md here; added **`claude/findings.md`** - the canonical registry of every empirical result (entry research, decumulation, XEQT, LETF, strategy lab, validation, overnight, day-trading evidence, bugs-found, data assets) with numbers + caveats + pointers. **Update findings.md in every session that produces a result.**
+* Added root **CLAUDE.md** (auto-loaded by Claude Code): reading order, hard rules (never touch forward test, tests non-negotiable, document religiously, legal sources), environment notes.
+* `claude/README.md` documents the update-discipline table (which doc gets updated when).
+* README.md project structure + docs section updated to the new paths.
+
 ### Execution-Realism Layer (GitHub-inspired) (NEW - 2026-06-11, session 7)
 * **Surveyed the OSS quant stack** (pysystemtrade 3.3k stars, skfolio, quantstats 7.3k, Riskfolio-Lib 4.3k, vectorbt 7.9k) and adopted the concepts we lacked:
   * **Cost sensitivity + breakeven cost (Carver/pysystemtrade):** Sharpe at 0/2/5/10bps + the cost level where Sharpe hits zero. `cost_sensitivity()` in validation.py.

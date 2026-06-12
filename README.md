@@ -185,15 +185,19 @@ AlphaOracle/
 ├── spikes/                     # Research & experiments
 ├── tools/                      # Manual/ad-hoc scripts
 ├── .github/workflows/          # GitHub Actions
-├── agents.md                   # AI coding agent docs
-├── context.md                  # Detailed architecture
-└── current.md                  # Current work status
+├── claude/                     # Agent context hub
+│   ├── agents.md               #   workflow + research loop
+│   ├── context.md              #   detailed architecture
+│   ├── current.md              #   session log
+│   └── findings.md             #   canonical findings registry
+└── CLAUDE.md                   # Auto-loaded agent entrypoint
 ```
 
 ## Documentation
 
-- **For Developers**: See `agents.md` for AI coding conventions
-- **Architecture Deep Dive**: See `context.md`
+- **For Developers / AI agents**: See `claude/agents.md` for workflow and the research loop
+- **Architecture Deep Dive**: See `claude/context.md`
+- **What we've discovered**: See `claude/findings.md` - every empirical result with numbers and caveats
 - **Research & Spikes**: Browse `spikes/` directory
 - **Backtesting**: See `backtesting/` directory
 
