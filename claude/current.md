@@ -2,6 +2,10 @@
 
 ## What Changed
 
+### Tournament Divisions (2026-06-12, session 11b)
+* User challenged the universal -35% crisis floor (don't discard profitable high-vol strategies) - implemented DIVISIONS: CORE (holdable mandate, original gates) and AGGRESSIVE (beat SPY on CAGR AND Sharpe, -60% crisis floor, 5y max underwater, looser cost/gap bars).
+* CORE: 13 champions (unchanged). AGGRESSIVE: 15 champions incl. vol_target_qqq_2x, regime_bands_2x/3x, hfea_lite_2x, reddit_200sma_spy. Still rejected even by AGGRESSIVE: hfea_55_45 (-65% worst crisis), reddit_200sma_tqqq (-62%) - compensated vol in, wipeouts out.
+
 ### The Strategy Tournament (NEW - 2026-06-12, session 11)
 * User asked: have ALL strategies faced ALL tests? Answer was no (round-5 + single-asset strategies unswept) - fixed with `backtesting/run_tournament.py`: census (65 testable + 6 excluded-with-reasons) -> stage-1 gauntlet gates -> stage-2 deep tests -> champions.
 * **Result: 65 -> 20 -> 13 champions** (canary family x5, dual_channel, gtaa_5, risk_parity, lab_winners_blend, trinity, changepoint momentum, regime bands, spy_gld_switch).

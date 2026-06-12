@@ -208,12 +208,17 @@ stated (gold-friendly - standing caveat). Detailed session narrative:
   DSR >= 0.95, breakeven >= 25bps, beat 60/40. Stage-2: split-sample both
   halves positive, worst crisis > -35%, Sharpe@10bps >= 0.40, lag drop
   < 0.30, gap loss > -50%.
-- **Champions (13)**: the full canary family (5), dual_channel_cash_overlay,
-  gtaa_5_faber, risk_parity, lab_winners_blend, trinity_blend,
-  changepoint_gated_momentum, regime_defensive_with_bands, spy_gld_switch.
-- **All 7 stage-2 deaths fell at ONE gate - the -35% crisis floor - and all
-  were leveraged** (HFEA both, reddit TQQQ, 2x/3x band rotations, levered
-  vol-targeting). Leverage survives Sharpe math; it does not survive crises.
+- **Two divisions** (user pushback on one-size crisis floor - correct call):
+  same statistical gates, different risk mandates. CORE (holdable: -35%
+  crisis floor, beat 60/40 on Sharpe): **13 champions** - canary family x5,
+  dual_channel, gtaa_5, risk_parity, lab_winners_blend, trinity, changepoint
+  momentum, regime bands, spy_gld_switch. AGGRESSIVE (must beat SPY on CAGR
+  AND Sharpe; -60% crisis floor; recover within 5y): **15 champions** incl.
+  the compensated-vol strategies CORE rejects - vol_target_qqq_2x,
+  regime_bands_2x/3x, hfea_lite_2x, reddit_200sma_spy, tqqq_sma_vix_filter.
+- **Even the aggressive division rejects hfea_55_45 (-65% worst crisis) and
+  reddit_200sma_tqqq (-62%)** - high vol is admissible when compensated;
+  near-wipeouts are not. The babies are kept; the bathwater still goes.
 - lab_winners_blend champion line: Sharpe 1.19 (halves 1.24/1.14), GFC
   +2.4%, COVID -6.8%, 2022 -20%, breakeven 252bps.
 - Full table: `backtesting/results_tournament/tournament.{json,md}`.
