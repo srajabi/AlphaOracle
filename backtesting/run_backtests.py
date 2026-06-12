@@ -21,6 +21,58 @@ DEFAULT_PERIODS = "10,20,30,40,full"
 DEFAULT_SINGLE_ASSET_STRATEGIES = "buy_and_hold,sma_trend_following,rsi_mean_reversion,breakout_20d"
 DEFAULT_PORTFOLIO_STRATEGIES = "top2_relative_strength_rotation,dual_momentum_rotation,regime_defensive_rotation"
 
+# Baselines always run so every result has a same-period benchmark, even if
+# the requested strategy list omits them.
+BASELINE_SINGLE_ASSET_STRATEGIES = ["buy_and_hold"]
+BASELINE_PORTFOLIO_STRATEGIES = ["buy_hold_spy", "equal_weight_buy_hold", "spy_tlt_60_40"]
+
+
+def select_portfolio_baselines(tickers):
+    """Baselines that are meaningful for this ticker universe."""
+    baselines = ["equal_weight_buy_hold"]
+    if "SPY" in tickers:
+        baselines.insert(0, "buy_hold_spy")
+        if "TLT" in tickers:
+            baselines.append("spy_tlt_60_40")
+    return baselines
+
+
+def with_baselines(requested, baselines):
+    """Union of requested strategies and baselines, preserving order."""
+    merged = list(requested)
+    for name in baselines:
+        if name not in merged:
+            merged.append(name)
+    return merged
+
+
+def attach_baseline_comparison(results_df: pd.DataFrame, portfolio_reference: str) -> pd.DataFrame:
+    """Add baseline_* and excess_* columns comparing each row to its benchmark.
+
+    Single-asset rows compare against buy_and_hold of the same ticker over the
+    same period; portfolio rows compare against the reference portfolio
+    baseline (buy-hold SPY when available, else equal weight).
+    """
+    results_df = results_df.copy()
+    results_df["is_baseline"] = results_df["strategy"].isin(
+        set(BASELINE_SINGLE_ASSET_STRATEGIES) | set(BASELINE_PORTFOLIO_STRATEGIES)
+    )
+
+    reference_rows = results_df[
+        ((results_df["ticker"] != "PORTFOLIO") & (results_df["strategy"] == "buy_and_hold"))
+        | ((results_df["ticker"] == "PORTFOLIO") & (results_df["strategy"] == portfolio_reference))
+    ]
+    metrics = ["total_return", "annualized_return", "sharpe", "max_drawdown"]
+    reference = reference_rows.set_index(["ticker", "period"])[metrics]
+
+    keys = list(zip(results_df["ticker"], results_df["period"]))
+    for metric in metrics:
+        lookup = reference[metric].to_dict()
+        baseline_values = pd.Series([lookup.get(key) for key in keys], index=results_df.index)
+        results_df[f"baseline_{metric}"] = baseline_values
+        results_df[f"excess_{metric}"] = results_df[metric] - baseline_values
+    return results_df
+
 
 def load_history(ticker: str, use_long_history: bool = True, _cache={}) -> pd.DataFrame:
     """
@@ -84,39 +136,46 @@ def load_history(ticker: str, use_long_history: bool = True, _cache={}) -> pd.Da
     return df
 
 
+SUMMARY_NUMERIC_COLUMNS = [
+    "total_return",
+    "annualized_return",
+    "annualized_volatility",
+    "sharpe",
+    "max_drawdown",
+    "win_rate",
+    "trades",
+    "excess_total_return",
+    "excess_annualized_return",
+    "excess_sharpe",
+    "excess_max_drawdown",
+]
+
+
+def _summary_columns(results_df: pd.DataFrame):
+    return [col for col in SUMMARY_NUMERIC_COLUMNS if col in results_df.columns]
+
+
 def summarize_results(results_df: pd.DataFrame) -> pd.DataFrame:
-    numeric_columns = [
-        "total_return",
-        "annualized_return",
-        "annualized_volatility",
-        "sharpe",
-        "max_drawdown",
-        "win_rate",
-        "trades",
-    ]
     summary = (
-        results_df.groupby("strategy", as_index=False)[numeric_columns]
+        results_df.groupby("strategy", as_index=False)[_summary_columns(results_df)]
         .mean(numeric_only=True)
         .sort_values(by=["sharpe", "annualized_return"], ascending=[False, False])
     )
+    if "is_baseline" in results_df.columns:
+        flags = results_df.groupby("strategy")["is_baseline"].first()
+        summary["is_baseline"] = summary["strategy"].map(flags)
     return summary
 
 
 def summarize_by_period(results_df: pd.DataFrame) -> pd.DataFrame:
-    numeric_columns = [
-        "total_return",
-        "annualized_return",
-        "annualized_volatility",
-        "sharpe",
-        "max_drawdown",
-        "win_rate",
-        "trades",
-    ]
     summary = (
-        results_df.groupby(["period", "strategy"], as_index=False)[numeric_columns]
+        results_df.groupby(["period", "strategy"], as_index=False)[_summary_columns(results_df)]
         .mean(numeric_only=True)
         .sort_values(by=["period", "sharpe", "annualized_return"], ascending=[True, False, False])
     )
+    if "is_baseline" in results_df.columns:
+        flags = results_df.groupby("strategy")["is_baseline"].first()
+        summary["is_baseline"] = summary["strategy"].map(flags)
     return summary
 
 
@@ -312,6 +371,13 @@ def main():
     strategy_names = [name.strip() for name in args.strategies.split(",") if name.strip()]
     portfolio_strategy_names = [name.strip() for name in args.portfolio_strategies.split(",") if name.strip()]
 
+    # Baselines always run alongside whatever was requested.
+    portfolio_baselines = select_portfolio_baselines(tickers)
+    strategy_names = with_baselines(strategy_names, BASELINE_SINGLE_ASSET_STRATEGIES)
+    if portfolio_strategy_names:
+        portfolio_strategy_names = with_baselines(portfolio_strategy_names, portfolio_baselines)
+    portfolio_reference = "buy_hold_spy" if "SPY" in tickers else "equal_weight_buy_hold"
+
     unknown = [name for name in strategy_names if name not in STRATEGIES]
     if unknown:
         raise ValueError(f"Unknown strategies requested: {unknown}. Available: {sorted(STRATEGIES)}")
@@ -372,6 +438,7 @@ def main():
             results.append(result.to_dict())
 
     results_df = pd.DataFrame(results)
+    results_df = attach_baseline_comparison(results_df, portfolio_reference)
     summary_df = summarize_results(results_df)
     period_summary_df = summarize_by_period(results_df)
 
@@ -386,6 +453,11 @@ def main():
         "tickers": tickers,
         "strategies": strategy_names,
         "portfolio_strategies": portfolio_strategy_names,
+        "baselines": {
+            "single_asset": BASELINE_SINGLE_ASSET_STRATEGIES,
+            "portfolio": portfolio_baselines if portfolio_strategy_names else [],
+            "portfolio_reference": portfolio_reference,
+        },
         "periods": args.periods,
         "market_periods": args.market_periods,
         "rolling_window": args.rolling_window,
@@ -393,7 +465,7 @@ def main():
         "transaction_cost_bps": args.transaction_cost_bps,
         "summary": summary_df.to_dict(orient="records"),
         "summary_by_period": period_summary_df.to_dict(orient="records"),
-        "results_by_ticker": results,
+        "results_by_ticker": results_df.to_dict(orient="records"),
     }
     with open(output_dir / "summary.json", "w") as f:
         json.dump(payload, f, indent=2)

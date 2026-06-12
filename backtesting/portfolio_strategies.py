@@ -308,6 +308,52 @@ def buy_hold_qqq_3x(prices: pd.DataFrame) -> pd.DataFrame:
     return weights
 
 
+def hfea_55_45(prices: pd.DataFrame) -> pd.DataFrame:
+    """HFEA (Hedgefundie's Excellent Adventure): 55/45 UPRO/TMF.
+
+    Modeled as clean 3x leverage on SPY/TLT, daily rebalanced (the real
+    strategy rebalances quarterly; daily-rebalanced constant weights are a
+    close approximation). No expense ratio or financing drag - real 3x ETFs
+    cost ~1% ER plus ~2x the short rate in financing, which is material.
+    """
+    weights = _empty_weights(prices)
+    if "SPY" in prices.columns and "TLT" in prices.columns:
+        weights["SPY"] = 0.55 * 3.0
+        weights["TLT"] = 0.45 * 3.0
+    return weights
+
+
+def hfea_lite_2x(prices: pd.DataFrame) -> pd.DataFrame:
+    """HFEA at 2x leverage (SSO/UBT equivalent): 55/45 with half the risk."""
+    weights = _empty_weights(prices)
+    if "SPY" in prices.columns and "TLT" in prices.columns:
+        weights["SPY"] = 0.55 * 2.0
+        weights["TLT"] = 0.45 * 2.0
+    return weights
+
+
+def equal_weight_buy_hold(prices: pd.DataFrame) -> pd.DataFrame:
+    """Equal-weight the full ticker universe, rebalanced daily.
+
+    Baseline for rotation strategies: rotating between assets should beat
+    simply holding all of them. Constant weights mean near-zero turnover
+    after the initial entry, so this is an idealized (low-cost) benchmark.
+    """
+    n_assets = len(prices.columns)
+    if n_assets == 0:
+        return _empty_weights(prices)
+    return pd.DataFrame(1.0 / n_assets, index=prices.index, columns=prices.columns)
+
+
+def spy_tlt_60_40(prices: pd.DataFrame) -> pd.DataFrame:
+    """Classic 60/40 stocks/bonds portfolio (SPY/TLT), rebalanced daily."""
+    weights = _empty_weights(prices)
+    if "SPY" in prices.columns and "TLT" in prices.columns:
+        weights["SPY"] = 0.6
+        weights["TLT"] = 0.4
+    return weights
+
+
 PORTFOLIO_STRATEGIES = {
     "top2_relative_strength_rotation": top2_relative_strength_rotation,
     "dual_momentum_rotation": dual_momentum_rotation,
@@ -328,4 +374,8 @@ PORTFOLIO_STRATEGIES = {
     "buy_hold_qqq": buy_hold_qqq,
     "buy_hold_qqq_2x": buy_hold_qqq_2x,
     "buy_hold_qqq_3x": buy_hold_qqq_3x,
+    "equal_weight_buy_hold": equal_weight_buy_hold,
+    "spy_tlt_60_40": spy_tlt_60_40,
+    "hfea_55_45": hfea_55_45,
+    "hfea_lite_2x": hfea_lite_2x,
 }
