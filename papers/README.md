@@ -24,6 +24,8 @@ notes-only with links.
 | [tug_of_war_overnight.md](tug_of_war_overnight.md) | Lou, Polk & Skouras (2019) | not yet - round-4 candidate | Overnight premium; testable with our OHLC data |
 | [jegadeesh_titman_momentum.md](jegadeesh_titman_momentum.md) | Jegadeesh & Titman (1993) | momentum family ancestor | Our results: momentum selection needs a trend filter to remove the left tail |
 | [cash_overlay_filters.md](cash_overlay_filters.md) | Xiong (2026, arXiv) | not yet - round-4 candidate | Continuous slow+fast cash overlay; retest on 2004+ before trusting |
+| [factor_zoo_census.md](factor_zoo_census.md) | Harvey & Liu (2019) | meta-source | 400+ factor catalog + t>3 multiple-testing bar; use to vet new ideas |
+| [lazy_prices.md](lazy_prices.md) | Cohen, Malloy & Nguyen (2020) | not implementable (long-only ETFs) | Filing-change alpha; possible future LLM-analyst risk signal |
 
 ## Paper sources (recurring hunting grounds)
 
@@ -48,6 +50,15 @@ notes-only with links.
 - **Reddit**: unauthenticated access is fully closed (web, old.reddit, and
   .json all blocked). Reading r/quant / r/algotrading programmatically needs
   official API OAuth credentials (free personal app at reddit.com/prefs/apps).
+  Workaround that works fine: paste thread contents into the chat.
+- **WifeyAlpha paper board** ([miro](https://miro.com/app/board/uXjVOynzlbI=/)) -
+  community compilation of papers from WifeyAlpha's threads. Canvas-rendered,
+  so browse manually and bring papers back by citation. (The companion GitHub
+  repo from the r/quant thread is gone.)
+- **Out of scope for AlphaOracle** (noted so we stop re-evaluating them):
+  market-making (Avellaneda-Stoikov), optimal execution (Almgren-Chriss),
+  rough-volatility option pricing, Cartea's HFT book - all require
+  order-book access / market-maker infrastructure we don't have.
 
 ## Conventions
 
