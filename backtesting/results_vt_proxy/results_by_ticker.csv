@@ -1,0 +1,4 @@
+strategy,ticker,period,observations,trades,total_return,annualized_return,annualized_volatility,sharpe,max_drawdown,win_rate,is_baseline,baseline_total_return,excess_total_return,baseline_annualized_return,excess_annualized_return,baseline_sharpe,excess_sharpe,baseline_max_drawdown,excess_max_drawdown
+sma_200_trend,VT,full_sample,4459,101,2.406164,0.071719,0.116842,0.613815,-0.190342,0.545996,False,3.1027,-0.696536,0.083048,-0.011328999999999992,0.403609,0.210206,-0.502641,0.312299
+sma_200_trend_bands,VT,full_sample,4459,21,1.889018,0.061792,0.115107,0.536816,-0.240619,0.54682,False,3.1027,-1.213682,0.083048,-0.021255999999999997,0.403609,0.13320699999999996,-0.502641,0.262022
+buy_and_hold,VT,full_sample,4459,1,3.1027,0.083048,0.205763,0.403609,-0.502641,0.539031,True,3.1027,0.0,0.083048,0.0,0.403609,0.0,-0.502641,0.0

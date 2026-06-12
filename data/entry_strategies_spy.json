@@ -1,0 +1,243 @@
+{
+  "ticker": "SPY",
+  "start_range": [
+    "1993-11-12",
+    "2021-02-23"
+  ],
+  "horizon_years": 5.0,
+  "cash_yield": 0.03,
+  "ath_threshold": 0.02,
+  "summary": [
+    {
+      "cohort": "all_starts",
+      "strategy": "lump_sum",
+      "starts": 328,
+      "median_wealth": 1.6781,
+      "p5_wealth": 0.8944,
+      "worst_wealth": 0.7495,
+      "median_max_dd": -0.3372,
+      "worst_max_dd": -0.5519,
+      "beats_lump_pct": 0.0
+    },
+    {
+      "cohort": "all_starts",
+      "strategy": "dca_6m",
+      "starts": 328,
+      "median_wealth": 1.6808,
+      "p5_wealth": 0.8946,
+      "worst_wealth": 0.7777,
+      "median_max_dd": -0.3353,
+      "worst_max_dd": -0.5493,
+      "beats_lump_pct": 31.4
+    },
+    {
+      "cohort": "all_starts",
+      "strategy": "dca_12m",
+      "starts": 328,
+      "median_wealth": 1.6847,
+      "p5_wealth": 0.8903,
+      "worst_wealth": 0.7703,
+      "median_max_dd": -0.2887,
+      "worst_max_dd": -0.5459,
+      "beats_lump_pct": 27.1
+    },
+    {
+      "cohort": "all_starts",
+      "strategy": "dca_24m",
+      "starts": 328,
+      "median_wealth": 1.6072,
+      "p5_wealth": 0.8595,
+      "worst_wealth": 0.7559,
+      "median_max_dd": -0.2394,
+      "worst_max_dd": -0.5391,
+      "beats_lump_pct": 20.7
+    },
+    {
+      "cohort": "all_starts",
+      "strategy": "sma_gated_12m",
+      "starts": 328,
+      "median_wealth": 1.6791,
+      "p5_wealth": 0.8793,
+      "worst_wealth": 0.7641,
+      "median_max_dd": -0.2594,
+      "worst_max_dd": -0.5457,
+      "beats_lump_pct": 22.3
+    },
+    {
+      "cohort": "all_starts",
+      "strategy": "dip_buy_10",
+      "starts": 328,
+      "median_wealth": 1.4628,
+      "p5_wealth": 0.841,
+      "worst_wealth": 0.6858,
+      "median_max_dd": -0.3176,
+      "worst_max_dd": -0.5242,
+      "beats_lump_pct": 39.3
+    },
+    {
+      "cohort": "all_starts",
+      "strategy": "ls_sma_managed",
+      "starts": 328,
+      "median_wealth": 1.4772,
+      "p5_wealth": 1.0689,
+      "worst_wealth": 0.9369,
+      "median_max_dd": -0.1739,
+      "worst_max_dd": -0.2194,
+      "beats_lump_pct": 33.8
+    },
+    {
+      "cohort": "at_top_starts",
+      "strategy": "lump_sum",
+      "starts": 126,
+      "median_wealth": 1.7343,
+      "p5_wealth": 0.8817,
+      "worst_wealth": 0.8186,
+      "median_max_dd": -0.3372,
+      "worst_max_dd": -0.5519,
+      "beats_lump_pct": 0.0
+    },
+    {
+      "cohort": "at_top_starts",
+      "strategy": "dca_6m",
+      "starts": 126,
+      "median_wealth": 1.7225,
+      "p5_wealth": 0.8943,
+      "worst_wealth": 0.8227,
+      "median_max_dd": -0.3355,
+      "worst_max_dd": -0.5486,
+      "beats_lump_pct": 24.6
+    },
+    {
+      "cohort": "at_top_starts",
+      "strategy": "dca_12m",
+      "starts": 126,
+      "median_wealth": 1.6933,
+      "p5_wealth": 0.8941,
+      "worst_wealth": 0.8289,
+      "median_max_dd": -0.3334,
+      "worst_max_dd": -0.5445,
+      "beats_lump_pct": 22.2
+    },
+    {
+      "cohort": "at_top_starts",
+      "strategy": "dca_24m",
+      "starts": 126,
+      "median_wealth": 1.6173,
+      "p5_wealth": 0.8576,
+      "worst_wealth": 0.7661,
+      "median_max_dd": -0.2728,
+      "worst_max_dd": -0.5018,
+      "beats_lump_pct": 17.5
+    },
+    {
+      "cohort": "at_top_starts",
+      "strategy": "sma_gated_12m",
+      "starts": 126,
+      "median_wealth": 1.6669,
+      "p5_wealth": 0.8807,
+      "worst_wealth": 0.8097,
+      "median_max_dd": -0.3308,
+      "worst_max_dd": -0.5445,
+      "beats_lump_pct": 18.3
+    },
+    {
+      "cohort": "at_top_starts",
+      "strategy": "dip_buy_10",
+      "starts": 126,
+      "median_wealth": 1.5177,
+      "p5_wealth": 0.9431,
+      "worst_wealth": 0.6858,
+      "median_max_dd": -0.3194,
+      "worst_max_dd": -0.5111,
+      "beats_lump_pct": 34.9
+    },
+    {
+      "cohort": "at_top_starts",
+      "strategy": "ls_sma_managed",
+      "starts": 126,
+      "median_wealth": 1.5944,
+      "p5_wealth": 1.0287,
+      "worst_wealth": 0.9369,
+      "median_max_dd": -0.1739,
+      "worst_max_dd": -0.2194,
+      "beats_lump_pct": 23.0
+    },
+    {
+      "cohort": "below_top_starts",
+      "strategy": "lump_sum",
+      "starts": 202,
+      "median_wealth": 1.6354,
+      "p5_wealth": 0.8948,
+      "worst_wealth": 0.7495,
+      "median_max_dd": -0.3372,
+      "worst_max_dd": -0.5519,
+      "beats_lump_pct": 0.0
+    },
+    {
+      "cohort": "below_top_starts",
+      "strategy": "dca_6m",
+      "starts": 202,
+      "median_wealth": 1.6151,
+      "p5_wealth": 0.8998,
+      "worst_wealth": 0.7777,
+      "median_max_dd": -0.3277,
+      "worst_max_dd": -0.5493,
+      "beats_lump_pct": 35.6
+    },
+    {
+      "cohort": "below_top_starts",
+      "strategy": "dca_12m",
+      "starts": 202,
+      "median_wealth": 1.6731,
+      "p5_wealth": 0.8898,
+      "worst_wealth": 0.7703,
+      "median_max_dd": -0.2755,
+      "worst_max_dd": -0.5459,
+      "beats_lump_pct": 30.2
+    },
+    {
+      "cohort": "below_top_starts",
+      "strategy": "dca_24m",
+      "starts": 202,
+      "median_wealth": 1.5958,
+      "p5_wealth": 0.8627,
+      "worst_wealth": 0.7559,
+      "median_max_dd": -0.218,
+      "worst_max_dd": -0.5391,
+      "beats_lump_pct": 22.8
+    },
+    {
+      "cohort": "below_top_starts",
+      "strategy": "sma_gated_12m",
+      "starts": 202,
+      "median_wealth": 1.6895,
+      "p5_wealth": 0.8806,
+      "worst_wealth": 0.7641,
+      "median_max_dd": -0.2421,
+      "worst_max_dd": -0.5457,
+      "beats_lump_pct": 24.8
+    },
+    {
+      "cohort": "below_top_starts",
+      "strategy": "dip_buy_10",
+      "starts": 202,
+      "median_wealth": 1.4193,
+      "p5_wealth": 0.8142,
+      "worst_wealth": 0.706,
+      "median_max_dd": -0.2937,
+      "worst_max_dd": -0.5242,
+      "beats_lump_pct": 42.1
+    },
+    {
+      "cohort": "below_top_starts",
+      "strategy": "ls_sma_managed",
+      "starts": 202,
+      "median_wealth": 1.4274,
+      "p5_wealth": 1.0939,
+      "worst_wealth": 1.0105,
+      "median_max_dd": -0.1709,
+      "worst_max_dd": -0.2194,
+      "beats_lump_pct": 40.6
+    }
+  ]
+}
