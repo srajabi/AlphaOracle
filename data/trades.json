@@ -1,22 +1,32 @@
 [
     {
-        "ticker": "XLU",
+        "ticker": "META",
+        "action": "buy",
+        "notional_value": 15000
+    },
+    {
+        "ticker": "MSFT",
+        "action": "buy",
+        "notional_value": 15000
+    },
+    {
+        "ticker": "NFLX",
         "action": "buy",
         "notional_value": 10000
     },
     {
-        "ticker": "XLP",
+        "ticker": "XLF",
         "action": "buy",
         "notional_value": 10000
     },
     {
-        "ticker": "QUAL",
+        "ticker": "QQQ",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 15000
     },
     {
-        "ticker": "INTC",
+        "ticker": "TLT",
         "action": "buy",
-        "notional_value": 9000
+        "notional_value": 10000
     }
 ]

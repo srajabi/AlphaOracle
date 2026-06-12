@@ -1,116 +1,108 @@
 ---
 title: Macro Strategist Report
-date: "2026-06-11"
+date: "2026-06-12"
 ---
 
-## Model: deepseek/deepseek-reasoner
+## Model: deepseek/deepseek-v4-flash
 
-Based on the comprehensive macro data for June 11, 2026, we are navigating a **“Bull Volatile” regime under severe, conflicting pressures** — a geopolitical supply shock (Strait of Hormuz), a hawkish Fed pivot, a strong dollar, and nascent recession signals. The market is pricing in **stagflation risk** rather than a clean risk-on or risk-off move.
+## Macro Strategy Analysis — 2026-06-12
 
-Below is my structured macro assessment and specific recommendations for deploying our **$87k cash** portfolio.
+### Regime Assessment: “Bull Quiet” Under Threat of Regime Shift
 
----
-
-## 1. Geopolitical Hotspots – Mapping to Sectors
-
-### Strait of Hormuz / Iran Conflict (Dominant Theme)
-- **Event chain:** US strikes on Iran → Iran threatens Hormuz closure → Oil volatility → Trump both cancels attacks *and* threatens Kharg Island seizure → Crude spikes then consolidates.
-- **Second-order effects:**
-  - **Energy (XLE):** Direct beneficiary, but already up YTD; current RSI ~51 suggests consolidation. Fade near-term rallies, maintain structural overweight.
-  - **Airlines/Shipping:** Bearish (not on watchlist but note for cross-asset).
-  - **Inflation impulse:** Pushes core inflation higher → **Fed must stay hawkish** → bond yields stay elevated → tech/growth under pressure.
-  - **Gold (GLD, IAU):** Paradoxically falling despite tension because **strong dollar + rising yields dominate**. Gold’s RSI at 24 (oversold) is a contrarian buy zone, but momentum is against it.
-  - **Defensives (XLU, XLP):** Attracting flows on recession hedging. XLU is flat, XLP above SMA. Good for income but limited upside if inflation persists.
-
-### China-Taiwan Tensions
-- **Event:** Taiwan mulls AI chip export curbs to China; China bans dual-use tech to Japan.
-- **Impact:** Semis (TSM, NVDA, AMD) face supply-chain risk. **Non-Taiwan alternatives (INTC) benefit** – BofA double upgrade today confirms rotation.
-- **Memory stocks (WDC, STX, MU)** rebounding on SK Hynix capacity plan – shows dip-buying in AI memory. Not a macro shift, a tactical bounce.
+The regime classification as **Bull Quiet** is consistent with the recent price action—calm trend with low volatility—but the underlying news flow suggests we are at a inflection point. The simultaneous de-escalation of the US-Iran conflict and the impending Fed decision create a **cross-current regime** where the market is repricing risk on two separate timelines.
 
 ---
 
-## 2. Fed Policy & Rates – Hawkish Reset
+### 1. Geopolitical Events: De‑escalation Dominates, But Tail Risks Remain
 
-- **Rate hike odds:** ~70% for a hike by year-end per CME (Barron’s). ECB just hiked 25bp. Fed chief may defy Trump to raise rates.
-- **Inflation:** CPI at 4.2% (worst in 3 years). Barron’s argues 4% can’t become new 2% target.
-- **Bond yields:** 10Y near 4.6%, TLT RSI 48.7 – neutral. No panic buying of duration.
-- **Cross-asset:** **Strong dollar (UUP RSI 69)** is crushing gold and pressuring EM equities. DXY near range highs.
+| Event | Status | Market Impact |
+|-------|--------|--------------|
+| **Strait of Hormuz / US-Iran** | Deal talks accelerate; Trump calls off strikes – **net positive for risk assets** | Oil down sharply (< $90), equities rally, gold declines |
+| **China-Taiwan** | AI chip export curbs proposed, no immediate crisis | Semiconductor supply chain intact, but long-term tension remains |
+| **Middle East airstrikes (past days)** | Escalation reversed – volatility spike faded | VIX declining from 20s to 19.4 |
 
-**Takeaway:** The “Fed put” is gone. Rate sensitivity is the primary driver. Growth stocks (QQQ, tech) will remain under pressure as long as yields stay elevated.
+**First-order effects:**
+- *Crude oil* (XLE, XLE) → bearish near-term; $90 support broken, potential further slide to $80–85 if deal is signed.
+- *Safe havens* (GLD, IAU, TLT) → under pressure; gold is at a six-month low, TLT yields remain sticky near 4.6%.
+- *Equity risk premium* → compressing; S&P 500 (SPY) reclaims 200‑day SMA, Nasdaq (QQQ) rallies on peace hopes.
 
----
+**Second-order / propagation effects:**
+- **Lower oil → lower headline inflation expectations** → marginally less hawkish Fed → **bullish for long-duration assets** (TLT, growth stocks) if inflation stays anchored. But core inflation (2.9%) is still sticky.
+- **Lower oil → energy sector (XLE) reversal** – YTD leader (up 29%) may consolidate. Money could rotate into other cyclicals (financials, industrials) or tech.
+- **Gold weakness** – if the deal is signed, gold could test $3,800/oz (GLD ~$370). However, central bank buying and de‑dollarization provide a floor.
 
-## 3. Cross-Asset Signals – Stagflation Brewing?
-
-- **Dollar (UUP):** Strong, above upper Bollinger. Bullish for USD-denominated safe havens but bearish for commodities.
-- **Gold (GLD):** -9% from 50-day SMA, RSI 24 (oversold). But central banks buying (Georgia added $100M) underpins physical demand. The selloff is technical (dollar, yields), not fundamental.
-- **Bitcoin (IBIT):** RSI 27 – speculative bubbles unwinding. Avoid.
-- **Silver (SLV):** RSI 30 – even weaker than gold. Precious metals are in a correction, not a crash.
-
-**Signal:** No systemic risk yet (credit spreads tight, no financial stress). But the **“risk-off” trade is overcrowded** in gold, so a snap rally is possible. We are in a **“wait and see” phase** for a catalyst (e.g., Hormuz ceasefire or Fed surprise).
-
----
-
-## 4. Sector Rotation Analysis
-
-| Sector | Current Position | Macro Signal | Action |
-|--------|------------------|--------------|--------|
-| **Energy (XLE)** | Neutral RSI, range-bound | Geopolitical bid but profit-taking | Neutral to slight overweight; use pullbacks to accumulate |
-| **Tech (QQQ, XLK)** | Below 20-SMA, RSI 43 | Oversold bounce potential, but trend is bearish | Avoid new longs; consider short-term hedges |
-| **Semis (NVDA, AMD, TSM)** | Mixed: NVDA RSI 41, AMD 50 | AI infrastructure spending confirmed, but rate sensitivity high | Selective on dips; prefer INTC as alternative |
-| **Defensives (XLU, XLP, XLV)** | Above SMA, RSI 55-60 | Recession hedging flows | Overweight as core holding |
-| **Financials (XLF)** | At SMA, RSI 56 | Beneficiary of steepening yield curve but weak loan demand | Modest overweight |
-| **International (VGK, EWA, EWC)** | Below SMA, RSI 42-45 | Dollar headwind, no relative strength | Underweight until USD weakens |
-| **Gold (GLD)** | Deep oversold, RSI 24 | Contrarian buy zone, but no momentum | Start small long position on further weakness |
-
-**Key call:** The rotation **out of Growth and into Defensives/Energy** is in early stages. The “Magnificent 7” lost $2T in June – a signal that leadership is changing.
+**Risk-off scenarios to monitor:**
+- A breakdown in talks (e.g., Iran resumes enrichment) would trigger a sharp reversal into energy, gold, and TLT.
+- China-Taiwan rhetoric remains latent but could flare up during the summer.
 
 ---
 
-## 5. Portfolio Recommendations (from 100% Cash)
+### 2. Fed Policy & Rates: Dovish Hold, But Hike Risk Lingers
 
-Given **$87k cash**, we should deploy **40-50% initially** into a balanced mix of defensive and inflation-hedged assets. Do not go all-in due to unresolved geopolitical risk.
+- **Wednesday’s decision (June 17):** Rates expected to remain flat at 4.75–5.00%. The new chair (Warsh) is perceived as more hawkish, but the macro backdrop (cooling oil, still strong labor) allows a patient stance.
+- **Market pricing:** ~70% probability of a rate *hike* by year‑end (CME FedWatch). The 10-year yield is hovering near 4.6%, compressing equity valuations.
+- **Duration trade:** TLT (20+ year bonds) is near its 20‑day SMA, with a bullish MACD crossover. A flat Fed + lower oil could ignite a short‑covering rally, pushing yields lower. But if the Fed signals a hike, TLT will drop.
 
-### Tactical Allocation (Proposed)
+**Sector implications:**
+- **Hawkish hold** → growth stocks (QQQ, XLK) face headwinds from elevated yields.
+- **Dovish hold** → value/cyclicals outperform; financials (XLF) benefit from steep yield curve.
+- **Cutting cycle (not priced)** → explosive rally in TLT, TMF, and rate‑sensitive growth.
 
-| Asset | Ticker | Allocation | Rationale |
-|-------|--------|------------|-----------|
-| **Defensive Equity** | XLU | 10% | Hedge against recession fears; utilities have steady demand |
-| **Defensive Equity** | XLP | 10% | Consumer staples with pricing power; benefit from inflation |
-| **Energy** | XLE | 10% | Direct oil exposure; add on 3-5% pullback |
-| **Quality Factor** | QUAL | 10% | Outperform during volatility; strong balance sheets |
-| **Gold (Physical)** | GLDM (mini-shares) | 5% | Contrarian oversold bounce; central bank buying supports |
-| **Short-Duration Bonds** | SHV | 5% | Cash alternative; yields ~4% with no duration risk |
-
-**Total deployed: ~50% ($43.5k).** Keep 50% cash as dry powder for further drawdowns or a Hormuz ceasefire catalyst.
-
-### Near-Term Option Ideas (from provided chain)
-
-- **Cash-Secured Put on SPY (Jun 26, $716 strike):** Mid ~3.85, 15 DTE. Collect premium 0.5% on cash. This is a quality entry point below current price. If assigned, you own SPY at a 2.9% discount – good for long-term.
-- **Cash-Secured Put on AAPL ($280, Jun 26):** Potential assignment at 5.3% below spot. AAPL is a core holding; this earns yield while waiting.
-- **Long Put on QQQ (Jul 2, $696, ~$10.5):** As a hedge for remaining cash, but expensive because elevated IV. Better to use SPY puts for cheaper premium.
-
-**Do not** sell puts on energy or gold now – too much volatility.
+Given the data, the most likely scenario is a **dovish hold with a cautious tone**, which favours a modest steepening of the curve (long end yields stay high, short end may drop slightly).
 
 ---
 
-## 6. Risk Management & Triggers
+### 3. Cross-Asset Signals: A Shift from Defensive to Risk-On
 
-- **Stop-loss on XLE if oil below $60 (Brent).**
-- **Rebalance if VIX drops below 18** (signal all-clear for growth).
-- **Add to gold if GLD closes below 360** (extreme oversold).
-- **Monitor Fed meeting (June 17-18):** A hawkish hold = buy defensive; a surprise hike = reduce equity exposure to 30%.
+| Asset | Current | Signal |
+|-------|---------|--------|
+| **Dollar (UUP)** | 27.95, above 20‑day SMA | Still strong, but easing on peace hopes |
+| **Gold (GLD)** | $386, near 6‑month low, RSI 35 | Oversold, but trend is bearish |
+| **Silver (SLV)** | $60.8, RSI 38 | Bearish, tied to industrial demand |
+| **VIX** | 19.4, falling | Fear subsiding, but still above long‑term median |
+| **TLT** | $85.9, RSI 58 | Neutral/bullish if yields decline |
 
-**Final word:** The market is confused – Hormuz, Fed, recession, all at once. We hold cash, take small bites into defensives and energy, and use options to generate yield while waiting for clarity. The “Bull Volatile” regime thrives on tactical patience, not heroics.
+**Key observation:** The dollar’s persistence (above SMA20) is capping commodities and gold, despite geopolitical risk. Once the dollar weakens (possible if Fed stays dovish), gold and commodities could rebound.
+
+**Flight to safety** is unwinding: inflows into TLT have been modest, while equities (SPY, QQQ) are recovering. This is consistent with a **risk-on rotation within a Bull Quiet regime**.
 
 ---
 
-## Model: gemini/gemini-2.5-flash
+### 4. Sector Rotation: Energy Peaking, Tech Turning, Defensives Steady
 
-Error: litellm.ServiceUnavailableError: GeminiException - {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
+- **Energy (XLE):** Overbought (RSI 46 now, but YTD return +29%). Oil price slide suggests profit‑taking. Neutral to underweight near‑term.
+- **Technology (XLK, QQQ):** Recovered after tech selloff. AI infrastructure names (NVDA, AVGO, TSM) are holding support. Semis are bouncing on peace hopes.
+- **Financials (XLF):** Up 1.8% on the day, breaking above 20‑day SMA. Yield curve steepening benefits banks. Overweight.
+- **Utilities (XLU):** Flat, but AI‑driven power demand (CEG, TLN) is thematic. Defensive positioning.
+- **International (EWC, VGK, EWA):** Outperforming US. Canada (energy) may lag, but Europe (VGK) benefits from lower energy costs. Overweight non‑US developed markets.
+- **Healthcare (XLV):** Quiet strength – RSI 63, above all MAs. Defensive with growth (AI in drug discovery). Attractive for slow‑growth portfolios.
+
+**Rotation signals:** Money is moving out of energy and into **tech, financials, and international**. Defensives (staples, utilities) are steady but not leadership.
+
+---
+
+### Strategic Positioning Adjustments
+
+| Theme | Action | Rationale |
+|-------|--------|-----------|
+| **Geopolitical hedge reduction** | Reduce XLE / energy to neutral; take profits on GLD | Peace deal probability > 60%; lower oil safe‑haven demand |
+| **Duration play** | Add TLT long (or TMF) if Fed signals no hike | Lower oil reduces inflation fears; yield curve steepening short‑term, but long bonds cheap relative to history |
+| **Equity rotation** | Increase exposure to tech (QQQ, XLK) and financials (XLF); reduce energy | Risk‑on rotation; financials benefit from steep curve; tech growth still intact |
+| **International diversification** | Add to VGK (Europe) and EWC (Canada) | Lower energy costs boost European margins; Canadian banks are value plays |
+| **Alternative hedge** | Buy VIX call spread* (July expiry) | Tail‑risk hedge against geopolitical rerating; vol is cheap (~19) given headline volatility |
+
+**Recommended portfolio tilt (if starting from cash):**
+- 35% US equities (focus on tech, financials, quality)
+- 20% International (Europe, Canada)
+- 20% Fixed income (TLT, short‑term TIPS)
+- 10% Commodities (gold via GLDM, but light)
+- 10% Cash (optional)
+- 5% Alternative (VIX protection, private assets)
+
+---
+
+### Summary
+
+The macro environment is **transitionary** – geopolitical de‑escalation is bullish for risk assets, but sticky inflation and a potential Fed hike later in the year cap exuberance. The regime remains **Bull Quiet** but with an elevated chance of a rotation into **value/cyclicals** (financials, industrials) and **international** over pure growth or energy. 
+
+**Key risk:** A sudden breakdown in US‑Iran talks would reverse all of today’s moves – we would rotate back into energy (XLE), gold (GLD), and long‑duration Treasuries (TLT) while selling equities. Position sizing should reflect this binary risk.
