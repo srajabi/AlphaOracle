@@ -181,6 +181,7 @@ AlphaOracle/
 │   │   └── layouts/            # Page layouts
 │   └── public/data/            # Static data for frontend
 ├── backtesting/                # Backtesting framework
+├── papers/                     # Research papers library (notes + PDFs + our verdicts)
 ├── spikes/                     # Research & experiments
 ├── tools/                      # Manual/ad-hoc scripts
 ├── .github/workflows/          # GitHub Actions

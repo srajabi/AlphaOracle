@@ -41,6 +41,10 @@ If the terminal session dies or context is lost, the agent can quickly rebuild u
 2. `context.md` - overall project context
 3. `current.md` - current work state
 4. `spikes/` folder - research spikes and design decisions
+5. `papers/` folder - research papers library: per-paper notes (citation,
+   claims, criticisms) plus OUR backtest verdict for each implemented idea.
+   When implementing a strategy from a paper, add/update its note and record
+   the verdict in `papers/README.md`'s index table.
 
 ### 3. Documentation-Driven Development
 Documentation is not an afterthought—it drives the workflow.

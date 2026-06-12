@@ -2,6 +2,12 @@
 
 ## What Changed
 
+### Papers Library (NEW - 2026-06-11, session 4)
+* Created `papers/` - research papers library. One note per paper: citation, links, claims, criticisms, and **our backtest verdict** with pointers to results.
+* Seeded with 8 papers behind the strategy lab: Beyond the Status Quo (Cederburg), Faber QTAA, Time Series Momentum (Moskowitz/Ooi/Pedersen), Volatility-Managed Portfolios (Moreira/Muir), Keller VAA/DAA/BAA, Antonacci Dual Momentum.
+* 4 freely-hosted PDFs in `papers/pdfs/` (SSRN-gated ones are notes+links only).
+* Convention documented in `papers/README.md` + agents.md: when implementing a paper's strategy, update its note with the verdict.
+
 ### Strategy Lab: 27 Strategies Researched + Backtested (NEW - 2026-06-11, session 4)
 * **Goal:** minimize downturns + maximize returns. Full writeup: `spikes/strategy_lab_2026_06.md`; scoreboard: `backtesting/results_lab_final/scoreboard.csv`.
 * Implemented 27 strategies across 4 families (trend/momentum, vol-based, allocation/rotation, hybrids) in `backtesting/portfolio_strategies.py` with new helpers: `_aux_close()` (non-investable signals like ^VIX), `_monthly()` (month-end evaluation, no lookahead), `_mom_13612w()` (Keller momentum).
