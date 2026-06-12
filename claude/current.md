@@ -2,6 +2,11 @@
 
 ## What Changed
 
+### The Strategy Tournament (NEW - 2026-06-12, session 11)
+* User asked: have ALL strategies faced ALL tests? Answer was no (round-5 + single-asset strategies unswept) - fixed with `backtesting/run_tournament.py`: census (65 testable + 6 excluded-with-reasons) -> stage-1 gauntlet gates -> stage-2 deep tests -> champions.
+* **Result: 65 -> 20 -> 13 champions** (canary family x5, dual_channel, gtaa_5, risk_parity, lab_winners_blend, trinity, changepoint momentum, regime bands, spy_gld_switch).
+* Key insight: all 7 stage-2 deaths fell at one gate - the -35% crisis floor - and all were leveraged. findings.md sec. 14.
+
 ### Documentation Completeness Pass (2026-06-12, session 10c - end of chat)
 * findings.md renumbered (System State now last, sections sequential 1-14) and refreshed with attribution/round-5/strategic-doc pointers.
 * agents.md: stale March-era "Current Focus" and "Backtesting Gap" sections replaced with live pointers to claude/ docs.
