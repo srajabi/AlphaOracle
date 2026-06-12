@@ -122,7 +122,10 @@ jobs:
           RISK_MODELS: "deepseek/deepseek-v4-flash"
           TECH_MODELS: "deepseek/deepseek-v4-flash"
           MACRO_MODELS: "deepseek/deepseek-v4-flash"
-          PM_MODEL: "deepseek/deepseek-v4-flash"
+          # Smart chair (Design B, spikes/llm_council_cost_intelligence.md):
+          # PM + Thesis Sentinel get the GDPval-best model; role agents stay
+          # on flash. ~$120/yr total.
+          PM_MODEL: "deepseek/deepseek-v4-pro"
         run: python src/llm_agents.py
 
       - name: Execute Advanced LLM Strategy (Dev Account - 2x Daily)
