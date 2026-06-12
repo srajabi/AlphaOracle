@@ -92,3 +92,24 @@ cross-provider judge-vs-analyst decorrelation for free. The monthly thesis
 review (12 runs/yr, cost rounds to zero) should use the smartest available
 model regardless - frontier intelligence is effectively free at monthly
 cadence. GLM eliminated: Kimi is smarter AND cheaper.
+
+
+## ADDENDUM 2 (2026-06-12): PRIMARY-SOURCE VERIFIED - final numbers
+
+Lesson learned: aggregator pricing was wrong twice. Verified directly from
+provider docs (api-docs.deepseek.com, platform.kimi.ai):
+
+| Model | Fresh in | Cached in | Out | Chair $/yr |
+|---|---|---|---|---|
+| deepseek-v4-pro | $0.435 | $0.003625 | $0.87 | ~$42 |
+| kimi-k2.6 | $0.95 | $0.16 | $4.00 | ~$100 |
+
+- AA's $1.74/$3.48 for V4-Pro: wrong/stale. First user table's $0.60/$2.50
+  "K2.6" was actually K2.5.
+- **FINAL: v4-pro chair dominates** - cheaper than Kimi, GDPval-best,
+  same-provider. Design B as applied stands; Kimi's case is +2 AA index
+  points at 2.4x price.
+- Caching kicker: v4-pro cache-hit input is a 99.2% discount and our 88k
+  context is ~80% static. Reordering build_context (static prefix first)
+  drops the chair to ~$10-15/yr. Flagged as a touch-it-next-time tweak.
+- Process rule going forward: MODEL PRICING ONLY FROM PROVIDER DOCS.
