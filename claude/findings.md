@@ -223,7 +223,20 @@ stated (gold-friendly - standing caveat). Detailed session narrative:
   +2.4%, COVID -6.8%, 2022 -20%, breakeven 252bps.
 - Full table: `backtesting/results_tournament/tournament.{json,md}`.
 
-## 15. System state (operational, 2026-06-12)
+## 15. Market thesis 2026 H2 (written 2026-06-12)
+
+- Full framework: `thesis/market_thesis_2026H2.md` (distilled into
+  `thesis/macro_view.md` -> feeds the daily LLM analysts).
+- Setup researched 2026-06-12: active Iran war + 4.2% CPI + cornered Fed
+  (new Chair) + BoJ carry-risk hike June 15-16 (~$500B exposure) + $75B
+  SpaceX IPO same week + AI capex 2nd derivative already negative.
+- Scenarios: grind-with-violence 50% / slow bear 30% / fast crash 20%.
+  "When does it implode" = unanswerable; the edge is tripwires (VIX term
+  structure, credit rel-mom, canary breadth, trend, USDJPY) all on daily
+  dashboards + champions that react in days.
+- Falsifiable markers dated for 2026-07-12 review.
+
+## 16. System state (operational, 2026-06-12)
 
 - 6 Alpaca paper accounts; forward test UNCHANGED by user instruction.
   Promotion candidates queued: lab_winners_blend, canary_daa_smart_defense,

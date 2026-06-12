@@ -1,24 +1,37 @@
 # Macroeconomic View
 
-**Current Posture:** Cautiously Optimistic, Volatility Aware, Navigating Political & Currency Shifts
+**Posture (updated 2026-06-12):** Defensive-leaning, gap-risk aware.
+Full scenario framework with probabilities and tripwires:
+thesis/market_thesis_2026H2.md. Review monthly.
 
-## 1. The Political Landscape (Trump Impact)
-*   **Thesis:** A Trump administration or heavily influenced policy environment is considered a net negative for the broader economy in our model.
-*   **Validation & Context:** This thesis is grounded in the economic risks of aggressive protectionism (tariffs acting as a regressive tax, sparking retaliatory trade wars that hurt multi-nationals), potential threats to Federal Reserve independence, and deficit-financed tax cuts in a high-interest-rate environment. This typically leads to a steeper yield curve (higher long-term borrowing costs) and sustained inflationary pressures.
-*   **Actionable Strategy:** Underweight consumer discretionary reliant on cheap imports; overweight domestic industrial bases or defense if geopolitical tensions rise.
+## Current Conditions (researched 2026-06-12)
 
-## 2. Currency Dynamics (USD & De-dollarization)
-*   **Thesis:** De-dollarization is a real narrative, but practically, "TINA" (There Is No Alternative) applies to the U.S. Dollar as the global reserve currency.
-*   **Validation & Context:** While BRICS+ nations are attempting bilateral trade in local currencies or accumulating gold to bypass the SWIFT system, no other currency has the liquidity, rule of law, and open capital markets to replace the USD. The Euro is politically fragmented, and the Chinese Yuan has strict capital controls. 
-*   **Actionable Strategy:** Continue to price global assets primarily in USD. Do not panic-sell US assets on "death of the dollar" news. However, maintain a strategic Gold position as a hedge against the *friction* caused by this slow de-dollarization trend, particularly driven by Asian central bank buying.
+- **Active US-Iran war**; Strait of Hormuz contested; oil-led inflation.
+- **CPI 4.2% y/y (May)**, Fed (new Chair Warsh) on hold - policy cornered:
+  cannot cut into 4.2%, cannot hike into a war economy.
+- **BoJ hike to 1.0% June 15-16** (~97% priced); ~$500B yen carry exposure;
+  Aug-2024 precedent: SPX -6% in 3 days on unwind. Watch GUIDANCE not hike.
+- **AI capex cycle**: $754B hyperscaler capex 2026 (+83%); top-10 = 41% of
+  S&P cap; ~21x forward. Danger = capex guidance DECELERATION, not headlines.
+- **SpaceX mega-IPO this week** ($75B raise, biggest ever) - mechanical
+  liquidity drain + classic late-cycle marker.
 
-## Key Metrics to Monitor
-*   **Federal Reserve Funds Rate:** Are we in a hiking, pausing, or cutting cycle?
-*   **CPI & PCE (Inflation):** If inflation re-accelerates, growth stocks (Tech) will likely suffer as bond yields rise.
-*   **10-Year Treasury Yield:** Serves as the "risk-free" hurdle rate. Yields > 4.5% generally pressure equity valuations.
-*   **U.S. Dollar Index (DXY):** A strong dollar hurts multi-national corporate earnings and emerging markets. A weakening dollar is generally bullish for global equities and commodities (like Gold).
+## Scenario weights (12mo, judgments not facts)
 
-## General Guidelines
-*   In periods of rising rates, prefer value and defensive sectors (Healthcare, Staples, Energy).
-*   In periods of falling rates, prefer growth and technology.
-*   Watch international markets for relative strength if U.S. markets are consolidating.
+A. Grind-with-violence 50% (range-bound, repeated 5-10% air pockets)
+B. Slow bear 30% (capex cuts + sticky CPI; 2000-02 shape - our trend
+   strategies' best shape)
+C. Fast crash 20% (BoJ shock x Hormuz closure x IPO failure; 2020 shape -
+   only VIX-term-structure-gated strategies react fast enough)
+
+## Standing tilts for analysis
+
+- Inflation-tolerant administration + negative real-rate drift: favor gold
+  and energy over long-duration bonds; TLT-as-hedge remains suspect (2022
+  lesson) - prefer adaptive defense (GLD/cash).
+- Narrow breadth (top-10 = 41%): equal-weight and non-US diversification
+  underpriced as hedges.
+- Do not directionally trade war headlines; both tails (escalation spike /
+  relief rally) are live.
+- Key tripwires on our dashboards: VIX/VIX3M > 1.0, HYG/LQD 63d < -2%,
+  canary breadth both-negative, SPY monthly close < 200dma, USDJPY < 140.

@@ -2,6 +2,10 @@
 
 ## What Changed
 
+### Market Thesis 2026 H2 (NEW - 2026-06-12, session 12)
+* `thesis/market_thesis_2026H2.md`: researched scenario framework (Iran war, 4.2% CPI, BoJ June 15-16 carry risk, SpaceX mega-IPO, AI capex 2nd derivative) with probabilities (grind 50/slow bear 30/fast crash 20), tripwires mapped to our daily signals, division positioning, falsifiable markers for 2026-07-12 review.
+* `thesis/macro_view.md` replaced with the distilled version - the daily LLM analysts now reason from this thesis.
+
 ### Tournament Divisions (2026-06-12, session 11b)
 * User challenged the universal -35% crisis floor (don't discard profitable high-vol strategies) - implemented DIVISIONS: CORE (holdable mandate, original gates) and AGGRESSIVE (beat SPY on CAGR AND Sharpe, -60% crisis floor, 5y max underwater, looser cost/gap bars).
 * CORE: 13 champions (unchanged). AGGRESSIVE: 15 champions incl. vol_target_qqq_2x, regime_bands_2x/3x, hfea_lite_2x, reddit_200sma_spy. Still rejected even by AGGRESSIVE: hfea_55_45 (-65% worst crisis), reddit_200sma_tqqq (-62%) - compensated vol in, wipeouts out.
