@@ -16,14 +16,21 @@ from backtesting.validation import (
     TRADING_DAYS,
     bootstrap_metrics,
     cagr,
+    calmar_ratio,
+    cvar,
     deflated_sharpe_ratio,
     expected_max_sharpe,
     max_drawdown,
+    max_drawdown_duration,
     permutation_test_timing,
     probabilistic_sharpe_ratio,
     probability_of_backtest_overfitting,
+    risk_report,
     sharpe_ratio,
+    sortino_ratio,
     stationary_bootstrap_indices,
+    tail_ratio,
+    ulcer_index,
 )
 
 
@@ -76,6 +83,66 @@ class TestCoreMetrics:
     def test_max_drawdown_monotonic_up_is_zero(self):
         r = pd.Series([0.01] * 50)
         assert max_drawdown(r) == 0.0
+
+
+class TestRiskMetrics:
+    def test_sortino_ignores_upside_vol(self):
+        # same downside, but B has huge upside spikes: Sortino should not
+        # punish B the way Sharpe does
+        a = pd.Series([0.001, -0.005] * 250)
+        b = pd.Series([0.02, -0.005] * 250)
+        assert sortino_ratio(b) > sortino_ratio(a)
+
+    def test_sortino_no_losses_returns_zero(self):
+        assert sortino_ratio(pd.Series([0.01] * 100)) == 0.0
+
+    def test_calmar_known_value(self):
+        # +10% then -50%: CAGR over 2 days annualizes hugely negative;
+        # just verify sign and the dd denominator
+        r = pd.Series([0.10, -0.50])
+        assert calmar_ratio(r) == pytest.approx(cagr(r) / 0.50)
+
+    def test_cvar_is_tail_mean(self):
+        r = pd.Series([-0.10] * 5 + [0.001] * 95)
+        # worst 5% of 100 days = 5 days, all -10%
+        assert cvar(r, alpha=0.95) == pytest.approx(-0.10)
+
+    def test_cvar_more_negative_than_var_level(self):
+        rng = np.random.default_rng(3)
+        r = pd.Series(rng.normal(0, 0.01, 5000))
+        assert cvar(r, 0.95) < np.percentile(r, 5)
+
+    def test_ulcer_zero_for_monotonic_up(self):
+        assert ulcer_index(pd.Series([0.01] * 100)) == 0.0
+
+    def test_ulcer_increases_with_time_underwater(self):
+        # same maxDD, but B stays underwater longer
+        a = pd.Series([-0.10] + [0.12] + [0.0] * 98)
+        b = pd.Series([-0.10] + [0.0] * 98 + [0.12])
+        assert ulcer_index(b) > ulcer_index(a)
+        assert max_drawdown(a) == pytest.approx(max_drawdown(b))
+
+    def test_dd_duration_simple(self):
+        # drop on day 1, recover on day 4: underwater days 1,2,3 = 3
+        r = pd.Series([-0.10, 0.0, 0.0, 0.20])
+        assert max_drawdown_duration(r) == 3
+
+    def test_dd_duration_zero_when_always_at_high(self):
+        assert max_drawdown_duration(pd.Series([0.01] * 50)) == 0
+
+    def test_tail_ratio_symmetric_near_one(self):
+        rng = np.random.default_rng(4)
+        r = pd.Series(rng.normal(0, 0.01, 20000))
+        assert 0.9 < tail_ratio(r) < 1.1
+
+    def test_risk_report_keys_complete(self):
+        r = pd.Series(np.random.default_rng(5).normal(0.0003, 0.01, 1000))
+        report = risk_report(r)
+        expected = {"sharpe", "sortino", "calmar", "cagr", "max_dd",
+                    "max_dd_duration_days", "ulcer_index", "cvar_95",
+                    "tail_ratio"}
+        assert set(report) == expected
+        assert all(np.isfinite(v) for v in report.values())
 
 
 class TestProbabilisticSharpe:

@@ -53,10 +53,98 @@ def cagr(returns: pd.Series) -> float:
     return terminal ** (TRADING_DAYS / len(r)) - 1.0
 
 
+def _equity_curve(returns) -> np.ndarray:
+    """Equity including the 1.0 starting point, so a first-day loss counts
+    as a drawdown (an investor's actual experience)."""
+    r = np.asarray(returns, dtype=float)
+    return np.concatenate([[1.0], np.cumprod(1.0 + r)])
+
+
 def max_drawdown(returns: pd.Series) -> float:
-    equity = np.cumprod(1.0 + np.asarray(returns, dtype=float))
+    equity = _equity_curve(returns)
     running_max = np.maximum.accumulate(equity)
     return float(np.min(equity / running_max - 1.0))
+
+
+# ---------------------------------------------------------------------------
+# Tail-risk metrics (beyond Sharpe/maxDD)
+# ---------------------------------------------------------------------------
+
+def sortino_ratio(returns: pd.Series) -> float:
+    """Like Sharpe but penalizes only downside deviation (0% MAR)."""
+    r = np.asarray(returns, dtype=float)
+    downside = r[r < 0]
+    if len(r) < 2 or len(downside) == 0:
+        return 0.0
+    downside_dev = math.sqrt(np.mean(downside ** 2))
+    if downside_dev == 0:
+        return 0.0
+    return float(np.mean(r) / downside_dev * math.sqrt(TRADING_DAYS))
+
+
+def calmar_ratio(returns: pd.Series) -> float:
+    """CAGR / |max drawdown| - return earned per unit of worst pain."""
+    dd = max_drawdown(returns)
+    if dd == 0:
+        return 0.0
+    return float(cagr(returns) / abs(dd))
+
+
+def cvar(returns: pd.Series, alpha: float = 0.95) -> float:
+    """Conditional VaR / Expected Shortfall: mean DAILY return of the worst
+    (1-alpha) tail. Rockafellar & Uryasev (2000) - what you lose on a bad
+    day GIVEN it's a bad day (negative number)."""
+    r = np.sort(np.asarray(returns, dtype=float))
+    n_tail = max(1, int(math.floor(len(r) * (1.0 - alpha))))
+    return float(r[:n_tail].mean())
+
+
+def ulcer_index(returns: pd.Series) -> float:
+    """RMS of the drawdown series - measures DEPTH x DURATION of pain,
+    unlike maxDD which only sees the single worst point."""
+    equity = _equity_curve(returns)
+    running_max = np.maximum.accumulate(equity)
+    dd = equity / running_max - 1.0
+    return float(math.sqrt(np.mean(dd ** 2)))
+
+
+def max_drawdown_duration(returns: pd.Series) -> int:
+    """Longest stretch (in trading days) below a prior equity peak -
+    'how long were you underwater', the metric retirees actually feel."""
+    equity = _equity_curve(returns)
+    running_max = np.maximum.accumulate(equity)
+    underwater = equity < running_max
+    longest = current = 0
+    for u in underwater:
+        current = current + 1 if u else 0
+        longest = max(longest, current)
+    return int(longest)
+
+
+def tail_ratio(returns: pd.Series) -> float:
+    """|95th percentile| / |5th percentile| of daily returns. > 1 means the
+    right tail is fatter than the left (you want this above ~0.9)."""
+    r = np.asarray(returns, dtype=float)
+    p5 = np.percentile(r, 5)
+    p95 = np.percentile(r, 95)
+    if p5 == 0:
+        return 0.0
+    return float(abs(p95) / abs(p5))
+
+
+def risk_report(returns: pd.Series) -> dict:
+    """All risk metrics for one return series in a single dict."""
+    return {
+        "sharpe": sharpe_ratio(returns),
+        "sortino": sortino_ratio(returns),
+        "calmar": calmar_ratio(returns),
+        "cagr": cagr(returns),
+        "max_dd": max_drawdown(returns),
+        "max_dd_duration_days": max_drawdown_duration(returns),
+        "ulcer_index": ulcer_index(returns),
+        "cvar_95": cvar(returns, 0.95),
+        "tail_ratio": tail_ratio(returns),
+    }
 
 
 # ---------------------------------------------------------------------------

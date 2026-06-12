@@ -30,7 +30,10 @@ notes-only with links.
 | [lo_quants_august_2007.md](lo_quants_august_2007.md) | Khandani & Lo (2007) | warning label | Factor crowding risk; pairs with deflated Sharpe as the two live-failure modes |
 | [peterson_strategy_development.md](peterson_strategy_development.md) | Peterson (2017) | methodology bible | Exposes our gaps: parameter-stability tests, DSR, cost stress tests. His 60-entry .bib included |
 | [slow_momentum_fast_reversion.md](slow_momentum_fast_reversion.md) | Wood, Roberts & Zohren (2021) | not yet - round-4 candidate | Changepoint gate fixes trend's regime-turn bleed (our COVID failure mode) |
-| [volatility_effect_low_vol.md](volatility_effect_low_vol.md) | Blitz & van Vliet (2007) | partially via risk parity / XLU-XLP | Low-vol anomaly; inverse-vol sector basket flagged as round-4-adjacent |
+| [volatility_effect_low_vol.md](volatility_effect_low_vol.md) | Blitz & van Vliet (2007) | tested - honest negative at sector granularity | Low-vol is a single-stock effect; sectors diversify it away |
+| [day_trading_evidence.md](day_trading_evidence.md) | Barber/Lee/Liu/Odean (2014), Chague et al (2020) | out of scope, by evidence | 97-99% of persistent day traders lose; winners run institutional mechanics |
+| [gao_intraday_momentum.md](gao_intraday_momentum.md) | Gao, Han, Li & Zhou (2018) | blocked on intraday data | First half-hour predicts last; Alpaca bars flagged for future replication |
+| [rockafellar_uryasev_cvar.md](rockafellar_uryasev_cvar.md) | Rockafellar & Uryasev (2000) | adopted - `cvar()` in validation.py | Expected shortfall now on every scoreboard row |
 
 ## Paper sources (recurring hunting grounds)
 

@@ -2,6 +2,12 @@
 
 ## What Changed
 
+### Risk Metrics, Day-Trading Evidence, Data Expansion (NEW - 2026-06-11, session 6)
+* **Risk metrics added to `validation.py`** (+11 tests, all passing): Sortino, Calmar, CVaR-95 (Rockafellar-Uryasev, paper in library), Ulcer Index, max-DD duration, tail ratio. `risk_report()` runs on every scoreboard row. Fixed a semantic bug found by the tests: equity curves now include the 1.0 starting point, so first-day losses count as drawdowns.
+* **Scoreboard v2 re-run with full risk picture.** New insights: dual_channel_cash_overlay has the best Calmar (0.59) + lowest ulcer/CVaR - the defensive crown confirmed across every lens. Sobering: even the best strategies spent **2.2-3.2 YEARS underwater** at their worst (543-806 trading days) - the behavioral metric nobody publishes.
+* **Day trading question answered with evidence** (`papers/day_trading_evidence.md` + Barber/Odean PDF): Taiwan complete-audit data: <1% persistently profitable; Brazil: 97% of 300+-day day traders lose. The winners run institutional mechanics (spread capture, speed, order flow, structural arb) - not chart-reading. Out of scope by evidence. Kept: Gao et al intraday momentum (`papers/gao_intraday_momentum.md`) flagged for future Alpaca-intraday replication.
+* **Data expansion** (`spikes/data_sources_expansion.md` + downloads to historical_long): ^VIX3M/^VIX9D (term-structure regime signal), HYG/LQD (credit stress, the Xiong paper's signal), **^TNX/^IRX (yield curve, 1960s+!)**. FRED timed out from this network - retry with API key later. Round-5 strategy inputs ready: VIX term structure, credit momentum, curve inversion.
+
 ### Validation Framework + Round-4 Paper Strategies (NEW - 2026-06-11, session 5)
 * **`backtesting/validation.py`** - the statistical toolkit our papers prescribe: deflated Sharpe ratio (Bailey/Lopez de Prado), stationary block-bootstrap Monte Carlo (Sharpe/CAGR/maxDD confidence intervals), circular-shift permutation tests (timing skill vs random alignment), PBO via CSCV. `run_validation.py` sweeps every registered strategy on one uniform 21y window.
 * **46 pytest tests** (`tests/` - was gitignored, now tracked) incl. per-strategy no-lookahead causality checks. **The suite immediately caught a real engine bug:** initial position entry cost was never charged (`diff()` row-0 NaN silently summed to 0; fixed with min_count=1).

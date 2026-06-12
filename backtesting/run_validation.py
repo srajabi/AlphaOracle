@@ -39,6 +39,7 @@ from backtesting.validation import (
     max_drawdown,
     permutation_test_timing,
     probability_of_backtest_overfitting,
+    risk_report,
     sharpe_ratio,
     stationary_bootstrap_indices,
 )
@@ -86,12 +87,9 @@ def main():
         boot = bootstrap_metrics(returns, indices=boot_indices)
         perm = permutation_test_timing(asset_returns, weights,
                                        n_perms=args.n_perms, seed=args.seed)
-        rows.append({
+        row = {
             "strategy": name,
             "is_baseline": name in BASELINES,
-            "cagr": cagr(returns),
-            "sharpe": sharpe_ratio(returns),
-            "max_dd": max_drawdown(returns),
             "trades_per_year": float(
                 (weights.diff().abs().sum(axis=1) > 1e-9).sum() / years),
             "sharpe_ci90_low": boot["sharpe"]["p5"],
@@ -99,7 +97,9 @@ def main():
             "max_dd_p5": boot["max_dd"]["p5"],
             "prob_negative_cagr": boot["prob_negative_cagr"],
             "perm_p_value": perm["p_value"],
-        })
+        }
+        row.update(risk_report(returns))
+        rows.append(row)
         print(f"  {name}: sharpe {rows[-1]['sharpe']:.2f} "
               f"[{boot['sharpe']['p5']:.2f}, {boot['sharpe']['p95']:.2f}] "
               f"perm_p={perm['p_value']:.3f} ({time.time()-t0:.1f}s)")
@@ -131,9 +131,10 @@ def main():
 
     print(f"\nPBO across {active.shape[1]} non-baseline strategies: "
           f"{pbo['pbo']:.2f} ({pbo['n_combinations']} combinations)")
-    print(f"\nTop 12 by Sharpe (with validation):")
-    cols = ["strategy", "cagr", "sharpe", "sharpe_ci90_low", "max_dd",
-            "deflated_sharpe_prob", "perm_p_value", "prob_negative_cagr"]
+    print(f"\nTop 12 by Sharpe (with validation + risk metrics):")
+    cols = ["strategy", "cagr", "sharpe", "sortino", "calmar", "max_dd",
+            "max_dd_duration_days", "ulcer_index", "cvar_95",
+            "deflated_sharpe_prob", "perm_p_value"]
     print(scoreboard[cols].head(12).round(3).to_string(index=False))
     print(f"\nSaved to {out_dir}")
 
