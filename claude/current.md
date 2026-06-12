@@ -2,6 +2,11 @@
 
 ## What Changed
 
+### Maturity Roadmap (NEW - 2026-06-12, session 9b)
+* `spikes/maturity_roadmap.md` - strategic assessment: where we stand, what funds do that we don't (ranked by adoptability), the small-player edges, and a 3-tier roadmap.
+* **The open loop identified as the #1 maturity gap:** we validate strategies but never reconcile live Alpaca account behavior against backtest expectations. Attribution monitor (live curves vs bootstrap percentile bands) is the top Tier-1 item, followed by a portfolio-level risk governor and monthly decay-alarm re-validation.
+* **Small-player thesis written down:** we can hold what institutions can't (multi-year underwater periods), wait what they can't wait, compound tax-free (TFSA/RRSP) where they can't, with zero market impact - and our lab already selects for exactly those profiles.
+
 ### Metrics Expansion + Options/VRP Research (NEW - 2026-06-12, session 9)
 * **8 new metrics in validation.py** (+18 tests): Omega, Martin (CAGR/Ulcer), gain-to-pain (Schwager), K-ratio (equity-curve straightness), rolling-1y-Sharpe consistency, up/down capture, downside correlation, skew/kurtosis reporting. risk_report() takes an optional benchmark (SPY in the sweep).
 * **Scoreboard v4 insights:** convexity now printed directly - every winner captures more up than down (canary_daa_2x 0.57/0.45); canary family downside-corr to SPY just 0.20-0.28 (diversifies when it matters); winners' rolling 1y Sharpe positive 83-92% of windows.
