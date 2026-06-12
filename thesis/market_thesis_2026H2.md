@@ -116,5 +116,10 @@ the thesis doc's job is to make sure we UNDERSTAND why and don't override.
 2. May-July CPI prints: two consecutive < 3.5% -> cut B to 20%, A to 60%.
 3. SpaceX IPO first-month performance: breaks issue price -> late-cycle
    liquidity confirmation, raise B.
+   DATUM 2026-06-12: priced $135, day-1 close $160.95 (+19%), >$2T -
+   on a Q1 net LOSS of $4.3B. Largest-ever raise absorbed + pop during a
+   war/BoJ week = risk appetite measurably abundant (supports A) AND
+   textbook euphoria marker (supports B). Watch the $135 line through
+   mid-July; day-1 pops confirm nothing (Lyft/Uber 2019 pattern).
 4. Q2 earnings hyperscaler capex guidance: any cut -> raise B materially.
 5. Hormuz: full closure week+ -> C mechanics regardless of anything else.
