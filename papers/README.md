@@ -35,6 +35,18 @@ notes-only with links.
 | [gao_intraday_momentum.md](gao_intraday_momentum.md) | Gao, Han, Li & Zhou (2018) | blocked on intraday data | First half-hour predicts last; Alpaca bars flagged for future replication |
 | [rockafellar_uryasev_cvar.md](rockafellar_uryasev_cvar.md) | Rockafellar & Uryasev (2000) | adopted - `cvar()` in validation.py | Expected shortfall now on every scoreboard row |
 
+## Books (`books/`)
+
+| File | What it is | Status |
+|---|---|---|
+| `kakushadze_151_trading_strategies_es.pdf` | Kakushadze & Serur, *151 Trading Strategies* - 150+ strategies with 550+ formulas across all asset classes. The arXiv-hosted edition ([1912.04492](https://arxiv.org/abs/1912.04492)) is the Spanish translation - formulas are language-independent; English edition is Springer/SSRN-gated | strategy idea catalog for future rounds |
+| `rao_jelvis_rl_finance.pdf` | Rao & Jelvis, *Foundations of RL with Applications in Finance* - free final draft from [Stanford](https://stanford.edu/~ashlearn/RLForFinanceBook/book.pdf), 500+ pages | reference for any future ML/RL work; out of current scope |
+
+Also book-class but linked-only: Lopez de Prado's AFML seminar slides
+([quantresearch.org](https://www.quantresearch.org/Lectures.htm)), the
+Quantopian lecture series ([GitHub](https://github.com/quantopian/research_public)),
+QuantEcon ([quantecon.org](https://quantecon.org)).
+
 ## Paper sources (recurring hunting grounds)
 
 - **vince.quant** ([Instagram](https://www.instagram.com/vince.quant/)) - daily

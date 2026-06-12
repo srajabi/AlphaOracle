@@ -303,6 +303,43 @@ Read in order:
 - Compare to known baseline (buy-and-hold SPY)
 - Review strategy logic for bugs
 
+## The Research Loop (proven over sessions 1-6, 2026-06)
+
+Run research iterations in this order. Never skip the verdict step.
+**source -> note -> hypothesis -> implementation -> tests -> backtest ->
+validation -> verdict -> ship**
+
+1. **Source papers** - hunting grounds in `papers/README.md` (arXiv q-fin.PM,
+   QuantLinkADay, Robeco/AQR, Quantpedia, Peterson's .bib, vince.quant).
+   Blocked sites: official APIs (HN Algolia, StackExchange) or paste into
+   chat. Legal sources only. PDFs -> `papers/pdfs/`, books -> `papers/books/`.
+2. **Write the paper note BEFORE implementing** (Citation/Links/Claims/
+   Criticisms/Verdict + README index row). The hypothesis is fixed by the
+   published paper - that's the multiple-testing defense.
+3. **Implement** in `backtesting/portfolio_strategies.py`: docstring links
+   the note, signals from history only, `_monthly()` for month-end rules,
+   `_aux_close()` for non-investable inputs, register in PORTFOLIO_STRATEGIES.
+4. **Tests are non-negotiable**: `python -m pytest tests/ -q` - contract
+   tests auto-cover new strategies including the no-lookahead causality
+   check. Fails causality = no backtest until fixed.
+5. **Backtest with always-on baselines** (`run_backtests.py`, zero bps,
+   full + crisis regimes gfc_bear/covid_crash/inflation_bear_2022).
+6. **Validation gauntlet** (`run_validation.py`): deflated Sharpe, bootstrap
+   CIs, permutation timing test, PBO, risk report (Sortino/Calmar/CVaR/
+   Ulcer/DD-duration). "Validated" = DSR prob > 0.95 AND bootstrap p5
+   Sharpe > 0 AND permutation p < 0.05 (unless the edge is allocation,
+   not timing).
+7. **Record the verdict, especially failures** - numbers not adjectives, and
+   WHY it failed (proxy quality, granularity, crowding, regime). Update the
+   paper note, current.md, scoreboard.
+8. **Ship** - conventional commits, push. NEVER touch the live forward test
+   (config/accounts.json, workflow execution steps) without an explicit ask.
+
+Standing caveats for any summary: zero-cost backtests; the 2004+ multi-asset
+window is gold-friendly; published strategies carry crowding risk; monthly
+signals miss gap crashes; quote the PBO/DSR numbers - they're the honesty
+layer.
+
 ## Current Focus
 
 As of the latest session, we are focusing on:
