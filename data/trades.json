@@ -1,12 +1,42 @@
 [
     {
-        "ticker": "TLT",
+        "ticker": "VOO",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 35000
     },
     {
-        "ticker": "XLP",
+        "ticker": "QQQ",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 17500
+    },
+    {
+        "ticker": "XLV",
+        "action": "buy",
+        "notional_value": 8700
+    },
+    {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 4400
+    },
+    {
+        "ticker": "NFLX",
+        "action": "buy",
+        "notional_value": 4400
+    },
+    {
+        "ticker": "META",
+        "action": "buy",
+        "notional_value": 4400
+    },
+    {
+        "ticker": "AMZN",
+        "action": "buy",
+        "notional_value": 4400
+    },
+    {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 4400
     }
 ]

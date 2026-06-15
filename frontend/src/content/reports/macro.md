@@ -1,99 +1,73 @@
 ---
 title: Macro Strategist Report
-date: "2026-06-12"
+date: "2026-06-15"
 ---
 
 ## Model: deepseek/deepseek-v4-flash
 
-## Macro Analysis — June 12, 2026
+## Macro Strategy Analysis – 2026-06-15
 
-### 1. Geopolitical Events: Strait of Hormuz & US-Iran
+### Headline Event: US–Iran Peace Deal (Strait of Hormuz Reopening)
 
-**Status:** War active but peace deal hopes surged today (Trump claims close to US-Iran deal). Oil prices **plummeted below $90** on that headline, after days of escalation (Iran shooting down US Apache, Trump calling off strikes).  
-**Key nuance:** The oil supply disruption actually appears *smaller than feared* (Gulf exports lost far smaller than thought). The market is pricing a resolution, but the relief is fragile — both tails remain live.
+The weekend agreement to end the war and secure the Strait of Hormuz is the dominant macro driver today. It resolves the largest geopolitical supply shock of 2026 (oil-led inflation, CPI at 4.2%) and triggers an immediate risk-on rotation: equities surge, oil crashes below $80, VIX declines, gold falls, and the dollar holds strong.
 
-| Second-order effect | Assessment |
-|---|---|
-| **Energy (XLE)** | Down today on peace hopes, but YTD +29%. Our thesis flags energy as persistent inflation hedge; this is a tactical pullback, not regime change. |
-| **Gold (GLD/IAU)** | Hit hard by peace hopes + strong dollar ($27.95, 5th straight up week). Gold now below its 200dma for first time in months. Technical damage, but the structural case (negative real rates, sticky inflation) remains. |
-| **Defensives (XLU, XLP)** | XLU slightly down; peace rally lifted cyclical sectors. Not a rotation out of defensives yet. |
-| **Airlines, transports** | Oil drop is tailwind, but not in our mandate direct exposures. |
+### 1. Geopolitical Map & Sector Effects
 
-**Systematic signal:** Canary still risk-on (both EWA and TLT positive momentum). Fast channel clear (term structure not backwardated) — no crash panic.  
+| Event | Immediate Impact | Second-Order Effects |
+|-------|------------------|-----------------------|
+| **Hormuz reopening** | Oil prices → sharp drop (<$80 WTI) | XLE underperforms; airlines (JETS), consumer discretionary (XLY) outperform. Lower input costs for industrials (XLI), materials (XLB). |
+| **Iran deal → lower inflation** | TLT rallies as rate-hike bets fade; GLD falls (~$386, -5% from 20d SMA) | Duration play improves but dollar strength caps bond upside. Inflation-sensitive sectors (consumer staples, REITs) lose tailwind. |
+| **Risk-on broad rally** | SPY +1.3% pre-market; tech (XLK) + memory/storage (MU, WDC, STX) lead | AI trade recovers after pullback – AMD hits record, NVDA +4%. Boeing, travel stocks gain. Momentum returns to Mag-7. |
+| **Strong dollar persists** | UUP in strong uptrend (momentum >1%) | Headwind for commodities (GLD, SLV), international equities (VGK, EWA). EM currencies under pressure. |
+| **China–Taiwan tensions** | No new headlines today; existing chip export curbs linger | Geopolitical risk still elevated for TSM, NVDA supply chain, but Iran deal shifts focus. |
 
-**Takeaway:** Do not trade war headlines directionally. Our slow_channel risk_on + canary risk_on means we stay invested with defensive tilt (GLD/cash adaptive defense, not TLT). The peace-triggered oil drop may create an XLE entry if Hormuz reopens fully, but we await confirmation.
-
----
+**Key second-order chain:** Hormuz open → oil down → inflation down → Fed stays on hold → lower real rates → equity multiples expand → risk-on trade → momentum re-accelerates in tech. But the dollar strength from risk-off unwinding (safe-haven liquidation) acts as a brake on commodity and international rallies.
 
 ### 2. Fed Policy & Rates
 
-**Current:** Fed on hold (new Chair Warsh). CPI at 4.2% y/y (energy-led). Markets expect flat rates Wednesday.  
-**Divergence:** Bond market expects eventual hikes (70% chance Dec hike priced). The Fed is cornered: can't cut into 4.2%, can't hike into war economy.  
-**TLT behavior:** Up ~1.8% this week (rates declining per our indicator). But long-term case remains suspect (2022 lesson, sticky inflation).  
+- **Fed Chair Warsh** holds rates steady this week. Markets had been pricing a possible hike after CPI 4.2%; today’s deal reduces that probability.
+- **Traders reduce bets on a 2026 rate rise** (WSJ). TLT +0.6%, 10yr yield ~4.47%.
+- **However**, core inflation remains at 2.9% (May). The Fed is still cornered: cannot cut into 4.2% headline, cannot hike into a war-weakened economy. The path of least resistance → **rates on hold through Q3**.
+- **Duration trade**: TLT uptrend intact (momentum +1.4%), but near 200d SMA. The disinflationary impulse from lower oil gives bulls room, but dollar strength and sticky services CPI limit upside. TLT as a hedge is still suspect (2022 lesson); prefer short-dated or inflation-linked defense.
 
-| Signal | Our reading |
-|---|---|
-| Real rates (TLT momentum) | Rates declining — mildly equity supportive. |
-| Dollar (UUP) | Strong uptrend — headwind for commodities/international. |
-| Gold | Downtrending — contradicts our structural gold view short-term. |
+### 3. Cross-Asset Signals
 
-**Takeaway:** The equity rally today (SPY +0.8%) is driven by peace hopes, not dovish Fed. The Fed meeting Wednesday is noise unless they surprise. We maintain our tilt: **gold over long duration bonds** as hedge, but note near-term gold weakness is real.
+| Signal | Value | Interpretation |
+|--------|-------|----------------|
+| Dollar (UUP) | Strong uptrend >20/50/200 SMAs | Headwind for commodities and EMs; partial offset for US equities. |
+| Gold (GLD) | Downtrend, -9.5% momentum | Safe-haven unwind + strong dollar. GLD breached 200d SMA? (GLD 386.5 vs SMA200 ~406.6). Gold is deeply oversold – potential mean-reversion if dollar stalls. |
+| Commodities broad | Weak (XLE neutral, SLV -18.8% mom) | Disinflationary impulse from lower oil reinforces deflation trade. |
+| Credit (HYG/LQD) | HYG 63d rel-mom +0.5% – clear | Spreads tightening; risk-on appetite confirmed. No stress. |
+| VIX/VIX3M | VIX ~17.68, term structure in contango (VIX3M ~20.51) | No panic; fast channel signal clear. Volatility elevated but normalising. |
 
----
-
-### 3. Cross-Asset Signals & Regime
-
-**Intermarket composite:** **Transitional regime** with low confidence. Components:  
-- Risk sentiment: cautious (VIX 19.4, rising)  
-- Dollar: strong (bullish UUP)  
-- Rates: declining (bullish TLT)  
-- Commodities: weak (bearish GLD, SLV, XLE)
-
-This is a **contradictory setup**: equities grinding up (SPY above 200dma, slow_channel risk_on) while gold crashes, dollar rallies, and volatility is elevated. Typical of a late-cycle "grind with violence" scenario (scenario A at 50%).
-
-**Credit signals:** HYG/LQD relative momentum slightly positive (+0.6%) — no credit stress yet.  
-**Canary (breadth):** both EWA and TLT positive — still risk-on.
-
-**Key tripwire to watch:** VIX/VIX3M ratio. Current median = 0.932 (near 1.0 threshold). If it crosses above 1.0 (backwardation), that triggers fast crash scenario response. Today's peace rally may keep it below.
-
-**Takeaway:** The regime is fragile but not yet broken. Our systematic signals are still risk-on. We respect the cautious intermarket read and stay defensive-leaning (gold/cash adaptive defense, not full risk-off).
-
----
+**Regime conclusion**: Transitional with a **risk-on tilt** today, but the underlying macro (inflation, Fed cornered, late cycle) remains fragile. This is a tactical rotation, not a regime change.
 
 ### 4. Sector Rotation & Leadership
 
-| Sector | Today | Week | YTD | Signal |
-|---|---|---|---|---|
-| **Energy (XLE)** | -1.5% (peace) | -3% | +29% | Tactical weakness, secular strength |
-| **Tech (XLK)** | +1.2% (peace) | -2% | +9% | Mixed; AI capex concerns linger |
-| **Financials (XLF)** | +1.3% | +1% | +15% | Benefiting from strong dollar, steepening talk |
-| **Healthcare (XLV)** | flat | +1% | +4% | Defensive bid steady |
-| **Industrials (XLI)** | +0.8% | flat | +8% | Infrastructure/AI story intact |
+- **Leadership**: Technology (XLK), semiconductors (AMD, MU, NVDA), memory (STX, WDC), AI infrastructure (NBIS). Momentum re-accelerating.
+- **Laggards**: Energy (XLE) – oil drop directly hits earnings; utilities (XLU) – rate-cut expectations fade.
+- **Watching**: Financials (XLF) – yield curve steepening (2s10s?) could benefit; materials (XLB) – lower energy costs may help margins.
+- **Defensives under pressure**: XLP, XLV, XLU likely rotate as risk-on dominates. But long-term secular growth in healthcare and staples remains.
 
-**Key rotation today:** Peace hopes drove a **risk-on rotation** into cyclicals (XLF, XLI, XLK) and out of gold, energy, and defensive utilities/staples. This is a tactical reversal of earlier war-driven flows.
+### 5. Positioning Adjustments
 
-**Structural concern:** AI capex cycle top-10 = 41% of S&P. Today's broad rally is not AI-led (NVDA flat, MSFT down -2% on Xbox spin-off rumors). Breadth is improving but still narrow.
+**Near-term (1–2 weeks):**
+- **Align with risk-on**: Favor tech (XLK, QQQ), selective semis (AMD, MU), and AI infrastructure (NBIS, TLN) for momentum.
+- **Reduce energy exposure** (XLE, O&G stocks) into oil weakness. Consider short-dated puts on XLE or covered calls.
+- **Cash-secured puts** on beaten-down quality names (AAPL, AMZN, AVGO) at -5-6% strikes – attractive entry if pullback occurs.
+- **Protective puts** on broad market (SPY 734 put expiring Jul 2) as low-cost tail hedge – scenario C (fast crash) still 20% probability.
 
-**Taiwan/China risk:** TSM, NVDA, AMD all slightly up on peace hopes, but Taiwan chip curbs to China remain a long-term headwind (TSM risk → INTC opportunity). Our semiconductor positions (KLAC +72 RSI, MU stretched) are extended.
+**Tactical hedge overlay:**
+- **VIX term structure** – still in contango; watch for backwardation (VIX/VIX3M >1.0) as a tripwire for crash scenario.
+- **Gold** – deep oversold; if dollar peaks, GLD could rebound. Add small long on a break above 20d SMA (~406) or via cash-secured put at $370.
+- **TLT** – hold existing position as deflation hedge; do not add. The 5% yield on 30yr is attractive for income, but rate-cut timeline is uncertain.
 
-**Takeaway:** Today's rotation is headline-driven, not fundamental. Maintain energy position as strategic hedge. Semiconductor longs are at risk of mean reversion; tighten stops.
+**Regime call**: This is a **sector rotation** (Energy → Tech) and a **positioning adjustment** (risk-on for next 2-4 weeks), NOT a full regime change. The transitional regime remains intact with low confidence. The Iranian deal removes one tail risk but leaves the BoJ (June 16), AI capex deceleration, and IPO liquidity drain unresolved.
 
----
+**Key monitoring tripwires**:
+- VIX/VIX3M breaching 1.0 → fast hedge activation.
+- HYG/LQD 63d rel-mom falling below -2% → credit stress.
+- SPY monthly close below 200d SMA → trend break.
+- BoJ guidance – if hawkish, USDJPY below 140 triggers carry unwind (scenario C raise to 30%).
 
-### 5. Second-Order Effects & Positioning Adjustments
-
-| First-order event | Second-order impact | Our positioning |
-|---|---|---|
-| Peace deal hopes → oil drop | Airlines, cruise lines up; energy down | Hold XLE (structural), don't chase oil below $90 |
-| Strong dollar | Gold/silver weakness, international equities underperform | GLD position showing pain; canary long GLD may stop out soon |
-| Fed on hold but hawkish bias | TLT has rallied (rates declining), but long-duration risk remains | TLT hedge suboptimal; prefer gold/cash adaptive (smart_defense) |
-| SpaceX IPO ($75B raise) | Mechanical liquidity drain + late-cycle marker | Our portfolio is cash-light ($87k cash, mostly invested); monitor IPO absorption |
-| BoJ hike June 15-16 | Yen carry unwind risk → tech/risk assets vulnerable | VIX/VIX3M near 0.93; if >1.0, fast channel will fire; we stay invested but gap-risk aware |
-
-**Immediate adjustments for today:**
-- **No change to core mandates** — systematic signals are risk-on.  
-- **Aggressive sleeve:** reduce 3x exposure into BoJ week (TQQQ, UPRO) unless vol-gated strategies are used.  
-- **Gold shorts:** Our GLD long via canary is underwater; if canary flips negative (EWA or TLT momentum goes negative), we will exit.  
-- **Monitor VIX term structure daily** — the single most important tripwire for crash scenario.
-
-**Summary:** The market is priced for the A scenario (50%) — grind with violence. The peace rally is a relief pulse, not a regime shift. Stay invested but defensive-leaning; respect the intermarket caution. The biggest near-term risk is next week's BoJ (June 15-16) — do not lever into it.
+**Summary**: Enjoy the risk-on relief rally, but respect the late-cycle fragility. Do not chase energy; overweight tech infrastructure and quality. Maintain tail hedges via VIX-aware strategies and cash-secured puts on core holdings. The macro thesis document flags a 50% probability of a material drawdown within 12 months – today’s deal does not change that base rate.

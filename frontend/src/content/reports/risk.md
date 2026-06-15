@@ -1,129 +1,71 @@
 ---
 title: Risk Manager Report
-date: "2026-06-12"
+date: "2026-06-15"
 ---
 
 ## Model: deepseek/deepseek-v4-flash
 
-# Risk Manager Assessment: Downside Protection & Geopolitical Risk
+# Risk Manager Assessment – 2026-06-15
 
-## Assessment Date: 2026-06-12
+## Situational Summary
 
-## Executive Summary
+The market has just been hit by a **massive positive catalyst** – the US-Iran interim peace deal over the weekend – triggering a broad risk‑on rally: oil craters (XLE –2.1%), equities soar (AMD +8% to new ATH, QQQ +1.6%), VIX dips below 18. The macro news flow is overwhelmingly bullish on the headline, but beneath the surface several material threats remain:
 
-**Regime:** Transitional (low confidence)  
-**VIX:** 19.44 (elevated, rising)  
-**VIX/VIX3M:** 0.93 (clear – not yet backwardated)  
-**Market Posture:** Defensive-leaning, gap-risk aware
+| Catalyst | Severity (1‑10) | Status |
+|----------|----------------|--------|
+| **BoJ decision (June 15‑16)** | 8 | **LIVE – today/tomorrow.** Hike to 1.0% priced, but guidance could trigger yen carry unwind. |
+| **Hormuz reopening timeline** | 5 | Peace deal signed, but experts say months to restore flows. Risk of re‑escalation. |
+| **Fed policy corner** | 7 | Warsh’s first meeting – holding into 4.2% CPI. Both tails live. |
+| **AI capex deceleration risk** | 6 | Q2 earnings guide (July) could be the catalyst for a slow‑bear onset. |
+| **SpaceX IPO liquidity drain** | 4 | $75B raised, now the second‑largest public company – mechanical buying power drain. |
 
-The portfolio is **100% cash ($87,185)**. This is appropriate given the confluence of uncorrelated tail risks this week. **Stay in cash** pending resolution of the BoJ meeting (June 15–16) and the Fed decision (June 17). The environment does not reward aggressive entry; it rewards patience and precise hedges against two distinct left-tail scenarios.
-
----
-
-## 1. Geopolitical Catalysts: Severity & Exposure
-
-### 1.1 Strait of Hormuz / US-Iran Conflict
-| Attribute | Detail |
-|-----------|--------|
-| **Severity** | 7/10 (active hostilities, but de-escalation talks ongoing) |
-| **What happened** | Oil slides below $90 as traders reassess Hormuz risk; Trump claims near US-Iran deal; lost Gulf exports < feared. |
-| **Directional risk** | **Bullish:** XLE, oil producers, defense (LMT), energy infrastructure (MTZ?)  
-**Bearish:** Consumer discretionary (XLY), airlines, SPY on escalation/spike |
-| **Time horizon** | Days to weeks. Immediate binary event – deal or escalation. |
-
-**Hedge recommendation:**  
-- No directional bet on the headline. Instead, **long VIX calls** as cheap insurance (VIX ~19). Best: QQQ 700 put (Jun 30) – tight strike support with 18 DTE.
-- If you must hold equities, overweight XLE (energy); it has weathered the oil slide and remains +29% YTD.
-
-### 1.2 BoJ Rate Hike (June 15–16)
-| Attribute | Detail |
-|-----------|--------|
-| **Severity** | 8/10 for volatility. The hike is priced; hawkish guidance is not. |
-| **Cross-asset risk** | Yen carry unwind → forced selling of most-owned longs: mega-cap tech (NVDA, MSFT, AMZN, META), crypto (IBIT), beta. |
-| **Precedent** | Aug 2024: SPX -6% in 3 days, VIX intraday spike to 65. |
-| **Time horizon** | Monday–Wednesday next week. |
-
-**Hedge recommendation:**  
-- **Short-dated QQQ put** (Jun 26 700P) – high open interest (6,311), tight spread (4.9%), delta ~0.25. Cost ~$694 per 1 contract.  
-- *Alternative:* VIX call spread to finance (e.g., Jun 26 22.5/27.5 call vertical).  
-- **Avoid:** TQQQ, leveraged ETFs until BoJ outcome is clear.
-
-### 1.3 Fed Decision (June 17 – Wednesday)
-| Attribute | Detail |
-|-----------|--------|
-| **Headline** | Flat rates expected; new Chair Warsh’s first meeting. |
-| **Key risk** | Committee may signal a hike is on the table given CPI 4.2%. Hawkish surprise → rates up, equities down. |
-| **Exposed** | TLT (long bond) would suffer, SPY/QQQ drop, financials (XLF) may benefit from higher rates. |
-
-**Hedge recommendation:**  
-- **Protective put on SPY** (Jun 30 719P) – cheap at ~$330/contract, 3.1% OTM.  
-- **Avoid:** TLT longs until after the meeting; rates are arguably at an inflection point.
+The rule‑based signals are *not yet defensive* (slow channel risk‑on, fast channel clear, credit clear, canary risk‑on). But the intermarket regime is **Transitional (low confidence)**, and the scenario thesis assigns a **50% combined probability** to bearish outcomes (Slow Bear + Fast Crash) within 12 months.
 
 ---
 
-## 2. Ticker-Level Weakness (Technical + Fundamental)
+## Portfolio Exposure Risk
 
-| Ticker | Issue | Risk Level |
-|--------|-------|------------|
-| **META** | RSI 35, MACD bearish, price below 20/50/200 SMA. Social media ad revenue under pressure from Iran war uncertainty. | **HIGH: Avoid / Short below $560** |
-| **NFLX** | RSI 31. Price at 52-week lows? Actually near $81 – down significantly from $100+. Weakness on AI displacing traditional streaming? | **HIGH: Do not buy the dip. Avoid.** |
-| **MSFT** | RSI 37, price below 20/50 SMA, MACD negative. Xbox spin-off rumor adds uncertainty. | **CAUTION: Trim any long if held.** |
-| **AMZN** | RSI 37, below 20 SMA. Consumption elasticity risk from inflation. | **CAUTION: Avoid until Fed/BoJ pass.** |
-| **CEG** | RSI 35, down 14% post-earnings. Nuclear power AI hype fading; bond yields high weigh on high-duration equities. | **AVOID: Wait for stabilization.** |
-| **IBIT** | RSI 33, Bitcoin in bear market (-29% YTD). Carry unwind directly hits crypto. | **AVOID: Cash is better.** |
-| **KLAC** | RSI 72, price above BB upper band. Extended even on a good day. | **CAUTION: Do not chase.** |
+**Current state: 100% cash ($87k).** This is the safest starting point. The risk is _not_ a loss from existing holdings, but **opportunity cost** if the rally continues – and more importantly, the risk of **deploying cash into a near‑term setup where three tail risks (BoJ, Hormuz re‑escalation, IPO hangover) are all live within the next 72 hours.**
 
-**Safe havens currently:**  
-- **TLT** – uptrend, RSI 58, rates declining. Positive momentum. Best risk-off vehicle.  
-- **XLU** (Utilities) – neutral, low vol, but not in strong uptrend.  
-- **XLP** (Consumer staples) – uptrend, RSI 58. Staples as shelter.  
-- **Gold (GLD)** – technically weak (downtrend, RSI 35). **Not a buy** until momentum reverses. A peace deal could drive gold lower; an escalation could spike it – unreliable hedge for now.
+The options ideas in the system all assume a bullish/neutral intent (cash‑secured puts on AAPL, AMD, AMZN; long calls on QQQ, SPY, GLD). **I advise against executing any of these trades now.** They are either too early (BoJ risk) or too aggressive (chasing a headline‑driven gap).
 
 ---
 
-## 3. Recommended Hedges & Defensive Actions
+## Recommendation: Defensive Layer, Then Tactical Deployment
 
-### Immediate (next 2 days)
-| Action | Instrument | Rationale |
-|--------|------------|-----------|
-| **Buy protective put** | SPY Jun 30 719P ~$3.30 | Covers Fed and BoJ outcome. Cost < 0.5% of cash. |
-| **Buy QQQ put** | QQQ Jun 26 700P ~$6.94 | Highest convexity to tech-driven carry unwind. |
-| **Stay cash** | $87,185 untouched | Do not deploy until after June 17. |
+### 1. Immediate (next 24‑48 hours)
 
-### If forced to deploy defensively (low risk, income)
-- **Cash-secured put on AAPL** (275 strike, Jun 26) – yields ~0.35% in 14 days. Apple is stable (RSI 48, price near 200 SMA).  
-- **Cash-secured put on XLP** (84 strike) – defensive sector, low volatility.
+- **Stay in cash.** Do not initiate any long equity or short premium positions until the BoJ meeting concludes tomorrow and the initial Hormuz relief fades.
+- **Buy a small, cheap tail‑hedge** using **QQQ 2026-07-02 $722 Put** (mid $7.41, $0 cost to put on? Actually $741 per contract). This protects against a sharp 3%+ drawdown from current levels. At 17 DTE, it is a time‑decay burner – but the risk of a BoJ‑led selloff is high enough to justify the premium for one contract (~$740). Alternatively, the **SPY 2026-06-30 $734 Put** ($2.37 mid, $237 per contract) offers a slightly cheaper hedge with 15 DTE.
+- **Monitor USDJPY.** If it breaks below 140 rapidly, that is the forced‑deleveraging tripwire. At that point, a second layer of VIX calls or deeper OTM puts would be warranted.
 
-### Avoid completely this week
-- **TQQQ, UPRO, SSO** – any leveraged long.  
-- **IBIT, crypto plays**.  
-- **NFLX, META** – clear technical breakdowns.  
-- **ORCL** – post-earnings drift still unresolved; price below 20/50 SMA.
+### 2. Next Week (June 16‑19)
 
----
+- **If BoJ guidance is hawkish** and USDJPY drops, **stay defensive** – the VIX term structure will invert, and the dual‑channel fast brake may trigger automatically. Do not fight the signal.
+- **If BoJ is benign** and peace deal holds, the market may grind higher. In that case, **begin deploying a portion of cash** (e.g., 25‑33%) into:
+  - **Defensive sectors** that lagged the rally: XLV (Healthcare, –1% YTD, RSI 62), XLU (Utilities, flat), XLP (Consumer Staples, +2% YTD). These offer better risk/reward than chasing AI.
+  - **A core ETF** like VOO or SPY (S&P 500) using a **DCA‑over‑weeks** approach rather than lump sum.
+- **Avoid energy (XLE)** until the Strait of Hormuz timeline is clear – oil inventories will likely build as flows normalise, pressuring prices further.
+- **Avoid chasing semiconductor momentum** (AMD, MU, NVDA) near their highs. The AI capex deceleration risk is real and could trigger a sharp reversal.
 
-## 4. Scenario-Based Action Plan
+### 3. Medium‑Term (Weeks to Months)
 
-| Scenario | Threshold | Action |
-|----------|-----------|--------|
-| **BoJ hawkish guidance** (USDJPY < 145) | Monday | Buy VIX calls (Jun 26 27.5C), add QQQ downside. |
-| **Iran deal confirmed** (oil -10%) | Any day | Sell energy (XLE) outright; buy SPY calls (Jun 30 760C) for relief rally. |
-| **Fed surprises hawkish** (dot plot up, rates hiked) | Wednesday | Sell TLT, buy XLF. Maintain puts. |
-| **Escalation: Hormuz closure** | Any day | Buy GLD calls (Jun 30 390C), add XLE. |
+- **The 50% bearish scenario weight** calls for maintaining a **25‑35% cash reserve** at all times. Deploy the rest gradually only when technical signals (SPY above 200‑dma, VIX/VIX3M < 1, canary breadth positive) align.
+- **Consider a small tactical gold allocation** (GLD) if the dollar weakens or real rates fall further – the thesis notes negative real‑rate drift supports gold, and the peace deal removes some safe‑haven demand but does not eliminate inflationary tailwinds. A 5‑10% GLD position could be initiated on dips below $385 (near the 200‑day SMA).
 
 ---
 
-## 5. Conclusion
+## Exposures to Avoid / Trim
 
-**The single best action today is to do nothing with the cash until BoJ and Fed pass.** The risk-reward is asymmetric to the downside. Use the option chain to buy cheap, defined-risk hedges against the most dangerous scenarios.
+| Ticker | Reason | Action |
+|--------|--------|--------|
+| **XLE** | Oil down +20% from war peak; supply returning. Falling knife. | Avoid / short-term bearish. |
+| **XLK / QQQ** | AI‑concentrated, high valuation, liquidity drain from SpaceX. | Trim any existing longs; wait for better entry. |
+| **TSLA** | High vol, macro‑sensitive, SpaceX‑correlation risk. | Avoid until post‑BoJ clarity. |
+| **PLTR / CRWD** | Rich multiples, momentum fading. | Not a buy now; if held, tighten stops. |
 
-| Holding | Verdict |
-|---------|---------|
-| Cash | **HOLD** – best asset this week |
-| SPY/QQQ puts | **BUY** – cheap insurance |
-| TLT | **NEUTRAL** – safe, but wait on Fed |
-| XLE | **HOLD** if owned, but no new position |
-| Gold | **AVOID** – too weak |
-| Tech (META, NFLX, MSFT) | **AVOID** – clear weakness |
+---
 
-**Risk budget:** Spend up to $500 (0.6% of cash) on puts for the week. This is insurance, not speculation.
+## Bottom Line for the Manager
+
+> The peace deal is a genuine positive, but it does **not** remove the BoJ shock risk, the AI capex inflection, or the structural inflation floor. **The correct posture is cautious – not bearish, but not chasing.** Cash is a legitimate position right now. Use a small tail‑hedge to protect against the immediate BoJ event, then deploy defensively next week with a DCA cadence. The tournament strategies (canary, dual‑channel, GTAA) are built for this exact regime – trust them to re‑risk when the data supports it, and do not let the relief rally bait you into a gap‑down.

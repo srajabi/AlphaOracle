@@ -1,57 +1,124 @@
 ---
 title: Technical Analyst Report
-date: "2026-06-12"
+date: "2026-06-15"
 ---
 
 ## Model: deepseek/deepseek-v4-flash
 
-## Technical Analysis & Trade Evaluation (Ignoring News)
+Based on pure price action and technical indicators—ignoring all macro news—here is the systematic evaluation of the current setups across the universe.
 
-Portfolio: $87,184.98 cash, no positions.
+---
 
-### 1. Cash-Secured Puts (Wheel Entry Candidates)
+### 🟢 Mean Reversion Bounce Candidates  
+*(Price near lower Bollinger Band + RSI < 40 or deeply oversold)*
 
-| Ticker | Strike | DTE | Mid Premium | Technical Snapshot | Verdict |
-|--------|--------|-----|-------------|-------------------|---------|
-| **AAPL** | 275 (5.5% OTM) | 14 | $0.985 | RSI 48.2, close $295.6, near BB lower ($290.2). No overshoot. Neutral momentum (MACD hist negative). Price below SMA20 but above SMA50/200. | **Avoid.** Not a strong mean‑reversion setup; risk of grinding lower without panic. |
-| **AMZN** | 225 (5.7% OTM) | 14 | $1.665 | RSI **36.8**, close $241.5, near BB lower ($237.2). Price below SMA20/SMA50 but well above SMA200. MACD negative with deepening hist. Oversold + lower‑band touch = **high‑probability mean reversion bounce**. | **Favorable.** Conservative 5.7% cushion; premium $166/contract on $22,500 collateral. Want to own at discount. |
-| **AMD** | 480 (6.2% OTM) | 14 | $15.60 | RSI 56.9, strong uptrend (price >> SMA50/200). MACD hist negative but small. Not oversold. Premium rich (IV 71.6%). | **Avoid.** Uptrend intact; selling puts here fights momentum. High IV inflates margin requirement. |
-| **AVGO** | 370 (3.2% OTM) | 14 | $9.125 | RSI **42.2**, close $385.6, BB lower $364.8. Price below SMA20/SMA50 but above SMA200. Oversold zone, stretched below SMA20 by ~9%. **Mean reversion candidate**. IV high (49.2%) but cushion thin. | **Cautious favor.** Tighter cushion (3.2%) means higher assignment risk. Premium $912/contract on $37,000 collateral. Accept only if willing to own AVGO at $370. |
-| **CEG** | 240 (5.4% OTM) | 14 | $3.45 | RSI **35.3**, strong downtrend (price << all SMAs). BB lower $237.5. Oversold but no trend reversal signal yet. | **Avoid.** Catching a falling knife. Wait for price to hold above SMA20 or form a base. |
-| **CRWD** | 605 (11.4% OTM) | 14 | $4.05 | RSI 60.5, uptrend above SMA20. Far OTM premium tiny ($405). | **Avoid.** Low premium, far strike, no technical edge. |
+| Ticker | Price | RSI | BB Position | MACD | Assessment |
+|--------|-------|-----|-------------|------|------------|
+| **MSFT** | 390.74 | 37.2 | Near lower BB (385.3) | Negative, hist deepening | Oversold, testing lower band; high-quality staple with strong trend history – bounce likely but confirmation needed |
+| **META** | 566.98 | 34.7 | Near lower BB (562.8) | Negative | Deeply oversold, below all major MAs; mean reversion trade with ~$580–$600 target potential |
+| **AMZN** | 238.55 | 34.8 | Near lower BB (234.4) | Negative | Similar structure to META; price below 20/50 MA but above 200 MA – classic reversion zone |
+| **NFLX** | 80.34 | **29.0** | At lower BB (78.8) | Negative, hist flattening | Most oversold in the universe; MACD flattening suggests exhaustion – high-probability bounce setup |
+| **CEG** | 253.76 | 39.9 | Near lower BB (235.8) | Negative | Nuclear play de-rated; RSI approaching oversold, wide BB room – reversal possible but needs volume |
+| **GLD** | 386.54 | 35.1 | Near lower BB (381.1) | Negative | Gold trending down sharply; oversold on a commodity hedge; risk of further dip but strong mean reversion setup |
+| **IAU** | 79.19 | 34.9 | Near lower BB (78.1) | Negative | Mirrors GLD; same signal |
+| **SLV** | 61.29 | 39.6 | Near lower BB (58.2) | Negative | Silver deeply weak; lower BB provides a target floor – speculative bounce |
+| **IBIT** | 36.04 | 33.1 | Near lower BB (32.5) | Negative | Bitcoin ETF in freefall; RSI 33 – contrarian bounce if risk appetite returns |
+| **PLTR** | 128.0 | 39.3 | Near lower BB (121.9) | Negative | Lofty stock with huge run-up; now retracing. Bounce candidate but high beta |
+| **XLC** | 111.65 | 38.3 | Near lower BB (110.0) | Negative | Communication sector under pressure; near lower band, could rally with sector rotation |
 
-### 2. Long Option Ideas (Directional / Hedge)
+**Caution**: Several of these are in strong downtrends. Bounce trades require tight stops (e.g., below recent swing low or lower BB).
 
-| Ticker | Strike | Strategy | DTE | Mid Premium | Technical Snapshot | Verdict |
-|--------|--------|----------|-----|-------------|-------------------|---------|
-| **GLD** | 398 Call | Long upside | 14 | $3.145 | RSI **34.9**, close $386.3, BB lower $383.3. Price deeply below SMA20/SMA50/200. Extreme oversold + lower‑band tag = **high‑probability bounce setup**. Low IV (24.3%) keeps premium cheap. | **Strong buy.** Cost ~$314 for 100 shares exposure. Target retest of SMA20 (~$408). Risk defined. |
-| **GLD** | 375 Put | Downside hedge | 14 | $3.275 | Same oversold condition makes puts unattractive (fighting trend). | **Avoid.** Low probability of further decline from oversold. |
-| **QQQ** | 742 Call | Long upside | 14 | $6.27 | RSI 53.6, price at SMA20, above SMA50/200. MACD hist negative but small. No clear extreme. | **Neutral.** No edge; straddling SMA20. Skip. |
-| **QQQ** | 700 Put | Downside hedge | 14 | $6.94 | VIX elevated (19.4, rising). Put premium inflated. Not a clean setup. | **Avoid.** Expensive hedge with no technical exhaustion. |
-| **SPY** | 764 Call | Long upside | 14 | $0.845 | RSI 50.3, price below SMA20, above SMA50. Low IV (11.5%) – cheap call but no momentum trigger. | **Neutral.** Low probability without catalyst. Skip. |
-| **SPY** | 719 Put | Downside hedge | 14 | $2.61 | VIX rising. Put premium moderate. SPY below SMA20 could continue lower, but no oversold bounce setup. | **Cautious neutral.** Could hedge if already long, but not a trade. |
+---
 
-### 3. Summary of Setups by Type
+### 🔵 Trend Continuation / Strong Uptrends  
+*(Price above all major MAs, RSI > 55, MACD bullish / hist positive)*
 
-- **Mean Reversion Bounce (oversold + lower BB):** AMZN, AVGO, GLD, MSFT (not in option list), META (not listed).  
-- **Trend Continuation:** None clearly.  
-- **Failed Breakout / Squeeze:** None detected (Bollinger bandwidths normal).  
-- **Defensive / Hedge:** SPY/QQQ puts too expensive given VIX already elevated.
+| Ticker | Price | RSI | MACD | BB Position | Notes |
+|--------|-------|-----|------|-------------|-------|
+| **XLF** | 53.34 | 65.0 | Positive, hist positive | **Above upper BB** | Financials surging; overbought but momentum strong – can keep rallying in trend regime |
+| **KLAC** | 254.54 | **75.7** | Positive, hist positive | **Above upper BB** | Extreme overbought; semiconductor equipment momentum. Blow-off risk vs. parabolic continuation |
+| **XLV** | 153.81 | 62.2 | Positive | Near upper BB | Healthcare steady uptrend; moderate, not overextended |
+| **XLRE** | 45.36 | 61.9 | Positive | Near upper BB | Real estate in steady climb; safe trend |
+| **XLP** | 85.82 | 61.0 | Positive | Near upper BB | Consumer staples defensive uptrend |
+| **HYG** | 79.94 | 57.6 | Positive | Near upper BB | High yield credit strengthening; positive risk appetite signal |
+| **LQD** | 109.01 | 57.0 | Positive | Near upper BB | Investment grade bonds firm; supportive for risk |
+| **TLT** | 85.77 | 56.2 | Positive | Near upper BB | Long bonds rallying; declining rates confirmed |
+| **XLI** | 176.18 | 55.9 | Positive | Near upper BB | Industrials grinding higher |
+| **XLB** | 52.18 | 57.3 | Positive | Near upper BB | Materials inching up; not extended |
+| **UUP** | 27.95 | 61.3 | Positive | Near upper BB | Dollar strength continues (headwind for commodities/international) |
+| **VGK** | 89.62 | 57.1 | Neutral hist | Near upper BB | Europe tactically strong; slow grind |
+| **EWA** | 29.22 | 54.4 | Slightly positive | Near upper BB | Australia marginal uptrend |
 
-### 4. Recommended Trades
+**Watch for**: KLAC and XLF are overbought and above upper BB – potential exhaustion or blow-off.
 
-Given $87k cash and defensive‑leaning macro context (ignored per instruction, but price action shows oversold extremes in key names):
+---
 
-| # | Trade | Rationale | Max Risk | Max Profit (estimate) |
-|---|-------|-----------|----------|----------------------|
-| **1** | **Buy 1 GLD 398c 6/26** @ $3.145 | Lowest capital, highest probability bounce. Oversold + lower band + low IV. | $314.50 | ~$1,500+ if bounce to SMA20 |
-| **2** | **Sell 1 AMZN 225p 6/26** @ $1.665 | High‑prob mean reversion. 5.7% downside buffer. Want to own AMZN at $225. | $22,500 (if assigned) | $166.50 premium + potential stock gain |
-| **3** | **Sell 1 AVGO 370p 6/26** @ $9.125 | Oversold bounce candidate, but tighter cushion. Only if willing to own AVGO at $370. | $37,000 (if assigned) | $912.50 premium |
+### 🟡 Weakening Momentum / Failed Setups  
+*(Price still above 200-d MA but MACD hist negative or RSI declining from high)*
 
-**Execute #1 (GLD call) and #2 (AMZN put).** AVGO is optional based on conviction; skip if you prefer lower assignment risk.
+| Ticker | RSI | MACD | Pattern | Likely |
+|--------|-----|------|---------|--------|
+| **WDC** | 61.4 | Negative hist | Extended from 20/50/200, but histogram turning down | Could pull back to SMA20 |
+| **DIA** | 59.0 | Negative hist | Dow rising but momentum fading | Range-bound near top |
+| **AMD** | 60.5 | Negative hist | Strong uptrend with bearish divergence | Correction risk |
+| **STX** | 64.3 | Negative hist | HDD stock extended, momentum fading | Probable pullback |
+| **INTC** | 62.4 | Negative hist | Recovery uptrend slowing | Consolidation likely |
+| **CRWD** | 58.7 | Negative hist | Above all MAs but MACD turning down | Could mean revert to 20MA |
+| **MU** | 60.8 | Negative hist | Memory cycle strong but decelerating | Profit-taking zone |
+| **NBIS** | 57.0 | Negative hist | AI infrastructure stock cooling after run | Waiting for next leg |
+| **TSM** | 54.1 | Negative hist | Foundry uptrend stalling | Neutral zone |
+| **QUAL** | 62.3 | Negative hist | Quality factor showing strength but fading | Perhaps a rotational pause |
+| **SCHD** | 64.5 | Negative hist | Dividend growth near high, hist negative | Could correct slightly |
+| **IWM** | 59.8 | Negative hist | Small caps outpacing but hist negative | May pause before further upside |
 
-### 5. Post‑Trade Monitoring
+**Key**: These aren’t necessarily sell signals, but the risk/reward for fresh longs is less attractive here.
 
-- GLD call: exit if GLD closes below $383 (stop loss) or take profit at 50% of max (call doubles to ~$6).  
-- AMZN put: monitor RSI and price relative to BB lower. If AMZN breaks below $225, be prepared to take assignment or roll.  
-- Overall portfolio delta: slightly bullish via GLD call, neutral via AMZN put (short put = synthetic long, but far OTM). Net exposure ~$22k is 25% of cash, leaving buffer.
+---
+
+### 🔴 Failed Breakdown / Downtrend Continuation  
+*(Below all MAs, RSI weak, MACD deeply negative)*
+
+| Ticker | RSI | Price vs MAs | Setup |
+|--------|-----|--------------|-------|
+| **MSFT** | 37.2 | Below 20/50/200 | Deep downtrend; bounce candidate but trend is down |
+| **META** | 34.7 | Below all | Strong downtrend; mean reversion trade only |
+| **AMZN** | 34.8 | Below 20/50, above 200 | Bearish if it loses 200MA |
+| **NFLX** | 29.0 | Below all | Maximum bearish; oversold can stay oversold |
+| **GOOGL** | 42.5 | Below 20/50, above 200 | Hanging above 200MA – critical support |
+| **CEG** | 39.9 | Below all | Unmitigated downtrend |
+| **GLD** | 35.1 | Below all | Gold selloff; no bottom yet |
+| **SLV** | 39.6 | Below all | Weakest commodity |
+| **IBIT** | 33.1 | Below all | Crypto bear |
+| **PLTR** | 39.3 | Below all | Retracing from euphoria |
+| **PSTG** | 46.1 | Below all | Neutral but weak structure |
+
+**Trade**: Avoid until clear reversal pattern or RSI above 40 and price reclaims 20MA.
+
+---
+
+### ⚡ Volatility Contraction Squeeze (Tight BBs)
+*(Potential for explosive move when bands widen)*
+
+| Ticker | BB Width (% of price) | RSI | MACD | Squeeze Potential |
+|--------|----------------------|-----|------|-------------------|
+| **HYG** | 1.4% | 57.6 | Positive | Tightest bands; credit breakout imminent (likely up given trend) |
+| **LQD** | 2.4% | 57.0 | Positive | Investment grade bonds also very tight; uptrend |
+| **XLP** | 6.4% | 61.0 | Positive | Moderate squeeze; staples may accelerate |
+| **XLU** | 5.3% | 49.9 | Flat | Utilities in no-man’s land – neutral squeeze |
+| **VXUS** | 6.3% | 55.4 | Negative | International equity squeeze could resolve higher |
+
+HYG and LQD are the clearest squeeze setups – both in uptrends with extremely narrow bands. A break above the upper BB would confirm continuation.
+
+---
+
+### Summary of Actionable Setups
+
+| Pattern | Top Picks | Strategy |
+|---------|-----------|----------|
+| **Mean Reversion Bounce** | NFLX, META, AMZN, GLD | Buy near lower BB with stop below recent low; target SMA20 |
+| **Trend Continuation** | XLF, XLV, HYG, TLT | Hold or add on pullbacks to SMA20 |
+| **Weakening Momentum** | STX, MU, INTC, AMD | Take partial profits; tighten trailing stops |
+| **Bollinger Squeeze** | HYG, LQD | Prepare for directional move; currently bullish |
+| **Avoid Shorting** | KLAC, XLF | Overbought but no reversal signal yet |
+
+**Risk management**: Given the transitional regime (low confidence), all setups should use defined risk. No single trade should exceed 2% portfolio risk.
