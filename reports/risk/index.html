@@ -1,115 +1,77 @@
 <!DOCTYPE html><html lang="en" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/AlphaOracle/favicon.svg"><link rel="icon" href="/AlphaOracle/favicon.ico"><meta name="generator" content="Astro v5.18.0"><title>Risk Manager Report</title><style>:root{--bg: #0b0e14;--panel-bg: #131722;--panel-bg-raised: #1e2230;--border: #2a2e39;--text: #f8f9fa;--text-body: #d1d4dc;--text-muted: #8f949e;--accent: #2962ff;--accent-soft: #c4d4ff;--green: #28a745;--red: #dc3545;--red-bright: #f6465d;--yellow: #ffc107}.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}.panel{background:var(--panel-bg);border:1px solid var(--border);border-radius:12px;padding:1.25rem;margin-bottom:1rem}.muted{color:var(--text-muted)}.btn{text-decoration:none;color:#fff;background:var(--accent);border-radius:8px;padding:.5rem .85rem;font-size:.85rem;font-weight:600}html,body{margin:0;width:100%;height:100%;background:#0b0e14;color:#f8f9fa;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif}.site-header[data-astro-cid-sckkx6r4]{position:sticky;top:0;z-index:100;background:#0b0e14eb;backdrop-filter:blur(8px);border-bottom:1px solid #2a2e39}.site-header-inner[data-astro-cid-sckkx6r4]{max-width:1100px;margin:0 auto;padding:.7rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}.brand[data-astro-cid-sckkx6r4]{color:#f8f9fa;text-decoration:none;font-weight:800;font-size:1.1rem;letter-spacing:.01em}.site-nav[data-astro-cid-sckkx6r4]{display:flex;gap:.25rem;flex-wrap:wrap}.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]{color:#8f949e;text-decoration:none;font-size:.9rem;font-weight:600;padding:.35rem .7rem;border-radius:8px}.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]:hover,.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4].active{color:#f8f9fa;background:#1e2230}
 main[data-astro-cid-ipuyqs4v]{max-width:850px;margin:0 auto;padding:3rem 1.5rem;line-height:1.7;color:#d1d4dc}header[data-astro-cid-ipuyqs4v]{margin:0 0 3rem;border-bottom:1px solid #2a2e39;padding-bottom:1.5rem}h1[data-astro-cid-ipuyqs4v]{margin:0;font-size:3rem;color:#fff;font-weight:800;letter-spacing:-.02em}.date[data-astro-cid-ipuyqs4v]{color:#8f949e;margin-top:.5rem}article[data-astro-cid-ipuyqs4v]{font-size:1.15rem}article[data-astro-cid-ipuyqs4v] h2{margin-top:3rem;color:#fff;font-size:1.75rem;border-bottom:1px solid #2a2e39;padding-bottom:.5rem}article[data-astro-cid-ipuyqs4v] h3{margin-top:2rem;color:#fff}article[data-astro-cid-ipuyqs4v] p{margin-bottom:1.5rem}article[data-astro-cid-ipuyqs4v] table{width:100%;border-collapse:collapse;margin:2.5rem 0;background:#131722;border-radius:8px;overflow:hidden;border:1px solid #2a2e39}article[data-astro-cid-ipuyqs4v] th,article[data-astro-cid-ipuyqs4v] td{border:1px solid #2a2e39;padding:1rem;text-align:left}article[data-astro-cid-ipuyqs4v] th{background:#1c212d;color:#8f949e;text-transform:uppercase;font-size:.8rem;letter-spacing:.05em}article[data-astro-cid-ipuyqs4v] strong{color:#fff}
-</style></head> <body data-astro-cid-sckkx6r4> <header class="site-header" data-astro-cid-sckkx6r4> <div class="site-header-inner" data-astro-cid-sckkx6r4> <a class="brand" href="/AlphaOracle/" data-astro-cid-sckkx6r4>AlphaOracle</a> <nav class="site-nav" data-astro-cid-sckkx6r4> <a href="/AlphaOracle/" data-astro-cid-sckkx6r4> Analysis </a><a href="/AlphaOracle/news-events/" data-astro-cid-sckkx6r4> News </a><a href="/AlphaOracle/indicators/" data-astro-cid-sckkx6r4> Indicators </a><a href="/AlphaOracle/tickers/" data-astro-cid-sckkx6r4> Tickers </a><a href="/AlphaOracle/backtests/" data-astro-cid-sckkx6r4> Backtests </a><a href="/AlphaOracle/research/" data-astro-cid-sckkx6r4> Research </a><a href="/AlphaOracle/paper-trading/" data-astro-cid-sckkx6r4> Paper Trading </a> </nav> </div> </header>  <main data-astro-cid-ipuyqs4v> <header data-astro-cid-ipuyqs4v> <h1 data-astro-cid-ipuyqs4v>Risk Manager Report</h1> <p class="date" data-astro-cid-ipuyqs4v>2026-06-12</p> </header> <article data-astro-cid-ipuyqs4v> <h2 id="model-deepseekdeepseek-v4-flash">Model: deepseek/deepseek-v4-flash</h2>
-<h1 id="risk-manager-assessment-downside-protection--geopolitical-risk">Risk Manager Assessment: Downside Protection &#x26; Geopolitical Risk</h1>
-<h2 id="assessment-date-2026-06-12">Assessment Date: 2026-06-12</h2>
-<h2 id="executive-summary">Executive Summary</h2>
-<p><strong>Regime:</strong> Transitional (low confidence)<br>
-<strong>VIX:</strong> 19.44 (elevated, rising)<br>
-<strong>VIX/VIX3M:</strong> 0.93 (clear – not yet backwardated)<br>
-<strong>Market Posture:</strong> Defensive-leaning, gap-risk aware</p>
-<p>The portfolio is <strong>100% cash ($87,185)</strong>. This is appropriate given the confluence of uncorrelated tail risks this week. <strong>Stay in cash</strong> pending resolution of the BoJ meeting (June 15–16) and the Fed decision (June 17). The environment does not reward aggressive entry; it rewards patience and precise hedges against two distinct left-tail scenarios.</p>
+</style></head> <body data-astro-cid-sckkx6r4> <header class="site-header" data-astro-cid-sckkx6r4> <div class="site-header-inner" data-astro-cid-sckkx6r4> <a class="brand" href="/AlphaOracle/" data-astro-cid-sckkx6r4>AlphaOracle</a> <nav class="site-nav" data-astro-cid-sckkx6r4> <a href="/AlphaOracle/" data-astro-cid-sckkx6r4> Analysis </a><a href="/AlphaOracle/news-events/" data-astro-cid-sckkx6r4> News </a><a href="/AlphaOracle/indicators/" data-astro-cid-sckkx6r4> Indicators </a><a href="/AlphaOracle/tickers/" data-astro-cid-sckkx6r4> Tickers </a><a href="/AlphaOracle/backtests/" data-astro-cid-sckkx6r4> Backtests </a><a href="/AlphaOracle/research/" data-astro-cid-sckkx6r4> Research </a><a href="/AlphaOracle/paper-trading/" data-astro-cid-sckkx6r4> Paper Trading </a> </nav> </div> </header>  <main data-astro-cid-ipuyqs4v> <header data-astro-cid-ipuyqs4v> <h1 data-astro-cid-ipuyqs4v>Risk Manager Report</h1> <p class="date" data-astro-cid-ipuyqs4v>2026-06-15</p> </header> <article data-astro-cid-ipuyqs4v> <h2 id="model-deepseekdeepseek-v4-flash">Model: deepseek/deepseek-v4-flash</h2>
+<h1 id="risk-manager-assessment--2026-06-15">Risk Manager Assessment – 2026-06-15</h1>
+<h2 id="situational-summary">Situational Summary</h2>
+<p>The market has just been hit by a <strong>massive positive catalyst</strong> – the US-Iran interim peace deal over the weekend – triggering a broad risk‑on rally: oil craters (XLE –2.1%), equities soar (AMD +8% to new ATH, QQQ +1.6%), VIX dips below 18. The macro news flow is overwhelmingly bullish on the headline, but beneath the surface several material threats remain:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Catalyst</th><th>Severity (1‑10)</th><th>Status</th></tr></thead><tbody><tr><td><strong>BoJ decision (June 15‑16)</strong></td><td>8</td><td><strong>LIVE – today/tomorrow.</strong> Hike to 1.0% priced, but guidance could trigger yen carry unwind.</td></tr><tr><td><strong>Hormuz reopening timeline</strong></td><td>5</td><td>Peace deal signed, but experts say months to restore flows. Risk of re‑escalation.</td></tr><tr><td><strong>Fed policy corner</strong></td><td>7</td><td>Warsh’s first meeting – holding into 4.2% CPI. Both tails live.</td></tr><tr><td><strong>AI capex deceleration risk</strong></td><td>6</td><td>Q2 earnings guide (July) could be the catalyst for a slow‑bear onset.</td></tr><tr><td><strong>SpaceX IPO liquidity drain</strong></td><td>4</td><td>$75B raised, now the second‑largest public company – mechanical buying power drain.</td></tr></tbody></table>
+<p>The rule‑based signals are <em>not yet defensive</em> (slow channel risk‑on, fast channel clear, credit clear, canary risk‑on). But the intermarket regime is <strong>Transitional (low confidence)</strong>, and the scenario thesis assigns a <strong>50% combined probability</strong> to bearish outcomes (Slow Bear + Fast Crash) within 12 months.</p>
 <hr>
-<h2 id="1-geopolitical-catalysts-severity--exposure">1. Geopolitical Catalysts: Severity &#x26; Exposure</h2>
-<h3 id="11-strait-of-hormuz--us-iran-conflict">1.1 Strait of Hormuz / US-Iran Conflict</h3>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Attribute</th><th>Detail</th></tr></thead><tbody><tr><td><strong>Severity</strong></td><td>7/10 (active hostilities, but de-escalation talks ongoing)</td></tr><tr><td><strong>What happened</strong></td><td>Oil slides below $90 as traders reassess Hormuz risk; Trump claims near US-Iran deal; lost Gulf exports &#x3C; feared.</td></tr><tr><td><strong>Directional risk</strong></td><td><strong>Bullish:</strong> XLE, oil producers, defense (LMT), energy infrastructure (MTZ?)</td></tr><tr><td><strong>Bearish:</strong> Consumer discretionary (XLY), airlines, SPY on escalation/spike</td><td></td></tr><tr><td><strong>Time horizon</strong></td><td>Days to weeks. Immediate binary event – deal or escalation.</td></tr></tbody></table>
-<p><strong>Hedge recommendation:</strong></p>
+<h2 id="portfolio-exposure-risk">Portfolio Exposure Risk</h2>
+<p><strong>Current state: 100% cash ($87k).</strong> This is the safest starting point. The risk is <em>not</em> a loss from existing holdings, but <strong>opportunity cost</strong> if the rally continues – and more importantly, the risk of <strong>deploying cash into a near‑term setup where three tail risks (BoJ, Hormuz re‑escalation, IPO hangover) are all live within the next 72 hours.</strong></p>
+<p>The options ideas in the system all assume a bullish/neutral intent (cash‑secured puts on AAPL, AMD, AMZN; long calls on QQQ, SPY, GLD). <strong>I advise against executing any of these trades now.</strong> They are either too early (BoJ risk) or too aggressive (chasing a headline‑driven gap).</p>
+<hr>
+<h2 id="recommendation-defensive-layer-then-tactical-deployment">Recommendation: Defensive Layer, Then Tactical Deployment</h2>
+<h3 id="1-immediate-next-2448-hours">1. Immediate (next 24‑48 hours)</h3>
 <ul>
-<li>No directional bet on the headline. Instead, <strong>long VIX calls</strong> as cheap insurance (VIX ~19). Best: QQQ 700 put (Jun 30) – tight strike support with 18 DTE.</li>
-<li>If you must hold equities, overweight XLE (energy); it has weathered the oil slide and remains +29% YTD.</li>
+<li><strong>Stay in cash.</strong> Do not initiate any long equity or short premium positions until the BoJ meeting concludes tomorrow and the initial Hormuz relief fades.</li>
+<li><strong>Buy a small, cheap tail‑hedge</strong> using <strong>QQQ 2026-07-02 $722 Put</strong> (mid $7.41, $0 cost to put on? Actually $741 per contract). This protects against a sharp 3%+ drawdown from current levels. At 17 DTE, it is a time‑decay burner – but the risk of a BoJ‑led selloff is high enough to justify the premium for one contract (~$740). Alternatively, the <strong>SPY 2026-06-30 $734 Put</strong> ($2.37 mid, $237 per contract) offers a slightly cheaper hedge with 15 DTE.</li>
+<li><strong>Monitor USDJPY.</strong> If it breaks below 140 rapidly, that is the forced‑deleveraging tripwire. At that point, a second layer of VIX calls or deeper OTM puts would be warranted.</li>
 </ul>
-<h3 id="12-boj-rate-hike-june-1516">1.2 BoJ Rate Hike (June 15–16)</h3>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Attribute</th><th>Detail</th></tr></thead><tbody><tr><td><strong>Severity</strong></td><td>8/10 for volatility. The hike is priced; hawkish guidance is not.</td></tr><tr><td><strong>Cross-asset risk</strong></td><td>Yen carry unwind → forced selling of most-owned longs: mega-cap tech (NVDA, MSFT, AMZN, META), crypto (IBIT), beta.</td></tr><tr><td><strong>Precedent</strong></td><td>Aug 2024: SPX -6% in 3 days, VIX intraday spike to 65.</td></tr><tr><td><strong>Time horizon</strong></td><td>Monday–Wednesday next week.</td></tr></tbody></table>
-<p><strong>Hedge recommendation:</strong></p>
+<h3 id="2-next-week-june-1619">2. Next Week (June 16‑19)</h3>
 <ul>
-<li><strong>Short-dated QQQ put</strong> (Jun 26 700P) – high open interest (6,311), tight spread (4.9%), delta ~0.25. Cost ~$694 per 1 contract.</li>
-<li><em>Alternative:</em> VIX call spread to finance (e.g., Jun 26 22.5/27.5 call vertical).</li>
-<li><strong>Avoid:</strong> TQQQ, leveraged ETFs until BoJ outcome is clear.</li>
+<li><strong>If BoJ guidance is hawkish</strong> and USDJPY drops, <strong>stay defensive</strong> – the VIX term structure will invert, and the dual‑channel fast brake may trigger automatically. Do not fight the signal.</li>
+<li><strong>If BoJ is benign</strong> and peace deal holds, the market may grind higher. In that case, <strong>begin deploying a portion of cash</strong> (e.g., 25‑33%) into:
+<ul>
+<li><strong>Defensive sectors</strong> that lagged the rally: XLV (Healthcare, –1% YTD, RSI 62), XLU (Utilities, flat), XLP (Consumer Staples, +2% YTD). These offer better risk/reward than chasing AI.</li>
+<li><strong>A core ETF</strong> like VOO or SPY (S&#x26;P 500) using a <strong>DCA‑over‑weeks</strong> approach rather than lump sum.</li>
 </ul>
-<h3 id="13-fed-decision-june-17--wednesday">1.3 Fed Decision (June 17 – Wednesday)</h3>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Attribute</th><th>Detail</th></tr></thead><tbody><tr><td><strong>Headline</strong></td><td>Flat rates expected; new Chair Warsh’s first meeting.</td></tr><tr><td><strong>Key risk</strong></td><td>Committee may signal a hike is on the table given CPI 4.2%. Hawkish surprise → rates up, equities down.</td></tr><tr><td><strong>Exposed</strong></td><td>TLT (long bond) would suffer, SPY/QQQ drop, financials (XLF) may benefit from higher rates.</td></tr></tbody></table>
-<p><strong>Hedge recommendation:</strong></p>
+</li>
+<li><strong>Avoid energy (XLE)</strong> until the Strait of Hormuz timeline is clear – oil inventories will likely build as flows normalise, pressuring prices further.</li>
+<li><strong>Avoid chasing semiconductor momentum</strong> (AMD, MU, NVDA) near their highs. The AI capex deceleration risk is real and could trigger a sharp reversal.</li>
+</ul>
+<h3 id="3-mediumterm-weeks-to-months">3. Medium‑Term (Weeks to Months)</h3>
 <ul>
-<li><strong>Protective put on SPY</strong> (Jun 30 719P) – cheap at ~$330/contract, 3.1% OTM.</li>
-<li><strong>Avoid:</strong> TLT longs until after the meeting; rates are arguably at an inflection point.</li>
+<li><strong>The 50% bearish scenario weight</strong> calls for maintaining a <strong>25‑35% cash reserve</strong> at all times. Deploy the rest gradually only when technical signals (SPY above 200‑dma, VIX/VIX3M &#x3C; 1, canary breadth positive) align.</li>
+<li><strong>Consider a small tactical gold allocation</strong> (GLD) if the dollar weakens or real rates fall further – the thesis notes negative real‑rate drift supports gold, and the peace deal removes some safe‑haven demand but does not eliminate inflationary tailwinds. A 5‑10% GLD position could be initiated on dips below $385 (near the 200‑day SMA).</li>
 </ul>
 <hr>
-<h2 id="2-ticker-level-weakness-technical--fundamental">2. Ticker-Level Weakness (Technical + Fundamental)</h2>
+<h2 id="exposures-to-avoid--trim">Exposures to Avoid / Trim</h2>
 
 
 
@@ -140,138 +102,9 @@ main[data-astro-cid-ipuyqs4v]{max-width:850px;margin:0 auto;padding:3rem 1.5rem;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Ticker</th><th>Issue</th><th>Risk Level</th></tr></thead><tbody><tr><td><strong>META</strong></td><td>RSI 35, MACD bearish, price below 20/50/200 SMA. Social media ad revenue under pressure from Iran war uncertainty.</td><td><strong>HIGH: Avoid / Short below $560</strong></td></tr><tr><td><strong>NFLX</strong></td><td>RSI 31. Price at 52-week lows? Actually near $81 – down significantly from $100+. Weakness on AI displacing traditional streaming?</td><td><strong>HIGH: Do not buy the dip. Avoid.</strong></td></tr><tr><td><strong>MSFT</strong></td><td>RSI 37, price below 20/50 SMA, MACD negative. Xbox spin-off rumor adds uncertainty.</td><td><strong>CAUTION: Trim any long if held.</strong></td></tr><tr><td><strong>AMZN</strong></td><td>RSI 37, below 20 SMA. Consumption elasticity risk from inflation.</td><td><strong>CAUTION: Avoid until Fed/BoJ pass.</strong></td></tr><tr><td><strong>CEG</strong></td><td>RSI 35, down 14% post-earnings. Nuclear power AI hype fading; bond yields high weigh on high-duration equities.</td><td><strong>AVOID: Wait for stabilization.</strong></td></tr><tr><td><strong>IBIT</strong></td><td>RSI 33, Bitcoin in bear market (-29% YTD). Carry unwind directly hits crypto.</td><td><strong>AVOID: Cash is better.</strong></td></tr><tr><td><strong>KLAC</strong></td><td>RSI 72, price above BB upper band. Extended even on a good day.</td><td><strong>CAUTION: Do not chase.</strong></td></tr></tbody></table>
-<p><strong>Safe havens currently:</strong></p>
-<ul>
-<li><strong>TLT</strong> – uptrend, RSI 58, rates declining. Positive momentum. Best risk-off vehicle.</li>
-<li><strong>XLU</strong> (Utilities) – neutral, low vol, but not in strong uptrend.</li>
-<li><strong>XLP</strong> (Consumer staples) – uptrend, RSI 58. Staples as shelter.</li>
-<li><strong>Gold (GLD)</strong> – technically weak (downtrend, RSI 35). <strong>Not a buy</strong> until momentum reverses. A peace deal could drive gold lower; an escalation could spike it – unreliable hedge for now.</li>
-</ul>
+<table><thead><tr><th>Ticker</th><th>Reason</th><th>Action</th></tr></thead><tbody><tr><td><strong>XLE</strong></td><td>Oil down +20% from war peak; supply returning. Falling knife.</td><td>Avoid / short-term bearish.</td></tr><tr><td><strong>XLK / QQQ</strong></td><td>AI‑concentrated, high valuation, liquidity drain from SpaceX.</td><td>Trim any existing longs; wait for better entry.</td></tr><tr><td><strong>TSLA</strong></td><td>High vol, macro‑sensitive, SpaceX‑correlation risk.</td><td>Avoid until post‑BoJ clarity.</td></tr><tr><td><strong>PLTR / CRWD</strong></td><td>Rich multiples, momentum fading.</td><td>Not a buy now; if held, tighten stops.</td></tr></tbody></table>
 <hr>
-<h2 id="3-recommended-hedges--defensive-actions">3. Recommended Hedges &#x26; Defensive Actions</h2>
-<h3 id="immediate-next-2-days">Immediate (next 2 days)</h3>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Action</th><th>Instrument</th><th>Rationale</th></tr></thead><tbody><tr><td><strong>Buy protective put</strong></td><td>SPY Jun 30 719P ~$3.30</td><td>Covers Fed and BoJ outcome. Cost &#x3C; 0.5% of cash.</td></tr><tr><td><strong>Buy QQQ put</strong></td><td>QQQ Jun 26 700P ~$6.94</td><td>Highest convexity to tech-driven carry unwind.</td></tr><tr><td><strong>Stay cash</strong></td><td>$87,185 untouched</td><td>Do not deploy until after June 17.</td></tr></tbody></table>
-<h3 id="if-forced-to-deploy-defensively-low-risk-income">If forced to deploy defensively (low risk, income)</h3>
-<ul>
-<li><strong>Cash-secured put on AAPL</strong> (275 strike, Jun 26) – yields ~0.35% in 14 days. Apple is stable (RSI 48, price near 200 SMA).</li>
-<li><strong>Cash-secured put on XLP</strong> (84 strike) – defensive sector, low volatility.</li>
-</ul>
-<h3 id="avoid-completely-this-week">Avoid completely this week</h3>
-<ul>
-<li><strong>TQQQ, UPRO, SSO</strong> – any leveraged long.</li>
-<li><strong>IBIT, crypto plays</strong>.</li>
-<li><strong>NFLX, META</strong> – clear technical breakdowns.</li>
-<li><strong>ORCL</strong> – post-earnings drift still unresolved; price below 20/50 SMA.</li>
-</ul>
-<hr>
-<h2 id="4-scenario-based-action-plan">4. Scenario-Based Action Plan</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Scenario</th><th>Threshold</th><th>Action</th></tr></thead><tbody><tr><td><strong>BoJ hawkish guidance</strong> (USDJPY &#x3C; 145)</td><td>Monday</td><td>Buy VIX calls (Jun 26 27.5C), add QQQ downside.</td></tr><tr><td><strong>Iran deal confirmed</strong> (oil -10%)</td><td>Any day</td><td>Sell energy (XLE) outright; buy SPY calls (Jun 30 760C) for relief rally.</td></tr><tr><td><strong>Fed surprises hawkish</strong> (dot plot up, rates hiked)</td><td>Wednesday</td><td>Sell TLT, buy XLF. Maintain puts.</td></tr><tr><td><strong>Escalation: Hormuz closure</strong></td><td>Any day</td><td>Buy GLD calls (Jun 30 390C), add XLE.</td></tr></tbody></table>
-<hr>
-<h2 id="5-conclusion">5. Conclusion</h2>
-<p><strong>The single best action today is to do nothing with the cash until BoJ and Fed pass.</strong> The risk-reward is asymmetric to the downside. Use the option chain to buy cheap, defined-risk hedges against the most dangerous scenarios.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Holding</th><th>Verdict</th></tr></thead><tbody><tr><td>Cash</td><td><strong>HOLD</strong> – best asset this week</td></tr><tr><td>SPY/QQQ puts</td><td><strong>BUY</strong> – cheap insurance</td></tr><tr><td>TLT</td><td><strong>NEUTRAL</strong> – safe, but wait on Fed</td></tr><tr><td>XLE</td><td><strong>HOLD</strong> if owned, but no new position</td></tr><tr><td>Gold</td><td><strong>AVOID</strong> – too weak</td></tr><tr><td>Tech (META, NFLX, MSFT)</td><td><strong>AVOID</strong> – clear weakness</td></tr></tbody></table>
-<p><strong>Risk budget:</strong> Spend up to $500 (0.6% of cash) on puts for the week. This is insurance, not speculation.</p> </article> </main>  </body></html> 
+<h2 id="bottom-line-for-the-manager">Bottom Line for the Manager</h2>
+<blockquote>
+<p>The peace deal is a genuine positive, but it does <strong>not</strong> remove the BoJ shock risk, the AI capex inflection, or the structural inflation floor. <strong>The correct posture is cautious – not bearish, but not chasing.</strong> Cash is a legitimate position right now. Use a small tail‑hedge to protect against the immediate BoJ event, then deploy defensively next week with a DCA cadence. The tournament strategies (canary, dual‑channel, GTAA) are built for this exact regime – trust them to re‑risk when the data supports it, and do not let the relief rally bait you into a gap‑down.</p>
+</blockquote> </article> </main>  </body></html> 
