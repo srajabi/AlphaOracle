@@ -18,7 +18,7 @@
           "vix_value": 17.68000030517578,
           "vix_trend": "neutral"
         },
-        "timestamp": "2026-06-15T16:36:23.804571"
+        "timestamp": "2026-06-15T21:34:12.962413"
       },
       "dollar_strength": {
         "name": "Dollar Strength",
@@ -35,7 +35,7 @@
             "sma200": 27.20677372932434
           }
         },
-        "timestamp": "2026-06-15T16:36:23.807988"
+        "timestamp": "2026-06-15T21:34:12.965298"
       },
       "real_rates": {
         "name": "Real Rates",
@@ -49,10 +49,10 @@
           "smas": {
             "sma20": 84.74997749328614,
             "sma50": 85.29041870117187,
-            "sma200": 86.34683986663818
+            "sma200": 86.34683994293214
           }
         },
-        "timestamp": "2026-06-15T16:36:23.811109"
+        "timestamp": "2026-06-15T21:34:12.968052"
       },
       "commodity_strength": {
         "name": "Commodity Strength",
@@ -82,10 +82,10 @@
             "signal": "negative"
           }
         },
-        "timestamp": "2026-06-15T16:36:23.819842"
+        "timestamp": "2026-06-15T21:34:12.976032"
       }
     },
-    "timestamp": "2026-06-15T16:36:23.819879"
+    "timestamp": "2026-06-15T21:34:12.976068"
   },
   "indicators": {
     "risk_sentiment": {
@@ -100,7 +100,7 @@
         "vix_value": 17.68000030517578,
         "vix_trend": "neutral"
       },
-      "timestamp": "2026-06-15T16:36:23.804571"
+      "timestamp": "2026-06-15T21:34:12.962413"
     },
     "dollar_strength": {
       "name": "Dollar Strength",
@@ -117,7 +117,7 @@
           "sma200": 27.20677372932434
         }
       },
-      "timestamp": "2026-06-15T16:36:23.807988"
+      "timestamp": "2026-06-15T21:34:12.965298"
     },
     "real_rates": {
       "name": "Real Rates",
@@ -131,10 +131,10 @@
         "smas": {
           "sma20": 84.74997749328614,
           "sma50": 85.29041870117187,
-          "sma200": 86.34683986663818
+          "sma200": 86.34683994293214
         }
       },
-      "timestamp": "2026-06-15T16:36:23.811109"
+      "timestamp": "2026-06-15T21:34:12.968052"
     },
     "commodity_strength": {
       "name": "Commodity Strength",
@@ -164,11 +164,11 @@
           "signal": "negative"
         }
       },
-      "timestamp": "2026-06-15T16:36:23.819842"
+      "timestamp": "2026-06-15T21:34:12.976032"
     }
   },
   "metadata": {
-    "generated_at": "2026-06-15T16:36:23.819883",
+    "generated_at": "2026-06-15T21:34:12.976071",
     "data_source": "EOD historical data",
     "lookback_days": 250
   }

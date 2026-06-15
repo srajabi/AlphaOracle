@@ -1,42 +1,22 @@
 [
     {
-        "ticker": "VOO",
+        "ticker": "VTI",
         "action": "buy",
-        "notional_value": 35000
+        "notional_value": 50000
     },
     {
-        "ticker": "QQQ",
+        "ticker": "VXUS",
         "action": "buy",
-        "notional_value": 17500
+        "notional_value": 10000
     },
     {
-        "ticker": "XLV",
+        "ticker": "TLT",
         "action": "buy",
-        "notional_value": 8700
-    },
-    {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 4400
-    },
-    {
-        "ticker": "NFLX",
-        "action": "buy",
-        "notional_value": 4400
-    },
-    {
-        "ticker": "META",
-        "action": "buy",
-        "notional_value": 4400
-    },
-    {
-        "ticker": "AMZN",
-        "action": "buy",
-        "notional_value": 4400
+        "notional_value": 8000
     },
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 4400
+        "notional_value": 5000
     }
 ]
