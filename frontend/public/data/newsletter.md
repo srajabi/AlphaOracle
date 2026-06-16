@@ -1,4 +1,4 @@
-# AlphaOracle Daily - 2026-06-15
+# AlphaOracle Daily - 2026-06-16
 
 ## Signals (rules govern; everything below is commentary)
 
@@ -8,63 +8,93 @@
 |---|---|---|
 | Trend (monthly 200dma) | risk_on | 10.25% vs SMA, as of 2026-05-29 |
 | VIX term structure | clear | ratio 0.91 |
-| Credit (HYG/LQD 63d) | clear | 0.005 |
+| Credit (HYG/LQD 63d) | clear | 0.0101 |
 | Canary breadth | risk_on | negative: [] |
 
 ## Thesis Sentinel
 
-## Tripwire Status (2026-06-15)
+# Thesis Sentinel Daily Brief — 2026-06-16
 
-| Tripwire | Signal | Today’s Reading | Status |
-|---|---|---|---|
-| Carry unwind | ^VIX / ^VIX3M | 0.86 (VIX 17.68 / VIX3M 20.51) | CLEAR |
-| Credit cracks | HYG/LQD 63d rel‑mom | +0.5% | CLEAR |
-| Breadth break | Canary (EWA + TLT both <0) | EWA +3.1%, TLT +1.2% | CLEAR |
-| Trend break | SPY close vs 200d SMA | SPY 741.75, 200d 684.07 | CLEAR |
-| Oil shock | XLE sustained leadership | XLE momentum –0.9% (negative) | CLEAR |
-| AI capex turn | Hyperscaler FY27 guidance cut | No cut news | CLEAR |
-| Carry stress | USDJPY <140 rapid | No USDJPY data; dollar strong but no stress trigger evident | CLEAR |
+## 1. Tripwire Status
 
-All seven tripwires are clear. No regime‑triggered defensive moves are required today.
+| Tripwire | Signal | Threshold | Reading | Status |
+|---|---|---|---|---|
+| Carry unwind | VIX/VIX3M | >1.0 | 0.86 (17.68 / 20.51) | CLEAR |
+| Credit cracks | HYG/LQD 63d rel‑mom | < –2% | +1.01% | CLEAR |
+| Breadth break | Canary (EWA,TLT) | both negative | 0 negatives | CLEAR |
+| Trend break | SPY monthly close vs 200d | below | 741.75 vs 684.07 | CLEAR |
+| Oil shock | XLE momentum vs SPY | sustained leadership | XLE mom –0.9%, SPY uptrend | CLEAR |
+| AI capex turn | Hyperscaler FY27 guidance | any cut | no cuts reported | CLEAR |
+| Carry stress | USDJPY < 140 | rapid move | no mention | CLEAR |
 
-## Marker Watch
+All tripwires remain clear; the rule‑based signals (slow channel risk‑on, fast channel clear, credit clear, canary risk‑on) are authoritative and govern positioning.
 
-- **BoJ guidance**: Meeting in progress (Jun 15‑16). No guidance headlines yet; rate hike to 1.0% fully priced, guidance risk live.
-- **CPI**: May CPI 4.2% already absorbed; next print mid‑July.
-- **SpaceX vs $135**: SPCX continues soaring (+~20% Monday), well above $135 IPO price – euphoria marker, but no break of issue price.
-- **Hyperscaler capex**: NVDA announcing $20B bond sale; no capex cut news; AI infrastructure spending still expanding.
-- **Hormuz**: U.S. and Iran announce preliminary peace deal, Strait of Hormuz to reopen; oil prices dropping sharply, risk sentiment surging.
+## 2. Marker Watch
 
-## Delta
+- **BoJ guidance**: No new guidance released today; hike to 1.0% expected and likely executed, but statement language not yet reported.  
+- **CPI**: No new print. May CPI 4.2% — above 3.5% threshold, so marker inactive.  
+- **SpaceX vs $135**: Post‑IPO shares surged for a third day, market cap >$2.8T, well above $135 issue. No breach.  
+- **Hyperscaler capex**: NVDA plans $20B bond sale to fund AI build‑out; no guidance cuts.  
+- **Hormuz**: US‑Iran agreement to reopen strait announced; oil below $80 — closure scenario not active.
 
-The dominant event: a U.S.–Iran peace framework agreement. Headlines confirm a ceasefire and planned Hormuz reopening, sending crude oil down ~5% and equities sharply higher (Nasdaq up >2.5%). Bond yields and the dollar eased as investors priced out some inflation tail risk and dialled back Fed‑hike expectations. Gold rallied on the disinflationary impulse. This is a structurally positive shock, temporarily reducing the probability of an immediate war‑driven crash (scenario C) and reinforcing the “grind‑with‑violence” baseline (A). The BoJ meeting remains the single most dateable risk event through mid‑week; hawkish guidance could still trigger a carry unwind despite today’s relief.
+## 3. Delta
 
-## Scenario Pressure
+The dominant change: a US‑Iran peace deal that reopens the Strait of Hormuz. Oil prices slid below $80, Brent down sharply, and risk assets rallied. Gold rebounded but remains in a downtrend. The Fed’s two‑day meeting under Chair Warsh begins today; initial expectations are for no rate change, with inflation fears easing on oil relief. SpaceX euphoria continues, draining liquidity but buoying sentiment. The intermarket regime remains Transitional, but the “Bull Quiet” label in market data captures the disinflationary relief rally.
 
-Today’s evidence leans toward scenario A. The peace deal removes a major near‑term tail, supports risk assets, and demonstrates that the market can absorb the SpaceX IPO without dislocation. However, official weights do not change: the peace framework still requires final signing, the BoJ decision is not yet known, and the structural vulnerabilities (4.2% CPI, AI capex cycle, narrow breadth) remain intact. If BoJ guidance proves benign and oil stabilises, the case for A strengthens further, but we await monthly review to adjust probabilities. The signals already reflect a risk‑on posture; headlines align with the rule‑based state, so no contradiction exists.
+## 4. Scenario Pressure
+
+Today’s evidence clearly leans **Scenario A (Grind‑with‑violence)**. War de‑escalation removes the most acute tail risk, falling oil eases inflation‑and‑Fed angst, and risk appetite is robust (IPO absorption, tech bids). No tripwires are even close to firing; credit, breadth, and trend signals all confirm a risk‑on environment. We do not alter the 50/30/20 weights — those are monthly review items — but the near‑term path of least resistance is the range‑bound, air‑pocket‑prone pattern of Scenario A. The BoJ guidance, when released, remains the wildcard; hawkish words could quickly test that view.
 
 ## Portfolio Manager Synthesis
 
-## Lead Portfolio Manager Decision
+**Rationale & Synthesis**
 
-After reviewing the Risk Manager, Technical Analyst, and Macro Strategist reports—weighting the advanced model insights and cross‑checking against our investment thesis and intermarket signals—I am taking a **cautiously constructive but risk‑aware** first step out of 100% cash. The rule‑based mandate signals (slow channel, canary, credit, fast) all read “risk‑on / clear,” which calls for the portfolio to be invested. However, three high‑impact events converge this week (BoJ rate decision, Fed Chair Warsh’s debut, finalisation of the US‑Iran peace deal) that make a full and immediate deployment imprudent. A phased entry using broad, liquid ETFs captures the improving macro while preserving ample dry powder.
+The rule‑based mandates are clear: P‑sleeve, Y‑core and canary all signal SLEEVE_INVESTED.  
+The portfolio currently holds 100% cash; this is out of line with the IPS – we must deploy.  
+The investment thesis assigns a combined 50% probability to a bearish drawdown within 12 months (scenarios B+C), but none of the systemic tripwires have fired today (VIX/VIX3M = 0.86, HYG/LQD rel‑mom +1.0%, canary both positive).  
 
-### Core logic
-1. **Macro regime supports risk assets.** The US‑Iran deal, if it holds, disinflates energy inputs, dampens rate‑hike fears, and supports a “Goldilocks” re‑pricing of equities and bonds. The intermarket reading of “rates declining, strong dollar, weak commodities” is consistent with a pause in inflation and a gradual return of risk appetite.
-2. **Near‑term gap risk is real.** The BoJ decision could unleash a carry‑trade unwind reminiscent of August 2024 (USD/JPY < 140, VIX/VIX3M > 1.0). We must leave cash to react. The Fed’s language on Wednesday is also capable of reversing today’s euphoria.
-3. **Systematic mandate dictates exposure.** Our canary, slow‑channel, and credit signals are all invested—staying in 100% cash is contrary to the strategy’s posture. The best compromise is immediate core‑equity and diversified positions, while reserving ~16% of capital for post‑event scaling.
-4. **Gold and long bonds play a thematic role.** Gold is oversold and benefits from negative real‑rate dynamics, justifying a small hedge. Long Treasuries (TLT) benefit from falling rate expectations and a positive MACD cross, though we size the position conservatively given the 2022 scarring.
+The macro backdrop is dominated by the **US‑Iran Hormuz reopening agreement**:  
+- Brent below $80, oil‑led inflation moderating → disinflationary relief rally already priced in.  
+- Fed (first Warsh meeting) is cornered; no rate change expected → rates‑declining environment supportive of equities.  
+- Strong dollar and weak commodities (GLD, SLV, XLE all in downtrend) reinforce a **rotation away from oil/gold into cyclicals and defensive‑quality**.
 
-### Plan
+**Resolving analyst disagreements**  
 
-| Action | Ticker / Asset | Conviction Level | Timeframe | Justification |
-|--------|----------------|-------------------|-----------|---------------|
-| **Buy** | **VTI** (Total US Market) | High | Multi‑month core | Broad US equity exposure; rule‑based risk‑on mandate; VTI captures the whole market at a low cost. Priced near all‑time highs; buys into the broad uptrend with a buffer from diversified holdings. |
-| **Buy** | **VXUS** (Total International) | Medium | Multi‑month core | Thesis underscores non‑US diversification as an underpriced hedge. VXUS (including VGK, EWC, EWA etc.) aligns with the “risk‑on” canary signal (EWA momentum positive) and reduces single‑country concentration. |
-| **Buy** | **TLT** (20+ Year Treasuries) | Medium | 1–3 months | Rates‑declining signal supports duration. Peace deal reduces inflation expectations, lowering term premia. MACD bullish cross confirmed. Position is modest to reflect the lingering risk of an inflation re‑acceleration. |
-| **Buy** | **GLD** (Gold) | Low‑Medium | 1–3 months | Gold is the structural hedge for negative real rates and central bank buying. Oversold (RSI 35) and near lower Bollinger Band offers a tactical entry. Not a large position because dollar strength and weak commodity momentum remain headwinds. |
+- **Risk Manager** favours defensives (XLV, XLU) and gold as a hedge, while **Macro Strategist** wants to reduce defensives in favour of financials/industrials.  
+  **Decision:** The recession signals (rising unemployment claims, long‑term unemployment surging) combined with a still‑high probability of a bearish scenario justify **keeping a defensive sleeve alongside cyclicals**. We therefore blend both views, overweighting XLI and XLF (cyclical uplift) while holding XLV and XLU (downside cushion).  
+- **Technical Analyst** highlights oversold mean‑reversion setups in NFLX and AMZN. However, the Risk Manager correctly recommends avoiding consumer discretionary given recession risks; we therefore prefer the **broad small‑cap strength in IWM** as our re‑opening/recovery play.  
+- **Gold (GLD/IAU)** is deeply oversold (RSI 35) but remains a structural hedge for the scenario‑C black‑swan tail. We maintain a 5% allocation, using IAU for lower cost.  
 
-No individual stocks are purchased at this stage—broad beta is the appropriate vehicle while major event risk passes. After the BoJ and Fed outcomes, we will look to add to quality sectors (XLV, XLF) or beaten‑down mega‑caps (AAPL, AMZN) on pullbacks.
+**Positioning blueprint**  
+
+We deploy ~$59.4k (68% of cash) across a **balanced, risk‑on portfolio with embedded defensive hedging**:  
+
+| Asset | Role | Conviction |
+|-------|------|------------|
+| VOO | Core US equity (S&P 500) – captures broad market upside | High |
+| IWM | Small‑cap strength – benefits from disinflation/reopening, positive MACD | Medium |
+| XLI | Industrials – secular data‑center buildout, lower oil tailwind | High |
+| XLF | Financials – strong uptrend, deal activity, higher‑for‑longer rates | High |
+| XLV | Healthcare defensive – recession resilience | Medium |
+| XLU | Utilities defensive – power demand from AI, recession hedge | Medium |
+| IAU | Gold hedge – oversold tactical bounce + scenario‑C black‑swan protection | Medium |
+
+The remaining ~$27.8k cash (32% of portfolio) preserves dry powder for opportunistic buys during air‑pocket drawdowns, aligning with the Scenario A “grind with violence” expectation.
+
+**Markdown Table**
+
+| Action (Buy/Sell/Hold) | Ticker/Asset | Conviction Level (High/Medium/Low) | Timeframe | Justification |
+|-----------------------|---------------|------------------------------------|-----------|---------------|
+| Buy                   | VOO           | High                              | 3–6 mo    | Mandates = invested; broad US equity at ~21x forward with disinflation tailwind; core of sleeves. |
+| Buy                   | IWM           | Medium                            | 1–3 mo    | Small‑caps leading technically (MACD positive, RSI 62) and benefiting from lower oil/rates. Reopening play. |
+| Buy                   | XLI           | High                              | 3–6 mo    | Secular AI‑infra spending + lower energy costs; steady uptrend with MACD positive. |
+| Buy                   | XLF           | High                              | 3–6 mo    | Strongest cyclical trend (RSI 65); deal activity (SpaceX, Fox‑Roku) and steep yield curve support earnings. |
+| Buy                   | XLV           | Medium                            | 6–12 mo   | Defensive; recession signals rising; healthcare stable in drawdowns. |
+| Buy                   | XLU           | Medium                            | 6–12 mo   | Defensive; AI‑driven electricity demand; provides crash protection without TLT’s duration risk. |
+| Buy                   | IAU           | Medium                            | 3–6 mo    | 5% gold hedge: oversold bounce potential + central‑bank buying; preserves black‑swan protection. |
+| Hold                  | Cash          | –                                | –         | 32% dry powder for systematic dip‑buying if tripwires fire or air‑pockets occur. |
+
+**Executable JSON (equity only)**
 
 ## Paper-Account Attribution
 

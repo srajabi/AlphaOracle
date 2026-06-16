@@ -1,34 +1,36 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-06-15"
+date: "2026-06-16"
 ---
 
-## Tripwire Status (2026-06-15)
+# Thesis Sentinel Daily Brief — 2026-06-16
 
-| Tripwire | Signal | Today’s Reading | Status |
-|---|---|---|---|
-| Carry unwind | ^VIX / ^VIX3M | 0.86 (VIX 17.68 / VIX3M 20.51) | CLEAR |
-| Credit cracks | HYG/LQD 63d rel‑mom | +0.5% | CLEAR |
-| Breadth break | Canary (EWA + TLT both <0) | EWA +3.1%, TLT +1.2% | CLEAR |
-| Trend break | SPY close vs 200d SMA | SPY 741.75, 200d 684.07 | CLEAR |
-| Oil shock | XLE sustained leadership | XLE momentum –0.9% (negative) | CLEAR |
-| AI capex turn | Hyperscaler FY27 guidance cut | No cut news | CLEAR |
-| Carry stress | USDJPY <140 rapid | No USDJPY data; dollar strong but no stress trigger evident | CLEAR |
+## 1. Tripwire Status
 
-All seven tripwires are clear. No regime‑triggered defensive moves are required today.
+| Tripwire | Signal | Threshold | Reading | Status |
+|---|---|---|---|---|
+| Carry unwind | VIX/VIX3M | >1.0 | 0.86 (17.68 / 20.51) | CLEAR |
+| Credit cracks | HYG/LQD 63d rel‑mom | < –2% | +1.01% | CLEAR |
+| Breadth break | Canary (EWA,TLT) | both negative | 0 negatives | CLEAR |
+| Trend break | SPY monthly close vs 200d | below | 741.75 vs 684.07 | CLEAR |
+| Oil shock | XLE momentum vs SPY | sustained leadership | XLE mom –0.9%, SPY uptrend | CLEAR |
+| AI capex turn | Hyperscaler FY27 guidance | any cut | no cuts reported | CLEAR |
+| Carry stress | USDJPY < 140 | rapid move | no mention | CLEAR |
 
-## Marker Watch
+All tripwires remain clear; the rule‑based signals (slow channel risk‑on, fast channel clear, credit clear, canary risk‑on) are authoritative and govern positioning.
 
-- **BoJ guidance**: Meeting in progress (Jun 15‑16). No guidance headlines yet; rate hike to 1.0% fully priced, guidance risk live.
-- **CPI**: May CPI 4.2% already absorbed; next print mid‑July.
-- **SpaceX vs $135**: SPCX continues soaring (+~20% Monday), well above $135 IPO price – euphoria marker, but no break of issue price.
-- **Hyperscaler capex**: NVDA announcing $20B bond sale; no capex cut news; AI infrastructure spending still expanding.
-- **Hormuz**: U.S. and Iran announce preliminary peace deal, Strait of Hormuz to reopen; oil prices dropping sharply, risk sentiment surging.
+## 2. Marker Watch
 
-## Delta
+- **BoJ guidance**: No new guidance released today; hike to 1.0% expected and likely executed, but statement language not yet reported.  
+- **CPI**: No new print. May CPI 4.2% — above 3.5% threshold, so marker inactive.  
+- **SpaceX vs $135**: Post‑IPO shares surged for a third day, market cap >$2.8T, well above $135 issue. No breach.  
+- **Hyperscaler capex**: NVDA plans $20B bond sale to fund AI build‑out; no guidance cuts.  
+- **Hormuz**: US‑Iran agreement to reopen strait announced; oil below $80 — closure scenario not active.
 
-The dominant event: a U.S.–Iran peace framework agreement. Headlines confirm a ceasefire and planned Hormuz reopening, sending crude oil down ~5% and equities sharply higher (Nasdaq up >2.5%). Bond yields and the dollar eased as investors priced out some inflation tail risk and dialled back Fed‑hike expectations. Gold rallied on the disinflationary impulse. This is a structurally positive shock, temporarily reducing the probability of an immediate war‑driven crash (scenario C) and reinforcing the “grind‑with‑violence” baseline (A). The BoJ meeting remains the single most dateable risk event through mid‑week; hawkish guidance could still trigger a carry unwind despite today’s relief.
+## 3. Delta
 
-## Scenario Pressure
+The dominant change: a US‑Iran peace deal that reopens the Strait of Hormuz. Oil prices slid below $80, Brent down sharply, and risk assets rallied. Gold rebounded but remains in a downtrend. The Fed’s two‑day meeting under Chair Warsh begins today; initial expectations are for no rate change, with inflation fears easing on oil relief. SpaceX euphoria continues, draining liquidity but buoying sentiment. The intermarket regime remains Transitional, but the “Bull Quiet” label in market data captures the disinflationary relief rally.
 
-Today’s evidence leans toward scenario A. The peace deal removes a major near‑term tail, supports risk assets, and demonstrates that the market can absorb the SpaceX IPO without dislocation. However, official weights do not change: the peace framework still requires final signing, the BoJ decision is not yet known, and the structural vulnerabilities (4.2% CPI, AI capex cycle, narrow breadth) remain intact. If BoJ guidance proves benign and oil stabilises, the case for A strengthens further, but we await monthly review to adjust probabilities. The signals already reflect a risk‑on posture; headlines align with the rule‑based state, so no contradiction exists.
+## 4. Scenario Pressure
+
+Today’s evidence clearly leans **Scenario A (Grind‑with‑violence)**. War de‑escalation removes the most acute tail risk, falling oil eases inflation‑and‑Fed angst, and risk appetite is robust (IPO absorption, tech bids). No tripwires are even close to firing; credit, breadth, and trend signals all confirm a risk‑on environment. We do not alter the 50/30/20 weights — those are monthly review items — but the near‑term path of least resistance is the range‑bound, air‑pocket‑prone pattern of Scenario A. The BoJ guidance, when released, remains the wildcard; hawkish words could quickly test that view.

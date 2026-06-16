@@ -1,102 +1,113 @@
 ---
 title: Macro Strategist Report
-date: "2026-06-15"
+date: "2026-06-16"
 ---
 
 ## Model: deepseek/deepseek-v4-flash
 
-**Macro Analysis – June 15, 2026**
+# Macro & Regime Analysis – 2026-06-16
+
+## Summary
+The dominant macro story is the **US-Iran preliminary peace deal** to reopen the Strait of Hormuz, which flipped the narrative from oil‑driven inflation toward a disinflationary relief rally. This is superimposed on a **Fed meeting that just commenced** (first under Chair Warsh) where no rate change is expected, a **BoJ hike to 1.0%** absorbed without major disruption, and a **SpaceX IPO** that has already surged (+19% day-1). The regime is **Transitional but system signals remain risk‑on** (slow channel = risk_on, canary = risk_on, credit clear, VIX normal). No alarm bells yet, but the combination of late‑cycle markers (IPO euphoria, narrow breadth) and a near‑50% probability of a bearish scenario (slow bear + fast crash) requires measured deployment.
 
 ---
 
-## 1. Geopolitical Event of the Day: US-Iran Peace Deal
+## 1. Geopolitical Events – The Iran Deal pivot
 
-**Headline summary:** US and Iran agree to reopen the Strait of Hormuz. Oil prices fall ~5%, Nasdaq jumps ~3%, the VIX declines, and the dollar/yields soften as inflation expectations ease.
+| Direct effect | Second‑order & sensor mapping |
+|---|---|
+| **Oil prices drop below $80/bbl** (Brent) after Straits of Hormuz reopening agreement. | → **Bullish for consumer discretionary (XLY)**, airlines, transport. <br>→ **Bearish near‑term for energy (XLE)** but supply normalisation will take months – XLE may consolidate rather than crash. <br>→ **Lowers inflation expectations** – reduces pressure on the Fed, favours duration (TLT), removes the “stagflation” tail. |
+| **Risk‑off premium removed** – gold (GLD) fell sharply; VIX dropped from war peaks to normal (~17.7). | → **Safe‑haven demand fades** – gold may test lower support (IAU near $79, RSI 35). However, central‑bank buying continues (WGC survey) and negative real rates still support a gold core. <br>→ **TLT benefits** from lower inflation risk, but already rallied before the deal. The real‑rates signal is “rates declining” – moderately equity‑friendly. |
+| **Dollar strengthens** (UUP +1.2% trend) despite risk‑on move – paradox explained by safe‑haven demand moving from gold to USD, and higher US rates relative to Europe. | → **Headwind for commodities and EM** (EWA flat, EEM not in data). <br>→ **International equities underperform** – VGK up but lagging SPY. Favours US‑centric exposure. |
+| **Taiwan tensions** remain present but are not escalating today – Taiwan chip curbs and China missile shield are background noise. | → **No immediate supply‑chain disruption** – TSM/AVGO/NVDA trade on AI capex, not geopolitics. |
 
-### First-Order Market Moves
-| Asset | Reaction | Driver |
+**Net‑net: The Iran deal is a clear risk‑on catalyst that has already been priced into equities (SPY up +1.3% yesterday, Dow hit record). The second‑order benefit comes from lower inflation and Fed optionality, but it also drains the “war‑hedge” premium from gold and energy. This is NOT a regime change – it is a rotation within a risk‑on environment.**
+
+---
+
+## 2. Fed Policy & Rates – No fireworks expected
+
+- **The FOMC meeting starts today** (June 16-17). Market pricing (CNBC Fed Survey) expects **no change** for “a while”. New Chair Kevin Warsh faces his first test: 4.2% CPI vs. a war‑shocked economy. He is cornered.
+- **Oil falling below $80** provides a narrative to stay on hold without being seen as dovish. The **real‑rates signal is “rates_declining”** (TLT uptrend, momentum +2.9%). This is moderately equity‑friendly.
+- **Key risk**: If the Fed signals even a slight hawkish tilt (e.g., “need to see sustained disinflation”), equities could sell off, especially growth/tech. However, Warsh is likely to strike a neutral tone, given the war tailrisk.
+- **Implied probability of a rate rise this year has fallen** (WSJ) – that supports duration and growth stocks.
+
+**Second‑order**: Lower rates and lower oil → **growth‑style stocks (QQQ, XLK) could regain leadership** after the recent pullback, while **value/cyclicals (XLI, XLF) continue** on the economic “normalisation” theme.
+
+---
+
+## 3. Cross‑Asset Signals – No cracks
+
+| Signal | Current state | Interpretation |
 |---|---|---|
-| XLE (Energy) | -3.1% | Oil supply disruption reversed; Yemen/Hormuz risk premium collapses |
-| QQQ (Nasdaq) | +2.8% | AI momentum trade resumes; energy-cost relief for margins |
-| GLD (Gold) | +0.5% (bounce) | Dollar decline and real-rate dip outweigh safe-haven unwind |
-| TLT (Long Bonds) | +0.3% | Reduced inflation fears → lower term premium; rate-hike bets pared |
-| ^VIX | -0.9 pts to 17.7 | Geopolitical tail risk removed; back to “normal” range |
+| **Slow channel (SPY vs 200dma)** | risk_on (distance +10.25%) | No trend break |
+| **Fast channel (VIX/VIX3M 5d median)** | clear (0.91, <1.0) | No panic, no backwardation |
+| **Credit (HYG/LQD 63d rel‑mom)** | clear (+0.0101) | No stress |
+| **Canary momentum** | risk_on (EWA +1.4%, TLT +0.8%) | Both positive → fully risk‑on |
+| **Dollar** | strong uptrend | Commodity headwind |
+| **Commodities** | weak (gold, silver, energy all negative) | Disinflationary / risk‑on rotation away from pre‑war hedges |
+| **VIX** | normal (17.68, below 20‑dma) | Complacent |
 
-### Second-Order & Sector Mapping
-- **Transports and Industrials (XLI, IYT):** Falling oil reduces fuel costs; airlines, logistics, and manufacturers benefit.
-- **Consumer Discretionary (XLY) / Retail:** Lower gasoline prices = real income boost; consumer spending resilience improves.
-- **Financials (XLF):** Yield curve steepening pause but lower default risk on reduced oil volatility; net positive.
-- **Tech (XLK, QQQ):** Best absolute performer; AI infrastructure (NVDA, AMD, MU) rally on risk-on + memory shortage narrative.
-- **Utilities (XLU) / Real Estate (XLRE):** Mixed; lower rates help, but rotation out of defensives into growth limits gains.
-
-**Key nuance:** The deal is an “interim” framework – final signing expected June 19. Full oil-flow normalization will take months (Reuters). **The relief rally is real but contains a execution-risk tail.**
+**Conclusion**: The intermarket picture is **coherent with a disinflationary, risk‑on rotation** but with a strong dollar distorting commodities. No tripwire has been triggered. The only concern is that **complacency is building** while late‑cycle markers (SpaceX IPO, narrow breadth) are present. The investment thesis correctly flags a ~50% chance of a bearish scenario within 12 months – but today’s signals do not support a defensive posture yet.
 
 ---
 
-## 2. Fed Policy & Rates – Warsh’s First Meeting
+## 4. Sector Rotation – Clues from the data
 
-**Background:** Chair Kevin Warsh holds his debut press conference this week. CPI at 4.2% (May) and unemployment low; market expects rates steady. The Iran deal **changes the calculus** – lower energy prices reduce near-term inflation pressure, giving the Fed less reason to hike.
+| Sector / Theme | Technical signals | Fundamental driver | Suggested tilt |
+|---|---|---|---|
+| **Technology (XLK)** | Above 200dma, MACD hist negative, price near SMA20. NVDA/AVGO pulling back from highs. AI storage (STX, WDC) still surging. | AI capex cycle strong but deceleration ahead. Revenue concentration risk. | **Neutral‑slightly bullish** for QQQ (diversified tech), but avoid single‑name AI winners at stretched valuations. Prefer indirect plays (MU, KLAC, ANET). |
+| **Energy (XLE)** | Neutral momentum, RSI 48, price below SMA20. Oil price drop weakens near‑term. | Iran deal reduces risk premium, but supply constraints persist. Long‑term positive. | **Underweight near‑term**, but don’t exit completely (geopolitical tailrisk remains). |
+| **Financials (XLF)** | Strong uptrend, RSI 65, above SMA20. | Higher rates (even if on hold) + deal activity (SpaceX, Fox‑Roku) = robust earnings. | **Overweight** – best cyclical play. |
+| **Industrials (XLI)** | Uptrend, RSI 56, near highs. | Infra spending, data‑center buildout (MTZ). Beneficiary of lower oil. | **Overweight** – secular AI‑infra demand. |
+| **Consumer Discretionary (XLY)** | Below SMA20, RSI 48, mixed. AMZN, TSLA struggling. | Lower oil eventually positive, but consumer sentiment fragile. | **Neutral** – wait for clearer improvement. |
+| **Defensives (XLP, XLV, XLU)** | Mixed: XLP uptrend, XLV uptrend, XLU neutral. | Rotation away from defensives to cyclicals in risk‑on mood. | **Reduce** defensives; keep only for tail‑hedge. |
+| **Gold (GLD/IAU)** | Strong downtrend, RSI 35, below 50dma. | Dollar strength + risk‑on = headwind. Central‑bank buying provides floor. | **Hold core position** (5‑10%) for scenario C black‑swan hedge. |
+| **Bonds (TLT)** | Uptrend, RSI 56, above SMA20 but below 200dma. | Disinflation narrative + Fed hold = supportive. | **Neutral** – not the 2022 disaster, but don’t overweight. Use TMF only for short‑term hedges. |
 
-- **Before the deal:** Fed cornered – cannot cut into 4.2%, cannot hike into a war economy.
-- **After the deal:** “Goldilocks” scenario – if oil stays lower, inflation may drift below 4% by Q3, opening a path to cuts in late 2026 or early 2027.
-- **Rate-hike probability today:** Dropped sharply (WSJ: “Traders Reduce Bets on a Fed Rate Rise This Year”).
-- **TLT implication:** The 5% 30y yield tested earlier in June now looks like a ceiling; TLT is in a short-term uptrend (above 20d SMA, MACD positive). Duration-sensitive portfolios should be overweight long Treasuries relative to cash.
-
-**Watch:** Warsh’s language on “data dependency” and whether he pushes back on market expectations of a near-term cut.
-
----
-
-## 3. Cross-Asset Signal Regime
-
-| Signal | State | Implication |
-|---|---|---|
-| **Dollar (UUP)** | Strong uptrend (above all SMAs); momentum +1.2% | Headwind for commodities and EM; but deal-induced dip creates a tactical fade opportunity if oil stays low. |
-| **Real Rates (TLT)** | Rates declining (TLT uptrend); 10y yield at 4.49% from 4.52% | Favorable for equities (lower discount rate), supportive for gold in medium term. |
-| **Commodities (GLD, XLE, SLV)** | Weak across the board; gold in downtrend, silver sharply lower, energy neutral | Disinflationary signal from demand destruction? More likely a strong-dollar + peace-deal re-pricing. Gold’s true trend will depend on how the Fed message evolves. |
-| **Credit (HYG, LQD)** | HYG ~0.1% above 200d SMA; spreads tight | No stress. The credit channel (HYG/LQD 63d rel-mom = +0.5%) is clear – supports a risk-on bias. |
-
-**Regime read:** Transitional (low confidence) but with a clear near-term risk-on tilt post-deal. The intermarket signals are not yet screaming “overheating” or “deflation” – rather, they describe a messy normalization from a war premium.
+**Rotation signal**: From energy/gold toward financials, industrials, and selective technology. The consumer staples are still bid (XLP RSI 61) – that suggests the rotation is not full‑throttle risk‑on but a “quality at a reasonable price” bias.
 
 ---
 
-## 4. Sector Rotation & Leadership
+## 5. Positioning Adjustments
 
-**Today’s clear winners:**
-- Technology (XLK +2.3%, AI chips especially)
-- Consumer Discretionary (XLY +1.8%, boosted by gas-price relief)
-- Industrials (XLI +1.4%, infrastructure & transportation)
-- Financials (XLF +1.2%, lower recession risk)
+Given the all‑cash portfolio ($87k) and the rule‑based signals (mandates = SLEEVE_INVESTED), the following steps are appropriate:
 
-**Today’s clear losers:**
-- Energy (XLE -3.1%)
-- Healthcare (XLV -0.6%, defensive rotation out)
-- Consumer Staples (XLP +0.1%, flat)
+### Immediate (this week)
+1. **Deploy 40‑50% of cash** via **cash‑secured puts** on high‑quality names at moderate OTM strikes – e.g., AMZN $230 July 10 (put credit ~0.7% yield), AAPL $280 July 10 (~0.5%), QQQ $712 July 2 (~1.0%). This earns premium while allowing entry below current prices.
+2. **Start a core position in XLI** (industrials) and **XLF** (financials) – both are in strong uptrends and benefit from the peace dividend + AI‑infra theme. Use **limit orders near SMA20** to avoid chasing.
+3. **Reduce gold exposure** in the satellite sleeve – maintain 5% in GLD through the ETF, but do not increase; the commodity weakness signal is strong.
 
-**Rotation pattern:** The AI trade reasserts dominance. Energy is being sold hard – the war premium is being extracted quickly. This is a textbook “risk-on / sector rotation” move.
+### Conditional on Fed meeting (June 17)
+- If Warsh signals **dovish hold** (no rate hike for rest of year) → **add to QQQ/XLK** (growth re‑rating).
+- If **hawkish surprise** (rate hike probability rises) → **add to short‑duration, defensive sectors** (XLP, XLU) and **sell long‑dated TLT calls** to hedge duration risk.
 
-**Structural note:** The thesis warns of “AI capex deceleration” as a future risk (2027 guidance). For now, the momentum remains intact. The peace deal reinforces the “no recession” scenario, which is bullish for cyclicals and bearish for gold/defensives.
-
----
-
-## 5. BoJ & the Yen Carry Risk – The Dateable Event
-
-**BoJ decision June 15-16 (today/tomorrow):** Market prices a hike to 1.00%. The risk is not the level but the **guidance** – any hint of further tightening or balance-sheet reduction could trigger a repeat of August 2024’s carry unwind.
-
-- **Current USDJPY ~148** (not shown in data, but implied by strong dollar). A hawkish BoJ could push USDJPY to 140 in days, forcing a deleveraging that hits SPX, QQQ, and crypto.
-- **Tripwire on dashboard:** VIX/VIX3M > 1.0 (currently 0.86 – not yet backwardated). If that triggers within the next 48 hours, the fast crash scenario (C) probability rises.
-
-**Actionable:** The BoJ meeting overlaps with the peace-deal euphoria. This creates a **two-day straddle-like environment** – the market could gap either way. Do not add aggressive new positions until the BoJ statement is digested.
+### Systemic risk management
+- Set a **trailing stop‑loss on SPY** at the 200‑day SMA (~680), which is ~9% below current price. This would prevent catastrophic drawdown if the “fast crash” scenario materialises.
+- Monitor **VIX/VIX3M daily**; if it hits 1.0, halve equity exposure immediately (as per trend_plus_vix_term rule).
 
 ---
 
-## 6. Positioning Implications for the Portfolio
+## 6. Key Tripwires to Watch
 
-The mandate signals (slow channel = risk_on, canary = risk_on, credit clear) together with today’s news argue for maintaining a **defensive-leaning but invested stance**. The all-cash position is leaving money on the table in a regime where the slow channel is positive and the credit market is calm.
+| Tripwire | Current value | Threshold | Action if triggered |
+|---|---|---|---|
+| VIX/VIX3M | 0.86 | >1.0 | Switch to defensive (sell equities, go to cash/GLD) |
+| SPY monthly close < 200dma | 741.75 > 680 | Monthly close below | Shift core mandate to defensive |
+| USDJPY | ~140 (est.) | Rapidly <140 | Reduce risk; carry unwind in progress |
+| HYG/LQD 63d rel‑mom | +1.0% | < -2% | Confirm slow‑bear in play; hedge with TLT puts |
+| Canary (EWA, TLT) both negative | Both positive | Both negative | DAA goes full defensive |
 
-- **Equity core:** Given slow-channel risk_on and canary momentum positive on EWA and TLT, a balanced global exposure (VT or VOO + international) makes sense.
-- **Duration:** TLT is in an uptrend and benefits from the peace deal’s inflation-dampening effect. A small long position (via TLT itself or a moderate-duration fund) aligns with the rates_declining signal.
-- **Gold:** The trend is down, but GLD bounced today. The thesis holds gold as a structural hedge against negative real rates. However, momentum is negative – wait for a confirmed bottom before adding.
-- **Energy:** The war premium is collapsing. Avoid XLE for now; the sector may re-enter favor only if the deal falters (which is a tail, not the base case).
-- **Risk management:** The BoJ announcement tonight/tomorrow morning is the highest-risk near-term event. Any new equity positions should be sized to survive a 3–5% drawdown if the carry unwind materializes. Using the existing cash to enter a **partial position** (25-50% of the desired allocation) would be prudent, with the rest kept in reserve to deploy if the BoJ creates a buying opportunity.
+Today none of these are flashing, so we maintain a **risk‑on but cautious** stance – not full‑blown bullish.
 
-**Bottom line:** The peace deal is a powerful positive catalyst that reinforces the slow-channel risk-on signal. But the BoJ risk and the speed of the oil-pric e unwinding argue against going fully invested on day one. A phased entry into equities (SPY or VT) and a small long-duration bond position (TLT) would capture the improving macro while leaving dry powder for the BoJ outcome. Gold and energy remain wait-and-see.
+---
+
+## Conclusions
+
+- **Regime**: Transitional → leaning risk‑on after the Iran deal, but with low confidence due to late‑cycle markers.
+- **Geopolitical pivot**: War‑to‑peace reduces tailrisk in oil, supports cyclicals, and removes the immediate stagflation fear. However, the “peace dividend” is partly priced and supply normalisation takes months.
+- **No regime change** – still in the Grind‑with‑violence scenario (50% weight). The probability of a bearish outcome (50% combined) keeps us from becoming exuberant.
+- **Sector rotation**: Move from energy/gold to financials/industrials and, on dips, growth tech. Maintain a hedge in gold (5%) and cash (30‑40%) for the high‑impact tails.
+- **Actionable**: Deploy via cash‑secured puts and limit orders into sectors with strong fundamentals and technical momentum. Stay within the mandates. The system is already positioned for this – the job is to execute without emotion.
+
+**Final note**: The SpaceX IPO was absorbed with a pop, which is historically a late‑cycle euphoria signal. Combined with narrow breadth (top‑10 = 41% of S&P cap), we should be ready to de‑risk quickly if any of the tripwires breach. Today is not that day, but the watch is set.

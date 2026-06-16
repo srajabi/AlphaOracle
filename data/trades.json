@@ -1,22 +1,37 @@
 [
     {
-        "ticker": "VTI",
+        "ticker": "VOO",
         "action": "buy",
-        "notional_value": 50000
+        "notional_value": 20000
     },
     {
-        "ticker": "VXUS",
+        "ticker": "IWM",
+        "action": "buy",
+        "notional_value": 5000
+    },
+    {
+        "ticker": "XLI",
         "action": "buy",
         "notional_value": 10000
     },
     {
-        "ticker": "TLT",
+        "ticker": "XLF",
         "action": "buy",
-        "notional_value": 8000
+        "notional_value": 10000
     },
     {
-        "ticker": "GLD",
+        "ticker": "XLV",
         "action": "buy",
         "notional_value": 5000
+    },
+    {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 5000
+    },
+    {
+        "ticker": "IAU",
+        "action": "buy",
+        "notional_value": 4359
     }
 ]
