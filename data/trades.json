@@ -1,37 +1,22 @@
 [
     {
-        "ticker": "VOO",
+        "ticker": "SPY",
         "action": "buy",
-        "notional_value": 20000
-    },
-    {
-        "ticker": "IWM",
-        "action": "buy",
-        "notional_value": 5000
-    },
-    {
-        "ticker": "XLI",
-        "action": "buy",
-        "notional_value": 10000
+        "notional_value": 30000
     },
     {
         "ticker": "XLF",
         "action": "buy",
+        "notional_value": 15000
+    },
+    {
+        "ticker": "VGK",
+        "action": "buy",
         "notional_value": 10000
     },
     {
-        "ticker": "XLV",
+        "ticker": "XLI",
         "action": "buy",
         "notional_value": 5000
-    },
-    {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 5000
-    },
-    {
-        "ticker": "IAU",
-        "action": "buy",
-        "notional_value": 4359
     }
 ]
