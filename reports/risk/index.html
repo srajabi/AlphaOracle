@@ -1,239 +1,294 @@
 <!DOCTYPE html><html lang="en" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/AlphaOracle/favicon.svg"><link rel="icon" href="/AlphaOracle/favicon.ico"><meta name="generator" content="Astro v5.18.0"><title>Risk Manager Report</title><style>:root{--bg: #0b0e14;--panel-bg: #131722;--panel-bg-raised: #1e2230;--border: #2a2e39;--text: #f8f9fa;--text-body: #d1d4dc;--text-muted: #8f949e;--accent: #2962ff;--accent-soft: #c4d4ff;--green: #28a745;--red: #dc3545;--red-bright: #f6465d;--yellow: #ffc107}.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}.panel{background:var(--panel-bg);border:1px solid var(--border);border-radius:12px;padding:1.25rem;margin-bottom:1rem}.muted{color:var(--text-muted)}.btn{text-decoration:none;color:#fff;background:var(--accent);border-radius:8px;padding:.5rem .85rem;font-size:.85rem;font-weight:600}html,body{margin:0;width:100%;height:100%;background:#0b0e14;color:#f8f9fa;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif}.site-header[data-astro-cid-sckkx6r4]{position:sticky;top:0;z-index:100;background:#0b0e14eb;backdrop-filter:blur(8px);border-bottom:1px solid #2a2e39}.site-header-inner[data-astro-cid-sckkx6r4]{max-width:1100px;margin:0 auto;padding:.7rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}.brand[data-astro-cid-sckkx6r4]{color:#f8f9fa;text-decoration:none;font-weight:800;font-size:1.1rem;letter-spacing:.01em}.site-nav[data-astro-cid-sckkx6r4]{display:flex;gap:.25rem;flex-wrap:wrap}.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]{color:#8f949e;text-decoration:none;font-size:.9rem;font-weight:600;padding:.35rem .7rem;border-radius:8px}.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]:hover,.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4].active{color:#f8f9fa;background:#1e2230}
 main[data-astro-cid-ipuyqs4v]{max-width:850px;margin:0 auto;padding:3rem 1.5rem;line-height:1.7;color:#d1d4dc}header[data-astro-cid-ipuyqs4v]{margin:0 0 3rem;border-bottom:1px solid #2a2e39;padding-bottom:1.5rem}h1[data-astro-cid-ipuyqs4v]{margin:0;font-size:3rem;color:#fff;font-weight:800;letter-spacing:-.02em}.date[data-astro-cid-ipuyqs4v]{color:#8f949e;margin-top:.5rem}article[data-astro-cid-ipuyqs4v]{font-size:1.15rem}article[data-astro-cid-ipuyqs4v] h2{margin-top:3rem;color:#fff;font-size:1.75rem;border-bottom:1px solid #2a2e39;padding-bottom:.5rem}article[data-astro-cid-ipuyqs4v] h3{margin-top:2rem;color:#fff}article[data-astro-cid-ipuyqs4v] p{margin-bottom:1.5rem}article[data-astro-cid-ipuyqs4v] table{width:100%;border-collapse:collapse;margin:2.5rem 0;background:#131722;border-radius:8px;overflow:hidden;border:1px solid #2a2e39}article[data-astro-cid-ipuyqs4v] th,article[data-astro-cid-ipuyqs4v] td{border:1px solid #2a2e39;padding:1rem;text-align:left}article[data-astro-cid-ipuyqs4v] th{background:#1c212d;color:#8f949e;text-transform:uppercase;font-size:.8rem;letter-spacing:.05em}article[data-astro-cid-ipuyqs4v] strong{color:#fff}
 </style></head> <body data-astro-cid-sckkx6r4> <header class="site-header" data-astro-cid-sckkx6r4> <div class="site-header-inner" data-astro-cid-sckkx6r4> <a class="brand" href="/AlphaOracle/" data-astro-cid-sckkx6r4>AlphaOracle</a> <nav class="site-nav" data-astro-cid-sckkx6r4> <a href="/AlphaOracle/" data-astro-cid-sckkx6r4> Analysis </a><a href="/AlphaOracle/news-events/" data-astro-cid-sckkx6r4> News </a><a href="/AlphaOracle/indicators/" data-astro-cid-sckkx6r4> Indicators </a><a href="/AlphaOracle/tickers/" data-astro-cid-sckkx6r4> Tickers </a><a href="/AlphaOracle/backtests/" data-astro-cid-sckkx6r4> Backtests </a><a href="/AlphaOracle/research/" data-astro-cid-sckkx6r4> Research </a><a href="/AlphaOracle/paper-trading/" data-astro-cid-sckkx6r4> Paper Trading </a> </nav> </div> </header>  <main data-astro-cid-ipuyqs4v> <header data-astro-cid-ipuyqs4v> <h1 data-astro-cid-ipuyqs4v>Risk Manager Report</h1> <p class="date" data-astro-cid-ipuyqs4v>2026-06-17</p> </header> <article data-astro-cid-ipuyqs4v> <h2 id="model-deepseekdeepseek-v4-flash">Model: deepseek/deepseek-v4-flash</h2>
-<h2 id="downside-protection--geopolitical-risk-analysis--2026-06-17">Downside Protection &#x26; Geopolitical Risk Analysis – 2026-06-17</h2>
-<h3 id="macro-regime-summary">Macro Regime Summary</h3>
+<h1 id="risk-management-memo-downside-protection--geopolitical-risk-analysis">Risk Management Memo: Downside Protection &#x26; Geopolitical Risk Analysis</h1>
+<p><strong>Date:</strong> 2026-06-17<br>
+<strong>Regime:</strong> Bull Quiet (Transitional, with latent stagflation risks)<br>
+<strong>Portfolio:</strong> 100% Cash ($87k)</p>
+<hr>
+<h2 id="1-geopolitical--macro-risk-dashboard">1. Geopolitical &#x26; Macro Risk Dashboard</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Risk Event</th><th>Severity (1-10)</th><th>Probability</th><th>Primary Assets Impacted</th><th>Time Horizon</th></tr></thead><tbody><tr><td><strong>Fed Hawkish Surprise</strong> (one hike signaled)</td><td>7</td><td>Medium (50%)</td><td>SPY, QQQ, TLT (bearish); XLF (bullish as banks benefit from steeper curve)</td><td>Immediate (priced today) to weeks</td></tr><tr><td><strong>Iran Deal Fragility</strong> (Hormuz restart stalled)</td><td>5</td><td>Medium (40%)</td><td>XLE, XLE puts (bearish if deal fails); GLD bullish on risk-off</td><td>Days to weeks</td></tr><tr><td><strong>China-Taiwan Chip Curbs</strong> (export controls escalate)</td><td>6</td><td>Low-Medium (30%)</td><td>TSM, NVDA, AMD, INTC (bearish); GLDM, ^VIX bullish</td><td>Weeks to months</td></tr><tr><td><strong>Recession Signals</strong> (rising unemployment, slower growth)</td><td>8</td><td>Medium (50% over 12 months)</td><td>QQQ, SPY, XLY (bearish); XLU, XLP, GLD (bullish)</td><td>Months (Q3-Q4 2026)</td></tr><tr><td><strong>BoJ Carry Unwind</strong> (lagged risk from June 15-16)</td><td>6</td><td>Low (20%)</td><td>SPY, QQQ, crypto (bearish); USDJPY &#x3C;140 trigger</td><td>Immediate to next 2 weeks</td></tr></tbody></table>
+<p><strong>Composite View:</strong> The market is pricing a benign environment (VIX 16.4, credit spreads tight), but the macro news aggregate shows multiple correlated risk drivers. The “grind-with-violence” scenario (50%) remains base case, but fast-crash tail (20%) is <strong>live</strong> due to Fed + BoJ + liquidity drain (SpaceX IPO).</p>
+<hr>
+<h2 id="2-portfolio-level-hedges--safe-haven-deployment">2. Portfolio-Level Hedges &#x26; Safe Haven Deployment</h2>
+<p>Given current cash position, we recommend <strong>immediate partial deployment into defensive assets</strong> with embedded hedges for when equity exposure is added later.</p>
+<h3 id="a-safe-haven-accumulation">A. Safe Haven Accumulation</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Ticker</th><th>Direction</th><th>Rationale</th><th>Entry</th><th>Allocation</th></tr></thead><tbody><tr><td><strong>GLD</strong> (Gold)</td><td>Buy</td><td>Negative real rates (CPI 4.2% vs fed funds 4.25%), central bank buying, geopolitical risk. Current price $397.63 near 200-day SMA support.</td><td>Market order</td><td>15–20% of cash</td></tr><tr><td><strong>TLT</strong> (Long Treasuries)</td><td>Buy cautiously</td><td>Rates are declining (TLT uptrend), but inflation risk caps upside. Use as tactical bond exposure, not core defense.</td><td>Limit &#x3C;$86</td><td>10–15%</td></tr><tr><td><strong>XLU</strong> (Utilities)</td><td>Buy</td><td>Defensive sector, AI-driven power demand supports. Price $45.06, holding above SMA20.</td><td>Market order</td><td>10%</td></tr><tr><td><strong>XLP</strong> (Consumer Staples)</td><td>Buy</td><td>Classic recession hedge, low beta, steady dividends. Price $85.59, in uptrend.</td><td>Market order</td><td>10%</td></tr></tbody></table>
+<p>Total safe haven allocation: <strong>45–55%</strong> of cash.</p>
+<h3 id="b-equity-exposure-with-integrated-hedges">B. Equity Exposure with Integrated Hedges</h3>
+<p>If you wish to deploy any equity capital (e.g., for the “aggressive” sleeve), <strong>do so only with protective puts.</strong> The options chain snapshot provides liquid contracts.</p>
+<h4 id="recommended-protective-put-portfolio-for-a-hypothetical-30k-equity-position">Recommended Protective Put Portfolio (for a hypothetical $30k equity position):</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Underlying</th><th>Strategy</th><th>Strike &#x26; Expiry</th><th>Cost per Share</th><th>Max Downside Protection</th></tr></thead><tbody><tr><td><strong>SPY</strong></td><td>Buy call + protective put collar? No – pure protective put is cleanest</td><td>SPY 760C / 720P? Simpler: buy 100 shares SPY + buy 1x SPY 260710P00719 ($5.07)</td><td>Put cost = $507</td><td>Limits loss to ~$3,000 (4% below current)</td></tr><tr><td><strong>QQQ</strong> (if tech exposure desired)</td><td>Buy 1x QQQ 260710P00701 ($10.47) per 100 shares</td><td>Cost = $1,047</td><td>Limits loss to ~$2,500 (3.5%)</td><td></td></tr><tr><td><strong>NVDA</strong> (if AI conviction)</td><td>1x NVDA 260710P00190? But NVDA at 207.41 – use 190 put? Not in chain. Use SPY/QQQ for aggregate protection.</td><td></td><td></td><td></td></tr></tbody></table>
+<p><strong>Simplicity note:</strong> For a cash-heavy portfolio, the most efficient hedge is <strong>long SPY put spreads</strong> or <strong>VIX call spreads</strong> to cover gap risk, rather than per-stock hedges.</p>
+<h3 id="c-gap-risk-tail-hedge-crash-protection">C. Gap Risk Tail Hedge (Crash Protection)</h3>
+<p>Given the 20% fast-crash scenario, buy a small <strong>VIX call</strong> or <strong>SPY put spread</strong> that pays off in a 5%+ one-day drop.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Ticker</th><th>Strategy</th><th>Structure</th><th>Max Cost</th><th>Payout Trigger</th></tr></thead><tbody><tr><td><strong>^VIX</strong> (via VIX options?) Not in chain; use SPY options</td><td>Buy 1x SPY 260702P00719 (strike 719, 3% OTM) for $4.08 x 100 = $408. This offers ~$2,100 protection if SPY drops to 690.</td><td>Single put, 15 DTE</td><td>$408</td><td>>2.9% drop</td></tr></tbody></table>
+<p>Alternatively, buy a <strong>QQQ 260702P00690</strong> (not shown, but estimate low). Given small portfolio, a single SPY put is sufficient.</p>
+<hr>
+<h2 id="3-specific-geopolitical-catalyst-plays">3. Specific Geopolitical Catalyst Plays</h2>
+<h3 id="strait-of-hormuz--iran-deal">Strait of Hormuz / Iran Deal</h3>
 <ul>
-<li><strong>Market Regime:</strong> Bull Quiet (risk‑on, low VIX ~16.4, falling).</li>
-<li><strong>Dollar:</strong> Strong uptrend – headwind for commodities, EM, international equities.</li>
-<li><strong>Rates:</strong> Declining – moderately supportive for equities, but TLT still in a consolidation range.</li>
-<li><strong>Commodities:</strong> Weak across the board – gold downtrend, silver/energy strong_negative.</li>
+<li><strong>If reopening stalls:</strong> Oil spikes, XLE rallies. <strong>Short XLE via puts</strong>? Actually, XLE is already weak. <strong>Buy XLE calls</strong> for a bounce? Counterintuitive – but we want protection. <strong>We are long XLE via safe haven?</strong> No – we avoid direct energy given volatility. Instead, <strong>buy GLD</strong> as a proxy for risk-off.</li>
+<li><strong>If deal succeeds:</strong> Oil continues to fall, XLE drops further. <strong>Avoid energy longs.</strong> Our GLD position will suffer in risk-on, but TLT should gain on lower inflation.</li>
 </ul>
-<h3 id="key-geopolitical-catalysts--risk-assessment">Key Geopolitical Catalysts &#x26; Risk Assessment</h3>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Catalyst</th><th>Severity (1-10)</th><th>What Happened</th><th>Time Horizon</th><th>Impact on Sectors/Tickers</th><th>Recommended Hedge/Action</th></tr></thead><tbody><tr><td><strong>Strait of Hormuz / Iran Deal</strong></td><td>6 (de‑escalation, but logistics remain problematic)</td><td>US‑Iran ceasefire signed; Iranian oil tankers resume passage; restarting shipping traffic will take months.</td><td>Days to weeks</td><td><strong>Bullish:</strong> SPY, QQQ, Industrials (XLI), Consumer (XLY).<br><strong>Bearish:</strong> Energy (XLE, O&#x26;G stocks), Gold (safe‑haven unwind).</td><td><strong>Avoid</strong> energy longs; consider protective puts on XLE or short XLE.<br><strong>Hedge</strong> tail risk with SPY/QQQ puts (see below).</td></tr><tr><td><strong>Fed First Meeting (Chair Warsh)</strong></td><td>7</td><td>Expected to hold rates; press conference at 2:30pm ET. Risk of hawkish surprise (rate‑hike talk).</td><td>Immediate (intraday / today)</td><td><strong>Rates‑sensitive:</strong> TLT, QQQ, SPY, ^VIX.<br>If hawkish: equities drop, bonds sell off, VIX spikes.</td><td><strong>Buy</strong> SPY 728 Put (7/2) or QQQ 711 Put (7/2) for crash protection.<br><strong>Trim</strong> long‑duration bond exposure (TLT) if no hedge.</td></tr><tr><td><strong>BoJ Rate Hike (June 15-16)</strong></td><td>5 (already priced, but guidance unknown)</td><td>Hike to 1.0% – carry unwind risk from ~$500B yen carry trade.</td><td>Immediate (the event has passed, but follow‑through possible)</td><td><strong>Most exposed:</strong> Mega‑cap tech (NVDA, MSFT, AAPL), Crypto (IBIT).<br><strong>Safe:</strong> Dollar (UUP), Gold (GLD).</td><td>Monitor USDJPY; if breaks &#x3C;145, add VIX calls or SPY puts.<br>No immediate action unless spot moves.</td></tr><tr><td><strong>China‑Taiwan / Semiconductor Tensions</strong></td><td>4 (no fresh escalation today)</td><td>Ongoing tech export curbs; Taiwan mulls AI chip sales restrictions.</td><td>Weeks to months</td><td><strong>Bearish:</strong> Semis (TSM, NVDA, AMD, KLAC) – supply chain risk.<br><strong>Bullish:</strong> Gold, defense (no relevant ticker).</td><td>Keep semis at market weight or underweight; use protective puts on SMH or QQQ.</td></tr><tr><td><strong>Recession Signals</strong></td><td>5</td><td>Rising jobless claims, slower job growth, but still historically low.</td><td>Weeks to months</td><td><strong>Defensive plays:</strong> Utilities (XLU), Staples (XLP), Gold (GLD).<br><strong>Cyclicals under pressure:</strong> Industrials (XLI), Financials (XLF).</td><td><strong>Rotate</strong> from cyclicals to defensive sectors.<br>Long XLU or XLP as safe havens.</td></tr></tbody></table>
-<h3 id="recommended-portfolio-actions-starting-from-cash-87k">Recommended Portfolio Actions (Starting from Cash ~$87k)</h3>
-<p><strong>1. Establish a Defensive Base (40% of cash)</strong></p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Position</th><th>Rationale</th><th>Allocation</th><th>Entry / Option</th></tr></thead><tbody><tr><td><strong>GLD</strong> (or IAU)</td><td>Safe‑haven; weak short‑term but structural positive (negative real rates, central bank buying).</td><td>$15k</td><td>Buy near $397 (current).</td></tr><tr><td><strong>SHY</strong> (1-3yr Treasury ETF)</td><td>Cash alternative; earn yield with minimal duration risk.</td><td>$15k</td><td>Buy at market.</td></tr><tr><td><strong>Cash</strong></td><td>Dry powder for opportunities.</td><td>$10k</td><td>Hold.</td></tr></tbody></table>
-<p><strong>2. Income Generation via Cash‑Secured Puts (30% of cash)</strong></p>
-<p>Sell OTM puts on high‑quality names to collect premium while waiting for better entry. Choose strikes ~6% below spot with 15‑23 DTE.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Ticker</th><th>Strike</th><th>Exp.</th><th>Premium</th><th>Cash Required</th><th>Yield (annualized)</th></tr></thead><tbody><tr><td>AAPL</td><td>$280</td><td>7/2</td><td>$1.01/ct</td><td>$28,000</td><td>~5.2%</td></tr><tr><td>AMZN</td><td>$225</td><td>7/2</td><td>$1.23/ct</td><td>$22,500</td><td>~4.8%</td></tr><tr><td>CRWD</td><td>$645</td><td>7/2</td><td>$11.90/ct</td><td>$64,500</td><td>~7.4%</td></tr></tbody></table>
+<h3 id="fed-hawkish-pivot">Fed Hawkish Pivot</h3>
 <ul>
-<li>Sell 1 contract each (total required cash ≈ $115k – will need to allocate from cash plus margin if available; otherwise pick 2 of 3).</li>
-<li><strong>If assigned:</strong> you own quality names at levels ~6% below current prices, which is a good risk/reward in a grind‑with‑violence scenario.</li>
+<li><strong>One hike on the table:</strong> Already priced somewhat. The risk is aggressive language. <strong>Hedge with TLT puts</strong>? TL TLT is up, so a put on TLT would profit if yields spike. But we own TLT as part of safe haven. Instead, <strong>buy a TLT 260702P00084</strong> (strike 84, ~2.6% OTM) for ~$0.30? Not in chain but low cost.</li>
+<li><strong>Best hedge:</strong> Short duration bonds (SHY) or cash. We already have cash.</li>
 </ul>
-<p><strong>3. Tail‑Risk Hedges (20% of cash)</strong></p>
-<p>Buy cheap, out‑of‑the‑money puts to protect against a 5‑10% crash (Scenario C or a Fed hawkish shock).</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Ticker</th><th>Strike</th><th>Exp.</th><th>Cost per Contract</th><th>Number</th><th>Total Cost</th><th>Protection</th></tr></thead><tbody><tr><td>SPY</td><td>$728</td><td>7/2</td><td>$3.01</td><td>2</td><td>$602</td><td>SPY down 3%+</td></tr><tr><td>QQQ</td><td>$711</td><td>7/2</td><td>$7.45</td><td>1</td><td>$745</td><td>QQQ down 3%+</td></tr><tr><td>GLD</td><td>$390</td><td>7/2</td><td>$3.375</td><td>1</td><td>$337.50</td><td>GLD down 2.5%+</td></tr></tbody></table>
-<p>Total hedge cost: ~$1,685 (≈2% of portfolio). This provides insurance against immediate shocks.</p>
-<p><strong>4. Tactical Short / Avoid List</strong></p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Ticker</th><th>Reason</th><th>Action</th></tr></thead><tbody><tr><td><strong>XLE</strong> (Energy)</td><td>Oil prices falling on Iran deal, weak momentum, strong dollar headwind.</td><td><strong>Avoid</strong> or short via options (buy put at 55 strike).</td></tr><tr><td><strong>MSFT</strong></td><td>Below 200‑dma, weak relative strength; heavy exposure to AI hype that may fade.</td><td><strong>Underweight</strong> until uptrend resumes.</td></tr><tr><td><strong>PLTR</strong></td><td>Down ~40% from highs – negative momentum, may continue lower.</td><td><strong>Avoid</strong> or short (buy put).</td></tr><tr><td><strong>TLT</strong></td><td>Long‑duration bonds still in doubt; 2022‑type defense failure risk.</td><td><strong>Trim</strong> any long exposure; prefer cash or short‑duration.</td></tr></tbody></table>
-<h3 id="timehorizon-summary">Time‑Horizon Summary</h3>
+<h3 id="recession-signals-rising-unemployment">Recession Signals (Rising Unemployment)</h3>
 <ul>
-<li><strong>Immediate (today – Fed decision):</strong> Buy SPY/QQQ puts for crash protection. Do not add equity exposure until after press conference.</li>
-<li><strong>Days to weeks (Iran deal logistics, BoJ fallout):</strong> Sell cash‑secured puts for income; hold gold and defensive equities.</li>
-<li><strong>Weeks to months (recession signals, AI capex deceleration):</strong> Rotate to defensive sectors (XLU, XLP), underweight tech cyclicals, maintain tail hedges.</li>
+<li><strong>Local news (Virginia, Indiana, Seattle)</strong> suggest layoffs are spreading. This is a leading indicator for consumer spending.</li>
+<li><strong>Sectors to avoid:</strong> XLY (consumer discretionary), SPY/QQQ. <strong>Favor:</strong> XLP, XLU, GLD.</li>
+<li><strong>Action:</strong> Increase allocation to XLP/XLU beyond initial targets.</li>
 </ul>
-<h3 id="key-risk-warnings">Key Risk Warnings</h3>
+<h3 id="china-taiwan-chip-export-controls">China-Taiwan Chip Export Controls</h3>
+<ul>
+<li><strong>Bearish for TSM, NVDA, AMD.</strong> These stocks are already showing weakness (AVGO -6% monthly, MSFT below 200-day). <strong>Do not initiate longs.</strong></li>
+<li><strong>Hedging:</strong> The SPY/QQQ protective puts already address this.</li>
+</ul>
+<hr>
+<h2 id="4-recommended-portfolio-risk-managed-deployment">4. Recommended Portfolio (Risk-Managed Deployment)</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Asset Type</th><th>Ticker</th><th>Allocation %</th><th>Rationale</th></tr></thead><tbody><tr><td><strong>Gold</strong></td><td>GLD</td><td>20%</td><td>Core hedge against inflation/geopolitics</td></tr><tr><td><strong>Long Treasuries</strong></td><td>TLT</td><td>10%</td><td>Tactical bond exposure (rates declining)</td></tr><tr><td><strong>Defensive Equities</strong></td><td>XLU + XLP</td><td>20%</td><td>Recession resilience + low vol</td></tr><tr><td><strong>Equity (with hedges)</strong></td><td>SPY (or VOO)</td><td>30%</td><td>Core growth, protected with puts</td></tr><tr><td><strong>Cash / T-Bills</strong></td><td>Cash</td><td>20%</td><td>Dry powder for opportunities; earn 4.3% (^IRX 3.62%? T-bills higher)</td></tr></tbody></table>
+<p><strong>Option Overlay (cost ~2% of equity sleeve):</strong></p>
+<ul>
+<li>Buy 1x SPY 260710P00719 ($5.07) per 100 shares of SPY – cost ~$507.</li>
+<li>Buy 1x QQQ 260710P00701 ($10.47) per 100 shares of QQQ – cost ~$1,047 if QQQ is held.</li>
+<li>Total hedge cost ≈ $1,550, protecting ~$74k of equity exposure for 23 days.</li>
+</ul>
+<hr>
+<h2 id="5-sell--trim--avoid-list">5. Sell / Trim / Avoid List</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Asset</th><th>Reason</th><th>Action</th></tr></thead><tbody><tr><td><strong>XLE / Energy stocks</strong></td><td>Weakness from Iran deal, oversupply, falling oil. Avoid new longs.</td><td>If held, trim.</td></tr><tr><td><strong>High-beta tech (NVDA, AVGO, PLTR)</strong></td><td>Momentum fading, Fed hawkish, IPO liquidity drain.</td><td>Do not enter without hedges.</td></tr><tr><td><strong>Consumer Discretionary (XLY)</strong></td><td>Recession signals accumulating, unemployment rising.</td><td>Avoid.</td></tr><tr><td><strong>Long-duration bonds (TMF, ZROZ)</strong></td><td>Inflation risk still high; only use TLT modestly.</td><td>Reduce if held.</td></tr><tr><td><strong>Bitcoin (IBIT)</strong></td><td>Risk-off under Fed hawkishness, BoJ carry unwind still possible.</td><td>Not recommended now.</td></tr></tbody></table>
+<hr>
+<h2 id="6-key-tripwires-to-monitor-next-2-weeks">6. Key Tripwires to Monitor (next 2 weeks)</h2>
+<ul>
+<li><strong>^VIX/^VIX3M > 1.0</strong> → backwardation = panic onset. If triggered, immediately buy puts on SPY/QQQ and reduce equity exposure.</li>
+<li><strong>HYG/LQD 63d momentum &#x3C; -2%</strong> → credit stress leading equity. Preemptive hedge increase.</li>
+<li><strong>USDJPY &#x3C; 140</strong> → carry unwind active. Reduce risk positions.</li>
+<li><strong>SPY weekly close below 730 (200-day SMA at 685? Actually 200d at 685.2, but close is 750)</strong> – watch for a break of 740 for short-term support.</li>
+</ul>
+<hr>
+<h2 id="summary-of-immediate-actions">Summary of Immediate Actions</h2>
 <ol>
-<li><strong>Fed Hawkish Surprise</strong> – The most immediate threat. If Warsh signals any tightening bias, expect a 2‑3% gap down in SPY/QQQ. Our puts would gain 5‑10x.</li>
-<li><strong>Carry Unwind Resumption</strong> – If USDJPY falls below 145, sell everything and buy VIX calls. This is the only event that can trigger simultaneous pain across all risk assets.</li>
-<li><strong>AI Capital Spending Cuts</strong> – Watch Q2 earning calls from hyperscalers (MSFT, AMZN, GOOGL). Any reduction in capex would crush NVDA, AMD, and semi equipment. Have puts ready on NVDA or SMH.</li>
-<li><strong>Secondary Sanctions / Hormuz Re‑escalation</strong> – The peace deal is fragile. If shipping does not restart within 2 weeks, oil could spike again, reigniting inflation fears and a risk‑off move. Hedge with XLE calls or VIX calls.</li>
+<li><strong>Deploy 50% of cash into safe havens:</strong> GLD (20%), XLU (15%), XLP (15%) – market orders at open.</li>
+<li><strong>Set limit orders for TLT at $85.50</strong> (10% allocation) – a dip opportunity.</li>
+<li><strong>Hold 40% cash</strong> for tactical deployment during any 5%+ SPY dip (add QQQ puts prior).</li>
+<li><strong>Do not initiate any long equity positions without protective puts.</strong> If forced, use SPY 260710P00719.</li>
+<li><strong>Ignore AI hype headlines:</strong> The macro risks outweigh the AI growth story for the next 1–2 months.</li>
 </ol>
-<h3 id="bottom-line">Bottom Line</h3>
-<ul>
-<li><strong>Position:</strong> 40% cash, 20% gold + T‑bills, 30% short‑put income, 10% tail hedges.</li>
-<li><strong>Don’t chase the rally</strong> into a Fed event and a BoJ week.</li>
-<li><strong>Protect with puts</strong>; if the market sells off, the hedges will pay for the eventual buying opportunity.</li>
-<li><strong>Re‑evaluate</strong> after the Fed press conference tomorrow (June 18). If the outcome is benign, reduce hedge size and add to cash‑secured puts. If hawkish, increase puts and move to full defensive.</li>
-</ul> </article> </main>  </body></html> 
+<p><strong>Bottom line:</strong> The Bull Quiet regime is a trap. De-risking now, shifting to gold and defensives, and maintaining hedges will protect against the 50% probability of a significant drawdown within 6 months.</p> </article> </main>  </body></html> 
