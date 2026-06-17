@@ -1,72 +1,99 @@
 ---
 title: Technical Analyst Report
-date: "2026-06-16"
+date: "2026-06-17"
 ---
 
 ## Model: deepseek/deepseek-v4-flash
 
-# Price Action–Only Evaluation of Option Setups
+## Technical Setups (Price Action Only)
 
-*All signals drawn exclusively from technical indicators (SMA20/50/200, RSI–14, MACD histogram, Bollinger Bands, volume). Macro, news, and regime ignored.*
+### 1. Overextended Mean Reversion (Short‑term Pullbacks Likely)
+These names trade **above the upper Bollinger Band** with **RSI > 70**, classic overbought exhaustion signals.
+
+| Ticker | Close | BB Upper | RSI | Signal |
+|--------|-------|----------|-----|--------|
+| **WDC** | 681.08 | 649.16 | 73.5 | Extreme overbought; parabolic continuation. Expect a sharp shakeout. |
+| **STX** | 1031.34 | 1024.68 | 71.7 | Similar to WDC – memory/storage mania. Both above BB, RSI >70. |
+| **XLF** | 54.35 | 53.76 | 71.2 | Financials are overextended; price above BB upper. RSI overbought. |
+| **DIA** | 521.44 | 521.36 | 65.0 | Price exactly at BB upper, RSI not yet overbought but close. 52‑week high breakout vulnerable to a mean reversion dip. |
+
+**Conclusion**: At best a consolidation/pullback; at worst a reversal. Do not chase these levels.
+
+### 2. Oversold Mean Reversion Bounces (Short‑term Recovery Likely)
+Tickers near **lower Bollinger Band** with **RSI < 40** or falling fast – classic bounce setups.
+
+| Ticker | Close | BB Lower | RSI | Signal |
+|--------|-------|----------|-----|--------|
+| **XLE** | 55.36 | 55.11 | 39.3 | Energy deeply oversold; price kissing lower BB. Strong dollar/weak commodity headwind, but technicals scream mean reversion. |
+| **MSFT** | 393.83 | 380.22 | 40.3 | Below all MAs, RSI approaching oversold, MACD negative but extreme readings. Potential bounce from a deeply oversold condition. |
+| **ORCL** | 188.33 | 164.08 | 44.7 | Not yet oversold, but price has collapsed below all MAs after a failed breakout. RSI falling – watch for a capitulation bounce near $164–$180. |
+
+**Conclusion**: XLE and MSFT offer the clearest mean‑reversion‑bounce setups from oversold extremes.
+
+### 3. Trend Continuation – Upside
+Names with **price above all MAs (20 > 50 > 200)**, **RSI between 50–65**, and **positive MACD** – healthy uptrends with no exhaustion yet.
+
+| Ticker | Close | MA Stack | RSI | MACD | Signal |
+|--------|-------|----------|-----|------|--------|
+| **INTC** | 117.05 | 20>50>200 | 54.8 | Hist negative, but MACD line positive. Dip to SMA20 is a buying opportunity. |
+| **MU** | 1020.76 | Strong | 60.5 | Hist negative after huge run, but still above all MAs. Trend intact. |
+| **KLAC** | 237.33 | Strong | 63.7 | Hist positive, uptrend unbroken. |
+| **TLN** | 406.51 | 20>50>200 | 62.5 | Price near upper BB but not overbought – momentum still positive. |
+
+**Conclusion**: INTC and KLAC are the most attractive for continuation longs; MU and TLN are extended but still trending.
+
+### 4. Trend Continuation – Downside (Short / Put Candidates)
+**Clear downtrends** – price below SMA20 and SMA50, RSI < 50, MACD negative.
+
+| Ticker | Close | MA Stack | RSI | MACD | Signal |
+|--------|-------|----------|-----|------|--------|
+| **GLD** | 397.63 | Below 20,50,200 | 43.8 | Negative, declining. Strong dollar and falling commodities are dragging gold lower. |
+| **META** | 600.21 | Below all MAs | 49.0 | Negative – below SMA20/50/200. Downtrend since March. |
+| **AMZN** | 246.00 | Below 20,50 | 43.2 | Negative – rolling over after failing to hold above SMA200. |
+| **MSFT** | 393.83 | Below all MAs | 40.3 | Negative – accelerating downside. |
+
+**Conclusion**: GLD is the cleanest short/put trend continuation. META and AMZN are also in confirmed downtrends.
+
+### 5. Failed Setups / Divergences
+**SPY & QQQ** – both show **negative MACD histogram** (bearish divergence) while price remains above all MAs. The uptrend is intact but momentum is fading. This is a classic “trending but tiring” pattern. Not a reversal yet, but a warning. Probability of a 3–5% shakeout within two weeks is elevated.
+
+**WDC & STX** – the extreme overbought readings are a “failed continuation” warning. The AI‑storage narrative is priced in; any news miss will trigger a violent mean reversion.
+
+**ORCL** – broke below its SMA20 and SMA200 this week after a long consolidation. The attempted breakout above $240 failed decisively. Now trading below all major MAs – a failed breakout that opens the door to a larger correction.
+
+### 6. Volatility Squeezes
+No clear Bollinger Band “squeeze” (narrowing band width) is present today. The market is broadening out into mean‑reversion extremes, not coiling.
 
 ---
 
-## Cash-Secured Puts
+## Options Chain Alignment
 
-| Ticker | Strike | Current Price | Technical Snapshot | Verdict |
-|--------|--------|---------------|-------------------|---------|
-| **AAPL** | 280 (16/24 DTE) | 296.42 | Price below SMA20 (303.69) and SMA50 (286.18), above SMA200 (266.79). RSI 49.5 (neutral). MACD hist –3.15 (negative). Not near lower BB (288.46). | **Weak** – Short-term momentum bearish, no oversold signal. Selling put to buy at 280 risks catching a falling knife if weakness continues. |
-| **AMD** | 475 (16/24 DTE) | 547.26 | Price well above all SMAs, RSI 65.2 (approaching overbought). MACD hist –4.46 (negative, convergence below signal). Near upper BB (561.99). | **Moderate** – Strong uptrend intact but momentum waning. A pullback to 475 would be a 13% correction, plausible but not high probability. |
-| **AMZN** | 230 (16/24 DTE) | 246.02 | Price below SMA20 (256.34) and SMA50 (255.50), above SMA200 (232.59). RSI 43.2 (bearish zone). MACD hist –2.62. Lower BB at 233.24. | **Weak** – Already in a short-term downtrend. 230 is below the lower BB, implying a further breakdown. If assigned, buying at 230 may be in a falling market. |
-| **AVGO** | 360/355 (16/24 DTE) | 393.94 | Price below SMA20 (417.17) and SMA50 (408.04), but near SMA200 (357.75). RSI 45.3 (near oversold). MACD hist deeply negative (–7.19). Lower BB at 357.59. | **Moderate** – Price approaching the 200-day MA support. Oversold conditions could lead to a mean reversion bounce. Put selling at these strikes captures premium near a long-term support zone. |
-| **CEG** | 235/260 (16/24 DTE) | 262.35 | Price below ALL SMAs (20/50/200). SMA200 at 319.05, well above current price. RSI 45.1. MACD hist negative. Only 235 is near lower BB (235.41). | **Weak** – Clear downtrend with no signs of reversal. Selling puts to buy into a declining stock is risky. |
-| **CRWD** | 330/355 (16/24 DTE) | 692.91 | Price well above all SMAs, RSI 60.2. Strikes are 50%+ below spot – extremely deep OTM. Minimal chance of assignment. | **Weak** – Not a genuine trade; effectively giving away premium for near‑zero probability of entry. Capital would be better deployed elsewhere. |
+The cash‑secured puts in the chain focus on **AAPL, AMD, AMZN, AVGO, CEG, CRWD**.
 
----
+- **AVGO** (376.71 → put strike 375) – technically in a short‑term downtrend below SMA20, RSI 41. This put is **almost at‑the‑money**, making assignment very likely if the decline continues. Not ideal for a cash‑secured put unless you are willing to own at $375 with a falling knife.
+- **AMZN** (246 → put strike 225) – price is already below SMA20/50, RSI 43. A further 8% drop to 225 is possible. Risk of early assignment if the slide accelerates.
+- **CEG** (268 → put strike 260) – below all MAs, RSI 48. Better candidate for a cash‑secured put as a long‑term entry, but near‑term downside momentum is present.
+- **AMD** (521.9 → put strike 490) – strong uptrend intact. This is a **good cash‑secured put** to collect premium while targeting a 6% discount in a fundamentally strong trend.
+- **CRWD** (684.7 → put strike 645) – consolidating near SMA20, RSI 57. Neutral setup – okay to sell for yield but no strong technical trigger.
 
-## Long Calls
-
-| Ticker | Strike | Current Price | Technical Snapshot | Verdict |
-|--------|--------|---------------|-------------------|---------|
-| **GLD** | 410 (14 DTE) | 396.55 | Price below all SMAs (20/50/200). RSI 43.0 (bearish). MACD hist negative. Downtrend intact. | **Weak** – Buying calls in a solid downtrend is counter-trend. No bullish technical signal. |
-| **QQQ** | 750/753 (14/16 DTE) | 744.00 | Price above SMAs (20/50/200) – uptrend. RSI 62.5 (not overbought). BUT MACD hist –3.10 (negative). Near upper BB (755.07). | **Weak** – Price at upper Bollinger Band with negative MACD histogram suggests slowing momentum. High risk of a near-term pullback. |
-| **SPY** | 773 (14/16 DTE) | 754.83 | Above all SMAs, RSI 60.4. MACD hist –2.31 (negative). Near upper BB (764.72). | **Weak** – Same pattern as QQQ: uptrend but momentum diverging and price near resistance. |
-| **TLT** | 87 (14 DTE) | 85.72 | Price above SMA20 (84.87) and SMA50 (85.28), but below SMA200 (86.36). RSI 55.7. MACD hist positive (+0.12). Short‑term uptrend. | **Moderate** – Positive MACD and short‑term MA support. A push above the 200‑day MA (86.36) would confirm a trend change. Call at 87 is just above that level, capturing potential breakout. |
+**Long options** in the chain:
+- **GLD put** (390 strike) – aligns perfectly with the GLD downtrend continuation. Technical score: high.
+- **SPY/QQQ calls** – fade the negative MACD divergence. Risky without a confirmed catalyst. Better to wait for a pullback to SMA50 before buying calls.
+- **SPY/QQQ puts** – early, but the divergence / overbought conditions in XLF/DIA suggest a minor unwind may benefit put buyers within 15–23 days. Modest conviction.
 
 ---
 
-## Long Puts
+## Summary of Actionable Ideas (Price‑Action Only)
 
-| Ticker | Strike | Current Price | Technical Snapshot | Verdict |
-|--------|--------|---------------|-------------------|---------|
-| **GLD** | 385 (14 DTE) | 396.55 | Price below all SMAs, RSI 43.0, MACD negative. Downtrend. 385 is below SMA200 (407.04) but above lower BB (380.32). | **Moderate** – Directionally aligned with the prevailing downtrend. RSI not oversold enough to expect a reversal. Continuation likely. |
-| **QQQ** | 708 (14/16 DTE) | 744.00 | Price in uptrend above all SMAs. RSI 62.5. Buying puts against a strong trend. | **Weak** – Counter‑trend. No evidence of an imminent reversal. |
-| **SPY** | 728 (14/16 DTE) | 754.83 | Same as QQQ – uptrend, no bearish divergence. | **Weak** – Counter‑trend. |
-| **TLT** | 84 (14 DTE) | 85.72 | Price above SMA20/50, uptrend. MACD positive. Buying puts against short‑term trend. | **Weak** – Counter‑trend. |
+| Setup Type | Ticker | Direction | Entry Idea |
+|------------|--------|-----------|------------|
+| Mean reversion (down) | **WDC** | Short | Sell into strength above $680; stop above $700. |
+| Mean reversion (down) | **XLF** | Short/put | Overbought above upper BB; sell call spreads or buy puts. |
+| Mean reversion (up) | **XLE** | Long | Buy near $55; stop below $54.50. |
+| Mean reversion (up) | **MSFT** | Long | Buy on dip near $390; stop below $380. |
+| Trend continuation (up) | **INTC** | Long | Buy on dip to SMA20 (~$115). |
+| Trend continuation (down) | **GLD** | Put | Buy GLD 390 July 2 put ($2.585) – low IV, clean trend continuation. |
+| Failed breakout | **ORCL** | Short/put | Below all MAs; target $170. |
+| Fear divergence | **SPY / QQQ** | Neutral/Hedge | Consider protective puts or reduce exposure to tech. |
 
----
-
-## Summary Table
-
-| Idea | Technical Rating |
-|------|----------------|
-| AAPL CSP 280 | Weak |
-| AMD CSP 475 | Moderate |
-| AMZN CSP 230 | Weak |
-| AVGO CSP 360/355 | **Moderate** |
-| CEG CSP 235/260 | Weak |
-| CRWD CSP 330/355 | Weak |
-| GLD Long Call 410 | Weak |
-| GLD Long Put 385 | **Moderate** |
-| QQQ Long Call 750/753 | Weak |
-| QQQ Long Put 708 | Weak |
-| SPY Long Call 773 | Weak |
-| SPY Long Put 728 | Weak |
-| TLT Long Call 87 | **Moderate** |
-| TLT Long Put 84 | Weak |
-
-**Key actionable signals from price action alone:**  
-- **AVGO** near 200‑day MA support with oversold RSI is a legitimate cash‑secured put candidate.  
-- **TLT** shows a positive short‑term trend (MACD rising, price above 20‑day) with a potential breakout above the 200‑day – the 87 call is a low‑IV, low‑cost bet on a trend continuation.  
-- **GLD**’s downtrend supports a long put (385 strike) for directional continuation.  
-- All other setups lack convincing price‑action confirmation and should be avoided or scaled down.
+**Portfolio context**: With 100% cash, the best risk/reward is to deploy into the **oversold bounces** (XLE, MSFT) or **trend continuations** (INTC) while avoiding the overbought names. The gold put (GLD) offers a cheap, defined‑risk hedge against further commodity weakness. Do not chase the parabolic storage stocks.

@@ -1,13 +1,8 @@
 [
     {
-        "ticker": "SPY",
+        "ticker": "VTI",
         "action": "buy",
-        "notional_value": 30000
-    },
-    {
-        "ticker": "XLF",
-        "action": "buy",
-        "notional_value": 15000
+        "notional_value": 20000
     },
     {
         "ticker": "VGK",
@@ -15,7 +10,27 @@
         "notional_value": 10000
     },
     {
-        "ticker": "XLI",
+        "ticker": "XLF",
+        "action": "buy",
+        "notional_value": 7500
+    },
+    {
+        "ticker": "XLV",
+        "action": "buy",
+        "notional_value": 7500
+    },
+    {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 7500
+    },
+    {
+        "ticker": "TLT",
+        "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "INTC",
         "action": "buy",
         "notional_value": 5000
     }
