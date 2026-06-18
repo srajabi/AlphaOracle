@@ -3,35 +3,33 @@ title: Thesis Sentinel Daily Brief
 date: "2026-06-18"
 ---
 
-## Daily Thesis Sentinel Brief — 2026‑06‑18
+## Thesis Sentinel Daily Brief — 2026-06-18
 
-### 1. Tripwire Status (from rule‑based signals, as authoritative)
+### 1. Tripwire Status
 
-| Tripwire | Signal Source | Today's Reading | Threshold | Status |
-|----------|---------------|----------------|-----------|--------|
-| Carry unwind | ^VIX/^VIX3M | 0.90 (VIX 18.44 / VIX3M 20.51) | >1.0 backwardation | CLEAR |
-| Credit cracks | HYG/LQD 63d rel‑mom | +0.71% | < –2% | CLEAR |
-| Breadth break | Canary (EWA, TLT mom) | EWA +3.27%, TLT +2.85% | Both negative | CLEAR |
-| Trend break | SPY vs 200d SMA | SPY 741, 200d 686 (month‑end) | Monthly close < 200d | CLEAR |
-| Oil shock | XLE momentum vs SPY | XLE mom –10.8%, SPY uptrend | XLE sustained leadership | CLEAR |
-| AI capex turn | Hyperscaler FY27 capex guidance | No cuts announced | Any FY27 capex cut | CLEAR (no data) |
-| Carry stress | USDJPY | No direct data; UUP strong, no dislocation signal | Rapid <140 move | CLEAR (presumed) |
+| Tripwire | Signal | Today’s Reading | Threshold | Status |
+|----------|--------|-----------------|-----------|--------|
+| VIX/VIX3M backwardation | fast_channel vix_vix3m_5d_median | 0.91 | > 1.0 | CLEAR |
+| Credit cracks | hyg_lqd_63d_relmom | +0.71% | < -2% | CLEAR |
+| Breadth break (canary) | EWA +0.0327, TLT +0.0285 | both positive | both negative | CLEAR |
+| Trend break | SPY vs 200d SMA | 740.96 vs 685.68 | SPY < 200d (month-end) | CLEAR* |
+| Oil shock (war) | XLE momentum | -10.8% | XLE leadership vs SPY | CLEAR |
+| AI capex turn | hyperscaler guidance | no cut reported | any FY27 capex cut | CLEAR |
+| Carry stress (USDJPY) | no direct reading | — | < 140 | MONITOR |
 
-### 2. Marker Watch (falsifiable markers from thesis)
+*Daily level only; month-end close not yet established.
 
-- **BoJ June meeting (15‑16 Jun):** No reports of hawkish surprise or USDJPY <145. Hike was priced; guidance did not appear to unsettle markets. Marker not activated.
-- **CPI (May‑Jul):** No new print today. Next major release not imminent.
-- **SpaceX vs $135 issue price:** Post‑IPO decline continues (stock “falls for first time, ending 3‑day surge”) but remains above $135. No breach of issue price.
-- **Hyperscaler capex guidance:** No Q2 earnings or capex guidance releases today.
-- **Hormuz:** US‑Iran signed a 14‑point MOU extending ceasefire and establishing a peace framework. Oil prices dropped sharply; full‑closure scenario recedes further.
+All tripwires clear. The fast channel, credit, and canary signals remain in risk-on/clear states. No tripwire is activated.
 
-### 3. Delta (material changes from yesterday)
+### 2. Marker Watch
+- **BoJ guidance**: No news today on any post‑June‑15‑16 BoJ communication.
+- **CPI**: No new print.
+- **SpaceX vs $135**: No explicit price vs $135 in today’s headlines; stock fell for a second day but remains well above issue price.
+- **Hyperscaler capex**: No capex guidance updates.
+- **Hormuz**: US‑Iran peace deal framework signed; oil prices dropped further; Strait reopening in process. Closure risk is receding, not escalating.
 
-- **Geopolitical relief dominates:** The US‑Iran framework lifted risk sentiment—equity futures rallied, oil fell to pre‑war levels, VIX eased. The “war premium” in energy and gold unwound further (XLE –10.8% momentum, GLD –5.6%, SLV –9.4%).
-- **Hawkish Fed backdrop persists:** Yesterday’s FOMC held rates but signaled possible rate hike; Warsh avoided forward guidance. Treasuries initially sold off (TNX 4.487%, TLT still above 50‑dma). The rate‑hike risk tempers pure risk‑on.
-- **Sector rotation:** Semiconductors surged on Intel‑Apple chip deal (INTC +9%, AMD +5.7%) and memory tightness (MU +6.6%, WDC +13.5%). AI infrastructure stocks (NBIS, STX) remain strong; consumer/communication sectors underperform.
-- **Dollar strengthens:** UUP reached 28.18, firmly above all SMAs; strong dollar headwind for international and commodities.
+### 3. Delta
+The dominant change is the US‑Iran peace deal, which sent crude lower and equities higher. Fed held rates steady but leaned hawkish (Warsh signalled possible future hikes), strengthening the dollar and pressuring gold. The rule‑based regime picture remains Transitional/cautious—the intermarket indicators show strong dollar, rates declining, commodities weak—but the VIX/VIX3M ratio is not in backwardation. Risk‑on credit and canary signals hold firm. The immediate war‑escalation tail has shrunk, while the hawkish‑Fed, strong‑dollar dynamic introduces a mild disinflationary undercurrent.
 
 ### 4. Scenario Pressure
-
-Today’s developments **lean toward Scenario A (Grind‑with‑violence)**. The signing of the Iran deal removes a near‑term tail‑risk event (Hormuz escalation), while the Fed’s hawkish hold preserves uncertainty that caps runaway rallies. Oil deflation reduces CPI pressure marginally, but the core inflation stickiness and BoJ carry risks remain unresolved. The improvement in geopolitical risk and AI optimism (Intel‑Apple, memory demand) support the view of a range‑bound equity market with episodic air pockets rather than an imminent crash or slow bear. The rule‑based tripwires all remain clear, consistent with a risk‑on mandate. Official scenario weights unchanged until the monthly review.
+Today’s evidence incrementally favours **Scenario A (Grind‑with‑violence)**. The peace deal reduces the probability of a fast crash (C) triggered by a Hormuz closure, while the hawkish Fed and high valuations sustain the air‑pocket risk within a range‑bound market. No capex or credit cracks have emerged. Official scenario weights remain unchanged pending monthly review; today’s data reinforces the defensive‑leaning but not crash‑imminent posture.
