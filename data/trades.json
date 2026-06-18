@@ -2,36 +2,41 @@
     {
         "ticker": "SPY",
         "action": "buy",
-        "notional_value": 20000
-    },
-    {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 15000
+        "notional_value": 35000
     },
     {
         "ticker": "XLF",
         "action": "buy",
-        "notional_value": 12000
+        "notional_value": 10000
     },
     {
         "ticker": "XLI",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 7000
     },
     {
-        "ticker": "XLV",
+        "ticker": "VXUS",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 8000
     },
     {
-        "ticker": "XLP",
+        "ticker": "KLAC",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 8000
     },
     {
-        "ticker": "QUAL",
+        "ticker": "AMZN",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 7000
+    },
+    {
+        "ticker": "DIA",
+        "action": "buy",
+        "notional_value": 6000
+    },
+    {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 4000
     }
 ]
