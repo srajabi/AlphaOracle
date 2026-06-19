@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-06-19T16:05:16.996787+00:00",
+  "last_updated_utc": "2026-06-19T21:01:57.163227+00:00",
   "accounts": {
     "dev": {
       "account_id": "dev",
@@ -7,7 +7,7 @@
       "strategy": "Advanced LLM Strategy",
       "frequency": "2x Daily (10 AM & 3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-06-19T16:05:14.759011+00:00",
+      "last_updated_utc": "2026-06-19T21:01:55.549950+00:00",
       "ok": true,
       "error": "",
       "account": {
@@ -25,7 +25,7 @@
       "strategy": "Standard LLM Strategy",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-06-19T16:05:15.058317+00:00",
+      "last_updated_utc": "2026-06-19T21:01:55.810361+00:00",
       "ok": true,
       "error": "",
       "account": {
@@ -116,7 +116,7 @@
       "strategy": "TQQQ Momentum",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-06-19T16:05:15.431493+00:00",
+      "last_updated_utc": "2026-06-19T21:01:56.099506+00:00",
       "ok": true,
       "error": "",
       "account": {
@@ -143,7 +143,7 @@
       "strategy": "Dual Momentum",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-06-19T16:05:15.818833+00:00",
+      "last_updated_utc": "2026-06-19T21:01:56.365633+00:00",
       "ok": true,
       "error": "",
       "account": {
@@ -170,7 +170,7 @@
       "strategy": "Sector Rotation",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-06-19T16:05:16.139962+00:00",
+      "last_updated_utc": "2026-06-19T21:01:56.625199+00:00",
       "ok": true,
       "error": "",
       "account": {
@@ -197,7 +197,7 @@
       "strategy": "Mean Reversion",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-06-19T16:05:16.559362+00:00",
+      "last_updated_utc": "2026-06-19T21:01:56.895201+00:00",
       "ok": true,
       "error": "",
       "account": {
