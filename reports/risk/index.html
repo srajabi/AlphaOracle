@@ -1,185 +1,145 @@
 <!DOCTYPE html><html lang="en" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/AlphaOracle/favicon.svg"><link rel="icon" href="/AlphaOracle/favicon.ico"><meta name="generator" content="Astro v5.18.0"><title>Risk Manager Report</title><style>:root{--bg: #0b0e14;--panel-bg: #131722;--panel-bg-raised: #1e2230;--border: #2a2e39;--text: #f8f9fa;--text-body: #d1d4dc;--text-muted: #8f949e;--accent: #2962ff;--accent-soft: #c4d4ff;--green: #28a745;--red: #dc3545;--red-bright: #f6465d;--yellow: #ffc107}.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}.panel{background:var(--panel-bg);border:1px solid var(--border);border-radius:12px;padding:1.25rem;margin-bottom:1rem}.muted{color:var(--text-muted)}.btn{text-decoration:none;color:#fff;background:var(--accent);border-radius:8px;padding:.5rem .85rem;font-size:.85rem;font-weight:600}html,body{margin:0;width:100%;height:100%;background:#0b0e14;color:#f8f9fa;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif}.site-header[data-astro-cid-sckkx6r4]{position:sticky;top:0;z-index:100;background:#0b0e14eb;backdrop-filter:blur(8px);border-bottom:1px solid #2a2e39}.site-header-inner[data-astro-cid-sckkx6r4]{max-width:1100px;margin:0 auto;padding:.7rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}.brand[data-astro-cid-sckkx6r4]{color:#f8f9fa;text-decoration:none;font-weight:800;font-size:1.1rem;letter-spacing:.01em}.site-nav[data-astro-cid-sckkx6r4]{display:flex;gap:.25rem;flex-wrap:wrap}.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]{color:#8f949e;text-decoration:none;font-size:.9rem;font-weight:600;padding:.35rem .7rem;border-radius:8px}.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]:hover,.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4].active{color:#f8f9fa;background:#1e2230}
 main[data-astro-cid-ipuyqs4v]{max-width:850px;margin:0 auto;padding:3rem 1.5rem;line-height:1.7;color:#d1d4dc}header[data-astro-cid-ipuyqs4v]{margin:0 0 3rem;border-bottom:1px solid #2a2e39;padding-bottom:1.5rem}h1[data-astro-cid-ipuyqs4v]{margin:0;font-size:3rem;color:#fff;font-weight:800;letter-spacing:-.02em}.date[data-astro-cid-ipuyqs4v]{color:#8f949e;margin-top:.5rem}article[data-astro-cid-ipuyqs4v]{font-size:1.15rem}article[data-astro-cid-ipuyqs4v] h2{margin-top:3rem;color:#fff;font-size:1.75rem;border-bottom:1px solid #2a2e39;padding-bottom:.5rem}article[data-astro-cid-ipuyqs4v] h3{margin-top:2rem;color:#fff}article[data-astro-cid-ipuyqs4v] p{margin-bottom:1.5rem}article[data-astro-cid-ipuyqs4v] table{width:100%;border-collapse:collapse;margin:2.5rem 0;background:#131722;border-radius:8px;overflow:hidden;border:1px solid #2a2e39}article[data-astro-cid-ipuyqs4v] th,article[data-astro-cid-ipuyqs4v] td{border:1px solid #2a2e39;padding:1rem;text-align:left}article[data-astro-cid-ipuyqs4v] th{background:#1c212d;color:#8f949e;text-transform:uppercase;font-size:.8rem;letter-spacing:.05em}article[data-astro-cid-ipuyqs4v] strong{color:#fff}
-</style></head> <body data-astro-cid-sckkx6r4> <header class="site-header" data-astro-cid-sckkx6r4> <div class="site-header-inner" data-astro-cid-sckkx6r4> <a class="brand" href="/AlphaOracle/" data-astro-cid-sckkx6r4>AlphaOracle</a> <nav class="site-nav" data-astro-cid-sckkx6r4> <a href="/AlphaOracle/" data-astro-cid-sckkx6r4> Analysis </a><a href="/AlphaOracle/news-events/" data-astro-cid-sckkx6r4> News </a><a href="/AlphaOracle/indicators/" data-astro-cid-sckkx6r4> Indicators </a><a href="/AlphaOracle/tickers/" data-astro-cid-sckkx6r4> Tickers </a><a href="/AlphaOracle/backtests/" data-astro-cid-sckkx6r4> Backtests </a><a href="/AlphaOracle/research/" data-astro-cid-sckkx6r4> Research </a><a href="/AlphaOracle/paper-trading/" data-astro-cid-sckkx6r4> Paper Trading </a> </nav> </div> </header>  <main data-astro-cid-ipuyqs4v> <header data-astro-cid-ipuyqs4v> <h1 data-astro-cid-ipuyqs4v>Risk Manager Report</h1> <p class="date" data-astro-cid-ipuyqs4v>2026-06-18</p> </header> <article data-astro-cid-ipuyqs4v> <h2 id="model-deepseekdeepseek-v4-flash">Model: deepseek/deepseek-v4-flash</h2>
-<p><strong>Risk Memo – 2026-06-18</strong><br>
-<em>Focus: downside protection and geopolitical tail risk</em></p>
-<hr>
-<h2 id="1-regime--signal-assessment">1. Regime &#x26; Signal Assessment</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Signal</th><th>State</th><th>Interpretation</th></tr></thead><tbody><tr><td>Slow Channel</td><td><code>risk_on</code></td><td>SPY above 200dMA +10% – bull trend intact</td></tr><tr><td>Fast Channel</td><td><code>clear</code></td><td>VIX/VIX3M 0.91 – contango, no panic</td></tr><tr><td>Credit</td><td><code>clear</code></td><td>HYG/LQD rel-mom +0.71% – credit market calm</td></tr><tr><td>Canary</td><td><code>risk_on</code></td><td>Both EWA &#x26; TLT momentum positive – DAA invested</td></tr><tr><td><strong>Overall</strong></td><td><strong>Bull Quiet</strong></td><td>Low vol, but macro risks elevated underneath</td></tr></tbody></table>
-<p><strong>Key contradiction:</strong> Macro news is heavy (war resolution, hawkish Fed, trade frictions), but systematic signals remain benign. This is the definition of a “waiting for a trigger” environment. The probability of a sudden risk-off event (Scenario C) is <strong>20%</strong>, but its severity (single-day gap >5%) is material.</p>
-<hr>
-<h2 id="2-geopolitical-catalysts--ticker-exposure">2. Geopolitical Catalysts &#x26; Ticker Exposure</h2>
-<h3 id="-strait-of-hormuz--iran-peace-deal-severity-6">🔥 Strait of Hormuz / Iran Peace Deal (Severity: 6)</h3>
-<p><strong>What happened:</strong> US and Iran signed an interim peace framework on June 18; oil prices fell ~5% intraday, shipping recovery may take weeks.<br>
-<strong>Interpretation:</strong> Disinflationary tailwind (lower energy costs) but uncertainty over deal durability.<br>
-<strong>Exposed tickers:</strong></p>
-<ul>
-<li><strong>Bearish</strong> → <strong>XLE</strong> (energy sector, -1.6% day, RSI 37), <strong>SLV</strong> (silver - precious metal momentum fading)</li>
-<li><strong>Bullish</strong> → Consumer discretionary (XLY), airlines (JETS), <strong>XLI</strong> (industrials benefit from lower input costs)<br>
-<strong>Recommendation:</strong></li>
-<li><strong>Sell / reduce</strong> XLE, XLE-related names (OXY, COP). Avoid new energy longs.</li>
-<li><strong>Hedge</strong> → none needed if no energy exposure. If long, buy XLE put (e.g., July 2 54 strike).</li>
-</ul>
-<h3 id="-fed-hawkish-tilt-severity-7">🏦 Fed Hawkish Tilt (Severity: 7)</h3>
-<p><strong>What happened:</strong> FOMC held rates; dot plot shifted – half of officials now see a rate hike as next move. 10y yield ~4.48%, 2y yield rose.<br>
-<strong>Interpretation:</strong> Higher-for-longer rates pressure long-duration growth stocks and suppress gold.<br>
-<strong>Exposed tickers:</strong></p>
-<ul>
-<li><strong>Bearish</strong> → <strong>QQQ</strong>, <strong>TQQQ</strong>, <strong>TSLA</strong>, <strong>META</strong>, <strong>MSFT</strong>, <strong>AMZN</strong>, <strong>NFLX</strong>, <strong>ORCL</strong> (all have RSI &#x3C; 40-45 and weak technicals)</li>
-<li><strong>Bullish</strong> → <strong>XLF</strong> (banks benefit from steeper curve), <strong>UUP</strong> (dollar strength, RSI 70), short-term bonds (SHY)<br>
-<strong>Recommendation:</strong></li>
-<li><strong>Trim</strong> long-duration tech positions. Do not add to oversold names until they reclaim 20dMA.</li>
-<li><strong>Hedge</strong> → Buy QQQ July 10 718 put ($8.80, 22 DTE) as tail protection for any tech-heavy portfolio.</li>
-</ul>
-<h3 id="-china-taiwan-semiconductors-severity-5">🇨🇳 China-Taiwan Semiconductors (Severity: 5)</h3>
-<p><strong>What happened:</strong> Taiwan plans to tighten AI chip export curbs to China; China retaliates with dual-use export controls on Japan.<br>
-<strong>Interpretation:</strong> Slow-boiling risk to semiconductor supply chain. Onshoring beneficiaries (KLAC, AMAT, INTC) may outperform – but headline risk is binary.<br>
-<strong>Exposed tickers:</strong></p>
-<ul>
-<li><strong>Bearish</strong> → <strong>TSM</strong> (foundry in crosshairs), <strong>NVDA</strong> (dependent on TSM), <strong>SMH</strong> (semi ETF)</li>
-<li><strong>Bullish</strong> → <strong>INTC</strong> (foundry turnaround narrative + Apple deal? Trump announced Apple will work with Intel), <strong>KLAC</strong> (equipment)<br>
-<strong>Recommendation:</strong></li>
-<li><strong>Avoid</strong> TSMC and any single-sourced foundry exposure.</li>
-<li><strong>Hedge</strong> → Buy <strong>INTC</strong> for bet on US onshoring (Trump’s Apple-Intel deal is a catalyst). But note that INTC already ran 10% today – wait for pullback.</li>
-</ul>
-<h3 id="-recession-signals-severity-4">📉 Recession Signals (Severity: 4)</h3>
-<p><strong>What happened:</strong> Regional unemployment reports (Virginia, Indiana) show rising joblessness; national claims at 225k (low but creeping).<br>
-<strong>Interpretation:</strong> Early indicators – not yet a recession, but the trajectory is watched.<br>
-<strong>Exposed tickers:</strong></p>
-<ul>
-<li><strong>Bullish</strong> → <strong>XLU</strong> (utilities, defensive), <strong>XLP</strong> (staples), <strong>GLD</strong> (recession hedge)</li>
-<li><strong>Bearish</strong> → <strong>IWM</strong> (small caps), <strong>XLY</strong> (discretionary)<br>
-<strong>Recommendation:</strong></li>
-<li><strong>Add</strong> small position in <strong>XLU</strong> or <strong>XLP</strong> for defensive ballast.</li>
-<li><strong>Avoid</strong> small-cap (IWM) until recession risk clears.</li>
-</ul>
-<hr>
-<h2 id="3-recommended-hedges--actions">3. Recommended Hedges &#x26; Actions</h2>
-<h3 id="portfolio-protection-for-an-all-cash-account-entering-the-market">Portfolio Protection (for an all-cash account entering the market)</h3>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Hedge Instrument</th><th>Rationale</th><th>Cost / Conditions</th></tr></thead><tbody><tr><td><strong>SPY July 10 724 Put</strong> ($3.27, OI 7907, liquid)</td><td>Tail hedge against a 3%+ drop in 3 weeks</td><td>~0.44% of notional per contract</td></tr><tr><td><strong>QQQ July 10 718 Put</strong> ($8.80)</td><td>Tech-specific downside cover for QQQ holdings</td><td>~1.2% of notional</td></tr><tr><td><strong>Buy GLD</strong> (or IAU)</td><td>Diversifier against dollar weakness or unexpected inflation resurgence</td><td>GLD at 388.6, RSI 39 – near support</td></tr><tr><td><strong>Short XLE</strong> (or buy XLE put)</td><td>Oil slump likely to continue if Iran deal holds</td><td>XLE RSI 37, below 50dMA resistance</td></tr><tr><td><strong>Cash</strong> (maintain 30%+)</td><td>Dry powder for a 5-10% correction</td><td>Opportunity cost of 4.2% inflation</td></tr></tbody></table>
-<h3 id="what-to-sell--avoid">What to Sell / Avoid</h3>
-<ul>
-<li><strong>Energy (XLE, OXY, CVX)</strong> – downward momentum, headline risk from oil supply normalization.</li>
-<li><strong>Overbought tech momentum plays</strong> (TQQQ, leveraged ETFs) – volatility decay in a tight range.</li>
-<li><strong>Gold (GLD)</strong> – short-term pressure from strong dollar and hawkish Fed overshadows long-term thesis. Wait for dollar pullback to re-enter.</li>
-<li><strong>TSLA, NFLX, MSFT, META</strong> – technical breakdowns, negative momentum, and high beta to hawkish rate shock.</li>
-</ul>
-<h3 id="what-to-buy--add-small-initial-positions">What to Buy / Add (small initial positions)</h3>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Ticker</th><th>Reason</th><th>Entry Note</th></tr></thead><tbody><tr><td><strong>XLF</strong></td><td>Beneficiary of steeper curve, bank earnings resilient</td><td>Near 52-week high? Wait for pullback to 20dMA (~52.2)</td></tr><tr><td><strong>INTC</strong></td><td>Trump-Apple catalyst, US onshoring, cheap relative to semis</td><td>Do not chase; wait for RSI pullback &#x3C;50</td></tr><tr><td><strong>QUAL</strong></td><td>Quality factor – outperforms in grind-with-violence regimes</td><td>Currently near NAV; good core holding</td></tr><tr><td><strong>TLT</strong></td><td>Rates declining signal – though risky if Fed hikes; small core only</td><td>Bond portion of portfolio (max 10%)</td></tr></tbody></table>
-<h3 id="time-horizon">Time Horizon</h3>
-<ul>
-<li><strong>Immediate (next 2 days):</strong> BoJ guidance after June 15-16 hike may still cause yen carry stress. Watch USDJPY &#x3C;140 as tripwire. If triggered, buy VIX calls.</li>
-<li><strong>Days to weeks:</strong> Fed hawkish repricing likely to persist until next CPI (July). Tech weakness may deepen.</li>
-<li><strong>Weeks to months:</strong> Iran deal implementation – oil should stabilize lower. Recession signals build through Q3.</li>
-</ul>
-<hr>
-<h2 id="4-final-risk-posture">4. Final Risk Posture</h2>
-<p><strong>Cautious-leaning.</strong> The systematic signals are still risk-on, but the macro narrative is shifting underfoot. The highest probability scenario (Grind-with-violence, 50%) means positioning for range-bound markets with acute air pockets. <strong>Do not chase breakouts. Do not override signals.</strong></p>
-<p><strong>Immediate actions for a new cash portfolio:</strong></p>
+</style></head> <body data-astro-cid-sckkx6r4> <header class="site-header" data-astro-cid-sckkx6r4> <div class="site-header-inner" data-astro-cid-sckkx6r4> <a class="brand" href="/AlphaOracle/" data-astro-cid-sckkx6r4>AlphaOracle</a> <nav class="site-nav" data-astro-cid-sckkx6r4> <a href="/AlphaOracle/" data-astro-cid-sckkx6r4> Analysis </a><a href="/AlphaOracle/news-events/" data-astro-cid-sckkx6r4> News </a><a href="/AlphaOracle/indicators/" data-astro-cid-sckkx6r4> Indicators </a><a href="/AlphaOracle/tickers/" data-astro-cid-sckkx6r4> Tickers </a><a href="/AlphaOracle/backtests/" data-astro-cid-sckkx6r4> Backtests </a><a href="/AlphaOracle/research/" data-astro-cid-sckkx6r4> Research </a><a href="/AlphaOracle/paper-trading/" data-astro-cid-sckkx6r4> Paper Trading </a> </nav> </div> </header>  <main data-astro-cid-ipuyqs4v> <header data-astro-cid-ipuyqs4v> <h1 data-astro-cid-ipuyqs4v>Risk Manager Report</h1> <p class="date" data-astro-cid-ipuyqs4v>2026-06-19</p> </header> <article data-astro-cid-ipuyqs4v> <h2 id="model-deepseekdeepseek-v4-flash">Model: deepseek/deepseek-v4-flash</h2>
+<h2 id="risk--protection-report--2026-06-19">Risk &#x26; Protection Report – 2026-06-19</h2>
+<h3 id="market-regime-bull-quiet-transitional">Market Regime: Bull Quiet (Transitional)</h3>
+<p>The regime is calm on the surface but masking multiple live risks. The composite intermarket picture is defensive: <strong>cautious risk sentiment, strong USD, declining rates, weak commodities</strong>. The VIX sits at 18.4 (normal), but rising – a warning that the quiet may be fragile.</p>
+<h3 id="priority-geopolitical-catalysts-ordered-by-immediacy">Priority Geopolitical Catalysts (ordered by immediacy)</h3>
 <ol>
-<li>Deploy 10-15% into cash-equivalents (bills, SHY).</li>
-<li>Buy one tail hedge (SPY 724 put, July 10) for 0.4% of notional.</li>
-<li>Initiate a small position in QUAL or XLU for defensive equity exposure.</li>
-<li>Avoid energy, overbought tech, and small caps.</li>
-<li>Maintain 30% dry powder for a future 5-10% correction.</li>
-</ol> </article> </main>  </body></html> 
+<li>
+<p><strong>Middle East / Strait of Hormuz</strong> (severity: 5/10 – easing but unresolved)</p>
+<ul>
+<li>Headlines show Hormuz reopening and a Lebanon ceasefire, yet oil traffic remains slow and fighting can reignite. The $75 Brent floor is now the focal point.</li>
+<li><strong>Exposed tickers</strong>: XLE (bearish on oil decline), XLE short-term bounce possible if ceasefire stalls. Better to avoid energy for now.</li>
+<li><strong>Recommended hedge</strong>: None needed in cash. If deployed, short-term put spreads on XLE or long TLT (rates declining cushion any oil-shock flight to safety).</li>
+</ul>
+</li>
+<li>
+<p><strong>Fed Hawkish Pivot</strong> (severity: 7/10 – live risk)</p>
+<ul>
+<li>Fed held rates steady but 50% of members project a 2026 hike. Higher‑for‑longer rates pressure growth stocks and compress multiples.</li>
+<li><strong>Exposed tickers</strong>: QQQ, SPY, TQQQ, NVDA, AMZN, META (all vulnerable to rate‑sensitivity).</li>
+<li><strong>Recommended hedge</strong>: Protective puts on QQQ/SPY (e.g., 28‑day 3% OTM puts). For a cash account, simply avoid new long equity exposure until the FOMC path clarifies.</li>
+</ul>
+</li>
+<li>
+<p><strong>China Economic Slowdown</strong> (severity: 6/10 – steady headwind)</p>
+<ul>
+<li>Rising social tensions and weakening domestic demand. Impacts commodities, EM, and global growth.</li>
+<li><strong>Exposed tickers</strong>: EWA, XLB, SLV (commodity demand). Avoid commodity long positions.</li>
+<li><strong>No direct hedge needed</strong>; USD strength already punishing them.</li>
+</ul>
+</li>
+<li>
+<p><strong>AI Capex Deceleration Risk</strong> (severity: 4/10 – medium‑term, not today)</p>
+<ul>
+<li>Hyperscaler capex growth is 83% y/y, but second derivative is slowing. Any Q2 guidance cut would trigger a 1999‑like correction.</li>
+<li><strong>Exposed</strong>: NVDA, AVGO, MU, CRWD, NBIS. These are still up on momentum; trimming would be wise if held.</li>
+</ul>
+</li>
+</ol>
+<h3 id="tickerlevel-weakness-from-data">Ticker‑Level Weakness (from data)</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Ticker</th><th>RSI 14</th><th>MACD Signal</th><th>Trend</th><th>Risk</th></tr></thead><tbody><tr><td>GLD</td><td>38.9</td><td>↓ below signal</td><td>Downtrend</td><td>Bearish; avoid gold</td></tr><tr><td>XLE</td><td>36.9</td><td>↓ below signal</td><td>Neutral</td><td>Weak; oil volatility to the downside</td></tr><tr><td>NFLX</td><td>26.1</td><td>↓ deep negative</td><td>Downtrend</td><td>Extremely oversold; not a buy yet</td></tr><tr><td>AMZN</td><td>36.9</td><td>↓ below signal</td><td>Downtrend</td><td>Weak; avoid</td></tr><tr><td>META</td><td>39.4</td><td>↓ below signal</td><td>Downtrend</td><td>Weak; avoid</td></tr><tr><td>MSFT</td><td>34.7</td><td>↓ below signal</td><td>Downtrend</td><td>Weak; avoid</td></tr><tr><td>TLT</td><td>60.7</td><td>↑ bullish</td><td>Uptrend</td><td>Bonds are strengthening; a rare safe haven</td></tr></tbody></table>
+<h3 id="recommended-actions-for-a-cash-portfolio">Recommended Actions for a Cash Portfolio</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Action</th><th>Rationale</th></tr></thead><tbody><tr><td><strong>Stay in cash</strong></td><td>The transitional, low‑conviction regime does not warrant aggressive deployment. Cash is the best hedge.</td></tr><tr><td><strong>Avoid</strong></td><td>Tech names (QQQ, NVDA, AMZN) until Fed hawkishness fades.</td></tr><tr><td><strong>Avoid</strong></td><td>Energy (XLE) – oil is falling, still volatile.</td></tr><tr><td><strong>Avoid</strong></td><td>Gold (GLD, IAU) – strong USD and weak momentum.</td></tr><tr><td><strong>Consider (minor)</strong></td><td>If deploying a portion, prefer defensive sectors (XLU, XLP) or TLT for a falling‑rates hedge. But keep to &#x3C;20% of cash.</td></tr><tr><td><strong>Put hedge</strong></td><td>For any planned equity entry, pair with 28‑day OTM puts on SPY (e.g., 719 strike) to cap downside.</td></tr></tbody></table>
+<h3 id="summary-of-risk-exposure">Summary of Risk Exposure</h3>
+<ul>
+<li><strong>Immediate</strong> (days): Middle East ceasefire could reverse; Fed fear caps rally.</li>
+<li><strong>Short‑term</strong> (weeks): BoJ June 15‑16 already done, but USDJPY below 145 would force further deleveraging.</li>
+<li><strong>Medium‑term</strong> (months): AI capex guidance, China slowdown, and potential recession signals dominate.</li>
+</ul>
+<p><strong>Bottom line:</strong> The risk/reward for adding longs is poor. Remain in cash, monitor the VIX/VIX3M ratio for backwardation (trigger for crash scenario), and wait for a clearer signal from the fast channel (currently clear) or a better entry. If forced to deploy, tilt toward safe havens (TLT, cash, defensive sectors) and always hedge with puts.</p> </article> </main>  </body></html> 
