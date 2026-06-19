@@ -1,27 +1,27 @@
 [
     {
-        "ticker": "SPY",
+        "ticker": "DIA",
         "action": "buy",
-        "notional_value": 22000
+        "notional_value": 15000
     },
     {
-        "ticker": "QQQ",
+        "ticker": "XLI",
         "action": "buy",
-        "notional_value": 13000
+        "notional_value": 15000
     },
     {
         "ticker": "XLF",
         "action": "buy",
-        "notional_value": 8700
+        "notional_value": 10000
     },
     {
-        "ticker": "XLU",
+        "ticker": "KLAC",
         "action": "buy",
-        "notional_value": 4400
+        "notional_value": 10000
     },
     {
-        "ticker": "TLT",
+        "ticker": "NFLX",
         "action": "buy",
-        "notional_value": 4400
+        "notional_value": 8000
     }
 ]
