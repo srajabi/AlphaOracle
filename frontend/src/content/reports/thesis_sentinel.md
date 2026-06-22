@@ -1,38 +1,32 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-06-19"
+date: "2026-06-22"
 ---
 
-### Thesis Sentinel Daily Brief — 2026-06-19
+1. **Tripwire status**
 
-**Regime:** Bull Quiet (risk-on, strong dollar, falling rates, weak commodities)
+| Tripwire | Signal | Reading | Threshold | Status |
+|---|---|---|---|---|
+| Carry unwind | ^VIX/^VIX3M 5d median | 0.84 | > 1.0 | CLEAR |
+| Credit cracks | HYG/LQD 63d rel‑mom | +0.9 % | < –2 % | CLEAR |
+| Breadth break | Canary (EWA, TLT) | both +3.5 % | both negative | CLEAR |
+| Trend break | SPY vs 200d SMA (monthly) | risk_on (May) | close below | CLEAR |
+| Oil shock | XLE momentum vs SPY | XLE –10.1 %, SPY strong | sustained leadership | CLEAR |
+| AI capex turn | hyperscaler guidance | no FY27 cuts | any cut | CLEAR |
+| Carry stress | USDJPY | no data (VIX term calm) | rapid < 140 | CLEAR |
 
-#### 1. Tripwire Status
+2. **Marker watch**  
+- **BoJ (June 15‑16)**: No hawkish surprise apparent; VIX term structure and carry‑unwind tripwire remain calm.  
+- **CPI (May‑July)**: No new print; next release upcoming.  
+- **SpaceX vs $135**: Stock falling from highs but still well above issue price; $135 line not threatened.  
+- **Hyperscaler capex**: Q2 earnings not yet begun; no fresh guidance.  
+- **Hormuz closure**: Talks progress, oil traffic returning to normal; no week‑long closure.
 
-| Tripwire | Signal | Today | Status |
-|---|---|---|---|
-| Carry unwind | ^VIX/^VIX3M (5d median) | 0.91 | **CLEAR** |
-| Credit cracks | HYG/LQD 63d rel-mom | +0.009 | **CLEAR** |
-| Breadth break | Canary (EWA/TLT both neg) | EWA +3.5%, TLT +3.5% | **CLEAR** |
-| Trend break | SPY vs 200d SMA (mo-end) | 746.7 vs 684.5 | **CLEAR** (far above) |
-| Oil shock | XLE momentum vs SPY | XLE -10.1% (neut/down) | **CLEAR** (oil collapsing) |
-| AI capex turn | Hyperscaler FY27 guidance | No capex-cut news today | **CLEAR** |
-| Carry stress | USDJPY < 140 rapid move | No data/headline; inferred calm | **CLEAR** |
+3. **Delta**  
+- **De‑escalation**: US‑Iran talks showing progress; oil down >3 %, energy secretary says strait traffic “back to normal.”  
+- **Tech rotation**: Alphabet –6 %, Amazon –4 % on AI capex anxiety, while Dow and financials rose.  
+- **Macro regime**: Bull Quiet holds; VIX 16.4, dollar strong, gold weak, rates falling.  
+- **Signal states unchanged**: All mandate and tripwire signals remain risk‑on, no defensive triggers.
 
-**Conclusion:** All seven tripwires remain clear. The system is fully risk-on; mandatemachines are invested.
-
-#### 2. Marker Watch
-
-- **BoJ guidance (June 15-16):** No fresh BoJ headlines in today’s feed. Hike to 1.0% already priced; guidance commentary absent — still a latent risk for later sessions.
-- **CPI prints:** No new CPI data today.
-- **SpaceX vs $135 issue price:** No mention of price vs $135. Stock (SPCX) trading well above the IPO issue; no break in sight.
-- **Hyperscaler capex guidance:** No Q2 earnings or capex revisions reported.
-- **Hormuz:** Hormuz **reopening** today (multiple sources); oil flows resuming — the opposite of “full closure” risk.
-
-#### 3. Delta
-
-The biggest shift: **US-Iran peace framework solidifying, Hormuz reopening, oil down ~8% for the week.** Volatility (^VIX) falling to 16.4, dollar hitting a 13‑month high (UUP +2.1%), gold and silver in freefall. This rapidly unwinds the war‑escalation tail and reinforces a disinflationary‑strong‑dollar environment. Risk assets rallying — tech and crypto rebounding. The tripwire board moved from “all clear” to “still all clear,” but with materially less geopolitical tail risk. No negative divergence between signals and headlines; both paint a risk‑on picture.
-
-#### 4. Scenario Pressure
-
-Today’s evidence strongly **favors Scenario A (Grind-with-violence)**. War de‑escalation + Hormuz reopening reduce the odds of a near‑term oil‑shock crash (C). AI capex narrative intact, and no credit/carry stress. The monthly review on July 12 will reassess weights; for now, A is the dominant path. The thesis’s 50% base case stands, with B (slow bear) still possible if capex guidance turns, but no signals yet.
+4. **Scenario pressure**  
+Today’s evidence reinforces the **Grind‑with‑violence (A)** narrative: a narrow tech air pocket amid broad market resilience, declining oil, and no tripwire fires. Iran de‑escalation reduces the extreme‑tail probability for scenario C, but the AI‑capex anxiety highlights the vulnerability of the top‑heavy index—consistent with scenario B’s slow‑bear potential if earnings disappoint. Official weights (A 50 %, B 30 %, C 20 %) are unchanged pending monthly review.

@@ -1,107 +1,65 @@
 ---
 title: Technical Analyst Report
-date: "2026-06-19"
+date: "2026-06-22"
 ---
 
 ## Model: deepseek/deepseek-v4-flash
 
-**Technical Analysis & Setup Identification**  
-*Date: 2026-06-19 | Regime: Bull Quiet (Risk‑On, Falling Rates, Strong Dollar, Commodities Weak)*  
+## Technical Setups Evaluation (Price Action Only)
+**Date:** 2026-06-22 | **Regime:** Bull Quiet | **Portfolio:** 100% Cash ($87,184.98)
 
-All signals are derived solely from price, moving averages, RSI, MACD, and Bollinger Bands – no news or macro judgement.
+### Broad Market Context
+- **SPY** (746.74): Price above all SMAs, but RSI 55, MACD histogram negative. BB width moderate – no extreme, but momentum fading. A consolidation within uptrend, not a breakout or breakdown.
+- **QQQ** (740.62): Similar, above SMAs, RSI 59, MACD negative. Tech underperformance visible in individual names.
+- **VIX** (16.4): Below 20‑day (17.4) and 50‑day (17.8), low and falling. No fear signal.
 
----
+### Mean Reversion Bounce Candidates
+- **NFLX** (77.38): RSI 28.0 (oversold), price below all SMAs. MACD deeply negative. Strong downtrend – mean reversion possible but risk of further decline high. **Not a clean bounce setup** – no support level confirmed.
+- **MSFT** (379.40): RSI 34.98, below SMA20/50 (SMA200 at 449 – massive gap). Oversold but structural weakness. **Avoid**.
+- **XLE** (53.77): RSI 33.97, below all SMAs, MACD negative. Oversold in a commodity weakening trend. Could snap back if oil stabilizes, but no technical support yet.
+- **GLD** (387.12): RSI 38.16, below all SMAs, downtrend. No bullish divergence. **Weak bounce candidate**.
 
-### 🎯 Mean Reversion Bounces (Oversold / Lower Band Tests)
+**Conclusion:** No high‑confidence mean reversion bounces where price is near a clear support (e.g., SMA200) and RSI < 30. The oversold names are deeply broken.
 
-| Ticker | Price | RSI(14) | BB Position | SMA Stack | Setup |
-|--------|-------|---------|-------------|-----------|-------|
-| **NFLX** | 77.38 | **28** | Near lower BB (76.1) | Below all SMAs | **Extreme oversold.** Price has collapsed below SMA200 (98.4). Bollinger Band lower touch + RSI < 30 typical of snap‑back rallies. Target: SMA20 (83.1) → +7.4% |
-| **MSFT** | 379.40 | **35** | Near lower BB (369.9) | Below all SMAs | Breakdown below SMA200 (449.6). RSI 35 oversold but trend is severely bearish. Potential dead‑cat bounce to SMA20 (413.2) → +8.9% |
-| **GLD** | 387.12 | **38** | Above lower BB (376.6) | Below SMA20 (401.4) & SMA50 (418.3) | Gold in a downtrend, but falling rates and oversold RSI favour a mean‑reversion bounce. Resistance at SMA20 (401) → +3.6% |
-| **XLE** | 53.77 | **34** | **Below lower BB** (54.3) | Below SMA20 (57.3) & SMA50 (57.4) | Classic Bollinger Band break‑down. RSI 34 is deeply oversold. Price typically reverts to the middle band (SMA20 = 57.3) → +6.5% |
-| **XLC** | 109.45 | **33** | Near lower BB (108.6) | Below all SMAs | Communication services sector crushed. RSI 33, price below SMA20 (113.1)‑SMA50‑SMA200. Bounce to SMA20 = +3.4% |
+### Trend Continuation Setups
+- **MU** (1133.99): Price > SMA20 (965) >> SMA50 (732) >> SMA200 (400). RSI 66.4, MACD positive. Bollinger upper band at 1162 – price slightly below but not extended. **Strong trend continuation** – momentum intact.
+- **INTC** (133.99): Price > SMA20 (116.3) > SMA50 (101.4) > SMA200 (55.5). RSI 64.2, MACD positive. BB upper at 132.5 – price is testing new highs. **Breakout in progress**.
+- **KLAC** (259.56): Price > SMA20 (214.9) > SMA50 (193.6) > SMA200 (144.1). RSI 70.2 (slightly overbought), but MACD positive and BB upper at 262 – price touching it. **Extended but trend intact** – watch for pullback.
+- **WDC/STX** (746/1070): Both RSI > 74, price far above SMA20. **Overbought** with wide Bollinger bands – risk of reversal high.
+- **TLT** (86.75): Price > SMA20 (85.36) and SMA50 (85.30), near SMA200 (86.40). RSI 63.9, MACD positive, BB upper at 86.70 – price at top of band. **Trend continuation likely** in falling rate regime.
+- **UUP** (28.30): Price > all SMAs, RSI 73.4, MACD positive. **Strong uptrend** but very overbought – may consolidate.
 
-**Note:** *NFLX and XLE show the strongest mean‑reversion signals (lower band touch + RSI < 35). GLD is less extreme but benefits from falling real rates.*
+**Best continuation plays:** MU, INTC (trend strong, not yet extended). TLT has room but near resistance.
 
----
+### Failed Breakout / Reversal Setups
+- **AVGO** (411.35): Close below SMA20 (413.7) and SMA50 (411.7). Price retreated from upper BB (476.5). MACD negative, histogram deepening. **Failed breakout** – bearish.
+- **ORCL** (184.29): Far below SMA20 (205.2), SMA200 (204.0). RSI 43, MACD deep negative. **Breakdown** in play.
+- **CEG** (274.06): Price below SMA20 (269.3? actually 269.3? Wait: SMA20=269.3, close=274 so above 20‑day? Check data: SMA20=269.3, close=274 – yes above 20‑day, but below SMA50 (284.2) and SMA200 (318.4). RSI 51.7, MACD negative but histogram turning up. **Neutral**, not clear failed breakout.
 
-### 📈 Trend Continuation (Bullish Structure Intact)
+### Volatility Contraction (Bollinger Squeeze)
+- **LQD** (109.07): BB upper 109.45, lower 107.80, width ~1.6. RSI 56.6, MACD positive. Bandwidth is tight – squeeze potential. Watch for expansion.
+- **HYG** (80.01): BB upper 80.15, lower 79.38, width ~0.8 – extremely tight. RSI 57, MACD neutral. **Implied breakout** waiting.
+- **XLP** (83.30): BB width moderate, not extreme.
+- **TLT** – BB width comfortable, not a squeeze.
 
-| Ticker | Price | SMA20/SMA50/SMA200 | RSI(14) | MACD | Setup |
-|--------|-------|-------------------|---------|------|-------|
-| **TLT** | 86.75 | All SMAs bullish (>SMA200) | 64 | Positive, histogram rising | **Strong uptrend.** Falling rates drive long‑bonds. Price above SMA20 (85.4). No overbought signal. Trend continuation favours further gains. |
-| **XLK** | 191.44 | Above all SMAs (SMA200=149.1) | 60 | Positive (histogram turning negative) | Technology sector still in uptrend but MACD divergence warns of slowing momentum. Use pullback to SMA20 (186.8) as entry. |
-| **XLI** | 180.91 | Above all SMAs (SMA200=162.6) | 63 | Positive, histogram rising | Industrials sector strong. No divergence. Trend continuation likely. |
-| **AMD** | 537.37 | Above all SMAs (SMA200=261.2) | 61 | Positive but histogram negative | Pulled back from highs but still above SMA20 (501.9). Potential re‑entry if price holds SMA20. |
-| **KLAC** | 259.56 | Above all SMAs (SMA200=144.1) | **70** (overbought) | Positive, histogram positive | **Overbought.** Upper BB at 262.4, close 259.6 near upper band. Not a buy here; wait for pullback to SMA20 (214.9). |
+### Summary Table
 
-**Note:** *TLT offers the cleanest trend‑continuation setup without overbought risk. Industrials (XLI) and select semiconductors (AMD on dips) also look constructive.*
+| Setup Type | Ticker(s) | Signal | Confluence | Actionability |
+|------------|-----------|--------|------------|---------------|
+| Trend continuation | MU, INTC, KLAC | Price > SMAs, RSI 60-70, MACD positive | Semis momentum | High – buy dips or hold |
+| Trend continuation | TLT | Price above SMAs, RSI 63, MACD positive | Falling rates | High – add on pullback |
+| Trend continuation | UUP | Strong uptrend but overbought | Dollar strength | Moderate – wait for pullback |
+| Overbought exhaustion | WDC, STX | RSI > 74, far above SMA20 | Memory hype | High risk of mean reversion |
+| Oversold bounce (weak) | NFLX, MSFT, XLE, GLD | RSI < 40, price below SMAs | No support yet | Low – avoid |
+| Failed breakout | AVGO | Price below SMA20/50 after rally | Semis rotation | Short bias |
+| Volatility squeeze | LQD, HYG | Very tight BB | Credit stability | Long volatility setup |
 
----
+### Top Tactical Ideas (Price Action Only)
+1. **Long INTC / MU** on dips to SMA20 – trend strong, not overextended.
+2. **Long TLT** on pullback to SMA20 (~85.36) – bond rally continues.
+3. **Avoid** WDC/STX – overbought with parabolic moves.
+4. **Watch** LQD/HYG for Bollinger expansion – could signal credit stress or relief.
+5. **No compelling inverse play** – VIX low, commodities weak, but no panic selling.
 
-### ❌ Failed / Bearish Setups (Avoid or Consider Hedging)
-
-| Ticker | Signal | Reason |
-|--------|--------|--------|
-| **MSFT** | Breakdown failure | Price below all SMAs, SMA200 acting as resistance. RSI 35 oversold but no reversal pattern. A bounce is not a trend change. |
-| **NFLX** | Downtrend extreme | Even if it bounces, the trend is down. Any rally is a counter‑trend move. Do not assume reversal. |
-| **XLY** | Sector weakness | Consumer Discretionary below all SMAs, RSI 45. No indication of rotation back in. |
-| **INTC / WDC / STX** | Overextended | All three are above upper BB with RSI >70. Extreme overbought. Pullback risk high. |
-| **META** | Momentum failure | Below SMA200 and SMA50. MACD deeply negative. RSI 43 not oversold. Trend is down. |
-
----
-
-### 📊 Volatility Contraction Squeezes (Narrowing Bands)
-
-None of the tracked assets exhibit a classic Bollinger Band squeeze (bands unusually narrow). However, note:
-
-- **SPY**: BB width = 35.5 (4.8% of price) – normal.
-- **QQQ**: BB width = 58 (7.8%) – moderate.
-- **TLT**: BB width = 2.7 (3.1%) – normal for bonds.
-- **XLP** (Consumer Staples): BB width = 5.1 (6.1%) – not tight.
-
-*No actionable squeeze setups today.*
-
----
-
-### 💡 Trade Ideas (from Available Options Chain)
-
-Based on the above technical setups and the provided option chain, here are three concrete ideas:
-
-#### Idea 1: **Mean Reversion on GLD – Buy Call**
-- **Setup**: GLD oversold (RSI 38, near lower BB). Bull Quiet regime + falling rates favour gold bounce.
-- **Trade**: Buy 1 contract **GLD 260717C00400000** (28‑DTE, strike $400, mid $5.18)
-- **Cost**: $518 + commission
-- **Target**: $401–405 (SMA20 area)
-- **Risk**: $518 (full premium if GLD stays below $400)
-- **Probability**: ~40% (short‑term counter‑trend)
-
-#### Idea 2: **Trend Continuation on TLT – Buy Call**
-- **Setup**: TLT in strong uptrend, RSI 64 not overbought, falling rates tailwind.
-- **Trade**: Buy 1 contract **TLT 260717C** (needs chain – use approximate). Since TLT not in options snapshot, consider using TLT proxy (e.g., long TLT shares). Alternatively, use **TMF** (3x) if high risk tolerance.
-- **Alternative**: Buy shares of TLT directly ($86.75 × 100 = $8,675). Target previous high near $90.
-- **Risk**: ~5% drawdown to SMA20 ($85.4)
-
-#### Idea 3: **Cash‑Secured Put on AMD (High IV Premium)**
-- **Setup**: AMD is above all SMAs, RSI 61, uptrend intact. High implied volatility offers attractive premium.
-- **Trade**: Sell 1 contract **AMD260710P00510000** (21‑DTE, strike $510, mid $23.05)
-- **Premium**: $2,305 collected
-- **Margin**: $51,000 (if assigned)
-- **Breakeven**: $486.95 (5% below current)
-- **Rationale**: Take advantage of elevated IV (68%) to collect income while willing to buy AMD at a discount. Technical support near SMA20 ($502).
-
----
-
-### Summary
-
-| Setup Type | Best Candidates | Action |
-|------------|----------------|--------|
-| **Mean Reversion** | GLDr, XLE, NFLX (high risk) | Buy call on GLD, or share purchase on XLE/NFLX |
-| **Trend Continuation** | TLT, XLI, AMD (on dips) | Buy TLT shares/call, or sell put on AMD |
-| **Failed/Bearish** | MSFT, META, overbought semis | Avoid, or consider protective puts |
-| **Squeeze** | None today | Wait for band contraction |
-
-**Portfolio suggestion**: With $87k cash, deploy ~20% into a high‑conviction mean‑reversion (GLD call), 30% into trend continuation (TLT shares or call), and keep 50% dry for potential further opportunities.
-
-*All trades are short‑term tactical. Monitor stop‑losses (e.g., GLD below lower BB, TLT below SMA20).*
+### Final Note
+The Bull Quiet regime favors trend continuation in risk assets but the narrow leadership and MACD fading on SPY warrant caution. Prefer individual names with clear momentum (MU, INTC) over broad index exposure. Maintain cash reserve for a potential dip in quality trends.
