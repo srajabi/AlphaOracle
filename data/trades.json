@@ -1,27 +1,27 @@
 [
     {
-        "ticker": "VT",
+        "ticker": "SPY",
         "action": "buy",
-        "notional_value": 43500
+        "notional_value": 26155
     },
     {
-        "ticker": "QUAL",
+        "ticker": "IWM",
         "action": "buy",
-        "notional_value": 17400
+        "notional_value": 13078
     },
     {
         "ticker": "XLF",
         "action": "buy",
-        "notional_value": 13000
+        "notional_value": 17437
     },
     {
-        "ticker": "IAU",
+        "ticker": "XLI",
         "action": "buy",
-        "notional_value": 8700
+        "notional_value": 8718
     },
     {
-        "ticker": "EWA",
+        "ticker": "TLT",
         "action": "buy",
-        "notional_value": 4350
+        "notional_value": 21796
     }
 ]

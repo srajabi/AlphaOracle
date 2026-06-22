@@ -3,30 +3,32 @@ title: Thesis Sentinel Daily Brief
 date: "2026-06-22"
 ---
 
-1. **Tripwire status**
+**Tripwire status** (2026-06-22)
 
-| Tripwire | Signal | Reading | Threshold | Status |
-|---|---|---|---|---|
-| Carry unwind | ^VIX/^VIX3M 5d median | 0.84 | > 1.0 | CLEAR |
-| Credit cracks | HYG/LQD 63d rel‑mom | +0.9 % | < –2 % | CLEAR |
-| Breadth break | Canary (EWA, TLT) | both +3.5 % | both negative | CLEAR |
-| Trend break | SPY vs 200d SMA (monthly) | risk_on (May) | close below | CLEAR |
-| Oil shock | XLE momentum vs SPY | XLE –10.1 %, SPY strong | sustained leadership | CLEAR |
-| AI capex turn | hyperscaler guidance | no FY27 cuts | any cut | CLEAR |
-| Carry stress | USDJPY | no data (VIX term calm) | rapid < 140 | CLEAR |
+| Tripwire | Signal | Threshold | Reading | Status |
+|----------|--------|-----------|---------|--------|
+| Carry unwind (VIX/VIX3M) | ^VIX / ^VIX3M | > 1.0 | 0.838 (16.40/19.57) | CLEAR |
+| Credit cracks | HYG/LQD 63‑day rel‑mom | < –2% | +0.9% (per rule‑based credit) | CLEAR |
+| Breadth break (canary) | EWA, TLT momentum | both negative | EWA +3.5%, TLT +3.5% | CLEAR |
+| Trend break | SPY vs 200‑d SMA (mth‑close) | close below | SPY 746.74 vs 200d 684.49 | CLEAR |
+| Oil shock (energy leadership) | XLE vs SPY sustained | XLE leading | XLE ‑10.1% 63‑d mom, SPY strong | CLEAR |
+| AI capex turn | Hyperscaler FY27 guidance | any cut | No guidance change today | CLEAR |
+| Carry stress (USDJPY) | USDJPY < 140 | rapid move | Not triggered (dollar strong) | CLEAR |
 
-2. **Marker watch**  
-- **BoJ (June 15‑16)**: No hawkish surprise apparent; VIX term structure and carry‑unwind tripwire remain calm.  
-- **CPI (May‑July)**: No new print; next release upcoming.  
-- **SpaceX vs $135**: Stock falling from highs but still well above issue price; $135 line not threatened.  
-- **Hyperscaler capex**: Q2 earnings not yet begun; no fresh guidance.  
-- **Hormuz closure**: Talks progress, oil traffic returning to normal; no week‑long closure.
+All seven tripwires remain **CLEAR**. The system’s slow channel, fast channel, credit, and canary signals are all risk‑on, consistent with the table.
 
-3. **Delta**  
-- **De‑escalation**: US‑Iran talks showing progress; oil down >3 %, energy secretary says strait traffic “back to normal.”  
-- **Tech rotation**: Alphabet –6 %, Amazon –4 % on AI capex anxiety, while Dow and financials rose.  
-- **Macro regime**: Bull Quiet holds; VIX 16.4, dollar strong, gold weak, rates falling.  
-- **Signal states unchanged**: All mandate and tripwire signals remain risk‑on, no defensive triggers.
+**Marker watch**  
+- **BoJ guidance**: No fresh BoJ headlines; post‑hike meeting commentary not hitting wires.  
+- **CPI**: No new inflation print.  
+- **SpaceX vs $135**: Shares down sharply today but stay above the $135 issue price; no break of that level.  
+- **Hyperscaler capex**: No Q2‑related capex guidance updates.  
+- **Hormuz**: Traffic slowly resuming but hundreds of ships still at standstill; not a full closure week.
 
-4. **Scenario pressure**  
-Today’s evidence reinforces the **Grind‑with‑violence (A)** narrative: a narrow tech air pocket amid broad market resilience, declining oil, and no tripwire fires. Iran de‑escalation reduces the extreme‑tail probability for scenario C, but the AI‑capex anxiety highlights the vulnerability of the top‑heavy index—consistent with scenario B’s slow‑bear potential if earnings disappoint. Official weights (A 50 %, B 30 %, C 20 %) are unchanged pending monthly review.
+**Delta**  
+No tripwire flipped. The dominant new inputs:  
+- Multiple sources now report **BofA/Deutsche Bank expect a September rate hike**; Warsh’s hawkish tone continues to lift the dollar (UUP +0.8%) and pressure gold/commodities.  
+- China announced new export controls on U.S. defense firms, adding a trade‑policy shock layer.  
+- Markets closed mixed: S&P 500 –0.3%, Nasdaq –0.7%, Dow +0.4%; financials (XLF +0.4%), industrials (XLI +0.4%) outperformed, tech (XLK flat) and communication services (XLC –1.0%) underperformed. Long Treasuries held firm (TLT +0.2%).  
+
+**Scenario pressure**  
+Today’s tape reinforces **Scenario A (Grind‑with‑violence)**. The tripwire dashboard is entirely clear, maintaining the prevailing risk‑on posture. Rate‑hike expectations and geopolitical frictions introduce air‑pocket risk, but no systematic de‑risking trigger has fired. The market’s rotation toward financials/industrials while tech wobbles fits the “grind” pattern. We do not change the official scenario weights; the monthly review date is 2026‑07‑12.
