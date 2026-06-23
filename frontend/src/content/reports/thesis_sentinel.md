@@ -1,34 +1,34 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-06-22"
+date: "2026-06-23"
 ---
 
-**Tripwire status** (2026-06-22)
+## Thesis Sentinel Daily Brief
+2026-06-23 | Regime: Bull Quiet
 
-| Tripwire | Signal | Threshold | Reading | Status |
-|----------|--------|-----------|---------|--------|
-| Carry unwind (VIX/VIX3M) | ^VIX / ^VIX3M | > 1.0 | 0.838 (16.40/19.57) | CLEAR |
-| Credit cracks | HYG/LQD 63‑day rel‑mom | < –2% | +0.9% (per rule‑based credit) | CLEAR |
-| Breadth break (canary) | EWA, TLT momentum | both negative | EWA +3.5%, TLT +3.5% | CLEAR |
-| Trend break | SPY vs 200‑d SMA (mth‑close) | close below | SPY 746.74 vs 200d 684.49 | CLEAR |
-| Oil shock (energy leadership) | XLE vs SPY sustained | XLE leading | XLE ‑10.1% 63‑d mom, SPY strong | CLEAR |
-| AI capex turn | Hyperscaler FY27 guidance | any cut | No guidance change today | CLEAR |
-| Carry stress (USDJPY) | USDJPY < 140 | rapid move | Not triggered (dollar strong) | CLEAR |
+### 1. Tripwire Status
 
-All seven tripwires remain **CLEAR**. The system’s slow channel, fast channel, credit, and canary signals are all risk‑on, consistent with the table.
+| Tripwire | Signal | Threshold | Today | Status |
+|---|---|---|---|---|
+| Carry unwind | VIX/VIX3M | > 1.0 | 0.84 | CLEAR |
+| Credit cracks | HYG/LQD 63d rel-mom | < -2% | +0.78% | CLEAR |
+| Breadth break | Canary (EWA, TLT) | both neg | both pos (3.1%, 2.4%) | CLEAR |
+| Trend break | SPY vs 200d SMA | month-end close < 200d | 744 > 685 | CLEAR |
+| Oil shock | XLE momentum | sustained leadership vs SPY | –7.9% (weak) | CLEAR |
+| AI capex turn | Hyperscaler FY27 guidance | any capex cut | no Q2 reports yet | n/a |
+| Carry stress | USDJPY | rapid move < 140 | strong dollar (no <140 data) | CLEAR |
 
-**Marker watch**  
-- **BoJ guidance**: No fresh BoJ headlines; post‑hike meeting commentary not hitting wires.  
-- **CPI**: No new inflation print.  
-- **SpaceX vs $135**: Shares down sharply today but stay above the $135 issue price; no break of that level.  
-- **Hyperscaler capex**: No Q2‑related capex guidance updates.  
-- **Hormuz**: Traffic slowly resuming but hundreds of ships still at standstill; not a full closure week.
+All tripwires remain clear. Rule-based signals (fast channel, credit, canary) are risk-on; no contradiction with headlines.
 
-**Delta**  
-No tripwire flipped. The dominant new inputs:  
-- Multiple sources now report **BofA/Deutsche Bank expect a September rate hike**; Warsh’s hawkish tone continues to lift the dollar (UUP +0.8%) and pressure gold/commodities.  
-- China announced new export controls on U.S. defense firms, adding a trade‑policy shock layer.  
-- Markets closed mixed: S&P 500 –0.3%, Nasdaq –0.7%, Dow +0.4%; financials (XLF +0.4%), industrials (XLI +0.4%) outperformed, tech (XLK flat) and communication services (XLC –1.0%) underperformed. Long Treasuries held firm (TLT +0.2%).  
+### 2. Marker Watch
+- BoJ June meeting: no new hawkish guidance reported; USDJPY not below 145.  
+- CPI: May CPI 4.2% (per thesis). No June print yet.  
+- SpaceX vs $135: stock fell ~16% but still ~$150, above issue price. Not broken.  
+- Hyperscaler capex: Q2 earnings not yet reported; no FY27 capex cut headlines.  
+- Hormuz: tanker traffic returning; not full closure. Oil falling.
 
-**Scenario pressure**  
-Today’s tape reinforces **Scenario A (Grind‑with‑violence)**. The tripwire dashboard is entirely clear, maintaining the prevailing risk‑on posture. Rate‑hike expectations and geopolitical frictions introduce air‑pocket risk, but no systematic de‑risking trigger has fired. The market’s rotation toward financials/industrials while tech wobbles fits the “grind” pattern. We do not change the official scenario weights; the monthly review date is 2026‑07‑12.
+### 3. Delta
+Tech sell-off intensified: MU –10%, AMD –6%, NVDA –2% intraday; KOSPI crashed 10% on memory unwind. Dollar (UUP) surged to 13-month high (28.36, RSI 75). Gold (GLD) fell further to 384.6, silver (SLV) 58.9. VIX rose to 17.3 but remains in normal range; VIX/VIX3M still < 1.0. Despite equity air pocket, rule-based signals (canary, credit, dual channel) unchanged—no macro regime break.
+
+### 4. Scenario Pressure
+Today’s AI/memory crash and dollar breakout slightly favor a deeper air pocket within scenario A (Grind-with-violence). The velocity of the tech rotation raises early-stage scenario B (slow bear) risk, but credit and breadth remain resilient, keeping B unconfirmed. Official scenario weights unchanged; monthly review will assess if AI capex deceleration concerns intensify. No C-triggering event present.
