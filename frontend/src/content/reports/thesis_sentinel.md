@@ -1,36 +1,30 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-06-23"
+date: "2026-06-24"
 ---
 
-## Thesis Sentinel Daily Brief — 2026-06-23
+## Thesis Sentinel – 2026-06-24
 
-### 1. Tripwire Status
+### 1. Tripwire status
+| Tripwire | Signal | Threshold | Today's reading | Status |
+|----------|--------|-----------|----------------|--------|
+| Carry unwind | ^VIX / ^VIX3M | > 1.0 | 0.996 (VIX 19.49 / VIX3M 19.57) | CLEAR |
+| Credit cracks | HYG/LQD 63d rel‑mom | < –2% | +0.0057 (positive) | CLEAR |
+| Breadth break | EWA & TLT canary (13612W) | both negative | EWA +0.74%, TLT +2.15% | CLEAR |
+| Trend break | SPY month‑end < 200d SMA | monthly close below | SPY 733.58 vs 200d 685.48 | CLEAR |
+| Oil shock | XLE momentum vs SPY | sustained leadership | XLE momentum –7.8% (weak) | CLEAR |
+| AI capex turn | Hyperscaler FY27 capex cut | any official cut | No new guidance | CLEAR |
+| Carry stress | USDJPY rapid < 140 | sudden move | Not available (UUP strong uptrend) | – |
 
-| Tripwire | Signal | Reading Today | Status |
-|---|---|---|---|
-| Carry unwind | ^VIX / ^VIX3M | 0.88 (17.28 / 19.57) | CLEAR |
-| Credit cracks | HYG/LQD 63d rel‑mom | +0.0078 | CLEAR |
-| Breadth break | Canary EWA, TLT | EWA +3.1%, TLT +2.4% | CLEAR |
-| Trend break | SPY vs 200d SMA | 744.39 (200d 685.03) — monthly | CLEAR (intra‑month) |
-| Oil shock | XLE rel. momentum | XLE momentum –7.9, trailing SPY | CLEAR |
-| AI capex turn | Hyperscaler FY27 guidance | No cuts reported | CLEAR |
-| Carry stress | USDJPY < 140 | Dollar surging; no sub‑140 signal | CLEAR (no data) |
-
-All seven tripwires remain **CLEAR**. The rule‑based mandate signals (slow channel risk‑on, fast channel clear, credit clear, canary risk‑on) are unchanged.
-
-### 2. Marker Watch
-
-- **BoJ guidance / USDJPY**: No fresh BoJ news today. USD surging to 13‑month highs; USDJPY likely comfortably above 145.
-- **CPI prints**: No new inflation data. Next CPI not yet released.
-- **SpaceX vs $135 issue price**: SpaceX falling for a third day, erasing most post‑IPO gains, but no confirmation of a break below the $135 issue. Monitor.
-- **Hyperscaler capex**: No Q2 earnings or capex guidance updates yet.
-- **Hormuz closure**: Oil prices at lowest since war began; tanker traffic returning. No full closure.
+### 2. Marker watch
+- **BoJ guidance**: Meeting already passed (Jun 15–16). No fresh BoJ headlines today.  
+- **CPI**: No new print.  
+- **SpaceX vs $135**: No price reference to $135 today; third straight day of decline (Bloomberg), erasing $600B in market value, but no breach of issue price mentioned.  
+- **Hyperscaler capex**: No guidance revisions today. AI spending concerns remain in news (Big Tech’s $2.7T AI bill, but no official cuts).  
+- **Hormuz**: Multiple headlines confirm easing; Brent at pre‑war lows; ships crossing Strait. War‑closure risk receding.
 
 ### 3. Delta
+The dominant shift is a sharp oil price decline (Brent below $74) on easing Hormuz tensions, pulling inflation‑hedge assets lower (GLD, SLV, XLE all weak). This is unambiguously risk‑positive for the macro backdrop. However, equities diverged: the AI/tech complex continued its sell‑off (NVDA, AMD, AVGO, WDC all down), while the broad market (SPY, IWM, DIA) held up relatively. Headlines today also feature hawkish rate expectations (markets pricing hikes, BofA outlook), but our *rule‑based* real‑rates indicator labels rates as *declining* (TLT uptrend). This discrepancy between news sentiment and signal trends is notable but does not override the authoritative signals.
 
-Tech sell‑off intensified today (Nasdaq –2.2%, chip stocks down 7‑10%) driven by AI‑spending anxiety and South Korean market tremors. However, **systemic stress indicators remain benign**: VIX rose only 2 pts to 17.3 (still normal), credit spreads stable, canary momentum positive. The correction is concentrated in the high‑flying AI/chip complex. Commodities (gold, silver, oil) continued to fall amid a strong dollar. No tripwire flipped.
-
-### 4. Scenario Pressure
-
-Today’s tech rout adds a marginal nudge toward **Scenario B (Slow Bear)** — the AI capex euphoria is clearly cracking, and the “AI bubble” narrative is now mainstream. However, the damage remains contained to the sectors that led the rally; small‑caps (IWM +1.4%), financials (XLF), and healthcare (XLV) held firm. The absence of credit stress or a VIX spike keeps Scenario A (Grind‑with‑Violence) dominant. No evidence supports a shift toward Scenario C (Fast Crash). The official weights (A 50%, B 30%, C 20%) are unchanged pending the monthly review.
+### 4. Scenario pressure
+Today’s evidence leans marginally away from scenario C (fast crash): the largest gap‑risk trigger – a full Hormuz closure – is materially less likely with ships flowing and oil tumbling. Yet the AI sell‑off, while not yet triggering a tripwire, is the exact narrowing‑leadership dynamic our scenario B (slow bear) anticipates. For now, all rule‑based tripwires remain CLEAR, preserving scenario A (grind‑with‑violence) as the most consistent with the signals. We do not alter the official scenario weights (monthly review only), but note that a persistent tech rotation could eventually challenge credit or breadth tripwires. Disagreement: hawkish rate headlines conflict with the rates_declining signal; the systematic rules govern, so we treat the TLT uptrend as the definitive rate view.

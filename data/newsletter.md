@@ -1,4 +1,4 @@
-# AlphaOracle Daily - 2026-06-23
+# AlphaOracle Daily - 2026-06-24
 
 ## Signals (rules govern; everything below is commentary)
 
@@ -8,77 +8,85 @@
 |---|---|---|
 | Trend (monthly 200dma) | risk_on | 10.25% vs SMA, as of 2026-05-29 |
 | VIX term structure | clear | ratio 0.84 |
-| Credit (HYG/LQD 63d) | clear | 0.0078 |
+| Credit (HYG/LQD 63d) | clear | 0.0057 |
 | Canary breadth | risk_on | negative: [] |
 
 ## Thesis Sentinel
 
-## Thesis Sentinel Daily Brief — 2026-06-23
+## Thesis Sentinel – 2026-06-24
 
-### 1. Tripwire Status
+### 1. Tripwire status
+| Tripwire | Signal | Threshold | Today's reading | Status |
+|----------|--------|-----------|----------------|--------|
+| Carry unwind | ^VIX / ^VIX3M | > 1.0 | 0.996 (VIX 19.49 / VIX3M 19.57) | CLEAR |
+| Credit cracks | HYG/LQD 63d rel‑mom | < –2% | +0.0057 (positive) | CLEAR |
+| Breadth break | EWA & TLT canary (13612W) | both negative | EWA +0.74%, TLT +2.15% | CLEAR |
+| Trend break | SPY month‑end < 200d SMA | monthly close below | SPY 733.58 vs 200d 685.48 | CLEAR |
+| Oil shock | XLE momentum vs SPY | sustained leadership | XLE momentum –7.8% (weak) | CLEAR |
+| AI capex turn | Hyperscaler FY27 capex cut | any official cut | No new guidance | CLEAR |
+| Carry stress | USDJPY rapid < 140 | sudden move | Not available (UUP strong uptrend) | – |
 
-| Tripwire | Signal | Reading Today | Status |
-|---|---|---|---|
-| Carry unwind | ^VIX / ^VIX3M | 0.88 (17.28 / 19.57) | CLEAR |
-| Credit cracks | HYG/LQD 63d rel‑mom | +0.0078 | CLEAR |
-| Breadth break | Canary EWA, TLT | EWA +3.1%, TLT +2.4% | CLEAR |
-| Trend break | SPY vs 200d SMA | 744.39 (200d 685.03) — monthly | CLEAR (intra‑month) |
-| Oil shock | XLE rel. momentum | XLE momentum –7.9, trailing SPY | CLEAR |
-| AI capex turn | Hyperscaler FY27 guidance | No cuts reported | CLEAR |
-| Carry stress | USDJPY < 140 | Dollar surging; no sub‑140 signal | CLEAR (no data) |
-
-All seven tripwires remain **CLEAR**. The rule‑based mandate signals (slow channel risk‑on, fast channel clear, credit clear, canary risk‑on) are unchanged.
-
-### 2. Marker Watch
-
-- **BoJ guidance / USDJPY**: No fresh BoJ news today. USD surging to 13‑month highs; USDJPY likely comfortably above 145.
-- **CPI prints**: No new inflation data. Next CPI not yet released.
-- **SpaceX vs $135 issue price**: SpaceX falling for a third day, erasing most post‑IPO gains, but no confirmation of a break below the $135 issue. Monitor.
-- **Hyperscaler capex**: No Q2 earnings or capex guidance updates yet.
-- **Hormuz closure**: Oil prices at lowest since war began; tanker traffic returning. No full closure.
+### 2. Marker watch
+- **BoJ guidance**: Meeting already passed (Jun 15–16). No fresh BoJ headlines today.  
+- **CPI**: No new print.  
+- **SpaceX vs $135**: No price reference to $135 today; third straight day of decline (Bloomberg), erasing $600B in market value, but no breach of issue price mentioned.  
+- **Hyperscaler capex**: No guidance revisions today. AI spending concerns remain in news (Big Tech’s $2.7T AI bill, but no official cuts).  
+- **Hormuz**: Multiple headlines confirm easing; Brent at pre‑war lows; ships crossing Strait. War‑closure risk receding.
 
 ### 3. Delta
+The dominant shift is a sharp oil price decline (Brent below $74) on easing Hormuz tensions, pulling inflation‑hedge assets lower (GLD, SLV, XLE all weak). This is unambiguously risk‑positive for the macro backdrop. However, equities diverged: the AI/tech complex continued its sell‑off (NVDA, AMD, AVGO, WDC all down), while the broad market (SPY, IWM, DIA) held up relatively. Headlines today also feature hawkish rate expectations (markets pricing hikes, BofA outlook), but our *rule‑based* real‑rates indicator labels rates as *declining* (TLT uptrend). This discrepancy between news sentiment and signal trends is notable but does not override the authoritative signals.
 
-Tech sell‑off intensified today (Nasdaq –2.2%, chip stocks down 7‑10%) driven by AI‑spending anxiety and South Korean market tremors. However, **systemic stress indicators remain benign**: VIX rose only 2 pts to 17.3 (still normal), credit spreads stable, canary momentum positive. The correction is concentrated in the high‑flying AI/chip complex. Commodities (gold, silver, oil) continued to fall amid a strong dollar. No tripwire flipped.
-
-### 4. Scenario Pressure
-
-Today’s tech rout adds a marginal nudge toward **Scenario B (Slow Bear)** — the AI capex euphoria is clearly cracking, and the “AI bubble” narrative is now mainstream. However, the damage remains contained to the sectors that led the rally; small‑caps (IWM +1.4%), financials (XLF), and healthcare (XLV) held firm. The absence of credit stress or a VIX spike keeps Scenario A (Grind‑with‑Violence) dominant. No evidence supports a shift toward Scenario C (Fast Crash). The official weights (A 50%, B 30%, C 20%) are unchanged pending the monthly review.
+### 4. Scenario pressure
+Today’s evidence leans marginally away from scenario C (fast crash): the largest gap‑risk trigger – a full Hormuz closure – is materially less likely with ships flowing and oil tumbling. Yet the AI sell‑off, while not yet triggering a tripwire, is the exact narrowing‑leadership dynamic our scenario B (slow bear) anticipates. For now, all rule‑based tripwires remain CLEAR, preserving scenario A (grind‑with‑violence) as the most consistent with the signals. We do not alter the official scenario weights (monthly review only), but note that a persistent tech rotation could eventually challenge credit or breadth tripwires. Disagreement: hawkish rate headlines conflict with the rates_declining signal; the systematic rules govern, so we treat the TLT uptrend as the definitive rate view.
 
 ## Portfolio Manager Synthesis
 
-# Portfolio Action Plan – June 23, 2026
+### Lead Portfolio Manager’s Decision Brief  
+**Date:** 2026‑06‑24   **Regime:** Bull Quiet (Systematic: Transitional, Cautious)   **Portfolio:** $87 185 cash → **Fully invested with defensive sector tilts**
 
-## Decision Framework
+#### 1. Mandate & Signal Synthesis  
+- **Slow channel (SPY > 200dma), fast channel (VIX/VIX3M 0.84), credit (HYG/LQD positive), and canary (risk‑on)** all confirm **SLEEVE_INVESTED** for both core and canary‑DAA sleeves. Waiting with 100% cash would be at odds with our own rule‑based signals.  
+- However, the **intermarket composite is Transitional** (strong dollar, commodities weak, VIX rising). The macro‑thesis gives a 50% probability of “grind‑with‑violence” (A) and a 30% slow‑bear (B), so a fully invested portfolio must be **built defensively** and **sector‑rotated away from the most vulnerable exposures** (overvalued tech, energy, gold).
 
-**1. System Mandates (authoritative)**  
-All mandatory signals are **risk‑on**: slow channel (SPY > 200‑SMA), fast channel (VIX/VIX3M contango), credit clear, canary positive. The P‑ and Y‑core sleeves must be **invested**. Sitting in 80‑90% cash, as the (lower‑tier) risk manager suggests, would directly contradict the rule‑based mandates. We must deploy capital.
+#### 2. Key Debates & Resolution  
+- **Risk Manager** proposed 40% cash. The mandate says “SLEEVE_INVESTED” – cash hoarding would override our systematic champion strategies. We instead deploy **all capital** but use low‑beta, quality, and defensive sectors to cushion downside while the canary remains risk‑on.  
+- **Technical Analyst** gave “Favorable” ratings to cash‑secured puts on AVGO, CRWD, AMD – i.e., these names are near strong technical support. While we cannot execute options today, the supports validate that quality/semi‑infrastructure could be accumulated later; for now we stay in liquid sector ETFs to maintain flexibility.  
+- **Macro Strategist** highlighted the **Strait of Hormuz de‑escalation** as a regime shift: energy risk premium collapsing, inflation tailwind easing, and rotation into defensives/industrials. We fully adopt this rotation thesis.
 
-**2. Macro‑Thesis Alignment**  
-Our own thesis puts the base‑case 50% on “grind‑with‑violence” (scenario A) – a range‑bound but choppy market. Scenarios B/C sum to 50% over 12 months, but none of our tripwires have tripped yet. The current sell‑off in semiconductors is an **equity‑specific rotation**, not a systemic credit event (HYG/LQD stable, VIX calm). The hawkish Fed and strong dollar are headwinds for gold and long bonds, but they benefit financials and quality. We therefore tilt the portfolio **away from pure momentum tech** and toward value, quality, and infrastructure.
+#### 3. Portfolio Construction Rationale  
 
-**3. Synthesising the Analyst Views**  
-- **Macro Strategist** (fast‑tier but thoughtful): favours financials, quality, nuclear/grid; suggests waiting on tech and gold until stabilisation.  
-- **Technical Analyst** (same tier): flags extreme oversold conditions in MSFT, AMZN and clear uptrends in IWM, XLI, XLF. Mean‑reversion in beaten‑down mega‑cap tech offers a tactical opportunity.  
-- **Risk Manager** (most cautious): recommends cash and tail hedges; we overrule the cash call because the mandates are risk‑on, but we incorporate the advice for a **small gold insurance position** (IAU is oversold) and keep a modest cash reserve (~0.2% here) for future flexibility.
+| Ticker | Allocation | Why |
+|--------|------------|-----|
+| **SPY** (S&P 500) | 30% | Core equity exposure; mandate compliance with low‑cost beta. Remains above 200‑dma; provides broad participation if the grind‑higher scenario (A) plays out. |
+| **XLU** (Utilities) | 15% | Defensive yield + AI data‑centre power demand theme. Utilities benefit from falling input costs (oil), lower rate‑hike risk, and the structural power‑deficit narrative. |
+| **XLP** (Consumer Staples) | 10% | Classic safe‑haven sector; resilient when consumer spending is bifurcating (top 20% vs. bottom 80% per Zandi data). Low beta, quality earnings. |
+| **XLV** (Healthcare) | 10% | Defensive, non‑cyclical, and trades above its 200‑dma. Acts as portfolio ballast during tech‑led sell‑offs. |
+| **XLF** (Financials) | 10% | Banks benefit from a steepening yield curve (2s10s flattening actually supports net interest margins) and a strong dollar. The sector’s momentum is positive and it’s a hedge against a hawkish Fed. |
+| **IWM** (Russell 2000 small‑caps) | 10% | Breadth play; small‑caps show relative strength and are less exposed to mega‑cap AI capex fears. Supports the “rotation into value” theme. |
+| **QUAL** (Quality Factor ETF) | 10% | Screens for high ROE, low leverage, stable earnings – aligns with our defensive‑leaning posture. Outperforms in risk‑off environments. |
+| **VXUS** (Total International ex‑US) | 5% | Diversification underpriced as a hedge against US concentration. The canary’s EWA is positive, and international equities are relatively cheap. |
 
-## Executable Trades
+**Notable exclusions:**
+- **Energy (XLE)** removed entirely – the Hormuz de‑escalation is structurally bearish for oil and energy stocks.
+- **Gold (GLD/IAU)** avoided – strong dollar + declining safe‑haven demand; the downtrend is too strong to fight.
+- **Pure tech (QQQ, XLK)** omitted – AI capex deceleration risk and Mag‑7’s $2.7 trn June loss make concentrated tech exposure dangerous until earnings clarify the outlook.
+- **Individual equities** not included – portfolio size ($87k) warrants diversification via ETFs to manage idiosyncratic risk.
 
-We deploy $87,000 of the $87,184.98 cash across seven ETF/stock positions, each chosen to reflect current regime strengths and the thesis tilt.
+#### 4. Action Plan & Conviction Table  
 
-| Action | Ticker/Asset | Conviction | Timeframe | Justification |
-|--------|--------------|------------|-----------|---------------|
-| **Buy** | SPY | High | 3–12m | Core equity exposure; mandates are risk‑on; SPY above all SMAs, credit and canary signals clear. |
-| **Buy** | QUAL | High | 3–12m | Quality factor ETF in uptrend; strong balance sheets and free cash flow fit our defensive‑leaning stance; benefits from rotation out of high‑multiple tech. |
-| **Buy** | XLF | Medium | 3–6m | Financials benefit from steepening yield curve and rate‑hike expectations; sector uptrend with room to run; macro strategist’s top overweight. |
-| **Buy** | XLI | Medium | 3–6m | Industrials in clean uptrend; includes nuclear/grid infrastructure (DOE $17.5B loan catalyst); independent of AI‑capex cycle. |
-| **Buy** | MSFT | Low‑Med | 1–3m | Oversold (RSI 31) mega‑cap tech; strong balance sheet, sticky enterprise software; mean‑reversion bounce likely after –10% correction. |
-| **Buy** | AMZN | Low‑Med | 1–3m | Oversold (RSI 36) e‑commerce/AWS giant; long‑term growth intact; Prime Day catalyst may boost sentiment. |
-| **Buy** | IAU | Low‑Med | 3–12m | Gold oversold (RSI 37) near lower Bollinger Band; provides portfolio hedge against geopolitical tail risk and inflation; long‑term thesis still supports gold despite near‑term USD headwind. |
+| Action | Ticker/Asset | Conviction Level | Timeframe | Justification |
+|--------|--------------|------------------|-----------|---------------|
+| **Buy** | SPY | High | Hold until canary flips | Mandate core; broad US equity exposure; systematic signal is risk‑on. |
+| **Buy** | XLU | High | Hold | Defensive yield + structural power demand; benefits from lower oil and AI build‑out. |
+| **Buy** | XLP | Medium | Hold | Safe‑haven rotation as consumer weakens; low beta in a Transitional regime. |
+| **Buy** | XLV | Medium | Hold | Defensive healthcare; uncorrelated with tech; positive momentum. |
+| **Buy** | XLF | Medium | Hold | Banks benefit from higher‑for‑longer rates and dollar strength; sector rotation winner. |
+| **Buy** | IWM | Medium | Hold | Small‑cap breadth play; less dependent on mega‑cap AI spending; relative strength. |
+| **Buy** | QUAL | Medium | Hold | Quality factor screens for earnings stability; resilient in high‑volatility environments. |
+| **Buy** | VXUS | Low‑Medium | Hold | International diversification; cheap on relative basis; canary’s EWA positive. |
+| **Avoid** | XLE, GLD, IAU, QQQ, XLK | High | Immediate | XLE – oil risk premium collapsing. GLD/IAU – strong dollar, downtrend. QQQ/XLK – AI capex deceleration risk; wait for earnings clarity. |
 
-*All positions are sized to keep the portfolio within the mandated risk‑on posture while respecting the elevated uncertainty flagged by the analysts.*
-
----
+#### 5. Implementation – Executable Trades
 
 ## Paper-Account Attribution
 

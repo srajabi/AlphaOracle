@@ -2,36 +2,41 @@
     {
         "ticker": "SPY",
         "action": "buy",
-        "notional_value": 30000
+        "notional_value": 26155.49
     },
     {
-        "ticker": "QUAL",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 13077.75
+    },
+    {
+        "ticker": "XLP",
+        "action": "buy",
+        "notional_value": 8718.5
+    },
+    {
+        "ticker": "XLV",
+        "action": "buy",
+        "notional_value": 8718.5
     },
     {
         "ticker": "XLF",
         "action": "buy",
-        "notional_value": 12000
+        "notional_value": 8718.5
     },
     {
-        "ticker": "XLI",
+        "ticker": "IWM",
         "action": "buy",
-        "notional_value": 12000
+        "notional_value": 8718.5
     },
     {
-        "ticker": "MSFT",
+        "ticker": "QUAL",
         "action": "buy",
-        "notional_value": 6000
+        "notional_value": 8718.5
     },
     {
-        "ticker": "AMZN",
+        "ticker": "VXUS",
         "action": "buy",
-        "notional_value": 6000
-    },
-    {
-        "ticker": "IAU",
-        "action": "buy",
-        "notional_value": 6000
+        "notional_value": 4359.25
     }
 ]
