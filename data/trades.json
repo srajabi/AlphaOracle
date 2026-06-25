@@ -1,37 +1,22 @@
 [
     {
-        "ticker": "XLU",
+        "ticker": "SPY",
         "action": "buy",
-        "notional_value": 10462.2
-    },
-    {
-        "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 10462.2
-    },
-    {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 6974.8
-    },
-    {
-        "ticker": "QUAL",
-        "action": "buy",
-        "notional_value": 10462.2
-    },
-    {
-        "ticker": "XLF",
-        "action": "buy",
-        "notional_value": 6974.8
+        "notional_value": 35000
     },
     {
         "ticker": "IWM",
         "action": "buy",
-        "notional_value": 6974.8
+        "notional_value": 15000
     },
     {
-        "ticker": "VGK",
+        "ticker": "XLF",
         "action": "buy",
-        "notional_value": 6974.8
+        "notional_value": 12000
+    },
+    {
+        "ticker": "TLT",
+        "action": "buy",
+        "notional_value": 18000
     }
 ]

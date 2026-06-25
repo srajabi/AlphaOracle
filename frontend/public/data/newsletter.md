@@ -13,73 +13,58 @@
 
 ## Thesis Sentinel
 
-## Thesis Sentinel Daily Brief – 2026-06-25
+# THESIS SENTINEL DAILY BRIEF
+2026-06-25 21:08 UTC
 
-### 1. Tripwire Status
+## 1. Tripwire Status
 
-| Tripwire | Signal | Reading | Threshold | Status |
-|----------|--------|---------|-----------|--------|
-| Carry unwind | VIX/VIX3M | 0.95 (18.63/19.57) | >1.0 | **CLEAR** |
-| Credit cracks | HYG/LQD 63d rel‑mom | +0.21% | <-2% | **CLEAR** (credit rule state: clear) |
-| Breadth break | Canary (EWA/TLT momentum) | Both positive (+1.1% / +3.3%) | Both negative | **CLEAR** (canary state: risk_on) |
-| Trend break | SPY vs 200‑day SMA | 733.24 > 685.95 (month‑end May also above) | Monthly close below | **CLEAR** |
-| Oil shock | XLE momentum | -6.7% (strong negative) | Sustained leadership vs SPY | **CLEAR** |
-| AI capex turn | Hyperscaler capex guidance | No cuts reported; Micron forecasts overwhelming demand | Any FY27 cut | **CLEAR** (no news) |
-| Carry stress | USDJPY | (not directly observed; UUP at 13‑month high, 78.9 RSI) | Rapid <140 move | **CLEAR** (strong dollar, no forced deleveraging evident) |
+| Tripwire | Signal | Today's Reading | Status |
+|---|---|---|---|
+| Carry unwind | ^VIX / ^VIX3M | 18.63 / 19.57 = 0.952 | CLEAR |
+| Credit cracks | HYG/LQD 63d rel-mom | +0.21% (0.0021) | CLEAR |
+| Breadth break | Canary (EWA, TLT) | EWA +1.12%, TLT +3.31% (both positive) | CLEAR |
+| Trend break | SPY vs 200d SMA (month-end) | SPY 733.24 vs SMA 685.95, not month-end | CLEAR |
+| Oil shock | XLE momentum vs SPY | XLE -6.73% mom, SPY uptrend → no leadership | CLEAR |
+| AI capex turn | Hyperscaler FY27 capex cut | No guidance changes reported | CLEAR |
+| Carry stress | USDJPY < 140 rapid move | No direct signal; UUP strong but no JPY distress evident | CLEAR |
 
-*Authoritative signals from rule‑based system; do not override.*
+All 7 tripwires clear. The breadth break and credit signals are particularly comfortable; the canary remains risk-on with both EWA and TLT positive.
 
-### 2. Marker Watch
+## 2. Marker Watch
 
-- **BoJ guidance**: No post‑meeting commentary in today’s news. (Meeting was June 15‑16; no new hawkish trigger.)  
-- **CPI path**: May PCE prints at a 3‑year high (core +3.4% y/y); not two consecutive <3.5%. Inflation still sticky.  
-- **SpaceX vs $135**: Post‑IPO decline continues (headlines mention “sheds post‑IPO gains,” short sellers active); $135 line not yet tested.  
-- **Hyperscaler capex**: No Q2 guidance updates; Micron’s blowout suggests demand remains robust.  
-- **Hormuz**: Strait shipping normalizing, oil prices falling to pre‑war levels; full closure not active.
+- **BoJ guidance (June 15-16):** Meeting has passed. No hawkish surprise evident in today's news flow. USDJPY reading not available in current data; UUP at 28.53 (+0.5% on day, strong dollar) suggests no yen crisis, but can't confirm <145.
+- **CPI prints (May-July):** May PCE released today – core 3.4% y/y, highest since 2023. Not <3.5%. No trigger.
+- **SpaceX vs $135:** No news today. Stock held above issue price since launch. Day-1 close $160.95 still intact.
+- **Hyperscaler capex:** Q2 earnings ahead; no pre-announcements of cuts.
+- **Hormuz closure:** Attack briefly halted shipping (20:27 UTC), but tanker traffic reportedly resumed within hours (18:18 UTC article says "erases war gains"). No sustained closure week. Back-and-forth pattern consistent with volatile but not C-triggering.
 
-### 3. Delta
+## 3. Delta
 
-- **AI sentiment revived**: Micron (MU) “epic” Q3 beat and Qualcomm’s AI datacenter push reignite the AI trade; pre‑market futures surged, then large‑cap tech faded but memory/equipment names held gains.  
-- **Inflation still hot**: PCE hit a 3‑year high, reigniting talk of a possible rate hike. Rules‑based credit signal remains resilient (HYG/LQD positive).  
-- **Geopolitical risk fading**: Oil prices erase wartime gains; Strait of Hormuz shipping recovers; VIX easing.  
-- **Market regime**: Transitional (low confidence). Risk sentiment cautious, dollar strong, rates falling, commodities weak. Today’s news did not flip any tripwire.
+Materially little change. Oil spiked on the Hormuz attack then reversed as traffic resumed; Micron's blowout earnings (+19%) lifted semis but big tech (AAPL -3.6% on memory-cost price hikes, MSFT -5%+ YTD) dragged the Nasdaq to a mixed close. Inflation data (PCE) confirmed sticky 3.4% core, reinforcing the Fed's cornered position. The rule-based signal suite remains wholly risk-on (slow channel, fast channel, credit, canary all clear). The intermarket composite is "Transitional" with cautious risk, strong dollar, falling rates, and weak commodities – a conflicting backdrop that matches the grind scenario.
 
-### 4. Scenario Pressure
+## 4. Scenario Pressure
 
-Today’s evidence leans toward **Scenario A (Grind‑with‑violence, 50% base case)**. Micron’s results confirm AI demand is not cracking, and the easing of Hormuz tensions removes a tail risk. The PCE print sustains inflation angst but hasn’t cracked credit or forced a risk‑off cascade. No tripwires fired. The AI capex cycle’s “second derivative” remains positive—no catalyst yet to activate Scenario B or C. Formal scenario weights unchanged (monthly review only).
+Today's evidence leans **Scenario A (grind-with-violence)**. The simultaneous Micron euphoria and Apple pain exemplifies narrow, rotating leadership; no tripwire fires; war headlines produce sharp intraday reversals without sustained direction; inflation prints hot but markets absorb without a rate-hike panic. The carry unwind marker at 0.95 VIX/VIX3M is the closest to watch (backwardation would fire above 1.0), but it's not there yet. No scenario weight change warranted; B and C remain dormant. Monthly review will consider if the SpaceX pop and persistent 4%+ inflation demand a subtle weight shift, but today's evidence does not compel it.
 
 ## Portfolio Manager Synthesis
 
-# Portfolio Manager’s Action Plan – 2026-06-25  
-**Mandate Context:** All systematic risk‑on signals (slow channel, fast channel, credit, canary) are in **invested** mode.  
-**Current State:** 100% cash ($87,184.98) – no exposure, which is inconsistent with each sleeve’s “INVESTED” mandate.  
-**Macro/Tactical Overlay:**  
-- **Inflation/Fed Hawkishness** is the dominant near‑term risk (PCE 3‑yr high, September rate hike live).  
-- **Oil de‑escalation** eases stagflation tail risk but does not remove the Fed threat.  
-- **Technical picture:** Mean‑reversion signals in oversold tech/gold, but trend‑continuation setups are stronger in defensive sectors (XLU, XLV, XLP), Dow (DIA), small‑caps (IWM), financials (XLF), and quality (QUAL).  
-- **Intermarket regime:** Cautious risk, strong dollar, falling rates, weak commodities. This environment historically favours defensive, quality, and value over high‑multiple growth.  
+### Executive Summary
+The **mandate signals are uniformly risk‑on** – slow channel (SPY > 200‑day), fast channel (VIX/VIX3M clear), credit (HYG/LQD positive), and canary (both EWA & TLT momentum positive) – so the portfolio must deploy capital. However, the inter‑market regime is **Transitional (low confidence)**: rising volatility, strong dollar, falling bonds (TLT up), and weak commodities. This environment rewards **broadening leadership (small‑caps, financials) and disinflation beneficiaries (long bonds)**, while punishing the over‑concentrated mega‑cap tech trade. I’m therefore constructing a diversified, defensive‑leaning equity + bond portfolio that respects the risk‑on mandate but avoids the most crowded, broken‑trend names.
 
-**Decision:** We deploy the cash in a **defensive‑quality equity sleeve** (roughly 68% of capital) while retaining a meaningful cash buffer (~32%) to respect gap‑risk and potential tail hedges (which cannot be executed as equity trades in this system). The allocation is designed to satisfy the “INVESTED” mandate while protecting against a sharp hawkish repricing.
+### Portfolio Allocation (Target: ~$80k invested, ~$7.2k cash)
+| Action      | Ticker | Conviction | Timeframe | Justification |
+|-------------|--------|------------|-----------|---------------|
+| **Buy** | SPY    | High       | 1–3 months | Core S&P 500 exposure; trend intact above 200‑day, mandate risk‑on. Broadest way to capture grind‑higher while avoiding single‑stock blow‑ups. |
+| **Buy** | IWM    | High       | 1–3 months | Russell 2000 small‑caps are leading in 2026 (+17% YTD) as leadership broadens. Strong momentum, above all MAs, fits the “grind with violence” base case. |
+| **Buy** | XLF    | Medium     | 1–3 months | Financials benefit from steepening yield curve and low credit stress. Uptrend intact (RSI 62, positive MACD), plays hawkish Fed expectations without direct rate risk. |
+| **Buy** | TLT    | Medium     | 1–3 months | 20+ year Treasury bonds rallying as oil‑led disinflation and growth‑scare fears push yields lower. Offers positive carry and acts as a portfolio hedge against sudden equity air pockets. (Thesis 2022‑lesson noted, but current momentum justifies a tactical overweight.) |
+| **Hold** | Cash   | –          | –          | Remainder ~$7.2k held as dry powder. Regime is transitional and options data signal elevated gap risk (VIX 18.6, VIX/VIX3M 0.84 nearing backwardation). Cash preserves optionality for a 5–10% drawdown entry. |
 
----
+**Why not mega‑cap tech (MSFT, AAPL, META, etc.)?**  
+- These names are in confirmed downtrends (below 50‑day, weak RSI), rotation is clearly out of them, and AI hardware earnings beat is supporting chipmakers, not hyperscalers. The technical mean‑reversion setups (NFLX, MSFT) are tempting but riskier in a transitional regime; we prefer the smoother uptrends in small‑caps, financials and bonds.
 
-## Conviction Table
-
-| Action | Ticker/Asset | Conviction | Timeframe | Justification |
-|--------|--------------|------------|-----------|---------------|
-| **Buy** | XLU (Utilities) | High | 1‑3 months | Strong uptrend; RSI 60.9, above all MA; defensive rotation amid hawkish risk; data‑centre power demand provides structural tailwind. |
-| **Buy** | XLV (Health Care) | High | 1‑3 months | Uptrend intact (RSI 59.9, above MAs); classic defensive sector that outperforms in “rates‑sensitive” environments. |
-| **Buy** | XLP (Consumer Staples) | Medium | 1‑3 months | Stable uptrend near upper Bollinger; defensive characteristics; lower beta offset to macro uncertainty. |
-| **Buy** | QUAL (U.S. Quality Factor) | High | 1‑3 months | Screens for profitability/balance‑sheet strength; historically outperforms in cautious, strong‑dollar regimes; complements defensive‑sector exposure. |
-| **Buy** | XLF (Financials) | Medium | 1‑3 months | Direct beneficiary of higher rates via net interest margins; strong momentum (RSI 62.9, above all MAs); hedge against a hawkish Fed. |
-| **Buy** | IWM (Small‑Caps) | Medium | 1‑3 months | Outperforming YTD; above all MAs with positive MACD; small‑caps often lead early in “grind‑with‑violence” scenarios due to domestic focus and lower rate sensitivity than mega‑caps. |
-| **Buy** | VGK (Europe) | Medium | 3‑6 months | International diversification to counter narrow U.S. breadth; VGK is trading above its 200‑day MA, and Europe benefits from falling commodity prices and energy cost relief. |
-
-**No sell orders** (portfolio is all cash). Remaining cash (~32%) serves as a cushion for tail hedges and future reallocation.
-
----
-
-## Execution: Equity‑Only JSON Orders
+**Why not gold, silver, or energy?**  
+- Commodities are in strong downtrends, crushed by a surging dollar. Even as an inflation hedge, they are failing until the dollar reverses or oil re‑escalates dramatically. We await a clearer signal.
 
 ## Paper-Account Attribution
 
