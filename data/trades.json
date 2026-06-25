@@ -1,57 +1,37 @@
 [
     {
-        "ticker": "SPY",
-        "action": "buy",
-        "notional_value": 20000
-    },
-    {
-        "ticker": "IWM",
-        "action": "buy",
-        "notional_value": 8000
-    },
-    {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 10462.2
     },
     {
         "ticker": "XLV",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 10462.2
     },
     {
-        "ticker": "XLI",
+        "ticker": "XLP",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 6974.8
     },
     {
-        "ticker": "TLT",
+        "ticker": "QUAL",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 10462.2
     },
     {
-        "ticker": "LQD",
+        "ticker": "XLF",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 6974.8
     },
     {
-        "ticker": "MU",
+        "ticker": "IWM",
         "action": "buy",
-        "notional_value": 4000
+        "notional_value": 6974.8
     },
     {
-        "ticker": "KLAC",
+        "ticker": "VGK",
         "action": "buy",
-        "notional_value": 3000
-    },
-    {
-        "ticker": "MTZ",
-        "action": "buy",
-        "notional_value": 3000
-    },
-    {
-        "ticker": "CEG",
-        "action": "buy",
-        "notional_value": 2000
+        "notional_value": 6974.8
     }
 ]

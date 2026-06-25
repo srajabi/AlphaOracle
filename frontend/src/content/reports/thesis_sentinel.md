@@ -1,43 +1,39 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-06-24"
+date: "2026-06-25"
 ---
 
-## Thesis Sentinel — Daily Brief 2026-06-24 (generated 21:06 UTC)
+## Thesis Sentinel Daily Brief – 2026-06-25
 
 ### 1. Tripwire Status
 
-| Tripwire | Signal | Reading | Status |
-|---|---|---|---|
-| Carry unwind (C onset) | ^VIX/^VIX3M > 1.0 | 19.49 / 19.57 = 0.996 | **CLEAR** |
-| Credit cracks (B confirm) | HYG/LQD 63d rel‑mom < –2% | +0.57% | **CLEAR** |
-| Breadth break (DAA full defense) | EWA, TLT both negative | EWA +0.74%, TLT +2.15% | **CLEAR** |
-| Trend break (B onset) | SPY < 200‑dma (month‑end) | SPY 733.58 vs 200‑dma 685.48 | **CLEAR** |
-| Oil shock (war escalation) | XLE sustained leadership | XLE momentum –7.8%, underperforming | **CLEAR** |
-| AI capex turn (‘99 rhyme) | Hyperscaler FY27 capex cut | No cuts reported | **CLEAR** |
-| Carry stress | USDJPY rapid <140 | No data; DXY at 13‑mth high, no panic | **CLEAR** |
+| Tripwire | Signal | Reading | Threshold | Status |
+|----------|--------|---------|-----------|--------|
+| Carry unwind | VIX/VIX3M | 0.95 (18.63/19.57) | >1.0 | **CLEAR** |
+| Credit cracks | HYG/LQD 63d rel‑mom | +0.21% | <-2% | **CLEAR** (credit rule state: clear) |
+| Breadth break | Canary (EWA/TLT momentum) | Both positive (+1.1% / +3.3%) | Both negative | **CLEAR** (canary state: risk_on) |
+| Trend break | SPY vs 200‑day SMA | 733.24 > 685.95 (month‑end May also above) | Monthly close below | **CLEAR** |
+| Oil shock | XLE momentum | -6.7% (strong negative) | Sustained leadership vs SPY | **CLEAR** |
+| AI capex turn | Hyperscaler capex guidance | No cuts reported; Micron forecasts overwhelming demand | Any FY27 cut | **CLEAR** (no news) |
+| Carry stress | USDJPY | (not directly observed; UUP at 13‑month high, 78.9 RSI) | Rapid <140 move | **CLEAR** (strong dollar, no forced deleveraging evident) |
 
-All tripwires remain **CLEAR**; no forced de‑risking event is active.
+*Authoritative signals from rule‑based system; do not override.*
 
 ### 2. Marker Watch
 
-- **BoJ guidance**: No new BoJ commentary since the June 15‑16 hike; silence holds the cautious status quo.
-- **CPI**: No fresh print; next PCE data due this week (inflation gauge).
-- **SpaceX vs $135 issue**: SPCX fell 16% on June 23 to “lowest since listing” (headlines); it likely broke the $135 IPO price – a late‑cycle liquidity marker if sustained.  
-- **Hyperscaler capex**: Micron’s after‑close earnings ($41.5B rev, +30% YoY) and blowout guidance reinforce strong AI memory demand; no capex cut signals.  
-- **Hormuz**: Multiple reports of tankers flowing, oil at pre‑war lows, and a ceasefire deal progressing – tension is **easing**, not escalating.
+- **BoJ guidance**: No post‑meeting commentary in today’s news. (Meeting was June 15‑16; no new hawkish trigger.)  
+- **CPI path**: May PCE prints at a 3‑year high (core +3.4% y/y); not two consecutive <3.5%. Inflation still sticky.  
+- **SpaceX vs $135**: Post‑IPO decline continues (headlines mention “sheds post‑IPO gains,” short sellers active); $135 line not yet tested.  
+- **Hyperscaler capex**: No Q2 guidance updates; Micron’s blowout suggests demand remains robust.  
+- **Hormuz**: Strait shipping normalizing, oil prices falling to pre‑war levels; full closure not active.
 
 ### 3. Delta
 
-**Since yesterday’s close**:  
-- Oil (XLE –2.5%) and gold (GLD -?[^1]) extended losses on Hormuz-flow optimism; silver (SLV) collapsed further.  
-- Dollar (UUP) hit a fresh 13‑month high, pressing commodities and international assets.  
-- Tech rebounded modestly after a two‑day sell‑off; Micron’s blowout quarter (post‑close) lifted memory/ AI names – a strong counter‑signal to fears of an imminent AI capex cliff.  
-- SpaceX weakness deepened, adding to mega‑IPO hangover and late‑cycle narrative.  
-- Fed‑rate‑hike chatter intensified (BofA, JPMorgan execs), but the rule‑based mandate channels (slow/fast/credit/canary) all remain **risk‑on**.
-
-[^1]: GLD closed at 377.32, down ~5% from its SMA20 of 398; momentum deeply negative.
+- **AI sentiment revived**: Micron (MU) “epic” Q3 beat and Qualcomm’s AI datacenter push reignite the AI trade; pre‑market futures surged, then large‑cap tech faded but memory/equipment names held gains.  
+- **Inflation still hot**: PCE hit a 3‑year high, reigniting talk of a possible rate hike. Rules‑based credit signal remains resilient (HYG/LQD positive).  
+- **Geopolitical risk fading**: Oil prices erase wartime gains; Strait of Hormuz shipping recovers; VIX easing.  
+- **Market regime**: Transitional (low confidence). Risk sentiment cautious, dollar strong, rates falling, commodities weak. Today’s news did not flip any tripwire.
 
 ### 4. Scenario Pressure
 
-Today’s evidence – easing war, strong dollar, resilient AI memory demand – **slightly reinforces Scenario A (grind‑with‑violence)**. The absence of tripwire fires and the rule‑based “risk‑on” state argue against an imminent fast crash (C) or slow bear (B). However, SpaceX breaking its IPO price and hawkish rate rhetoric add the “violence” element to the grind, keeping the 50% A‑weight credible. No change to official weights; the monthly review in July remains the gate.
+Today’s evidence leans toward **Scenario A (Grind‑with‑violence, 50% base case)**. Micron’s results confirm AI demand is not cracking, and the easing of Hormuz tensions removes a tail risk. The PCE print sustains inflation angst but hasn’t cracked credit or forced a risk‑off cascade. No tripwires fired. The AI capex cycle’s “second derivative” remains positive—no catalyst yet to activate Scenario B or C. Formal scenario weights unchanged (monthly review only).

@@ -1,33 +1,35 @@
 ---
 title: AlphaOracle Daily Synthesis
-date: "2026-06-24"
+date: "2026-06-25"
 ---
 
-**Lead Portfolio Manager Decision – June 24, 2026**
+# Portfolio Manager’s Action Plan – 2026-06-25  
+**Mandate Context:** All systematic risk‑on signals (slow channel, fast channel, credit, canary) are in **invested** mode.  
+**Current State:** 100% cash ($87,184.98) – no exposure, which is inconsistent with each sleeve’s “INVESTED” mandate.  
+**Macro/Tactical Overlay:**  
+- **Inflation/Fed Hawkishness** is the dominant near‑term risk (PCE 3‑yr high, September rate hike live).  
+- **Oil de‑escalation** eases stagflation tail risk but does not remove the Fed threat.  
+- **Technical picture:** Mean‑reversion signals in oversold tech/gold, but trend‑continuation setups are stronger in defensive sectors (XLU, XLV, XLP), Dow (DIA), small‑caps (IWM), financials (XLF), and quality (QUAL).  
+- **Intermarket regime:** Cautious risk, strong dollar, falling rates, weak commodities. This environment historically favours defensive, quality, and value over high‑multiple growth.  
 
-The portfolio is fully in cash; the mandate signals (slow channel risk-on, canary risk-on, credit clear) require a move toward equity exposure.  
-However, the intermarket composite reads *Transitional*, and the macro backdrop (hawkish Fed, near-inverted VIX term structure, strong dollar, commodity weakness) implies elevated gap risk. The Risk Manager’s caution is well-founded, but I must respect the IPS’s “invested” directive. I will therefore deploy ~78% of cash into a diversified equity mix that is biased toward quality, defensives, and structural themes (AI power/infrastructure), while leaving ~22% dry powder. I am not executing options trades today, but I note the hedges suggested for insurance.
+**Decision:** We deploy the cash in a **defensive‑quality equity sleeve** (roughly 68% of capital) while retaining a meaningful cash buffer (~32%) to respect gap‑risk and potential tail hedges (which cannot be executed as equity trades in this system). The allocation is designed to satisfy the “INVESTED” mandate while protecting against a sharp hawkish repricing.
 
-**Resolution of Analyst Disagreements**  
-- **Risk Manager vs. Macro Strategist**: The Risk Manager advocates minimal equity exposure; the Macro Strategist tilts toward defensives and semis. I adopt the Macro Strategist’s sector preferences because the mandate signals remain “risk-on” and the AI infrastructure narrative is intact (MICRON’s blowout earnings after the close validate this).  
-- **Technical Analyst**: I accept the trend-continuation calls on IWM, TLT, and LQD, and the quality/defensive themes. I reject the mean-reversion long on NFLX (too high‑risk given the severe downtrend). The AMZN cash‑secured put is attractive but cannot be executed on the equity platform; I will instead accumulate AMZN directly later if the stock stabilizes.
+---
 
-**Action Plan**
+## Conviction Table
 
 | Action | Ticker/Asset | Conviction | Timeframe | Justification |
 |--------|--------------|------------|-----------|---------------|
-| Buy | SPY | High | Multi‑month | Mandate requires equity exposure; SPY remains above 50/200‑day SMAs, RSI neutral. |
-| Buy | IWM | High | 1-3 months | Small‑cap uptrend confirmed (price > all SMAs, RSI 59); rotation away from mega‑cap tech. |
-| Buy | XLU | High | 3-6 months | Defensive utility + structural AI data‑center power demand; trend is positive. |
-| Buy | XLV | Medium | 3-6 months | Defensive healthcare sector in an uptrend; low volatility, stable earnings. |
-| Buy | XLI | Medium | 1-3 months | Industrials trending above SMAs, RSI 56; benefits from falling oil costs and infrastructure spending. |
-| Buy | TLT | Medium | 1-3 months | Long‑duration bonds in confirmed uptrend (rates declining); serves as portfolio ballast in a growth‑scare environment. |
-| Buy | LQD | Medium | 1-3 months | Investment‑grade credit in an uptrend with a Bollinger squeeze; low volatility income. |
-| Buy | MU | High | 3-6 months | AI memory super‑cycle: blowout Q3 earnings (EPS $25.11 vs $20.49), strong guidance; RSI 57, above SMAs. |
-| Buy | KLAC | Medium | 3-6 months | Semi‑equipment leader; above all SMAs, positive MACD, supported by AI capex. |
-| Buy | MTZ | Medium | 3-6 months | Infrastructure/ grid construction for data centers; positive MACD, uptrend. |
-| Buy | CEG | Low | 3-6 months | Nuclear power demand for data centers; positive MACD crossover, cyclical tailwind. |
-| Hold | MSFT, AMZN, GOOGL, META, NVDA, TSLA, PLTR, ORCL, AAPL, AVGO, AMD, INTC, NFLX, GLD, SLV, XLE, EWC, VGK, etc. | – | – | These are either under near‑term technical pressure (mega‑cap tech), in confirmed downtrends (gold, energy), or lack sufficient relative strength. We will revisit after July FOMC and Q2 earnings. |
-| Hold | Cash (~$19k) | – | – | Retain dry powder for gap‑risk scenarios (VIX term structure near inversion, Fed/BoJ uncertainty). Will deploy opportunistically on dips. |
+| **Buy** | XLU (Utilities) | High | 1‑3 months | Strong uptrend; RSI 60.9, above all MA; defensive rotation amid hawkish risk; data‑centre power demand provides structural tailwind. |
+| **Buy** | XLV (Health Care) | High | 1‑3 months | Uptrend intact (RSI 59.9, above MAs); classic defensive sector that outperforms in “rates‑sensitive” environments. |
+| **Buy** | XLP (Consumer Staples) | Medium | 1‑3 months | Stable uptrend near upper Bollinger; defensive characteristics; lower beta offset to macro uncertainty. |
+| **Buy** | QUAL (U.S. Quality Factor) | High | 1‑3 months | Screens for profitability/balance‑sheet strength; historically outperforms in cautious, strong‑dollar regimes; complements defensive‑sector exposure. |
+| **Buy** | XLF (Financials) | Medium | 1‑3 months | Direct beneficiary of higher rates via net interest margins; strong momentum (RSI 62.9, above all MAs); hedge against a hawkish Fed. |
+| **Buy** | IWM (Small‑Caps) | Medium | 1‑3 months | Outperforming YTD; above all MAs with positive MACD; small‑caps often lead early in “grind‑with‑violence” scenarios due to domestic focus and lower rate sensitivity than mega‑caps. |
+| **Buy** | VGK (Europe) | Medium | 3‑6 months | International diversification to counter narrow U.S. breadth; VGK is trading above its 200‑day MA, and Europe benefits from falling commodity prices and energy cost relief. |
 
-**Trades to Execute (Equity Only)**
+**No sell orders** (portfolio is all cash). Remaining cash (~32%) serves as a cushion for tail hedges and future reallocation.
+
+---
+
+## Execution: Equity‑Only JSON Orders
