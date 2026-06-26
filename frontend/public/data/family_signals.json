@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-06-25T21:08:08.559820+00:00",
+  "generated_at_utc": "2026-06-26T15:44:15.042258+00:00",
   "ips": "claude/ips_case_study.md",
   "signals": {
     "slow_channel": {
       "state": "risk_on",
       "as_of_month_end": "2026-05-29",
-      "price": 44.49,
-      "sma200": 40.36,
+      "price": 44.18,
+      "sma200": 40.07,
       "distance_pct": 10.25
     },
     "fast_channel": {
@@ -22,8 +22,8 @@
       "state": "risk_on",
       "negative_canaries": [],
       "momentum": {
-        "EWA": 0.0112,
-        "TLT": 0.0331
+        "EWA": 0.0046,
+        "TLT": 0.0273
       }
     }
   },

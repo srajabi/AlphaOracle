@@ -1,37 +1,33 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-06-25"
+date: "2026-06-26"
 ---
 
-# THESIS SENTINEL DAILY BRIEF
-2026-06-25 21:08 UTC
+**Tripwire status** (all readings from rule-based signals; none fired)
 
-## 1. Tripwire Status
+| Tripwire | Signal | Threshold | Today's reading | Status |
+|---|---|---|---|---|
+| Carry unwind | ^VIX/^VIX3M | >1.0 | 0.965 (18.89/19.57) | CLEAR |
+| Credit cracks | HYG/LQD 63d rel-mom | < -2% | +0.21% | CLEAR |
+| Breadth break | canary (EWA, TLT) | both negative | EWA +0.46%, TLT +2.73% | CLEAR |
+| Trend break | SPY vs 200d SMA | monthly close below | SPY 734, 200d 686 | CLEAR |
+| Oil shock | XLE momentum vs SPY | sustained leadership | XLE mom -4.4%, negative | CLEAR |
+| AI capex turn | hyperscaler guidance | FY27 capex cut | No signal | CLEAR |
+| Carry stress | USDJPY | rapid <140 | No data; UUP strong 28.48 | CLEAR |
 
-| Tripwire | Signal | Today's Reading | Status |
-|---|---|---|---|
-| Carry unwind | ^VIX / ^VIX3M | 18.63 / 19.57 = 0.952 | CLEAR |
-| Credit cracks | HYG/LQD 63d rel-mom | +0.21% (0.0021) | CLEAR |
-| Breadth break | Canary (EWA, TLT) | EWA +1.12%, TLT +3.31% (both positive) | CLEAR |
-| Trend break | SPY vs 200d SMA (month-end) | SPY 733.24 vs SMA 685.95, not month-end | CLEAR |
-| Oil shock | XLE momentum vs SPY | XLE -6.73% mom, SPY uptrend → no leadership | CLEAR |
-| AI capex turn | Hyperscaler FY27 capex cut | No guidance changes reported | CLEAR |
-| Carry stress | USDJPY < 140 rapid move | No direct signal; UUP strong but no JPY distress evident | CLEAR |
+**Marker watch**
+- **BoJ guidance:** No new BoJ commentary today; June 15-16 hike was priced, no fresh hawkish escalation evident.
+- **CPI/PCE:** PCE report released, core matched expectations. No upside surprise; inflation anxiety easing slightly.
+- **SpaceX IPO vs $135:** No fresh price breaches reported; stock remains above issue. Still watching the $135 line through mid-July.
+- **Hyperscaler capex:** No FY27 capex guidance cuts in today’s news; Micron’s blowout earnings reinforce near-term AI spending, not deceleration.
+- **Hormuz:** Shipping has resumed; oil hit a four-month low. Strait reopening reduces supply-shock tail risk significantly.
 
-All 7 tripwires clear. The breadth break and credit signals are particularly comfortable; the canary remains risk-on with both EWA and TLT positive.
+**Delta**
+- Oil plunged to a 4-month low as Hormuz shipping resumed, easing the key inflation/war tail risk. XLE fell, energy momentum negative. 
+- Tech sell-off deepened: Apple hiked prices on memory costs, Oracle cut 21,000 jobs amid AI spending push, NVDA/MU/AMD fell on OpenAI IPO delay fears. Semis and software both under pressure.
+- Bond market: 10y yield dipped to 4.45%, TLT continued its strong uptrend. Real rates falling supports growth duration, but the tech weakness is not responding positively.
+- Dollar (UUP) hit new 52-week high; gold and silver remain in downtrends; commodities broadly weak. 
+- Rule-based signals remain in risk-on across all mandates; no tripwires triggered despite volatile price action.
 
-## 2. Marker Watch
-
-- **BoJ guidance (June 15-16):** Meeting has passed. No hawkish surprise evident in today's news flow. USDJPY reading not available in current data; UUP at 28.53 (+0.5% on day, strong dollar) suggests no yen crisis, but can't confirm <145.
-- **CPI prints (May-July):** May PCE released today – core 3.4% y/y, highest since 2023. Not <3.5%. No trigger.
-- **SpaceX vs $135:** No news today. Stock held above issue price since launch. Day-1 close $160.95 still intact.
-- **Hyperscaler capex:** Q2 earnings ahead; no pre-announcements of cuts.
-- **Hormuz closure:** Attack briefly halted shipping (20:27 UTC), but tanker traffic reportedly resumed within hours (18:18 UTC article says "erases war gains"). No sustained closure week. Back-and-forth pattern consistent with volatile but not C-triggering.
-
-## 3. Delta
-
-Materially little change. Oil spiked on the Hormuz attack then reversed as traffic resumed; Micron's blowout earnings (+19%) lifted semis but big tech (AAPL -3.6% on memory-cost price hikes, MSFT -5%+ YTD) dragged the Nasdaq to a mixed close. Inflation data (PCE) confirmed sticky 3.4% core, reinforcing the Fed's cornered position. The rule-based signal suite remains wholly risk-on (slow channel, fast channel, credit, canary all clear). The intermarket composite is "Transitional" with cautious risk, strong dollar, falling rates, and weak commodities – a conflicting backdrop that matches the grind scenario.
-
-## 4. Scenario Pressure
-
-Today's evidence leans **Scenario A (grind-with-violence)**. The simultaneous Micron euphoria and Apple pain exemplifies narrow, rotating leadership; no tripwire fires; war headlines produce sharp intraday reversals without sustained direction; inflation prints hot but markets absorb without a rate-hike panic. The carry unwind marker at 0.95 VIX/VIX3M is the closest to watch (backwardation would fire above 1.0), but it's not there yet. No scenario weight change warranted; B and C remain dormant. Monthly review will consider if the SpaceX pop and persistent 4%+ inflation demand a subtle weight shift, but today's evidence does not compel it.
+**Scenario pressure**
+Today’s evidence nudges **toward scenario A (Grind-with-violence)**. The de-escalation of oil supply risk removes the most acute trigger for scenario C. Falling yields and a strong dollar point to a disinflationary, cautious regime consistent with range-bound conditions punctuated by sector rotations. However, the intensifying tech sell-off adds a warning: if AI capex euphoria fades and earnings disappoint, the path could pivot toward B (Slow bear). For now, the weight of evidence favors a choppy, grinding market rather than a crash. Official scenario probabilities unchanged until the monthly review.

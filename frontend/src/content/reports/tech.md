@@ -1,61 +1,66 @@
 ---
 title: Technical Analyst Report
-date: "2026-06-25"
+date: "2026-06-26"
 ---
 
 ## Model: deepseek/deepseek-v4-flash
 
-## Price Action Setup Analysis (News Ignored)
+## Technical Analysis of Options Setups (Price Action Only)
 
-Based strictly on technical indicators (SMA crossovers, RSI, MACD, Bollinger Bands), the following setups stand out:
+### Market Context (from price data)
+- **SPY** (734.30): Price below SMA20 (743.44), above SMA50 (732.07), SMA200 (686.41). RSI 47.5 – neutral. MACD histogram negative (bearish momentum). Bollinger Bands slightly below midpoint. No extreme, no squeeze. **Transitional, no clear directional edge.**
+- **QQQ** (716.38): Similar posture – below SMA20, above SMA50, RSI 50.2. MACD negative but not extreme. No mean‑reversion signal.
+- **IWM** (298.91): Price above SMA20, SMA50, SMA200. RSI 62.5 – mildly overbought. Uptrend intact. Small‑caps showing relative strength.
+- **TLT** (87.35): Strong uptrend above all MAs, RSI 65.2. Falling rates favorable for duration. Momentum positive.
+- **GLD** (369.46): **Oversold** (RSI 31.9) and below lower Bollinger Band (364.01). Price below all MAs. Classic mean‑reversion bounce candidate. MACD negative but histogram flattening.
 
-### Mean Reversion Bounces (Oversold / Lower Band Touch)
+---
 
-| Ticker | RSI | Close vs BB Lower | Setup Quality | Rationale |
-|--------|-----|-------------------|---------------|----------|
-| **NFLX** | 20.2 | At lower band (71.84 vs 71.99) | **High** | Deeply oversold, price touching lower Bollinger Band. Classic mean-reversion entry within a downtrend. Expect a bounce toward SMA20 (80.70). |
-| **PLTR** | 30.8 | Just above lower band (113.50 vs 111.34) | **Medium** | RSI near oversold, price below all MAs but very extended. Potential short-term snap-back to SMA20 (134.96). High reward but trend is strongly against. |
-| **ORCL** | 32.5 | Above lower band (157.53 vs 151.39) | **Medium** | RSI deeply below 40, price far below all MAs. MACD histogram negative but momentum may be exhausting. Lower band provides a clear risk level. |
-| **MSFT** | 32.5 | Above lower band (365.46 vs 352.69) | **Medium** | RSI at 32.5, price below all MAs. Large gap between close and lower band gives room. Possible bounce toward SMA20 (405.80). |
-| **GLD** | 28.7 | At lower band (365.92 vs 367.47) | **Medium** | RSI below 30, price touching lower band. Strong selloff – any positive cross in MACD or RSI recovery would confirm bounce. Heavy downtrend reduces conviction. |
-| **XLC** | 27.8 | At lower band (106.54 vs 105.96) | **Medium** | Extreme oversold, price at lower band. Communication services sector crushed; potential for relief bounce. |
-| **SLV** | 27.1 | Below lower band (51.78 vs 53.33) | **Low-Medium** | Silver in a free fall – lower band already broken. Extremely oversold but no support yet. Risky bounce play. |
+### Evaluated Options Setups
 
-### Trend Continuation (Healthy Uptrend, Not Overbought)
+#### Cash‑Secured Puts (all 14–21 DTE)
 
-| Ticker | RSI | MA Alignment | Setup Quality | Rationale |
-|--------|-----|--------------|---------------|----------|
-| **XLI** | 59.5 | Price > SMA20 > SMA50 > SMA200 | **Medium** | Clean uptrend with positive MACD histogram. No overbought risk. Pullback to SMA20 already held. |
-| **XLF** | 62.9 | Price > all MAs | **Medium** | Strong momentum, financials leading. MACD positive, not yet extended. |
-| **INTC** | 59.9 | Price > all MAs | **Medium** | Powerful uptrend from lows. MACD positive, volume supportive. Could pull back to SMA20 but trend intact. |
-| **MU** | 56.8 | Price > all MAs | **Medium** | Memory chip leader in strong uptrend. MACD positive, RSI mid-range. After recent earnings beat, trend continuation likely. |
-| **TLT** | 65.6 | Price > all MAs | **Medium** | Rates falling – TLT in a good uptrend. RSI approaching overbought but not extreme. Could continue while yields decline. |
-| **STX** | 59.7 | Price > all MAs | **Medium** | Strong uptrend from sma200. No signs of exhaustion. |
+| Ticker | Strike | Moneyness | Technical Picture | Assessment |
+|--------|--------|-----------|-------------------|------------|
+| **AAPL** | 260 (-6.4%) | OTM | RSI 32.2 (oversold), price below BB lower band (280.45 → 275.15). Below SMA20 & SMA50, above SMA200. **Oversold + below lower band = high probability of mean‑reversion bounce.** | **Favorable.** Cash‑secured put earns premium while targeting a 6% discount to a deeply oversold stock. Risk: trend is down, but oversold extreme supports a short‑term snapback. ✓ |
+| **AMD** | 490 (-5.9%) | OTM | RSI 58.5 (neutral), price near midpoint of BB. Above all MAs, but MACD hist negative (momentum fading). No mean‑reversion signal. | **Neutral.** Trend still up but no oversold edge. Premium compensates but risk of trend continuation is moderate. Not compelling. |
+| **AMZN** | 220 (-3.1%) | OTM | RSI 33.6 (oversold), price below all MAs, but **above** BB lower (222.24). Less extreme than AAPL. Still oversold in downtrend. | **Moderately favorable.** Lower risk due to closer strike (3% below). Oversold condition supports bounce but trend is weak. Acceptable for income/entry. |
+| **AVGO** | 350 (-7.4%) | OTM | RSI 43.4, price below SMA20 & SMA50, above SMA200. No oversold, no BB touch. Downtrending short‑term. | **Unfavorable.** Not oversold, not near support. Premium is decent but risk of further decline is real. Skip. |
+| **CEG** | 190 (-28.5%) | Deep OTM | RSI 48.4, price near SMA20 but below SMA50/200. Neutral. | **Not recommended.** Strike too far below; credit is small relative to capital at risk. No technical edge. |
+| **CEG** | 250 (-5.9%) | OTM | Same neutral technicals. No mean‑reversion signal. | **Neutral.** Low probability of assignment but also low premium. Not attractive. |
+| **CRWD** | 490 (-28%) | Deep OTM | RSI 56, neutral. Price between MAs. No signal. | **Avoid.** Deep OTM puts waste capital. |
+| **CRWD** | 660 (-2.7%) | OTM | Near spot. Neutral technicals. | **Acceptable** only if you want to long CRWD; otherwise not compelling. |
 
-### Failed Setups (Breakdowns / False Moves)
+#### Long Options (Directional Bets)
 
-| Ticker | Pattern | Setup Quality | Rationale |
-|--------|---------|---------------|----------|
-| **NVDA** | Pullback below SMA20 & SMA50 | **Low-Medium** | After trading above both MAs, NVDA slipped back below them. RSI 41.9 suggests weakening. A failure to hold SMA200 (190.18) would confirm a trend reversal. Watch for a bounce or further breakdown. |
-| **META** | Breakdown below all MAs | **Low** | Headed lower, RSI 37.9 – no failed rally yet. The failure was already confirmed. |
-| **AMZN** | Breakdown below SMA50, testing SMA200 | **Medium** | Price (234.27) just above SMA200 (232.84). If it breaks below, the move becomes a failed support test. Could be a re-entry short or a bounce setup depending on close relative to SMA200. |
+| Ticker | Strategy | Strike | Technical Picture | Assessment |
+|--------|----------|--------|-------------------|------------|
+| **GLD** | Long Call | 387 (+4.7%) | Oversold (RSI 31.9), below lower BB. **Strong mean‑reversion setup.** Momentum negative but extreme often leads to snapback. | **Favorable** for a speculative bounce play. Risk: trend is down, but the oversold condition and BB lower band support a trade. Consider 21 DTE for more time. ✓ |
+| **GLD** | Long Put | 365 (-1.2%) | Same context – oversold. Betting on continued decline when price is already extended below lower band. | **Unfavorable.** Low probability – oversold stocks tend to bounce, not fall further immediately. Avoid. |
+| **QQQ** | Long Call | 737 (+2.9%) | Neutral technicals (RSI 50, no extremes). No clear edge. | **Neutral.** Volatility may compress; directional risk not supported by price action. |
+| **QQQ** | Long Put | 694 (-3.1%) | Neutral. No oversold/overbought. | **Neutral.** Not justified. |
+| **SPY** | Long Call | 758 (+3.2%) | Neutral (RSI 47.5, price between MAs). No signal. | **Neutral.** Better to wait for a pullback to support. |
+| **SPY** | Long Put | 714 (-2.7%) | Neutral. No extreme. | **Not recommended.** |
 
-### Volatility Contraction Squeeze (Narrow Bollinger Bands)
+---
 
-| Ticker | Band Width (% of Price) | Setup Quality | Rationale |
-|--------|-------------------------|---------------|----------|
-| **HYG** | ~0.9% | **High** | High-yield bond ETF showing extreme compression. Bands are very tight – usually precedes a sharp directional move. Currently near 50‑day and 200‑day averages. |
-| **LQD** | ~1.3% | **High** | Investment‑grade corporate bonds also in a squeeze, though slightly wider. Low volatility suggests breakout imminent. |
+### Additional Observations (from data)
+- **NFLX** (RSI 19.1, price below all MAs, below BB lower) – extreme oversold. **Mean‑reversion candidate** (not in options list but worth monitoring).
+- **PLTR** (RSI 27.4, below BB lower) – oversold, similar bounce potential.
+- **MSFT** (RSI 28.8, below all MAs) – oversold but huge cap, could bounce.
+- **SLV** (RSI 28.8, below all MAs) – silver deeply oversold, but weak commodity environment.
 
-### Additional Observations
-- **UUP** (Dollar ETF): RSI 79.0 – overbought. Could mean‑revert lower, benefitting gold and internationals.
-- **CEG**: Price below SMA50 and SMA200, but RSI 48.0 and MACD improving. Possible base formation – watch for break above SMA20 (265.91) to signal reversal.
-- **QQQ/SPY/VOO**: All below their 20‑day SMAs but above 50‑ and 200‑day. Without a confirmed breakout, neutral – better to wait for a cross above SMA20.
+---
 
-### Summary of Actionable Setups
-1. **Mean Reversion Calls**: NFLX (high probability of bounce), PLTR/ORCL/MSFT (medium risk-reward).
-2. **Trend Continuation**: XLI, XLF, INTC, MU, TLT – hold or add on dips.
-3. **Volatility Squeeze**: HYG and LQD – place straddles or wait for direction.
-4. **Watch for Failure**: NVDA below SMA50, AMZN at SMA200 – key levels to monitor for long entries or exit signals.
+### Recommended Actions (based solely on price action)
 
-*All analysis based solely on price and technical indicators; fundamental/macro views intentionally excluded.*
+| Setup | Recommendation | Rationale |
+|-------|----------------|-----------|
+| **AAPL 260 Put (14–21 DTE)** | **Sell 1 contract** | Oversold + below BB lower = high‑probability bounce. Collect premium (~$0.78–$1.33) and potential entry at 6% discount. |
+| **AMZN 220 Put (14–21 DTE)** | **Sell 1 contract** | Oversold but less extreme. Good income/entry trade. |
+| **GLD 21 DTE Long Call 385** | **Buy 1 contract** | Mean‑reversion bounce play. Oversold near BB lower. $4.80 premium – risk defined. |
+| **All other ideas** | **Avoid** | No technical edge; either neutral, trend‑fading, or unnecessarily deep OTM. |
+
+These recommendations respect the **canary risk‑on** and **slow channel risk‑on** signals (which support equity exposure) while using options to express near‑term mean‑reversion views. The cash portfolio ($87k) can easily accommodate these small, defined‑risk positions.
+
+**Risk notes:** Markets are in a transitional regime (cautious risk sentiment, strong dollar). These trades are tactical – size accordingly (1–2% of capital each). Stop losses not applicable for cash‑secured puts (only assignment risk); for the GLD call, define a stop at $365 (20% premium loss).
