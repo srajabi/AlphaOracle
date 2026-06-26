@@ -1,42 +1,37 @@
 [
     {
-        "ticker": "SPY",
+        "ticker": "VOO",
         "action": "buy",
-        "notional_value": 18300
+        "notional_value": 21796.25
     },
     {
-        "ticker": "XLU",
+        "ticker": "DIA",
         "action": "buy",
-        "notional_value": 9150
-    },
-    {
-        "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 6100
+        "notional_value": 17437.0
     },
     {
         "ticker": "IWM",
         "action": "buy",
-        "notional_value": 6100
+        "notional_value": 13077.75
     },
     {
-        "ticker": "SCHD",
+        "ticker": "XLV",
         "action": "buy",
-        "notional_value": 6100
+        "notional_value": 13077.75
     },
     {
-        "ticker": "QUAL",
+        "ticker": "XLI",
         "action": "buy",
-        "notional_value": 3050
+        "notional_value": 8718.5
     },
     {
-        "ticker": "TLT",
+        "ticker": "XLF",
         "action": "buy",
-        "notional_value": 3050
+        "notional_value": 8718.5
     },
     {
-        "ticker": "QQQ",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 3050
+        "notional_value": 4359.23
     }
 ]
