@@ -1,22 +1,47 @@
 [
     {
-        "ticker": "XLU",
+        "ticker": "TLT",
         "action": "buy",
-        "notional_value": 20000
+        "notional_value": 10000
     },
     {
         "ticker": "XLV",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 10000
     },
     {
-        "ticker": "TLT",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 8000
     },
     {
         "ticker": "IWM",
         "action": "buy",
         "notional_value": 10000
+    },
+    {
+        "ticker": "AMZN",
+        "action": "buy",
+        "notional_value": 15000
+    },
+    {
+        "ticker": "NVDA",
+        "action": "buy",
+        "notional_value": 12000
+    },
+    {
+        "ticker": "AVGO",
+        "action": "buy",
+        "notional_value": 8000
+    },
+    {
+        "ticker": "MSFT",
+        "action": "buy",
+        "notional_value": 8000
+    },
+    {
+        "ticker": "GOOGL",
+        "action": "buy",
+        "notional_value": 5000
     }
 ]
