@@ -1,37 +1,22 @@
 [
     {
-        "ticker": "VOO",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 21796.25
-    },
-    {
-        "ticker": "DIA",
-        "action": "buy",
-        "notional_value": 17437.0
-    },
-    {
-        "ticker": "IWM",
-        "action": "buy",
-        "notional_value": 13077.75
+        "notional_value": 20000
     },
     {
         "ticker": "XLV",
         "action": "buy",
-        "notional_value": 13077.75
+        "notional_value": 15000
     },
     {
-        "ticker": "XLI",
+        "ticker": "TLT",
         "action": "buy",
-        "notional_value": 8718.5
+        "notional_value": 15000
     },
     {
-        "ticker": "XLF",
+        "ticker": "IWM",
         "action": "buy",
-        "notional_value": 8718.5
-    },
-    {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 4359.23
+        "notional_value": 10000
     }
 ]
