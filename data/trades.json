@@ -1,32 +1,47 @@
 [
     {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 2301
-    },
-    {
-        "ticker": "SPY",
-        "action": "buy",
-        "notional_value": 3705
-    },
-    {
-        "ticker": "NVDA",
-        "action": "buy",
-        "notional_value": 3900
-    },
-    {
-        "ticker": "INTC",
-        "action": "buy",
-        "notional_value": 3951
-    },
-    {
         "ticker": "QUAL",
         "action": "buy",
-        "notional_value": 4350
+        "notional_value": 21796.25
     },
     {
-        "ticker": "GLD",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 1843
+        "notional_value": 17437.0
+    },
+    {
+        "ticker": "XLV",
+        "action": "buy",
+        "notional_value": 13077.75
+    },
+    {
+        "ticker": "XLF",
+        "action": "buy",
+        "notional_value": 8718.5
+    },
+    {
+        "ticker": "LQD",
+        "action": "buy",
+        "notional_value": 8718.5
+    },
+    {
+        "ticker": "KLAC",
+        "action": "buy",
+        "notional_value": 4359.25
+    },
+    {
+        "ticker": "MTZ",
+        "action": "buy",
+        "notional_value": 4359.25
+    },
+    {
+        "ticker": "TSM",
+        "action": "buy",
+        "notional_value": 4359.25
+    },
+    {
+        "ticker": "TLN",
+        "action": "buy",
+        "notional_value": 4359.25
     }
 ]

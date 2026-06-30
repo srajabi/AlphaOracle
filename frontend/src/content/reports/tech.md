@@ -5,104 +5,63 @@ date: "2026-06-30"
 
 ## Model: deepseek/deepseek-v4-flash
 
-# Trade Recommendation — 2026-06-30
-
-## Portfolio Context
-- **Cash:** $87,184.98 (100%)
-- **Regime:** Bull Quiet (risk‑on, low vol)
-- **Mandate:** Slow channel risk‑on, fast channel clear, credit clear, canary risk‑on → **SLEEVE_INVESTED**
-
-**Action:** Deploy ~25% of cash into high‑confidence price‑action setups. Remain cognisant of near‑term tail risks (BoJ carry, AI capex deceleration) but let pure technicals guide entry.
+**Price Action Technical Assessment (News Excluded)**  
+*Regime: Bull Quiet – Risk-on, Falling Rates, Strong Dollar, Commodities Weak*  
 
 ---
 
-## Recommended Trades
+### 1. Mean Reversion Bounces (Oversold / Overbought)
 
-### 1. Long NVDA — Mean Reversion Bounce
-- **Current Price:** $194.97
-- **Technical Signals:**
-  - Price within $5 of **Bollinger Lower Band** ($190.00) → statistical support zone
-  - **RSI(14) = 40** → approaching oversold, typically bounces from here in uptrend
-  - Above **SMA200** ($190.52) → long‑term trend intact
-  - MACD negative but histogram flattening → momentum exhaustion
-- **Setup:** Classic mean‑reversion into support after a 3‑week pullback (−10%). Risk‑reward favorable if SMA200 holds.
-- **Position:** Buy **20 shares** (~$3,900)
-- **Stop:** Close below $188 (breaks SMA200 + lower BB)
-- **Target:** SMA20 ($206.92) → +6%
+| Ticker | Key Signal | Setup |
+|--------|------------|-------|
+| **ORCL** | RSI 29.34 (oversold), Price 147.76 far below SMA20/50/200, Bollinger lower band 132.19, MACD deeply negative. | **Oversold bounce candidate.** Extremely stretched; any catalyst could trigger a snap-back toward SMA20 (~193). High risk/high reward. Wait for RSI to turn up or a bullish engulfing candle. |
+| **NFLX** | RSI 31.48 (near oversold), Price 73.78 below all SMAs, BB lower 69.90. | **Oversold bounce watch.** Similar to ORCL but less extreme. Price just above lower band; risk of further decay if break below 69.90. |
+| **XLV** | RSI 72.54 (overbought), Price 160.74 above all SMAs, BB upper 159.59 – price just above upper band. | **Overbought pullback risk.** Healthcare sector has rallied hard. Overbought in a risk-on market doesn’t guarantee a fall, but reward/risk for longs is unfavourable. Consider a protective put if holding. |
 
 ---
 
-### 2. Long INTC — Momentum Continuation
-- **Current Price:** $131.72
-- **Technical Signals:**
-  - Price above all MAs: SMA20 ($120.27) > SMA50 ($109.65) > SMA200 ($58.77) → aligned uptrend
-  - **RSI(14) = 59** → not overbought, room to run
-  - MACD positive, histogram contracting but still positive → trend pause, not reversal
-  - **Bollinger Upper Band** at $143.15 → 8.6% upside before resistance
-- **Setup:** Strong breakout with pullback to 10‑day moving average (intraday) – textbook continuation pattern.
-- **Position:** Buy **30 shares** (~$3,950)
-- **Stop:** Close below SMA20 ($120)
-- **Target:** BB Upper ($143) → +8.6%
+### 2. Trend Continuation (Strong Uptrend, No Exhaustion)
+
+| Ticker | Key Signal | Setup |
+|--------|------------|-------|
+| **KLAC** | Price 278.39 well above SMA20/50/200, RSI 66.39 (not overbought), MACD histogram positive (+1.62), BB upper 283.68 – still room. | **Strong trend continuation.** Semiconductor equipment leader with fresh momentum (Samsung/SK investment news already priced in technically). Pullbacks to SMA20 (~234) would be buyable. Current position is extended but not overbought. |
+| **MTZ** | Price 429.09 above all SMAs, RSI 65.67, MACD histogram strongly positive (+6.08), BB width wide (no squeeze). | **Accelerating uptrend.** Infrastructure/ AI data-centre builder. Momentum is increasing; no signs of exhaustion. Trend-follow long. |
+| **TSM** | Price 455.10 above SMA20/50/200, RSI 58.43 neutral, MACD histogram slightly negative (-0.28) but MACD line still positive. | **Healthy uptrend consolidating.** Foundry leader. The slight MACD bear cross is minor; price is holding above SMA20 (435). Continue to hold or add on dips to SMA50 (414). |
+| **TLN** | Price 399.34 above all SMAs, RSI 53.68, MACD histogram positive (+1.15). | **Steady uptrend.** Nuclear/hyperscaler power play. Calm momentum, no overbought risk. Suitable for core long. |
+
+**Confirmed failed trends (downtrends):** MSFT, META, PLTR, ORCL, NFLX – all below key moving averages with MACD bearish. Not mean-reversion signals yet (except ORCL/NFLX oversold). Avoid until price reclaims SMA20.
 
 ---
 
-### 3. Long XLU (Utilities) — Sector Strength Uptrend
-- **Current Price:** $46.02
-- **Technical Signals:**
-  - Price above all MAs: SMA20 ($44.38) > SMA50 ($44.78) > SMA200 ($44.06) → clean uptrend
-  - **RSI(14) = 63** → bullish momentum, not overbought
-  - MACD positive with rising histogram → accelerating trend
-  - **Bollinger Bands:** narrow, price hugging upper band → strong directional move
-- **Setup:** Defensive sector with exceptional price structure. In a “Bull Quiet” regime, utilities often extend gains when growth names hesitate.
-- **Position:** Buy **30 shares** (~$1,380)
-- **Stop:** Close below SMA20 ($44.38)
-- **Target:** Previous swing high $48.50 → +5.4%
+### 3. Volatility Contraction Squeezes (Tight Bollinger Bands)
+
+| Ticker | BB Width (% of Price) | Setup |
+|--------|------------------------|-------|
+| **LQD** | Upper 109.78, Lower 108.02 → 1.6% width | **Classic squeeze.** Investment-grade corporate bonds at multi-month tightness. Direction? Rates are falling (TLT uptrend) which favours bonds upside. Breakout likely upward. Watch for a close above 109.80 to trigger. |
+| **HYG** | Upper 80.18, Lower 79.46 → 0.9% width | **Extreme squeeze.** High-yield credit. Tighter than LQD. Risk: credit spreads may widen if recession fears rise, but current risk-on regime supports HYG. Breakout could be sharp either way. |
+| **XLU** | Upper 46.24, Lower 42.51 → 8.1% width | Not a tight squeeze; price drifting. Not actionable. |
+
+**Conclusion:** LQD and HYG are the only actionable squeeze setups. LQD has better risk/reward given falling rates.
 
 ---
 
-### 4. Long SPY (Core Market Beta)
-- **Current Price:** $741.00
-- **Technical Signals:**
-  - **RSI(14) = 52** → neutral, no overbought/oversold
-  - Price at SMA20 ($741.58) → natural support/resistance
-  - Above SMA50 ($733.51) and SMA200 ($687.32) → medium/long‑term uptrend intact
-  - **Bollinger Bands:** width normal, no squeeze signal
-- **Setup:** Core exposure to capture systemic risk‑on. No extreme readings – pure trend.
-- **Position:** Buy **5 shares** (~$3,705)
-- **Stop:** Monthly close below SMA200 (next update early July) or daily close below $730
-- **Target:** All‑time high area $765 → +3.2%
+### 4. Failed / Breakdown Setups (Avoid)
+
+| Ticker | Reason |
+|--------|--------|
+| **MSFT** | Price 368.57 < SMA20/SMA50/SMA200. RSI 38.97 not yet oversold. MACD bearish. Breakdown appears intact – no buy signal until price reclaims SMA20 (~396). |
+| **META** | Price 562.60 < all SMAs, RSI 42.6, MACD negative. Downtrend accelerating. |
+| **PLTR** | Price 115.70 < SMA20/SMA50/SMA200, RSI 37.74, MACD bearish. Recently broke below SMA200 (158.59) – structural damage. |
 
 ---
 
-## Summary of Deployment
+### Summary of Recommended Setups (Price Action Only)
 
-| Ticker | Shares | Cost Basis | Allocation | Current Cash |
-|--------|--------|------------|------------|--------------|
-| NVDA   | 20     | $194.97    | $3,899.40  | $83,285.58   |
-| INTC   | 30     | $131.72    | $3,951.60  | $79,333.98   |
-| XLU    | 30     | $46.02     | $1,380.60  | $77,953.38   |
-| SPY    | 5      | $741.00    | $3,705.00  | $74,248.38   |
-| **Total** |      |            | **$12,936.60** | **$74,248.38** |
+| Type | Ticker | Action |
+|------|--------|--------|
+| **Trend Continuation** | KLAC, MTZ, TSM, TLN | Long on pullback to SMA20 or breakout above current resistance. |
+| **Volatility Squeeze** | LQD | Long (call or ETF) on breakout above 109.80; stop below 108.00. |
+| **Mean Reversion Bounce** | ORCL (high risk) | Wait for RSI to turn up from <30; consider a small speculative long with tight stop at 132 (BB lower). |
+| **Avoid** | MSFT, META, PLTR, NFLX (unless oversold bounce triggered) | Do not buy until price structure improves. |
 
-~14.8% deployed, leaving $74k in cash for follow‑up opportunity (BoJ‑driven dip, better entry on tech, or options overlay).
-
----
-
-## Reason Not Taken — Other Candidates
-
-- **AAPL, MSFT, GOOGL, META, AMZN:** All in short‑term downtrends, RSI < 46, MACD negative. Mean‑reversion possible but lacks a clear support level (many below SMA200). Wait for reversal candle.
-- **AMD, KLAC, CRWD, MTZ, MU, STX, WDC, NBIS:** Strong uptrends but RSI > 55 and MACD histogram negative → momentum fading. Better entry on pullback to SMA20.
-- **PLTR, ORCL, NFLX, GOOGL:** Deeply oversold but below SMA200 → catching a falling knife. Avoid.
-- **GLD, SLV, XLE:** Commodities weak (regime intermarket). Gold RSI 33, but downtrend too strong.
-- **TLT, TMF:** Bonds rallying but already extended (RSI 66). Rate decision looming – not a clean entry.
-
----
-
-## Risk Management Notes
-
-- **All stops are hard closes.** Do not average down without a fresh technical signal.
-- **BoJ risk (June 15–16):** If USDJPY breaks below 140 with volatility, consider trimming SPY/NVDA and adding TLT/GLD as hedges.
-- **Earnings season begins mid‑July:** NVDA and INTC both have earnings within next 4‑6 weeks – size accordingly.
-- **Continue monitoring `^VIX/^VIX3M` ratio:** >1.0 would trigger fast‑channel brake; reduce exposure.
-
-*Recommendation based solely on observed price action and technical indicators. No news or macro judgment overrides these signals.*
+*All evaluations are purely technical; macro/news are excluded as requested.*
