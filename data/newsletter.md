@@ -13,77 +13,88 @@
 
 ## Thesis Sentinel
 
-# Thesis Sentinel Daily Brief — 2026-06-30
+**Thesis Sentinel Brief**  
+**2026-06-30 21:09 UTC** | Regime: Bull Quiet
 
-## 1. Tripwire Status
+---
 
-| Tripwire               | Signal           | Reading                   | Status |
-|------------------------|------------------|---------------------------|--------|
-| Carry unwind           | VIX/VIX3M        | 0.915 (median, fast_ch)   | CLEAR  |
-| Credit cracks          | HYG/LQD 63d rm   | +0.05%                    | CLEAR  |
-| Breadth break          | EWA, TLT mom     | both positive (1.2%,2.6%) | CLEAR  |
-| Trend break            | SPY vs 200d SMA  | 741 > 687                 | CLEAR  |
-| Oil shock              | XLE momentum     | -4.1%, neutral trend      | CLEAR  |
-| AI capex turn          | guidance news    | no FY27 capex cuts reported | CLEAR |
-| Carry stress           | USDJPY           | no rapid <140 move        | CLEAR  |
+### 1. Tripwire Status
+(Authoritative signals from rule‑based JSON; no override)
 
-All tripwires CLEAR. Mandates remain fully invested.
+| Tripwire | Signal Reading | Threshold | Status |
+|----------|----------------|-----------|--------|
+| Carry unwind | VIX/VIX3M 5‑d median **0.915** | > 1.0 (backwardation) | **CLEAR** |
+| Credit cracks | HYG/LQD 63‑d rel‑mom **+0.0005** | < –0.02 | **CLEAR** |
+| Breadth break | EWA mom **+0.0125**, TLT mom **+0.0255** | Both negative | **CLEAR** |
+| Trend break | SPY vs 200‑d SMA (month‑end): **risk_on** | Monthly close below 200‑d | **CLEAR** |
+| Oil shock | XLE momentum **negative**, underperforming SPY | Sustained leadership | **CLEAR** |
+| AI capex turn | No hyperscaler FY27 capex cut news | Any FY27 capex guidance cut | **CLEAR / no signal** |
+| Carry stress | No USDJPY < 140 move (strong dollar, UUP rising) | Rapid < 140 | **CLEAR / no signal** |
 
-## 2. Marker Watch
+All seven tripwires are clear. No immediate systemic risk flagged.
 
-- **BoJ June meeting**: Past; no hawkish-guide follow‑through nor USDJPY <145.
-- **CPI**: No new print (last May 4.2%).
-- **SpaceX**: IPO price $135; subsequent collapse below issue price confirmed by today’s “$811B vaporized” story → **FIRED.** Late‑cycle liquidity marker.
-- **Hyperscaler capex**: No cuts; bullish analyst commentary persists.
-- **Hormuz**: Tensions eased; US‑Iran halt strikes, talks in Doha, tanker traffic recovering.
+---
 
-## 3. Delta
+### 2. Marker Watch
+- **BoJ (June 15‑16):** No new guidance or USDJPY <145 in the past 24 hours.  
+- **CPI:** No release today (last read May CPI 4.2%).  
+- **SpaceX vs $135:** No price updates touching the $135 issue‑price line.  
+- **Hyperscaler capex:** No FY27 guidance revisions reported today.  
+- **Hormuz:** Multiple headlines confirm tanker traffic **rebounding to pre‑war levels**, supply risks easing (oil near pre‑war prices). No full closure week+.
 
-- **De‑escalation**: US‑Iran agreement to pause attacks reduces near‑term oil supply‑shock risk.
-- **AI rotation intensifies**: Mag‑7 lost $2.3 T in June; SpaceX bust reinforces late‑cycle stress.
-- **Rates**: 10‑year yield 4.37%, TLT still in strong uptrend despite hawkish‑fed noise – rules interpret as falling rates.
+---
 
-## 4. Scenario Pressure
+### 3. Delta
+- **Hormuz supply normalisation:** VP Vance and multiple outlets report oil flows returning to pre‑conflict levels. Crude prices remain elevated but below the war spike peak.  
+- **Fed speak:** Cleveland Fed President Hammack (hawkish) warns rate hikes may be needed to confront high inflation; Fed’s Warsh’s first public appearance tomorrow remains a focus.  
+- **Europe/China:** New EU‑China trade framework on rare earths and export controls adds a mild de‑escalation signal, offset by China’s renewed curbs on Japanese entities.  
+- **Regulatory:** Supreme Court blocks Trump from firing Fed Gov. Cook – reinforces Fed independence, marginally positive for policy stability.  
 
-Today’s evidence gently pushes toward **Scenario B (slow bear)** – the SpaceX break below issue price and Mag‑7 rout are textbook late‑cycle signals. However, the de‑escalation of Iran hostilities and firm credit/breadth readings support Scenario A. The net shifts probability inside our existing bands but **does not change official weights** (review due next month). Positioning remains risk‑on per all tripwires clear.
+The macro shock from Hormuz is **unwinding**, removing a direct threat to oil‑driven inflation. The hawkish Fed overture is new but not yet a tripwire.
+
+---
+
+### 4. Scenario Pressure
+Today’s evidence leans **Scenario A (Grind‑with‑violence)** more firmly:
+
+- Hormuz supply restoration defuses the oil‑escalation tail that feeds Scenario C.  
+- Commodity weakness (GLD, SLV, XLE all negative) and falling rates (TLT strong) align with a disinflationary, risk‑on “Bull Quiet” environment that suits A’s range‑bound, air‑pocket pattern.  
+- Hawkish Hammack introduces a **tremor risk** (a sudden rate hike would be an air pocket), but the Fed is still **cornered** – hiking into a war‑shocked economy remains politically difficult.  
+
+No evidence currently pushes toward Scenario B (capex cuts, credit cracks) or Scenario C (carry unwind, crash). Official scenario weights (A 50%, B 30%, C 20%) **unchanged**; monthly review next scheduled for 2026‑07‑12.  
+
+The systems remain on “risk‑on” per all mandates; the thesis alignment is clean.
 
 ## Portfolio Manager Synthesis
 
-# Lead Portfolio Manager Decision – 2026-06-30
+## Portfolio Manager Decision
 
-## Assessment of the Landscape
+I’ve reviewed the Risk Manager, Technical Analyst, and Macro Strategist briefs. All reports originate from the same source model (deepseek-v4-flash), so I give equal weight to each, evaluating their arguments on merit. The key tension is the Risk Manager’s explicit “stay in cash” versus the authoritative system mandates which require all sleeves to be fully invested (risk‑on). As Lead Portfolio Manager, I honour the mandates – the system’s slow, fast, credit, and canary signals are unequivocally green. Therefore, we deploy the full cash balance today, but with a defensive tilt that incorporates the genuine risks highlighted in the briefs.
 
-The **Bull Quiet** regime masks a fragile risk-on surface over armed tripwires. All mandate signals (slow channel, fast channel, credit, canary) are clear/risk-on, so we must honor the system and deploy some capital. However, the internal thesis warns of a 50% chance of a significant drawdown within 12 months, and the intermarket suite shows a **strong dollar, falling commodity prices, and a potential late-cycle AI rotation**. Therefore, our deployment will be **gradual, hedged, and strongly tilted toward defensive quality and mean-reversion setups**, while preserving the bulk of cash for the air pockets the thesis anticipates.
+**Key points of synthesis:**
+- **Macro regime:** “Bull Quiet” – risk‑on, strong dollar, falling rates, commodities weak. However, under the surface, multiple geopolitical tripwires (Hormuz fragility, Fed hawkish pivot, trade tensions) and recession signals warrant a cautious posture.
+- **Technical picture:** Strong trend continuations in semi‑equipment (KLAC), infrastructure (MTZ), foundry (TSM), and nuclear power (TLN). Defensive sectors (XLU, XLV, XLF) show relative strength. LQD offers a volatility‑squeeze breakout setup. Most mega‑cap tech and gold remain under severe pressure – avoid.
+- **Risk concerns:** Overbought signals in XLV and near‑overbought in KLAC/MTZ suggest not chasing full positions. The Risk Manager’s tail‑risk insurance idea (SPY puts) is noted but cannot be executed in the equity‑only layer.
 
-I weight the **Risk Manager’s** call for cheap index protection and the **Macro Strategist’s** emphasis on sector rotation highly. The **Technical Analyst’s** mean-reversion picks (NVDA, INTC, XLU, SPY) are sound short-term trades that fit the current tape. I will combine these into a cohesive equity-only execution.
+**Strategy:** Build a fully invested, diversified portfolio that is overweight quality, utilities, healthcare, financials, and bonds, while taking small tactical positions in the highest‑momentum industrial/AI‑infrastructure names. No exposure to gold, mega‑cap tech, or energy.
 
----
+### Action Plan
 
-## Action Plan
+| Action | Ticker/Asset | Conviction Level | Timeframe | Justification |
+|--------|-------------|-----------------|-----------|---------------|
+| Buy | QUAL | High | 3–6 months | Quality factor ETF – defensive equity core; balances the portfolio against low‑quality tech fallout. |
+| Buy | XLU | High | 3–6 months | Utilities sector – benefits from falling rates, AI data‑center power demand, and recession hedging. |
+| Buy | XLV | Medium | 2–4 months | Healthcare sector – strongest momentum, defensive rotation; overbought but trend remains intact. |
+| Buy | XLF | Medium | 2–4 months | Financials – benefits from steepening yield curve and higher‑for‑longer rates; strong RSI. |
+| Buy | LQD | Medium | 1–3 months | Investment‑grade bonds – classic squeeze; breakout upward likely on falling rates and risk‑on flows. |
+| Buy | KLAC | Medium | 1–3 months | Semi‑equipment – powerful trend; Korea’s $1.3T capex program provides multi‑quarter tailwind. |
+| Buy | MTZ | Medium | 1–3 months | Infrastructure – accelerating uptrend driven by AI data‑center buildout; no exhaustion signals. |
+| Buy | TSM | Medium | 3–6 months | Foundry leader – healthy consolidation above SMAs; structural beneficiary of AI and reshoring. |
+| Buy | TLN | Medium | 3–6 months | Nuclear‑power for hyperscalers – steady uptrend, directly tied to data‑center demand. |
 
-| Action | Ticker/Asset | Conviction | Timeframe | Justification |
-|--------|--------------|------------|-----------|---------------|
-| **Buy** | **XLU** (Utilities) | **High** | Weeks to Months | Defensive sector in a clean uptrend (RSI 63, above all MAs). Rotation from overbought tech into regulated utilities with an AI power-demand tailwind. Protects against a growth sell-off while capturing positive momentum. |
-| **Buy** | **SPY** (S&P 500) | **High** | Weeks | Core risk-on exposure. Neutral RSI (52), above 50/200 MAs. Low cost to capture broad market upside while we remain in a clear mandate window. Stops will be triggered on a monthly close below the 200‑day SMA. |
-| **Buy** | **NVDA** (Nvidia) | **Medium** | 1–4 weeks | Mean-reversion trade: price near lower Bollinger Band and above the 200‑day SMA; RSI ~40 approaching oversold. Tight stop below $188 limits downside. AI capex risks are acknowledged but the technical setup offers favorable risk/reward for a bounce. |
-| **Buy** | **INTC** (Intel) | **Medium** | 1–4 weeks | Momentum continuation: price above all key MAs, RSI ~59 not overbought. Foundry pivot could benefit from China-Taiwan chip curbs. Short-term play with a stop below the 20‑day SMA. |
-| **Buy** | **QUAL** (Quality Factor ETF) | **High** | Months | Late-cycle rotation into quality: companies with high return on equity, strong balance sheets, and stable earnings. Outperforming in 2026 and benefits from a market shift away from pure AI hype. Core defensive holding. |
-| **Buy** | **GLD** (Gold ETF) | **Medium** | Months | Contrarian position: gold is deeply oversold (RSI 33) in a strong-dollar regime, but negative real rates and fragile geopolitical situation support a medium-term bounce. Serves as a portfolio hedge against an inflation shock or ceasefire collapse. |
+*Percentages of total cash ($87,184.98):* 25% QUAL, 20% XLU, 15% XLV, 10% XLF, 10% LQD, 5% KLAC, 5% MTZ, 5% TSM, 5% TLN.
 
-**Total deployed:** ~$20,050 (≈23% of cash). **Cash retained:** ~$67,135 (≈77%) as dry powder for the next 5–10% drawdown or a confirmed crash signal.
-
----
-
-## Risks & Tripwires
-
-- **Stop-losses on NVDA and INTC** are tight; they will be closed immediately if their respective technical thresholds break.
-- If **VIX/VIX3M > 1.0** or **HYG/LQD 63‑day relative momentum < –2%**, we will raise cash and reduce equity exposure further, overriding any single-stock technical setups.
-- The **China-Taiwan chip curbs** or a **Hormuz closure** would trigger an immediate review; in that scenario we would likely exit NVDA/INTC and add to GLD and defensive sectors.
-- We are **not** adding to high-duration bonds (TLT/TMF) at this time due to the inflation-regime bias expressed in the thesis.
-
----
-
-## Executable Orders
+### Executable Trades
 
 ## Paper-Account Attribution
 
