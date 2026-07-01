@@ -1,56 +1,31 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-06-30"
+date: "2026-07-01"
 ---
 
-**Thesis Sentinel Brief**  
-**2026-06-30 21:09 UTC** | Regime: Bull Quiet
+**Tripwire Status** (as of 2026-07-01 15:52 UTC)
 
----
+| Tripwire | Signal | Threshold | Today’s Reading | Status |
+|----------|--------|-----------|-----------------|--------|
+| Carry unwind | VIX/VIX3M ratio | > 1.0 (backwardation) | 0.817 (VIX 16.45 / VIX3M 20.13) | CLEAR |
+| Credit cracks | HYG/LQD 63d rel‑mom | < –2% | +1.13% | CLEAR |
+| Breadth break | Canary (EWA, TLT momentum) | Both negative | EWA +0.94%, TLT +1.11% | CLEAR |
+| Trend break | SPY monthly close vs 200d SMA | Below SMA | SPY 746.77, SMA200 687.80 (June 30) | CLEAR |
+| Oil shock | XLE momentum / SPY leadership | Sustained leadership | XLE momentum –6.64%, strong negative | CLEAR |
+| AI capex turn | Hyperscaler FY27 capex guidance cuts | Any cut | No new guidance (Q2 earnings weeks away) | CLEAR |
+| Carry stress | USDJPY rapid < 140 | Rapid move below 140 | No data; US dollar strong, no acute yen stress evident | CLEAR |
 
-### 1. Tripwire Status
-(Authoritative signals from rule‑based JSON; no override)
+All seven tripwires are clear. The rule‑based system shows risk‑on across all channels.
 
-| Tripwire | Signal Reading | Threshold | Status |
-|----------|----------------|-----------|--------|
-| Carry unwind | VIX/VIX3M 5‑d median **0.915** | > 1.0 (backwardation) | **CLEAR** |
-| Credit cracks | HYG/LQD 63‑d rel‑mom **+0.0005** | < –0.02 | **CLEAR** |
-| Breadth break | EWA mom **+0.0125**, TLT mom **+0.0255** | Both negative | **CLEAR** |
-| Trend break | SPY vs 200‑d SMA (month‑end): **risk_on** | Monthly close below 200‑d | **CLEAR** |
-| Oil shock | XLE momentum **negative**, underperforming SPY | Sustained leadership | **CLEAR** |
-| AI capex turn | No hyperscaler FY27 capex cut news | Any FY27 capex guidance cut | **CLEAR / no signal** |
-| Carry stress | No USDJPY < 140 move (strong dollar, UUP rising) | Rapid < 140 | **CLEAR / no signal** |
+**Marker Watch**  
+- **BoJ guidance:** June 15‑16 hike to 1.0% as expected; no major shock or USDJPY plunge → scenario C trigger inactive.  
+- **CPI:** May print 4.2%; next release (June CPI) not yet available.  
+- **SpaceX vs $135:** No news of breaching IPO price; post‑listing performance remains above $135 for now.  
+- **Hyperscaler capex:** Q2 2026 earnings season hasn’t started; watch for any FY27 spend deceleration.  
+- **Hormuz:** MOU between US and Iran stabilizes Brent; shipping traffic rebounds, no full closure.  
 
-All seven tripwires are clear. No immediate systemic risk flagged.
+**Delta**  
+Quiet day. No material change from yesterday’s close. Fed Chair Warsh reinforced data‑dependence and noted inflation poses less risk than a few weeks ago. Oil markets fairly stable on Hormuz MOU. Semiconductors pulled back mildly but no systemic stress. The regime remains **Bull Quiet** – risk‑on, strong dollar, rates declining, commodities weak.
 
----
-
-### 2. Marker Watch
-- **BoJ (June 15‑16):** No new guidance or USDJPY <145 in the past 24 hours.  
-- **CPI:** No release today (last read May CPI 4.2%).  
-- **SpaceX vs $135:** No price updates touching the $135 issue‑price line.  
-- **Hyperscaler capex:** No FY27 guidance revisions reported today.  
-- **Hormuz:** Multiple headlines confirm tanker traffic **rebounding to pre‑war levels**, supply risks easing (oil near pre‑war prices). No full closure week+.
-
----
-
-### 3. Delta
-- **Hormuz supply normalisation:** VP Vance and multiple outlets report oil flows returning to pre‑conflict levels. Crude prices remain elevated but below the war spike peak.  
-- **Fed speak:** Cleveland Fed President Hammack (hawkish) warns rate hikes may be needed to confront high inflation; Fed’s Warsh’s first public appearance tomorrow remains a focus.  
-- **Europe/China:** New EU‑China trade framework on rare earths and export controls adds a mild de‑escalation signal, offset by China’s renewed curbs on Japanese entities.  
-- **Regulatory:** Supreme Court blocks Trump from firing Fed Gov. Cook – reinforces Fed independence, marginally positive for policy stability.  
-
-The macro shock from Hormuz is **unwinding**, removing a direct threat to oil‑driven inflation. The hawkish Fed overture is new but not yet a tripwire.
-
----
-
-### 4. Scenario Pressure
-Today’s evidence leans **Scenario A (Grind‑with‑violence)** more firmly:
-
-- Hormuz supply restoration defuses the oil‑escalation tail that feeds Scenario C.  
-- Commodity weakness (GLD, SLV, XLE all negative) and falling rates (TLT strong) align with a disinflationary, risk‑on “Bull Quiet” environment that suits A’s range‑bound, air‑pocket pattern.  
-- Hawkish Hammack introduces a **tremor risk** (a sudden rate hike would be an air pocket), but the Fed is still **cornered** – hiking into a war‑shocked economy remains politically difficult.  
-
-No evidence currently pushes toward Scenario B (capex cuts, credit cracks) or Scenario C (carry unwind, crash). Official scenario weights (A 50%, B 30%, C 20%) **unchanged**; monthly review next scheduled for 2026‑07‑12.  
-
-The systems remain on “risk‑on” per all mandates; the thesis alignment is clean.
+**Scenario Pressure**  
+Today’s evidence strongly supports **Scenario A (Grind‑with‑violence)**. Tripwires are dormant, volatility low, credit healthy, breadth intact. The market absorbed the SpaceX mega‑IPO and BoJ hike without dislocation. While AI capex euphoria and stretched valuations keep late‑cycle risks alive, no tripwire has activated. Official scenario weights (A:50%, B:30%, C:20%) are unchanged; only a monthly review or a tripwire cluster would alter them. For now, positioning remains dictated by the rule‑based signals, which are fully invested.
