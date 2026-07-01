@@ -3,29 +3,40 @@ title: Thesis Sentinel Daily Brief
 date: "2026-07-01"
 ---
 
-**Tripwire Status** (as of 2026-07-01 15:52 UTC)
+**Thesis Sentinel Daily Brief – 2026-07-01**
 
-| Tripwire | Signal | Threshold | Today’s Reading | Status |
-|----------|--------|-----------|-----------------|--------|
-| Carry unwind | VIX/VIX3M ratio | > 1.0 (backwardation) | 0.817 (VIX 16.45 / VIX3M 20.13) | CLEAR |
-| Credit cracks | HYG/LQD 63d rel‑mom | < –2% | +1.13% | CLEAR |
-| Breadth break | Canary (EWA, TLT momentum) | Both negative | EWA +0.94%, TLT +1.11% | CLEAR |
-| Trend break | SPY monthly close vs 200d SMA | Below SMA | SPY 746.77, SMA200 687.80 (June 30) | CLEAR |
-| Oil shock | XLE momentum / SPY leadership | Sustained leadership | XLE momentum –6.64%, strong negative | CLEAR |
-| AI capex turn | Hyperscaler FY27 capex guidance cuts | Any cut | No new guidance (Q2 earnings weeks away) | CLEAR |
-| Carry stress | USDJPY rapid < 140 | Rapid move below 140 | No data; US dollar strong, no acute yen stress evident | CLEAR |
+---
 
-All seven tripwires are clear. The rule‑based system shows risk‑on across all channels.
+### 1. Tripwire Status
+| Tripwire | Signal | Threshold | Today's Reading | Status |
+|---|---|---|---|---|
+| Carry unwind | VIX/VIX3M | > 1.0 | 0.82 (16.45/20.13) | **CLEAR** |
+| Credit cracks | HYG/LQD 63d rel-mom | < –2% | +1.13% | **CLEAR** |
+| Breadth break | Canary (EWA/TLT mom) | Both negative | +0.94% / +1.11% | **CLEAR** |
+| Trend break | SPY vs 200d SMA (month-end) | Below | 746.77 > 687.80 | **CLEAR** |
+| Oil shock | XLE momentum vs SPY | Sustained leadership | –6.64 (underperforming) | **CLEAR** |
+| AI capex turn | Hyperscaler FY27 guidance | Any cut | No news | **N/A** |
+| Carry stress | USDJPY < 140 | Rapid move ↓140 | DXY strong (UUP 28.41), no data | **CLEAR** |
 
-**Marker Watch**  
-- **BoJ guidance:** June 15‑16 hike to 1.0% as expected; no major shock or USDJPY plunge → scenario C trigger inactive.  
-- **CPI:** May print 4.2%; next release (June CPI) not yet available.  
-- **SpaceX vs $135:** No news of breaching IPO price; post‑listing performance remains above $135 for now.  
-- **Hyperscaler capex:** Q2 2026 earnings season hasn’t started; watch for any FY27 spend deceleration.  
-- **Hormuz:** MOU between US and Iran stabilizes Brent; shipping traffic rebounds, no full closure.  
+All rule-based tripwires remain fully clear. The VIX term structure is normal, credit relative momentum positive, breadth healthy, and trend firmly above the 200‑day average. No tripwire is close to firing.
 
-**Delta**  
-Quiet day. No material change from yesterday’s close. Fed Chair Warsh reinforced data‑dependence and noted inflation poses less risk than a few weeks ago. Oil markets fairly stable on Hormuz MOU. Semiconductors pulled back mildly but no systemic stress. The regime remains **Bull Quiet** – risk‑on, strong dollar, rates declining, commodities weak.
+---
 
-**Scenario Pressure**  
-Today’s evidence strongly supports **Scenario A (Grind‑with‑violence)**. Tripwires are dormant, volatility low, credit healthy, breadth intact. The market absorbed the SpaceX mega‑IPO and BoJ hike without dislocation. While AI capex euphoria and stretched valuations keep late‑cycle risks alive, no tripwire has activated. Official scenario weights (A:50%, B:30%, C:20%) are unchanged; only a monthly review or a tripwire cluster would alter them. For now, positioning remains dictated by the rule‑based signals, which are fully invested.
+### 2. Marker Watch
+- **BoJ June meeting** – Meeting passed (June 15‑16). No headlines on guidance or USDJPY dislocation; marker unevaluable.
+- **CPI** – May 4.2% (no change); June print pending. No two consecutive sub‑3.5% prints.
+- **SpaceX vs $135** – No breach of issue price reported; stock remains above IPO level.
+- **Hyperscaler capex** – Q2 earnings not yet reported; no FY27 capex guidance cuts observed.
+- **Hormuz** – Ceasefire/negotiation headlines; Strait traffic rebounding. Full closure averted.
+
+No falsifiable marker has triggered today.
+
+---
+
+### 3. Delta
+No material change from yesterday. Fed Chair Warsh reiterated inflation vigilance but noted risks have “diminished,” no rate‑hike signal. ADP employment dipped below 100k for the first time since March, but credit spreads remain stable and canary breadth markers unchanged. Chips sold off (Meta cloud entry rattled AI infrastructure names), yet overall equity indexes were mixed and volatility continued to compress. The rule‑based signals that govern positioning all remain in risk-on mode; the tripwire table is identical to the prior session.
+
+---
+
+### 4. Scenario Pressure
+Today’s evidence leans squarely toward **Scenario A (Grind-with-violence)** – the base case with range‑bound equity markets and occasional air pockets. All tripwires are clear, no falsifiable markers have fired, and geopolitical tail risk is easing (Hormuz ceasefire talks). The weak ADP print is a yellow flag but not yet a recession signal, and it does not alter the dominant slow‑growth, sticky‑inflation, AI‑capex‑driven narrative. Official scenario weights (50/30/20) are unchanged; this is not a month‑end review. The systems remain invested.

@@ -1,37 +1,37 @@
 [
     {
-        "ticker": "SPY",
-        "action": "buy",
-        "notional_value": 17436
-    },
-    {
         "ticker": "IWM",
         "action": "buy",
-        "notional_value": 13078
-    },
-    {
-        "ticker": "XLI",
-        "action": "buy",
-        "notional_value": 13078
+        "notional_value": 15000
     },
     {
         "ticker": "XLV",
         "action": "buy",
-        "notional_value": 8718
+        "notional_value": 10000
     },
     {
-        "ticker": "XLF",
+        "ticker": "XLI",
         "action": "buy",
-        "notional_value": 8718
+        "notional_value": 10000
+    },
+    {
+        "ticker": "INTC",
+        "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "AAPL",
+        "action": "buy",
+        "notional_value": 5000
+    },
+    {
+        "ticker": "AMZN",
+        "action": "buy",
+        "notional_value": 5000
     },
     {
         "ticker": "TLT",
         "action": "buy",
-        "notional_value": 8718
-    },
-    {
-        "ticker": "MTZ",
-        "action": "buy",
-        "notional_value": 4359
+        "notional_value": 5000
     }
 ]

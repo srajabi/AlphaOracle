@@ -13,75 +13,74 @@
 
 ## Thesis Sentinel
 
-**Tripwire Status** (as of 2026-07-01 15:52 UTC)
+**Thesis Sentinel Daily Brief – 2026-07-01**
 
-| Tripwire | Signal | Threshold | Today’s Reading | Status |
-|----------|--------|-----------|-----------------|--------|
-| Carry unwind | VIX/VIX3M ratio | > 1.0 (backwardation) | 0.817 (VIX 16.45 / VIX3M 20.13) | CLEAR |
-| Credit cracks | HYG/LQD 63d rel‑mom | < –2% | +1.13% | CLEAR |
-| Breadth break | Canary (EWA, TLT momentum) | Both negative | EWA +0.94%, TLT +1.11% | CLEAR |
-| Trend break | SPY monthly close vs 200d SMA | Below SMA | SPY 746.77, SMA200 687.80 (June 30) | CLEAR |
-| Oil shock | XLE momentum / SPY leadership | Sustained leadership | XLE momentum –6.64%, strong negative | CLEAR |
-| AI capex turn | Hyperscaler FY27 capex guidance cuts | Any cut | No new guidance (Q2 earnings weeks away) | CLEAR |
-| Carry stress | USDJPY rapid < 140 | Rapid move below 140 | No data; US dollar strong, no acute yen stress evident | CLEAR |
+---
 
-All seven tripwires are clear. The rule‑based system shows risk‑on across all channels.
+### 1. Tripwire Status
+| Tripwire | Signal | Threshold | Today's Reading | Status |
+|---|---|---|---|---|
+| Carry unwind | VIX/VIX3M | > 1.0 | 0.82 (16.45/20.13) | **CLEAR** |
+| Credit cracks | HYG/LQD 63d rel-mom | < –2% | +1.13% | **CLEAR** |
+| Breadth break | Canary (EWA/TLT mom) | Both negative | +0.94% / +1.11% | **CLEAR** |
+| Trend break | SPY vs 200d SMA (month-end) | Below | 746.77 > 687.80 | **CLEAR** |
+| Oil shock | XLE momentum vs SPY | Sustained leadership | –6.64 (underperforming) | **CLEAR** |
+| AI capex turn | Hyperscaler FY27 guidance | Any cut | No news | **N/A** |
+| Carry stress | USDJPY < 140 | Rapid move ↓140 | DXY strong (UUP 28.41), no data | **CLEAR** |
 
-**Marker Watch**  
-- **BoJ guidance:** June 15‑16 hike to 1.0% as expected; no major shock or USDJPY plunge → scenario C trigger inactive.  
-- **CPI:** May print 4.2%; next release (June CPI) not yet available.  
-- **SpaceX vs $135:** No news of breaching IPO price; post‑listing performance remains above $135 for now.  
-- **Hyperscaler capex:** Q2 2026 earnings season hasn’t started; watch for any FY27 spend deceleration.  
-- **Hormuz:** MOU between US and Iran stabilizes Brent; shipping traffic rebounds, no full closure.  
+All rule-based tripwires remain fully clear. The VIX term structure is normal, credit relative momentum positive, breadth healthy, and trend firmly above the 200‑day average. No tripwire is close to firing.
 
-**Delta**  
-Quiet day. No material change from yesterday’s close. Fed Chair Warsh reinforced data‑dependence and noted inflation poses less risk than a few weeks ago. Oil markets fairly stable on Hormuz MOU. Semiconductors pulled back mildly but no systemic stress. The regime remains **Bull Quiet** – risk‑on, strong dollar, rates declining, commodities weak.
+---
 
-**Scenario Pressure**  
-Today’s evidence strongly supports **Scenario A (Grind‑with‑violence)**. Tripwires are dormant, volatility low, credit healthy, breadth intact. The market absorbed the SpaceX mega‑IPO and BoJ hike without dislocation. While AI capex euphoria and stretched valuations keep late‑cycle risks alive, no tripwire has activated. Official scenario weights (A:50%, B:30%, C:20%) are unchanged; only a monthly review or a tripwire cluster would alter them. For now, positioning remains dictated by the rule‑based signals, which are fully invested.
+### 2. Marker Watch
+- **BoJ June meeting** – Meeting passed (June 15‑16). No headlines on guidance or USDJPY dislocation; marker unevaluable.
+- **CPI** – May 4.2% (no change); June print pending. No two consecutive sub‑3.5% prints.
+- **SpaceX vs $135** – No breach of issue price reported; stock remains above IPO level.
+- **Hyperscaler capex** – Q2 earnings not yet reported; no FY27 capex guidance cuts observed.
+- **Hormuz** – Ceasefire/negotiation headlines; Strait traffic rebounding. Full closure averted.
+
+No falsifiable marker has triggered today.
+
+---
+
+### 3. Delta
+No material change from yesterday. Fed Chair Warsh reiterated inflation vigilance but noted risks have “diminished,” no rate‑hike signal. ADP employment dipped below 100k for the first time since March, but credit spreads remain stable and canary breadth markers unchanged. Chips sold off (Meta cloud entry rattled AI infrastructure names), yet overall equity indexes were mixed and volatility continued to compress. The rule‑based signals that govern positioning all remain in risk-on mode; the tripwire table is identical to the prior session.
+
+---
+
+### 4. Scenario Pressure
+Today’s evidence leans squarely toward **Scenario A (Grind-with-violence)** – the base case with range‑bound equity markets and occasional air pockets. All tripwires are clear, no falsifiable markers have fired, and geopolitical tail risk is easing (Hormuz ceasefire talks). The weak ADP print is a yellow flag but not yet a recession signal, and it does not alter the dominant slow‑growth, sticky‑inflation, AI‑capex‑driven narrative. Official scenario weights (50/30/20) are unchanged; this is not a month‑end review. The systems remain invested.
 
 ## Portfolio Manager Synthesis
 
-# Portfolio Manager Decision
+# Portfolio Manager’s Decision – July 1, 2026
 
-## Synthesis of Analyst Reports
+## Analysis Summary
 
-The mandate signals unequivocally require **SLEEVE_INVESTED** (risk-on) across all sleeves. However, our investment thesis assigns a 50% combined probability to a slow bear or fast crash within 12 months, and near-term tripwires are active: Fed hawkishness repricing, AI bubble risk, and recession signals. The Risk Manager urges caution (keep 50% cash), while the Macro Strategist advocates a more aggressive deployment (85–90% equity) based on the Bull Quiet regime and strong sector momentum. The Technical Analyst highlights clear trend continuation in industrials, healthcare, financials, small-caps, and select infrastructure names, while mega‑cap tech and semiconductors show breakdowns or exhaustion.
+The portfolio sits entirely in cash ($87,185). Four input sources (risk, technical, macro, thesis) all agree that the regime is **Bull Quiet** with declining rates, strong USD, and risk‑on credit conditions. The macro thesis’s dominant scenario (Grind‑with‑violence, 50%) argues for staying invested but **with gap‑risk awareness** – we should not go all‑in at once, and we should tilt toward quality, momentum, and defensive sectors that align with the current disinflationary rotation.
 
-**Debate & Resolution**:  
-- The risk‑on mandates must be respected—sitting in 100% cash is not an option.  
-- However, the narrow breadth and late‑cycle macro backdrop argue **against** heavy concentration in mega‑cap tech or long‑duration bonds.  
-- I reconcile these by deploying **85% of capital** into diversified, factor‑diversified ETFs and a high‑momentum infrastructure stock, retaining 15% cash to deploy opportunistically on pullbacks or post‑FOMC clarity.  
-- I lean heavily on the Technical Analyst’s trend‑continuation picks (XLI, IWM, XLV, XLF, MTZ) and avoid the identified failed/weak setups (NVDA, META, MSFT, AVGO, ORCL).  
-- TLT is included as a small hedge because rates remain in a declining trend, but position size is limited given hawkish Fed risk.
+- **Technical Analysis** highlights **IWM, XLV, XLI** as clean trend‑continuation setups, with **AAPL/AMZN** offering mean‑reversion entries near the 200‑day moving averages.  
+- **Macro Strategy** confirms the intermarket environment favours US equities (strong dollar), industrials/healthcare, and software‑AI over energy/gold; it also supports a small tactical position in long‑duration bonds (TLT) given declining yields.  
+- **Risk Management** warns of complacent VIX but recommends hedging via options; as the execution layer is equity‑only, we instead keep a substantial cash buffer (~40%) to deploy on pullbacks and use a small TLT stake as a rate‑hedge.
 
-**Sector & Theme Alignment**:  
-- **Industrials (XLI)** – Benefiting from AI‑driven grid & data‑center capex, PMI expansion, and tariff‑driven reshoring.  
-- **Small‑Caps (IWM)** – Broadening market participation; technically strong and less rate‑sensitive than mega‑caps.  
-- **Healthcare (XLV)** – Defensive with AI‑drug‑discovery tailwinds; steady uptrend.  
-- **Financials (XLF)** – Value play; higher rates benefit net interest margins, though hike risk is double‑edged.  
-- **Bonds (TLT)** – Partial hedge against a rapid economic slowdown or dovish Fed surprise; the yield trend is down for now.  
-- **MasTec (MTZ)** – Direct infrastructure play on the AI power build‑out; massive backlog, strong technical momentum, and corroborated by recent news (grid/fiber demand).  
-- **SPY** anchors the core; but I avoid QQQ due to tech breakdowns.
+The mash‑up of these views leads to a balanced deployment: **$50,000 into high‑conviction equity picks, $5,000 into TLT, and $32,000 retained as cash.** This respects the “grind‑with‑violence” thesis while fulfilling the mandate signal (SLEEVE_INVESTED) and avoiding over‑concentration in the overheated semiconductor space.
 
-**Cash (15%)** provides a buffer to buy dips, sell cash‑secured puts (when options layer is active), or defend against a tripwire breach.
+---
 
-All positions are entered at market (notional amounts) given the Bull Quiet regime and positive momentum.
+## Actionable Plan Table
 
-### Action Table
+| Action | Ticker/Asset | Conviction Level | Timeframe | Justification |
+|--------|--------------|------------------|-----------|---------------|
+| **Buy** | **IWM** (Russell 2000) | **High** | Medium-term (weeks–months) | Strong uptrend (above all MAs, RSI 63.4, MACD positive), small‑caps benefiting from disinflation and bull‑quiet regime. Technical analyst’s top pick. |
+| **Buy** | **XLV** (Healthcare) | **High** | Medium-term | Breaking out above all MAs with RSI 65.7 and rising MACD; defensive growth aligns with the macro rotation into quality/dividends and AI‑power theme. |
+| **Buy** | **XLI** (Industrials) | **High** | Medium-term | Clean uptrend, RSI 64.1, MACD accelerating; PMI at 53 (6th month expansion), reshoring theme; strong macro support. |
+| **Buy** | **INTC** (Intel) | **Medium** | Short‑to‑medium term | Foundry turnaround narrative gaining traction; price above all MAs, RSI 63.2, MACD positive. Offers exposure to US‑based chip manufacturing without the overbought semi risk. |
+| **Buy** | **AAPL** (Apple) | **Medium** | Short‑term bounce | Pullback to the 200‑day moving average in a liquid mega‑cap; RSI 46.9, oversold relative to trend. Mean‑reversion candidate with defined risk around the 200‑day. |
+| **Buy** | **AMZN** (Amazon) | **Medium** | Short‑term bounce | Approaching 200‑day support, RSI 44.9; oversold in a high‑quality name. Technical analyst flags it as a safe bounce trade with support at ~$226. |
+| **Buy** | **TLT** (20+ Year Bonds) | **Low** | Tactical (weeks) | Rates declining (TLT above 20/50 MAs, MACD positive). Serves as a small counterweight if the disinflation narrative strengthens or credit uncertainty rises. Not a core holding. |
+| **Hold** | **Cash** | – | Continuous | Maintain ~$32k in cash for opportunities on air pockets (scenario A’s 5‑10% dips) and to meet thesis’s gap‑risk guidelines. |
 
-| Action | Ticker/Asset | Conviction | Timeframe | Justification |
-|--------|--------------|------------|-----------|---------------|
-| Buy | SPY | High | 1–3 months | Broad‑market equity core; regime is risk‑on; SPY trends above all SMAs; captures equity risk premium. |
-| Buy | IWM | Medium | 1–3 months | Small‑cap breakout; broadening participation, strong technicals (RSI 63, MACD bullish), less concentration risk. |
-| Buy | XLI | Medium | 1–3 months | Industrials riding AI infrastructure boom and reshoring; PMI > 50; strong uptrend with MACD support. |
-| Buy | XLV | Medium | 1–3 months | Defensive growth; healthcare in clean uptrend; AI tailwind; resilience if recession fears mount. |
-| Buy | XLF | Medium | 1–3 months | Financials as value play; benefit from steepening curve; technically above all SMAs, MACD positive. |
-| Buy | TLT | Low | 1–3 months | Rates declining regime; bond hedge against economic softening; small position due to hawkish risk. |
-| Buy | MTZ | Medium | 1–3 months | Infrastructure build‑out for AI/energy grid; massive backlog; strong momentum, MACD bullish, not overbought. |
-| Hold | CASH | — | — | 15% reserve for opportunistic deployment, tripwire defense, or FOMC aftermath. |
-
-*All “Buy” convictions are tempered by the late‑cycle macro caution; we will actively monitor tripwires and reduce exposure if credit, volatility, or canary signals flip defensive.*
+---
 
 ## Executable Trades (JSON)
 
