@@ -1,37 +1,27 @@
 [
     {
-        "ticker": "IWM",
+        "ticker": "XLF",
+        "action": "buy",
+        "notional_value": 15000
+    },
+    {
+        "ticker": "XLI",
         "action": "buy",
         "notional_value": 15000
     },
     {
         "ticker": "XLV",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 15000
     },
     {
-        "ticker": "XLI",
+        "ticker": "IWM",
+        "action": "buy",
+        "notional_value": 15000
+    },
+    {
+        "ticker": "GLD",
         "action": "buy",
         "notional_value": 10000
-    },
-    {
-        "ticker": "INTC",
-        "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "AAPL",
-        "action": "buy",
-        "notional_value": 5000
-    },
-    {
-        "ticker": "AMZN",
-        "action": "buy",
-        "notional_value": 5000
-    },
-    {
-        "ticker": "TLT",
-        "action": "buy",
-        "notional_value": 5000
     }
 ]

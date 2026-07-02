@@ -1,35 +1,21 @@
 ---
 title: AlphaOracle Daily Synthesis
-date: "2026-07-01"
+date: "2026-07-02"
 ---
 
-# Portfolio Manager’s Decision – July 1, 2026
+We've integrated all analyst inputs with our quantitative signals and macro thesis. The key points: market regime is **Bull Quiet** with risk-on, declining rates, strong dollar, and weak commodities. The canary is **half‑defensive** (EWA negative), suggesting a measured deployment of capital—not a full risk‑on all‑in. Macro news flow reinforces disinflationary tailwinds (oil falling on Hormuz de‑escalation, soft jobs report reducing rate hike odds) and a sector rotation from mega‑cap tech into cyclicals (financials, industrials, healthcare) and small caps. The risk manager's tail‑hedge ideas (SPY/QQQ puts) are not executable in our equity‑only execution layer; the technical analyst's CSP on CEG is also an options trade. We therefore translate the insights into direct equity ETF purchases that align with the macro tilt while maintaining some cash as a buffer.
 
-## Analysis Summary
+Our allocation: ~$60k into the favored equity sectors (XLF, XLI, XLV, IWM) and ~$10k into gold (GLD) as a strategic hedge, leaving ~$17k in cash. This respects the half‑defensive canary, provides exposure to the broadening market, and preserves dry powder for the still‑live tail risks (AI capex deceleration, potential fast‑crash scenario). Conviction is medium given the half‑defensive signal and the thesis’s “grind‑with‑violence” baseline.
 
-The portfolio sits entirely in cash ($87,185). Four input sources (risk, technical, macro, thesis) all agree that the regime is **Bull Quiet** with declining rates, strong USD, and risk‑on credit conditions. The macro thesis’s dominant scenario (Grind‑with‑violence, 50%) argues for staying invested but **with gap‑risk awareness** – we should not go all‑in at once, and we should tilt toward quality, momentum, and defensive sectors that align with the current disinflationary rotation.
+### Action Plan
 
-- **Technical Analysis** highlights **IWM, XLV, XLI** as clean trend‑continuation setups, with **AAPL/AMZN** offering mean‑reversion entries near the 200‑day moving averages.  
-- **Macro Strategy** confirms the intermarket environment favours US equities (strong dollar), industrials/healthcare, and software‑AI over energy/gold; it also supports a small tactical position in long‑duration bonds (TLT) given declining yields.  
-- **Risk Management** warns of complacent VIX but recommends hedging via options; as the execution layer is equity‑only, we instead keep a substantial cash buffer (~40%) to deploy on pullbacks and use a small TLT stake as a rate‑hedge.
+| Action (Buy/Sell/Hold) | Ticker/Asset | Conviction Level | Timeframe | Justification |
+|------------------------|--------------|------------------|-----------|---------------|
+| Buy | **XLF** | Medium | Medium-term | Financials in strong uptrend (RSI 69), benefiting from yield curve steepening and lower recession odds. Sector rotation out of tech favors value/cyclicals. |
+| Buy | **XLI** | Medium | Medium-term | Industrials supported by AI infrastructure build‑out and value rotation; strong momentum (RSI 60) and positive MACD histogram. |
+| Buy | **XLV** | Medium | Medium-term | Healthcare offers defensive attributes within a risk‑on tape; solid uptrend (RSI 67) and seasonally favorable as a rotation destination when tech leadership narrows. |
+| Buy | **IWM** | Medium | Medium-term | Small caps outperforming as breadth broadens; lower rates and a resilient domestic economy favor the Russell 2000 (RSI 61, above all key SMAs). |
+| Buy | **GLD** | Medium | Medium-term | Gold as a strategic portfolio hedge against inflation persistence and tail risks, despite short‑term weakness; the macro thesis recommends maintaining a modest allocation. |
+| Hold | **Cash** | – | – | Remainder (~17k) held as dry powder; canary half‑defensive and live tripwires warrant keeping some uncommitted capital. |
 
-The mash‑up of these views leads to a balanced deployment: **$50,000 into high‑conviction equity picks, $5,000 into TLT, and $32,000 retained as cash.** This respects the “grind‑with‑violence” thesis while fulfilling the mandate signal (SLEEVE_INVESTED) and avoiding over‑concentration in the overheated semiconductor space.
-
----
-
-## Actionable Plan Table
-
-| Action | Ticker/Asset | Conviction Level | Timeframe | Justification |
-|--------|--------------|------------------|-----------|---------------|
-| **Buy** | **IWM** (Russell 2000) | **High** | Medium-term (weeks–months) | Strong uptrend (above all MAs, RSI 63.4, MACD positive), small‑caps benefiting from disinflation and bull‑quiet regime. Technical analyst’s top pick. |
-| **Buy** | **XLV** (Healthcare) | **High** | Medium-term | Breaking out above all MAs with RSI 65.7 and rising MACD; defensive growth aligns with the macro rotation into quality/dividends and AI‑power theme. |
-| **Buy** | **XLI** (Industrials) | **High** | Medium-term | Clean uptrend, RSI 64.1, MACD accelerating; PMI at 53 (6th month expansion), reshoring theme; strong macro support. |
-| **Buy** | **INTC** (Intel) | **Medium** | Short‑to‑medium term | Foundry turnaround narrative gaining traction; price above all MAs, RSI 63.2, MACD positive. Offers exposure to US‑based chip manufacturing without the overbought semi risk. |
-| **Buy** | **AAPL** (Apple) | **Medium** | Short‑term bounce | Pullback to the 200‑day moving average in a liquid mega‑cap; RSI 46.9, oversold relative to trend. Mean‑reversion candidate with defined risk around the 200‑day. |
-| **Buy** | **AMZN** (Amazon) | **Medium** | Short‑term bounce | Approaching 200‑day support, RSI 44.9; oversold in a high‑quality name. Technical analyst flags it as a safe bounce trade with support at ~$226. |
-| **Buy** | **TLT** (20+ Year Bonds) | **Low** | Tactical (weeks) | Rates declining (TLT above 20/50 MAs, MACD positive). Serves as a small counterweight if the disinflation narrative strengthens or credit uncertainty rises. Not a core holding. |
-| **Hold** | **Cash** | – | Continuous | Maintain ~$32k in cash for opportunities on air pockets (scenario A’s 5‑10% dips) and to meet thesis’s gap‑risk guidelines. |
-
----
-
-## Executable Trades (JSON)
+### Executable Trades (Equity Only)
