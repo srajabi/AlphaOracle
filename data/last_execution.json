@@ -1,33 +1,60 @@
 {
-  "last_updated_utc": "2026-05-25T20:59:28.593178+00:00",
+  "last_updated_utc": "2026-07-02T20:55:37.084965+00:00",
   "error": "",
   "results": [
     {
       "trade": {
         "ticker": "VTI",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 34874.0
       },
-      "status": "skipped",
-      "reason": "No available buying power."
+      "status": "submitted",
+      "order_id": "abb5f9d6-bc60-4ec0-ab2f-4156b6b9c13c"
     },
     {
       "trade": {
-        "ticker": "XLU",
+        "ticker": "XLF",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 13077.0
       },
-      "status": "skipped",
-      "reason": "No available buying power."
+      "status": "submitted",
+      "order_id": "17468a8f-b882-4d17-a4f9-2c1dc3130503"
     },
     {
       "trade": {
-        "ticker": "VGK",
+        "ticker": "XLV",
         "action": "buy",
-        "notional_value": 3000
+        "notional_value": 13077.0
       },
-      "status": "skipped",
-      "reason": "No available buying power."
+      "status": "submitted",
+      "order_id": "fec1d3f7-9ab6-4b67-85de-0ec68e0dcd71"
+    },
+    {
+      "trade": {
+        "ticker": "XLI",
+        "action": "buy",
+        "notional_value": 8718.0
+      },
+      "status": "submitted",
+      "order_id": "3d9fcabf-fbff-4dbf-8fd5-b0ba40a7b71d"
+    },
+    {
+      "trade": {
+        "ticker": "IWM",
+        "action": "buy",
+        "notional_value": 8718.0
+      },
+      "status": "submitted",
+      "order_id": "1dc7542f-b66c-4a5c-910b-da49e2c0f01a"
+    },
+    {
+      "trade": {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 4359.0
+      },
+      "status": "submitted",
+      "order_id": "4648cf64-3d07-4300-aceb-b81c4edb6863"
     }
   ]
 }
