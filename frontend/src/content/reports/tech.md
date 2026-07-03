@@ -1,65 +1,120 @@
 ---
 title: Technical Analyst Report
-date: "2026-07-02"
+date: "2026-07-03"
 ---
 
 ## Model: deepseek/deepseek-v4-flash
 
-**Technical Evaluation of Options Setups (Price Action Only)**  
-*Generated 2026-07-02 20:50 Z – No news / fundamentals considered*
+# Technical Analysis & Trading Ideas — July 3, 2026
+
+**Regime:** Bull Quiet, risk-on, strong dollar, rates declining, commodities weak  
+**Signals:** Slow channel risk_on, credit clear, canary half-defensive (EWA negative only)  
+**Portfolio:** $87,185 cash, 0 exposure  
+
+The mandate signals are invested (P and Y sleeves) but we hold only cash. The following ideas are based **purely on price action, moving averages, RSI, MACD, and Bollinger Bands** — news is ignored.  
 
 ---
 
-### 🔍 Cash-Secured Puts
+## 1. AVGO — Mean Reversion Bounce at 200‑day MA (Highest Confidence)
 
-| Ticker | Strike | DTE | Trend | RSI | MACD | BB | Verdict |
-|--------|--------|-----|-------|-----|------|----|---------|
-| **AMD** | 485 | 15 & 22 | **Strong uptrend** (price > SMA50/SMA200) | 56.5 (neutral) | Hist negative but MACD line still positive | Price above SMA20, near upper band – pullback within trend | **FAVORED** – Trend continuation likely. Premium 3.4–4.9% of strike is attractive. Entry at 485 is 10% below spot, well below SMA20 (518) → safe if trend holds. |
-| **DIA** | 510/512 | 15 & 22 | **Bullish aligned** (SMA20>SMA50>SMA200) | 64.6 (not overbought) | Positive hist | Price near upper band, but pullback to SMA20 (514) possible | **NEUTRAL** – Low premium (<0.4%) makes it inefficient. Good safety but poor use of capital. |
-| **AAPL** | 290/295 | 15 & 22 | Neutral (price at SMA20, SMA50 flat) | 51 | Negative hist | Price mid-band | **AVOID** – No clear edge. Premiums thin (0.4–0.9%). Better to wait for a dip to SMA200 (270). |
-| **AMZN** | 227.5/230 | 15 & 22 | **Weak** (price below SMA50, RSI < 50) | 47.8 | Hist improving but still negative | Price near lower band, below SMA20 | **AVOID** – Downtrend risk. Put strike 227.5 is near BB lower (227.8), but no reversal signal yet. |
-| **AVGO** | 340 | 15 & 22 | **Downtrend** (price below SMA20/50, nearing SMA200) | 42.1 | Negative hist, accelerating | Price below middle band | **SPECULATIVE** – Premium decent (1.8–2.6%) but trend is down. 200-day SMA (360) is nearby; 340 is below that. Could work if support holds, but risk of trend break. |
-| **CEG** | 190 | 15 & 22 | **Deep downtrend** (price below all MAs) | 31.9 (oversold) | Negative | Price below lower band | **AVOID** – Oversold but no trend reversal. Put strike 190 is 20% OTM, premium negligible. Illiquid. |
+| Indicator | Value |
+|-----------|-------|
+| Close | $360.45 |
+| SMA(20) | $383.98 |
+| SMA(50) | $408.89 |
+| **SMA(200)** | **$360.20** (price within $0.25) |
+| RSI(14) | **39.7** (approaching oversold) |
+| MACD hist | -2.42 (negative but contracting) |
+| BB lower | $356.12 (price $360.45, near band) |
 
----
+**Analysis:**  
+- Price is testing the **200‑day simple moving average** for the first time in over a year — a major structural support in a long‑term uptrend.  
+- RSI near 40 suggests selling pressure is exhausting while the underlying trend (SMA200 rising) remains intact.  
+- Bollinger Bands are wide but price is hugging the lower band, indicating a potential snap‑back toward the middle band (~$384).  
+- MACD histogram is deeply negative but the MACD line itself ($-11.55) is still above the signal line? Actually signal is -9.13, MACD below signal → hist negative, but the rate of decline may be slowing.  
 
-### 📈 Long Option Ideas
+**Setup:** **Trend continuation bounce** – wait for a daily close above $365 to confirm support.  
+**Trade Idea:**  
+- **Buy stock** at ~$360 (allocation: $10,000) with stop at $350 (below 200‑day).  
+- **Alternative:** Sell cash‑secured put (as in chain) – AVGO 7/24 $340 put for **~$8.73 mid** (~2.6% yield in 21 days).  
 
-| Ticker | Direction | Strike | DTE | Trend | RSI | MACD | BB | Verdict |
-|--------|-----------|--------|-----|-------|-----|------|----|---------|
-| **GLD** | **Call** | 390 | 15 & 22 | **Downtrend** (price < all MAs) | 35.2 (oversold) | Negative hist | Price near lower band | **AVOID** – Buying calls against a downtrend. Oversold could bounce, but trend is your enemy. |
-| **GLD** | **Put** | 367/365 | 15 & 22 | **Downtrend** | 35.2 (oversold) | Negative | Price near lower band | **CONDITIONAL** – If you expect continuation, puts work. But oversold makes this a late entry. Only if you see breakdown below $358 (BB lower). |
-| **QQQ** | **Call** | 734 | 15 & 22 | Neutral (price at SMA20) | 52.6 | Hist negative (bearish cross) | Mid-band | **AVOID** – No momentum. Bearish MACD cross suggests further consolidation or pullback. |
-| **QQQ** | **Put** | 691 | 15 & 22 | Neutral | 52.6 | Bearish cross | Mid-band | **SPECULATIVE** – Could catch a rotation out of tech. 691 is 4.7% OTM, with 15 DTE delta ~0.25. Low cost but low probability. |
-| **SPY** | **Call** | 767 | 15 & 22 | **Uptrend** (price > all MAs) | 54.9 | Hist negative (minor cross) | Near upper band | **AVOID** – Low premium ($0.46 for 15 DTE), high strike. Not enough edge. |
-| **SPY** | **Put** | 722 | 15 & 22 | **Uptrend** | 54.9 | Hist negative | Upper half | **NEUTRAL** – A hedge if you own SPY. But no strong bearish signal. Premium $1.86 (0.25% of OI). Not actionable alone. |
-
----
-
-### 📊 Summary Table of Setups
-
-| Setup Type | Ticker | Quality | Reason |
-|------------|--------|---------|--------|
-| **Mean Reversion Bounce** | None clear | ❌ | No stock is deeply oversold in a confirmed uptrend (except CEG but trend is too damaged). |
-| **Trend Continuation** | **AMD (CSP)** | ✅ | Strong uptrend, healthy pullback, juicy premium. Best cash-secured put candidate. |
-| **Trend Continuation** | DIA (CSP) | ⚠️ | Safe but premium too low to justify. |
-| **Failed Setup** | AAPL, AMZN, AVGO (CSP) | ❌ | AAPL/AMZN lack direction; AVGO downtrend too risky. |
-| **Volatility Contraction Squeeze** | None | ❌ | No tight Bollinger Bands with low RSI/neutral MACD. GLD has wide bands, not squeezing. |
-| **Hedge / Tail Risk** | GLD put, QQQ put | ⚠️ | GLD put if you expect breakdown below $358; QQQ put if tech selloff deepens. Not primary trades. |
+**Risk:** Failure at 200‑day could accelerate sell‑off to $330 (next support from Aug 2024).  
 
 ---
 
-### 🎯 Recommended Action
+## 2. QQQ — Trend Continuation Pullback to SMA50 Support
 
-**Execute cash-secured put on AMD** – the only high-confidence setup:
+| Indicator | Value |
+|-----------|-------|
+| Close | $712.60 |
+| SMA(20) | $720.67 (price below) |
+| **SMA(50)** | **$708.51** (price above) |
+| SMA(200) | $633.49 |
+| RSI(14) | 48.25 (neutral) |
+| MACD hist | -2.12 (negative, but MACD line still above zero) |
+| BB lower | $693.86 |
+| BB upper | $747.48 |
 
-- **AMD Jul17 485 Put** (1 contract)  
-  - Mid price: $16.28 → Credit: $1,628  
-  - Cash required: $48,500  
-  - Yield: 3.36% over 15 days  
-  - Technical support: 485 is 10% below spot, well below SMA20 (518) and recent pullback lows near 500. Probability of assignment low if trend holds.
-  - If assigned, cost basis = 485 - 16.28 = 468.72, which is below SMA20 and near SMA50 (455) – excellent entry.
+**Analysis:**  
+- Price pulled back from recent highs (mid‑720s) to test the **50‑day SMA** — a standard healthy correction within a strong uptrend (SMA200 well below).  
+- RSI near 50 is not oversold, but the MACD has already started flattening (histogram →0 from below).  
+- The Bollinger middle band (~720) is the first target, upper band at 747.  
+- Volume on this pullback is not spiking (no panic), suggesting orderly profit‑taking.  
 
-Alternatively, **AMD Jul24 485 Put** for higher premium ($2,385, 4.92% yield) if willing to commit longer.
+**Setup:** **Trend continuation** – buy on confirmation of SMA50 hold.  
+**Trade Idea:**  
+- **Long call** (from chain): QQQ 7/24 $734 call for **$8.045** (break‑even $742.05, 4 months out? No, 21 DTE). Alternatively 7/17 $734 call for **$5.095**.  
+- **Preferred:** 7/24 $734 call – gives more time for recovery.  
+- **Allocation:** 2 contracts × $804.50 = ~$1,609 (2% of cash).  
 
-**Avoid all other setups** due to weak technical alignment or poor risk/reward. Keep remaining cash for better opportunities or deploy into core equity ETF positions per mandate (slow channel = risk_on).
+**Risk:** If QQQs break below $708 (SMA50) and hold, rally fails. Stop on close below $700.  
+
+---
+
+## 3. XLE — Oversold Mean Reversion in Energy
+
+| Indicator | Value |
+|-----------|-------|
+| Close | $53.22 |
+| SMA(20) | $55.13 (price below) |
+| SMA(50) | $56.65 (price below) |
+| **SMA(200)** | **$50.65** (price above) |
+| RSI(14) | **37.97** (oversold territory) |
+| MACD hist | -0.16 (negative but narrowing) |
+| BB lower | $51.51 |
+| BB upper | $58.76 |
+
+**Analysis:**  
+- Energy has sold off sharply (4th weekly loss) but remains **above its 200‑day SMA** ($50.65) – the long‑term trend is still up.  
+- RSI below 40 is in oversold territory; previous instances (e.g., Jan 2026, Mar 2026) led to 5–8% bounces within two weeks.  
+- MACD histogram is already turning up from an extreme low – momentum divergence forming.  
+- The lower Bollinger Band ($51.51) is not far below, but price is above it, suggesting the band is still expanding and may act as floor.  
+
+**Setup:** **Mean reversion bounce** – XLE likely to revert toward SMA20 ($55.13) in 1–2 weeks.  
+**Trade Idea:**  
+- **Buy XLE** (ETF) at $53.22, stop at $50.40 (below 200‑day).  
+- **Target:** $56.50 (SMA50).  
+- **Allocation:** $8,000 (9% of cash).  
+
+**Risk:** Continued weakness if oil breaks lower (Strait of Hormuz recovery ongoing). But price action suggests selling exhaustion.  
+
+---
+
+## Summary of Recommendations (all based on price action only)
+
+| Ticker | Setup | Entry | Stop | Target | Allocation | Capital At Risk |
+|--------|-------|-------|------|--------|------------|-----------------|
+| AVGO | 200‑day bounce | $360.50 stock | $349 | $384 | $10,000 | ~3.2% |
+| QQQ | Trend continuation | Buy 7/24 $734 call @ $8.05 | – | $750+ | 2 contracts ($1,609) | 1.8% |
+| XLE | Oversold bounce | $53.22 stock | $50.40 | $56.50 | $8,000 | ~3.2% |
+
+**Total exposure:** ~$19,600 (22.5% of cash) – conservative start aligned with risk‑on regime.  
+**Remaining cash:** $67,585 (77.5%) – ample for further pullbacks or emergency defense.  
+
+### Why these over other candidates?
+- **NVDA** also near 200‑day, but RSI 41 vs AVGO’s 39.7 and AVGO’s 200‑day is cleaner (exact touch).  
+- **CEG/ORCL** are too oversold in stronger downtrends – risk of continued slide before bounce.  
+- **IWM/XLF** are not oversold – no mean reversion edge.  
+- The long call on QQQ and XLE direct buy complement each other: tech bounce plus energy reversal cover two different risk factors.  
+
+**Next steps:** Monitor daily closes. If QQQ breaks below $702 (2% below entry), close the call for loss. If AVGO closes below $355, exit stock. If XLE closes below $51.50, exit.

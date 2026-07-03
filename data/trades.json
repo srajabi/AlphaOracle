@@ -1,32 +1,37 @@
 [
     {
-        "ticker": "VTI",
+        "ticker": "TLT",
         "action": "buy",
-        "notional_value": 34874.0
+        "notional_value": 17437
     },
     {
-        "ticker": "XLF",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 13077.0
+        "notional_value": 13078
     },
     {
         "ticker": "XLV",
         "action": "buy",
-        "notional_value": 13077.0
+        "notional_value": 6103
     },
     {
-        "ticker": "XLI",
+        "ticker": "SCHD",
         "action": "buy",
-        "notional_value": 8718.0
-    },
-    {
-        "ticker": "IWM",
-        "action": "buy",
-        "notional_value": 8718.0
+        "notional_value": 8719
     },
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 4359.0
+        "notional_value": 4359
+    },
+    {
+        "ticker": "DIA",
+        "action": "buy",
+        "notional_value": 8719
+    },
+    {
+        "ticker": "AVGO",
+        "action": "buy",
+        "notional_value": 1744
     }
 ]
