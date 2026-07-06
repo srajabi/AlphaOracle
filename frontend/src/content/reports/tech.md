@@ -1,120 +1,95 @@
 ---
 title: Technical Analyst Report
-date: "2026-07-03"
+date: "2026-07-06"
 ---
 
 ## Model: deepseek/deepseek-v4-flash
 
-# Technical Analysis & Trading Ideas — July 3, 2026
-
-**Regime:** Bull Quiet, risk-on, strong dollar, rates declining, commodities weak  
-**Signals:** Slow channel risk_on, credit clear, canary half-defensive (EWA negative only)  
-**Portfolio:** $87,185 cash, 0 exposure  
-
-The mandate signals are invested (P and Y sleeves) but we hold only cash. The following ideas are based **purely on price action, moving averages, RSI, MACD, and Bollinger Bands** — news is ignored.  
+Based on a strict price-action-only evaluation of the provided technical data, I recommend the following four trades. Each setup is analyzed using moving averages, RSI, MACD, and Bollinger Bands, disregarding all macro news and fundamentals. The current regime is **Bull Quiet** with risk‑on signals across the board, so positions are aligned with the dominant uptrend in US equities while using cash‑secured puts to enter desired names at discounts.
 
 ---
 
-## 1. AVGO — Mean Reversion Bounce at 200‑day MA (Highest Confidence)
+### Trade 1: Sell to Open (STO) AAPL Jul 24 295 Put
+| Field | Value |
+|-------|-------|
+| **Action** | Sell 1 AAPL 2026-07-24 295 Put |
+| **Credit** | $1.64 / share → $164 total |
+| **Collateral** | $29,500 (margin requirement) |
+| **DTE** | 18 days |
 
-| Indicator | Value |
-|-----------|-------|
-| Close | $360.45 |
-| SMA(20) | $383.98 |
-| SMA(50) | $408.89 |
-| **SMA(200)** | **$360.20** (price within $0.25) |
-| RSI(14) | **39.7** (approaching oversold) |
-| MACD hist | -2.42 (negative but contracting) |
-| BB lower | $356.12 (price $360.45, near band) |
-
-**Analysis:**  
-- Price is testing the **200‑day simple moving average** for the first time in over a year — a major structural support in a long‑term uptrend.  
-- RSI near 40 suggests selling pressure is exhausting while the underlying trend (SMA200 rising) remains intact.  
-- Bollinger Bands are wide but price is hugging the lower band, indicating a potential snap‑back toward the middle band (~$384).  
-- MACD histogram is deeply negative but the MACD line itself ($-11.55) is still above the signal line? Actually signal is -9.13, MACD below signal → hist negative, but the rate of decline may be slowing.  
-
-**Setup:** **Trend continuation bounce** – wait for a daily close above $365 to confirm support.  
-**Trade Idea:**  
-- **Buy stock** at ~$360 (allocation: $10,000) with stop at $350 (below 200‑day).  
-- **Alternative:** Sell cash‑secured put (as in chain) – AVGO 7/24 $340 put for **~$8.73 mid** (~2.6% yield in 21 days).  
-
-**Risk:** Failure at 200‑day could accelerate sell‑off to $330 (next support from Aug 2024).  
+**Technical Rationale:**
+- **Trend & MA:** AAPL closed at 308.63, well above its SMA20 (294.80), SMA50 (293.46), and SMA200 (270.32). The price sits ~4.7% above the SMA20, indicating a healthy uptrend.
+- **RSI:** 60.28 – bullish but not overbought; room for further upside.
+- **MACD:** Histogram is slightly positive (+0.255), confirming short‑term momentum.
+- **Bollinger Bands:** Price is just below the upper band (311.87), but the band is not excessively steep; this is a normal extension in a strong trend.
+- **Strike Selection:** The 295 strike is **6% below spot** and lies just below the SMA20 (294.80). In an uptrend, the SMA20 often acts as dynamic support. The put is safely OTM and offers a 1.3% yield on risk (premium / strike × 100 / DTE annualised ~11%).
+- **Risk:** If AAPL breaks below SMA20, assignment becomes likely. However, stop‑loss can be managed by closing the put if price closes below 295. Given the trend structure, probability of success favors the seller.
 
 ---
 
-## 2. QQQ — Trend Continuation Pullback to SMA50 Support
+### Trade 2: STO AMZN Jul 24 230 Put
+| Field | Value |
+|-------|-------|
+| **Action** | Sell 1 AMZN 2026-07-24 230 Put |
+| **Credit** | $2.40 / share → $240 total |
+| **Collateral** | $23,000 |
+| **DTE** | 18 days |
 
-| Indicator | Value |
-|-----------|-------|
-| Close | $712.60 |
-| SMA(20) | $720.67 (price below) |
-| **SMA(50)** | **$708.51** (price above) |
-| SMA(200) | $633.49 |
-| RSI(14) | 48.25 (neutral) |
-| MACD hist | -2.12 (negative, but MACD line still above zero) |
-| BB lower | $693.86 |
-| BB upper | $747.48 |
-
-**Analysis:**  
-- Price pulled back from recent highs (mid‑720s) to test the **50‑day SMA** — a standard healthy correction within a strong uptrend (SMA200 well below).  
-- RSI near 50 is not oversold, but the MACD has already started flattening (histogram →0 from below).  
-- The Bollinger middle band (~720) is the first target, upper band at 747.  
-- Volume on this pullback is not spiking (no panic), suggesting orderly profit‑taking.  
-
-**Setup:** **Trend continuation** – buy on confirmation of SMA50 hold.  
-**Trade Idea:**  
-- **Long call** (from chain): QQQ 7/24 $734 call for **$8.045** (break‑even $742.05, 4 months out? No, 21 DTE). Alternatively 7/17 $734 call for **$5.095**.  
-- **Preferred:** 7/24 $734 call – gives more time for recovery.  
-- **Allocation:** 2 contracts × $804.50 = ~$1,609 (2% of cash).  
-
-**Risk:** If QQQs break below $708 (SMA50) and hold, rally fails. Stop on close below $700.  
+**Technical Rationale:**
+- **Trend & MA:** AMZN closed at 242.67, above SMA20 (240.25) and SMA200 (232.98), but below SMA50 (255.42). The price is at a short‑term inflection – above the 20‑day but below the 50‑day. This creates a range‑bound zone.
+- **RSI:** 48.70 – neutral, not extreme.
+- **MACD:** Histogram positive (+0.266), suggesting a potential bounce off the SMA20 support.
+- **Bollinger Bands:** Price is near the middle of the band (bandwidth ~8.5%), not stretched.
+- **Strike Selection:** The 230 strike is **5.2% below spot** and sits below both SMA20 and SMA200. It provides a strong cushion as the long‑term SMA200 (232.98) is only ~$3 above the strike. The put is deeply OTM and offers a 2.4% yield on risk over 18 days (~48% annualised).
+- **Risk:** A break below the SMA200 would challenge the entire uptrend. But with the broader market in risk‑on mode and AMZN’s SMA20 still rising, a quick fall below 230 is unlikely without a macro shock.
 
 ---
 
-## 3. XLE — Oversold Mean Reversion in Energy
+### Trade 3: STO CRWD Jul 31 190 Put
+| Field | Value |
+|-------|-------|
+| **Action** | Sell 1 CRWD 2026-07-31 190 Put |
+| **Credit** | $7.70 / share → $770 total |
+| **Collateral** | $19,000 |
+| **DTE** | 25 days |
 
-| Indicator | Value |
-|-----------|-------|
-| Close | $53.22 |
-| SMA(20) | $55.13 (price below) |
-| SMA(50) | $56.65 (price below) |
-| **SMA(200)** | **$50.65** (price above) |
-| RSI(14) | **37.97** (oversold territory) |
-| MACD hist | -0.16 (negative but narrowing) |
-| BB lower | $51.51 |
-| BB upper | $58.76 |
-
-**Analysis:**  
-- Energy has sold off sharply (4th weekly loss) but remains **above its 200‑day SMA** ($50.65) – the long‑term trend is still up.  
-- RSI below 40 is in oversold territory; previous instances (e.g., Jan 2026, Mar 2026) led to 5–8% bounces within two weeks.  
-- MACD histogram is already turning up from an extreme low – momentum divergence forming.  
-- The lower Bollinger Band ($51.51) is not far below, but price is above it, suggesting the band is still expanding and may act as floor.  
-
-**Setup:** **Mean reversion bounce** – XLE likely to revert toward SMA20 ($55.13) in 1–2 weeks.  
-**Trade Idea:**  
-- **Buy XLE** (ETF) at $53.22, stop at $50.40 (below 200‑day).  
-- **Target:** $56.50 (SMA50).  
-- **Allocation:** $8,000 (9% of cash).  
-
-**Risk:** Continued weakness if oil breaks lower (Strait of Hormuz recovery ongoing). But price action suggests selling exhaustion.  
+**Technical Rationale:**
+- **Trend & MA:** CRWD closed at 193.98, significantly above its SMA20 (174.00), SMA50 (155.16), and SMA200 (125.64). This is a textbook **strong uptrend** with price well above all moving averages.
+- **RSI:** 71.92 – overbought, which can be a warning for a short‑term pullback. However, in strong trends, RSI can stay elevated for extended periods.
+- **MACD:** Histogram strongly positive (+1.18), acceleration still intact.
+- **Bollinger Bands:** Price has recently touched the upper band (192.95) and broken slightly above – a sign of momentum, not necessarily exhaustion.
+- **Strike Selection:** The 190 put is **only 2% below spot**, but notice that the SMA20 (174) is **$16 below** the strike. Even a sharp pullback would likely find support near the SMA20, far above the 190 strike. The put is very close to the money, explaining the higher premium. The elevated IV (60%) contributes to an attractive credit.
+- **Risk:** A sudden reversal could cause assignment. However, the distance to the SMA20 provides a wide safety margin. If CRWD closes below 190, we could buy to close for a small loss (or take shares at a discount relative to current price). This trade is aggressive but fits the momentum profile.
 
 ---
 
-## Summary of Recommendations (all based on price action only)
+### Trade 4: Buy to Open (BTO) SPY Jul 24 773 Call
+| Field | Value |
+|-------|-------|
+| **Action** | Buy 1 SPY 2026-07-24 773 Call |
+| **Debit** | $0.90 / share → $90 total |
+| **DTE** | 18 days |
 
-| Ticker | Setup | Entry | Stop | Target | Allocation | Capital At Risk |
-|--------|-------|-------|------|--------|------------|-----------------|
-| AVGO | 200‑day bounce | $360.50 stock | $349 | $384 | $10,000 | ~3.2% |
-| QQQ | Trend continuation | Buy 7/24 $734 call @ $8.05 | – | $750+ | 2 contracts ($1,609) | 1.8% |
-| XLE | Oversold bounce | $53.22 stock | $50.40 | $56.50 | $8,000 | ~3.2% |
+**Technical Rationale:**
+- **Trend & MA:** SPY closed at 744.78, above SMA20 (740.12), SMA50 (735.91), and SMA200 (688.74). It is in a **strong uptrend** with price making higher highs.
+- **RSI:** 54.13 – comfortably bullish, no overbought concern.
+- **MACD:** Histogram slightly negative (-0.23), but the MACD line is still above the signal line (barely). This is a minor hesitation, not a reversal.
+- **Bollinger Bands:** Price is in the upper half of the bands (BB middle ~740, upper ~756). No extreme extension; room to run.
+- **Strike Selection:** The 773 call is **3.8% OTM** and has very low implied vol (10.4%), making it cheap. A strong week could easily push SPY to 773, giving a leveraged return. The small capital outlay allows us to maintain high cash reserves for the put trades.
+- **Risk:** Time decay will erode premium quickly if SPY stays flat. However, with bullish seasonality and a calm VIX (16.1), a gradual drift higher is the base case.
 
-**Total exposure:** ~$19,600 (22.5% of cash) – conservative start aligned with risk‑on regime.  
-**Remaining cash:** $67,585 (77.5%) – ample for further pullbacks or emergency defense.  
+---
 
-### Why these over other candidates?
-- **NVDA** also near 200‑day, but RSI 41 vs AVGO’s 39.7 and AVGO’s 200‑day is cleaner (exact touch).  
-- **CEG/ORCL** are too oversold in stronger downtrends – risk of continued slide before bounce.  
-- **IWM/XLF** are not oversold – no mean reversion edge.  
-- The long call on QQQ and XLE direct buy complement each other: tech bounce plus energy reversal cover two different risk factors.  
+### Summary of Executions
 
-**Next steps:** Monitor daily closes. If QQQ breaks below $702 (2% below entry), close the call for loss. If AVGO closes below $355, exit stock. If XLE closes below $51.50, exit.
+| # | Ticker | Strategy | Expiration | Strike | Action | Quantity | Price | Net Cash Impact |
+|---|--------|----------|------------|--------|--------|---------|-------|-----------------|
+| 1 | AAPL | Cash‑secured put | 2026-07-24 | 295 | STO | 1 | 1.64 | +$164 |
+| 2 | AMZN | Cash‑secured put | 2026-07-24 | 230 | STO | 1 | 2.40 | +$240 |
+| 3 | CRWD | Cash‑secured put | 2026-07-31 | 190 | STO | 1 | 7.70 | +$770 |
+| 4 | SPY | Long call | 2026-07-24 | 773 | BTO | 1 | 0.90 | −$90 |
+
+**Total Net Credit:** $1,084  
+**Total Collateral Held:** $71,500 (covered by cash balance of $87,185)
+
+All trades are consistent with the **Bull Quiet** regime and the risk‑on mandate from the slow channel. No positions are taken against the overall trend, and all are sized to survive a normal pullback while collecting premium.

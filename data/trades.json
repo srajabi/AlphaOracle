@@ -1,37 +1,27 @@
 [
     {
-        "ticker": "TLT",
+        "ticker": "SPY",
         "action": "buy",
-        "notional_value": 17437
+        "notional_value": 25000
     },
     {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 13078
-    },
-    {
-        "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 6103
-    },
-    {
-        "ticker": "SCHD",
-        "action": "buy",
-        "notional_value": 8719
+        "notional_value": 10000
     },
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 4359
+        "notional_value": 7500
     },
     {
-        "ticker": "DIA",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 8719
+        "notional_value": 5000
     },
     {
-        "ticker": "AVGO",
+        "ticker": "MTZ",
         "action": "buy",
-        "notional_value": 1744
+        "notional_value": 7500
     }
 ]
