@@ -3,31 +3,28 @@ title: Thesis Sentinel Daily Brief
 date: "2026-07-07"
 ---
 
-1. **Tripwire status**
+**Tripwire status** (2026-07-07)
 
-| Tripwire | Today's Reading | Status |
-|---|---|---|
-| Carry unwind (VIX/VIX3M > 1.0) | VIX 15.57 / VIX3M 19.04 = 0.818 | CLEAR |
-| Credit cracks (HYG/LQD 63d rel‑mom < –2%) | +1.05% (0.0105) | CLEAR |
-| Breadth break (canary EWA & TLT both negative) | EWA +1.13 %, TLT +0.24 % – both positive | CLEAR |
-| Trend break (SPY monthly close < 200‑dma) | SPY 751.28 vs 200‑dma 689.23 (not month‑end) | CLEAR |
-| Oil shock (XLE momentum vs SPY sustained leadership) | XLE momentum –8.91 % (strong negative) | CLEAR |
-| AI capex turn (hyperscaler guidance cut) | No new negative guidance | CLEAR |
-| Carry stress (USDJPY rapid < 140) | Not directly measured; no news of yen stress | CLEAR (assumed) |
+| Tripwire | Signal | Threshold | Today | Status |
+|---|---|---|---|---|
+| Carry unwind | ^VIX/^VIX3M | > 1.0 | 0.818 (15.57/19.04) | CLEAR |
+| Credit cracks | HYG/LQD 63d rel-mom | < –2% | +1.05% | CLEAR |
+| Breadth break | EWA & TLT canary | both negative | EWA +1.1%, TLT +0.2% | CLEAR |
+| Trend break | SPY vs 200d MA (month-end) | monthly close < 200d | SPY 751.3, 200d 689.2 (Jun 30 close well above) | CLEAR |
+| Oil shock | XLE sustained leadership vs SPY | consistent outperformance | XLE RSI 37.6, weak vs SPY; oil jump today not yet leadership | CLEAR |
+| AI capex turn | hyperscaler FY27 guidance cut | any cut | no news | CLEAR |
+| Carry stress | USDJPY rapid < 140 | < 140 | no data; carry unwind ratio suggests no forced deleveraging yet | CLEAR |
 
-All tripwires remain CLEAR.
+**Marker watch** (falsifiable markers from thesis, 2026-07-12 review)
 
-2. **Marker watch**
-- **BoJ / carry unwind**: No BoJ news today; USDJPY stress absent.
-- **CPI**: No new CPI print, but NY Fed survey shows consumers’ near‑term inflation expectations rose — sentiment only, not a tripwire trigger.
-- **SpaceX vs. $135**: No mention of the IPO price level; stock is being added to Nasdaq‑100.
-- **Hyperscaler capex guidance**: No cuts reported; Amazon issues $25 bn bonds for AI infrastructure — more spending, not less.
-- **Hormuz**: Multiple reports of fresh attacks on commercial vessels near the Strait; oil prices ticked up. No full‑closure marker, so not yet escalating to scenario‑C mechanics.
+- **BoJ June meeting (guidance/USDJPY)**: no new news; meeting already passed, no hawkish surprise evident in calm VIX term structure.  
+- **CPI (May–Jul)**: no new CPI prints; next release later in July.  
+- **SpaceX vs $135 issue price**: SPCX trading ~$151 midday (down 5.6% today), still above $135; no break.  
+- **Hyperscaler Q2 capex guidance**: no earnings yet; no cuts flagged.  
+- **Hormuz closure**: tanker attacks + US revoked Iran oil waiver; oil prices jumped but no full strait closure; shipping still moving.
 
-3. **Delta**
-- **Geopolitics**: Renewed Strait of Hormuz attacks mark an uptick in tension, but VIX stays low (~15.6) and all rule‑based signals remain risk‑on.  
-- **Technology sector**: Memory/storage sell‑off after Samsung earnings (MU –7 % early, WDC –7 %, STX –5 %) while the broader chip space also weakens. This is a sentiment rotation, not a tripwire trigger.  
-- **Contradiction**: Headlines scream risk (war, chip rout), but rule‑based signals (credit, canary, VIX term structure) all stay on “clear/risk‑on.” Rules govern positioning, so no override.
+**Delta**  
+Geopolitical risk flared: Iran tanker attacks and US revocation of oil waiver drove crude higher (XLE +? but still weak trend) and triggered a semiconductor‑led equity sell‑off (NVDA –2.2%, MU –7%, XLK –? ). Despite the equity dip and oil spike, all rule‑based signals remain risk‑on: canary on, credit clear, VIX/VIX3M backwardation absent, dollar strong. No tripwire fired; positioning unchanged.
 
-4. **Scenario pressure**
-Today’s evidence reinforces **Scenario A (Grind‑with‑violence)**: the market absorbs a chip sell‑off and fresh Hormuz strikes without breaking any tripwires. The memory rout hints at a potential AI‑capex sentiment shift (Scenario‑B flavour), but no concrete guidance cut has materialised. Geopolitical noise edges toward Scenario‑C tail risk, yet the VIX/VIX3M ratio remains well below backwardation. Official weights (A 50 %, B 30 %, C 20 %) are unchanged; we simply note that the violence within the grind is becoming more visible. The rule‑based systems are positioned risk‑on and would only de‑risk if a tripwire fires.
+**Scenario pressure**  
+Today’s pattern – a sudden, violent but contained equity air pocket on geopolitics, with low VIX and no credit or breadth deterioration – is textbook Scenario A (“grind‑with‑violence”). The 50% probability scenario continues to describe the tape: repeated 5–10% wobbles within a range‑bound, narrow‑leadership market. No evidence today pushes toward B or C; rule‑based systems hold risk‑on. Scenario weights remain as stated (A 50%, B 30%, C 20%) pending monthly review.
