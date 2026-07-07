@@ -2,21 +2,41 @@
     {
         "ticker": "SPY",
         "action": "buy",
-        "notional_value": 40000
+        "notional_value": 23540
     },
     {
         "ticker": "QQQ",
         "action": "buy",
-        "notional_value": 20000
+        "notional_value": 11770
+    },
+    {
+        "ticker": "IWM",
+        "action": "buy",
+        "notional_value": 7847
+    },
+    {
+        "ticker": "VXUS",
+        "action": "buy",
+        "notional_value": 7847
     },
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 7847
     },
     {
-        "ticker": "XLU",
+        "ticker": "SCHD",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 7847
+    },
+    {
+        "ticker": "XLE",
+        "action": "buy",
+        "notional_value": 3923
+    },
+    {
+        "ticker": "NVDA",
+        "action": "buy",
+        "notional_value": 3923
     }
 ]

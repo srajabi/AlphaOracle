@@ -1,117 +1,108 @@
 ---
 title: Technical Analyst Report
-date: "2026-07-06"
+date: "2026-07-07"
 ---
 
 ## Model: deepseek/deepseek-v4-flash
 
-Based on **price action only** (news excluded), I evaluate each options idea against the current technical landscape: a **Bull Quiet regime** with strong risk-on, equities above moving averages (SPY VWAP-style), declining rates (TLT neutral), a strong dollar, and weak commodities. The core technical picture is one of **trend continuation with fading momentum** — SPY and QQQ are above all major SMAs but with negative MACD histograms and RSI near 50, suggesting consolidation rather than breakout. Gold (GLD) is in a clear downtrend. The tech-heavy QQQ is showing early signs of a potential bounce after last week’s selloff (price near SMA20, RSI ~48, MACD hist turning less negative).
+## Price Action Technical Analysis – 2026-07-07
 
-Below I assess each idea purely on technical merit.
+### Overall Market
 
----
+| Ticker | Close | Trend vs SMA20/50/200 | RSI | MACD Hist | BB Position |
+|--------|-------|------------------------|-----|-----------|-------------|
+| SPY | 751.28 | Above all | 58.1 | +0.35 | Upper half, not at band |
+| QQQ | 722.82 | Above SMA20/SMA200, ~SMA50 | 51.7 | -1.81 | Middle band |
+| IWM | 298.90 | Above all | 60.0 | -0.09 | Upper half |
+| ^VIX | 15.57 | Below all (15.6 < 18.1) | 42.6 | -0.26 | Lower band area |
 
-## Cash-Secured Puts (Sell Put to Enter)
-
-### AAPL (CSP @ $290 / $295)
-| Technical Snapshot | |
-|-------------------|---|
-| Price vs SMAs     | $312.66 > SMA20 ($294.8) > SMA50 ($293.5) > SMA200 ($270.3) |
-| RSI 14            | 60.3 (neutral zone) |
-| MACD Hist         | +0.26 (barely positive, flattening) |
-| Bollinger Bands   | Price near upper band ($311.9), well above lower band ($277.7) |
-
-Price has rallied into BB upper – not a high-probability spot to sell puts because a pullback toward SMA20 (~295) is plausible. The $290 and $295 strikes are **near SMA20/SMA50 support**, which is defensible. However, the stock is extended; the CSP would likely capture a smaller premium if it stays OTM, but the risk of assignment is moderate given uptrend. **Verdict: Acceptable but not ideal** — better to wait for a retracement to SMA20 before deploying.
-
-### AMD (CSP @ $520)
-| | |
-|---|---|
-| Price vs SMAs | $552.05 > SMA20 ($516.8) > SMA50 ($460.4) > SMA200 ($278.2) |
-| RSI | 52.3 (neutral) |
-| MACD Hist | -3.48 (negative, but narrowing) |
-| BB | Price near middle of wide bands ($456–$577) |
-
-Price is between SMA20 and SMA50, with RSI neutral. The stock is in a strong uptrend but recently pulled back from highs. The $520 strike is **just below SMA20** ($517) and above SMA50 ($460) – a reasonable support area. The CSP is slightly OTM (6% below spot). Given the trend, this is a decent risk/reward setup if you want to enter AMD. **Verdict: Favorable** — technicals support a bounce from SMA20.
-
-### AMZN (CSP @ $230 / $225)
-| | |
-|---|---|
-| Price vs SMAs | $244.16 > SMA20 ($240.2) > SMA50 ($255.4) → price **below SMA50** |
-| RSI | 48.7 (neutral leaning weak) |
-| MACD Hist | +0.92 (positive, improving) |
-| BB | Price near middle band; lower band at $228 |
-
-AMZN is trading **below its SMA50** – a bearish intermediate signal. However, it is above SMA20 and the MACD histogram is positive, suggesting a possible short-term bounce. The $230 strike is near the March low/Bollinger lower band. A CSP at $230 is a bet on mean reversion, but the stock is in a minor downtrend since mid-May. The risk is that it falls further. **Verdict: Marginal** — only if you believe the bounce continues; otherwise wait for it to reclaim SMA50.
-
-### AVGO (CSP @ $350)
-| | |
-|---|---|
-| Price vs SMAs | $373.9 < SMA20 ($384) < SMA50 ($409) and near SMA200 ($360) |
-| RSI | 39.7 (oversold) |
-| MACD Hist | -2.42 (negative, accelerating) |
-| BB | Price near lower band ($356) |
-
-AVGO is in a **clear short-term downtrend**, oversold, and testing SMA200. MACD is negative but the histogram has been declining for weeks – no reversal signal yet. The $350 strike is below SMA200 ($360) – could act as support, but the trend is down. Selling a put here is a contrarian mean-reversion play. The high IV (50%) makes the premium attractive. **Verdict: High risk / high reward** — acceptable if you have a strong conviction that SMA200 will hold; otherwise avoid until a clear bounce.
-
-### CEG, CRWD (CSPs)
-Both have strikes far below current price (deep OTM) with very low premiums. Not worth tying up capital for minimal return unless you specifically want to buy at those levels. **Verdict: Skip** — opportunity cost vs better setups.
+**Interpretation:** Broad equity uptrend intact but intermediate momentum (QQQ MACD) fading. VIX low and falling confirms risk-on. No immediate reversal catalyst from price alone; market is grinding higher with slowing momentum.
 
 ---
 
-## Long Options (Directional)
+### Mean Reversion Bounce Candidates (RSI < 45, price near lower BB or support)
 
-### GLD (Long Call @ $393 & Long Put @ $370)
-| | |
-|---|---|
-| Price vs SMAs | $382.13 < SMA20 ($383.5) < SMA50 ($406) < SMA200 ($410) |
-| RSI | 42.0 (weak) |
-| MACD Hist | +0.18 (barely positive) |
-| BB | Price near middle, lower $359, upper $408 |
+| Ticker | Price | SMA20 | SMA50 | SMA200 | RSI | BB Lower | MACD Hist | Signal |
+|--------|-------|-------|-------|--------|-----|----------|-----------|--------|
+| **ORCL** | 143.76 | 173.46 | 185.50 | 198.27 | **30.1** | 125.17 | -4.18 | Oversold, but still far from lower BB (price 12% above). Falling knife – wait for basing pattern. |
+| **NVDA** | 195.55 | 202.33 | 209.66 | 191.12 | **41.9** | 190.64 | -0.84 | Price just above 200-dma and near lower BB. Oversold short-term bounce setup. |
+| **XLE** | 53.13 | 54.87 | 56.59 | 50.70 | **37.6** | 51.46 | -0.12 | Below all short MAs, testing near lower BB. Oversold energy bounce play. |
+| **CEG** | 245.87 | 257.36 | 277.86 | 315.71 | **39.3** | 234.08 | -1.67 | Well below all MAs, near lower BB. Oversold but trend is clearly down. |
+| **NFLX** | 76.02 | 76.99 | 83.77 | 95.88 | **43.8** | 69.03 | +0.50 | Below all MAs, but MACD hist turned positive. Bounce start? Needs confirmation above SMA20. |
+| **GLD** | 382.13 | 382.02 | 405.31 | 410.11 | **45.3** | 361.24 | +1.08 | Price at SMA20, MACD hist positive. Potential support test – watch for follow-through. |
 
-Gold is in a **downtrend** – price below all MAs. The MACD histogram is barely positive after a long period of negative, which could indicate early stabilization. The long call is at $393 (2.8% OTM) – requires a sharp reversal. The long put at $370 (3.2% OTM) aligns with the downtrend. Technicals favor the **put** as a continuation play. However, with the dollar strong and commodities weak, the trend is down. **Verdict: Put is aligned with price action, call is speculative.**
-
-### QQQ (Long Call @ $745 & Long Put @ $701)
-| | |
-|---|---|
-| Price vs SMAs | $722.8 > SMA20 ($720.7) > SMA50 ($708.5) > SMA200 ($633.5) |
-| RSI | 48.3 (neutral) |
-| MACD Hist | -2.12 (negative, but narrowing after two weeks of decline) |
-| BB | Price near middle band; upper $747, lower $694 |
-
-QQQ is in a **uptrend** but with fading momentum. The recent pullback has price at SMA20 and RSI just below 50 – a potential bounce zone. The MACD histogram is still negative but the slope is improving. The long call at $745 (3.1% OTM) is a bet on a bounce; the long put at $701 (3.0% OTM) is a bet on continued weakness. Based on the uptrend structure, the **call is more aligned** with the primary trend, but the risk is that momentum continues to fade. The **put** could work if the consolidation turns into a deeper correction. Given the Bull Quiet regime, calls have a higher probability but lower edge after a pullback. **Verdict: Slight preference for calls, but high uncertainty** – consider a put spread or wait for clearer confirmation.
-
-### SPY (Long Call @ $774 & Long Put @ $729)
-| | |
-|---|---|
-| Price vs SMAs | $751.3 > SMA20 ($740) > SMA50 ($736) > SMA200 ($689) |
-| RSI | 54.1 (neutral-positive) |
-| MACD Hist | -0.23 (negative, flat) |
-| BB | Price near upper band ($755.7); lower $724.6 |
-
-SPY is in a **strong uptrend**, above all MAs. However, it is near the upper BB, and momentum is almost zero. This suggests the rally is mature. The long call at $774 (3.0% OTM) is a stretch – requires a breakout to new highs. The long put at $729 (3.0% OTM) would require a significant reversal. Given the Bull Quiet regime, a breakout is possible but not high probability. The put could be a hedge, but the trend is up. **Verdict: Neither is compelling based purely on price action** – the uptrend is intact but exhausted; wait for pullback to SMA50 before buying calls.
+**Top mean reversion picks:** **NVDA** (closest to lower BB + 200-dma support), **XLE** (oversold + energy sector may react to supply fears, but we ignore news – pure price setup). **GLD** has a MACD bullish crossover developing.
 
 ---
 
-## Summary & Recommendations
+### Trend Continuation Setups (Strong uptrend, RSI 50-65)
 
-| Strategy | Ticker | Evaluation | Action |
-|----------|--------|------------|--------|
-| CSP | AAPL ($290) | Acceptable but extended | Hold off; wait for pullback |
-| CSP | AAPL ($295) | Similar to above | Hold off |
-| CSP | AMD ($520) | **Favorable** – near support in uptrend | **Consider** |
-| CSP | AMZN ($230/$225) | Marginal – below SMA50 | Avoid unless bounce confirmed |
-| CSP | AVGO ($350) | **High risk/mean reversion** | Consider if you expect SMA200 to hold |
-| CSP | CEG/CRWD | Deep OTM, low premium | Skip |
-| Long Call | GLD ($393) | Against downtrend | Avoid |
-| Long Put | GLD ($370) | **Aligned with trend** | Consider as continuation |
-| Long Call | QQQ ($745) | Mixed – uptrend but no momentum | Small position only |
-| Long Put | QQQ ($701) | Contrarian to uptrend | Skip unless you expect breakdown |
-| Long Call | SPY ($774) | Trend exhausted | Avoid |
-| Long Put | SPY ($729) | Counter-trend | Only as hedge |
+| Ticker | Price | SMA20 | SMA50 | RSI | MACD Hist | BB Position |
+|--------|-------|-------|-------|-----|-----------|-------------|
+| **TSM** | 451.79 | 437.81 | 420.14 | 54.7 | -0.74 | Above all MAs, near upper BB (472.58). Pullback to SMA20 would be buyable. |
+| **AAPL** | 312.66 | 294.87 | 294.25 | 62.4 | +1.46 | Above upper BB (312.23) – extended. Risk of mean reversion pullback. |
+| **CRWD** | 199.38 | 174.98 | 156.81 | **74.6** | +1.62 | Above upper BB (196.83) – overbought. Momentum strong but likely due for consolidation. |
+| **XLF** | 56.14 | 53.54 | 52.25 | **76.1** | +0.21 | Above upper BB (55.71) – overbought. Trend strong but caution. |
+| **IWM** | 298.90 | 293.42 | 286.55 | 60.0 | -0.09 | In upper BB half, not extended. Healthy uptrend. |
+| **DIA** | 530.09 | 516.18 | 505.40 | **71.1** | +0.67 | Near upper BB (530.76). Bullish but nearing overextension. |
 
-**Best setups (price action only):**  
-1. **AMD CSP $520** – clean support at SMA20, uptrend intact.  
-2. **AVGO CSP $350** – contrarian but at a key moving average with high premium.  
-3. **GLD Put $370** – continuation of downtrend with improving MACD.
+**Continuation plays (buy the dip):** TSM pullback to SMA20 (~438) is a classic entry. IWM uptrend intact, MACD neutral. Overbought names (AAPL, CRWD, XLF) are likely to stall or pull back – not fresh entries.
 
-The overall message: the market is in a quiet, mature uptrend. Cash-secured puts on stocks still in uptrends (AMD, possibly AAPL on pullback) are preferred over long calls, which are expensive given low volatility. For hedges, GLD puts make sense.
+---
+
+### Failed / Weak Breakouts or Breakdowns
+
+| Ticker | Pattern | Technical Clues |
+|--------|---------|-----------------|
+| **MSFT** | Below all MAs | RSI 48.2, MACD hist +0.18 but price below SMA20/50/200. Weak relative to market. |
+| **ORCL** | Breakdown below all MAs | 30% off SMA20, RSI 30. Oversold but no bottoming pattern. Avoid until basing. |
+| **CEG** | Sustained breakdown | Below all MAs, RSI 39, MACD negative. Trend is down. Mean reversion possible but not confirmed. |
+| **NFLX** | Near multi-month lows | Below all MAs, RSI 43.8, MACD hist positive but price not yet reversing. Watch for close above SMA20. |
+
+---
+
+### Volatility Contraction / Squeeze Setups
+
+- **SPY** Bollinger Band width: (754.8 – 725.0) / 751.3 = 4.0%. Not particularly narrow. No squeeze.
+- **QQQ** width: (745.2 – 694.5) / 722.8 = 7.0% – wide.
+- **GLD** width: (402.8 – 361.2) / 382.1 = 10.9% – wide.
+- **TLT** width: (87.4 – 84.2) / 85.4 = 3.8% – moderate.
+
+No clear volatility contraction squeeze in major ETFs. Individual names like **AVGO** (376.8, 358.5–405.0 band) or **MU** (984.8, 848.5–1236.6) have wide bands.
+
+---
+
+### Options-Specific Technical Observations
+
+From the options chain, the system generated cash-secured put ideas on:
+- **AAPL** ($295 strike, 5.8% below spot)
+- **AMD** ($490 strike, 5.8% below spot)
+- **AMZN** ($230 strike, 6.4% below spot)
+- **AVGO** ($350 strike, 5.7% below spot)
+- **CEG** ($235 strike, 2.6% below spot)
+- **CRWD** ($152.5 strike, 23.1% below spot – very OTM)
+
+Technical compatibility:
+- **AAPL**: Overbought, near upper BB. Selling a moderately OTM put is reasonable to wait for a pullback.
+- **AMD**: RSI 57, price above SMA20, uptrend intact. Put-selling at -5.8% is a good entry.
+- **AMZN**: Neutral RSI, near SMA20. Put at -6.4% is sensible.
+- **AVGO**: RSI 45 (neutral-bearish), MACD negative. Stock is weak – put selling at -5.7% might be testing support. Risk of further decline.
+- **CEG**: Already oversold. Selling a put at -4.7% could get assigned if downtrend continues. Better to wait for bounce confirmation.
+- **CRWD**: Overbought, violent rally. Put at -23% is extremely far – unlikely to be tested near-term, but premium is low.
+
+Long option ideas (from chain): GLD calls/puts, QQQ calls/puts, SPY calls/puts are classic directional plays. Given the market uptrend with fading momentum, a **slightly OTM SPY put** (e.g., $726 strike) as a tactical hedge against a 3%+ pullback could be considered – low premium ($2.15 for 17 DTE) and VIX is low.
+
+---
+
+### Summary of Top Price-Based Setups
+
+| Setup Type | Ticker | Trade | Confidence |
+|------------|--------|-------|------------|
+| Mean reversion bounce | **NVDA** | Cash-secured put $185 strike (7% below) or buy call spread | Medium |
+| Mean reversion bounce | **XLE** | Cash-secured put $50 strike (6% below) | Medium |
+| Trend continuation dip | **TSM** | Buy at SMA20 pullback ~$438 | High (provided trend holds) |
+| Trend continuation | **IWM** | Hold long; sell OTM call if overbought | Medium |
+| Overbought pullback | **CRWD** | Sell call spread or take profits | High |
+| Tactical hedge | **SPY** | Buy slightly OTM put (strike $726) | Low (VWAP) but cheap insurance |
+
+*All analysis ignores news/macro – purely technical.*
