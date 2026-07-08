@@ -1,17 +1,22 @@
 [
     {
-        "ticker": "XLV",
+        "ticker": "UUP",
         "action": "buy",
-        "notional_value": 17437
+        "notional_value": 10000
     },
     {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 17437
+        "notional_value": 10000
     },
     {
-        "ticker": "XLF",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 17437
+        "notional_value": 5000
+    },
+    {
+        "ticker": "CRWD",
+        "action": "buy",
+        "notional_value": 5000
     }
 ]
