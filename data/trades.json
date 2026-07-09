@@ -1,8 +1,8 @@
 [
     {
-        "ticker": "UUP",
+        "ticker": "XLV",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 30000
     },
     {
         "ticker": "XLU",
@@ -12,11 +12,11 @@
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 10000
     },
     {
-        "ticker": "CRWD",
+        "ticker": "XLF",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 10000
     }
 ]
