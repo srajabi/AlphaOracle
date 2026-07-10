@@ -1,39 +1,32 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-07-09"
+date: "2026-07-10"
 ---
 
-**Thesis Sentinel – Daily Brief (2026-07-09)**  
+1. **Tripwire status** (rule‑based readings only)
 
-### 1. Tripwire Status
+| Tripwire | Signal | Trigger | Today's Reading | Status |
+|---|---|---|---|---|
+| Carry unwind | ^VIX/^VIX3M 5‑d median | > 1.0 | 0.866 | CLEAR |
+| Credit cracks | HYG/LQD 63‑d rel‑mom | < −2% | +0.0133 | CLEAR |
+| Breadth break | Canary (EWA,TLT) | both negative | EWA +1.96%, TLT −0.33% (TLT only) | CLEAR |
+| Trend break | SPY monthly close vs 200‑d SMA | close < 200‑d | SPY 751.71, SMA200 690.62 → not a close | CLEAR |
+| Oil shock | XLE momentum vs SPY | sustained leadership | XLE mom −3.789 (negative), no leadership | CLEAR |
+| AI capex turn | Hyperscaler FY27 capex guidance | any cut | No cut signals in today’s news | CLEAR |
+| Carry stress | USDJPY < 140 | rapid move | Not directly measured; UUP up, no panic signal | CLEAR |
 
-| Tripwire | Signal & Threshold | Today’s Reading | Status |
-|----------|-------------------|-----------------|--------|
-| Carry unwind (VIX/VIX3M) | ^VIX / ^VIX3M > 1.0 | 16.9 / 19.04 = 0.887 | CLEAR |
-| Credit cracks | HYG/LQD 63d rel‑mom < –2% | +1.46% | CLEAR |
-| Breadth break | Canary both negative (EWA,TLT) | TLT negative, EWA positive (+2.4%) | CLEAR |
-| Trend break | SPY monthly close < 200d SMA | SPY 745.4, 200d 690.2; not month‑end yet | CLEAR |
-| Oil shock | XLE momentum sustained leadership | XLE momentum –4.0%, SPY positive | CLEAR |
-| AI capex turn | Hyperscaler FY27 capex cut announced | No announcement | CLEAR |
-| Carry stress | USDJPY < 140 (rapid move) | UUP strong (dollar up); no panic in yen pairs | CLEAR |
+2. **Marker watch**  
+- **BoJ June meeting**: No fresh BoJ headlines; hike passed – guidance not in today’s flow.  
+- **CPI**: No new CPI print today.  
+- **SpaceX vs $135**: No mention; stock not in news.  
+- **Hyperscaler capex**: No capex‑cut news; debt‑load and spending stories are expansions, not cuts.  
+- **Hormuz**: “Strait of Hormuz traffic plunges as US, Iran resume fighting” tops energy news – escalation alive, but not a full closure.
 
-### 2. Marker Watch
-- **BoJ June meeting (hawkish + USDJPY <145):** meeting occurred; no fresh news; no immediate carry‑unwind panic.  
-- **CPI (consecutive <3.5%):** May CPI 4.2% – condition not met; June print not yet released.  
-- **SpaceX IPO vs $135:** IPO priced at $135, first‑day close $160.95; no indication of breaking issue price.  
-- **Hyperscaler capex cuts:** no Q2 earnings or guidance cuts in today’s news.  
-- **Hormuz (full closure week+):** tanker attacks continue, traffic slowed but not fully halted; Brent spiked 5% then eased.
+3. **Delta**  
+- US‑Iran fighting restarted (Hormuz traffic plunge), yet risk‑on signals held: VIX 15.84 (falling), SPY above 200‑d, credit rel‑mom positive.  
+- Canary remained half‑defensive (TLT negative, EWA positive), unchanged from prior state.  
+- Dollar strong, rates rising, gold/silver still in downtrends – no regime shift.  
+- Markets clearly pricing geopolitical tension as noise, not systemic threat, despite the fresh attack headlines.
 
-### 3. Delta (what changed materially)
-- Risk appetite rebounded sharply: chip stocks (NVDA, MU, AMD) roared back, QQQ up ~1.2%, despite fresh Iran‑US strikes.  
-- Oil gave back some gains; markets ignored Trump’s “ceasefire over” rhetoric, focusing on chip sector strength and SK Hynix IPO enthusiasm.  
-- VIX fell to 16.9 (from ~mid‑17s) – fear gauge compressed, reinforcing Bull Quiet regime.  
-- Rule‑based signals (canary, credit, VIX term structure) all remained CLEAR. Headlines suggest geopolitical risk, but signal states show no systemic stress.
-
-### 4. Scenario Pressure
-Today’s evidence leans heavily toward **Scenario A (Grind‑with‑violence)**.  
-- All tripwires CLEAR; canary only half‑defensive; credit still strong.  
-- Markets absorbed war headlines without panic, behaving as if the conflict is contained – a classic “grind” dynamic.  
-- The absence of any trigger (BoJ aftershock, credit crack, or breadth collapse) keeps B/C probabilities dormant.  
-
-No change to official weights (A 50%, B 30%, C 20%). The next monthly review (July 12) will assess whether the post‑BoJ USDJPY behavior merits a C adjustment, but for today the positioning environment remains risk‑on with gap‑awareness.
+4. **Scenario pressure**  
+Today’s mix reinforces **Scenario A (grind‑with‑violence)** – equity strength and low vol despite renewed Hormuz fighting show abundant risk appetite. The C‑tail (fast crash) is live because of the conflict, but tripwires are mute: VIX/VIX3M stays below backwardation, credit spreads firm, canary only partially defensive. Without a tripwire fire, the evidence does not move us toward B or C. Official scenario weights remain unchanged (monthly review only). Note: headlines and signals disagree (geopolitical noise vs risk‑on readings); we obey the signals.
