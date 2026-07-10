@@ -3,30 +3,32 @@ title: Thesis Sentinel Daily Brief
 date: "2026-07-10"
 ---
 
-1. **Tripwire status** (rule‑based readings only)
+1. **Tripwire status**
 
-| Tripwire | Signal | Trigger | Today's Reading | Status |
-|---|---|---|---|---|
-| Carry unwind | ^VIX/^VIX3M 5‑d median | > 1.0 | 0.866 | CLEAR |
-| Credit cracks | HYG/LQD 63‑d rel‑mom | < −2% | +0.0133 | CLEAR |
-| Breadth break | Canary (EWA,TLT) | both negative | EWA +1.96%, TLT −0.33% (TLT only) | CLEAR |
-| Trend break | SPY monthly close vs 200‑d SMA | close < 200‑d | SPY 751.71, SMA200 690.62 → not a close | CLEAR |
-| Oil shock | XLE momentum vs SPY | sustained leadership | XLE mom −3.789 (negative), no leadership | CLEAR |
-| AI capex turn | Hyperscaler FY27 capex guidance | any cut | No cut signals in today’s news | CLEAR |
-| Carry stress | USDJPY < 140 | rapid move | Not directly measured; UUP up, no panic signal | CLEAR |
+| Tripwire | Today’s reading | State |
+|---|---|---|
+| VIX/VIX3M > 1.0 (backwardation) | VIX 15.84 / VIX3M 19.04 = 0.832 (5d median 0.866) | CLEAR |
+| HYG/LQD 63d rel-mom < –2% | +1.47% (credit signal: clear) | CLEAR |
+| Canary breadth both negative | EWA +1.96%, TLT –0.18% (only TLT negative) | CLEAR |
+| SPY monthly close < 200d SMA | SPY 751.71 vs 200d 690.63 (today, not month-end) | CLEAR |
+| XLE momentum vs SPY sustained leadership | XLE signal negative, SPY strong uptrend | CLEAR |
+| AI capex turn (hyperscaler guidance) | No new guidance; capex narratives still positive (SK Hynix IPO, AI infra debt) | CLEAR |
+| USDJPY rapid < 140 | No data; dollar slips, but no yen-specific stress flagged | CLEAR |
 
-2. **Marker watch**  
-- **BoJ June meeting**: No fresh BoJ headlines; hike passed – guidance not in today’s flow.  
-- **CPI**: No new CPI print today.  
-- **SpaceX vs $135**: No mention; stock not in news.  
-- **Hyperscaler capex**: No capex‑cut news; debt‑load and spending stories are expansions, not cuts.  
-- **Hormuz**: “Strait of Hormuz traffic plunges as US, Iran resume fighting” tops energy news – escalation alive, but not a full closure.
+*All seven tripwires remain CLEAR. The fast-channel VIX/VIX3M reading and credit signal both confirm a risk-on environment. Canary is half-defensive, not full defensive.*
 
-3. **Delta**  
-- US‑Iran fighting restarted (Hormuz traffic plunge), yet risk‑on signals held: VIX 15.84 (falling), SPY above 200‑d, credit rel‑mom positive.  
-- Canary remained half‑defensive (TLT negative, EWA positive), unchanged from prior state.  
-- Dollar strong, rates rising, gold/silver still in downtrends – no regime shift.  
-- Markets clearly pricing geopolitical tension as noise, not systemic threat, despite the fresh attack headlines.
+2. **Marker watch**
 
-4. **Scenario pressure**  
-Today’s mix reinforces **Scenario A (grind‑with‑violence)** – equity strength and low vol despite renewed Hormuz fighting show abundant risk appetite. The C‑tail (fast crash) is live because of the conflict, but tripwires are mute: VIX/VIX3M stays below backwardation, credit spreads firm, canary only partially defensive. Without a tripwire fire, the evidence does not move us toward B or C. Official scenario weights remain unchanged (monthly review only). Note: headlines and signals disagree (geopolitical noise vs risk‑on readings); we obey the signals.
+- **BoJ guidance (June 15‑16)** – past; no further yen-carry tremor headlines.
+- **CPI** – no new print; next release later in July.
+- **SpaceX vs $135** – SpaceX shares tumbled today (news items mention ‘SpaceX stock tumbles’); first‑month behaviour mixed, not a clean break of issue price yet.
+- **Hyperscaler capex** – no guidance cuts; SK Hynix’s $26.5B US debut and Big Tech’s $350B debt load confirm AI infrastructure spend remains elevated.
+- **Hormuz** – dual headlines: traffic plunges but oil retreats on shipping‑deal hopes and US‑Iran peace talks set to continue; no full closure.
+
+3. **Delta**
+
+Today’s main shift is a tentative easing in Middle East tensions. Oil prices fell on renewed peace‑talk hopes (“Crude Oil Prices Retreat as US‑Iran Peace Talks Set to Continue”) while the earlier escalation (Trump declaring ceasefire ‘over’) faded. This removed a short‑term risk‑off catalyst, allowing equities (SPY, QQQ) to edge higher and the VIX to fall to 15.84 – the lowest in weeks. The SK Hynix IPO also provided a positive AI sentiment lift. Consequently, the market’s risk‑on posture firmed, and the fast‑channel VIX metric slipped further away from backwardation.
+
+4. **Scenario pressure**
+
+With all tripwires clear and the geopolitical temperature slightly lower, today’s evidence leans toward **Scenario A (Grind‑with‑violence, 50%)**. The market absorbed the week’s war rhetoric and a record IPO without a tripwire firing – a sign of abundant risk appetite (consistent with A). No new inflation or capex shock pushes B or C. That said, the tails are still live: Hormuz peace talks are fragile, the carry‑unwind trigger (USDJPY) hasn’t been activated but remains a latent risk, and the canary’s TLT negativity hints at underlying rate stress. Official scenario weights are unchanged pending monthly review. For now, the defensive postures mandated by the rule‑based signals (e.g., half‑defensive canary, no fast‑channel brake) correctly reflect the grind‑with‑violence baseline. We simply note that a sudden deterioration in peace talks or a hawkish BoJ surprise would quickly re‑open scenarios B/C.
