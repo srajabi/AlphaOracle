@@ -1,65 +1,85 @@
 ---
 title: Technical Analyst Report
-date: "2026-07-10"
+date: "2026-07-13"
 ---
 
 ## Model: deepseek/deepseek-v4-flash
 
-## Technical Evaluation of Option Setups (Price Action Only)
+## Price Action–Only Options Trade Evaluation
 
-**Assumption:** Current regime is Bull Quiet with risk-on. All analysis below ignores macro/news and uses only closing prices, SMAs, RSI, MACD, and Bollinger Bands from the provided data.
+*Generated 2026-07-13 | Based solely on technical data (close, SMAs, RSI, MACD, Bollinger Bands) – news and macro commentary are ignored.*  
 
----
-
-### Cash-Secured Puts (Willingness to Own at Strike)
-
-| Ticker | Strike | Current Price | SMA20 / 50 / 200 | RSI | MACD Hist | BB Position | Assessment |
-|--------|--------|--------------|------------------|-----|-----------|-------------|------------|
-| **AAPL** | 297.5 (14d) / 295 (21d) | $316.22 | 296.9 / 296.8 / 271.8 | 63.9 | +2.73 | Near upper BB | **Neutral-leaning.** Price extended above SMAs (strong uptrend) but RSI > 60 and price at upper BB suggests near-term overbought. Put strikes ~6% below spot offer modest cushion, but a mean reversion pullback could temporarily test those levels. Low premium relative to risk. Not ideal for high-probability income. |
-| **AMD** | 525 (14d / 21d) | $546.72 (data close) | 525.7 / 477.2 / 285.7 | 55.9 | -4.55 | Near upper BB | **Cautious.** Price above SMA20 but MACD histogram negative indicates momentum fading. The 525 strike is near SMA20 support. If that holds, put works; if momentum continues to soften, price could slip below 525. High IV (0.74) makes premium attractive but risk elevated. Trend continuation possible but not confirmed. |
-| **AMZN** | 230 (14d / 21d) | $247.04 | 239.8 / 254.3 / 233.2 | 52.7 | +1.81 | Near upper BB | **Favorable.** Price is between SMA20 and SMA50 – not extended. MACD histogram just turned positive. The 230 strike is 7% below spot and below SMA20, providing good downside buffer. RSI neutral, no divergence. A decent cash-secured put opportunity for income with controlled risk. |
-| **AVGO** | 375 (14d / 21d) | $401.11 | 381.2 / 406.0 / 360.9 | 54.1 | +2.46 | Near upper BB | **Moderate.** Price above SMA20 but still below SMA50 (406). MACD histogram positive but near zero. The 375 strike is below SMA20 support. If price can reclaim SMA50, put works; if it fails, further downside possible. Risk/reward acceptable but not high-conviction. |
-| **CEG** | 215 (14d) / 190 (21d) | $250.74 | 256.3 / 274.2 / 314.5 | 44.6 | -0.64 | Below all MA, near BB lower | **Unfavorable.** Stock in clear downtrend (price below all SMAs). RSI below 50, MACD negative. Selling deep OTM puts (14-24% below spot) offers small premium for large tail risk. Not a high-probability trade given trend; a bounce could still leave puts safe but the risk of further decline is material. |
-| **CRWD** | 180 (14d) / 175 (21d) | $198.40 | 179.5 / 161.8 / 127.2 | 68.5 | +0.98 | Near upper BB | **Favorable.** Strong uptrend with price well above all SMAs. RSI high but not extreme (68.5). MACD bullish. Strikes 9-12% below spot provide adequate buffer. Potential mean reversion pullback could test the 180 area but trend support is strong. Good risk/reward for income. |
+### Regime Context (from Intermarket Signals)
+- **Bull Quiet** – equities in strong uptrend, VIX low (15.0), dollar strong, rates rising.
+- **Technical backdrop**: SPY above all major MAs, RSI ~60, broad market momentum positive but narrowing.  
+- **Key risk**: TLT in downtrend (rising yields) – a headwind for growth stocks but tailwind for value.
 
 ---
 
-### Long Options (Directional Plays)
+## Cash-Secured Puts (Sell Put – Premium Collection / Entry Below Spot)
 
-| Ticker | Strategy | Strike | Current Price | Technical Condition | Assessment |
-|--------|----------|--------|--------------|---------------------|------------|
-| **GLD** | Long Call | 388 (14d/21d) | $378.18 | Downtrend (price below all SMAs), RSI 43.7, MACD hist +1.67 (turning up). BB lower at $361. | **Neutral-to-bearish for calls.** The downtrend is intact; MACD hist bump could signal a bounce, but low RSI and position below all MAs suggest any rally may be shallow. Long call requires price to break above SMA20 (379) and then strike 388. Low probability in current trend. |
-| **GLD** | Long Put | 365/366 (14d/21d) | $378.18 | Same downtrend, RSI < 50. BB lower at $361. | **Moderately favorable.** Put strikes ~3% OTM. If downtrend continues, price could reach BB lower (361) within expiry. But MACD hist turning up suggests risk of a bounce. Better suited for a short-term bearish play with tight stop. Not a high-conviction trade. |
-| **QQQ** | Long Call | 747 (14d/21d) | $723.28 | Uptrend (price above SMA20/50), RSI 52.2, MACD hist -1.85 (slowing momentum). BB upper $745. | **Unfavorable.** Momentum is decelerating; MACD histogram negative. Price near upper BB. Call requires a 3.3% move up in 14-21 days – possible but against the momentum signal. Failed continuation pattern risk. |
-| **QQQ** | Long Put | 704 (14d/21d) | $723.28 | Slowing uptrend, RSI neutral, MACD hist negative. BB middle around $720. | **Moderately favorable.** Put strike 2.7% OTM. If momentum continues to fade, a pullback to 704 is plausible within 2-3 weeks. RSI and MACD support a short-term corrective move. Risk of a trend resumption, but risk/reward better than calls. |
-| **SPY** | Long Call | 778 (14d/21d) | $751.71 | Uptrend, RSI 57.6, MACD hist +0.60 (positive but flattening). BB upper $757. | **Unfavorable.** Price already near upper BB; call strike 3.6% higher requires significant acceleration. MACD histogram positive but narrow – suggesting limited upside momentum. Low probability. |
-| **SPY** | Long Put | 732 (14d/21d) | $751.71 | Uptrend strong, RSI above 50, MACD positive. | **Contrarian.** Put strike 2.6% OTM. Fighting the primary trend. Only justified if clear reversal signals emerge (currently none). Not recommended. |
+| Ticker | Strike | Expiry | Technical Verdict | Rationale (Price-Only) |
+|--------|--------|--------|-------------------|------------------------|
+| **AAPL** | 295 | Jul 31 (18dte) | ✅ **Trend Continuation** | Price 315.3 > SMA20 (298) > SMA50 (297) > SMA200 (272) – strong uptrend. RSI 63, not overbought. 295 is 6.7% below spot, well below SMA20 support. High probability of OTM expiration. |
+| **AAPL** | 295 | Aug 7 (25dte) | ✅ **Trend Continuation** | Same setup, extra time gives slightly higher premium but same technical strength. |
+| **AMD** | 505 | Jul 31 (18dte) | ⚠️ **Failed Setup (Bearish MACD divergence)** | Price 557.9 > SMA20 (531) > SMA50 (482) – uptrend intact. However, MACD histogram turned negative (bearish cross). RSI 57, neutral. 505 is ~9.5% below spot, below SMA20, but weakening momentum increases assignment risk. Still acceptable if willing to hold through a pullback. |
+| **AMD** | 505 | Aug 7 (25dte) | ⚠️ Same as above | Wider time horizon partially mitigates short-term momentum weakness. |
+| **AMZN** | 235 | Jul 31 (18dte) | ✅ **Mean Reversion Support** | Price 245.3 between SMA20 (240) and SMA50 (254) – consolidation after prior dip. SMA200 at 233 provides firm support. Put strike 235 sits just above SMA200 – a classic bounce zone. RSI 51, MACD histogram positive. High chance of staying OTM. |
+| **AMZN** | 235 | Aug 7 (25dte) | ✅ Same as above | |
+| **AVGO** | 365 | Jul 31 (18dte) | ✅ **Trend Continuation (Shallow Pullback)** | Price 399.9 > SMA20 (382) > SMA200 (361) but below SMA50 (406). Slight downtrend in medium-term, but long-term uptrend intact. Strike 365 is above SMA200 (361) – logical support. RSI 54, MACD histogram positive (bullish cross forming). Low probability of assignment. |
+| **AVGO** | 365 | Aug 7 (25dte) | ✅ Same | |
+| **CEG** | 240 | Jul 31 (18dte) | ❌ **Trend Failure (Downtrend)** | Price 251.4 below SMA20 (257), SMA50 (273), SMA200 (314) – clear downtrend. RSI 45, MACD negative. Strike 240 is still above the nearest support (SMA200 far below). Catching a falling knife – high assignment risk. |
+| **CEG** | 180 | Aug 7 (25dte) | ✅ **Deep OTM / Waste of Capital** | Strike 180 is 28% below spot – very safe but low premium ($114). Capital inefficient compared to other opportunities. Mechanically sound but not recommended. |
+| **CRWD** | 175 | Jul 31 (18dte) | ✅ **Trend Continuation** | Price 187.2 > SMA20 (181) > SMA50 (163) – strong uptrend. RSI 57, MACD positive. Strike 175 is below SMA20 but above SMA50, in established support zone. Solid put sale. |
+| **CRWD** | 152.5 | Aug 7 (25dte) | ✅ **Deep OTM / Safe but Premium-Thin** | 19% below spot, essentially risk-free but $151 credit per contract – capital inefficient. |
+
+**Summary**: 8 of 11 cash-secured put ideas are technically attractive. Avoid CEG (downtrend) and consider the deep OTM CRWD only if looking for absolute safety over return.
 
 ---
 
-### Summary of System Signals
+## Long Calls (Directional Upside)
 
-- **Slow Channel:** Risk-On (SPY > 200d SMA by 10%)
-- **Fast Channel:** Clear (VIX/VIX3M median normal)
-- **Credit:** Clear (no stress)
-- **Canary:** Half-Defensive (only TLT negative momentum – bond rates rising)
+| Ticker | Strike | Expiry | Technical Verdict | Rationale (Price-Only) |
+|--------|--------|--------|-------------------|------------------------|
+| **GLD** | 377 | Jul 31 (18dte) | ❌ **Failed Setup (Downtrend)** | GLD 377.0 below SMA20 (379), SMA50 (401), SMA200 (411) – persistent downtrend. RSI 43 (not oversold). MACD negative. Betting on a quick bounce against the trend – low probability. |
+| **GLD** | 380 | Aug 7 (25dte) | ❌ Same | Slightly more time, but trend remains bearish. |
+| **QQQ** | 735 | Jul 31 (18dte) | ⚠️ **Mean Reversion Bounce?** | QQQ 725.5 > SMA20 (722) > SMA50 (715) – uptrend intact but stalling. RSI 53, MACD histogram negative (bearish momentum). Call at 735 is 1.3% OTM. Needs reacceleration of trend – possible but not confirmed. |
+| **QQQ** | 735 | Aug 7 (25dte) | ⚠️ Same | More time allows for resolution, but trend momentum is neutral. |
+| **SPY** | 772 | Jul 31 (18dte) | ✅ **Trend Continuation** | SPY 755.0 > SMA20 (683) > SMA50 (680) – strong uptrend. RSI 60, MACD positive. 772 is 2.3% OTM – reasonable extension target if trend persists. Volatility low (IV ~12%), cost of premium modest. |
+| **SPY** | 772 | Aug 7 (25dte) | ✅ Same | Slightly more premium, same high-conviction uptrend. |
 
-The combined mandate is **fully invested** in risk assets. The technical backdrop supports the bull trend but with caution on gold and bonds, and fading momentum in QQQ.
+**Summary**: SPY calls are the best directional upside bets (trend continuation). QQQ calls are marginal – better to wait for momentum to strengthen. GLD calls are to be avoided (downtrend).
 
-### Recommended Actions Based on Price Action
+---
 
-| Ticker | Strategy | Recommendation | Rationale |
-|--------|----------|---------------|-----------|
-| AAPL | CSP 295/297.5 | **Skip** | Extended, low premium, mean reversion risk. |
-| AMD | CSP 525 | **Skip** | Momentum fading, poor risk/reward. |
-| AMZN | CSP 230 | **Execute** | Good technical setup (neutral RSI, MACD turning, strike below support). |
-| AVGO | CSP 375 | **Skip** | Below SMA50, uncertain trend. |
-| CEG | CSP 190-215 | **Skip** | Strong downtrend; deep OTM puts not worth the risk. |
-| CRWD | CSP 175-180 | **Execute** | Trend strong, adequate buffer, premium acceptable. |
-| GLD | Long Call | **Skip** | Downtrend dominant. |
-| GLD | Long Put | **Monitor** | Possible short-term downside but MACD turning up reduces conviction. |
-| QQQ | Long Put 704 | **Consider** (small size) | Fading momentum supports a near-term pullback. |
-| QQQ | Long Call | **Skip** | Momentum declining. |
-| SPY | Any Long Option | **Skip** | Trend up but strikes too far OTM; poor risk/reward. |
+## Long Puts (Directional Downside / Hedge)
 
-Given the all-cash portfolio and risk-on regime, **AMZN CSP 230** and **CRWD CSP 175/180** align best with the price-action backdrop. The QQQ put is a tactical hedge against the slowing momentum but carries headline risk. Keep size small.
+| Ticker | Strike | Expiry | Technical Verdict | Rationale (Price-Only) |
+|--------|--------|--------|-------------------|------------------------|
+| **GLD** | 355 | Jul 31 (18dte) | ✅ **Trend Continuation (Downtrend)** | GLD in downtrend, RSI 43, MACD negative. Put at 355 is 5.8% OTM – continuation of existing trend. High probability of profit. |
+| **GLD** | 352 | Aug 7 (25dte) | ✅ Same | Slightly deeper strike, same bearish trend. |
+| **QQQ** | 692 | Jul 31 (18dte) | ❌ **Counter-Trend (Uptrend)** | QQQ uptrend intact despite recent weakness. Put at 692 is 4.6% OTM – betting against the dominant trend. Low probability unless a sharp catalyst occurs. |
+| **QQQ** | 692 | Aug 7 (25dte) | ❌ Same | |
+| **SPY** | 727 | Jul 31 (18dte) | ❌ **Counter-Trend (Uptrend)** | SPY uptrend strong. Put at 727 is 3.6% OTM – hedge only, not a standalone directional trade. |
+| **SPY** | 727 | Aug 7 (25dte) | ❌ Same | |
+
+**Summary**: GLD puts are textbook continuations of a bear trend – highest probability. QQQ and SPY puts are contrarian and should only be used as tactical hedges, not core bets.
+
+---
+
+## Final Recommendations (Price Action Only)
+
+| High Confidence | Moderate Confidence | Avoid |
+|----------------|---------------------|-------|
+| AAPL cash-secured puts | AMD cash-secured puts | CEG cash-secured puts |
+| AMZN cash-secured puts | QQQ long calls | GLD long calls |
+| AVGO cash-secured puts | QQQ long puts | QQQ long puts |
+| CRWD cash-secured puts | | SPY long puts |
+| SPY long calls | | |
+| GLD long puts | | |
+
+**Key Themes**:
+- **Trend followers**: AAPL, AMZN, AVGO, CRWD – all in confirmed uptrends, put sales safe.
+- **Mean reversion plays**: AMZN put at SMA200 support; SPY call from strong uptrend dip.
+- **Failed setups**: CEG (downtrend) and GLD calls (counter-trend bets) are not supported by price.
+- **Volatility contraction**: Not evident – no ticker shows extreme Bollinger squeeze (QQQ and SPY bands moderate).

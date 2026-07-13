@@ -1,34 +1,40 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-07-10"
+date: "2026-07-13"
 ---
 
-1. **Tripwire status**
+## Thesis Sentinel Daily Brief — 2026-07-13
 
-| Tripwire | Today’s reading | State |
-|---|---|---|
-| VIX/VIX3M > 1.0 (backwardation) | VIX 15.84 / VIX3M 19.04 = 0.832 (5d median 0.866) | CLEAR |
-| HYG/LQD 63d rel-mom < –2% | +1.47% (credit signal: clear) | CLEAR |
-| Canary breadth both negative | EWA +1.96%, TLT –0.18% (only TLT negative) | CLEAR |
-| SPY monthly close < 200d SMA | SPY 751.71 vs 200d 690.63 (today, not month-end) | CLEAR |
-| XLE momentum vs SPY sustained leadership | XLE signal negative, SPY strong uptrend | CLEAR |
-| AI capex turn (hyperscaler guidance) | No new guidance; capex narratives still positive (SK Hynix IPO, AI infra debt) | CLEAR |
-| USDJPY rapid < 140 | No data; dollar slips, but no yen-specific stress flagged | CLEAR |
+### 1. Tripwire status
 
-*All seven tripwires remain CLEAR. The fast-channel VIX/VIX3M reading and credit signal both confirm a risk-on environment. Canary is half-defensive, not full defensive.*
+| Tripwire | Signal | Threshold | Today’s Reading | Status |
+|---|---|---|---|---|
+| Carry unwind | VIX/VIX3M 5d median | >1.0 (backwardation) | 0.834 | CLEAR |
+| Credit cracks | HYG/LQD 63d rel‑mom | <–2% | +1.53% | CLEAR |
+| Breadth break | Canary (EWA,TLT) both negative | both negative | TLT only negative | CLEAR |
+| Trend break | SPY monthly close vs 200d SMA | < 200d SMA | 754.95 vs 691.09 | CLEAR |
+| Oil shock | XLE sustained leadership | persistent outperformance | XLE uptrend but momentum negative; today’s spike not sustained | MONITOR |
+| AI capex turn | Hyperscaler FY27 capex cut | any guidance cut | No earnings data | CLEAR |
+| Carry stress | USDJPY rapid <140 | sharp move below 140 | Data not available | UNCLEAR |
 
-2. **Marker watch**
+All systemic tripwires remain clear despite a fresh geopolitical escalation. Oil shock flagged as monitor given the Hormuz blockade announcement, but no sustained leadership signal yet.
 
-- **BoJ guidance (June 15‑16)** – past; no further yen-carry tremor headlines.
-- **CPI** – no new print; next release later in July.
-- **SpaceX vs $135** – SpaceX shares tumbled today (news items mention ‘SpaceX stock tumbles’); first‑month behaviour mixed, not a clean break of issue price yet.
-- **Hyperscaler capex** – no guidance cuts; SK Hynix’s $26.5B US debut and Big Tech’s $350B debt load confirm AI infrastructure spend remains elevated.
-- **Hormuz** – dual headlines: traffic plunges but oil retreats on shipping‑deal hopes and US‑Iran peace talks set to continue; no full closure.
+### 2. Marker watch
 
-3. **Delta**
+- **BoJ June meeting guidance** – no new news. Hike occurred June 15‑16; USDJPY not observed below 145.  
+- **May–July CPI prints** – no actual CPI release today; preview headlines anticipate the data but provide no new level. Two consecutive <3.5% not yet seen.  
+- **SpaceX vs $135 issue price** – no fresh price action reported; last known close well above $135.  
+- **Q2 hyperscaler capex guidance** – no earnings yet.  
+- **Hormuz full closure** – blockade reinstated but no full‑week closure; traffic slowing, not stopping completely.
 
-Today’s main shift is a tentative easing in Middle East tensions. Oil prices fell on renewed peace‑talk hopes (“Crude Oil Prices Retreat as US‑Iran Peace Talks Set to Continue”) while the earlier escalation (Trump declaring ceasefire ‘over’) faded. This removed a short‑term risk‑off catalyst, allowing equities (SPY, QQQ) to edge higher and the VIX to fall to 15.84 – the lowest in weeks. The SK Hynix IPO also provided a positive AI sentiment lift. Consequently, the market’s risk‑on posture firmed, and the fast‑channel VIX metric slipped further away from backwardation.
+### 3. Delta
 
-4. **Scenario pressure**
+The largest delta today is the **re‑escalation of US‑Iran tensions via the Strait of Hormuz**. Blockade reinstatement and cargo fees drove crude oil sharply higher (XLE up ~1.6% intraday; WTI above $75). This adds an inflationary impulse and raises the risk of a supply‑shock recessionary scenario.  
+**Systemic tripwires remain calm** – credit, volatility, and breadth have not yet cracked. The fast‑channel VIX/VIX3M median stays at 0.834, firmly in “clear” territory. This creates a tension: geopolitical headlines flash risk‑off, but the quantitative tripwires do not concur. Our rules instruct that positioning hinges on signal states, not narrative – the systems remain risk‑on.
 
-With all tripwires clear and the geopolitical temperature slightly lower, today’s evidence leans toward **Scenario A (Grind‑with‑violence, 50%)**. The market absorbed the week’s war rhetoric and a record IPO without a tripwire firing – a sign of abundant risk appetite (consistent with A). No new inflation or capex shock pushes B or C. That said, the tails are still live: Hormuz peace talks are fragile, the carry‑unwind trigger (USDJPY) hasn’t been activated but remains a latent risk, and the canary’s TLT negativity hints at underlying rate stress. Official scenario weights are unchanged pending monthly review. For now, the defensive postures mandated by the rule‑based signals (e.g., half‑defensive canary, no fast‑channel brake) correctly reflect the grind‑with‑violence baseline. We simply note that a sudden deterioration in peace talks or a hawkish BoJ surprise would quickly re‑open scenarios B/C.
+### 4. Scenario pressure
+
+Today’s developments **incrementally shift pressure toward Scenario B (Slow bear)**, primarily via the oil‑inflation channel. A sustained energy spike could entrench sticky CPI, further corner the Fed, and erode growth, matching B’s stagflationary grind.  
+**However, no tripwire has fired**, and the regime remains “Bull Quiet” with risk‑on posture. Thus, the dominant scenario remains **A (Grind‑with‑violence)**. Probability weights do not change until the monthly review, but the conditional tilt favours B if oil leadership becomes persistent. A full Hormuz closure (not yet materialised) would rapidly push toward C mechanics.  
+
+All eyes now on the actual CPI print and any further escalation – the tripwires will tell us when to act.
