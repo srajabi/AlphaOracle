@@ -3,38 +3,28 @@ title: Thesis Sentinel Daily Brief
 date: "2026-07-13"
 ---
 
-## Thesis Sentinel Daily Brief — 2026-07-13
+**Daily Thesis Sentinel – 2026-07-13**
 
-### 1. Tripwire status
+**1. Tripwire status**
+| Tripwire                  | Reading                          | Status |
+|---------------------------|----------------------------------|--------|
+| Carry unwind (VIX/VIX3M)  | 0.809 (15.03 / 18.57)           | CLEAR  |
+| Credit cracks (HYG/LQD)   | 63d rel‑mom +0.0153             | CLEAR  |
+| Breadth break (EWA, TLT)  | EWA +0.0235, TLT –0.0064 (only TLT negative) | CLEAR  |
+| Trend break (SPY vs 200d) | SPY 754.95, 200d 691.09 (+9.2%) | CLEAR  |
+| Oil shock (XLE leadership)| XLE mom –4.76%; not leading SPY  | CLEAR  |
+| AI capex turn             | No FY27 capex cuts reported       | CLEAR  |
+| Carry stress (USDJPY <140)| No data; dollar strong, yen carry calm | CLEAR  |
 
-| Tripwire | Signal | Threshold | Today’s Reading | Status |
-|---|---|---|---|---|
-| Carry unwind | VIX/VIX3M 5d median | >1.0 (backwardation) | 0.834 | CLEAR |
-| Credit cracks | HYG/LQD 63d rel‑mom | <–2% | +1.53% | CLEAR |
-| Breadth break | Canary (EWA,TLT) both negative | both negative | TLT only negative | CLEAR |
-| Trend break | SPY monthly close vs 200d SMA | < 200d SMA | 754.95 vs 691.09 | CLEAR |
-| Oil shock | XLE sustained leadership | persistent outperformance | XLE uptrend but momentum negative; today’s spike not sustained | MONITOR |
-| AI capex turn | Hyperscaler FY27 capex cut | any guidance cut | No earnings data | CLEAR |
-| Carry stress | USDJPY rapid <140 | sharp move below 140 | Data not available | UNCLEAR |
+**2. Marker watch**
+- **BoJ June guidance**: no follow‑up today; prior hike priced, hawkish guidance risk not yet triggered.
+- **CPI**: no new print; next release key for inflation trajectory.
+- **SpaceX vs $135**: no data on current price; day‑1 close $160.95, still above issue, marker unchanged.
+- **Hyperscaler capex**: Meta raised Louisiana data‑center budget from $27B to $50B – spending direction intact, no cut.
+- **Hormuz**: Trump reinstated blockade on Iranian shipping; tanker traffic at 5‑week low but no confirmed full‑closure week.
 
-All systemic tripwires remain clear despite a fresh geopolitical escalation. Oil shock flagged as monitor given the Hormuz blockade announcement, but no sustained leadership signal yet.
+**3. Delta**
+The dominant change is the formal reinstatement of the Strait of Hormuz blockade, triggering a further oil spike (XLE +2.6% intraday) and a sharp AI/chip selloff (SK Hynix –15%, memory stocks down). Despite the escalation, VIX remains low (15.03) and credit markets calm, signalling that investors still treat this as a geopolitical shock rather than a systemic crisis. Fed‑speak on possible rate hikes added to the hawkish tilt, but policy is unchanged. Gold fell (GLD –$) despite the war headline, suggesting a strong‑dollar offset (UUP strong uptrend) and perhaps expectations that the blockade will be temporary.
 
-### 2. Marker watch
-
-- **BoJ June meeting guidance** – no new news. Hike occurred June 15‑16; USDJPY not observed below 145.  
-- **May–July CPI prints** – no actual CPI release today; preview headlines anticipate the data but provide no new level. Two consecutive <3.5% not yet seen.  
-- **SpaceX vs $135 issue price** – no fresh price action reported; last known close well above $135.  
-- **Q2 hyperscaler capex guidance** – no earnings yet.  
-- **Hormuz full closure** – blockade reinstated but no full‑week closure; traffic slowing, not stopping completely.
-
-### 3. Delta
-
-The largest delta today is the **re‑escalation of US‑Iran tensions via the Strait of Hormuz**. Blockade reinstatement and cargo fees drove crude oil sharply higher (XLE up ~1.6% intraday; WTI above $75). This adds an inflationary impulse and raises the risk of a supply‑shock recessionary scenario.  
-**Systemic tripwires remain calm** – credit, volatility, and breadth have not yet cracked. The fast‑channel VIX/VIX3M median stays at 0.834, firmly in “clear” territory. This creates a tension: geopolitical headlines flash risk‑off, but the quantitative tripwires do not concur. Our rules instruct that positioning hinges on signal states, not narrative – the systems remain risk‑on.
-
-### 4. Scenario pressure
-
-Today’s developments **incrementally shift pressure toward Scenario B (Slow bear)**, primarily via the oil‑inflation channel. A sustained energy spike could entrench sticky CPI, further corner the Fed, and erode growth, matching B’s stagflationary grind.  
-**However, no tripwire has fired**, and the regime remains “Bull Quiet” with risk‑on posture. Thus, the dominant scenario remains **A (Grind‑with‑violence)**. Probability weights do not change until the monthly review, but the conditional tilt favours B if oil leadership becomes persistent. A full Hormuz closure (not yet materialised) would rapidly push toward C mechanics.  
-
-All eyes now on the actual CPI print and any further escalation – the tripwires will tell us when to act.
+**4. Scenario pressure**
+Today’s evidence nudges very slightly toward the “fast crash” tail (Scenario C) via the war escalation, but nearly all systematic tripwires remain clear and market calm persists. Meanwhile, the Meta capex hike reinforces the infrastructure‑spending narrative underpinning Scenario A (“grind‑with‑violence”). The mix of war fear and AI capital allocation resilience keeps the official weights unchanged; the dominant pressure is still Scenario A, with Scenario B and C risks lingering but not acute.
