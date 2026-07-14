@@ -1,66 +1,63 @@
 ---
 title: Technical Analyst Report
-date: "2026-07-13"
+date: "2026-07-14"
 ---
 
 ## Model: deepseek/deepseek-v4-flash
 
-## Price Action Technical Analysis – 2026-07-13
+## Price-Action Technical Analysis (2026-07-14)
 
-**Regime Context:** Bull Quiet, strong dollar, rising rates, risk-on sentiment.  
-**Portfolio:** $87k cash, no positions.
-
----
-
-### 1. Mean Reversion Bounce Candidates
-
-| Ticker | Current | SMA20 | SMA50 | SMA200 | RSI | MACD Hist | BB Position | Setup |
-|--------|---------|-------|-------|--------|-----|-----------|-------------|-------|
-| **ORCL** | 140.64 | 159.65 | 182.44 | 194.30 | **31.1** | -1.27 (deep negative) | Below lower BB | **Deep oversold** – 28% below SMA20, RSI < 32. Bollinger lower at 121.74 provides a floor. MACD histogram still declining but slowing. Target: reversion to SMA20 (~160) for ~13% upside. Stop below 132 (recent 52-wk low). High risk/reward. |
-| **NFLX** | 73.37 | 75.61 | 82.41 | 94.94 | **38.0** | +0.53 (turning positive) | Near lower BB | **Oversold with MACD divergence** – MACD histogram rising from low, RSI just above 30. Price below all MAs. Bollinger lower at 69.39. Target: SMA20 (75.61) for ~3% quick bounce, then SMA50 (82.41) for ~12%. Stop below 69. |
-| **SLV** | 53.95 | 56.37 | 63.60 | 62.89 | **38.9** | +0.31 (positive divergence) | Near lower BB | **Oversold with momentum turning** – RSI 38.9, MACD histogram positive for last 2-3 periods. Price below both short-term MAs. Target: SMA20 (56.37) for ~4.5%. Stop below 48.50 (lower BB). |
-| **MSFT** | 385.10 | 380.51 | 403.33 | 440.71 | **47.6** | +2.46 (turning positive) | Above lower BB | **Pullback to SMA20 with MACD hook** – Price found support at SMA20, RSI mid-range, MACD histogram just turned positive. Target: SMA50 (403.33) for ~4.7%. Stop below 375. |
+**Ignoring all news**, the following setups emerge from the data:
 
 ---
 
-### 2. Trend Continuation (Strong Uptrend, No Exhaustion)
+### ✅ Trend Continuation (Strongest)
 
-| Ticker | Current | SMA20 | SMA50 | RSI | MACD Hist | Condition |
-|--------|---------|-------|-------|-----|-----------|-----------|
-| **NVDA** | 210.96 | 201.95 | 209.07 | 57.0 | +1.23 (positive) | Price above both SMAs, MACD positive, RSI moderate. No overbought. Next resistance ~214 (upper BB). |
-| **AAPL** | 315.32 | 298.10 | 297.73 | 62.94 | +2.72 (strong) | Price above all MAs, RSI < 70, MACD increasing. Near upper BB but not extended yet. |
-| **CRWD** | 187.18 | 180.76 | 163.22 | 57.04 | +0.15 (positive) | Above both SMAs, RSI healthy, MACD positive. Supports extended rally. |
-| **XLF** | 55.71 | 54.24 | 52.57 | 66.19 | +0.11 (positive) | Strong uptrend, RSI elevated but not extreme. Beneficiary of rising rates. |
-
----
-
-### 3. Volatility Contraction / Squeeze Candidates
-
-| Ticker | BB Width | RSI | Setup |
-|--------|----------|-----|-------|
-| **EWA** | 28.94 – 27.63 = 1.31 (tight) | 53.07 | Price near middle, BB narrowing. Breakout potential above 28.50 or breakdown below 28.20. |
-| **VXUS** | 86.97 – 83.66 = 3.31 (moderate) | 52.27 | Consolidation around SMA20/SMA50, MACD near zero. Awaiting direction. |
+| Ticker | Signal | Key Levels | Reasoning |
+|--------|--------|------------|-----------|
+| **META** | **Buy on pullback** | $656.73; SMA20 $588.99, SMA50 $599.85, SMA200 $641.19; RSI 62.8; MACD hist +11.67 | Price solidly above all major SMAs. MACD histogram strongly positive and accelerating. RSI not yet overbought. No overhead resistance until $750+. |
+| **AAPL** | **Buy on pullback** | $317.31; SMA20 $299.19, SMA50 $298.67, SMA200 $272.41; RSI 64.2; MACD hist +2.67 | Above all SMAs with rising RSI. MACD positive and widening. Profit-taking possible near $323 BB upper, but trend is firmly bullish. |
+| **XLF** | **Trend follow** | $56.07; SMA20 $54.42, SMA50 $52.66, SMA200 $52.23; RSI 68.2 | Strong uptrend, but RSI nearing overbought (68). Use pullback to SMA20 for entry. Rates rising favor financials. |
 
 ---
 
-### 4. Failed / Overextended Setups (Avoid)
+### 🔄 Mean Reversion Bounces (Oversold)
 
-| Ticker | Issue |
-|--------|-------|
-| **META** | Price above upper BB (645.38, close 669.21) – **extended**, RSI 66, mean reversion likely. |
-| **AMD** | Price near upper BB (572.95 with close 557.89), RSI 57, but MACD histogram negative for 3 periods – weakening momentum. |
-| **MU, STX, WDC** | All deeply below SMA20 with negative MACD histograms – **momentum breakdown**, not yet oversold enough for safe bounce. |
+| Ticker | Signal | Key Levels | Reasoning |
+|--------|--------|------------|-----------|
+| **GLD** | **Buy bounce** | $367.13; SMA20 $378.47, SMA50 $400.13, SMA200 $410.96; RSI 36.8; MACD hist +1.17 | Near 8-month low. RSI approaching oversold. **Bullish MACD divergence** – price made new low while MACD histogram turned positive. Bollinger lower band at $360.25 – price above it. High reward/risk for a mean reversion to $378+. |
+| **SLV** | **Buy bounce** | $52.16; SMA20 $55.94, SMA50 $63.35, SMA200 $62.95; RSI 35.4; MACD hist +0.24 | Similar to GLD – RSI oversold, MACD positive divergence. Even further below SMAs, but silver is more volatile. Could see rapid recovery to $56+. Higher leverage to a gold bounce. |
+| **TLT** | **Contrarian bounce** | $83.97; SMA20 $85.68, SMA50 $84.98, SMA200 $86.06; RSI 35.9 | RSI oversold and price at BB lower band. Trend is down, but stretched. For aggressive traders only: short-term bounce to $85 possible. Must use tight stop below $83.50. |
 
 ---
 
-### Summary of Actionable Setups
+### ❌ Failed / Weak Setups (Avoid)
 
-| Setup | Direction | Entry Zone | Target | Stop | Conviction |
-|-------|-----------|------------|--------|------|------------|
-| ORCL | Mean reversion bounce | 139–141 | 160 (SMA20) | 131 | **High** (deep oversold + floor) |
-| NFLX | Mean reversion bounce | 72–74 | 75.6 / 82.4 | 69 | **Medium** (MACD divergence) |
-| MSFT | Pullback to SMA20 bounce | 383–386 | 403 (SMA50) | 375 | **Medium** (support held) |
-| NVDA | Trend continuation | 208–212 | 214+ | 200 (SMA20) | **Medium** (momentum intact) |
-| AAPL | Trend continuation | 312–316 | 321 (upper BB) | 298 (SMA20) | **Medium** (strong but near resistance) |
+| Ticker | Signal | Reason |
+|--------|--------|--------|
+| **ORCL** | **Avoid** | Price below SMA20/50/200, RSI 27 (oversold), MACD deeply negative. No divergence – pure downtrend. |
+| **STX** | **Avoid** | Price collapsed 9.6% below SMA20. MACD hist -17.6, massive negative momentum. No reversal signs. |
+| **MU** | **Avoid** | Price far below SMA20, huge negative MACD hist (-28.8). Only support at SMA50 (907) – risky if it breaks. |
+| **NBIS** | **Avoid** | Below SMA20/50, RSI 43.9, MACD hist -6.66. No divergence. Trend is down sharply. |
 
-**Note:** With the half-defensive canary signal and rising rates, position sizing should be conservative. The best risk/reward lies in **ORCL** (oversold bounce) and **MSFT** (support bounce). Trend plays in AAPL/NVDA require tight stops given macro tail risks from BoJ and Hormuz.
+---
+
+### ⚠️ Volatility Contraction / Squeeze Candidates
+
+| Ticker | Observation |
+|--------|-------------|
+| **QQQ** | Bollinger Bands: $700.9 – $743.3 (width 42.4, ~5.9%). Bands not particularly tight. RSI 47.8 – neutral. No squeeze signal. |
+| **SPY** | BB width 28.1 (~3.8%) – slightly wider than usual. Not a squeeze. |
+| **XLU** | BB width 2.33 (~5.1%) – moderate. RSI 56, trend up. No squeeze. |
+
+No clear volatility contraction squeezes at this time.
+
+---
+
+### 🎯 Recommended Actions (Price-Action Only)
+
+1. **Core Trend Exposure**: **META** or **AAPL** on any pullback to SMA20. Strongest momentum + rising rates are not yet hurting mega-cap tech.
+2. **Mean Reversion / Inflation Hedge**: **GLD** (or **IAU**) near RSI 36 with bullish MACD divergence. Opportunity to buy gold at a discount for a bounce.
+3. **Avoid**: Memory/hardware stocks (MU, STX, WDC) and software with broken charts (ORCL, NBIS). No technical edge.
+
+**Risk management**: Use 1.5–2% portfolio risk per trade. For GLD, set stop below $360 (BB lower). For META/AAPL, stop below SMA50 (for META ~$600, for AAPL ~$298).
