@@ -1,4 +1,4 @@
-# AlphaOracle Daily - 2026-07-13
+# AlphaOracle Daily - 2026-07-14
 
 ## Signals (rules govern; everything below is commentary)
 
@@ -8,76 +8,69 @@
 |---|---|---|
 | Trend (monthly 200dma) | risk_on | 10.36% vs SMA, as of 2026-06-30 |
 | VIX term structure | clear | ratio 0.834 |
-| Credit (HYG/LQD 63d) | clear | 0.0153 |
+| Credit (HYG/LQD 63d) | clear | 0.019 |
 | Canary breadth | half_defensive | negative: ['TLT'] |
 
 ## Thesis Sentinel
 
-**Daily Thesis Sentinel – 2026-07-13**
+**Tripwire status (2026-07-14)**
 
-**1. Tripwire status**
-| Tripwire                  | Reading                          | Status |
-|---------------------------|----------------------------------|--------|
-| Carry unwind (VIX/VIX3M)  | 0.809 (15.03 / 18.57)           | CLEAR  |
-| Credit cracks (HYG/LQD)   | 63d rel‑mom +0.0153             | CLEAR  |
-| Breadth break (EWA, TLT)  | EWA +0.0235, TLT –0.0064 (only TLT negative) | CLEAR  |
-| Trend break (SPY vs 200d) | SPY 754.95, 200d 691.09 (+9.2%) | CLEAR  |
-| Oil shock (XLE leadership)| XLE mom –4.76%; not leading SPY  | CLEAR  |
-| AI capex turn             | No FY27 capex cuts reported       | CLEAR  |
-| Carry stress (USDJPY <140)| No data; dollar strong, yen carry calm | CLEAR  |
+| Tripwire | Signal | Today’s reading | Status |
+|---|---|---|---|
+| Carry unwind | ^VIX/^VIX3M 5d med | 0.834 (< 1.0) | CLEAR |
+| Credit cracks | HYG/LQD 63d rel‑mom | +1.9% (> –2%) | CLEAR |
+| Breadth break | canary 13612W (EWA,TLT) | Only TLT negative | CLEAR |
+| Trend break | SPY < 200d SMA (m‑end) | 749 vs 691 (not close) | CLEAR |
+| Oil shock | XLE sustained leadership | XLE +3.2% Mon; oil at 1‑mo high | FIRING |
+| AI capex turn | Hyperscaler FY27 guidance | No Q2 reports; no cuts | CLEAR |
+| Carry stress | USDJPY rapid < 140 | 161.74 (CNBC) | CLEAR |
 
-**2. Marker watch**
-- **BoJ June guidance**: no follow‑up today; prior hike priced, hawkish guidance risk not yet triggered.
-- **CPI**: no new print; next release key for inflation trajectory.
-- **SpaceX vs $135**: no data on current price; day‑1 close $160.95, still above issue, marker unchanged.
-- **Hyperscaler capex**: Meta raised Louisiana data‑center budget from $27B to $50B – spending direction intact, no cut.
-- **Hormuz**: Trump reinstated blockade on Iranian shipping; tanker traffic at 5‑week low but no confirmed full‑closure week.
+**Marker watch**
 
-**3. Delta**
-The dominant change is the formal reinstatement of the Strait of Hormuz blockade, triggering a further oil spike (XLE +2.6% intraday) and a sharp AI/chip selloff (SK Hynix –15%, memory stocks down). Despite the escalation, VIX remains low (15.03) and credit markets calm, signalling that investors still treat this as a geopolitical shock rather than a systemic crisis. Fed‑speak on possible rate hikes added to the hawkish tilt, but policy is unchanged. Gold fell (GLD –$) despite the war headline, suggesting a strong‑dollar offset (UUP strong uptrend) and perhaps expectations that the blockade will be temporary.
+*BoJ guidance* – Meeting concluded June 16; no new guidance today.  
+*CPI <3.5%* – June CPI fell sharply (first MoM drop since 2020). Likely y/y < 3.5%; first of two required prints.  
+*SpaceX vs $135* – No price data in today’s feed; issue-date $135 line not breached.  
+*Hyperscaler capex* – Q2 earnings season yet to bring hyperscaler guidance; no FY27 cuts reported.  
+*Hormuz* – Attacks intensified, traffic stalled; full one‑week closure not confirmed but risk has risen markedly.
 
-**4. Scenario pressure**
-Today’s evidence nudges very slightly toward the “fast crash” tail (Scenario C) via the war escalation, but nearly all systematic tripwires remain clear and market calm persists. Meanwhile, the Meta capex hike reinforces the infrastructure‑spending narrative underpinning Scenario A (“grind‑with‑violence”). The mix of war fear and AI capital allocation resilience keeps the official weights unchanged; the dominant pressure is still Scenario A, with Scenario B and C risks lingering but not acute.
+**Delta**
+
+Today brought a large CPI downside surprise (cooling inflation) while oil surged 2%+ on fresh US‑Iran escalation and Hormuz threats. IBM’s Q2 profit warning slammed software/AI names (ORCL, PLTR, etc.). Fed Chair Warsh testified, reiterating ‘no tolerance’ for inflation but offering no policy hints. The macro mix is sharply contradictory: disinflation good for rate‑sensitive assets, war supply shock bad for growth and inflation expectations.
+
+**Scenario pressure**
+
+The cooler CPI reduces the stagflation tail but does little to offset the escalating Hormuz conflict. The oil‑shock tripwire is now firing, which mechanically raises scenario‑C odds if a full strait closure persists. Market‑implied risk remains contained (VIX/VIX3M still contango, credit and breadth clear), so the evidence still fits the “grind with violence” base case (A). However, the simultaneous firing of a war‑supply tripwire and an all‑clear on other defensive signals means any further Hormuz news could quickly shift pressure toward C. The rule‑based systems remain governed by today’s clean credit/canary prints; no mandate changes are triggered.
 
 ## Portfolio Manager Synthesis
 
-# Lead Portfolio Manager Decision – July 13, 2026
+# Portfolio Manager Decision – July 14, 2026
 
-## Situation Assessment
+We are sitting on $87,185 cash with both firm mandates (P_sleeve, Y_core) requiring full equity investment, while the canary signal has shifted to **half‑defensive** (TLT momentum negative). The macro backdrop is tense – an active US‑Iran war, an inflation‑stuck Fed, a strong dollar, and early signs of AI‑capex digestion. Our own thesis assigns a 50% chance to a grind‑with‑violence scenario and 50% to a slow bear or crash within 12 months.  
 
-The macro backdrop has turned sharply hostile to risk‑taking in just one weekend:
+The risk manager urges tail hedges (SPY/QQQ puts), but our execution is equity‑only. We therefore **defensively deploy** capital – overweight the sectors that thrive in this regime (energy, financials, utilities) and add a small gold position for its mean‑reversion setup and inflation‑hedge properties, while leaving a modest cash buffer as a proxy for the absent put. We deliberately **underweight technology** and completely avoid long‑duration bonds. This gives us full mandate compliance with a defensive skew.
 
-- **Geopolitical shock** – President Trump reinstated the Strait of Hormuz blockade. Oil prices surged >9%, shipping traffic collapsed, and the conflict shows no sign of a diplomatic off‑ramp. This is a direct inflationary and supply‑chain shock.
-- **Fed hawkish pivot** – A coordinated campaign of comments from officials (Waller, NYT, FT, CNBC) raised the odds of a July rate hike. The 10‑year yield jumped to 4.57%, breaking above its short‑term averages. The Fed is cornered: it cannot cut into 4.2% CPI, and it cannot easily hike into a war‑shocked economy. The path of least resistance for now is a hawkish hold that pressures long‑duration assets.
-- **AI/tech leadership wobbles** – Memory stocks (SK Hynix -15%, MU, STX, WDC) are in a momentum crash. Hyperscaler capex spending is still enormous, but the market is questioning whether those billions will ever generate returns. The Nasdaq fell 1.12% while the Dow slipped just 0.16% – the market is rotating away from concentrated tech.
-- **Canary signal is half‑defensive** (TLT negative), credit is still clear, and the VIX/VIX3M term structure remains in contango (0.83). The fast channel is not yet flashing “crash.”
+---
 
-My investment thesis calls for **defensive‑leaning, gap‑risk aware** positioning. The scenario weights (50% grind with violence, 30% slow bear, 20% fast crash) have not changed materially, but the Hormuz escalation and the Fed jawboning tilt the near‑term probabilities toward more volatility. I want to deploy capital **gradually and defensively**, keeping at least half the portfolio in cash to exploit a potential relief rally or a deeper drawdown.
+## Action Plan
 
-### Weighting of Analyst Reports
+| Action | Ticker/Asset | Conviction | Timeframe | Justification |
+|--------|--------------|------------|-----------|---------------|
+| **Buy** | SPY | High | Weeks–months | Broad US equity exposure; fulfills core mandate; still above all moving averages with positive MACD. Gives ballast to the portfolio. |
+| **Buy** | XLE | High | Weeks–months | Strongest sector momentum; direct beneficiary of Hormuz supply shock; acts as an inflation hedge and geopolitical play. |
+| **Buy** | XLF | High | Weeks–months | Benefits from rising rates and steepening yield curve; strong uptrend with RSI not yet overbought; value rotation tailwind. |
+| **Buy** | XLU | Medium | Weeks–months | Defensive sector with AI‑power‑demand tailwind; holds above SMAs; provides stability if growth stocks falter. |
+| **Buy** | GLD | Medium | Days–weeks | Oversold (RSI 36.8) with bullish MACD divergence; near lower Bollinger Band; technical bounce expected. Also an inflation‑hedge complement to XLE. |
+| **Hold** | Cash (~10%) | – | – | Deliberate residual as a proxy for risk‑manager‑recommended puts; preserves optionality for a sudden drawdown or opportunity. |
 
-All three reports came from the same model class (DeepSeek‑v4‑Flash). I have no structural reason to weight one over the other; I judge each on the coherence of its argument.
+**Why we are not buying AAPL/META/QQQ:**  
+Our macro strategist and risk manager both flag rising‑rate headwinds for high‑multiple tech. The IBM profit warning and decelerating AI‑capex narrative add further near‑term risk, even though a few names show good technicals. We wait for a clearer de‑risking before adding growth names.
 
-- **Risk Manager** – Correctly identifies immediate risks. Their suggestion to go long XLE, long GLD, and hold a large cash reserve aligns with my thesis. The put hedge idea is noted, but the execution layer is equity‑only, so I will achieve tail‑hedging through gold and utilities rather than options.
-- **Technical Analyst** – Identifies several oversold bounces, most notably ORCL (RSI 31, MACD positive divergence, price -28% vs SMA20). This is a high‑risk‑reward tactical mean‑reversion trade. NFLX and MSFT are more speculative in this tape. I will take a small ORCL position with a hard mental stop below $132.
-- **Macro Strategist** – Correctly reinforces the sector rotation: overweight energy, financials, and defensives; underweight long‑duration bonds and pure tech. Their analysis of the hawkish Fed + war = stagflation tilt is spot on, and it guides my core allocations.
+**Why we are not buying TLT/TMF:**  
+Bonds remain in a downtrend; rising real rates and the inflation‑tolerant administration make TLT a poor hedge. The canary’s negative TTL signal confirms avoidance.
 
-I disagree with the Risk Manager’s suggestion to place heavy reliance on gold; gold is in a downtrend and is being squeezed by rising real rates and a strong dollar. I will buy GLD as a partial hedge but keep the size moderate. The Macro Strategist’s recommendation to also own financials (XLF) and utilities (XLU) forms the backbone of my defensive yet invested stance.
+---
 
-## Actionable Plan
-
-| Action (Buy/Sell/Hold) | Ticker/Asset | Conviction Level | Timeframe | Justification |
-|------------------------|--------------|-------------------|-----------|---------------|
-| Buy | XLE | High | Weeks–Months | Direct beneficiary of Hormuz oil supply shock; strong uptrend with no exhaustion; thesis overweight energy. |
-| Buy | GLD | Medium | Months | Inflation hedge and geopolitical safe haven; central bank buying provides floor; negative real‑rate drift supportive despite near‑term momentum weakness. |
-| Buy | XLF | Medium | Weeks–Months | Rising rates widen net interest margins; strong price trend and moderate RSI; rotates capital from over‑owned tech to value. |
-| Buy | XLU | Medium | Months | Defensive sector with positive AI data‑center power demand theme; low beta, hedges against both geopolitical and recession risks. |
-| Buy | ORCL | Medium (tactical) | Days–Weeks | Deeply oversold mean‑reversion bounce (RSI 31, -28% vs SMA20); MACD histogram turning up; target SMA20 ~$160 for ~13% upside; small position with tight stop below $132. |
-| Hold | Cash (~50%) | High | Ongoing | Preserve powder for gap‑risk events (scenario C); money market yields ~4.5% while we wait for clear signals from CPI, VIX term structure, or a ceasefire. |
-
-*Note: The ORCL trade is a tactical swing, not a core conviction. We will limit it to 5% of assets and monitor closely. All other buys are defensive or inflation‑hedged instruments that align with the macro regime and our canary‑signal posture.*
-
-## Executable Trades (Equity Only)
+## Executable Trades (JSON)
 
 ## Paper-Account Attribution
 
@@ -87,7 +80,7 @@ I disagree with the Risk Manager’s suggestion to place heavy reliance on gold;
 | prod_1 | insufficient_history |
 | prod_2 | on_script |
 | prod_3 | on_script |
-| prod_4 | on_script |
+| prod_4 | watch |
 | prod_5 | insufficient_history |
 
 ---
