@@ -2,26 +2,46 @@
     {
         "ticker": "SPY",
         "action": "buy",
-        "notional_value": 21800
-    },
-    {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 17400
+        "notional_value": 17437.0
     },
     {
         "ticker": "XLF",
         "action": "buy",
-        "notional_value": 13000
+        "notional_value": 8718.5
     },
     {
-        "ticker": "XLU",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 13000
+        "notional_value": 8718.5
+    },
+    {
+        "ticker": "QUAL",
+        "action": "buy",
+        "notional_value": 8718.5
+    },
+    {
+        "ticker": "CEG",
+        "action": "buy",
+        "notional_value": 4359.25
+    },
+    {
+        "ticker": "AAPL",
+        "action": "buy",
+        "notional_value": 4359.25
     },
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 13000
+        "notional_value": 8718.5
+    },
+    {
+        "ticker": "VGK",
+        "action": "buy",
+        "notional_value": 4359.25
+    },
+    {
+        "ticker": "EWC",
+        "action": "buy",
+        "notional_value": 4359.25
     }
 ]
