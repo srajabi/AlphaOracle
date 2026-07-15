@@ -1,4 +1,4 @@
-# AlphaOracle Daily - 2026-07-14
+# AlphaOracle Daily - 2026-07-15
 
 ## Signals (rules govern; everything below is commentary)
 
@@ -8,68 +8,64 @@
 |---|---|---|
 | Trend (monthly 200dma) | risk_on | 10.36% vs SMA, as of 2026-06-30 |
 | VIX term structure | clear | ratio 0.834 |
-| Credit (HYG/LQD 63d) | clear | 0.019 |
+| Credit (HYG/LQD 63d) | clear | 0.0187 |
 | Canary breadth | half_defensive | negative: ['TLT'] |
 
 ## Thesis Sentinel
 
-1. **Tripwire status**
-| Tripwire | Signal | Threshold | Today | Status |
-|---|---|---|---|---|
-| Carry unwind | ^VIX/^VIX3M | > 1.0 | 0.924 (17.16 / 18.57) | CLEAR |
-| Credit cracks | HYG/LQD 63d rel‑mom | < –2% | +1.9% | CLEAR |
-| Breadth break | Canary EWA,TLT | both negative | EWA +1.98%, TLT –0.96% | CLEAR |
-| Trend break | SPY vs 200d SMA (monthly) | monthly close below | 749 vs 692 (8.2% above) | CLEAR |
-| Oil shock | XLE momentum vs SPY | sustained leadership | XLE +0.05, SPY strong uptrend | CLEAR |
-| AI capex turn | Hyperscaler FY27 guidance | any cut | No news | CLEAR |
-| Carry stress | USDJPY | rapid < 140 | No signal (UUP strong) | CLEAR |
+# Thesis Sentinel Daily Brief – July 15, 2026
 
-2. **Marker watch**
-- **BoJ June meeting**: no follow‑up news; June hike was priced, guidance not hawkish enough to trigger.
-- **CPI**: June headline fell (first decline since 2020), core flat – supports disinflation trend, but May was 4.2%, so two consecutive <3.5% not yet confirmed.
-- **SpaceX vs $135**: no new pricing data; IPO day‑1 close $160.95, likely still above $135.
-- **Hyperscaler capex**: Q2 earnings season begins, no capex guidance cuts reported.
-- **Hormuz**: Trump retreated from 20% toll; oil dipped from highs but remains elevated; no full closure scenario.
+## 1. Tripwire Status
 
-3. **Delta**
-The dominant change is the softer June CPI print combined with Trump’s pullback on the Strait of Hormuz toll. This took the edge off the immediate inflation‑shock / oil‑spiral risk that had been pushing toward scenario C. IBM’s software profit warning caused a sector rout but is company‑specific, not a macro tripwire. Fed Chair Warsh’s testimony reiterated hawkish rhetoric but gave no new policy signal. Net: headline risks eased, but the war and elevated oil prices persist.
+| Tripwire | Signal | Today's Reading | Status |
+|---|---|---|---|
+| Carry unwind | ^VIX / ^VIX3M | 16.50 / 18.57 = 0.89 | CLEAR |
+| Credit cracks | HYG/LQD 63‑day rel‑mom | +1.87% | CLEAR |
+| Breadth break | Canary (EWA, TLT) | EWA +1.4%, TLT −1.7% → 1/2 negative | CLEAR |
+| Trend break | SPY vs 200‑day SMA (month‑end) | SPY 751.8 > 692.0 SMA | CLEAR |
+| Oil shock | XLE sustained leadership vs SPY | XLE strong uptrend; SPY also rising; no clear relative surge | CLEAR |
+| AI capex turn | Hyperscaler FY27 guidance | No cuts reported | CLEAR |
+| Carry stress | USDJPY < 140 | Not in today’s dataset; UUP strong but no yen‑specific stress | CLEAR* |
 
-4. **Scenario pressure**
-Today’s evidence leans mildly toward scenario A (grind‑with‑violence) from the prior C‑tail. Cooling CPI reduces the probability of a forced policy mistake, and the Hormuz toll reversal removes a direct supply‑shock catalyst. However, the underlying war uncertainty and sticky 4%+ inflation keep the grind‑with‑violence range‑bound character intact. No tripwire has fired, so official scenario weights remain unchanged pending the monthly review. The systems stay on alert but fully invested per rule‑based mandates.
+**All tripwires remain CLEAR.** * No direct USDJPY feed; inferred from macro calm.
+
+## 2. Marker Watch
+
+- **BoJ June meeting**: Passed weeks ago; no new guidance today.
+- **CPI (May → June)**: May 4.2% → June **3.5% y/y** (released today). Not yet two consecutive sub‑3.5%.
+- **SpaceX vs $135**: Closes near $136 (per headlines); has not broken issue price.
+- **Hyperscaler capex**: Q2 earnings pending; no official guidance change.
+- **Hormuz**: Ongoing blockade/strikes; no full‑week closure.
+
+## 3. Delta
+
+June CPI dropped to 3.5%, below consensus, sparking a tech relief rally and pulling bond yields lower. IBM crashed 25% after warning that AI infrastructure spending is squeezing software budgets – a headline that stirs the AI capex narrative, but it’s a software‑side warning, not a capex cut. Oil remains elevated but steady. Regime stays “Bull Quiet”; VIX fell to 16.5. The canary remains half‑defensive (TLT still negative), but no new stress signals.
+
+## 4. Scenario Pressure
+
+Today’s data leans **favorably toward Scenario A (Grind‑with‑violence)**. Cooling inflation without a recession signal supports the soft‑landing “grind” case, and no tripwire is triggered. The IBM story is a micro reminder of the AI capex concentration risk, but it hasn’t yet translated into hyperscaler guidance cuts. Geopolitical risk remains present but not escalating. We do not change official scenario weights (monthly review only); the marginal pressure is for A over B/C.
 
 ## Portfolio Manager Synthesis
 
-# Portfolio Manager Decision
+As Lead Portfolio Manager, I've reviewed the Risk Manager and Technical Analyst reports, along with the Macro Strategist's cross-asset view. The portfolio is currently 100% cash ($87,184.98). The mandatory signals (slow-channel risk-on, credit clear, canary half-defensive) authorize deployment into risk assets, but the macro backdrop (Bull Quiet with geopolitical and AI capex risks) demands a gradual, hedged approach.
 
-**Date:** 2026-07-14  
-**Current State:** $87,184.98 cash, all mandates require invested sleeves.  
-**Signal Summary:** Slow channel risk‑on, fast channel clear, credit clear, canary half‑defensive (TLT negative, EWA positive).  
-**Macro Backdrop:** Strait of Hormuz tensions persist (oil at $87), Fed hawkish hold, Strong Dollar regime overriding gold, AI‑capex cycle intact but software budgets squeezed.  
-**Technical Landscape:** Broad market neutral‑uptrend; certain names oversold (GLD, TLT, ORCL, INTC) and others at support (CEG). Energy and Financials in strong trends.
+Key disagreements resolved:
+- **Risk Manager** advocates for **protective puts and delayed entry**; **Technical Analyst** sees specific **cash-secured put executions as low-risk**; **Macro Strategist** wants **overweight financials, equal-weight energy, and underweight tech except NVDA**.
+- I will bridge the gap by **keeping equity entry sizes moderate**, **prioritizing defensive/value sectors** (Financials, Gold) over aggressive tech, and **skipping options execution** (as the platform is equity-only) – the options ideas serve only as directional confirmation.
 
-**Integrated View:**  
-- **Equity exposure** is warranted by the “invested” mandates and the still‑constructive credit/VIX regime. We deploy ~80% of capital into a diversified mix that aligns with the signals and our macro thesis.  
-- The **half‑defensive canary** tells us to hold a defensive asset; we choose GLD (gold) over TLT because TLT is the negative canary and is hurt by rising rates. Gold is also technically oversold and a long‑term negative real‑rate play.  
-- We avoid over‑concentration in mega‑cap tech (QQQ), overbought names (META, XLF near upper band – we take a starter position in XLF), and outright momentum‑broken sectors (software).  
-- A **20% cash reserve** is kept for tactical hedging (e.g., SPY puts for tail‑risk per Risk Manager) and to exploit future opportunities under the grind‑with‑violence scenario.
+The final plan: deploy ~85% of cash into a core equity position, a financial sector overweight, a gold hedge, and select AI infrastructure plays that align with the macro tilt. Hold a small cash reserve for tactical dip-buying.
 
-**Trade Rationale Table:**
+| Action | Ticker/Asset | Conviction Level | Timeframe | Justification |
+|--------|--------------|------------------|-----------|---------------|
+| **Buy** | **VOO** (S&P 500 ETF) | **High** | Long-term core | Mandated risk-on exposure. Low-cost, broad-market entry. Regime is Bull Quiet; trend is intact. Deploy ~$40k as the foundation. |
+| **Buy** | **XLF** (Financials) | **High** | 3–6 months | Financials are the strongest cyclical sector in a rising-rate, strong-dollar environment. Record highs, earnings momentum; thesis and Macro Strategist both overweight. |
+| **Buy** | **IAU** (Gold Trust) | **High** | 3–6 months | Canary half-defensive (TLT negative) favors adaptive defense. Gold is overlapped but cheap in this regime; structural hedge against oil-driven inflation shocks and geopolitical tail risk. |
+| **Buy** | **NVDA** (Nvidia) | **Medium** | 6–12 months | AI chip leader with sustainable capex tailwinds. Macro Strategist favors semis over software; technicals show price above SMAs, RSI neutral, MACD improving. Risk Manager warns of profit-taking – size accordingly. |
+| **Buy** | **AVGO** (Broadcom) | **Medium** | 6–12 months | Custom AI silicon play, less GPU concentration risk. Price consolidating near support; options chain shows attractive put-selling levels (confirming demand). Thesis and analysts support. |
+| **Buy** | **INTC** (Intel) | **Low** | 6–12 months | Turnaround story with foundry narrative gaining traction. HSBC doubled price target. RSI ~43, oversold bounce potential. Small starter position as a contrarian value play. |
+| **Hold** | Cash (~$2k) | – | Tactical | Maintain dry powder for opportunistic deployment on any 3–5% dip; aligns with thesis “grind-with-violence” scenario. |
 
-| Action | Ticker/Asset | Conviction | Timeframe | Justification |
-|--------|--------------|------------|-----------|---------------|
-| Buy | SPY | Medium | Core | Broad equity exposure for core sleeve; SPY in strong uptrend above 200‑day MA; slow channel risk‑on; moderate VIX supports position. |
-| Buy | XLF | Medium | Core | Financials benefit from rising rates, recent bank earnings solid; uptrend intact despite slight overbought; yields and net interest margin tailwind. |
-| Buy | XLE | Medium | Core | Energy sector leader, driven by Strait of Hormuz geopolitical premium and tight supply; acts as an inflation hedge within the portfolio. |
-| Buy | QUAL | Medium | Core | Quality factor ETF performs well in transitional/uncertain regimes; diversified across profitable, stable companies. |
-| Buy | CEG | High | Tactical Core | Constellation Energy: nuclear power demand from AI data centers; price pulled back to SMA20 support, MACD histogram turning positive, strong volume. |
-| Buy | AAPL | Medium | Core | Mega‑cap tech in healthy uptrend, RSI not overbought; resilient cash flow, AI‑device theme; provides targeted tech exposure without chasing volatile semis. |
-| Buy | GLD | Medium | Satellite Defensive | Gold oversold (RSI 37), at lower Bollinger Band, MACD histogram turning up; half‑defensive canary calls for defensive asset; gold long‑term thesis intact (negative real rates). |
-| Buy | VGK | Low | Satellite International | European diversification, anti‑Mag 7 trade; choppy but still near highs; small allocation as a hedge against US‑only risk. |
-| Buy | EWC | Medium | Satellite International | Canada outperforming S&P 500, heavy energy/commodities weight; uptrend above moving averages; July fresh‑fiscal‑year capital flows possible. |
-| Hold | Cash | High | Reserve | ~$17k cash provides tactical flexibility to buy tail‑hedge options (SPY puts) and exploit further pullbacks; aligns with gap‑risk awareness. |
-
-**Execution Plan:**  
-Allocations are set at notional values for immediate execution. This portfolio respects the invested mandates (P‑sleeve and Y‑core) and the half‑defensive canary (GLD as satellite defense while still holding risk assets). The 20% cash buffer can be deployed later or used to finance protective options as described by the Risk Manager.
+**Note:** Options ideas (CSPs on AAPL/AMZN/AVGO, long calls on GLD) were considered but **not executed** because the execution layer is equity-only. They will be revisited if an options-capable path becomes available.
 
 ## Paper-Account Attribution
 
@@ -79,7 +75,7 @@ Allocations are set at notional values for immediate execution. This portfolio r
 | prod_1 | insufficient_history |
 | prod_2 | on_script |
 | prod_3 | on_script |
-| prod_4 | watch |
+| prod_4 | on_script |
 | prod_5 | insufficient_history |
 
 ---
