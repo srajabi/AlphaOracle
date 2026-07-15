@@ -1,28 +1,36 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-07-14"
+date: "2026-07-15"
 ---
 
-1. **Tripwire status**
-| Tripwire | Signal | Threshold | Today | Status |
-|---|---|---|---|---|
-| Carry unwind | ^VIX/^VIX3M | > 1.0 | 0.924 (17.16 / 18.57) | CLEAR |
-| Credit cracks | HYG/LQD 63d rel‑mom | < –2% | +1.9% | CLEAR |
-| Breadth break | Canary EWA,TLT | both negative | EWA +1.98%, TLT –0.96% | CLEAR |
-| Trend break | SPY vs 200d SMA (monthly) | monthly close below | 749 vs 692 (8.2% above) | CLEAR |
-| Oil shock | XLE momentum vs SPY | sustained leadership | XLE +0.05, SPY strong uptrend | CLEAR |
-| AI capex turn | Hyperscaler FY27 guidance | any cut | No news | CLEAR |
-| Carry stress | USDJPY | rapid < 140 | No signal (UUP strong) | CLEAR |
+# Thesis Sentinel Daily Brief – July 15, 2026
 
-2. **Marker watch**
-- **BoJ June meeting**: no follow‑up news; June hike was priced, guidance not hawkish enough to trigger.
-- **CPI**: June headline fell (first decline since 2020), core flat – supports disinflation trend, but May was 4.2%, so two consecutive <3.5% not yet confirmed.
-- **SpaceX vs $135**: no new pricing data; IPO day‑1 close $160.95, likely still above $135.
-- **Hyperscaler capex**: Q2 earnings season begins, no capex guidance cuts reported.
-- **Hormuz**: Trump retreated from 20% toll; oil dipped from highs but remains elevated; no full closure scenario.
+## 1. Tripwire Status
 
-3. **Delta**
-The dominant change is the softer June CPI print combined with Trump’s pullback on the Strait of Hormuz toll. This took the edge off the immediate inflation‑shock / oil‑spiral risk that had been pushing toward scenario C. IBM’s software profit warning caused a sector rout but is company‑specific, not a macro tripwire. Fed Chair Warsh’s testimony reiterated hawkish rhetoric but gave no new policy signal. Net: headline risks eased, but the war and elevated oil prices persist.
+| Tripwire | Signal | Today's Reading | Status |
+|---|---|---|---|
+| Carry unwind | ^VIX / ^VIX3M | 16.50 / 18.57 = 0.89 | CLEAR |
+| Credit cracks | HYG/LQD 63‑day rel‑mom | +1.87% | CLEAR |
+| Breadth break | Canary (EWA, TLT) | EWA +1.4%, TLT −1.7% → 1/2 negative | CLEAR |
+| Trend break | SPY vs 200‑day SMA (month‑end) | SPY 751.8 > 692.0 SMA | CLEAR |
+| Oil shock | XLE sustained leadership vs SPY | XLE strong uptrend; SPY also rising; no clear relative surge | CLEAR |
+| AI capex turn | Hyperscaler FY27 guidance | No cuts reported | CLEAR |
+| Carry stress | USDJPY < 140 | Not in today’s dataset; UUP strong but no yen‑specific stress | CLEAR* |
 
-4. **Scenario pressure**
-Today’s evidence leans mildly toward scenario A (grind‑with‑violence) from the prior C‑tail. Cooling CPI reduces the probability of a forced policy mistake, and the Hormuz toll reversal removes a direct supply‑shock catalyst. However, the underlying war uncertainty and sticky 4%+ inflation keep the grind‑with‑violence range‑bound character intact. No tripwire has fired, so official scenario weights remain unchanged pending the monthly review. The systems stay on alert but fully invested per rule‑based mandates.
+**All tripwires remain CLEAR.** * No direct USDJPY feed; inferred from macro calm.
+
+## 2. Marker Watch
+
+- **BoJ June meeting**: Passed weeks ago; no new guidance today.
+- **CPI (May → June)**: May 4.2% → June **3.5% y/y** (released today). Not yet two consecutive sub‑3.5%.
+- **SpaceX vs $135**: Closes near $136 (per headlines); has not broken issue price.
+- **Hyperscaler capex**: Q2 earnings pending; no official guidance change.
+- **Hormuz**: Ongoing blockade/strikes; no full‑week closure.
+
+## 3. Delta
+
+June CPI dropped to 3.5%, below consensus, sparking a tech relief rally and pulling bond yields lower. IBM crashed 25% after warning that AI infrastructure spending is squeezing software budgets – a headline that stirs the AI capex narrative, but it’s a software‑side warning, not a capex cut. Oil remains elevated but steady. Regime stays “Bull Quiet”; VIX fell to 16.5. The canary remains half‑defensive (TLT still negative), but no new stress signals.
+
+## 4. Scenario Pressure
+
+Today’s data leans **favorably toward Scenario A (Grind‑with‑violence)**. Cooling inflation without a recession signal supports the soft‑landing “grind” case, and no tripwire is triggered. The IBM story is a micro reminder of the AI capex concentration risk, but it hasn’t yet translated into hyperscaler guidance cuts. Geopolitical risk remains present but not escalating. We do not change official scenario weights (monthly review only); the marginal pressure is for A over B/C.
