@@ -18,7 +18,7 @@
           "vix_value": 16.5,
           "vix_trend": "falling"
         },
-        "timestamp": "2026-07-15T16:12:57.321592"
+        "timestamp": "2026-07-15T21:31:17.757102"
       },
       "dollar_strength": {
         "name": "Dollar Strength",
@@ -35,7 +35,7 @@
             "sma200": 27.393516578674316
           }
         },
-        "timestamp": "2026-07-15T16:12:57.324238"
+        "timestamp": "2026-07-15T21:31:17.759720"
       },
       "real_rates": {
         "name": "Real Rates",
@@ -52,7 +52,7 @@
             "sma200": 86.04968696594239
           }
         },
-        "timestamp": "2026-07-15T16:12:57.326678"
+        "timestamp": "2026-07-15T21:31:17.762158"
       },
       "commodity_strength": {
         "name": "Commodity Strength",
@@ -82,10 +82,10 @@
             "signal": "negative"
           }
         },
-        "timestamp": "2026-07-15T16:12:57.334113"
+        "timestamp": "2026-07-15T21:31:17.769765"
       }
     },
-    "timestamp": "2026-07-15T16:12:57.334144"
+    "timestamp": "2026-07-15T21:31:17.769804"
   },
   "indicators": {
     "risk_sentiment": {
@@ -100,7 +100,7 @@
         "vix_value": 16.5,
         "vix_trend": "falling"
       },
-      "timestamp": "2026-07-15T16:12:57.321592"
+      "timestamp": "2026-07-15T21:31:17.757102"
     },
     "dollar_strength": {
       "name": "Dollar Strength",
@@ -117,7 +117,7 @@
           "sma200": 27.393516578674316
         }
       },
-      "timestamp": "2026-07-15T16:12:57.324238"
+      "timestamp": "2026-07-15T21:31:17.759720"
     },
     "real_rates": {
       "name": "Real Rates",
@@ -134,7 +134,7 @@
           "sma200": 86.04968696594239
         }
       },
-      "timestamp": "2026-07-15T16:12:57.326678"
+      "timestamp": "2026-07-15T21:31:17.762158"
     },
     "commodity_strength": {
       "name": "Commodity Strength",
@@ -164,11 +164,11 @@
           "signal": "negative"
         }
       },
-      "timestamp": "2026-07-15T16:12:57.334113"
+      "timestamp": "2026-07-15T21:31:17.769765"
     }
   },
   "metadata": {
-    "generated_at": "2026-07-15T16:12:57.334148",
+    "generated_at": "2026-07-15T21:31:17.769808",
     "data_source": "EOD historical data",
     "lookback_days": 250
   }

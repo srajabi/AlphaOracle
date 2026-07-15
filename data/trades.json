@@ -1,32 +1,27 @@
 [
     {
-        "ticker": "VOO",
+        "ticker": "SPY",
         "action": "buy",
-        "notional_value": 40000
+        "notional_value": 21803.07
     },
     {
         "ticker": "XLF",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 8651.72
     },
     {
-        "ticker": "IAU",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 8681.1
     },
     {
-        "ticker": "NVDA",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 8656.4
     },
     {
-        "ticker": "AVGO",
+        "ticker": "GLD",
         "action": "buy",
-        "notional_value": 5000
-    },
-    {
-        "ticker": "INTC",
-        "action": "buy",
-        "notional_value": 5000
+        "notional_value": 8559.45
     }
 ]
