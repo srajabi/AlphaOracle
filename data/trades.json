@@ -2,21 +2,26 @@
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 13000
+        "notional_value": 15000
     },
     {
-        "ticker": "VGK",
+        "ticker": "XLF",
         "action": "buy",
-        "notional_value": 10500
+        "notional_value": 15000
     },
     {
-        "ticker": "SCHD",
+        "ticker": "DIA",
         "action": "buy",
-        "notional_value": 13000
+        "notional_value": 10000
     },
     {
-        "ticker": "VOO",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 15500
+        "notional_value": 5000
+    },
+    {
+        "ticker": "EWC",
+        "action": "buy",
+        "notional_value": 5000
     }
 ]
