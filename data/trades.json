@@ -1,27 +1,22 @@
 [
     {
-        "ticker": "SPY",
-        "action": "buy",
-        "notional_value": 21803.07
-    },
-    {
-        "ticker": "XLF",
-        "action": "buy",
-        "notional_value": 8651.72
-    },
-    {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 8681.1
-    },
-    {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 8656.4
+        "notional_value": 13000
     },
     {
-        "ticker": "GLD",
+        "ticker": "VGK",
         "action": "buy",
-        "notional_value": 8559.45
+        "notional_value": 10500
+    },
+    {
+        "ticker": "SCHD",
+        "action": "buy",
+        "notional_value": 13000
+    },
+    {
+        "ticker": "VOO",
+        "action": "buy",
+        "notional_value": 15500
     }
 ]

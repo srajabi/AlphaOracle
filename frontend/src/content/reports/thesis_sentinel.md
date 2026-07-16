@@ -1,38 +1,37 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-07-15"
+date: "2026-07-16"
 ---
 
-**Daily Thesis Sentinel – 2026-07-15**
+## Daily Thesis Sentinel Brief – 2026-07-16
 
-**1. Tripwire status**
+### 1. Tripwire Status
+All systematic signals govern; today’s readings are drawn from the rule‑based signal JSON (no contradiction).
 
-| Tripwire | Signal | Today’s Reading | Status |
-|---|---|---|---|
-| Carry unwind | ^VIX/^VIX3M > 1.0 | 0.89 (VIX 16.5 / VIX3M 18.57) | CLEAR |
-| Credit cracks | HYG/LQD 63d rel-mom < -2% | +1.87% (rule‑based credit signal) | CLEAR |
-| Breadth break | Canary EWA & TLT both neg | EWA +1.4%, TLT -1.7% (only one neg) | CLEAR |
-| Trend break | SPY monthly close < 200d SMA | SPY 751.8 vs 200d 692.0 (+8.6%) | CLEAR |
-| Oil shock | XLE sustained leadership vs SPY | XLE mom -0.3%, signal “negative” | CLEAR |
-| AI capex turn | Hyperscaler guidance cut FY27 | No news | CLEAR |
-| Carry stress | USDJPY rapid move < 140 | (no direct data; UUP strong, pointing to USDJPY >145) | CLEAR |
+| Tripwire | Signal | Threshold | Today’s Reading | Status |
+|----------|--------|-----------|-----------------|--------|
+| Carry unwind | ^VIX/^VIX3M ratio | >1.0 (backwardation) | vix_vix3m_5d_median 0.834 | **CLEAR** |
+| Credit cracks | HYG/LQD 63‑day rel‑mom | < –2% | 0.0172 | **CLEAR** |
+| Breadth break | EWA & TLT canary both negative | both negative | only TLT negative (EWA +0.0104) | **CLEAR** |
+| Trend break | SPY monthly close vs 200‑dma | close < 200‑dma | SPY 754.81 vs 200‑dma 692.54 | **CLEAR** |
+| Oil shock | XLE sustained leadership | sustained leadership | XLE momentum +2.44, strong uptrend | **CLEAR** (no trip) |
+| AI capex turn | Hyperscaler FY27 capex guidance cut | any cut | no cuts reported | **CLEAR** |
+| Carry stress | USDJPY rapid <140 | rapid move below 140 | not observed (dollar rising, no JPY data) | **CLEAR** |
 
-All seven tripwires clear.  Breadth break at “half‑defensive” (TLT only) – no full defensive trigger.
+**Result: All tripwires remain CLEAR.** No risk‑off or crash triggers are active.
 
-**2. Marker watch**
+### 2. Marker Watch
+- **BoJ (June meeting):** No new hawkish guidance or USDJPY <145 flagged; the marker window has passed without escalation.
+- **May‑July CPI:** Headlines note cooling inflation (PPI drop, “CPI falls for first time since 2020”) but the required two consecutive sub‑3.5% prints are not yet officially confirmed.
+- **SpaceX vs $135:** Stock has returned to the IPO price (headline “Falls Back to $135 IPO Price”) but has not broken below. The first‑month marker remains untriggered.
+- **Hyperscaler capex:** TSMC raised capex and revenue forecast; no FY27 cuts from hyperscalers. Marker unchanged.
+- **Hormuz:** Continued strikes but no full closure. Marker quiet.
 
-- **CPI (June):** Headline y/y 3.5% (vs 4.2% May); core flat m/m. First of the two <3.5% prints needed to raise scenario A, but a single data point – no change yet.  
-- **SpaceX vs $135 IPO price:** SPCX closed below $140 today, breaking issue price. This activates the marker: “breaks issue price → late‑cycle liquidity confirmation, raise B.”  
-- **Hyperscaler capex:** No guidance updates today; Q2 earnings season hasn’t begun for big tech.  
-- **BoJ guidance:** Post‑meeting; no new signal this week.  
-- **Hormuz:** Attacks persist, but no full‑closure week. Oil stable, XLE not leading.
+### 3. Delta
+- **SpaceX** retraced to its $135 issue price, erasing the post‑IPO pop; psychologically notable but not a tripwire break.
+- **Chip sell‑off:** Memory/Sandisk/SK Hynix plunged, dragging the Nasdaq lower. Not broad‑based.
+- **Oil** settled near $85; **VIX** at 15.67 (Bull Quiet regime).
+- All rule‑based signals (fast channel, credit, canary) remain in **risk‑on/half‑defensive** states. Positioning unchanged.
 
-**3. Delta**
-
-- **SpaceX below IPO price** is the day’s most material change. It adds weight to the “late‑cycle liquidity” narrative embedded in scenario B, even though the index stays in Bull Quiet.  
-- **CPI cooled** more than expected, which marginally eases inflation‑scenario pressure, but war‑premium risks keep the A‑B balance intact.  
-- **Chip sell‑off** (MU, WDC, STX) while megacaps hold – classic narrow‑breadth day, reinforcing Grind‑with‑violence mechanics.
-
-**4. Scenario pressure**
-
-Today’s evidence tilts slightly **toward B** (slow bear) without changing official weights (review monthly). The CPI drop supports disinflation and could favour A, but SpaceX breaking issue price is a concrete, early‑cycle euphoria‑fade marker that history associates with B‑type outcomes. The tripwire board remains entirely clear; the discrepancy between clean signals and a late‑cycle liquidity marker is notable. Rules govern positioning, so no action – the system stays invested per mandates. The monthly review will reassess if more markers align.
+### 4. Scenario Pressure
+Today’s quiet tripwire status, tight credit, and falling volatility strongly favour **Scenario A (Grind‑with‑violence)**. The chip rotation looks like an ordinary air pocket, not a systemic break. No evidence pushes toward B or C. Official scenario weights remain at the last monthly review: A=50%, B=30%, C=20%.

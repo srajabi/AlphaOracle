@@ -1,93 +1,53 @@
 ---
 title: Technical Analyst Report
-date: "2026-07-15"
+date: "2026-07-16"
 ---
 
 ## Model: deepseek/deepseek-v4-flash
 
-## Price-Action Technical Assessment (News Blind)
+## Price Action Analysis & Options Evaluation
 
-### Regime Context
-- **Bull Quiet**: SPY in strong uptrend (751.83, above all MAs, RSI 56). VIX 16.5 – low but not complacent. TLT breakdown confirms rising rates. Commodites mixed (GLD weak, XLE strong).
-- **Breadth**: Narrow leadership (megacap tech). Small caps (IWM) lagging broad market.
-
----
-
-### 1. Trend Continuation Setups (High Confidence)
-*Tickers with price above all key moving averages, positive MACD, RSI 40–65 (not overbought).*
-
-| Ticker | Price vs SMAs | RSI | MACD Hist | Comment |
-|--------|---------------|-----|-----------|---------|
-| **AAPL** | All above (20/50/200) | 61.4 | +2.32 | Cleanest uptrend in FAANG. Bollinger upper band = 325, price 315 – room to run. |
-| **META** | All above | 63.5 | +11.65 | Very strong momentum. RSI near overbought but no divergence. |
-| **NVDA** | All above | 56.4 | +1.66 | Solid trend, MACD just turned positive. Bollinger width wide – trend intact. |
-| **CRWD** | All above | 69.5 | +0.64 | RSI elevated but not extreme. Strong breakout above 200 SMA. |
-| **XLE** | All above | 59.3 | +0.47 | Energy uptrend confirmed, price above prior consolidation. |
-| **XLF** | All above | 68.9 | +0.10 | Financials at 52-wk high. Overbought but no reversal pattern. |
-| **EWC (Canada)** | All above | 62.7 | +0.13 | Steady uptrend, commodity-linked. |
-
-**Action bias for cash-secured puts (CSP)** on **AAPL** (strike 310, 16 DTE) is supported – strong trend, low risk of deep drawdown. **CRWD** CSP at 200 (3.3% below) is risky given RSI near 70; wait for pullback.
+All analysis below uses **price action only** (SMAs, RSI, MACD, Bollinger Bands). News is ignored.  
+Portfolio: **$87,184.98 cash**. Regime: **Bull Quiet** (risk‑on, rising rates, dollar rising).  
+Slow channel risk‑on, fast channel clear, credit clear, canary half‑defensive (TLT negative).  
 
 ---
 
-### 2. Mean-Reversion Bounce Candidates (Low Confidence but High Reward)
-*Tickers substantially below 200 SMA with oversold RSI and price near lower Bollinger Band.*
+### Cash‑Secured Puts (CSPs) – Preferred Strategy
 
-| Ticker | Price vs SMAs | RSI | BB Position | Comment |
-|--------|---------------|-----|-------------|---------|
-| **ORCL** | All below | **25.7** | Below lower band (116) | Extreme oversold. Trend is down, but a dead-cat bounce to 20 SMA (154) is plausible. High risk. |
-| **GLD** | All below | 41.3 | Near lower band (360) | Oversold but not extreme. Gold downtrend intact; any bounce likely capped at 50 SMA (399). |
-| **TLT** | All below | **37.4** | At lower band (83.6) | Rates rising, bonds hated. RSI suggests short-term exhaustion – may find support. But trend is down. |
+| Ticker | Strike / Expiry | Technical Context | Decision |
+|--------|----------------|-------------------|----------|
+| **AMZN** | **$240 / Aug 7 (22 DTE)** | Close $254.96, above SMA20 ($241) & SMA50 ($253). RSI 60 (moderate bullish). MACD positive, hist positive. Uptrend intact. Strike 5.7% below spot. | **EXECUTE** – Strong trend, good discount, healthy premium ($5.25 mid). Collateral $24,000. |
+| AAPL | $310 / Aug 7 (22 DTE) | Close $327.5, above all SMAs. RSI 68.8 (near overbought). Price at upper BB. Short‑term pullback risk, but long‑term uptrend. | **AVOID** – RSI overbought and price extended. Better to wait for a dip. |
+| AMD | $475 / Jul 31 (15 DTE) | Close $529.14, below SMA20 ($534). RSI 51.7 (neutral). MACD hist negative (bearish). Short‑term weakness. IV very high (0.79). Risk of further decline. | **AVOID** – Bearish short‑term signals and high IV suggest assignment risk outweighs premium. |
+| CRWD | $195 / Jul 31 (15 DTE) | Close $206.77, strong uptrend. RSI 66 (bullish not overbought). MACD positive. | **PASS** – Good setup but short expiration. Prefer AMZN for longer duration and better liquidity. |
+| CEG, AVGO | Various | CEG: below SMA200 (long‑term downtrend). AVGO: neutral but premium modest. | **AVOID** – CEG trend bearish; AVGO unexciting. |
 
-**Action**: No CSP here. For aggressive traders, a **long put** on SPY/QQQ is better for downside protection than trying to catch falling knives.
-
----
-
-### 3. Failed / Deteriorating Setups (Avoid Bullish Bets)
-*Tickers in clear downtrend: price below 20 & 50 SMA, negative MACD, RSI < 50.*
-
-| Ticker | Signal | Risk |
-|--------|--------|------|
-| **MSFT** | Below 50 & 200 SMA, RSI 47.5, MACD neg | Long-term trend broken. Avoid CSP. |
-| **INTC** | Below 20 & 50, RSI 43.2, MACD neg | Post-hype unwinding. No bullish entry. |
-| **NBIS** | Far below 20 & 50, RSI 39.8, MACD deep neg | Cloud/AI infrastructure hype fading. |
-| **TSM** | Below 20 & 50, RSI 45.7, MACD neg | Wait for re-test of 200 SMA before considering. |
-| **ORCL** | See mean-reversion – trend is overwhelmingly bearish. |
+**Decision:** Execute **1 contract AMZN 240 cash‑secured put expiring Aug 7** for ~$525 credit. Collateral $24,000. Remaining cash ~$63k.
 
 ---
 
-### 4. Volatility Contraction Squeezes
-*No clear squeeze patterns today. Bollinger Band widths are relatively wide (e.g., SPY band width 28.6, ~3.8% of price). Narrowing candidates:*
+### Long Options – Directional Calls / Puts
 
-- **QQQ**: Bands 700.86–743.24 (width 42.4, ~5.9%) – not tight.
-- **XLU**: Bands 44.18–46.37 (width 2.2, ~4.8%) – moderate.
-- **GLD**: Bands 359.7–395.8 (width 36.1, ~9.7%) – wide.
+| Ticker | Strategy | Technical Context | Decision |
+|--------|----------|------------------|----------|
+| SPY | Call $775 / Aug 7 (22 DTE) | Close $754.81, uptrend with SMA20 > SMA50 > SMA200. RSI 58.4 (bullish). MACD positive. Slow channel risk‑on. | **CONSIDER SMALL** – Low IV (0.11) makes cost cheap ($1.77 mid). Upside if trend continues. But canary half‑defensive suggests caution. Limit size to 1 contract (~$177 risk) for speculative upside. |
+| QQQ | Call $730 / Aug 7 (22 DTE) | Close $717.74, near SMA20 and SMA50. RSI 50 (neutral). MACD hist negative. No clear momentum. | **AVOID** – No catalyst from price action. Better to wait for a confirmed move. |
+| GLD | Put $352 / Aug 7 (22 DTE) | Close $372.35, below SMA20, SMA50, SMA200 (downtrend). RSI 41.6 (oversold). MACD hist positive (possible bounce). | **AVOID** – Oversold RSI increases bounce risk. Trend is down but timing uncertain. |
+| GLD | Call $380 / Aug 7 (22 DTE) | Same downtrend. RSI oversold. Would require a reversal. | **AVOID** – Counter‑trend. |
 
-No actionable squeeze signals.
-
----
-
-### 5. Options-Specific Evaluation (Price Action Lens)
-
-| Strategy | Ticker | Price Action Verdict | Recommendation |
-|----------|--------|----------------------|----------------|
-| **CSP AAPL 310 Jul 31** | AAPL | Strong uptrend, safe | **Favor** – low probability of being assigned |
-| **CSP AMD 495 Jul 31** | AMD | Uptrend but momentum weakening | **Caution** – MACD bearish cross may precede pullback |
-| **CSP AMZN 240 Jul 31** | AMZN | Neutral between SMAs | **Neutral** – could work but not strong trend |
-| **CSP AVGO 370 Jul 31** | AVGO | Below 50 SMA, mixed | **Avoid** – no trend support |
-| **CSP CEG 200 Jul 31** | CEG | Deep OTM but underlying weak | **Avoid** – low probability of assignment but also low premium for risk |
-| **CSP CRWD 200 Jul 31** | CRWD | Near overbought, risky | **Avoid** – RSI 70, chance of mean reversion hurts CSP |
-| **Long Call SPY 777 Jul 31** | SPY | Uptrend intact, MACD + | **Favor** – trend continuation, tight spread |
-| **Long Put QQQ 696 Jul 31** | QQQ | Neutral, MACD negative | **Neutral** – possible hedge if broad market rolls over |
-| **Long Put GLD 361 Jul 31** | GLD | Downtrend, oversold | **Caution** – oversold could bounce, but trend is down |
+**Decision:** Add **1 contract SPY 775 call expiring Aug 7** ($177 debit) as a small bullish bet aligned with the risk‑on regime, acknowledging canary caution via tight size.
 
 ---
 
-### Summary & Actionable Takeaways
+### Final Portfolio Actions Summary
 
-1. **Highest confidence trend**: **AAPL** – continue CSP program. Also **SPY** long calls (small, 1 contract) for directional upside.
-2. **Avoid**: CSP on **AVGO**, **CEG**, **CRWD**. Avoid shorting ORCL/GLD despite oversold – wait for reversal confirmation.
-3. **Hedge consideration**: QQQ long put (1 contract) to protect against tech sector weakness, given narrow leadership and MACD divergence on many semis.
-4. **Watch for breakdown**: **MSFT** and **INTC** are canaries in the AI coal mine – if they break lower, expect broader tech rotation out.
+| Action | Ticker | Strategy | Strike/Expiry | Contracts | Debit/Credit | Cash Impact |
+|--------|--------|----------|---------------|-----------|--------------|-------------|
+| **Sell CSP** | AMZN | Cash‑secured put | $240 / Aug 7 | 1 | **+$525** | $24,000 collateral |
+| **Buy Call** | SPY | Long call | $775 / Aug 7 | 1 | **‑$177** | $177 (full loss if expires) |
 
-All signals are derived purely from price, MAs, RSI, MACD, and Bollinger Bands. News and fundamentals ignored as instructed.
+**Net cash after trades:** ~$63,532 (remaining cash + initial $87,185 – $24,000 collateral + $525 credit – $177 debit).  
+CSP collateral is returned if option expires worthless or upon assignment (then you own 100 shares at $240 each).  
+
+**Risk Management:** This deploys ~27% of capital (including CSP collateral) with low‑risk premium collection and a small directional tail. Avoided high‑IV names, extended stocks, and counter‑trend gold bets given the mixed technical signals.
