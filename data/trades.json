@@ -2,26 +2,26 @@
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 24000
     },
     {
         "ticker": "XLF",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 16000
     },
     {
-        "ticker": "DIA",
+        "ticker": "SPY",
+        "action": "buy",
+        "notional_value": 20000
+    },
+    {
+        "ticker": "GLD",
         "action": "buy",
         "notional_value": 10000
     },
     {
-        "ticker": "XLU",
+        "ticker": "EWA",
         "action": "buy",
-        "notional_value": 5000
-    },
-    {
-        "ticker": "EWC",
-        "action": "buy",
-        "notional_value": 5000
+        "notional_value": 10000
     }
 ]
