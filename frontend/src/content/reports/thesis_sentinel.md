@@ -3,37 +3,28 @@ title: Thesis Sentinel Daily Brief
 date: "2026-07-17"
 ---
 
-**Daily Brief – 2026-07-17**
+**Daily Thesis Sentinel – 2026-07-17**
 
-### 1. Tripwire status
+### 1. Tripwire Status
+| Tripwire | Signal | Threshold | Reading | Status |
+|----------|--------|-----------|---------|--------|
+| Carry unwind | ^VIX/^VIX3M | >1.0 | 0.90 | CLEAR |
+| Credit cracks | HYG/LQD 63d rel-mom | <-2% | +1.79% | CLEAR |
+| Breadth break | canary (EWA,TLT) | both neg | TLT neg, EWA pos | CLEAR |
+| Trend break | SPY vs 200d SMA | m/e close below | +10.4% above | CLEAR |
+| Oil shock | XLE momentum vs SPY | sustained leadership | XLE +1.3%, SPY -0.8% | WATCH (not yet sustained) |
+| AI capex turn | hyperscaler FY27 guide | any cut | no news | CLEAR |
+| Carry stress | USDJPY | rapid <140 | no direct data; DXY rising | CLEAR |
 
-| Tripwire | Signal | Reading | Status |
-|---|---|---|---|
-| Carry unwind | ^VIX/^VIX3M (5d median) | 0.834 (ratio 0.90) | **CLEAR** |
-| Credit cracks | HYG/LQD 63d rel‑mom | +1.79% | **CLEAR** |
-| Breadth break | Canary EWA/TLT both neg | Only TLT negative (half‑defensive) | **CLEAR** |
-| Trend break | SPY vs 200d SMA (month‑end) | SPY 750.7, 200d 693.0 | **CLEAR** (no month‑end) |
-| Oil shock | XLE sustained leadership | XLE momentum +3.7%, no extreme | **CLEAR** |
-| AI capex turn | Hyperscaler FY27 capex cut | No cut announced | **CLEAR** |
-| Carry stress | USDJPY < 140 (rapid) | No data (UUP stable) | **CLEAR** |
-
-All tripwires clear; rules remain full “risk‑on” for core mandates (slow‑channel, credit, fast channel all green). The canary half‑defensive state is already captured by DAA rotation, not an additional tripwire.
-
-### 2. Marker watch
-
-- **BoJ guidance**: No new news after June meeting; hike/guidance reaction already absorbed.  
-- **CPI**: No new print today. Last known (May) 4.2%; a headline claims “US CPI Falls for the First Time Since 2020” but exact June level unknown – far from two consecutive <3.5%.  
-- **SpaceX vs $135**: No updated price data; no report of breaking below $135. IPO watch period through mid‑July ends without breakdown signal.  
-- **Hyperscaler capex**: Q2 earnings season has not yet delivered capex guidance from big hyperscalers – no cuts seen.  
-- **Hormuz**: Strait traffic reduced, but no week‑long full closure; hostilities active but not total blockade.
+### 2. Marker Watch
+- **BoJ June meeting**: occurred, no USDJPY crash; marker not activated.
+- **CPI**: May 4.2%, no new print. Two sub-3.5% needed – not met.
+- **SpaceX vs $135**: fell below IPO price this week (SPCX <$135). **Marker activated** – raises scenario B risk.
+- **Hyperscaler capex**: Q2 earnings ahead; no guidance cuts yet.
+- **Hormuz closure**: attacks intensify, transits drop, but no full closure week+. Not triggered.
 
 ### 3. Delta
+Iran ramps ship attacks, oil spikes; AI tech rout deepens (SOX near bear market, NVDA nearly loses most-valuable title). SpaceX sinks below issue price – classic late-cycle liquidity confirmation. Fed hawkish rhetoric continues (rate-hike voices swell), but policy on hold. VIX up to 16.7 but still “normal.” Gold slides despite safe-haven bid – rate-hike fears outweigh. Small bounce in semiconductors late-day, but week ends heavily risk-off.
 
-- Tech selloff deepened: NVDA, MU, WDC, NBIS, STX down sharply; QQQ broke below 700.  
-- Gold (GLD/IAU) hit eight‑month lows; dollar (UUP) inched up; 10‑year yield (^TNX) rose to 4.57%.  
-- Energy (XLE) continued to show relative strength on oil supply fears.  
-- Overall pattern: a narrow‑breadth rotation out of mega‑cap AI/semis into energy, financials, and defensive utilities – classic “grind with violence” day. No regime‑change signal.
-
-### 4. Scenario pressure
-
-Today’s evidence fits **Scenario A (Grind‑with‑violence)** best: an air pocket in tech while credit, vol, and trend signals stay healthy. The tech rout is painful but not yet a systemic credit or breadth event. Neither scenario B (slow bear) nor C (fast crash) has a tripwire fired. Official weights (50/30/20) are unchanged; monthly review on schedule.
+### 4. Scenario Pressure
+Today’s mix (chip route + oil shock + IPO break) pushes toward **Scenario B (slow bear)**, as a key late-cycle marker triggers. Still fits Scenario A’s “grind-with-violence” pattern of repeated air pockets. Official weights unchanged per monthly review cadence; intensification of tech earning disappointments or Hormuz closure would tilt further.
