@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-07-16T21:38:15.040338+00:00",
+  "generated_at_utc": "2026-07-17T16:11:50.496382+00:00",
   "accounts": {
     "dev": {
       "ok": true,
       "strategy": null,
       "metrics": {
-        "observations": 97,
+        "observations": 98,
         "total_return": -0.12815,
-        "annualized_return": -0.299721,
-        "sharpe": -2.778047,
+        "annualized_return": -0.29717,
+        "sharpe": -2.763405,
         "max_dd": -0.12815,
         "current_dd": -0.12815
       },
@@ -21,12 +21,12 @@
       "ok": true,
       "strategy": null,
       "metrics": {
-        "observations": 83,
-        "total_return": -0.03558,
-        "annualized_return": -0.104161,
-        "sharpe": -0.514355,
+        "observations": 84,
+        "total_return": -0.020899,
+        "annualized_return": -0.061396,
+        "sharpe": -0.255737,
         "max_dd": -0.108374,
-        "current_dd": -0.077198
+        "current_dd": -0.063151
       },
       "vs_expectation": {
         "status": "insufficient_history",
@@ -37,12 +37,12 @@
       "ok": true,
       "strategy": "reddit_200sma_tqqq",
       "metrics": {
-        "observations": 83,
-        "total_return": 0.862875,
-        "annualized_return": 5.611756,
-        "sharpe": 2.524469,
+        "observations": 84,
+        "total_return": 0.724125,
+        "annualized_return": 4.125146,
+        "sharpe": 2.23791,
         "max_dd": -0.279789,
-        "current_dd": -0.196127
+        "current_dd": -0.256001
       },
       "vs_expectation": {
         "status": "on_script",
@@ -58,12 +58,12 @@
       "ok": true,
       "strategy": "dual_momentum_rotation",
       "metrics": {
-        "observations": 83,
-        "total_return": 0.044022,
-        "annualized_return": 0.139738,
-        "sharpe": 0.543248,
+        "observations": 84,
+        "total_return": 0.037886,
+        "annualized_return": 0.118018,
+        "sharpe": 0.490516,
         "max_dd": -0.1182,
-        "current_dd": -0.036293
+        "current_dd": -0.041957
       },
       "vs_expectation": {
         "status": "on_script",
@@ -79,12 +79,12 @@
       "ok": true,
       "strategy": "sector_momentum_top3_filtered",
       "metrics": {
-        "observations": 83,
-        "total_return": 0.018486,
-        "annualized_return": 0.057188,
-        "sharpe": 0.427546,
+        "observations": 84,
+        "total_return": 0.023127,
+        "annualized_return": 0.070999,
+        "sharpe": 0.510175,
         "max_dd": -0.06875,
-        "current_dd": -0.03888
+        "current_dd": -0.0345
       },
       "vs_expectation": {
         "status": "on_script",
@@ -100,10 +100,10 @@
       "ok": true,
       "strategy": null,
       "metrics": {
-        "observations": 83,
+        "observations": 84,
         "total_return": -0.00243,
-        "annualized_return": -0.007359,
-        "sharpe": -0.068689,
+        "annualized_return": -0.007271,
+        "sharpe": -0.068279,
         "max_dd": -0.039402,
         "current_dd": -0.004536
       },
