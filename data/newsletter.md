@@ -1,4 +1,4 @@
-# AlphaOracle Daily - 2026-07-20
+# AlphaOracle Daily - 2026-07-21
 
 ## Signals (rules govern; everything below is commentary)
 
@@ -8,76 +8,58 @@
 |---|---|---|
 | Trend (monthly 200dma) | risk_on | 10.36% vs SMA, as of 2026-06-30 |
 | VIX term structure | clear | ratio 0.858 |
-| Credit (HYG/LQD 63d) | clear | 0.0122 |
+| Credit (HYG/LQD 63d) | clear | 0.0182 |
 | Canary breadth | half_defensive | negative: ['TLT'] |
 
 ## Thesis Sentinel
 
-# Thesis Sentinel Daily Brief  
-**2026-07-20** | Transitional regime · Cautious risk · Dollar rising · Rates rising
+1. **Tripwire status**
 
-## 1. Tripwire Status
+| Tripwire | Signal | Threshold | Today's reading | Status |
+|---|---|---|---|---|
+| Carry unwind | ^VIX/^VIX3M | >1.0 (backwardation) | 0.908 (contango) | CLEAR |
+| Credit cracks | HYG/LQD 63d rel‑mom | < –2% | +1.82% | CLEAR |
+| Breadth break | Canary (EWA, TLT) | both negative | EWA +0.34%, TLT –2.24% | CLEAR (half‑defensive) |
+| Trend break | SPY vs 200d SMA (month‑end) | monthly close below | SPY 742.1 vs 200d 693.9 | CLEAR |
+| Oil shock | XLE momentum vs SPY | sustained leadership | XLE strong uptrend; no numeric threshold defined | Not triggered |
+| AI capex turn | Hyperscaler guidance | any FY27 capex cut | No new guidance today | CLEAR |
+| Carry stress | USDJPY | rapid <140 | Not available in today’s signals | Unmonitored |
 
-| Tripwire | Today’s Reading | Status |
-|---|---|---|
-| Carry unwind (VIX/VIX3M >1.0) | 5d median 0.858 (fast_channel: clear) | CLEAR |
-| Credit cracks (HYG/LQD 63d rel‑mom <‑2%) | +1.22% (credit: clear) | CLEAR |
-| Breadth break (EWA & TLT both <0) | EWA +0.69%, TLT –1.22% (canary: half_defensive) | CLEAR |
-| Trend break (SPY < 200d SMA) | SPY 743.29 > 200d 693.44 | CLEAR |
-| Oil shock (XLE sustained leadership) | XLE mom +6.3% (strong positive) vs SPY uptrend | CLEAR* |
-| AI capex turn (FY27 guidance cut) | No cut news; AI capex >$1T narrative remains | CLEAR |
-| Carry stress (USDJPY <140 rapid) | USDJPY data unavailable; UUP rising (dollar bid) | INSUFFICIENT DATA |
+2. **Marker watch**
 
-*XLE leadership is notable but not yet at a disruptive threshold for overall market structure.
+- BoJ guidance: no news (June hike already past; no follow‑up statements).  
+- CPI: no new print; recent headlines note “cooler inflation” but no sequential data.  
+- SpaceX vs $135: no price or performance news today.  
+- Hyperscaler capex: no guidance changes ahead of this week’s earnings (Alphabet, Tesla).  
+- Hormuz: escalation – tanker hit, Brent >$90, Goldman warns $120 possible, but no full closure.
 
-## 2. Marker Watch
+3. **Delta**
 
-- **BoJ meeting follow‑up:** No new guidance. June hike is priced; calm since then.  
-- **CPI:** Persistent‑inflation headlines dominate, but no fresh print; 4.2% y/y remains the anchor.  
-- **SpaceX vs $135:** **BREACHED.** SPCX closed at $119.85, below the $135 issue price for the seventh straight session. This is the falsifiable marker signalling “late‑cycle liquidity confirmation” and mechanically raises scenario B probability.  
-- **Hyperscaler capex:** Strategist note sees AI capex topping $1T by 2027; no guidance reductions surfaced.  
-- **Hormuz:** Elevated tensions (Houthi embargo threat, continued strikes), but no full closure. Oil holds near $90.
+Geopolitical risk intensified: multiple reports of tanker attacks in Strait of Hormuz, oil prices spiking, and a Reuters poll showing economists see a chance of a Fed hike. Rule‑based signals remain unchanged from yesterday’s snap: canary half‑defensive, credit clear, VIX futures contango, trend intact. The only delta is a louder inflation‑risk‑off tail from the war, but tripwires remain unfired.
 
-## 3. Delta
+4. **Scenario pressure**
 
-A single material change: **SpaceX decisively broke below its $135 IPO price** (now –11% below). This is the tripwire identified in the June thesis as a classic late‑cycle warning (mega‑IPO fails to hold offer price within weeks) and a direct falsification of the “grind” assumption. The chip complex also staged a tentative bounce (MU, AMD, WDC up), but volatility remains high; the S&P 500 is still grinding sideways. Fed‑tightening chatter (multiple hawkish headlines) pushed the dollar higher, adding headwinds for gold and long duration. Rule‑based signals remain uniformly “clear” or partially defensive, but they are not yet registering stress. The canary’s half‑defensive state (TLT negative only) is consistent with a transition, not a dive.
-
-## 4. Scenario Pressure
-
-Today’s SpaceX breach is the first thesis tripwire to switch from false to true. In the framework, it elevates the slow‑bear (B) probability relative to the grind‑with‑violence (A) base. Official scenario weights do not change until the next monthly review, but the weight of evidence is now leaning harder toward the 30% B case: the euphoria marker is activating while inflation and war keep policy cornered. The “C” (fast crash) tail is unchanged—no credit, carry, or VIX‑term‑structure signals are firing.
+Today’s evidence leans into scenario **A (Grind‑with‑violence)** – oil‑driven anxiety with no systemic cracks. Rising rates and cautious sentiment are consistent with the repeated 5–10% air pockets described in A. The war escalation adds a faint pulse toward C, but the absence of credit stress or VIX backwardation keeps the systems in risk‑on posture. Official scenario weights unchanged until monthly review.
 
 ## Portfolio Manager Synthesis
 
-# Lead Portfolio Manager Decision & Plan
-**Date:** 2026-07-20  
-**Regime:** Transitional, risk-cautious, dollar rising, rates rising  
-**Canary Signal:** Half-defensive (TLT negative, EWA positive)  
-**Mandate:** Core sleeves invested; satellite defer to canary → permits partial deployment with a defensive bias.
+The portfolio starts from a clean cash position. The macro backdrop is dominated by the Strait of Hormuz crisis, cornered Fed policy, rising yields, a strong dollar, and mixed commodity signals. The canary is half-defensive (TLT negative), and the regime is Transitional with a strong stagflationary tilt. This argues for a defensive‑leaning deployment that overweights energy and financials, adds a small gold hedge, and keeps ample dry powder.
 
----
+- **Energy (XLE)** rides the supply‑shock uptrend with strong momentum; the war and potential for further escalation keep a bid under oil.
+- **Financials (XLF)** benefit from rising rates (wider net interest margins) and hold up well in the current rotation out of growth.
+- **Gold (GLD)** is oversold and showing early reversal signs (positive MACD histogram); a small position serves as a geopolitical tail‑hedge and a bet that negative real rates eventually reassert themselves.
+- Remaining cash (about 45%) preserves optionality for a deeper sell‑off and pays a money‑market yield of ~4.5%.
 
-## Synthesis of Analyst Disagreements & Key Weights
+Tech and growth are under pressure from rising rates and the AI capex deceleration risk, so I avoid semis, broad tech ETFs, and leveraged instruments.
 
-I heavily weight the **Risk Manager** (deepseek v4-flash) and **Macro Strategist** (deepseek v4-flash) reports, as both are frontier-model generated and align closely with our investment thesis. The **Technical Analyst** (same model) provides useful price‑action context but occasionally suggests mean‑reversion trades (SLV, IBIT) that clash with the macro risk‑off backdrop; I disregard those for now.
+**Action Plan**
 
-- **Geopolitics & Energy:** All voices agree that XLE is the standout sector. The Strait of Hormuz conflict is a persistent supply shock, and XLE’s technicals are pristine. I treat this as a high‑conviction core position.
-- **Gold vs. Rates:** The Risk Manager is cautious on gold due to rising dollar/rates, but the Macro Strategist and thesis both argue for a strategic allocation given negative real rates and central‑bank buying. I favor the strategist’s view – a modest GLD position aligns with the half‑defensive canary and provides a non‑bond hedge.
-- **Financials & Rotation:** Both risk and macro notes highlight financials as beneficiaries of rising rates. The Technical Analyst confirms XLF in a strong trend. This is a consensus add.
-- **Semis & Tech:** All analysts warn against semiconductor names (MU, INTC, ORCL) and QQQ. I will avoid these entirely. NVDA’s tentative reversal is not enough to override the sector‑wide bear thesis.
-- **Cash:** The Risk Manager and thesis both emphasise cash as a valuable weapon in a grind‑with‑violence regime. I will leave a substantial cash buffer (~30%) to take advantage of air pockets or to meet the canary’s full‑defence trigger.
-
----
-
-## Definitive Action Plan Table
-
-| Action | Ticker/Asset | Conviction Level | Timeframe | Justification |
-|--------|---------------|------------------|-----------|---------------|
-| **Buy** | **XLE** | High | 2‑6 weeks | Clean trend continuation; above all SMAs, RSI 61, MACD bullish. Structural oil supply shock from US‑Iran conflict and Houthi embargo. Thesis‑aligned inflation/stagflation hedge. |
-| **Buy** | **XLF** | High | 2‑6 weeks | Strong uptrend, RSI 65, MACD bullish. Rising yields and hawkish Fed directly benefit bank net interest margins; the financial sector is a core rotation beneficiary. |
-| **Buy** | **GLD** | Medium | 4‑12 weeks | Contrarian but strategic – gold resilience near $4,000 despite dollar and rate headwinds. Negative real rates, central‑bank buying, and half‑defensive canary support a defensive gold allocation. MACD histogram turning positive. |
-| **Hold** | **Cash** | High | Ongoing | ~30% of portfolio remains in cash per the Risk Manager’s directive. This provides dry powder to buy dips if the canary stays risk‑on, or full defense if tripwires trigger. |
-
----
+| Action | Ticker/Asset | Conviction | Timeframe | Justification |
+|--------|-------------|------------|-----------|---------------|
+| **Buy** | **XLE** (Energy Select Sector SPDR) | **High** | Medium‑term (4‑12 weeks) | Oil supply shock from Hormuz attacks; strong uptrend, above all SMAs, positive MACD; acts as an inflation hedge and direct beneficiary of geopolitical tail risk. |
+| **Buy** | **XLF** (Financial Select Sector SPDR) | **Medium** | Medium‑term | Rising interest rates widen net interest margins; trend is strong, above all key SMAs, RSI healthy; rotation out of tech into financials is underway. |
+| **Buy** | **GLD** (SPDR Gold Shares) | **Low‑Medium** | Medium‑term | Gold is oversold; MACD histogram has just turned positive, hinting at a potential reversal. A small position hedges tail risk if geopolitical deterioration triggers a flight to safety, while negative real rates provide a structural floor. |
+| **Hold** | **Cash** | **High** | Indefinite | The scenario mix (50% grind‑with‑violence, 30% slow bear, 20% fast crash) plus multiple flashing tripwires (VIX/VIX3M near 1.0, canary half‑defensive) warrant preserving firepower. Money‑market yield (~4.5%) mitigates inflation cost of waiting. |
 
 ## Paper-Account Attribution
 
