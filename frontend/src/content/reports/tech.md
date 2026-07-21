@@ -1,120 +1,92 @@
 ---
 title: Technical Analyst Report
-date: "2026-07-20"
+date: "2026-07-21"
 ---
 
 ## Model: deepseek/deepseek-v4-flash
 
-## Price-Action Technical Analysis (Machine-Only Scan)
-
-**Date:** 2026-07-20  
-**Methodology:** SMA(20,50,200) alignment, RSI-14, MACD crossover/histogram, Bollinger Band position & width. No macro, news, or fundamental input.
+Based purely on price action and technical indicators (ignoring news), the following observations and potential setups are identified for the current date (2026-07-21). The slow channel is risk‑on, but the fast channel is clear and the intermarket regime is **Transitional (cautious, rising rates, commodities mixed)**. The canary signal is half‑defensive (TLT negative). Accordingly, the technical posture should be selective: favor momentum in energy/financials, watch for mean‑reversion bounces in oversold names, and respect the general caution.
 
 ---
 
-### 1. Broad Market Technicals
+## Overall Market Technicals
 
-| Ticker | Price vs. MAs | RSI | MACD Hist | BB Position | Verdict |
-|--------|---------------|-----|-----------|-------------|---------|
-| SPY | Below SMA‑20, above SMA‑50/200 | 48.8 | −0.21 (bearish) | Mid‑band | Neutral‑bearish short term; trend intact above 200 SMA |
-| QQQ | Below SMA‑20 **and** SMA‑50, above 200 | 42.1 | −2.81 (bearish) | Lower half | **Failed uptrend**; momentum negative |
-| DIA | Slightly below SMA‑20, above 50/200 | 52.5 | −0.99 (bearish) | Mid‑band | Mild weakness; Dow outperforming tech |
-| IWM | At SMA‑20, above 50/200 | 50.5 | −0.91 (bearish) | Mid‑band | Neutral; small caps in consolidation |
+| Index | Price | SMA20 | SMA50 | SMA200 | RSI(14) | MACD Hist | BB Position | Bias |
+|-------|-------|-------|-------|--------|---------|-----------|-------------|------|
+| **SPY** | 742.09 | 744.79 | 743.44 | 693.85 | 47.9 | -0.74 (bearish) | Near mid‑band | **Neutral‑Bearish** – price below both short‑term MAs, MACD negative. |
+| **QQQ** | 696.06 | 716.12 | 718.54 | 640.02 | 42.4 | -3.25 (bearish) | Near lower band | **Bearish** – below 20 & 50 MAs, RSI falling. |
+| **IWM** | 292.31 | 296.64 | 290.05 | 262.67 | 47.5 | -1.02 (bearish) | At lower BB | **Bearish** – below 20 MA, MACD negative. |
+| **DIA** | 517.94 | 522.54 | 511.77 | 485.03 | 48.1 | -1.37 (bearish) | Near mid‑band | **Neutral** – between 20 & 50 MAs, but MACD negative. |
 
-**Takeaway:** Equities are under short‑term pressure. The QQQ/SPY divergence (QQQ’s 200‑day is still well above price) signals a top‑tier tech unwind. Breadth is narrowing.
-
----
-
-### 2. Sector & Factor Technicals
-
-| Ticker | Key Metric | Setup Type |
-|--------|------------|------------|
-| **XLE** (Energy) | Price > all MAs, RSI 61.8, MACD bullish, at upper BB | **Trend Continuation** – strongest sector |
-| **XLF** (Financials) | Price > all MAs, RSI 65.6, MACD bullish | **Trend Continuation** – rates rising helps |
-| **XLK** (Tech) | Below SMA‑20/50, RSI 42.4, MACD bearish | **Failed** – tech selloff confirmed |
-| **XLC** (Comm) | At SMA‑20, RSI 49.2, MACD bullish cross (hist +0.51) | **Possible Mean Reversion** – Netflix drag capriced? |
-| **XLU** (Utilities) | At SMA‑20/50, RSI 50.1, MACD negative | Neutral – no edge |
-| **XLP** (Staples) | Above all MAs, RSI 55.2, MACD neutral | **Trend Continuation** – defensive bid |
-| **XLY** (Discretionary) | Just below SMA‑20, RSI 46.4, MACD near zero | Weak; consumer squeezed |
-| **XLB** (Materials) | Below SMA‑20, RSI 46.2, MACD bearish | Weak; commodity drag |
-| **XLRE** (Real Estate) | Above all MAs, RSI 59.7, MACD neutral | Steady uptrend (rare in rising rates – data center story) |
-| **SCHD** (Dividend) | Above all MAs, RSI 61.6, MACD bullish | **Trend Continuation** – quality income bid |
-
-**Takeaway:** Capital is rotating into energy, financials, staples, and quality dividend. Tech, materials, and most cyclicals are losing momentum.
+**Conclusion**: Broad equity indexes show a short‑term bearish tilt (price below 20‑day MA, negative MACD). Small‑caps (IWM) are weakest. No oversold extremes yet, but momentum is rolling over.
 
 ---
 
-### 3. Individual Stock/ETF Setups
+## Sector & Factor ETFs
 
-#### Mean Reversion Bounces (oversold / near lower BB + early reversal signals)
+| Ticker | RSI | MA Alignment | MACD | Comment |
+|--------|-----|--------------|------|---------|
+| **XLE** (Energy) | 62.9 | Above all MAs | Positive, histogram rising | **Trend continuation** – strong momentum, price near upper BB. Not overbought. |
+| **XLF** (Financials) | 62.9 | Above all MAs | Positive | **Trend continuation** – benefiting from rising rates, well positioned. |
+| **XLU** (Utilities) | 47.8 | At 20 MA | Slightly negative | Neutral, no clear setup. |
+| **XLV** (Healthcare) | 53.8 | Above all MAs | Positive | Steady uptrend, no extremes. |
 
-| Ticker | Price vs. MAs | RSI | MACD Hist | BB | Rationale |
-|--------|---------------|-----|-----------|-----|----------|
-| **SLV** | Below all MAs (SMA‑20 $53.83) | **34.7** | +0.11 (positive) | Above lower | Severe oversold; MACD just turned up. A 14–18% drop in 14 days – statistical bounce candidate. |
-| **IBIT** (Bitcoin) | Below SMA‑50/200, above SMA‑20 | 49.8 | +0.42 (positive) | Above lower | MACD bullish cross from deeply negative. Recovery from $57k to $65k; momentum improving. |
-| **GLD** | Below all MAs | 40.3 | +0.68 (positive) | Above lower | Bearish trend, but histogram turning up from an extreme selling pulse. Possible base formation. |
-| **CEG** | Below all MAs | 45.9 | +1.43 (positive) | Above lower | Nuclear/AI power stock sold off 20%+ from 50‑SMA; MACD diverging higher. |
-| **INTC** | Below SMA‑20/50, above SMA‑200 | 36.1 | −3.64 (bearish) | Near lower | RSI nearly oversold. Selloff is violent but potential snap‑back ahead of earnings (this week). |  
-| **MU** | Below SMA‑20/50, above SMA‑200 | 41.0 | −30.6 (still negative) | Near lower | Deep in oversold territory; MACD still plunging – **not yet confirmed reversal**. Watch for histogram flattening. |
-
-#### Trend Continuation (strong uptrend, room to run)
-
-| Ticker | Confirmation | Why |
-|--------|--------------|-----|
-| **XLE** | Price > all MAs, MACD > signal, BB upper | Oil demand shock + tight supply; momentum intact. |
-| **XLF** | Price > all MAs, MACD > signal, BB mid | Yield curve steepening, bank earnings strong. |
-| **CRWD** | Price > all MAs, RSI 62.8, MACD > signal | Cybersecurity defies tech weakness; all‑time highs nearby. |
-| **NVDA** | Price = SMA‑20, RSI 48, **MACD just crossed above signal** | After a 22% pullback, MACD turned. Could be a new leg up if > 200‑SMA holds. |
-| **SCHD** | Price > all MAs, RSI 61.6, MACD > signal | Quality factor bid; defensive growth + income. |
-| **EWC** (Canada) | Price > all MAs, RSI 64.3, MACD > signal | Resource‑heavy index benefits from oil/gold theme. |
-
-#### Failed Setups (broke structure, no reversal yet)
-
-| Ticker | Failure Evidence |
-|--------|-----------------|
-| **QQQ** | Closed below SMA‑20 and SMA‑50 for 3+ days; MACD bearish cross deep. The July tech rally was a bull trap. |
-| **TSLA** | Below all MAs; RSI 42.6; MACD bearish. Broke 200‑SMA. |
-| **ORCL** | Well below SMA‑50/200; RSI 29.4 – but no MACD reversal; still free‑falling. |
-| **MU** | Broke below BB middle; MACD waterfall. Will need to reclaim SMA‑50 to negate failure. |
-
-#### Volatility Contraction Squeezes (tight Bollinger Bands → explosive move ahead)
-
-| Ticker | BB Width | Comment |
-|--------|----------|---------|
-| **HYG** | 0.56% (extremely tight) | High‑yield credit is coiled. A break above $79.88 or below $79.42 will determine risk appetite. Current level = sma20. |
-| **UUP** (Dollar) | 1.0% | Dollar in a tight 5‑day range near highs. Break would strengthen commodity/equity divergence. |
-| **^IRX** (13wk yield) | 0.009% (very tight) | Short‑end rates unusually quiet – preceding a Fed move or liquidity event. |
+**Best trend**: XLE and XLF remain the strongest sectors. No overextension signals.
 
 ---
 
-### 4. Volatility / Risk Indicators
+## Individual Stock Setups
 
-| Ticker | Reading | Signal |
-|--------|---------|--------|
-| **^VIX** | 18.77 (rising, > SMA‑20/50) | Fear elevated; uptrend intact. Not yet panic (20+), but no calm. |
-| **^VIX3M** | 20.54 (near SMA‑200) | Contango flattening. VIX/VIX3M ratio = 0.91, still above 0.85 but down from recent highs. |
-| **TLT** | Below SMA‑20/200; RSI 43.8; MACD bearish | Rates rising; bonds in downtrend. No hedge value here. |
+### 📉 **Mean‑Reversion Bounce Candidates (Oversold)**
+
+| Ticker | Price | RSI | BB Lower | SMA20 | Setup |
+|--------|-------|-----|----------|-------|-------|
+| **NFLX** | 67.60 | **28.6** | 68.69 | 73.39 | **Outside lower BB** – extreme oversold. Price well below all MAs. MACD histogram still negative but narrowing. **Potential bounce** toward SMA20 (~73). Entry near 67 with stop below 65. |
+| **ORCL** | 121.38 | **27.3** | 116.25 | 142.19 | **Outside lower BB** – deeply oversold. Price broke below 200‑day MA recently. MACD still very negative. **High risk** – mean reversion only if it holds above previous support (120). Stop at 115. |
+| **SLV** | 50.98 | 35.5 | 49.47 | 53.40 | Below lower BB but not as extreme. RSI near oversold. MACD histogram slightly positive. Could form a base if it holds above 49.47. |
+| **GLD** | 367.60 | 39.8 | 362.08 | 372.92 | Price below all MAs, but **MACD histogram just turned positive** (0.65). Potential early reversal. Watch for close above 20‑day MA (372.92) to confirm. |
+
+**Caution**: Oversold in a strong downtrend (e.g., NFLX, ORCL) can lead to further losses. Use tight stops and size small. The half‑defensive canary adds risk.
+
+### 📈 **Trend Continuation / Strength**
+
+| Ticker | Price | RSI | MA Alignment | MACD | Setup |
+|--------|-------|-----|--------------|------|-------|
+| **AAPL** | 326.59 | **63.9** | Above all MAs | Strong positive, histogram rising | **Buy the dip** near 20‑day MA (306.95) or on pullback to 315. Stop at 305. RSI not overbought. |
+| **CRWD** | 198.49 | 58.8 | Above 20 & 50 MAs, above 200 | Positive, histogram rising | Uptrend intact. Pullback to 190–193 (50‑day MA ~173 is far) could be entry. |
+| **XLE** | 57.94 | 63.0 | Above all MAs | Positive, histogram rising | Momentum strong. **Volatility contraction?** BB width is 12.4% (moderate). Not a squeeze. Use trailing stop. |
+| **MSFT** | 402.29 | 56.2 | Above 20, at 50 MA | Positive crossover (histogram positive) | **Bullish MACD crossover** – price reclaimed 20 & 50 MAs. Target ~420 (prior resistance). Stop at 395. |
+
+**Best setup (risk/reward)**: **MSFT** – MACD crossover, price at key MA, and sector tailwind from AI infrastructure.
+
+### ⚠️ **Failed Setups / Bear Flags**
+
+| Ticker | Signal |
+|--------|--------|
+| **INTC** | RSI 38, price below 20 & 50 MAs, MACD negative. Recent bounce attempt failed at 200‑day MA (64.49 is far below current 97 – actually above 200). Wait for stability. |
+| **TLT** | RSI 37.7, below all MAs, MACD negative. **Canary negative** (already flagged). No reversal signal yet. Avoid. |
+| **MU** | RSI 42.5, price below 20 & 50 MAs, MACD histogram sharply negative. The AI memory name is in a correction – wait for bullish divergence. |
 
 ---
 
-### 5. Summary of Actionable Setups (by type)
+## Volatility & Squeeze Check
 
-**Best Mean Reversion Candidates:**  
-- **SLV** (RSI 34.7, MACD turn) – buy the extreme silver sell‑off.  
-- **IBIT** (bullish cross, base building) – if Bitcoin >$65k holds.  
-- **CEG** (divergence, core AI power theme) – added to watchlist.
-
-**Best Trend Continuation:**  
-- **XLE** (energy) – strongest sector momentum.  
-- **XLF** (financials) – rising rates tailwind.  
-- **CRWD** (cybersecurity) – relative strength ignoring tech malaise.
-
-**Watch for Breakout (squeeze):**  
-- **HYG** – credit market’s next move will be violent; use as risk‑gating input.
-
-**Avoid / Short-Only:**  
-- **QQQ**, **TSLA**, **ORCL**, **MU** (until reversal pattern forms).
+- **^VIX**: 18.65 – moderate, rising trend. Not a panic, but elevated.
+- **SPY Bollinger Width**: ~3.9% (normal, not compressed).
+- **QQQ Bollinger Width**: ~6.3% (wide) – no squeeze.
+- **Individual stocks**: No obvious volatility contraction pattern (e.g., tight BB range) in any widely‑held name today.
 
 ---
 
-*All analysis is derived solely from closing price, volume, and oscillator data as of 2026-07-20. No news headlines or qualitative judgments were used.*
+## Summary Actionable Observations
+
+1. **Trend continues** in **XLE, XLF, AAPL, CRWD, MSFT**.  
+   *MSFT offers the best recent‑crossover entry.*
+2. **Oversold mean‑reversion** candidates: **NFLX** (risky but textbook), **ORCL** (higher risk).  
+   *If you trade these, use 1‑1.5% of cash with a stop 2% below entry.*
+3. **Avoid** TLT, broad‑based tech ETFs (QQQ/SPY) until they reclaim 20‑day MA.  
+   *The cautious regime and rate headwinds argue for patience.*
+4. **No volatility contraction squeezes** evident.  
+   *Implied‑to‑realised vol arbitrage not justified.*
+
+**Portfolio stance**: With $87k cash and the canary half‑defensive, the technical setup supports a selective deployment into strong trend names (MSFT, XLE) while sizing small for oversold bounces. The risk‑off tilt in equity indexes suggests waiting for a clearer follow‑through day before adding broad exposure.

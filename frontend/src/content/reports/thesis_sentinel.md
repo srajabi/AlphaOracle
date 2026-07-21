@@ -1,37 +1,32 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-07-20"
+date: "2026-07-21"
 ---
 
-# Thesis Sentinel Daily Brief  
-**2026-07-20** | Transitional regime · Cautious risk · Dollar rising · Rates rising
+1. **Tripwire status**
 
-## 1. Tripwire Status
+| Tripwire | Signal | Threshold | Today's reading | Status |
+|---|---|---|---|---|
+| Carry unwind | ^VIX/^VIX3M | >1.0 (backwardation) | 0.908 (contango) | CLEAR |
+| Credit cracks | HYG/LQD 63d rel‑mom | < –2% | +1.82% | CLEAR |
+| Breadth break | Canary (EWA, TLT) | both negative | EWA +0.34%, TLT –2.24% | CLEAR (half‑defensive) |
+| Trend break | SPY vs 200d SMA (month‑end) | monthly close below | SPY 742.1 vs 200d 693.9 | CLEAR |
+| Oil shock | XLE momentum vs SPY | sustained leadership | XLE strong uptrend; no numeric threshold defined | Not triggered |
+| AI capex turn | Hyperscaler guidance | any FY27 capex cut | No new guidance today | CLEAR |
+| Carry stress | USDJPY | rapid <140 | Not available in today’s signals | Unmonitored |
 
-| Tripwire | Today’s Reading | Status |
-|---|---|---|
-| Carry unwind (VIX/VIX3M >1.0) | 5d median 0.858 (fast_channel: clear) | CLEAR |
-| Credit cracks (HYG/LQD 63d rel‑mom <‑2%) | +1.22% (credit: clear) | CLEAR |
-| Breadth break (EWA & TLT both <0) | EWA +0.69%, TLT –1.22% (canary: half_defensive) | CLEAR |
-| Trend break (SPY < 200d SMA) | SPY 743.29 > 200d 693.44 | CLEAR |
-| Oil shock (XLE sustained leadership) | XLE mom +6.3% (strong positive) vs SPY uptrend | CLEAR* |
-| AI capex turn (FY27 guidance cut) | No cut news; AI capex >$1T narrative remains | CLEAR |
-| Carry stress (USDJPY <140 rapid) | USDJPY data unavailable; UUP rising (dollar bid) | INSUFFICIENT DATA |
+2. **Marker watch**
 
-*XLE leadership is notable but not yet at a disruptive threshold for overall market structure.
+- BoJ guidance: no news (June hike already past; no follow‑up statements).  
+- CPI: no new print; recent headlines note “cooler inflation” but no sequential data.  
+- SpaceX vs $135: no price or performance news today.  
+- Hyperscaler capex: no guidance changes ahead of this week’s earnings (Alphabet, Tesla).  
+- Hormuz: escalation – tanker hit, Brent >$90, Goldman warns $120 possible, but no full closure.
 
-## 2. Marker Watch
+3. **Delta**
 
-- **BoJ meeting follow‑up:** No new guidance. June hike is priced; calm since then.  
-- **CPI:** Persistent‑inflation headlines dominate, but no fresh print; 4.2% y/y remains the anchor.  
-- **SpaceX vs $135:** **BREACHED.** SPCX closed at $119.85, below the $135 issue price for the seventh straight session. This is the falsifiable marker signalling “late‑cycle liquidity confirmation” and mechanically raises scenario B probability.  
-- **Hyperscaler capex:** Strategist note sees AI capex topping $1T by 2027; no guidance reductions surfaced.  
-- **Hormuz:** Elevated tensions (Houthi embargo threat, continued strikes), but no full closure. Oil holds near $90.
+Geopolitical risk intensified: multiple reports of tanker attacks in Strait of Hormuz, oil prices spiking, and a Reuters poll showing economists see a chance of a Fed hike. Rule‑based signals remain unchanged from yesterday’s snap: canary half‑defensive, credit clear, VIX futures contango, trend intact. The only delta is a louder inflation‑risk‑off tail from the war, but tripwires remain unfired.
 
-## 3. Delta
+4. **Scenario pressure**
 
-A single material change: **SpaceX decisively broke below its $135 IPO price** (now –11% below). This is the tripwire identified in the June thesis as a classic late‑cycle warning (mega‑IPO fails to hold offer price within weeks) and a direct falsification of the “grind” assumption. The chip complex also staged a tentative bounce (MU, AMD, WDC up), but volatility remains high; the S&P 500 is still grinding sideways. Fed‑tightening chatter (multiple hawkish headlines) pushed the dollar higher, adding headwinds for gold and long duration. Rule‑based signals remain uniformly “clear” or partially defensive, but they are not yet registering stress. The canary’s half‑defensive state (TLT negative only) is consistent with a transition, not a dive.
-
-## 4. Scenario Pressure
-
-Today’s SpaceX breach is the first thesis tripwire to switch from false to true. In the framework, it elevates the slow‑bear (B) probability relative to the grind‑with‑violence (A) base. Official scenario weights do not change until the next monthly review, but the weight of evidence is now leaning harder toward the 30% B case: the euphoria marker is activating while inflation and war keep policy cornered. The “C” (fast crash) tail is unchanged—no credit, carry, or VIX‑term‑structure signals are firing.
+Today’s evidence leans into scenario **A (Grind‑with‑violence)** – oil‑driven anxiety with no systemic cracks. Rising rates and cautious sentiment are consistent with the repeated 5–10% air pockets described in A. The war escalation adds a faint pulse toward C, but the absence of credit stress or VIX backwardation keeps the systems in risk‑on posture. Official scenario weights unchanged until monthly review.
