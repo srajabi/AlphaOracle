@@ -3,30 +3,31 @@ title: Thesis Sentinel Daily Brief
 date: "2026-07-21"
 ---
 
-1. **Tripwire status**
+**THESIS SENTINEL DAILY BRIEF**
+2026-07-21
 
-| Tripwire | Signal | Threshold | Today's reading | Status |
-|---|---|---|---|---|
-| Carry unwind | ^VIX/^VIX3M | >1.0 (backwardation) | 0.908 (contango) | CLEAR |
-| Credit cracks | HYG/LQD 63d rel‑mom | < –2% | +1.82% | CLEAR |
-| Breadth break | Canary (EWA, TLT) | both negative | EWA +0.34%, TLT –2.24% | CLEAR (half‑defensive) |
-| Trend break | SPY vs 200d SMA (month‑end) | monthly close below | SPY 742.1 vs 200d 693.9 | CLEAR |
-| Oil shock | XLE momentum vs SPY | sustained leadership | XLE strong uptrend; no numeric threshold defined | Not triggered |
-| AI capex turn | Hyperscaler guidance | any FY27 capex cut | No new guidance today | CLEAR |
-| Carry stress | USDJPY | rapid <140 | Not available in today’s signals | Unmonitored |
+### 1. Tripwire status
+| Tripwire | Trigger | Reading | Status |
+|----------|---------|---------|--------|
+| Carry unwind (VIX/VIX3M > 1.0) | Backwardation | fast_channel vix_vix3m 5d median 0.858 | CLEAR |
+| Credit cracks (HYG/LQD 63d rel-mom < -2%) | Stress regime | credit state clear, rel-mom +0.0182 | CLEAR |
+| Breadth break (canary both EWA, TLT negative) | Full defensive | canary half_defensive (only TLT negative) | CLEAR |
+| Trend break (SPY < 200d SMA m/e) | Bear onset | SPY 742.09 vs SMA200 693.85 (month not closed) | CLEAR |
+| Oil shock (XLE momentum sustained leadership) | Escalation pricing | XLE momentum +8.5% (strong positive), SPY still near flat | MONITOR (not tripped) |
+| AI capex turn (hyperscaler FY27 guide cut) | 1999 activation | No capex guidance news | CLEAR |
+| Carry stress (USDJPY < 140) | Forced deleveraging | Not in today’s direct data; dollar rising, rates up | CLEAR (assume above 140) |
 
-2. **Marker watch**
+All seven tripwires are **CLEAR**. The fast channel is calm, credit is stable, breadth is not in full defensive, and the price trend remains above its 200‑day average. The rising XLE momentum is flagged for monitoring but does not itself trigger an oil‑shock signal absent a formal threshold breach.
 
-- BoJ guidance: no news (June hike already past; no follow‑up statements).  
-- CPI: no new print; recent headlines note “cooler inflation” but no sequential data.  
-- SpaceX vs $135: no price or performance news today.  
-- Hyperscaler capex: no guidance changes ahead of this week’s earnings (Alphabet, Tesla).  
-- Hormuz: escalation – tanker hit, Brent >$90, Goldman warns $120 possible, but no full closure.
+### 2. Marker watch
+- **BoJ guidance** – No news. The June meeting has passed; no hawkish surprise is being reported. Marker unchanged.
+- **CPI** – No fresh print today. May CPI 4.2% remains the last data point; July CPI not yet due. Marker unchanged.
+- **SpaceX vs $135** – SpaceX now Nasdaq‑100; reports of 401(k) forced buying at $160 and losses, but no indication the price has breached the $135 issue price. Marker not triggered.
+- **Hyperscaler capex** – No guidance cuts or negative pre‑announcements in today’s news. Q2 earnings (Alphabet, Tesla tonight) will be the next major check. Marker unchanged.
+- **Hormuz full closure** – Active fighting, tanker hit, Houthis threatening another strait, but shipping not completely shut. No evidence of a full‑closure week. Marker not triggered.
 
-3. **Delta**
+### 3. Delta
+Little material change from yesterday. The Strait of Hormuz is more violently contested (Kuwaiti tanker hit, oil above $90), yet the market’s risk metrics barely moved: VIX/VIX3M still low, credit spread momentum positive, and the equity bounce (led by memory chips) erased the early‑week gloom. Gold and long bonds remain under pressure. The regime indicators—Transitional, cautious risk, dollar rising, rates rising—are unchanged. So while the geopolitical noise amplified, the **quantitative signals that govern our positioning did not budge**.
 
-Geopolitical risk intensified: multiple reports of tanker attacks in Strait of Hormuz, oil prices spiking, and a Reuters poll showing economists see a chance of a Fed hike. Rule‑based signals remain unchanged from yesterday’s snap: canary half‑defensive, credit clear, VIX futures contango, trend intact. The only delta is a louder inflation‑risk‑off tail from the war, but tripwires remain unfired.
-
-4. **Scenario pressure**
-
-Today’s evidence leans into scenario **A (Grind‑with‑violence)** – oil‑driven anxiety with no systemic cracks. Rising rates and cautious sentiment are consistent with the repeated 5–10% air pockets described in A. The war escalation adds a faint pulse toward C, but the absence of credit stress or VIX backwardation keeps the systems in risk‑on posture. Official scenario weights unchanged until monthly review.
+### 4. Scenario pressure
+Today’s evidence **reinforces Scenario A (Grind‑with‑violence)**: no tripwire has fired, the bounce in semiconductors shows dip‑buying appetite, and the credit market is untroubled. The Hormuz escalation adds a talking point but has not triggered either the oil‑shock tripwire (XLE leadership still building) or the fast‑crash carry signal. The tech bounce ahead of key earnings (Alphabet, Tesla) suggests the market is still willing to look through war headlines. Short‑term pressure is toward A, with a side‑note that a genuine Hormuz closure or a hawkish Fed surprise next week could quickly shift the balance toward C. We do **not** change the scenario weights; they remain A:50%, B:30%, C:20% until the next monthly review.
