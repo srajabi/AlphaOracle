@@ -5,51 +5,53 @@ date: "2026-07-22"
 
 ## Model: deepseek/deepseek-v4-flash
 
-**Price-Action-Only Evaluation of Options Setups**  
-*(Ignoring all news, macro, and fundamentals. Based solely on SMA structure, RSI, MACD, and Bollinger Bands.)*
+## Price Action Technical Setups — 2026-07-22
+
+### Mean Reversion Bounce Candidates (oversold / near lower BB)
+
+| Ticker | RSI | Price vs BB Lower | Setup |
+|--------|-----|-------------------|-------|
+| **TLT** | 35.8 | 83.66 / 82.84 (0.6% above) | Classic oversold bounce setup. Price below all SMAs but RSI < 40 and price within 1% of lower Bollinger Band. Tightening daily may produce a short-term snap-back. **Risk:** trend is strongly bearish (rising yields); bounce likely shallow. |
+| **LQD** | 35.5 | 106.85 / 106.51 (0.3% above) | Similar structure to TLT. Investment grade bonds oversold, near lower band. MACD histogram flattish but still negative. Potential for a relief rally if risk-on rally continues. |
+| **XLB** | 43.2 | 50.10 / 49.71 (0.8% above) | Materials sector oversold relative to its own range. Price below both 20- and 50-day SMAs but above 200-day. Could bounce if commodity sentiment stabilizes. |
+
+**Caution:** In a “Bull Quiet + rising rates” regime, mean reversion in bonds (TLT, LQD) is counter-trend. These are tactical only, not core positions.
+
+### Trend Continuation Candidates (aligned above SMAs, momentum positive)
+
+| Ticker | RSI | MACD Hist | Setup |
+|--------|-----|-----------|-------|
+| **XLE** | 65.3 | +0.54 | Strong uptrend. Price above all SMAs, MACD bullish, BB widening (volatility expanding). Energy sector leading on oil surge. **Risk:** extended (close to upper BB), but no bearish divergence yet. |
+| **XLF** | 63.4 | -0.03 (flat) | Above all SMAs; financials in solid uptrend. MACD histogram barely negative, but momentum not fading. Strong dollar & rising rates support. Trend continuation likely. |
+| **AAPL** | 64.5 | +2.21 | Above all SMAs, RSI not overbought. MACD histogram positive and increasing. Strong uptrend with no exhaustion signals. |
+| **META** | 56.2 | +4.03 | Above 200-day SMAs. MACD bullish, price consolidating near highs. Potential breakout continuation. |
+| **XLRE** | 57.1 | +0.07 | Real estate above all SMAs, modest positive momentum. Utilities also above 200-day (XLU at lower BB, but real estate more positive). |
+
+### Failed / Breaking Down Setups (price structure weakening)
+
+| Ticker | RSI | MACD Hist | Setup |
+|--------|-----|-----------|-------|
+| **INTC** | 45.3 | -2.43 | Price collapsed below both 20- and 50-day SMAs after a massive run. MACD deeply negative. Appears to be a failed hold above the 200-day support now acting as resistance near 116. Further downside likely to fill gap toward 85–90. |
+| **TSLA** | 43.3 | -2.77 | Below all three SMAs (20/50/200). Bearish structure. RSI not oversold yet, room to fall further. Weak momentum. |
+| **MU** | 51.0 | -19.15 | MACD histogram extremely negative (-19), though RSI near 50. Price below 20-day but still above 50-day. If it loses 944, could accelerate. The MACD divergence is severe. |
+| **QQQ** | 48.1 | -2.54 | Nasdaq 100 below its 20- and 50-day SMAs. MACD negative. Technology sector index rolling over. Next support at 695 (lower BB) and then 680. |
+
+### Volatility Contraction / Squeeze Candidates (tight Bollinger Bands, coiling)
+
+| Ticker | BB Width | % Width | Setup |
+|--------|----------|---------|-------|
+| **HYG** | 79.88 – 79.43 | 0.56% | Extremely narrow bands — the tightest in the dataset. Price near all SMAs (79.65). RSI 51.9, neutral. Volume elevated (27M shares). This is a textbook volatility squeeze waiting to expand. Given the rising-yield macro, the break is likely down, but TA is neutral. |
+| **UUP** | 28.54 – 28.26 | 0.98% | Also tight, but already in uptrend. Could accelerate higher if dollar strength persists. |
+| **LQD** | 109.60 – 106.51 | 2.9% | Moderate tightness, but oversold status adds to potential for a violent snap-back if yields retreat. |
+| **VXUS** | 85.97 – 83.23 | 3.2% | International equities coiling near all SMAs. Could break out if European/Asian relative strength continues. |
 
 ---
 
-### Market Context (Technicals Only)
-- **SPY** (749.71): above SMA20/50/200 (744.98 / 743.81 / 694.27). RSI 52.8, MACD histogram -0.67 (slight negative bias). No oversold/overbought. BB band width 3.9% – neutral volatility.
-- **Summary**: Uptrend intact but momentum fading; no extreme regime. Favors **mean reversion bounces** in oversold names and **trend continuation** in strong uptrends.
+### Summary
 
----
+- **Most actionable mean reversion:** TLT (oversold bounce), but trade small due to trend risk.
+- **Strong trend continuation:** XLE, XLF, AAPL, META.
+- **Most cautionary failed setups:** INTC, TSLA, MU (pay attention to further breakdown).
+- **Volatility squeeze to watch:** HYG — the tightest bands; direction uncertain but expansion imminent.
 
-### Cash-Secured Puts from Options Chain
-
-| Ticker | Price | SMA Structure | RSI | MACD Hist | BB Position | Verdict |
-|--------|-------|---------------|-----|-----------|-------------|---------|
-| **AAPL** (327.74) | Above all SMAs (20/50/200) | 64.5 | +2.21 (rising) | Near middle (upper 343) | **Strong uptrend.** Put strike 305 (6.9% OTM) is well below SMA200 (274.61) – very safe. Continuation bias. **Favorable.** |
-| **AMD** (544.43) | Above SMA20/50, far above SMA200 (300) | 54.8 | -5.4 (fading) | Near middle (LB 490) | Uptrend but MACD negative – consolidating. Put strikes 525/530 (3.5-5.6% OTM) still within support zone (SMA20 at 531). **Moderate – trend may pause.** |
-| **AMZN** (247.55) | Above SMA20 (243), just below SMA50 (251) | 51.3 | +1.14 (positive) | Near middle (LB 229.7) | Neutral, slight short-term weakness. Put strike 230 (7% OTM) sits below SMA200 (234) but above LB. **Neutral – not ideal for premium collection.** |
-| **AVGO** (386.50) | Near SMA20 (380), below SMA50 (401) | 50.0 | +1.06 (turning up) | Near middle (LB 358.5) | Pulling back from SMA50; RSI neutral. Put strike 370 (4.3% OTM) near SMA20 – could be a bounce zone. **Moderate – mean reversion candidate.** |
-| **CEG** (366.14) | Below all SMAs (20/50/200) | 44.8 | -3.15 (deteriorating) | Lower BB at 349 | Downtrend. Put strikes 170-180 are **53-51% below price** – no technical support near those levels. Premium too low to bother. **Avoid.** |
-| **CRWD** (191.15) | At SMA20 (191), above SMA50 (175) | 52.9 | -0.94 (flattening) | Near middle (LB 167) | Sideways consolidation after pullback. Put strikes 170-175 (about 10% OTM) sit just above SMA50 (175). **Moderate – could work if support holds.** |
-
-**Best cash-secured put:** **AAPL** (305 put, 16 or 23 DTE) – strongest trend, lowest risk of assignment.
-
----
-
-### Long Call / Long Put Candidates
-
-| Ticker | Price | SMA Structure | RSI | MACD Hist | BB Position | Verdict |
-|--------|-------|---------------|-----|-----------|-------------|---------|
-| **GLD** (374.81) | Near SMA20 (372.4), below SMA50/200 | 46.5 | +1.12 (turning up) | Lower BB at 363 | RSI not oversold, but MACD positive divergence. Gold in neutral range – **mean reversion bounce possible.** Long call (391 strike) is 4.3% OTM – aggressive but has upside if momentum resumes. Favor long put (370 strike) if breakdown below $370 triggers. **Mixed – slight edge to put for trend.** |
-| **QQQ** (709.20) | Below SMA20 (714.7) and SMA50 (718.8) | 48.1 | -2.54 (negative) | Lower BB at 695 | Short-term downtrend. RSI not oversold. Long call (730) is 2.9% OTM – high risk. Long put (688) is 3% OTM – more aligned with momentum. **Bearish bias – long put preferable.** |
-| **SPY** (749.71) | Above all SMAs | 52.8 | -0.67 (flat) | Middle of BB (LB 730) | Trend up but flat momentum. Long call (772) is 3% OTM – needs breakout. Long put (727) is 3% OTM – near lower BB. **Neutral – no strong directional edge.** |
-
----
-
-### Summary of Technical-Only Recommendations
-
-| Strategy | Ticker | Technical Bias | Action |
-|----------|--------|----------------|--------|
-| Cash-Secured Put | **AAPL** | Strong uptrend | **Sell 305 put (Aug 7 or 14)** |
-| Cash-Secured Put | AMD, AVGO | Neutral/consolidating | Might work but lower probability |
-| Cash-Secured Put | CEG | Downtrend | **Avoid** |
-| Long Call | GLD | Mean reversion candidate | Speculative – small position possible |
-| Long Put | QQQ | Continued weakness | **Buy 688 put (Aug 7 or 14)** |
-| Long Options | SPY | Directionless | **Pass** |
-
-**Key takeaway from price action:** The market is in a "Bull Quiet" regime with fading momentum. **AAPL** is the cleanest trend-continuation play. **QQQ** shows the most technical weakness (below key SMAs, RSI < 50) – long puts align with that. Gold is coiling; a break of $370 would accelerate the put, while a hold near $375 could trigger a call bounce – let price decide.
+No overriding anomalous signal (e.g., VIX term structure backwardation, credit stress) is evident from pure price data. The regime supports a bias toward financials and energy over tech/bonds for trend, but mean reversion plays in beaten-down bonds may offer short-term tactical edge.
