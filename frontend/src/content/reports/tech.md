@@ -1,71 +1,55 @@
 ---
 title: Technical Analyst Report
-date: "2026-07-21"
+date: "2026-07-22"
 ---
 
 ## Model: deepseek/deepseek-v4-flash
 
-## Technical Assessment – Pure Price Action Only
-
-### Market Context (Key Indices)
-
-| Ticker | Price vs SMAs | RSI | MACD Hist | BB Position | Reading |
-|--------|--------------|-----|-----------|-------------|---------|
-| **SPY** | Just below 20/50 SMA, well above 200 | 47.9 | Negative | Mid-band | Neutral consolidation; no clear trend |
-| **QQQ** | Below both 20/50 SMA | 42.4 | Negative | At lower band | **Oversold bounce candidate** – price on BB lower, RSI < 45 |
-| **GLD** | Below all SMAs (20,50,200) | 39.8 | **Positive turn** | Near lower band | **Mean reversion bounce** – MACD histogram flipped up, RSI near oversold |
-| **XLK** | Below 20/50 SMA, RSI 42.6 | 42.6 | Negative | At lower BB | Tech sector weak, but extreme positioning favors snap-back |
-
-**Overall regime**: SPY and broad market are range-bound (price near SMAs, RSI neutral). QQQ and GLD show oversold conditions with potential mean reversion. XLE (energy) is the only strong uptrend (RSI 63, price well above SMAs).
+**Price-Action-Only Evaluation of Options Setups**  
+*(Ignoring all news, macro, and fundamentals. Based solely on SMA structure, RSI, MACD, and Bollinger Bands.)*
 
 ---
 
-### Cash-Secured Put Setups – Technical Evaluation
-
-| Ticker | Idea | Strike vs Current | Technical Assessment |
-|--------|------|-------------------|----------------------|
-| **AAPL** | Sell 310 put (Aug 7) | ~5.4% OTM | **Favorable** – price in strong uptrend (above SMA20/50/200), RSI 63.9 not overbought. Put is well below support (SMA20 ~307). High probability of staying above strike. |
-| **AMD** | Sell 510 put (Aug 7) | ~6.3% OTM | **Neutral/Borderline** – price has pulled back to lower BB (RSI 47.6). Short-term weakness but longer-term (SMA200) far below. Break of 490 (BB lower) would make put risky. Only sell if confident in bounce. |
-| **AMZN** | Sell 235 put (Aug 7) | ~5.1% OTM | **Favorable** – price consolidating above SMA20 and SMA200, RSI 54. 235 is below SMA50 (~251). Safe entry. |
-| **AVGO** | Sell 365 put (Aug 7) | ~5.6% OTM | **Cautious** – price below SMA20/50, RSI 46.8, no clear support. 365 is near SMA200 (362.7) – that is a key level. Put may be tested if downtrend continues. |
-| **CEG** | Sell 170 put (Aug 7) | ~35% OTM | **Safe but low premium** – strike far below current. Technicals weak (price below SMA200). Not ideal for premium collection. Better to use closer strike. |
-| **CRWD** | Sell 186.25 put (Aug 7) | ~2.6% OTM | **Favorable** – strong uptrend (price well above SMA20/50/200), RSI 58.8. Tight spread, good premium for close strike. |
-
-**Preference**: AAPL, AMZN, CRWD cash-secured puts are best supported by price action.
+### Market Context (Technicals Only)
+- **SPY** (749.71): above SMA20/50/200 (744.98 / 743.81 / 694.27). RSI 52.8, MACD histogram -0.67 (slight negative bias). No oversold/overbought. BB band width 3.9% – neutral volatility.
+- **Summary**: Uptrend intact but momentum fading; no extreme regime. Favors **mean reversion bounces** in oversold names and **trend continuation** in strong uptrends.
 
 ---
 
-### Long Option Setups – Technical Evaluation
+### Cash-Secured Puts from Options Chain
 
-| Ticker | Idea | Strike vs Current | Technical Assessment |
-|--------|------|-------------------|----------------------|
-| **GLD** | Long call 385 (Aug 7) | ~2.7% OTM | **Attractive mean reversion** – MACD histogram flipping positive, RSI 39.8, price at lower BB. Bounce from $362 (BB lower) likely. Call cheap (IV 21%). |
-| **GLD** | Long put 363 (Aug 7) | ~3.3% OTM | **Not recommended** – momentum is shifting away from downside. Histogram positive contradicts bearish bet. |
-| **QQQ** | Long call 730 (Aug 7) | ~3.0% OTM | **Speculative bounce play** – oversold (RSI 42, lower BB). However, MACD still negative and SMAs bearish. Only for aggressive traders; stop if price breaks below $688. |
-| **QQQ** | Long put 688 (Aug 7) | ~3.0% OTM | **Better defined risk** – if QQQ fails to hold $688, downtrend continues. RSI not yet oversold; put protects against further drop. |
-| **SPY** | Long call 771 (Aug 7) | ~3.0% OTM | **Not advised** – low implied vol (10.7%) reflects low expected move; price flat near SMAs. No edge. |
-| **SPY** | Long put 726 (Aug 7) | ~3.0% OTM | **Moderate** – SPY has no clear trend, but canary is half-defensive. Put as tail hedge if concerned about geopolitical gap down. Cheap (IV 16.5%). |
+| Ticker | Price | SMA Structure | RSI | MACD Hist | BB Position | Verdict |
+|--------|-------|---------------|-----|-----------|-------------|---------|
+| **AAPL** (327.74) | Above all SMAs (20/50/200) | 64.5 | +2.21 (rising) | Near middle (upper 343) | **Strong uptrend.** Put strike 305 (6.9% OTM) is well below SMA200 (274.61) – very safe. Continuation bias. **Favorable.** |
+| **AMD** (544.43) | Above SMA20/50, far above SMA200 (300) | 54.8 | -5.4 (fading) | Near middle (LB 490) | Uptrend but MACD negative – consolidating. Put strikes 525/530 (3.5-5.6% OTM) still within support zone (SMA20 at 531). **Moderate – trend may pause.** |
+| **AMZN** (247.55) | Above SMA20 (243), just below SMA50 (251) | 51.3 | +1.14 (positive) | Near middle (LB 229.7) | Neutral, slight short-term weakness. Put strike 230 (7% OTM) sits below SMA200 (234) but above LB. **Neutral – not ideal for premium collection.** |
+| **AVGO** (386.50) | Near SMA20 (380), below SMA50 (401) | 50.0 | +1.06 (turning up) | Near middle (LB 358.5) | Pulling back from SMA50; RSI neutral. Put strike 370 (4.3% OTM) near SMA20 – could be a bounce zone. **Moderate – mean reversion candidate.** |
+| **CEG** (366.14) | Below all SMAs (20/50/200) | 44.8 | -3.15 (deteriorating) | Lower BB at 349 | Downtrend. Put strikes 170-180 are **53-51% below price** – no technical support near those levels. Premium too low to bother. **Avoid.** |
+| **CRWD** (191.15) | At SMA20 (191), above SMA50 (175) | 52.9 | -0.94 (flattening) | Near middle (LB 167) | Sideways consolidation after pullback. Put strikes 170-175 (about 10% OTM) sit just above SMA50 (175). **Moderate – could work if support holds.** |
 
-**Preferred**: GLD long call (mean reversion bounce) and QQQ long put (trend continuation hedge) are strongest based on price action alone.
-
----
-
-### Identified Price Patterns
-
-1. **Mean Reversion Bounce Candidate**: **GLD** – BB lower + RSI < 40 + MACD histogram turning up. High probability short-term rally toward SMA20 ($373).
-2. **Trend Continuation Candidate**: **CRWD** – strong uptrend above all SMAs, rising volatility (wide BB). Supports cash-secured put selling.
-3. **Failed Setup (Potential Breakdown)**: **ORCL** – price collapsed below SMA200, RSI 27 (oversold), but MACD still deeply negative. Any bounce may fail; avoid buying calls.
-4. **Volatility Contraction Squeeze**: None detected – BB widths are normal across major ETFs.
+**Best cash-secured put:** **AAPL** (305 put, 16 or 23 DTE) – strongest trend, lowest risk of assignment.
 
 ---
 
-### Recommended Actions (from $87k cash)
+### Long Call / Long Put Candidates
 
-| Trade | Type | Size | Rationale |
-|-------|------|------|-----------|
-| Sell AAPL 310 put Aug 7 | Cash-secured put | 2 contracts | Strong uptrend, ~$600 premium, 5.4% buffer |
-| Buy GLD 385 call Aug 7 | Long call | 1 contract | Mean reversion bounce, cheap premium (~$310) |
-| Buy QQQ 688 put Aug 7 | Long put (hedge) | 1 contract | Protect against tech weakness, $800 cost |
-| Keep remaining cash | – | ~$85,500 | Preserve for better entries or if SPY breaks below 200dma |
+| Ticker | Price | SMA Structure | RSI | MACD Hist | BB Position | Verdict |
+|--------|-------|---------------|-----|-----------|-------------|---------|
+| **GLD** (374.81) | Near SMA20 (372.4), below SMA50/200 | 46.5 | +1.12 (turning up) | Lower BB at 363 | RSI not oversold, but MACD positive divergence. Gold in neutral range – **mean reversion bounce possible.** Long call (391 strike) is 4.3% OTM – aggressive but has upside if momentum resumes. Favor long put (370 strike) if breakdown below $370 triggers. **Mixed – slight edge to put for trend.** |
+| **QQQ** (709.20) | Below SMA20 (714.7) and SMA50 (718.8) | 48.1 | -2.54 (negative) | Lower BB at 695 | Short-term downtrend. RSI not oversold. Long call (730) is 2.9% OTM – high risk. Long put (688) is 3% OTM – more aligned with momentum. **Bearish bias – long put preferable.** |
+| **SPY** (749.71) | Above all SMAs | 52.8 | -0.67 (flat) | Middle of BB (LB 730) | Trend up but flat momentum. Long call (772) is 3% OTM – needs breakout. Long put (727) is 3% OTM – near lower BB. **Neutral – no strong directional edge.** |
 
-*All technical assessments ignore news and macro – purely price, momentum, and volatility structure.*
+---
+
+### Summary of Technical-Only Recommendations
+
+| Strategy | Ticker | Technical Bias | Action |
+|----------|--------|----------------|--------|
+| Cash-Secured Put | **AAPL** | Strong uptrend | **Sell 305 put (Aug 7 or 14)** |
+| Cash-Secured Put | AMD, AVGO | Neutral/consolidating | Might work but lower probability |
+| Cash-Secured Put | CEG | Downtrend | **Avoid** |
+| Long Call | GLD | Mean reversion candidate | Speculative – small position possible |
+| Long Put | QQQ | Continued weakness | **Buy 688 put (Aug 7 or 14)** |
+| Long Options | SPY | Directionless | **Pass** |
+
+**Key takeaway from price action:** The market is in a "Bull Quiet" regime with fading momentum. **AAPL** is the cleanest trend-continuation play. **QQQ** shows the most technical weakness (below key SMAs, RSI < 50) – long puts align with that. Gold is coiling; a break of $370 would accelerate the put, while a hold near $375 could trigger a call bounce – let price decide.
