@@ -4,7 +4,7 @@
     "value": "Bull Quiet",
     "regime": "Bull Quiet",
     "confidence": "high",
-    "interpretation": "Bull Quiet regime. Risk: Risk On | Dollar: Strong Dollar | Rates: Rising Rates",
+    "interpretation": "Bull Quiet regime. Risk: Risk On | Rates: Rising Rates",
     "components": {
       "risk_sentiment": {
         "name": "Risk Sentiment",
@@ -13,29 +13,29 @@
         "interpretation": "Strong risk-on: Equities rising, volatility low and falling",
         "components": {
           "spy_trend": "strong_uptrend",
-          "spy_price": 748.280029296875,
+          "spy_price": 747.4099731445312,
           "vix_level": "normal",
-          "vix_value": 17.049999237060547,
+          "vix_value": 16.639999389648438,
           "vix_trend": "falling"
         },
-        "timestamp": "2026-07-22T21:39:49.557680"
+        "timestamp": "2026-07-23T16:18:30.850950"
       },
       "dollar_strength": {
         "name": "Dollar Strength",
-        "value": "strong_dollar",
-        "signal": "strong_dollar",
-        "interpretation": "Dollar strengthening: Headwind for commodities and international assets",
+        "value": "neutral",
+        "signal": "neutral",
+        "interpretation": "Dollar stable: Neutral for commodities",
         "components": {
-          "uup_price": 28.479999542236328,
+          "uup_price": 28.450000762939453,
           "trend": "strong_uptrend",
-          "momentum": 0.4231273952827852,
+          "momentum": 0.0,
           "smas": {
             "sma20": 28.401999950408936,
-            "sma50": 28.05260013580322,
-            "sma200": 27.435978775024413
+            "sma50": 28.074800148010254,
+            "sma200": 27.445076265335082
           }
         },
-        "timestamp": "2026-07-22T21:39:49.559819"
+        "timestamp": "2026-07-23T16:18:30.853555"
       },
       "real_rates": {
         "name": "Real Rates",
@@ -43,16 +43,16 @@
         "signal": "rising_rates",
         "interpretation": "Rates rising: Headwind for growth stocks, favor value/financials",
         "components": {
-          "tlt_price": 83.66000366210938,
+          "tlt_price": 83.44000244140625,
           "trend": "downtrend",
-          "momentum": -2.463712142869723,
+          "momentum": -2.8443440254188768,
           "smas": {
-            "sma20": 85.15792961120606,
-            "sma50": 84.89063446044922,
-            "sma200": 86.00087116241455
+            "sma20": 85.0357894897461,
+            "sma50": 84.85088973999024,
+            "sma200": 85.98506233215332
           }
         },
-        "timestamp": "2026-07-22T21:39:49.561739"
+        "timestamp": "2026-07-23T16:18:30.856008"
       },
       "commodity_strength": {
         "name": "Commodity Strength",
@@ -62,30 +62,30 @@
         "components": {
           "gld": {
             "name": "Gold",
-            "price": 374.80999755859375,
+            "price": 379.1199951171875,
             "trend": "neutral",
-            "momentum": -2.542967542687835,
-            "signal": "negative"
+            "momentum": 0.47704541450994675,
+            "signal": "positive"
           },
           "slv": {
             "name": "Silver",
-            "price": 53.08000183105469,
-            "trend": "downtrend",
-            "momentum": -9.8964488736347,
-            "signal": "strong_negative"
+            "price": 53.91999816894531,
+            "trend": "neutral",
+            "momentum": -3.2478043928912292,
+            "signal": "negative"
           },
           "xle": {
             "name": "Energy",
-            "price": 58.5,
+            "price": 59.20000076293945,
             "trend": "strong_uptrend",
-            "momentum": 8.213093810431559,
+            "momentum": 8.703638924258161,
             "signal": "strong_positive"
           }
         },
-        "timestamp": "2026-07-22T21:39:49.567296"
+        "timestamp": "2026-07-23T16:18:30.863113"
       }
     },
-    "timestamp": "2026-07-22T21:39:49.567320"
+    "timestamp": "2026-07-23T16:18:30.863143"
   },
   "indicators": {
     "risk_sentiment": {
@@ -95,29 +95,29 @@
       "interpretation": "Strong risk-on: Equities rising, volatility low and falling",
       "components": {
         "spy_trend": "strong_uptrend",
-        "spy_price": 748.280029296875,
+        "spy_price": 747.4099731445312,
         "vix_level": "normal",
-        "vix_value": 17.049999237060547,
+        "vix_value": 16.639999389648438,
         "vix_trend": "falling"
       },
-      "timestamp": "2026-07-22T21:39:49.557680"
+      "timestamp": "2026-07-23T16:18:30.850950"
     },
     "dollar_strength": {
       "name": "Dollar Strength",
-      "value": "strong_dollar",
-      "signal": "strong_dollar",
-      "interpretation": "Dollar strengthening: Headwind for commodities and international assets",
+      "value": "neutral",
+      "signal": "neutral",
+      "interpretation": "Dollar stable: Neutral for commodities",
       "components": {
-        "uup_price": 28.479999542236328,
+        "uup_price": 28.450000762939453,
         "trend": "strong_uptrend",
-        "momentum": 0.4231273952827852,
+        "momentum": 0.0,
         "smas": {
           "sma20": 28.401999950408936,
-          "sma50": 28.05260013580322,
-          "sma200": 27.435978775024413
+          "sma50": 28.074800148010254,
+          "sma200": 27.445076265335082
         }
       },
-      "timestamp": "2026-07-22T21:39:49.559819"
+      "timestamp": "2026-07-23T16:18:30.853555"
     },
     "real_rates": {
       "name": "Real Rates",
@@ -125,16 +125,16 @@
       "signal": "rising_rates",
       "interpretation": "Rates rising: Headwind for growth stocks, favor value/financials",
       "components": {
-        "tlt_price": 83.66000366210938,
+        "tlt_price": 83.44000244140625,
         "trend": "downtrend",
-        "momentum": -2.463712142869723,
+        "momentum": -2.8443440254188768,
         "smas": {
-          "sma20": 85.15792961120606,
-          "sma50": 84.89063446044922,
-          "sma200": 86.00087116241455
+          "sma20": 85.0357894897461,
+          "sma50": 84.85088973999024,
+          "sma200": 85.98506233215332
         }
       },
-      "timestamp": "2026-07-22T21:39:49.561739"
+      "timestamp": "2026-07-23T16:18:30.856008"
     },
     "commodity_strength": {
       "name": "Commodity Strength",
@@ -144,31 +144,31 @@
       "components": {
         "gld": {
           "name": "Gold",
-          "price": 374.80999755859375,
+          "price": 379.1199951171875,
           "trend": "neutral",
-          "momentum": -2.542967542687835,
-          "signal": "negative"
+          "momentum": 0.47704541450994675,
+          "signal": "positive"
         },
         "slv": {
           "name": "Silver",
-          "price": 53.08000183105469,
-          "trend": "downtrend",
-          "momentum": -9.8964488736347,
-          "signal": "strong_negative"
+          "price": 53.91999816894531,
+          "trend": "neutral",
+          "momentum": -3.2478043928912292,
+          "signal": "negative"
         },
         "xle": {
           "name": "Energy",
-          "price": 58.5,
+          "price": 59.20000076293945,
           "trend": "strong_uptrend",
-          "momentum": 8.213093810431559,
+          "momentum": 8.703638924258161,
           "signal": "strong_positive"
         }
       },
-      "timestamp": "2026-07-22T21:39:49.567296"
+      "timestamp": "2026-07-23T16:18:30.863113"
     }
   },
   "metadata": {
-    "generated_at": "2026-07-22T21:39:49.567322",
+    "generated_at": "2026-07-23T16:18:30.863146",
     "data_source": "EOD historical data",
     "lookback_days": 250
   }

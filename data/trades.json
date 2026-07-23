@@ -2,20 +2,25 @@
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 30000
-    },
-    {
-        "ticker": "XLF",
-        "action": "buy",
         "notional_value": 20000
     },
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 20000
     },
     {
-        "ticker": "CEG",
+        "ticker": "XLF",
+        "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "EWA",
         "action": "buy",
         "notional_value": 10000
     }

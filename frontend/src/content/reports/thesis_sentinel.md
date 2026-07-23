@@ -1,34 +1,32 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-07-22"
+date: "2026-07-23"
 ---
 
-**Thesis Sentinel – 2026-07-22**
+**Tripwire status**
 
-**1. Tripwire status**
+| Tripwire | Signal | Reading | Status |
+|---|---|---|---|
+| Carry unwind | ^VIX / ^VIX3M | 16.64 / 20.54 = 0.810 | CLEAR |
+| Credit cracks | HYG/LQD 63d rel‑mom | +2.02% | CLEAR |
+| Breadth break | Canary (EWA,TLT) | EWA +2.6%, TLT -2.3% → half‑defensive | CLEAR (not both negative) |
+| Trend break | SPY vs 200d SMA | 747.4 vs 694.7 (month not closed) | CLEAR (above) |
+| Oil shock | XLE momentum vs SPY | XLE +8.7%, strong uptrend; relative leadership | ACTIVE (monitoring) |
+| AI capex turn | Hyperscaler FY27 capex guidance | GOOGL raised 2026 capex to $205B; no FY27 cut signalled | CLEAR |
+| Carry stress | USDJPY | Not directly provided; UUP at 28.45, dollar firm | No data; no new BoJ catalyst |
 
-| Tripwire | Signal | Threshold | Reading | Status |
-|----------|--------|-----------|---------|--------|
-| Carry unwind | ^VIX / ^VIX3M | > 1.0 (backwardation) | 0.830 | CLEAR |
-| Credit cracks | HYG/LQD 63d rel‑mom | < –2% | +2.1% | CLEAR |
-| Breadth break | canary (EWA, TLT) | both negative | only TLT negative | CLEAR |
-| Trend break | SPY vs 200‑d SMA (month‑end) | monthly close below | SPY 748 > 694 | CLEAR (no m‑end close) |
-| Oil shock | XLE vs SPY sustained leadership | sustained relative strength | XLE mom +8.2%, strong uptrend; oil >$95 | **FIRED** (judgment) |
-| AI capex turn | hyperscaler FY27 capex cut | any cut | Google doubles AI infra; no cuts | CLEAR |
-| Carry stress | USDJPY rapid < 140 | rapid move below 140 | ~163 (40‑yr high) | CLEAR |
+**Marker watch**
 
-**2. Marker watch**
+- **BoJ June meeting:** Past; no new guidance news. USDJPY not available; if it’s held above 140, the conditional C‑raise trigger is inactive.
+- **CPI:** No new print since May (4.2%). The “two <3.5%” marker hasn’t been tested yet.
+- **SpaceX vs $135:** No update; the IPO was weeks ago. First‑month performance mark isn’t refuted or confirmed today.
+- **Hyperscaler capex guidance:** Alphabet’s Q2 report raised 2026 capex to $205B; the feared FY27 cut has not appeared. Cash burn, however, is spooking sentiment.
+- **Hormuz:** Contested, tanker attacks; Brent back to $100. No announcement of a full week‑closure, so the “full closure” tripwire isn’t tripped.
 
-- **BoJ guidance (post‑June 15‑16):** USDJPY far above 145; no hawkish‑guidance shock triggered.  
-- **May‑July CPI:** May 4.2% y/y; no June print yet; no consecutive <3.5% mark.  
-- **SpaceX vs $135 issue price:** No visible breach; stock likely still >$135. Marker remains untripped.  
-- **Hyperscaler capex guidance:** Google nearly doubles AI infrastructure spend; no cut signalled.  
-- **Hormuz closure:** Shipping contested but no full closure; airstrikes/tanker attacks intensifying – not yet a week‑long blockage.
+**Delta**
 
-**3. Delta**
+Today’s dominant change is the twin shock of Houthi tanker attacks pushing oil to $100 and Alphabet’s earnings. Oil’s surge immediately lifted Treasury yields (10y at 4.66%, near 2026 high) and hurt equities, while Alphabet’s massive capex raise—despite strong cloud growth—was met with a 7% share sell‑off as investors balked at cash burn. The combination marks a shift: the AI capex story is now explicitly under scrutiny (not just a theoretical risk), and energy‑led inflation pressure is palpable. Market regime remains Bull Quiet, but the “quiet” is being tested by these crosscurrents. No tripwires fire, so the rule‑based signals remain “clear,” but the narrative thread around AI overbuild and sticky inflation has tightened.
 
-Oil surged past $95 (WTI) on mounting US‑Iran escalation and a second trade‑route disruption. 10‑y yield pushed toward 4.65%, the highest since May’s spike. VIX inched up but remains subdued (17.05). The regime is still Bull Quiet, though the oil shock tripwire fired for the first time. Equities resilient: SPY –0.1%, QQQ –0.3%, XLE +1.5%. Credit and volatility signals unchanged. The macro‑risk mix tilted slightly more inflationary; the rule‑based signals (fast channel, credit) remain “clear”, keeping mandates invested.
+**Scenario pressure**
 
-**4. Scenario pressure**
-
-Today’s oil spike and yield rise reinforce the “grind‑with‑violence” scenario (A, 50%), where inflation‑fed air pockets occur inside a range‑bound index. Firing the oil shock tripwire adds weight to the B‑tail (slow bear) if sustained, but no credit cracks, no carry unwind, and no breadth break yet. The setup remains A‑dominant with an incrementally more adverse near‑term outlook. Scenario weights unchanged at this month’s review. The systems are positioned appropriately.
+Today’s news nudges the evidence field slightly toward Scenario B (slow bear). The AI capex second derivative is now openly questioned—cash burn, not a cut—while oil‑driven inflation keeps the Fed cornered. The “grind with violence” (A) can absorb air pockets like today, but the combination of a yield spike, megacap tech selling, and an oil shock resembles a pre‑2000 shape. Still, no tripwire has fired: credit is solid, VIX term structure clean, breadth half‑defensive. The 50% weight on A remains appropriate; B’s risk profile becomes marginally more vivid, but the formal 30% weight holds until a monthly review. If oil stays above $100 and the next hyperscaler guides FY27 capex lower, B would deserve re‑weighting.

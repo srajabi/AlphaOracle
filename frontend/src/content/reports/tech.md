@@ -1,57 +1,79 @@
 ---
 title: Technical Analyst Report
-date: "2026-07-22"
+date: "2026-07-23"
 ---
 
 ## Model: deepseek/deepseek-v4-flash
 
-## Price Action Technical Setups — 2026-07-22
-
-### Mean Reversion Bounce Candidates (oversold / near lower BB)
-
-| Ticker | RSI | Price vs BB Lower | Setup |
-|--------|-----|-------------------|-------|
-| **TLT** | 35.8 | 83.66 / 82.84 (0.6% above) | Classic oversold bounce setup. Price below all SMAs but RSI < 40 and price within 1% of lower Bollinger Band. Tightening daily may produce a short-term snap-back. **Risk:** trend is strongly bearish (rising yields); bounce likely shallow. |
-| **LQD** | 35.5 | 106.85 / 106.51 (0.3% above) | Similar structure to TLT. Investment grade bonds oversold, near lower band. MACD histogram flattish but still negative. Potential for a relief rally if risk-on rally continues. |
-| **XLB** | 43.2 | 50.10 / 49.71 (0.8% above) | Materials sector oversold relative to its own range. Price below both 20- and 50-day SMAs but above 200-day. Could bounce if commodity sentiment stabilizes. |
-
-**Caution:** In a “Bull Quiet + rising rates” regime, mean reversion in bonds (TLT, LQD) is counter-trend. These are tactical only, not core positions.
-
-### Trend Continuation Candidates (aligned above SMAs, momentum positive)
-
-| Ticker | RSI | MACD Hist | Setup |
-|--------|-----|-----------|-------|
-| **XLE** | 65.3 | +0.54 | Strong uptrend. Price above all SMAs, MACD bullish, BB widening (volatility expanding). Energy sector leading on oil surge. **Risk:** extended (close to upper BB), but no bearish divergence yet. |
-| **XLF** | 63.4 | -0.03 (flat) | Above all SMAs; financials in solid uptrend. MACD histogram barely negative, but momentum not fading. Strong dollar & rising rates support. Trend continuation likely. |
-| **AAPL** | 64.5 | +2.21 | Above all SMAs, RSI not overbought. MACD histogram positive and increasing. Strong uptrend with no exhaustion signals. |
-| **META** | 56.2 | +4.03 | Above 200-day SMAs. MACD bullish, price consolidating near highs. Potential breakout continuation. |
-| **XLRE** | 57.1 | +0.07 | Real estate above all SMAs, modest positive momentum. Utilities also above 200-day (XLU at lower BB, but real estate more positive). |
-
-### Failed / Breaking Down Setups (price structure weakening)
-
-| Ticker | RSI | MACD Hist | Setup |
-|--------|-----|-----------|-------|
-| **INTC** | 45.3 | -2.43 | Price collapsed below both 20- and 50-day SMAs after a massive run. MACD deeply negative. Appears to be a failed hold above the 200-day support now acting as resistance near 116. Further downside likely to fill gap toward 85–90. |
-| **TSLA** | 43.3 | -2.77 | Below all three SMAs (20/50/200). Bearish structure. RSI not oversold yet, room to fall further. Weak momentum. |
-| **MU** | 51.0 | -19.15 | MACD histogram extremely negative (-19), though RSI near 50. Price below 20-day but still above 50-day. If it loses 944, could accelerate. The MACD divergence is severe. |
-| **QQQ** | 48.1 | -2.54 | Nasdaq 100 below its 20- and 50-day SMAs. MACD negative. Technology sector index rolling over. Next support at 695 (lower BB) and then 680. |
-
-### Volatility Contraction / Squeeze Candidates (tight Bollinger Bands, coiling)
-
-| Ticker | BB Width | % Width | Setup |
-|--------|----------|---------|-------|
-| **HYG** | 79.88 – 79.43 | 0.56% | Extremely narrow bands — the tightest in the dataset. Price near all SMAs (79.65). RSI 51.9, neutral. Volume elevated (27M shares). This is a textbook volatility squeeze waiting to expand. Given the rising-yield macro, the break is likely down, but TA is neutral. |
-| **UUP** | 28.54 – 28.26 | 0.98% | Also tight, but already in uptrend. Could accelerate higher if dollar strength persists. |
-| **LQD** | 109.60 – 106.51 | 2.9% | Moderate tightness, but oversold status adds to potential for a violent snap-back if yields retreat. |
-| **VXUS** | 85.97 – 83.23 | 3.2% | International equities coiling near all SMAs. Could break out if European/Asian relative strength continues. |
+**Technical Analysis (Price-Only) – July 23, 2026**  
+*Ignoring news, focusing solely on price, SMAs, RSI, MACD, and Bollinger Bands.*
 
 ---
 
-### Summary
+### 🔁 Mean Reversion Bounce Candidates  
+*Price near lower Bollinger Band + oversold RSI + MACD histogram turning up.*
 
-- **Most actionable mean reversion:** TLT (oversold bounce), but trade small due to trend risk.
-- **Strong trend continuation:** XLE, XLF, AAPL, META.
-- **Most cautionary failed setups:** INTC, TSLA, MU (pay attention to further breakdown).
-- **Volatility squeeze to watch:** HYG — the tightest bands; direction uncertain but expansion imminent.
+| Ticker | Price | RSI(14) | MACD Hist | Lower BB | Distance to BB | Assessment |
+|--------|-------|---------|-----------|----------|----------------|------------|
+| **ORCL** | 125.84 | **32.6** | **+0.24** (turned positive) | 118.15 | 6.5% above | Oversold, MACD just crossed above signal. Classic bounce setup – watch for follow-through above 20 SMA (137.88). |
+| **TLT** | 83.44 | 34.0 | -0.17 (flat, slightly negative) | 82.63 | 1.0% above | Approaching oversold, near lower band. No bullish MACD cross yet – needs confirmation. Potential bounce if RSI recovers above 35. |
+| **INTC** | 102.62 | 43.5 | -1.89 (still negative) | 87.63 | 17% above | Not oversold, but bearish momentum extreme. Not a clean bounce candidate – wait for RSI < 35 or MACD reversal. |
+| **GOOGL** | 342.09 | 40.6 | -1.20 (negative) | 337.28 | 1.4% above | Near lower band, RSI low but MACD still declining. Could bounce, but no confirmation yet. |
 
-No overriding anomalous signal (e.g., VIX term structure backwardation, credit stress) is evident from pure price data. The regime supports a bias toward financials and energy over tech/bonds for trend, but mean reversion plays in beaten-down bonds may offer short-term tactical edge.
+**Best mean reversion play:** **ORCL** (oversold + MACD bullish cross). Set stop below recent low (~118).
+
+---
+
+### 📈 Trend Continuation (Strong Uptrend)  
+*Price above all SMAs, RSI > 50, MACD positive & histogram rising.*
+
+| Ticker | Price vs SMAs | RSI | MACD Hist | BB Position | Assessment |
+|--------|---------------|-----|-----------|-------------|------------|
+| **XLE** | Above 20/50/200 | **68.1** | **+0.56** | Touching upper band | Strong momentum, but extended. Risk of mean reversion. Trend continuation only if RSI eases without breaking 20 SMA. |
+| **NVDA** | Above all | 56.2 | **+1.09** | Near upper band | Healthy uptrend, not overbought. MACD rising. Favor continuation. |
+| **AAPL** | Above all | 62.5 | **+1.60** | Mid-band | Strong, room to run. |
+| **CEG** | Above 20/50, below 200 | 61.4 | **+3.00** | At upper band | Price at upper BB, RSI elevated but momentum strong. Could accelerate if it breaks above 200 SMA (~311). |
+
+**Trend continuation leader:** **NVDA** – consistent, not stretched.
+
+---
+
+### ⚠️ Failed Breakout / Momentum Divergence  
+*Price above SMAs but MACD negative/declining – warning of potential reversal.*
+
+| Ticker | Price vs SMAs | MACD Line vs Signal | MACD Hist | RSI | Assessment |
+|--------|---------------|----------------------|-----------|-----|------------|
+| **AMD** | Above all | **Below** signal | **-2.99** | 56.1 | Price at new highs (vs SMA20) but MACD declining. Negative divergence – classic failed breakout risk. |
+| **STX** | Above all | Below signal | -3.30 | 53.0 | Same pattern – price above SMAs but momentum fading. |
+| **MU** | Below 20 SMA, above 50/200 | Below signal | -12.97 | 50.2 | Bearish momentum despite price above 50 SMA. Watch for a break below 50 DMA to confirm. |
+
+**Most vulnerable:** **AMD** – strongest divergence among large-cap tech.
+
+---
+
+### ⬛ Volatility Contraction Squeeze Candidates  
+*Bollinger Bands relatively narrow + RSI near 50 + MACD flat.*
+
+We can estimate BB width (upper-lower)/price. Narrowest bands in the universe:
+
+| Ticker | BB Width % | RSI | MACD | Assessment |
+|--------|------------|-----|------|------------|
+| **XLU** | 3.28% | 57.5 | Hist flat | Tight range, RSI neutral. Squeeze could resolve either way – watch for break above 46.5 (upper BB) or below 44.7 (lower BB). |
+| **XLP** | 3.33% | 51.3 | Hist near zero | Similar – low vol, coiled. |
+| **SCHD** | 4.74% | 60.6 | Hist slightly positive | Not as tight but still below average. |
+| **DIA** | 2.56% | 53.3 | Hist negative (-1.31) | Actually very tight (DIA has naturally lower vol). MACD slightly bearish. |
+
+**Most interesting squeeze:** **XLU** – tightest band in the universe, with AI/power demand tailwind. A break above resistance could trigger a strong move.
+
+---
+
+### Summary of Actionable Technical Setups (Based on Price Only)
+
+| Setup | Ticker | Direction | Confidence | Trigger |
+|-------|--------|-----------|------------|---------|
+| **Mean Reversion Bounce** | ORCL | Long | High | RSI oversold + MACD cross. Entry near $125. Stop below $118. |
+| **Trend Continuation** | NVDA | Long | High | Price above all SMAs, MACD rising. Use 20 SMA as trailing stop (~$202). |
+| **Failed Breakout (Short)** | AMD | Short | Medium | Negative divergence. Entry near $552. Stop above recent high (~$570). |
+| **Vol Squeeze** | XLU | Long on break | Medium | Wait for close above 46.5 (upper BB) with volume. Target previous resistance ~$48. |
+
+*Note: All analysis ignores fundamental news, macro regime, and options chain – pure technical setup evaluation.*
