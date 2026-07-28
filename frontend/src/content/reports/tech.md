@@ -1,117 +1,63 @@
 ---
 title: Technical Analyst Report
-date: "2026-07-27"
+date: "2026-07-28"
 ---
 
 ## Model: deepseek/deepseek-v4-flash
 
-**Price-Action Technical Evaluation (News Excluded)**
+**Technical Analysis – Pure Price Action Scan | 2026-07-28**
 
-I’ve screened every watchlist and ETF symbol for clear, non-conflicting technical setups. The regime is *Bear Quiet* (risk cautious, rates rising, dollar strong), so position sizing must be conservative. Below are the highest-conviction trades by pattern type.
+**Market Context (Regime from data):**  
+SPY: RSI 45.6, price below SMA20/SMA50, near lower Bollinger (736.7). VIX 18.7 rising. Nasdaq 100 (QQQ) in correction territory (RSI 38.6, at lower BB). Broad equity technicals are short-term oversold but not capitulation.  
 
----
+**Mean Reversion Bounce Setups** (oversold RSI + lower BB touch + potential MACD divergence)
 
-## 🟢 Mean-Reversion Bounces (Oversold RSI + Near Lower Bollinger)
+| Ticker | Price | RSI | BB Position | MACD Hist | Signal |
+|--------|-------|-----|-------------|-----------|--------|
+| **TSLA** | 309.22 | **27.3** | **Below lower BB** (318.5) | Negative but widening | Extreme oversold, breakdown below band. High-risk bounce candidate if price reclaims 318. |
+| **ORCL** | 119.90 | **32.8** | Near lower BB (113.1) | Histogram turning positive (divergence) | Oversold + early MACD improvement. Price holding above 200-week? Defensive play. |
+| **AMZN** | 231.39 | **37.0** | At lower BB (231.8) | Histogram negative | RSI near 2022 lows. Support at 230. Bounce if holds. |
+| **QQQ** | 682.12 | **38.6** | At lower BB (681.9) | Histogram negative | Correction territory. BB width = 8.5% – room for snap-back. |
 
-### 1. **GOOGL** – Strongest Reversal Candidate
-| Metric | Value |
-|--------|-------|
-| RSI(14) | 31.03 (oversold) |
-| Price vs BB | 317.69 **below** lower band (329.82) |
-| MACD | Histogram positive (+0.79) – MACD line turning up from below signal |
-| SMA200 | 323.24 (price below, but closer than SMA20/50) |
-| Interpretation | Extreme oversold, price outside lower BB for the first time in 2026. MACD bullish divergence forming. **High probability mean-reversion bounce to at least SMA20 (353.39).** Risk: trend is strongly down; stop below 305 (prior swing low). |
+**Trend Continuation** (healthy pullback to MA / momentum intact)
 
-### 2. **ORCL** – MACD Bullish Cross + Oversold
-| RSI | 29.74 |
-| Price vs BB | 120.04 vs lower 116.89 (near band) |
-| MACD | Histogram positive (+0.24) – MACD (−14.01) has crossed above signal (−14.25) |
-| SMA200 | 187.01 far above; trend is deeply negative, but bounce likely to SMA20 (136.03) |
-| Interpretation | Classic capitulation with early momentum reversal. Potential 10-15% snapback. **Stop at 115 (below recent low).** |
+| Ticker | Price | RSI | MA Stack | MACD | Signal |
+|--------|-------|-----|----------|------|--------|
+| **XLE** | 58.36 | 59.6 | Price > SMA20/50/200 | Histogram positive | Energy uptrend intact. Pullback to 20-day held. Continue higher. |
+| **AAPL** | 336.91 | 67.3 | Price > all MAs | Histogram positive | Strong trend. Near upper BB (346.3) – may pause but no reversal signal. |
 
-### 3. **XLY** (Consumer Discretionary ETF) – Sector-Level Oversold
-| RSI | 30.56 |
-| Price vs BB | 108.76 **below** lower 111.59 |
-| MACD | Still negative histogram, but RSI at 30 signals selling exhaustion. |
-| Interpretation | Broad consumer discretionary is deeply washed out. Expect a mean-reversion rally to SMA20 (115.81). **Lower risk than single-stock oversold plays.** |
+**Volatility Contraction / Squeeze Candidates** (tight BB width relative to historical)
 
-### 4. **TLT** (Long Treasury) – Oversold Bond Proxy
-| RSI | 31.86 |
-| Price vs BB | 83.17 near lower 82.49 |
-| MACD | Negative histogram, but RSI extreme. |
-| Interpretation | Short-term bounce likely if yields pause. **However, rising rates regime works against sustained rally.** Use only as a trade (1-2 weeks), not a hold. |
+- **SPY**: BB width ~2.7% (20 pts on 740). Low vol environment – potential expansion. RSI neutral.  
+- **TLT**: BB width 4.7%, RSI 41, below all MAs. Bond yields still rising – no squeeze yet but watch for reversal if 10y yield stalls.
+
+**Failed / Weak Setups** (avoid)
+
+- **INTC**: RSI 36.8, price below lower BB? No, above (83 > 83.0). Deep gap down. No technical support until 80.  
+- **NVDA**: RSI 42.5, MACD flat. Below SMA20/50 but above SMA200. No clear edge.  
+- **KLAC**: RSI 41.7, price 203 vs SMA20 230. Heavy semi equipment selloff – not oversold enough.
 
 ---
 
-## 🔵 Trend-Continuation Setups (Above SMAs, Healthy RSI, Bullish MACD)
+### Recommended Trades (from cash portfolio $87,184)
 
-### 1. **AAPL** – Cleanest Large-Cap Trend
-| Metric | Value |
-|--------|-------|
-| RSI(14) | 58.11 (room to run) |
-| Price vs SMAs | Above SMA20 (311.49), SMA50 (305.47), SMA200 (275.28) |
-| MACD | Histogram positive (+0.79), MACD line above signal |
-| BB position | 321.66 (mid-band) – no overextension |
-| Interpretation | Strong uptrend, no exhaustion signals. Earnings this week (July 29) are a catalyst but price action already positive. **Buy on pullback to SMA20 (311) or hold for continuation.** |
+**1. Mean Reversion: Buy QQQ**  
+- Entry: Market ~682 (at lower BB)  
+- Stop: 668 (-2%)  
+- Target: 710 (SMA20)  
+- Rationale: RSI 39, at lower BB, Nasdaq correction often bounces 2-3% from this level.
 
-### 2. **STX** (Seagate) – Momentum in Memory/Storage
-| RSI | 53.47 |
-| Price vs SMAs | Above all (SMA20=878, SMA50=886, SMA200=500) |
-| MACD | Histogram positive (+1.60) – bullish |
-| Volume | 4.6M (healthy) |
-| Interpretation | Consolidating after recent pullback, MACD turning up. Earnings Tuesday (July 28) – expect volatility, but trend is bullish. **Consider long call or put credit spread for defined risk.** |
+**2. Cash-Secured Put: Sell AAPL Aug 21 320 Put**  
+- Premium: ~$3.67 per share ($367 per contract)  
+- Strike ~6% below spot (340). High probability of OTM expiry.  
+- If assigned, acquire AAPL at net ~316.33 – excellent technical entry (above SMA20 and trend support).
 
-### 3. **XLF** (Financials) – Sector Rotation Beneficiary
-| RSI | 59.58 |
-| Price vs SMAs | Above all (SMA20=55.45, SMA50=53.42, SMA200=52.36) |
-| MACD | Histogram positive (MACD 0.80 > signal 0.90? Actually minor negative, but overall uptrend intact) |
-| Interpretation | 10y yield rising supports banks. Financials leading the market. **Trend continuation likely. Use as core sector ETF.** |
-
-### 4. **CEG** (Constellation Energy) – AI Power Demand Play
-| RSI | 61.81 (moderately high but not overbought) |
-| Price vs SMAs | Above 20 (254.54) and 50 (264.08); below 200 (310.51) but trending up |
-| MACD | Histogram positive (+3.60) – strong bullish momentum |
-| BB upper | 275.93; close 275.60 (touching). |
-| Interpretation | Momentum is powerful; touched upper BB but no bearish divergence. **Trend continuation to new highs possible. Stop at 250 (SMA50).** |
+**3. Trend Continuation: Buy XLE**  
+- Entry: 58.36 (pullback to SMA20)  
+- Stop: 55.80 (-4.4%)  
+- Target: 62.50 (prior high)  
+- Rationale: Energy sector in strong uptrend, oil prices supportive per price action. RSI room to run.
 
 ---
 
-## ⚠️ Volatility-Contraction Squeeze Candidates
-
-### **IWM** (Russell 2000) – Tight Bollinger Bands
-| Band width | 10.08 (upper 301.29 – lower 291.21) |
-| Price | 292.09 (near lower band) |
-| RSI | 47.13 (neutral) |
-| Interpretation | Band width is 3.4% of price, below historical average. Low volatility often precedes a breakout. Direction uncertain, but a move outside 291–301 likely. **Consider a strangle if volatility expands.** |
-
----
-
-## ❌ Avoid (Failed or Conflicting Setups)
-
-| Ticker | Reason |
-|--------|--------|
-| **TSLA** | RSI 29, price below lower BB – oversold but trend is violently down; no MACD convergence yet. Too risky for mean reversion. |
-| **NFLX** | Price below all SMAs, MACD still falling. Better to wait for RSI bounce above 30 with volume. |
-| **AMZN** | Below SMA20/50, RSI 38 – not yet oversold enough. Earnings risk high. |
-| **QQQ/XLK** | Tech sector in downtrend; MACD negative. Avoid until SPY/QQQ hold above 200 SMA. |
-| **INTC** | Below SMAs, no reversal signal. |
-| **PLTR** | Downtrend intact, MACD bearish. |
-| **GOOGL** (if trend continuation – not yet confirmed) | Only for mean reversion, not for holding. |
-
----
-
-## Summary of Highest-Conviction Plays
-
-| Pattern | Ticker | Entry | Expected Target | Stop |
-|---------|--------|-------|----------------|------|
-| **Mean Reversion** | GOOGL | 317–320 | 340–350 (SMA20) | 305 |
-| **Mean Reversion** | ORCL | 119–121 | 132–136 (SMA20) | 115 |
-| **Mean Reversion** | XLY | 108–109 | 115–117 (SMA20) | 106 |
-| **Trend Continuation** | AAPL | 320–322 | 340+ (new highs) | 310 (SMA20) |
-| **Trend Continuation** | STX | 910–915 | 1000+ (breakout) | 880 (SMA20) |
-| **Trend Continuation** | XLF | 55.5–55.8 | 58+ (52-week high) | 54.5 (SMA20) |
-| **Squeeze** | IWM | 292 | Breakout target 301 or breakdown 291 | None until breakout |
-
-All trades should be sized for a max loss of 1-2% of portfolio ($872–$1,744). Given the *Bear Quiet* regime, prefer mean-reversion bounces over aggressive trend continuation; the fast channel is clear but canary is half-defensive—meaning some defense is warranted.
-
-**Next step:** Which setup do you want to execute? I can provide full option chain analysis (if using options) or limit order levels.
+**Risk Note:** VIX is rising (18.7) and VIX3M at 20.5 – term structure flattening. Be position-sized for gap risk. Avoid 3x leveraged products until volatility stabilizes.
