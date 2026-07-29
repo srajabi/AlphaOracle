@@ -1,17 +1,32 @@
 [
     {
-        "ticker": "VOO",
+        "ticker": "XLP",
         "action": "buy",
-        "notional_value": 26155.5
+        "notional_value": 13000
     },
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 8718.5
+        "notional_value": 13000
     },
     {
-        "ticker": "GLD",
+        "ticker": "XLB",
         "action": "buy",
-        "notional_value": 13077.75
+        "notional_value": 9000
+    },
+    {
+        "ticker": "EWC",
+        "action": "buy",
+        "notional_value": 9000
+    },
+    {
+        "ticker": "IAU",
+        "action": "buy",
+        "notional_value": 7000
+    },
+    {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 4000
     }
 ]
