@@ -24,7 +24,7 @@
           }
         },
         "vs_spy": 14.541682178797522,
-        "timestamp": "2026-08-04T16:45:46.679835"
+        "timestamp": "2026-08-04T21:50:41.787755"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -38,20 +38,20 @@
           "sma20": 401.91150054931643,
           "sma50": 400.73679809570314
         },
-        "timestamp": "2026-08-04T16:45:46.683442"
+        "timestamp": "2026-08-04T21:50:41.791208"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "bullish_volume",
         "interpretation": "Bullish: High volume (+76%) on price rise",
         "components": {
-          "latest_volume": 66651900,
-          "avg_volume_20d": 37867535,
-          "avg_volume_60d": 41385221,
-          "volume_vs_avg": 76.01330532869383,
+          "latest_volume": 66762100,
+          "avg_volume_20d": 37873045,
+          "avg_volume_60d": 41387058,
+          "volume_vs_avg": 76.27866996171025,
           "price_change_20d": 25.411479911837766
         },
-        "timestamp": "2026-08-04T16:45:46.685945"
+        "timestamp": "2026-08-04T21:50:41.793534"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -66,7 +66,7 @@
           "high_60d": 491.6499938964844,
           "low_60d": 349.20001220703125
         },
-        "timestamp": "2026-08-04T16:45:46.706030"
+        "timestamp": "2026-08-04T21:50:41.806782"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -78,9 +78,9 @@
           "20d": 26.092466827895187,
           "60d": 18.056382096477176
         },
-        "timestamp": "2026-08-04T16:45:46.709926"
+        "timestamp": "2026-08-04T21:50:41.809232"
       },
-      "timestamp": "2026-08-04T16:45:46.709955"
+      "timestamp": "2026-08-04T21:50:41.809255"
     },
     "AAPL": {
       "ticker": "AAPL",
@@ -106,7 +106,7 @@
           }
         },
         "vs_spy": 2.116253363801812,
-        "timestamp": "2026-08-04T16:45:46.715278"
+        "timestamp": "2026-08-04T21:50:41.814033"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -120,20 +120,20 @@
           "sma20": 323.9050003051758,
           "sma50": 309.5228002929687
         },
-        "timestamp": "2026-08-04T16:45:46.718418"
+        "timestamp": "2026-08-04T21:50:41.817084"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 74824300,
-          "avg_volume_20d": 54728925,
-          "avg_volume_60d": 57031840,
-          "volume_vs_avg": 36.71801519945805,
+          "latest_volume": 75052000,
+          "avg_volume_20d": 54740310,
+          "avg_volume_60d": 57035635,
+          "volume_vs_avg": 37.10554434200317,
           "price_change_20d": -2.3305189432269557
         },
-        "timestamp": "2026-08-04T16:45:46.720778"
+        "timestamp": "2026-08-04T21:50:41.819307"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -148,7 +148,7 @@
           "high_60d": 344.57000732421875,
           "low_60d": 273.75
         },
-        "timestamp": "2026-08-04T16:45:46.740367"
+        "timestamp": "2026-08-04T21:50:41.833551"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -160,9 +160,9 @@
           "20d": -2.955283735095404,
           "60d": 5.630953281481466
         },
-        "timestamp": "2026-08-04T16:45:46.742660"
+        "timestamp": "2026-08-04T21:50:41.836112"
       },
-      "timestamp": "2026-08-04T16:45:46.742670"
+      "timestamp": "2026-08-04T21:50:41.836125"
     },
     "AMZN": {
       "ticker": "AMZN",
@@ -188,7 +188,7 @@
           }
         },
         "vs_spy": -0.23094447203577673,
-        "timestamp": "2026-08-04T16:45:46.747138"
+        "timestamp": "2026-08-04T21:50:41.840443"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -202,20 +202,20 @@
           "sma20": 245.85099868774415,
           "sma50": 247.00919982910156
         },
-        "timestamp": "2026-08-04T16:45:46.750259"
+        "timestamp": "2026-08-04T21:50:41.843829"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "bullish_volume",
-        "interpretation": "Bullish: High volume (+88%) on price rise",
+        "interpretation": "Bullish: High volume (+89%) on price rise",
         "components": {
-          "latest_volume": 90320300,
-          "avg_volume_20d": 48065335,
-          "avg_volume_60d": 50352881,
-          "volume_vs_avg": 87.91151668869051,
+          "latest_volume": 90830200,
+          "avg_volume_20d": 48090830,
+          "avg_volume_60d": 50361380,
+          "volume_vs_avg": 88.87218207712364,
           "price_change_20d": 15.464669463718494
         },
-        "timestamp": "2026-08-04T16:45:46.752639"
+        "timestamp": "2026-08-04T21:50:41.846448"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -230,7 +230,7 @@
           "high_60d": 287.20001220703125,
           "low_60d": 225.5500030517578
         },
-        "timestamp": "2026-08-04T16:45:46.772207"
+        "timestamp": "2026-08-04T21:50:41.859410"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -242,9 +242,9 @@
           "20d": 16.32535417501235,
           "60d": 3.2837554456438767
         },
-        "timestamp": "2026-08-04T16:45:46.774509"
+        "timestamp": "2026-08-04T21:50:41.862096"
       },
-      "timestamp": "2026-08-04T16:45:46.774519"
+      "timestamp": "2026-08-04T21:50:41.862109"
     },
     "META": {
       "ticker": "META",
@@ -270,7 +270,7 @@
           }
         },
         "vs_spy": -7.119478485098252,
-        "timestamp": "2026-08-04T16:45:46.778948"
+        "timestamp": "2026-08-04T21:50:41.866525"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -284,20 +284,20 @@
           "sma20": 620.3004943847657,
           "sma50": 601.7090637207032
         },
-        "timestamp": "2026-08-04T16:45:46.781975"
+        "timestamp": "2026-08-04T21:50:41.869552"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 25896000,
-          "avg_volume_20d": 19421020,
-          "avg_volume_60d": 18270610,
-          "volume_vs_avg": 33.34006143858561,
+          "latest_volume": 25938100,
+          "avg_volume_20d": 19423125,
+          "avg_volume_60d": 18271311,
+          "volume_vs_avg": 33.54236251890465,
           "price_change_20d": -4.116447277685165
         },
-        "timestamp": "2026-08-04T16:45:46.784309"
+        "timestamp": "2026-08-04T21:50:41.871817"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -312,7 +312,7 @@
           "high_60d": 686.0800170898438,
           "low_60d": 524.489990234375
         },
-        "timestamp": "2026-08-04T16:45:46.803531"
+        "timestamp": "2026-08-04T21:50:41.884885"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -324,9 +324,9 @@
           "20d": -1.6741888355349066,
           "60d": -3.6047785674185984
         },
-        "timestamp": "2026-08-04T16:45:46.805728"
+        "timestamp": "2026-08-04T21:50:41.887202"
       },
-      "timestamp": "2026-08-04T16:45:46.805738"
+      "timestamp": "2026-08-04T21:50:41.887215"
     },
     "NFLX": {
       "ticker": "NFLX",
@@ -352,7 +352,7 @@
           }
         },
         "vs_spy": -20.440037382485432,
-        "timestamp": "2026-08-04T16:45:46.811972"
+        "timestamp": "2026-08-04T21:50:41.891482"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -366,20 +366,20 @@
           "sma20": 72.16799926757812,
           "sma50": 76.81579925537109
         },
-        "timestamp": "2026-08-04T16:45:46.815081"
+        "timestamp": "2026-08-04T21:50:41.894416"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 33868600,
-          "avg_volume_20d": 48511175,
-          "avg_volume_60d": 43891915,
-          "volume_vs_avg": -30.1839215397277,
+          "latest_volume": 33922300,
+          "avg_volume_20d": 48513860,
+          "avg_volume_60d": 43892810,
+          "volume_vs_avg": -30.077095493947503,
           "price_change_20d": -3.741137388690008
         },
-        "timestamp": "2026-08-04T16:45:46.817509"
+        "timestamp": "2026-08-04T21:50:41.896623"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -394,7 +394,7 @@
           "high_60d": 91.4800033569336,
           "low_60d": 65.08000183105469
         },
-        "timestamp": "2026-08-04T16:45:46.837207"
+        "timestamp": "2026-08-04T21:50:41.909624"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -406,9 +406,9 @@
           "20d": -3.5385358205709205,
           "60d": -16.92533746480578
         },
-        "timestamp": "2026-08-04T16:45:46.839492"
+        "timestamp": "2026-08-04T21:50:41.911870"
       },
-      "timestamp": "2026-08-04T16:45:46.839502"
+      "timestamp": "2026-08-04T21:50:41.911881"
     },
     "GOOGL": {
       "ticker": "GOOGL",
@@ -434,7 +434,7 @@
           }
         },
         "vs_spy": -9.621347086355147,
-        "timestamp": "2026-08-04T16:45:46.843954"
+        "timestamp": "2026-08-04T21:50:41.916035"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -448,20 +448,20 @@
           "sma20": 348.4065002441406,
           "sma50": 358.3801727294922
         },
-        "timestamp": "2026-08-04T16:45:46.847040"
+        "timestamp": "2026-08-04T21:50:41.918889"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 38596000,
-          "avg_volume_20d": 30599650,
-          "avg_volume_60d": 32918730,
-          "volume_vs_avg": 26.13216164237173,
+          "latest_volume": 38669700,
+          "avg_volume_20d": 30603335,
+          "avg_volume_60d": 32919958,
+          "volume_vs_avg": 26.357797279283446,
           "price_change_20d": 1.7655262534070681
         },
-        "timestamp": "2026-08-04T16:45:46.849441"
+        "timestamp": "2026-08-04T21:50:41.921078"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -476,7 +476,7 @@
           "high_60d": 408.36608091552193,
           "low_60d": 314.8999938964844
         },
-        "timestamp": "2026-08-04T16:45:46.868733"
+        "timestamp": "2026-08-04T21:50:41.934074"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -488,9 +488,9 @@
           "20d": 1.923816644363785,
           "60d": -6.106647168675494
         },
-        "timestamp": "2026-08-04T16:45:46.870984"
+        "timestamp": "2026-08-04T21:50:41.936383"
       },
-      "timestamp": "2026-08-04T16:45:46.870993"
+      "timestamp": "2026-08-04T21:50:41.936394"
     },
     "NVDA": {
       "ticker": "NVDA",
@@ -516,7 +516,7 @@
           }
         },
         "vs_spy": -3.9714020464105215,
-        "timestamp": "2026-08-04T16:45:46.875479"
+        "timestamp": "2026-08-04T21:50:41.940566"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -530,20 +530,20 @@
           "sma20": 203.85099716186522,
           "sma50": 205.79240661621094
         },
-        "timestamp": "2026-08-04T16:45:46.878538"
+        "timestamp": "2026-08-04T21:50:41.943499"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 128127400,
-          "avg_volume_20d": 129175375,
-          "avg_volume_60d": 152901421,
-          "volume_vs_avg": -0.8112807878436601,
+          "latest_volume": 128406900,
+          "avg_volume_20d": 129189350,
+          "avg_volume_60d": 152906080,
+          "volume_vs_avg": -0.6056613799821697,
           "price_change_20d": 4.930689623217233
         },
-        "timestamp": "2026-08-04T16:45:46.880923"
+        "timestamp": "2026-08-04T21:50:41.945770"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -558,7 +558,7 @@
           "high_60d": 236.26463268418732,
           "low_60d": 189.8000030517578
         },
-        "timestamp": "2026-08-04T16:45:46.900609"
+        "timestamp": "2026-08-04T21:50:41.958524"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -570,9 +570,9 @@
           "20d": 5.671181879222642,
           "60d": -0.45670212873086813
         },
-        "timestamp": "2026-08-04T16:45:46.902898"
+        "timestamp": "2026-08-04T21:50:41.961050"
       },
-      "timestamp": "2026-08-04T16:45:46.902908"
+      "timestamp": "2026-08-04T21:50:41.961062"
     },
     "TSM": {
       "ticker": "TSM",
@@ -598,7 +598,7 @@
           }
         },
         "vs_spy": -6.479890386439447,
-        "timestamp": "2026-08-04T16:45:46.907434"
+        "timestamp": "2026-08-04T21:50:41.965452"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -612,20 +612,20 @@
           "sma20": 412.851496887207,
           "sma50": 425.1469836425781
         },
-        "timestamp": "2026-08-04T16:45:46.910567"
+        "timestamp": "2026-08-04T21:50:41.968467"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 12629600,
-          "avg_volume_20d": 15076250,
-          "avg_volume_60d": 14357486,
-          "volume_vs_avg": -16.228505099079683,
+          "latest_volume": 12676900,
+          "avg_volume_20d": 15078615,
+          "avg_volume_60d": 14358275,
+          "volume_vs_avg": -15.927954921589283,
           "price_change_20d": -6.11693402793504
         },
-        "timestamp": "2026-08-04T16:45:46.913497"
+        "timestamp": "2026-08-04T21:50:41.970698"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -640,7 +640,7 @@
           "high_60d": 479.0,
           "low_60d": 372.7200012207031
         },
-        "timestamp": "2026-08-04T16:45:46.933107"
+        "timestamp": "2026-08-04T21:50:41.983536"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -652,9 +652,9 @@
           "20d": -10.110897171117362,
           "60d": -2.965190468759793
         },
-        "timestamp": "2026-08-04T16:45:46.935410"
+        "timestamp": "2026-08-04T21:50:41.986049"
       },
-      "timestamp": "2026-08-04T16:45:46.935421"
+      "timestamp": "2026-08-04T21:50:41.986061"
     },
     "AVGO": {
       "ticker": "AVGO",
@@ -680,7 +680,7 @@
           }
         },
         "vs_spy": -11.174820349133851,
-        "timestamp": "2026-08-04T16:45:46.939859"
+        "timestamp": "2026-08-04T21:50:41.990450"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -694,20 +694,20 @@
           "sma20": 385.64649963378906,
           "sma50": 394.5352899169922
         },
-        "timestamp": "2026-08-04T16:45:46.942883"
+        "timestamp": "2026-08-04T21:50:41.993467"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "weak_uptrend",
         "interpretation": "Volume decreasing on uptrend (weak/exhaustion)",
         "components": {
-          "latest_volume": 17287000,
-          "avg_volume_20d": 20226300,
-          "avg_volume_60d": 26295781,
-          "volume_vs_avg": -14.532069632112643,
+          "latest_volume": 17315100,
+          "avg_volume_20d": 20227705,
+          "avg_volume_60d": 26296250,
+          "volume_vs_avg": -14.399087785786868,
           "price_change_20d": 5.7851049888479
         },
-        "timestamp": "2026-08-04T16:45:46.945294"
+        "timestamp": "2026-08-04T21:50:41.995723"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -722,7 +722,7 @@
           "high_60d": 494.21781760890264,
           "low_60d": 356.42999267578125
         },
-        "timestamp": "2026-08-04T16:45:46.964917"
+        "timestamp": "2026-08-04T21:50:42.008519"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -734,9 +734,9 @@
           "20d": 4.90238496631763,
           "60d": -7.660120431454198
         },
-        "timestamp": "2026-08-04T16:45:46.967209"
+        "timestamp": "2026-08-04T21:50:42.011251"
       },
-      "timestamp": "2026-08-04T16:45:46.967220"
+      "timestamp": "2026-08-04T21:50:42.011264"
     },
     "AMD": {
       "ticker": "AMD",
@@ -762,7 +762,7 @@
           }
         },
         "vs_spy": 11.495147919547577,
-        "timestamp": "2026-08-04T16:45:46.971724"
+        "timestamp": "2026-08-04T21:50:42.015720"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -776,20 +776,20 @@
           "sma20": 511.6885025024414,
           "sma50": 512.9488012695313
         },
-        "timestamp": "2026-08-04T16:45:46.974773"
+        "timestamp": "2026-08-04T21:50:42.018800"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 24235500,
-          "avg_volume_20d": 27578100,
-          "avg_volume_60d": 31307623,
-          "volume_vs_avg": -12.120486908090111,
+          "latest_volume": 24422300,
+          "avg_volume_20d": 27587440,
+          "avg_volume_60d": 31310736,
+          "volume_vs_avg": -11.473119651551578,
           "price_change_20d": -6.097531843273362
         },
-        "timestamp": "2026-08-04T16:45:46.977343"
+        "timestamp": "2026-08-04T21:50:42.021150"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -804,7 +804,7 @@
           "high_60d": 584.72998046875,
           "low_60d": 393.3599853515625
         },
-        "timestamp": "2026-08-04T16:45:46.996783"
+        "timestamp": "2026-08-04T21:50:42.034056"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -816,9 +816,9 @@
           "20d": -12.210845871771225,
           "60d": 15.00984783722723
         },
-        "timestamp": "2026-08-04T16:45:46.999049"
+        "timestamp": "2026-08-04T21:50:42.036562"
       },
-      "timestamp": "2026-08-04T16:45:46.999059"
+      "timestamp": "2026-08-04T21:50:42.036588"
     },
     "MU": {
       "ticker": "MU",
@@ -844,7 +844,7 @@
           }
         },
         "vs_spy": 20.943739172217434,
-        "timestamp": "2026-08-04T16:45:47.003516"
+        "timestamp": "2026-08-04T21:50:42.041221"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -858,20 +858,20 @@
           "sma20": 903.9255065917969,
           "sma50": 966.705361328125
         },
-        "timestamp": "2026-08-04T16:45:47.006907"
+        "timestamp": "2026-08-04T21:50:42.044316"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 42296300,
-          "avg_volume_20d": 46874455,
-          "avg_volume_60d": 53390018,
-          "volume_vs_avg": -9.76684422250883,
+          "latest_volume": 42607100,
+          "avg_volume_20d": 46889995,
+          "avg_volume_60d": 53395198,
+          "volume_vs_avg": -9.133920786299932,
           "price_change_20d": -11.60297580044981
         },
-        "timestamp": "2026-08-04T16:45:47.009335"
+        "timestamp": "2026-08-04T21:50:42.046655"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -886,7 +886,7 @@
           "high_60d": 1254.8069810301963,
           "low_60d": 635.3222803012311
         },
-        "timestamp": "2026-08-04T16:45:47.028909"
+        "timestamp": "2026-08-04T21:50:42.060283"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -898,9 +898,9 @@
           "20d": -15.76542269611576,
           "60d": 24.458439089897087
         },
-        "timestamp": "2026-08-04T16:45:47.031261"
+        "timestamp": "2026-08-04T21:50:42.062905"
       },
-      "timestamp": "2026-08-04T16:45:47.031271"
+      "timestamp": "2026-08-04T21:50:42.062918"
     },
     "KLAC": {
       "ticker": "KLAC",
@@ -926,7 +926,7 @@
           }
         },
         "vs_spy": -2.769086565128176,
-        "timestamp": "2026-08-04T16:45:47.035711"
+        "timestamp": "2026-08-04T21:50:42.067359"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -940,20 +940,20 @@
           "sma20": 209.3640007019043,
           "sma50": 221.23928039550782
         },
-        "timestamp": "2026-08-04T16:45:47.038742"
+        "timestamp": "2026-08-04T21:50:42.070330"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 10251800,
-          "avg_volume_20d": 12473875,
-          "avg_volume_60d": 12987993,
-          "volume_vs_avg": -17.813830906594784,
+          "latest_volume": 10263000,
+          "avg_volume_20d": 12474435,
+          "avg_volume_60d": 12988180,
+          "volume_vs_avg": -17.727736767236358,
           "price_change_20d": -15.577216718506747
         },
-        "timestamp": "2026-08-04T16:45:47.041088"
+        "timestamp": "2026-08-04T21:50:42.072584"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -968,7 +968,7 @@
           "high_60d": 307.3699951171875,
           "low_60d": 169.0279998779297
         },
-        "timestamp": "2026-08-04T16:45:47.060376"
+        "timestamp": "2026-08-04T21:50:42.085196"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -980,9 +980,9 @@
           "20d": -21.67073768276735,
           "60d": 0.7456133525514774
         },
-        "timestamp": "2026-08-04T16:45:47.062643"
+        "timestamp": "2026-08-04T21:50:42.087764"
       },
-      "timestamp": "2026-08-04T16:45:47.062653"
+      "timestamp": "2026-08-04T21:50:42.087777"
     },
     "INTC": {
       "ticker": "INTC",
@@ -1008,7 +1008,7 @@
           }
         },
         "vs_spy": -22.990853992695083,
-        "timestamp": "2026-08-04T16:45:47.067071"
+        "timestamp": "2026-08-04T21:50:42.092165"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1022,20 +1022,20 @@
           "sma20": 98.9379997253418,
           "sma50": 112.25239959716797
         },
-        "timestamp": "2026-08-04T16:45:47.070074"
+        "timestamp": "2026-08-04T21:50:42.095204"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 96116100,
-          "avg_volume_20d": 117218350,
-          "avg_volume_60d": 127263383,
-          "volume_vs_avg": -18.0025141114851,
+          "latest_volume": 96633600,
+          "avg_volume_20d": 117244225,
+          "avg_volume_60d": 127272008,
+          "volume_vs_avg": -17.579224051333874,
           "price_change_20d": -17.5649963736359
         },
-        "timestamp": "2026-08-04T16:45:47.072447"
+        "timestamp": "2026-08-04T21:50:42.097466"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -1050,7 +1050,7 @@
           "high_60d": 142.35000610351562,
           "low_60d": 81.79000091552734
         },
-        "timestamp": "2026-08-04T16:45:47.092413"
+        "timestamp": "2026-08-04T21:50:42.110107"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -1062,9 +1062,9 @@
           "20d": -25.531913033890618,
           "60d": -19.47615407501543
         },
-        "timestamp": "2026-08-04T16:45:47.094691"
+        "timestamp": "2026-08-04T21:50:42.112593"
       },
-      "timestamp": "2026-08-04T16:45:47.094701"
+      "timestamp": "2026-08-04T21:50:42.112605"
     },
     "PLTR": {
       "ticker": "PLTR",
@@ -1090,7 +1090,7 @@
           }
         },
         "vs_spy": -9.598855810299467,
-        "timestamp": "2026-08-04T16:45:47.099211"
+        "timestamp": "2026-08-04T21:50:42.116964"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1104,20 +1104,20 @@
           "sma20": 128.70799980163574,
           "sma50": 130.48829971313478
         },
-        "timestamp": "2026-08-04T16:45:47.102252"
+        "timestamp": "2026-08-04T21:50:42.120041"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "bearish_volume",
         "interpretation": "Bearish: High volume on price decline (distribution)",
         "components": {
-          "latest_volume": 72406300,
-          "avg_volume_20d": 35815555,
-          "avg_volume_60d": 40323981,
-          "volume_vs_avg": 102.16439477204808,
+          "latest_volume": 77282900,
+          "avg_volume_20d": 36059385,
+          "avg_volume_60d": 40405258,
+          "volume_vs_avg": 114.32118157311888,
           "price_change_20d": -6.48953926336282
         },
-        "timestamp": "2026-08-04T16:45:47.104622"
+        "timestamp": "2026-08-04T21:50:42.122339"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -1132,7 +1132,7 @@
           "high_60d": 163.6999969482422,
           "low_60d": 106.37000274658203
         },
-        "timestamp": "2026-08-04T16:45:47.124231"
+        "timestamp": "2026-08-04T21:50:42.135133"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -1144,9 +1144,9 @@
           "20d": -5.198424708970306,
           "60d": -6.084155892619814
         },
-        "timestamp": "2026-08-04T16:45:47.126516"
+        "timestamp": "2026-08-04T21:50:42.137591"
       },
-      "timestamp": "2026-08-04T16:45:47.126525"
+      "timestamp": "2026-08-04T21:50:42.137603"
     },
     "CRWD": {
       "ticker": "CRWD",
@@ -1172,7 +1172,7 @@
           }
         },
         "vs_spy": 69.57051393225554,
-        "timestamp": "2026-08-04T16:45:47.130985"
+        "timestamp": "2026-08-04T21:50:42.141917"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1186,20 +1186,20 @@
           "sma20": 192.4119987487793,
           "sma50": 182.19879943847656
         },
-        "timestamp": "2026-08-04T16:45:47.134006"
+        "timestamp": "2026-08-04T21:50:42.144892"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "weak_uptrend",
         "interpretation": "Volume decreasing on uptrend (weak/exhaustion)",
         "components": {
-          "latest_volume": 10286100,
-          "avg_volume_20d": 8444210,
-          "avg_volume_60d": 12226688,
-          "volume_vs_avg": 21.81246084595243,
+          "latest_volume": 10302600,
+          "avg_volume_20d": 8445035,
+          "avg_volume_60d": 12226963,
+          "volume_vs_avg": 21.995941994319736,
           "price_change_20d": 4.069467869514853
         },
-        "timestamp": "2026-08-04T16:45:47.136379"
+        "timestamp": "2026-08-04T21:50:42.147132"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -1214,7 +1214,7 @@
           "high_60d": 217.5,
           "low_60d": 121.52249908447266
         },
-        "timestamp": "2026-08-04T16:45:47.155721"
+        "timestamp": "2026-08-04T21:50:42.159654"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -1226,9 +1226,9 @@
           "20d": 1.5849073758312127,
           "60d": 73.08521384993519
         },
-        "timestamp": "2026-08-04T16:45:47.157982"
+        "timestamp": "2026-08-04T21:50:42.162022"
       },
-      "timestamp": "2026-08-04T16:45:47.157992"
+      "timestamp": "2026-08-04T21:50:42.162033"
     },
     "NBIS": {
       "ticker": "NBIS",
@@ -1254,7 +1254,7 @@
           }
         },
         "vs_spy": 5.4503961002995815,
-        "timestamp": "2026-08-04T16:45:47.162242"
+        "timestamp": "2026-08-04T21:50:42.166145"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1268,20 +1268,20 @@
           "sma20": 196.2379997253418,
           "sma50": 224.10679992675782
         },
-        "timestamp": "2026-08-04T16:45:47.165001"
+        "timestamp": "2026-08-04T21:50:42.168819"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 28521300,
-          "avg_volume_20d": 22187245,
-          "avg_volume_60d": 19759093,
-          "volume_vs_avg": 28.548181624171896,
+          "latest_volume": 28630300,
+          "avg_volume_20d": 22192695,
+          "avg_volume_60d": 19760910,
+          "volume_vs_avg": 29.00776584367064,
           "price_change_20d": 8.909267468690519
         },
-        "timestamp": "2026-08-04T16:45:47.167133"
+        "timestamp": "2026-08-04T21:50:42.170820"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -1296,7 +1296,7 @@
           "high_60d": 299.8599853515625,
           "low_60d": 145.8000030517578
         },
-        "timestamp": "2026-08-04T16:45:47.186391"
+        "timestamp": "2026-08-04T21:50:42.183123"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -1308,9 +1308,9 @@
           "20d": -0.20655451721964813,
           "60d": 8.965096017979235
         },
-        "timestamp": "2026-08-04T16:45:47.188882"
+        "timestamp": "2026-08-04T21:50:42.185293"
       },
-      "timestamp": "2026-08-04T16:45:47.188893"
+      "timestamp": "2026-08-04T21:50:42.185304"
     },
     "ORCL": {
       "ticker": "ORCL",
@@ -1336,7 +1336,7 @@
           }
         },
         "vs_spy": -30.153107129246383,
-        "timestamp": "2026-08-04T16:45:47.193400"
+        "timestamp": "2026-08-04T21:50:42.189507"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1350,20 +1350,20 @@
           "sma20": 128.71210136413575,
           "sma50": 163.5734883117676
         },
-        "timestamp": "2026-08-04T16:45:47.196518"
+        "timestamp": "2026-08-04T21:50:42.192408"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "volume_confirming_uptrend",
         "interpretation": "Volume increasing on uptrend (healthy)",
         "components": {
-          "latest_volume": 49540400,
-          "avg_volume_20d": 39268860,
-          "avg_volume_60d": 31373450,
-          "volume_vs_avg": 26.156959993236374,
+          "latest_volume": 49696900,
+          "avg_volume_20d": 39276685,
+          "avg_volume_60d": 31376058,
+          "volume_vs_avg": 26.530281259734622,
           "price_change_20d": 0.5250696792995058
         },
-        "timestamp": "2026-08-04T16:45:47.198905"
+        "timestamp": "2026-08-04T21:50:42.194625"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -1378,7 +1378,7 @@
           "high_60d": 249.3824137486397,
           "low_60d": 114.5
         },
-        "timestamp": "2026-08-04T16:45:47.218478"
+        "timestamp": "2026-08-04T21:50:42.207767"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -1390,9 +1390,9 @@
           "20d": -0.9853237775424128,
           "60d": -26.63840721156673
         },
-        "timestamp": "2026-08-04T16:45:47.220796"
+        "timestamp": "2026-08-04T21:50:42.210271"
       },
-      "timestamp": "2026-08-04T16:45:47.220805"
+      "timestamp": "2026-08-04T21:50:42.210283"
     },
     "PSTG": {
       "ticker": "PSTG",
@@ -1418,7 +1418,7 @@
           }
         },
         "vs_spy": 8.785343946303614,
-        "timestamp": "2026-08-04T16:45:47.225246"
+        "timestamp": "2026-08-04T21:50:42.214520"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1432,7 +1432,7 @@
           "sma20": 77.79749908447266,
           "sma50": 73.45839973449706
         },
-        "timestamp": "2026-08-04T16:45:47.228230"
+        "timestamp": "2026-08-04T21:50:42.217400"
       },
       "volume_profile": {
         "name": "Volume Profile",
@@ -1445,7 +1445,7 @@
           "volume_vs_avg": -27.034829578315602,
           "price_change_20d": -10.926339878341329
         },
-        "timestamp": "2026-08-04T16:45:47.230521"
+        "timestamp": "2026-08-04T21:50:42.219555"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -1460,7 +1460,7 @@
           "high_60d": 93.91999816894531,
           "low_60d": 56.779998779296875
         },
-        "timestamp": "2026-08-04T16:45:47.250053"
+        "timestamp": "2026-08-04T21:50:42.232299"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -1472,9 +1472,9 @@
           "20d": -13.711223239535485,
           "60d": 12.300043863983268
         },
-        "timestamp": "2026-08-04T16:45:47.252300"
+        "timestamp": "2026-08-04T21:50:42.234718"
       },
-      "timestamp": "2026-08-04T16:45:47.252310"
+      "timestamp": "2026-08-04T21:50:42.234730"
     },
     "CEG": {
       "ticker": "CEG",
@@ -1500,7 +1500,7 @@
           }
         },
         "vs_spy": -18.585255169744265,
-        "timestamp": "2026-08-04T16:45:47.256740"
+        "timestamp": "2026-08-04T21:50:42.239028"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1514,20 +1514,20 @@
           "sma20": 259.5492515563965,
           "sma50": 263.0531005859375
         },
-        "timestamp": "2026-08-04T16:45:47.259773"
+        "timestamp": "2026-08-04T21:50:42.241929"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "weak_uptrend",
         "interpretation": "Volume decreasing on uptrend (weak/exhaustion)",
         "components": {
-          "latest_volume": 2326500,
-          "avg_volume_20d": 2703485,
-          "avg_volume_60d": 3700983,
-          "volume_vs_avg": -13.944408790875485,
+          "latest_volume": 2329800,
+          "avg_volume_20d": 2703650,
+          "avg_volume_60d": 3701038,
+          "volume_vs_avg": -13.827603424999534,
           "price_change_20d": 14.183798668778746
         },
-        "timestamp": "2026-08-04T16:45:47.262198"
+        "timestamp": "2026-08-04T21:50:42.244119"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -1542,7 +1542,7 @@
           "high_60d": 328.2899299032122,
           "low_60d": 228.6300048828125
         },
-        "timestamp": "2026-08-04T16:45:47.281516"
+        "timestamp": "2026-08-04T21:50:42.256796"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -1554,9 +1554,9 @@
           "20d": 11.323055635406586,
           "60d": -15.07055525206461
         },
-        "timestamp": "2026-08-04T16:45:47.283769"
+        "timestamp": "2026-08-04T21:50:42.259234"
       },
-      "timestamp": "2026-08-04T16:45:47.283779"
+      "timestamp": "2026-08-04T21:50:42.259245"
     },
     "TLN": {
       "ticker": "TLN",
@@ -1582,7 +1582,7 @@
           }
         },
         "vs_spy": -19.49069971283471,
-        "timestamp": "2026-08-04T16:45:47.288237"
+        "timestamp": "2026-08-04T21:50:42.263464"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1596,20 +1596,20 @@
           "sma20": 364.11700134277345,
           "sma50": 376.1076013183594
         },
-        "timestamp": "2026-08-04T16:45:47.291199"
+        "timestamp": "2026-08-04T21:50:42.266303"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 760100,
-          "avg_volume_20d": 659855,
-          "avg_volume_60d": 823073,
-          "volume_vs_avg": 15.191973994286624,
+          "latest_volume": 760900,
+          "avg_volume_20d": 659895,
+          "avg_volume_60d": 823086,
+          "volume_vs_avg": 15.306222959713288,
           "price_change_20d": -6.046477174032006
         },
-        "timestamp": "2026-08-04T16:45:47.293494"
+        "timestamp": "2026-08-04T21:50:42.268437"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -1624,7 +1624,7 @@
           "high_60d": 449.84100341796875,
           "low_60d": 309.3599853515625
         },
-        "timestamp": "2026-08-04T16:45:47.312786"
+        "timestamp": "2026-08-04T21:50:42.281181"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -1636,9 +1636,9 @@
           "20d": -8.814425357304623,
           "60d": -15.97599979515506
         },
-        "timestamp": "2026-08-04T16:45:47.315003"
+        "timestamp": "2026-08-04T21:50:42.283649"
       },
-      "timestamp": "2026-08-04T16:45:47.315013"
+      "timestamp": "2026-08-04T21:50:42.283660"
     },
     "MTZ": {
       "ticker": "MTZ",
@@ -1664,7 +1664,7 @@
           }
         },
         "vs_spy": -43.22574082502541,
-        "timestamp": "2026-08-04T16:45:47.319455"
+        "timestamp": "2026-08-04T21:50:42.287935"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1678,7 +1678,7 @@
           "sma20": 339.0125,
           "sma50": 363.4981994628906
         },
-        "timestamp": "2026-08-04T16:45:47.322856"
+        "timestamp": "2026-08-04T21:50:42.290862"
       },
       "volume_profile": {
         "name": "Volume Profile",
@@ -1691,7 +1691,7 @@
           "volume_vs_avg": 60.20272126843267,
           "price_change_20d": -27.206354527593255
         },
-        "timestamp": "2026-08-04T16:45:47.325228"
+        "timestamp": "2026-08-04T21:50:42.293070"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -1706,7 +1706,7 @@
           "high_60d": 435.8999938964844,
           "low_60d": 252.4499969482422
         },
-        "timestamp": "2026-08-04T16:45:47.344282"
+        "timestamp": "2026-08-04T21:50:42.305678"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -1718,9 +1718,9 @@
           "20d": -31.37167383818652,
           "60d": -39.711040907345755
         },
-        "timestamp": "2026-08-04T16:45:47.346526"
+        "timestamp": "2026-08-04T21:50:42.308290"
       },
-      "timestamp": "2026-08-04T16:45:47.346536"
+      "timestamp": "2026-08-04T21:50:42.308302"
     },
     "WDC": {
       "ticker": "WDC",
@@ -1746,7 +1746,7 @@
           }
         },
         "vs_spy": 5.635139111689803,
-        "timestamp": "2026-08-04T16:45:47.350973"
+        "timestamp": "2026-08-04T21:50:42.312780"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1760,20 +1760,20 @@
           "sma20": 525.946499633789,
           "sma50": 562.6188177490235
         },
-        "timestamp": "2026-08-04T16:45:47.353946"
+        "timestamp": "2026-08-04T21:50:42.315687"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 8257300,
-          "avg_volume_20d": 7386620,
-          "avg_volume_60d": 8290513,
-          "volume_vs_avg": 11.787258583763617,
+          "latest_volume": 8279900,
+          "avg_volume_20d": 7387750,
+          "avg_volume_60d": 8290890,
+          "volume_vs_avg": 12.076071875740247,
           "price_change_20d": -0.9171218016762239
         },
-        "timestamp": "2026-08-04T16:45:47.356323"
+        "timestamp": "2026-08-04T21:50:42.317913"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -1788,7 +1788,7 @@
           "high_60d": 799.8699951171875,
           "low_60d": 422.1099853515625
         },
-        "timestamp": "2026-08-04T16:45:47.375404"
+        "timestamp": "2026-08-04T21:50:42.330388"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -1800,9 +1800,9 @@
           "20d": -8.700178256133928,
           "60d": 9.149839029369456
         },
-        "timestamp": "2026-08-04T16:45:47.377657"
+        "timestamp": "2026-08-04T21:50:42.332848"
       },
-      "timestamp": "2026-08-04T16:45:47.377667"
+      "timestamp": "2026-08-04T21:50:42.332861"
     },
     "STX": {
       "ticker": "STX",
@@ -1828,7 +1828,7 @@
           }
         },
         "vs_spy": 2.2370116243127347,
-        "timestamp": "2026-08-04T16:45:47.382063"
+        "timestamp": "2026-08-04T21:50:42.337116"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1842,20 +1842,20 @@
           "sma20": 841.1764984130859,
           "sma50": 891.6764416503906
         },
-        "timestamp": "2026-08-04T16:45:47.385040"
+        "timestamp": "2026-08-04T21:50:42.340010"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 5323000,
-          "avg_volume_20d": 5562020,
-          "avg_volume_60d": 4648070,
-          "volume_vs_avg": -4.297359592378314,
+          "latest_volume": 5329400,
+          "avg_volume_20d": 5562340,
+          "avg_volume_60d": 4648176,
+          "volume_vs_avg": -4.1878058514941525,
           "price_change_20d": 0.4132210682936899
         },
-        "timestamp": "2026-08-04T16:45:47.387455"
+        "timestamp": "2026-08-04T21:50:42.342208"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -1870,7 +1870,7 @@
           "high_60d": 1144.184150716912,
           "low_60d": 694.6447177999769
         },
-        "timestamp": "2026-08-04T16:45:47.406502"
+        "timestamp": "2026-08-04T21:50:42.354939"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -1882,9 +1882,9 @@
           "20d": -4.284432288557538,
           "60d": 5.751711541992388
         },
-        "timestamp": "2026-08-04T16:45:47.410315"
+        "timestamp": "2026-08-04T21:50:42.357658"
       },
-      "timestamp": "2026-08-04T16:45:47.410330"
+      "timestamp": "2026-08-04T21:50:42.357671"
     },
     "TSLA": {
       "ticker": "TSLA",
@@ -1910,7 +1910,7 @@
           }
         },
         "vs_spy": -22.738240233708364,
-        "timestamp": "2026-08-04T16:45:47.417768"
+        "timestamp": "2026-08-04T21:50:42.362037"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -1924,20 +1924,20 @@
           "sma20": 359.04599914550784,
           "sma50": 388.8569989013672
         },
-        "timestamp": "2026-08-04T16:45:47.420825"
+        "timestamp": "2026-08-04T21:50:42.364961"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 38189000,
-          "avg_volume_20d": 40216080,
-          "avg_volume_60d": 46857786,
-          "volume_vs_avg": -5.040471373639599,
+          "latest_volume": 38281400,
+          "avg_volume_20d": 40220700,
+          "avg_volume_60d": 46859326,
+          "volume_vs_avg": -4.821646565077186,
           "price_change_20d": -20.05957025280659
         },
-        "timestamp": "2026-08-04T16:45:47.423240"
+        "timestamp": "2026-08-04T21:50:42.367154"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -1952,7 +1952,7 @@
           "high_60d": 453.3999938964844,
           "low_60d": 297.3800048828125
         },
-        "timestamp": "2026-08-04T16:45:47.442680"
+        "timestamp": "2026-08-04T21:50:42.379666"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -1964,9 +1964,9 @@
           "20d": -23.27226933753582,
           "60d": -19.22354031602871
         },
-        "timestamp": "2026-08-04T16:45:47.444954"
+        "timestamp": "2026-08-04T21:50:42.382022"
       },
-      "timestamp": "2026-08-04T16:45:47.444964"
+      "timestamp": "2026-08-04T21:50:42.382034"
     },
     "QQQ": {
       "ticker": "QQQ",
@@ -1992,7 +1992,7 @@
           }
         },
         "vs_spy": -2.786104755238905,
-        "timestamp": "2026-08-04T16:45:47.449398"
+        "timestamp": "2026-08-04T21:50:42.386516"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -2006,20 +2006,20 @@
           "sma20": 699.8809967041016,
           "sma50": 714.5072314453125
         },
-        "timestamp": "2026-08-04T16:45:47.452374"
+        "timestamp": "2026-08-04T21:50:42.389373"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 44814900,
-          "avg_volume_20d": 40886615,
-          "avg_volume_60d": 44615301,
-          "volume_vs_avg": 9.607753050723321,
+          "latest_volume": 44965100,
+          "avg_volume_20d": 40894125,
+          "avg_volume_60d": 44617805,
+          "volume_vs_avg": 9.954914061616439,
           "price_change_20d": -1.3193670197476637
         },
-        "timestamp": "2026-08-04T16:45:47.454664"
+        "timestamp": "2026-08-04T21:50:42.391500"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -2034,7 +2034,7 @@
           "high_60d": 747.828194840854,
           "low_60d": 661.1400146484375
         },
-        "timestamp": "2026-08-04T16:45:47.474827"
+        "timestamp": "2026-08-04T21:50:42.404027"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -2046,9 +2046,9 @@
           "20d": -3.147394893538902,
           "60d": 0.7285951624407483
         },
-        "timestamp": "2026-08-04T16:45:47.477938"
+        "timestamp": "2026-08-04T21:50:42.406435"
       },
-      "timestamp": "2026-08-04T16:45:47.477949"
+      "timestamp": "2026-08-04T21:50:42.406446"
     },
     "TQQQ": {
       "ticker": "TQQQ",
@@ -2074,7 +2074,7 @@
           }
         },
         "vs_spy": -8.340084878094324,
-        "timestamp": "2026-08-04T16:45:47.482505"
+        "timestamp": "2026-08-04T21:50:42.410685"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -2088,20 +2088,20 @@
           "sma20": 68.84400024414063,
           "sma50": 74.75636367797851
         },
-        "timestamp": "2026-08-04T16:45:47.485528"
+        "timestamp": "2026-08-04T21:50:42.413555"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 61542200,
-          "avg_volume_20d": 65841015,
-          "avg_volume_60d": 72038396,
-          "volume_vs_avg": -6.529083732989227,
+          "latest_volume": 62223600,
+          "avg_volume_20d": 65875085,
+          "avg_volume_60d": 72049753,
+          "volume_vs_avg": -5.543044081081638,
           "price_change_20d": -5.911676691139245
         },
-        "timestamp": "2026-08-04T16:45:47.487869"
+        "timestamp": "2026-08-04T21:50:42.415723"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -2116,7 +2116,7 @@
           "high_60d": 87.88763672769537,
           "low_60d": 57.59000015258789
         },
-        "timestamp": "2026-08-04T16:45:47.510733"
+        "timestamp": "2026-08-04T21:50:42.428280"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -2128,9 +2128,9 @@
           "20d": -11.070399485969284,
           "60d": -4.825384960414669
         },
-        "timestamp": "2026-08-04T16:45:47.513171"
+        "timestamp": "2026-08-04T21:50:42.430717"
       },
-      "timestamp": "2026-08-04T16:45:47.513182"
+      "timestamp": "2026-08-04T21:50:42.430729"
     },
     "SPY": {
       "ticker": "SPY",
@@ -2156,7 +2156,7 @@
           }
         },
         "vs_spy": 0.0,
-        "timestamp": "2026-08-04T16:45:47.517617"
+        "timestamp": "2026-08-04T21:50:42.434929"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -2170,20 +2170,20 @@
           "sma20": 746.0140045166015,
           "sma50": 744.5889001464843
         },
-        "timestamp": "2026-08-04T16:45:47.520593"
+        "timestamp": "2026-08-04T21:50:42.437721"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 59834400,
-          "avg_volume_20d": 48477925,
-          "avg_volume_60d": 53326838,
-          "volume_vs_avg": 23.426074857783206,
+          "latest_volume": 59927500,
+          "avg_volume_20d": 48482580,
+          "avg_volume_60d": 53328390,
+          "volume_vs_avg": 23.606251977514404,
           "price_change_20d": 1.332061981892796
         },
-        "timestamp": "2026-08-04T16:45:47.522886"
+        "timestamp": "2026-08-04T21:50:42.439920"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -2198,7 +2198,7 @@
           "high_60d": 758.5800170898438,
           "low_60d": 716.5800170898438
         },
-        "timestamp": "2026-08-04T16:45:47.542238"
+        "timestamp": "2026-08-04T21:50:42.452370"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -2210,9 +2210,9 @@
           "20d": 0.8505421898758136,
           "60d": 3.5146999176796534
         },
-        "timestamp": "2026-08-04T16:45:47.544577"
+        "timestamp": "2026-08-04T21:50:42.454679"
       },
-      "timestamp": "2026-08-04T16:45:47.544587"
+      "timestamp": "2026-08-04T21:50:42.454691"
     },
     "SSO": {
       "ticker": "SSO",
@@ -2238,7 +2238,7 @@
           }
         },
         "vs_spy": 1.7671833713090335,
-        "timestamp": "2026-08-04T16:45:47.549028"
+        "timestamp": "2026-08-04T21:50:42.458970"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -2252,20 +2252,20 @@
           "sma20": 67.01999969482422,
           "sma50": 67.06655540466309
         },
-        "timestamp": "2026-08-04T16:45:47.552049"
+        "timestamp": "2026-08-04T21:50:42.461864"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 3581300,
-          "avg_volume_20d": 2888175,
-          "avg_volume_60d": 3318926,
-          "volume_vs_avg": 23.99871891419323,
+          "latest_volume": 3592900,
+          "avg_volume_20d": 2888755,
+          "avg_volume_60d": 3319120,
+          "volume_vs_avg": 24.375379705097867,
           "price_change_20d": 2.148473290166031
         },
-        "timestamp": "2026-08-04T16:45:47.554420"
+        "timestamp": "2026-08-04T21:50:42.464038"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -2280,7 +2280,7 @@
           "high_60d": 69.9924841262573,
           "low_60d": 63.04613021335992
         },
-        "timestamp": "2026-08-04T16:45:47.574530"
+        "timestamp": "2026-08-04T21:50:42.476556"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -2292,9 +2292,9 @@
           "20d": 1.144364344760862,
           "60d": 5.281883288988687
         },
-        "timestamp": "2026-08-04T16:45:47.576789"
+        "timestamp": "2026-08-04T21:50:42.479094"
       },
-      "timestamp": "2026-08-04T16:45:47.576799"
+      "timestamp": "2026-08-04T21:50:42.479106"
     },
     "UPRO": {
       "ticker": "UPRO",
@@ -2320,7 +2320,7 @@
           }
         },
         "vs_spy": 3.2907470417399276,
-        "timestamp": "2026-08-04T16:45:47.581401"
+        "timestamp": "2026-08-04T21:50:42.483421"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -2334,20 +2334,20 @@
           "sma20": 140.6000015258789,
           "sma50": 141.1116177368164
         },
-        "timestamp": "2026-08-04T16:45:47.584465"
+        "timestamp": "2026-08-04T21:50:42.486363"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 2776600,
-          "avg_volume_20d": 2097555,
-          "avg_volume_60d": 2558695,
-          "volume_vs_avg": 32.37316780728039,
+          "latest_volume": 2789600,
+          "avg_volume_20d": 2098205,
+          "avg_volume_60d": 2558911,
+          "volume_vs_avg": 32.951737318326856,
           "price_change_20d": 2.8900924100376812
         },
-        "timestamp": "2026-08-04T16:45:47.586846"
+        "timestamp": "2026-08-04T21:50:42.488587"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -2362,7 +2362,7 @@
           "high_60d": 151.07560484142968,
           "low_60d": 128.92463428528038
         },
-        "timestamp": "2026-08-04T16:45:47.606240"
+        "timestamp": "2026-08-04T21:50:42.501231"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -2374,9 +2374,9 @@
           "20d": 1.3226255894144279,
           "60d": 6.805446959419581
         },
-        "timestamp": "2026-08-04T16:45:47.608575"
+        "timestamp": "2026-08-04T21:50:42.503851"
       },
-      "timestamp": "2026-08-04T16:45:47.608586"
+      "timestamp": "2026-08-04T21:50:42.503864"
     },
     "VOO": {
       "ticker": "VOO",
@@ -2402,7 +2402,7 @@
           }
         },
         "vs_spy": 0.008267350122381778,
-        "timestamp": "2026-08-04T16:45:47.613005"
+        "timestamp": "2026-08-04T21:50:42.508150"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -2416,20 +2416,20 @@
           "sma20": 685.7100036621093,
           "sma50": 684.3543664550781
         },
-        "timestamp": "2026-08-04T16:45:47.615956"
+        "timestamp": "2026-08-04T21:50:42.511029"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "weak_uptrend",
         "interpretation": "Volume decreasing on uptrend (weak/exhaustion)",
         "components": {
-          "latest_volume": 7265700,
-          "avg_volume_20d": 5538950,
-          "avg_volume_60d": 8064981,
-          "volume_vs_avg": 31.17468112187327,
+          "latest_volume": 7283200,
+          "avg_volume_20d": 5539825,
+          "avg_volume_60d": 8065273,
+          "volume_vs_avg": 31.46985689981181,
           "price_change_20d": 1.3564660727136246
         },
-        "timestamp": "2026-08-04T16:45:47.618280"
+        "timestamp": "2026-08-04T21:50:42.513185"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -2444,7 +2444,7 @@
           "high_60d": 697.3099975585938,
           "low_60d": 662.3910841415923
         },
-        "timestamp": "2026-08-04T16:45:47.637388"
+        "timestamp": "2026-08-04T21:50:42.525611"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -2456,9 +2456,9 @@
           "20d": 0.8369333841679705,
           "60d": 3.522967267802035
         },
-        "timestamp": "2026-08-04T16:45:47.639580"
+        "timestamp": "2026-08-04T21:50:42.527765"
       },
-      "timestamp": "2026-08-04T16:45:47.639590"
+      "timestamp": "2026-08-04T21:50:42.527777"
     },
     "IWM": {
       "ticker": "IWM",
@@ -2484,7 +2484,7 @@
           }
         },
         "vs_spy": 0.015444289080779328,
-        "timestamp": "2026-08-04T16:45:47.644053"
+        "timestamp": "2026-08-04T21:50:42.531886"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -2498,20 +2498,20 @@
           "sma20": 293.8525024414063,
           "sma50": 292.59838134765624
         },
-        "timestamp": "2026-08-04T16:45:47.647060"
+        "timestamp": "2026-08-04T21:50:42.534663"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 23158300,
-          "avg_volume_20d": 21811985,
-          "avg_volume_60d": 25707140,
-          "volume_vs_avg": 6.172363496490574,
+          "latest_volume": 23175700,
+          "avg_volume_20d": 21812855,
+          "avg_volume_60d": 25707430,
+          "volume_vs_avg": 6.247898315007361,
           "price_change_20d": 0.010128221428673534
         },
-        "timestamp": "2026-08-04T16:45:47.649440"
+        "timestamp": "2026-08-04T21:50:42.536822"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -2526,7 +2526,7 @@
           "high_60d": 302.7200012207031,
           "low_60d": 269.9879529799434
         },
-        "timestamp": "2026-08-04T16:45:47.668764"
+        "timestamp": "2026-08-04T21:50:42.549439"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -2538,9 +2538,9 @@
           "20d": -0.8966185113772118,
           "60d": 3.5301442067604327
         },
-        "timestamp": "2026-08-04T16:45:47.671034"
+        "timestamp": "2026-08-04T21:50:42.551675"
       },
-      "timestamp": "2026-08-04T16:45:47.671044"
+      "timestamp": "2026-08-04T21:50:42.551686"
     },
     "DIA": {
       "ticker": "DIA",
@@ -2560,13 +2560,13 @@
             "outperformance": -0.6089190406758593
           },
           "60d": {
-            "ticker_return": 6.825890099353438,
+            "ticker_return": 6.8258966551993705,
             "spy_return": 3.5146999176796534,
-            "outperformance": 3.3111901816737843
+            "outperformance": 3.311196737519717
           }
         },
-        "vs_spy": 3.3111901816737843,
-        "timestamp": "2026-08-04T16:45:47.675521"
+        "vs_spy": 3.311196737519717,
+        "timestamp": "2026-08-04T21:50:42.555889"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -2578,22 +2578,22 @@
           "price_range_pct": 2.976167770512763,
           "close": 531.219970703125,
           "sma20": 522.8648651123046,
-          "sma50": 517.044765625
+          "sma50": 517.0447674560547
         },
-        "timestamp": "2026-08-04T16:45:47.678554"
+        "timestamp": "2026-08-04T21:50:42.558710"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 4321500,
-          "avg_volume_20d": 3798230,
-          "avg_volume_60d": 4693491,
-          "volume_vs_avg": 13.776680190509794,
+          "latest_volume": 4328000,
+          "avg_volume_20d": 3798555,
+          "avg_volume_60d": 4693600,
+          "volume_vs_avg": 13.938063289856274,
           "price_change_20d": 0.5527130375972078
         },
-        "timestamp": "2026-08-04T16:45:47.680899"
+        "timestamp": "2026-08-04T21:50:42.560909"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -2606,9 +2606,9 @@
           "dist_to_resistance_pct": 0.22002595026788807,
           "dist_to_support_pct": 3.205626542420803,
           "high_60d": 532.3887924916773,
-          "low_60d": 491.0103447810536
+          "low_60d": 491.010314736271
         },
-        "timestamp": "2026-08-04T16:45:47.700108"
+        "timestamp": "2026-08-04T21:50:42.573458"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -2618,11 +2618,11 @@
           "5d": 1.9107471800835718,
           "10d": 2.56399741265807,
           "20d": 0.2416231491999543,
-          "60d": 6.825890099353438
+          "60d": 6.8258966551993705
         },
-        "timestamp": "2026-08-04T16:45:47.702385"
+        "timestamp": "2026-08-04T21:50:42.575664"
       },
-      "timestamp": "2026-08-04T16:45:47.702395"
+      "timestamp": "2026-08-04T21:50:42.575674"
     },
     "VTI": {
       "ticker": "VTI",
@@ -2648,7 +2648,7 @@
           }
         },
         "vs_spy": 0.09315726946006464,
-        "timestamp": "2026-08-04T16:45:47.707714"
+        "timestamp": "2026-08-04T21:50:42.579765"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -2662,20 +2662,20 @@
           "sma20": 368.3459991455078,
           "sma50": 367.54764770507813
         },
-        "timestamp": "2026-08-04T16:45:47.712051"
+        "timestamp": "2026-08-04T21:50:42.582535"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 3348500,
-          "avg_volume_20d": 3147730,
-          "avg_volume_60d": 3377940,
-          "volume_vs_avg": 6.378247181302088,
+          "latest_volume": 3429600,
+          "avg_volume_20d": 3151785,
+          "avg_volume_60d": 3379291,
+          "volume_vs_avg": 8.81452890980825,
           "price_change_20d": 1.1444525727043464
         },
-        "timestamp": "2026-08-04T16:45:47.714476"
+        "timestamp": "2026-08-04T21:50:42.584680"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -2690,7 +2690,7 @@
           "high_60d": 374.260009765625,
           "low_60d": 355.2580743553185
         },
-        "timestamp": "2026-08-04T16:45:47.734189"
+        "timestamp": "2026-08-04T21:50:42.597366"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -2702,9 +2702,9 @@
           "20d": 0.5838466466916437,
           "60d": 3.607857187139718
         },
-        "timestamp": "2026-08-04T16:45:47.736451"
+        "timestamp": "2026-08-04T21:50:42.599722"
       },
-      "timestamp": "2026-08-04T16:45:47.736461"
+      "timestamp": "2026-08-04T21:50:42.599751"
     },
     "VT": {
       "ticker": "VT",
@@ -2730,7 +2730,7 @@
           }
         },
         "vs_spy": -1.502983679146075,
-        "timestamp": "2026-08-04T16:45:47.741014"
+        "timestamp": "2026-08-04T21:50:42.603916"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -2744,20 +2744,20 @@
           "sma20": 155.6234992980957,
           "sma50": 155.84801696777345
         },
-        "timestamp": "2026-08-04T16:45:47.744077"
+        "timestamp": "2026-08-04T21:50:42.606811"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "weak_uptrend",
         "interpretation": "Volume decreasing on uptrend (weak/exhaustion)",
         "components": {
-          "latest_volume": 2434100,
-          "avg_volume_20d": 2381435,
-          "avg_volume_60d": 3119766,
-          "volume_vs_avg": 2.211481732652798,
+          "latest_volume": 2439300,
+          "avg_volume_20d": 2381695,
+          "avg_volume_60d": 3119853,
+          "volume_vs_avg": 2.418655621311716,
           "price_change_20d": 0.8123348485413295
         },
-        "timestamp": "2026-08-04T16:45:47.746507"
+        "timestamp": "2026-08-04T21:50:42.609053"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -2772,7 +2772,7 @@
           "high_60d": 158.83620982096636,
           "low_60d": 150.65575079333146
         },
-        "timestamp": "2026-08-04T16:45:47.766406"
+        "timestamp": "2026-08-04T21:50:42.621577"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -2784,9 +2784,9 @@
           "20d": -0.12673274908829857,
           "60d": 2.0117162385335785
         },
-        "timestamp": "2026-08-04T16:45:47.768745"
+        "timestamp": "2026-08-04T21:50:42.623911"
       },
-      "timestamp": "2026-08-04T16:45:47.768755"
+      "timestamp": "2026-08-04T21:50:42.623923"
     },
     "VXUS": {
       "ticker": "VXUS",
@@ -2812,7 +2812,7 @@
           }
         },
         "vs_spy": -3.7685643870637997,
-        "timestamp": "2026-08-04T16:45:47.773255"
+        "timestamp": "2026-08-04T21:50:42.628005"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -2826,20 +2826,20 @@
           "sma20": 84.14999961853027,
           "sma50": 84.7291941833496
         },
-        "timestamp": "2026-08-04T16:45:47.776279"
+        "timestamp": "2026-08-04T21:50:42.630777"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "weak_uptrend",
         "interpretation": "Volume decreasing on uptrend (weak/exhaustion)",
         "components": {
-          "latest_volume": 4884000,
-          "avg_volume_20d": 4713330,
-          "avg_volume_60d": 5989198,
-          "volume_vs_avg": 3.621006804106641,
+          "latest_volume": 4997000,
+          "avg_volume_20d": 4718980,
+          "avg_volume_60d": 5991081,
+          "volume_vs_avg": 5.891527406346286,
           "price_change_20d": 0.4370881400095339
         },
-        "timestamp": "2026-08-04T16:45:47.778668"
+        "timestamp": "2026-08-04T21:50:42.632905"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -2854,7 +2854,7 @@
           "high_60d": 88.62000274658203,
           "low_60d": 81.85161309549903
         },
-        "timestamp": "2026-08-04T16:45:47.801033"
+        "timestamp": "2026-08-04T21:50:42.645479"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -2866,9 +2866,9 @@
           "20d": -1.3345729956082963,
           "60d": -0.2538644693841463
         },
-        "timestamp": "2026-08-04T16:45:47.803415"
+        "timestamp": "2026-08-04T21:50:42.647729"
       },
-      "timestamp": "2026-08-04T16:45:47.803425"
+      "timestamp": "2026-08-04T21:50:42.647760"
     },
     "SCHD": {
       "ticker": "SCHD",
@@ -2894,7 +2894,7 @@
           }
         },
         "vs_spy": 3.3307908350643123,
-        "timestamp": "2026-08-04T16:45:47.807966"
+        "timestamp": "2026-08-04T21:50:42.651921"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -2908,20 +2908,20 @@
           "sma20": 32.93700046539307,
           "sma50": 32.42782375335693
         },
-        "timestamp": "2026-08-04T16:45:47.811080"
+        "timestamp": "2026-08-04T21:50:42.654730"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 24637100,
-          "avg_volume_20d": 21880510,
-          "avg_volume_60d": 21301368,
-          "volume_vs_avg": 12.598380933534003,
+          "latest_volume": 24706000,
+          "avg_volume_20d": 21883955,
+          "avg_volume_60d": 21302516,
+          "volume_vs_avg": 12.895498094380109,
           "price_change_20d": 3.1346048834219653
         },
-        "timestamp": "2026-08-04T16:45:47.813496"
+        "timestamp": "2026-08-04T21:50:42.656904"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -2936,7 +2936,7 @@
           "high_60d": 34.2400016784668,
           "low_60d": 31.022927265420353
         },
-        "timestamp": "2026-08-04T16:45:47.833108"
+        "timestamp": "2026-08-04T21:50:42.669539"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -2948,9 +2948,9 @@
           "20d": 4.094291644239734,
           "60d": 6.845490752743966
         },
-        "timestamp": "2026-08-04T16:45:47.835487"
+        "timestamp": "2026-08-04T21:50:42.672163"
       },
-      "timestamp": "2026-08-04T16:45:47.835497"
+      "timestamp": "2026-08-04T21:50:42.672176"
     },
     "QUAL": {
       "ticker": "QUAL",
@@ -2976,7 +2976,7 @@
           }
         },
         "vs_spy": 2.2438776204853017,
-        "timestamp": "2026-08-04T16:45:47.839978"
+        "timestamp": "2026-08-04T21:50:42.676582"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -2990,7 +2990,7 @@
           "sma20": 218.29850082397462,
           "sma50": 216.58115020751953
         },
-        "timestamp": "2026-08-04T16:45:47.843043"
+        "timestamp": "2026-08-04T21:50:42.679553"
       },
       "volume_profile": {
         "name": "Volume Profile",
@@ -3003,7 +3003,7 @@
           "volume_vs_avg": -30.686412658064633,
           "price_change_20d": 1.8370533200549488
         },
-        "timestamp": "2026-08-04T16:45:47.845493"
+        "timestamp": "2026-08-04T21:50:42.681833"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -3018,7 +3018,7 @@
           "high_60d": 221.9199981689453,
           "low_60d": 208.5482092400079
         },
-        "timestamp": "2026-08-04T16:45:47.865470"
+        "timestamp": "2026-08-04T21:50:42.694764"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -3030,9 +3030,9 @@
           "20d": 1.4874822272370247,
           "60d": 5.758577538164955
         },
-        "timestamp": "2026-08-04T16:45:47.867801"
+        "timestamp": "2026-08-04T21:50:42.697275"
       },
-      "timestamp": "2026-08-04T16:45:47.867811"
+      "timestamp": "2026-08-04T21:50:42.697288"
     },
     "XLU": {
       "ticker": "XLU",
@@ -3058,7 +3058,7 @@
           }
         },
         "vs_spy": -5.848410885562682,
-        "timestamp": "2026-08-04T16:45:47.872290"
+        "timestamp": "2026-08-04T21:50:42.701755"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -3072,20 +3072,20 @@
           "sma20": 45.33099994659424,
           "sma50": 44.87051689147949
         },
-        "timestamp": "2026-08-04T16:45:47.875676"
+        "timestamp": "2026-08-04T21:50:42.704693"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 25866400,
-          "avg_volume_20d": 18087790,
-          "avg_volume_60d": 20368101,
-          "volume_vs_avg": 43.004756247170064,
+          "latest_volume": 25872600,
+          "avg_volume_20d": 18088100,
+          "avg_volume_60d": 20368205,
+          "volume_vs_avg": 43.036582062239816,
           "price_change_20d": -2.9321665869086133
         },
-        "timestamp": "2026-08-04T16:45:47.878070"
+        "timestamp": "2026-08-04T21:50:42.706957"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -3100,7 +3100,7 @@
           "high_60d": 46.630001068115234,
           "low_60d": 42.79672201847566
         },
-        "timestamp": "2026-08-04T16:45:47.897459"
+        "timestamp": "2026-08-04T21:50:42.719610"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -3112,9 +3112,9 @@
           "20d": -2.0750521910383624,
           "60d": -2.3337109678830292
         },
-        "timestamp": "2026-08-04T16:45:47.899726"
+        "timestamp": "2026-08-04T21:50:42.722356"
       },
-      "timestamp": "2026-08-04T16:45:47.899736"
+      "timestamp": "2026-08-04T21:50:42.722368"
     },
     "XLF": {
       "ticker": "XLF",
@@ -3140,7 +3140,7 @@
           }
         },
         "vs_spy": 7.5597658209236585,
-        "timestamp": "2026-08-04T16:45:47.904210"
+        "timestamp": "2026-08-04T21:50:42.726677"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -3154,20 +3154,20 @@
           "sma20": 56.34550018310547,
           "sma50": 54.23276023864746
         },
-        "timestamp": "2026-08-04T16:45:47.907261"
+        "timestamp": "2026-08-04T21:50:42.729632"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 30995000,
-          "avg_volume_20d": 33606965,
-          "avg_volume_60d": 35644236,
-          "volume_vs_avg": -7.7720942667688035,
+          "latest_volume": 31019400,
+          "avg_volume_20d": 33608185,
+          "avg_volume_60d": 35644643,
+          "volume_vs_avg": -7.702840840705916,
           "price_change_20d": 2.372884655055052
         },
-        "timestamp": "2026-08-04T16:45:47.909621"
+        "timestamp": "2026-08-04T21:50:42.731898"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -3182,7 +3182,7 @@
           "high_60d": 57.599998474121094,
           "low_60d": 50.34364805521982
         },
-        "timestamp": "2026-08-04T16:45:47.929231"
+        "timestamp": "2026-08-04T21:50:42.744656"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -3194,9 +3194,9 @@
           "20d": 2.2087668185750697,
           "60d": 11.074465738603312
         },
-        "timestamp": "2026-08-04T16:45:47.931534"
+        "timestamp": "2026-08-04T21:50:42.747386"
       },
-      "timestamp": "2026-08-04T16:45:47.931544"
+      "timestamp": "2026-08-04T21:50:42.747399"
     },
     "XLE": {
       "ticker": "XLE",
@@ -3222,7 +3222,7 @@
           }
         },
         "vs_spy": 0.36947571301539917,
-        "timestamp": "2026-08-04T16:45:47.936018"
+        "timestamp": "2026-08-04T21:50:42.751917"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -3236,20 +3236,20 @@
           "sma20": 57.57750015258789,
           "sma50": 56.48602188110352
         },
-        "timestamp": "2026-08-04T16:45:47.939064"
+        "timestamp": "2026-08-04T21:50:42.754956"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 26019800,
-          "avg_volume_20d": 30389125,
-          "avg_volume_60d": 34207108,
-          "volume_vs_avg": -14.377923023450002,
+          "latest_volume": 26038400,
+          "avg_volume_20d": 30390055,
+          "avg_volume_60d": 34207418,
+          "volume_vs_avg": -14.319339007448328,
           "price_change_20d": 7.595171252262367
         },
-        "timestamp": "2026-08-04T16:45:47.941449"
+        "timestamp": "2026-08-04T21:50:42.757240"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -3264,7 +3264,7 @@
           "high_60d": 61.25821958982081,
           "low_60d": 52.619998931884766
         },
-        "timestamp": "2026-08-04T16:45:47.961109"
+        "timestamp": "2026-08-04T21:50:42.769966"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -3276,9 +3276,9 @@
           "20d": 10.653114499575711,
           "60d": 3.8841756306950526
         },
-        "timestamp": "2026-08-04T16:45:47.963388"
+        "timestamp": "2026-08-04T21:50:42.772498"
       },
-      "timestamp": "2026-08-04T16:45:47.963399"
+      "timestamp": "2026-08-04T21:50:42.772511"
     },
     "XLV": {
       "ticker": "XLV",
@@ -3304,7 +3304,7 @@
           }
         },
         "vs_spy": 8.559262043060055,
-        "timestamp": "2026-08-04T16:45:47.967876"
+        "timestamp": "2026-08-04T21:50:42.776950"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -3318,20 +3318,20 @@
           "sma20": 161.93899993896486,
           "sma50": 156.36429901123046
         },
-        "timestamp": "2026-08-04T16:45:47.970898"
+        "timestamp": "2026-08-04T21:50:42.779944"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 10976300,
-          "avg_volume_20d": 9462080,
-          "avg_volume_60d": 10551300,
-          "volume_vs_avg": 16.003035273428257,
+          "latest_volume": 10986300,
+          "avg_volume_20d": 9462580,
+          "avg_volume_60d": 10551466,
+          "volume_vs_avg": 16.102585130059666,
           "price_change_20d": -1.3378721208825661
         },
-        "timestamp": "2026-08-04T16:45:47.973296"
+        "timestamp": "2026-08-04T21:50:42.782212"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -3346,7 +3346,7 @@
           "high_60d": 168.52999877929688,
           "low_60d": 142.0435557450473
         },
-        "timestamp": "2026-08-04T16:45:47.992812"
+        "timestamp": "2026-08-04T21:50:42.794966"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -3358,9 +3358,9 @@
           "20d": 0.17288143226095176,
           "60d": 12.073961960739709
         },
-        "timestamp": "2026-08-04T16:45:47.995114"
+        "timestamp": "2026-08-04T21:50:42.797563"
       },
-      "timestamp": "2026-08-04T16:45:47.995124"
+      "timestamp": "2026-08-04T21:50:42.797575"
     },
     "XLI": {
       "ticker": "XLI",
@@ -3386,7 +3386,7 @@
           }
         },
         "vs_spy": 0.29636692158494515,
-        "timestamp": "2026-08-04T16:45:47.999689"
+        "timestamp": "2026-08-04T21:50:42.802081"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -3400,20 +3400,20 @@
           "sma20": 180.5120002746582,
           "sma50": 178.52049530029296
         },
-        "timestamp": "2026-08-04T16:45:48.002734"
+        "timestamp": "2026-08-04T21:50:42.805102"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 8813100,
-          "avg_volume_20d": 6677140,
-          "avg_volume_60d": 7566266,
-          "volume_vs_avg": 31.989145053121536,
+          "latest_volume": 8814000,
+          "avg_volume_20d": 6677185,
+          "avg_volume_60d": 7566281,
+          "volume_vs_avg": 32.001734263765336,
           "price_change_20d": 0.4276777927481934
         },
-        "timestamp": "2026-08-04T16:45:48.005218"
+        "timestamp": "2026-08-04T21:50:42.807346"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -3428,7 +3428,7 @@
           "high_60d": 186.4499969482422,
           "low_60d": 167.69740803813113
         },
-        "timestamp": "2026-08-04T16:45:48.024987"
+        "timestamp": "2026-08-04T21:50:42.820065"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -3440,9 +3440,9 @@
           "20d": -1.2933789222143832,
           "60d": 3.8110668392645985
         },
-        "timestamp": "2026-08-04T16:45:48.027368"
+        "timestamp": "2026-08-04T21:50:42.822447"
       },
-      "timestamp": "2026-08-04T16:45:48.027379"
+      "timestamp": "2026-08-04T21:50:42.822458"
     },
     "XLK": {
       "ticker": "XLK",
@@ -3468,7 +3468,7 @@
           }
         },
         "vs_spy": 1.321085762495633,
-        "timestamp": "2026-08-04T16:45:48.031938"
+        "timestamp": "2026-08-04T21:50:42.826704"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -3482,20 +3482,20 @@
           "sma20": 178.17350006103516,
           "sma50": 182.89923217773438
         },
-        "timestamp": "2026-08-04T16:45:48.035042"
+        "timestamp": "2026-08-04T21:50:42.829639"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 9339200,
-          "avg_volume_20d": 9172930,
-          "avg_volume_60d": 12280770,
-          "volume_vs_avg": 1.8126160343532538,
+          "latest_volume": 9343400,
+          "avg_volume_20d": 9173140,
+          "avg_volume_60d": 12280840,
+          "volume_vs_avg": 1.8560710945216163,
           "price_change_20d": -0.6362314076612474
         },
-        "timestamp": "2026-08-04T16:45:48.037457"
+        "timestamp": "2026-08-04T21:50:42.831898"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -3510,7 +3510,7 @@
           "high_60d": 198.49331469466892,
           "low_60d": 166.4600067138672
         },
-        "timestamp": "2026-08-04T16:45:48.056772"
+        "timestamp": "2026-08-04T21:50:42.844811"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -3522,9 +3522,9 @@
           "20d": -3.0124823323228966,
           "60d": 4.835785680175286
         },
-        "timestamp": "2026-08-04T16:45:48.059106"
+        "timestamp": "2026-08-04T21:50:42.847535"
       },
-      "timestamp": "2026-08-04T16:45:48.059116"
+      "timestamp": "2026-08-04T21:50:42.847548"
     },
     "XLY": {
       "ticker": "XLY",
@@ -3550,7 +3550,7 @@
           }
         },
         "vs_spy": -4.703027605413768,
-        "timestamp": "2026-08-04T16:45:48.063624"
+        "timestamp": "2026-08-04T21:50:42.851949"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -3564,20 +3564,20 @@
           "sma20": 114.58950004577636,
           "sma50": 115.99978134155273
         },
-        "timestamp": "2026-08-04T16:45:48.066727"
+        "timestamp": "2026-08-04T21:50:42.854973"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 10039800,
-          "avg_volume_20d": 8545940,
-          "avg_volume_60d": 8132495,
-          "volume_vs_avg": 17.48034739303108,
+          "latest_volume": 10041500,
+          "avg_volume_20d": 8546025,
+          "avg_volume_60d": 8132523,
+          "volume_vs_avg": 17.499071205618975,
           "price_change_20d": 0.6985260235860657
         },
-        "timestamp": "2026-08-04T16:45:48.069132"
+        "timestamp": "2026-08-04T21:50:42.857268"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -3592,7 +3592,7 @@
           "high_60d": 121.94699945092367,
           "low_60d": 108.29000091552734
         },
-        "timestamp": "2026-08-04T16:45:48.089591"
+        "timestamp": "2026-08-04T21:50:42.869991"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -3604,9 +3604,9 @@
           "20d": 0.1694745738681558,
           "60d": -1.1883276877341142
         },
-        "timestamp": "2026-08-04T16:45:48.091946"
+        "timestamp": "2026-08-04T21:50:42.872643"
       },
-      "timestamp": "2026-08-04T16:45:48.091956"
+      "timestamp": "2026-08-04T21:50:42.872656"
     },
     "XLP": {
       "ticker": "XLP",
@@ -3632,7 +3632,7 @@
           }
         },
         "vs_spy": -2.0797343623247366,
-        "timestamp": "2026-08-04T16:45:48.096456"
+        "timestamp": "2026-08-04T21:50:42.876955"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -3646,20 +3646,20 @@
           "sma20": 84.74249954223633,
           "sma50": 84.00830291748046
         },
-        "timestamp": "2026-08-04T16:45:48.099466"
+        "timestamp": "2026-08-04T21:50:42.879865"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 12582600,
-          "avg_volume_20d": 11373840,
-          "avg_volume_60d": 12028246,
-          "volume_vs_avg": 10.627545314511199,
+          "latest_volume": 12592500,
+          "avg_volume_20d": 11374335,
+          "avg_volume_60d": 12028411,
+          "volume_vs_avg": 10.709768966713229,
           "price_change_20d": 0.0
         },
-        "timestamp": "2026-08-04T16:45:48.101760"
+        "timestamp": "2026-08-04T21:50:42.882028"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -3674,7 +3674,7 @@
           "high_60d": 88.77999877929688,
           "low_60d": 80.9185418316156
         },
-        "timestamp": "2026-08-04T16:45:48.121021"
+        "timestamp": "2026-08-04T21:50:42.894932"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -3686,9 +3686,9 @@
           "20d": 0.9036886444942382,
           "60d": 1.4349655553549168
         },
-        "timestamp": "2026-08-04T16:45:48.123276"
+        "timestamp": "2026-08-04T21:50:42.897615"
       },
-      "timestamp": "2026-08-04T16:45:48.123287"
+      "timestamp": "2026-08-04T21:50:42.897628"
     },
     "XLB": {
       "ticker": "XLB",
@@ -3714,7 +3714,7 @@
           }
         },
         "vs_spy": -5.822026880029374,
-        "timestamp": "2026-08-04T16:45:48.127712"
+        "timestamp": "2026-08-04T21:50:42.902007"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -3728,7 +3728,7 @@
           "sma20": 50.85049953460693,
           "sma50": 51.01750160217285
         },
-        "timestamp": "2026-08-04T16:45:48.130742"
+        "timestamp": "2026-08-04T21:50:42.904951"
       },
       "volume_profile": {
         "name": "Volume Profile",
@@ -3741,7 +3741,7 @@
           "volume_vs_avg": 9.934781959481654,
           "price_change_20d": -0.9706853354545353
         },
-        "timestamp": "2026-08-04T16:45:48.133093"
+        "timestamp": "2026-08-04T21:50:42.907195"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -3756,7 +3756,7 @@
           "high_60d": 53.11141310754303,
           "low_60d": 48.70787613255272
         },
-        "timestamp": "2026-08-04T16:45:48.152361"
+        "timestamp": "2026-08-04T21:50:42.919853"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -3768,9 +3768,9 @@
           "20d": -1.8661047118997187,
           "60d": -2.3073269623497206
         },
-        "timestamp": "2026-08-04T16:45:48.154620"
+        "timestamp": "2026-08-04T21:50:42.922329"
       },
-      "timestamp": "2026-08-04T16:45:48.154630"
+      "timestamp": "2026-08-04T21:50:42.922340"
     },
     "XLRE": {
       "ticker": "XLRE",
@@ -3796,7 +3796,7 @@
           }
         },
         "vs_spy": -1.6463381265143129,
-        "timestamp": "2026-08-04T16:45:48.159058"
+        "timestamp": "2026-08-04T21:50:42.926597"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -3810,7 +3810,7 @@
           "sma20": 45.09799976348877,
           "sma50": 44.55406135559082
         },
-        "timestamp": "2026-08-04T16:45:48.162038"
+        "timestamp": "2026-08-04T21:50:42.929532"
       },
       "volume_profile": {
         "name": "Volume Profile",
@@ -3823,7 +3823,7 @@
           "volume_vs_avg": 62.00065964340453,
           "price_change_20d": 0.6460256615512749
         },
-        "timestamp": "2026-08-04T16:45:48.164405"
+        "timestamp": "2026-08-04T21:50:42.931793"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -3838,7 +3838,7 @@
           "high_60d": 46.45500183105469,
           "low_60d": 42.70082102364256
         },
-        "timestamp": "2026-08-04T16:45:48.183575"
+        "timestamp": "2026-08-04T21:50:42.944428"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -3850,9 +3850,9 @@
           "20d": 2.009481533644353,
           "60d": 1.8683617911653405
         },
-        "timestamp": "2026-08-04T16:45:48.185836"
+        "timestamp": "2026-08-04T21:50:42.946984"
       },
-      "timestamp": "2026-08-04T16:45:48.185846"
+      "timestamp": "2026-08-04T21:50:42.946996"
     },
     "XLC": {
       "ticker": "XLC",
@@ -3878,7 +3878,7 @@
           }
         },
         "vs_spy": -8.38930448409828,
-        "timestamp": "2026-08-04T16:45:48.190454"
+        "timestamp": "2026-08-04T21:50:42.951340"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -3892,7 +3892,7 @@
           "sma20": 109.85299949645996,
           "sma50": 110.60919784545898
         },
-        "timestamp": "2026-08-04T16:45:48.193514"
+        "timestamp": "2026-08-04T21:50:42.954332"
       },
       "volume_profile": {
         "name": "Volume Profile",
@@ -3905,7 +3905,7 @@
           "volume_vs_avg": 20.37699519561378,
           "price_change_20d": 0.28823608764196873
         },
-        "timestamp": "2026-08-04T16:45:48.195899"
+        "timestamp": "2026-08-04T21:50:42.956569"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -3920,7 +3920,7 @@
           "high_60d": 117.8932961857921,
           "low_60d": 105.02999877929688
         },
-        "timestamp": "2026-08-04T16:45:48.215220"
+        "timestamp": "2026-08-04T21:50:42.969316"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -3932,9 +3932,9 @@
           "20d": 1.0253128235232722,
           "60d": -4.874604566418627
         },
-        "timestamp": "2026-08-04T16:45:48.217641"
+        "timestamp": "2026-08-04T21:50:42.971996"
       },
-      "timestamp": "2026-08-04T16:45:48.217651"
+      "timestamp": "2026-08-04T21:50:42.972008"
     },
     "TLT": {
       "ticker": "TLT",
@@ -3960,7 +3960,7 @@
           }
         },
         "vs_spy": -6.9166042064766176,
-        "timestamp": "2026-08-04T16:45:48.222033"
+        "timestamp": "2026-08-04T21:50:42.976261"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -3972,22 +3972,22 @@
           "price_range_pct": 2.7871748944193566,
           "close": 82.19000244140625,
           "sma20": 83.39959411621093,
-          "sma50": 84.42131988525391
+          "sma50": 84.42132049560547
         },
-        "timestamp": "2026-08-04T16:45:48.225017"
+        "timestamp": "2026-08-04T21:50:42.979136"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 32036700,
-          "avg_volume_20d": 24960770,
-          "avg_volume_60d": 25997745,
-          "volume_vs_avg": 28.34820400171949,
+          "latest_volume": 32050800,
+          "avg_volume_20d": 24961475,
+          "avg_volume_60d": 25997980,
+          "volume_vs_avg": 28.401066042771905,
           "price_change_20d": -2.3996629725010044
         },
-        "timestamp": "2026-08-04T16:45:48.227359"
+        "timestamp": "2026-08-04T21:50:42.981305"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -4002,7 +4002,7 @@
           "high_60d": 87.11602971817607,
           "low_60d": 81.56144194595663
         },
-        "timestamp": "2026-08-04T16:45:48.246895"
+        "timestamp": "2026-08-04T21:50:42.993991"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -4014,9 +4014,9 @@
           "20d": -3.427622988992096,
           "60d": -3.401904288796964
         },
-        "timestamp": "2026-08-04T16:45:48.249261"
+        "timestamp": "2026-08-04T21:50:42.996580"
       },
-      "timestamp": "2026-08-04T16:45:48.249272"
+      "timestamp": "2026-08-04T21:50:42.996593"
     },
     "TMF": {
       "ticker": "TMF",
@@ -4042,7 +4042,7 @@
           }
         },
         "vs_spy": -16.070570406276442,
-        "timestamp": "2026-08-04T16:45:48.253747"
+        "timestamp": "2026-08-04T21:50:43.001029"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -4056,20 +4056,20 @@
           "sma20": 32.44350004196167,
           "sma50": 33.907204475402835
         },
-        "timestamp": "2026-08-04T16:45:48.256777"
+        "timestamp": "2026-08-04T21:50:43.003989"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 5379200,
-          "avg_volume_20d": 4252495,
-          "avg_volume_60d": 3800333,
-          "volume_vs_avg": 26.495151669784445,
+          "latest_volume": 5387800,
+          "avg_volume_20d": 4252925,
+          "avg_volume_60d": 3800476,
+          "volume_vs_avg": 26.68457590952109,
           "price_change_20d": -7.875898749833132
         },
-        "timestamp": "2026-08-04T16:45:48.259116"
+        "timestamp": "2026-08-04T21:50:43.006263"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -4084,7 +4084,7 @@
           "high_60d": 37.2599983215332,
           "low_60d": 30.209999084472656
         },
-        "timestamp": "2026-08-04T16:45:48.278192"
+        "timestamp": "2026-08-04T21:50:43.018894"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -4096,9 +4096,9 @@
           "20d": -10.803003716079406,
           "60d": -12.555870488596788
         },
-        "timestamp": "2026-08-04T16:45:48.280460"
+        "timestamp": "2026-08-04T21:50:43.021334"
       },
-      "timestamp": "2026-08-04T16:45:48.280470"
+      "timestamp": "2026-08-04T21:50:43.021345"
     },
     "GLD": {
       "ticker": "GLD",
@@ -4124,7 +4124,7 @@
           }
         },
         "vs_spy": -17.263075909601866,
-        "timestamp": "2026-08-04T16:45:48.284855"
+        "timestamp": "2026-08-04T21:50:43.025585"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -4138,20 +4138,20 @@
           "sma20": 372.62849884033204,
           "sma50": 384.3695989990234
         },
-        "timestamp": "2026-08-04T16:45:48.287835"
+        "timestamp": "2026-08-04T21:50:43.028436"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 4958600,
-          "avg_volume_20d": 6415030,
-          "avg_volume_60d": 6967748,
-          "volume_vs_avg": -22.70340123117117,
+          "latest_volume": 4968900,
+          "avg_volume_20d": 6415545,
+          "avg_volume_60d": 6967920,
+          "volume_vs_avg": -22.54905857569388,
           "price_change_20d": -1.5311661047510694
         },
-        "timestamp": "2026-08-04T16:45:48.290169"
+        "timestamp": "2026-08-04T21:50:43.030611"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -4166,7 +4166,7 @@
           "high_60d": 437.4200134277344,
           "low_60d": 363.32000732421875
         },
-        "timestamp": "2026-08-04T16:45:48.309555"
+        "timestamp": "2026-08-04T21:50:43.043258"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -4178,9 +4178,9 @@
           "20d": -2.7268241945381577,
           "60d": -13.748375991922213
         },
-        "timestamp": "2026-08-04T16:45:48.311834"
+        "timestamp": "2026-08-04T21:50:43.045679"
       },
-      "timestamp": "2026-08-04T16:45:48.311844"
+      "timestamp": "2026-08-04T21:50:43.045690"
     },
     "IAU": {
       "ticker": "IAU",
@@ -4206,7 +4206,7 @@
           }
         },
         "vs_spy": -17.229309421433783,
-        "timestamp": "2026-08-04T16:45:48.316312"
+        "timestamp": "2026-08-04T21:50:43.049916"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -4220,20 +4220,20 @@
           "sma20": 76.37000045776367,
           "sma50": 78.77059997558594
         },
-        "timestamp": "2026-08-04T16:45:48.319286"
+        "timestamp": "2026-08-04T21:50:43.052704"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 4313000,
-          "avg_volume_20d": 4388360,
-          "avg_volume_60d": 5845871,
-          "volume_vs_avg": -1.717270233071122,
+          "latest_volume": 4316600,
+          "avg_volume_20d": 4388540,
+          "avg_volume_60d": 5845931,
+          "volume_vs_avg": -1.639269552060596,
           "price_change_20d": -1.5251392830381016
         },
-        "timestamp": "2026-08-04T16:45:48.321587"
+        "timestamp": "2026-08-04T21:50:43.054951"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -4248,7 +4248,7 @@
           "high_60d": 89.62000274658203,
           "low_60d": 74.44000244140625
         },
-        "timestamp": "2026-08-04T16:45:48.340903"
+        "timestamp": "2026-08-04T21:50:43.067542"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -4260,9 +4260,9 @@
           "20d": -2.694764403721428,
           "60d": -13.714609503754128
         },
-        "timestamp": "2026-08-04T16:45:48.343135"
+        "timestamp": "2026-08-04T21:50:43.069911"
       },
-      "timestamp": "2026-08-04T16:45:48.343179"
+      "timestamp": "2026-08-04T21:50:43.069922"
     },
     "IBIT": {
       "ticker": "IBIT",
@@ -4288,7 +4288,7 @@
           }
         },
         "vs_spy": -25.229354772631552,
-        "timestamp": "2026-08-04T16:45:48.347625"
+        "timestamp": "2026-08-04T21:50:43.074099"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -4302,20 +4302,20 @@
           "sma20": 36.354000091552734,
           "sma50": 36.77940010070801
         },
-        "timestamp": "2026-08-04T16:45:48.350628"
+        "timestamp": "2026-08-04T21:50:43.076958"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 41733500,
-          "avg_volume_20d": 36019075,
-          "avg_volume_60d": 43824546,
-          "volume_vs_avg": 15.864996533086973,
+          "latest_volume": 41836300,
+          "avg_volume_20d": 36024215,
+          "avg_volume_60d": 43826260,
+          "volume_vs_avg": 16.13382831520409,
           "price_change_20d": 0.027657873059960814
         },
-        "timestamp": "2026-08-04T16:45:48.352958"
+        "timestamp": "2026-08-04T21:50:43.079135"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -4330,7 +4330,7 @@
           "high_60d": 46.560001373291016,
           "low_60d": 32.84000015258789
         },
-        "timestamp": "2026-08-04T16:45:48.372210"
+        "timestamp": "2026-08-04T21:50:43.091730"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -4342,9 +4342,9 @@
           "20d": 0.11074450916450651,
           "60d": -21.7146548549519
         },
-        "timestamp": "2026-08-04T16:45:48.374529"
+        "timestamp": "2026-08-04T21:50:43.094120"
       },
-      "timestamp": "2026-08-04T16:45:48.374539"
+      "timestamp": "2026-08-04T21:50:43.094132"
     },
     "UUP": {
       "ticker": "UUP",
@@ -4370,7 +4370,7 @@
           }
         },
         "vs_spy": -0.5165292288785484,
-        "timestamp": "2026-08-04T16:45:48.379037"
+        "timestamp": "2026-08-04T21:50:43.098364"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -4384,20 +4384,20 @@
           "sma20": 28.392999935150147,
           "sma50": 28.20080005645752
         },
-        "timestamp": "2026-08-04T16:45:48.382120"
+        "timestamp": "2026-08-04T21:50:43.101326"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 2504000,
-          "avg_volume_20d": 2024830,
-          "avg_volume_60d": 2137320,
-          "volume_vs_avg": 23.664702715783537,
+          "latest_volume": 2506000,
+          "avg_volume_20d": 2024930,
+          "avg_volume_60d": 2137353,
+          "volume_vs_avg": 23.757364452104525,
           "price_change_20d": -0.8098575539636998
         },
-        "timestamp": "2026-08-04T16:45:48.384521"
+        "timestamp": "2026-08-04T21:50:43.103542"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -4412,7 +4412,7 @@
           "high_60d": 28.600000381469727,
           "low_60d": 27.299999237060547
         },
-        "timestamp": "2026-08-04T16:45:48.403927"
+        "timestamp": "2026-08-04T21:50:43.116202"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -4424,9 +4424,9 @@
           "20d": -0.5296596756591332,
           "60d": 2.998170688801105
         },
-        "timestamp": "2026-08-04T16:45:48.406296"
+        "timestamp": "2026-08-04T21:50:43.118703"
       },
-      "timestamp": "2026-08-04T16:45:48.406307"
+      "timestamp": "2026-08-04T21:50:43.118716"
     },
     "SLV": {
       "ticker": "SLV",
@@ -4452,7 +4452,7 @@
           }
         },
         "vs_spy": -28.710762745251085,
-        "timestamp": "2026-08-04T16:45:48.410751"
+        "timestamp": "2026-08-04T21:50:43.123001"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -4466,20 +4466,20 @@
           "sma20": 52.57199993133545,
           "sma50": 57.67680000305176
         },
-        "timestamp": "2026-08-04T16:45:48.413803"
+        "timestamp": "2026-08-04T21:50:43.125877"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "neutral",
         "interpretation": "Volume patterns neutral",
         "components": {
-          "latest_volume": 11921800,
-          "avg_volume_20d": 14432180,
-          "avg_volume_60d": 20240716,
-          "volume_vs_avg": -17.39432296437544,
+          "latest_volume": 11966300,
+          "avg_volume_20d": 14434405,
+          "avg_volume_60d": 20241458,
+          "volume_vs_avg": -17.098765068598254,
           "price_change_20d": -3.6724201865993567
         },
-        "timestamp": "2026-08-04T16:45:48.416139"
+        "timestamp": "2026-08-04T21:50:43.128056"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -4494,7 +4494,7 @@
           "high_60d": 80.86000061035156,
           "low_60d": 49.61000061035156
         },
-        "timestamp": "2026-08-04T16:45:48.435360"
+        "timestamp": "2026-08-04T21:50:43.140781"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -4506,9 +4506,9 @@
           "20d": -6.505081957182391,
           "60d": -25.19606282757143
         },
-        "timestamp": "2026-08-04T16:45:48.437641"
+        "timestamp": "2026-08-04T21:50:43.143176"
       },
-      "timestamp": "2026-08-04T16:45:48.437651"
+      "timestamp": "2026-08-04T21:50:43.143187"
     },
     "^VIX": {
       "ticker": "^VIX",
@@ -4534,7 +4534,7 @@
           }
         },
         "vs_spy": -10.657558655843458,
-        "timestamp": "2026-08-04T16:45:48.442104"
+        "timestamp": "2026-08-04T21:50:43.147486"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -4548,7 +4548,7 @@
           "sma20": 17.241499805450438,
           "sma50": 17.35919994354248
         },
-        "timestamp": "2026-08-04T16:45:48.445192"
+        "timestamp": "2026-08-04T21:50:43.150382"
       },
       "volume_profile": {
         "name": "Volume Profile",
@@ -4561,7 +4561,7 @@
           "volume_vs_avg": null,
           "price_change_20d": -1.6738965786562643
         },
-        "timestamp": "2026-08-04T16:45:48.447731"
+        "timestamp": "2026-08-04T21:50:43.152773"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -4576,7 +4576,7 @@
           "high_60d": 23.34000015258789,
           "low_60d": 14.960000038146973
         },
-        "timestamp": "2026-08-04T16:45:48.467470"
+        "timestamp": "2026-08-04T21:50:43.165555"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -4588,9 +4588,9 @@
           "20d": 1.8625559893198362,
           "60d": -7.142858738163804
         },
-        "timestamp": "2026-08-04T16:45:48.469790"
+        "timestamp": "2026-08-04T21:50:43.167948"
       },
-      "timestamp": "2026-08-04T16:45:48.469800"
+      "timestamp": "2026-08-04T21:50:43.167959"
     },
     "EWC": {
       "ticker": "EWC",
@@ -4616,7 +4616,7 @@
           }
         },
         "vs_spy": -0.5590547752391206,
-        "timestamp": "2026-08-04T16:45:48.474295"
+        "timestamp": "2026-08-04T21:50:43.172107"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -4630,7 +4630,7 @@
           "sma20": 59.08950023651123,
           "sma50": 58.5031192779541
         },
-        "timestamp": "2026-08-04T16:45:48.477339"
+        "timestamp": "2026-08-04T21:50:43.174948"
       },
       "volume_profile": {
         "name": "Volume Profile",
@@ -4643,7 +4643,7 @@
           "volume_vs_avg": 115.25657632347075,
           "price_change_20d": 2.2104196402262133
         },
-        "timestamp": "2026-08-04T16:45:48.479692"
+        "timestamp": "2026-08-04T21:50:43.177108"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -4658,7 +4658,7 @@
           "high_60d": 60.06999969482422,
           "low_60d": 56.82281644450994
         },
-        "timestamp": "2026-08-04T16:45:48.499355"
+        "timestamp": "2026-08-04T21:50:43.189695"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -4670,9 +4670,9 @@
           "20d": 2.738546529417296,
           "60d": 2.955645142440533
         },
-        "timestamp": "2026-08-04T16:45:48.501634"
+        "timestamp": "2026-08-04T21:50:43.191980"
       },
-      "timestamp": "2026-08-04T16:45:48.501644"
+      "timestamp": "2026-08-04T21:50:43.191990"
     },
     "VGK": {
       "ticker": "VGK",
@@ -4698,7 +4698,7 @@
           }
         },
         "vs_spy": -0.22153940208298195,
-        "timestamp": "2026-08-04T16:45:48.506215"
+        "timestamp": "2026-08-04T21:50:43.196011"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -4712,20 +4712,20 @@
           "sma20": 88.90400047302246,
           "sma50": 88.20916732788086
         },
-        "timestamp": "2026-08-04T16:45:48.509281"
+        "timestamp": "2026-08-04T21:50:43.198727"
       },
       "volume_profile": {
         "name": "Volume Profile",
         "signal": "weak_uptrend",
         "interpretation": "Volume decreasing on uptrend (weak/exhaustion)",
         "components": {
-          "latest_volume": 2633500,
-          "avg_volume_20d": 2019240,
-          "avg_volume_60d": 2560710,
-          "volume_vs_avg": 30.420356173609875,
+          "latest_volume": 2634600,
+          "avg_volume_20d": 2019295,
+          "avg_volume_60d": 2560728,
+          "volume_vs_avg": 30.4712783421937,
           "price_change_20d": 2.1226408021283394
         },
-        "timestamp": "2026-08-04T16:45:48.511619"
+        "timestamp": "2026-08-04T21:50:43.200834"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -4740,7 +4740,7 @@
           "high_60d": 91.06999969482422,
           "low_60d": 84.5188320460772
         },
-        "timestamp": "2026-08-04T16:45:48.531723"
+        "timestamp": "2026-08-04T21:50:43.213496"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -4752,9 +4752,9 @@
           "20d": 1.0670213087112357,
           "60d": 3.2931605155966714
         },
-        "timestamp": "2026-08-04T16:45:48.534005"
+        "timestamp": "2026-08-04T21:50:43.215690"
       },
-      "timestamp": "2026-08-04T16:45:48.534016"
+      "timestamp": "2026-08-04T21:50:43.215700"
     },
     "EWA": {
       "ticker": "EWA",
@@ -4780,7 +4780,7 @@
           }
         },
         "vs_spy": -4.53322730143938,
-        "timestamp": "2026-08-04T16:45:48.538520"
+        "timestamp": "2026-08-04T21:50:43.219812"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -4794,7 +4794,7 @@
           "sma20": 28.763999938964844,
           "sma50": 28.514699478149414
         },
-        "timestamp": "2026-08-04T16:45:48.541599"
+        "timestamp": "2026-08-04T21:50:43.222750"
       },
       "volume_profile": {
         "name": "Volume Profile",
@@ -4807,7 +4807,7 @@
           "volume_vs_avg": -8.432777101659983,
           "price_change_20d": 4.5147546948204775
         },
-        "timestamp": "2026-08-04T16:45:48.543987"
+        "timestamp": "2026-08-04T21:50:43.224954"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -4822,7 +4822,7 @@
           "high_60d": 29.81999969482422,
           "low_60d": 27.473852245682085
         },
-        "timestamp": "2026-08-04T16:45:48.563315"
+        "timestamp": "2026-08-04T21:50:43.237619"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -4834,9 +4834,9 @@
           "20d": 3.7769138641220446,
           "60d": -1.0185273837597264
         },
-        "timestamp": "2026-08-04T16:45:48.565715"
+        "timestamp": "2026-08-04T21:50:43.240150"
       },
-      "timestamp": "2026-08-04T16:45:48.565725"
+      "timestamp": "2026-08-04T21:50:43.240161"
     },
     "^VIX3M": {
       "ticker": "^VIX3M",
@@ -4862,7 +4862,7 @@
           }
         },
         "vs_spy": -8.024227128432804,
-        "timestamp": "2026-08-04T16:45:48.570182"
+        "timestamp": "2026-08-04T21:50:43.244401"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -4876,7 +4876,7 @@
           "sma20": 19.532499980926513,
           "sma50": 20.076800117492677
         },
-        "timestamp": "2026-08-04T16:45:48.573207"
+        "timestamp": "2026-08-04T21:50:43.247289"
       },
       "volume_profile": {
         "name": "Volume Profile",
@@ -4889,7 +4889,7 @@
           "volume_vs_avg": null,
           "price_change_20d": 4.956572487630995
         },
-        "timestamp": "2026-08-04T16:45:48.575588"
+        "timestamp": "2026-08-04T21:50:43.249542"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -4904,7 +4904,7 @@
           "high_60d": 23.329999923706055,
           "low_60d": 18.530000686645508
         },
-        "timestamp": "2026-08-04T16:45:48.595081"
+        "timestamp": "2026-08-04T21:50:43.262420"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -4916,9 +4916,9 @@
           "20d": -0.3879724561108633,
           "60d": -4.50952721075315
         },
-        "timestamp": "2026-08-04T16:45:48.597341"
+        "timestamp": "2026-08-04T21:50:43.264837"
       },
-      "timestamp": "2026-08-04T16:45:48.597352"
+      "timestamp": "2026-08-04T21:50:43.264849"
     },
     "HYG": {
       "ticker": "HYG",
@@ -4944,7 +4944,7 @@
           }
         },
         "vs_spy": -3.1225984999589063,
-        "timestamp": "2026-08-04T16:45:48.601757"
+        "timestamp": "2026-08-04T21:50:43.269017"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -4958,7 +4958,7 @@
           "sma20": 79.17685623168946,
           "sma50": 79.11620986938476
         },
-        "timestamp": "2026-08-04T16:45:48.604753"
+        "timestamp": "2026-08-04T21:50:43.271823"
       },
       "volume_profile": {
         "name": "Volume Profile",
@@ -4971,7 +4971,7 @@
           "volume_vs_avg": -3.567265286187271,
           "price_change_20d": -0.08145105525926288
         },
-        "timestamp": "2026-08-04T16:45:48.607079"
+        "timestamp": "2026-08-04T21:50:43.273922"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -4986,7 +4986,7 @@
           "high_60d": 79.52392325407999,
           "low_60d": 78.08369106449892
         },
-        "timestamp": "2026-08-04T16:45:48.626251"
+        "timestamp": "2026-08-04T21:50:43.286461"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -4998,9 +4998,9 @@
           "20d": -0.2190601740694298,
           "60d": 0.39210141772074714
         },
-        "timestamp": "2026-08-04T16:45:48.628476"
+        "timestamp": "2026-08-04T21:50:43.288795"
       },
-      "timestamp": "2026-08-04T16:45:48.628486"
+      "timestamp": "2026-08-04T21:50:43.288807"
     },
     "LQD": {
       "ticker": "LQD",
@@ -5026,7 +5026,7 @@
           }
         },
         "vs_spy": -5.200449598254919,
-        "timestamp": "2026-08-04T16:45:48.632967"
+        "timestamp": "2026-08-04T21:50:43.292996"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -5038,9 +5038,9 @@
           "price_range_pct": 1.5576662436502602,
           "close": 106.11000061035156,
           "sma20": 106.51284599304199,
-          "sma50": 107.3830305480957
+          "sma50": 107.38303100585938
         },
-        "timestamp": "2026-08-04T16:45:48.636045"
+        "timestamp": "2026-08-04T21:50:43.295859"
       },
       "volume_profile": {
         "name": "Volume Profile",
@@ -5053,7 +5053,7 @@
           "volume_vs_avg": -2.3536286484726388,
           "price_change_20d": -1.214886326145248
         },
-        "timestamp": "2026-08-04T16:45:48.638463"
+        "timestamp": "2026-08-04T21:50:43.298061"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -5068,7 +5068,7 @@
           "high_60d": 108.88427060159253,
           "low_60d": 105.54307746438418
         },
-        "timestamp": "2026-08-04T16:45:48.657832"
+        "timestamp": "2026-08-04T21:50:43.310750"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -5080,9 +5080,9 @@
           "20d": -1.9330223565534155,
           "60d": -1.6857496805752659
         },
-        "timestamp": "2026-08-04T16:45:48.660140"
+        "timestamp": "2026-08-04T21:50:43.313167"
       },
-      "timestamp": "2026-08-04T16:45:48.660173"
+      "timestamp": "2026-08-04T21:50:43.313178"
     },
     "^TNX": {
       "ticker": "^TNX",
@@ -5108,7 +5108,7 @@
           }
         },
         "vs_spy": 4.0610559994908035,
-        "timestamp": "2026-08-04T16:45:48.664581"
+        "timestamp": "2026-08-04T21:50:43.317329"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -5122,7 +5122,7 @@
           "sma20": 4.614049959182739,
           "sma50": 4.5304599857330325
         },
-        "timestamp": "2026-08-04T16:45:48.667573"
+        "timestamp": "2026-08-04T21:50:43.320237"
       },
       "volume_profile": {
         "name": "Volume Profile",
@@ -5135,7 +5135,7 @@
           "volume_vs_avg": null,
           "price_change_20d": 3.466550487834219
         },
-        "timestamp": "2026-08-04T16:45:48.669924"
+        "timestamp": "2026-08-04T21:50:43.322452"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -5150,7 +5150,7 @@
           "high_60d": 4.747000217437744,
           "low_60d": 4.314000129699707
         },
-        "timestamp": "2026-08-04T16:45:48.689768"
+        "timestamp": "2026-08-04T21:50:43.335441"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -5162,9 +5162,9 @@
           "20d": 4.621562279892655,
           "60d": 7.575755917170457
         },
-        "timestamp": "2026-08-04T16:45:48.691996"
+        "timestamp": "2026-08-04T21:50:43.337966"
       },
-      "timestamp": "2026-08-04T16:45:48.692006"
+      "timestamp": "2026-08-04T21:50:43.337977"
     },
     "^IRX": {
       "ticker": "^IRX",
@@ -5190,7 +5190,7 @@
           }
         },
         "vs_spy": -0.7369180926728003,
-        "timestamp": "2026-08-04T16:45:48.696452"
+        "timestamp": "2026-08-04T21:50:43.342321"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -5204,7 +5204,7 @@
           "sma20": 3.7200999736785887,
           "sma50": 3.6717000007629395
         },
-        "timestamp": "2026-08-04T16:45:48.699499"
+        "timestamp": "2026-08-04T21:50:43.345391"
       },
       "volume_profile": {
         "name": "Volume Profile",
@@ -5217,7 +5217,7 @@
           "volume_vs_avg": null,
           "price_change_20d": -0.6711371164805024
         },
-        "timestamp": "2026-08-04T16:45:48.701885"
+        "timestamp": "2026-08-04T21:50:43.347746"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -5232,7 +5232,7 @@
           "high_60d": 3.819999933242798,
           "low_60d": 3.549999952316284
         },
-        "timestamp": "2026-08-04T16:45:48.721589"
+        "timestamp": "2026-08-04T21:50:43.360800"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -5244,9 +5244,9 @@
           "20d": 0.27100244737636725,
           "60d": 2.777781825006853
         },
-        "timestamp": "2026-08-04T16:45:48.723856"
+        "timestamp": "2026-08-04T21:50:43.363473"
       },
-      "timestamp": "2026-08-04T16:45:48.723866"
+      "timestamp": "2026-08-04T21:50:43.363485"
     },
     "XEQT.TO": {
       "ticker": "XEQT.TO",
@@ -5272,7 +5272,7 @@
           }
         },
         "vs_spy": 0.7935477344623854,
-        "timestamp": "2026-08-04T16:45:48.728325"
+        "timestamp": "2026-08-04T21:50:43.367838"
       },
       "trend_strength": {
         "name": "Trend Strength",
@@ -5286,7 +5286,7 @@
           "sma20": 44.86799945831299,
           "sma50": 44.62560195922852
         },
-        "timestamp": "2026-08-04T16:45:48.731328"
+        "timestamp": "2026-08-04T21:50:43.370768"
       },
       "volume_profile": {
         "name": "Volume Profile",
@@ -5299,7 +5299,7 @@
           "volume_vs_avg": -9.94453368896433,
           "price_change_20d": -1.6465422888301218
         },
-        "timestamp": "2026-08-04T16:45:48.733687"
+        "timestamp": "2026-08-04T21:50:43.372984"
       },
       "support_resistance": {
         "name": "Support/Resistance",
@@ -5314,7 +5314,7 @@
           "high_60d": 45.65999984741211,
           "low_60d": 42.53263666562872
         },
-        "timestamp": "2026-08-04T16:45:48.752964"
+        "timestamp": "2026-08-04T21:50:43.385882"
       },
       "price_momentum": {
         "name": "Price Momentum",
@@ -5326,13 +5326,13 @@
           "20d": -1.4518254744917969,
           "60d": 4.308247652142039
         },
-        "timestamp": "2026-08-04T16:45:48.755252"
+        "timestamp": "2026-08-04T21:50:43.388391"
       },
-      "timestamp": "2026-08-04T16:45:48.755263"
+      "timestamp": "2026-08-04T21:50:43.388403"
     }
   },
   "metadata": {
-    "generated_at": "2026-08-04T16:45:48.755266",
+    "generated_at": "2026-08-04T21:50:43.388407",
     "ticker_count": 65,
     "successful": 65
   }
