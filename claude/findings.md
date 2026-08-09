@@ -1177,3 +1177,52 @@ gate. Tool: `tools/backtest_entry_phase_gate.py`.
   responsiveness. Rolling windows overlap heavily - 73 starts across a
   century is far fewer independent observations (finding 29). US only.
   No costs or taxes, which matters slightly for the gated variants.
+
+
+## 37. 2x + PERMANENT gate on the whole portfolio - and finding 36 reverses
+
+Finding 36 concluded the gate earns its keep only during the entry phase.
+That holds for 1x and **inverts under leverage**.
+
+73 rolling 27-year windows, 1926-2026, 800k initial + 80k/yr,
+rate-correct financing, monthly gate. Total contributed over the
+horizon: 2.96M. Tool: `tools/backtest_levered_lifetime.py`.
+
+| Policy | median | p10 | worst | med DD | worst DD | worst 3y |
+|---|---|---|---|---|---|---|
+| 1x_hold | 24.5M | 17.6M | 13.0M | -44.8% | -80.7% | -75.5% |
+| 1x_gate_entry | 25.0M | 16.7M | 12.6M | -44.8% | -80.7% | -25.7% |
+| **2x_gate_always** | **65.4M** | **34.3M** | **29.7M** | -48.5% | **-70.8%** | -55.4% |
+| 2x_gate_entry | 46.0M | 22.3M | **9.4M** | -76.4% | **-98.2%** | -55.4% |
+| 2x_hold_ungated | 48.5M | 22.8M | 10.1M | -76.4% | -98.2% | -96.3% |
+| 3x_gate_always | 135.2M | 45.5M | 24.5M | -72.1% | -89.1% | -78.1% |
+
+- **2x with a permanent gate dominates 1x at EVERY percentile including
+  the worst case**, and has a better worst drawdown (-70.8% vs -80.7%).
+  Median 65.4M vs 25.0M; worst-ever 29.7M vs 12.6M. No window in any
+  policy ended below total contributions.
+- **Under leverage the gate must be PERMANENT.** 2x_gate_entry's worst
+  case is 9.4M against 2x_gate_always's 29.7M, with -98.2% drawdown.
+  Finding 36's entry-only conclusion applies to 1x ONLY - at leverage a
+  late crash arrives levered and unprotected, which is precisely the
+  wipeout finding 30 documented for 1929.
+- **3x is not the answer.** Higher median (135M) but a WORSE worst case
+  than 2x (24.5M vs 29.7M) and -89.1% drawdown. More pain for a lower
+  floor - the tail gets worse faster than the median improves.
+- **The decisive number is -70.8%, not 65.4M.** MANIFESTO.md's first
+  success criterion is "a rule the user actually follows for 27 years".
+  This policy requires watching roughly two thirds of net worth
+  disappear while still contributing 80k/yr and not touching it.
+- **2x_gate_always makes the ENTRY experience worse, not better**:
+  -55.4% in the first three years against 1x_gate_entry's -25.7%. The
+  behavioural protection finding 36 bought is spent by leverage.
+- **This is not a question about returns.** The data says the strategy
+  works. Whether the holder works under it is the untested variable, and
+  it is the same variable that decided the user's Bitcoin and NVDA
+  positions.
+- **Caveats**: monthly gate rather than the daily 200-day rule;
+  simulated leverage with calibrated financing but no real LETF tracking
+  error (finding 26: TQQQ's is 8.09%/yr); US only; 73 rolling windows
+  overlap heavily so this is far fewer independent observations than it
+  appears (finding 29); no taxes, which matter for a permanently gated
+  strategy in a non-registered account.
