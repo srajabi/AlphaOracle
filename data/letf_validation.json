@@ -1,0 +1,116 @@
+{
+  "UPRO": {
+    "n_days": 3973,
+    "start": "2010-06-02",
+    "end": "2026-03-18",
+    "daily_corr": 0.9981640288701968,
+    "tracking_error_pct_yr": 3.1073791531319643,
+    "real_cagr_pct": 29.69148549530769,
+    "sim_cagr_pct": 34.67099195226571,
+    "cagr_gap_pp": -4.979506456958016,
+    "real_terminal_x": 60.27647058823521,
+    "sim_terminal_x": 109.17379296051475,
+    "implied_drag_pct_yr": 5.029284150002182,
+    "assumed_drag_pct_yr": 1.25,
+    "strategy_real": {
+      "terminal_x": 16.791837554286218,
+      "cagr_pct": 19.592983828659705,
+      "max_drawdown_pct": -58.412970797183576,
+      "trades": 15,
+      "trades_per_year": 0.9514220991693934,
+      "pct_time_invested": 80.54366977095394
+    },
+    "strategy_sim": {
+      "terminal_x": 26.14594000316511,
+      "cagr_pct": 22.999491437690466,
+      "max_drawdown_pct": -58.269433755942515,
+      "trades": 15,
+      "trades_per_year": 0.9514220991693934,
+      "pct_time_invested": 80.54366977095394
+    },
+    "buyhold_real": {
+      "terminal_x": 60.27647058823521,
+      "cagr_pct": 29.69148549530769,
+      "max_drawdown_pct": -76.81383940098114,
+      "trades": 1,
+      "trades_per_year": 0.06342813994462623,
+      "pct_time_invested": 100.0
+    }
+  },
+  "TQQQ": {
+    "n_days": 3973,
+    "start": "2010-06-02",
+    "end": "2026-03-18",
+    "daily_corr": 0.9913883533127724,
+    "tracking_error_pct_yr": 8.093628427064699,
+    "real_cagr_pct": 40.35709189539944,
+    "sim_cagr_pct": 45.557211675876474,
+    "cagr_gap_pp": -5.2001197804770305,
+    "real_terminal_x": 209.54545454545615,
+    "sim_terminal_x": 371.8510789814729,
+    "implied_drag_pct_yr": 5.013289778622841,
+    "assumed_drag_pct_yr": 1.25,
+    "strategy_real": {
+      "terminal_x": 39.7682638514129,
+      "cagr_pct": 26.31520560381726,
+      "max_drawdown_pct": -65.87023700595788,
+      "trades": 17,
+      "trades_per_year": 1.0782783790586459,
+      "pct_time_invested": 81.65114523030455
+    },
+    "strategy_sim": {
+      "terminal_x": 62.597608267966116,
+      "cagr_pct": 30.00268310959171,
+      "max_drawdown_pct": -65.97286922804328,
+      "trades": 17,
+      "trades_per_year": 1.0782783790586459,
+      "pct_time_invested": 81.65114523030455
+    },
+    "buyhold_real": {
+      "terminal_x": 209.54545454545615,
+      "cagr_pct": 40.35709189539944,
+      "max_drawdown_pct": -81.66155298560301,
+      "trades": 1,
+      "trades_per_year": 0.06342813994462623,
+      "pct_time_invested": 100.0
+    }
+  },
+  "SSO": {
+    "n_days": 3973,
+    "start": "2010-06-02",
+    "end": "2026-03-18",
+    "daily_corr": 0.9984600608622033,
+    "tracking_error_pct_yr": 1.899418965858518,
+    "real_cagr_pct": 23.13359704587834,
+    "sim_cagr_pct": 25.14985793267206,
+    "cagr_gap_pp": -2.0162608867937193,
+    "real_terminal_x": 26.599009900990026,
+    "sim_terminal_x": 34.3617044845361,
+    "implied_drag_pct_yr": 2.850159205999427,
+    "assumed_drag_pct_yr": 1.25,
+    "strategy_real": {
+      "terminal_x": 8.923812194322105,
+      "cagr_pct": 14.89249090426219,
+      "max_drawdown_pct": -42.841277111764796,
+      "trades": 15,
+      "trades_per_year": 0.9514220991693934,
+      "pct_time_invested": 80.54366977095394
+    },
+    "strategy_sim": {
+      "terminal_x": 10.837140978801672,
+      "cagr_pct": 16.316872344518064,
+      "max_drawdown_pct": -42.78954615855177,
+      "trades": 15,
+      "trades_per_year": 0.9514220991693934,
+      "pct_time_invested": 80.54366977095394
+    },
+    "buyhold_real": {
+      "terminal_x": 26.599009900990026,
+      "cagr_pct": 23.13359704587834,
+      "max_drawdown_pct": -59.36413313462494,
+      "trades": 1,
+      "trades_per_year": 0.06342813994462623,
+      "pct_time_invested": 100.0
+    }
+  }
+}

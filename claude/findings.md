@@ -601,3 +601,60 @@ LLM-generated prose and may not be true.
   as evidence for a decision, and findings must record the
   specification - tool, params, window, warmup, check frequency - not
   just the number.
+
+## 26. H2 - the LETF simulator was wrong, and the edge is crash-contingent
+
+Finding 24's 1474x used a SIMULATED 3x with an assumed 1.25%/yr drag.
+Validated against real fund prices, 2010-06 to 2026-03.
+Tool: `tools/validate_letf_simulator.py`.
+
+### The simulator's mechanics are right; its cost assumption was not
+
+| Fund | daily corr | TE/yr | real CAGR | sim CAGR | assumed drag | **implied drag** |
+|---|---|---|---|---|---|---|
+| UPRO (3x) | 0.9982 | 3.11% | 29.69% | 34.67% | 1.25% | **5.03%** |
+| TQQQ (3x) | 0.9914 | 8.09% | 40.36% | 45.56% | 1.25% | **5.01%** |
+| SSO (2x) | 0.9985 | 1.90% | 23.13% | 25.15% | 1.25% | **2.85%** |
+
+- **The real cost of holding a 3x fund is ~5%/yr, four times what
+  finding 24 assumed.** Daily correlation of 0.998 says the daily-reset
+  mechanic is modelled correctly; the error was entirely in the expense
+  and financing assumption.
+- **Corrected long-window result: 593x, not 1474x.** But the RATIO to
+  buy-and-hold improves from 4.38x to 5.69x, because the strategy is out
+  of the market ~22% of the time and therefore pays less drag than the
+  holder does. Higher costs hurt buy-and-hold more than they hurt the
+  timer. 3x buy-hold drops 337x -> 104x.
+- **2x with its measured 2.85% drag**: strategy 140x vs buy-hold 81x
+  (1.73x), maxDD -42.9% vs -86.7%.
+
+### On REAL fund prices the strategy LOSES - and that is the finding
+
+| Fund | strategy | buy & hold | strat maxDD | B&H maxDD |
+|---|---|---|---|---|
+| UPRO | 16.79x | **60.28x** | -58.4% | -76.8% |
+| TQQQ | 39.77x | **209.55x** | -65.9% | -81.7% |
+| SSO | 8.92x | **26.60x** | -42.8% | -59.4% |
+
+- **This is not a contradiction of the long-window result. It is the
+  same result seen through a window with no crash in it.** Real LETF
+  history starts ~2010, so it contains neither dot-com nor the GFC. The
+  strategy's entire edge comes from avoiding those.
+- **The strategy is crash insurance, and in a 16-year bull run the
+  premium is enormous** - it gave up two thirds of TQQQ's return to
+  avoid a drawdown that never came.
+- **Practical reading: the leveraged overlay is a bet that the next 27
+  years contain at least one 2000/2008-scale event.** If they do, it
+  wins by ~5.7x on the simulated long window. If they look like
+  2010-2026, buy-and-hold 3x wins by ~4x. That is the actual choice, and
+  it is a judgement about the world rather than about the data.
+- **Countervailing point that does not depend on forecasting**: 3x
+  buy-and-hold reaches -96.8% simulated / -76.8% realised. Over a 27-year
+  horizon that almost certainly contains a major crash, that is a
+  drawdown very few people hold through, and selling at the bottom
+  converts a paper loss into a permanent one.
+- **Caveats**: the 2010-2026 real window is a single bull regime, n=1 on
+  the question that matters. The long window remains simulated, now with
+  an empirically calibrated drag rather than a guessed one. TQQQ's 8.09%
+  tracking error is materially worse than UPRO's 3.11%, so the Nasdaq 3x
+  is modelled least reliably of the three.

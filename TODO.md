@@ -45,6 +45,34 @@ Convention: `[ ]` open, `[x]` done, `[~]` in progress, `[!]` blocked.
 - [ ] Stop-loss backtests on true intraday path.
 - [ ] LETF path-dependency vs the daily approximation.
 
+## Strategy research (the manifesto's actual question)
+
+- [x] **H7 contribution-aware backtests** (finding 23). Contributions
+      widen the overlay's shortfall by ~2pp - real but second-order.
+      Rankings do not flip. Caught a `signal[T]` vs `returns[T]`
+      causality bug that produced +271% / -8% maxDD; that pattern is now
+      a detector.
+- [x] **Check frequency** (finding 24). Bands invert the answer. Without
+      them monthly beats daily; with 5% bands daily wins by 193% at 3x.
+      1x has NO edge on terminal wealth, but loses cheaply enough
+      (0.23pp CAGR to halve drawdown) that it makes leverage survivable.
+      Band plateau 2-6%, cliff at 8%.
+- [x] **Findings verification** (finding 25). findings.md is LLM prose;
+      `tests/test_findings_reproduce.py` now re-derives claims. Finding
+      3's buy-hold reproduces exactly, its overlay claim does not
+      (-34.8% vs claimed -19%) - almost certainly an unrecorded check
+      frequency.
+- [~] **H2 leveraged trend on REAL LETF data.** The 1474x result uses
+      SIMULATED 3x. Real TQQQ/UPRO start ~2010, so they cannot see
+      dot-com or the GFC. Plan: validate the simulator against real fund
+      prices over the overlap, then trust it on the longer window only
+      if it matches.
+- [ ] **H1 verify `canary_daa_2x`** (the 18% champion) with live warmup
+      and walk-forward, judged on terminal wealth.
+- [ ] **H3 yield curve as a leading signal** - the one macro shape
+      findings 19/20 did not rule out (it is a price, no publication lag).
+- [ ] **H8 regularised linear baseline** before any ML.
+
 ## Research track
 
 - [x] 11 macro/cross-asset price series added (curve, copper/gold,
