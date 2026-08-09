@@ -1556,3 +1556,50 @@ T, which was then applied to month T's return. Same causality class as
 the +271% SMA200 bug. **Heuristic confirmed again: a familiar strategy
 printing an unfamiliar number is a bug until proven otherwise.** The
 momentum figures never touched the gate and were unaffected.
+
+
+## 44. Top-10 concentration - no edge, and the bias points at the answer
+
+Redo of the concentration test with the contamination fixed. Archive
+minute data 1994-2025, ranked annually by trailing-December dollar
+volume, held equal-weight-by-dollar-volume through the year.
+
+Fixes over the first attempt: exchange TEST symbols (ZVZZ.T, TESTB)
+removed - they caused a 1e196 overflow; levered/inverse ETFs blocklisted
+after auditing top-10 membership (FAS, SKF, QID, IYR, OIH all appeared,
+clustered 2006-2010); INTCW (an Intel WARRANT, not the stock) removed;
+MIN_PRICE 5.00 and a >50%-single-day corruption drop.
+
+| portfolio | terminal | CAGR | worst yr |
+|---|---|---|---|
+| US market 1994-2025 | 26.92x | 10.85% | (maxDD -54.6%) |
+| top10 | 56.48x | 13.43% | -54.9% |
+| top25 | 17.18x | **9.29%** | -53.6% |
+
+Looks like a large win. It is not.
+
+| portfolio | mean excess/yr | sd | t | p | beat mkt |
+|---|---|---|---|---|---|
+| top10 | +8.46pp | 26.8pp | 1.76 | **0.089** | 21/32 |
+| top25 | +2.94pp | 20.7pp | 0.79 | **0.435** | 18/32 |
+
+- **Not significant, and fragile.** Dropping the single best year (2023,
+  +83pp) takes top10 to +6.07pp, t=1.41.
+- **Top-25 shows nothing (p=0.435).** A genuine size effect would not
+  vanish between N=10 and N=25. The non-monotonicity is the tell.
+- **The ranking bias points the same way as the result.** No shares
+  outstanding in the archive, so ranking is by DOLLAR VOLUME, which
+  overweights high-turnover speculative names. In this sample those were
+  TSLA, NVDA, AMD, MSTR, PLTR - all large winners. A bias aligned with
+  the hypothesis cannot be used to support it.
+- **Arithmetic +8.46pp compounds to only +2.58pp.** Volatility eats
+  5.9pp. Worst year -54.9% against the market's -54.6%: identical pain,
+  no reliable gain.
+- Consistent with Bessembinder (2018): ~4% of stocks create all net
+  wealth, so 10 names most likely holds NONE of them. Concentration
+  widens the distribution rather than shifting it.
+
+**Verdict: no evidence that holding the largest names beats the market.
+RULED OUT.** Caveat: yfinance began returning HTTP 401 on split lookups
+mid-run, so split adjustment for delisted names rests entirely on the
+strip_splits heuristic. Treat magnitudes as directional.
