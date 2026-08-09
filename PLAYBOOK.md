@@ -129,6 +129,19 @@ the part that decides how much weight a rule can carry.
 - **XEQT proxy** (finding 17). VT 77/EWC 23, near-zero drift.
 - **SMA200 overlay truncates the left tail** (finding 1): at-top entry
   worst case 0.94x vs 0.82x, maxDD -22% vs -55%.
+- **Macro filters are risk tools, not alpha tools** (finding 19). A
+  payroll-momentum overlay gives up 0.31pp CAGR against buy-and-hold
+  (10.11% vs 10.42%) and cuts maxDD from -50.79% to -32.34%. Same shape
+  as the SMA200 result: it truncates the tail, it does not raise the
+  median. **Do not expect a macro signal to add return.** If you are
+  adding one, add it for drawdown.
+- **Macro cannot time a fast drawdown** (finding 19). On 2020-03-15 the
+  newest published payrolls described February and the newest jobless
+  claims the week of 2020-03-07 at 211k; claims reached ~6.8M within a
+  fortnight. Publication lag makes this structural, not a data problem
+  you can fix. **The fast channel (VIX term structure) exists precisely
+  because macro cannot do this job** - it is a market price, published
+  continuously, never revised.
 
 ### Assumed, and the assumption is doing real work
 
@@ -152,9 +165,12 @@ the part that decides how much weight a rule can carry.
 - **UPRO pre-2009 data is wrong** - series claims a 2000 start but the
   fund launched 2009. The 2020 tail figure is unaffected; its
   full-history percentiles are not.
-- **Revised macro series are context only.** UNRATE, CPIAUCSL, INDPRO,
-  PAYEMS are current-vintage. Backtesting them is lookahead bias hidden
-  inside the data. Vintage (ALFRED) path needs a free API key.
+- **Revised macro series in `data/historical_long/FRED_*.json` are
+  context only.** They are current-vintage. For anything that trades,
+  use `src/vintage_data.py` against `data/vintage/`, which gates on the
+  publication date. Finding 19 measured the cost of getting this wrong:
+  the CAGR barely moves (-0.06pp) but maxDD is flattered by 5.55pp, so a
+  returns-only check will tell you the bias is harmless when it is not.
 
 ---
 

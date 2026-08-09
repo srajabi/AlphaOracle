@@ -49,11 +49,18 @@ Convention: `[ ]` open, `[x]` done, `[~]` in progress, `[!]` blocked.
 
 - [x] 11 macro/cross-asset price series added (curve, copper/gold,
       crude, USD/CAD, dollar index to 1971, JNK, AGG).
-- [!] FRED/ALFRED ingestion - **blocked**: FRED is unreachable from this
-      environment (connects, never delivers). Would likely work from a
-      GitHub runner; not shipping unverified code.
+- [x] FRED ingestion. Earlier "unreachable" call was **wrong**:
+      `fred.stlouisfed.org` is Akamai-fronted and tarpits Python's TLS
+      fingerprint, while curl succeeds from the same machine.
+      `api.stlouisfed.org` is clean and answers Python directly.
+- [x] ALFRED point-in-time layer (`src/vintage_data.py`) + finding 19:
+      lookahead costs -0.06pp CAGR but **5.55pp of maxDD**.
 - [ ] Per-sleeve signal outputs (gold/SPY/TQQQ -> bullish/bearish/bonds).
 - [ ] Backtest the canary-gates-core variant (user's inverted 80/20).
+- [ ] Cross-source data validator (yfinance vs HuggingFace vs the tar).
+      Two known errors to catch: `BAMLH0A0HYM2` truncated to 2023-08
+      when the series starts 1996, and UPRO claiming a 2000 start when
+      the fund launched 2009. **The tar has never been opened.**
 
 ## Plumbing
 
