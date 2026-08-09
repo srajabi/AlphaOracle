@@ -658,3 +658,57 @@ Tool: `tools/validate_letf_simulator.py`.
   an empirically calibrated drag rather than a guessed one. TQQQ's 8.09%
   tracking error is materially worse than UPRO's 3.11%, so the Nasdaq 3x
   is modelled least reliably of the three.
+- **SUPERSEDED IN FRAMING by finding 27.** "Crash-contingent" was too
+  loose: the sweep shows the overlay also loses through COVID and 2022.
+  The dependency is on SLOW DEEP bears specifically.
+
+## 27. The regime sweep - stop quoting single windows
+
+Findings 24 and 26 each quoted one window and reached opposite-sounding
+conclusions. Both were right about their window and neither was a
+verdict. A trend overlay is crash insurance, so it wins any window
+containing a crash and loses any window without one MECHANICALLY, before
+skill enters. Single-window results therefore describe the window.
+
+Fix: `backtesting/periods.py` gains `MULTI_REGIME_WINDOWS`, and
+`tools/backtest_regime_sweep.py` reports every strategy across all of
+them. SPY underlying, leverage drag calibrated to real funds
+(finding 26: 5.01%/yr at 3x, 2.85% at 2x), signal live from day one.
+
+CAGR %, and overlay-minus-buyhold at matching leverage:
+
+| Window | yrs | 3x B&H | 3x overlay | 1x | 2x | 3x |
+|---|---|---|---|---|---|---|
+| **full_sample** | 32.2 | 15.5% | **22.0%** | -0.2pp | +2.0pp | **+6.4pp** |
+| two_crashes | 13.0 | **-7.9%** | 13.8% | +4.1 | +11.6 | +21.6 |
+| lost_decade | 10.0 | **-20.6%** | 12.9% | +8.1 | +19.8 | +33.5 |
+| no_crash_era | 10.1 | 31.6% | 19.3% | -4.6 | -8.6 | -12.3 |
+| letf_era | 15.8 | 29.4% | 19.0% | -4.8 | -8.3 | -10.4 |
+| modern_shocks | 8.2 | 24.0% | 15.2% | -5.0 | -8.0 | -8.8 |
+| post_gfc_full | 17.0 | 36.8% | 20.0% | -6.7 | -12.5 | -16.9 |
+
+- **The overlay loses in every window since 2009 and still wins the full
+  sample.** Two slow bear markets do all the work across 32 years.
+- **It is not crashes generally - it is SLOW DEEP bears.**
+  `modern_shocks` contains both COVID and the 2022 rate shock, and the
+  overlay lost at every leverage there. Fast crashes it cannot react to;
+  moderate ones it whipsaws through. Independent confirmation of
+  finding 20's slow/fast split, arrived at from price data rather than
+  macro.
+- **Leveraged buy-and-hold is the real casualty of a lost decade**:
+  -20.6%/yr for ten years at 3x, roughly a 90% loss, and -7.9%/yr across
+  `two_crashes`. The overlay's case rests on this far more than on
+  beating a bull market.
+- **1x confirms it has no edge**: -0.2pp on the full sample. The overlay
+  only pays once leverage makes drawdowns existential, exactly as
+  finding 3 claimed.
+- **Drawdowns, full sample**: 1x 55.3% -> 23.3%, 2x 86.7% -> 42.9%,
+  3x 97.7% -> 58.4%. Roughly halved at every leverage, in every window.
+- **How to use this**: quote `full_sample` as the default, and NEVER
+  quote a sub-window without also quoting one of opposite character.
+  `two_crashes` and `no_crash_era` are the designated pair.
+- **Caveats**: SPY underlying only; simulated leverage even though the
+  drag is now calibrated; no transaction costs (immaterial at 0.7
+  trades/yr); one band value, though finding 24 showed a 2-6% plateau.
+  Seven windows is not seven independent samples - they overlap heavily
+  and share the same two bear markets.

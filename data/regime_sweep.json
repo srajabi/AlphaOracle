@@ -1,0 +1,303 @@
+{
+  "full_sample": {
+    "start": "1994-01-03",
+    "end": "2026-03-31",
+    "why": "Everything SPY covers. Two major crashes, two shocks, three bulls. The default; anything not reported here is cherry-picked.",
+    "strategies": {
+      "1x_buyhold": {
+        "terminal_x": 24.38597737538073,
+        "cagr_pct": 10.43927030241032,
+        "max_dd_pct": -55.25157877083316,
+        "years": 32.166666666666664
+      },
+      "1x_daily_band5": {
+        "terminal_x": 22.949888159259174,
+        "cagr_pct": 10.231079187848358,
+        "max_dd_pct": -23.333892408757485,
+        "years": 32.166666666666664
+      },
+      "2x_buyhold": {
+        "terminal_x": 81.31639193790433,
+        "cagr_pct": 14.65256498950831,
+        "max_dd_pct": -86.71165076471736,
+        "years": 32.166666666666664
+      },
+      "2x_daily_band5": {
+        "terminal_x": 140.4369707990023,
+        "cagr_pct": 16.61678962713411,
+        "max_dd_pct": -42.85219298690082,
+        "years": 32.166666666666664
+      },
+      "3x_buyhold": {
+        "terminal_x": 104.25326349040641,
+        "cagr_pct": 15.541642921916466,
+        "max_dd_pct": -97.66024455157522,
+        "years": 32.166666666666664
+      },
+      "3x_daily_band5": {
+        "terminal_x": 593.397819677603,
+        "cagr_pct": 21.96016652790218,
+        "max_dd_pct": -58.414050651559315,
+        "years": 32.166666666666664
+      }
+    }
+  },
+  "two_crashes": {
+    "start": "1998-01-02",
+    "end": "2010-12-31",
+    "why": "Dot-com AND the GFC. The window most favourable to trend overlays - quote it only alongside no_crash_era.",
+    "strategies": {
+      "1x_buyhold": {
+        "terminal_x": 1.5921511993615864,
+        "cagr_pct": 3.6480186544712856,
+        "max_dd_pct": -55.25157877083324,
+        "years": 12.98015873015873
+      },
+      "1x_daily_band5": {
+        "terminal_x": 2.6310715093167625,
+        "cagr_pct": 7.737600026797398,
+        "max_dd_pct": -19.930306427563117,
+        "years": 12.98015873015873
+      },
+      "2x_buyhold": {
+        "terminal_x": 0.9723263122337835,
+        "cagr_pct": -0.21597195657773183,
+        "max_dd_pct": -86.71165076471725,
+        "years": 12.98015873015873
+      },
+      "2x_daily_band5": {
+        "terminal_x": 4.073823156596125,
+        "cagr_pct": 11.428162837130952,
+        "max_dd_pct": -37.2466966796716,
+        "years": 12.98015873015873
+      },
+      "3x_buyhold": {
+        "terminal_x": 0.3456796427021045,
+        "cagr_pct": -7.857683746123712,
+        "max_dd_pct": -97.66024455157523,
+        "years": 12.98015873015873
+      },
+      "3x_daily_band5": {
+        "terminal_x": 5.348850815878892,
+        "cagr_pct": 13.79041168943742,
+        "max_dd_pct": -51.52601254553226,
+        "years": 12.98015873015873
+      }
+    }
+  },
+  "no_crash_era": {
+    "start": "2010-01-04",
+    "end": "2020-02-19",
+    "why": "ZIRP bull, no bear worse than -20%. The window most hostile to trend overlays, and the one real LETF history mostly covers.",
+    "strategies": {
+      "1x_buyhold": {
+        "terminal_x": 3.6745951710286655,
+        "cagr_pct": 13.730751945745755,
+        "max_dd_pct": -19.367442014636683,
+        "years": 10.115079365079366
+      },
+      "1x_daily_band5": {
+        "terminal_x": 2.4313558503104495,
+        "cagr_pct": 9.180699483158783,
+        "max_dd_pct": -14.315822455173477,
+        "years": 10.115079365079366
+      },
+      "2x_buyhold": {
+        "terminal_x": 8.309788000198882,
+        "cagr_pct": 23.28572003800207,
+        "max_dd_pct": -36.625965122989435,
+        "years": 10.115079365079366
+      },
+      "2x_daily_band5": {
+        "terminal_x": 3.9830501257397044,
+        "cagr_pct": 14.640668814578039,
+        "max_dd_pct": -28.623153776409428,
+        "years": 10.115079365079366
+      },
+      "3x_buyhold": {
+        "terminal_x": 16.062191173871497,
+        "cagr_pct": 31.58568137667497,
+        "max_dd_pct": -52.14469616654267,
+        "years": 10.115079365079366
+      },
+      "3x_daily_band5": {
+        "terminal_x": 5.977417322137588,
+        "cagr_pct": 19.3350219857505,
+        "max_dd_pct": -42.58023166025442,
+        "years": 10.115079365079366
+      }
+    }
+  },
+  "lost_decade": {
+    "start": "2000-01-03",
+    "end": "2009-12-31",
+    "why": "SPY roughly flat across ten years. Tests whether a strategy can earn anything when beta pays nothing.",
+    "strategies": {
+      "1x_buyhold": {
+        "terminal_x": 0.8956181772860845,
+        "cagr_pct": -1.098524320408556,
+        "max_dd_pct": -55.251578770833135,
+        "years": 9.98015873015873
+      },
+      "1x_daily_band5": {
+        "terminal_x": 1.9677614969677393,
+        "cagr_pct": 7.017718900054448,
+        "max_dd_pct": -14.614329413211124,
+        "years": 9.98015873015873
+      },
+      "2x_buyhold": {
+        "terminal_x": 0.3734327335575396,
+        "cagr_pct": -9.398332436146594,
+        "max_dd_pct": -86.71165076471729,
+        "years": 9.98015873015873
+      },
+      "2x_daily_band5": {
+        "terminal_x": 2.6845246834647436,
+        "cagr_pct": 10.400744486030211,
+        "max_dd_pct": -30.712932267238813,
+        "years": 9.98015873015873
+      },
+      "3x_buyhold": {
+        "terminal_x": 0.0998385265704439,
+        "cagr_pct": -20.616385451099106,
+        "max_dd_pct": -97.66024455157523,
+        "years": 9.98015873015873
+      },
+      "3x_daily_band5": {
+        "terminal_x": 3.3429357616747204,
+        "cagr_pct": 12.854012133615278,
+        "max_dd_pct": -44.46813375226847,
+        "years": 9.98015873015873
+      }
+    }
+  },
+  "letf_era": {
+    "start": "2010-06-01",
+    "end": "2026-03-31",
+    "why": "Where real TQQQ/UPRO prices exist. Any claim about actual funds is confined to this window - and it contains no major crash.",
+    "strategies": {
+      "1x_buyhold": {
+        "terminal_x": 7.915003760827151,
+        "cagr_pct": 14.017822790317357,
+        "max_dd_pct": -33.72377635173306,
+        "years": 15.76984126984127
+      },
+      "1x_daily_band5": {
+        "terminal_x": 4.0172536536900445,
+        "cagr_pct": 9.218565993750282,
+        "max_dd_pct": -23.33389240875736,
+        "years": 15.76984126984127
+      },
+      "2x_buyhold": {
+        "terminal_x": 25.937673864536986,
+        "cagr_pct": 22.930726290668503,
+        "max_dd_pct": -58.87438996658937,
+        "years": 15.76984126984127
+      },
+      "2x_daily_band5": {
+        "terminal_x": 8.583022156729015,
+        "cagr_pct": 14.605157350311115,
+        "max_dd_pct": -42.85219298690088,
+        "years": 15.76984126984127
+      },
+      "3x_buyhold": {
+        "terminal_x": 58.356383992450695,
+        "cagr_pct": 29.417054853541536,
+        "max_dd_pct": -76.2416716789321,
+        "years": 15.76984126984127
+      },
+      "3x_daily_band5": {
+        "terminal_x": 15.629033802418714,
+        "cagr_pct": 19.04463784835837,
+        "max_dd_pct": -58.41405065155932,
+        "years": 15.76984126984127
+      }
+    }
+  },
+  "modern_shocks": {
+    "start": "2018-01-02",
+    "end": "2026-03-31",
+    "why": "COVID, the 2022 rate shock and the AI boom. Fast crashes and sharp reversals rather than grinding bears.",
+    "strategies": {
+      "1x_buyhold": {
+        "terminal_x": 2.787783650508969,
+        "cagr_pct": 13.341609895589501,
+        "max_dd_pct": -33.72377635173305,
+        "years": 8.186507936507937
+      },
+      "1x_daily_band5": {
+        "terminal_x": 1.9316924765705878,
+        "cagr_pct": 8.374711887597774,
+        "max_dd_pct": -23.33389240875745,
+        "years": 8.186507936507937
+      },
+      "2x_buyhold": {
+        "terminal_x": 4.598714770497689,
+        "cagr_pct": 20.487642451315757,
+        "max_dd_pct": -58.874389966589405,
+        "years": 8.186507936507937
+      },
+      "2x_daily_band5": {
+        "terminal_x": 2.6195312575908227,
+        "cagr_pct": 12.48301102021685,
+        "max_dd_pct": -42.85219298690082,
+        "years": 8.186507936507937
+      },
+      "3x_buyhold": {
+        "terminal_x": 5.8177336064055325,
+        "cagr_pct": 23.998481606836485,
+        "max_dd_pct": -76.2416716789321,
+        "years": 8.186507936507937
+      },
+      "3x_daily_band5": {
+        "terminal_x": 3.1779222974698453,
+        "cagr_pct": 15.169613247917034,
+        "max_dd_pct": -58.414050651559315,
+        "years": 8.186507936507937
+      }
+    }
+  },
+  "post_gfc_full": {
+    "start": "2009-03-10",
+    "end": "2026-03-31",
+    "why": "The whole post-GFC era including COVID and 2022. A softer version of no_crash_era.",
+    "strategies": {
+      "1x_buyhold": {
+        "terminal_x": 13.043638654549142,
+        "cagr_pct": 16.31266613790836,
+        "max_dd_pct": -33.72377635173308,
+        "years": 16.996031746031747
+      },
+      "1x_daily_band5": {
+        "terminal_x": 4.734286346378567,
+        "cagr_pct": 9.57970534747381,
+        "max_dd_pct": -23.333892408757396,
+        "years": 16.996031746031747
+      },
+      "2x_buyhold": {
+        "terminal_x": 64.27713605470768,
+        "cagr_pct": 27.75593888168175,
+        "max_dd_pct": -58.874389966589376,
+        "years": 16.996031746031747
+      },
+      "2x_daily_band5": {
+        "terminal_x": 11.20263498190031,
+        "cagr_pct": 15.276061053452604,
+        "max_dd_pct": -42.852192986900825,
+        "years": 16.996031746031747
+      },
+      "3x_buyhold": {
+        "terminal_x": 206.70896543025222,
+        "cagr_pct": 36.84514882996586,
+        "max_dd_pct": -76.2416716789321,
+        "years": 16.996031746031747
+      },
+      "3x_daily_band5": {
+        "terminal_x": 22.019272253390177,
+        "cagr_pct": 19.95182276065124,
+        "max_dd_pct": -58.41405065155932,
+        "years": 16.996031746031747
+      }
+    }
+  }
+}
