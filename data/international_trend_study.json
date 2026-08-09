@@ -1,0 +1,683 @@
+{
+  "lookback_1y": {
+    "Australia": {
+      "buy_hold": {
+        "cagr_pct": 7.182240747392754,
+        "max_dd_pct": -58.828426135836324,
+        "years": 150
+      },
+      "trend": {
+        "cagr_pct": 5.50691478616856,
+        "max_dd_pct": -56.95559745509734,
+        "years": 150
+      },
+      "pct_invested": 76.66666666666667,
+      "edge_pp": -1.6753259612241944,
+      "dd_improvement_pp": 1.8728286807389836
+    },
+    "Belgium": {
+      "buy_hold": {
+        "cagr_pct": 3.3255189441626642,
+        "max_dd_pct": -79.27613898554814,
+        "years": 150
+      },
+      "trend": {
+        "cagr_pct": 2.9865881952986673,
+        "max_dd_pct": -85.20688241920192,
+        "years": 150
+      },
+      "pct_invested": 61.33333333333333,
+      "edge_pp": -0.338930748863997,
+      "dd_improvement_pp": -5.930743433653774
+    },
+    "Denmark": {
+      "buy_hold": {
+        "cagr_pct": 6.557254099648557,
+        "max_dd_pct": -49.782332936578435,
+        "years": 147
+      },
+      "trend": {
+        "cagr_pct": 5.202749766404913,
+        "max_dd_pct": -49.782332936578435,
+        "years": 147
+      },
+      "pct_invested": 70.74829931972789,
+      "edge_pp": -1.3545043332436446,
+      "dd_improvement_pp": 0.0
+    },
+    "Finland": {
+      "buy_hold": {
+        "cagr_pct": 4.985926337005653,
+        "max_dd_pct": -84.541026311383,
+        "years": 124
+      },
+      "trend": {
+        "cagr_pct": 4.942956188377123,
+        "max_dd_pct": -83.16738314888998,
+        "years": 124
+      },
+      "pct_invested": 59.67741935483871,
+      "edge_pp": -0.042970148628529437,
+      "dd_improvement_pp": 1.3736431624930248
+    },
+    "France": {
+      "buy_hold": {
+        "cagr_pct": 1.1302554939301768,
+        "max_dd_pct": -97.67363664700949,
+        "years": 150
+      },
+      "trend": {
+        "cagr_pct": 1.4181405776968026,
+        "max_dd_pct": -91.80566464366593,
+        "years": 150
+      },
+      "pct_invested": 63.33333333333333,
+      "edge_pp": 0.2878850837666258,
+      "dd_improvement_pp": 5.867972003343553
+    },
+    "Italy": {
+      "buy_hold": {
+        "cagr_pct": 2.4434498589998688,
+        "max_dd_pct": -85.86090762255122,
+        "years": 150
+      },
+      "trend": {
+        "cagr_pct": 2.5146013934041145,
+        "max_dd_pct": -87.92466514109995,
+        "years": 150
+      },
+      "pct_invested": 60.66666666666667,
+      "edge_pp": 0.07115153440424571,
+      "dd_improvement_pp": -2.0637575185487265
+    },
+    "Japan": {
+      "buy_hold": {
+        "cagr_pct": 3.0688643044992414,
+        "max_dd_pct": -98.6254988676658,
+        "years": 132
+      },
+      "trend": {
+        "cagr_pct": 1.366293751439307,
+        "max_dd_pct": -99.52959765541651,
+        "years": 132
+      },
+      "pct_invested": 62.878787878787875,
+      "edge_pp": -1.7025705530599344,
+      "dd_improvement_pp": -0.9040987877507121
+    },
+    "Netherlands": {
+      "buy_hold": {
+        "cagr_pct": 5.140655061657018,
+        "max_dd_pct": -56.09306567800947,
+        "years": 120
+      },
+      "trend": {
+        "cagr_pct": 3.597828418220317,
+        "max_dd_pct": -61.961061583360376,
+        "years": 120
+      },
+      "pct_invested": 65.83333333333333,
+      "edge_pp": -1.542826643436701,
+      "dd_improvement_pp": -5.867995905350909
+    },
+    "Norway": {
+      "buy_hold": {
+        "cagr_pct": 3.9260522584089186,
+        "max_dd_pct": -70.12130088434121,
+        "years": 139
+      },
+      "trend": {
+        "cagr_pct": 3.337476350132773,
+        "max_dd_pct": -61.597175649399794,
+        "years": 139
+      },
+      "pct_invested": 64.74820143884892,
+      "edge_pp": -0.5885759082761455,
+      "dd_improvement_pp": 8.524125234941415
+    },
+    "Portugal": {
+      "buy_hold": {
+        "cagr_pct": 0.733233814596268,
+        "max_dd_pct": -98.38500847496263,
+        "years": 149
+      },
+      "trend": {
+        "cagr_pct": 1.9876850972901927,
+        "max_dd_pct": -91.94070407202015,
+        "years": 149
+      },
+      "pct_invested": 58.38926174496645,
+      "edge_pp": 1.2544512826939247,
+      "dd_improvement_pp": 6.444304402942478
+    },
+    "Spain": {
+      "buy_hold": {
+        "cagr_pct": 3.663329369778734,
+        "max_dd_pct": -84.98848306348002,
+        "years": 120
+      },
+      "trend": {
+        "cagr_pct": 3.381070013971277,
+        "max_dd_pct": -73.9566531853086,
+        "years": 120
+      },
+      "pct_invested": 59.166666666666664,
+      "edge_pp": -0.2822593558074571,
+      "dd_improvement_pp": 11.031829878171422
+    },
+    "Sweden": {
+      "buy_hold": {
+        "cagr_pct": 6.099603884116789,
+        "max_dd_pct": -77.14540470504429,
+        "years": 149
+      },
+      "trend": {
+        "cagr_pct": 6.561805693585687,
+        "max_dd_pct": -45.6869953279714,
+        "years": 149
+      },
+      "pct_invested": 68.45637583892618,
+      "edge_pp": 0.46220180946889844,
+      "dd_improvement_pp": 31.458409377072883
+    },
+    "Switzerland": {
+      "buy_hold": {
+        "cagr_pct": 4.86892793736069,
+        "max_dd_pct": -62.56765916760851,
+        "years": 120
+      },
+      "trend": {
+        "cagr_pct": 3.957201189146442,
+        "max_dd_pct": -47.78506883624822,
+        "years": 120
+      },
+      "pct_invested": 65.83333333333333,
+      "edge_pp": -0.9117267482142477,
+      "dd_improvement_pp": 14.78259033136029
+    },
+    "UK": {
+      "buy_hold": {
+        "cagr_pct": 5.197723627375961,
+        "max_dd_pct": -71.66371519579282,
+        "years": 149
+      },
+      "trend": {
+        "cagr_pct": 4.054162420656104,
+        "max_dd_pct": -58.422275290080194,
+        "years": 149
+      },
+      "pct_invested": 71.81208053691275,
+      "edge_pp": -1.1435612067198564,
+      "dd_improvement_pp": 13.241439905712625
+    },
+    "USA": {
+      "buy_hold": {
+        "cagr_pct": 6.779820449003182,
+        "max_dd_pct": -51.87560938915752,
+        "years": 148
+      },
+      "trend": {
+        "cagr_pct": 4.812655502128638,
+        "max_dd_pct": -65.99299480650551,
+        "years": 148
+      },
+      "pct_invested": 70.27027027027027,
+      "edge_pp": -1.9671649468745445,
+      "dd_improvement_pp": -14.11738541734799
+    }
+  },
+  "lookback_2y": {
+    "Australia": {
+      "buy_hold": {
+        "cagr_pct": 7.182240747392754,
+        "max_dd_pct": -58.828426135836324,
+        "years": 150
+      },
+      "trend": {
+        "cagr_pct": 5.386914955131794,
+        "max_dd_pct": -53.776436846010654,
+        "years": 150
+      },
+      "pct_invested": 78.66666666666666,
+      "edge_pp": -1.79532579226096,
+      "dd_improvement_pp": 5.05198928982567
+    },
+    "Belgium": {
+      "buy_hold": {
+        "cagr_pct": 3.3255189441626642,
+        "max_dd_pct": -79.27613898554814,
+        "years": 150
+      },
+      "trend": {
+        "cagr_pct": 1.646972779625977,
+        "max_dd_pct": -89.99450546287689,
+        "years": 150
+      },
+      "pct_invested": 60.66666666666667,
+      "edge_pp": -1.6785461645366873,
+      "dd_improvement_pp": -10.718366477328743
+    },
+    "Denmark": {
+      "buy_hold": {
+        "cagr_pct": 6.557254099648557,
+        "max_dd_pct": -49.782332936578435,
+        "years": 147
+      },
+      "trend": {
+        "cagr_pct": 4.914322592815146,
+        "max_dd_pct": -59.35835467455545,
+        "years": 147
+      },
+      "pct_invested": 74.82993197278913,
+      "edge_pp": -1.6429315068334116,
+      "dd_improvement_pp": -9.576021737977015
+    },
+    "Finland": {
+      "buy_hold": {
+        "cagr_pct": 4.985926337005653,
+        "max_dd_pct": -84.541026311383,
+        "years": 124
+      },
+      "trend": {
+        "cagr_pct": 2.3152850623048726,
+        "max_dd_pct": -87.44940464596856,
+        "years": 124
+      },
+      "pct_invested": 62.096774193548384,
+      "edge_pp": -2.67064127470078,
+      "dd_improvement_pp": -2.9083783345855494
+    },
+    "France": {
+      "buy_hold": {
+        "cagr_pct": 1.1302554939301768,
+        "max_dd_pct": -97.67363664700949,
+        "years": 150
+      },
+      "trend": {
+        "cagr_pct": 1.0010422250987139,
+        "max_dd_pct": -95.11290928889305,
+        "years": 150
+      },
+      "pct_invested": 60.66666666666667,
+      "edge_pp": -0.1292132688314629,
+      "dd_improvement_pp": 2.560727358116438
+    },
+    "Italy": {
+      "buy_hold": {
+        "cagr_pct": 2.4434498589998688,
+        "max_dd_pct": -85.86090762255122,
+        "years": 150
+      },
+      "trend": {
+        "cagr_pct": 1.949428380724294,
+        "max_dd_pct": -84.30225755113247,
+        "years": 150
+      },
+      "pct_invested": 62.0,
+      "edge_pp": -0.49402147827557474,
+      "dd_improvement_pp": 1.5586500714187537
+    },
+    "Japan": {
+      "buy_hold": {
+        "cagr_pct": 3.0688643044992414,
+        "max_dd_pct": -98.6254988676658,
+        "years": 132
+      },
+      "trend": {
+        "cagr_pct": 0.9229491613792051,
+        "max_dd_pct": -99.42531191427392,
+        "years": 132
+      },
+      "pct_invested": 63.63636363636363,
+      "edge_pp": -2.1459151431200363,
+      "dd_improvement_pp": -0.7998130466081221
+    },
+    "Netherlands": {
+      "buy_hold": {
+        "cagr_pct": 5.140655061657018,
+        "max_dd_pct": -56.09306567800947,
+        "years": 120
+      },
+      "trend": {
+        "cagr_pct": 3.692323658775165,
+        "max_dd_pct": -70.30071434550563,
+        "years": 120
+      },
+      "pct_invested": 65.0,
+      "edge_pp": -1.4483314028818528,
+      "dd_improvement_pp": -14.207648667496159
+    },
+    "Norway": {
+      "buy_hold": {
+        "cagr_pct": 3.9260522584089186,
+        "max_dd_pct": -70.12130088434121,
+        "years": 139
+      },
+      "trend": {
+        "cagr_pct": 2.133496378803401,
+        "max_dd_pct": -68.45235253332564,
+        "years": 139
+      },
+      "pct_invested": 66.90647482014388,
+      "edge_pp": -1.7925558796055174,
+      "dd_improvement_pp": 1.6689483510155725
+    },
+    "Portugal": {
+      "buy_hold": {
+        "cagr_pct": 0.733233814596268,
+        "max_dd_pct": -98.38500847496263,
+        "years": 149
+      },
+      "trend": {
+        "cagr_pct": 0.8403419842176962,
+        "max_dd_pct": -90.63468512318855,
+        "years": 149
+      },
+      "pct_invested": 59.73154362416108,
+      "edge_pp": 0.10710816962142822,
+      "dd_improvement_pp": 7.750323351774085
+    },
+    "Spain": {
+      "buy_hold": {
+        "cagr_pct": 3.663329369778734,
+        "max_dd_pct": -84.98848306348002,
+        "years": 120
+      },
+      "trend": {
+        "cagr_pct": 2.3945964895375926,
+        "max_dd_pct": -69.26404899458534,
+        "years": 120
+      },
+      "pct_invested": 60.0,
+      "edge_pp": -1.2687328802411413,
+      "dd_improvement_pp": 15.72443406889468
+    },
+    "Sweden": {
+      "buy_hold": {
+        "cagr_pct": 6.099603884116789,
+        "max_dd_pct": -77.14540470504429,
+        "years": 149
+      },
+      "trend": {
+        "cagr_pct": 4.86850399393699,
+        "max_dd_pct": -65.73633360486635,
+        "years": 149
+      },
+      "pct_invested": 72.48322147651007,
+      "edge_pp": -1.2310998901797987,
+      "dd_improvement_pp": 11.40907110017794
+    },
+    "Switzerland": {
+      "buy_hold": {
+        "cagr_pct": 4.86892793736069,
+        "max_dd_pct": -62.56765916760851,
+        "years": 120
+      },
+      "trend": {
+        "cagr_pct": 3.07139959978473,
+        "max_dd_pct": -51.61541563089471,
+        "years": 120
+      },
+      "pct_invested": 64.16666666666667,
+      "edge_pp": -1.7975283375759599,
+      "dd_improvement_pp": 10.952243536713802
+    },
+    "UK": {
+      "buy_hold": {
+        "cagr_pct": 5.197723627375961,
+        "max_dd_pct": -71.66371519579282,
+        "years": 149
+      },
+      "trend": {
+        "cagr_pct": 3.8991798905432917,
+        "max_dd_pct": -56.51543585726242,
+        "years": 149
+      },
+      "pct_invested": 73.15436241610739,
+      "edge_pp": -1.298543736832669,
+      "dd_improvement_pp": 15.1482793385304
+    },
+    "USA": {
+      "buy_hold": {
+        "cagr_pct": 6.779820449003182,
+        "max_dd_pct": -51.87560938915752,
+        "years": 148
+      },
+      "trend": {
+        "cagr_pct": 4.579806633913042,
+        "max_dd_pct": -74.71446111517795,
+        "years": 148
+      },
+      "pct_invested": 71.62162162162163,
+      "edge_pp": -2.2000138150901405,
+      "dd_improvement_pp": -22.838851726020437
+    }
+  },
+  "lookback_3y": {
+    "Australia": {
+      "buy_hold": {
+        "cagr_pct": 7.182240747392754,
+        "max_dd_pct": -58.828426135836324,
+        "years": 150
+      },
+      "trend": {
+        "cagr_pct": 5.618003341721112,
+        "max_dd_pct": -43.57743030625277,
+        "years": 150
+      },
+      "pct_invested": 78.66666666666666,
+      "edge_pp": -1.5642374056716424,
+      "dd_improvement_pp": 15.250995829583552
+    },
+    "Belgium": {
+      "buy_hold": {
+        "cagr_pct": 3.3255189441626642,
+        "max_dd_pct": -79.27613898554814,
+        "years": 150
+      },
+      "trend": {
+        "cagr_pct": 1.6925500967352125,
+        "max_dd_pct": -83.6542779337315,
+        "years": 150
+      },
+      "pct_invested": 62.0,
+      "edge_pp": -1.6329688474274517,
+      "dd_improvement_pp": -4.378138948183363
+    },
+    "Denmark": {
+      "buy_hold": {
+        "cagr_pct": 6.557254099648557,
+        "max_dd_pct": -49.782332936578435,
+        "years": 147
+      },
+      "trend": {
+        "cagr_pct": 4.786500527295456,
+        "max_dd_pct": -51.000840848229615,
+        "years": 147
+      },
+      "pct_invested": 74.14965986394559,
+      "edge_pp": -1.770753572353101,
+      "dd_improvement_pp": -1.21850791165118
+    },
+    "Finland": {
+      "buy_hold": {
+        "cagr_pct": 4.985926337005653,
+        "max_dd_pct": -84.541026311383,
+        "years": 124
+      },
+      "trend": {
+        "cagr_pct": 2.728229778021407,
+        "max_dd_pct": -89.33681471770763,
+        "years": 124
+      },
+      "pct_invested": 66.12903225806451,
+      "edge_pp": -2.2576965589842457,
+      "dd_improvement_pp": -4.795788406324618
+    },
+    "France": {
+      "buy_hold": {
+        "cagr_pct": 1.1302554939301768,
+        "max_dd_pct": -97.67363664700949,
+        "years": 150
+      },
+      "trend": {
+        "cagr_pct": -0.2153529887227501,
+        "max_dd_pct": -98.6654166434057,
+        "years": 150
+      },
+      "pct_invested": 62.66666666666667,
+      "edge_pp": -1.3456084826529269,
+      "dd_improvement_pp": -0.9917799963962182
+    },
+    "Italy": {
+      "buy_hold": {
+        "cagr_pct": 2.4434498589998688,
+        "max_dd_pct": -85.86090762255122,
+        "years": 150
+      },
+      "trend": {
+        "cagr_pct": 1.7073402512086,
+        "max_dd_pct": -88.16232801835363,
+        "years": 150
+      },
+      "pct_invested": 60.66666666666667,
+      "edge_pp": -0.7361096077912688,
+      "dd_improvement_pp": -2.3014203958024098
+    },
+    "Japan": {
+      "buy_hold": {
+        "cagr_pct": 3.0688643044992414,
+        "max_dd_pct": -98.6254988676658,
+        "years": 132
+      },
+      "trend": {
+        "cagr_pct": 1.674210002023102,
+        "max_dd_pct": -99.40377076368718,
+        "years": 132
+      },
+      "pct_invested": 65.9090909090909,
+      "edge_pp": -1.3946543024761393,
+      "dd_improvement_pp": -0.7782718960213799
+    },
+    "Netherlands": {
+      "buy_hold": {
+        "cagr_pct": 5.140655061657018,
+        "max_dd_pct": -56.09306567800947,
+        "years": 120
+      },
+      "trend": {
+        "cagr_pct": 4.723744556628495,
+        "max_dd_pct": -57.95115182949399,
+        "years": 120
+      },
+      "pct_invested": 68.33333333333333,
+      "edge_pp": -0.41691050502852267,
+      "dd_improvement_pp": -1.858086151484521
+    },
+    "Norway": {
+      "buy_hold": {
+        "cagr_pct": 3.9260522584089186,
+        "max_dd_pct": -70.12130088434121,
+        "years": 139
+      },
+      "trend": {
+        "cagr_pct": 1.7124960788558852,
+        "max_dd_pct": -72.61714898177469,
+        "years": 139
+      },
+      "pct_invested": 69.06474820143885,
+      "edge_pp": -2.2135561795530334,
+      "dd_improvement_pp": -2.4958480974334805
+    },
+    "Portugal": {
+      "buy_hold": {
+        "cagr_pct": 0.733233814596268,
+        "max_dd_pct": -98.38500847496263,
+        "years": 149
+      },
+      "trend": {
+        "cagr_pct": 0.31214187940982185,
+        "max_dd_pct": -94.13996371722185,
+        "years": 149
+      },
+      "pct_invested": 60.40268456375839,
+      "edge_pp": -0.42109193518644616,
+      "dd_improvement_pp": 4.245044757740786
+    },
+    "Spain": {
+      "buy_hold": {
+        "cagr_pct": 3.663329369778734,
+        "max_dd_pct": -84.98848306348002,
+        "years": 120
+      },
+      "trend": {
+        "cagr_pct": 3.151253396751774,
+        "max_dd_pct": -74.48978873379711,
+        "years": 120
+      },
+      "pct_invested": 59.166666666666664,
+      "edge_pp": -0.5120759730269597,
+      "dd_improvement_pp": 10.498694329682905
+    },
+    "Sweden": {
+      "buy_hold": {
+        "cagr_pct": 6.099603884116789,
+        "max_dd_pct": -77.14540470504429,
+        "years": 149
+      },
+      "trend": {
+        "cagr_pct": 4.326398018333455,
+        "max_dd_pct": -64.30934654181257,
+        "years": 149
+      },
+      "pct_invested": 73.15436241610739,
+      "edge_pp": -1.7732058657833338,
+      "dd_improvement_pp": 12.836058163231712
+    },
+    "Switzerland": {
+      "buy_hold": {
+        "cagr_pct": 4.86892793736069,
+        "max_dd_pct": -62.56765916760851,
+        "years": 120
+      },
+      "trend": {
+        "cagr_pct": 2.8134074050282676,
+        "max_dd_pct": -52.27161005816803,
+        "years": 120
+      },
+      "pct_invested": 67.5,
+      "edge_pp": -2.055520532332422,
+      "dd_improvement_pp": 10.296049109440482
+    },
+    "UK": {
+      "buy_hold": {
+        "cagr_pct": 5.197723627375961,
+        "max_dd_pct": -71.66371519579282,
+        "years": 149
+      },
+      "trend": {
+        "cagr_pct": 3.740342764071869,
+        "max_dd_pct": -55.170936282817905,
+        "years": 149
+      },
+      "pct_invested": 74.49664429530202,
+      "edge_pp": -1.457380863304092,
+      "dd_improvement_pp": 16.492778912974913
+    },
+    "USA": {
+      "buy_hold": {
+        "cagr_pct": 6.779820449003182,
+        "max_dd_pct": -51.87560938915752,
+        "years": 148
+      },
+      "trend": {
+        "cagr_pct": 4.961267222754762,
+        "max_dd_pct": -58.70784636991966,
+        "years": 148
+      },
+      "pct_invested": 77.02702702702703,
+      "edge_pp": -1.8185532262484205,
+      "dd_improvement_pp": -6.83223698076214
+    }
+  }
+}

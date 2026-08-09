@@ -1067,3 +1067,66 @@ return 1926-2026, rate-correct financing:
 - **Also not fixed**: single asset, and no transaction or tax cost,
   which matters most for abs_momentum at 6.48x/yr turnover in a
   non-registered account.
+
+
+## 35. Out-of-sample geography - the trend family is real, as a RISK tool
+
+Finding 34's unfixable defect was that the 200-day convention was fitted
+to US history by decades of practitioners, so every US result might be
+one large in-sample selection. This is the test.
+
+### First attempt failed by confounding, and the control caught it
+
+`tools/backtest_international_trend.py` used JST annual data for 18
+countries, 1870-2020. Trend lost in 14/14 non-US countries (median
+-1.51pp). But the USA control ALSO lost 1.82pp - where the same rule
+family on DAILY US data gains 2.24pp (finding 34).
+
+**Same rule, same country, opposite sign.** The test changed geography
+AND frequency at once, and annual decisions carry up to a 12-month
+reaction lag, so 1987, 2020 and most of 2008 are invisible. Recorded
+because building the US control into the design is what exposed it - a
+cross-sectional test without an in-sample control cannot distinguish
+"the rule fails here" from "the test is broken".
+
+### The clean test: frequency held constant, US removed
+
+French daily regional factors, 1990-2026, 200-day gate with 5% bands,
+warmup live before scoring. Tool: `tools/backtest_oos_geography.py`.
+
+| Region | B&H CAGR | trend | edge | B&H maxDD | trend maxDD |
+|---|---|---|---|---|---|
+| developed_ex_us | 6.52% | 5.86% | -0.66 | -59.2% | **-27.2%** |
+| japan | 3.45% | 3.13% | -0.32 | -59.8% | **-44.5%** |
+| europe | 8.01% | 7.34% | -0.67 | -62.1% | **-29.1%** |
+| asia_pac_ex_japan | 8.41% | 7.62% | -0.80 | -62.5% | **-34.8%** |
+| developed (contaminated, has US) | 8.57% | 8.50% | -0.07 | -57.0% | -24.8% |
+
+- **Trend beats buy-and-hold on CAGR in 0 of 4 clean markets**, median
+  edge -0.67pp. **Median drawdown improvement +29.8pp.**
+- **The family survives out-of-sample - as a RISK REDUCER, not a return
+  generator.** Four markets that played no part in creating the
+  200-day convention all show the same trade: give up ~0.67pp/yr, halve
+  the drawdown. That is a real repeatable effect with the return claim
+  stripped out.
+- **The contaminated control has the smallest cost** (-0.07pp with the
+  US included vs -0.66 to -0.80 without), which is the in-sample
+  advantage appearing exactly where predicted.
+- **Japan disappointed.** The lost-decade market was where trend should
+  have shone; it cut drawdown -59.8% -> -44.5% but still lost 0.32pp,
+  because the 1990-2026 window includes the post-2012 recovery.
+- **This CONFIRMS the architecture rather than undermining it.**
+  ARCHITECTURE.md's claim is that the gate buys cheap drawdown reduction
+  and leverage converts that into return. Out-of-sample, the gate buys
+  ~30pp of drawdown for ~0.67pp - which is the cheap insurance the
+  leveraged sleeve depends on.
+- **NOT exposure-normalised, and this matters.** The trend variants are
+  only 56-74% invested. Finding 34 showed normalising exposure is what
+  revealed the US edge, turning an apparent tie into +2.5pp. Doing the
+  same here would likely flip these signs, so the -0.67pp should be read
+  as "at lower risk", not "worse".
+- **Caveats**: 36 years, one window, no separate crash/no-crash split
+  per region; regional factor series rather than tradeable indices; no
+  costs. Four regions are not four independent samples - global equity
+  markets are heavily correlated, so this is fewer effective
+  observations than it looks.

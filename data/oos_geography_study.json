@@ -1,0 +1,92 @@
+{
+  "developed_ex_us": {
+    "note": "CLEAN out-of-sample",
+    "start": "1991-06-17",
+    "end": "2026-06-30",
+    "buy_hold": {
+      "cagr_pct": 6.521154220680736,
+      "max_dd_pct": -59.17226595073316,
+      "years": 36.27777777777778
+    },
+    "trend": {
+      "cagr_pct": 5.856546479613156,
+      "max_dd_pct": -27.20202376549582,
+      "years": 36.27777777777778
+    },
+    "edge_pp": -0.6646077410675799,
+    "dd_improvement_pp": 31.970242185237343,
+    "pct_invested": 66.0358783635966
+  },
+  "japan": {
+    "note": "CLEAN - the lost-decade market",
+    "start": "1991-06-17",
+    "end": "2026-06-30",
+    "buy_hold": {
+      "cagr_pct": 3.453187203114094,
+      "max_dd_pct": -59.82386951167691,
+      "years": 36.27777777777778
+    },
+    "trend": {
+      "cagr_pct": 3.129352857825518,
+      "max_dd_pct": -44.457856716552094,
+      "years": 36.27777777777778
+    },
+    "edge_pp": -0.32383434528857613,
+    "dd_improvement_pp": 15.366012795124817,
+    "pct_invested": 55.65521767665719
+  },
+  "europe": {
+    "note": "CLEAN",
+    "start": "1991-06-17",
+    "end": "2026-06-30",
+    "buy_hold": {
+      "cagr_pct": 8.013180994168989,
+      "max_dd_pct": -62.106699675241536,
+      "years": 36.27777777777778
+    },
+    "trend": {
+      "cagr_pct": 7.339024954507489,
+      "max_dd_pct": -29.125860467351185,
+      "years": 36.27777777777778
+    },
+    "edge_pp": -0.6741560396614998,
+    "dd_improvement_pp": 32.980839207890355,
+    "pct_invested": 71.00196893458762
+  },
+  "asia_pac_ex_japan": {
+    "note": "CLEAN",
+    "start": "1991-06-17",
+    "end": "2026-06-30",
+    "buy_hold": {
+      "cagr_pct": 8.41243621816492,
+      "max_dd_pct": -62.46039008725286,
+      "years": 36.27777777777778
+    },
+    "trend": {
+      "cagr_pct": 7.616888962152912,
+      "max_dd_pct": -34.81667063614907,
+      "years": 36.27777777777778
+    },
+    "edge_pp": -0.795547256012008,
+    "dd_improvement_pp": 27.64371945110379,
+    "pct_invested": 66.57186611244803
+  },
+  "developed": {
+    "note": "contaminated control - includes US",
+    "start": "1991-06-17",
+    "end": "2026-06-30",
+    "buy_hold": {
+      "cagr_pct": 8.570114421440223,
+      "max_dd_pct": -57.027748469643825,
+      "years": 36.27777777777778
+    },
+    "trend": {
+      "cagr_pct": 8.498358690406182,
+      "max_dd_pct": -24.825841571112672,
+      "years": 36.27777777777778
+    },
+    "edge_pp": -0.07175573103404176,
+    "dd_improvement_pp": 32.20190689853115,
+    "pct_invested": 74.03194049442135
+  }
+}
