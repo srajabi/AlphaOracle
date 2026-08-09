@@ -1,0 +1,237 @@
+{
+  "US_1926": {
+    "buy_hold": {
+      "cagr_pct": 9.773665041290712,
+      "max_dd_pct": -84.0739947686021,
+      "switches_per_year": 0.009683369197663695
+    },
+    "fixed_2%": {
+      "cagr_pct": 10.648571437308153,
+      "max_dd_pct": -42.5292296261556,
+      "switches_per_year": 1.4815554872425454
+    },
+    "fixed_3%": {
+      "cagr_pct": 10.502210481327534,
+      "max_dd_pct": -40.7304461217613,
+      "switches_per_year": 1.0942207193359976
+    },
+    "fixed_4%": {
+      "cagr_pct": 10.576889340987105,
+      "max_dd_pct": -37.75396678910751,
+      "switches_per_year": 0.9005533353827236
+    },
+    "fixed_5%": {
+      "cagr_pct": 10.442711214917866,
+      "max_dd_pct": -37.95719208076152,
+      "switches_per_year": 0.7262526898247772
+    },
+    "fixed_6%": {
+      "cagr_pct": 10.040803902105978,
+      "max_dd_pct": -38.23598197745329,
+      "switches_per_year": 0.668152474638795
+    },
+    "adaptive_2%-8%": {
+      "cagr_pct": 10.244558059200903,
+      "max_dd_pct": -37.80450345278222,
+      "switches_per_year": 0.7456194282201045
+    },
+    "adaptive_3%-10%": {
+      "cagr_pct": 10.165473183282824,
+      "max_dd_pct": -39.411226251456114,
+      "switches_per_year": 0.6294189978481403
+    },
+    "adaptive_2%-12%": {
+      "cagr_pct": 9.949612087645331,
+      "max_dd_pct": -38.217587576950706,
+      "switches_per_year": 0.6294189978481403
+    }
+  },
+  "developed_ex_us": {
+    "buy_hold": {
+      "cagr_pct": 6.521154220680736,
+      "max_dd_pct": -59.17226595073316,
+      "switches_per_year": 0.027565084226646247
+    },
+    "fixed_2%": {
+      "cagr_pct": 7.439827308655356,
+      "max_dd_pct": -18.27277641528343,
+      "switches_per_year": 1.6263399693721285
+    },
+    "fixed_3%": {
+      "cagr_pct": 5.95448382674264,
+      "max_dd_pct": -22.384018103851698,
+      "switches_per_year": 1.5160796324655437
+    },
+    "fixed_4%": {
+      "cagr_pct": 5.754368828630874,
+      "max_dd_pct": -28.22897631646598,
+      "switches_per_year": 1.2404287901990811
+    },
+    "fixed_5%": {
+      "cagr_pct": 5.856546479613156,
+      "max_dd_pct": -27.20202376549582,
+      "switches_per_year": 1.0199081163859112
+    },
+    "fixed_6%": {
+      "cagr_pct": 5.15315059409287,
+      "max_dd_pct": -26.83927701075547,
+      "switches_per_year": 0.9647779479326186
+    },
+    "adaptive_2%-8%": {
+      "cagr_pct": 5.761614977480867,
+      "max_dd_pct": -25.245074396920142,
+      "switches_per_year": 1.0199081163859112
+    },
+    "adaptive_3%-10%": {
+      "cagr_pct": 5.6102982675805935,
+      "max_dd_pct": -27.1244268651443,
+      "switches_per_year": 0.7993874425727412
+    },
+    "adaptive_2%-12%": {
+      "cagr_pct": 6.245422796940625,
+      "max_dd_pct": -26.47437045683949,
+      "switches_per_year": 0.6891271056661562
+    }
+  },
+  "japan": {
+    "buy_hold": {
+      "cagr_pct": 3.453187203114094,
+      "max_dd_pct": -59.82386951167691,
+      "switches_per_year": 0.027565084226646247
+    },
+    "fixed_2%": {
+      "cagr_pct": 3.5894756196352517,
+      "max_dd_pct": -35.52402619819851,
+      "switches_per_year": 2.42572741194487
+    },
+    "fixed_3%": {
+      "cagr_pct": 3.7299254119292247,
+      "max_dd_pct": -41.866667229418276,
+      "switches_per_year": 1.7917304747320062
+    },
+    "fixed_4%": {
+      "cagr_pct": 3.513998618845804,
+      "max_dd_pct": -41.904442665682765,
+      "switches_per_year": 1.4609494640122511
+    },
+    "fixed_5%": {
+      "cagr_pct": 3.129352857825518,
+      "max_dd_pct": -44.457856716552094,
+      "switches_per_year": 1.2955589586523737
+    },
+    "fixed_6%": {
+      "cagr_pct": 3.050152667785211,
+      "max_dd_pct": -49.11705699839112,
+      "switches_per_year": 1.130168453292496
+    },
+    "adaptive_2%-8%": {
+      "cagr_pct": 3.68254628531981,
+      "max_dd_pct": -35.37214435918816,
+      "switches_per_year": 1.130168453292496
+    },
+    "adaptive_3%-10%": {
+      "cagr_pct": 2.962853040513891,
+      "max_dd_pct": -40.13001066828671,
+      "switches_per_year": 1.0199081163859112
+    },
+    "adaptive_2%-12%": {
+      "cagr_pct": 2.8591979431333847,
+      "max_dd_pct": -42.73514789091306,
+      "switches_per_year": 0.9647779479326186
+    }
+  },
+  "europe": {
+    "buy_hold": {
+      "cagr_pct": 8.013180994168989,
+      "max_dd_pct": -62.106699675241536,
+      "switches_per_year": 0.027565084226646247
+    },
+    "fixed_2%": {
+      "cagr_pct": 8.591557625385104,
+      "max_dd_pct": -26.45623116062753,
+      "switches_per_year": 1.5436447166921898
+    },
+    "fixed_3%": {
+      "cagr_pct": 7.7222609254709695,
+      "max_dd_pct": -32.82841612324287,
+      "switches_per_year": 1.3782542113323124
+    },
+    "fixed_4%": {
+      "cagr_pct": 7.782838382572477,
+      "max_dd_pct": -34.20487263485145,
+      "switches_per_year": 1.130168453292496
+    },
+    "fixed_5%": {
+      "cagr_pct": 7.339024954507489,
+      "max_dd_pct": -29.125860467351185,
+      "switches_per_year": 1.0199081163859112
+    },
+    "fixed_6%": {
+      "cagr_pct": 7.34186426667065,
+      "max_dd_pct": -31.553736013083842,
+      "switches_per_year": 0.8545176110260336
+    },
+    "adaptive_2%-8%": {
+      "cagr_pct": 7.6613935357045415,
+      "max_dd_pct": -25.62217069600171,
+      "switches_per_year": 0.8545176110260336
+    },
+    "adaptive_3%-10%": {
+      "cagr_pct": 7.018019109718665,
+      "max_dd_pct": -27.94307707481928,
+      "switches_per_year": 0.7993874425727412
+    },
+    "adaptive_2%-12%": {
+      "cagr_pct": 7.978476364989517,
+      "max_dd_pct": -27.017077631845478,
+      "switches_per_year": 0.6339969372128637
+    }
+  },
+  "asia_pac_ex_japan": {
+    "buy_hold": {
+      "cagr_pct": 8.41243621816492,
+      "max_dd_pct": -62.46039008725286,
+      "switches_per_year": 0.027565084226646247
+    },
+    "fixed_2%": {
+      "cagr_pct": 8.758178243445492,
+      "max_dd_pct": -25.354969088875055,
+      "switches_per_year": 1.7366003062787136
+    },
+    "fixed_3%": {
+      "cagr_pct": 8.4677963994247,
+      "max_dd_pct": -25.704735866087248,
+      "switches_per_year": 1.350689127105666
+    },
+    "fixed_4%": {
+      "cagr_pct": 8.538920071717815,
+      "max_dd_pct": -28.911928919281337,
+      "switches_per_year": 1.0750382848392037
+    },
+    "fixed_5%": {
+      "cagr_pct": 7.616888962152912,
+      "max_dd_pct": -34.81667063614907,
+      "switches_per_year": 1.0750382848392037
+    },
+    "fixed_6%": {
+      "cagr_pct": 7.419902306234349,
+      "max_dd_pct": -40.8971892538357,
+      "switches_per_year": 0.9647779479326186
+    },
+    "adaptive_2%-8%": {
+      "cagr_pct": 7.574845102549577,
+      "max_dd_pct": -33.545204961261874,
+      "switches_per_year": 1.0750382848392037
+    },
+    "adaptive_3%-10%": {
+      "cagr_pct": 7.385995630455722,
+      "max_dd_pct": -34.043419311250155,
+      "switches_per_year": 0.9096477794793262
+    },
+    "adaptive_2%-12%": {
+      "cagr_pct": 7.008206343978296,
+      "max_dd_pct": -33.69981539935332,
+      "switches_per_year": 0.9096477794793262
+    }
+  }
+}

@@ -1277,3 +1277,182 @@ warmup live, rate-correct financing.
   both beat the gate). QQQ history begins 1999 so the earlier run-up is
   not in the window. Do NOT read 2.651x as an expectation; read it as
   evidence that the mechanism does not require a forecast.
+
+
+## 41. Band width: the tight end wins, and adaptive bands fail twice
+
+Two questions, one script (`tools/backtest_adaptive_bands.py`),
+US 1926-2026 daily plus the four clean out-of-sample regions of
+finding 35 (French developed_ex_US, Japan, Europe, Asia-Pacific ex-Japan).
+
+### 41a. 2% beats the 4-5% that finding 24 selected
+
+CAGR by band, 200-day gate, signal shifted one day:
+
+| band | US_1926 | dev_ex_US | japan | europe | asia_pac |
+|---|---|---|---|---|---|
+| buy_hold | 9.77% | 6.52% | 3.45% | 8.01% | 8.41% |
+| **fixed_2%** | **10.65%** | **7.44%** | 3.59% | **8.59%** | **8.76%** |
+| fixed_3% | 10.50% | 5.95% | **3.73%** | 7.72% | 8.47% |
+| fixed_4% | 10.58% | 5.75% | 3.51% | 7.78% | 8.54% |
+| fixed_5% | 10.44% | 5.86% | 3.13% | 7.34% | 7.62% |
+| fixed_6% | 10.04% | 5.15% | 3.05% | 7.34% | 7.42% |
+
+- **2% is best in 4 of 5 markets** (Japan prefers 3%). This CONTRADICTS
+  finding 24, which swept SPY 1993-2026 and put 4% top at 2043x against
+  5% at 1474x. That sweep ran on 33 years of one market; this runs on a
+  century plus four independent regions. Prefer this one.
+- **2% also has the shallower drawdown in 4 of 5** (dev_ex_US -18.3% vs
+  -28.2% at 4%; asia_pac -25.4% vs -28.9%; europe -26.5% vs -34.2%;
+  japan -35.5% vs -41.9%). Better return AND better drawdown is unusual
+  and is the reason this is not being dismissed as noise.
+- **Cost is switching, and it is affordable.** 2% trades 1.48-2.43
+  switches/yr against 0.90-1.46 at 4% - under one extra round trip per
+  year. At 1-3bp per side on a liquid ETF that is <10bp/yr against a
+  100-170bp CAGR gap. In registered accounts there is no tax drag.
+  In a TAXABLE account this conclusion may reverse; not tested.
+- **Narrow 4% vs 5% check:** 4% wins 3 of 4 OOS regions. So the user's
+  instinct to take 4% over 5% was correct - but both are beaten by a
+  value neither sweep nominated.
+### 41c. AMENDMENT - on US data specifically, 4% is the right pick
+
+41a chose 2% on a 5-market vote, but the US row is a near-tie (10.65%
+vs 10.58%, 7bp over a century) and the money is going into a US-heavy
+portfolio. A 7bp gap does not select a parameter, so the question was
+re-asked as a DISTRIBUTION rather than a point estimate.
+`tools/backtest_band_upside_us.py`: 77 rolling 27y windows, 1926-2026,
+800k initial + 80k/yr so sequence-of-returns is live.
+
+| band | p10 | median | p90 (upside) | worst | worstDD | sw/yr |
+|---|---|---|---|---|---|---|
+| 2% | 16.3M | 23.3M | 43.4M | **12.5M** | -39.3% | 1.47 |
+| 3% | 17.6M | 22.8M | 37.8M | 10.7M | -37.1% | 1.08 |
+| **4%** | 16.0M | 23.9M | **43.7M** | 10.7M | **-33.4%** | 0.89 |
+| 5% | 15.7M | **24.2M** | 40.7M | 10.9M | -33.8% | 0.72 |
+| buy_hold | 16.3M | 22.3M | 38.5M | 8.0M | -80.2% | 0.01 |
+
+- **Band width is not what produces the upside.** Gating adds ~5M at
+  p90 over buy-hold (38.5M -> 40.7-43.7M) at EVERY width. The gate's
+  existence is the edge; its width is a second-order choice.
+- **On upside 4% is top (43.7M) but 2% is within 0.5% (43.4M).** Tied.
+- The bands differ in the TAILS, and they trade against each other:
+  4% has the shallowest worst drawdown (-33.4% vs 2%'s -39.3%) and 40%
+  less trading; 2% has the best worst-case terminal (12.5M vs 10.7M,
+  +17% on the single worst century path). Tighter bands exit grinding
+  bears earlier (better terminal) but whipsaw more (deeper equity
+  curve).
+- **Verdict: 4% for a US-heavy 27y+ accumulation sleeve.** Top upside,
+  shallowest drawdown, least trading. 41a's 2% was driven by the
+  international vote and does not hold on US data.
+- **NOT extrapolated to a 10-15y horizon** (the parents' sleeve). The
+  worst-case column argues 2% there, but this is a 27y test; that
+  horizon needs its own run before acting.
+
+- **Caveat.** Adjacent-parameter gaps of 100-170bp are inside the
+  bootstrap noise finding 34 measured (~38% swings). The evidence here
+  is not the size of the gap, it is that FIVE independent markets agree
+  on direction. Treat 2-3% as the region, not 2.00% as the number.
+
+### 41b. Efficiency-ratio adaptive bands fail 0 for 4
+
+Hypothesis: widen bands during whipsaw only. Kaufman Efficiency Ratio
+(net move / path length over 20d) separates DIRECTIONLESS movement from
+LARGE movement, which is the flaw that sank the volatility version
+(finding 34). band = lo + (hi-lo) x (1-ER), so chop widens, trend
+narrows. Tested (2,8), (3,10), (2,12).
+
+| region | best fixed | best adaptive |
+|---|---|---|
+| developed_ex_us | fixed_2% **7.44%** | 6.25% |
+| japan | fixed_3% **3.73%** | 3.68% |
+| europe | fixed_2% **8.59%** | 7.98% |
+| asia_pac_ex_japan | fixed_2% **8.76%** | 7.57% |
+
+- Loses in every out-of-sample market despite fixing the diagnosed
+  mechanism of the previous failure. **Two independent adaptive-band
+  formulations failing is evidence against the idea, not against the
+  implementations.**
+- Why it cannot work: whipsaw is only identifiable after it has
+  happened. By the time ER registers chop, the whipsaw has already been
+  paid for - and you now carry a WIDE band into whatever follows, which
+  is sometimes a real bear.
+- **Practical rule: fixed bands. Do not adapt them.**
+
+
+## 42. Breadth leads price by ~14 days - and it is still not tradeable
+
+The sixth regime detector. The previous five (Markov 33, vol bands 34,
+credit H9, macro 19/20, efficiency ratio 41b) all consumed the index
+return series or something lagging it, so none could be faster than
+price by construction. Breadth is different in kind: it asks how many
+COMPONENTS are holding up, which the index level cannot express.
+
+Data: French 49 industry daily portfolios, 1927-03 to 2026-06 (26,075
+days). Breadth = fraction of industries above their OWN trailing 200-day
+mean. Signal threshold 50%, price gate 200d/4%, both shifted one day.
+
+### 42a. The lead is real and statistically strong
+
+16 drawdowns worse than -20%. Breadth crossed 50% BEFORE price crossed
+its band in **15 of 16**; sign test p ~ 0.0005. Median lead 14 trading
+days, mean 26.
+
+| peak | depth | price sig | breadth sig | lead (d) |
+|---|---|---|---|---|
+| 2000-03-27 | -49.2% | 2000-10-10 | **2000-03-27** | **137** |
+| 1968-12-02 | -36.8% | 1969-06-17 | 1969-02-25 | 77 |
+| 1973-01-12 | -48.2% | 1973-03-22 | 1973-01-24 | 39 |
+| 2021-11-09 | -25.6% | 2022-01-25 | 2021-12-01 | 37 |
+| 1946-05-31 | -28.3% | 1946-08-27 | 1946-07-23 | 25 |
+| 2020-02-20 | -34.2% | 2020-03-09 | 2020-02-27 | 7 |
+| 1929-09-04 | -84.1% | 1929-10-23 | 1929-10-21 | 2 |
+| 1987-08-26 | -33.1% | 1987-10-16 | 1987-10-16 | 0 |
+
+- At the dot-com top breadth fired **on the exact peak day**, 137
+  trading days before price. The mechanism is visible: a handful of
+  megacaps held the index up while the average stock had already turned.
+- **The lead is large for slow, narrow-topped bears (2000, 1969, 1973,
+  2022) and ~zero for fast crashes (1987, 1929, COVID).** This is the
+  same fast/slow split as finding 27. Nothing detects a gap-down.
+
+### 42b. The lead does not convert into return
+
+| variant | CAGR | maxDD | sw/yr |
+|---|---|---|---|
+| price 4% alone | **10.59%** | **-37.8%** | **0.89** |
+| breadth 50% alone | 10.10% | -43.6% | 5.99 |
+| either-exits (fastest) | 9.61-10.05% | -38.7% | 3.0-4.6 |
+| both-must-exit | 10.53-10.65% | -38.7% | 1.9-2.9 |
+
+Acting EARLIER on breadth - the entire point - is WORSE (9.61-10.05%
+against 10.59%). The best blend beats price alone by 6bp on 2.1x the
+turnover, which is noise.
+
+**Why: the sensitivity that makes breadth fast makes it noisy.** It
+fires ~6x/yr against price's 0.89. It catches all 16 bears early AND
+cries wolf continuously between them. Filtering the false positives
+reintroduces exactly the lag being removed.
+
+### 42c. As a leverage modulator - also not worth it
+
+Softer action (2x -> 1x on weak breadth) so false positives cost less.
+27y windows, 800k + 80k/yr, 76 starts:
+
+| policy | p10 | median | p90 | worst | worstDD |
+|---|---|---|---|---|---|
+| 2x_gated | 49.4M | **85.5M** | **154.4M** | 27.6M | -61.6% |
+| 2x_gated + breadth delever | **52.4M** | 78.4M | 144.8M | **28.2M** | **-60.2%** |
+
++6% at p10 and +2% at worst, for -8% of median and -6% of p90, at 4.42
+switches/yr against 0.89. The tail gain is inside the +/-38% bootstrap
+band of finding 34 and trading costs are not charged. **Rejected.**
+
+### 42d. What it IS good for
+
+Breadth is real information that cannot be traded. That makes it an
+**INFO alert, not an ACTION alert** (the split src/alerts.py already
+implements): "the average stock is rolling over while the index holds
+up". It would have said that on 2000-03-27. It does not say sell.
+
+**Six detectors, six failures to beat a fixed-band price gate. The
+crude gate remains undefeated. Stop building detectors.**
