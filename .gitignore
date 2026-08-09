@@ -1,5 +1,15 @@
 # API Keys and Secrets
+# Cover .env and every variant (.env.local, .env.backup-*, .env.prod ...),
+# then re-admit the tracked template. Bare ".env" alone matched only the
+# exact filename, so a backup copy sat untracked-but-visible.
 .env
+.env.*
+!.env.example
+
+# Tool run logs - noisy, machine-specific, regenerated on every run.
+# data/corporate_actions.json is deliberately NOT ignored: vendoring the
+# split history is what lets a backtest reproduce offline.
+data/*.log
 
 # Python
 __pycache__/
