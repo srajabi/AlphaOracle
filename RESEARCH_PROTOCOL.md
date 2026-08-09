@@ -65,7 +65,20 @@ strategy added raises the multiple-testing burden on all of them.
    re-derivable by a test in `tests/test_findings_reproduce.py`. A
    finding that no test reproduces **may not be cited as evidence for a
    decision** - quote it as an open question instead.
-10. **Record the SPECIFICATION, not just the number.** State the tool,
+10. **Never report a raw p-value on overlapping forward returns.**
+    Forward-12m returns from consecutive months share 11 of 12 months,
+    so 387 monthly observations are ~32 independent ones and
+    significance is inflated by roughly sqrt(12). Finding 29 is the
+    case: a VIX result at p=0.048 became p=0.42-0.96 at every
+    non-overlapping offset. Report non-overlapping samples, or
+    Newey-West / block-bootstrap errors. **State the effective sample
+    size, not the row count.**
+11. **State the minimum detectable effect before believing a null.**
+    With ~6 independent observations per bucket the smallest detectable
+    difference is ~19pp; a 10pp spread is invisible either way. An
+    underpowered test is not evidence of absence, and an underpowered
+    test that finds something is usually finding noise.
+12. **Record the SPECIFICATION, not just the number.** State the tool,
     the parameters, the window, the warmup and the check frequency.
     Finding 3 is the cautionary case: buy-hold reproduces to a decimal
     place, but its overlay claim of -19% maxDD comes out at -34.8% on an

@@ -743,3 +743,56 @@ n=375.
   whether valuation-based measures (CAPE and similar) predict forward
   returns - a different question this repo has not tested, and one that
   needs earnings data we do not currently hold.
+- **CORRECTION (see finding 29): the p-values above are inflated.** They
+  come from overlapping forward windows. The direction (no usable signal)
+  stands and is strengthened; the fwd24 "p=0.001" does not.
+
+## 29. Overlapping windows inflate every forward-return p-value
+
+The most important methodological finding so far, and it invalidates
+work in this file including my own from the same session.
+
+Testing whether the VIX level predicts forward 12-month returns, SPY
+monthly 1993-2026:
+
+| Method | n | corr | p |
+|---|---|---|---|
+| Overlapping monthly | 387 | +0.101 | **0.048** |
+| Non-overlapping, offset 0 | 33 | +0.030 | 0.870 |
+| Non-overlapping, offset 4 | 32 | +0.147 | 0.421 |
+| Non-overlapping, offset 8 | 32 | +0.009 | 0.960 |
+
+- **Forward-12m returns from consecutive months share 11 of 12 months.**
+  387 monthly observations are therefore ~32 independent ones. Treating
+  them as independent inflates significance by roughly sqrt(12).
+- **The "significant" result vanishes at every non-overlapping offset.**
+  Not weakened - gone, with p from 0.42 to 0.96.
+- **Power is the binding constraint, not cleverness.** With ~6
+  independent observations per quintile the smallest detectable
+  difference is ~19pp; the spread being examined was ~10pp. The
+  experiment could not have detected the effect even if it existed.
+- **Quintile findings retracted**: "VIX ~22 is the weakest zone" and
+  "panic is the best entry point" were both noise, and I presented them
+  before running this check.
+- **Finding 28 is affected identically** - same overlapping method, so
+  its fwd24 p=0.001 is not trustworthy. Its conclusion (elapsed time is
+  not a usable signal) survives, since correcting for overlap can only
+  weaken an already-weak result.
+
+**Rule: any predictive claim on overlapping forward returns must report
+either non-overlapping samples or Newey-West corrected errors.** Raw
+p-values on overlapping windows are not evidence.
+
+**On the underlying problem - we are data-poor for this class of
+question, and it cannot be fixed by trying harder.** ~32 independent
+annual observations is what 32 years of one index provides. Options,
+honestly ranked:
+1. **Newey-West / block bootstrap** - keeps the data, corrects the
+   inference. The right default, and cheap.
+2. **Shorter forward horizons** - forward 1-month returns give ~387
+   nearly-independent observations instead of 32. Changes the question
+   being asked, but makes it answerable.
+3. **More markets** - international indices add samples, though heavily
+   correlated ones, so they add less than their count suggests.
+4. **Longer history** - pre-1990 needs different sources; the minute
+   archive starts 1992 and does not help with macro-horizon questions.
