@@ -115,17 +115,29 @@ jobs:
         if: steps.data_ingestion.outcome == 'success'
         continue-on-error: true
         env:
+          # Every provider the chains below can reach. A key that is present
+          # but unused costs nothing; a key that is missing turns its entry
+          # into a silent dead link in the chain.
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-          # deepseek-v4-flash ($0.14/$0.28 per 1M tokens) replaces both the
-          # deepseek-reasoner alias (retired by DeepSeek on 2026-07-24) and
-          # gemini-2.5-flash ($0.15/$0.60). Thinking mode is the default.
-          RISK_MODELS: "deepseek/deepseek-v4-flash"
-          TECH_MODELS: "deepseek/deepseek-v4-flash"
-          MACRO_MODELS: "deepseek/deepseek-v4-flash"
-          # Smart chair (Design B, spikes/llm_council_cost_intelligence.md):
-          # PM + Thesis Sentinel get the GDPval-best model; role agents stay
-          # on flash. ~$120/yr total.
-          PM_MODEL: "deepseek/deepseek-v4-pro"
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          # Comma-separated FALLBACK CHAINS, tried left to right until one
+          # provider answers. DeepSeek stays first on cost; the rest exist so
+          # an unfunded or rate-limited primary degrades instead of failing.
+          # Annual costs at our load from spikes/llm_council_cost_intelligence.md.
+          #
+          # Role tier: v4-flash $34/yr -> gemini-2.5-flash $39/yr ->
+          # claude-haiku-4.5 $272/yr ($1.00/$5.00 per 1M).
+          RISK_MODELS: "deepseek/deepseek-v4-flash,gemini/gemini-2.5-flash,anthropic/claude-haiku-4-5"
+          TECH_MODELS: "deepseek/deepseek-v4-flash,gemini/gemini-2.5-flash,anthropic/claude-haiku-4-5"
+          MACRO_MODELS: "deepseek/deepseek-v4-flash,gemini/gemini-2.5-flash,anthropic/claude-haiku-4-5"
+          # Smart chair (Design B): PM + Thesis Sentinel get the GDPval-best
+          # model. Fallbacks stay in the capable tier - this chain writes
+          # trades.json, so a weak last resort would be worse than no trades.
+          # claude-sonnet-5 is $3.00/$15.00 per 1M.
+          PM_MODELS: "deepseek/deepseek-v4-pro,anthropic/claude-sonnet-5,gemini/gemini-2.5-flash"
         run: python src/llm_agents.py
 
       - name: Execute Advanced LLM Strategy (Dev Account - 2x Daily)
@@ -149,15 +161,20 @@ jobs:
 
       - name: Check if this is the EOD execution run
         id: check_time
+        # Branch on WHICH CRON FIRED, not on the wall clock. GitHub delays
+        # scheduled runs under load - the 20:30 UTC cron has been reaching
+        # this step at 21:xx every run, so `date -u +%H` never returned "20"
+        # and accounts 1-5 never executed. github.event.schedule is the
+        # trigger's identity and is immune to that delay.
         run: |
-          HOUR=$(date -u +%H)
-          echo "Current UTC hour: $HOUR"
-          if [ "$HOUR" = "20" ]; then
+          SCHEDULE="${{ github.event.schedule }}"
+          echo "Triggered by: ${SCHEDULE:-manual dispatch}"
+          if [ "$SCHEDULE" = "30 20 * * 1-5" ]; then
             echo "is_eod=true" >> $GITHUB_OUTPUT
-            echo "This is the 3:30 PM ET (20:30 UTC) run - executing strategies"
+            echo "3:30 PM ET (20:30 UTC) run - executing EOD strategies"
           else
             echo "is_eod=false" >> $GITHUB_OUTPUT
-            echo "This is the 10:00 AM ET (15:00 UTC) run - skipping strategy execution"
+            echo "Not the EOD cron - skipping EOD strategy execution"
           fi
 
       - name: Execute LLM Strategy (Account 1 - EOD)
