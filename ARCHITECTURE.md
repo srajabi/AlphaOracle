@@ -42,7 +42,25 @@ Not "predict the market". Everything downstream follows from that.
 
 ---
 
-## Two controls, not a policy matrix
+## ONE control, not two - corrected by finding 32
+
+**The section below proposed two controls. Testing killed the second.**
+
+Finding 32 built vol targeting and compared it to the trend gate at
+EQUAL AVERAGE LEVERAGE, which is the only fair comparison. The gate won
+on return and drawdown at every comparable leverage (16.01% vs 14.03% at
+~1.4x; 20.89% vs 15.51% at ~2.2x), and gate+vol always beat vol alone -
+meaning the gate was doing the work. Vol targeting also cost 2-6x the
+turnover.
+
+**The design is therefore ONE control - the trend gate - plus a fixed
+leverage ceiling chosen as a judgement about tail tolerance, not fitted.**
+
+Finding 4's vol-targeting claim tested QQQ from 1999 and should not be
+generalised beyond that. The rest of this section stands as the record
+of what was proposed and why it was wrong.
+
+## Two controls, not a policy matrix (SUPERSEDED - see above)
 
 The tempting design is a regime matrix: in regime A do X with the safe
 sleeve and Y with the aggressive. Resist it. Four regimes x two sleeves
