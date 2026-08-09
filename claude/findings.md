@@ -1674,3 +1674,93 @@ than on the headline (see 35, 44). The pattern to keep: never report an
 effect without running the benchmark that shares its structure -
 equal-weight for a concentrated portfolio, same-period for a
 different-universe claim.
+
+
+## 46. CAPE predicts, but cannot be traded - and it closes the geography question
+
+TODO #25. Shiller CAPE 1881-2023 as the signal; French total returns
+1926+ as the return series (Shiller's dividend column in our archive is
+corrupted - it contains the date - so Shiller is NEVER used for returns).
+
+Every percentile here is EXPANDING-WINDOW: CAPE at month t is ranked
+only against CAPE through t. Published CAPE studies almost always rank
+against the full sample, which is lookahead - an investor in 1996 could
+not know whether 28 was the 95th percentile of a distribution ending in
+2026.
+
+### 46a. The predictive relationship is real
+
+Forward 10-year CAGR by expanding-window CAPE quintile:
+
+| quintile | median fwd 10y | mean | worst |
+|---|---|---|---|
+| cheapest | **15.75%** | 15.90% | +12.06% |
+| 2 | 14.72% | 14.01% | +5.65% |
+| 3 | 12.30% | 11.52% | +3.24% |
+| 4 | 8.89% | 8.80% | +2.34% |
+| priciest | **5.37%** | 5.10% | **-2.48%** |
+
+Perfectly monotonic, 10.4pp spread. R2 0.42.
+
+**But the honest sample is n=9.** Overlapping-window naive t is 27.67;
+Newey-West (lag 120) cuts it to 6.33; on genuinely NON-OVERLAPPING
+decades there are 9 observations, t=1.30, p=0.233. 97 years divided by a
+10-year horizon is nine independent draws. The monotonicity is
+suggestive; the significance is not established.
+
+### 46b. Every allocation rule built on it LOSES
+
+| strategy | CAGR | maxDD | avg exposure |
+|---|---|---|---|
+| buy_hold | **9.90%** | -83.9% | 1.00 |
+| gate_only (200d/4%) | 9.85% | **-48.2%** | 0.71 |
+| cape_expanding | **8.06%** | -83.9% | 0.74 |
+| cape_FULL-SAMPLE (lookahead) | 8.54% | -75.8% | 0.75 |
+| cape x gate | 7.93% | -48.2% | 0.51 |
+
+- **-1.84pp/yr and NO drawdown reduction** - same -83.9% as buy-hold.
+  It bought nothing with what it gave up. The worst possible outcome.
+- **Even the cheating version loses.** Given full-sample percentiles it
+  still underperforms buy-hold by 1.36pp. This is not a lookahead
+  artifact being corrected; there is no version that works.
+
+### 46c. Why - persistence, not error
+
+Share of months ranked in the top CAPE quintile to date:
+
+| era | share |
+|---|---|
+| 1926-1949 | 18.1% |
+| 1950-1979 | 33.3% |
+| 1980-1994 | 21.1% |
+| **1995-2009** | **91.1%** |
+| **2010-2023** | **91.5%** |
+
+**Longest unbroken "expensive" stretch: 201 months (16.8 years) from
+1991-12.** CAPE is not wrong - it is persistently right on a horizon
+longer than an investor can stay wrong. You pay every year and collect
+once, and when you collect the drawdown arrives anyway.
+
+Same failure SHAPE as finding 42 (breadth): genuine information, not
+tradeable. Different cause - breadth fails on false positives, CAPE
+fails on persistence.
+
+### 46d. This closes the geography question
+
+"The US is expensive" is TRUE and has been continuously true for 34
+years. Acting on it would have cost ~1.8pp/yr over three decades.
+**Valuation is not a usable basis for a US-vs-global weighting.**
+
+Combined with finding 41's regional results (the gate works in all five
+markets) and the Japan data point (gate added only 28bp there vs 88bp
+in the US - it does NOT rescue you from a bad country), the defensible
+position is: **hold global market weight because you cannot identify the
+winner in advance, NOT because any signal says international is
+cheap.** The reason matters - it is the difference between a rule and a
+forecast.
+
+GAP: this tests ABSOLUTE valuation timing in one market. RELATIVE
+valuation (US CAPE vs international CAPE, staying 100% invested and
+shifting between them) is a different question and is NOT tested here -
+the archive has no international CAPE. Do not read 46 as ruling that
+out.

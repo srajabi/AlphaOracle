@@ -1,0 +1,43 @@
+{
+  "q1": {
+    "r2": 0.4228621553808008,
+    "t_naive": 27.670549146184456,
+    "t_newey_west": 6.325516772184384,
+    "n_overlap": 1047,
+    "nonoverlap_n": 9,
+    "nonoverlap_t": 1.3049714386973528,
+    "nonoverlap_p": 0.23316095371583379
+  },
+  "rules": {
+    "buy_hold": {
+      "cagr_pct": 9.90124839417339,
+      "max_dd_pct": -83.89501417385522,
+      "avg_exposure": 1.0,
+      "months": 1167
+    },
+    "gate_only": {
+      "cagr_pct": 9.853745316674466,
+      "max_dd_pct": -48.21302694180528,
+      "avg_exposure": 0.7146529562982005,
+      "months": 1167
+    },
+    "cape_expanding": {
+      "cagr_pct": 8.064074998214643,
+      "max_dd_pct": -83.89501417385522,
+      "avg_exposure": 0.7350042844901457,
+      "months": 1167
+    },
+    "cape_FULLSAMPLE_lookahead": {
+      "cagr_pct": 8.541984691715832,
+      "max_dd_pct": -75.78321486593155,
+      "avg_exposure": 0.7497857754927164,
+      "months": 1167
+    },
+    "cape_expanding_x_gate": {
+      "cagr_pct": 7.93164280947789,
+      "max_dd_pct": -48.21302694180528,
+      "avg_exposure": 0.5113538988860326,
+      "months": 1167
+    }
+  }
+}
