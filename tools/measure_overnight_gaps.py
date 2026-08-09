@@ -21,7 +21,24 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from src.minute_data import overnight_gaps  # noqa: E402
+from src.minute_data import (  # noqa: E402
+    daily_from_minute, load_minute_multi, robust_session_edges,
+)
+
+
+def gaps_from_frame(df):
+    """Robust and naive gap series from one already-loaded frame."""
+    import pandas as pd
+    if not len(df):
+        return pd.Series(dtype=float), pd.Series(dtype=float)
+
+    edges = robust_session_edges(df)
+    robust = (edges["open_robust"] / edges["close_robust"].shift(1) - 1.0
+              ).dropna()
+
+    daily = daily_from_minute(df)
+    naive = (daily["open"] / daily["close"].shift(1) - 1.0).dropna()
+    return robust, naive
 
 DEFAULT = ["SPY", "QQQ", "TQQQ", "UPRO", "SOXL", "TLT", "GLD"]
 OUT = Path("data/overnight_gaps.json")
@@ -59,14 +76,17 @@ def describe(gaps):
 
 
 def main(tickers):
+    print(f"loading {len(tickers)} tickers in one archive pass "
+          "(per-ticker passes re-read the same hundreds of GB)...",
+          flush=True)
+    frames = load_minute_multi(tickers, "1993-01-01", "2026-06-30",
+                               session="regular")
+    print("loaded; computing gaps\n", flush=True)
+
     results = {}
     for ticker in tickers:
-        print(f"[{ticker}] loading full history...", flush=True)
         try:
-            gaps = overnight_gaps(ticker, "1993-01-01", "2026-06-30",
-                                  robust=True)
-            naive = overnight_gaps(ticker, "1993-01-01", "2026-06-30",
-                                   robust=False)
+            gaps, naive = gaps_from_frame(frames[ticker])
         except Exception as exc:
             print(f"[{ticker}] FAILED: {type(exc).__name__}: {exc}")
             continue

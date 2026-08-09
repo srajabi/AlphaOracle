@@ -18,7 +18,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from src.minute_data import (  # noqa: E402
     ARCHIVE, adjustment_factors, daily_from_minute, load_minute,
-    overnight_gaps, robust_session_edges, _months, _symbols_for,
+    load_minute_multi, overnight_gaps, robust_session_edges,
+    _months, _symbols_for,
 )
 
 needs_archive = pytest.mark.skipif(
@@ -192,3 +193,36 @@ def test_spy_2000_bad_print_does_not_become_worst_gap():
         "expected the raw artefact to be present with robust=False"
     assert robust.loc["2000-12-18"] > -0.02, \
         "bad print still contaminating the robust gap"
+
+
+# ------------------------------------------------- multi-ticker loader
+
+@needs_archive
+def test_multi_loader_matches_single_loader_exactly():
+    """The fast path must not be a different answer, only a faster one."""
+    multi = load_minute_multi(["SPY", "TQQQ"], "2022-01-03", "2022-01-14")
+    for ticker in ("SPY", "TQQQ"):
+        single = load_minute(ticker, "2022-01-03", "2022-01-14")
+        assert multi[ticker].equals(single), f"{ticker} differs"
+
+
+@needs_archive
+def test_multi_loader_applies_per_ticker_split_adjustment():
+    """Adjustment is per ticker; a shared pass must not blur it."""
+    multi = load_minute_multi(["SPY", "TQQQ"], "2022-01-10", "2022-01-18")
+    tqqq = daily_from_minute(multi["TQQQ"])["close"].pct_change()
+    assert tqqq.loc["2022-01-13"] > -0.15, "TQQQ split not adjusted in multi"
+
+
+@needs_archive
+def test_multi_loader_resolves_symbol_history():
+    multi = load_minute_multi(["QQQ"], "2010-01-04", "2010-01-08")
+    assert len(multi["QQQ"]) > 0, "QQQQ era lost in the multi path"
+
+
+@needs_archive
+def test_multi_loader_returns_empty_frame_for_unknown_ticker():
+    multi = load_minute_multi(["SPY", "NOTATICKER123"],
+                              "2022-01-03", "2022-01-05")
+    assert len(multi["NOTATICKER123"]) == 0
+    assert len(multi["SPY"]) > 0, "one bad ticker must not poison the batch"

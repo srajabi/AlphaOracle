@@ -20,6 +20,10 @@ Convention: `[ ]` open, `[x]` done, `[~]` in progress, `[!]` blocked.
   The other four are *unknown* - checking dashboards. Chain order is the
   drain order: put the balance nearest expiry first, then tell me and I
   will set `RISK/TECH/MACRO/PM_MODELS`.
+- [ ] **healthchecks.io check + `HEALTHCHECK_URL` secret.** Free tier.
+  Period ~1 day, grace ~6h (the EOD cron runs weekdays 20:30 UTC and has
+  been arriving up to ~80 min late). This is the only thing that can
+  detect the pipeline not running at all.
 
 ## Verification pending (needs a real scheduled run)
 
@@ -32,22 +36,29 @@ Convention: `[ ]` open, `[x]` done, `[~]` in progress, `[!]` blocked.
 ## Minute-data track (spike: `spikes/minute_data.md`)
 
 - [x] Audit the OHLCV-1m dataset - schema, tickers, coverage, traps.
-- [ ] `src/minute_data.py` access layer handling all four traps.
-- [ ] Measure the real overnight gap distribution; validate or refute
+- [x] `src/minute_data.py` access layer handling **five** traps (a fifth,
+      bad prints, surfaced only once we looked at the tail).
+- [x] Multi-ticker single-pass loader - the archive is I/O-bound and
+      per-ticker passes re-read the same hundreds of GB.
+- [~] Measure the real overnight gap distribution; validate or refute
       finding 14's assumed 15%.
 - [ ] Stop-loss backtests on true intraday path.
 - [ ] LETF path-dependency vs the daily approximation.
 
 ## Research track
 
-- [ ] Macro regime data spike - FRED/ALFRED with vintage correctness.
+- [x] 11 macro/cross-asset price series added (curve, copper/gold,
+      crude, USD/CAD, dollar index to 1971, JNK, AGG).
+- [!] FRED/ALFRED ingestion - **blocked**: FRED is unreachable from this
+      environment (connects, never delivers). Would likely work from a
+      GitHub runner; not shipping unverified code.
 - [ ] Per-sleeve signal outputs (gold/SPY/TQQQ -> bullish/bearish/bonds).
 - [ ] Backtest the canary-gates-core variant (user's inverted 80/20).
 
 ## Plumbing
 
-- [ ] Port the LLM fallback harness into `tests/`.
-- [ ] External dead-man's switch - the in-workflow heartbeat cannot
+- [x] Port the LLM fallback harness into `tests/`.
+- [x] External dead-man's switch - the in-workflow heartbeat cannot
       detect its own absence.
 
 ## Done

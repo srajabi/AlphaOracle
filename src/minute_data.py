@@ -193,6 +193,70 @@ def load_minute(ticker, start, end, session="regular", adjust=True):
     return df
 
 
+def load_minute_multi(tickers, start, end, session="regular", adjust=True):
+    """Load several tickers in ONE pass over the monthly files.
+
+    The archive is I/O-bound: a single ticker's 33-year history is ~400
+    filtered file reads, and doing that per ticker means re-reading the
+    same hundreds of gigabytes once per symbol. Filtering to the whole
+    set in one pass turns N passes into one.
+
+    Returns {canonical_ticker: DataFrame}, each shaped exactly as
+    load_minute would return it.
+    """
+    import pyarrow.parquet as pq
+
+    tickers = list(tickers)
+    # Map every raw symbol (including historical names) to its canonical.
+    raw_to_canonical = {}
+    for ticker in tickers:
+        for symbol in _symbols_for(ticker, start, end):
+            raw_to_canonical[symbol] = ticker
+
+    columns = ["timestamp", "open", "high", "low", "close", "volume", "ticker"]
+    collected = {t: [] for t in tickers}
+
+    for stem in _months(start, end):
+        path = ARCHIVE / f"ohlcv_{stem}.parquet"
+        if not path.exists():
+            continue
+        table = pq.read_table(
+            path, columns=columns,
+            filters=[("ticker", "in", list(raw_to_canonical))])
+        if not table.num_rows:
+            continue
+        chunk = table.to_pandas()
+        for symbol, part in chunk.groupby("ticker", observed=True):
+            canonical = raw_to_canonical.get(symbol)
+            if canonical:
+                collected[canonical].append(part.drop(columns=["ticker"]))
+
+    out = {}
+    for ticker in tickers:
+        frames = collected[ticker]
+        if not frames:
+            out[ticker] = pd.DataFrame(
+                columns=columns[1:-1],
+                index=pd.DatetimeIndex([], tz=ET, name="timestamp"))
+            continue
+        df = pd.concat(frames, ignore_index=True)
+        df["timestamp"] = pd.to_datetime(df["timestamp"], utc=True
+                                         ).dt.tz_convert(ET)
+        df = df.set_index("timestamp").sort_index()
+        df = df.loc[~df.index.duplicated(keep="last")].loc[str(start):str(end)]
+        if session == "regular":
+            df = df.between_time("%02d:%02d" % REGULAR_OPEN,
+                                 "%02d:%02d" % REGULAR_CLOSE,
+                                 inclusive="left")
+        if adjust and len(df):
+            factor = adjustment_factors(df.index, splits_for(ticker))
+            for col in ("open", "high", "low", "close"):
+                df[col] = df[col] / factor
+            df["volume"] = df["volume"] * factor
+        out[ticker] = df
+    return out
+
+
 def daily_from_minute(df):
     """Collapse minute bars into daily OHLCV on ET calendar days.
 
