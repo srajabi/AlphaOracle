@@ -1477,7 +1477,13 @@ up". It would have said that on 2000-03-27. It does not say sell.
 crude gate remains undefeated. Stop building detectors.**
 
 
-## 43. Sector rotation - the first real edge, and why it may not be tradeable
+## 43. Sector rotation - a real historical effect, NOT tradeable (see 45)
+
+> **SUPERSEDED IN PART BY FINDING 45.** The decisive test on the actual
+> investable universe (11 SPDR sector ETFs) found NO edge - every
+> momentum variant loses to equal-weighting. Read 45 before acting on
+> anything below. The century-scale effect in 43a is real; the claim
+> that it is exploitable is not.
 
 Not detector #7. Findings 33/34/41b/42/H9 tested ideas I invented;
 industry momentum is documented (Moskowitz & Grinblatt 1999) and
@@ -1603,3 +1609,68 @@ Looks like a large win. It is not.
 RULED OUT.** Caveat: yfinance began returning HTTP 401 on split lookups
 mid-run, so split adjustment for delisted names rests entirely on the
 strip_splits heuristic. Treat magnitudes as directional.
+
+
+## 45. Sector momentum on tradeable ETFs - no edge. Finding 43 closed.
+
+The decisive test of finding 43. Same 12-1 momentum, run on the 11 SPDR
+sector ETFs (the universe actually purchasable) 1999-2026, charging real
+costs: 0.09%/yr expense plus 10bp per unit turnover.
+
+**Correction to 43c**: it claimed 0.35-0.50% expense ratios. That is
+right for niche INDUSTRY ETFs but wrong for the SPDR sectors, which
+charge ~0.09%. The tradeable version is CHEAP. Fees are not what kills
+it - there is simply nothing there.
+
+| strategy | CAGR | maxDD | vs EW | t | p |
+|---|---|---|---|---|---|
+| **EW all 11 (control)** | **8.64%** | -49.2% | - | - | - |
+| SPY | 8.22% | -50.8% | -0.42pp | | |
+| mom_top2 | 8.44% | -45.3% | -0.20pp | 0.21 | 0.83 |
+| mom_top3 | 8.29% | -41.5% | -0.35pp | -0.01 | 0.99 |
+| mom_top4 | 8.33% | -43.6% | -0.31pp | -0.06 | 0.95 |
+| mom_top5 | 7.97% | -42.1% | -0.66pp | -0.46 | 0.65 |
+
+**Every variant LOSES to equal-weighting all 11 and never trading.**
+Not weak - negative, t indistinguishable from zero.
+
+### Granularity vs recency - the control that changed the conclusion
+
+43c blamed granularity, but the SPDRs only start in 1998-12, so
+"too coarse" was confounded with "too recent". Re-running the French
+portfolios restricted to 1999+ separates them:
+
+| universe, 1999+ | top3 excess | t | p |
+|---|---|---|---|
+| French 49 | +5.73%/yr | 1.58 | **0.11** |
+| French 12 | +2.60%/yr | 1.49 | 0.14 |
+
+- **The 49-industry edge is NOT significant post-1999 either** (full
+  century: t=4.38, p=1.3e-5). Power alone does not explain it: if the
+  effect size were unchanged, t should fall to ~2.3 on 318 months, not
+  to 0.95 (top10). The effect roughly HALVED.
+- So both mechanisms are operating - coarse buckets AND post-publication
+  decay - and neither leaves anything to trade.
+
+### Verdict
+
+**Sector rotation is RULED OUT for this portfolio.** The century-scale
+effect in 43a is real and survives its controls; it is simply not
+available at tradeable granularity in the modern era. 43's "+2.5pp over
+the gated market" should not be quoted without this finding attached.
+
+### The one usable residue
+
+**Equal-weighting the 11 sectors beat SPY by +0.42pp/yr with a shallower
+drawdown (-49.2% vs -50.8%), with no timing and no forecasting.** Same
+equal-weight premium visible in the French data (EW-49 10.72% vs
+cap-weight 10.27%). Small, free, and implementable - RSP exists. Worth a
+proper test as a core-holding substitute, NOT as a rotation strategy.
+
+### Process note
+
+This is the third time a promising result has died on the control rather
+than on the headline (see 35, 44). The pattern to keep: never report an
+effect without running the benchmark that shares its structure -
+equal-weight for a concentrated portfolio, same-period for a
+different-universe claim.
