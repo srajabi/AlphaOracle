@@ -13,6 +13,9 @@ def parse_models(models_env_var, model_env_var, default_model):
     """
     Prefer comma-separated *_MODELS, fall back to single *_MODEL,
     then to a sensible default.
+
+    The list is a *fallback chain*, tried left to right until one model
+    answers. Put the cheapest acceptable provider first.
     """
     multi = os.getenv(models_env_var, "").strip()
     if multi:
@@ -33,7 +36,7 @@ DEFAULT_PM_MODEL = os.getenv("DEFAULT_PM_MODEL", "deepseek/deepseek-v4-flash")
 RISK_MODELS = parse_models("RISK_MODELS", "RISK_MODEL", DEFAULT_ROLE_MODEL)
 TECH_MODELS = parse_models("TECH_MODELS", "TECH_MODEL", DEFAULT_ROLE_MODEL)
 MACRO_MODELS = parse_models("MACRO_MODELS", "MACRO_MODEL", DEFAULT_ROLE_MODEL)
-PM_MODEL = os.getenv("PM_MODEL", DEFAULT_PM_MODEL)
+PM_MODELS = parse_models("PM_MODELS", "PM_MODEL", DEFAULT_PM_MODEL)
 
 def load_text_file(filepath):
     if os.path.exists(filepath):
@@ -118,15 +121,31 @@ def run_agent(role, prompt, model, context):
         return None
 
 
-def run_role_agents(role, prompt, models, context):
-    reports = []
+def run_agent_chain(role, prompt, models, context):
+    """
+    Try each model in order until one answers. Returns (content, model) on
+    the first success, or (None, None) once the chain is exhausted.
+
+    Any provider-side failure falls through to the next entry - insufficient
+    balance, an expired key, a rate limit, or an outage all look the same
+    from here and all have the same remedy: ask somebody else.
+    """
     for model in models:
         content = run_agent(role, prompt, model, context)
-        if content is None:
-            print(f"Skipping failed {role} report from {model}.")
-            continue
-        reports.append({"model": model, "content": content})
-    return reports
+        if content is not None:
+            return content, model
+        print(f"{role}: {model} unavailable, trying next provider.")
+
+    print(f"{role}: all {len(models)} providers failed.")
+    return None, None
+
+
+def run_role_agents(role, prompt, models, context):
+    """Returns a single-report list, or [] when every provider failed."""
+    content, model = run_agent_chain(role, prompt, models, context)
+    if content is None:
+        return []
+    return [{"model": model, "content": content}]
 
 
 def format_role_report_for_site(role_reports):
@@ -153,7 +172,7 @@ def generate_reports():
     date_str = datetime.now().strftime("%Y-%m-%d")
     print(
         "Model selection:",
-        f"risk={RISK_MODELS}, tech={TECH_MODELS}, macro={MACRO_MODELS}, pm={PM_MODEL}"
+        f"risk={RISK_MODELS}, tech={TECH_MODELS}, macro={MACRO_MODELS}, pm={PM_MODELS}"
     )
     
     # 1. Risk Manager
@@ -229,8 +248,8 @@ def generate_reports():
         "Be terse, specific, numeric. If signals and headlines disagree, say "
         "so explicitly and note that the rules govern positioning."
     )
-    sentinel_report = run_agent("Thesis Sentinel", sentinel_prompt,
-                                PM_MODEL, context)
+    sentinel_report, _ = run_agent_chain("Thesis Sentinel", sentinel_prompt,
+                                         PM_MODELS, context)
     if sentinel_report is None:
         sentinel_report = "_Thesis Sentinel unavailable this run._"
 
@@ -279,14 +298,20 @@ The JSON format MUST be exactly this structure:
   }}
 ]
 """
-    pm_report = run_agent("Portfolio Manager", pm_prompt, PM_MODEL, context)
+    pm_report, pm_model_used = run_agent_chain("Portfolio Manager", pm_prompt,
+                                               PM_MODELS, context)
 
     if pm_report is None:
-        # Exit non-zero WITHOUT touching trades.json/trades_meta.json: the
-        # stale-trades guard in execute_trades.py then refuses yesterday's
-        # trades, and the workflow surfaces this step as failed.
-        print("Portfolio Manager call failed; not updating trades.json.")
+        # Every provider in the chain failed. Exit non-zero WITHOUT touching
+        # trades.json/trades_meta.json: the stale-trades guard in
+        # execute_trades.py then refuses yesterday's trades, and the workflow
+        # surfaces this step as failed. The programmatic strategies
+        # (accounts 2-5) do not depend on this step and still run.
+        print("Portfolio Manager unavailable on every provider; "
+              "not updating trades.json.")
         sys.exit(1)
+
+    print(f"Portfolio Manager answered via {pm_model_used}.")
 
     # Extract JSON trades
     trades = []
