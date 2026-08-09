@@ -1,0 +1,118 @@
+{
+  "1x": {
+    "buy_hold": {
+      "terminal_x": 25.10170777988606,
+      "cagr_pct": 10.538633457232427,
+      "max_drawdown_pct": -55.19468867755253,
+      "trades": 1,
+      "trades_per_year": 0.031088082901554407,
+      "pct_time_invested": 100.0
+    },
+    "daily": {
+      "terminal_x": 15.824414409337543,
+      "cagr_pct": 8.964441532409072,
+      "max_drawdown_pct": -23.838340096820477,
+      "trades": 211,
+      "trades_per_year": 6.5595854922279795,
+      "pct_time_invested": 77.04169750801874
+    },
+    "daily_band5": {
+      "terminal_x": 23.47114461436114,
+      "cagr_pct": 10.308069223171469,
+      "max_drawdown_pct": -23.329162732649046,
+      "trades": 21,
+      "trades_per_year": 0.6528497409326426,
+      "pct_time_invested": 77.6461880088823
+    },
+    "weekly": {
+      "terminal_x": 14.611355207151098,
+      "cagr_pct": 8.694606536214744,
+      "max_drawdown_pct": -29.105808215668706,
+      "trades": 103,
+      "trades_per_year": 3.202072538860104,
+      "pct_time_invested": 76.8073032321737
+    },
+    "weekly_band5": {
+      "terminal_x": 21.509404362165156,
+      "cagr_pct": 10.009163329157754,
+      "max_drawdown_pct": -26.667526770739247,
+      "trades": 21,
+      "trades_per_year": 0.6528497409326426,
+      "pct_time_invested": 77.720207253886
+    },
+    "monthly": {
+      "terminal_x": 19.03103542835835,
+      "cagr_pct": 9.591288654153885,
+      "max_drawdown_pct": -35.709773987381524,
+      "trades": 37,
+      "trades_per_year": 1.150259067357513,
+      "pct_time_invested": 76.03010115963484
+    },
+    "monthly_band5": {
+      "terminal_x": 18.412538035470426,
+      "cagr_pct": 9.478782303039868,
+      "max_drawdown_pct": -33.71822990581864,
+      "trades": 19,
+      "trades_per_year": 0.5906735751295337,
+      "pct_time_invested": 77.57216876387861
+    }
+  },
+  "3x": {
+    "buy_hold": {
+      "terminal_x": 336.9235700788094,
+      "cagr_pct": 19.832909927664378,
+      "max_drawdown_pct": -96.75712813016489,
+      "trades": 1,
+      "trades_per_year": 0.031088082901554407,
+      "pct_time_invested": 100.0
+    },
+    "daily": {
+      "terminal_x": 512.6778988086813,
+      "cagr_pct": 21.407040739569382,
+      "max_drawdown_pct": -66.14244566268826,
+      "trades": 211,
+      "trades_per_year": 6.5595854922279795,
+      "pct_time_invested": 77.04169750801874
+    },
+    "daily_band5": {
+      "terminal_x": 1474.473156074867,
+      "cagr_pct": 25.46045138154389,
+      "max_drawdown_pct": -58.269433755942515,
+      "trades": 21,
+      "trades_per_year": 0.6528497409326426,
+      "pct_time_invested": 77.6461880088823
+    },
+    "weekly": {
+      "terminal_x": 404.49685807819554,
+      "cagr_pct": 20.5158017666665,
+      "max_drawdown_pct": -72.39306905872414,
+      "trades": 103,
+      "trades_per_year": 3.202072538860104,
+      "pct_time_invested": 76.8073032321737
+    },
+    "weekly_band5": {
+      "terminal_x": 1012.777314737552,
+      "cagr_pct": 24.00399225351606,
+      "max_drawdown_pct": -64.5521088362003,
+      "trades": 21,
+      "trades_per_year": 0.6528497409326426,
+      "pct_time_invested": 77.720207253886
+    },
+    "monthly": {
+      "terminal_x": 612.6437858655705,
+      "cagr_pct": 22.081246338818318,
+      "max_drawdown_pct": -80.33409568772156,
+      "trades": 37,
+      "trades_per_year": 1.150259067357513,
+      "pct_time_invested": 76.03010115963484
+    },
+    "monthly_band5": {
+      "terminal_x": 502.4281274561458,
+      "cagr_pct": 21.330841784163866,
+      "max_drawdown_pct": -77.90530787004062,
+      "trades": 19,
+      "trades_per_year": 0.5906735751295337,
+      "pct_time_invested": 77.57216876387861
+    }
+  }
+}

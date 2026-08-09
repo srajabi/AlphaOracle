@@ -521,3 +521,83 @@ day one. Tool: `tools/backtest_with_contributions.py`.
 - **Caveats**: window starts 2003-10 because `CAD=X` history does, so
   dot-com is excluded and the sample contains one fewer bear market than
   it should. Uses SPY in CAD rather than XEQT. Flat 2% cash yield.
+
+## 24. Check frequency: bands invert the answer (2026-08-09)
+
+Resolves a contradiction in this registry. Finding 5 says "monthly
+evaluation beats daily for trend"; finding 13 has the DAILY VIX channel
+beating monthly SMA200 in COVID (-7.6% vs -12.1%). Both are right,
+because the answer depends on hysteresis.
+
+SPY 1994-2026, signal live from day one, causality-checked
+(`signal.shift(1)`). Leverage simulated with daily reset plus 1.25%/yr
+drag. Tool: `tools/backtest_check_frequency.py`.
+
+| 1x | terminal | CAGR | maxDD | trades/yr |
+|---|---|---|---|---|
+| buy_hold | **25.1x** | 10.54% | -55.2% | 0 |
+| daily_band5 | 23.5x | 10.31% | **-23.3%** | 0.7 |
+| monthly | 19.0x | 9.59% | -35.7% | 1.2 |
+
+| 3x | terminal | CAGR | maxDD | trades/yr |
+|---|---|---|---|---|
+| buy_hold | 336.9x | 19.83% | **-96.8%** | 0 |
+| monthly_band5 | 502.4x | 21.33% | -77.9% | 0.6 |
+| **daily_band5** | **1474.5x** | **25.46%** | **-58.3%** | 0.7 |
+
+- **Finding 5 needs qualifying, not overturning.** Without bands, daily
+  loses to monthly (-16.3% at 3x) exactly as it claims. With 5% bands,
+  daily beats monthly by +193.5% at 3x.
+- **The mechanism is trade count, not reaction speed.** Raw daily
+  checking trades 6.6x/yr; daily with 5% bands trades 0.7x/yr - FEWER
+  than monthly's 1.2. Bands filter noise by requiring a meaningful move;
+  monthly filters it by discarding 30 days of information. Bands are
+  strictly the better instrument.
+- **At 1x there is no edge**, and this is the important negative. The
+  overlay's best variant returns 23.5x against buy-hold's 25.1x. On the
+  manifesto's stated bar - terminal wealth - it loses.
+- **But it loses cheaply, and that is what matters.** Daily+bands costs
+  0.23pp of CAGR to halve drawdown (-23.3% vs -55.2%); monthly costs
+  0.95pp for less protection.
+- **The two results are one result.** 3x buy-and-hold is uninvestable at
+  -96.8% (finding 4). Near-free drawdown reduction is what buys the
+  headroom to lever at all; the leverage then compounds. Bands do not
+  generate return - they make leverage survivable, and leverage
+  generates the return.
+- **Band sensitivity: a plateau with a cliff.** At 3x: 2% -> 1162x,
+  3% -> 1252x, 4% -> 2043x, 5% -> 1474x, 6% -> 1051x, all far above
+  buy-hold's 337x. Then 8% -> 306x, BELOW buy-hold. The 2-6% plateau is
+  the claim; the 4% peak is noise (a 38% swing to its neighbour) and
+  selecting it would be overfitting.
+- **Caveats that matter**: the 3x is SIMULATED from SPY daily returns
+  with a flat 1.25% drag, not actual TQQQ/UPRO - real funds carry
+  tracking error and variable financing. One asset, one 32-year window.
+  Six variants tested, so the winner is best-of-six. No transaction
+  costs, though at 0.7 trades/yr they are close to irrelevant.
+
+## 25. findings.md is not evidence until a test re-derives it
+
+Prompted by the user pointing out - correctly - that this registry is
+LLM-generated prose and may not be true.
+
+- **All 23 file paths cited by findings.md exist.** Necessary but not
+  sufficient.
+- **Finding 3's buy-hold reproduces to a decimal place**: claimed 9.8%
+  CAGR / 0.56 Sharpe / -34% maxDD, measured 9.9% / 0.57 / -34.2%. The
+  data and basic method are sound.
+- **Finding 3's OVERLAY claim does not reproduce.** Claimed -19% maxDD
+  and a Sharpe identical to buy-hold; an independent monthly-checked
+  build gives **-34.8% and 0.44**. Its headline, "a third of CAGR for
+  identical Sharpe", is not what an independent implementation produces.
+- **Most likely cause is an unrecorded specification, not a fabrication.**
+  Finding 24 shows check frequency alone moves maxDD by ~12pp, the right
+  order of magnitude; finding 3 almost certainly used daily checking and
+  never wrote it down. The number may well be right and is now
+  unfalsifiable, which for decision-making is nearly as bad as wrong.
+- **`tests/test_findings_reproduce.py` now re-derives claims from raw
+  data**, including a quarantine test that asserts the finding 3
+  discrepancy so it cannot be quietly forgotten.
+- **Protocol rules added**: a claim no test reproduces may not be cited
+  as evidence for a decision, and findings must record the
+  specification - tool, params, window, warmup, check frequency - not
+  just the number.

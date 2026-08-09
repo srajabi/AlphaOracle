@@ -60,6 +60,19 @@ strategy added raises the multiple-testing burden on all of them.
 8. **No promotion on forward data alone.** Months of paper trading
    cannot distinguish skill from luck. The attribution monitor's
    `off_script` flag is the forward-test signal, not P&L.
+9. **A number in markdown is not evidence.** `claude/findings.md` is
+   prose written by LLM sessions. Every quantitative claim must be
+   re-derivable by a test in `tests/test_findings_reproduce.py`. A
+   finding that no test reproduces **may not be cited as evidence for a
+   decision** - quote it as an open question instead.
+10. **Record the SPECIFICATION, not just the number.** State the tool,
+    the parameters, the window, the warmup and the check frequency.
+    Finding 3 is the cautionary case: buy-hold reproduces to a decimal
+    place, but its overlay claim of -19% maxDD comes out at -34.8% on an
+    independent monthly-checked build. Almost certainly it used daily
+    checking and never said so - finding 24 shows frequency alone moves
+    maxDD by ~12pp. The number was probably right and is now
+    unfalsifiable, which is nearly as bad as being wrong.
 
 ---
 
