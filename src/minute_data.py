@@ -215,18 +215,54 @@ def daily_from_minute(df):
     return out
 
 
-def overnight_gaps(ticker, start, end):
+def robust_session_edges(df, minutes=5):
+    """Per-day opening and closing levels resistant to a single bad tick.
+
+    TRAP 5 - the archive contains bad prints, and they land exactly where
+    tail-risk work is most sensitive. SPY on 2000-12-18 records an open
+    of 111.000 (low also 111.000) against a prior close of 131.45, then
+    trades back to 133 within the session: a -15.6% "gap" that is really
+    one spurious round-number tick. Taken naively it becomes the worst
+    overnight gap in SPY's history.
+
+    Using the median of the first/last `minutes` bars instead of a single
+    print is both robust to that and closer to what a real market order
+    at the open or close actually fills at.
+    """
+    if not len(df):
+        return pd.DataFrame(columns=["open_robust", "close_robust"])
+    grouped = df.groupby(df.index.date)["close"]
+    edges = pd.DataFrame({
+        "open_robust": grouped.apply(lambda s: s.iloc[:minutes].median()),
+        "close_robust": grouped.apply(lambda s: s.iloc[-minutes:].median()),
+    })
+    edges.index = pd.to_datetime(edges.index)
+    edges.index.name = "date"
+    return edges
+
+
+def overnight_gaps(ticker, start, end, robust=True, minutes=5):
     """Overnight return per trading day: today's open vs yesterday's close.
 
-    Uses the regular session so "open" means the 09:30 print rather than
-    a thin 04:00 pre-market tick, which is what a real order at the open
-    would actually receive.
+    Uses the regular session, so "open" is the 09:30 area rather than a
+    thin 04:00 pre-market tick.
+
+    robust=True (default) uses the median of the first/last `minutes`
+    bars rather than single prints. Set False only to reproduce the
+    naive figure - it is contaminated by bad ticks (see
+    robust_session_edges).
     """
-    daily = daily_from_minute(load_minute(ticker, start, end,
-                                          session="regular"))
-    if len(daily) < 2:
-        return pd.Series(dtype=float)
-    gap = daily["open"] / daily["close"].shift(1) - 1.0
+    df = load_minute(ticker, start, end, session="regular")
+    if robust:
+        edges = robust_session_edges(df, minutes)
+        if len(edges) < 2:
+            return pd.Series(dtype=float)
+        gap = edges["open_robust"] / edges["close_robust"].shift(1) - 1.0
+    else:
+        daily = daily_from_minute(df)
+        if len(daily) < 2:
+            return pd.Series(dtype=float)
+        gap = daily["open"] / daily["close"].shift(1) - 1.0
     return gap.dropna()
 
 

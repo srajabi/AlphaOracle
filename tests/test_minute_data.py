@@ -18,7 +18,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from src.minute_data import (  # noqa: E402
     ARCHIVE, adjustment_factors, daily_from_minute, load_minute,
-    _months, _symbols_for,
+    overnight_gaps, robust_session_edges, _months, _symbols_for,
 )
 
 needs_archive = pytest.mark.skipif(
@@ -149,3 +149,46 @@ def test_daily_ohlc_is_internally_consistent():
 def test_missing_ticker_returns_empty_not_error():
     df = load_minute("NOTATICKER123", "2022-01-03", "2022-01-04")
     assert len(df) == 0
+
+
+# ------------------------------------------------- trap 5: bad prints
+
+def test_robust_edges_ignore_a_single_bad_tick():
+    """A lone spurious print must not move the session's open."""
+    idx = pd.date_range("2022-01-03 09:30", periods=10, freq="1min",
+                        tz="America/New_York")
+    closes = [80.0, 100.0, 100.5, 100.2, 100.1,
+              100.3, 100.4, 100.2, 100.1, 100.0]
+    df = pd.DataFrame({"close": closes}, index=idx)
+    edges = robust_session_edges(df, minutes=5)
+    assert 99.0 < edges["open_robust"].iloc[0] < 101.0, \
+        "the 80.0 bad tick leaked into the robust open"
+
+
+def test_robust_edges_track_a_genuine_move():
+    """Robustness must not blunt a real gap - only isolated ticks."""
+    idx = pd.date_range("2022-01-03 09:30", periods=6, freq="1min",
+                        tz="America/New_York")
+    df = pd.DataFrame({"close": [80.0, 80.1, 79.9, 80.2, 80.0, 80.1]},
+                      index=idx)
+    edges = robust_session_edges(df, minutes=5)
+    assert 79.5 < edges["open_robust"].iloc[0] < 80.5, \
+        "a real move at the open was suppressed"
+
+
+@needs_archive
+def test_spy_2000_bad_print_does_not_become_worst_gap():
+    """TRAP 5 regression, with the specific number.
+
+    SPY 2000-12-18 records open/low of exactly 111.000 against a prior
+    close of 131.45, then trades back to 133 the same session. Read
+    naively that is -15.6% and becomes the worst overnight gap in SPY's
+    history; the day was actually slightly positive overnight.
+    """
+    naive = overnight_gaps("SPY", "2000-12-01", "2000-12-31", robust=False)
+    robust = overnight_gaps("SPY", "2000-12-01", "2000-12-31", robust=True)
+
+    assert naive.loc["2000-12-18"] < -0.15, \
+        "expected the raw artefact to be present with robust=False"
+    assert robust.loc["2000-12-18"] > -0.02, \
+        "bad print still contaminating the robust gap"
