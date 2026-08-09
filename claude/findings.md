@@ -796,3 +796,53 @@ honestly ranked:
    correlated ones, so they add less than their count suggests.
 4. **Longer history** - pre-1990 needs different sources; the minute
    archive starts 1992 and does not help with macro-horizon questions.
+
+
+## 30. The Depression is the case for the overlay, and SPY-era data hides it
+
+Deep history ingested (finding 31). Kenneth French daily US market total
+return from 1926-07 turns the lost-decade sample from n=1 into n~4 and
+adds the only observation that actually decides the leveraged sleeve.
+
+US market drawdowns worse than -40%, total return, 1926-2026:
+
+| Onset | Trough | Recovered |
+|---|---|---|
+| 1930-09 | **-83.9%** | 1944-12 (**14 years**) |
+| 1974-09 | -46.4% | 1976-06 |
+| 2002-09 | -44.7% | 2006-01 |
+| 2008-11 | -50.2% | 2011-02 |
+
+The SPY-era sample contains two of these; the century contains four, and
+the worst is twice the depth of anything modern.
+
+### 1929-1935, daily-reset leverage at the calibrated 5.01% drag
+
+| | maxDD | terminal |
+|---|---|---|
+| 1x buy-hold | -84.07% | 0.72x |
+| 2x buy-hold | -98.54% | 0.155x |
+| **3x buy-hold** | **-99.89%** | **0.0225x** |
+| 1x overlay | -30.96% | 1.75x |
+| 2x overlay | -57.77% | 1.69x |
+| **3x overlay** | -75.85% | **1.44x** |
+
+- **3x buy-and-hold through the Depression is a 97.75% PERMANENT loss.**
+  Not a drawdown to ride out - an unrecoverable wipeout. The same window
+  with the overlay finishes 44% ahead.
+- **This is the strongest evidence in the repo for the overlay, and it
+  is unobtainable from post-1993 data.** Findings 24, 26 and 27 all
+  argued the case on 2000 and 2008; those are mild by comparison.
+- **The overlay does not make 3x comfortable.** It still drew down
+  -75.85%. Surviving is not the same as holdable, and the manifesto
+  test is whether the position is actually held.
+- **1937-1940 is a lost decade worse than 2000-2010**: -5.63%/yr
+  nominal over ten years, against -2.48%/yr for the 2008-2010 window.
+- **Methodological note**: French is TOTAL return (Mkt-RF + RF); the SPY
+  series used elsewhere in this repo is price-only. Mixing them silently
+  understates the older history by the dividend yield, which was far
+  higher pre-war. Do not join these two series without adjusting.
+- **Caveats**: the 3x is simulated, and no 3x fund existed in 1929 - in
+  practice leverage then was margin debt with margin calls, which is
+  worse, not better. Daily-reset mechanics are applied to an era whose
+  market microstructure was entirely different.
