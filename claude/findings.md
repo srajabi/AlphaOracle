@@ -947,3 +947,60 @@ Tool: `tools/backtest_vol_target.py`.
 - **Caveats**: one vol lookback (60d) and one band (5%) - neither swept.
   Leverage capped at 3x, which binds on the vol-target variants in calm
   periods and is itself a parameter. US market only.
+
+
+## 33. H11 - Markov regime switching: the edge is entirely lookahead
+
+Tests the claim heard constantly, that practitioners identify bull/bear
+regimes and adjust within them. Hamilton-style two-state Markov
+switching with switching variance, fitted by EM on French monthly total
+returns, out-of-sample window 1946-07 onward (first 20 years reserved
+for training). Tool: `tools/backtest_markov_regime.py`.
+
+Two variants, and the gap between them IS the finding:
+- **smoothed**: fitted on all history, using smoothed regime
+  probabilities. This is how the analysis is normally presented.
+- **walk-forward**: refit on an expanding window every 12 months, using
+  only the FILTERED probability at the last observed point, decision
+  lagged one month.
+
+| Variant | CAGR | maxDD | %invested | switches/yr |
+|---|---|---|---|---|
+| buy_hold 1x | 11.16% | -50.2% | 100% | 0.01 |
+| trend_gate 1x | 10.57% | **-24.4%** | 79% | 0.49 |
+| markov_smoothed 1x (LOOKAHEAD) | 12.71% | -27.6% | 93% | 0.29 |
+| markov_walkforward 1x | 10.07% | -50.2% | 95% | 0.11 |
+| buy_hold 2x | 15.20% | -80.8% | 100% | 0.01 |
+| trend_gate 2x | 15.14% | **-51.0%** | 79% | 0.49 |
+| markov_smoothed 2x (LOOKAHEAD) | **19.14%** | -55.2% | 93% | 0.29 |
+| markov_walkforward 2x | **13.13%** | **-84.9%** | 95% | 0.11 |
+
+- **The in-sample model looks excellent and the honest one is worse than
+  buy-and-hold.** At 2x: 19.14% smoothed vs 13.13% walk-forward, against
+  buy-hold's 15.20%. Drawdown -55.2% smoothed vs -84.9% walk-forward
+  against buy-hold's -80.8%. Every apparent advantage was lookahead.
+- **Smoothed probabilities are a DESCRIPTION of history, not a signal.**
+  The smoothed probability at time t incorporates data from t+1 onward.
+  Presenting it as a strategy is the same class of error as finding 23's
+  `signal[T]` vs `returns[T]` bug, but harder to spot because the model
+  is sophisticated.
+- **The honest model barely de-risks**: 95% invested, 0.11 switches/yr.
+  It does not identify a bear until the bear is essentially over, which
+  is the known behaviour of filtered regime probabilities.
+- **The crude trend gate beats it on the thing that matters.** At 2x it
+  cuts drawdown -80.8% -> -51.0% for 0.06pp of CAGR, while the
+  sophisticated model made drawdown WORSE.
+- **Reconciles the folklore.** Regime detection is real and this project
+  already does it - the trend gate IS a regime classifier expressed as a
+  position. What does not work is regime PREDICTION, and the published
+  charts that appear to show it working are usually smoothed in-sample
+  fits.
+- **Detection and the trading rule are the same object.** There is no
+  "detect the regime, then adjust" - by the time detection fires, the
+  adjustment has happened. Describing them as two steps invents a
+  separation that does not exist.
+- **Caveats**: two states only; a three-state model (bull/bear/chop) is
+  untested. Monthly frequency. Refit every 12 months rather than every
+  month, for EM cost - more frequent refitting could help the
+  walk-forward variant somewhat, though it cannot manufacture
+  information the filtered probability does not have.

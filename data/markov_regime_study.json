@@ -1,0 +1,50 @@
+{
+  "buy_hold_1x": {
+    "cagr_pct": 11.16489919185324,
+    "max_dd_pct": -50.17186076558936,
+    "pct_invested": 100.0,
+    "switches_per_year": 0.0125
+  },
+  "trend_gate_1x": {
+    "cagr_pct": 10.572885853136448,
+    "max_dd_pct": -24.35997095642296,
+    "pct_invested": 78.75,
+    "switches_per_year": 0.4875
+  },
+  "markov_smoothed_LOOKAHEAD_1x": {
+    "cagr_pct": 12.713324670345338,
+    "max_dd_pct": -27.612802010386204,
+    "pct_invested": 93.22916666666666,
+    "switches_per_year": 0.2875
+  },
+  "markov_walkforward_1x": {
+    "cagr_pct": 10.072190725653396,
+    "max_dd_pct": -50.17186076558937,
+    "pct_invested": 95.0,
+    "switches_per_year": 0.1125
+  },
+  "buy_hold_2x": {
+    "cagr_pct": 15.198348667285021,
+    "max_dd_pct": -80.84716218823745,
+    "pct_invested": 100.0,
+    "switches_per_year": 0.0125
+  },
+  "trend_gate_2x": {
+    "cagr_pct": 15.140078574122606,
+    "max_dd_pct": -51.03289967330764,
+    "pct_invested": 78.75,
+    "switches_per_year": 0.4875
+  },
+  "markov_smoothed_LOOKAHEAD_2x": {
+    "cagr_pct": 19.143914319673748,
+    "max_dd_pct": -55.18343147080811,
+    "pct_invested": 93.22916666666666,
+    "switches_per_year": 0.2875
+  },
+  "markov_walkforward_2x": {
+    "cagr_pct": 13.133865951653444,
+    "max_dd_pct": -84.9399258145352,
+    "pct_invested": 95.0,
+    "switches_per_year": 0.1125
+  }
+}
