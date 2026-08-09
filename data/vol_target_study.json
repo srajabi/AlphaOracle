@@ -1,0 +1,158 @@
+{
+  "full_sample": {
+    "fixed_1x_buyhold": {
+      "cagr_pct": 9.834309724581459,
+      "max_dd_pct": -84.07399476860208,
+      "terminal_x": 17677.631599366512,
+      "avg_leverage": 1.0,
+      "turnover_per_year": 0.0,
+      "years": 104.26190476190476
+    },
+    "fixed_1x_gate": {
+      "cagr_pct": 10.497336762711274,
+      "max_dd_pct": -37.95719208076152,
+      "terminal_x": 33108.71721393678,
+      "avg_leverage": 0.7366217553474919,
+      "turnover_per_year": 0.7097510847225394,
+      "years": 104.26190476190476
+    },
+    "fixed_2x_buyhold": {
+      "cagr_pct": 12.573093884382413,
+      "max_dd_pct": -98.40966170375222,
+      "terminal_x": 230499.28745466168,
+      "avg_leverage": 2.0,
+      "turnover_per_year": 0.0,
+      "years": 104.26190476190476
+    },
+    "fixed_2x_gate": {
+      "cagr_pct": 16.010482875779818,
+      "max_dd_pct": -63.87609310942328,
+      "terminal_x": 5304012.254546904,
+      "avg_leverage": 1.4732435106949837,
+      "turnover_per_year": 1.419502169445079,
+      "years": 104.26190476190476
+    },
+    "fixed_3x_buyhold": {
+      "cagr_pct": 13.004601180435337,
+      "max_dd_pct": -99.88986323586978,
+      "terminal_x": 343481.48080976144,
+      "avg_leverage": 3.0,
+      "turnover_per_year": 0.0,
+      "years": 104.26190476190476
+    },
+    "fixed_3x_gate": {
+      "cagr_pct": 20.889030640734173,
+      "max_dd_pct": -79.48720735952516,
+      "terminal_x": 388879113.08261275,
+      "avg_leverage": 2.2098652660424754,
+      "turnover_per_year": 2.1292532541676183,
+      "years": 104.26190476190476
+    },
+    "voltarget_10%": {
+      "cagr_pct": 8.658240952829921,
+      "max_dd_pct": -49.58429353660658,
+      "terminal_x": 5753.9047690186935,
+      "avg_leverage": 0.8683894468827831,
+      "turnover_per_year": 2.972245806255741,
+      "years": 104.26190476190476
+    },
+    "voltarget_10%_gate": {
+      "cagr_pct": 8.95481982876689,
+      "max_dd_pct": -36.44278107473923,
+      "terminal_x": 7645.140942198468,
+      "avg_leverage": 0.7138265645997154,
+      "turnover_per_year": 2.94116368250382,
+      "years": 104.26190476190476
+    },
+    "voltarget_15%": {
+      "cagr_pct": 10.865684669216801,
+      "max_dd_pct": -65.75957816142255,
+      "terminal_x": 46842.00743724294,
+      "avg_leverage": 1.2973490989468148,
+      "turnover_per_year": 4.333779914453329,
+      "years": 104.26190476190476
+    },
+    "voltarget_15%_gate": {
+      "cagr_pct": 11.512991133662487,
+      "max_dd_pct": -49.999155160463594,
+      "terminal_x": 85949.45724139882,
+      "avg_leverage": 1.0655047755222131,
+      "turnover_per_year": 4.2871567288254475,
+      "years": 104.26190476190476
+    },
+    "voltarget_20%": {
+      "cagr_pct": 12.948127253293794,
+      "max_dd_pct": -77.0700458796596,
+      "terminal_x": 326038.47599659854,
+      "avg_leverage": 1.704317827435857,
+      "turnover_per_year": 5.252319998948049,
+      "years": 104.26190476190476
+    },
+    "voltarget_20%_gate": {
+      "cagr_pct": 14.032686443228638,
+      "max_dd_pct": -61.11739043360826,
+      "terminal_x": 883058.0655222834,
+      "avg_leverage": 1.3952173936332313,
+      "turnover_per_year": 5.191377264038079,
+      "years": 104.26190476190476
+    },
+    "voltarget_25%": {
+      "cagr_pct": 14.523405049622173,
+      "max_dd_pct": -84.82093595890261,
+      "terminal_x": 1381741.835887321,
+      "avg_leverage": 2.054776552423955,
+      "turnover_per_year": 5.0983566463331,
+      "years": 104.26190476190476
+    },
+    "voltarget_25%_gate": {
+      "cagr_pct": 16.140218577720233,
+      "max_dd_pct": -69.01895594290866,
+      "terminal_x": 5959553.508775661,
+      "avg_leverage": 1.6693791323562703,
+      "turnover_per_year": 5.070483332159955,
+      "years": 104.26190476190476
+    },
+    "voltarget_30%": {
+      "cagr_pct": 15.505466258292566,
+      "max_dd_pct": -90.06542587715627,
+      "terminal_x": 3365579.151796104,
+      "avg_leverage": 2.315582040105201,
+      "turnover_per_year": 4.446675154006452,
+      "years": 104.26190476190476
+    },
+    "voltarget_30%_gate": {
+      "cagr_pct": 17.83271085457796,
+      "max_dd_pct": -73.90047616649021,
+      "terminal_x": 26934893.511163738,
+      "avg_leverage": 1.859987466794556,
+      "turnover_per_year": 4.526641282880949,
+      "years": 104.26190476190476
+    }
+  },
+  "deadband": {
+    "deadband_0%": {
+      "cagr_pct": 10.865684669216801,
+      "max_dd_pct": -65.75957816142255,
+      "terminal_x": 46842.00743724294,
+      "avg_leverage": 1.2973490989468148,
+      "turnover_per_year": 4.333779914453329,
+      "years": 104.26190476190476
+    },
+    "deadband_10%": {
+      "cagr_pct": 10.973182496668876,
+      "max_dd_pct": -66.22636967440843,
+      "terminal_x": 51822.58566486932,
+      "avg_leverage": 1.302803184837179,
+      "turnover_per_year": 2.02180138364962,
+      "years": 104.26190476190476
+    },
+    "deadband_25%": {
+      "cagr_pct": 11.49893216224429,
+      "max_dd_pct": -67.87643998339531,
+      "terminal_x": 84826.99214295075,
+      "avg_leverage": 1.3280210122081229,
+      "turnover_per_year": 1.2541400754326366,
+      "years": 104.26190476190476
+    }
+  }
+}

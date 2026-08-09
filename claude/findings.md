@@ -893,3 +893,57 @@ quoted:
   then was margin debt with margin calls, which is strictly worse. The
   expense ratio is held at 0.95% throughout though it would have been
   higher in earlier eras.
+
+
+## 32. H10 - vol targeting loses to the trend gate, and the architecture simplifies
+
+ARCHITECTURE.md proposed two controls: a trend gate for IN/OUT and a
+volatility target for HOW MUCH, citing finding 4's claim that vol
+targeting was the only leverage scheme to survive the dot-com test. Built
+and tested it. The claim does not carry.
+
+French daily total return 1926-2026, rate-correct financing (finding 31),
+60-day realised vol, leverage capped at 3x, signal lagged one day.
+Tool: `tools/backtest_vol_target.py`.
+
+| Strategy | avg lev | CAGR | maxDD | turnover/yr |
+|---|---|---|---|---|
+| fixed_1x_buyhold | 1.00x | 9.83% | -84.1% | 0.00x |
+| fixed_1x_gate | 0.74x | **10.50%** | -38.0% | 0.71x |
+| fixed_2x_gate | 1.47x | **16.01%** | -63.9% | 1.42x |
+| voltarget_20%_gate | 1.40x | 14.03% | -61.1% | 5.19x |
+| fixed_3x_gate | 2.21x | **20.89%** | -79.5% | 2.13x |
+| voltarget_30% | 2.32x | 15.51% | -90.1% | 4.45x |
+| voltarget_25% | 2.05x | 14.52% | -84.8% | 5.10x |
+
+- **The gate beats vol targeting at equal average leverage, on both
+  return and drawdown.** At ~1.4x: 16.01% vs 14.03%. At ~2.2x: 20.89%
+  vs 15.51%, with drawdown -79.5% vs -90.1%. Comparing at equal average
+  leverage is the whole point - a raw comparison is a leverage
+  difference in disguise.
+- **Gate + vol always beats vol alone** (e.g. 11.51% vs 10.87% at a 15%
+  target), so the GATE is doing the work. The two-control architecture
+  collapses to one control.
+- **Vol targeting costs 2-6x the turnover**: 4.33-5.25x/yr against the
+  gate's 0.71-2.13x. Commissions are ~zero at modern retail brokers and
+  liquid-ETF spreads are 0.5-2bp, so the binding cost is realised
+  capital gains in a taxable account - which scales with turnover.
+- **A deadband improves vol targeting on BOTH axes.** At a 15% target,
+  a 25% deadband cuts turnover 4.33x -> 1.25x AND raises CAGR
+  10.87% -> 11.50%. Less trading, better returns; the continuous
+  rebalancing was destroying value, not adding control.
+- **The gate wins at 1x over the century**: 10.50% vs 9.83% buy-and-hold,
+  with drawdown -38.0% vs -84.1%. This is the opposite of the
+  modern-sample result (findings 24, 27) and is entirely the Depression.
+- **This does not strictly refute finding 4**, which tested
+  vol_target_qqq_2x on QQQ from 1999 - different asset, different
+  window. But on a century of broad-market data the gate wins at every
+  comparable leverage, so finding 4's claim should not be generalised
+  beyond its original test.
+- **Consequence for ARCHITECTURE.md**: the "two controls" design is
+  wrong. One control - the trend gate - plus a fixed leverage ceiling
+  chosen as a judgement about tail tolerance. Simpler, fewer parameters,
+  and better on the evidence.
+- **Caveats**: one vol lookback (60d) and one band (5%) - neither swept.
+  Leverage capped at 3x, which binds on the vol-target variants in calm
+  periods and is itself a parameter. US market only.
