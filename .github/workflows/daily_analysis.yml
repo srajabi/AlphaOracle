@@ -456,3 +456,36 @@ jobs:
             exit 1
           fi
           echo "All steps healthy."
+
+      # ========================================================================
+      # DEAD-MAN'S SWITCH
+      #
+      # src/alerts.py sends a heartbeat after a quiet stretch, but it cannot
+      # detect its own absence: if Actions stops firing entirely, no heartbeat
+      # is sent and the silence is indistinguishable from calm. That is the
+      # failure mode that actually costs money, and closing it requires a
+      # watcher OUTSIDE GitHub.
+      #
+      # Contract with the external monitor (healthchecks.io or equivalent):
+      #   ping to $HEALTHCHECK_URL        -> the run finished healthy
+      #   ping to $HEALTHCHECK_URL/fail   -> it ran but something broke
+      #   no ping at all                  -> the monitor alerts you
+      #
+      # The third case is the whole point and is the one the in-workflow
+      # heartbeat structurally cannot cover.
+      # ========================================================================
+
+      - name: Dead-man's switch ping
+        if: always() && env.HEALTHCHECK_URL != ''
+        continue-on-error: true
+        env:
+          HEALTHCHECK_URL: ${{ secrets.HEALTHCHECK_URL }}
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          if [ "$JOB_STATUS" = "success" ]; then
+            TARGET="$HEALTHCHECK_URL"
+          else
+            TARGET="$HEALTHCHECK_URL/fail"
+          fi
+          echo "Pinging dead-man's switch (job status: $JOB_STATUS)"
+          curl -sS -m 20 --retry 3 "$TARGET" > /dev/null && echo "ping ok"
