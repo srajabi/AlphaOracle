@@ -117,6 +117,55 @@ jobs:
         continue-on-error: true
         run: python src/family_signals.py
 
+      # ========================================================================
+      # SIGNAL-CHANGE ALERTS
+      #
+      # Deliberately placed upstream of the LLM step. An alert about a real
+      # position must not sit downstream of an API balance - the LLM agents
+      # failed for ten consecutive runs on an unfunded provider, and a regime
+      # change during that window would have gone unannounced. Everything here
+      # is deterministic arithmetic over family_signals.json.
+      # ========================================================================
+
+      - name: Signal Change Alerts
+        id: alerts
+        continue-on-error: true
+        if: steps.family_signals.outcome == 'success'
+        run: python src/alerts.py
+
+      - name: Alert via Telegram
+        # No parse_mode: Telegram's legacy Markdown rejects unescaped
+        # characters that appear in our state names, and a 400 here means
+        # the alert is silently not delivered. Plain text always arrives.
+        if: steps.alerts.outputs.has_alerts == 'true' && env.TELEGRAM_BOT_TOKEN != ''
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          curl -sS --fail-with-body \
+            "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text@data/alert_message.md" > /dev/null
+          echo "Telegram alert sent: ${{ steps.alerts.outputs.subject }}"
+
+      - name: Alert via Email
+        if: steps.alerts.outputs.has_alerts == 'true' && env.MAIL_TO != ''
+        continue-on-error: true
+        env:
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.MAIL_SERVER || 'smtp.gmail.com' }}
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: ${{ steps.alerts.outputs.subject }}
+          to: ${{ secrets.MAIL_TO }}
+          from: AlphaOracle <${{ secrets.MAIL_USERNAME }}>
+          body: file://data/alert_message.md
+          convert_markdown: true
+
       - name: Run LLM Agents
         id: llm_agents
         # Skip (rather than analyze stale data) if ingestion failed.
@@ -400,6 +449,7 @@ jobs:
           check "fetch_portfolio_final"   "${{ steps.fetch_portfolio_final.outcome }}"
           check "attribution"             "${{ steps.attribution.outcome }}"
           check "family_signals"          "${{ steps.family_signals.outcome }}"
+          check "alerts"                  "${{ steps.alerts.outcome }}"
           check "newsletter"              "${{ steps.newsletter.outcome }}"
           if [ -n "$failed" ]; then
             echo "::error::Steps failed (run continued so other strategies still executed):$failed"
