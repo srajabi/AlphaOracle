@@ -1,0 +1,42 @@
+{
+  "always_hold": {
+    "n_windows": 73,
+    "median_terminal": 24547465.02728039,
+    "p10_terminal": 17625145.214133117,
+    "p90_terminal": 45493593.334431656,
+    "worst_terminal": 13005437.84749441,
+    "median_max_dd_pct": -44.84901129847027,
+    "median_first3y_dd_pct": -13.219847001619511,
+    "worst_first3y_dd_pct": -75.46086736727727
+  },
+  "always_gate": {
+    "n_windows": 73,
+    "median_terminal": 24951447.456599046,
+    "p10_terminal": 17187129.26380165,
+    "p90_terminal": 32232417.098928794,
+    "worst_terminal": 12737870.2539049,
+    "median_max_dd_pct": -23.754196714219866,
+    "median_first3y_dd_pct": -10.033479397135892,
+    "worst_first3y_dd_pct": -25.664687923758812
+  },
+  "gate_early": {
+    "n_windows": 73,
+    "median_terminal": 24972044.208035395,
+    "p10_terminal": 16730455.50847626,
+    "p90_terminal": 42763666.8770826,
+    "worst_terminal": 12565743.336798737,
+    "median_max_dd_pct": -44.75742786959395,
+    "median_first3y_dd_pct": -10.033479397135892,
+    "worst_first3y_dd_pct": -25.664687923758812
+  },
+  "gate_late": {
+    "n_windows": 73,
+    "median_terminal": 24547465.02728039,
+    "p10_terminal": 16181647.28403931,
+    "p90_terminal": 46138566.06365579,
+    "worst_terminal": 12780029.319993114,
+    "median_max_dd_pct": -44.194882030738846,
+    "median_first3y_dd_pct": -13.219847001619511,
+    "worst_first3y_dd_pct": -75.46086736727727
+  }
+}

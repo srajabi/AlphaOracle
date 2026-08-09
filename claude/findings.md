@@ -1130,3 +1130,50 @@ warmup live before scoring. Tool: `tools/backtest_oos_geography.py`.
   costs. Four regions are not four independent samples - global equity
   markets are heavily correlated, so this is fewer effective
   observations than it looks.
+
+
+## 36. Gate the entry phase, not the whole life - the user was right
+
+The user proposed using the trend gate for the first 2-3 years to
+cushion entry, then holding unhedged. I argued it was backwards: with
+800k deployed and ~2.2M of future contributions, most capital is not yet
+invested, so an early crash is a discount and a LATE crash is the
+damaging one - implying the gate is worth more later.
+
+Tested. **The user was right and I was wrong.**
+
+73 rolling 27-year windows, 1926-2026, 800k initial + 80k/yr, monthly
+gate. Tool: `tools/backtest_entry_phase_gate.py`.
+
+| Policy | median terminal | vs hold | p10 | med maxDD | worst first-3y DD |
+|---|---|---|---|---|---|
+| always_hold | 24.55M | - | 17.63M | -44.8% | **-75.5%** |
+| always_gate | 24.95M | +1.6% | 17.19M | -23.8% | -25.7% |
+| **gate_early (3y)** | **24.97M** | **+1.7%** | 16.73M | -44.8% | **-25.7%** |
+| gate_late (3y) | 24.55M | +0.0% | 16.18M | -44.2% | -75.5% |
+
+- **Terminal wealth is essentially identical across all four policies** -
+  a 1.7% spread. At this contribution rate and horizon the gate barely
+  moves the endpoint, which is finding 23 restated: contributions
+  dominate.
+- **Gating ONLY the first three years captures the entire entry
+  benefit.** Worst first-3-year drawdown falls -75.5% -> -25.7%,
+  identical to gating forever, at no cost to median terminal wealth.
+- **My "worth more later" hypothesis is dead.** gate_late has an
+  identical median to holding and a WORSE p10 (16.18M vs 17.63M). Most
+  3-year windows contain no crash so it rarely fires, and when it does
+  it whipsaws or misses the recovery.
+- **The -75.5% figure is the behavioural crux.** Deploying a lump sum
+  into 1929, 2000 or 2007 without the gate means watching three quarters
+  of it evaporate before contributions can help. That is the scenario
+  where a person abandons the strategy permanently - a risk terminal
+  wealth cannot see, and the reason MANIFESTO.md lists "a rule the user
+  actually follows for 27 years" as the first success criterion.
+- **Honest cost**: gate_early's p10 terminal is 16.73M against holding's
+  17.63M, so roughly 5% of terminal wealth in the bad tail buys the
+  protection. Cheap, not free.
+- **Caveats**: monthly gate (10-month SMA) rather than the daily
+  200-day rule, so this understates the daily version's
+  responsiveness. Rolling windows overlap heavily - 73 starts across a
+  century is far fewer independent observations (finding 29). US only.
+  No costs or taxes, which matters slightly for the gated variants.
