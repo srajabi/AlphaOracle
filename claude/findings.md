@@ -712,3 +712,34 @@ CAGR %, and overlay-minus-buyhold at matching leverage:
   trades/yr); one band value, though finding 24 showed a 2-6% plateau.
   Seven windows is not seven independent samples - they overlap heavily
   and share the same two bear markets.
+
+## 28. "Overdue for a crash" is not a signal (2026-08-09)
+
+Tested directly rather than argued. Months since SPY was last 20% below
+its running peak, against forward returns. SPY monthly, 1993-2026,
+n=375.
+
+- **corr(months-since-crash, forward 12m) = -0.087, p=0.091.** Not
+  significant.
+- **At 24 months, -0.164, p=0.001** - statistically real but R^2 ~2.7%,
+  which is no basis for an allocation decision.
+
+| Calm streak | n | mean fwd 12m | median | worst |
+|---|---|---|---|---|
+| 0-2y | 169 | +13.62% | +14.83% | -24.74% |
+| 2-5y | 95 | +10.30% | +14.33% | -43.43% |
+| 5-10y | 99 | +11.76% | +13.76% | -26.39% |
+| 10y+ | **12** | -2.29% | -7.80% | -18.17% |
+
+- **The alarming 10y+ row is n=12** - effectively one episode, and it is
+  the kind of cell that gets quoted as if it were evidence. It is not.
+- **As of 2026-03 the streak is 42 months**, squarely in the 2-5y bucket
+  at +10.30% mean forward return. Unremarkable.
+- **Elapsed time is not a mechanism.** Nothing makes a crash more likely
+  because one has not happened recently. Valuation and concentration are
+  real arguments for caution; "we're due" is not one, and it is
+  precisely the intuition that makes people de-risk into bull markets.
+- **Caveat**: this tests calendar spacing only. It says nothing about
+  whether valuation-based measures (CAPE and similar) predict forward
+  returns - a different question this repo has not tested, and one that
+  needs earnings data we do not currently hold.
