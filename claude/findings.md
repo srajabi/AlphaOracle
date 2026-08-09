@@ -846,3 +846,50 @@ the worst is twice the depth of anything modern.
   practice leverage then was margin debt with margin calls, which is
   worse, not better. Daily-reset mechanics are applied to an era whose
   market microstructure was entirely different.
+
+
+## 31. Rate-correct LETF financing - I overstated the problem
+
+Task 24, raised because every leveraged result used a flat 5.01%/yr drag
+calibrated on the 2010-2026 ZIRP era. I flagged it as possibly changing
+the core recommendation. It does not; it changes magnitudes.
+
+Correct mechanics: a 3x fund holds 3 units of exposure per unit of
+equity, borrows 2, and pays roughly (leverage-1) x short rate plus
+expenses. Implemented against the French daily risk-free series from
+1926, with the out-of-market leg earning rf rather than a flat 2%.
+
+3x overlay CAGR, rate-correct against the flat-drag figure previously
+quoted:
+
+| Era | avg short rate | rate-correct | flat-drag error |
+|---|---|---|---|
+| 1927-2026 | 3.01% | 20.76% | +1.95pp |
+| 1954-1981 rising | 4.81% | **19.66%** | +4.54pp |
+| 1982-2000 | 5.92% | **26.48%** | +8.15pp |
+| 2010-2026 ZIRP | 1.43% | 21.86% | **-0.90pp** |
+
+- **"LETFs do not work when rates are high" is WRONG.** The 3x overlay
+  returned 19.66%/yr through 1954-1981, an era containing the 1973-74
+  crash and the stagflation grind, with honest time-varying financing.
+- **Leverage multiplies the EQUITY RISK PREMIUM, not the total return.**
+  levered = equity + (lev-1) x (equity - rf) - expenses. High rates
+  historically arrived alongside high nominal equity returns, so the
+  premium survived. The condition that kills leverage is a low or
+  negative risk premium, which is NOT implied by a high short rate.
+- **The flat assumption erred in both directions**: overstating
+  high-rate eras by 2-8pp and understating ZIRP by 0.90pp, because real
+  financing from 2010-2021 was cheaper than 5%.
+- **Ranked threats to a leveraged sleeve**: (1) volatility drag from the
+  daily reset, which is rate-independent and converts chop into
+  permanent loss; (2) a low equity risk premium; (3) financing cost,
+  real but third.
+- **Standing correction**: findings 24, 26, 27, 30 and the 1927-2026
+  century run quote flat-drag numbers and are therefore too generous
+  pre-2010 and slightly too harsh post-2010. Directional conclusions
+  stand; magnitudes should be taken from here.
+- **Caveats**: real LETFs did not exist before 2006, so this models what
+  one WOULD have cost rather than what was available - actual leverage
+  then was margin debt with margin calls, which is strictly worse. The
+  expense ratio is held at 0.95% throughout though it would have been
+  higher in earlier eras.
