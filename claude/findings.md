@@ -1226,3 +1226,54 @@ horizon: 2.96M. Tool: `tools/backtest_levered_lifetime.py`.
   overlap heavily so this is far fewer independent observations than it
   appears (finding 29); no taxes, which matter for a permanently gated
   strategy in a non-registered account.
+
+
+## 38. The dot-com analogue - you do not need to predict the hype cycle
+
+The user's central worry: AI likely follows a Gartner hype cycle
+(railways, dot-com), so there is short-term bust risk even though the
+technology wins long-term. This was the exact conviction failure that
+cost them 2022-2026.
+
+Tested against the closest available analogue rather than argued.
+QQQ and SPY, 1999-01 to 2003-12, daily 200-day gate with 5% bands,
+warmup live, rate-correct financing.
+
+| | ends at | maxDD |
+|---|---|---|
+| QQQ 1x buy-hold | **0.714x** | -83.0% |
+| QQQ 1x + gate | **2.076x** | -41.1% |
+| QQQ 2x buy-hold | **0.174x** | -98.6% |
+| QQQ 2x + gate | **2.651x** | -69.6% |
+| SPY 1x buy-hold | 0.966x | -47.5% |
+| SPY 1x + gate | 1.524x | **-11.7%** |
+| SPY 2x + gate | 1.801x | -23.3% |
+
+- **The gate turned a -98.6% wipeout into +165% at 2x on QQQ.** It rode
+  the 1999 melt-up, exited in 2000, sat out the collapse and re-entered
+  in 2003.
+- **The strategic point: prediction is not required.** The gate does not
+  know whether AI is 1996 or 1999, and does not need to. A hype-cycle
+  bust is SLOW, which finding 27 identifies as exactly the shape the
+  gate catches (2 of 5 drawdowns caught - both slow ones). The user's
+  conviction problem was needing certainty before acting; the rule
+  replaces certainty with a response.
+- **Concentration amplifies both directions even when gated.** QQQ+gate
+  returned 2.076x with -41.1% drawdown against SPY+gate's 1.524x with
+  -11.7%. That is 36% more return for 3.5x the drawdown. The choice is
+  not "will AI bust" but "how much pain per unit of upside".
+- **The technology winning does not imply the equities win.** Railways
+  transformed Britain while investors lost ~85%; the internet
+  transformed everything while NASDAQ fell 78% and took 15 years to
+  recover. In 2000 the obvious winners were Cisco, Intel, Sun and
+  Nortel, while much of the value later accrued to firms that did not
+  exist at the peak (Google IPO 2004, Facebook 2012). Being right about
+  a technology says little about what to own, which is an argument from
+  the user's own thesis FOR broad diversification over a concentrated
+  Nasdaq bet.
+- **Caveats, and they are severe.** n=1. This is a single episode and
+  the gate's timing through it is partly luck - a bust that gapped down
+  rather than grinding would have caught it (finding 27: COVID and 2022
+  both beat the gate). QQQ history begins 1999 so the earlier run-up is
+  not in the window. Do NOT read 2.651x as an expectation; read it as
+  evidence that the mechanism does not require a forecast.
