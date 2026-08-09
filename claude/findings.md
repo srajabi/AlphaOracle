@@ -423,3 +423,39 @@ Tool: `tools/analyze_drawdown_speed.py`.
 - **Caveat**: 5 episodes is a small sample for a two-condition rule, and
   the two successes are the two events every trend rule catches. Do not
   read 41-43% avoided as an expectation.
+
+## 21. For a CAD investor, unhedged USD exposure is a hedge (2026-08-09)
+
+The user is Canadian, spends CAD, and asked whether to hold CAD. Testing
+what unhedged US equity actually does in CAD terms. 270 monthly
+observations, 2003-10 to 2026-03.
+
+- **corr(SPY, USD/CAD) = -0.569.** The CAD is a risk-on commodity
+  currency and the USD a risk-off reserve currency, so they move against
+  each other when equities fall.
+
+| Measured in | vol | maxDD |
+|---|---|---|
+| USD (what a US investor gets) | 14.48%/yr | -50.79% |
+| CAD, unhedged (what a Canadian gets) | **12.01%/yr** | **-41.82%** |
+
+- **In the 10 worst SPY months the USD rose +3.77% on average**, turning
+  a mean -10.08% USD loss into -6.77% in CAD. Roughly a third of the
+  drawdown absorbed by currency.
+- **This reverses the framing in finding 17.** That entry recorded
+  CAD/USD vol at 6.12%/yr as an irreducible live-vs-paper gap, which is
+  true for TRACKING but wrong as a risk statement: the FX exposure is
+  negatively correlated with the thing it is attached to, so it reduces
+  portfolio risk rather than adding it.
+- **Practical consequence: do NOT buy currency-hedged products.** A
+  CAD-hedged S&P fund strips out the cushion and hands back the US
+  investor's -50.79% drawdown. The correct structure is CAD-denominated
+  but currency-UNHEDGED, which is what XEQT already is - it holds its
+  foreign assets unhedged.
+- **This is a point in XEQT's favour that tracking error alone missed.**
+  Finding 17 evaluated XEQT as a proxy problem; as a holding for a
+  CAD-based investor it captures this cushion natively.
+- **Caveat**: 2003-2026 only, and the relationship rests on the CAD
+  behaving as a commodity/risk currency. A regime where Canada is the
+  haven, or an oil shock that lifts CAD during an equity selloff, would
+  weaken or invert it. It is a tendency, not a guarantee.
