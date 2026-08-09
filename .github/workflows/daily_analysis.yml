@@ -6,7 +6,15 @@ on:
     # NOTE: GitHub cron uses UTC; these map exactly during EST (UTC-5).
     - cron: '0 15 * * 1-5'
     - cron: '30 20 * * 1-5'
-  workflow_dispatch: # Allow manual triggering
+  workflow_dispatch:
+    inputs:
+      force_eod:
+        description: >-
+          Execute the EOD strategies (accounts 1-5) on this manual run.
+          Places real orders on the paper accounts - only use during
+          market hours, or orders queue to the next open.
+        type: boolean
+        default: false
 
 jobs:
   run-analysis:
@@ -168,13 +176,17 @@ jobs:
         # trigger's identity and is immune to that delay.
         run: |
           SCHEDULE="${{ github.event.schedule }}"
-          echo "Triggered by: ${SCHEDULE:-manual dispatch}"
+          FORCE="${{ github.event.inputs.force_eod }}"
+          echo "Triggered by: ${SCHEDULE:-manual dispatch}  force_eod=${FORCE:-n/a}"
           if [ "$SCHEDULE" = "30 20 * * 1-5" ]; then
             echo "is_eod=true" >> $GITHUB_OUTPUT
-            echo "3:30 PM ET (20:30 UTC) run - executing EOD strategies"
+            echo "3:30 PM ET (20:30 UTC) cron - executing EOD strategies"
+          elif [ "$FORCE" = "true" ]; then
+            echo "is_eod=true" >> $GITHUB_OUTPUT
+            echo "force_eod requested - executing EOD strategies"
           else
             echo "is_eod=false" >> $GITHUB_OUTPUT
-            echo "Not the EOD cron - skipping EOD strategy execution"
+            echo "Not the EOD cron and force_eod not set - skipping EOD execution"
           fi
 
       - name: Execute LLM Strategy (Account 1 - EOD)
