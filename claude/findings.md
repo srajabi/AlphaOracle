@@ -381,3 +381,45 @@ Tool: `tools/backtest_macro_lookahead.py`.
 - **Caveat**: one strategy, one signal, one asset. The size of the bias
   is specific to a 3-month payroll rule; a signal with a shorter lag
   (ICSA at 5 days) or a faster trigger would show a different gap.
+
+## 20. When the payroll filter works, and why (2026-08-09)
+
+Tests the obvious follow-up to finding 19: if macro cannot time 2020,
+does it work when the drawdown is slow? Every SPY drawdown worse than
+15% since 1994, against the vintage-correct payroll filter.
+Tool: `tools/analyze_drawdown_speed.py`.
+
+| Peak -> trough | Depth | Months | Exit | Decline avoided |
+|---|---|---|---|---|
+| 1998-06 -> 1998-08 | -15.3% | 3 | never | 0% |
+| 2019-12 -> 2020-03 | -19.4% | 4 | never | 0% |
+| 2021-12 -> 2022-09 | -23.9% | 10 | **never** | 0% |
+| 2007-10 -> 2009-02 | -50.8% | 17 | 2008-02 | **-43.4%** |
+| 2000-08 -> 2002-09 | -44.7% | 26 | 2000-09 | **-41.5%** |
+
+- **Speed alone does not explain it.** The two catches were the two
+  slowest episodes, and both were caught EARLY - after only 5% (2000)
+  and 13% (2008) of the fall, avoiding 41-43% of the decline. That is
+  the overlay working exactly as designed.
+- **2022 refutes the simple "slow = works" reading.** Ten months and
+  -23.9%, and the filter never fired, because payrolls kept GROWING
+  throughout. It was a rate and inflation repricing, not an employment
+  recession.
+- **The actual rule needs BOTH conditions**: the drawdown must be slow
+  enough to outlast a ~35-day publication lag, AND be accompanied by
+  labour-market deterioration. 2020 failed the first, 2022 failed the
+  second. Only 2000 and 2008 satisfied both.
+- **Practical consequence: the payroll filter is a recession detector,
+  not a drawdown detector.** It will sit through any decline that does
+  not show up in employment. Sizing an overlay as though it catches
+  drawdowns generally would be a category error - on this sample it
+  caught 2 of 5.
+- **This is an argument FOR the existing two-channel design, not for
+  adding macro.** The fast channel (VIX term structure) exists precisely
+  for the 2020 shape, and the slow channel (200dma trend) is a price and
+  therefore fires on 2022-style declines that employment never sees.
+  A payroll overlay would have added nothing in 3 of these 5 episodes
+  that the existing channels do not already cover.
+- **Caveat**: 5 episodes is a small sample for a two-condition rule, and
+  the two successes are the two events every trend rule catches. Do not
+  read 41-43% avoided as an expectation.

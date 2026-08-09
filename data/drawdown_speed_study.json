@@ -1,0 +1,52 @@
+[
+  {
+    "peak": "1998-06",
+    "trough": "1998-08",
+    "depth_pct": -15.3,
+    "months_peak_to_trough": 3,
+    "speed_pct_per_month": -5.09,
+    "exit": null,
+    "decline_avoided_pct": 0.0,
+    "timing": "never exited"
+  },
+  {
+    "peak": "2000-08",
+    "trough": "2002-09",
+    "depth_pct": -44.7,
+    "months_peak_to_trough": 26,
+    "speed_pct_per_month": -1.72,
+    "exit": "2000-09",
+    "decline_avoided_pct": -41.5,
+    "timing": "exited 2000-09 after -5% of the fall"
+  },
+  {
+    "peak": "2007-10",
+    "trough": "2009-02",
+    "depth_pct": -50.8,
+    "months_peak_to_trough": 17,
+    "speed_pct_per_month": -2.99,
+    "exit": "2008-02",
+    "decline_avoided_pct": -43.4,
+    "timing": "exited 2008-02 after -13% of the fall"
+  },
+  {
+    "peak": "2019-12",
+    "trough": "2020-03",
+    "depth_pct": -19.4,
+    "months_peak_to_trough": 4,
+    "speed_pct_per_month": -4.86,
+    "exit": null,
+    "decline_avoided_pct": 0.0,
+    "timing": "never exited"
+  },
+  {
+    "peak": "2021-12",
+    "trough": "2022-09",
+    "depth_pct": -23.9,
+    "months_peak_to_trough": 10,
+    "speed_pct_per_month": -2.39,
+    "exit": null,
+    "decline_avoided_pct": 0.0,
+    "timing": "never exited"
+  }
+]
