@@ -1,3 +1,90 @@
+# Session 2026-08-09 - bands settled, three ideas ruled out, one edge closed
+
+385 tests pass. Findings 41-46 added. Everything below is committed.
+
+## What was settled
+
+- **Band width: 4% for the US sleeve** (41c). 77 rolling 27y windows with
+  contributions: 4% has the top p90 (43.7M), shallowest worst drawdown
+  (-33.4%) and least trading (0.89 sw/yr). 2% ties on upside and wins the
+  worst case (12.5M vs 10.7M) but draws down deeper. **The bigger point:
+  band width is second-order. Gating adds ~5M at p90 over buy-hold at
+  EVERY width.** 41a's 2% pick came from the international vote and does
+  not hold on US data.
+
+## What was ruled out (four in one session)
+
+- **Adaptive bands** (41b): efficiency-ratio version fails 0/4
+  out-of-sample. SECOND adaptive formulation to fail - the idea is
+  wrong, not the implementations.
+- **Breadth** (42): leads price in 15/16 drawdowns (p~0.0005 at a 4%
+  band) but is NOT tradeable - fires 6x/yr vs price's 0.89. ~20 false
+  alarms per real bear. Kept as an INFO alert only.
+- **Top-10 concentration** (44): t=1.76 p=0.089, fragile to 2023 alone,
+  and top-25 UNDERPERFORMS (p=0.435). Dollar-volume ranking biases
+  toward the winners in this sample.
+- **Sector rotation** (43 -> 45): the century-scale effect is real
+  (p=1.3e-5 over 1926-2026, survives the equal-weight control) but on
+  the 11 SPDR sector ETFs 1999-2026 with real costs EVERY variant loses
+  to equal-weighting. Post-1999 even the French 49 version is
+  insignificant (t=1.58). Both granularity and decay are operating.
+- **CAPE** (46): monotonic 10.4pp spread in forward 10y returns, but
+  n=9 non-overlapping decades (t=1.30, p=0.233) and every allocation
+  rule loses - cape_expanding gives up 1.84pp/yr for ZERO drawdown
+  reduction. 91% of months since 1995 rank "expensive"; longest unbroken
+  stretch 16.8 years from 1991-12.
+
+## Running total: the thesis has not moved
+
+Seven detectors, seven failures to beat a fixed-band price gate
+(Markov 33, vol bands 34, credit H9, macro 19/20, efficiency ratio 41b,
+breadth 42, CAPE 46). Two return-enhancers ruled out (44, 45).
+**AlphaOracle remains a risk-budgeting system, not a predictor.**
+
+## Standing conclusions for the sleeves
+
+- Gate: 200-day, **4% band**, permanent once levered (finding 30).
+- Leverage: 2x with permanent gate dominates 1x at every percentile;
+  3x is worse on worst-case. `increasing` ramp costs 19% of median for
+  an unlevered first-three-years experience.
+- Geography: **global market weight because the winner is
+  unidentifiable, NOT because a signal says international is cheap**
+  (46d). The gate does NOT rescue a bad country - it added only 28bp in
+  Japan vs 88bp in the US.
+
+## Bugs found and fixed this session (both mine)
+
+1. `lead_lag` in backtest_breadth_regime.py derived the trough via
+   argmin over a FIXED 2000-day window; on slow declines the -20%
+   crossing falls outside it, the index goes backwards, infinite loop.
+   Rewritten to scan contiguous drawdown runs. Cost 40 minutes.
+2. `market_gate_monthly` applied `.resample("ME").last()` - the gate
+   state on the FINAL day of month T - to month T's return. Printed
+   16.97% CAGR / -20.7% maxDD for a gate that is ~10.6% / -37.8%
+   everywhere else. **Heuristic that caught it: a familiar strategy
+   printing an unfamiliar number is a bug until proven otherwise.**
+
+## Open / next
+
+- **#12 per-sleeve signal outputs** - the alerting work is built but
+  breadth (42d) should be wired in as INFO, not ACTION.
+- **Relative cross-country CAPE is NOT tested** (46 gap) - the archive
+  has no international CAPE. This is the one live route to a geography
+  decision on evidence.
+- **Equal-weight as a core holding** (45 residue): EW 11 sectors beat
+  SPY by +0.42pp/yr with a shallower drawdown, no timing. Worth a
+  proper test vs RSP.
+- #16 stop-loss on intraday path, #18 LETF path-dependency, #4
+  canary-gates-core all still untouched.
+- yfinance now returns HTTP 401 on split lookups - split adjustment for
+  delisted names rests on the strip_splits heuristic. Affects finding 44
+  magnitudes.
+- [YOU] items unchanged: MAIL_*, TELEGRAM_*, provider funding,
+  HEALTHCHECK_URL.
+
+
+---
+
 # Current State
 
 ## What Changed
