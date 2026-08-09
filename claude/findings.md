@@ -1004,3 +1004,66 @@ Two variants, and the gap between them IS the finding:
   month, for EM cost - more frequent refitting could help the
   walk-forward variant somewhat, though it cannot manufacture
   information the filtered probability does not have.
+
+
+## 34. Rule slate v2 - the family works, the specific rule does not matter
+
+v1 (`tools/backtest_rule_slate.py`) concluded nothing beats SMA200+5%.
+The conclusion was unsupportable and partly wrong. Four defects, fixed
+in `tools/backtest_rule_slate_v2.py`:
+
+1. **Unequal average exposure** - rules were invested 0.59x to 0.74x of
+   the time, so comparing raw CAGR compared risk levels rather than
+   rules. This is precisely the error called out in finding 32, made two
+   experiments later.
+2. **One number per rule**, violating finding 27's own rule, in a tool
+   whose docstring claimed multi-window reporting it did not do.
+3. **A rigged fight** - finding 24 swept the band on this same data, so
+   5% is a SELECTED parameter, while each challenger got one arbitrary
+   value. v2 sweeps a small grid per rule and reports the MEDIAN of the
+   grid, not the best: best-of-grid is what overfitting looks like.
+4. **No confidence interval.** v2 adds a stationary block bootstrap
+   (500 resamples, 63-day blocks).
+
+All rules normalised to 1.00x average exposure, French daily total
+return 1926-2026, rate-correct financing:
+
+| Rule | CAGR | maxDD | bootstrap 5-95% |
+|---|---|---|---|
+| buy_hold | 9.83% | -84.1% | 6.37-13.02% |
+| **sma200_band5** | **12.30%** | -46.7% | 9.27-14.93% |
+| sma_window | 12.03% | -46.6% | 9.15-15.26% |
+| abs_momentum | 12.07% | -45.9% | 8.70-15.18% |
+| sma_ensemble | 11.71% | -43.7% | 8.97-14.69% |
+| sma_volband | 9.96% | -59.3% | 6.65-13.07% |
+| drawdown | 8.87% | -51.1% | 5.25-12.24% |
+
+- **Trend rules beat buy-and-hold by ~2.5pp at equal exposure.** v1
+  showed them as comparable at 1x because they carried LESS risk for
+  similar return; normalising revealed an edge that unequal comparison
+  had hidden. v1 was biased toward buy-and-hold.
+- **The top three are statistically indistinguishable**: 12.30 / 12.07 /
+  12.03 with bootstrap intervals overlapping almost entirely. Different
+  lookbacks and different formulations give the same answer within
+  noise.
+- **This is a STRONGER result than "200/5% is best".** If the edge were
+  a fitted parameter its neighbours would fail; they do not. What works
+  is the family - slow-lookback trend following with hysteresis - not
+  any specific member. Stop tuning the member.
+- **Two candidates genuinely failed**: vol-adjusted bands (9.96%) and
+  drawdown-triggered (8.87%), both near buy-and-hold with worse
+  drawdown than the trend family. The vol-band was my strongest
+  candidate on principle, which is a useful reminder that a principled
+  argument is not evidence.
+- **Crash-contingency holds throughout**: every trend rule loses in
+  `no_crash_era`, `letf_era` and `post_gfc_full`, and wins in
+  `two_crashes` and `lost_decade`.
+- **The remaining threat is not fixed and is the big one.** Nothing here
+  is out-of-sample: the 200-day convention was fitted to this exact
+  history by decades of practitioners, so the entire family could be one
+  large in-sample selection. The only real test is other countries -
+  JST's 17 economies and the French developed-market factors are both
+  downloaded and unused.
+- **Also not fixed**: single asset, and no transaction or tax cost,
+  which matters most for abs_momentum at 6.48x/yr turnover in a
+  non-registered account.
