@@ -252,3 +252,34 @@ stated (gold-friendly - standing caveat). Detailed session narrative:
 - Strategic docs: spikes/maturity_roadmap.md (3-tier plan),
   spikes/fund_path_and_data_roi.md (registration ladder + experiments),
   spikes/options_data_vrp_plan.md.
+
+## 17. XEQT.TO US-listed proxy for paper/live parity (2026-08-08)
+
+The live account can hold XEQT.TO; Alpaca is US-only, so the paper
+account needs a tradeable proxy. Fitted long-only, weights sum to 1,
+79 month-ends 2019-09 -> 2026-03. Tool: `tools/fit_xeqt_proxy.py`.
+
+- **VT 77% / EWC 23% is the recommended proxy**: TE 2.53%/yr, corr
+  0.9883, cumulative drift +0.6pp over 6.5y.
+- **VTI 52% / VXUS 24% / EWC 25% wins TE by 0.15pp (2.38%) but drifts
+  +5.8pp** - a systematic US overweight. Lower TE is not worth a proxy
+  that quietly diverges from the live position; drift is the metric that
+  matters for parity, not TE alone.
+- **VT alone is a serviceable one-ticker fallback**: TE 3.06%/yr, corr
+  0.9827, drift -1.4pp.
+- **EWC lands at 23-25% in every fit**, independently recovering XEQT's
+  ~24% prospectus Canada weight. Evidence the fit is structural, not
+  overfitted.
+- **Daily fitting is invalid here and produces a wrong answer.** XEQT.TO
+  has 88 zero-return days (thin early trading) vs VT's 9; its measured
+  daily vol (0.98%) is *below* VT's (1.22%), which is implausible for two
+  global all-equity funds. Daily correlation caps at ~0.92 regardless of
+  basket, and the daily fit assigns EWC 0% - an artefact. Month-end
+  sampling removes it, and month-end is the slow channel's own cadence.
+- **Standing caveat - CAD/USD is an irreducible 6.12%/yr gap.** The live
+  position earns in CAD, the paper proxy in USD. The fit is
+  FX-neutralised so it measures allocation tracking; the currency
+  difference is real and will show up as live-vs-paper divergence. The
+  attribution monitor must be told, or it will flag this as off_script.
+- **Sample is short and single-regime**: 79 months, all post-2019. No
+  GFC, no prolonged bear. Expect TE to widen in stress.
