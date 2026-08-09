@@ -1414,6 +1414,25 @@ days, mean 26.
 - **The lead is large for slow, narrow-topped bears (2000, 1969, 1973,
   2022) and ~zero for fast crashes (1987, 1929, COVID).** This is the
   same fast/slow split as finding 27. Nothing detects a gap-down.
+- **CORRECTION - the SIZE of the lead is mostly a property of the price
+  band, not of breadth.** Re-measured against every band width:
+
+  | price band | median lead | breadth first | breadth late | sign p | dot-com |
+  |---|---|---|---|---|---|
+  | 2% | 8d | 12/16 | 2 | 0.0129 | 14d |
+  | 3% | 12d | 14/16 | 0 | 0.0001 | 14d |
+  | **4%** | **14d** | **15/16** | 0 | **0.0001** | **137d** |
+  | 5% | 24d | 16/16 | 0 | <0.0001 | 137d |
+
+  The DIRECTION is robust - breadth is first at every width, including
+  the tightest (12/16, p=0.013). The MAGNITUDE is not: the headline
+  "137 days at the dot-com top" exists only at 4-5% bands, where price
+  did not cross until 2000-10. Against a 3% band price was 14 days
+  behind. That 137 was the price gate being slow, not breadth being
+  fast. What IS band-independent: breadth crossed on 2000-03-27, the
+  exact peak, in every configuration.
+  The numbers quoted above (14d, 15/16) are correct FOR the 4% band
+  chosen in 41c, and should always be quoted with the band stated.
 
 ### 42b. The lead does not convert into return
 

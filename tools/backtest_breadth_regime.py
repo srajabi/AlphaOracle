@@ -132,16 +132,19 @@ def gate_from(series, threshold, band, invert_band=True):
 
 def price_gate(level, band=BAND, window=SMA_WINDOW):
     sma = level.rolling(window).mean()
-    state, out = True, {}
-    for dt in level.index:
-        p, m = level.loc[dt], sma.loc[dt]
-        if pd.notna(m):
-            if state and p < m * (1 - band):
+    lv, mv = level.values, sma.values
+    out = np.ones(len(lv))
+    state = True
+    for i in range(len(lv)):
+        m = mv[i]
+        if m == m:                       # not NaN
+            if state and lv[i] < m * (1 - band):
                 state = False
-            elif (not state) and p > m * (1 + band):
+            elif (not state) and lv[i] > m * (1 + band):
                 state = True
-        out[dt] = 1.0 if state else 0.0
-    return pd.Series(out).shift(1).fillna(1.0)
+        out[i] = 1.0 if state else 0.0
+    # act on yesterday's data
+    return pd.Series(np.r_[1.0, out[:-1]], index=level.index)
 
 
 def perf(ret, rf, exposure):
@@ -157,62 +160,56 @@ def perf(ret, rf, exposure):
     }
 
 
-def drawdown_episodes(level, threshold=DD_THRESHOLD):
-    """Peak-to-trough episodes worse than `threshold`, as (peak, trough)."""
-    dd = level / level.cummax() - 1
-    episodes, in_ep, peak_i = [], False, None
-    running_peak = level.iloc[0]
-    for i, (dt, v) in enumerate(level.items()):
-        if v >= running_peak:
-            if in_ep:
-                in_ep = False
-            running_peak, peak_i = v, i
-        elif not in_ep and dd.iloc[i] <= threshold:
-            in_ep = True
-            trough_i = int(dd.iloc[i:].idxmin() == dd.index[i:])
-            seg = dd.iloc[i:]
-            end = seg.index.get_loc(seg.idxmin())
-            episodes.append((peak_i, i, i + end))
-    return episodes
-
-
-def lead_lag(level, breadth, threshold=0.50):
+def lead_lag(level, breadth, threshold=0.50, band=BAND):
     """Trading days by which breadth crosses BEFORE price, per episode.
 
     Positive = breadth is faster. This is the whole test; if the median
     is <= 0 there is no case for breadth as a detector.
-    """
-    sma = level.rolling(SMA_WINDOW).mean()
-    price_below = (level < sma * (1 - BAND)).values
-    breadth_below = (breadth.reindex(level.index) < threshold).values
-    dd = (level / level.cummax() - 1).values
 
-    rows, i, n = [], 0, len(level)
-    while i < n:
-        if dd[i] <= DD_THRESHOLD:
-            # walk back to the peak that started it
-            j = i
-            while j > 0 and dd[j] < 0:
-                j -= 1
-            # first crossing of each signal at or after the peak
-            p = next((k for k in range(j, n) if price_below[k]), None)
-            b = next((k for k in range(j, n) if breadth_below[k]), None)
-            trough = j + int(np.nanargmin(dd[j:min(n, j + 1500)]))
-            if p is not None and b is not None:
-                rows.append({
-                    "peak": str(level.index[j].date()),
-                    "trough": str(level.index[trough].date()),
-                    "depth_pct": float(dd[trough] * 100),
-                    "price_signal": str(level.index[p].date()),
-                    "breadth_signal": str(level.index[b].date()),
-                    "breadth_lead_days": int(p - b),
-                })
-            # skip past this episode's recovery
-            k = trough
-            while k < n and dd[k] < -0.02:
-                k += 1
-            i = k
-        i += 1
+    Episodes are contiguous runs of drawdown < 0, scanned once. An
+    earlier version walked an index pointer using argmin over a FIXED
+    2000-day window from the peak; on slow declines the -20% crossing
+    falls outside that window, the returned trough index precedes the
+    cursor, and the loop runs backwards forever. Do not reintroduce a
+    fixed lookahead window here - derive the trough from the run.
+    """
+    lv = level.values
+    sma = level.rolling(SMA_WINDOW).mean().values
+    br = breadth.reindex(level.index).values
+    n = len(lv)
+    dd = lv / np.maximum.accumulate(lv) - 1
+
+    below = (dd < 0).astype(np.int8)
+    edge = np.diff(below)
+    starts = np.flatnonzero(edge == 1) + 1
+    ends = np.flatnonzero(edge == -1) + 1
+    if below[0]:
+        starts = np.r_[0, starts]
+    if below[-1]:
+        ends = np.r_[ends, n]
+
+    price_below = lv < sma * (1 - band)
+    breadth_below = br < threshold
+
+    rows = []
+    for s, e in zip(starts, ends):
+        seg = dd[s:e]
+        if seg.min() > DD_THRESHOLD:
+            continue
+        trough = s + int(np.argmin(seg))
+        ps = np.flatnonzero(price_below[s:e])
+        bs = np.flatnonzero(breadth_below[s:e])
+        if not len(ps) or not len(bs):
+            continue
+        ps, bs = s + ps[0], s + bs[0]
+        rows.append({
+            "peak": str(level.index[s].date()),
+            "trough": str(level.index[trough].date()),
+            "depth_pct": float(seg.min() * 100),
+            "price_signal": str(level.index[ps].date()),
+            "breadth_signal": str(level.index[bs].date()),
+            "breadth_lead_days": int(ps - bs),
+        })
     return rows
 
 
