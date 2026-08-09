@@ -1,0 +1,34 @@
+{
+  "window": {
+    "start": "1994-02-28",
+    "end": "2026-03-31"
+  },
+  "naive": {
+    "cagr_pct": 10.050845464434088,
+    "vol_pct": 12.712869524930348,
+    "max_drawdown_pct": -26.787700834305884,
+    "sharpe_naive": 0.7906039973684977,
+    "total_growth_x": 21.773111582118595,
+    "months": 386
+  },
+  "vintage": {
+    "cagr_pct": 10.106266046024736,
+    "vol_pct": 12.931549554160792,
+    "max_drawdown_pct": -32.34077984791192,
+    "sharpe_naive": 0.7815201112362434,
+    "total_growth_x": 22.128592517895804,
+    "months": 386
+  },
+  "buy_and_hold": {
+    "cagr_pct": 10.420761630851372,
+    "vol_pct": 14.884831433658807,
+    "max_drawdown_pct": -50.7852927825692,
+    "sharpe_naive": 0.7000926867930185,
+    "total_growth_x": 24.25485881921527,
+    "months": 386
+  },
+  "signal_disagreements": 25,
+  "signal_disagreement_pct": 6.476683937823833,
+  "months_in_market_naive": 319,
+  "months_in_market_vintage": 320
+}

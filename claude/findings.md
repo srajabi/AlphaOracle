@@ -330,3 +330,54 @@ data: `data/overnight_gaps.json`.
   the ~6,500 sessions that span implies. Pre-2009 UPRO records are
   suspect; the 2020 tail figure is unaffected but its full-history
   percentiles should not be trusted.
+
+## 19. Macro lookahead hides in the tail, not the return (2026-08-09)
+
+One strategy, run two ways over 386 months (1994-02 to 2026-03). Signal:
+at each month end, hold SPY if payrolls grew over 3 months, else cash at
+the 13-week bill. NAIVE joins payrolls on the period label (assumes
+July's number is knowable on 31 July); VINTAGE gates on the ALFRED
+publication date and uses the value as first released.
+Tool: `tools/backtest_macro_lookahead.py`.
+
+| | CAGR | vol | maxDD | growth |
+|---|---|---|---|---|
+| naive (lookahead) | 10.05% | 12.71% | **-26.79%** | 21.77x |
+| vintage (correct) | 10.11% | 12.93% | **-32.34%** | 22.13x |
+| buy & hold SPY | 10.42% | 14.88% | -50.79% | 24.25x |
+
+- **The lookahead premium in CAGR is -0.06pp - effectively zero.** A
+  reviewer checking returns alone would conclude the bias is immaterial.
+  That conclusion is wrong.
+- **The bias lives in the drawdown: 5.55pp.** Lookahead flattered maxDD
+  from -32.34% to -26.79%. Anyone using this to size a position, or to
+  claim the overlay's tail protection, is quoting a number the strategy
+  could not have achieved.
+- **Signals disagree in only 6.5% of months (25 of 386), and they
+  cluster at turning points**: 2000-2003 (10), 2008 (1), 2010-2011 (5),
+  2020 (2), 2025-2026 (5). Rare, and concentrated exactly where the
+  decision carries the most money.
+- **Concrete instance: September 2001.** The naive run was out of the
+  market; the vintage run could not be, because the payroll release that
+  would have triggered the exit had not happened yet. Vintage lost
+  8.44pp more that month. The lookahead version "dodged" 9/11 by reading
+  a number published afterwards.
+- **The disagreements roughly cancel on return** (+2.46pp cumulative in
+  vintage's favour), which is why CAGR barely moves while the drawdown
+  path differs materially. Averages cancel; sequences do not.
+- **Strategy verdict: the payroll filter is a risk tool, not an alpha
+  tool.** It gives up 0.31pp of CAGR against buy-and-hold (10.11% vs
+  10.42%) and cuts maxDD from -50.79% to -32.34%. Same shape as finding
+  1's SMA200 result - the overlay truncates the left tail rather than
+  raising the median.
+- **Publication lags measured** (median / max days, ALFRED initial
+  release): ICSA 5/54, UMCSENT 26/57, UNRATE 34/80, PAYEMS 35/80,
+  RSAFS 44/85, INDPRO 45/93, CPIAUCSL 46/62, HOUST 47/130.
+- **Why macro cannot time a fast drawdown.** On 2020-03-15 the newest
+  published payrolls described February, and the newest jobless claims
+  the week of 2020-03-07 at 211k. Claims reached ~6.8M within a
+  fortnight. Every macro series was showing pre-crisis numbers while the
+  crisis was underway.
+- **Caveat**: one strategy, one signal, one asset. The size of the bias
+  is specific to a 3-month payroll rule; a signal with a shorter lag
+  (ICSA at 5 days) or a faster trigger would show a different gap.
