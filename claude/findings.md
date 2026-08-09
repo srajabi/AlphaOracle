@@ -283,3 +283,50 @@ account needs a tradeable proxy. Fitted long-only, weights sum to 1,
   attribution monitor must be told, or it will flag this as off_script.
 - **Sample is short and single-regime**: 79 months, all post-2019. No
   GFC, no prolonged bear. Expect TE to widen in stress.
+
+## 18. Overnight gap risk measured, not assumed (2026-08-09)
+
+Finding 14 sizes the satellite sleeve on an ASSUMED 15% underlying
+overnight gap (-22.5% at 2x, -45% at 3x). Now measured from 1-minute
+bars: 09:30 open vs prior 16:00 close, regular session both ends, using
+`robust_session_edges` (median of first/last 5 bars) so a single bad
+tick cannot manufacture a tail. Tool: `tools/measure_overnight_gaps.py`;
+data: `data/overnight_gaps.json`.
+
+| Ticker | n | from | worst | p0.1 | p1 | breaches <=-15% |
+|---|---|---|---|---|---|---|
+| SPY | 8,348 | 1993-02 | -10.46% | -4.42% | -1.94% | 0 |
+| QQQ | 6,806 | 1999-03 | -10.32% | -5.81% | -2.61% | 0 |
+| TQQQ | 4,057 | 2010-02 | -28.90% | -14.85% | -6.51% | 4 |
+| UPRO | 4,471 | 2000-03 | -32.08% | -14.63% | -6.58% | 4 |
+| SOXL | 4,038 | 2010-03 | -31.25% | -17.96% | -9.27% | 9 |
+| TLT | 5,957 | 2002-07 | -3.23% | -2.29% | -1.62% | 0 |
+| GLD | 6,103 | 1994-06 | -5.66% | -4.14% | -2.35% | 0 |
+
+- **The 15% underlying assumption is conservative and was never
+  breached.** SPY's worst is -10.46% (2020-03-16), QQQ's -10.32%
+  (2015-08-24).
+- **The -45% 3x ceiling is conservative by 13-16pp.** Worst observed:
+  UPRO -32.08%, SOXL -31.25%, TQQQ -28.90%, all on 2020-03-16.
+- **Leverage tracks cleanly through a gap.** SPY -10.46% against UPRO
+  -32.08% on the same date is 3.07x - the LETF did not decouple when it
+  mattered, which is the case the sizing rule was worried about.
+- **DO NOT relax the rule on this evidence.** The conservatism is doing
+  real work: every 3x product's tail rests on essentially ONE event
+  (2020-03-16). TQQQ and SOXL start in 2010, so 2008 and 1987 are not in
+  the sample at all. Measured worst x 25% weight = -8.0%, inside the
+  -10% budget, which would nominally permit ~31% sizing rather than 22%.
+  That headroom is an artefact of a sample with one crisis in it.
+- **SOXL is the fat tail**: p0.1 -17.96% and 9 breaches past -15%,
+  materially worse than TQQQ or UPRO. Sector 3x is not portfolio 3x.
+- **Methodology note - bad prints move the answer.** Naive
+  single-print gaps put SPY's worst at -15.56% (2000-12-18), a 5.10pp
+  contamination and the difference between "the 15% assumption was
+  breached once" and "it never was". That date records open and low of
+  exactly 111.000 against a 131.45 prior close, then trades back to 133
+  the same session. See `spikes/minute_data.md` trap 5.
+- **Caveat - UPRO's start date is wrong.** The series begins 2000-03-20
+  but UPRO launched in 2009, and n=4,471 over 26 years is far short of
+  the ~6,500 sessions that span implies. Pre-2009 UPRO records are
+  suspect; the 2020 tail figure is unaffected but its full-history
+  percentiles should not be trusted.
