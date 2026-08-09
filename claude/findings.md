@@ -1475,3 +1475,84 @@ up". It would have said that on 2000-03-27. It does not say sell.
 
 **Six detectors, six failures to beat a fixed-band price gate. The
 crude gate remains undefeated. Stop building detectors.**
+
+
+## 43. Sector rotation - the first real edge, and why it may not be tradeable
+
+Not detector #7. Findings 33/34/41b/42/H9 tested ideas I invented;
+industry momentum is documented (Moskowitz & Grinblatt 1999) and
+cross-sectional momentum is among the most replicated anomalies in
+finance. Data: French 49 industry portfolios, daily 1926-07 to 2026-06.
+Standard 12-1 spec, NOT tuned: rank on months t-11..t-1 skipping the
+most recent month, equal weight, monthly rebalance.
+
+### 43a. The effect is real and survives its controls
+
+| strategy | CAGR@0bp | @25bp | maxDD | turnover/mo |
+|---|---|---|---|---|
+| cap-wtd market | 10.27% | 10.27% | -83.9% | 0.00 |
+| **EW all 49 (control)** | **10.72%** | 10.72% | -80.8% | 0.00 |
+| mom_top5 | 16.85% | 15.45% | -69.0% | 0.41 |
+| mom_top10 | 15.53% | 14.36% | -62.3% | 0.34 |
+| mom_bottom10 | 4.66% | 3.63% | -90.3% | 0.33 |
+
+- **Monotonic**: top5 > top10 > top15 > EW > bottom10. Winners minus
+  losers +9.02%/yr, t=4.70, p=2.9e-6 over 1,188 NON-OVERLAPPING months
+  (so no finding-29 overlap inflation).
+- **The equal-weight confound was checked and is not the explanation.**
+  mom_top10 beats EW-all-49 by +3.63pp after 25bp, t=4.38, p=1.3e-5.
+  EW itself adds only 0.45pp over cap-weight.
+- **Survives publication.** Split at 1999: mom_top10 excess over market
+  fell from +5.3pp to +3.8pp. Decay, not disappearance - consistent
+  with McLean & Pontiff's ~50% post-publication decay.
+
+### 43b. It composes with the gate - different jobs
+
+| strategy | CAGR | maxDD |
+|---|---|---|
+| market buy-hold | 9.83% | -84.1% |
+| market + daily 4% gate | 10.63% | -37.8% |
+| mom_top10 ungated | 13.90% | -74.9% |
+| **mom_top10 + daily gate** | **13.11%** | **-36.6%** |
+| mom_top5 + daily gate | 13.62% | -38.1% |
+
+**+2.5pp/yr over the gated market at the SAME drawdown.** Momentum
+supplies return and NO protection; the gate supplies protection and
+little return. They solve different problems, which is why they stack.
+Every earlier idea tried to do the gate's job better and lost.
+NOTE: a MONTHLY gate hurts (12.12% vs 15.53%) - it is too slow. Use the
+daily gate.
+
+### 43c. Why it may not be tradeable - the granularity cliff
+
+| universe | best mom vs EW (25bp) | spread significance |
+|---|---|---|
+| 49 industries | +3.63 to +4.93pp | t=4.38, **p=1.3e-5** |
+| 12 industries | +0.23 to +1.88pp | t=2.77, p=0.006 |
+| 10 industries | +1.23 to +1.59pp | t=1.63, **p=0.10 (ns)** |
+
+- **The edge lives in fine distinctions that vanish when bucketed.**
+  At the ~11-sector granularity of real SPDR sector ETFs it is worth
+  ~1.5pp and is NOT statistically distinguishable from zero.
+- Trading 49 industries needs niche ETFs at 0.35-0.50% expense against
+  SPY's 0.03%; most did not exist before 2000. That fee gap alone eats
+  ~10% of the gross edge and is NOT charged above.
+- **Momentum has its own crash mode.** 12m to 2009-02: momentum -47.8%
+  vs market -42.5%. It underperformed DURING the crash and again in the
+  rebound. Ungated maxDD -62% to -77% - this is a return enhancer
+  carrying full equity risk, not a risk tool.
+
+**Realistic expectation for an implementable version: +1 to +1.5pp over
+the gated market, with a real chance of zero. Promising, not
+actionable.** Next: test on an actual tradeable ETF universe with real
+fees, post-2000 only.
+
+### 43d. Process note - a lookahead bug was caught mid-run
+
+The first run showed market_gated_4% at 16.97% CAGR / -20.7% maxDD
+against ~10.6% / -37.8% everywhere else in this repo. Cause:
+`.resample("ME").last()` takes the gate state on the FINAL day of month
+T, which was then applied to month T's return. Same causality class as
+the +271% SMA200 bug. **Heuristic confirmed again: a familiar strategy
+printing an unfamiliar number is a bug until proven otherwise.** The
+momentum figures never touched the gate and were unaffected.
