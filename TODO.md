@@ -1,0 +1,62 @@
+# AlphaOracle TODO
+
+Working list. Agent tasks and user actions in one place so nothing is
+lost between sessions. Newest context at the bottom of each section.
+
+Convention: `[ ]` open, `[x]` done, `[~]` in progress, `[!]` blocked.
+
+## Yours (user actions - nothing else can start these)
+
+- [ ] **Dedicated Gmail sender + `MAIL_*` secrets.** Use a *separate*
+  account, not your primary: a Google App Password authenticates for
+  Mail, which includes IMAP **read**, and bypasses 2FA. Secrets:
+  `MAIL_TO`, `MAIL_USERNAME`, `MAIL_PASSWORD` (16-char App Password),
+  optional `MAIL_SERVER`.
+- [ ] **Telegram bot + `TELEGRAM_*` secrets.** @BotFather -> `/newbot`
+  -> token. Message the bot once (bots cannot initiate). Read `chat.id`
+  from `https://api.telegram.org/bot<TOKEN>/getUpdates`. Secrets:
+  `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`.
+- [ ] **Provider funding / chain order.** DeepSeek is confirmed at zero.
+  The other four are *unknown* - checking dashboards. Chain order is the
+  drain order: put the balance nearest expiry first, then tell me and I
+  will set `RISK/TECH/MACRO/PM_MODELS`.
+
+## Verification pending (needs a real scheduled run)
+
+- [ ] **Monday 2026-08-10, 20:30 UTC** does triple duty:
+  1. Proves the EOD gate fix - accounts 1-5 should report success, not
+     skipped.
+  2. Reveals which providers in the fallback chain actually answer.
+  3. Establishes the alerting baseline (first run is silent by design).
+
+## Minute-data track (spike: `spikes/minute_data.md`)
+
+- [x] Audit the OHLCV-1m dataset - schema, tickers, coverage, traps.
+- [ ] `src/minute_data.py` access layer handling all four traps.
+- [ ] Measure the real overnight gap distribution; validate or refute
+      finding 14's assumed 15%.
+- [ ] Stop-loss backtests on true intraday path.
+- [ ] LETF path-dependency vs the daily approximation.
+
+## Research track
+
+- [ ] Macro regime data spike - FRED/ALFRED with vintage correctness.
+- [ ] Per-sleeve signal outputs (gold/SPY/TQQQ -> bullish/bearish/bonds).
+- [ ] Backtest the canary-gates-core variant (user's inverted 80/20).
+
+## Plumbing
+
+- [ ] Port the LLM fallback harness into `tests/`.
+- [ ] External dead-man's switch - the in-workflow heartbeat cannot
+      detect its own absence.
+
+## Done
+
+- [x] Multi-provider LLM fallback chains (`PM_MODEL` -> `PM_MODELS`).
+- [x] EOD gate keyed to cron identity, not wall clock.
+- [x] `force_eod` dispatch input.
+- [x] `scipy` declared in requirements (three test files could not
+      collect on a clean checkout).
+- [x] Repo-local `.venv` (no system Python was reachable).
+- [x] XEQT US-listed proxy - VT 77% / EWC 23%, finding 17.
+- [x] Signal-change alerting, upstream of the LLM step.
