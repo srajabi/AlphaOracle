@@ -18,23 +18,51 @@ is what we are trying to achieve and how we will know if we failed.
 - **Horizon 27 years.** Not retiring willingly - this capital is
   insurance against being unable to work, not a retirement date.
 - Income continues and likely grows. Business, moonlighting, more
-  comp - unknown but positive expectation.
-- **Ongoing contributor, zero withdrawals for decades.**
+  comp - unknown but positive expectation, deliberately not counted.
+- **Contributes ~80k CAD/yr. Zero withdrawals for decades.**
+- Horizon: realistically 30-35 more working years. Loves working.
 
-That last line is the single most important fact in this document, and
-most investment advice is written for people it does not describe.
+That contribution rate is the single most important fact in this
+document, and most investment advice is written for people it does not
+describe.
+
+**Do the arithmetic before designing anything.** 80k/yr for 27 years is
+~2.2M of contributions against an 800k starting base. The contributions
+are ~73% of the money that will ever be invested. This means:
+
+- **A drawdown is a discount on the majority of the capital**, because
+  most of it has not been deployed yet. Drawdown-avoidance is not merely
+  neutral here, it is actively costly: an overlay sits in cash during
+  exactly the months when contributions would buy cheapest.
+- Every backtest in this repo is **lump-sum** and therefore optimises
+  the wrong objective for this mandate. See H7.
+- Terminal wealth is far less sensitive to the starting 800k than
+  intuition suggests, and far more sensitive to the compounded return on
+  a stream of deposits.
 
 ## The parents - a SEPARATE mandate, not a smaller copy
 
-- ~1.8M CAD. **10 years from retirement.** They will withdraw.
-- Goal: double in 10 years (~7.2%/yr nominal).
+- ~1.8M CAD, combined income ~300k, ultra-frugal, **contributing ~80k/yr**.
+- **10-15 year timeline**, and they love working - they intend to work
+  until they cannot. Earnings may drop after that but stay sufficient.
+- Own a house (saleable), have OAS and other entitlements, and the son
+  and daughter can support them if needed.
+- Goal: double in ~10 years (~7.2%/yr nominal).
 
-They are the opposite case. They have sequence risk; a -40% drawdown at
-year 8 is permanent damage because they sell into it. Their son does not
-have that problem and must not be given their solution, nor they his.
+**Revised: they do NOT have meaningful sequence risk.** An earlier draft
+of this file assumed they did and recommended a drawdown overlay on that
+basis. That was wrong. They are still contributing, not withdrawing;
+they have a house, entitlements, and family backstop; and no fixed
+retirement date forces a sale into a downturn. Functionally they are a
+shorter-horizon version of the son's mandate, not an opposite case.
 
-**The same overlay is correct for them and wrong for him.** That is not
-a contradiction. It follows from withdrawals.
+The one honest caveat on the backstop: "we would draw on a HELOC" means
+borrowing against a house during the same downturn that hit the
+portfolio. That is correlated, not independent, insurance.
+
+**Ten years of advised mutual funds and GICs cost them roughly 4.6M**
+against holding the index (finding 22). The fee differential alone was
+~1.19M. This is the baseline any future decision is measured against.
 
 ## The actual question
 

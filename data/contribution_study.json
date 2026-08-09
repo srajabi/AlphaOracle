@@ -1,0 +1,58 @@
+{
+  "window": {
+    "start": "2003-10-31",
+    "end": "2026-03-31"
+  },
+  "lump_sum": [
+    {
+      "strategy": "buy_hold",
+      "terminal_cad": 8102886.491650744,
+      "total_contributed_cad": 800000.0,
+      "multiple_on_money_in": 10.12860811456343,
+      "max_drawdown_pct": -41.818166987604585,
+      "years": 22.5
+    },
+    {
+      "strategy": "sma200",
+      "terminal_cad": 6618313.629171046,
+      "total_contributed_cad": 800000.0,
+      "multiple_on_money_in": 8.272892036463809,
+      "max_drawdown_pct": -17.653296393581076,
+      "years": 22.5
+    },
+    {
+      "strategy": "sma200_bands",
+      "terminal_cad": 6963714.128203553,
+      "total_contributed_cad": 800000.0,
+      "multiple_on_money_in": 8.704642660254441,
+      "max_drawdown_pct": -16.849159938350546,
+      "years": 22.5
+    }
+  ],
+  "with_contributions": [
+    {
+      "strategy": "buy_hold",
+      "terminal_cad": 18164762.379071947,
+      "total_contributed_cad": 2600000.0,
+      "multiple_on_money_in": 6.986447068873826,
+      "max_drawdown_pct": -33.44014177707082,
+      "years": 22.5
+    },
+    {
+      "strategy": "sma200",
+      "terminal_cad": 14518166.356791219,
+      "total_contributed_cad": 2600000.0,
+      "multiple_on_money_in": 5.583910137227392,
+      "max_drawdown_pct": -16.819167088247834,
+      "years": 22.5
+    },
+    {
+      "strategy": "sma200_bands",
+      "terminal_cad": 15230514.214553032,
+      "total_contributed_cad": 2600000.0,
+      "multiple_on_money_in": 5.857890082520397,
+      "max_drawdown_pct": -16.093694827383175,
+      "years": 22.5
+    }
+  ]
+}

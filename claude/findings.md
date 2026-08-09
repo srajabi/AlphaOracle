@@ -459,3 +459,65 @@ observations, 2003-10 to 2026-03.
   behaving as a commodity/risk currency. A regime where Canada is the
   haven, or an oil shock that lifts CAD during an equity selloff, would
   weaken or invert it. It is a tendency, not a guarantee.
+
+## 22. The cost of advised funds and GICs (2026-08-09)
+
+Baseline for the parents' mandate. SPY in CAD, 2015-08 to 2026-03
+(10.6y): 3.92x total, 13.74% CAGR. On 1.8M:
+
+| | Terminal |
+|---|---|
+| index at 0.20% MER | 6,933,000 |
+| advised fund at 2.20% MER | 5,740,000 |
+| GIC at ~2.5%/yr | 2,340,000 |
+
+- **The 2.0pp fee differential alone cost ~1.19M.** The GIC allocation
+  cost ~4.6M against the index.
+- **Separate the two, they are not the same claim.** The GIC opportunity
+  cost is regime-dependent - it reflects one of the strongest bull runs
+  in history and is NOT a forward expectation. The fee drag is
+  regime-independent: 2pp of MER costs 2pp whatever the market does.
+- **Strategic consequence: the largest CERTAIN edge available to this
+  project is fee reduction, not alpha.** It requires no backtest,
+  carries no PBO, and is available immediately. The tournament champion
+  at 18% CAGR carries 0.36 PBO; a 2pp fee saving carries none.
+
+## 23. H7 - contributions make overlays worse, but modestly (2026-08-09)
+
+Every prior backtest here is lump-sum while both mandates contribute
+~80k/yr, so ~73% of the son's eventual capital arrives after t0. The
+hypothesis was that a trend overlay is worse under contributions,
+because it sits in cash exactly when deposits would buy cheapest.
+SPY in CAD, 2003-10 to 2026-03, 800k initial, 80k/yr, signal live from
+day one. Tool: `tools/backtest_with_contributions.py`.
+
+| Strategy | lump sum | with contributions | maxDD (contrib) |
+|---|---|---|---|
+| buy_hold | 8.10M | **18.16M** | -33.4% |
+| sma200 | 6.62M (-18.3%) | 14.52M (**-20.1%**) | -16.8% |
+| sma200_bands | 6.96M (-14.1%) | 15.23M (**-16.2%**) | -16.1% |
+
+- **Hypothesis confirmed but the effect is small.** Contributions widen
+  the overlay's shortfall by 1.8pp (sma200) and 2.1pp (bands). Real,
+  directionally as predicted, not decisive.
+- **The dominant fact is the level, not the delta.** The overlay costs
+  16-20% of terminal wealth under either accounting - roughly 3.6M on
+  these numbers. Contributions are a second-order aggravation of a
+  first-order problem.
+- **Ranking does NOT flip.** buy_hold wins both ways, so H7 does not
+  overturn the existing scoreboard; it sharpens the margin.
+- **Contributions mechanically damp drawdown**: buy_hold maxDD is -41.8%
+  lump-sum but -33.4% with contributions, because fresh capital dilutes
+  the peak. Reported drawdowns for a contributing investor are not the
+  lump-sum figures.
+- **A causality bug was caught and fixed mid-study, and it is worth
+  recording.** Aligning `signal[T]` with `returns[T]` lets the rule see
+  the month it is trading. That produced sma200 at **+271% over
+  buy-hold with -8.0% maxDD across 2008** - impossible for a monthly
+  trend rule, and the implausibility is what exposed it. Correct
+  alignment is `signal.shift(1)`. Any result showing a trend overlay
+  beating buy-hold by a large margin with a tiny drawdown should be
+  assumed to have this bug until proven otherwise.
+- **Caveats**: window starts 2003-10 because `CAD=X` history does, so
+  dot-com is excluded and the sample contains one fewer bear market than
+  it should. Uses SPY in CAD rather than XEQT. Flat 2% cash yield.
