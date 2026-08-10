@@ -1,3 +1,85 @@
+# Session 2026-08-09 (overnight) - both intraday TODOs closed
+
+Findings 51-53. 385 tests pass. All committed.
+
+## #18 CLOSED - the LETF simulator is right about beta, wrong about financing
+
+Real TQQQ/UPRO/QLD/SSO vs `r = L*r_und - (L-1)*rf - expense/252`,
+4,044-4,956 days each, inception-gated.
+
+- **Beta lands within 0.045 of nominal** on all four (2.975, 2.955,
+  1.996, 1.978), R2 0.9937-0.9972, rolling 1y gaps 0.94-1.06.
+- **TODO #18's premise is DISCONFIRMED.** Path dependence is significant
+  in 1 of 4 pairs, correct sign, negligible magnitude. Constant-L is fine
+  at daily resolution.
+- **The real defect is the FINANCING SPREAD.** The simulator charges
+  (L-1)*rf and no spread; real funds pay rf + ~0.5-1.5%/yr per unit
+  borrowed. Implied by decomposing drift against L x dividend yield -
+  and the observed drift ranks EXACTLY as that predicts
+  (UPRO>SSO>TQQQ>QLD), which is what confirms the mechanism rather than
+  assuming it. Yields are ASSUMED (no adj_close anywhere), so it is a
+  range, not a point.
+
+## #52 - what that costs the sleeves
+
+Median terminal wealth, 27y windows, 800k + 80k/yr:
+
+| policy | 0% spread | 1.5% spread | cost |
+|---|---|---|---|
+| 1x_gated | 24.95M | 24.95M | 0% |
+| **2x_gated** | 65.4M | **49.2M** | **-24.8%** |
+| 3x_gated | 135.2M | 78.7M | -41.8% |
+
+**The decision survives, the expectation does not.** Even at 1.5%,
+2x_gated returns 1.97x the median and 1.78x the worst case of 1x_gated.
+Findings 30/36/38 keep their ORDERING, lose ~25% of their LEVEL at 2x.
+**Plan with 1.0%/yr: median ~54M, not 65M.**
+
+3x gets relatively WORSE - worst case 14.30M vs 2x's 22.64M at 1.5%
+(was 24.47 vs 29.67 at zero). It pays the spread on two units of
+borrowing. Finding 30 holds a fortiori.
+
+## #16 CLOSED - close-only stop tests measure a different strategy
+
+Census, no strategy and no re-entry rule to argue about:
+
+| stop | SPY invisible to close-only | QQQ |
+|---|---|---|
+| 5% | 70% | 66% |
+| 10% | 85% | 75% |
+| 20% | **95%** | 88% |
+
+**A 20% trailing stop tested on closes sees 5 of 109 real SPY triggers.**
+Error GROWS with stop width. Stops ruled out.
+
+**Why the gate works where stops fail** (53c): a stop is a hair trigger
+on the LOW, the noisiest price of the day; the gate reads the CLOSE
+through a band, and the band is hysteresis that deliberately ignores
+exactly those moves. **The gate's slowness IS the mechanism.** Seven
+attempts to speed it up have now all degraded it.
+
+## Two process notes
+
+1. **A bad rule can masquerade as a finding.** The first stop-loss run
+   produced -100% drawdowns; the cause was a re-entry rule that bought
+   back the next day above the sale price, not intraday triggering. Fix
+   was to separate the measurement (census) from the strategy.
+2. **Ticker reuse is real.** Unfiltered UPRO gave beta -12.6 and a 427x
+   wealth ratio because OHLCV-1m holds a DIFFERENT security under that
+   ticker in 2000-2001 ($6.50, $2.94) before real UPRO launched
+   2009-06-25 at $128. **Always gate an ETF at its inception date.**
+
+## Remaining
+
+- #4 canary-gates-core, #12 per-sleeve signals (wire breadth in as INFO
+  per 42d), #22 H9 (superseded by finding 43/45 work).
+- Relative cross-country CAPE (46 gap) is still the only live route to
+  an evidence-based geography decision.
+- [YOU] MAIL_*, TELEGRAM_*, provider funding, HEALTHCHECK_URL.
+
+
+---
+
 # Session 2026-08-09 (cont) - the data archive is built
 
 Findings 47-50. Everything committed. Archive at E:/ColdStorage/archive.
