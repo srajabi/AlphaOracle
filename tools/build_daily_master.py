@@ -115,64 +115,49 @@ def build_ohlcv1m(limit=None):
 
 
 def build_alpaca():
-    """Stream the tar once; aggregate each ticker-month CSV to daily.
+    """Derive Alpaca daily from the MINUTE MASTER, not from the tar.
 
-    Memory-light by construction: each member is one ticker-month, so it
-    is aggregated and discarded immediately. Timestamps come from the
-    `millis` column (SECONDS, despite the name - finding 47), which is
-    authoritative and DST-proof; the CSV `timestamp` column is naive
-    Eastern and stamping UTC on it shifts every bar 4-5 hours.
+    The first version streamed the tar a second time and accumulated
+    ~900,000 small DataFrames before concatenating - unbounded memory for
+    no benefit. tools/build_minute_master.py already pays the one
+    expensive tar pass and writes per-ticker parquet; daily is then a
+    cheap aggregation over that, and memory is bounded by one ticker.
+
+    Run build_minute_master.py FIRST.
     """
+    src = COLD / "archive" / "derived" / "minute_master" / "alpaca"
     outdir = OUTROOT / "alpaca"
     outdir.mkdir(parents=True, exist_ok=True)
     dest = outdir / "daily_all.parquet"
+    if not src.exists():
+        print(f"  [alpaca] minute master missing at {src}
+"
+              f"           run tools/build_minute_master.py first")
+        return outdir
     if dest.exists():
         print(f"  [alpaca] {dest.name} exists, skipping")
         return outdir
 
-    chunks, n, kept = [], 0, 0
-    t0 = time.time()
-    with tarfile.open(TARS["alpaca"], "r|*") as tf:
-        for m in tf:
-            if not m.isfile() or m.size < 100:
-                continue
-            n += 1
-            parts = m.name.split("/")
-            if len(parts) < 3 or "_EMPTY" in parts[2]:
-                continue
-            ticker = parts[1]
-            fh = tf.extractfile(m)
-            if fh is None:
-                continue
-            try:
-                df = pd.read_csv(io.BytesIO(fh.read()))
-            except Exception:
-                continue
-            if "millis" not in df.columns or df.empty:
-                continue
-            ms = pd.to_numeric(df["millis"], errors="coerce")
-            df = df[ms.notna()]
-            if df.empty:
-                continue
-            df = df.assign(
-                timestamp=pd.to_datetime(ms[ms.notna()].astype("int64"),
-                                         unit="s", utc=True),
-                ticker=ticker)
-            d = to_daily(df)
-            if d is not None and not d.empty:
-                chunks.append(d)
-                kept += 1
-            if n % 200_000 == 0:
-                el = time.time() - t0
-                print(f"  [alpaca] {n:,} members, {kept:,} aggregated, "
-                      f"{el:.0f}s", flush=True)
+    files = sorted(src.glob("*.parquet"))
+    chunks, t0 = [], time.time()
+    for i, f in enumerate(files, 1):
+        df = pd.read_parquet(f)
+        if df.empty:
+            continue
+        df["ticker"] = f.stem
+        d = to_daily(df)
+        if d is not None and not d.empty:
+            chunks.append(d)
+        if i % 1000 == 0:
+            print(f"  [alpaca] {i}/{len(files)} tickers, "
+                  f"{time.time()-t0:.0f}s", flush=True)
     if not chunks:
         return outdir
     out = pd.concat(chunks, ignore_index=True)
     out["source"] = "alpaca"
-    out.to_parquet(dest, index=False)
-    print(f"  [alpaca] wrote {len(out):,} daily rows from {kept:,} "
-          f"ticker-months", flush=True)
+    out.to_parquet(dest, index=False, compression="zstd")
+    print(f"  [alpaca] wrote {len(out):,} daily rows from "
+          f"{len(files):,} tickers", flush=True)
     return outdir
 
 
