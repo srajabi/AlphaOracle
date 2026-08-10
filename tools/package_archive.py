@@ -72,8 +72,15 @@ RENAMES = [
       "bzip2",
       "bzip2 decompresses ~10x slower than the gzip twin (~115 min for a "
       "full member scan vs ~13 min)",
-      "believed redundant with the snap2019-09-23 twin - verify before "
-      "deleting (tools/inventory_bz2_twin.py)"]),
+      "VERIFIED REDUNDANT 2026-08-09 (tools/inventory_bz2_twin.py): it "
+      "is a STRICT SUBSET of the snap2019-09-23 twin. 1,562,414 members "
+      "vs 1,957,238; 6,273 tickers vs 7,859; 1,586 tickers exist only in "
+      "the 09-23 copy and ZERO only here; no ticker has more real months. "
+      "The 09-19 run was incomplete and 09-23 was the completion. Safe "
+      "to exclude from backup, and safe to delete once 09-23 is stored "
+      "off-machine",
+      "SPY is absent from BOTH captures - it was never downloaded, not "
+      "lost in transfer. Source SPY minute bars from OHLCV-1m"]),
 ]
 
 JSON_SOURCES = [

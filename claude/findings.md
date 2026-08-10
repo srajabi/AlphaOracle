@@ -1913,3 +1913,58 @@ extended bars as suspect and cross-check where a second source exists.
 
 Caveat: 7 tickers x 4 months is a sample, not an audit. It covers
 megacaps and two ETFs; thin names are untested and will be worse.
+
+
+## 49. The bzip2 twin is a strict subset - and SPY was never captured
+
+`tools/inventory_bz2_twin.py`, 72.6 min. Settles whether the older
+Alpaca capture holds what the newer one lacks.
+
+| | snap 2019-09-19 (bzip2) | snap 2019-09-23 (gzip) |
+|---|---|---|
+| members | 1,562,414 | **1,957,238** |
+| tickers | 6,273 | **7,859** |
+| tickers unique to it | **0** | 1,586 |
+| tickers with more real months | **0** | - |
+
+**Strict subset.** The 09-19 run was incomplete; 09-23 was the
+completion, adding 1,586 tickers. That is why ~200 GB was re-tarred four
+days later. 25.8 GB of verified redundancy - exclude from backup.
+
+The size arithmetic predicted this: bzip2 beats gzip on text by 10-20%,
+so identical content would have put the bzip2 copy near 31-35 GB, not
+25.8. A 34% gap exceeded bzip2's real advantage, implying less data.
+
+**SPY is absent from BOTH captures**, as are XLE, XLF, YHOO, AOL and
+WCOM. It was never downloaded - not lost in transfer, not recoverable
+from the twin. **TODO #16 must source SPY minute bars from OHLCV-1m.**
+QQQ has 4 real months in both; DIA has 4 in the gzip and 0 in the bzip2.
+
+### 49a. Two traps that cost real time
+
+1. **Multi-stream bzip2 reads as a truncated file.**
+   `tarfile.open(path, "r|*")` dies with `EOFError: End of stream
+   already reached` at the end of the FIRST stream. The archive is NOT
+   damaged - it was written by pbzip2 (its twin was written by pigz),
+   which emits concatenated independent streams. Fix:
+   `tarfile.open(fileobj=bz2.open(path,"rb"), mode="r|")`. GNU tar works
+   because it shells out to real bzip2. **A future reader hitting this
+   error would reasonably conclude the file is corrupt and delete
+   irreplaceable capture** - it is recorded in the archive README for
+   exactly that reason.
+
+2. **Windows reserved device names crash a ticker-per-file layout.**
+   `PRN.parquet` raises `FileNotFoundError` - PRN, CON, AUX, NUL,
+   COM0-9 and LPT0-9 are rejected even WITH an extension, and the error
+   reads like a missing directory rather than an illegal name. PRN, AUX
+   and CON are all real tickers. The minute-master build died after
+   5,882 of 7,859 tickers. Fixed with `safe_name()` (suffix reserved
+   names, replace forbidden characters) and the ticker -> filename
+   mapping is stored per ticker so lookups do not guess.
+
+Both failures were LOUD. The day's other three traps - naive-Eastern
+timestamps posing as UTC, a `millis` column holding seconds, and
+split-adjusted vs unadjusted prices - were all SILENT and would have
+corrupted results rather than crashing. That asymmetry is the argument
+for cross-source validation (finding 48): silent corruption is only
+visible against a second opinion.
