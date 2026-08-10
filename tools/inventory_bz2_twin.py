@@ -33,6 +33,7 @@ data/coldstorage_inventory.json, so only the bzip2 archive is scanned.
 
 Writes data/bz2_twin_inventory.json.
 """
+import bz2
 import json
 import tarfile
 import time
@@ -63,7 +64,15 @@ def main():
     inv = defaultdict(lambda: {"files": 0, "empty": 0, "bytes": 0,
                                "min_month": None, "max_month": None})
     t0, n = time.time(), 0
-    with tarfile.open(src, "r|*") as tf:
+    # MULTI-STREAM BZIP2. tarfile.open(path, "r|*") drives a raw
+    # BZ2Decompressor, which halts at the end of the FIRST bzip2 stream
+    # with "EOFError: End of stream already reached". This archive's twin
+    # was built with pigz, so this one was almost certainly built with
+    # pbzip2, which emits concatenated independent streams for
+    # parallelism. bz2.open() splices them transparently; GNU tar works
+    # for the same reason (it shells out to real bzip2). The file is not
+    # truncated - the reader was wrong.
+    with bz2.open(src, "rb") as fh, tarfile.open(fileobj=fh, mode="r|") as tf:
         for m in tf:
             if not m.isfile():
                 continue

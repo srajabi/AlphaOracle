@@ -63,10 +63,17 @@ RENAMES = [
     (COLD / "market-data.tar",
      "alpaca-minute-bars_1999-01_2019-09_7859tickers_snap2019-09-19.tar.bz2",
      "Same dataset, four days earlier, BZIP2 despite the .tar extension.",
-     ["magic bytes are BZh9 - Python tarfile needs mode 'r|*', not 'r|'",
-      "bzip2 decompresses ~10x slower than the gzip twin",
+     ["magic bytes are BZh9 - it is bzip2, not an uncompressed tar",
+      "MULTI-STREAM bzip2 (pbzip2). tarfile.open(path, 'r|*') dies with "
+      "'EOFError: End of stream already reached' at the end of the FIRST "
+      "stream. This does NOT mean the file is truncated - it is not. Open "
+      "it as tarfile.open(fileobj=bz2.open(path,'rb'), mode='r|'), which "
+      "splices the streams. GNU tar works because it shells out to real "
+      "bzip2",
+      "bzip2 decompresses ~10x slower than the gzip twin (~115 min for a "
+      "full member scan vs ~13 min)",
       "believed redundant with the snap2019-09-23 twin - verify before "
-      "deleting (tools/verify_tar_twins.py)"]),
+      "deleting (tools/inventory_bz2_twin.py)"]),
 ]
 
 JSON_SOURCES = [
