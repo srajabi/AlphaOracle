@@ -54,12 +54,34 @@ COLS = ["timestamp", "open", "high", "low", "close", "volume"]
 
 
 def flush(ticker, chunks, stats):
+    """Parse ONE csv per ticker, not one per ticker-month.
+
+    A ticker has ~115-250 monthly CSVs and there are ~900,000 in total.
+    Calling read_csv on each costs milliseconds of pandas setup per file
+    and extrapolated to ~19 hours. Every monthly CSV for a ticker shares
+    the same header, so the raw bytes can be concatenated - header once,
+    then each file's body - and parsed in a single call. Headers are
+    grouped rather than assumed identical, so a ticker whose schema
+    changed mid-history still parses correctly instead of silently
+    mis-aligning columns.
+    """
     if not chunks:
         return
-    frames = []
+    groups = {}
     for raw in chunks:
+        nl = raw.find(b"\n")
+        if nl < 0:
+            continue
+        header, body = raw[:nl + 1], raw[nl + 1:]
+        if not body.strip():
+            continue
+        groups.setdefault(header, []).append(body)
+
+    frames = []
+    for header, bodies in groups.items():
+        blob = header + b"".join(bodies)
         try:
-            df = pd.read_csv(io.BytesIO(raw))
+            df = pd.read_csv(io.BytesIO(blob))
         except Exception:
             continue
         if df.empty or "millis" not in df.columns:
@@ -70,10 +92,10 @@ def flush(ticker, chunks, stats):
             continue
         df = df.assign(timestamp=pd.to_datetime(
             ms[ms.notna()].astype("int64"), unit="s", utc=True))
-        keep = [c for c in COLS if c in df.columns]
-        frames.append(df[keep])
+        frames.append(df[[c for c in COLS if c in df.columns]])
     if not frames:
         return
+
     out = (pd.concat(frames, ignore_index=True)
              .sort_values("timestamp")
              .drop_duplicates(subset=["timestamp"])
@@ -113,7 +135,7 @@ def main():
             if fh is not None:
                 chunks.append(fh.read())
                 kept += 1
-            if n % 200_000 == 0:
+            if n % 100_000 == 0:
                 el = time.time() - t0
                 print(f"  {n:,} members, {len(stats):,} tickers written, "
                       f"{el:.0f}s", flush=True)
