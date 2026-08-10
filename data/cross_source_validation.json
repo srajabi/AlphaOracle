@@ -1,0 +1,526 @@
+{
+  "timestamp_fix": {
+    "AAPL": {
+      "rows": 2817742,
+      "was_first": "2000-01-03 09:30:00+00:00",
+      "now_first": "2000-01-03 14:30:00+00:00",
+      "now_last": "2019-09-11 17:52:00+00:00"
+    },
+    "CSCO": {
+      "rows": 2371686,
+      "was_first": "2000-01-03 09:30:00+00:00",
+      "now_first": "2000-01-03 14:30:00+00:00",
+      "now_last": "2019-09-12 16:32:00+00:00"
+    },
+    "DIA": {
+      "rows": 25605,
+      "was_first": "2019-06-28 19:12:00+00:00",
+      "now_first": "2019-06-28 23:12:00+00:00",
+      "now_last": "2019-09-20 23:24:00+00:00"
+    },
+    "INTC": {
+      "rows": 2424027,
+      "was_first": "2000-01-03 09:30:00+00:00",
+      "now_first": "2000-01-03 14:30:00+00:00",
+      "now_last": "2019-09-11 23:59:00+00:00"
+    },
+    "IWM": {
+      "rows": 2187309,
+      "was_first": "2000-05-26 09:36:00+00:00",
+      "now_first": "2000-05-26 13:36:00+00:00",
+      "now_last": "2019-09-13 23:59:00+00:00"
+    },
+    "MSFT": {
+      "rows": 2412584,
+      "was_first": "2000-01-03 09:30:00+00:00",
+      "now_first": "2000-01-03 14:30:00+00:00",
+      "now_last": "2019-09-11 10:14:00+00:00"
+    },
+    "NVDA": {
+      "rows": 2231026,
+      "was_first": "2000-01-03 09:30:00+00:00",
+      "now_first": "2000-01-03 14:30:00+00:00",
+      "now_last": "2019-09-19 13:15:00+00:00"
+    },
+    "QLD": {
+      "rows": 1408245,
+      "was_first": "2006-06-21 15:04:00+00:00",
+      "now_first": "2006-06-21 19:04:00+00:00",
+      "now_last": "2019-09-13 21:50:00+00:00"
+    },
+    "QQQ": {
+      "rows": 49470,
+      "was_first": "2019-06-10 04:02:00+00:00",
+      "now_first": "2019-06-10 08:02:00+00:00",
+      "now_last": "2019-09-13 09:37:00+00:00"
+    },
+    "SDOW": {
+      "rows": 412726,
+      "was_first": "2010-02-11 10:41:00+00:00",
+      "now_first": "2010-02-11 15:41:00+00:00",
+      "now_last": "2019-09-13 23:24:00+00:00"
+    },
+    "SDS": {
+      "rows": 1674193,
+      "was_first": "2006-07-13 09:41:00+00:00",
+      "now_first": "2006-07-13 13:41:00+00:00",
+      "now_last": "2019-09-12 23:57:00+00:00"
+    },
+    "SPXU": {
+      "rows": 1177285,
+      "was_first": "2009-06-25 10:03:00+00:00",
+      "now_first": "2009-06-25 14:03:00+00:00",
+      "now_last": "2019-09-12 23:51:00+00:00"
+    },
+    "SQQQ": {
+      "rows": 1068948,
+      "was_first": "2010-02-11 10:17:00+00:00",
+      "now_first": "2010-02-11 15:17:00+00:00",
+      "now_last": "2019-09-19 22:39:00+00:00"
+    },
+    "SSO": {
+      "rows": 1512035,
+      "was_first": "2006-06-21 10:24:00+00:00",
+      "now_first": "2006-06-21 14:24:00+00:00",
+      "now_last": "2019-09-12 23:54:00+00:00"
+    },
+    "SUNW": {
+      "rows": 137259,
+      "was_first": "2015-03-04 08:25:00+00:00",
+      "now_first": "2015-03-04 13:25:00+00:00",
+      "now_last": "2019-09-20 19:59:00+00:00"
+    },
+    "TQQQ": {
+      "rows": 524984,
+      "was_first": "2010-02-19 08:48:00+00:00",
+      "now_first": "2010-02-19 13:48:00+00:00",
+      "now_last": "2019-09-13 21:08:00+00:00"
+    },
+    "UDOW": {
+      "rows": 615350,
+      "was_first": "2010-02-11 10:39:00+00:00",
+      "now_first": "2010-02-11 15:39:00+00:00",
+      "now_last": "2019-09-13 17:45:00+00:00"
+    },
+    "UPRO": {
+      "rows": 1133898,
+      "was_first": "2009-06-25 09:40:00+00:00",
+      "now_first": "2009-06-25 13:40:00+00:00",
+      "now_last": "2019-09-23 15:49:00+00:00"
+    },
+    "VTI": {
+      "rows": 1366859,
+      "was_first": "2001-06-15 09:36:00+00:00",
+      "now_first": "2001-06-15 13:36:00+00:00",
+      "now_last": "2019-09-13 19:59:00+00:00"
+    },
+    "XLB": {
+      "rows": 1522639,
+      "was_first": "1999-01-04 09:34:00+00:00",
+      "now_first": "1999-01-04 14:34:00+00:00",
+      "now_last": "2019-09-18 20:32:00+00:00"
+    },
+    "XLI": {
+      "rows": 1443028,
+      "was_first": "2000-01-03 09:44:00+00:00",
+      "now_first": "2000-01-03 14:44:00+00:00",
+      "now_last": "2019-09-17 21:15:00+00:00"
+    },
+    "XLK": {
+      "rows": 1663030,
+      "was_first": "2000-01-03 09:53:00+00:00",
+      "now_first": "2000-01-03 14:53:00+00:00",
+      "now_last": "2019-09-12 23:59:00+00:00"
+    },
+    "XLP": {
+      "rows": 1449303,
+      "was_first": "2000-01-03 09:35:00+00:00",
+      "now_first": "2000-01-03 14:35:00+00:00",
+      "now_last": "2019-09-19 21:01:00+00:00"
+    },
+    "XLU": {
+      "rows": 740701,
+      "was_first": "2001-01-02 09:46:00+00:00",
+      "now_first": "2001-01-02 14:46:00+00:00",
+      "now_last": "2019-09-18 22:13:00+00:00"
+    },
+    "XLV": {
+      "rows": 1466321,
+      "was_first": "2000-01-03 09:36:00+00:00",
+      "now_first": "2000-01-03 14:36:00+00:00",
+      "now_last": "2019-09-13 17:37:00+00:00"
+    },
+    "XLY": {
+      "rows": 1408876,
+      "was_first": "2000-01-03 09:35:00+00:00",
+      "now_first": "2000-01-03 14:35:00+00:00",
+      "now_last": "2019-09-11 15:04:00+00:00"
+    }
+  },
+  "comparisons": [
+    {
+      "ticker": "AAPL",
+      "month": "2005-06",
+      "alpaca_bars": 10699,
+      "ohlcv_bars": 10745,
+      "overlap_bars": 10688,
+      "overlap_pct_of_alpaca": 99.9,
+      "return_agreement_pct": 53.06,
+      "median_abs_return_diff": 8.206362236473641e-05,
+      "p99_abs_return_diff": 0.0013616956005750448,
+      "max_abs_return_diff": 0.009024398293216995,
+      "volume_corr": 0.9696
+    },
+    {
+      "ticker": "AAPL",
+      "month": "2010-06",
+      "alpaca_bars": 14449,
+      "ohlcv_bars": 14147,
+      "overlap_bars": 14146,
+      "overlap_pct_of_alpaca": 97.9,
+      "return_agreement_pct": 76.51,
+      "median_abs_return_diff": 1.6002989643992827e-05,
+      "p99_abs_return_diff": 0.0006385578353225569,
+      "max_abs_return_diff": 0.01479653777634693,
+      "volume_corr": 0.9695
+    },
+    {
+      "ticker": "AAPL",
+      "month": "2015-06",
+      "alpaca_bars": 14290,
+      "ohlcv_bars": 13656,
+      "overlap_bars": 13656,
+      "overlap_pct_of_alpaca": 95.6,
+      "return_agreement_pct": 93.58,
+      "median_abs_return_diff": 0.0,
+      "p99_abs_return_diff": 0.00023845936227691927,
+      "max_abs_return_diff": 0.007032815315001439,
+      "volume_corr": 0.9822
+    },
+    {
+      "ticker": "AAPL",
+      "month": "2018-06",
+      "alpaca_bars": 14976,
+      "ohlcv_bars": 11986,
+      "overlap_bars": 11986,
+      "overlap_pct_of_alpaca": 80.0,
+      "return_agreement_pct": 94.81,
+      "median_abs_return_diff": 0.0,
+      "p99_abs_return_diff": 0.00026155169241506295,
+      "max_abs_return_diff": 0.019619813165327016,
+      "volume_corr": 0.9899
+    },
+    {
+      "ticker": "MSFT",
+      "month": "2005-06",
+      "alpaca_bars": 10325,
+      "ohlcv_bars": 10393,
+      "overlap_bars": 10313,
+      "overlap_pct_of_alpaca": 99.9,
+      "return_agreement_pct": 70.65,
+      "median_abs_return_diff": 0.0,
+      "p99_abs_return_diff": 0.0007968127490041166,
+      "max_abs_return_diff": 0.00841425215348468,
+      "volume_corr": 0.9295
+    },
+    {
+      "ticker": "MSFT",
+      "month": "2010-06",
+      "alpaca_bars": 10992,
+      "ohlcv_bars": 10634,
+      "overlap_bars": 10633,
+      "overlap_pct_of_alpaca": 96.7,
+      "return_agreement_pct": 55.98,
+      "median_abs_return_diff": 1.938019697023119e-05,
+      "p99_abs_return_diff": 0.00114858800171367,
+      "max_abs_return_diff": 0.03361008323413983,
+      "volume_corr": 0.99
+    },
+    {
+      "ticker": "MSFT",
+      "month": "2015-06",
+      "alpaca_bars": 9751,
+      "ohlcv_bars": 9563,
+      "overlap_bars": 9563,
+      "overlap_pct_of_alpaca": 98.1,
+      "return_agreement_pct": 59.77,
+      "median_abs_return_diff": 2.1782527405700414e-06,
+      "p99_abs_return_diff": 0.0004311391187602631,
+      "max_abs_return_diff": 0.004413600172154197,
+      "volume_corr": 0.9893
+    },
+    {
+      "ticker": "MSFT",
+      "month": "2018-06",
+      "alpaca_bars": 12888,
+      "ohlcv_bars": 10238,
+      "overlap_bars": 10238,
+      "overlap_pct_of_alpaca": 79.4,
+      "return_agreement_pct": 93.59,
+      "median_abs_return_diff": 0.0,
+      "p99_abs_return_diff": 0.00039587659194646003,
+      "max_abs_return_diff": 0.004872608996736361,
+      "volume_corr": 0.9953
+    },
+    {
+      "ticker": "INTC",
+      "month": "2005-06",
+      "alpaca_bars": 11251,
+      "ohlcv_bars": 11303,
+      "overlap_bars": 11239,
+      "overlap_pct_of_alpaca": 99.9,
+      "return_agreement_pct": 69.84,
+      "median_abs_return_diff": 0.0,
+      "p99_abs_return_diff": 0.0010731883532391579,
+      "max_abs_return_diff": 0.03896715635846071,
+      "volume_corr": 0.9613
+    },
+    {
+      "ticker": "INTC",
+      "month": "2010-06",
+      "alpaca_bars": 11101,
+      "ohlcv_bars": 10644,
+      "overlap_bars": 10644,
+      "overlap_pct_of_alpaca": 95.9,
+      "return_agreement_pct": 54.11,
+      "median_abs_return_diff": 3.768607499510246e-05,
+      "p99_abs_return_diff": 0.0010085960783847978,
+      "max_abs_return_diff": 0.05858290033065683,
+      "volume_corr": 0.8825
+    },
+    {
+      "ticker": "INTC",
+      "month": "2015-06",
+      "alpaca_bars": 9847,
+      "ohlcv_bars": 9635,
+      "overlap_bars": 9635,
+      "overlap_pct_of_alpaca": 97.8,
+      "return_agreement_pct": 53.64,
+      "median_abs_return_diff": 4.644291399213962e-05,
+      "p99_abs_return_diff": 0.0005215406296956827,
+      "max_abs_return_diff": 0.09253157313420624,
+      "volume_corr": 0.9972
+    },
+    {
+      "ticker": "INTC",
+      "month": "2018-06",
+      "alpaca_bars": 11838,
+      "ohlcv_bars": 9869,
+      "overlap_bars": 9869,
+      "overlap_pct_of_alpaca": 83.4,
+      "return_agreement_pct": 78.76,
+      "median_abs_return_diff": 3.106973972544225e-08,
+      "p99_abs_return_diff": 0.00039605457362138684,
+      "max_abs_return_diff": 0.006344003965613743,
+      "volume_corr": 0.9153
+    },
+    {
+      "ticker": "CSCO",
+      "month": "2005-06",
+      "alpaca_bars": 10465,
+      "ohlcv_bars": 10531,
+      "overlap_bars": 10455,
+      "overlap_pct_of_alpaca": 99.9,
+      "return_agreement_pct": 69.71,
+      "median_abs_return_diff": 0.0,
+      "p99_abs_return_diff": 0.0010357327809424888,
+      "max_abs_return_diff": 0.17025641025641036,
+      "volume_corr": 0.972
+    },
+    {
+      "ticker": "CSCO",
+      "month": "2010-06",
+      "alpaca_bars": 10740,
+      "ohlcv_bars": 10322,
+      "overlap_bars": 10321,
+      "overlap_pct_of_alpaca": 96.1,
+      "return_agreement_pct": 52.89,
+      "median_abs_return_diff": 4.315087425621478e-05,
+      "p99_abs_return_diff": 0.000929327021861066,
+      "max_abs_return_diff": 0.016702355460385343,
+      "volume_corr": 0.9581
+    },
+    {
+      "ticker": "CSCO",
+      "month": "2015-06",
+      "alpaca_bars": 9218,
+      "ohlcv_bars": 9053,
+      "overlap_bars": 9052,
+      "overlap_pct_of_alpaca": 98.2,
+      "return_agreement_pct": 50.02,
+      "median_abs_return_diff": 9.858182996047571e-05,
+      "p99_abs_return_diff": 0.0005279986106265788,
+      "max_abs_return_diff": 0.0014114326040930436,
+      "volume_corr": 0.9969
+    },
+    {
+      "ticker": "CSCO",
+      "month": "2018-06",
+      "alpaca_bars": 9942,
+      "ohlcv_bars": 8836,
+      "overlap_bars": 8836,
+      "overlap_pct_of_alpaca": 88.9,
+      "return_agreement_pct": 62.83,
+      "median_abs_return_diff": 0.0,
+      "p99_abs_return_diff": 0.00034034133168868495,
+      "max_abs_return_diff": 0.0023674242424241987,
+      "volume_corr": 0.9961
+    },
+    {
+      "ticker": "NVDA",
+      "month": "2005-06",
+      "alpaca_bars": 9118,
+      "ohlcv_bars": 9159,
+      "overlap_bars": 9087,
+      "overlap_pct_of_alpaca": 99.7,
+      "return_agreement_pct": 76.26,
+      "median_abs_return_diff": 3.698087633619007e-05,
+      "p99_abs_return_diff": 0.0014113810057778896,
+      "max_abs_return_diff": 0.008070288562230687,
+      "volume_corr": 0.9161
+    },
+    {
+      "ticker": "NVDA",
+      "month": "2010-06",
+      "alpaca_bars": 9593,
+      "ohlcv_bars": 9152,
+      "overlap_bars": 9152,
+      "overlap_pct_of_alpaca": 95.4,
+      "return_agreement_pct": 51.96,
+      "median_abs_return_diff": 4.0617384240437815e-05,
+      "p99_abs_return_diff": 0.001744643579447036,
+      "max_abs_return_diff": 0.023145374449339173,
+      "volume_corr": 0.9848
+    },
+    {
+      "ticker": "NVDA",
+      "month": "2015-06",
+      "alpaca_bars": 8788,
+      "ohlcv_bars": 8598,
+      "overlap_bars": 8598,
+      "overlap_pct_of_alpaca": 97.8,
+      "return_agreement_pct": 55.44,
+      "median_abs_return_diff": 5.579571915603765e-08,
+      "p99_abs_return_diff": 0.0007146918525443133,
+      "max_abs_return_diff": 0.022986464759159775,
+      "volume_corr": 0.995
+    },
+    {
+      "ticker": "NVDA",
+      "month": "2018-06",
+      "alpaca_bars": 14223,
+      "ohlcv_bars": 10585,
+      "overlap_bars": 10585,
+      "overlap_pct_of_alpaca": 74.4,
+      "return_agreement_pct": 74.51,
+      "median_abs_return_diff": 2.3033721384957406e-05,
+      "p99_abs_return_diff": 0.0006486924760538087,
+      "max_abs_return_diff": 0.002629662594061166,
+      "volume_corr": 0.986
+    },
+    {
+      "ticker": "XLK",
+      "month": "2005-06",
+      "alpaca_bars": 6304,
+      "ohlcv_bars": 6319,
+      "overlap_bars": 6257,
+      "overlap_pct_of_alpaca": 99.3,
+      "return_agreement_pct": 95.81,
+      "median_abs_return_diff": 0.0,
+      "p99_abs_return_diff": 0.0004992262105843581,
+      "max_abs_return_diff": 0.04347826086956519,
+      "volume_corr": 0.8149
+    },
+    {
+      "ticker": "XLK",
+      "month": "2010-06",
+      "alpaca_bars": 8704,
+      "ohlcv_bars": 8436,
+      "overlap_bars": 8436,
+      "overlap_pct_of_alpaca": 96.9,
+      "return_agreement_pct": 61.59,
+      "median_abs_return_diff": 0.0,
+      "p99_abs_return_diff": 0.0008774655082369605,
+      "max_abs_return_diff": 0.002320185614849146,
+      "volume_corr": 0.9776
+    },
+    {
+      "ticker": "XLK",
+      "month": "2015-06",
+      "alpaca_bars": 8716,
+      "ohlcv_bars": 8564,
+      "overlap_bars": 8564,
+      "overlap_pct_of_alpaca": 98.3,
+      "return_agreement_pct": 66.75,
+      "median_abs_return_diff": 0.0,
+      "p99_abs_return_diff": 0.00034104411667992785,
+      "max_abs_return_diff": 0.0007022471910114181,
+      "volume_corr": 0.9997
+    },
+    {
+      "ticker": "XLK",
+      "month": "2018-06",
+      "alpaca_bars": 8873,
+      "ohlcv_bars": 8381,
+      "overlap_bars": 8381,
+      "overlap_pct_of_alpaca": 94.5,
+      "return_agreement_pct": 92.34,
+      "median_abs_return_diff": 0.0,
+      "p99_abs_return_diff": 0.00015144542060101907,
+      "max_abs_return_diff": 0.003488871958804207,
+      "volume_corr": 0.9356
+    },
+    {
+      "ticker": "IWM",
+      "month": "2005-06",
+      "alpaca_bars": 9233,
+      "ohlcv_bars": 9244,
+      "overlap_bars": 9229,
+      "overlap_pct_of_alpaca": 100.0,
+      "return_agreement_pct": 78.03,
+      "median_abs_return_diff": 0.0,
+      "p99_abs_return_diff": 0.00048037045686523004,
+      "max_abs_return_diff": 0.5004455966944827,
+      "volume_corr": 0.9082
+    },
+    {
+      "ticker": "IWM",
+      "month": "2010-06",
+      "alpaca_bars": 12902,
+      "ohlcv_bars": 12829,
+      "overlap_bars": 12827,
+      "overlap_pct_of_alpaca": 99.4,
+      "return_agreement_pct": 86.86,
+      "median_abs_return_diff": 0.0,
+      "p99_abs_return_diff": 0.0003521152845939457,
+      "max_abs_return_diff": 0.048784504391467975,
+      "volume_corr": 0.9275
+    },
+    {
+      "ticker": "IWM",
+      "month": "2015-06",
+      "alpaca_bars": 11014,
+      "ohlcv_bars": 10923,
+      "overlap_bars": 10923,
+      "overlap_pct_of_alpaca": 99.2,
+      "return_agreement_pct": 96.82,
+      "median_abs_return_diff": 0.0,
+      "p99_abs_return_diff": 0.00015966377952588483,
+      "max_abs_return_diff": 0.0021606938556446575,
+      "volume_corr": 0.7372
+    },
+    {
+      "ticker": "IWM",
+      "month": "2018-06",
+      "alpaca_bars": 11676,
+      "ohlcv_bars": 10971,
+      "overlap_bars": 10971,
+      "overlap_pct_of_alpaca": 94.0,
+      "return_agreement_pct": 98.77,
+      "median_abs_return_diff": 0.0,
+      "p99_abs_return_diff": 0.00011875113864636465,
+      "max_abs_return_diff": 0.002822605387494681,
+      "volume_corr": 0.8373
+    }
+  ]
+}

@@ -1764,3 +1764,85 @@ valuation (US CAPE vs international CAPE, staying 100% invested and
 shifting between them) is a different question and is NOT tested here -
 the archive has no international CAPE. Do not read 46 as ruling that
 out.
+
+
+## 47. The ColdStorage tars: what is actually in them
+
+The 63 GB of tars in E:/ColdStorage had never been opened. Streamed
+in one pass with tools/ingest_coldstorage_tar.py (12.7 min for the
+gzip archive; NOT extracted - full extraction would create ~2M tiny
+files on NTFS for data that is mostly placeholders).
+
+### 47a. Format - both are compressed, and one lies about it
+
+| file | actual format | size |
+|---|---|---|
+| market-data.tar | **BZIP2** (magic BZh9) | 25.8 GB |
+| market-data-7859.tar.pigz | gzip | 38.9 GB |
+
+**`market-data.tar` is bzip2 despite the extension.** GNU tar
+auto-detects this; Python's `tarfile.open(path, "r|")` does NOT and
+fails with "invalid header". Use `"r|*"` to sniff. bzip2 decompresses at
+~30 MB/s against gzip's ~300 MB/s, so prefer the pigz for any full pass.
+The first 40 entries of both are byte-identical including sizes, so they
+are very likely the same dataset stored twice - NOT yet proven, which
+would cost a 14-minute bzip2 pass.
+
+### 47b. Contents
+
+Alpaca minute bars as `alpaca-market-data/<TICKER>/<TICKER>_minute_data_<YYYY-MM-01>.csv`.
+
+- **1,957,238 files, 7,859 tickers** (the 7859 in the filename IS the
+  ticker count), coverage **1999-01 -> 2019-09**.
+- **1,034,913 files (53%) are 35-byte `_EMPTY.csv` placeholders.** The
+  downloader wrote a stub when it got nothing back.
+- **Only 1,862 of 7,859 tickers (24%) have >=200 non-empty months.**
+
+**This is a partial dump, not a clean archive.** The gaps are not random:
+
+| ticker | real months | note |
+|---|---|---|
+| **SPY** | **ABSENT** | the most traded ETF on earth is not in it |
+| XLE, XLF, YHOO, AOL, WCOM | **ABSENT** | |
+| **QQQ** | **4** | only 2019-06..2019-09 |
+| **DIA** | **4** | only 2019-06..2019-09 |
+| XLK / AAPL | 237 | 2000-01..2019-09 |
+| TQQQ | 115 | 2010-02..2019-09 |
+
+QQQ and DIA holding exactly the last four months before the dump was
+made says those symbols were added to the download list late. Do NOT
+assume a ticker is present; check the inventory
+(data/coldstorage_inventory.json).
+
+### 47c. TWO TIMESTAMP TRAPS - new, and not in finding 15
+
+1. **The `timestamp` column is NAIVE EASTERN time, not UTC.** AAPL's
+   first bar reads `2000-01-03 09:30:00`; 09:30 UTC is 04:30 ET, which
+   is not a market open. Stamping UTC on it shifts every bar 4-5 hours
+   and silently breaks session-aware work. The first ingest did exactly
+   this.
+2. **The column named `millis` holds SECONDS.** 946909800 -> 2000-01-03
+   14:30 UTC = 09:30 ET. Read as milliseconds it decodes to Jan 1970.
+
+**`millis` is authoritative and DST-proof - rebuild `timestamp` from it**
+(`pd.to_datetime(millis, unit="s", utc=True)`). After the fix AAPL's bar
+histogram peaks across 13-20h UTC, matching the US session.
+
+3. **Alpaca prices are SPLIT-ADJUSTED as of 2019**; OHLCV-1m is
+   unadjusted (finding 15 trap 1). AAPL reads 3.746 in 2000 = $104.9 /
+   28x splits. **Never compare the two on price levels - compare
+   returns**, which are split-invariant except on the split date.
+
+### 47d. What is usable
+
+- **LETFs are complete enough to unblock TODO #18**: TQQQ (115 months,
+  2010-02..2019-09), UPRO, SSO, SQQQ, SPXU, QLD, UDOW, SDOW. Finding 21
+  validated SIMULATED LETF returns against real closing prices but never
+  against the intraday PATH, which is what drives daily-reset drag.
+- **Megacaps are complete** (AAPL, MSFT, INTC, CSCO, NVDA, BAC, GE,
+  AMZN at 237-249 months) and overlap OHLCV-1m, giving the archive its
+  first independent second source.
+- 26 target tickers materialised to
+  `E:/ColdStorage/AlphaOracle-data/alpaca_minute/<TICKER>.parquet`.
+- **SPY being absent means TODO #16 (intraday stop-losses) must use
+  OHLCV-1m for SPY**; IWM (233 months) is the usable liquid proxy here.
