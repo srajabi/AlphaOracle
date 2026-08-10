@@ -1,0 +1,13 @@
+{
+  "updated_at_utc": "2026-08-10T15:47:45.837780+00:00",
+  "last_message_utc": "2026-08-10T15:47:45.837780+00:00",
+  "states": {
+    "mandate:P_sleeve": "SLEEVE_INVESTED",
+    "mandate:Y_core_sleeve": "SLEEVE_INVESTED",
+    "mandate:Y_satellite": "see registered champion state (canary signal above for canary_daa_*)",
+    "signal:slow_channel": "risk_on",
+    "signal:fast_channel": "clear",
+    "signal:credit": "clear",
+    "signal:canary": "half_defensive"
+  }
+}
