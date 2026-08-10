@@ -160,6 +160,17 @@ These cost real debugging time and are not discoverable from the data.
   inflated on those days. Deduplicate on (ticker, timestamp) before
   summing volume. `bars` > 391 in the daily master flags them.
 
+**Alpaca OHLC integrity**
+- 2,362 daily rows (0.0133%) violate OHLC invariants - open or close
+  outside [low, high]. Only 3 are high<low.
+- **98.6% of them (2,328) fall in 2018**, and the median violating row
+  has just 4 minute bars against 158 overall. This is an Alpaca-side
+  2018 collection defect on near-untraded ticker-days, not an
+  aggregation bug: OHLCV-1m shows ZERO violations over 8.0M sampled
+  rows.
+- Filter `bars >= 10` to remove them. Such days are unusable for
+  backtesting anyway.
+
 **Comparing the two sources**
 - Compare RETURNS, never price levels - one is split-adjusted and the
   other is not.

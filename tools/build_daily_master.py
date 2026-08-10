@@ -206,7 +206,7 @@ def main():
         print("building yfinance daily...")
         build_yfinance()
     if which in ("all", "alpaca"):
-        print("building alpaca daily (streams 38.9 GB)...")
+        print("building alpaca daily (from the minute master)...")
         build_alpaca()
     if which in ("all", "ohlcv1m"):
         print("building ohlcv1m daily (reads 87.7 GB)...")

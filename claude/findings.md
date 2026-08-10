@@ -1968,3 +1968,56 @@ split-adjusted vs unadjusted prices - were all SILENT and would have
 corrupted results rather than crashing. That asymmetry is the argument
 for cross-source validation (finding 48): silent corruption is only
 visible against a second opinion.
+
+
+## 50. Daily and minute masters built - and what they immediately exposed
+
+All sources consolidated to parquet with provenance
+(tools/build_minute_master.py, build_daily_master.py,
+build_reference_master.py).
+
+| set | scale | size |
+|---|---|---|
+| minute_master/alpaca | **3,286,433,543 bars**, 7,610 tickers, 1999-2019 | 41.3 GB |
+| daily_master/ohlcv1m | ~77M rows, 411 months, 22k tickers, 1992-2026 | 1.1 GB |
+| daily_master/alpaca | 17,822,447 rows, 7,610 tickers | 0.4 GB |
+| daily_master/yfinance | 501,183 rows, 79 tickers | small |
+| reference_master | 2,857,417 obs, 922 series, 1870-2026 | 11 MB |
+
+Long format with a `source` column throughout - every source keeps its
+own opinion, because finding 48 established neither is authoritative.
+Daily is regular-session only (DST-correct via America/New_York, not a
+fixed UTC window); minute is COMPLETE including extended hours, since
+filtering is a query-time decision.
+
+### 50a. The `bars` column earns its place immediately
+
+Counting the minute bars behind each daily aggregate turned two
+previously-invisible problems into one-line queries:
+
+- **OHLCV-1m carries DUPLICATE minute timestamps.** Some ticker-days
+  aggregate to >391 bars against a 391-minute session (AAPL 2026-03-31 =
+  394). OHLC is unaffected - first/max/min/last are idempotent - but
+  summed VOLUME is inflated. Deduplicate on (ticker, timestamp) before
+  summing volume.
+- **Liquidity is now a column, not an inference.** Median 1992
+  ticker-day: 14 bars. Median Alpaca ticker-day: 158. Finding 44 had to
+  approximate this with a MIN_PRICE hack.
+
+### 50b. OHLC integrity - the defect is Alpaca's, and it is localised
+
+| | Alpaca | OHLCV-1m |
+|---|---|---|
+| invariant violations | 2,362 (**0.0133%**) | **0** of 8.0M sampled |
+| concentration | **2,328 of 2,362 in 2018** | - |
+| high<low | 3 | - |
+| median `bars` on bad rows | **4** (vs 158 overall) | - |
+
+98.6% in a single year, on ticker-days that barely traded, across 1,146
+obscure names (CNDF, LOGO, LVIN, AXJV). **An Alpaca-side 2018 collection
+defect, not an aggregation bug** - the identical code produces zero
+violations on OHLCV-1m. Filter `bars >= 10`.
+
+**This is what the second source buys.** A single-source archive gives
+no way to tell "my aggregation is wrong" from "this vendor had a bad
+year". Running the same code over both answers it in one query.
