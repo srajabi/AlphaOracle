@@ -2099,3 +2099,63 @@ levered variant. It changes the LEVEL.
    series (a 2:1 split lands (1+r_real)/(1+r_sim) near 0.5, which no
    market move does) and EXCLUDED rather than patched - 4 to 8 days per
    pair.
+
+
+## 52. Re-pricing the sleeves with honest financing (follows 51)
+
+Finding 51 established the simulator omits the swap financing spread
+(~0.5-1.5%/yr per unit borrowed). This re-prices the sleeve decision
+across that whole range rather than at a point, since 51 bounds the
+spread but cannot measure it. Setup matches finding 38: French monthly
+TOTAL returns, 27y windows every 12 months, 800k + 80k/yr, permanent
+10-month/5% gate once levered.
+
+### Median terminal wealth
+
+| policy | 0% | 0.5% | 1.0% | 1.5% | cost of 150bp |
+|---|---|---|---|---|---|
+| 1x_gated | 24.95M | 24.95M | 24.95M | 24.95M | 0% (borrows nothing) |
+| **2x_gated** | 65.4M | 59.6M | 54.1M | **49.2M** | **-24.8%** |
+| 3x_gated | 135.2M | 115.2M | 95.1M | 78.7M | **-41.8%** |
+| ramp_gated | 53.0M | 49.3M | 46.0M | 42.9M | -19.1% |
+
+### Worst-case terminal wealth
+
+| policy | 0% | 1.5% |
+|---|---|---|
+| 1x_gated | 12.74M | 12.74M |
+| **2x_gated** | 29.67M | **22.64M** |
+| 3x_gated | 24.47M | **14.30M** |
+| ramp_gated | 22.87M | 19.32M |
+
+### 52a. The decision survives; the expectation does not
+
+2x_gated over 1x_gated, as financing is charged honestly:
+
+| spread | median ratio | worst-case ratio |
+|---|---|---|
+| 0.00% | 2.62x | 2.33x |
+| 0.50% | 2.39x | 2.13x |
+| 1.00% | 2.17x | 1.95x |
+| **1.50%** | **1.97x** | **1.78x** |
+
+**Even at the most pessimistic spread, 2x beats 1x by ~2x on the median
+AND 1.78x on the worst path.** The leverage decision does not flip.
+What changes is the number to expect: median ~49-54M rather than ~65M.
+Findings 30/36/38 keep their ORDERING and lose ~25% of their LEVEL.
+
+### 52b. The spread strengthens the case against 3x
+
+3x worst-case was ALREADY below 2x at zero spread (24.47M vs 29.67M -
+finding 30). Charging financing widens it to 14.30M vs 22.64M, because
+3x pays the spread on TWO units of borrowing while the worst path
+punishes the leverage twice. **3x is now worse than 2x on worst case by
+37%.** Finding 30's conclusion holds a fortiori.
+
+### 52c. What to actually assume
+
+Use **1.0%/yr** as the planning spread for a 2x sleeve - the midpoint of
+51's range, and close to the 0.95% implied by QLD, the only 2x QQQ pair
+measured. Median expectation ~54M rather than 65M. Treat anything quoted
+from findings 30/36/38 without this correction as roughly 25% optimistic
+at 2x and 40% at 3x.
