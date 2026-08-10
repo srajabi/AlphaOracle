@@ -154,6 +154,11 @@ These cost real debugging time and are not discoverable from the data.
 - Symbols change: QQQ traded as QQQQ from 2004 to 2011.
 - The median 1992 ticker-day has 14 minute bars, not 390. Use the
   daily master's `bars` column as a liquidity filter.
+- DUPLICATE minute timestamps occur. Some ticker-days aggregate to more
+  than the 391-minute session (AAPL 2026-03-31 = 394 bars). OHLC is
+  unaffected (first/max/min/last are idempotent) but summed VOLUME is
+  inflated on those days. Deduplicate on (ticker, timestamp) before
+  summing volume. `bars` > 391 in the daily master flags them.
 
 **Comparing the two sources**
 - Compare RETURNS, never price levels - one is split-adjusted and the
@@ -283,7 +288,15 @@ def main():
                "known_issues": [
                    "prices are UNADJUSTED for splits (finding 15 trap 1)",
                    "timestamps are genuinely UTC (unlike the Alpaca dump)",
-                   "median ticker-day in 1992 has only 14 minute bars"]})
+                   "median ticker-day in 1992 has only 14 minute bars",
+                   "DUPLICATE minute timestamps occur: some ticker-days "
+                   "aggregate to >391 bars against a 391-minute regular "
+                   "session (AAPL 2026-03-31 = 394). Harmless for OHLC "
+                   "(first/max/min/last are idempotent) but it INFLATES "
+                   "summed volume on those days. Deduplicate on "
+                   "(ticker, timestamp) before summing volume",
+                   "the daily master's `bars` column exposes this - any "
+                   "value >391 is a duplicate-timestamp day"]})
     manifest["in_place"].append(st)
     print(f"  [in place        ] OHLCV-1m  {st.get('files', 0)} files  "
           f"{st.get('bytes', 0)/1e9:.1f} GB")
