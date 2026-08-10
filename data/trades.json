@@ -2,66 +2,66 @@
     {
         "ticker": "VOO",
         "action": "buy",
-        "notional_value": 13078
-    },
-    {
-        "ticker": "VTI",
-        "action": "buy",
-        "notional_value": 8718
+        "notional_value": 13077.75
     },
     {
         "ticker": "QQQ",
         "action": "buy",
-        "notional_value": 7847
+        "notional_value": 8718.5
     },
     {
         "ticker": "VXUS",
         "action": "buy",
-        "notional_value": 4359
-    },
-    {
-        "ticker": "QUAL",
-        "action": "buy",
-        "notional_value": 4359
-    },
-    {
-        "ticker": "NVDA",
-        "action": "buy",
-        "notional_value": 5231
-    },
-    {
-        "ticker": "AVGO",
-        "action": "buy",
-        "notional_value": 4359
-    },
-    {
-        "ticker": "AMZN",
-        "action": "buy",
-        "notional_value": 3487
-    },
-    {
-        "ticker": "MSFT",
-        "action": "buy",
-        "notional_value": 3487
-    },
-    {
-        "ticker": "VGK",
-        "action": "buy",
-        "notional_value": 3487
-    },
-    {
-        "ticker": "EWA",
-        "action": "buy",
-        "notional_value": 3487
+        "notional_value": 6974.8
     },
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 6103
+        "notional_value": 5231.1
+    },
+    {
+        "ticker": "IAU",
+        "action": "buy",
+        "notional_value": 3487.4
     },
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 4359
+        "notional_value": 5231.1
+    },
+    {
+        "ticker": "NVDA",
+        "action": "buy",
+        "notional_value": 5231.1
+    },
+    {
+        "ticker": "AVGO",
+        "action": "buy",
+        "notional_value": 4359.25
+    },
+    {
+        "ticker": "TSM",
+        "action": "buy",
+        "notional_value": 4359.25
+    },
+    {
+        "ticker": "CRWD",
+        "action": "buy",
+        "notional_value": 3487.4
+    },
+    {
+        "ticker": "QUAL",
+        "action": "buy",
+        "notional_value": 5231.1
+    },
+    {
+        "ticker": "CEG",
+        "action": "buy",
+        "notional_value": 3487.4
+    },
+    {
+        "ticker": "SCHD",
+        "action": "buy",
+        "notional_value": 3487.4
     }
 ]

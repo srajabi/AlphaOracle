@@ -1,60 +1,123 @@
 {
-  "last_updated_utc": "2026-07-02T20:55:37.084965+00:00",
+  "last_updated_utc": "2026-08-10T21:21:23.575299+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "VTI",
+        "ticker": "VOO",
         "action": "buy",
-        "notional_value": 34874.0
+        "notional_value": 13077.75
       },
       "status": "submitted",
-      "order_id": "abb5f9d6-bc60-4ec0-ab2f-4156b6b9c13c"
+      "order_id": "55c0a3ef-6194-437f-9176-5b3f2e1f6fb1"
     },
     {
       "trade": {
-        "ticker": "XLF",
+        "ticker": "QQQ",
         "action": "buy",
-        "notional_value": 13077.0
+        "notional_value": 8718.5
       },
       "status": "submitted",
-      "order_id": "17468a8f-b882-4d17-a4f9-2c1dc3130503"
+      "order_id": "da752653-cfe0-410f-8cce-81bc076f0d5e"
     },
     {
       "trade": {
-        "ticker": "XLV",
+        "ticker": "VXUS",
         "action": "buy",
-        "notional_value": 13077.0
+        "notional_value": 6974.8
       },
       "status": "submitted",
-      "order_id": "fec1d3f7-9ab6-4b67-85de-0ec68e0dcd71"
-    },
-    {
-      "trade": {
-        "ticker": "XLI",
-        "action": "buy",
-        "notional_value": 8718.0
-      },
-      "status": "submitted",
-      "order_id": "3d9fcabf-fbff-4dbf-8fd5-b0ba40a7b71d"
-    },
-    {
-      "trade": {
-        "ticker": "IWM",
-        "action": "buy",
-        "notional_value": 8718.0
-      },
-      "status": "submitted",
-      "order_id": "1dc7542f-b66c-4a5c-910b-da49e2c0f01a"
+      "order_id": "12c40709-f017-429f-86e1-09dfdf35a78f"
     },
     {
       "trade": {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 4359.0
+        "notional_value": 5231.1
       },
       "status": "submitted",
-      "order_id": "4648cf64-3d07-4300-aceb-b81c4edb6863"
+      "order_id": "4c2f314d-c7a5-4789-b23f-dddc48b52ec0"
+    },
+    {
+      "trade": {
+        "ticker": "IAU",
+        "action": "buy",
+        "notional_value": 3487.4
+      },
+      "status": "submitted",
+      "order_id": "1d16543b-4082-4c9e-8a18-8a99bdaa6ee0"
+    },
+    {
+      "trade": {
+        "ticker": "XLE",
+        "action": "buy",
+        "notional_value": 5231.1
+      },
+      "status": "submitted",
+      "order_id": "fa1d5e64-3c09-46cc-b6d2-febf502d0d04"
+    },
+    {
+      "trade": {
+        "ticker": "NVDA",
+        "action": "buy",
+        "notional_value": 5231.1
+      },
+      "status": "submitted",
+      "order_id": "9fb8dc06-faba-488a-a08d-78184acc7af7"
+    },
+    {
+      "trade": {
+        "ticker": "AVGO",
+        "action": "buy",
+        "notional_value": 4359.25
+      },
+      "status": "submitted",
+      "order_id": "e8d9dad1-015c-403e-b786-06919447421e"
+    },
+    {
+      "trade": {
+        "ticker": "TSM",
+        "action": "buy",
+        "notional_value": 4359.25
+      },
+      "status": "submitted",
+      "order_id": "ad9d2ba8-a413-4389-9462-5bbad2c4620e"
+    },
+    {
+      "trade": {
+        "ticker": "CRWD",
+        "action": "buy",
+        "notional_value": 3487.4
+      },
+      "status": "submitted",
+      "order_id": "c952a8e0-53da-4873-96a4-4c50b0d542c2"
+    },
+    {
+      "trade": {
+        "ticker": "QUAL",
+        "action": "buy",
+        "notional_value": 5231.1
+      },
+      "status": "submitted",
+      "order_id": "b6832087-b35a-4380-85a4-740e278e9414"
+    },
+    {
+      "trade": {
+        "ticker": "CEG",
+        "action": "buy",
+        "notional_value": 3487.4
+      },
+      "status": "submitted",
+      "order_id": "936f6a8b-b59c-42f7-a713-890047e300a3"
+    },
+    {
+      "trade": {
+        "ticker": "SCHD",
+        "action": "buy",
+        "notional_value": 3487.4
+      },
+      "status": "submitted",
+      "order_id": "cf2ebd08-b826-4ec0-999c-e70f405ab1df"
     }
   ]
 }
