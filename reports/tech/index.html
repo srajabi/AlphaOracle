@@ -1,262 +1,521 @@
 <!DOCTYPE html><html lang="en" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/AlphaOracle/favicon.svg"><link rel="icon" href="/AlphaOracle/favicon.ico"><meta name="generator" content="Astro v5.18.0"><title>Technical Analyst Report</title><style>:root{--bg: #0b0e14;--panel-bg: #131722;--panel-bg-raised: #1e2230;--border: #2a2e39;--text: #f8f9fa;--text-body: #d1d4dc;--text-muted: #8f949e;--accent: #2962ff;--accent-soft: #c4d4ff;--green: #28a745;--red: #dc3545;--red-bright: #f6465d;--yellow: #ffc107}.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}.panel{background:var(--panel-bg);border:1px solid var(--border);border-radius:12px;padding:1.25rem;margin-bottom:1rem}.muted{color:var(--text-muted)}.btn{text-decoration:none;color:#fff;background:var(--accent);border-radius:8px;padding:.5rem .85rem;font-size:.85rem;font-weight:600}html,body{margin:0;width:100%;height:100%;background:#0b0e14;color:#f8f9fa;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif}.site-header[data-astro-cid-sckkx6r4]{position:sticky;top:0;z-index:100;background:#0b0e14eb;backdrop-filter:blur(8px);border-bottom:1px solid #2a2e39}.site-header-inner[data-astro-cid-sckkx6r4]{max-width:1100px;margin:0 auto;padding:.7rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}.brand[data-astro-cid-sckkx6r4]{color:#f8f9fa;text-decoration:none;font-weight:800;font-size:1.1rem;letter-spacing:.01em}.site-nav[data-astro-cid-sckkx6r4]{display:flex;gap:.25rem;flex-wrap:wrap}.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]{color:#8f949e;text-decoration:none;font-size:.9rem;font-weight:600;padding:.35rem .7rem;border-radius:8px}.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]:hover,.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4].active{color:#f8f9fa;background:#1e2230}
 main[data-astro-cid-ipuyqs4v]{max-width:850px;margin:0 auto;padding:3rem 1.5rem;line-height:1.7;color:#d1d4dc}header[data-astro-cid-ipuyqs4v]{margin:0 0 3rem;border-bottom:1px solid #2a2e39;padding-bottom:1.5rem}h1[data-astro-cid-ipuyqs4v]{margin:0;font-size:3rem;color:#fff;font-weight:800;letter-spacing:-.02em}.date[data-astro-cid-ipuyqs4v]{color:#8f949e;margin-top:.5rem}article[data-astro-cid-ipuyqs4v]{font-size:1.15rem}article[data-astro-cid-ipuyqs4v] h2{margin-top:3rem;color:#fff;font-size:1.75rem;border-bottom:1px solid #2a2e39;padding-bottom:.5rem}article[data-astro-cid-ipuyqs4v] h3{margin-top:2rem;color:#fff}article[data-astro-cid-ipuyqs4v] p{margin-bottom:1.5rem}article[data-astro-cid-ipuyqs4v] table{width:100%;border-collapse:collapse;margin:2.5rem 0;background:#131722;border-radius:8px;overflow:hidden;border:1px solid #2a2e39}article[data-astro-cid-ipuyqs4v] th,article[data-astro-cid-ipuyqs4v] td{border:1px solid #2a2e39;padding:1rem;text-align:left}article[data-astro-cid-ipuyqs4v] th{background:#1c212d;color:#8f949e;text-transform:uppercase;font-size:.8rem;letter-spacing:.05em}article[data-astro-cid-ipuyqs4v] strong{color:#fff}
-</style></head> <body data-astro-cid-sckkx6r4> <header class="site-header" data-astro-cid-sckkx6r4> <div class="site-header-inner" data-astro-cid-sckkx6r4> <a class="brand" href="/AlphaOracle/" data-astro-cid-sckkx6r4>AlphaOracle</a> <nav class="site-nav" data-astro-cid-sckkx6r4> <a href="/AlphaOracle/" data-astro-cid-sckkx6r4> Analysis </a><a href="/AlphaOracle/news-events/" data-astro-cid-sckkx6r4> News </a><a href="/AlphaOracle/indicators/" data-astro-cid-sckkx6r4> Indicators </a><a href="/AlphaOracle/tickers/" data-astro-cid-sckkx6r4> Tickers </a><a href="/AlphaOracle/backtests/" data-astro-cid-sckkx6r4> Backtests </a><a href="/AlphaOracle/research/" data-astro-cid-sckkx6r4> Research </a><a href="/AlphaOracle/paper-trading/" data-astro-cid-sckkx6r4> Paper Trading </a> </nav> </div> </header>  <main data-astro-cid-ipuyqs4v> <header data-astro-cid-ipuyqs4v> <h1 data-astro-cid-ipuyqs4v>Technical Analyst Report</h1> <p class="date" data-astro-cid-ipuyqs4v>2026-07-29</p> </header> <article data-astro-cid-ipuyqs4v> <h2 id="model-deepseekdeepseek-v4-flash">Model: deepseek/deepseek-v4-flash</h2>
-<h1 id="technical-analysis-report--2026-07-29">Technical Analysis Report — 2026-07-29</h1>
-<p><em>Based solely on price action; macro/news context excluded per analyst mandate.</em></p>
-<h2 id="market-context--regime-signals">Market Context &#x26; Regime Signals</h2>
+</style></head> <body data-astro-cid-sckkx6r4> <header class="site-header" data-astro-cid-sckkx6r4> <div class="site-header-inner" data-astro-cid-sckkx6r4> <a class="brand" href="/AlphaOracle/" data-astro-cid-sckkx6r4>AlphaOracle</a> <nav class="site-nav" data-astro-cid-sckkx6r4> <a href="/AlphaOracle/" data-astro-cid-sckkx6r4> Analysis </a><a href="/AlphaOracle/news-events/" data-astro-cid-sckkx6r4> News </a><a href="/AlphaOracle/indicators/" data-astro-cid-sckkx6r4> Indicators </a><a href="/AlphaOracle/tickers/" data-astro-cid-sckkx6r4> Tickers </a><a href="/AlphaOracle/backtests/" data-astro-cid-sckkx6r4> Backtests </a><a href="/AlphaOracle/research/" data-astro-cid-sckkx6r4> Research </a><a href="/AlphaOracle/paper-trading/" data-astro-cid-sckkx6r4> Paper Trading </a> </nav> </div> </header>  <main data-astro-cid-ipuyqs4v> <header data-astro-cid-ipuyqs4v> <h1 data-astro-cid-ipuyqs4v>Technical Analyst Report</h1> <p class="date" data-astro-cid-ipuyqs4v>2026-08-10</p> </header> <article data-astro-cid-ipuyqs4v> <h2 id="model-geminigemini-25-flash">Model: gemini/gemini-2.5-flash</h2>
+<p>Here’s an evaluation of the setups purely based on price action and technical indicators:</p>
+<h3 id="technical-analysis-of-market-data-price-action-only">Technical Analysis of Market Data (Price Action Only)</h3>
+<p><strong>Market Regime:</strong> Bull Quiet (Based on indicator output, confirming general market conditions for technical analysis).</p>
+<p><strong>Individual Tickers:</strong></p>
 <ul>
-<li><strong>SPY</strong> @ 740.86: Price below SMA20 (746.65) but above SMA50 (743.98) and SMA200 (696.17). RSI 47.4, MACD histogram falling. Neutral‑bearish short‑term, bullish long‑term. Narrow Bollinger Band width (2.7%) — no squeeze.</li>
-<li><strong>QQQ</strong> @ 675.49: Below SMA20 (708.06), SMA50 (716.37), SMA200 (642.64). RSI 36.5, deeply in bearish territory. MACD histogram expanding negatively. <strong>Potential failed support at 200‑MA zone?</strong> Price is 5% above it.</li>
-<li><strong>^VIX</strong> @ 18.21: Above SMA20 (17.0), RSI 53, rising. VIX term structure (^VIX3M 20.54 > ^VIX) still in contango — no panic backwardation yet.</li>
-<li><strong>Intermarket signals</strong>: Dollar (UUP) in strong uptrend (RSI 63.6, above all MAs) → headwind for commodities/international. TLT (bonds) in downtrend (below all MAs, RSI 47.4) → “rising rates” regime active.</li>
-<li><strong>Mandate composite</strong>: Slow channel = risk_on, fast channel &#x26; credit = clear, canary = half_defensive (TLT negative). Suggests <strong>cautious deployment</strong> with emphasis on adaptive defense (gold/cash).</li>
-</ul>
-<hr>
-<h2 id="1-high-probability-mean-reversion-bounces-oversold-at-bollinger-band-support">1. High-Probability Mean Reversion Bounces (Oversold at Bollinger Band Support)</h2>
-<p>These securities show RSI &#x3C; 35, price at or below the lower BB, and extreme short‑term negativity — classic mean‑reversion entry zones.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Ticker</th><th>Price</th><th>RSI 14</th><th>Lower BB</th><th>Distance to LBB</th><th>Setup</th></tr></thead><tbody><tr><td><strong>TSLA</strong></td><td>$307.44</td><td>27.0</td><td>$306.47</td><td>−0.3%</td><td>Price kissing lower band. RSI deeply oversold. 52‑week low territory. Immediate bounce likely to SMA20 ($380) but trend is sharply down. <strong>Aggressive play only</strong> with tight stop below $303.</td></tr><tr><td><strong>INTC</strong></td><td>$86.30</td><td>33.8</td><td>$81.18</td><td>+6.3%</td><td>Not at band yet but RSI at its lowest since the 2022 bottom. Below SMA20 and SMA50 but still far above SMA200 ($66). Bounce target $95‑100. More room if $81 support holds.</td></tr><tr><td><strong>AMD</strong></td><td>$454.62</td><td>39.2</td><td>$471.87</td><td>−3.6%</td><td><strong>Price is below the lower BB</strong> — a rare overshoot. RSI not historically extreme but the band violation suggests panic selling. Mean reversion target SMA20 ($527) is a +16% trade.</td></tr><tr><td><strong>TLN</strong></td><td>$326.05</td><td>34.3</td><td>$337.76</td><td>−3.5%</td><td>Price below lower BB, RSI 34.3. Heavy selling in AI‑power name. Bounce to SMA20 ($372) = +14%.</td></tr><tr><td><strong>MTZ</strong></td><td>$312.44</td><td>34.6</td><td>$312.84</td><td>−0.1%</td><td><strong>Exactly at lower band</strong>. Infrastructure stock with oversold RSI. Bounce target SMA20 ($360) = +15%.</td></tr></tbody></table>
-<p><strong>Risk for all above</strong>: “Oversold can stay oversold.” Only take these if volume confirms a reversal bar (e.g., a bullish engulfing candle or high‑volume bounce off band). Suggested size: 1–2% of portfolio each, stop loss at 2× ATR below entry.</p>
-<hr>
-<h2 id="2-trend-continuation-setups-strong-momentum-not-overbought">2. Trend Continuation Setups (Strong Momentum, Not Overbought)</h2>
-<p>These securities are in uptrend above all MAs with positive MACD histograms and healthy RSI (50‑65).</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Ticker</th><th>Price</th><th>RSI</th><th>MACD Hist</th><th>Setup</th></tr></thead><tbody><tr><td><strong>EWC</strong> (Canada)</td><td>$59.84</td><td>62.9</td><td>+0.064</td><td>Above all MAs, MACD positive, RSI in sweet spot. Canadian stocks benefiting from strong energy exposure and commodity tailwinds. Trend continuation to new highs likely.</td></tr><tr><td><strong>EWA</strong> (Australia)</td><td>$29.32</td><td>63.0</td><td>+0.075</td><td>Similar profile. July seasonal strength (financial year start). Above all MAs, positive momentum.</td></tr><tr><td><strong>XLP</strong> (Consumer Staples)</td><td>$87.06</td><td>61.5</td><td>+0.165</td><td>Defensive sector in uptrend. RSI below 70, no overbought concern. Safe continuation play.</td></tr><tr><td><strong>XLE</strong> (Energy)</td><td>$57.57</td><td>54.3</td><td>+0.261</td><td>Uptrend intact, MACD positive, not overbought. Energy still has room despite recent oil spike.</td></tr><tr><td><strong>XLB</strong> (Materials)</td><td>$52.34</td><td>60.6</td><td>+0.151</td><td>Strong trend above all MAs. MACD positive. Materials tied to commodities and infrastructure spending.</td></tr><tr><td><strong>UUP</strong> (Dollar)</td><td>$28.58</td><td>63.6</td><td>+0.003</td><td>Strong dollar trend continues. Above all MAs. Could be used as a hedge for other positions.</td></tr></tbody></table>
-<p><strong>Suggested plays</strong>: Long EWC or EWA (min 2% each). Long XLP or XLB as defensive‑value rotation. Avoid chasing XLF (overbought RSI 72) and SCHD (overbought RSI 71.7).</p>
-<hr>
-<h2 id="3-failed-breakdowns--potential-breakdown-continuation">3. Failed Breakdowns / Potential Breakdown Continuation</h2>
-<p>These securities have broken below key moving averages with momentum still negative — stay short or avoid.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Ticker</th><th>Situation</th></tr></thead><tbody><tr><td><strong>QQQ</strong></td><td>Below SMA20,50,200? Actually still above SMA200 (642.64) by 5%. But RSI 36.5 and MACD negative. A <strong>break below 642</strong> would confirm a major breakdown. Currently in no‑man’s land.</td></tr><tr><td><strong>NVDA</strong></td><td>Below SMA20 (203.63) and SMA50 (207.76). RSI 43, MACD negative. Testing SMA200 (192.82) — if it fails there, severe downside. <strong>Avoid long until above SMA50</strong>.</td></tr><tr><td><strong>META</strong></td><td>Below all MAs, RSI 43.4, MACD negative. Earnings miss in play. Downtrend likely to continue.</td></tr><tr><td><strong>TSM</strong></td><td>Below SMA20 (423.8) and SMA50 (425.2), RSI 39. <strong>Sell rallies</strong> or stay away.</td></tr><tr><td><strong>MU</strong></td><td>Below SMA20 (947.9) and SMA50 (958.1) by 13%. RSI 40.3. Memory selloff not over.</td></tr></tbody></table>
-<p><strong>Strategy</strong>: Do not bottom‑fish these yet. If short, hold; if flat, wait for a confirmed bounce (price > SMA20 and RSI > 50).</p>
-<hr>
-<h2 id="4-volatility-contraction-squeezes-narrow-bb-low-atr-potential-explosive-move">4. Volatility Contraction Squeezes (Narrow BB, Low ATR, Potential Explosive Move)</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Ticker</th><th>BB Width (U‑L) / Price</th><th>Observation</th></tr></thead><tbody><tr><td><strong>HYG</strong> (Junk Bonds)</td><td>0.73 / 79.42 = 0.9%</td><td>Extremely tight bands. Price near all MAs (SMA20,50,200). A break above <strong>79.6</strong> or below <strong>79.2</strong> likely leads to a sharp move. This is a <strong>risk sentiment bellwether</strong> — watch for credit signal.</td></tr><tr><td><strong>TLT</strong></td><td>3.08 / 84.24 = 3.7%</td><td>Moderately tight. Price stuck in a 3‑point range. Break above $85.9 (SMA200) would be bullish for bonds / bearish for rates.</td></tr><tr><td><strong>IWM</strong> (Small Caps)</td><td>9.98 / 293.37 = 3.4%</td><td>Tightening. Small caps have been range‑bound. A move above <strong>300</strong> would be bullish for risk‑on; below <strong>290</strong> would signal broad weakness.</td></tr></tbody></table>
-<p><strong>Key actionable</strong>: HYG squeeze is low‑risk if you wait for a breakout confirmation. If HYG > 79.8, risk appetite is expanding; if &#x3C; 79.1, credit stress is rising. Place a bracket alert.</p>
-<hr>
-<h2 id="5-macd-histogram-turning-points-early-reversal-candidates">5. MACD Histogram Turning Points (Early Reversal Candidates)</h2>
-<p>Several oversold names are showing positive MACD histograms after prolonged declines — first signs of momentum turning.</p>
+<li>
+<p><strong>XEQT.TO:</strong></p>
 <ul>
-<li><strong>GLD</strong> (gold): MACD hist +1.26 after weeks of negative. Price still below MAs, but the histogram divergence suggests selling exhaustion. Mean reversion to SMA20 ($373) is +1% — not huge, but a base for larger recovery.</li>
-<li><strong>IAU</strong> (gold): Similar positive hist (+0.26).</li>
-<li><strong>SLV</strong> (silver): MACD hist +0.44, price below lower BB? Actually price above lower BB. Could be bottoming.</li>
-<li><strong>IBIT</strong> (bitcoin ETF): MACD hist +0.17, price near SMA20. Potential reversal if bitcoin holds.</li>
-<li><strong>CEG</strong>: MACD hist +2.31 — strong positive divergence even though price is below SMAs. Could lead a bounce.</li>
+<li><strong>Price Action:</strong> <code>close</code> (46.10) is above all SMAs (<code>sma_20</code>: 45.02, <code>sma_50</code>: 44.78, <code>sma_200</code>: 41.69), indicating a strong uptrend. Price is near the <code>bb_upper</code> (46.13).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (63.94) is strong but not yet overbought. <code>macd</code> (0.29) is above <code>macd_signal</code> (0.16) and <code>macd_hist</code> (0.13) is positive and rising, confirming bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Bullish)</strong>. The stock is in a clear uptrend with sustained bullish momentum, hitting the upper Bollinger Band which could signal short-term resistance or strong continuation.</li>
 </ul>
-<p><strong>Action</strong>: Add GLD or IAU as a defensive hedge if you’re underweight. MACD positivity in gold aligns with the half_defensive canary signal.</p>
-<hr>
-<h2 id="6-recommended-trade-ideas-based-on-price-action-only">6. Recommended Trade Ideas (Based on Price Action Only)</h2>
-<p>Given the mixed regime (risk_on yet cautious), deploy 30–50% of cash (~$26k–$43k) into the following high‑conviction setups, prioritizing trend continuations over bounces.</p>
-<h3 id="-high-conviction--trend-continuation-allocate-1520">✅ High Conviction – Trend Continuation (Allocate 15–20%)</h3>
+</li>
+<li>
+<p><strong>UUP:</strong></p>
 <ul>
-<li><strong>Long EWC</strong> (Canada ETF) — Buy near $59.70, stop at $58.00 (below SMA20). Target $62.50.</li>
-<li><strong>Long XLP</strong> (Staples) — Buy near $86.90, stop at $85.50. Target $89.00 (prior resistance).</li>
-<li><strong>Long EWA</strong> (Australia) — Buy near $29.25, stop at $28.40. Target $30.50 (July seasonal tailwind).</li>
+<li><strong>Price Action:</strong> <code>close</code> (28.07) is below <code>sma_20</code> (28.34) and <code>sma_50</code> (28.23), but above <code>sma_200</code> (27.53). It’s testing the <code>bb_lower</code> (27.99).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (39.36) is neutral to weak. <code>macd</code> (-0.038) is below <code>macd_signal</code> (0.015) and <code>macd_hist</code> (-0.053) is negative and falling, indicating bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Potential Mean Reversion Bounce (Bullish, Weak Signal)</strong>. Price is at the lower Bollinger Band with weakening bearish momentum (MACD histogram falling but not extremely negative). RSI is not oversold, suggesting caution. This could be a failed short-term downtrend continuation or a setup for a short-term bounce if RSI strengthens.</li>
 </ul>
-<h3 id="-medium-conviction--oversold-bounce-allocate-1015">✅ Medium Conviction – Oversold Bounce (Allocate 10–15%)</h3>
+</li>
+<li>
+<p><strong>QUAL:</strong></p>
 <ul>
-<li><strong>Long INTC</strong> — Buy on a close above $88 (confirming bounce), stop at $84.50, target $98 (SMA50).</li>
-<li><strong>Long AMD</strong> — Buy on a close above $470 (recapturing lower BB), stop at $445, target $520 (SMA20).</li>
+<li><strong>Price Action:</strong> <code>close</code> (225.69) is above all SMAs (<code>sma_20</code>: 219.67, <code>sma_50</code>: 217.46, <code>sma_200</code>: 204.38), indicating a strong uptrend. Price is at the <code>bb_upper</code> (225.77).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (69.07) is strong, approaching overbought levels. <code>macd</code> (2.09) is above <code>macd_signal</code> (1.34) and <code>macd_hist</code> (0.75) is positive and rising, confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Bullish)</strong>. Strong uptrend with powerful momentum, indicating continued strength, though proximity to <code>bb_upper</code> and high RSI might suggest a brief pause or consolidation is due.</li>
 </ul>
-<h3 id="-low-conviction--hedging-allocate-510">✅ Low Conviction / Hedging (Allocate 5–10%)</h3>
+</li>
+<li>
+<p><strong>META:</strong></p>
 <ul>
-<li><strong>Long GLD</strong> (via IAU for lower fees) — Buy near $75.50, stop at $74.00, target $78 (SMA20). Defensive play.</li>
-<li><strong>Short / avoid</strong> QQQ, NVDA, META until they reclaim SMA20.</li>
+<li><strong>Price Action:</strong> <code>close</code> (592.10) is below <code>sma_20</code> (612.27) and <code>sma_50</code> (599.62), but above <code>sma_200</code> (630.44). This indicates a short-term downtrend within a longer-term complex trend. Price is well within the Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (47.68) is neutral. <code>macd</code> (-7.51) is below <code>macd_signal</code> (-5.02) and <code>macd_hist</code> (-2.49) is negative and falling, confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Pullback/Weakening Trend Continuation (Bearish)</strong>. The price is pulling back, showing bearish momentum confirmed by MACD. No clear mean reversion or volatility squeeze. The <code>sma_200</code> is above the current price, indicating a potential longer-term downtrend if it falls below the SMA_200, though it’s currently above the SMA_50.</li>
 </ul>
-<hr>
-<h2 id="summary-of-priceonly-signals">Summary of Price‑Only Signals</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Setup Type</th><th>Tickers</th><th>Signal Strength</th></tr></thead><tbody><tr><td>Trend Continuation</td><td>EWC, EWA, XLP, XLE, XLB</td><td>Strong (momentum + not overbought)</td></tr><tr><td>Mean Reversion Bounce</td><td>TSLA, INTC, AMD, TLN, MTZ</td><td>Moderate (oversold but trend against)</td></tr><tr><td>Failed Breakdown (avoid)</td><td>QQQ, META, NVDA, TSM, MU</td><td>Strong avoid</td></tr><tr><td>Volatility Squeeze</td><td>HYG, TLT, IWM</td><td>Monitor for breakout</td></tr><tr><td>MACD Turn (early reversal)</td><td>GLD, CEG, IBIT</td><td>Weak but developing</td></tr></tbody></table>
-<p><strong>Immediate posture</strong>: Lean toward trend continuations (Canada, Australia, staples). Oversold bounces are for nimble traders only — use tight stops. The half_defensive canary and bear‑quiet regime argue against heavy tech exposure. Keep at least 50% cash for the next volatility event (BoJ, oil escalation, earnings gaps).</p> </article> </main>  </body></html> 
+</li>
+<li>
+<p><strong>AAPL:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (313.33) is below <code>sma_20</code> (323.43) but above <code>sma_50</code> (309.79) and <code>sma_200</code> (279.13). Price is in the lower half of the Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (47.59) is neutral. <code>macd</code> (0.88) is below <code>macd_signal</code> (4.06) and <code>macd_hist</code> (-3.18) is negative and falling, indicating bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Pullback/Weakening Trend (Bearish short-term)</strong>. Short-term bearish momentum, potentially testing <code>sma_50</code> as support within a broader uptrend.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLF:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (57.60) is above <code>sma_20</code> (56.80), <code>sma_50</code> (54.73) and <code>sma_200</code> (52.63), indicating an uptrend. Price is near the <code>bb_upper</code> (58.17).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (63.79) is strong but not overbought. <code>macd</code> (0.833) is just below <code>macd_signal</code> (0.838) and <code>macd_hist</code> (-0.004) is barely negative, indicating a potential weakening or flattening of bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Bullish, slowing momentum)</strong>. Clear uptrend, but MACD suggests bullish momentum might be losing steam, possibly leading to consolidation or a slight pullback.</li>
+</ul>
+</li>
+<li>
+<p><strong>NVDA:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (223.96) is above all SMAs (<code>sma_20</code>: 206.82, <code>sma_50</code>: 206.05, <code>sma_200</code>: 193.80), indicating a strong uptrend. Price is at the <code>bb_upper</code> (223.62).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (64.42) is strong but not yet overbought. <code>macd</code> (3.06) is above <code>macd_signal</code> (0.56) and <code>macd_hist</code> (2.50) is positive and rising strongly, confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Bullish)</strong>. Robust uptrend with strong and accelerating bullish momentum, touching the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>KLAC:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (198.11) is below <code>sma_20</code> (203.41) and <code>sma_50</code> (221.43), but above <code>sma_200</code> (164.39). Price is in the lower half of its wide Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (46.01) is neutral. <code>macd</code> (-9.79) is slightly below <code>macd_signal</code> (-9.77), with <code>macd_hist</code> (-0.016) being marginally negative and flattening, potentially indicating a deceleration of recent bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Pullback/Consolidation</strong>. The stock has pulled back from its <code>sma_50</code>, but overall remains above <code>sma_200</code>. Bearish momentum is flattening, suggesting potential consolidation or a short-term bounce, especially if the Bollinger Bands start to narrow.</li>
+</ul>
+</li>
+<li>
+<p><strong>CRWD:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (214.42) is above all SMAs (<code>sma_20</code>: 195.99, <code>sma_50</code>: 185.91, <code>sma_200</code>: 134.82), indicating a strong uptrend. Price is near the <code>bb_upper</code> (219.33).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (66.56) is strong. <code>macd</code> (6.52) is above <code>macd_signal</code> (4.59) and <code>macd_hist</code> (1.93) is positive and rising, confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Bullish)</strong>. Clear uptrend with strong momentum, suggesting continued upward movement.</li>
+</ul>
+</li>
+<li>
+<p><strong>UPRO:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (155.06) is above all SMAs (<code>sma_20</code>: 142.66, <code>sma_50</code>: 141.91, <code>sma_200</code>: 123.12), indicating a strong uptrend. Price is near the <code>bb_upper</code> (155.87).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (65.04) is strong. <code>macd</code> (3.01) is above <code>macd_signal</code> (1.13) and <code>macd_hist</code> (1.88) is positive and rising, confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Bullish)</strong>. Very strong uptrend with robust momentum, hitting the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>TMF:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (31.43) is below all SMAs (<code>sma_20</code>: 32.06, <code>sma_50</code>: 33.74, <code>sma_200</code>: 36.44), indicating a strong downtrend. Price is near the <code>bb_lower</code> (30.48).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (40.67) is weak/neutral. <code>macd</code> (-0.737) is slightly above <code>macd_signal</code> (-0.757) and <code>macd_hist</code> (0.019) is marginally positive but flattening after a period of negative momentum.</li>
+<li><strong>Setup:</strong> <strong>Potential Mean Reversion Bounce (Bullish, Weak Signal)</strong>. The strong downtrend (below all SMAs) is apparent. However, MACD histogram turning positive suggests bearish momentum is easing, and the price is near the lower Bollinger Band, hinting at a potential short-term bounce. Given the strong downtrend, this would be a counter-trend bounce.</li>
+</ul>
+</li>
+<li>
+<p><strong>TSM:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (420.04) is above <code>sma_20</code> (409.29) and <code>sma_200</code> (358.97) but below <code>sma_50</code> (425.68). Price is within the middle of the Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (52.23) is neutral. <code>macd</code> (-3.41) is above <code>macd_signal</code> (-5.84) and <code>macd_hist</code> (2.43) is positive and rising, indicating a shift towards bullish momentum from a previous bearish phase.</li>
+<li><strong>Setup:</strong> <strong>Momentum Shift / Attempted Trend Reversal (Bullish)</strong>. Price is recovering, with MACD crossing above its signal line and histogram strengthening, suggesting a shift in momentum despite being below its <code>sma_50</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>EWA:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (30.41) is above all SMAs (<code>sma_20</code>: 29.16, <code>sma_50</code>: 28.65, <code>sma_200</code>: 27.64), indicating a strong uptrend. Price is at the <code>bb_upper</code> (30.416).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (69.08) is strong, near overbought. <code>macd</code> (0.46) is above <code>macd_signal</code> (0.32) and <code>macd_hist</code> (0.14) is positive and rising, confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Bullish)</strong>. Clear uptrend with strong momentum, touching the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>VOO:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (710.71) is above all SMAs (<code>sma_20</code>: 689.55, <code>sma_50</code>: 686.22, <code>sma_200</code>: 643.41), indicating a strong uptrend. Price is at the <code>bb_upper</code> (711.64).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (66.14) is strong but not overbought. <code>macd</code> (5.81) is above <code>macd_signal</code> (2.80) and <code>macd_hist</code> (3.01) is positive and rising, confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Bullish)</strong>. Robust uptrend with strong and accelerating bullish momentum, near the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>AMZN:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (274.48) is above all SMAs (<code>sma_20</code>: 251.59, <code>sma_50</code>: 247.51, <code>sma_200</code>: 236.54), indicating a strong uptrend. Price is approaching the <code>bb_upper</code> (286.42).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (64.21) is strong but not overbought. <code>macd</code> (7.58) is above <code>macd_signal</code> (3.49) and <code>macd_hist</code> (4.09) is positive and strongly rising, confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Bullish)</strong>. Clear uptrend with powerful and accelerating bullish momentum.</li>
+</ul>
+</li>
+<li>
+<p><strong>SSO:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (71.68) is above all SMAs (<code>sma_20</code>: 67.70, <code>sma_50</code>: 67.35, <code>sma_200</code>: 60.61), indicating a strong uptrend. Price is near the <code>bb_upper</code> (71.94).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (65.44) is strong. <code>macd</code> (1.005) is above <code>macd_signal</code> (0.41) and <code>macd_hist</code> (0.59) is positive and rising, confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Bullish)</strong>. Robust uptrend with strong momentum, approaching the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>QQQ:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (723.03) is above <code>sma_20</code> (700.34) and <code>sma_200</code> (646.70), but below <code>sma_50</code> (714.31). Note: The <code>sma_50</code> is below the <code>sma_20</code> but above the <code>sma_200</code>, suggesting a recent rally pushing price above <code>sma_20</code> from below <code>sma_50</code> which is common in volatile uptrends. Price is within the middle of the Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (57.18) is neutral to strong. <code>macd</code> (0.167) is above <code>macd_signal</code> (-4.25) and <code>macd_hist</code> (4.42) is positive and rising very strongly, indicating a powerful shift towards bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Momentum Shift / Strong Recovery (Bullish)</strong>. While <code>close</code> is below <code>sma_50</code>, the MACD’s strong positive cross and accelerating histogram indicate significant bullish momentum taking hold, suggesting a recovery within the broader uptrend (above <code>sma_200</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>^IRX:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (3.71) is below <code>sma_20</code> (3.72) but above <code>sma_50</code> (3.68) and <code>sma_200</code> (3.63), suggesting a flat to minor downtrend in the short term within a longer-term uptrend. Price is in the middle of Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (50.00) is neutral. <code>macd</code> (0.008) is below <code>macd_signal</code> (0.013) and <code>macd_hist</code> (-0.005) is negative and falling, indicating slight bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Consolidation/Slight Pullback</strong>. Indicators suggest a sideways to slightly downward drift without strong conviction in either direction.</li>
+</ul>
+</li>
+<li>
+<p><strong>VTI:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (381.78) is above all SMAs (<code>sma_20</code>: 370.31, <code>sma_50</code>: 368.64, <code>sma_200</code>: 345.02), indicating a strong uptrend. Price is near the <code>bb_upper</code> (381.97).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (66.00) is strong. <code>macd</code> (3.03) is above <code>macd_signal</code> (1.44) and <code>macd_hist</code> (1.59) is positive and rising, confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Bullish)</strong>. Robust uptrend with strong momentum, hitting the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>VXUS:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (87.21) is above all SMAs (<code>sma_20</code>: 84.51, <code>sma_50</code>: 84.87, <code>sma_200</code>: 79.70), indicating a strong uptrend. Price is near the <code>bb_upper</code> (87.02).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (62.51) is strong but not overbought. <code>macd</code> (0.476) is above <code>macd_signal</code> (0.088) and <code>macd_hist</code> (0.388) is positive and rising strongly, confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Bullish)</strong>. Clear uptrend with powerful and accelerating bullish momentum.</li>
+</ul>
+</li>
+<li>
+<p><strong>MSFT:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (499.99) is above all SMAs (<code>sma_20</code>: 423.84, <code>sma_50</code>: 407.01, <code>sma_200</code>: 431.83), indicating a very strong uptrend. Price is at the <code>bb_upper</code> (514.11).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (78.15) is <strong>overbought</strong>. <code>macd</code> (27.58) is above <code>macd_signal</code> (16.28) and <code>macd_hist</code> (11.29) is positive and strongly rising, confirming very strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Overextended Trend Continuation (Bullish)</strong>. Extremely strong uptrend with robust momentum, but highly overbought RSI suggests potential for a pullback or consolidation soon.</li>
+</ul>
+</li>
+<li>
+<p><strong>TLN:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (347.71) is below all SMAs (<code>sma_20</code>: 356.67, <code>sma_50</code>: 373.19, <code>sma_200</code>: 364.56), indicating a downtrend. Price is in the lower half of the Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (46.68) is neutral. <code>macd</code> (-11.47) is below <code>macd_signal</code> (-10.99) and <code>macd_hist</code> (-0.485) is negative and falling slightly, confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Downtrend Continuation / Weakening Bearish Momentum</strong>. Clear downtrend. The MACD histogram is negative but relatively small compared to prior negative values, suggesting bearish momentum might be decelerating, but it’s not a clear reversal signal yet.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLC:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (111.25) is above <code>sma_20</code> (109.99) but below <code>sma_50</code> (110.27) and <code>sma_200</code> (113.73), indicating short-term strength within a longer-term sideways/weak trend. Price is in the middle of the Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (53.86) is neutral. <code>macd</code> (0.124) is above <code>macd_signal</code> (-0.246) and <code>macd_hist</code> (0.370) is positive and rising, indicating a recent shift to bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Momentum Shift (Bullish)</strong>. Recent bullish momentum cross on MACD, but still facing resistance from longer-term SMAs.</li>
+</ul>
+</li>
+<li>
+<p><strong>MU:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (877.57) is below <code>sma_20</code> (888.26) and <code>sma_50</code> (970.87) but far above <code>sma_200</code> (534.86). This indicates a short-term pullback within a strong longer-term uptrend. Price is in the middle of its wide Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (47.63) is neutral. <code>macd</code> (-25.60) is above <code>macd_signal</code> (-27.58) and <code>macd_hist</code> (1.98) is positive and rising, indicating a shift towards bullish momentum from a previous bearish phase.</li>
+<li><strong>Setup:</strong> <strong>Momentum Shift / Potential Recovery (Bullish)</strong>. After a pullback, MACD shows a bullish crossover and strengthening positive histogram, suggesting a recovery attempt.</li>
+</ul>
+</li>
+<li>
+<p><strong>NFLX:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (74.14) is above <code>sma_20</code> (71.92) but below <code>sma_50</code> (75.67) and <code>sma_200</code> (90.13), indicating short-term strength within a longer-term downtrend. Price is in the middle of the Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (52.30) is neutral. <code>macd</code> (-0.489) is above <code>macd_signal</code> (-1.196) and <code>macd_hist</code> (0.707) is positive and rising, indicating a shift towards bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Momentum Shift (Bullish, Counter-Trend)</strong>. Recent bullish momentum on MACD, suggesting a short-term bounce against a clear longer-term downtrend (below <code>sma_50</code> and <code>sma_200</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>XLI:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (185.18) is above all SMAs (<code>sma_20</code>: 181.35, <code>sma_50</code>: 179.59, <code>sma_200</code>: 167.42), indicating an uptrend. Price is near the <code>bb_upper</code> (186.88).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (58.75) is neutral to strong. <code>macd</code> (1.39) is above <code>macd_signal</code> (0.94) and <code>macd_hist</code> (0.449) is positive and rising, confirming bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Bullish)</strong>. Clear uptrend with solid momentum.</li>
+</ul>
+</li>
+<li>
+<p><strong>SCHD:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (33.90) is above all SMAs (<code>sma_20</code>: 33.21, <code>sma_50</code>: 32.54, <code>sma_200</code>: 29.98), indicating a strong uptrend. Price is near the <code>bb_upper</code> (34.25).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (65.33) is strong. <code>macd</code> (0.40) is above <code>macd_signal</code> (0.37) and <code>macd_hist</code> (0.026) is positive but small, suggesting consistent but not accelerating bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Bullish)</strong>. Clear uptrend with sustained bullish momentum.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLV:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (165.68) is above all SMAs (<code>sma_20</code>: 162.27, <code>sma_50</code>: 157.64, <code>sma_200</code>: 151.94), indicating an uptrend. Price is near the <code>bb_upper</code> (167.16).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (61.70) is strong. <code>macd</code> (1.88) is below <code>macd_signal</code> (1.99) and <code>macd_hist</code> (-0.115) is negative, indicating a slight weakening or potential reversal of bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Bullish, Weakening Momentum)</strong>. Uptrend is intact, but MACD suggests bullish momentum is fading, potentially leading to a short-term pause.</li>
+</ul>
+</li>
+<li>
+<p><strong>IWM:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (301.56) is above all SMAs (<code>sma_20</code>: 294.77, <code>sma_50</code>: 293.71, <code>sma_200</code>: 266.29), indicating a strong uptrend. Price is near the <code>bb_upper</code> (301.54).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (59.69) is strong. <code>macd</code> (1.527) is above <code>macd_signal</code> (0.778) and <code>macd_hist</code> (0.749) is positive and rising, confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Bullish)</strong>. Clear uptrend with solid and accelerating bullish momentum, touching the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>CEG:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (269.89) is above <code>sma_20</code> (263.40) and <code>sma_50</code> (260.92) but below <code>sma_200</code> (304.36), indicating a short-term uptrend within a longer-term downtrend. Price is in the upper half of the Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (54.87) is neutral to strong. <code>macd</code> (1.78) is above <code>macd_signal</code> (1.25) and <code>macd_hist</code> (0.53) is positive and rising, confirming bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Recovery/Short-term Trend Continuation (Bullish)</strong>. Showing good bullish momentum and trend in the short-term, moving against the longer-term downtrend defined by <code>sma_200</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>HYG:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (79.61) is above all SMAs (<code>sma_20</code>: 79.22, <code>sma_50</code>: 79.17, <code>sma_200</code>: 78.28), indicating an uptrend. Price is at the <code>bb_upper</code> (79.69).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (62.16) is strong. <code>macd</code> (0.083) is above <code>macd_signal</code> (0.029) and <code>macd_hist</code> (0.054) is positive and rising, confirming bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Bullish)</strong>. Clear uptrend with positive momentum, hitting the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>STX:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (812.76) is below <code>sma_20</code> (834.21) and <code>sma_50</code> (891.91), but far above <code>sma_200</code> (532.99). This indicates a short-term pullback within a strong longer-term uptrend. Price is near the <code>bb_lower</code> (740.89).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (46.02) is neutral. <code>macd</code> (-13.17) is above <code>macd_signal</code> (-14.98) and <code>macd_hist</code> (1.81) is positive and rising, indicating a shift towards bullish momentum from a previous bearish phase.</li>
+<li><strong>Setup:</strong> <strong>Potential Mean Reversion Bounce (Bullish)</strong>. After a significant pullback, price is approaching the lower Bollinger Band. The MACD shows a bullish crossover and strengthening positive histogram, indicating a potential recovery and mean reversion.</li>
+</ul>
+</li>
+<li>
+<p><strong>^VIX3M:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (20.54) is above <code>sma_20</code> (19.53) but below <code>sma_50</code> (20.08) and <code>sma_200</code> (20.95), suggesting short-term strength within a flat to minor downtrend. Price is in the middle of its wide Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (55.52) is neutral. <code>macd</code> (-0.198) is above <code>macd_signal</code> (-0.321) and <code>macd_hist</code> (0.123) is positive and rising, indicating a shift towards bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Momentum Shift (Bullish)</strong>. Short-term bullish momentum in MACD, suggesting VIX3M might see some upward pressure.</li>
+</ul>
+</li>
+<li>
+<p><strong>ORCL:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (147.02) is above <code>sma_20</code> (129.47) but far below <code>sma_50</code> (159.92) and <code>sma_200</code> (178.20), indicating a short-term uptrend within a clear longer-term downtrend. Price is near the <code>bb_upper</code> (148.98).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (56.68) is neutral to strong. <code>macd</code> (-2.42) is above <code>macd_signal</code> (-7.25) and <code>macd_hist</code> (4.83) is positive and rising very strongly, indicating a powerful shift towards bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Momentum Shift / Counter-Trend Recovery (Bullish)</strong>. Very strong bullish momentum, pushing the price rapidly upwards. This looks like a powerful recovery attempt against a prevailing downtrend, approaching the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>GOOGL:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (354.30) is above <code>sma_20</code> (348.76) but below <code>sma_50</code> (356.47) and <code>sma_200</code> (328.83). This suggests short-term strength but struggling against <code>sma_50</code>. Price is in the middle of its wide Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (50.75) is neutral. <code>macd</code> (0.946) is above <code>macd_signal</code> (-2.037) and <code>macd_hist</code> (2.98) is positive and rising strongly, indicating a powerful shift towards bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Momentum Shift (Bullish)</strong>. Similar to QQQ and MU, strong bullish MACD cross and histogram growth indicates a powerful short-term recovery, though still battling <code>sma_50</code> resistance.</li>
+</ul>
+</li>
+<li>
+<p><strong>AVGO:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (427.76) is above all SMAs (<code>sma_20</code>: 391.86, <code>sma_50</code>: 394.83, <code>sma_200</code>: 366.59), indicating a strong uptrend. Price is at the <code>bb_upper</code> (424.55).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (64.86) is strong. <code>macd</code> (7.61) is above <code>macd_signal</code> (2.24) and <code>macd_hist</code> (5.36) is positive and strongly rising, confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Bullish)</strong>. Clear uptrend with powerful and accelerating bullish momentum, touching the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>GLD:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (398.47) is above <code>sma_20</code> (374.87) and <code>sma_50</code> (382.34), but below <code>sma_200</code> (411.70). This indicates a short-term uptrend within a longer-term downtrend. Price is at the <code>bb_upper</code> (391.42).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (65.33) is strong. <code>macd</code> (1.70) is above <code>macd_signal</code> (-1.80) and <code>macd_hist</code> (3.50) is positive and rising strongly, indicating a powerful shift towards bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Momentum Shift / Counter-Trend Recovery (Bullish)</strong>. Strong bullish MACD cross and accelerating histogram indicate a powerful short-term rally, hitting the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>IBIT:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (36.80) is above <code>sma_20</code> (36.50) and <code>sma_50</code> (36.26), but well below <code>sma_200</code> (44.25), indicating short-term uptrend within a strong longer-term downtrend. Price is near the <code>bb_upper</code> (37.56).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (52.30) is neutral. <code>macd</code> (-0.006) is above <code>macd_signal</code> (-0.081) and <code>macd_hist</code> (0.075) is positive and rising, indicating a shift towards bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Momentum Shift / Counter-Trend Recovery (Bullish)</strong>. Recent bullish MACD cross and positive histogram suggest short-term recovery, but still in a pronounced longer-term downtrend.</li>
+</ul>
+</li>
+<li>
+<p><strong>SPY:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (773.26) is above all SMAs (<code>sma_20</code>: 750.17, <code>sma_50</code>: 746.61, <code>sma_200</code>: 700.13), indicating a strong uptrend. Price is at the <code>bb_upper</code> (774.26).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (66.03) is strong. <code>macd</code> (6.31) is above <code>macd_signal</code> (3.02) and <code>macd_hist</code> (3.29) is positive and rising strongly, confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Bullish)</strong>. Robust uptrend with strong and accelerating bullish momentum, touching the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>TQQQ:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (74.47) is above <code>sma_20</code> (68.64) and <code>sma_200</code> (59.64) but below <code>sma_50</code> (74.29). Price is near the <code>bb_upper</code> (78.40).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (55.63) is neutral to strong. <code>macd</code> (-0.598) is above <code>macd_signal</code> (-1.89) and <code>macd_hist</code> (1.29) is positive and rising strongly, indicating a powerful shift towards bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Momentum Shift / Strong Recovery (Bullish)</strong>. Similar to QQQ, strong bullish MACD cross and accelerating histogram indicate significant bullish momentum, despite being just below <code>sma_50</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>TLT:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (82.76) is below all SMAs (<code>sma_20</code>: 83.13, <code>sma_50</code>: 84.34, <code>sma_200</code>: 85.39), indicating a clear downtrend. Price is near the <code>bb_lower</code> (81.89).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (43.26) is neutral. <code>macd</code> (-0.522) is above <code>macd_signal</code> (-0.540) and <code>macd_hist</code> (0.018) is marginally positive, suggesting a potential easing of bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Potential Mean Reversion Bounce (Bullish, Weak Signal)</strong>. The stock is in a downtrend and near its lower Bollinger Band. MACD histogram turning barely positive suggests very slight easing of bearish pressure, hinting at a weak bounce potential.</li>
+</ul>
+</li>
+<li>
+<p><strong>VT:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (161.30) is above all SMAs (<code>sma_20</code>: 156.38, <code>sma_50</code>: 156.22, <code>sma_200</code>: 146.50), indicating a strong uptrend. Price is at the <code>bb_upper</code> (161.13).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (65.16) is strong. <code>macd</code> (1.11) is above <code>macd_signal</code> (0.42) and <code>macd_hist</code> (0.69) is positive and rising, confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Bullish)</strong>. Robust uptrend with strong momentum, touching the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLY:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (119.86) is above <code>sma_20</code> (115.00) but below <code>sma_50</code> (115.94) and <code>sma_200</code> (116.75). This indicates short-term strength against longer-term consolidation/weakness. Price is approaching the <code>bb_upper</code> (121.22).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (62.24) is strong. <code>macd</code> (0.658) is above <code>macd_signal</code> (-0.190) and <code>macd_hist</code> (0.848) is positive and rising strongly, indicating a powerful shift towards bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Momentum Shift / Counter-Trend Recovery (Bullish)</strong>. Significant bullish MACD cross and accelerating histogram, suggesting a strong short-term rally challenging previous resistance levels.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLB:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (52.86) is above all SMAs (<code>sma_20</code>: 51.19, <code>sma_50</code>: 51.18, <code>sma_200</code>: 48.83), indicating an uptrend. Price is at the <code>bb_upper</code> (52.88).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (59.91) is strong. <code>macd</code> (0.353) is above <code>macd_signal</code> (0.161) and <code>macd_hist</code> (0.193) is positive and rising, confirming bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Bullish)</strong>. Clear uptrend with solid momentum, touching the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>VGK:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (92.60) is above all SMAs (<code>sma_20</code>: 89.60, <code>sma_50</code>: 88.55, <code>sma_200</code>: 84.49), indicating a strong uptrend. Price is near the <code>bb_upper</code> (92.63).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (68.15) is strong, approaching overbought. <code>macd</code> (1.03) is above <code>macd_signal</code> (0.71) and <code>macd_hist</code> (0.326) is positive and rising, confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Bullish)</strong>. Clear uptrend with powerful momentum, at the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>DIA:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (539.62) is above all SMAs (<code>sma_20</code>: 525.89, <code>sma_50</code>: 519.96, <code>sma_200</code>: 489.86), indicating a strong uptrend. Price is near the <code>bb_upper</code> (541.99).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (63.68) is strong. <code>macd</code> (5.23) is above <code>macd_signal</code> (3.48) and <code>macd_hist</code> (1.75) is positive and rising, confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Bullish)</strong>. Robust uptrend with solid and accelerating bullish momentum, approaching the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLU:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (43.61) is below all SMAs (<code>sma_20</code>: 44.99, <code>sma_50</code>: 44.77, <code>sma_200</code>: 44.35), indicating a downtrend. Price is very near the <code>bb_lower</code> (43.31).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (36.25) is weak. <code>macd</code> (-0.382) is below <code>macd_signal</code> (-0.139) and <code>macd_hist</code> (-0.243) is negative and falling, confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Downtrend Continuation / Potential Mean Reversion Bounce (Weak Signal)</strong>. Clear downtrend with bearish momentum. Price is near the lower Bollinger Band, but RSI is not deeply oversold, so a bounce signal is weak.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLE:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (57.50) is below <code>sma_20</code> (58.15) but above <code>sma_50</code> (56.48) and <code>sma_200</code> (52.43). This indicates a short-term pullback within a longer-term uptrend. Price is in the middle of Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (49.89) is neutral. <code>macd</code> (0.553) is below <code>macd_signal</code> (0.723) and <code>macd_hist</code> (-0.170) is negative and falling, indicating bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Pullback/Weakening Trend Continuation (Bearish short-term)</strong>. Price is pulling back from recent highs with bearish momentum, but the overall trend remains upward.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLRE:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (44.98) is below <code>sma_20</code> (45.22) but above <code>sma_50</code> (44.62) and <code>sma_200</code> (42.20). This indicates a short-term downtrend within a longer-term uptrend. Price is near the <code>bb_lower</code> (44.36).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (49.48) is neutral. <code>macd</code> (0.139) is below <code>macd_signal</code> (0.239) and <code>macd_hist</code> (-0.099) is negative and falling, indicating bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Pullback/Potential Mean Reversion Bounce (Weak Signal)</strong>. Price is pulling back and near the lower Bollinger Band, with weakening bearish momentum on MACD histogram, which could precede a bounce.</li>
+</ul>
+</li>
+<li>
+<p><strong>EWC:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (61.30) is above all SMAs (<code>sma_20</code>: 59.56, <code>sma_50</code>: 58.70, <code>sma_200</code>: 55.58), indicating a strong uptrend. Price is near the <code>bb_upper</code> (60.91).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (69.26) is strong, approaching overbought. <code>macd</code> (0.604) is above <code>macd_signal</code> (0.443) and <code>macd_hist</code> (0.160) is positive and rising, confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Bullish)</strong>. Clear uptrend with powerful momentum, near the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>MTZ:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (272.46) is below all SMAs (<code>sma_20</code>: 317.52, <code>sma_50</code>: 353.91, <code>sma_200</code>: 298.59), indicating a clear downtrend. Price is approaching the <code>bb_lower</code> (241.01), within wide Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (37.33) is weak, approaching oversold. <code>macd</code> (-28.42) is below <code>macd_signal</code> (-22.95) and <code>macd_hist</code> (-5.47) is negative and falling, confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Downtrend Continuation (Bearish)</strong>. Clear and accelerating downtrend with strong bearish momentum. Potential for a mean reversion bounce if RSI drops further into oversold territory.</li>
+</ul>
+</li>
+<li>
+<p><strong>TSLA:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (328.58) is below all SMAs (<code>sma_20</code>: 343.33, <code>sma_50</code>: 380.44, <code>sma_200</code>: 408.80), indicating a clear downtrend. Price is well within its wide Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (41.41) is neutral to weak. <code>macd</code> (-19.76) is above <code>macd_signal</code> (-20.78) and <code>macd_hist</code> (1.02) is positive and rising, indicating a potential shift to bullish momentum from a previous bearish phase.</li>
+<li><strong>Setup:</strong> <strong>Momentum Shift / Potential Recovery (Bullish, Counter-Trend)</strong>. While in a strong downtrend, the MACD shows a bullish crossover and growing positive histogram, suggesting a short-term recovery attempt or mean reversion bounce from the recent selling.</li>
+</ul>
+</li>
+<li>
+<p><strong>AMD:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (483.36) is below <code>sma_20</code> (503.45) and <code>sma_50</code> (514.08) but far above <code>sma_200</code> (318.29). This indicates a short-term pullback within a strong longer-term uptrend. Price is well within its wide Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (46.89) is neutral. <code>macd</code> (-8.336) is below <code>macd_signal</code> (-6.078) and <code>macd_hist</code> (-2.259) is negative and falling, confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Pullback/Downtrend Continuation (Bearish short-term)</strong>. Price is pulling back with continued bearish momentum. The overall trend remains upward, suggesting this is a deeper correction within that trend.</li>
+</ul>
+</li>
+<li>
+<p><strong>NBIS:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (187.97) is below <code>sma_20</code> (194.99) and <code>sma_50</code> (223.54) but far above <code>sma_200</code> (143.37). This indicates a short-term pullback within a strong longer-term uptrend. Price is in the middle of its wide Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (45.79) is neutral. <code>macd</code> (-5.54) is above <code>macd_signal</code> (-7.58) and <code>macd_hist</code> (2.04) is positive and rising, indicating a shift towards bullish momentum from a previous bearish phase.</li>
+<li><strong>Setup:</strong> <strong>Momentum Shift / Potential Recovery (Bullish)</strong>. After a pullback, MACD shows a bullish crossover and strengthening positive histogram, suggesting a recovery attempt.</li>
+</ul>
+</li>
+<li>
+<p><strong>SLV:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (57.50) is above <code>sma_20</code> (52.97) but below <code>sma_50</code> (56.64) and <code>sma_200</code> (63.76). This indicates short-term strength against longer-term weakness/downtrend. Price is approaching the <code>bb_upper</code> (56.48).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (59.99) is strong. <code>macd</code> (-0.175) is above <code>macd_signal</code> (-1.06) and <code>macd_hist</code> (0.885) is positive and rising strongly, indicating a powerful shift towards bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Momentum Shift / Counter-Trend Recovery (Bullish)</strong>. Significant bullish MACD cross and accelerating histogram, suggesting a strong short-term rally challenging previous resistance levels.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLP:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (85.12) is above <code>sma_20</code> (84.96), <code>sma_50</code> (84.12) and <code>sma_200</code> (81.67), indicating an uptrend. Price is in the middle of Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (51.70) is neutral. <code>macd</code> (0.333) is below <code>macd_signal</code> (0.380) and <code>macd_hist</code> (-0.048) is negative and falling, indicating weakening bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Bullish, Weakening Momentum)</strong>. Uptrend is intact, but MACD suggests bullish momentum is fading, potentially leading to a short-term pause or consolidation.</li>
+</ul>
+</li>
+<li>
+<p><strong>LQD:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (106.55) is above <code>sma_20</code> (106.39) but below <code>sma_50</code> (107.33) and <code>sma_200</code> (107.51). This indicates short-term strength against longer-term weakness/downtrend. Price is in the middle of the Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (48.22) is neutral. <code>macd</code> (-0.265) is above <code>macd_signal</code> (-0.362) and <code>macd_hist</code> (0.097) is positive and rising, indicating a shift towards bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Momentum Shift / Potential Recovery (Bullish)</strong>. Recent bullish MACD cross and positive histogram suggest short-term recovery, attempting to reverse a longer-term downtrend.</li>
+</ul>
+</li>
+<li>
+<p><strong>^TNX:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (4.66) is above <code>sma_20</code> (4.63), <code>sma_50</code> (4.54) and <code>sma_200</code> (4.29), indicating an uptrend. Price is in the middle of Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (55.58) is neutral. <code>macd</code> (0.037) is below <code>macd_signal</code> (0.042) and <code>macd_hist</code> (-0.004) is marginally negative and falling, indicating a slight weakening of bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Bullish, Weakening Momentum)</strong>. Uptrend is intact, but MACD suggests bullish momentum is fading, potentially leading to a short-term pause or consolidation.</li>
+</ul>
+</li>
+<li>
+<p><strong>WDC:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (434.30) is below all SMAs (<code>sma_20</code>: 511.47, <code>sma_50</code>: 561.18, <code>sma_200</code>: 341.09), indicating a clear downtrend. Price is at the <code>bb_lower</code> (431.74).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (38.44) is weak. <code>macd</code> (-21.17) is below <code>macd_signal</code> (-15.94) and <code>macd_hist</code> (-5.23) is negative and falling, confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Downtrend Continuation (Bearish)</strong>. Clear and accelerating downtrend with strong bearish momentum. Price at lower Bollinger Band with weak RSI, suggesting continued downside or a brief mean reversion attempt if momentum significantly slows.</li>
+</ul>
+</li>
+<li>
+<p><strong>^VIX:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (14.90) is below all SMAs (<code>sma_20</code>: 17.16, <code>sma_50</code>: 17.27, <code>sma_200</code>: 18.58), indicating a clear downtrend. Price is near the <code>bb_lower</code> (14.25).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (41.91) is neutral. <code>macd</code> (-0.457) is below <code>macd_signal</code> (-0.130) and <code>macd_hist</code> (-0.327) is negative and falling, confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Downtrend Continuation (Bearish)</strong>. Clear downtrend with bearish momentum. Proximity to <code>bb_lower</code> and already low RSI could indicate a short-term consolidation or slight bounce, but the underlying trend is down.</li>
+</ul>
+</li>
+<li>
+<p><strong>PLTR:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (172.01) is above all SMAs (<code>sma_20</code>: 135.04, <code>sma_50</code>: 132.60, <code>sma_200</code>: 152.28), indicating a very strong uptrend. Price is at the <code>bb_upper</code> (164.13).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (72.83) is <strong>overbought</strong>. <code>macd</code> (7.19) is above <code>macd_signal</code> (2.40) and <code>macd_hist</code> (4.79) is positive and strongly rising, confirming very strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Overextended Trend Continuation (Bullish)</strong>. Extremely strong uptrend with robust and accelerating momentum, highly overbought RSI suggests potential for a pullback or consolidation soon.</li>
+</ul>
+</li>
+<li>
+<p><strong>IAU:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (81.68) is above <code>sma_20</code> (76.83) and <code>sma_50</code> (78.36), but below <code>sma_200</code> (84.34). This indicates a short-term uptrend within a longer-term downtrend. Price is at the <code>bb_upper</code> (80.23).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (65.48) is strong. <code>macd</code> (0.352) is above <code>macd_signal</code> (-0.366) and <code>macd_hist</code> (0.718) is positive and rising strongly, indicating a powerful shift towards bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Momentum Shift / Counter-Trend Recovery (Bullish)</strong>. Strong bullish MACD cross and accelerating histogram indicate a powerful short-term rally, hitting the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>INTC:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (101.65) is above <code>sma_20</code> (96.96) and <code>sma_200</code> (68.58), but below <code>sma_50</code> (110.65). This indicates short-term strength against recent weakness. Price is in the middle of its wide Bollinger Bands.</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (50.14) is neutral. <code>macd</code> (-3.83) is above <code>macd_signal</code> (-5.44) and <code>macd_hist</code> (1.61) is positive and rising strongly, indicating a powerful shift towards bullish momentum from a previous bearish phase.</li>
+<li><strong>Setup:</strong> <strong>Momentum Shift / Potential Recovery (Bullish)</strong>. Strong bullish MACD cross and accelerating histogram indicate a powerful short-term recovery, potentially challenging <code>sma_50</code> as resistance.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLK:</strong></p>
+<ul>
+<li><strong>Price Action:</strong> <code>close</code> (187.97) is above <code>sma_20</code> (178.89) and <code>sma_200</code> (156.18) but below <code>sma_50</code> (183.27). This indicates short-term strength but facing <code>sma_50</code> resistance. Price is near the <code>bb_upper</code> (189.54).</li>
+<li><strong>Momentum:</strong> <code>rsi_14</code> (59.17) is strong. <code>macd</code> (0.743) is above <code>macd_signal</code> (-0.806) and <code>macd_hist</code> (1.549) is positive and rising strongly, indicating a powerful shift towards bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Momentum Shift / Recovery (Bullish)</strong>. Significant bullish MACD cross and accelerating histogram, pushing the price upwards towards the upper Bollinger Band, while still battling <code>sma_50</code> as resistance.</li>
+</ul>
+</li>
+</ul> </article> </main>  </body></html> 
