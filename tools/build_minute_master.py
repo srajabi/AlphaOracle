@@ -52,6 +52,26 @@ STATS = REPO / "data" / "minute_master_alpaca.json"
 
 COLS = ["timestamp", "open", "high", "low", "close", "volume"]
 
+# Windows refuses to create these names even WITH an extension, so
+# PRN.parquet raises FileNotFoundError - which reads like a missing
+# directory rather than an illegal name. PRN, AUX and CON are all real
+# tickers. The mapping is recorded per ticker in the stats JSON so a
+# reader can get from ticker to filename without guessing.
+WIN_RESERVED = ({"CON", "PRN", "AUX", "NUL"}
+                | {f"COM{i}" for i in range(10)}
+                | {f"LPT{i}" for i in range(10)})
+
+
+def safe_name(ticker):
+    """Ticker -> a filename Windows will actually accept."""
+    t = ticker
+    for ch in '/\\:*?"<>|':
+        t = t.replace(ch, "-")
+    t = t.rstrip(". ")
+    if t.upper() in WIN_RESERVED:
+        t += "_"
+    return t or "_unnamed"
+
 
 def flush(ticker, chunks, stats):
     """Parse ONE csv per ticker, not one per ticker-month.
@@ -102,10 +122,12 @@ def flush(ticker, chunks, stats):
              .reset_index(drop=True))
     if out.empty:
         return
-    out.to_parquet(OUT / f"{ticker}.parquet", index=False,
+    fname = safe_name(ticker)
+    out.to_parquet(OUT / f"{fname}.parquet", index=False,
                    compression="zstd")
     stats[ticker] = {
         "rows": int(len(out)),
+        "filename": f"{fname}.parquet",
         "first": str(out["timestamp"].iloc[0]),
         "last": str(out["timestamp"].iloc[-1]),
     }
@@ -114,9 +136,12 @@ def flush(ticker, chunks, stats):
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     stats = {}
-    cur, chunks = None, []
-    n = kept = 0
+    cur, chunks, skip = None, [], False
+    n = kept = resumed = 0
     t0 = time.time()
+    # RESUMABLE. The stream must still be decompressed end to end, but
+    # skipping extractfile()+parse for tickers already on disk is where
+    # nearly all the cost is - a resume costs minutes, not hours.
     with tarfile.open(SRC, "r|*") as tf:
         for m in tf:
             if not m.isfile():
@@ -127,9 +152,13 @@ def main():
                 continue
             ticker = parts[1]
             if ticker != cur:
-                flush(cur, chunks, stats)
+                if not skip:
+                    flush(cur, chunks, stats)
                 cur, chunks = ticker, []
-            if "_EMPTY" in parts[2] or m.size < 100:
+                skip = (OUT / f"{safe_name(ticker)}.parquet").exists()
+                if skip:
+                    resumed += 1
+            if skip or "_EMPTY" in parts[2] or m.size < 100:
                 continue
             fh = tf.extractfile(m)
             if fh is not None:
@@ -137,9 +166,11 @@ def main():
                 kept += 1
             if n % 100_000 == 0:
                 el = time.time() - t0
-                print(f"  {n:,} members, {len(stats):,} tickers written, "
-                      f"{el:.0f}s", flush=True)
-    flush(cur, chunks, stats)
+                print(f"  {n:,} members, {len(stats):,} written, "
+                      f"{resumed:,} skipped, {el:.0f}s", flush=True)
+    if not skip:
+        flush(cur, chunks, stats)
+    print(f"  resumed past {resumed:,} tickers already on disk")
 
     total = sum(v["rows"] for v in stats.values())
     size = sum(p.stat().st_size for p in OUT.glob("*.parquet"))
