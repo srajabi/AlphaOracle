@@ -1846,3 +1846,70 @@ histogram peaks across 13-20h UTC, matching the US session.
   `E:/ColdStorage/AlphaOracle-data/alpaca_minute/<TICKER>.parquet`.
 - **SPY being absent means TODO #16 (intraday stop-losses) must use
   OHLCV-1m for SPY**; IWM (233 months) is the usable liquid proxy here.
+
+
+## 48. Cross-source validation: OHLCV-1m is sound in regular hours
+
+The first independent check the OHLCV-1m archive has ever had. Finding
+15 guarded five traps by reasoning about a single source; finding 47
+produced a second one. Compared on RETURNS (split-invariant) because
+Alpaca is split-adjusted and OHLCV-1m is not.
+
+7 tickers x 4 months (2005/2010/2015/2018-06), 284,259 overlapping
+minute bars.
+
+### 48a. The sources agree
+
+| measure | result |
+|---|---|
+| bars agreeing EXACTLY | 51.8% |
+| **bars agreeing within 10bp** | **99.3%** |
+| bars differing >1% ("material") | **0.032%** (96 of 284,259) |
+| bars differing >5% | **9** |
+
+An earlier pass reported "72.3% agreement" using a 1bp tolerance. That
+was wrong in interpretation: for a $20 stock one tick is 5bp, so
+sub-tick rounding registers as disagreement. **Tolerance must exceed one
+tick at the instrument's price.** The median absolute difference is
+exactly 0.
+
+### 48b. Bad prints exist in BOTH sources, and one tick corrupts two bars
+
+| bar | diff | alpaca | ohlcv |
+|---|---|---|---|
+| IWM 2005-06-09 12:33 | 50.0% | 61.770 | 61.770 |
+| CSCO 2005-06-30 12:04 | 17.0% | **23.000** | 19.680 |
+| CSCO 2005-06-30 12:05 | 14.3% | 19.500 | 19.500 |
+| INTC 2015-06-30 20:15 | 8.5% | **27.850** | 30.415 |
+| INTC 2010-06-01 12:00 | 5.5% | 21.170 | **20.000** |
+
+- **Where closes are IDENTICAL but returns differ, the bad print is in
+  the PREVIOUS bar** - r[t] = c[t]/c[t-1] - 1. One bad tick always
+  corrupts two consecutive returns. Any cleaner must handle the pair.
+- **Attribution is possible from context**: CSCO traded ~$19-20 in
+  2005-06, so Alpaca's 23.000 is the error; INTC traded ~$21 in 2010-06,
+  so OHLCV-1m's 20.000 is. **Neither source is authoritative.**
+- Bad prints are disproportionately ROUND NUMBERS (23.000, 20.000,
+  19.500) - consistent with placeholder or stale-quote fills.
+
+### 48c. The decisive pattern - it is all extended hours
+
+**All 9 material disagreements fall OUTSIDE the regular session.**
+12:00-12:33 UTC = 08:00-08:33 ET (pre-market); 20:15-20:31 UTC =
+16:15-16:31 ET (post-close). Regular hours in June (EDT) are 13:30-20:00
+UTC. Zero material disagreements inside it.
+
+**Practical rule: `session="regular"` in src/minute_data.py removes
+essentially all cross-source disagreement.** That is already the default
+used by every backtest run so far, so no prior result is affected.
+
+### 48d. Verdict
+
+**The OHLCV-1m archive is sound for regular-hours work.** Disagreement
+is 0.032% at >1% and concentrated entirely in thin extended-hours bars
+where both sources are unreliable. Extended-hours analysis (overnight
+gaps, finding 14; stop-losses, TODO #16) should treat single-source
+extended bars as suspect and cross-check where a second source exists.
+
+Caveat: 7 tickers x 4 months is a sample, not an audit. It covers
+megacaps and two ETFs; thin names are untested and will be worse.
