@@ -1,3 +1,70 @@
+# Session 2026-08-09 (cont) - the ColdStorage tars, opened at last
+
+Findings 47-48. The 63 GB in E:/ColdStorage had never been opened.
+
+## What they are
+
+Alpaca minute bars, 1,957,238 files, **7,859 tickers**, 1999-01 to
+2019-09. Streamed, NOT extracted (full extraction = ~2M tiny files on
+NTFS). 12.7 min for the gzip archive.
+
+**market-data.tar is BZIP2 despite the extension.** Python's
+`tarfile.open(p, "r|")` dies with "invalid header"; GNU tar
+auto-detects. Use `"r|*"`. bzip2 runs ~30 MB/s vs gzip's ~300 - always
+prefer the .pigz for a full pass.
+
+## It is a PARTIAL dump - do not trust coverage
+
+- **53% of files are 35-byte _EMPTY placeholders**
+- **only 1,862 of 7,859 tickers (24%) have >=200 real months**
+- **SPY is ABSENT.** So are XLE, XLF, YHOO, AOL, WCOM
+- **QQQ and DIA have 4 real months** (2019-06..09, right before the dump)
+- Check `data/coldstorage_inventory.json` before assuming a ticker exists
+
+## Two new timestamp traps (not in finding 15)
+
+1. `timestamp` column is **naive EASTERN**, not UTC. Stamping UTC shifts
+   every bar 4-5h. Caught because AAPL "opened" at 09:30 UTC = 04:30 ET.
+2. The column named **`millis` holds SECONDS**. It is authoritative and
+   DST-proof - rebuild timestamps from it.
+3. Alpaca is split-adjusted, OHLCV-1m is not. **Compare returns, never
+   levels.**
+
+## Finding 48 - the archive is SOUND in regular hours
+
+284,259 overlapping bars, 7 tickers x 4 months:
+- **99.3% agree within 10bp**; only 0.032% differ >1%; 9 bars differ >5%
+- **all 9 material disagreements are OUTSIDE regular hours** (pre-market
+  08:00-08:33 ET, post-close 16:15-16:31 ET)
+- `session="regular"` removes essentially all of it - and that is
+  already the default, so **no prior backtest result is affected**
+- bad prints exist in BOTH sources, disproportionately ROUND numbers
+- one bad tick corrupts TWO consecutive returns (r[t] uses c[t-1]), so
+  any cleaner must handle the pair
+
+Lesson recorded: an earlier pass reported "72.3% agreement" at 1bp
+tolerance. For a $20 stock one tick is 5bp. **Tolerance must exceed one
+tick at the instrument's price** or rounding reads as corruption.
+
+## Next - the data is now staged for real work
+
+26 tickers are parquet in `E:/ColdStorage/AlphaOracle-data/alpaca_minute/`.
+
+- **TODO #18 is unblocked and is the highest-value next step.** TQQQ has
+  115 real months (2010-02..2019-09), plus UPRO/SSO/SQQQ/SPXU/QLD/UDOW/
+  SDOW. Finding 21 validated SIMULATED LETF returns against closing
+  prices but never against the intraday PATH - which is precisely what
+  drives daily-reset drag. This is the one dataset that can settle
+  whether the 2x/3x sleeve modelling is right.
+- **TODO #16 must use OHLCV-1m for SPY** (absent from the tars); IWM
+  (233 months) is the usable liquid proxy in the Alpaca data.
+- Whether the bzip2 archive is redundant is NOT proven - the ticker
+  count matches its filename but confirming costs a 14-min bzip2 pass.
+  If redundant it frees 25.8 GB.
+
+
+---
+
 # Session 2026-08-09 - bands settled, three ideas ruled out, one edge closed
 
 385 tests pass. Findings 41-46 added. Everything below is committed.
