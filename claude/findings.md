@@ -2159,3 +2159,78 @@ Use **1.0%/yr** as the planning spread for a 2x sleeve - the midpoint of
 measured. Median expectation ~54M rather than 65M. Treat anything quoted
 from findings 30/36/38 without this correction as roughly 25% optimistic
 at 2x and 40% at 3x.
+
+
+## 53. TODO #16 - close-only stop-loss backtests measure a different strategy
+
+A real stop is a resting order: it fires the moment price TOUCHES the
+level, usually intraday, often on a day that closes back above it. Almost
+every published stop-loss backtest triggers on the CLOSE, because that is
+the data people have. This quantifies the error.
+
+SPY 1993-2026 (7,525 days) and QQQ 1999-2026 (6,804 days), daily
+high/low aggregated from real minute bars in the daily master.
+
+### 53a. The census - the part with no rule to argue about
+
+Trailing stop at X% below the running peak. How many intraday breaches
+would a close-only test never see?
+
+| stop | SPY breaches | invisible | QQQ breaches | invisible |
+|---|---|---|---|---|
+| 5% | 378 | 266 (**70%**) | 536 | 352 (**66%**) |
+| 10% | 166 | 141 (**85%**) | 199 | 150 (**75%**) |
+| 15% | 122 | 112 (**92%**) | 105 | 88 (**84%**) |
+| 20% | 109 | 104 (**95%**) | 73 | 64 (**88%**) |
+
+**A 20% trailing stop tested on closes sees 5 of 109 real SPY triggers.**
+It is not approximating a stop-loss; it is measuring a different
+strategy that happens to share a parameter.
+
+**The error grows with stop width** - wider stops are breached almost
+exclusively on days that recover by the close. So the more "patient" the
+stop looks on paper, the less the paper test means.
+
+### 53b. Economic effect, with the rule caveat stated
+
+With a 20-day cooldown plus a 200d-mean re-entry condition:
+
+| | SPY intraday | SPY close | gap |
+|---|---|---|---|
+| 5% stop | -0.32% | 5.24% | -5.6pp |
+| 10% stop | -5.38% | 7.97% | -13.3pp |
+| 20% stop | -16.34% | 9.16% | **-25.5pp** |
+
+(buy_hold 9.45%.) QQQ shows the same sign, 3-10pp.
+
+**CAVEAT: these magnitudes are rule-dependent, the census is not.** The
+first version of this study had no cooldown and produced -100%
+drawdowns, because after an intraday stop SPY is nearly always still
+above its 200-day mean, so it re-entered the NEXT day above the sale
+price and realised a loss every cycle. That is a fact about that rule.
+Quote 53a as evidence; quote 53b only as direction.
+
+### 53c. Why the GATE works where stops do not
+
+This explains a result the repo already had without knowing the reason.
+The 200-day gate with a 4% band (finding 41c) and a trailing stop look
+like the same idea - exit on weakness - but they behave oppositely:
+
+- **A stop is a hair trigger on the LOW**, the noisiest price of the
+  day. It fires on intraday spikes that mean nothing, 66-95% of which
+  reverse by the close.
+- **The gate reads the CLOSE and adds a band.** The band is hysteresis:
+  it deliberately ignores exactly the moves a stop reacts to, and fires
+  0.89 times a year against a 20% stop's 3.3.
+
+**The gate's slowness is not a compromise, it is the mechanism.** Any
+attempt to make it faster - adaptive bands (41b), breadth (42), stops
+(here) - has now degraded it. That is seven failures pointing the same
+way.
+
+### 53d. Verdict
+
+**Stop-losses are RULED OUT for these sleeves**, and any stop-loss result
+in the literature tested on closes should be assumed to overstate by a
+wide margin. If a stop is ever wanted, it must be tested on intraday
+data or not at all.

@@ -1,0 +1,216 @@
+{
+  "SPY": {
+    "buy_hold_cagr_pct": 9.447197271263175,
+    "buy_hold_max_dd_pct": -56.518125439549905,
+    "days": 7525,
+    "stops": {
+      "5%": {
+        "intraday": {
+          "cagr_pct": -0.3230013700983303,
+          "max_dd_pct": -79.75303824319539,
+          "stops": 106,
+          "stops_per_year": 3.5497674418604652,
+          "pct_days_out": 47.64119601328904,
+          "terminal": 0.9079119244667783
+        },
+        "close": {
+          "cagr_pct": 5.241705237951733,
+          "max_dd_pct": -26.3253085745917,
+          "stops": 69,
+          "stops_per_year": 2.3106976744186047,
+          "pct_days_out": 35.82724252491694,
+          "terminal": 4.597848336586935
+        },
+        "census": {
+          "intraday_breaches": 378,
+          "close_also_saw": 112,
+          "invisible_to_close": 266,
+          "pct_invisible": 70.37037037037037
+        },
+        "cagr_gap_pp": -5.564706608050063
+      },
+      "10%": {
+        "intraday": {
+          "cagr_pct": -5.376402870001973,
+          "max_dd_pct": -95.98861951103663,
+          "stops": 62,
+          "stops_per_year": 2.076279069767442,
+          "pct_days_out": 33.74086378737541,
+          "terminal": 0.19200698274933614
+        },
+        "close": {
+          "cagr_pct": 7.967377929868946,
+          "max_dd_pct": -31.750931467422618,
+          "stops": 22,
+          "stops_per_year": 0.7367441860465116,
+          "pct_days_out": 19.867109634551493,
+          "terminal": 9.866262452673032
+        },
+        "census": {
+          "intraday_breaches": 166,
+          "close_also_saw": 25,
+          "invisible_to_close": 141,
+          "pct_invisible": 84.93975903614458
+        },
+        "cagr_gap_pp": -13.34378079987092
+      },
+      "15%": {
+        "intraday": {
+          "cagr_pct": -9.45919652025694,
+          "max_dd_pct": -99.4037935149323,
+          "stops": 47,
+          "stops_per_year": 1.5739534883720931,
+          "pct_days_out": 26.950166112956808,
+          "terminal": 0.05144274886221427
+        },
+        "close": {
+          "cagr_pct": 8.454053383552784,
+          "max_dd_pct": -32.20793113410245,
+          "stops": 11,
+          "stops_per_year": 0.3683720930232558,
+          "pct_days_out": 14.92358803986711,
+          "terminal": 11.284397954403044
+        },
+        "census": {
+          "intraday_breaches": 122,
+          "close_also_saw": 10,
+          "invisible_to_close": 112,
+          "pct_invisible": 91.80327868852459
+        },
+        "cagr_gap_pp": -17.913249903809724
+      },
+      "20%": {
+        "intraday": {
+          "cagr_pct": -16.335743788346146,
+          "max_dd_pct": -99.92745978053638,
+          "stops": 44,
+          "stops_per_year": 1.4734883720930232,
+          "pct_days_out": 24.79734219269103,
+          "terminal": 0.0048635901867366904
+        },
+        "close": {
+          "cagr_pct": 9.160873242325573,
+          "max_dd_pct": -40.42174132979769,
+          "stops": 6,
+          "stops_per_year": 0.20093023255813955,
+          "pct_days_out": 10.764119601328904,
+          "terminal": 13.700075237376085
+        },
+        "census": {
+          "intraday_breaches": 109,
+          "close_also_saw": 5,
+          "invisible_to_close": 104,
+          "pct_invisible": 95.41284403669725
+        },
+        "cagr_gap_pp": -25.49661703067172
+      }
+    }
+  },
+  "QQQ": {
+    "buy_hold_cagr_pct": 6.63259999777841,
+    "buy_hold_max_dd_pct": -91.24972737186478,
+    "days": 6804,
+    "stops": {
+      "5%": {
+        "intraday": {
+          "cagr_pct": 0.9417791280147858,
+          "max_dd_pct": -77.66294478191952,
+          "stops": 99,
+          "stops_per_year": 3.6666666666666665,
+          "pct_days_out": 52.05761316872428,
+          "terminal": 1.2879997710702078
+        },
+        "close": {
+          "cagr_pct": 7.330068229578135,
+          "max_dd_pct": -22.39553698716271,
+          "stops": 75,
+          "stops_per_year": 2.7777777777777777,
+          "pct_days_out": 44.8559670781893,
+          "terminal": 6.752707634655065
+        },
+        "census": {
+          "intraday_breaches": 536,
+          "close_also_saw": 184,
+          "invisible_to_close": 352,
+          "pct_invisible": 65.67164179104478
+        },
+        "cagr_gap_pp": -6.388289101563349
+      },
+      "10%": {
+        "intraday": {
+          "cagr_pct": 1.7834535860906442,
+          "max_dd_pct": -75.63921815057664,
+          "stops": 50,
+          "stops_per_year": 1.8518518518518519,
+          "pct_days_out": 35.96413874191652,
+          "terminal": 1.6116989881048
+        },
+        "close": {
+          "cagr_pct": 5.1282663814392615,
+          "max_dd_pct": -64.2008163213806,
+          "stops": 33,
+          "stops_per_year": 1.2222222222222223,
+          "pct_days_out": 30.261610817166375,
+          "terminal": 3.858571692441266
+        },
+        "census": {
+          "intraday_breaches": 199,
+          "close_also_saw": 49,
+          "invisible_to_close": 150,
+          "pct_invisible": 75.37688442211056
+        },
+        "cagr_gap_pp": -3.3448127953486173
+      },
+      "15%": {
+        "intraday": {
+          "cagr_pct": 2.227880188440645,
+          "max_dd_pct": -82.29325945429558,
+          "stops": 29,
+          "stops_per_year": 1.0740740740740742,
+          "pct_days_out": 28.350970017636683,
+          "terminal": 1.8128947572346135
+        },
+        "close": {
+          "cagr_pct": 9.301336547398908,
+          "max_dd_pct": -63.27362280801343,
+          "stops": 15,
+          "stops_per_year": 0.5555555555555556,
+          "pct_days_out": 20.120517342739568,
+          "terminal": 11.037933152775665
+        },
+        "census": {
+          "intraday_breaches": 105,
+          "close_also_saw": 17,
+          "invisible_to_close": 88,
+          "pct_invisible": 83.80952380952381
+        },
+        "cagr_gap_pp": -7.073456358958262
+      },
+      "20%": {
+        "intraday": {
+          "cagr_pct": -0.0020476414085091044,
+          "max_dd_pct": -89.75932774892836,
+          "stops": 21,
+          "stops_per_year": 0.7777777777777778,
+          "pct_days_out": 23.985890652557316,
+          "terminal": 0.9994472839631126
+        },
+        "close": {
+          "cagr_pct": 10.343229595861558,
+          "max_dd_pct": -65.88610619025104,
+          "stops": 8,
+          "stops_per_year": 0.2962962962962963,
+          "pct_days_out": 16.91651969429747,
+          "terminal": 14.26046402620661
+        },
+        "census": {
+          "intraday_breaches": 73,
+          "close_also_saw": 9,
+          "invisible_to_close": 64,
+          "pct_invisible": 87.67123287671232
+        },
+        "cagr_gap_pp": -10.345277237270068
+      }
+    }
+  }
+}
