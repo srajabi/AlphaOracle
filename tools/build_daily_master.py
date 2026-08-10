@@ -130,9 +130,8 @@ def build_alpaca():
     outdir.mkdir(parents=True, exist_ok=True)
     dest = outdir / "daily_all.parquet"
     if not src.exists():
-        print(f"  [alpaca] minute master missing at {src}
-"
-              f"           run tools/build_minute_master.py first")
+        print(f"  [alpaca] minute master missing at {src}")
+        print("           run tools/build_minute_master.py first")
         return outdir
     if dest.exists():
         print(f"  [alpaca] {dest.name} exists, skipping")
