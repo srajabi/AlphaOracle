@@ -2021,3 +2021,81 @@ violations on OHLCV-1m. Filter `bars >= 10`.
 **This is what the second source buys.** A single-source archive gives
 no way to tell "my aggregation is wrong" from "this vendor had a bad
 year". Running the same code over both answers it in one query.
+
+
+## 51. TODO #18 - the LETF simulator is right about beta, wrong about financing
+
+Finding 21 validated SIMULATED LETF returns against real closing prices,
+but only compared endpoints. This tests the mechanism. It matters because
+findings 30, 36 and 38 price the 2x/3x sleeves with this simulator:
+
+    r_letf = L * r_underlying - (L - 1) * rf - expense / 252
+
+Real funds vs simulator, OHLCV-1m daily, inception-gated:
+
+| pair | L | days | beta | R2 | TE bp/day |
+|---|---|---|---|---|---|
+| TQQQ/QQQ | 3 | 4,044 | **2.975** | 0.9972 | 20.4 |
+| UPRO/SPY | 3 | 4,207 | **2.955** | 0.9937 | 25.5 |
+| QLD/QQQ | 2 | 4,956 | **1.996** | 0.9948 | 19.8 |
+| SSO/SPY | 2 | 4,852 | **1.978** | 0.9938 | 19.2 |
+
+### 51a. The core is sound
+
+Beta lands within 0.045 of nominal on all four, R2 0.9937-0.9972, and
+rolling 1-year real/sim gaps stay inside 0.94-1.06 - **error does not
+accumulate**. Tracking error is 19-26bp/day, which is noise, not drift.
+
+### 51b. Path dependence is real but economically trivial
+
+Regressing the residual on Parkinson intraday range:
+**significant in 1 of 4 pairs** (TQQQ p=0.000, slope -0.0217; the other
+three p=0.24-0.96). Sign is correct - choppier days cost a daily-reset
+fund - but the magnitude is negligible. **The constant-L model is fine.**
+TODO #18's premise, that intraday path is a missing driver, is
+DISCONFIRMED at daily resolution.
+
+### 51c. THE MATERIAL DEFECT - no financing spread
+
+The simulator charges `(L-1) x rf`. Real funds finance via swaps at
+rf PLUS a spread. Decomposing the observed drift (price-only underlying,
+so a positive drift of L x dividend yield is expected):
+
+| pair | L | observed drift | expected (L x yield) | shortfall | implied spread |
+|---|---|---|---|---|---|
+| TQQQ/QQQ | 3 | 0.71%/yr | 1.80% | 1.09% | **0.54%** |
+| UPRO/SPY | 3 | 3.34%/yr | 4.80% | 1.46% | **0.73%** |
+| QLD/QQQ | 2 | 0.25%/yr | 1.20% | 0.95% | **0.95%** |
+| SSO/SPY | 2 | 1.71%/yr | 3.20% | 1.49% | **1.49%** |
+
+The observed drift ranks EXACTLY as L x yield predicts (UPRO > SSO >
+TQQQ > QLD), which is what confirms the dividend explanation rather than
+assuming it.
+
+**Estimated missing cost: ~0.5-1.5%/yr per unit of borrowed exposure.**
+CAVEAT: dividend yields are ASSUMED (SPY 1.6%, QQQ 0.6%), not measured -
+no adj_close exists anywhere in the archive. A yield 0.3pp higher moves
+the implied spread ~0.3pp per unit borrowed. **Treat 0.5-1.5%/yr as a
+range, not a point estimate.**
+
+### 51d. Consequence for the sleeves
+
+Every leveraged projection in this repo is optimistic by roughly
+(L-1) x 0.5-1.5%/yr. For the user's 2x sleeve that is ~1%/yr, which over
+27 years compounds to roughly a 25% haircut on terminal wealth. This
+does NOT change the ORDERING of any finding - the gate still beats no
+gate, 2x still beats 1x - because the cost applies uniformly to every
+levered variant. It changes the LEVEL.
+
+### 51e. Two data traps this surfaced
+
+1. **TICKER REUSE.** OHLCV-1m carries 256 days under "UPRO" in
+   2000-2001 trading at $6.50 and $2.94; real UPRO launched 2009-06-25
+   at $128. Unfiltered this produced beta **-12.6** and a **427x** wealth
+   ratio. **Always gate an ETF series at its inception date** - a ticker
+   is not a stable identifier across decades.
+2. Confirming 47's warning: OHLCV-1m is unadjusted, so TQQQ carries
+   phantom -50% split days. Detected by ratio against the simulated
+   series (a 2:1 split lands (1+r_real)/(1+r_sim) near 0.5, which no
+   market move does) and EXCLUDED rather than patched - 4 to 8 days per
+   pair.
