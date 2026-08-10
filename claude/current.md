@@ -1,3 +1,69 @@
+# Session 2026-08-09 (cont) - the data archive is built
+
+Findings 47-50. Everything committed. Archive at E:/ColdStorage/archive.
+
+## What exists now
+
+| set | scale | size |
+|---|---|---|
+| raw/ (2 tars + 3 json bundles) | originals, renamed, SHA256 verified | 64.8 GB |
+| derived/minute_master/alpaca | **3,286,433,543 bars**, 7,610 tickers | 41.3 GB |
+| derived/daily_master/ohlcv1m | ~77M rows, 411 months, 22k tickers | 1.27 GB |
+| derived/daily_master/alpaca | 17,822,447 rows, 7,610 tickers | 0.28 GB |
+| derived/daily_master/yfinance | 501,183 rows, 79 tickers | 0.01 GB |
+| derived/reference_master | 2,857,417 obs, **922 series**, 1870-2026 | 11 MB |
+| OHLCV-1m (left in place) | 411 monthly parquet, 1992-2026 | 87.7 GB |
+
+**195.3 GB total. 169.5 GB excluding the verified-redundant bz2.**
+
+README.md + MANIFEST.json travel with the data. `--verify` re-hashes
+everything (tested: 5 verified, 0 failed).
+
+## Copy list for an external drive
+
+1. `archive/README.md`, `archive/MANIFEST.json` - tiny, copy first
+2. `archive/raw/*.tar.gz` EXCEPT the .tar.bz2 (finding 49: strict subset)
+3. `E:/ColdStorage/OHLCV-1m/` - 87.7 GB, irreplaceable
+4. `archive/derived/` - 43 GB, OPTIONAL (rebuildable in ~3h)
+
+Minimum irreplaceable set: 126.6 GB (raw gzip + OHLCV-1m + json bundles).
+
+## Six traps found, five of them SILENT
+
+Loud (crashed): multi-stream bzip2 reading as truncation; Windows
+reserved device names (PRN/CON/AUX/NUL/COM*/LPT*) as filenames.
+
+Silent (would have produced wrong numbers): naive-Eastern timestamps
+posing as UTC; a column named `millis` holding seconds; split-adjusted
+vs unadjusted prices across sources; duplicate minute timestamps
+inflating summed volume.
+
+All six are in archive/README.md. **That file is the deliverable** - the
+bytes are replaceable-ish, the knowledge is not.
+
+## What the second source bought
+
+Alpaca has 2,362 OHLC invariant violations (0.0133%), 98.6% in 2018,
+median 4 bars on violating rows. OHLCV-1m has ZERO over 8.0M sampled
+rows from the SAME code. With one source you cannot separate "my
+aggregation is broken" from "this vendor had a bad year".
+
+## Next
+
+- **TODO #18 is unblocked and is the highest-value item**: TQQQ 524,984
+  real minute bars 2010-2019, plus UPRO/SSO/SQQQ/SPXU/QLD/UDOW/SDOW.
+  Finding 21 validated SIMULATED LETF returns against closing prices,
+  never against the intraday PATH - which is what drives daily-reset
+  drag, and the 2x sleeve depends on that modelling being right.
+- **TODO #16 must source SPY from OHLCV-1m** - finding 49 proved SPY is
+  absent from BOTH Alpaca captures. IWM (233 months) is the Alpaca-side
+  liquid proxy.
+- The 25.8 GB bz2 is verified redundant. Deletion is the user's call;
+  it is excluded from the backup list either way.
+
+
+---
+
 # Session 2026-08-09 (cont) - the ColdStorage tars, opened at last
 
 Findings 47-48. The 63 GB in E:/ColdStorage had never been opened.

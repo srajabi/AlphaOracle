@@ -30,9 +30,10 @@ point-in-time captures. "market-data.tar" told us nothing; the same file
 as alpaca-minute-bars_1999-01_2019-09_7859tickers_snap2019-09-23.tar.bz2
 tells us everything before it is opened - including that it is bzip2.
 
-Usage:  python tools/package_archive.py [--move] [--hash]
-        --move   perform the renames (default is a dry run)
-        --hash   compute SHA256 (slow: ~64 GB to read)
+Usage:  python tools/package_archive.py [--move] [--hash] [--verify]
+        --move    perform the renames (default is a dry run)
+        --hash    compute SHA256 (slow: ~64 GB to read)
+        --verify  re-hash everything in MANIFEST.json and report drift
 """
 import hashlib
 import json
@@ -216,7 +217,49 @@ def dir_stats(d):
             "bytes": sum(p.stat().st_size for p in files)}
 
 
+def verify():
+    """Re-hash everything in MANIFEST.json and report drift.
+
+    The README instructs the reader to run this, so it has to exist.
+    Silent bit rot is the failure mode cold storage actually has: files
+    stay readable and the bytes change. A mismatch means restore from
+    another copy, not 'probably fine'.
+    """
+    mpath = ARCHIVE / "MANIFEST.json"
+    if not mpath.exists():
+        raise SystemExit(f"no manifest at {mpath} - run --move --hash first")
+    m = json.loads(mpath.read_text())
+    ok = bad = skipped = 0
+    for e in m.get("raw", []):
+        want = e.get("sha256")
+        f = RAW / e["archival_name"]
+        if not want:
+            print(f"  [no hash ] {e['archival_name']}")
+            skipped += 1
+            continue
+        if not f.exists():
+            print(f"  [MISSING ] {e['archival_name']}")
+            bad += 1
+            continue
+        t = time.time()
+        got = sha256(f)
+        if got == want:
+            print(f"  [ok      ] {e['archival_name']}  ({time.time()-t:.0f}s)")
+            ok += 1
+        else:
+            print(f"  [CORRUPT ] {e['archival_name']}")
+            print(f"             expected {want}")
+            print(f"             got      {got}")
+            bad += 1
+    print(f"\n{ok} verified, {bad} failed, {skipped} unhashed")
+    if bad:
+        print("RESTORE the failing files from another copy - do not trust them.")
+    return 1 if bad else 0
+
+
 def main():
+    if "--verify" in sys.argv:
+        return verify()
     move = "--move" in sys.argv
     do_hash = "--hash" in sys.argv
     RAW.mkdir(parents=True, exist_ok=True)
