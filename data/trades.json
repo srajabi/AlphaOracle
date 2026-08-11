@@ -2,41 +2,46 @@
     {
         "ticker": "VOO",
         "action": "buy",
-        "notional_value": 17437
+        "notional_value": 15700
     },
     {
-        "ticker": "QUAL",
+        "ticker": "QQQ",
+        "action": "buy",
+        "notional_value": 13080
+    },
+    {
+        "ticker": "VXUS",
         "action": "buy",
         "notional_value": 6975
     },
     {
-        "ticker": "SCHD",
+        "ticker": "XLE",
         "action": "buy",
         "notional_value": 6100
     },
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 10460
-    },
-    {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 6975
+        "notional_value": 8720
     },
     {
         "ticker": "NVDA",
         "action": "buy",
-        "notional_value": 6100
+        "notional_value": 4360
     },
     {
         "ticker": "AVGO",
         "action": "buy",
-        "notional_value": 5230
+        "notional_value": 4360
     },
     {
-        "ticker": "CEG",
+        "ticker": "QUAL",
         "action": "buy",
-        "notional_value": 3490
+        "notional_value": 4360
+    },
+    {
+        "ticker": "SCHD",
+        "action": "buy",
+        "notional_value": 4360
     }
 ]

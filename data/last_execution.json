@@ -1,123 +1,87 @@
 {
-  "last_updated_utc": "2026-08-10T21:21:23.575299+00:00",
+  "last_updated_utc": "2026-08-11T21:28:40.134729+00:00",
   "error": "",
   "results": [
     {
       "trade": {
         "ticker": "VOO",
         "action": "buy",
-        "notional_value": 13077.75
+        "notional_value": 15700
       },
-      "status": "submitted",
-      "order_id": "55c0a3ef-6194-437f-9176-5b3f2e1f6fb1"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
         "ticker": "QQQ",
         "action": "buy",
-        "notional_value": 8718.5
+        "notional_value": 13080
       },
-      "status": "submitted",
-      "order_id": "da752653-cfe0-410f-8cce-81bc076f0d5e"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
         "ticker": "VXUS",
         "action": "buy",
-        "notional_value": 6974.8
+        "notional_value": 6975
       },
-      "status": "submitted",
-      "order_id": "12c40709-f017-429f-86e1-09dfdf35a78f"
-    },
-    {
-      "trade": {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 5231.1
-      },
-      "status": "submitted",
-      "order_id": "4c2f314d-c7a5-4789-b23f-dddc48b52ec0"
-    },
-    {
-      "trade": {
-        "ticker": "IAU",
-        "action": "buy",
-        "notional_value": 3487.4
-      },
-      "status": "submitted",
-      "order_id": "1d16543b-4082-4c9e-8a18-8a99bdaa6ee0"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 5231.1
+        "notional_value": 6100
       },
-      "status": "submitted",
-      "order_id": "fa1d5e64-3c09-46cc-b6d2-febf502d0d04"
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 8720
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
         "ticker": "NVDA",
         "action": "buy",
-        "notional_value": 5231.1
+        "notional_value": 4360
       },
-      "status": "submitted",
-      "order_id": "9fb8dc06-faba-488a-a08d-78184acc7af7"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
         "ticker": "AVGO",
         "action": "buy",
-        "notional_value": 4359.25
+        "notional_value": 4360
       },
-      "status": "submitted",
-      "order_id": "e8d9dad1-015c-403e-b786-06919447421e"
-    },
-    {
-      "trade": {
-        "ticker": "TSM",
-        "action": "buy",
-        "notional_value": 4359.25
-      },
-      "status": "submitted",
-      "order_id": "ad9d2ba8-a413-4389-9462-5bbad2c4620e"
-    },
-    {
-      "trade": {
-        "ticker": "CRWD",
-        "action": "buy",
-        "notional_value": 3487.4
-      },
-      "status": "submitted",
-      "order_id": "c952a8e0-53da-4873-96a4-4c50b0d542c2"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
         "ticker": "QUAL",
         "action": "buy",
-        "notional_value": 5231.1
+        "notional_value": 4360
       },
-      "status": "submitted",
-      "order_id": "b6832087-b35a-4380-85a4-740e278e9414"
-    },
-    {
-      "trade": {
-        "ticker": "CEG",
-        "action": "buy",
-        "notional_value": 3487.4
-      },
-      "status": "submitted",
-      "order_id": "936f6a8b-b59c-42f7-a713-890047e300a3"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
         "ticker": "SCHD",
         "action": "buy",
-        "notional_value": 3487.4
+        "notional_value": 4360
       },
-      "status": "submitted",
-      "order_id": "cf2ebd08-b826-4ec0-999c-e70f405ab1df"
+      "status": "skipped",
+      "reason": "No available buying power."
     }
   ]
 }
