@@ -1,28 +1,19 @@
 {
-  "last_updated_utc": "2026-08-11T21:28:40.134729+00:00",
+  "last_updated_utc": "2026-08-12T21:31:09.863309+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "VOO",
+        "ticker": "VTI",
         "action": "buy",
-        "notional_value": 15700
+        "notional_value": 17437
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "QQQ",
-        "action": "buy",
-        "notional_value": 13080
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "VXUS",
+        "ticker": "MSFT",
         "action": "buy",
         "notional_value": 6975
       },
@@ -31,18 +22,9 @@
     },
     {
       "trade": {
-        "ticker": "XLE",
+        "ticker": "AVGO",
         "action": "buy",
-        "notional_value": 6100
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 8720
+        "notional_value": 5231
       },
       "status": "skipped",
       "reason": "No available buying power."
@@ -51,16 +33,34 @@
       "trade": {
         "ticker": "NVDA",
         "action": "buy",
-        "notional_value": 4360
+        "notional_value": 4359
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "AVGO",
+        "ticker": "TSM",
         "action": "buy",
-        "notional_value": 4360
+        "notional_value": 2616
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 8719
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLE",
+        "action": "buy",
+        "notional_value": 5231
       },
       "status": "skipped",
       "reason": "No available buying power."
@@ -69,7 +69,7 @@
       "trade": {
         "ticker": "QUAL",
         "action": "buy",
-        "notional_value": 4360
+        "notional_value": 4359
       },
       "status": "skipped",
       "reason": "No available buying power."
@@ -78,7 +78,43 @@
       "trade": {
         "ticker": "SCHD",
         "action": "buy",
-        "notional_value": 4360
+        "notional_value": 4359
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLF",
+        "action": "buy",
+        "notional_value": 4359
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLP",
+        "action": "buy",
+        "notional_value": 3487
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "VXUS",
+        "action": "buy",
+        "notional_value": 5231
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "CRWD",
+        "action": "buy",
+        "notional_value": 3487
       },
       "status": "skipped",
       "reason": "No available buying power."
