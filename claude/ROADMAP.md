@@ -105,6 +105,14 @@ cap-weight over the full history, after fees.
 
 ## Tier 3 — the live system
 
+- **DECIDE: migrate the live forward test, or keep it as-is.** ⚠
+  `PLAYBOOK.md` documents a **monthly, no-band, vol-targeted** design.
+  The research concluded **daily, 4% band, 2x with a permanent gate, no
+  vol targeting**. Both are defensible — the live config has an actual
+  forward track record, which is worth something no backtest can buy —
+  but the divergence is currently undocumented anywhere a user would
+  see it, and that is the dangerous state. **This needs a human
+  decision, not an agent's.**
 - **#1 verify EOD strategies actually execute.** The gate bug meant
   accounts 1–5 never traded; the fix is in but has not been confirmed on
   a real run. This is the highest-value *operational* item.

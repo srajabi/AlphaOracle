@@ -36,6 +36,35 @@ backtested yet (see §6).
 
 ---
 
+
+> ## ⚠ THE LIVE SYSTEM AND THE RESEARCH HAVE DIVERGED — read before acting
+>
+> This playbook documents the **live forward test as configured**. The
+> research has since moved past it, and the two are NOT the same design.
+> Nothing here has been changed, because altering the live forward test
+> requires explicit instruction — but a reader following this document
+> is following the older design.
+>
+> | element | this playbook (live) | research conclusion |
+> |---|---|---|
+> | Check frequency | **monthly**, first trading day | **daily** (24, 43b) |
+> | Band | none (`close < SMA200`) | **4%** hysteresis (41c) |
+> | Leverage | satellite only, 20–25% | **2x whole sleeve, permanent gate** (30, 37) |
+> | Vol targeting | `vol_target_qqq_2x` listed as a candidate | **RULED OUT** (32) |
+> | Financing | not modelled | **rf + ~1.0%/yr** (51, 52) |
+>
+> A monthly check with no band is the configuration finding 24 showed
+> trades MORE than a daily check with bands (6.6 vs 0.7 round trips/yr),
+> and finding 43b showed a monthly gate is too slow to stack with
+> anything.
+>
+> **This divergence is an open decision, not a settled position.** See
+> `claude/ROADMAP.md` §3. Either the live test is deliberately forward-
+> testing the older design (legitimate — it has a track record), or it
+> should be migrated. Someone has to choose; do not silently assume
+> either.
+
+
 ## 2. The indicators, precisely
 
 | Signal | Definition | Trips when |
