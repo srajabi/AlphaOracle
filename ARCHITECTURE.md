@@ -71,11 +71,21 @@ independent observations** (finding 29), on a scoreboard already at
 Two mechanism-level controls, both already evidenced here:
 
 **1. Trend gate - decides IN or OUT.**
-Daily check, 200-day SMA, +/-5% bands. Finding 24: bands invert the
+Daily check, 200-day SMA, **+/-4% bands** (finding 41c supersedes the
+5% written here originally; 4% has the top p90, the shallowest worst
+drawdown and the least trading on US data). Finding 24: bands invert the
 frequency answer and cut trading to 0.7 round trips/yr, fewer than a
 monthly check. Plateau 2-6%, cliff at 8%.
 
 **2. Volatility target - decides HOW MUCH.**
+
+> **RULED OUT BY FINDING 32.** Volatility targeting LOSES to the trend
+> gate. This section describes an architecture that was subsequently
+> tested and rejected - it is kept for the reasoning, not as a
+> specification. The system has ONE control, the gate. Leverage is a
+> fixed 2x with a permanent gate (findings 30, 37, 52), not a
+> vol-scaled quantity.
+
 Leverage scales inversely with realised volatility. Finding 4 already
 identified this as the only leverage scheme that survived the dot-com
 test (vol_target_qqq_2x Sharpe 0.67 vs SMA-rule 0.36, -57% vs -90%).

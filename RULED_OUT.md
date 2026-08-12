@@ -103,3 +103,87 @@ correlation caps near 0.92 regardless of basket and the fit assigns EWC
 - **BAMLH0A0HYM2 via the keyless FRED CSV endpoint**: returns 787
   observations from 2023-08; the series starts 1996. Truncated, cause
   not yet diagnosed. Do not use until fixed.
+
+
+---
+
+# Added 2026-08-09 — findings 32-53
+
+## Regime detection: SEVEN independent attempts, all failed
+
+**Do not build detector #8 without reading this section.** Every one of
+these tried to beat a 200-day trend gate with a fixed band. All lost.
+
+- **Volatility targeting** — loses to the trend gate outright. Note this
+  CONTRADICTS the two-control architecture in ARCHITECTURE.md, which
+  predates it. (finding 32)
+- **Markov regime switching** — the apparent edge was ENTIRELY lookahead
+  (smoothed vs filtered probabilities). The honest version loses.
+  (finding 33)
+- **Volatility-scaled bands** — vol rises in crashes AND in chop, so the
+  band widened exactly when exiting mattered. (finding 34)
+- **Credit confirmation (H9)** — required credit stress to confirm a
+  price exit. Made results worse, cut no whipsaw. (H9, finding 43-era)
+- **Macro / recession indicators** — lagging by construction. They
+  detect recessions, not drawdowns. (findings 19, 20)
+- **Efficiency-ratio adaptive bands** — 0 for 4 out-of-sample. SECOND
+  adaptive-band formulation to fail; the idea is wrong, not the
+  implementations. (finding 41b)
+- **Breadth (49 industries above own 200d MA)** — genuinely leads price
+  in 15 of 16 drawdowns, p~0.0005, 137 days at the dot-com top. STILL
+  not tradeable: it fires ~3.1x/yr against 16 real bears in 103 years,
+  so ~20 false alarms per bear. Kept as an INFO alert only. (finding 42)
+- **CAPE valuation timing** — monotonic 10.4pp spread in forward 10y
+  returns, but n=9 independent decades (p=0.233) and EVERY allocation
+  rule loses, including one allowed to cheat with full-sample
+  percentiles. Fails on persistence: 91% of months since 1995 rank
+  "expensive", with an unbroken 16.8-year stretch from 1991-12.
+  (finding 46)
+
+**Why they fail, stated once:** 32/33/34/41b all consume the index
+return series or something lagging it, so they cannot be faster than
+price by construction. 42 and 46 use genuinely different information and
+genuinely predict - and still cannot be traded. **The gate's slowness IS
+the mechanism** (finding 53c): a band is hysteresis that deliberately
+ignores the moves a faster rule reacts to.
+
+## Return enhancers
+
+- **Top-10 / top-25 concentration** — top10 beat the market by 2.58pp
+  but t=1.76, p=0.089, and it leans on 2023 alone (drop it: t=1.41).
+  **Top-25 UNDERPERFORMS** (p=0.435); a real size effect would not
+  vanish between N=10 and N=25. The dollar-volume ranking also biases
+  toward the winners in this sample. (finding 44)
+- **Sector / industry momentum** — real for a century on French's 49
+  industries (+9.02%/yr winners-minus-losers, t=4.70, survives the
+  equal-weight control) but on the **11 tradeable SPDR sector ETFs every
+  variant LOSES to equal-weighting all 11 and never trading**. Post-1999
+  even the 49-industry version is insignificant. Both granularity and
+  post-publication decay are operating. (findings 43, 45)
+- **Stop-losses** — ruled out, and worse, close-only stop backtests are
+  not measuring stops at all: **66-95% of real intraday triggers are
+  invisible to them**. A 20% trailing stop tested on closes sees 5 of
+  109 real SPY triggers. (finding 53)
+
+## Methods that produce false positives
+
+- **Close-only stop-loss backtests.** See above. If a stop is ever
+  wanted, test it on intraday data or not at all. (finding 53)
+- **Overlapping forward-return windows.** Inflate every p-value; CAPE
+  went from naive t=27.67 to Newey-West 6.33 to non-overlapping p=0.233.
+  (finding 29)
+- **Any leveraged projection without a financing SPREAD.** The simulator
+  charges (L-1) x rf; real LETFs pay rf + ~0.5-1.5%/yr. Omitting it
+  overstates 2x median terminal wealth by ~25% and 3x by ~42%.
+  (findings 51, 52)
+- **Un-inception-gated ETF series.** Ticker reuse gave UPRO a beta of
+  **-12.6** and a 427x wealth ratio because OHLCV-1m holds a different
+  security under that ticker in 2000-01. (finding 51e)
+
+## Leverage above 2x
+
+**3x is worse than 2x on worst case at every financing assumption**, and
+the gap WIDENS as financing is charged honestly: 24.47M vs 29.67M at
+zero spread, 17.07M vs 24.80M at 1%. It also asks for a **-89.2%**
+drawdown against 2x's -70.9%. Pays the spread on two units of borrowing
+while the worst path punishes leverage twice. (findings 30, 52)
