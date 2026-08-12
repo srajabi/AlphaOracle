@@ -43,11 +43,18 @@ the repo, and the thing a new agent is most likely to try to "improve".
 
 **Expected outcome, 27y windows, 800k + 80k/yr, honest financing:**
 
-| policy | median | worst | worst DD |
+| policy | median | worst | **worst DD** |
 |---|---|---|---|
-| 1x_gated | 24.95M | 12.74M | — |
-| **2x_gated @1% spread** | **~54M** | ~24.8M | ~-62% |
-| 3x_gated @1% spread | 95.1M | 17.1M | worse |
+| 1x_gated | 24.95M | 12.74M | **-37.4%** |
+| **2x_gated @1% spread** | **54.1M** | **24.8M** | **-70.9%** |
+| 3x_gated @1% spread | 95.1M | 17.1M | **-89.2%** |
+
+Numbers verified against `data/leverage_spread_study.json`.
+**The -70.9% is the number that matters for whether this is holdable.**
+An earlier draft of this file said ~-62%; it was wrong, and understating
+the drawdown is the worst direction to be wrong in. 3x asks for -89.2%
+to reach a WORSE worst case than 2x (17.1M vs 24.8M) - that pairing is
+the whole argument against it.
 
 2x beats 1x by **1.97–2.62x on median and 1.78–2.33x on worst case**
 across the whole plausible financing range. The decision is robust; the
