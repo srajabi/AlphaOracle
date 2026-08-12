@@ -1,36 +1,31 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-08-11"
+date: "2026-08-12"
 ---
 
-## Daily Thesis Sentinel Brief — 2026-08-11
+# Thesis Sentinel — Daily Brief (2026-08-12)
 
-### 1. Tripwire Status
+## 1. Tripwire Status
 
-| Tripwire | Signal | Reading | Status |
-|---|---|---|---|
-| Carry unwind (VIX/VIX3M) | fast_channel | 0.753 today (15.46/20.54); 5d median 0.858 | **CLEAR** (stale snapshot dated 07-17 — flag for refresh) |
-| Credit cracks (HYG/LQD 63d) | credit | +2.47% | **CLEAR** |
-| Breadth break (canary EWA/TLT) | canary | half_defensive — TLT −2.85%, EWA +5.92% (only one negative) | **CLEAR** (not both-negative; watch TLT) |
-| Trend break (SPY vs 200d, monthly) | slow_channel | risk_on, +7.82% above SMA200 | **CLEAR** |
-| Oil shock (XLE leadership) | intermarket | XLE momentum +6.06%, "strong_uptrend"; commodities flagged "strong_defensive" | **WATCHING** — not fired, but XLE/GLD/SLV all strong-positive on active Hormuz tension |
-| AI capex turn | news | No FY27 guidance cuts reported; NVDA $500B spend plan actually *increases* capex (though "unnerves investors") | **CLEAR** |
-| Carry stress (USDJPY<140) | n/a | Not in today's feed/dashboard | **CLEAR** (untracked today) |
+| Tripwire | Signal | Threshold | Today's Reading | Status |
+|---|---|---|---|---|
+| Carry unwind | VIX/VIX3M | >1.0 | 15.28/20.54 = 0.74 (fast_channel="clear") | **CLEAR** |
+| Credit cracks | HYG/LQD 63d relmom | <-2% | +2.43% (state="clear") | **CLEAR** |
+| Breadth break | Canary 13612W (EWA,TLT) | both negative | EWA +5.52%, TLT -2.18% → "half_defensive" | **CLEAR** (partial only) |
+| Trend break | SPY monthly close <200d SMA | below | SPY 770.56 vs SMA200 701.21 (+9.9%); slow_channel risk_on, +7.82% | **CLEAR** |
+| Oil shock | XLE momentum vs SPY, sustained | leadership | XLE mom +6.99%, RSI 64, regime flag "commodities_strong_defensive" | **WATCHING / partial FIRE** |
+| AI capex turn | Hyperscaler FY27 guidance | any cut | No cuts; CoreWeave raised '26 plan, Nebius reaffirmed | **CLEAR** |
+| Carry stress | USDJPY | rapid <140 | Not tracked in current feed | **N/A - no data** |
 
-### 2. Marker Watch
-- **BoJ guidance:** No news today.
-- **CPI:** Not yet released — CNBC flags Wed print as pivotal; economists expect a slight cool, but Trump/Fed friction and oil are reviving hike bets (Bitget: "strengthening expectations of a rate hike in September").
-- **SpaceX vs $135:** No news today.
-- **Hyperscaler capex:** No cut signal; NVDA's $500B build-out and Oracle/CoreWeave beats point the other way — investor unease is about ROI, not deceleration.
-- **Hormuz:** Active and worsening — "new shipping attacks" reported today (investingLive), Iran/US still trading reparation demands, Brent approaching $90 (WSJ via ^TNX feed).
+## 2. Marker Watch
+- **BoJ guidance**: No news today.
+- **CPI**: July CPI +0.1% m/m, 3.4% y/y — first print below the 3.5% "cut B to 20%" threshold; need one more consecutive sub-3.5% print to confirm marker #2.
+- **SpaceX vs $135**: No news today.
+- **Hyperscaler capex**: No cuts; CoreWeave boosted 2026 spend, Nebius reaffirmed FY guidance, Gartner sees AI-IaaS +96% — capex-deceleration marker NOT triggered, leans opposite.
+- **Hormuz**: Escalation continues — "closure threat grows," fresh shipping attacks (Firstpost, EnergyNow) — but OPEC output +1.7M bpd in July is a supply offset. Mixed signal, not full closure.
 
-### 3. Delta (vs. yesterday)
-- Oil-driven inflation risk intensified: fresh tanker/shipping attack headline, Brent near $90, 10Y yield 4.70–4.73% (near YTD highs).
-- TLT technically weak (RSI 37.8, below all SMAs) — canary's negative TLT reading is corroborated by price action, not just model noise.
-- Fed-hike odds firming back up (Trump reopens Fed battle + Bitget's Sept-hike framing) — a reversal from last week's post-payrolls "hold" narrative.
-- Equity tape unbothered: SPY/QQQ/VOO all >20/50/200 SMA, VIX 15.46 (low, falling). Signals and mood diverge — see below.
+## 3. Delta (vs. yesterday)
+Benign CPI (3.4% vs May's 4.2%) and collapsing Sept hike odds are unambiguously bullish, yet **rates and commodities are not confirming**: ^TNX at 4.68% (real_rates="rising_rates," TLT downtrend), and GLD/SLV/XLE all in strong uptrends simultaneously with equities at highs. This is the notable divergence — cooling CPI headlines vs. a bond/commodity tape still pricing inflation/geopolitical risk. **Signals and headlines disagree here**: rules currently read "rising_rates" + "commodities_strong_defensive" even as CPI headlines are disinflationary — rules govern positioning, no override.
 
-### 4. Scenario Pressure (weights unchanged — next review per schedule)
-Evidence leans **A (grind-with-violence)**: oil/Hormuz tremors are visible but contained, equities still grinding to highs, VIX low, credit clear. However, two threads nudge toward **B**: rising real yields + TLT breakdown + revived hike odds, which is the classic B-onset combination (sticky inflation + tightening pressure). Wednesday's CPI print is the swing marker — a hot number would materially reinforce B; a cool one reaffirms A. No evidence today supports C (VIX/VIX3M and credit both clear).
-
-**Note:** Rules govern positioning — mandates remain SLEEVE_INVESTED (P, Y_core); canary is half_defensive on TLT only, not a full de-risk signal. Do not override on Hormuz headlines per thesis directive.
+## 4. Scenario Pressure
+Net evidence tilts toward **Scenario A (grind-with-violence)**: credit clear, breadth only half-defensive, SPY trend intact, VIX quiet/falling, capex still expanding — all textbook Scenario A. The one wildcard is the Hormuz/oil complex (XLE strong-uptrend + gold/silver melt-up) which keeps a **live tail toward Scenario C** if a real closure materializes; OPEC's output surge is currently capping that risk. No evidence today supports Scenario B (credit and breadth tripwires both clear). Weights unchanged pending monthly review (next: mid-July checkpoint already passed; next formal review per cadence).
