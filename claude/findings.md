@@ -426,6 +426,10 @@ Tool: `tools/analyze_drawdown_speed.py`.
 
 ## 21. For a CAD investor, unhedged USD exposure is a hedge (2026-08-09)
 
+> **REFINED BY 51.** Still true. 51 adds that the simulator's beta is
+> accurate to within 0.045 but its financing is not - see 51c.
+
+
 The user is Canadian, spends CAD, and asked whether to hold CAD. Testing
 what unhedged US equity actually does in CAD terms. 270 monthly
 observations, 2003-10 to 2026-03.
@@ -603,6 +607,13 @@ LLM-generated prose and may not be true.
   just the number.
 
 ## 26. H2 - the LETF simulator was wrong, and the edge is crash-contingent
+
+> **SUPERSEDED. Read 31 and 51 first.** 31 showed the LETF drag problem
+> here was OVERSTATED, not understated - rate-correct financing changes
+> the conclusion. 51 then validated the simulator's beta (within 0.045
+> of nominal on 4 funds) and located the real defect elsewhere: a
+> missing financing SPREAD. Do not quote 26's drag numbers.
+
 
 Finding 24's 1474x used a SIMULATED 3x with an assumed 1.25%/yr drag.
 Validated against real fund prices, 2010-06 to 2026-03.
@@ -799,6 +810,12 @@ honestly ranked:
 
 
 ## 30. The Depression is the case for the overlay, and SPY-era data hides it
+
+> **LEVEL CORRECTED BY 52.** The conclusion (the overlay earns its keep
+> in the Depression; SPY-era data hides it) STANDS. The leveraged
+> figures are ~25% optimistic at 2x and ~42% at 3x because the simulator
+> omitted the swap financing spread. Ordering unchanged.
+
 
 Deep history ingested (finding 31). Kenneth French daily US market total
 return from 1926-07 turns the lost-decade sample from n=1 into n~4 and
@@ -1134,6 +1151,12 @@ warmup live before scoring. Tool: `tools/backtest_oos_geography.py`.
 
 ## 36. Gate the entry phase, not the whole life - the user was right
 
+> **REVERSED BY FINDING 37. Do not implement this.** Gating only the
+> entry phase and then removing the gate is WRONG once leverage is
+> involved: 2x_gate_entry's worst case is 9.4M against 29.7M for
+> 2x_gate_always. **The gate must be PERMANENT once levered.**
+
+
 The user proposed using the trend gate for the first 2-3 years to
 cushion entry, then holding unhedged. I argued it was backwards: with
 800k deployed and ~2.2M of future contributions, most capital is not yet
@@ -1180,6 +1203,11 @@ gate. Tool: `tools/backtest_entry_phase_gate.py`.
 
 
 ## 37. 2x + PERMANENT gate on the whole portfolio - and finding 36 reverses
+
+> **LEVEL CORRECTED BY 52** (ordering unchanged - 2x still dominates 1x
+> at every percentile, by 1.97-2.62x on median across the whole
+> plausible financing range).
+
 
 Finding 36 concluded the gate earns its keep only during the entry phase.
 That holds for 1x and **inverts under leverage**.
@@ -1229,6 +1257,11 @@ horizon: 2.96M. Tool: `tools/backtest_levered_lifetime.py`.
 
 
 ## 38. The dot-com analogue - you do not need to predict the hype cycle
+
+> **LEVEL CORRECTED BY 52.** The strategic point - that the gate does
+> not require predicting the hype cycle - is unaffected. The 2x/3x
+> multiples are optimistic by the missing financing spread.
+
 
 The user's central worry: AI likely follows a Gartner hype cycle
 (railways, dot-com), so there is short-term bust risk even though the
@@ -1280,6 +1313,13 @@ warmup live, rate-correct financing.
 
 
 ## 41. Band width: the tight end wins, and adaptive bands fail twice
+
+> **READ 41c BEFORE ACTING ON 41a.** 41a picks 2% on a five-market vote;
+> 41c re-asks the question as a DISTRIBUTION on US data and picks **4%**
+> for a US-heavy sleeve (top p90, shallowest worst drawdown, least
+> trading). Band width is second-order either way - gating adds ~5M at
+> p90 at EVERY width.
+
 
 Two questions, one script (`tools/backtest_adaptive_bands.py`),
 US 1926-2026 daily plus the four clean out-of-sample regions of

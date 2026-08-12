@@ -1,0 +1,232 @@
+[
+  {
+    "tool": "analyze_drawdown_speed.py",
+    "writes": "data/drawdown_speed_study.json",
+    "summary": "Does a macro filter help more in slow drawdowns than fast ones?"
+  },
+  {
+    "tool": "analyze_historical_indicators.py",
+    "writes": "",
+    "summary": "Historical Intermarket Indicator Analysis"
+  },
+  {
+    "tool": "backtest_adaptive_bands.py",
+    "writes": "data/adaptive_band_study.json",
+    "summary": "Adaptive bands from trend efficiency, and 4% vs 5% out-of-sample"
+  },
+  {
+    "tool": "backtest_band_upside_us.py",
+    "writes": "data/band_upside_us.json",
+    "summary": "Band width on US data specifically - upside, not just average CAGR"
+  },
+  {
+    "tool": "backtest_breadth_regime.py",
+    "writes": "data/breadth_regime_study.json",
+    "summary": "Is BREADTH a faster regime detector than index price?"
+  },
+  {
+    "tool": "backtest_cape.py",
+    "writes": "data/cape_study.json",
+    "summary": "Is CAPE actionable? (TODO #25)"
+  },
+  {
+    "tool": "backtest_check_frequency.py",
+    "writes": "data/check_frequency_study.json",
+    "summary": "How often should a trend rule check? Daily, weekly, or monthly?"
+  },
+  {
+    "tool": "backtest_concentration.py",
+    "writes": "data/concentration_study.json",
+    "summary": "Does concentrating in the largest companies beat the market?"
+  },
+  {
+    "tool": "backtest_credit_confirmed_gate.py",
+    "writes": "data/credit_gate_study.json",
+    "summary": "H9 - does credit confirmation cut whipsaw? Plus the increasing ramp"
+  },
+  {
+    "tool": "backtest_entry_phase_gate.py",
+    "writes": "data/entry_phase_study.json",
+    "summary": "When is the trend gate worth having - early, late, or always?"
+  },
+  {
+    "tool": "backtest_glide_paths.py",
+    "writes": "data/glide_path_study.json",
+    "summary": "Glide paths: does the SHAPE of leverage-over-time matter?"
+  },
+  {
+    "tool": "backtest_international_trend.py",
+    "writes": "data/international_trend_study.json",
+    "summary": "The out-of-sample test: does trend following work outside the US?"
+  },
+  {
+    "tool": "backtest_letf_path.py",
+    "writes": "data/letf_path_study.json",
+    "summary": "TODO #18 - is our LETF simulator right? Test it against real LETFs"
+  },
+  {
+    "tool": "backtest_leverage_with_spread.py",
+    "writes": "data/leverage_spread_study.json",
+    "summary": "What does finding 51's missing financing spread do to the sleeves?"
+  },
+  {
+    "tool": "backtest_levered_lifetime.py",
+    "writes": "data/levered_lifetime_study.json",
+    "summary": "Gate + 2x for the whole portfolio, for life"
+  },
+  {
+    "tool": "backtest_macro_lookahead.py",
+    "writes": "data/macro_lookahead_study.json",
+    "summary": "How much does macro lookahead inflate a backtest?"
+  },
+  {
+    "tool": "backtest_markov_regime.py",
+    "writes": "data/markov_regime_study.json",
+    "summary": "H11: does a Markov-switching regime model beat a trend gate?"
+  },
+  {
+    "tool": "backtest_oos_geography.py",
+    "writes": "data/oos_geography_study.json",
+    "summary": "The clean out-of-sample test: same rule, same FREQUENCY, no US"
+  },
+  {
+    "tool": "backtest_regime_sweep.py",
+    "writes": "data/regime_sweep.json",
+    "summary": "Every strategy across every window, so nobody can cherry-pick one"
+  },
+  {
+    "tool": "backtest_rule_slate.py",
+    "writes": "data/rule_slate_study.json",
+    "summary": "Can we beat SMA200 + 5% bands? A slate of candidate regime rules"
+  },
+  {
+    "tool": "backtest_rule_slate_v2.py",
+    "writes": "data/rule_slate_v2.json",
+    "summary": "Rule slate v2 - fixes the defects in v1"
+  },
+  {
+    "tool": "backtest_sector_etf_momentum.py",
+    "writes": "data/sector_etf_momentum.json",
+    "summary": "Does finding 43's sector-momentum edge survive on TRADEABLE ETFs?"
+  },
+  {
+    "tool": "backtest_sector_rotation.py",
+    "writes": "data/sector_rotation_study.json",
+    "summary": "Sector rotation: does trading BETWEEN segments beat holding the market?"
+  },
+  {
+    "tool": "backtest_stoploss_intraday.py",
+    "writes": "data/stoploss_intraday_study.json",
+    "summary": "TODO #16 - do stop-losses tested on CLOSES lie about stop-losses?"
+  },
+  {
+    "tool": "backtest_top_n.py",
+    "writes": "data/top_n_study.json",
+    "summary": "Hold the top-N largest companies, rebalanced annually"
+  },
+  {
+    "tool": "backtest_vol_target.py",
+    "writes": "data/vol_target_study.json",
+    "summary": "H10: volatility targeting - the highest-value open build"
+  },
+  {
+    "tool": "backtest_with_contributions.py",
+    "writes": "data/contribution_study.json",
+    "summary": "H7: does modelling contributions change the strategy ranking?"
+  },
+  {
+    "tool": "build_daily_master.py",
+    "writes": "E:/ColdStorage/AlphaOracle-data/daily_master/<source>/*.parquet",
+    "summary": "Build ONE daily master bar table across every source, with provenance"
+  },
+  {
+    "tool": "build_minute_master.py",
+    "writes": "E:/ColdStorage/archive/derived/minute_master/alpaca/<TICKER>.parquet",
+    "summary": "Convert the Alpaca tar to parquet - the complete minute master"
+  },
+  {
+    "tool": "build_reference_master.py",
+    "writes": "E:/ColdStorage/archive/derived/reference_master/reference.parquet",
+    "summary": "Consolidate every macro / reference series into one tidy parquet"
+  },
+  {
+    "tool": "download_alfred_vintages.py",
+    "writes": "data/vintage/{SERIES}.json with, per observation:",
+    "summary": "Download ALFRED point-in-time (initial-release) macro series"
+  },
+  {
+    "tool": "download_deep_history.py",
+    "writes": "data/deep_history/{french_daily,shiller_monthly}.json",
+    "summary": "Ingest deep market history: French (1926 daily) and Shiller (1871 monthly)"
+  },
+  {
+    "tool": "download_fred_history.py",
+    "writes": "",
+    "summary": "Download FRED macro series into data/historical_long/"
+  },
+  {
+    "tool": "download_intraday_history.py",
+    "writes": "",
+    "summary": "Download 5-minute historical intraday data using Alpaca API"
+  },
+  {
+    "tool": "download_long_history.py",
+    "writes": "",
+    "summary": "Download long historical data for backtesting"
+  },
+  {
+    "tool": "download_long_samples.py",
+    "writes": "data/deep_history/*.json",
+    "summary": "Datasets that buy INDEPENDENT SAMPLES, which is our binding constraint"
+  },
+  {
+    "tool": "download_macro_history.py",
+    "writes": "",
+    "summary": "Download macro/cross-asset series into data/historical_long/"
+  },
+  {
+    "tool": "fit_xeqt_proxy.py",
+    "writes": "",
+    "summary": "Fit a US-listed basket that tracks XEQT"
+  },
+  {
+    "tool": "ingest_coldstorage_tar.py",
+    "writes": "data/coldstorage_inventory.json and",
+    "summary": "One-pass inventory + targeted extraction of the ColdStorage Alpaca tars"
+  },
+  {
+    "tool": "inventory_bz2_twin.py",
+    "writes": "data/bz2_twin_inventory.json",
+    "summary": "Does the earlier bzip2 capture hold what the gzip one is missing?"
+  },
+  {
+    "tool": "measure_overnight_gaps.py",
+    "writes": "data/overnight_gaps.json. Usage:",
+    "summary": "Measure the real overnight gap distribution from minute bars"
+  },
+  {
+    "tool": "package_archive.py",
+    "writes": "",
+    "summary": "Package everything for long-term, off-machine backup"
+  },
+  {
+    "tool": "validate_alpaca_vs_ohlcv.py",
+    "writes": "data/cross_source_validation.json",
+    "summary": "Fix Alpaca timestamps, then cross-validate against the OHLCV-1m archive"
+  },
+  {
+    "tool": "validate_historical_data.py",
+    "writes": "",
+    "summary": "Validate quality of downloaded historical data"
+  },
+  {
+    "tool": "validate_letf_simulator.py",
+    "writes": "data/letf_validation.json",
+    "summary": "H2: is the simulated 3x trustworthy, and does the edge survive on real funds?"
+  },
+  {
+    "tool": "verify_tar_twins.py",
+    "writes": "data/tar_twin_comparison.json",
+    "summary": "Are the two Alpaca tars the same dataset? Answer before deleting one"
+  }
+]

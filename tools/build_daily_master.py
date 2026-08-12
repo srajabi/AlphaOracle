@@ -56,7 +56,9 @@ import pyarrow.parquet as pq
 REPO = Path(__file__).resolve().parent.parent
 COLD = Path("E:/ColdStorage")
 OHLCV = COLD / "OHLCV-1m" / "data"
-TARS = {"alpaca": COLD / "market-data-7859.tar.pigz"}
+# NOTE: the alpaca leg no longer touches the tar - it derives from
+# the minute master (see build_alpaca). Path resolution for the raw
+# captures lives in src/archive_paths.py.
 HIST = REPO / "data" / "historical_long"
 # Lives under archive/derived/ alongside the other derived sets so
 # package_archive.py finds it. A run already in flight writes to the

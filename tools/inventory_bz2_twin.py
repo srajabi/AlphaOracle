@@ -38,6 +38,7 @@ import json
 import tarfile
 import time
 from collections import defaultdict
+import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
@@ -45,11 +46,10 @@ COLD = Path("E:/ColdStorage")
 INVENTORY = REPO / "data" / "coldstorage_inventory.json"
 OUT = REPO / "data" / "bz2_twin_inventory.json"
 
-CANDIDATES = [
-    COLD / "market-data.tar",
-    COLD / "archive" / "raw" /
-    "alpaca-minute-bars_1999-01_2019-09_7859tickers_snap2019-09-19.tar.bz2",
-]
+sys.path.insert(0, str(REPO))
+from src.archive_paths import alpaca_tar_bzip2  # noqa: E402
+
+CANDIDATES = [alpaca_tar_bzip2()]
 WANTED = ["SPY", "QQQ", "QQQQ", "DIA", "XLE", "XLF", "YHOO", "AOL",
           "WCOM", "XLK", "AAPL", "TQQQ", "IWM"]
 

@@ -46,23 +46,10 @@ import pandas as pd
 
 REPO = Path(__file__).resolve().parent.parent
 COLD = Path("E:/ColdStorage")
-def _resolve_src():
-    """Find the gzip capture before OR after archival renaming.
+sys.path.insert(0, str(REPO))
+from src.archive_paths import alpaca_tar_gzip  # noqa: E402
 
-    package_archive.py renames the originals into archive/raw/ with
-    self-describing names. The archive README promises derived/ can be
-    rebuilt from raw/, so this must keep working after that move -
-    otherwise the promise is false the moment it is made.
-    """
-    for p in (COLD / "archive" / "raw" /
-              "alpaca-minute-bars_1999-01_2019-09_7859tickers_snap2019-09-23.tar.gz",
-              COLD / "market-data-7859.tar.pigz"):
-        if p.exists():
-            return p
-    return COLD / "market-data-7859.tar.pigz"      # for the error message
-
-
-SRC = _resolve_src()
+SRC = alpaca_tar_gzip()
 OUT = COLD / "archive" / "derived" / "minute_master" / "alpaca"
 STATS = REPO / "data" / "minute_master_alpaca.json"
 
