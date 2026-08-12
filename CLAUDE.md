@@ -19,6 +19,11 @@ and a research papers library. Astro dashboard on GitHub Pages.
 6. `claude/REPRODUCE.md` - finding -> script -> output map, plus the
    KNOWN GAPS in reproducibility. **Findings 1-17 predate the protocol
    and are unverified;** one of them already failed to reproduce.
+7. `claude/ROADMAP.md` - what to do next and **what not to**, ordered by
+   expected value. Read the "Explicitly NOT worth doing" section before
+   proposing new strategy research.
+8. `RULED_OUT.md` - dead ends with numbers. **Check this before
+   designing any experiment;** nine ideas have already been killed.
 
 ## Hard rules
 

@@ -126,6 +126,9 @@ stretch from 1991-12).
 
 ### 3.5 UNTESTED / open
 
+**See `claude/ROADMAP.md` for the ordered version of this, with what
+would settle each.** The short form:
+
 - **Relative cross-country CAPE** — the only live route to an
   evidence-based geography call. Needs international CAPE (Barclays,
   StarCapital); the archive has none. §46 gap.
@@ -136,6 +139,12 @@ stretch from 1991-12).
 - **Parents' sleeve at a 10–15yr horizon** — every projection here is
   27y. The worst-case column argues for a tighter band there, but that
   is extrapolation, not a result.
+- **Tax placement and account structure — completely untouched, and
+  probably the highest-value work left.** Nothing in 53 findings covers
+  RRSP vs TFSA vs taxable for a levered sleeve, or the 15% US dividend
+  withholding that is recoverable in an RRSP but NOT in a TFSA. On a
+  1.8% yield that is ~27bp/yr, permanent and risk-free to fix -
+  comparable to the entire band-width question.
 - **Findings 39 and 40 do not exist** — `findings.md` jumps 38→41. Not a
   deletion; they were never written. Do not go looking.
 
