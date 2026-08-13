@@ -1,84 +1,512 @@
 <!DOCTYPE html><html lang="en" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/AlphaOracle/favicon.svg"><link rel="icon" href="/AlphaOracle/favicon.ico"><meta name="generator" content="Astro v5.18.0"><title>Technical Analyst Report</title><style>:root{--bg: #0b0e14;--panel-bg: #131722;--panel-bg-raised: #1e2230;--border: #2a2e39;--text: #f8f9fa;--text-body: #d1d4dc;--text-muted: #8f949e;--accent: #2962ff;--accent-soft: #c4d4ff;--green: #28a745;--red: #dc3545;--red-bright: #f6465d;--yellow: #ffc107}.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}.panel{background:var(--panel-bg);border:1px solid var(--border);border-radius:12px;padding:1.25rem;margin-bottom:1rem}.muted{color:var(--text-muted)}.btn{text-decoration:none;color:#fff;background:var(--accent);border-radius:8px;padding:.5rem .85rem;font-size:.85rem;font-weight:600}html,body{margin:0;width:100%;height:100%;background:#0b0e14;color:#f8f9fa;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif}.site-header[data-astro-cid-sckkx6r4]{position:sticky;top:0;z-index:100;background:#0b0e14eb;backdrop-filter:blur(8px);border-bottom:1px solid #2a2e39}.site-header-inner[data-astro-cid-sckkx6r4]{max-width:1100px;margin:0 auto;padding:.7rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}.brand[data-astro-cid-sckkx6r4]{color:#f8f9fa;text-decoration:none;font-weight:800;font-size:1.1rem;letter-spacing:.01em}.site-nav[data-astro-cid-sckkx6r4]{display:flex;gap:.25rem;flex-wrap:wrap}.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]{color:#8f949e;text-decoration:none;font-size:.9rem;font-weight:600;padding:.35rem .7rem;border-radius:8px}.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]:hover,.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4].active{color:#f8f9fa;background:#1e2230}
 main[data-astro-cid-ipuyqs4v]{max-width:850px;margin:0 auto;padding:3rem 1.5rem;line-height:1.7;color:#d1d4dc}header[data-astro-cid-ipuyqs4v]{margin:0 0 3rem;border-bottom:1px solid #2a2e39;padding-bottom:1.5rem}h1[data-astro-cid-ipuyqs4v]{margin:0;font-size:3rem;color:#fff;font-weight:800;letter-spacing:-.02em}.date[data-astro-cid-ipuyqs4v]{color:#8f949e;margin-top:.5rem}article[data-astro-cid-ipuyqs4v]{font-size:1.15rem}article[data-astro-cid-ipuyqs4v] h2{margin-top:3rem;color:#fff;font-size:1.75rem;border-bottom:1px solid #2a2e39;padding-bottom:.5rem}article[data-astro-cid-ipuyqs4v] h3{margin-top:2rem;color:#fff}article[data-astro-cid-ipuyqs4v] p{margin-bottom:1.5rem}article[data-astro-cid-ipuyqs4v] table{width:100%;border-collapse:collapse;margin:2.5rem 0;background:#131722;border-radius:8px;overflow:hidden;border:1px solid #2a2e39}article[data-astro-cid-ipuyqs4v] th,article[data-astro-cid-ipuyqs4v] td{border:1px solid #2a2e39;padding:1rem;text-align:left}article[data-astro-cid-ipuyqs4v] th{background:#1c212d;color:#8f949e;text-transform:uppercase;font-size:.8rem;letter-spacing:.05em}article[data-astro-cid-ipuyqs4v] strong{color:#fff}
-</style></head> <body data-astro-cid-sckkx6r4> <header class="site-header" data-astro-cid-sckkx6r4> <div class="site-header-inner" data-astro-cid-sckkx6r4> <a class="brand" href="/AlphaOracle/" data-astro-cid-sckkx6r4>AlphaOracle</a> <nav class="site-nav" data-astro-cid-sckkx6r4> <a href="/AlphaOracle/" data-astro-cid-sckkx6r4> Analysis </a><a href="/AlphaOracle/news-events/" data-astro-cid-sckkx6r4> News </a><a href="/AlphaOracle/indicators/" data-astro-cid-sckkx6r4> Indicators </a><a href="/AlphaOracle/tickers/" data-astro-cid-sckkx6r4> Tickers </a><a href="/AlphaOracle/backtests/" data-astro-cid-sckkx6r4> Backtests </a><a href="/AlphaOracle/research/" data-astro-cid-sckkx6r4> Research </a><a href="/AlphaOracle/paper-trading/" data-astro-cid-sckkx6r4> Paper Trading </a> </nav> </div> </header>  <main data-astro-cid-ipuyqs4v> <header data-astro-cid-ipuyqs4v> <h1 data-astro-cid-ipuyqs4v>Technical Analyst Report</h1> <p class="date" data-astro-cid-ipuyqs4v>2026-08-12</p> </header> <article data-astro-cid-ipuyqs4v> <h2 id="model-geminigemini-25-flash">Model: gemini/gemini-2.5-flash</h2>
-<p>Here’s a technical analysis of the provided market data, focusing purely on price action and key indicators, ignoring all external news and macro context:</p>
-<p><strong>Overall Market Regime (from Intermarket Indicators):</strong> Bull Quiet. Risk-on sentiment for equities, neutral dollar, rising rates (headwind for growth, favor value/financials), and strong defensive commodities (Gold, Silver, Energy).</p>
+</style></head> <body data-astro-cid-sckkx6r4> <header class="site-header" data-astro-cid-sckkx6r4> <div class="site-header-inner" data-astro-cid-sckkx6r4> <a class="brand" href="/AlphaOracle/" data-astro-cid-sckkx6r4>AlphaOracle</a> <nav class="site-nav" data-astro-cid-sckkx6r4> <a href="/AlphaOracle/" data-astro-cid-sckkx6r4> Analysis </a><a href="/AlphaOracle/news-events/" data-astro-cid-sckkx6r4> News </a><a href="/AlphaOracle/indicators/" data-astro-cid-sckkx6r4> Indicators </a><a href="/AlphaOracle/tickers/" data-astro-cid-sckkx6r4> Tickers </a><a href="/AlphaOracle/backtests/" data-astro-cid-sckkx6r4> Backtests </a><a href="/AlphaOracle/research/" data-astro-cid-sckkx6r4> Research </a><a href="/AlphaOracle/paper-trading/" data-astro-cid-sckkx6r4> Paper Trading </a> </nav> </div> </header>  <main data-astro-cid-ipuyqs4v> <header data-astro-cid-ipuyqs4v> <h1 data-astro-cid-ipuyqs4v>Technical Analyst Report</h1> <p class="date" data-astro-cid-ipuyqs4v>2026-08-13</p> </header> <article data-astro-cid-ipuyqs4v> <h2 id="model-geminigemini-25-flash">Model: gemini/gemini-2.5-flash</h2>
+<p>As per your instruction, I will evaluate the provided setups purely based on price, moving averages (SMA_20, SMA_50, SMA_200), RSI, MACD, and Bollinger Bands, ignoring all news and macroeconomic context.</p>
+<p>Here’s the technical evaluation for each ticker:</p>
+<p><strong>AAPL</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading significantly below its 20, 50, and 200-day SMAs, indicating a strong downtrend. Close is near the lower Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 40.36, indicating bearish momentum but not yet oversold.</li>
+<li><strong>MACD:</strong> MACD line (-1.68) is below its signal line (1.63), and MACD Histogram (-3.31) is negative, confirming bearish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is at the lower band (295.73 vs 302.25 close), suggesting it’s potentially oversold short-term but also confirms strong downside pressure. Bands are relatively wide.</li>
+<li><strong>Setup:</strong> Strong downtrend with short-term oversold potential indicated by the lower BB touch. A mean reversion bounce could be possible if buying pressure emerges, but the overall trend is down.</li>
+</ul>
+<p><strong>AMD</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Below its 20 and 50-day SMAs, but still above its 200-day SMA. This suggests short-term weakness within a broader long-term uptrend.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 47.39, neutral-to-bearish.</li>
+<li><strong>MACD:</strong> MACD line (-9.55) is below its signal line (-7.84), and MACD Histogram (-1.71) is negative, indicating bearish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is well within the Bollinger Bands, indicating no extreme overbought/oversold condition relative to its recent volatility.</li>
+<li><strong>Setup:</strong> Pullback within a longer-term uptrend. Bearish momentum is present, suggesting further consolidation or downside to the 200-day SMA (321.91) is possible if short-term weakness persists.</li>
+</ul>
+<p><strong>AMZN</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above its 20, 50, and 200-day SMAs, indicating a strong uptrend. Current price is moving towards the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 57.06, healthy bullish momentum, not yet overbought.</li>
+<li><strong>MACD:</strong> MACD line (7.98) is above its signal line (5.81), and MACD Histogram (2.18) is positive, confirming bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is approaching the upper band (292.84 vs 267.28 close), indicating strong upward movement. Bands appear to be expanding, supporting trend continuation.</li>
+<li><strong>Setup:</strong> Strong uptrend with clear bullish momentum. Trend continuation setup.</li>
+</ul>
+<p><strong>AVGO</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above all three SMAs (20, 50, 200-day), indicating a strong uptrend. Price is near the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 58.34, showing healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (8.77) is above its signal line (5.40), and MACD Histogram (3.37) is positive, confirming bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is close to the upper band (433.62 vs 416.05 close), suggesting strong upward pressure. Bands show some expansion.</li>
+<li><strong>Setup:</strong> Strong uptrend with strong bullish momentum. Trend continuation setup.</li>
+</ul>
+<p><strong>CEG</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Price is above its 20 and 50-day SMAs but below its 200-day SMA. This indicates short-term strength within a longer-term downtrend. Price is near the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 60.40, indicating bullish momentum but approaching overbought territory.</li>
+<li><strong>MACD:</strong> MACD line (3.56) is above its signal line (2.08), and MACD Histogram (1.48) is positive, confirming bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is nearing the upper band (282.71 vs 278.68 close), suggesting strength but potentially becoming overextended short-term.</li>
+<li><strong>Setup:</strong> Short-term bullish reversal or counter-trend rally within a long-term downtrend. The rally might be extended.</li>
+</ul>
+<p><strong>CRWD</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above all three SMAs (20, 50, 200-day), indicating a very strong uptrend. Price is near the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 68.04, approaching overbought territory, but still below 70.</li>
+<li><strong>MACD:</strong> MACD line (9.42) is significantly above its signal line (6.68), and MACD Histogram (2.74) is strongly positive, indicating powerful bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the upper band (228.53 vs 221.78 close), confirming strong upward pressure. Bands are expanding, indicative of a strong trend.</li>
+<li><strong>Setup:</strong> Strong trend continuation, potentially becoming overextended in the very short term given the RSI and proximity to the upper band.</li>
+</ul>
+<p><strong>DIA</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above all three SMAs (20, 50, 200-day), indicating a strong uptrend. Price is near the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 60.54, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (5.34) is above its signal line (4.41), and MACD Histogram (0.92) is positive, confirming bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the upper band (545.97 vs 537.15 close), suggesting strong upward pressure.</li>
+<li><strong>Setup:</strong> Strong uptrend continuation with solid momentum.</li>
+</ul>
+<p><strong>EWA</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above all three SMAs (20, 50, 200-day), indicating a strong uptrend.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 59.41, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (0.43) is above its signal line (0.38), and MACD Histogram (0.05) is positive, indicating bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is well within the Bollinger Bands, suggesting a stable, less volatile uptrend recently.</li>
+<li><strong>Setup:</strong> Clear uptrend with moderate bullish momentum. Trend continuation.</li>
+</ul>
+<p><strong>EWC</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading significantly above all three SMAs, indicating a very strong uptrend. Price is at the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 72.14, indicating overbought conditions.</li>
+<li><strong>MACD:</strong> MACD line (0.78) is above its signal line (0.59), and MACD Histogram (0.19) is positive, confirming bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is at the upper band (61.83 vs 61.77 close), suggesting it’s potentially overextended and due for a pullback.</li>
+<li><strong>Setup:</strong> Very strong uptrend, but short-term overbought and hitting the upper Bollinger Band, indicating high probability of a mean reversion pullback.</li>
+</ul>
+<p><strong>GLD</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above its 20 and 50-day SMAs, but below its 200-day SMA. This indicates short-term strength within a longer-term downtrend. Price is at the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 67.93, approaching overbought territory.</li>
+<li><strong>MACD:</strong> MACD line (5.52) is significantly above its signal line (1.31), and MACD Histogram (4.21) is strongly positive, indicating powerful bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is at the upper band (404.92 close, upper band 404.92), suggesting it’s currently overextended and could face a short-term pullback. Bands are expanding strongly.</li>
+<li><strong>Setup:</strong> Strong short-term bullish momentum leading to an overextended condition at the upper Bollinger Band. Might see a mean reversion pullback, but the immediate strength is undeniable.</li>
+</ul>
+<p><strong>GOOGL</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading below its 20 and 50-day SMAs, but above its 200-day SMA. This suggests short-term weakness within a broader long-term uptrend.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 45.74, neutral-to-bearish.</li>
+<li><strong>MACD:</strong> MACD line (-0.48) is above its signal line (-0.94), and MACD Histogram (0.47) is positive. This indicates a recent bullish MACD crossover, suggesting an attempt at a momentum shift.</li>
+<li><strong>Bollinger Bands:</strong> Price is well within the Bollinger Bands, not at an extreme.</li>
+<li><strong>Setup:</strong> Pullback within a long-term uptrend. The recent bullish MACD crossover suggests a potential stabilization or reversal of short-term weakness, but price is still below short-term moving averages.</li>
+</ul>
+<p><strong>HYG</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above all three SMAs (20, 50, 200-day), indicating a clear uptrend. Price is near the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 60.82, showing healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (0.11) is above its signal line (0.06), and MACD Histogram (0.05) is positive, confirming bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the upper band (79.77 vs 79.61 close), suggesting strong upward pressure. Bands are narrow, indicating low volatility.</li>
+<li><strong>Setup:</strong> Stable uptrend with low volatility. Price touching the upper band suggests trend continuation, but narrow bands could imply a volatility contraction squeeze is possible.</li>
+</ul>
+<p><strong>IAU</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above its 20 and 50-day SMAs, but below its 200-day SMA. This indicates short-term strength within a longer-term downtrend. Price is at the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 68.00, approaching overbought territory.</li>
+<li><strong>MACD:</strong> MACD line (1.13) is significantly above its signal line (0.27), and MACD Histogram (0.86) is strongly positive, indicating powerful bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is at the upper band (82.99 vs 82.98 close), suggesting it’s currently overextended and could face a short-term pullback.</li>
+<li><strong>Setup:</strong> Strong short-term bullish momentum, overextended at the upper Bollinger Band, indicating a potential mean reversion pullback. Similar to GLD.</li>
+</ul>
+<p><strong>IBIT</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading below its 20, 50, and 200-day SMAs, indicating a downtrend. Price is near the lower Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 46.09, neutral.</li>
+<li><strong>MACD:</strong> MACD line (-0.09) is below its signal line (-0.07), and MACD Histogram (-0.02) is negative, indicating slight bearish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the lower band (35.52 vs 35.89 close), suggesting it’s approaching oversold conditions. Bands are narrow, indicating low volatility.</li>
+<li><strong>Setup:</strong> Downtrend in low volatility, possibly setting up for a volatility contraction squeeze or a mean reversion bounce from the lower band.</li>
+</ul>
+<p><strong>INTC</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above its 20-day SMA, but below its 50-day SMA, and above its 200-day SMA. This suggests short-term strength after a pullback, within a long-term uptrend.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 49.98, neutral.</li>
+<li><strong>MACD:</strong> MACD line (-2.74) is above its signal line (-4.31), and MACD Histogram (1.57) is positive. This indicates a bullish MACD crossover, suggesting a shift to positive momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is well within the bands, no extremes.</li>
+<li><strong>Setup:</strong> Recent bullish MACD crossover suggests a potential bounce and trend continuation from a short-term dip, but still below the 50-day SMA.</li>
+</ul>
+<p><strong>IWM</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above all three SMAs (20, 50, 200-day), indicating a strong uptrend. Price is near the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 60.47, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (2.12) is above its signal line (1.33), and MACD Histogram (0.78) is positive, confirming bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the upper band (303.96 vs 302.71 close), suggesting strong upward pressure.</li>
+<li><strong>Setup:</strong> Strong uptrend continuation with solid momentum.</li>
+</ul>
+<p><strong>KLAC</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above its 20-day SMA, but below its 50-day SMA, and above its 200-day SMA. This suggests short-term strength after a pullback, within a long-term uptrend.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 51.48, neutral.</li>
+<li><strong>MACD:</strong> MACD line (-6.70) is above its signal line (-8.86), and MACD Histogram (2.16) is positive. This indicates a bullish MACD crossover, suggesting a shift to positive momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is well within the bands, no extremes.</li>
+<li><strong>Setup:</strong> Recent bullish MACD crossover suggests a potential bounce and trend continuation from a short-term dip, but still below the 50-day SMA.</li>
+</ul>
+<p><strong>LQD</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading below its 20, 50, and 200-day SMAs, indicating a downtrend. Price is near the lower Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 43.94, neutral-to-bearish.</li>
+<li><strong>MACD:</strong> MACD line (-0.28) is above its signal line (-0.32), and MACD Histogram (0.04) is positive. This indicates a recent bullish MACD crossover, suggesting a potential shift in momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the lower band (105.46 vs 106.12 close), suggesting it’s approaching oversold conditions. Bands are narrow, indicating low volatility.</li>
+<li><strong>Setup:</strong> Downtrend in low volatility, possibly setting up for a volatility contraction squeeze or a mean reversion bounce from the lower band, supported by the recent bullish MACD cross.</li>
+</ul>
+<p><strong>META</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading below all three SMAs (20, 50, 200-day), indicating a downtrend. Price is near the lower Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 43.88, neutral-to-bearish.</li>
+<li><strong>MACD:</strong> MACD line (-6.42) is below its signal line (-5.62), and MACD Histogram (-0.79) is negative, confirming bearish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the lower band (541.01 vs 578.85 close), suggesting it’s oversold short-term but also confirms strong downside pressure.</li>
+<li><strong>Setup:</strong> Strong downtrend with bearish momentum, approaching short-term oversold. Could be prone to a mean reversion bounce if selling pressure eases.</li>
+</ul>
+<p><strong>MSFT</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading significantly above all three SMAs (20, 50, 200-day), indicating a very strong uptrend. Price is at the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 70.79, indicating overbought conditions.</li>
+<li><strong>MACD:</strong> MACD line (29.77) is significantly above its signal line (22.90), and MACD Histogram (6.87) is strongly positive, indicating powerful bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is at the upper band (540.13 vs 492.43 close) <em>[Correction: Upper BB is 540.13, price is 492.43, so it’s not at the upper band, but rising strongly towards it from below]</em> This indicates strong upward pressure. Bands are expanding strongly.</li>
+<li><strong>Setup:</strong> Very strong uptrend with powerful momentum. Overbought RSI suggests potential for a brief consolidation or pullback, but the overall trend is exceptionally strong.</li>
+</ul>
+<p><strong>MTZ</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading significantly below all three SMAs (20, 50, 200-day), indicating a strong downtrend. Price is near the lower Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 40.90, indicating bearish momentum, but not yet oversold.</li>
+<li><strong>MACD:</strong> MACD line (-25.61) is below its signal line (-24.84), and MACD Histogram (-0.77) is negative, confirming bearish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the lower band (232.47 vs 281.11 close). <em>[Correction: Lower BB is 232.47, price is 281.11. Price is well above the lower band, but below the 20-SMA. This is a strong downtrend, but not at a current oversold extreme on BB]</em> The bands are wide, reflecting increased volatility.</li>
+<li><strong>Setup:</strong> Strong downtrend with bearish momentum. Current price is a bit off the lower BB extreme, suggesting continued downside pressure within the trend is possible.</li>
+</ul>
+<p><strong>MU</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above its 20-day SMA, but below its 50-day SMA, and significantly above its 200-day SMA. This suggests short-term strength after a dip within a very strong long-term uptrend.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 51.08, neutral.</li>
+<li><strong>MACD:</strong> MACD line (-19.09) is above its signal line (-24.96), and MACD Histogram (5.87) is positive. This indicates a strong bullish MACD crossover, suggesting a significant shift to positive momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is well within the bands, not at an extreme.</li>
+<li><strong>Setup:</strong> Strong bullish MACD crossover after a dip, suggesting a potential reversal of the recent pullback and continuation of the long-term uptrend.</li>
+</ul>
+<p><strong>NBIS</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above its 20-day SMA, but below its 50-day SMA, and significantly above its 200-day SMA. This suggests short-term strength after a dip within a very strong long-term uptrend. Price is near the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 61.96, indicating strong bullish momentum, approaching overbought.</li>
+<li><strong>MACD:</strong> MACD line (-0.45) is significantly above its signal line (-5.73), and MACD Histogram (5.28) is strongly positive. This indicates a powerful bullish MACD crossover.</li>
+<li><strong>Bollinger Bands:</strong> Price is above the upper band (245.14 vs 259.20 close). This is a strong breakout, but also an extreme short-term overbought condition.</li>
+<li><strong>Setup:</strong> Extremely strong bullish momentum and a breakout above the upper Bollinger Band, indicating a sharp rally. Highly overbought, suggesting potential for a mean reversion pullback, but also strong trend continuation.</li>
+</ul>
+<p><strong>NFLX</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above its 20-day SMA, but below its 50 and 200-day SMAs. This indicates short-term strength within a broader long-term downtrend.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 51.34, neutral.</li>
+<li><strong>MACD:</strong> MACD line (-0.02) is above its signal line (-0.65), and MACD Histogram (0.63) is positive. This indicates a bullish MACD crossover, suggesting a shift to positive momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is well within the Bollinger Bands, no extremes.</li>
+<li><strong>Setup:</strong> Bullish MACD crossover suggests a potential short-term bounce or reversal of recent weakness, but the longer-term trend remains bearish below the 50 and 200-day SMAs.</li>
+</ul>
+<p><strong>NVDA</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above all three SMAs (20, 50, 200-day), indicating a strong uptrend. Price is near the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 62.43, healthy bullish momentum, approaching overbought.</li>
+<li><strong>MACD:</strong> MACD line (4.33) is above its signal line (2.18), and MACD Histogram (2.15) is positive, confirming strong bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the upper band (227.47 vs 224.09 close), suggesting strong upward pressure. Bands are expanding.</li>
+<li><strong>Setup:</strong> Strong uptrend continuation with robust momentum.</li>
+</ul>
+<p><strong>ORCL</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above its 20-day SMA, but below its 50 and 200-day SMAs. This suggests short-term strength within a broader long-term downtrend.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 59.66, indicating bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (0.64) is above its signal line (-3.80), and MACD Histogram (4.44) is strongly positive. This indicates a powerful bullish MACD crossover.</li>
+<li><strong>Bollinger Bands:</strong> Price is well within the Bollinger Bands, not at an extreme.</li>
+<li><strong>Setup:</strong> Strong bullish MACD crossover suggesting a significant short-term bullish reversal. However, it’s still operating within a broader downtrend defined by the 50 and 200-day SMAs, potentially a counter-trend rally.</li>
+</ul>
+<p><strong>PLTR</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading significantly above all three SMAs (20, 50, 200-day), indicating a very strong uptrend. Price is approaching the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 69.75, indicating overbought conditions.</li>
+<li><strong>MACD:</strong> MACD line (11.25) is significantly above its signal line (6.34), and MACD Histogram (4.90) is strongly positive, indicating powerful bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is approaching the upper band (181.08 vs 171.04 close), confirming strong upward pressure. Bands are expanding strongly.</li>
+<li><strong>Setup:</strong> Very strong uptrend with powerful momentum, but overbought RSI suggests potential for a brief consolidation or pullback. Strong trend continuation.</li>
+</ul>
+<p><strong>QUAL</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above all three SMAs (20, 50, 200-day), indicating a strong uptrend. Price is near the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 66.83, healthy bullish momentum, approaching overbought.</li>
+<li><strong>MACD:</strong> MACD line (2.42) is above its signal line (1.89), and MACD Histogram (0.52) is positive, confirming bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the upper band (227.89 vs 225.45 close), suggesting strong upward pressure.</li>
+<li><strong>Setup:</strong> Strong uptrend continuation with solid momentum.</li>
+</ul>
+<p><strong>QQQ</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above its 20-day SMA, but below its 50-day SMA, and above its 200-day SMA. This indicates short-term strength after a pullback, within a long-term uptrend. Price is near the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 57.09, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (3.18) is significantly above its signal line (-1.01), and MACD Histogram (4.19) is strongly positive. This indicates a powerful bullish MACD crossover.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the upper band (736.31 vs 723.70 close), suggesting strong upward pressure. Bands are expanding.</li>
+<li><strong>Setup:</strong> Strong bullish MACD crossover and breaking above short-term SMAs, suggesting a reversal of the recent dip and potential continuation of the long-term uptrend.</li>
+</ul>
+<p><strong>SCHD</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading significantly above all three SMAs (20, 50, 200-day), indicating a very strong uptrend. Price is at the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 69.41, indicating overbought conditions.</li>
+<li><strong>MACD:</strong> MACD line (0.45) is above its signal line (0.41), and MACD Histogram (0.05) is positive, confirming bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is at the upper band (34.47 vs 34.26 close), suggesting it’s potentially overextended and due for a pullback.</li>
+<li><strong>Setup:</strong> Very strong uptrend, but short-term overbought and hitting the upper Bollinger Band, indicating high probability of a mean reversion pullback.</li>
+</ul>
+<p><strong>SLV</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above its 20 and 50-day SMAs, but below its 200-day SMA. This indicates strong short-term strength within a longer-term downtrend. Price is at the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 62.42, indicating strong bullish momentum, approaching overbought.</li>
+<li><strong>MACD:</strong> MACD line (0.75) is significantly above its signal line (-0.28), and MACD Histogram (1.03) is strongly positive. This indicates a powerful bullish MACD crossover.</li>
+<li><strong>Bollinger Bands:</strong> Price is at the upper band (59.44 vs 59.06 close), suggesting it’s currently overextended and could face a short-term pullback. Bands are expanding strongly.</li>
+<li><strong>Setup:</strong> Strong short-term bullish momentum, overextended at the upper Bollinger Band, indicating a potential mean reversion pullback. Similar to GLD/IAU.</li>
+</ul>
+<p><strong>SPY</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading significantly above all three SMAs (20, 50, 200-day), indicating a very strong uptrend. Price is approaching the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 64.51, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (7.75) is significantly above its signal line (5.19), and MACD Histogram (2.56) is strongly positive, indicating powerful bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is approaching the upper band (781.92 vs 772.49 close), confirming strong upward pressure. Bands are expanding strongly.</li>
+<li><strong>Setup:</strong> Very strong uptrend with powerful momentum. Trend continuation.</li>
+</ul>
+<p><strong>SSO</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading significantly above all three SMAs (20, 50, 200-day), indicating a very strong uptrend. Price is approaching the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 63.83, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (1.27) is above its signal line (0.80), and MACD Histogram (0.47) is positive, confirming bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is approaching the upper band (73.22 vs 71.54 close), confirming strong upward pressure. Bands are expanding.</li>
+<li><strong>Setup:</strong> Strong uptrend continuation with robust momentum.</li>
+</ul>
+<p><strong>STX</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above its 20-day SMA, but below its 50-day SMA, and significantly above its 200-day SMA. This suggests short-term strength after a dip within a very strong long-term uptrend.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 53.56, neutral.</li>
+<li><strong>MACD:</strong> MACD line (-9.58) is above its signal line (-13.84), and MACD Histogram (4.26) is positive. This indicates a strong bullish MACD crossover.</li>
+<li><strong>Bollinger Bands:</strong> Price is well within the bands, not at an extreme.</li>
+<li><strong>Setup:</strong> Strong bullish MACD crossover after a dip, suggesting a potential reversal of the recent pullback and continuation of the long-term uptrend.</li>
+</ul>
+<p><strong>TLN</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above its 20-day SMA, but below its 50 and 200-day SMAs. This indicates short-term strength within a broader long-term downtrend.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 53.32, neutral-to-bullish.</li>
+<li><strong>MACD:</strong> MACD line (-6.71) is above its signal line (-9.76), and MACD Histogram (3.05) is positive. This indicates a bullish MACD crossover, suggesting a shift to positive momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is well within the Bollinger Bands, not at an extreme.</li>
+<li><strong>Setup:</strong> Bullish MACD crossover suggests a potential short-term bounce or reversal of recent weakness, but the longer-term trend remains bearish below the 50 and 200-day SMAs, indicating a counter-trend rally.</li>
+</ul>
+<p><strong>TLT</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading below its 20, 50, and 200-day SMAs, indicating a downtrend. Price is near the lower Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 38.72, indicating bearish momentum but not yet oversold.</li>
+<li><strong>MACD:</strong> MACD line (-0.55) is below its signal line (-0.55), and MACD Histogram (-0.01) is slightly negative, confirming bearish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the lower band (81.59 vs 82.11 close), suggesting it’s potentially oversold short-term but also confirms strong downside pressure. Bands are narrow, indicating low volatility.</li>
+<li><strong>Setup:</strong> Downtrend with bearish momentum in low volatility. Potential for a mean reversion bounce from the lower Bollinger Band.</li>
+</ul>
+<p><strong>TMF</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading below its 20, 50, and 200-day SMAs, indicating a strong downtrend. Price is near the lower Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 36.80, indicating bearish momentum but not yet oversold.</li>
+<li><strong>MACD:</strong> MACD line (-0.76) is below its signal line (-0.76), and MACD Histogram (-0.003) is slightly negative, confirming bearish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the lower band (30.09 vs 30.72 close), suggesting it’s potentially oversold short-term but also confirms strong downside pressure. Bands are narrow, indicating low volatility.</li>
+<li><strong>Setup:</strong> Strong downtrend with bearish momentum in low volatility. Potential for a mean reversion bounce from the lower Bollinger Band.</li>
+</ul>
+<p><strong>TSLA</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading below its 20, 50, and 200-day SMAs, indicating a strong downtrend.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 41.42, indicating bearish momentum but not yet oversold.</li>
+<li><strong>MACD:</strong> MACD line (-15.30) is above its signal line (-18.64), and MACD Histogram (3.33) is positive. This indicates a bullish MACD crossover, suggesting a shift to positive momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is well within the Bollinger Bands, not at an extreme.</li>
+<li><strong>Setup:</strong> Strong downtrend, but a bullish MACD crossover suggests a potential short-term bounce or reversal of recent weakness. Could be a counter-trend rally.</li>
+</ul>
+<p><strong>TSM</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above its 20-day SMA, but below its 50-day SMA, and above its 200-day SMA. This suggests short-term strength after a pullback, within a long-term uptrend.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 56.12, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (-0.30) is above its signal line (-3.64), and MACD Histogram (3.35) is strongly positive. This indicates a powerful bullish MACD crossover.</li>
+<li><strong>Bollinger Bands:</strong> Price is well within the bands, no extremes.</li>
+<li><strong>Setup:</strong> Strong bullish MACD crossover after a dip, suggesting a potential reversal of the recent pullback and continuation of the long-term uptrend.</li>
+</ul>
+<p><strong>TQQQ</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above its 20-day SMA, but below its 50-day SMA, and above its 200-day SMA. This indicates short-term strength after a pullback, within a long-term uptrend.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 55.57, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (0.32) is above its signal line (-0.93), and MACD Histogram (1.25) is positive. This indicates a bullish MACD crossover, suggesting a shift to positive momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is well within the Bollinger Bands, not at an extreme.</li>
+<li><strong>Setup:</strong> Bullish MACD crossover and breaking above the 20-day SMA, suggesting a potential reversal of the recent dip and continuation of the long-term uptrend for this leveraged ETF.</li>
+</ul>
+<p><strong>UUP</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading below its 20-day SMA, above its 50-day SMA, and above its 200-day SMA. This suggests short-term weakness within a broader uptrend.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 46.99, neutral-to-bearish.</li>
+<li><strong>MACD:</strong> MACD line (-0.04) is below its signal line (-0.01), and MACD Histogram (-0.03) is negative, confirming slight bearish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the lower band (27.95 vs 28.20 close), suggesting it’s approaching oversold conditions. Bands are narrow, indicating low volatility.</li>
+<li><strong>Setup:</strong> Short-term pullback in a long-term uptrend, with slight bearish momentum and low volatility. Potential for a mean reversion bounce from the lower Bollinger Band.</li>
+</ul>
+<p><strong>UPRO</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading significantly above all three SMAs (20, 50, 200-day), indicating a very strong uptrend. Price is approaching the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 63.37, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (3.86) is significantly above its signal line (2.38), and MACD Histogram (1.48) is strongly positive, indicating powerful bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is approaching the upper band (159.80 vs 154.55 close), confirming strong upward pressure. Bands are expanding strongly.</li>
+<li><strong>Setup:</strong> Very strong uptrend with powerful momentum. Trend continuation.</li>
+</ul>
+<p><strong>VGK</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above all three SMAs (20, 50, 200-day), indicating a strong uptrend. Price is near the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 65.12, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (1.10) is above its signal line (0.90), and MACD Histogram (0.21) is positive, confirming bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the upper band (93.51 vs 92.25 close), suggesting strong upward pressure.</li>
+<li><strong>Setup:</strong> Strong uptrend continuation with solid momentum.</li>
+</ul>
+<p><strong>VOO</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading significantly above all three SMAs (20, 50, 200-day), indicating a very strong uptrend. Price is approaching the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 64.77, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (7.15) is significantly above its signal line (4.79), and MACD Histogram (2.36) is strongly positive, indicating powerful bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is approaching the upper band (718.76 vs 710.17 close), confirming strong upward pressure. Bands are expanding strongly.</li>
+<li><strong>Setup:</strong> Very strong uptrend with powerful momentum. Trend continuation.</li>
+</ul>
+<p><strong>VTI</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading significantly above all three SMAs (20, 50, 200-day), indicating a very strong uptrend. Price is approaching the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 65.12, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (3.82) is significantly above its signal line (2.52), and MACD Histogram (1.30) is strongly positive, indicating powerful bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is approaching the upper band (385.95 vs 381.83 close), confirming strong upward pressure. Bands are expanding strongly.</li>
+<li><strong>Setup:</strong> Very strong uptrend with powerful momentum. Trend continuation.</li>
+</ul>
+<p><strong>VT</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading significantly above all three SMAs (20, 50, 200-day), indicating a very strong uptrend. Price is near the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 64.95, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (1.50) is significantly above its signal line (0.90), and MACD Histogram (0.60) is strongly positive, indicating powerful bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the upper band (162.88 vs 161.53 close), confirming strong upward pressure. Bands are expanding.</li>
+<li><strong>Setup:</strong> Strong uptrend continuation with robust momentum.</li>
+</ul>
+<p><strong>VXUS</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above all three SMAs (20, 50, 200-day), indicating a strong uptrend. Price is near the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 63.16, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (0.71) is significantly above its signal line (0.36), and MACD Histogram (0.36) is strongly positive, confirming bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the upper band (88.01 vs 87.54 close), suggesting strong upward pressure.</li>
+<li><strong>Setup:</strong> Strong uptrend continuation with solid momentum.</li>
+</ul>
+<p><strong>^VIX</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading below all three SMAs (20, 50, 200-day), indicating a clear downtrend in volatility. Price is near the lower Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 41.14, neutral-to-bearish.</li>
+<li><strong>MACD:</strong> MACD line (-0.64) is below its signal line (-0.35), and MACD Histogram (-0.29) is negative, confirming bearish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the lower band (13.73 vs 14.55 close), suggesting it’s approaching oversold conditions. Bands are contracting, indicating low volatility and potential for a squeeze.</li>
+<li><strong>Setup:</strong> Strong downtrend in volatility with contracting Bollinger Bands. This could indicate a short-term bottom in VIX (and thus a potential mean reversion bounce, or a period of even lower volatility).</li>
+</ul>
+<p><strong>^TNX</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above its 20 and 50-day SMAs, and significantly above its 200-day SMA. This indicates a strong uptrend in interest rates. Price is at the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 56.90, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (0.037) is below its signal line (0.040), and MACD Histogram (-0.003) is slightly negative. This indicates a recent bearish MACD crossover, suggesting a slight loss of upward momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is at the upper band (4.74 vs 4.68 close). <em>[Correction: Upper BB is 4.74, price is 4.68, so price is just below the upper band].</em> This indicates strong upward pressure. Bands are relatively narrow, suggesting a potential volatility contraction.</li>
+<li><strong>Setup:</strong> Strong uptrend in rates, but with a recent slight bearish MACD crossover. Price near the upper band suggests continued strength but could imply short-term overextension. Narrow bands indicate a possible volatility squeeze.</li>
+</ul>
+<p><strong>WDC</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading below its 20 and 50-day SMAs, but significantly above its 200-day SMA. This indicates short-term weakness within a broader long-term uptrend.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 41.84, indicating bearish momentum but not yet oversold.</li>
+<li><strong>MACD:</strong> MACD line (-27.39) is below its signal line (-21.12), and MACD Histogram (-6.27) is strongly negative, confirming strong bearish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is well within the Bollinger Bands, not at an extreme.</li>
+<li><strong>Setup:</strong> Clear pullback within a long-term uptrend, with strong bearish momentum. Suggests further downside or consolidation before a potential bounce.</li>
+</ul>
+<p><strong>XEQT.TO</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above all three SMAs (20, 50, 200-day), indicating a strong uptrend. Price is near the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 64.30, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (0.38) is above its signal line (0.26), and MACD Histogram (0.11) is positive, confirming bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the upper band (46.52 vs 46.19 close), suggesting strong upward pressure.</li>
+<li><strong>Setup:</strong> Strong uptrend continuation with solid momentum.</li>
+</ul>
+<p><strong>XLA</strong> - (Not found in data, assuming a typo or incorrect ticker)</p>
+<p><strong>XLB</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above all three SMAs (20, 50, 200-day), indicating a strong uptrend.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 56.23, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (0.50) is above its signal line (0.33), and MACD Histogram (0.17) is positive, confirming bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is well within the Bollinger Bands, suggesting a stable uptrend.</li>
+<li><strong>Setup:</strong> Clear uptrend with moderate bullish momentum. Trend continuation.</li>
+</ul>
+<p><strong>XLC</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading near its 20 and 50-day SMAs, but below its 200-day SMA. This suggests short-term consolidation/neutrality within a longer-term downtrend.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 49.78, neutral.</li>
+<li><strong>MACD:</strong> MACD line (0.21) is above its signal line (-0.02), and MACD Histogram (0.23) is positive. This indicates a bullish MACD crossover, suggesting a shift to positive momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is well within the Bollinger Bands, not at an extreme. Bands are narrow, suggesting low volatility.</li>
+<li><strong>Setup:</strong> Neutral-to-bullish momentum shift (MACD cross) within a low-volatility trading range, but remains below the long-term 200-day SMA. Potential for a volatility contraction squeeze to resolve the current consolidation.</li>
+</ul>
+<p><strong>XLE</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading significantly above all three SMAs (20, 50, 200-day), indicating a very strong uptrend. Price is at the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 64.49, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (0.94) is above its signal line (0.78), and MACD Histogram (0.16) is positive, confirming bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is at the upper band (60.96 vs 61.03 close), suggesting it’s potentially overextended and due for a pullback.</li>
+<li><strong>Setup:</strong> Very strong uptrend with price pushing the upper Bollinger Band, indicating strong trend continuation but potentially short-term overextension for a mean reversion pullback.</li>
+</ul>
+<p><strong>XLF</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading significantly above all three SMAs (20, 50, 200-day), indicating a very strong uptrend. Price is near the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 66.20, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (0.78) is below its signal line (0.82), and MACD Histogram (-0.04) is slightly negative. This indicates a recent bearish MACD crossover, suggesting a slight loss of upward momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the upper band (58.49 vs 57.92 close), suggesting strong upward pressure. Bands are narrow, indicating low volatility.</li>
+<li><strong>Setup:</strong> Strong uptrend, but with a recent bearish MACD crossover and narrow bands. This suggests a potential volatility contraction squeeze or a minor pullback within the strong trend.</li>
+</ul>
+<p><strong>XLI</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading significantly above all three SMAs (20, 50, 200-day), indicating a very strong uptrend. Price is near the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 59.78, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (1.57) is above its signal line (1.22), and MACD Histogram (0.35) is positive, confirming bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the upper band (188.24 vs 185.88 close), confirming strong upward pressure.</li>
+<li><strong>Setup:</strong> Strong uptrend continuation with robust momentum.</li>
+</ul>
+<p><strong>XLK</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading significantly above all three SMAs (20, 50, 200-day), indicating a very strong uptrend. Price is near the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 59.58, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (1.74) is significantly above its signal line (0.29), and MACD Histogram (1.45) is strongly positive. This indicates a powerful bullish MACD crossover.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the upper band (191.69 vs 188.86 close), confirming strong upward pressure. Bands are expanding strongly.</li>
+<li><strong>Setup:</strong> Very strong uptrend with powerful bullish MACD crossover, suggesting a robust trend continuation.</li>
+</ul>
+<p><strong>XLP</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading near its 20 and 50-day SMAs, and above its 200-day SMA. This suggests short-term consolidation/neutrality within a longer-term uptrend.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 51.55, neutral.</li>
+<li><strong>MACD:</strong> MACD line (0.22) is below its signal line (0.31), and MACD Histogram (-0.10) is negative, confirming slight bearish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is well within the Bollinger Bands, not at an extreme. Bands are narrow, suggesting low volatility.</li>
+<li><strong>Setup:</strong> Neutral-to-bearish momentum within a low-volatility trading range and a longer-term uptrend. Potential for a volatility contraction squeeze.</li>
+</ul>
+<p><strong>XLRE</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading below its 20 and 50-day SMAs, but above its 200-day SMA. This indicates short-term weakness within a broader long-term uptrend. Price is near the lower Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 45.11, neutral-to-bearish.</li>
+<li><strong>MACD:</strong> MACD line (-0.05) is below its signal line (0.12), and MACD Histogram (-0.17) is negative. This confirms bearish momentum, following a bearish MACD crossover.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the lower band (44.19 vs 44.49 close), suggesting it’s approaching oversold conditions. Bands are narrow, indicating low volatility.</li>
+<li><strong>Setup:</strong> Short-term pullback in a long-term uptrend, with bearish momentum and low volatility. Potential for a mean reversion bounce from the lower Bollinger Band, or a volatility contraction squeeze resolution.</li>
+</ul>
+<p><strong>XLU</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading below its 20, 50, and 200-day SMAs, indicating a downtrend. Price is near the lower Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 42.14, indicating bearish momentum but not yet oversold.</li>
+<li><strong>MACD:</strong> MACD line (-0.45) is below its signal line (-0.29), and MACD Histogram (-0.16) is negative, confirming bearish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the lower band (42.80 vs 43.84 close), suggesting it’s potentially oversold short-term but also confirms strong downside pressure.</li>
+<li><strong>Setup:</strong> Downtrend with bearish momentum, approaching short-term oversold. Could be prone to a mean reversion bounce if selling pressure eases.</li>
+</ul>
+<p><strong>XLV</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading significantly above all three SMAs (20, 50, 200-day), indicating a very strong uptrend. Price is near the upper Bollinger Band.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 66.11, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (2.40) is above its signal line (2.14), and MACD Histogram (0.26) is positive, confirming bullish momentum.</li>
+<li><strong>Bollinger Bands:</strong> Price is near the upper band (169.27 vs 168.44 close), confirming strong upward pressure.</li>
+<li><strong>Setup:</strong> Strong uptrend continuation with robust momentum.</li>
+</ul>
+<p><strong>XLY</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Trading above its 20 and 50-day SMAs, and close to its 200-day SMA. This indicates short-term strength.</li>
+<li><strong>Momentum (RSI):</strong> RSI at 54.98, healthy bullish momentum.</li>
+<li><strong>MACD:</strong> MACD line (0.97) is significantly above its signal line (0.37), and MACD Histogram (0.60) is strongly positive. This indicates a powerful bullish MACD crossover.</li>
+<li><strong>Bollinger Bands:</strong> Price is well within the Bollinger Bands, not at an extreme.</li>
+<li><strong>Setup:</strong> Strong bullish MACD crossover suggesting a robust short-term rally. The longer-term trend is neutral around the 200-day SMA.</li>
+</ul>
 <hr>
-<p><strong>Technical Setup Evaluations (Price Action Only):</strong></p>
-<p><strong>1. Strong Bullish Trend Continuation:</strong> These assets exhibit a clear upward trend with price above all key moving averages (SMA_20 > SMA_50 > SMA_200 or similar bullish alignment), healthy RSI (typically 50-70), and confirming bullish MACD (MACD above signal, positive/increasing histogram). Price is generally within the upper half of the Bollinger Bands or pushing against the upper band, indicating sustained buying pressure.</p>
+<p><strong>Summary of General Patterns Observed:</strong></p>
 <ul>
-<li><strong>DIA:</strong> Strong uptrend, bullish MACD crossover, price near upper BB.</li>
-<li><strong>XLK:</strong> Clear uptrend, strong bullish MACD, healthy RSI.</li>
-<li><strong>AMZN:</strong> Strong uptrend, bullish MACD, healthy RSI.</li>
-<li><strong>UPRO:</strong> Strong uptrend, bullish MACD, price near upper BB (amplified SPY trend).</li>
-<li><strong>VXUS:</strong> Clear uptrend, bullish MACD, healthy RSI.</li>
-<li><strong>VTI:</strong> Strong uptrend, bullish MACD, healthy RSI.</li>
-<li><strong>QQQ:</strong> Strong uptrend, very strong bullish MACD, healthy RSI.</li>
-<li><strong>EWA:</strong> Clear uptrend, bullish MACD, price leaning upper BB.</li>
-<li><strong>XLI:</strong> Strong uptrend, bullish MACD, healthy RSI.</li>
-<li><strong>XLB:</strong> Strong uptrend, bullish MACD, price leaning upper BB.</li>
-<li><strong>SSO:</strong> Strong uptrend, bullish MACD, price leaning upper BB (amplified SPY trend).</li>
-<li><strong>XLY:</strong> Strong uptrend, bullish MACD, healthy RSI.</li>
-<li><strong>VOO:</strong> Strong uptrend, bullish MACD, healthy RSI.</li>
-<li><strong>AVGO:</strong> Strong uptrend, very strong bullish MACD, healthy RSI.</li>
-<li><strong>NVDA:</strong> Strong uptrend, very strong bullish MACD, healthy RSI.</li>
-<li><strong>CEG:</strong> Strong uptrend, bullish MACD, price leaning upper BB.</li>
-<li><strong>HYG:</strong> Strong uptrend, bullish MACD, price leaning upper BB.</li>
-<li><strong>XLV:</strong> Strong uptrend, bullish MACD, healthy RSI.</li>
-<li><strong>VGK:</strong> Strong uptrend, bullish MACD, price leaning upper BB.</li>
-<li><strong>SPY:</strong> Strong uptrend, bullish MACD, healthy RSI.</li>
-<li><strong>XEQT.TO:</strong> Strong uptrend, bullish MACD, price leaning upper BB.</li>
-</ul>
-<p><strong>2. Highly Bullish / Potentially Overextended:</strong> These assets show extremely strong upward momentum but are registering as overbought on RSI (>70) or have pushed significantly above their upper Bollinger Band, indicating a possible short-term pullback or consolidation before further advances.</p>
-<ul>
-<li><strong>PLTR:</strong> Very strong trend, but RSI (73.62) is overbought and price is at the upper BB.</li>
-<li><strong>MSFT:</strong> Extremely strong trend, RSI (77.72) is highly overbought, price nearing upper BB.</li>
-<li><strong>SCHD:</strong> Strong trend, RSI (69.68) nearing overbought, price at the upper BB.</li>
-<li><strong>QUAL:</strong> Strong trend, RSI (69.17) nearing overbought, price at the upper BB.</li>
-<li><strong>EWC:</strong> Very strong trend, RSI (70.51) is overbought, price at the upper BB.</li>
-<li><strong>SLV:</strong> Very strong trend, price at the very top of the upper BB.</li>
-<li><strong>GLD:</strong> Very strong trend, price at the very top of the upper BB.</li>
-<li><strong>XLE:</strong> Very strong trend, price just above the upper BB.</li>
-<li><strong>IAU:</strong> Very strong trend, price at the very top of the upper BB.</li>
-</ul>
-<p><strong>3. Mean Reversion Bounce / Attempted Trend Change:</strong> These assets have experienced recent weakness but are showing signs of a short-term rebound or an attempt to reverse their immediate downtrend. This is often indicated by a bullish MACD crossover after a dip, even if the price remains below some intermediate-term moving averages.</p>
-<ul>
-<li><strong>ORCL:</strong> Strong bullish MACD crossover from negative territory, attempting to recover after a dip, but still below SMA_50 and SMA_200.</li>
-<li><strong>MU:</strong> Bullish MACD crossover after a significant drop, price bouncing from lower levels but still below SMA_20 and SMA_50.</li>
-<li><strong>TSLA:</strong> Bullish MACD crossover after a strong downtrend, price showing a bounce but remains below all major SMAs.</li>
-<li><strong>INTC:</strong> Bullish MACD crossover after a dip, attempting to recover but stalled at SMA_20 and below SMA_50.</li>
-<li><strong>TSM:</strong> Strong bullish MACD crossover after a dip, leaning towards upper BB but still below SMA_50.</li>
-<li><strong>NBIS:</strong> Bullish MACD crossover after a significant drop, price bouncing but still below SMA_20 and SMA_50.</li>
-<li><strong>GOOGL:</strong> Bullish MACD crossover after a dip, attempting to recover but still below SMA_20 and SMA_50.</li>
-<li><strong>NFLX:</strong> Strong bullish MACD crossover after a dip, price bouncing but remains below SMA_50 and SMA_200.</li>
-<li><strong>XLC:</strong> Strong bullish MACD crossover and price above short-term SMAs, but SMA_20 recently crossed below SMA_50, indicating mixed signals.</li>
-<li><strong>TQQQ:</strong> Bullish MACD crossover after a dip, but price remains below SMA_50 (amplified QQQ weakness).</li>
-<li><strong>KLAC:</strong> Bullish MACD crossover after a dip, but stalled right at SMA_20 and below SMA_50.</li>
-<li><strong>^VIX3M:</strong> Bullish MACD crossover after a dip, suggesting rising short-term volatility expectations.</li>
-</ul>
-<p><strong>4. Clear Downtrend / Bearish Momentum:</strong> These assets show consistent downward pressure with price below key moving averages, bearish RSI (typically below 50), and bearish MACD (MACD below signal, negative/decreasing histogram).</p>
-<ul>
-<li><strong>WDC:</strong> Strong downtrend, bearish MACD, price near lower BB, RSI (39.03) approaching oversold.</li>
-<li><strong>MTZ:</strong> Strong downtrend, bearish MACD, RSI (38.02) approaching oversold.</li>
-<li><strong>AAPL:</strong> Strong downtrend, bearish MACD, price near lower BB, RSI (42.07) indicating bearishness.</li>
-<li><strong>XLU:</strong> Downtrend, bearish MACD, price near lower BB, RSI (39.46) approaching oversold.</li>
-<li><strong>AMD:</strong> Downtrend, bearish MACD, price in lower half of BB.</li>
-</ul>
-<p><strong>5. Volatility Contraction Squeeze / Critical Juncture:</strong> These assets are characterized by narrowing Bollinger Bands, suggesting a period of low volatility often preceding a sharp price move. Price is typically touching or breaking a Bollinger Band, with mixed or weak momentum signals, making the direction of the next move uncertain.</p>
-<ul>
-<li><strong>IBIT:</strong> Price at the lower BB, very narrow bands, very weak bullish MACD attempt. High potential for an explosive move.</li>
-<li><strong>LQD:</strong> Price very near the lower BB, narrow bands, very weak bullish MACD attempt. High potential for an explosive move.</li>
-<li><strong>UUP:</strong> Price near the lower BB, narrow bands, bearish MACD. High potential for an explosive move.</li>
-<li><strong>XLRE:</strong> Price at the lower BB, narrow bands, bearish MACD. High potential for an explosive move.</li>
-<li><strong>TLT:</strong> Price at the lower BB, relatively narrow bands, weak bearish MACD. High potential for an explosive move.</li>
-<li><strong>TMF:</strong> Price near the lower BB, relatively narrow bands, weak bearish MACD (amplified TLT trend). High potential for an explosive move.</li>
-</ul>
-<p><strong>6. Consolidation / Weak Signals:</strong> Assets showing mixed or indecisive signals, possibly consolidating after a move or lacking strong directional momentum.</p>
-<ul>
-<li><strong>XLP:</strong> Short-term bearish MACD crossover, price between SMA_20 and SMA_50.</li>
-<li><strong>STX:</strong> Weak bullish MACD attempt after bearish phase, price below SMA_20 and SMA_50.</li>
-<li><strong>^TNX:</strong> Yields in uptrend, but short-term MACD shows slight bearish crossover/stalling.</li>
-<li><strong>^IRX:</strong> Yields in uptrend, but short-term MACD shows slight bearish crossover/stalling.</li>
-<li><strong>XLF:</strong> Financials in uptrend, but MACD showing a slight bearish crossover/pullback after a strong run.</li>
-</ul>
-<hr> </article> </main>  </body></html> 
+<li><strong>Strong Uptrends (Trend Continuation):</strong> AMZN, AVGO, CRWD, DIA, EWA, EWC, IWM, MSFT, NBIS, NVDA, PLTR, QUAL, QQQ, SCHD, SPY, SSO, STX, TSM, TQQQ, UPRO, VGK, VOO, VTI, VT, VXUS, XEQT.TO, XLB, XLE, XLI, XLK, XLV, XLY. Many of these are showing signs of strong momentum and some (EWC, GLD, IAU, NBIS, SCHD, XLE) are flashing overbought signals (RSI > 70 or price breaking upper BB) suggesting potential for short-term mean reversion.</li>
+<li><strong>Downtrends (Potential Mean Reversion Bounces):</strong> AAPL, IBIT, LQD, META, MTZ, TLT, TMF, TSLA, UUP, XLU. Several are showing price near lower Bollinger Bands or bullish MACD crossovers, hinting at potential bounces, but the overall trend remains down.</li>
+<li><strong>Consolidation/Pullback within Uptrend (Potential Reversal/Continuation):</strong> AMD, GOOGL, INTC, KLAC, ORCL, WDC, XLF, XLP, XLRE. These show short-term weakness but generally remain above their 200-day SMA. Bullish MACD crossovers in many suggest recent momentum shifts that could lead to continuation of the broader uptrend.</li>
+<li><strong>Volatility Contraction (Squeeze Potential):</strong> HYG, IBIT, LQD, UUP, ^VIX, ^TNX, XLC, XLF, XLP, XLRE. Narrowing Bollinger Bands suggest a period of low volatility that could precede a breakout.</li>
+<li><strong>Overbought Conditions (RSI > 70 or price above upper BB):</strong> EWC, MSFT, NBIS, SCHD, (GLD, IAU, XLE). These could be due for a short-term pullback.</li>
+<li><strong>Oversold Conditions (Price near lower BB or RSI &#x3C; 30):</strong> AAPL, IBIT, LQD, META, TLT, TMF, UUP, XLU, XLRE. These could be due for a short-term bounce.</li>
+</ul> </article> </main>  </body></html> 
