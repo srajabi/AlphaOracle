@@ -2,45 +2,45 @@
     {
         "ticker": "VTI",
         "action": "buy",
-        "notional_value": 17437
+        "notional_value": 15693
     },
     {
-        "ticker": "MSFT",
+        "ticker": "VXUS",
+        "action": "buy",
+        "notional_value": 8718
+    },
+    {
+        "ticker": "VGK",
+        "action": "buy",
+        "notional_value": 6103
+    },
+    {
+        "ticker": "QUAL",
         "action": "buy",
         "notional_value": 6975
     },
     {
-        "ticker": "AVGO",
+        "ticker": "XLE",
+        "action": "buy",
+        "notional_value": 6103
+    },
+    {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 6103
+    },
+    {
+        "ticker": "NVDA",
         "action": "buy",
         "notional_value": 5231
     },
     {
-        "ticker": "NVDA",
+        "ticker": "AVGO",
         "action": "buy",
         "notional_value": 4359
     },
     {
         "ticker": "TSM",
-        "action": "buy",
-        "notional_value": 2616
-    },
-    {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 8719
-    },
-    {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 5231
-    },
-    {
-        "ticker": "QUAL",
-        "action": "buy",
-        "notional_value": 4359
-    },
-    {
-        "ticker": "SCHD",
         "action": "buy",
         "notional_value": 4359
     },
@@ -48,16 +48,6 @@
         "ticker": "XLF",
         "action": "buy",
         "notional_value": 4359
-    },
-    {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 3487
-    },
-    {
-        "ticker": "VXUS",
-        "action": "buy",
-        "notional_value": 5231
     },
     {
         "ticker": "CRWD",
