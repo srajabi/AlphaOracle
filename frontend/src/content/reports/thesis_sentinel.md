@@ -3,34 +3,29 @@ title: Thesis Sentinel Daily Brief
 date: "2026-08-14"
 ---
 
-# Thesis Sentinel — Daily Brief (2026-08-14)
+# Daily Thesis Sentinel — 2026-08-14
 
 ## 1. Tripwire Status
 
-| Tripwire | Signal | Threshold | Today's Reading | Status |
+| Tripwire | Signal | Threshold | Reading | Status |
 |---|---|---|---|---|
-| Carry unwind | VIX/VIX3M (5d median) | >1.0 | 0.858 | CLEAR |
-| Credit cracks | HYG/LQD 63d relmom | <-2% | +1.99% | CLEAR |
-| Breadth break | Canary (EWA, TLT) | both negative | EWA +4.83%, TLT -1.76% → half_defensive | CLEAR (partial, not both) |
-| Trend break | Slow channel vs 200d | close<200dma | 44.80 vs 41.55 SMA200 (+7.82%) | CLEAR |
-| Oil shock | XLE momentum vs SPY | sustained leadership | XLE +7.09%, strong uptrend, price pinned at BB upper (61.06/61.23) | **FIRED** (watch) |
-| AI capex turn | Hyperscaler FY27 guidance | any cut | none; NVDA mobilizing +$500B external capital, Oracle capex ramp continues | CLEAR |
-| Carry stress | USDJPY | rapid <140 | no feed in today's data | N/A |
+| Carry unwind | VIX/VIX3M (5d median) | >1.0 | 0.858 (as of 07/17) | CLEAR |
+| Credit cracks | HYG/LQD 63d relmom | <-2% | +2.94% | CLEAR |
+| Breadth break | Canary (EWA, TLT) 13612W | both negative | EWA +4.83%, TLT -1.76% (half_defensive) | CLEAR (1 of 2 negative) |
+| Trend break | SPY vs 200d SMA (month-end) | close < 200d | Slow channel risk_on, +8.01% above 200sma; SPY 777.88 vs 702.27 200sma | CLEAR |
+| Oil shock | XLE momentum vs SPY | sustained leadership | XLE mom +7.09% (strong_positive), RSI 64.6, uptrend | WATCHING — elevated, not yet "sustained leadership" over SPY |
+| AI capex turn | Hyperscaler FY27 guidance | any capex cut | No cut headlines; infra spend still rising (Samsung, AI cloud wins) | CLEAR |
+| Carry stress | USDJPY | rapid <140 | No feed today | NO DATA |
 
 ## 2. Marker Watch
-- **BoJ guidance:** no news today.
-- **CPI:** In-line July CPI + soft PPI (Reuters/WSJ/Politico) — Fed Warsh odds of Sept hike falling; consistent with the "two consecutive <3.5%" de-escalation marker trending favorably (not yet confirmed, watch next print).
-- **SpaceX vs $135:** no news today.
-- **Hyperscaler capex:** No cuts reported — NVDA committing $500B more capital (24/7 Wall St/Reuters), Oracle/hyperscaler buildout narrative intact. Capex-deceleration marker NOT triggered; if anything, capex is re-accelerating.
-- **Hormuz:** Two fresh tanker attacks reported today (Transport Topics, Oil & Gas 360); US threatening "indefinite blockade" of Iran (Reuters). Oil on pace for weekly gain, still short of full closure but escalation is real and dated.
+- **BoJ guidance**: No news today.
+- **CPI**: Multiple headlines confirm July inflation "softens," Fed (Warsh) "likely to pause" — directionally supports marker #2 (cooling toward <3.5%), but no hard July print number in feed yet.
+- **SpaceX vs $135**: No news today.
+- **Hyperscaler capex**: No FY27 cut signals; AI infra spend/demand narrative still accelerating (Samsung chip profit, Nebius contracts) — marker NOT triggered, opposite direction so far.
+- **Hormuz**: Escalatory cluster — "tanker traffic grinds to near halt" (Reuters/RBC-Ukraine), oil +$1 on tanker attacks, oil near $90 on US-Iran stalemate. This is the closest any marker has come to firing (full-closure week+ = marker #5 for scenario C).
 
 ## 3. Delta (vs. yesterday)
-Two new tanker attacks + explicit US "indefinite blockade" rhetoric is an escalation from prior "stalled talks" framing — Hormuz risk is now trending toward the C-scenario mechanics rather than a stable stalemate. Countervailing: PPI/CPI softness pulled down rate-hike odds, and VIX remains anomalously low (14.63, falling) despite the war headlines — rules show no fear repricing yet. Canary/credit/breadth unchanged from prior half-defensive/clear posture.
+Hormuz news escalated materially (traffic "near halt" is new phrasing vs. prior "attacks/disruption" framing) — oil bid firming (XLE momentum +7.09%). Yet ^VIX stayed low and falling (14.63, sma20 16.82) — no market fear response to the escalation. Fed-pause/soft-CPI narrative firmed further (Warsh "gets a break," multiple Fed-pause headlines). Canary and credit signals unchanged (still half_defensive on TLT only, credit clear). No new capex or BoJ items.
 
 ## 4. Scenario Pressure
-Evidence is **mixed but net-modest toward A with a slightly firmer C tail**, weights unchanged pending monthly review:
-- Toward **C**: Hormuz escalation (2 attacks + blockade threat) is the most dated, live tripwire input; XLE leadership is FIRED and worth tracking daily.
-- Away from **B**: no capex guidance cuts — if anything NVDA's $500B capital mobilization argues against near-term capex deceleration, the key B trigger.
-- Toward **A**: VIX still low/falling, credit clear, breadth only half-defensive — rules show no confirmed regime break despite the war headlines.
-
-**Rules govern positioning**: signals (VIX 14.63, credit +1.99%, half-defensive canary) do not yet corroborate the escalatory headline tone. Do not override mandates on the Hormuz story alone — only the oil-leadership tripwire is technically fired, and it is a "watch" item, not a full risk-off confirmation.
+**Divergence flagged**: News flow (Hormuz near-shutdown, oil >$90, tanker attacks) is consistent with an escalating scenario-C precursor, but priced risk signals (VIX 14.6 and falling, credit clear, breadth only half-defensive, SPY 8% above 200sma, slow channel risk_on) show markets absorbing the shock — classic **Scenario A (grind-with-violence)** behavior, i.e., an "air pocket" candidate rather than a regime break. Soft-CPI/Fed-pause narrative is a mild tailwind against B (no capex-cut confirmation either). Net: today's evidence leans A, with Hormuz as the single tripwire nearest to firing for C. Rules govern — no override; mandates remain SLEEVE_INVESTED per signal state.
