@@ -2,66 +2,41 @@
     {
         "ticker": "VOO",
         "action": "buy",
-        "notional_value": 15700
+        "notional_value": 19181
     },
     {
         "ticker": "QQQ",
         "action": "buy",
-        "notional_value": 8720
+        "notional_value": 13078
     },
     {
         "ticker": "VXUS",
         "action": "buy",
-        "notional_value": 6100
-    },
-    {
-        "ticker": "VGK",
-        "action": "buy",
-        "notional_value": 3490
-    },
-    {
-        "ticker": "EWA",
-        "action": "buy",
-        "notional_value": 2620
-    },
-    {
-        "ticker": "NVDA",
-        "action": "buy",
-        "notional_value": 3490
-    },
-    {
-        "ticker": "MSFT",
-        "action": "buy",
-        "notional_value": 2620
-    },
-    {
-        "ticker": "AVGO",
-        "action": "buy",
-        "notional_value": 2620
-    },
-    {
-        "ticker": "TSM",
-        "action": "buy",
-        "notional_value": 1740
-    },
-    {
-        "ticker": "CRWD",
-        "action": "buy",
-        "notional_value": 1740
+        "notional_value": 6975
     },
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 8720
+        "notional_value": 8718
     },
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 4360
+        "notional_value": 5231
+    },
+    {
+        "ticker": "NVDA",
+        "action": "buy",
+        "notional_value": 4359
+    },
+    {
+        "ticker": "AVGO",
+        "action": "buy",
+        "notional_value": 3487
     },
     {
         "ticker": "CEG",
         "action": "buy",
-        "notional_value": 2620
+        "notional_value": 2616
     }
 ]
