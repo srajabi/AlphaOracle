@@ -2,56 +2,46 @@
     {
         "ticker": "VOO",
         "action": "buy",
-        "notional_value": 15693.3
-    },
-    {
-        "ticker": "QQQ",
-        "action": "buy",
-        "notional_value": 8718.5
-    },
-    {
-        "ticker": "VXUS",
-        "action": "buy",
-        "notional_value": 6974.8
-    },
-    {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 8718.5
-    },
-    {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 6974.8
-    },
-    {
-        "ticker": "XLF",
-        "action": "buy",
-        "notional_value": 4359.25
-    },
-    {
-        "ticker": "NVDA",
-        "action": "buy",
-        "notional_value": 4359.25
-    },
-    {
-        "ticker": "MU",
-        "action": "buy",
-        "notional_value": 3487.4
-    },
-    {
-        "ticker": "TSM",
-        "action": "buy",
-        "notional_value": 3487.4
-    },
-    {
-        "ticker": "CEG",
-        "action": "buy",
-        "notional_value": 3487.4
+        "notional_value": 19000
     },
     {
         "ticker": "QUAL",
         "action": "buy",
-        "notional_value": 4359.25
+        "notional_value": 8700
+    },
+    {
+        "ticker": "SCHD",
+        "action": "buy",
+        "notional_value": 7000
+    },
+    {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 7800
+    },
+    {
+        "ticker": "XLE",
+        "action": "buy",
+        "notional_value": 5200
+    },
+    {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 4400
+    },
+    {
+        "ticker": "MSFT",
+        "action": "buy",
+        "notional_value": 5200
+    },
+    {
+        "ticker": "NVDA",
+        "action": "buy",
+        "notional_value": 5200
+    },
+    {
+        "ticker": "TSM",
+        "action": "buy",
+        "notional_value": 4400
     }
 ]
