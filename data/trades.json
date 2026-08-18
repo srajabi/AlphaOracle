@@ -1,52 +1,42 @@
 [
     {
-        "ticker": "XEQT.TO",
+        "ticker": "SPY",
         "action": "buy",
-        "notional_value": 26155.49
-    },
-    {
-        "ticker": "VTI",
-        "action": "buy",
-        "notional_value": 10462.2
-    },
-    {
-        "ticker": "VXUS",
-        "action": "buy",
-        "notional_value": 6974.8
-    },
-    {
-        "ticker": "QUAL",
-        "action": "buy",
-        "notional_value": 6102.95
+        "notional_value": 13000
     },
     {
         "ticker": "QQQ",
         "action": "buy",
-        "notional_value": 6102.95
-    },
-    {
-        "ticker": "NVDA",
-        "action": "buy",
-        "notional_value": 3487.4
-    },
-    {
-        "ticker": "MSFT",
-        "action": "buy",
-        "notional_value": 2615.55
-    },
-    {
-        "ticker": "CRWD",
-        "action": "buy",
-        "notional_value": 2615.55
+        "notional_value": 8000
     },
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 6974.8
+        "notional_value": 13000
     },
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 4359.25
+        "notional_value": 7000
+    },
+    {
+        "ticker": "VXUS",
+        "action": "buy",
+        "notional_value": 8500
+    },
+    {
+        "ticker": "SCHD",
+        "action": "buy",
+        "notional_value": 7000
+    },
+    {
+        "ticker": "MSFT",
+        "action": "buy",
+        "notional_value": 4500
+    },
+    {
+        "ticker": "NVDA",
+        "action": "buy",
+        "notional_value": 4000
     }
 ]
