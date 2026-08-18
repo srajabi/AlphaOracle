@@ -1,568 +1,83 @@
 <!DOCTYPE html><html lang="en" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/AlphaOracle/favicon.svg"><link rel="icon" href="/AlphaOracle/favicon.ico"><meta name="generator" content="Astro v5.18.0"><title>Technical Analyst Report</title><style>:root{--bg: #0b0e14;--panel-bg: #131722;--panel-bg-raised: #1e2230;--border: #2a2e39;--text: #f8f9fa;--text-body: #d1d4dc;--text-muted: #8f949e;--accent: #2962ff;--accent-soft: #c4d4ff;--green: #28a745;--red: #dc3545;--red-bright: #f6465d;--yellow: #ffc107}.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}.panel{background:var(--panel-bg);border:1px solid var(--border);border-radius:12px;padding:1.25rem;margin-bottom:1rem}.muted{color:var(--text-muted)}.btn{text-decoration:none;color:#fff;background:var(--accent);border-radius:8px;padding:.5rem .85rem;font-size:.85rem;font-weight:600}html,body{margin:0;width:100%;height:100%;background:#0b0e14;color:#f8f9fa;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif}.site-header[data-astro-cid-sckkx6r4]{position:sticky;top:0;z-index:100;background:#0b0e14eb;backdrop-filter:blur(8px);border-bottom:1px solid #2a2e39}.site-header-inner[data-astro-cid-sckkx6r4]{max-width:1100px;margin:0 auto;padding:.7rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}.brand[data-astro-cid-sckkx6r4]{color:#f8f9fa;text-decoration:none;font-weight:800;font-size:1.1rem;letter-spacing:.01em}.site-nav[data-astro-cid-sckkx6r4]{display:flex;gap:.25rem;flex-wrap:wrap}.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]{color:#8f949e;text-decoration:none;font-size:.9rem;font-weight:600;padding:.35rem .7rem;border-radius:8px}.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]:hover,.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4].active{color:#f8f9fa;background:#1e2230}
 main[data-astro-cid-ipuyqs4v]{max-width:850px;margin:0 auto;padding:3rem 1.5rem;line-height:1.7;color:#d1d4dc}header[data-astro-cid-ipuyqs4v]{margin:0 0 3rem;border-bottom:1px solid #2a2e39;padding-bottom:1.5rem}h1[data-astro-cid-ipuyqs4v]{margin:0;font-size:3rem;color:#fff;font-weight:800;letter-spacing:-.02em}.date[data-astro-cid-ipuyqs4v]{color:#8f949e;margin-top:.5rem}article[data-astro-cid-ipuyqs4v]{font-size:1.15rem}article[data-astro-cid-ipuyqs4v] h2{margin-top:3rem;color:#fff;font-size:1.75rem;border-bottom:1px solid #2a2e39;padding-bottom:.5rem}article[data-astro-cid-ipuyqs4v] h3{margin-top:2rem;color:#fff}article[data-astro-cid-ipuyqs4v] p{margin-bottom:1.5rem}article[data-astro-cid-ipuyqs4v] table{width:100%;border-collapse:collapse;margin:2.5rem 0;background:#131722;border-radius:8px;overflow:hidden;border:1px solid #2a2e39}article[data-astro-cid-ipuyqs4v] th,article[data-astro-cid-ipuyqs4v] td{border:1px solid #2a2e39;padding:1rem;text-align:left}article[data-astro-cid-ipuyqs4v] th{background:#1c212d;color:#8f949e;text-transform:uppercase;font-size:.8rem;letter-spacing:.05em}article[data-astro-cid-ipuyqs4v] strong{color:#fff}
 </style></head> <body data-astro-cid-sckkx6r4> <header class="site-header" data-astro-cid-sckkx6r4> <div class="site-header-inner" data-astro-cid-sckkx6r4> <a class="brand" href="/AlphaOracle/" data-astro-cid-sckkx6r4>AlphaOracle</a> <nav class="site-nav" data-astro-cid-sckkx6r4> <a href="/AlphaOracle/" data-astro-cid-sckkx6r4> Analysis </a><a href="/AlphaOracle/news-events/" data-astro-cid-sckkx6r4> News </a><a href="/AlphaOracle/indicators/" data-astro-cid-sckkx6r4> Indicators </a><a href="/AlphaOracle/tickers/" data-astro-cid-sckkx6r4> Tickers </a><a href="/AlphaOracle/backtests/" data-astro-cid-sckkx6r4> Backtests </a><a href="/AlphaOracle/research/" data-astro-cid-sckkx6r4> Research </a><a href="/AlphaOracle/paper-trading/" data-astro-cid-sckkx6r4> Paper Trading </a> </nav> </div> </header>  <main data-astro-cid-ipuyqs4v> <header data-astro-cid-ipuyqs4v> <h1 data-astro-cid-ipuyqs4v>Technical Analyst Report</h1> <p class="date" data-astro-cid-ipuyqs4v>2026-08-18</p> </header> <article data-astro-cid-ipuyqs4v> <h2 id="model-geminigemini-25-flash">Model: gemini/gemini-2.5-flash</h2>
-<p>Here’s a technical analysis of the provided assets based purely on price action and the given indicators:</p>
+<p>Here’s a technical analysis of the provided assets, focusing purely on price action, moving averages, RSI, MACD, and Bollinger Bands, as of 2026-08-18.</p>
 <hr>
-<p><strong>Technical Analysis (Price Action Only - 2026-08-18)</strong></p>
-<p><strong>General Market Posture (from underlying signals, not explicit thesis content):</strong> The market regime is “Bull Quiet” with overall “risk_on” sentiment. However, “real_rates” are “rising_rates,” which is a headwind for growth stocks, and “commodity_strength” is “strong_defensive” with gold and energy leading, indicating potential inflation or risk-off undercurrents despite the headline “Bull Quiet” regime.</p>
-<p><strong>Individual Asset Analysis:</strong></p>
-<ol>
-<li>
-<p><strong>DIA (Dow Jones Industrial Average ETF)</strong></p>
+<p><strong>Summary of Technical Setups by Asset:</strong></p>
+<p><strong>1. Strong Uptrend / Bullish Continuation:</strong> These assets are generally performing well, with prices above key moving averages (SMA_20, SMA_50, SMA_200), strong RSI (above 50-60), and positive MACD crossovers with growing histograms.</p>
 <ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all three key moving averages (SMA_20, SMA_50, SMA_200), and these SMAs are in a bullish alignment (20 > 50 > 200).</li>
-<li><strong>Momentum:</strong> Bullish momentum is present. MACD has a bullish crossover and a positive, expanding histogram. RSI (59.58) is strong but not yet overbought.</li>
-<li><strong>Volatility:</strong> Price is within the upper half of the Bollinger Bands, showing strong buying pressure without being overtly overextended.</li>
-<li><strong>Setup:</strong> Trend continuation.</li>
+<li><strong>CRWD:</strong> Clear uptrend with strong momentum indicators.</li>
+<li><strong>HYG:</strong> Sustained uptrend, pushing upper Bollinger Band.</li>
+<li><strong>IWM:</strong> Strong uptrend across all timeframes, pushing upper Bollinger Band.</li>
+<li><strong>MSFT:</strong> Solid uptrend with strong momentum.</li>
+<li><strong>MU:</strong> Extremely strong uptrend, price breaking above upper Bollinger Band, indicating potential overextension.</li>
+<li><strong>NBIS:</strong> Extremely strong uptrend, price near upper Bollinger Band.</li>
+<li><strong>NVDA:</strong> Clear uptrend, price near upper Bollinger Band.</li>
+<li><strong>PLTR:</strong> Extremely strong uptrend with robust momentum.</li>
+<li><strong>QQQ:</strong> Strong uptrend with bullish momentum.</li>
+<li><strong>QUAL:</strong> Strong uptrend, consolidating near upper Bollinger Band.</li>
+<li><strong>SCHD:</strong> Strong uptrend, near upper Bollinger Band.</li>
+<li><strong>SPY:</strong> Strong uptrend with bullish momentum.</li>
+<li><strong>SSO:</strong> Strong uptrend with bullish momentum.</li>
+<li><strong>STX:</strong> Extremely strong uptrend, price breaking above upper Bollinger Band, indicating significant overextension.</li>
+<li><strong>TQQQ:</strong> Extremely strong uptrend with powerful bullish momentum.</li>
+<li><strong>TSM:</strong> Strong uptrend with powerful bullish momentum.</li>
+<li><strong>UPRO:</strong> Strong uptrend with bullish momentum.</li>
+<li><strong>VTI:</strong> Strong uptrend with bullish momentum.</li>
+<li><strong>VGK:</strong> Strong uptrend, but RSI is in overbought territory (73.95), suggesting potential for a short-term pullback or consolidation.</li>
+<li><strong>VXUS:</strong> Strong uptrend, price near upper Bollinger Band.</li>
+<li><strong>XEQT.TO:</strong> Strong uptrend with bullish momentum.</li>
+<li><strong>XLI:</strong> Strong uptrend with bullish momentum.</li>
+<li><strong>XLK:</strong> Strong uptrend with strong momentum.</li>
+<li><strong>XLE:</strong> Extremely strong uptrend, price breaking above upper Bollinger Band and RSI overbought (69.75), indicating potential overextension or short-term mean reversion.</li>
 </ul>
-</li>
-<li>
-<p><strong>NBIS (Nebius AI)</strong></p>
+<p><strong>2. Bullish Reversal / Mean Reversion Bounce Attempt:</strong> These assets show signs of bottoming or turning around after recent weakness, often indicated by MACD bullish crossovers or price near lower Bollinger Bands with low RSI.</p>
 <ul>
-<li><strong>Trend:</strong> Extremely strong uptrend. Price is significantly above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Explosive bullish momentum. MACD is very positive and has a strong positive, expanding histogram. RSI (64.63) is strong.</li>
-<li><strong>Volatility:</strong> Price is notably extended beyond the upper Bollinger Band, indicating strong upward volatility.</li>
-<li><strong>Setup:</strong> Overextended trend continuation. High risk of a mean reversion pullback due to extreme price extension.</li>
+<li><strong>AMD:</strong> Price is above SMA_20, but below SMA_50. MACD has just crossed bullish, with a positive and growing histogram, suggesting a short-term bounce or reversal.</li>
+<li><strong>GLD:</strong> Strong short-term uptrend (above SMA_20, SMA_50) but still below SMA_200. MACD shows strong bullish momentum, pushing the upper Bollinger Band, indicating a strong move up, possibly reversing a longer-term downtrend.</li>
+<li><strong>IAU:</strong> Similar to GLD, strong short-term uptrend, pushing upper Bollinger Band, suggesting a strong bullish reversal in the shorter term.</li>
+<li><strong>INTC:</strong> Price above SMA_20 but below SMA_50. MACD has recently crossed bullish with a growing positive histogram, signaling a potential short-term recovery.</li>
+<li><strong>LQD:</strong> Price is below all SMAs, with a weak RSI (40.35) and close to the lower Bollinger Band. MACD has just made a bullish crossover, suggesting a potential mean reversion bounce from oversold conditions within a downtrend.</li>
+<li><strong>NFLX:</strong> Price is above SMA_20 and SMA_50, but below SMA_200. MACD has recently crossed bullish, with a positive histogram, indicating a short-to-medium term bullish reversal.</li>
+<li><strong>ORCL:</strong> Price above SMA_20 but below SMA_50 and SMA_200. MACD shows a very strong bullish crossover with a rapidly growing positive histogram, indicating a significant reversal attempt.</li>
+<li><strong>SLV:</strong> Strong short-to-medium term uptrend (above SMA20/50), but still below the long-term SMA_200. MACD is strongly bullish, pushing the upper Bollinger Band, suggesting a significant upward move.</li>
+<li><strong>TLN:</strong> Price above SMA_20 but below SMA_50 and SMA_200. MACD has made a strong bullish crossover with a rapidly growing positive histogram, suggesting a strong reversal attempt.</li>
+<li><strong>TSLA:</strong> Price above SMA_20 but below SMA_50 and SMA_200. MACD shows a strong bullish crossover with a rapidly growing positive histogram, indicating a significant reversal attempt.</li>
+<li><strong>WDC:</strong> Price significantly above SMA_20 but below SMA_50, within a strong long-term uptrend. MACD has recently made a strong bullish crossover with a rapidly growing positive histogram, indicating a significant short-term recovery.</li>
+<li><strong>XLC:</strong> Price above SMA_20 and SMA_50, but below SMA_200. MACD shows bullish continuation, indicating short-to-medium term upward momentum, possibly breaking out of a longer-term downtrend.</li>
 </ul>
-</li>
-<li>
-<p><strong>MTZ (MasTec)</strong></p>
+<p><strong>3. Downtrend / Bearish Continuation:</strong> These assets are showing weakness, with prices below shorter-term moving averages, weaker RSI, and negative MACD crossovers or negative MACD histograms.</p>
 <ul>
-<li><strong>Trend:</strong> Mixed to bearish in the short-to-medium term, but near long-term support. Price is slightly below SMA_20 and SMA_200, and well below SMA_50 (bearish mid-term).</li>
-<li><strong>Momentum:</strong> Emerging bullish momentum. MACD shows a fresh bullish crossover from deeply negative territory, and the histogram has turned positive and is growing. RSI (46.40) is neutral.</li>
-<li><strong>Volatility:</strong> Price is well within Bollinger Bands.</li>
-<li><strong>Setup:</strong> Potential mean reversion bounce. The bullish MACD crossover suggests a shift in momentum, but price needs to overcome the SMA_20 and especially the declining SMA_50 to confirm a sustained reversal.</li>
+<li><strong>AAPL:</strong> Price is below SMA_20 and SMA_50. MACD is negative and below its signal line, indicating bearish momentum. Short-term bearish continuation.</li>
+<li><strong>AMZN:</strong> Price is in a long-term uptrend, but MACD has just crossed bearish with a negative histogram, suggesting a short-term pullback or loss of momentum within the uptrend.</li>
+<li><strong>AVGO:</strong> Price is below SMA_20. MACD has crossed bearish with a negative histogram, indicating short-term bearish momentum within a longer-term uptrend.</li>
+<li><strong>DIA:</strong> Price is in an uptrend, but MACD has barely crossed bearish with a slightly negative histogram, suggesting a very minor loss of bullish momentum or a slight pullback.</li>
+<li><strong>EWA:</strong> Price is in an uptrend, but MACD has crossed bearish with a negative histogram, indicating short-term bearish momentum or a pullback.</li>
+<li><strong>GOOGL:</strong> Price is below SMA_20 and SMA_50. MACD is negative and below its signal line, indicating bearish momentum. Short-term bearish continuation.</li>
+<li><strong>META:</strong> Price is below all key SMAs. MACD is negative and below its signal line, indicating bearish continuation.</li>
+<li><strong>MTZ:</strong> Price is above SMA_20, but below SMA_50 and SMA_200. MACD has recently crossed bullish from deeply negative, suggesting a strong bounce attempt from prior weakness, but the longer-term trend remains challenging.</li>
+<li><strong>TLT:</strong> Price is below all SMAs, with weak RSI (34.96) and near the lower Bollinger Band. MACD is negative and below its signal line, indicating bearish continuation. Very oversold, due for a mean reversion bounce.</li>
+<li><strong>TMF:</strong> Price is below all SMAs, with weak RSI (33.37) and just below the lower Bollinger Band. MACD is negative and below its signal line, indicating bearish continuation. Significantly oversold, ripe for a mean reversion bounce.</li>
+<li><strong>UUP:</strong> Price is below SMA_20 and SMA_50, with weak RSI (41.93) and near the lower Bollinger Band. MACD is negative and below its signal line, indicating bearish continuation. Short-term bearish continuation, possibly due for a mean reversion bounce.</li>
+<li><strong>XLF:</strong> Price is in an uptrend, but MACD has crossed bearish with a negative histogram, indicating short-term bearish momentum or a pullback.</li>
+<li><strong>XLP:</strong> Price is below SMA_20. MACD has crossed bearish with a negative histogram, indicating short-term bearish momentum or a pullback.</li>
+<li><strong>XLRE:</strong> Price is below SMA_20 and barely above SMA_50. MACD has crossed bearish with a negative histogram, indicating short-term bearish momentum.</li>
+<li><strong>XLU:</strong> Price is below all SMAs. MACD is negative and barely below its signal line, indicating bearish continuation but with very low momentum.</li>
+<li><strong>XLY:</strong> Price is above short- and mid-term SMAs, barely above SMA_200. MACD shows bullish continuation, but the overall picture is less robust than strong uptrends.</li>
+<li><strong>^IRX:</strong> Price is below SMA_20. MACD has crossed bearish with a negative histogram, indicating short-term bearish momentum within a longer-term uptrend.</li>
+<li><strong>^TNX:</strong> Price is in a strong uptrend, with RSI at 59.78 and near the upper Bollinger Band. MACD is barely below its signal line with a tiny negative histogram, indicating a very minor loss of bullish momentum or a slight pullback within the strong uptrend.</li>
+<li><strong>^VIX:</strong> Price is below all SMAs. MACD is negative and below its signal line, indicating bearish continuation (decreasing volatility).</li>
+<li><strong>^VIX3M:</strong> Price is above SMA_20 and SMA_50, but below SMA_200. MACD has just crossed bullish with a positive and growing histogram, indicating short-term bullish momentum (increasing 3-month volatility).</li>
 </ul>
-</li>
-<li>
-<p><strong>NVDA (NVIDIA Corp.)</strong></p>
+<hr>
+<p><strong>Summary of Key Observations:</strong></p>
 <ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (63.04) is strong.</li>
-<li><strong>Volatility:</strong> Price is near the upper Bollinger Band, suggesting it’s approaching short-term overextension.</li>
-<li><strong>Setup:</strong> Trend continuation, with potential for short-term consolidation or minor pullback.</li>
+<li><strong>Broad Market Strength (Equities):</strong> Major equity ETFs like <strong>SPY, QQQ, VOO, VTI, IWM, SSO, UPRO, QUAL, SCHD</strong> are in strong uptrends, generally above all key moving averages, with strong RSIs and bullish MACD. This suggests broad market confidence.</li>
+<li><strong>Tech/AI Leaders Continue to Power:</strong> Many AI-related names like <strong>NVDA, PLTR, NBIS, CRWD</strong> show extremely strong uptrends and bullish momentum, with some like <strong>MU</strong> and <strong>STX</strong> exhibiting overextended moves (above upper BB) after powerful MACD crossovers.</li>
+<li><strong>Energy Sector Rally:</strong> <strong>XLE</strong> is in a very strong uptrend, overbought (RSI 69.75), and breaking above its upper Bollinger Band, indicating significant recent strength.</li>
+<li><strong>Commodity Reversal:</strong> <strong>GLD</strong> and <strong>IAU</strong> (Gold), and <strong>SLV</strong> (Silver) show strong short-term bullish momentum, having crossed above short- and mid-term SMAs and exhibiting strong MACD signals, suggesting a strong bullish reversal in precious metals.</li>
+<li><strong>Fixed Income Weakness:</strong> <strong>TLT</strong> and its leveraged counterpart <strong>TMF</strong> are in clear downtrends, are oversold (low RSI, near/below lower BB), and show bearish MACD continuation. This aligns with rising real rates. <strong>LQD</strong> is also in a downtrend but is showing early signs of a bullish MACD crossover, suggesting a potential short-term bounce.</li>
+<li><strong>Currency &#x26; Volatility Trends:</strong> <strong>UUP</strong> (US Dollar) shows short-term bearish momentum within a longer-term uptrend, hinting at a potential pullback. <strong>^VIX</strong> is in a downtrend, confirming low and decreasing market volatility. <strong>^VIX3M</strong> shows increasing short-term momentum, but remains below the 200-day average.</li>
+<li><strong>FAANG Pullbacks:</strong> While the broader market is strong, <strong>AAPL, AMZN, AVGO, GOOGL, META</strong> show short-term weakness or pullbacks (MACD bearish crossovers, price below short-term SMAs) within their longer-term uptrends.</li>
 </ul>
-</li>
-<li>
-<p><strong>AMD (Advanced Micro Devices)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, especially well above SMA_200.</li>
-<li><strong>Momentum:</strong> Bullish momentum. MACD shows a recent bullish crossover from negative territory, with a positive and growing histogram. RSI (53.73) is neutral to slightly bullish.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, consolidating above SMA_50.</li>
-<li><strong>Setup:</strong> Trend continuation with momentum building after a recent MACD signal. Consolidation above key SMAs suggests potential for further upside.</li>
-</ul>
-</li>
-<li>
-<p><strong>QUAL (iShares MSCI USA Quality Factor ETF)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, and they are in strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (64.85) is strong.</li>
-<li><strong>Volatility:</strong> Price is pushing the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, but pushing short-term overextension.</li>
-</ul>
-</li>
-<li>
-<p><strong>TSM (Taiwan Semiconductor Manufacturing Co.)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs.</li>
-<li><strong>Momentum:</strong> Bullish momentum is building. MACD shows a recent, strong bullish crossover from negative territory, with a significant positive turn in the histogram. RSI (54.35) is neutral.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, consolidating around SMA_50.</li>
-<li><strong>Setup:</strong> Trend continuation, with strong momentum building from a recent MACD signal, indicating a potential breakout or continuation higher.</li>
-</ul>
-</li>
-<li>
-<p><strong>XLE (Energy Select Sector SPDR Fund)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (67.58) is strong and approaching overbought territory.</li>
-<li><strong>Volatility:</strong> Price is at or slightly above the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, but heavily overextended. High potential for a mean reversion pullback.</li>
-</ul>
-</li>
-<li>
-<p><strong>XEQT.TO (Vanguard All-Equity ETF Portfolio)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (62.32) is strong.</li>
-<li><strong>Volatility:</strong> Price is near the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, pushing short-term overextension.</li>
-</ul>
-</li>
-<li>
-<p><strong>GLD (SPDR Gold Shares)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Short-term bullish, long-term mixed. Price is above SMA_20 and SMA_50, but below SMA_200.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (63.19) is strong.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, with room to the upper band.</li>
-<li><strong>Setup:</strong> Strong short-term trend continuation, attempting to break above the long-term SMA_200.</li>
-</ul>
-</li>
-<li>
-<p><strong>CRWD (CrowdStrike Holdings)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Very strong uptrend. Price is above all SMAs, and they are in strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (61.34) is strong.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, well supported by SMAs.</li>
-<li><strong>Setup:</strong> Very strong trend continuation, healthy momentum.</li>
-</ul>
-</li>
-<li>
-<p><strong>LQD (iShares iBoxx $ Investment Grade Corporate Bond ETF)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong downtrend. Price is below all SMAs, which are in a bearish alignment.</li>
-<li><strong>Momentum:</strong> Weakening bearish momentum, with fragile bullish turn. MACD shows a bullish crossover from deeply negative territory, but the histogram is only barely positive. RSI (41.28) is bearish.</li>
-<li><strong>Volatility:</strong> Price is near the lower Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong downtrend but possibly a short-term mean reversion bounce attempt. The underlying downtrend remains dominant.</li>
-</ul>
-</li>
-<li>
-<p><strong>META (Meta Platforms Inc.)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Downtrend. Price is below all SMAs.</li>
-<li><strong>Momentum:</strong> Emerging bullish momentum. MACD shows a bullish crossover from negative territory, and the histogram has turned slightly positive. RSI (47.63) is neutral to slightly bearish.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands.</li>
-<li><strong>Setup:</strong> Downtrend with signs of a potential mean reversion bounce or bottoming attempt. Needs to overcome SMAs for confirmation.</li>
-</ul>
-</li>
-<li>
-<p><strong>WDC (Western Digital Corp.)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Mixed trend. Price is above SMA_20 but below SMA_50 and SMA_200.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD shows a strong bullish crossover from deeply negative territory, and the histogram is positive and growing. RSI (50.40) is neutral.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands.</li>
-<li><strong>Setup:</strong> Potential mean reversion bounce or reversal attempt. The strong MACD signal indicates a shift, but price needs to clear SMA_50 to confirm.</li>
-</ul>
-</li>
-<li>
-<p><strong>XLRE (Real Estate Select Sector SPDR Fund)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Uptrend. Price is above all SMAs, which are mostly in bullish alignment.</li>
-<li><strong>Momentum:</strong> Weakening bullish momentum. MACD shows a fresh bearish crossover, and the histogram has turned negative and is expanding. RSI (54.21) is neutral.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, consolidating near the upper half.</li>
-<li><strong>Setup:</strong> Uptrend with short-term weakening momentum. The bearish MACD crossover is a caution signal for a potential pullback.</li>
-</ul>
-</li>
-<li>
-<p><strong>TLN (Talen Energy Corp.)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Mixed trend. Price is above SMA_20 but below SMA_50 and SMA_200.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD shows a strong bullish crossover from deeply negative territory, and the histogram is strongly positive and growing. RSI (51.58) is neutral.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands.</li>
-<li><strong>Setup:</strong> Potential mean reversion bounce. Strong bullish MACD indicates a significant shift, but price needs to overcome SMA_50 and SMA_200 to confirm a sustained uptrend.</li>
-</ul>
-</li>
-<li>
-<p><strong>^VIX (CBOE Volatility Index)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong downtrend. Price is below all SMAs, which are in a bearish alignment.</li>
-<li><strong>Momentum:</strong> Bearish momentum. MACD is negative and the histogram is negative and expanding. RSI (40.12) is bearish but not oversold.</li>
-<li><strong>Volatility:</strong> Price is approaching the lower Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong downtrend continuation (suppressed volatility). Price near lower BB suggests potential for a bounce (volatility contraction squeeze), but the overall trend is down.</li>
-</ul>
-</li>
-<li>
-<p><strong>GOOGL (Alphabet Inc. Class A)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Mixed trend. Price is below SMA_20 and SMA_50 but above SMA_200.</li>
-<li><strong>Momentum:</strong> Bearish momentum. MACD is negative and the histogram is negative and expanding. RSI (47.04) is neutral to slightly bearish.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands.</li>
-<li><strong>Setup:</strong> Consolidating in a mixed trend with short-term bearish momentum. Price needs to reclaim SMAs for bullish reversal.</li>
-</ul>
-</li>
-<li>
-<p><strong>QQQ (Invesco QQQ Trust)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (59.60) is strong.</li>
-<li><strong>Volatility:</strong> Price is near the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, but pushing short-term overextension.</li>
-</ul>
-</li>
-<li>
-<p><strong>EWC (iShares MSCI Canada ETF)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Very strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Very strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (76.44) is heavily overbought.</li>
-<li><strong>Volatility:</strong> Price is at the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Very strong trend continuation, but extremely overextended. High probability of a mean reversion pullback.</li>
-</ul>
-</li>
-<li>
-<p><strong>HYG (iShares iBoxx $ High Yield Corporate Bond ETF)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (61.86) is strong.</li>
-<li><strong>Volatility:</strong> Price is at the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, but overextended. Potential for a mean reversion pullback.</li>
-</ul>
-</li>
-<li>
-<p><strong>AAPL (Apple Inc.)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Mixed, short-term bearish, long-term bullish. Price is below SMA_20 and SMA_50, but above SMA_200.</li>
-<li><strong>Momentum:</strong> Strong bearish momentum. MACD has a bearish crossover, and the histogram is negative and rapidly expanding. RSI (43.82) is bearish.</li>
-<li><strong>Volatility:</strong> Price is moving towards the lower Bollinger Band.</li>
-<li><strong>Setup:</strong> Short-term downtrend emerging, indicating a significant pullback or potential reversal within the longer-term uptrend.</li>
-</ul>
-</li>
-<li>
-<p><strong>VOO (Vanguard S&#x26;P 500 ETF)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (66.00) is strong.</li>
-<li><strong>Volatility:</strong> Price is near the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, but pushing short-term overextension.</li>
-</ul>
-</li>
-<li>
-<p><strong>SCHD (Schwab U.S. Dividend Equity ETF)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Very strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (72.46) is heavily overbought.</li>
-<li><strong>Volatility:</strong> Price is at the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Very strong trend continuation, but extremely overextended. High probability of a mean reversion pullback.</li>
-</ul>
-</li>
-<li>
-<p><strong>XLP (Consumer Staples Select Sector SPDR Fund)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Bullish momentum. MACD is positive and the histogram is positive and growing. RSI (57.18) is strong.</li>
-<li><strong>Volatility:</strong> Price is nearing the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, nearing short-term overextension.</li>
-</ul>
-</li>
-<li>
-<p><strong>SSO (ProShares Ultra S&#x26;P500)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (64.96) is strong.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, moving towards the upper band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, healthy momentum.</li>
-</ul>
-</li>
-<li>
-<p><strong>XLV (Health Care Select Sector SPDR Fund)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (62.04) is strong.</li>
-<li><strong>Volatility:</strong> Price is nearing the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, nearing short-term overextension.</li>
-</ul>
-</li>
-<li>
-<p><strong>SPY (SPDR S&#x26;P 500 ETF Trust)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (65.76) is strong.</li>
-<li><strong>Volatility:</strong> Price is nearing the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, but pushing short-term overextension.</li>
-</ul>
-</li>
-<li>
-<p><strong>PLTR (Palantir Technologies)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Very strong uptrend. Price is significantly above all SMAs (SMA_200 is below SMA_50 and SMA_20).</li>
-<li><strong>Momentum:</strong> Very strong bullish momentum. MACD is very positive and the histogram is strongly positive and growing. RSI (68.14) is very strong, nearing overbought.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, approaching the upper band.</li>
-<li><strong>Setup:</strong> Very strong trend continuation, nearing short-term overextension.</li>
-</ul>
-</li>
-<li>
-<p><strong>XLB (Materials Select Sector SPDR Fund)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Bullish momentum. MACD is positive and the histogram is positive and growing. RSI (55.63) is neutral to slightly bullish.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, moving towards the upper band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, healthy momentum.</li>
-</ul>
-</li>
-<li>
-<p><strong>EWA (iShares MSCI Australia ETF)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Weakening bullish momentum. MACD shows a fresh bearish crossover, and the histogram has turned negative. RSI (55.67) is neutral to slightly bullish.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, near the upper half.</li>
-<li><strong>Setup:</strong> Uptrend with short-term weakening momentum. The bearish MACD crossover is a caution signal for a potential pullback.</li>
-</ul>
-</li>
-<li>
-<p><strong>TSLA (Tesla Inc.)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Mixed to bearish in the medium-to-long term. Price is above SMA_20 but below SMA_50 and SMA_200.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD shows a strong bullish crossover from deeply negative territory, and the histogram is strongly positive and growing. RSI (48.82) is neutral.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands.</li>
-<li><strong>Setup:</strong> Potential mean reversion bounce. The strong MACD signal indicates a shift, but price faces significant overhead resistance from SMA_50 and SMA_200.</li>
-</ul>
-</li>
-<li>
-<p><strong>INTC (Intel Corp.)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Mixed, short-term bullish, medium-term bearish, long-term bullish. Price is above SMA_20 but below SMA_50, while well above SMA_200.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD shows a strong bullish crossover from deeply negative territory, and the histogram is strongly positive and growing. RSI (51.25) is neutral.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, moving towards the upper band.</li>
-<li><strong>Setup:</strong> Potential mean reversion bounce. The strong MACD signal indicates a shift, but price needs to clear SMA_50 to confirm a sustained uptrend.</li>
-</ul>
-</li>
-<li>
-<p><strong>MU (Micron Technology Inc.)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Very strong uptrend. Price is above all SMAs.</li>
-<li><strong>Momentum:</strong> Explosively strong bullish momentum. MACD shows an extremely powerful bullish crossover from deeply negative territory, with an explosively positive and growing histogram. RSI (56.30) is bullish.</li>
-<li><strong>Volatility:</strong> Price is slightly above SMA_20, near SMA_50, but within the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Very strong trend continuation, possibly a powerful mean reversion bounce turning into a new leg up. The MACD signal is exceptionally strong.</li>
-</ul>
-</li>
-<li>
-<p><strong>IAU (iShares Gold Trust)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Short-term bullish, long-term mixed. Price is above SMA_20 and SMA_50, but below SMA_200.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (63.27) is strong.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, moving towards the upper band.</li>
-<li><strong>Setup:</strong> Strong short-term trend continuation, attempting to break above the long-term SMA_200.</li>
-</ul>
-</li>
-<li>
-<p><strong>IWM (iShares Russell 2000 ETF)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (63.45) is strong.</li>
-<li><strong>Volatility:</strong> Price is nearing the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, but pushing short-term overextension.</li>
-</ul>
-</li>
-<li>
-<p><strong>XLY (Consumer Discretionary Select Sector SPDR Fund)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Consolidating with a bullish lean. Price is above SMA_20 and SMA_50, but very close to SMA_200.</li>
-<li><strong>Momentum:</strong> Bullish momentum. MACD is positive and the histogram is positive and growing. RSI (55.63) is neutral to slightly bullish.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, moving upwards.</li>
-<li><strong>Setup:</strong> Consolidation with bullish bias, indicating potential for trend continuation if it can break clearly above the clustered SMAs.</li>
-</ul>
-</li>
-<li>
-<p><strong>CEG (Constellation Energy Corp.)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Short-to-medium term uptrend, but below long-term resistance. Price is above SMA_20 and SMA_50, but below SMA_200.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (62.86) is strong.</li>
-<li><strong>Volatility:</strong> Price is near the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong short-term trend continuation, but pushing short-term overextension as it approaches long-term resistance.</li>
-</ul>
-</li>
-<li>
-<p><strong>XLF (Financial Select Sector SPDR Fund)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Weakening bullish momentum. MACD shows a fresh bearish crossover, and the histogram has turned negative. RSI (67.18) is strong but nearing overbought.</li>
-<li><strong>Volatility:</strong> Price is near the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong uptrend, but a fresh bearish MACD crossover indicates short-term weakening momentum and potential for a pullback.</li>
-</ul>
-</li>
-<li>
-<p><strong>IBIT (iShares Bitcoin Trust)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong downtrend. Price is below all SMAs, which are in a bearish alignment.</li>
-<li><strong>Momentum:</strong> Bearish momentum. MACD is negative and the histogram is negative and expanding. RSI (44.14) is bearish.</li>
-<li><strong>Volatility:</strong> Price is near the lower Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong downtrend continuation. Price near lower BB suggests potential for a bounce, but the underlying trend is firmly down.</li>
-</ul>
-</li>
-<li>
-<p><strong>TQQQ (ProShares UltraPro QQQ)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD shows a strong bullish crossover and the histogram is strongly positive and growing. RSI (58.19) is bullish.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, moving towards the upper band.</li>
-<li><strong>Setup:</strong> Strong trend continuation with robust momentum.</li>
-</ul>
-</li>
-<li>
-<p><strong>VGK (Vanguard FTSE Europe ETF)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (67.56) is strong, nearing overbought.</li>
-<li><strong>Volatility:</strong> Price is nearing the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, but pushing short-term overextension.</li>
-</ul>
-</li>
-<li>
-<p><strong>TMF (Direxion Daily 20+ Year Treasury Bull 3X Shares)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong downtrend. Price is below all SMAs, which are in a bearish alignment.</li>
-<li><strong>Momentum:</strong> Weakening bearish momentum, with fragile bullish turn. MACD shows a bullish crossover from deeply negative territory, but the histogram is only barely positive. RSI (37.89) is bearish.</li>
-<li><strong>Volatility:</strong> Price is nearing the lower Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong downtrend but possibly a short-term mean reversion bounce attempt. The underlying downtrend remains dominant.</li>
-</ul>
-</li>
-<li>
-<p><strong>NFLX (Netflix Inc.)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Short-to-medium term uptrend, but below long-term resistance. Price is above SMA_20 and SMA_50, but below SMA_200.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD shows a strong bullish crossover from negative territory, and the histogram is strongly positive and growing. RSI (61.75) is strong.</li>
-<li><strong>Volatility:</strong> Price is nearing the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong short-term trend continuation, possibly a mean reversion bounce against the long-term downtrend, nearing short-term overextension.</li>
-</ul>
-</li>
-<li>
-<p><strong>SLV (iShares Silver Trust)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Short-to-medium term uptrend, but below long-term resistance. Price is above SMA_20 and SMA_50, but below SMA_200.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is strongly positive and growing. RSI (59.71) is strong.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, moving towards the upper band.</li>
-<li><strong>Setup:</strong> Strong short-term trend continuation, possibly a mean reversion bounce against the long-term downtrend.</li>
-</ul>
-</li>
-<li>
-<p><strong>ORCL (Oracle Corp.)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Mixed, short-term bullish, medium-to-long term bearish. Price is above SMA_20 but below SMA_50 and SMA_200.</li>
-<li><strong>Momentum:</strong> Very strong bullish momentum. MACD shows a very strong bullish crossover from deeply negative territory, and the histogram is strongly positive and growing. RSI (56.12) is bullish.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, moving towards the upper band.</li>
-<li><strong>Setup:</strong> Strong mean reversion bounce or reversal attempt. The very strong MACD signal indicates a significant shift, but price needs to overcome SMA_50 and SMA_200 to confirm a sustained uptrend.</li>
-</ul>
-</li>
-<li>
-<p><strong>KLAC (KLA Corp.)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Mixed. Price is above SMA_20 but below SMA_50, while well above SMA_200.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD shows a strong bullish crossover from deeply negative territory, and the histogram is strongly positive and growing. RSI (49.09) is neutral.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands.</li>
-<li><strong>Setup:</strong> Potential mean reversion bounce or reversal attempt. The strong MACD signal indicates a significant shift, but price needs to clear SMA_50 to confirm a sustained uptrend.</li>
-</ul>
-</li>
-<li>
-<p><strong>VTI (Vanguard Total Stock Market ETF)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (66.78) is strong, nearing overbought.</li>
-<li><strong>Volatility:</strong> Price is nearing the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, but pushing short-term overextension.</li>
-</ul>
-</li>
-<li>
-<p><strong>AVGO (Broadcom Inc.)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Mixed short-term bearish, medium-to-long term bullish. Price is below SMA_20 but above SMA_50 and SMA_200.</li>
-<li><strong>Momentum:</strong> Bullish momentum, but short-term weakening. MACD is positive and the histogram is positive and growing, but price is below SMA_20. RSI (46.51) is neutral to slightly bearish.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands.</li>
-<li><strong>Setup:</strong> Short-term consolidation or pullback within a broader uptrend.</li>
-</ul>
-</li>
-<li>
-<p><strong>XLI (Industrial Select Sector SPDR Fund)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (61.14) is strong.</li>
-<li><strong>Volatility:</strong> Price is nearing the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, but pushing short-term overextension.</li>
-</ul>
-</li>
-<li>
-<p><strong>VT (Vanguard Total World Stock ETF)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (66.39) is strong, nearing overbought.</li>
-<li><strong>Volatility:</strong> Price is nearing the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, but pushing short-term overextension.</li>
-</ul>
-</li>
-<li>
-<p><strong>UUP (Invesco DB US Dollar Index Bullish Fund)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Mixed, short-term bearish, long-term bullish. Price is below SMA_20 and SMA_50, but above SMA_200.</li>
-<li><strong>Momentum:</strong> Bearish momentum. MACD is negative and the histogram is negative and expanding. RSI (42.43) is bearish.</li>
-<li><strong>Volatility:</strong> Price is nearing the lower Bollinger Band.</li>
-<li><strong>Setup:</strong> Short-term downtrend continuation with potential for short-term oversold bounce.</li>
-</ul>
-</li>
-<li>
-<p><strong>UPRO (ProShares UltraPro S&#x26;P500)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (64.50) is strong.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, moving towards the upper band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, healthy momentum.</li>
-</ul>
-</li>
-<li>
-<p><strong>MSFT (Microsoft Corp.)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Very strong uptrend. Price is significantly above all SMAs.</li>
-<li><strong>Momentum:</strong> Extremely strong bullish momentum. MACD is very positive and the histogram is strongly positive and growing. RSI (70.92) is overbought.</li>
-<li><strong>Volatility:</strong> Price is within the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Very strong trend continuation, but significantly overextended (RSI overbought). High potential for a mean reversion pullback.</li>
-</ul>
-</li>
-<li>
-<p><strong>XLK (Technology Select Sector SPDR Fund)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above SMA_20 and SMA_200, above SMA_50.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is strongly positive and growing. RSI (60.30) is strong.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, moving towards the upper band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, robust momentum.</li>
-</ul>
-</li>
-<li>
-<p><strong>TLT (iShares 20+ Year Treasury Bond ETF)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong downtrend. Price is below all SMAs, which are in a bearish alignment.</li>
-<li><strong>Momentum:</strong> Weakening bearish momentum, with fragile bullish turn. MACD shows a bullish crossover from deeply negative territory, but the histogram is only barely positive. RSI (39.86) is bearish.</li>
-<li><strong>Volatility:</strong> Price is nearing the lower Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong downtrend but possibly a short-term mean reversion bounce attempt. The underlying downtrend remains dominant.</li>
-</ul>
-</li>
-<li>
-<p><strong>XLU (Utilities Select Sector SPDR Fund)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Sideways consolidation with bearish bias. Price is around SMA_20 and SMA_200, but below SMA_50. SMAs are tightly clustered.</li>
-<li><strong>Momentum:</strong> Bearish momentum. MACD is negative and the histogram is negative and expanding. RSI (47.94) is neutral to slightly bearish.</li>
-<li><strong>Volatility:</strong> Tight Bollinger Bands indicate volatility contraction.</li>
-<li><strong>Setup:</strong> Volatility contraction squeeze (VCS) with short-term bearish momentum. Indicates indecision before a potential breakout or breakdown.</li>
-</ul>
-</li>
-<li>
-<p><strong>STX (Seagate Technology Holdings)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Very strong uptrend. Price is significantly above all SMAs.</li>
-<li><strong>Momentum:</strong> Explosively strong bullish momentum. MACD shows an extremely powerful bullish crossover from deeply negative territory, with an explosively positive and growing histogram. RSI (62.01) is strong.</li>
-<li><strong>Volatility:</strong> Price is slightly above the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Very strong trend continuation, possibly a powerful mean reversion bounce turning into a new leg up, now slightly overextended.</li>
-</ul>
-</li>
-<li>
-<p><strong>^TNX (CBOE 10 Year Treasury Note Yield)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend (rising yields). Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Weakening bullish momentum. MACD shows a fresh bearish crossover, and the histogram has turned negative. RSI (57.31) is bullish.</li>
-<li><strong>Volatility:</strong> Price is near the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong uptrend, but a fresh bearish MACD crossover indicates short-term weakening momentum and potential for a pullback (mean reversion in yields).</li>
-</ul>
-</li>
-<li>
-<p><strong>VXUS (Vanguard Total International Stock ETF)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Strong bullish momentum. MACD is positive and the histogram is positive and growing. RSI (63.77) is strong.</li>
-<li><strong>Volatility:</strong> Price is nearing the upper Bollinger Band.</li>
-<li><strong>Setup:</strong> Strong trend continuation, but pushing short-term overextension.</li>
-</ul>
-</li>
-<li>
-<p><strong>XLC (Communication Services Select Sector SPDR Fund)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Short-to-medium term uptrend, but below long-term resistance. Price is above SMA_20 and SMA_50, but below SMA_200. SMA_20 and SMA_50 are very close.</li>
-<li><strong>Momentum:</strong> Bullish momentum. MACD is positive and the histogram is positive and growing. RSI (57.36) is strong.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, moving upwards.</li>
-<li><strong>Setup:</strong> Strong short-term trend continuation, possibly a mean reversion bounce against the long-term downtrend. Needs to overcome the 200-day SMA.</li>
-</ul>
-</li>
-<li>
-<p><strong>AMZN (Amazon.com Inc.)</strong></p>
-<ul>
-<li><strong>Trend:</strong> Strong uptrend. Price is above all SMAs, which are in a strong bullish alignment.</li>
-<li><strong>Momentum:</strong> Robust bullish momentum. MACD is positive and the histogram is positive and growing. RSI (53.49) is neutral to slightly bullish.</li>
-<li><strong>Volatility:</strong> Price is within Bollinger Bands, with room for further upside.</li>
-<li><strong>Setup:</strong> Strong trend continuation, healthy momentum.</li>
-</ul>
-</li>
-</ol> </article> </main>  </body></html> 
+<p>Overall, the price action across many equity instruments points to a strong “Risk On” environment with clear trend continuation. However, there are signs of short-term exhaustion or pullbacks in some key tech names and the dollar. The fixed income market (TLT, TMF) remains in a bearish trend, with potential for mean reversion bounces due to oversold conditions. Commodities (Gold, Silver, Energy) are showing significant bullish strength.</p> </article> </main>  </body></html> 
