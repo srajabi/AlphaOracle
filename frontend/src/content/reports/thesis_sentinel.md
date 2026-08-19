@@ -1,33 +1,33 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-08-18"
+date: "2026-08-19"
 ---
 
-# Thesis Sentinel — Daily Brief (2026-08-18)
+# Thesis Sentinel — Daily Brief (2026-08-19)
 
 ## 1. Tripwire Status
 
 | Tripwire | Signal | Threshold | Today's Reading | Status |
 |---|---|---|---|---|
-| Carry unwind | VIX/VIX3M | >1.0 | 0.858 (5d median) | **CLEAR** |
-| Credit cracks | HYG/LQD 63d rel-mom | < -2% | +2.52% | **CLEAR** |
-| Breadth break | Canary (EWA, TLT) | both negative | EWA +3.7%, TLT -3.35% (1 of 2) | **CLEAR** (half_defensive, not full) |
-| Trend break | SPY vs 200d SMA (m/e) | close below | SPY 772.67 vs SMA200 703.21 (+9.9%) | **CLEAR** |
-| Oil shock | XLE momentum vs SPY | sustained leadership | XLE +8.0% mom, RSI 69.75, price +18% above SMA200; Brent >$91 | **FIRED** |
-| AI capex turn | Hyperscaler FY27 guidance | any cut | No confirmed guidance cut; WSJ flags $3T "hidden" off-balance-sheet spend, chip selloff is **rate-driven**, not demand-driven | **CLEAR** (watch) |
-| Carry stress | USD/JPY | rapid <140 | No data feed today; UUP neutral (mom -1.02%) | **CLEAR** (no evidence) |
+| Carry unwind | VIX/VIX3M | >1.0 | 0.771 (5d median 0.858) | **CLEAR** |
+| Credit cracks | HYG/LQD 63d rel-mom | <-2% | +2.91% | **CLEAR** |
+| Breadth break | Canary (EWA, TLT) | both negative | EWA +3.39%, TLT -2.47% | **CLEAR** (half_defensive — 1 of 2 negative) |
+| Trend break | SPY vs 200d SMA (mo-end) | close below | +8.01% above (703.6→767.5) | **CLEAR** |
+| Oil shock | XLE momentum vs SPY | sustained leadership | XLE RSI 72.9, +8.85% momentum, new highs vs SPY RSI 56.7 | **WATCH — approaching FIRED**, sustained multi-day leadership on Hormuz |
+| AI capex turn | Hyperscaler FY27 guidance | any cut | No formal guidance cut; jitters (Nebius $4.5B convert, SK Hynix $29B buyback defense, chip selloff) | **CLEAR** (soft warning) |
+| Carry stress | USDJPY | rapid <140 | No feed data today | **N/A / no signal** |
 
-Six of seven clear; **oil/energy leadership is FIRED** — consistent with war-risk pricing, not yet a broader breakdown.
+Rules govern: canary is half_defensive, not full risk-off — no contradiction with mandates (P/Y_core = INVESTED).
 
 ## 2. Marker Watch
-- **BoJ guidance**: No news today.
-- **CPI**: No new print; Fed minutes due Wed, Warsh's first Jackson Hole speech pending — market treating this as the next catalyst.
-- **SpaceX vs $135**: No news today.
-- **Hyperscaler capex**: WSJ ("$3T higher than it seems") and MarketScale ("capex scrutiny reshaping buyer justification") add narrative pressure but **no actual FY27 guidance cut** reported — thesis marker #4 not yet triggered.
-- **Hormuz**: Heavy, contradictory flow — Brent >$91 on unidentified projectile strike; Trump says no talks planned, Oman threatened; Tehran maintains strait "still shut"; **but** Saudi Arabia resumed loadings/sales from inside the strait (de-escalation signal). No full closure confirmed → marker #5 not triggered.
+- **BoJ guidance:** No news today.
+- **CPI prints:** No news today.
+- **SpaceX vs $135:** No update; only tangential item (Harvard discloses $2.2B SpaceX stake as largest holding) — not a price signal.
+- **Hyperscaler capex:** No formal cut. Soft stress signals: Oracle backlog questioned, Nebius convertible dilution (-13%), SK Hynix defensive buyback, broad chip-stock rout (MU, WDC, STX, KLAC red).
+- **Hormuz:** Active, unresolved — "standoff continues," shipping slowed after vessel attack, oil at 3-week high. No closure, no resolution.
 
-## 3. Delta (vs. yesterday)
-Rates are the new stress point: 10Y hit 4.75% intraday (highest since Jan-2025), driving a targeted chip/memory selloff (AMD -5.5%, WDC -7%, SanDisk -6%) even as broad-market VIX fell to 15.19 and SPY/QQQ stayed in strong uptrends. Canary flipped TLT negative (half_defensive) for the first time — a genuinely new data point, not yet corroborated by credit or breadth. Gold+silver+energy all firmly bid (commodity_strength = "strong_defensive"), consistent with the inflation-tolerant regime thesis.
+## 3. Delta vs Yesterday
+Material shift: **US Treasury doubled long-dated debt buybacks**, triggering a sharp bond rally (30y yield fell ~9bp off its 19-year high), gold +3%, dollar to multi-month lows. This eases the rate-shock/carry-stress channel that had been building (Tuesday's chip/data-center selloff was explicitly tied to the yield spike). VIX essentially flat (15.82→15.84). Equities firmer pre-Fed-minutes after Tuesday's chip-led weakness.
 
 ## 4. Scenario Pressure
-Today's evidence is **mixed but net favors Scenario A** (grind-with-violence): an oil/yield-driven air pocket concentrated in rate-sensitive tech, while index-level trend/credit/vol signals remain firmly risk-on. The rising-yield + narrow-tech-selloff pattern is a small nod toward Scenario B's precondition (sticky inflation, capex scrutiny), but credit and breadth have not confirmed. Hormuz remains a live Scenario-C fuse (still-contested, not closed) — **rules govern positioning**: no tripwire has flipped to full-defensive, so no override is warranted despite the noisy headline flow.
+Evidence is mixed but net **favors Scenario A (grind-with-violence)**: Treasury intervention defused an acute rate-shock tail (a B/C accelerant) and equities remain resilient (SPY +8% above 200dma, VIX low, credit clear). However, two threads keep B/C live in the background — (1) sustained oil/XLE leadership from an unresolved Hormuz standoff (approaching tripwire fire), and (2) AI-capex jitters (Nebius dilution, chip rout) that don't yet meet the "guidance cut" bar but warrant watching into NVDA earnings (8/26). Rules currently show no scenario shift; do not override.
