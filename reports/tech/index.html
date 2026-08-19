@@ -1,83 +1,497 @@
 <!DOCTYPE html><html lang="en" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/AlphaOracle/favicon.svg"><link rel="icon" href="/AlphaOracle/favicon.ico"><meta name="generator" content="Astro v5.18.0"><title>Technical Analyst Report</title><style>:root{--bg: #0b0e14;--panel-bg: #131722;--panel-bg-raised: #1e2230;--border: #2a2e39;--text: #f8f9fa;--text-body: #d1d4dc;--text-muted: #8f949e;--accent: #2962ff;--accent-soft: #c4d4ff;--green: #28a745;--red: #dc3545;--red-bright: #f6465d;--yellow: #ffc107}.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}.panel{background:var(--panel-bg);border:1px solid var(--border);border-radius:12px;padding:1.25rem;margin-bottom:1rem}.muted{color:var(--text-muted)}.btn{text-decoration:none;color:#fff;background:var(--accent);border-radius:8px;padding:.5rem .85rem;font-size:.85rem;font-weight:600}html,body{margin:0;width:100%;height:100%;background:#0b0e14;color:#f8f9fa;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif}.site-header[data-astro-cid-sckkx6r4]{position:sticky;top:0;z-index:100;background:#0b0e14eb;backdrop-filter:blur(8px);border-bottom:1px solid #2a2e39}.site-header-inner[data-astro-cid-sckkx6r4]{max-width:1100px;margin:0 auto;padding:.7rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}.brand[data-astro-cid-sckkx6r4]{color:#f8f9fa;text-decoration:none;font-weight:800;font-size:1.1rem;letter-spacing:.01em}.site-nav[data-astro-cid-sckkx6r4]{display:flex;gap:.25rem;flex-wrap:wrap}.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]{color:#8f949e;text-decoration:none;font-size:.9rem;font-weight:600;padding:.35rem .7rem;border-radius:8px}.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]:hover,.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4].active{color:#f8f9fa;background:#1e2230}
 main[data-astro-cid-ipuyqs4v]{max-width:850px;margin:0 auto;padding:3rem 1.5rem;line-height:1.7;color:#d1d4dc}header[data-astro-cid-ipuyqs4v]{margin:0 0 3rem;border-bottom:1px solid #2a2e39;padding-bottom:1.5rem}h1[data-astro-cid-ipuyqs4v]{margin:0;font-size:3rem;color:#fff;font-weight:800;letter-spacing:-.02em}.date[data-astro-cid-ipuyqs4v]{color:#8f949e;margin-top:.5rem}article[data-astro-cid-ipuyqs4v]{font-size:1.15rem}article[data-astro-cid-ipuyqs4v] h2{margin-top:3rem;color:#fff;font-size:1.75rem;border-bottom:1px solid #2a2e39;padding-bottom:.5rem}article[data-astro-cid-ipuyqs4v] h3{margin-top:2rem;color:#fff}article[data-astro-cid-ipuyqs4v] p{margin-bottom:1.5rem}article[data-astro-cid-ipuyqs4v] table{width:100%;border-collapse:collapse;margin:2.5rem 0;background:#131722;border-radius:8px;overflow:hidden;border:1px solid #2a2e39}article[data-astro-cid-ipuyqs4v] th,article[data-astro-cid-ipuyqs4v] td{border:1px solid #2a2e39;padding:1rem;text-align:left}article[data-astro-cid-ipuyqs4v] th{background:#1c212d;color:#8f949e;text-transform:uppercase;font-size:.8rem;letter-spacing:.05em}article[data-astro-cid-ipuyqs4v] strong{color:#fff}
-</style></head> <body data-astro-cid-sckkx6r4> <header class="site-header" data-astro-cid-sckkx6r4> <div class="site-header-inner" data-astro-cid-sckkx6r4> <a class="brand" href="/AlphaOracle/" data-astro-cid-sckkx6r4>AlphaOracle</a> <nav class="site-nav" data-astro-cid-sckkx6r4> <a href="/AlphaOracle/" data-astro-cid-sckkx6r4> Analysis </a><a href="/AlphaOracle/news-events/" data-astro-cid-sckkx6r4> News </a><a href="/AlphaOracle/indicators/" data-astro-cid-sckkx6r4> Indicators </a><a href="/AlphaOracle/tickers/" data-astro-cid-sckkx6r4> Tickers </a><a href="/AlphaOracle/backtests/" data-astro-cid-sckkx6r4> Backtests </a><a href="/AlphaOracle/research/" data-astro-cid-sckkx6r4> Research </a><a href="/AlphaOracle/paper-trading/" data-astro-cid-sckkx6r4> Paper Trading </a> </nav> </div> </header>  <main data-astro-cid-ipuyqs4v> <header data-astro-cid-ipuyqs4v> <h1 data-astro-cid-ipuyqs4v>Technical Analyst Report</h1> <p class="date" data-astro-cid-ipuyqs4v>2026-08-18</p> </header> <article data-astro-cid-ipuyqs4v> <h2 id="model-geminigemini-25-flash">Model: gemini/gemini-2.5-flash</h2>
-<p>Here’s a technical analysis of the provided assets, focusing purely on price action, moving averages, RSI, MACD, and Bollinger Bands, as of 2026-08-18.</p>
+</style></head> <body data-astro-cid-sckkx6r4> <header class="site-header" data-astro-cid-sckkx6r4> <div class="site-header-inner" data-astro-cid-sckkx6r4> <a class="brand" href="/AlphaOracle/" data-astro-cid-sckkx6r4>AlphaOracle</a> <nav class="site-nav" data-astro-cid-sckkx6r4> <a href="/AlphaOracle/" data-astro-cid-sckkx6r4> Analysis </a><a href="/AlphaOracle/news-events/" data-astro-cid-sckkx6r4> News </a><a href="/AlphaOracle/indicators/" data-astro-cid-sckkx6r4> Indicators </a><a href="/AlphaOracle/tickers/" data-astro-cid-sckkx6r4> Tickers </a><a href="/AlphaOracle/backtests/" data-astro-cid-sckkx6r4> Backtests </a><a href="/AlphaOracle/research/" data-astro-cid-sckkx6r4> Research </a><a href="/AlphaOracle/paper-trading/" data-astro-cid-sckkx6r4> Paper Trading </a> </nav> </div> </header>  <main data-astro-cid-ipuyqs4v> <header data-astro-cid-ipuyqs4v> <h1 data-astro-cid-ipuyqs4v>Technical Analyst Report</h1> <p class="date" data-astro-cid-ipuyqs4v>2026-08-19</p> </header> <article data-astro-cid-ipuyqs4v> <h2 id="model-geminigemini-25-flash">Model: gemini/gemini-2.5-flash</h2>
+<p>Here’s an evaluation of the technical setups for each ticker, focusing purely on price action and the requested technical indicators, ignoring all external news.</p>
 <hr>
-<p><strong>Summary of Technical Setups by Asset:</strong></p>
-<p><strong>1. Strong Uptrend / Bullish Continuation:</strong> These assets are generally performing well, with prices above key moving averages (SMA_20, SMA_50, SMA_200), strong RSI (above 50-60), and positive MACD crossovers with growing histograms.</p>
+<p><strong>Technical Analysis (Price Action Only - 2026-08-19)</strong></p>
+<p><strong>Overall Market Sentiment (from key indices/indicators):</strong></p>
 <ul>
-<li><strong>CRWD:</strong> Clear uptrend with strong momentum indicators.</li>
-<li><strong>HYG:</strong> Sustained uptrend, pushing upper Bollinger Band.</li>
-<li><strong>IWM:</strong> Strong uptrend across all timeframes, pushing upper Bollinger Band.</li>
-<li><strong>MSFT:</strong> Solid uptrend with strong momentum.</li>
-<li><strong>MU:</strong> Extremely strong uptrend, price breaking above upper Bollinger Band, indicating potential overextension.</li>
-<li><strong>NBIS:</strong> Extremely strong uptrend, price near upper Bollinger Band.</li>
-<li><strong>NVDA:</strong> Clear uptrend, price near upper Bollinger Band.</li>
-<li><strong>PLTR:</strong> Extremely strong uptrend with robust momentum.</li>
-<li><strong>QQQ:</strong> Strong uptrend with bullish momentum.</li>
-<li><strong>QUAL:</strong> Strong uptrend, consolidating near upper Bollinger Band.</li>
-<li><strong>SCHD:</strong> Strong uptrend, near upper Bollinger Band.</li>
-<li><strong>SPY:</strong> Strong uptrend with bullish momentum.</li>
-<li><strong>SSO:</strong> Strong uptrend with bullish momentum.</li>
-<li><strong>STX:</strong> Extremely strong uptrend, price breaking above upper Bollinger Band, indicating significant overextension.</li>
-<li><strong>TQQQ:</strong> Extremely strong uptrend with powerful bullish momentum.</li>
-<li><strong>TSM:</strong> Strong uptrend with powerful bullish momentum.</li>
-<li><strong>UPRO:</strong> Strong uptrend with bullish momentum.</li>
-<li><strong>VTI:</strong> Strong uptrend with bullish momentum.</li>
-<li><strong>VGK:</strong> Strong uptrend, but RSI is in overbought territory (73.95), suggesting potential for a short-term pullback or consolidation.</li>
-<li><strong>VXUS:</strong> Strong uptrend, price near upper Bollinger Band.</li>
-<li><strong>XEQT.TO:</strong> Strong uptrend with bullish momentum.</li>
-<li><strong>XLI:</strong> Strong uptrend with bullish momentum.</li>
-<li><strong>XLK:</strong> Strong uptrend with strong momentum.</li>
-<li><strong>XLE:</strong> Extremely strong uptrend, price breaking above upper Bollinger Band and RSI overbought (69.75), indicating potential overextension or short-term mean reversion.</li>
-</ul>
-<p><strong>2. Bullish Reversal / Mean Reversion Bounce Attempt:</strong> These assets show signs of bottoming or turning around after recent weakness, often indicated by MACD bullish crossovers or price near lower Bollinger Bands with low RSI.</p>
-<ul>
-<li><strong>AMD:</strong> Price is above SMA_20, but below SMA_50. MACD has just crossed bullish, with a positive and growing histogram, suggesting a short-term bounce or reversal.</li>
-<li><strong>GLD:</strong> Strong short-term uptrend (above SMA_20, SMA_50) but still below SMA_200. MACD shows strong bullish momentum, pushing the upper Bollinger Band, indicating a strong move up, possibly reversing a longer-term downtrend.</li>
-<li><strong>IAU:</strong> Similar to GLD, strong short-term uptrend, pushing upper Bollinger Band, suggesting a strong bullish reversal in the shorter term.</li>
-<li><strong>INTC:</strong> Price above SMA_20 but below SMA_50. MACD has recently crossed bullish with a growing positive histogram, signaling a potential short-term recovery.</li>
-<li><strong>LQD:</strong> Price is below all SMAs, with a weak RSI (40.35) and close to the lower Bollinger Band. MACD has just made a bullish crossover, suggesting a potential mean reversion bounce from oversold conditions within a downtrend.</li>
-<li><strong>NFLX:</strong> Price is above SMA_20 and SMA_50, but below SMA_200. MACD has recently crossed bullish, with a positive histogram, indicating a short-to-medium term bullish reversal.</li>
-<li><strong>ORCL:</strong> Price above SMA_20 but below SMA_50 and SMA_200. MACD shows a very strong bullish crossover with a rapidly growing positive histogram, indicating a significant reversal attempt.</li>
-<li><strong>SLV:</strong> Strong short-to-medium term uptrend (above SMA20/50), but still below the long-term SMA_200. MACD is strongly bullish, pushing the upper Bollinger Band, suggesting a significant upward move.</li>
-<li><strong>TLN:</strong> Price above SMA_20 but below SMA_50 and SMA_200. MACD has made a strong bullish crossover with a rapidly growing positive histogram, suggesting a strong reversal attempt.</li>
-<li><strong>TSLA:</strong> Price above SMA_20 but below SMA_50 and SMA_200. MACD shows a strong bullish crossover with a rapidly growing positive histogram, indicating a significant reversal attempt.</li>
-<li><strong>WDC:</strong> Price significantly above SMA_20 but below SMA_50, within a strong long-term uptrend. MACD has recently made a strong bullish crossover with a rapidly growing positive histogram, indicating a significant short-term recovery.</li>
-<li><strong>XLC:</strong> Price above SMA_20 and SMA_50, but below SMA_200. MACD shows bullish continuation, indicating short-to-medium term upward momentum, possibly breaking out of a longer-term downtrend.</li>
-</ul>
-<p><strong>3. Downtrend / Bearish Continuation:</strong> These assets are showing weakness, with prices below shorter-term moving averages, weaker RSI, and negative MACD crossovers or negative MACD histograms.</p>
-<ul>
-<li><strong>AAPL:</strong> Price is below SMA_20 and SMA_50. MACD is negative and below its signal line, indicating bearish momentum. Short-term bearish continuation.</li>
-<li><strong>AMZN:</strong> Price is in a long-term uptrend, but MACD has just crossed bearish with a negative histogram, suggesting a short-term pullback or loss of momentum within the uptrend.</li>
-<li><strong>AVGO:</strong> Price is below SMA_20. MACD has crossed bearish with a negative histogram, indicating short-term bearish momentum within a longer-term uptrend.</li>
-<li><strong>DIA:</strong> Price is in an uptrend, but MACD has barely crossed bearish with a slightly negative histogram, suggesting a very minor loss of bullish momentum or a slight pullback.</li>
-<li><strong>EWA:</strong> Price is in an uptrend, but MACD has crossed bearish with a negative histogram, indicating short-term bearish momentum or a pullback.</li>
-<li><strong>GOOGL:</strong> Price is below SMA_20 and SMA_50. MACD is negative and below its signal line, indicating bearish momentum. Short-term bearish continuation.</li>
-<li><strong>META:</strong> Price is below all key SMAs. MACD is negative and below its signal line, indicating bearish continuation.</li>
-<li><strong>MTZ:</strong> Price is above SMA_20, but below SMA_50 and SMA_200. MACD has recently crossed bullish from deeply negative, suggesting a strong bounce attempt from prior weakness, but the longer-term trend remains challenging.</li>
-<li><strong>TLT:</strong> Price is below all SMAs, with weak RSI (34.96) and near the lower Bollinger Band. MACD is negative and below its signal line, indicating bearish continuation. Very oversold, due for a mean reversion bounce.</li>
-<li><strong>TMF:</strong> Price is below all SMAs, with weak RSI (33.37) and just below the lower Bollinger Band. MACD is negative and below its signal line, indicating bearish continuation. Significantly oversold, ripe for a mean reversion bounce.</li>
-<li><strong>UUP:</strong> Price is below SMA_20 and SMA_50, with weak RSI (41.93) and near the lower Bollinger Band. MACD is negative and below its signal line, indicating bearish continuation. Short-term bearish continuation, possibly due for a mean reversion bounce.</li>
-<li><strong>XLF:</strong> Price is in an uptrend, but MACD has crossed bearish with a negative histogram, indicating short-term bearish momentum or a pullback.</li>
-<li><strong>XLP:</strong> Price is below SMA_20. MACD has crossed bearish with a negative histogram, indicating short-term bearish momentum or a pullback.</li>
-<li><strong>XLRE:</strong> Price is below SMA_20 and barely above SMA_50. MACD has crossed bearish with a negative histogram, indicating short-term bearish momentum.</li>
-<li><strong>XLU:</strong> Price is below all SMAs. MACD is negative and barely below its signal line, indicating bearish continuation but with very low momentum.</li>
-<li><strong>XLY:</strong> Price is above short- and mid-term SMAs, barely above SMA_200. MACD shows bullish continuation, but the overall picture is less robust than strong uptrends.</li>
-<li><strong>^IRX:</strong> Price is below SMA_20. MACD has crossed bearish with a negative histogram, indicating short-term bearish momentum within a longer-term uptrend.</li>
-<li><strong>^TNX:</strong> Price is in a strong uptrend, with RSI at 59.78 and near the upper Bollinger Band. MACD is barely below its signal line with a tiny negative histogram, indicating a very minor loss of bullish momentum or a slight pullback within the strong uptrend.</li>
-<li><strong>^VIX:</strong> Price is below all SMAs. MACD is negative and below its signal line, indicating bearish continuation (decreasing volatility).</li>
-<li><strong>^VIX3M:</strong> Price is above SMA_20 and SMA_50, but below SMA_200. MACD has just crossed bullish with a positive and growing histogram, indicating short-term bullish momentum (increasing 3-month volatility).</li>
+<li><strong>SPY (S&#x26;P 500 Proxy):</strong> Strong uptrend, price comfortably above all major SMAs (20, 50, 200). MACD is positive and trending up, confirming bullish momentum. RSI is neutral. This is a classic <strong>trend continuation</strong> setup.</li>
+<li><strong>QQQ (Nasdaq 100 Proxy):</strong> Strong uptrend, price well above SMAs. MACD has recently crossed sharply bullish with a strong positive histogram, indicating accelerating momentum. RSI is neutral. Another clear <strong>trend continuation</strong> with strong recent bullish impulse.</li>
+<li><strong>DIA (Dow Jones 30):</strong> Strong uptrend (above all SMAs). However, MACD shows recent bearish momentum, suggesting a short-term pullback within the larger uptrend. This is a <strong>trend continuation with minor short-term weakness</strong>.</li>
+<li><strong>^VIX (Volatility Index):</strong> In a clear downtrend, below all SMAs, with bearish MACD momentum. This indicates <strong>decreasing market volatility and increasing risk appetite</strong>.</li>
+<li><strong>TLT (Long-Term Bonds):</strong> Clear downtrend, below all SMAs. Price is near the lower Bollinger Band, and RSI is leaning oversold. MACD is bearish, but the histogram is very small, suggesting selling momentum is fading. This is a <strong>downtrend with potential for a mean reversion bounce</strong> from oversold levels.</li>
+<li><strong>UUP (US Dollar Index):</strong> Mixed trend (above SMA200, below SMA20/50). Price is near the lower Bollinger Band, with weak bearish MACD momentum. Potential for a <strong>mean reversion bounce</strong> from oversold levels.</li>
 </ul>
 <hr>
-<p><strong>Summary of Key Observations:</strong></p>
+<p><strong>Individual Ticker Setups:</strong></p>
+<ol>
+<li>
+<p><strong>AAPL (Apple):</strong></p>
 <ul>
-<li><strong>Broad Market Strength (Equities):</strong> Major equity ETFs like <strong>SPY, QQQ, VOO, VTI, IWM, SSO, UPRO, QUAL, SCHD</strong> are in strong uptrends, generally above all key moving averages, with strong RSIs and bullish MACD. This suggests broad market confidence.</li>
-<li><strong>Tech/AI Leaders Continue to Power:</strong> Many AI-related names like <strong>NVDA, PLTR, NBIS, CRWD</strong> show extremely strong uptrends and bullish momentum, with some like <strong>MU</strong> and <strong>STX</strong> exhibiting overextended moves (above upper BB) after powerful MACD crossovers.</li>
-<li><strong>Energy Sector Rally:</strong> <strong>XLE</strong> is in a very strong uptrend, overbought (RSI 69.75), and breaking above its upper Bollinger Band, indicating significant recent strength.</li>
-<li><strong>Commodity Reversal:</strong> <strong>GLD</strong> and <strong>IAU</strong> (Gold), and <strong>SLV</strong> (Silver) show strong short-term bullish momentum, having crossed above short- and mid-term SMAs and exhibiting strong MACD signals, suggesting a strong bullish reversal in precious metals.</li>
-<li><strong>Fixed Income Weakness:</strong> <strong>TLT</strong> and its leveraged counterpart <strong>TMF</strong> are in clear downtrends, are oversold (low RSI, near/below lower BB), and show bearish MACD continuation. This aligns with rising real rates. <strong>LQD</strong> is also in a downtrend but is showing early signs of a bullish MACD crossover, suggesting a potential short-term bounce.</li>
-<li><strong>Currency &#x26; Volatility Trends:</strong> <strong>UUP</strong> (US Dollar) shows short-term bearish momentum within a longer-term uptrend, hinting at a potential pullback. <strong>^VIX</strong> is in a downtrend, confirming low and decreasing market volatility. <strong>^VIX3M</strong> shows increasing short-term momentum, but remains below the 200-day average.</li>
-<li><strong>FAANG Pullbacks:</strong> While the broader market is strong, <strong>AAPL, AMZN, AVGO, GOOGL, META</strong> show short-term weakness or pullbacks (MACD bearish crossovers, price below short-term SMAs) within their longer-term uptrends.</li>
+<li><strong>Trend:</strong> Mixed (above SMA50/200, below SMA20).</li>
+<li><strong>Momentum:</strong> Bearish (MACD below signal, negative histogram).</li>
+<li><strong>Bollinger Bands:</strong> Mid-range.</li>
+<li><strong>Setup:</strong> Appears to be in a <strong>short-term pullback or consolidation</strong> within a larger uptrend. Could find support at SMA50.</li>
 </ul>
-<p>Overall, the price action across many equity instruments points to a strong “Risk On” environment with clear trend continuation. However, there are signs of short-term exhaustion or pullbacks in some key tech names and the dollar. The fixed income market (TLT, TMF) remains in a bearish trend, with potential for mean reversion bounces due to oversold conditions. Commodities (Gold, Silver, Energy) are showing significant bullish strength.</p> </article> </main>  </body></html> 
+</li>
+<li>
+<p><strong>AMD (Advanced Micro Devices):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Mixed (above SMA200, but below SMA20/50).</li>
+<li><strong>Momentum:</strong> Bullish (MACD crossover, positive histogram).</li>
+<li><strong>Bollinger Bands:</strong> Mid-range.</li>
+<li><strong>Setup:</strong> Showing signs of a <strong>mean reversion bounce</strong> from recent lows, pushing against the short-term downtrend.</li>
+</ul>
+</li>
+<li>
+<p><strong>AMZN (Amazon):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Bearish (MACD below signal, negative histogram).</li>
+<li><strong>Bollinger Bands:</strong> Mid-range.</li>
+<li><strong>Setup:</strong> <strong>Trend continuation</strong> with recent bearish momentum, suggesting a healthy pullback or consolidation within the larger uptrend.</li>
+</ul>
+</li>
+<li>
+<p><strong>AVGO (Broadcom):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Mixed (above SMA200, but below SMA20/50).</li>
+<li><strong>Momentum:</strong> Bearish (MACD below signal, strong negative histogram).</li>
+<li><strong>Bollinger Bands:</strong> Lower half.</li>
+<li><strong>Setup:</strong> In a <strong>corrective phase or short-term downtrend</strong>, potentially seeking support at SMA200.</li>
+</ul>
+</li>
+<li>
+<p><strong>CEG (Constellation Energy):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Mixed (below SMA200, above SMA50, below SMA20).</li>
+<li><strong>Momentum:</strong> Bullish (MACD positive and trending up).</li>
+<li><strong>Bollinger Bands:</strong> Mid-range.</li>
+<li><strong>Setup:</strong> Potential for a <strong>mean reversion bounce</strong>, currently showing bullish momentum despite being below its short-term average.</li>
+</ul>
+</li>
+<li>
+<p><strong>CRWD (CrowdStrike):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Bullish (MACD positive).</li>
+<li><strong>Bollinger Bands:</strong> Upper half.</li>
+<li><strong>Setup:</strong> Solid <strong>trend continuation</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>EWA (iShares MSCI Australia):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Bearish (MACD below signal, negative histogram).</li>
+<li><strong>Bollinger Bands:</strong> Mid-range.</li>
+<li><strong>Setup:</strong> <strong>Trend continuation</strong> with minor short-term weakness, consolidating within the uptrend.</li>
+</ul>
+</li>
+<li>
+<p><strong>EWC (iShares MSCI Canada):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Bullish (MACD positive).</li>
+<li><strong>Bollinger Bands:</strong> Nearing upper band.</li>
+<li><strong>Setup:</strong> Strong <strong>trend continuation</strong>, showing significant buying pressure.</li>
+</ul>
+</li>
+<li>
+<p><strong>GLD (SPDR Gold Shares):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Short-term uptrend (above SMA20/50), but below SMA200.</li>
+<li><strong>Momentum:</strong> Strong bullish (MACD positive and histogram growing).</li>
+<li><strong>Bollinger Bands:</strong> Nearing upper band.</li>
+<li><strong>Setup:</strong> Strong <strong>short-term trend continuation</strong>, exhibiting significant strength.</li>
+</ul>
+</li>
+<li>
+<p><strong>GOOGL (Alphabet):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Mixed (above SMA200, below SMA20/50).</li>
+<li><strong>Momentum:</strong> Bearish (MACD below signal, negative histogram).</li>
+<li><strong>Bollinger Bands:</strong> Mid-range.</li>
+<li><strong>Setup:</strong> In a <strong>corrective phase</strong> or consolidating with a downside bias within its longer-term uptrend.</li>
+</ul>
+</li>
+<li>
+<p><strong>HYG (iShares High Yield Corporate Bond ETF):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Slight bullish (MACD positive, tiny histogram).</li>
+<li><strong>Bollinger Bands:</strong> Tight, mid-range.</li>
+<li><strong>Setup:</strong> A <strong>low-volatility trend continuation</strong>, indicating stable performance.</li>
+</ul>
+</li>
+<li>
+<p><strong>IAU (iShares Gold Trust):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Short-term uptrend (above SMA20/50), but below SMA200.</li>
+<li><strong>Momentum:</strong> Bullish (MACD positive).</li>
+<li><strong>Bollinger Bands:</strong> Nearing upper band.</li>
+<li><strong>Setup:</strong> Similar to GLD, a <strong>strong short-term trend continuation</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>IBIT (iShares Bitcoin Trust):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Mixed (above SMA20/50, but below SMA200).</li>
+<li><strong>Momentum:</strong> Slight bullish (MACD just crossed above signal).</li>
+<li><strong>Bollinger Bands:</strong> Upper half of tighter bands.</li>
+<li><strong>Setup:</strong> A <strong>short-term bullish impulse</strong> against a longer-term downtrend, could be a mean reversion or consolidation break.</li>
+</ul>
+</li>
+<li>
+<p><strong>INTC (Intel):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Mixed (above SMA200, but below SMA20/50).</li>
+<li><strong>Momentum:</strong> Bullish (MACD crossover, positive histogram).</li>
+<li><strong>Bollinger Bands:</strong> Mid-range.</li>
+<li><strong>Setup:</strong> Showing signs of a <strong>mean reversion bounce</strong> from recent lows.</li>
+</ul>
+</li>
+<li>
+<p><strong>IWM (Russell 2000):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Bullish (MACD positive).</li>
+<li><strong>Bollinger Bands:</strong> Upper half.</li>
+<li><strong>Setup:</strong> Solid <strong>trend continuation</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>KLAC (KLA Corp):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Mixed (above SMA200, but below SMA20/50).</li>
+<li><strong>Momentum:</strong> Bullish (MACD crossover, positive histogram).</li>
+<li><strong>Bollinger Bands:</strong> Mid-range.</li>
+<li><strong>Setup:</strong> Signs of a <strong>mean reversion bounce</strong> from recent weakness.</li>
+</ul>
+</li>
+<li>
+<p><strong>LQD (iShares Investment Grade Corporate Bond ETF):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Clear downtrend (below all SMAs).</li>
+<li><strong>Momentum:</strong> Weak bearish (MACD negative, but histogram fading).</li>
+<li><strong>Bollinger Bands:</strong> Nearing lower band.</li>
+<li><strong>Setup:</strong> In a <strong>downtrend with potential for a mean reversion bounce</strong> due to fading selling momentum and being oversold.</li>
+</ul>
+</li>
+<li>
+<p><strong>META (Meta Platforms):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong downtrend (below all SMAs).</li>
+<li><strong>Momentum:</strong> Strong bearish (MACD below signal, strong negative histogram).</li>
+<li><strong>Bollinger Bands:</strong> Broken below lower band.</li>
+<li><strong>Setup:</strong> <strong>Accelerating downtrend or capitulation</strong>, indicating significant selling pressure and likely overextended to the downside.</li>
+</ul>
+</li>
+<li>
+<p><strong>MSFT (Microsoft):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Bearish (MACD below signal, negative histogram).</li>
+<li><strong>Bollinger Bands:</strong> Upper half of wide bands.</li>
+<li><strong>Setup:</strong> <strong>Trend continuation</strong> with recent bearish momentum, suggesting a minor pullback or consolidation after a strong run.</li>
+</ul>
+</li>
+<li>
+<p><strong>MTZ (MasTec):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Clear downtrend (below all SMAs).</li>
+<li><strong>Momentum:</strong> Bullish (MACD crossover, positive histogram).</li>
+<li><strong>Bollinger Bands:</strong> Lower half.</li>
+<li><strong>Setup:</strong> Showing signs of a <strong>mean reversion bounce</strong> against a larger downtrend.</li>
+</ul>
+</li>
+<li>
+<p><strong>MU (Micron Technology):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Mixed (above SMA200, but below SMA50).</li>
+<li><strong>Momentum:</strong> Highly bullish (MACD sharply above signal, very strong positive histogram).</li>
+<li><strong>Bollinger Bands:</strong> Mid-range.</li>
+<li><strong>Setup:</strong> A <strong>powerful mean reversion bounce</strong> from recent lows, showing significant short-term strength.</li>
+</ul>
+</li>
+<li>
+<p><strong>NBIS (Nebius Group):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Highly bullish (MACD sharply above signal, very strong positive histogram).</li>
+<li><strong>Bollinger Bands:</strong> Upper half.</li>
+<li><strong>Setup:</strong> Strong <strong>trend continuation</strong> with accelerating buying pressure.</li>
+</ul>
+</li>
+<li>
+<p><strong>NFLX (Netflix):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Mixed (above SMA20/50, but below SMA200).</li>
+<li><strong>Momentum:</strong> Strong bullish (MACD sharply above signal, strong positive histogram).</li>
+<li><strong>Bollinger Bands:</strong> Nearing upper band.</li>
+<li><strong>Setup:</strong> Strong <strong>short-term trend continuation</strong> despite the longer-term downtrend.</li>
+</ul>
+</li>
+<li>
+<p><strong>NVDA (Nvidia):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Bullish (MACD positive and histogram growing).</li>
+<li><strong>Bollinger Bands:</strong> Upper half.</li>
+<li><strong>Setup:</strong> Solid <strong>trend continuation</strong> with accelerating momentum.</li>
+</ul>
+</li>
+<li>
+<p><strong>ORCL (Oracle):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Clear downtrend (below SMA50/200).</li>
+<li><strong>Momentum:</strong> Highly bullish (MACD sharply above signal, strong positive histogram).</li>
+<li><strong>Bollinger Bands:</strong> Mid-range.</li>
+<li><strong>Setup:</strong> A <strong>powerful mean reversion bounce</strong> from recent lows against a larger downtrend.</li>
+</ul>
+</li>
+<li>
+<p><strong>PLTR (Palantir Technologies):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (recently crossed above SMA200, now above all SMAs).</li>
+<li><strong>Momentum:</strong> Strong bullish (MACD positive).</li>
+<li><strong>Bollinger Bands:</strong> Upper half.</li>
+<li><strong>Setup:</strong> Strong <strong>trend continuation</strong>, potentially accelerating after breaking key long-term resistance (SMA200).</li>
+</ul>
+</li>
+<li>
+<p><strong>QUAL (iShares MSCI USA Quality Factor ETF):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Slight bullish (MACD just above signal).</li>
+<li><strong>Bollinger Bands:</strong> Upper half.</li>
+<li><strong>Setup:</strong> Stable <strong>trend continuation</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>SCHD (Schwab US Dividend Equity ETF):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Slight bullish (MACD positive, tiny histogram).</li>
+<li><strong>Bollinger Bands:</strong> Nearing upper band. RSI nearing overbought.</li>
+<li><strong>Setup:</strong> Strong <strong>trend continuation</strong>, but potentially becoming <strong>overextended</strong> in the short term.</li>
+</ul>
+</li>
+<li>
+<p><strong>SLV (iShares Silver Trust):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Short-term uptrend (above SMA20/50), but below SMA200.</li>
+<li><strong>Momentum:</strong> Bullish (MACD positive and histogram growing).</li>
+<li><strong>Bollinger Bands:</strong> Nearing upper band.</li>
+<li><strong>Setup:</strong> Strong <strong>short-term trend continuation</strong>, showing significant strength.</li>
+</ul>
+</li>
+<li>
+<p><strong>SSO (ProShares Ultra S&#x26;P500):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Bullish (MACD positive).</li>
+<li><strong>Bollinger Bands:</strong> Upper half.</li>
+<li><strong>Setup:</strong> Solid <strong>trend continuation</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>STX (Seagate Technology):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Extremely bullish (MACD sharply above signal, very strong positive histogram).</li>
+<li><strong>Bollinger Bands:</strong> Upper half.</li>
+<li><strong>Setup:</strong> Strong <strong>trend continuation</strong> with exceptional underlying buying pressure.</li>
+</ul>
+</li>
+<li>
+<p><strong>TMF (Direxion Daily 20+ Year Treasury Bull 3X Shares):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Clear downtrend (below all SMAs).</li>
+<li><strong>Momentum:</strong> Weak bearish (MACD negative, but histogram fading).</li>
+<li><strong>Bollinger Bands:</strong> Nearing lower band.</li>
+<li><strong>Setup:</strong> In a <strong>downtrend with potential for a mean reversion bounce</strong> due to fading selling momentum and being oversold.</li>
+</ul>
+</li>
+<li>
+<p><strong>TLN (Talen Energy):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Clear downtrend (below all SMAs).</li>
+<li><strong>Momentum:</strong> Bullish (MACD crossover, positive histogram).</li>
+<li><strong>Bollinger Bands:</strong> Nearing lower band. RSI leaning oversold.</li>
+<li><strong>Setup:</strong> Showing signs of a <strong>mean reversion bounce</strong> from oversold levels against a larger downtrend.</li>
+</ul>
+</li>
+<li>
+<p><strong>TSM (Taiwan Semiconductor Manufacturing):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Mixed (above SMA200, but below SMA50).</li>
+<li><strong>Momentum:</strong> Bullish (MACD crossover, strong positive histogram).</li>
+<li><strong>Bollinger Bands:</strong> Mid-range.</li>
+<li><strong>Setup:</strong> Potential <strong>bullish reversal or continuation upwards</strong> from consolidation, currently showing strong momentum.</li>
+</ul>
+</li>
+<li>
+<p><strong>TSLA (Tesla):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Bearish long-term (below SMA50/200), but short-term bullish (above SMA20).</li>
+<li><strong>Momentum:</strong> Strong bullish (MACD crossover, strong positive histogram).</li>
+<li><strong>Bollinger Bands:</strong> Nearing upper band.</li>
+<li><strong>Setup:</strong> A <strong>strong short-term bounce or reversal attempt</strong> against a larger downtrend, possibly a mean reversion towards SMA50.</li>
+</ul>
+</li>
+<li>
+<p><strong>UUP (Invesco DB US Dollar Index Bullish Fund):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Mixed (above SMA200, below SMA20/50).</li>
+<li><strong>Momentum:</strong> Weak bearish (MACD negative, but histogram fading).</li>
+<li><strong>Bollinger Bands:</strong> Nearing lower band.</li>
+<li><strong>Setup:</strong> Potential for a <strong>mean reversion bounce</strong> from oversold levels.</li>
+</ul>
+</li>
+<li>
+<p><strong>UPRO (ProShares UltraPro S&#x26;P500):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Bullish (MACD positive).</li>
+<li><strong>Bollinger Bands:</strong> Upper half.</li>
+<li><strong>Setup:</strong> Solid <strong>trend continuation</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>VGK (Vanguard FTSE Europe ETF):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Very slight bearish (MACD just below signal, tiny negative histogram).</li>
+<li><strong>Bollinger Bands:</strong> Upper half.</li>
+<li><strong>Setup:</strong> <strong>Trend continuation</strong> with minor momentum deceleration, potentially consolidating.</li>
+</ul>
+</li>
+<li>
+<p><strong>VOO (Vanguard S&#x26;P 500 ETF):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Bullish (MACD positive).</li>
+<li><strong>Bollinger Bands:</strong> Upper half.</li>
+<li><strong>Setup:</strong> Solid <strong>trend continuation</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>VTI (Vanguard Total Stock Market ETF):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Bullish (MACD positive).</li>
+<li><strong>Bollinger Bands:</strong> Upper half.</li>
+<li><strong>Setup:</strong> Solid <strong>trend continuation</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>VXUS (Vanguard Total International Stock ETF):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Bullish (MACD positive).</li>
+<li><strong>Bollinger Bands:</strong> Upper half.</li>
+<li><strong>Setup:</strong> Solid <strong>trend continuation</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>WDC (Western Digital):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Mixed (above SMA200, but below SMA20/50).</li>
+<li><strong>Momentum:</strong> Bullish (MACD crossover, strong positive histogram).</li>
+<li><strong>Bollinger Bands:</strong> Mid-range.</li>
+<li><strong>Setup:</strong> Showing signs of a <strong>mean reversion bounce</strong> from recent weakness.</li>
+</ul>
+</li>
+<li>
+<p><strong>XKB (Materials Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Mixed (above SMA50/200, but below SMA20).</li>
+<li><strong>Momentum:</strong> Bearish (MACD below signal, negative histogram).</li>
+<li><strong>Bollinger Bands:</strong> Mid-range.</li>
+<li><strong>Setup:</strong> <strong>Short-term pullback or consolidation</strong> within a larger uptrend.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLC (Communication Services Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Mixed (above SMA20/50, but below SMA200).</li>
+<li><strong>Momentum:</strong> Bullish (MACD positive).</li>
+<li><strong>Bollinger Bands:</strong> Mid-range.</li>
+<li><strong>Setup:</strong> <strong>Short-term uptrend/consolidation</strong> within a longer-term downtrend.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLE (Energy Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Strong bullish (MACD positive).</li>
+<li><strong>Bollinger Bands:</strong> Price <em>above</em> upper band. RSI is overbought.</li>
+<li><strong>Setup:</strong> <strong>Overextended trend continuation</strong>, suggesting an imminent pullback or consolidation is likely after breaking the upper Bollinger Band.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLI (Industrials Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Very slight bearish (MACD just below signal, tiny negative histogram).</li>
+<li><strong>Bollinger Bands:</strong> Mid-range.</li>
+<li><strong>Setup:</strong> <strong>Stable uptrend with minor momentum dip</strong>, likely consolidating.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLK (Technology Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Bullish (MACD positive and histogram growing).</li>
+<li><strong>Bollinger Bands:</strong> Upper half.</li>
+<li><strong>Setup:</strong> Solid <strong>trend continuation</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLP (Consumer Staples Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Bearish (MACD below signal, negative histogram).</li>
+<li><strong>Bollinger Bands:</strong> Upper half.</li>
+<li><strong>Setup:</strong> <strong>Trend continuation</strong> with minor short-term weakness/consolidation.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLRE (Real Estate Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Mixed (above SMA200, but below SMA20/50).</li>
+<li><strong>Momentum:</strong> Bearish (MACD below signal, negative histogram).</li>
+<li><strong>Bollinger Bands:</strong> Nearing lower band.</li>
+<li><strong>Setup:</strong> In a <strong>short-term downtrend with potential for a mean reversion bounce</strong> from the lower band.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLU (Utilities Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Weak downtrend/consolidation (below all SMAs).</li>
+<li><strong>Momentum:</strong> Very slight bullish (MACD just above signal, tiny positive histogram).</li>
+<li><strong>Bollinger Bands:</strong> Mid-range, near lower end.</li>
+<li><strong>Setup:</strong> Potential for a <strong>mean reversion bounce</strong> if the bullish MACD signal strengthens from its current weak state.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLY (Consumer Discretionary Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Mixed (above SMA20/50, but below SMA200).</li>
+<li><strong>Momentum:</strong> Bullish (MACD positive).</li>
+<li><strong>Bollinger Bands:</strong> Mid-range.</li>
+<li><strong>Setup:</strong> <strong>Consolidation or stable short-term uptrend</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>XEQT.TO (iShares Core Equity ETF CAD):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Strong uptrend (above all SMAs).</li>
+<li><strong>Momentum:</strong> Slight bullish (MACD just above signal).</li>
+<li><strong>Bollinger Bands:</strong> Upper half.</li>
+<li><strong>Setup:</strong> Stable <strong>trend continuation</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>^VIX3M (CBOE 3-Month VIX):</strong></p>
+<ul>
+<li><strong>Trend:</strong> Mixed (above SMA20/50, below SMA200).</li>
+<li><strong>Momentum:</strong> Bullish (MACD crossover, positive histogram).</li>
+<li><strong>Bollinger Bands:</strong> Nearing upper band.</li>
+<li><strong>Setup:</strong> Showing <strong>short-term strength</strong>, potentially indicating increased volatility expectations for the medium term.</li>
+</ul>
+</li>
+</ol>
+<hr> </article> </main>  </body></html> 
