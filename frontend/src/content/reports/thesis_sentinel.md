@@ -1,31 +1,34 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-08-19"
+date: "2026-08-20"
 ---
 
-# Daily Thesis Sentinel Brief — 2026-08-19
+# Thesis Sentinel — Daily Brief (2026-08-20)
 
 ## 1. Tripwire Status
 
-| Tripwire | Signal (today) | Threshold | Status |
-|---|---|---|---|
-| Carry unwind (VIX/VIX3M) | 15.84/20.54 = 0.77 (5d median 0.858, as of 07-17) | >1.0 | **CLEAR** |
-| Credit cracks (HYG/LQD 63d) | +0.02 (+2%) | <-2% | **CLEAR** |
-| Breadth break (canary EWA/TLT) | EWA +3.39%, TLT -2.47% — one negative only | both negative | **CLEAR** (half_defensive, TLT only) |
-| Trend break (SPY vs 200d) | 767.45 vs 703.64 (+9.1%), slow_channel risk_on | monthly close < 200dma | **CLEAR** |
-| Oil shock (XLE leadership) | XLE RSI 72.9, momentum +8.85% vs SPY, "strong_positive" | sustained leadership | **FIRED** (watch — overbought, 3-week high) |
-| AI capex turn (hyperscaler guidance) | No FY27 cut disclosed; chip-equipment names (AMAT/LRCX/KLAC) selling off on rates, not guidance | any capex cut | **CLEAR** |
-| Carry stress (USDJPY) | No feed today | <140 rapid | **N/A – no data** |
+| Tripwire | Signal | Threshold | Today's Reading | Status |
+|---|---|---|---|---|
+| Carry unwind | VIX/VIX3M (5d median) | > 1.0 | 0.858 | **CLEAR** |
+| Credit cracks | HYG/LQD 63d rel-mom | < -2% | +2.89% | **CLEAR** |
+| Breadth break | Canary 13612W (EWA, TLT) | both negative | EWA +0.05 / TLT -0.0049 (1 of 2 neg) | **HALF-DEFENSIVE** (not fired) |
+| Trend break | SPY vs 200d SMA (monthly close) | close < 200d | +7.82% above (44.8 vs 41.55, slow-channel proxy) | **CLEAR** |
+| Oil shock | XLE momentum vs SPY | sustained leadership | XLE +7.4% mom, RSI 72.2, strong uptrend; Hormuz risk premium persists | **FIRED (watch)** |
+| AI capex turn | Hyperscaler FY27 guidance | any cut | none reported today | **CLEAR** |
+| Carry stress | USDJPY | rapid <140 | not directly fed; UUP at 3-month low (broad USD weakness) proxy only | **N/A / untracked** |
 
 ## 2. Marker Watch
 - **BoJ guidance:** No news today.
-- **CPI:** No new print; Fed minutes (WSJ/Reuters/CNBC/Barron's/NYT, 8/19) show "many" officials favor hikes if inflation doesn't cool — hawkish tilt, not a CPI datum itself.
+- **CPI:** No new print; Fed minutes (8/19) show "more officials lost patience" on elevated inflation — hawkish drift, not a CPI datum.
 - **SpaceX vs $135:** No news today.
-- **Hyperscaler capex guidance:** No explicit FY27 cut; MSFT ($678B backlog) and ORCL ($638B backlog) headlines are supportive, not cautionary. Chip-equipment weakness (AMAT -4%, LRCX -5%) framed as rate-driven, not demand-driven.
-- **Hormuz:** Active — "Strait of Hormuz shipping slows after vessel attack" (OilPrice, 8/19), "tanker attacks... sharp drop in shipping" (Jerusalem Post), oil up on standoff (Reuters, qcintel). Escalation continuing, no closure yet.
+- **Hyperscaler capex:** No FY27 guidance cut reported; adjacent stress visible (WSJ: AI capex increasingly debt-funded, "$3T higher than it seems"; Nebius $5B convertible dilution).
+- **Hormuz:** Ongoing — shipping "nearly tripled before MoU expired" (Al Jazeera), oil "steady near $92" (BusinessToday), tanker-attack slowdown persists (Reuters). No closure, no resolution — status quo tension.
 
 ## 3. Delta (vs. yesterday)
-Two new developments not yet in thesis: (1) **Fed minutes hawkish surprise** — broad support for hikes if inflation persists, contradicting the "Fed on hold" base case; (2) **Treasury doubled long-bond buybacks**, driving 30y yields down, dollar to 3-month low, gold +3% intraday. This is a curve-intervention mechanic the thesis didn't anticipate — bond-market stress being managed administratively rather than via Fed policy. VIX still calm (15.84, falling) despite the hawkish minutes — market has not yet repriced hike odds into equities.
+- **Fed minutes turned more hawkish** — "broader support for rate increases," Axios/Reuters/WSJ all confirm rate-hike language entering Fed communication for the first time this cycle. This is a new input not previously flagged.
+- **Treasury doubled long-bond buybacks**, yet 30y yield still climbed intraday (AMWatch) — buyback "disappointed" despite gold +3% and DXY at 3-month low. Bond-market stress signal, credit spreads still clear per rules.
+- **Gold broke $4,500** (multiple sources), IAU RSI 67, GLD RSI 67 — commodity-strength "strong_positive" intact, consistent with negative real-rate drift thesis.
+- **XLE RSI 72.2 (overbought)** — energy leadership accelerating, oil-shock tripwire now actively firing for the first time in recent updates.
 
 ## 4. Scenario Pressure
-Equity trend/breadth/credit signals are unambiguously **A (grind-with-violence)** — SPY at 9% above 200dma, VIX low, credit clear. However, the hawkish Fed minutes + persistent Hormuz tension + gold/energy strength (XLE fired, GLD/SLV strong) are the exact "policy cornered / inflation-tolerant regime" markers the thesis flags as precursors to **B**. The Treasury buyback is a new variable: it eases near-term rate stress (pro-A) while reinforcing the negative-real-rate/debasement trade (pro-gold, consistent with standing tilts). **Net: today's evidence sits in A but is quietly stacking B-consistent inputs (hawkish Fed + oil + gold) — rules currently show no defensive trigger, so positioning is unchanged.** Signals and headlines are not in conflict here; rules govern and remain risk_on/clear.
+Evidence is **mixed but net tilts toward Scenario B** (slow bear / sticky inflation): hawkish Fed minutes + energy leadership + gold breakout all support the inflation-cornered-Fed narrative from the thesis. However, core rule signals remain unambiguously **A-consistent** — slow-channel risk_on, credit clear, fast-channel clear, SPY well above 200d. **Rules govern positioning**: stay invested per mandates; the Fed-hawkish and oil-leadership deltas are noteworthy early B-markers to track into Q3 capex season, not an override signal today.
