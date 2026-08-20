@@ -5,9 +5,9 @@
         "notional_value": 17437
     },
     {
-        "ticker": "QUAL",
+        "ticker": "IWM",
         "action": "buy",
-        "notional_value": 6975
+        "notional_value": 4359
     },
     {
         "ticker": "VXUS",
@@ -17,7 +17,7 @@
     {
         "ticker": "VGK",
         "action": "buy",
-        "notional_value": 6103
+        "notional_value": 4359
     },
     {
         "ticker": "GLD",
@@ -27,7 +27,12 @@
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 5231
+        "notional_value": 4359
+    },
+    {
+        "ticker": "XLP",
+        "action": "buy",
+        "notional_value": 2616
     },
     {
         "ticker": "NVDA",
@@ -35,22 +40,27 @@
         "notional_value": 6975
     },
     {
+        "ticker": "MSFT",
+        "action": "buy",
+        "notional_value": 4359
+    },
+    {
         "ticker": "MU",
         "action": "buy",
         "notional_value": 4359
     },
     {
-        "ticker": "MSFT",
+        "ticker": "STX",
         "action": "buy",
-        "notional_value": 5231
+        "notional_value": 3487
     },
     {
-        "ticker": "AAPL",
+        "ticker": "PLTR",
         "action": "buy",
-        "notional_value": 4359
+        "notional_value": 3487
     },
     {
-        "ticker": "XLP",
+        "ticker": "CEG",
         "action": "buy",
         "notional_value": 3487
     }

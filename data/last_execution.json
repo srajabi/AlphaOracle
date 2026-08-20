@@ -1,105 +1,123 @@
 {
-  "last_updated_utc": "2026-08-19T21:01:51.161131+00:00",
+  "last_updated_utc": "2026-08-20T21:06:07.648918+00:00",
   "error": "",
   "results": [
     {
       "trade": {
         "ticker": "VOO",
         "action": "buy",
-        "notional_value": 13000
+        "notional_value": 17437
       },
-      "status": "submitted",
-      "order_id": "78ace7ba-f625-4334-8550-7dfbf682ae88"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "GLD",
+        "ticker": "IWM",
         "action": "buy",
-        "notional_value": 10500
+        "notional_value": 4359
       },
-      "status": "submitted",
-      "order_id": "8b4373fa-b4d0-4d21-9cc2-116d0a8e516a"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "QUAL",
+        "ticker": "VXUS",
         "action": "buy",
-        "notional_value": 7000
+        "notional_value": 8718
       },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
-    },
-    {
-      "trade": {
-        "ticker": "XLF",
-        "action": "buy",
-        "notional_value": 7000
-      },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
-    },
-    {
-      "trade": {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 5200
-      },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
         "ticker": "VGK",
         "action": "buy",
-        "notional_value": 6100
+        "notional_value": 4359
       },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "EWA",
+        "ticker": "GLD",
         "action": "buy",
-        "notional_value": 3500
+        "notional_value": 10462
       },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "NVDA",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 5200
+        "notional_value": 4359
       },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
-    },
-    {
-      "trade": {
-        "ticker": "CRWD",
-        "action": "buy",
-        "notional_value": 4300
-      },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
-    },
-    {
-      "trade": {
-        "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 5200
-      },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
         "ticker": "XLP",
         "action": "buy",
-        "notional_value": 4300
+        "notional_value": 2616
       },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "NVDA",
+        "action": "buy",
+        "notional_value": 6975
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "MSFT",
+        "action": "buy",
+        "notional_value": 4359
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "MU",
+        "action": "buy",
+        "notional_value": 4359
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "STX",
+        "action": "buy",
+        "notional_value": 3487
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "PLTR",
+        "action": "buy",
+        "notional_value": 3487
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "CEG",
+        "action": "buy",
+        "notional_value": 3487
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
     }
   ]
 }
