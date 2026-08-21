@@ -2,66 +2,71 @@
     {
         "ticker": "VOO",
         "action": "buy",
-        "notional_value": 17437
+        "notional_value": 18000
     },
     {
-        "ticker": "IWM",
+        "ticker": "QQQ",
         "action": "buy",
-        "notional_value": 4359
-    },
-    {
-        "ticker": "VXUS",
-        "action": "buy",
-        "notional_value": 8718
-    },
-    {
-        "ticker": "VGK",
-        "action": "buy",
-        "notional_value": 4359
-    },
-    {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 10462
-    },
-    {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 4359
-    },
-    {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 2616
-    },
-    {
-        "ticker": "NVDA",
-        "action": "buy",
-        "notional_value": 6975
+        "notional_value": 6000
     },
     {
         "ticker": "MSFT",
         "action": "buy",
-        "notional_value": 4359
+        "notional_value": 3000
     },
     {
-        "ticker": "MU",
+        "ticker": "NVDA",
         "action": "buy",
-        "notional_value": 4359
+        "notional_value": 3000
     },
     {
-        "ticker": "STX",
+        "ticker": "GLD",
         "action": "buy",
-        "notional_value": 3487
+        "notional_value": 8000
     },
     {
-        "ticker": "PLTR",
+        "ticker": "SLV",
         "action": "buy",
-        "notional_value": 3487
+        "notional_value": 2000
     },
     {
-        "ticker": "CEG",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 3487
+        "notional_value": 4000
+    },
+    {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 4000
+    },
+    {
+        "ticker": "XLV",
+        "action": "buy",
+        "notional_value": 3000
+    },
+    {
+        "ticker": "XLP",
+        "action": "buy",
+        "notional_value": 3000
+    },
+    {
+        "ticker": "XLF",
+        "action": "buy",
+        "notional_value": 4000
+    },
+    {
+        "ticker": "VXUS",
+        "action": "buy",
+        "notional_value": 5000
+    },
+    {
+        "ticker": "VGK",
+        "action": "buy",
+        "notional_value": 3000
+    },
+    {
+        "ticker": "EWC",
+        "action": "buy",
+        "notional_value": 2000
     }
 ]
