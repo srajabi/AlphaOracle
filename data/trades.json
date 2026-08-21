@@ -2,71 +2,71 @@
     {
         "ticker": "VOO",
         "action": "buy",
-        "notional_value": 18000
+        "notional_value": 12206
     },
     {
         "ticker": "QQQ",
         "action": "buy",
-        "notional_value": 6000
+        "notional_value": 7847
     },
     {
         "ticker": "MSFT",
         "action": "buy",
-        "notional_value": 3000
+        "notional_value": 6103
     },
     {
         "ticker": "NVDA",
         "action": "buy",
-        "notional_value": 3000
+        "notional_value": 6103
+    },
+    {
+        "ticker": "AMZN",
+        "action": "buy",
+        "notional_value": 4359
+    },
+    {
+        "ticker": "MU",
+        "action": "buy",
+        "notional_value": 3487
+    },
+    {
+        "ticker": "PLTR",
+        "action": "buy",
+        "notional_value": 3487
     },
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 8000
-    },
-    {
-        "ticker": "SLV",
-        "action": "buy",
-        "notional_value": 2000
+        "notional_value": 10462
     },
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 4000
-    },
-    {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 4000
-    },
-    {
-        "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 3000
-    },
-    {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 3000
-    },
-    {
-        "ticker": "XLF",
-        "action": "buy",
-        "notional_value": 4000
-    },
-    {
-        "ticker": "VXUS",
-        "action": "buy",
-        "notional_value": 5000
+        "notional_value": 5231
     },
     {
         "ticker": "VGK",
         "action": "buy",
-        "notional_value": 3000
+        "notional_value": 5231
+    },
+    {
+        "ticker": "EWA",
+        "action": "buy",
+        "notional_value": 4359
     },
     {
         "ticker": "EWC",
         "action": "buy",
-        "notional_value": 2000
+        "notional_value": 4359
+    },
+    {
+        "ticker": "XLV",
+        "action": "buy",
+        "notional_value": 4359
+    },
+    {
+        "ticker": "SCHD",
+        "action": "buy",
+        "notional_value": 4359
     }
 ]
