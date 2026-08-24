@@ -2,71 +2,41 @@
     {
         "ticker": "VOO",
         "action": "buy",
-        "notional_value": 12206
+        "notional_value": 15700
     },
     {
-        "ticker": "QQQ",
+        "ticker": "QUAL",
         "action": "buy",
-        "notional_value": 7847
+        "notional_value": 10460
+    },
+    {
+        "ticker": "XLF",
+        "action": "buy",
+        "notional_value": 6975
     },
     {
         "ticker": "MSFT",
         "action": "buy",
-        "notional_value": 6103
+        "notional_value": 6975
     },
     {
-        "ticker": "NVDA",
+        "ticker": "QQQ",
         "action": "buy",
-        "notional_value": 6103
+        "notional_value": 4360
     },
     {
-        "ticker": "AMZN",
+        "ticker": "IAU",
         "action": "buy",
-        "notional_value": 4359
-    },
-    {
-        "ticker": "MU",
-        "action": "buy",
-        "notional_value": 3487
-    },
-    {
-        "ticker": "PLTR",
-        "action": "buy",
-        "notional_value": 3487
-    },
-    {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 10462
+        "notional_value": 8720
     },
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 5231
+        "notional_value": 5230
     },
     {
         "ticker": "VGK",
         "action": "buy",
-        "notional_value": 5231
-    },
-    {
-        "ticker": "EWA",
-        "action": "buy",
-        "notional_value": 4359
-    },
-    {
-        "ticker": "EWC",
-        "action": "buy",
-        "notional_value": 4359
-    },
-    {
-        "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 4359
-    },
-    {
-        "ticker": "SCHD",
-        "action": "buy",
-        "notional_value": 4359
+        "notional_value": 4360
     }
 ]
