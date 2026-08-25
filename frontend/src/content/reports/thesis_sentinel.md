@@ -1,37 +1,36 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-08-24"
+date: "2026-08-25"
 ---
 
-# Thesis Sentinel — Daily Brief (2026-08-24)
+# Thesis Sentinel — Daily Brief (2026-08-25)
 
 ## 1. Tripwire Status
 
-| Tripwire | Signal | Threshold | Today's Reading | Status |
-|---|---|---|---|---|
-| Carry unwind | VIX/VIX3M | >1.0 | 0.737 (15.13/20.54); 5d median 0.858 | CLEAR |
-| Credit cracks | HYG/LQD 63d rel-mom | < -2% | +2.04% | CLEAR |
-| Breadth break | Canary (EWA, TLT) | both negative | EWA +5.97%, TLT -1.61% (half-defensive, only 1 negative) | CLEAR (watch) |
-| Trend break | SPY vs 200d SMA (month-end) | close < 200dma | 765.72 vs 704.98 (+7.82%) | CLEAR |
-| Oil/commodity shock | XLE leadership vs SPY | sustained leadership | XLE >sma20>sma50>sma200, mom +6.74%, RSI 71.8; regime flags "commodities_strong_defensive" | **FIRED (watch)** |
-| AI capex turn | Hyperscaler FY27 guidance | any cut | No guidance news; NVDA reports Wed 8/26 | CLEAR / pending |
-| Carry stress | USDJPY | rapid <140 | Not in dataset today | NO DATA |
+| Tripwire | Signal (today) | Threshold | Status |
+|---|---|---|---|
+| Carry unwind | VIX/VIX3M 5d median = 0.858 | >1.0 (backwardation) | **CLEAR** |
+| Credit cracks | HYG/LQD 63d rel-mom = +2.08% | < -2% | **CLEAR** |
+| Breadth break | Canary: EWA +5.37%, TLT -1.18% | both negative | **CLEAR** (half_defensive — 1 of 2 negative) |
+| Trend break | SPY 44.8 vs SMA200 41.55 (+7.82%) | monthly close < 200d | **CLEAR** |
+| Oil shock | XLE momentum +8.14%, RSI 67.4, strong uptrend | sustained leadership vs SPY | **WATCH** — elevated but not confirmed sustained; oil itself fell today (Iran sanctions "shrugged off") |
+| AI capex turn | No FY27 guidance issued yet | any capex cut | **CLEAR** (NVDA reports tomorrow 8/26 AMC — key date) |
+| Carry stress (USDJPY) | Not in dataset; UUP momentum -2.24%, neutral trend | rapid <140 | **NO DATA** — dollar stable, no yen signal available |
 
-Rules govern: slow_channel=risk_on, fast_channel=clear, credit=clear, canary=half_defensive — all mandates remain SLEEVE_INVESTED.
+Rules govern: slow_channel=risk_on, fast_channel=clear, credit=clear, canary=half_defensive. No contradiction with headlines today.
 
 ## 2. Marker Watch
-- **BoJ guidance:** No news today.
-- **CPI:** No new print; only rhetoric — Guardian/NYT/Axios report "many Fed officials" want hikes if inflation stays high ahead of Jackson Hole (Warsh's debut).
-- **SpaceX vs $135:** No news today.
-- **Hyperscaler capex:** No guidance yet; NVDA earnings Wed 8/26 is the next real test.
-- **Hormuz:** Active but not closed — Houthi missile struck a Bahri VLCC; TotalEnergies CEO says Hormuz oil flow "profitable despite discount" (panic "overblown"); oil actually **slipped ~2%** into expected Iran sanctions ("Economic D-Day"), a bearish-oil/geopolitical-risk divergence.
+- **BoJ guidance**: No news today.
+- **CPI prints**: No new CPI data; but three separate Fed-Collins headlines (WSJ/Reuters/Bloomberg) reiterate "rates may need to rise absent inflation progress" — hawkish tone, not a print.
+- **SpaceX vs $135**: No news.
+- **Hyperscaler capex guidance**: No guidance yet — NVDA earnings due tomorrow (8/26 AMC), the actual test.
+- **Hormuz**: Mixed — oil at one-week low, "investors shrug off Iran sanctions" (Express Tribune, grafa.com), but India's Hormuz shipping-cost surge and TotalEnergies still routing discounted crude through the strait (Reuters) show physical stress persists even as price reaction fades.
 
-## 3. Delta vs Yesterday
-- New physical incident (VLCC struck) but oil price fell — supply-fear/price divergence, not escalation-confirming.
-- Gold (GLD RSI 71.2, +13.8% mom) and Silver (SLV RSI 66.8, +19.3% mom) extended sharply — "commodities_strong_defensive" flag newly prominent in regime read.
-- 10Y yield (^TNX) at 4.74%, near cycle highs; TLT in downtrend — rate pressure building into Jackson Hole.
-- Fed hawkish rhetoric volume increased (5+ headlines) ahead of Warsh's Friday speech — a new near-term catalyst, not yet a signal move.
-- VIX intraday spiked to 15.91 (Barron's) but closed lower at 15.13 — no follow-through.
+## 3. Delta vs. Yesterday
+- VIX ticked down to 15.85 (falling trend, below both SMA20 and SMA50) — vol compression continuing.
+- Oil reversed lower after Monday's sanctions-driven spike; XLE still up on 20/50/200-day trend despite the pullback.
+- Gold (GLD) at $426.69, RSI 72.5 — overbought, near 3-month highs on dollar weakness/Treasury buyback chatter, not tripwire-relevant but consistent with inflation-hedge thesis (Factor 4).
+- Canary remains half_defensive (TLT negative momentum) — unchanged in state but a soft signal of duration weakness ahead of Warsh's Jackson Hole speech Friday.
 
 ## 4. Scenario Pressure
-Evidence is mixed but leans **Scenario A (grind-with-violence)**: equities still trend-confirmed risk-on, credit/VIX-term-structure clear, but gold/silver/XLE strength plus rising 10Y yields are consistent with the thesis's "inflation-tolerant regime" background tilt — a soft nod toward **B** if Warsh sounds hawkish or capex guidance disappoints this week. Hormuz remains a live, untimeable tail (both directions) per thesis — no directional trade warranted. **Rules currently govern: stay invested, no override.**
+Today's evidence leans toward **Scenario A (grind-with-violence)**: VIX low/falling, SPY comfortably above 200dma, credit clear, oil shock fading. Fed-Collins hawkish repetition + gold's overbought strong-uptrend is a soft, non-tripwire nudge toward the **B inflation-sticky** narrative — watch if Warsh's Friday Jackson Hole speech or NVDA's Wednesday capex guidance turns that nudge into confirmation. No tripwires fired; weights unchanged pending monthly review.
