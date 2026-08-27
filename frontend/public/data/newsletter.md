@@ -1,4 +1,4 @@
-# AlphaOracle Daily - 2026-08-26
+# AlphaOracle Daily - 2026-08-27
 
 ## Signals (rules govern; everything below is commentary)
 
@@ -17,76 +17,83 @@
 
 ## 1. Tripwire Status
 
-| Tripwire | Signal | Today's Reading | Status |
-|---|---|---|---|
-| Carry unwind | ^VIX/^VIX3M (5d median) | 0.858 (as of 7/17) | CLEAR (<1.0) |
-| Credit cracks | HYG/LQD 63d relmom | +1.76% | CLEAR (>-2%) |
-| Breadth break | Canary 13612W (EWA, TLT) | EWA +6.03%, TLT -0.63% — only 1 of 2 negative | CLEAR (rule state = half_defensive, not full defensive) |
-| Trend break | SPY vs 200d SMA (monthly close) | 765.91 vs 705.92 (+8.5%) | CLEAR |
-| Oil shock | XLE momentum vs SPY | XLE momentum +7.8%, "strong_uptrend," regime tags commodities "strong_defensive" | WATCH — elevated despite today's Hormuz de-escalation selloff in crude |
-| AI capex turn | Hyperscaler FY27 guidance | No confirmed cut; NVDA reports after close today | PENDING — key catalyst tonight |
-| Carry stress | USDJPY <140 | Not in today's dataset | N/A (untracked this cycle) |
+| Tripwire | Signal | Threshold | Today's Reading | Status |
+|---|---|---|---|---|
+| Carry unwind | VIX/VIX3M (5d median) | >1.0 | 0.858 | CLEAR |
+| Credit cracks | HYG/LQD 63d rel-mom | <-2% | +1.76% | CLEAR |
+| Breadth break | Canary (EWA, TLT) | both negative | EWA +6.03%, TLT -0.63% (1 of 2 neg) | CLEAR (half_defensive, not full) |
+| Trend break | SPY vs 200d SMA (monthly close) | close < 200dma | 765.91 vs 705.92 (+8.5%) | CLEAR |
+| Oil shock | XLE momentum vs SPY, sustained | leadership | XLE +7.8% mom, but oil down 3 straight days on Hormuz optimism | CLEAR / fading |
+| AI capex turn | Hyperscaler FY27 guidance | any cut | NVDA guides Q3 ~$108B (above est.), Anthropic +$45B Nscale deal | CLEAR |
+| Carry stress | USDJPY | rapid <140 | not in dataset; UUP neutral, mom -2.24 | NO SIGNAL (untracked today) |
 
-No signal contradicts the rules; slow/fast/credit/canary all read risk-on-to-neutral. Rules govern positioning — no override warranted.
+All rule-governed tripwires CLEAR. Canary remains half_defensive (TLT negative) per authoritative signal — consistent with mandates: P/Y_core sleeves stay INVESTED.
 
 ## 2. Marker Watch
-- **BoJ guidance:** No news today.
-- **CPI/inflation:** Core PCE +3.3% y/y (July), unchanged from prior — sticky but below the 3.5% cut-line; only one qualifying print, not the "two consecutive" needed to move B to 20%.
-- **SpaceX vs $135:** No news today.
-- **Hyperscaler capex:** No guidance cut reported; NVDA earnings tonight is the live catalyst (market explicitly "holding pattern" ahead of it per multiple wires).
-- **Hormuz:** De-escalating — Iran/Oman agree temporary route, Trump says mines cleared, crude at 2-week low (~$80). Reduces near-term scenario-C oil shock probability mechanically, though headline risk remains binary.
+- **BoJ guidance**: No news.
+- **CPI/PCE**: Core PCE +3.3% y/y July (CNBC) — sticky, above target; Reuters flags Fed "a bit more likely to hike"; CFO Dive counters "room to hold." Conflicting headlines, no policy action yet.
+- **SpaceX vs $135**: No news.
+- **Hyperscaler capex**: NVDA Q2 revenue $96.2B (2x YoY), Q3 guide ~$108B — no deceleration signal; Anthropic-Nscale $45B compute deal reinforces capex durability.
+- **Hormuz**: Iran-Oman "temporary route" agreement; oil down 3rd consecutive day, Brent optimism building — de-escalation, not closure.
 
-## 3. Delta vs. Yesterday
-Meaningful shift in **policy narrative**, not in rule signals: multiple headlines (Collins, Warsh, Schnabel/ECB) now frame the debate as rate-**hike** risk rather than the thesis's original "Fed cornered/on hold" framing — a change worth flagging since it cuts against the "negative real-rate drift favors gold" standing tilt if hikes actually materialize. VIX ticked up modestly pre-NVDA/PCE ("fear gauge rises... up 1.8%") but remains at 15.45, well inside normal range. Oil continues to unwind Hormuz risk premium (second consecutive down day). Net: geopolitical tail risk easing, monetary-policy tail risk rising slightly — signals haven't moved.
+## 3. Delta (vs. yesterday)
+- Canary flipped to **half_defensive** (TLT negative momentum) — new since prior read, but EWA still positive so no full defensive trigger.
+- Inflation narrative bifurcated: sticky core PCE (3.3%) + Reuters hike-bias headline vs. CFO Dive hold-bias headline — genuine market uncertainty, not yet resolved by hard signals (TNX flat at 4.64, ^IRX flat).
+- Oil/Hormuz risk premium **easing** (3-day decline) — modest reduction in war-shock tail vs. prior sessions.
+- No hyperscaler capex guidance cut — Thesis marker #4 remains unfired; NVDA beat argues against near-term AI-capex deceleration.
 
 ## 4. Scenario Pressure
-Evidence leans **toward Scenario A** (grind-with-violence): credit/breadth/trend all clear, Hormuz premium unwinding, VIX low. However, sticky core PCE + rising hawkish-Fed rhetoric + pre-NVDA VIX uptick + XLE's still-strong momentum despite falling oil are latent **B-watch** items — a hawkish Fed surprise at Jackson Hole or a soft NVDA/capex print tonight could tip sentiment fast. No tripwire fired; weights unchanged pending monthly review.
+Evidence today leans mildly toward **A (grind-with-violence continuing)**: risk-on signals intact (slow channel risk_on, credit clear, fast channel clear), NVDA beat removes near-term capex-cut fear, Hormuz de-escalating reduces oil-shock tail. Counterweight: sticky core PCE + mixed Fed-hike headlines keep the "cornered policy" factor (thesis factor 4, negative real rates favoring gold/TLT-suspect) alive — GLD/IAU technicals (RSI 73, extended) reflect this tension but do not by themselves confirm scenario B. **No tripwires fired; official weights (A50/B30/C20) unchanged.** Where signals and headlines diverge (Reuters hike-bias vs. rule-based "clear" regime), rules govern positioning.
 
 ## Portfolio Manager Synthesis
 
-# Portfolio Construction Analysis — August 26, 2026
+# Portfolio Manager Review — 2026-08-26
 
-## Context: Fresh Capital Deployment
+## Context Synthesis
 
-The portfolio currently sits at **100% cash ($87,184.98)**. This is not a rebalance of an existing book — it's an initial deployment decision on a day with unusually concentrated event risk (NVDA earnings after the close, PCE printing hot at 3.3% core, Jackson Hole imminent, Fed Chair Warsh under pressure). I am weighing three analyst inputs plus the authoritative rule-based signals and the standing investment thesis.
+We are deploying from a **100% cash starting position ($87,184.98)** — this is an initial build, not a trim of legacy exposure. That changes the calculus from the analyst reports (which implicitly assumed an existing book to de-risk): there is nothing to sell, only capital to allocate thoughtfully into a regime that is genuinely mixed-signal.
 
-## Synthesizing the Debate
+**Where the three analysts agree (weight heavily):**
+- Sticky inflation (core PCE 3.3% y/y) + a policy-cornered Fed is a real, dateable near-term catalyst (Jackson Hole this week, FOMC Sept 16-17).
+- Gold's uptrend is structurally supported (debasement trade, central bank buying, negative real-rate drift) — all three flag GLD favorably, consistent with our house thesis ("prefer GLD/cash over TLT for defense").
+- TLT is *not* a reliable hedge in this regime (thesis explicitly says so; canary signal confirms with TLT as the negative momentum asset). I will not build core duration exposure.
+- Leveraged products (TQQQ/UPRO/SSO/TMF) are inappropriate to initiate into given elevated gap-risk scenarios (B/C = 50% probability in our thesis) — Risk Manager is correct here, and I agree with avoiding new leveraged entries.
+- Nvidia's beat was strong but the **capex guidance trajectory**, not the beat, is the actual tripwire for scenario B (slow bear). We should size AI-chip exposure moderately, not aggressively, until Q3/Q4 hyperscaler capex commentary confirms deceleration or continuation.
 
-**Where all three analysts agree:**
-- Regime is quantitatively "Bull Quiet" / risk_on (slow_channel risk_on, fast_channel clear, credit clear) — mandates are `SLEEVE_INVESTED`. This argues against sitting in cash indefinitely.
-- Canary is `half_defensive` (TLT negative momentum) — the thesis is explicit that **"TLT-as-hedge remains suspect"** (2022 lesson) and Fed policy is "cornered" (can't cut into 3.3% core PCE, can't hike into a fragile economy). **I will not buy TLT/TMF.**
-- Commodities signal is `commodities_strong_defensive` — GLD/SLV/XLE all in strong uptrends, which is a genuine inflation/hedge signal, not noise. Thesis explicitly favors gold/energy over duration.
-- Narrow breadth (top-10 = 41% of S&P) is a real risk — thesis calls for international/factor diversification as an underpriced hedge.
+**Where I push back:**
+- The Risk Manager's call to buy protective SPY/QQQ puts and avoid all CSPs is reasonable directionally, but **irrelevant to this task** — the execution layer is equity-only; options are for idea generation only. I will express the same defensive intent through position **sizing and cash retention**, not derivatives.
+- The Technical Analyst's tactical 2-5 day bounce trades (AVGO, WDC, MTZ, INTC short) are too short-horizon and noisy for a portfolio-construction decision at this cadence. I will take the *thematically* sound ones (AVGO as a quality "shovel-seller" with a genuinely oversold RSI ~35 and above 200dma) but skip the pure mean-reversion scalps (WDC, MTZ, INTC short) — not appropriate position types for this mandate.
+- The Macro Strategist's "trim NVDA/MSFT by 15-20%" doesn't apply since we hold none yet; instead I will *initiate* modest, not maximal, positions in mega-cap AI/quality names, leaving room to add if capex guidance confirms durability.
 
-**Where I overrule/temper the Risk Manager:** The Risk Manager's report reads like a *trim* playbook for an already-invested book, but we hold no positions to trim (no TLT, no EWC, no WDC, no leveraged ETFs currently held). Its core, translatable insight — avoid long duration, avoid leveraged 3x products, avoid adding to fragile semis into a binary NVDA print, keep a gap-risk buffer — I fully adopt. I will **not** initiate WDC (explicit new Iran-sanctions exposure flagged), EWC (50% auto tariffs), or any 3x leveraged product (TQQQ/UPRO/SSO/TMF) on day one.
+**Signal read-through:**
+- `slow_channel = risk_on` (SPY 200dma +7.8%) → P/Y core sleeves should be invested, not sitting in cash.
+- `fast_channel = clear`, `credit = clear` → no imminent crash-panic signal; supports being invested now rather than waiting.
+- `canary = half_defensive` (TLT negative, EWA positive) → satellite/tactical sleeve should be roughly balanced offense/defense — I interpret this as holding a meaningful cash + hard-asset (gold) buffer alongside growth exposure, not full risk-on.
+- Regime = Bull Quiet with `commodities_strong_defensive` (gold+silver+energy all "strong positive") → reinforces gold/energy weight.
 
-**Technical Analyst's read:** Core beta (SPY/VOO/QQQ/IWM/VTI) is in a *short-term pullback within a longer uptrend* (below 20/50 SMA, negative MACD histogram, but still above rising 200 SMA) — this is a reasonable entry zone, not a breakdown. GLD/IAU are overbought (RSI 73+), so I'm sizing gold moderately rather than maximally. Weak semis (INTC, AVGO, CRWD) show broken short-term trends — I am avoiding new single-name entries there, especially with NVDA's print tonight likely to whip the entire complex.
+**Net conclusion:** Deploy roughly 70% of cash into a diversified, quality-tilted, gold/energy-hedged equity book; retain ~30% cash as dry powder ahead of Jackson Hole/FOMC and given narrow breadth + stretched valuations (SPY ~21x forward). This satisfies "SLEEVE_INVESTED" mandates while respecting the half-defensive canary and the thesis's gap-risk awareness.
 
-**Macro Strategist's view** on AI infrastructure (power/utilities/memory) beneficiaries and international diversification is incorporated at moderate satellite weights rather than concentrated bets.
+---
 
-## Decision: Build a Diversified Core with Real-Asset Hedges, Hold Back a Real Cash Buffer
+## Allocation Plan
 
-Given (a) mandates say invested, (b) thesis says defensive-leaning/gap-risk aware, (c) tonight's NVDA print and this week's Jackson Hole are binary/high-gamma events, I am deploying ~76% of capital into a diversified, thesis-aligned core and **holding ~24% in cash** as dry powder — consistent with "gap-risk aware" without contradicting the risk-on mandate signals. I am explicitly avoiding adding single-name AI/semi risk (beyond small structural positions in TSM/MU) ahead of the NVDA print, and using options only as an idea (not executed, since the execution layer is equity-only).
-
-| Action (Buy/Sell/Hold) | Ticker/Asset | Conviction | Timeframe | Justification |
+| Action (Buy/Sell/Hold) | Ticker/Asset | Conviction Level | Timeframe | Justification |
 |---|---|---|---|---|
-| Buy | VOO | High | Core/multi-month | Core S&P beta; slow_channel risk_on; short-term pullback = entry within uptrend (SMA200 rising, price +8% above) |
-| Buy | QQQ | Medium | Core/multi-month | Tech beta but sized modestly given narrow breadth risk and NVDA event risk tonight; short-term pullback, long-term uptrend intact |
-| Buy | IWM | Medium | Core/multi-month | Breadth diversifier vs. top-10 concentration; solid uptrend, reasonable entry |
-| Buy | VXUS | Medium | Core/multi-month | Non-US diversification underpriced per thesis; RSI 61, clean uptrend |
-| Buy | VGK | Medium | Core/3-6mo | Europe strength, Halloween-effect seasonality approaching, earnings resilience per theme news |
-| Buy | QUAL | Medium | Core/multi-month | Quality factor tilt for narrow-breadth protection; clean uptrend |
-| Buy | SCHD | Medium | Core/multi-month | Dividend/quality defensive tilt, strong uptrend, near overbought but structurally sound |
-| Buy | GLD | High | Tactical/structural | Thesis explicitly favors gold over duration; inflation-tolerant regime, negative real-rate drift, strong momentum (sized moderately given RSI 73 overbought) |
-| Buy | XLE | High | Tactical/structural | Energy as geopolitical/inflation hedge per thesis; strong uptrend, RSI 59 (less extended than gold) |
-| Buy | CEG | Medium | Satellite/structural | AI power-demand structural theme (nuclear); raised guidance, solid uptrend |
-| Buy | MU | Medium | Satellite | AI memory/HBM leader; already reported strong results, positive MACD momentum, avoids pre-earnings binary risk of NVDA itself |
-| Buy | TSM | Low/Medium | Satellite | Foundry moat thesis (better risk/reward than NVDA direct bet); consolidating within long-term uptrend |
-| Hold (cash) | CASH | High | Tactical | ~24% reserved as gap-risk buffer ahead of NVDA earnings/Jackson Hole; dry powder to add post-clarity |
-| Avoid | TLT/TMF | High | — | Thesis: duration hedge suspect in this inflation/cornered-Fed regime; canary negative |
-| Avoid | TQQQ/UPRO/SSO | High | — | Leveraged 3x unsuitable given gap-risk-aware posture into binary catalysts |
-| Avoid | WDC, EWC | High | — | Direct sanctions/tariff exposure flagged |
-| Avoid | INTC, AVGO, CRWD (new buys) | Medium | — | Broken short-term technicals + AI-complex spillover risk from NVDA print tonight |
+| Buy | VTI | High | Core (multi-month) | Slow channel = risk_on (+7.8% above SMA200); broad market core satisfies P_sleeve mandate; cheap (0.03% fee) diversified base. |
+| Buy | QUAL | Medium | Core (multi-month) | Quality factor tilt fits "narrow breadth, stretched valuation" environment — quality has historically outperformed late-cycle; RSI 56, healthy uptrend without extreme overbought signal. |
+| Buy | SCHD | Medium | Core (multi-month) | Dividend growth/quality income tilt; defensive complement to growth exposure, aligned with sticky-inflation/real-asset preference in thesis. |
+| Buy | VGK | Medium | 3-6 months | Diversification away from concentrated US top-10 (41% of cap); cheaper valuations, debasement/weak-USD tailwind, strong uptrend (RSI 66, above all SMAs). |
+| Buy | GLD | High | Core hedge (structural) | Thesis explicitly favors gold over TLT as inflation/debasement hedge; central bank buying, negative real rates, strong technical uptrend (RSI 73 overbought but MACD confirms no divergence yet — sized moderately to manage pullback risk). |
+| Buy | XLE | Medium | 1-3 months tactical | Geopolitical/inflation hedge per thesis; Hormuz de-escalation caps near-term upside (hence moderate not large size) but XLE remains in strong uptrend (RSI 59, +7.6% above 50dma) and re-escalation risk (~35% per macro view) is not priced. |
+| Buy | MSFT | Medium-High | 3-6 months | Highest-quality AI hyperscaler; clean technical breakout (RSI 66, MACD positive, no divergence); "shovel sellers" thesis — AI infra buildout is a physical necessity independent of app-layer hype. |
+| Buy | NVDA | Medium | 3-6 months | Post-earnings beat-and-raise (Q2 rev $96.2B, FY27 guide ~$108B) validates near-term capex cycle; sized moderately (not maximal) because capex guidance deceleration is our key tripwire for scenario B — will add or trim based on hyperscaler capex commentary through Q3/Q4. |
+| Buy | AVGO | Medium | 1-3 months | Genuinely oversold (RSI 34.8, above 200dma) unlike pure momentum names; custom AI silicon "shovel seller" thesis; technical setup offers real reversion room without being a scalp-only trade. |
+| Buy | CRWD | Medium | 3-6 months | Beat-and-raise with ARR growth upgrade (34% vs 27.7% prior guide); fits "SaaS-apocalypse-is-overstated" thesis — AI-native security with real enterprise stickiness, a good satellite/offense complement. |
+| Hold (as cash) | CASH | High | Ongoing | ~30% retained as dry powder ahead of Jackson Hole (this week) and FOMC (Sept 16-17); consistent with canary "half_defensive" reading and thesis's gap-risk-aware posture; funds tranche-based deployment if capex guidance or Fed messaging clarifies. |
+| Avoid (no position) | TLT / TMF | — | — | Thesis + canary both flag TLT as an unreliable hedge in this inflation regime (2022 lesson); explicitly not initiating duration exposure. |
+| Avoid (no position) | TQQQ / UPRO / SSO | — | — | Leveraged products inappropriate to initiate given 50% combined probability of "grind-with-violence"/"slow bear" scenarios and gap-risk from BoJ/Hormuz/capex triggers. |
+
+---
 
 ## Paper-Account Attribution
 
