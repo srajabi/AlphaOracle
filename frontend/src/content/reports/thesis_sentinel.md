@@ -5,30 +5,30 @@ date: "2026-08-28"
 
 Here is your daily Thesis Sentinel brief:
 
-**Tripwire Status**
+**1. Tripwire Status**
 
-| Tripwire                   | Reading                                         | Status  |
-| :------------------------- | :---------------------------------------------- | :------ |
-| Carry unwind (^VIX/^VIX3M) | VIX/VIX3M median: 0.855 (< 1.0)                 | CLEAR   |
-| Credit cracks (HYG/LQD)    | HYG/LQD 63d rel-mom: 0.0219 (< -2%)             | CLEAR   |
-| Breadth break (Canary)     | Canary state: half_defensive (TLT negative only) | CLEAR   |
-| Trend break (SPY < 200dma) | SPY current: 771.10 (SMA200: 706.96)            | CLEAR   |
-| Oil shock (XLE leadership) | XLE trend: strong_uptrend (XLE momentum: 5.65)  | FIRED   |
-| AI capex turn (FY27 cut)   | Nvidia guidance: AI boom intact, 70% revenue growth for FY28 | CLEAR   |
-| Carry stress (USDJPY)      | No data in context                              | CLEAR   |
+| Tripwire         | Thesis Threshold                           | Today's Reading                 | Status (FIRED/CLEAR) |
+| :--------------- | :----------------------------------------- | :------------------------------ | :------------------- |
+| Carry unwind     | ^VIX/^VIX3M > 1.0 (backwardation)          | VIX/VIX3M 5d median: 0.858      | CLEAR                |
+| Credit cracks    | HYG/LQD 63d rel-mom < -2%                  | HYG/LQD 63d rel-mom: 0.0219     | CLEAR                |
+| Breadth break    | canary 13612W (EWA,TLT) both negative      | Negative canaries: TLT only (EWA positive) | CLEAR                |
+| Trend break      | SPY < 200d SMA (month-end)                 | SPY Close: 771.10 > 200d SMA: 706.96 | CLEAR                |
+| Oil shock        | XLE momentum vs SPY sustained leadership   | XLE strong_uptrend, strong_positive signal | FIRED                |
+| AI capex turn    | hyperscaler guidance any FY27 capex cut    | Nvidia Q2 blowout, strong Q3 outlook; no FY27 cuts reported | CLEAR                |
+| Carry stress     | USDJPY rapid < 140 move                    | No specific USDJPY data; Dollar strength: neutral | CLEAR                |
 
-**Marker Watch**
+**2. Marker Watch**
 
-*   **BoJ June meeting**: No new news on BoJ guidance or USDJPY movement related to the June meeting.
-*   **May-July CPI prints**: No new CPI data to indicate two consecutive prints below 3.5%.
-*   **SpaceX IPO first-month performance**: No new news on SpaceX IPO performance against its issue price since mid-July.
-*   **Q2 earnings hyperscaler capex guidance**: Nvidia (NVDA) reported strong Q2 earnings and guidance, explicitly *not* signaling an FY27 capex cut, but rather continued AI boom into 2028.
-*   **Hormuz**: No news of a "full closure week+" of the Strait of Hormuz, but oil prices are rebounding on Trump's rejection of the Iran framework, maintaining geopolitical supply shock risks.
+*   **BoJ June meeting (guidance hawkish AND USDJPY < 145 within a week):** No new updates specific to this past event.
+*   **May-July CPI prints (two consecutive < 3.5%):** News indicates July inflation data was "higher than expected"; condition not met.
+*   **SpaceX IPO first-month performance (breaks issue price $135):** No new updates on performance against IPO price after mid-July.
+*   **Q2 earnings hyperscaler capex guidance (any FY27 capex cut):** Nvidia reported strong Q2 earnings and an upbeat Q3 outlook, with no FY27 capex cuts.
+*   **Hormuz (full closure week+):** News of a tanker struck and oil edging up indicates heightened tension, but no confirmed "full closure week+" yet.
 
-**Delta**
+**3. Delta**
 
-Today's news highlights increased geopolitical risk and inflationary pressures. Oil prices rebounded 2% as Trump rejected the June Iran framework, directly impacting energy geopolitics and triggering the 'Oil shock' tripwire. Multiple Fed officials issued inflation warnings at Jackson Hole, reinforcing the thesis of a "cornered" Fed and sticky CPI. A new US-Canada trade war has intensified with fresh 50% tariffs. Counterbalancing these, Nvidia delivered a blowout Q2 earnings report with strong guidance, confirming the AI capex boom remains intact for now and driving tech stock rallies. Intermarket signals show a continued "Bull Quiet" regime and "risk_on" sentiment in equities, but with a notable "commodities_strong_defensive" signal (gold leading), suggesting underlying inflation/risk-off concerns amidst equity strength.
+The "Oil shock" tripwire has fired due to XLE exhibiting a strong uptrend and positive signal amidst commodity strength and geopolitical headlines regarding Iran and the Strait of Hormuz. The "canary" signal remains "half_defensive" due to TLT. Nvidia's Q2 results were strong, delaying the "AI capex turn" marker, but also serving as a "textbook euphoria marker."
 
-**Scenario Pressure**
+**4. Scenario Pressure**
 
-The renewed geopolitical tension surrounding Iran and oil, coupled with persistent Fed inflation warnings and escalating trade wars, adds pressure towards **Scenario B (Slow bear)** due to sticky inflation and increasing risk-off elements. However, the strong performance and outlook from Nvidia, contributing to a "Bull Quiet" regime and "risk_on" sentiment, continues to anchor forces towards **Scenario A (Grind-with-violence)**, albeit with a heightened potential for deeper air pockets. The explicit contradiction between "risk_on" equities and "commodities_strong_defensive" indicates underlying market tension where the rules, not headlines, will govern positioning.
+The firing of the "Oil shock" tripwire and increasing geopolitical tension around the Strait of Hormuz point towards higher inflation and risk-off sentiment, increasing pressure towards **Scenario B (Slow bear)** or sustained volatility within **Scenario A (Grind-with-violence)**. Nvidia's strong performance, while positive for AI sentiment, also aligns with the "textbook euphoria marker" described in the thesis for Scenario B. The "Bull Quiet" market regime and "rates declining" signal are in tension with the "commodities strong defensive" and active oil shock.
