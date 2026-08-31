@@ -2,36 +2,21 @@
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 30000
     },
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 5000
-    },
-    {
-        "ticker": "NVDA",
-        "action": "buy",
-        "notional_value": 7000
-    },
-    {
-        "ticker": "TSM",
-        "action": "buy",
-        "notional_value": 7000
-    },
-    {
-        "ticker": "CRWD",
-        "action": "buy",
-        "notional_value": 5000
+        "notional_value": 20000
     },
     {
         "ticker": "QUAL",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 15000
     },
     {
-        "ticker": "VXUS",
+        "ticker": "XLP",
         "action": "buy",
-        "notional_value": 6000
+        "notional_value": 15000
     }
 ]
