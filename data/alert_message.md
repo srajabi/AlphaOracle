@@ -1,4 +1,4 @@
-# AlphaOracle heartbeat - 2026-08-24 21:00 UTC
+# AlphaOracle heartbeat - 2026-09-01 00:02 UTC
 
 No signal changes in the last 7 days. This message exists so that silence stays meaningful.
 
@@ -14,4 +14,4 @@ No signal changes in the last 7 days. This message exists so that silence stays 
 | VIX term structure | `clear` |
 | Trend (monthly 200dma) | `risk_on` |
 
-Signals generated 2026-08-24T21:00:40.979905+00:00. Paper trading research, not advice.
+Signals generated 2026-09-01T00:02:16.269149+00:00. Paper trading research, not advice.
