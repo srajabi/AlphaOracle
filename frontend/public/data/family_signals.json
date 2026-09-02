@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-09-01T22:46:23.559708+00:00",
+  "generated_at_utc": "2026-09-02T18:11:30.035676+00:00",
   "ips": "claude/ips_case_study.md",
   "signals": {
     "slow_channel": {
       "state": "risk_on",
-      "as_of_month_end": "2026-07-31",
-      "price": 44.8,
-      "sma200": 41.55,
-      "distance_pct": 7.82
+      "as_of_month_end": "2026-08-31",
+      "price": 45.63,
+      "sma200": 42.14,
+      "distance_pct": 8.29
     },
     "fast_channel": {
       "state": "clear",
@@ -16,7 +16,7 @@
     },
     "credit": {
       "state": "clear",
-      "hyg_lqd_63d_relmom": 0.0258
+      "hyg_lqd_63d_relmom": 0.028
     },
     "canary": {
       "state": "half_defensive",
@@ -24,8 +24,8 @@
         "TLT"
       ],
       "momentum": {
-        "EWA": 0.0218,
-        "TLT": -0.0128
+        "EWA": 0.0217,
+        "TLT": -0.0121
       }
     }
   },
