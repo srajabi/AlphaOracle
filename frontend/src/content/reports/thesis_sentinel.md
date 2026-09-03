@@ -3,32 +3,32 @@ title: Thesis Sentinel Daily Brief
 date: "2026-09-03"
 ---
 
-## Daily Brief: 2026-09-03
+**Daily Thesis Brief - 2026-09-03**
 
 **1. Tripwire Status**
 
-| Tripwire | Reading Today | Status |
-| :------------------------------ | :--------------------------------------------------------------- | :------- |
-| Carry unwind (^VIX/^VIX3M > 1.0) | Fast Channel: Clear (VIX/VIX3M median: 0.858) | CLEAR |
-| Credit cracks (HYG/LQD < -2%) | Credit: Clear (HYG/LQD 63d rel-mom: 0.0261) | CLEAR |
-| Breadth break (canary both neg) | Canary: Half-Defensive (only TLT negative momentum) | CLEAR |
-| Trend break (SPY < 200d SMA) | SPY close: 765.16; SMA200: 708.78; SPY Trend: Uptrend | CLEAR |
-| Oil shock (XLE momentum vs SPY) | XLE Signal: Strong Positive (driven by Hormuz risks) | FIRED |
-| AI capex turn (FY27 cut) | No explicit FY27 capex cuts from hyperscalers reported | CLEAR |
-| Carry stress (USDJPY rapid < 140) | No USDJPY value; Dollar Strength: Rising (UUP uptrend) | CLEAR |
+| Tripwire                   | Signal (Today's Reading)                      | Status  |
+| :------------------------- | :-------------------------------------------- | :------ |
+| Carry unwind (^VIX/^VIX3M) | VIX/VIX3M ratio: 0.74 (Threshold > 1.0)       | CLEAR   |
+| Credit cracks (HYG/LQD)    | HYG/LQD 63d rel-mom: 0.0262 (Threshold < -2%) | CLEAR   |
+| Breadth break (canary)     | TLT negative; EWA positive (Both negative)    | CLEAR   |
+| Trend break (SPY < 200d SMA)| SPY close: 765.16 > SMA200: 708.78            | CLEAR   |
+| Oil shock (XLE leadership) | XLE trend: Strong Uptrend (Sustained leadership)| **FIRED** |
+| AI capex turn (FY27 cuts)  | No explicit FY27 capex cut guidance reported  | CLEAR   |
+| Carry stress (USDJPY < 140)| Dollar Rising; no USDJPY < 140 reported       | CLEAR   |
 
 **2. Marker Watch**
 
-*   **BoJ June meeting (guidance hawkish AND USDJPY < 145):** No new BoJ guidance today.
-*   **May-July CPI prints (two consecutive < 3.5%):** May CPI 4.2%. No new CPI data available today. Fed's Waller emphasizes reliance on upcoming inflation report.
-*   **SpaceX IPO performance (breaks $135):** No new updates on SpaceX's performance relative to $135 issue price.
-*   **Q2 earnings hyperscaler capex guidance (any FY27 capex cut):** Broadcom reported strong AI demand, no FY27 capex cuts from hyperscalers or major chip suppliers.
-*   **Hormuz (full closure week+):** News indicates "renewed U.S.-Iran fighting" and "deepens Hormuz supply risks", with "shipping via Hormuz dwindles", but not full closure.
+*   **BoJ June meeting (guidance hawkish, USDJPY < 145)**: No new news on the specific outcome or follow-up from the June 15-16 meeting and its impact on USDJPY.
+*   **May-July CPI prints (< 3.5%)**: May CPI was 4.2%; no new CPI prints below 3.5% reported.
+*   **SpaceX IPO first-month performance (breaks $135)**: News indicates SpaceX "reclaims $2 Trillion Market Cap," suggesting performance well above the $135 issue price.
+*   **Q2 hyperscaler capex guidance (any cut)**: News highlights massive long-term data center spending projections (e.g., $31.6T by 2050) but no specific FY27 capex *cuts* announced by hyperscalers.
+*   **Hormuz (full closure week+)**: Tanker attacks and oil jumps reported, indicating ongoing geopolitical supply shocks, but not a "full closure week+".
 
 **3. Delta**
 
-The most material change is the **Market Regime shifting to "Bull Quiet"** from "Transitional (low confidence)". This indicates a stronger risk-on stance with rising dollar and rates. The "Oil shock" tripwire has FIRED due to escalating Hormuz risks. The Canary signal shows a "half_defensive" tilt due to TLT's negative momentum, a slight divergence from the overall bullish regime. Dollar signals are mixed qualitatively, with news indicating "yen jumps against dollar" and "USD/JPY Sinks" conflicting with the systemic "dollar_rising" trend in UUP.
+The "Oil shock" tripwire is now FIRED due to sustained oil price increases and tanker attacks in the Strait of Hormuz. Fed Governor Waller's comments introduced uncertainty regarding rate hikes, leading to lower Treasury yields and a temporary market relief rally, contradicting the "rising_rates" intermarket signal for today. AI infrastructure spending remains a strong theme, with no reported cuts to future capex guidance despite the thesis noting a deceleration in growth rate.
 
 **4. Scenario Pressure**
 
-Today's evidence primarily **supports Scenario A (Grind-with-violence)** due to the shift to a "Bull Quiet" regime and continued positive AI sentiment with no reported capex cuts. However, the firing of the "Oil shock" tripwire increases tail risk, pushing **modestly towards Scenario C (Fast crash)**, while the "half_defensive" canary lends some support to **Scenario B (Slow bear)**. Overall, market sentiment appears more resilient than suggested by geopolitical headlines, but rules govern positioning.
+Today's news, especially the escalation in energy geopolitics and its impact on oil, adds pressure toward **Scenario A (Grind-with-violence)** due to increased inflation risk and episodic volatility. While Fed comments offered some near-term relief on rates, the broader inflationary pressures from energy and the late-cycle euphoria markers from AI capex and IPOs still suggest a vulnerable market structure, supporting periodic sharp corrections within a range-bound environment. The rule-based intermarket indicators show a "Transitional" regime with a "dollar_rising" and "rising_rates" environment (despite today's market reaction to Waller), and "commodities_mixed" with "strong_positive" energy. Our rules govern positioning.
