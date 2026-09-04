@@ -1,57 +1,39 @@
 {
-  "last_updated_utc": "2026-09-03T22:51:13.197819+00:00",
+  "last_updated_utc": "2026-09-04T22:36:02.640076+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 13077
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 13077
+        "notional_value": 25000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "QUAL",
+        "ticker": "GLD",
         "action": "buy",
-        "notional_value": 8718
+        "notional_value": 20000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "XLP",
+        "ticker": "XLF",
         "action": "buy",
-        "notional_value": 8718
+        "notional_value": 15000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "CEG",
+        "ticker": "SPY",
         "action": "buy",
-        "notional_value": 8718
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "EWA",
-        "action": "buy",
-        "notional_value": 4359
+        "notional_value": 15000
       },
       "status": "skipped",
       "reason": "No available buying power."
