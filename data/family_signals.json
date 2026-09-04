@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-03T22:45:32.750261+00:00",
+  "generated_at_utc": "2026-09-04T17:53:13.245773+00:00",
   "ips": "claude/ips_case_study.md",
   "signals": {
     "slow_channel": {
@@ -24,8 +24,8 @@
         "TLT"
       ],
       "momentum": {
-        "EWA": 0.0198,
-        "TLT": -0.0164
+        "EWA": 0.0349,
+        "TLT": -0.0169
       }
     }
   },
