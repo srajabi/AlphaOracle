@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-09-07T19:01:25.311524+00:00",
+  "last_updated_utc": "2026-09-07T23:01:26.290608+00:00",
   "accounts": {
     "dev": {
       "account_id": "dev",
@@ -7,7 +7,7 @@
       "strategy": "Advanced LLM Strategy",
       "frequency": "2x Daily (10 AM & 3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-09-07T19:01:23.738897+00:00",
+      "last_updated_utc": "2026-09-07T23:01:24.524847+00:00",
       "ok": true,
       "error": "",
       "account": {
@@ -25,7 +25,7 @@
       "strategy": "Standard LLM Strategy",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-09-07T19:01:23.990376+00:00",
+      "last_updated_utc": "2026-09-07T23:01:24.819435+00:00",
       "ok": true,
       "error": "",
       "account": {
@@ -228,7 +228,7 @@
       "strategy": "TQQQ Momentum",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-09-07T19:01:24.237124+00:00",
+      "last_updated_utc": "2026-09-07T23:01:25.110060+00:00",
       "ok": true,
       "error": "",
       "account": {
@@ -255,14 +255,14 @@
       "strategy": "Dual Momentum",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-09-07T19:01:24.558819+00:00",
+      "last_updated_utc": "2026-09-07T23:01:25.412584+00:00",
       "ok": true,
       "error": "",
       "account": {
         "status": "ACTIVE",
         "cash": 106393.24,
         "equity": 0,
-        "buying_power": 22326.71,
+        "buying_power": 1518.62,
         "portfolio_value": 106393.24
       },
       "positions": []
@@ -273,14 +273,14 @@
       "strategy": "Sector Rotation",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-09-07T19:01:24.803817+00:00",
+      "last_updated_utc": "2026-09-07T23:01:25.705336+00:00",
       "ok": true,
       "error": "",
       "account": {
         "status": "ACTIVE",
         "cash": -131144.0,
         "equity": 241046.94,
-        "buying_power": 102887.72,
+        "buying_power": 70351.71,
         "portfolio_value": 109902.94
       },
       "positions": [
@@ -308,7 +308,7 @@
       "strategy": "Mean Reversion",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-09-07T19:01:25.057455+00:00",
+      "last_updated_utc": "2026-09-07T23:01:25.996241+00:00",
       "ok": true,
       "error": "",
       "account": {
