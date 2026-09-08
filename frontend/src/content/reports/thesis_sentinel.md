@@ -1,36 +1,34 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-09-04"
+date: "2026-09-08"
 ---
 
-Here is your daily Thesis Sentinel brief:
+Here is your daily brief:
 
-**Daily Brief: 2026-09-04**
+**1. Tripwire Status**
 
-1.  **Tripwire Status**
+| Tripwire                   | Today's Reading                   | Status |
+| :------------------------- | :-------------------------------- | :----- |
+| Carry unwind (^VIX/^VIX3M) | VIX/VIX3M 5d median: 0.858        | CLEAR  |
+| Credit cracks (HYG/LQD)    | HYG/LQD 63d rel-mom: 0.0247       | CLEAR  |
+| Breadth break (canary W)   | TLT negative (-0.0106); EWA positive (0.0379) | CLEAR  |
+| Trend break (SPY < 200d SMA) | Slow channel: risk_on             | CLEAR  |
+| Oil shock (XLE leadership) | XLE signal: strong_positive       | FIRED  |
+| AI capex turn (guidance cut) | No FY27 capex cuts announced      | CLEAR  |
+| Carry stress (USDJPY < 140) | Dollar strength: dollar_rising, uptrend | CLEAR  |
 
-| Tripwire | Today's Reading | Status |
-| :-------------------------- | :------------------------------------------------ | :----- |
-| Carry unwind (^VIX/^VIX3M)  | 0.697 (vs > 1.0)                                | CLEAR  |
-| Credit cracks (HYG/LQD)     | 2.62% (vs < -2%)                                | CLEAR  |
-| Breadth break (Canary EWA/TLT) | EWA +0.0349 (positive), TLT -0.0169 (negative)  | CLEAR  |
-| Trend break (SPY < 200d SMA) | SPY 773.17 > 200d SMA 709.32                    | CLEAR  |
-| Oil shock (XLE momentum)    | XLE momentum strong_positive (11.11%)           | FIRED  |
-| AI capex turn (hyperscaler cuts) | GOOGL: FY26 capex guidance *raised*           | CLEAR  |
-| Carry stress (USDJPY < 140) | No direct USDJPY data; yen rally noted           | CLEAR  |
+**2. Marker Watch**
 
-2.  **Marker Watch**
+*   **BoJ June meeting (guidance)**: No news on BoJ guidance.
+*   **May-July CPI prints** : News indicates "Commodity inflation is hot" and "Inflation expectations high but steady," not consistently < 3.5%.
+*   **SpaceX IPO performance**: No news on $135 line or first-month performance.
+*   **Q2 hyperscaler capex guidance**: News reports long-term AI infrastructure investment projections, but no explicit FY27 capex cuts from hyperscalers. Some regulatory headwinds for data centers noted.
+*   **Hormuz**: Multiple headlines on Iran-backed attacks threatening oil chokepoints and pushing Brent crude toward $100. Not "full closure week+" yet.
 
-*   **BoJ June meeting**: Historical event; news indicates "Recent Yen Rally Puts These 3 ETFs in Focus," suggesting yen strength but no specific USDJPY value or rapid < 140 move confirmed today.
-*   **May-July CPI prints**: No new CPI data for May-July.
-*   **SpaceX IPO first-month performance**: Historical event; no new updates on the $135 line.
-*   **Q2 earnings hyperscaler capex guidance**: Google (GOOGL) reported *raised* FY26 capex guidance, not a cut. Oracle (ORCL) news mentions a "massive, costly buildout" and "$40 billion financing plan," also indicating increased spend.
-*   **Hormuz**: Situation remains "contested" per macro view, but no news of a full closure for a week+.
+**3. Delta**
 
-3.  **Delta**
+The "Oil shock" tripwire is FIRED due to strong positive momentum in XLE, driven by escalating energy geopolitics (Iran-backed attacks, Strait of Hormuz threats) pushing oil prices toward $100. New concerns emerged regarding a U.S.-Canada trade war. Inflation is noted as "hot" in commodities. Meanwhile, strong long-term AI infrastructure investment is projected, though some regional pushback on data centers is appearing.
 
-Today's market data highlighted a "Bull Quiet" regime with "Risk On" sentiment but also "Rising Rates" and "Strong Defensive Commodities" (Gold, Silver, Energy). A strong August jobs report surprised higher, fanning rate hike fears, while the VIX slipped, suggesting easing bond fears. Tesla (TSLA) stock fell amid a federal probe into its Cybercabs. Broadcom (AVGO) fell post-Q3 earnings, and Zscaler (CRWD-related news) slipped on conservative FY27 guidance. Conversely, memory stocks (MU, STX, WDC) rallied, and Bitcoin ETFs saw a significant inflow surge. Energy stocks ended softer, while financials retreated.
+**4. Scenario Pressure**
 
-4.  **Scenario Pressure**
-
-Today's data, particularly the "Bull Quiet" regime, "risk_on" sentiment, and raised AI capex guidance from hyperscalers like Google, suggests continued pressure towards **Scenario A (Grind-with-violence)**. The strong jobs report and rising rates, alongside commodity strength, indicate persistent inflationary undercurrents and potential for episodic volatility within a generally upward-trending market. The lack of capex cuts reduces pressure on a "Slow Bear" (B), and clear fast channel/credit signals keep "Fast Crash" (C) at bay, despite the active "Oil shock" tripwire.
+Today's evidence, particularly the fired "Oil shock" tripwire and escalating geopolitical tensions driving oil prices, puts pressure towards **Scenario A: Grind-with-violence (range-bound with repeated 5-10% air pockets)**. The sticky commodity inflation also maintains pressure towards **Scenario B: Slow bear** by sustaining inflation above the Fed's comfort zone, without immediate signs of AI capex cuts that would accelerate it. No concurrent triggers for a "Fast crash" (Scenario C) are present.
