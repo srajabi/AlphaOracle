@@ -1,32 +1,12 @@
 [
     {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 17400
-    },
-    {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 17400
+        "notional_value": 8718.5
     },
     {
-        "ticker": "XLP",
+        "ticker": "GLD",
         "action": "buy",
-        "notional_value": 8700
-    },
-    {
-        "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 8700
-    },
-    {
-        "ticker": "TLT",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "TMF",
-        "action": "sell",
-        "qty": "all"
+        "notional_value": 8718.5
     }
 ]

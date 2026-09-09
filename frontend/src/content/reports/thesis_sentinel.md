@@ -1,34 +1,34 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-09-08"
+date: "2026-09-09"
 ---
 
-Here is your daily brief:
+**Daily Thesis Sentinel Brief - 2026-09-09**
 
 **1. Tripwire Status**
 
-| Tripwire                   | Today's Reading                   | Status |
-| :------------------------- | :-------------------------------- | :----- |
-| Carry unwind (^VIX/^VIX3M) | VIX/VIX3M 5d median: 0.858        | CLEAR  |
-| Credit cracks (HYG/LQD)    | HYG/LQD 63d rel-mom: 0.0247       | CLEAR  |
-| Breadth break (canary W)   | TLT negative (-0.0106); EWA positive (0.0379) | CLEAR  |
-| Trend break (SPY < 200d SMA) | Slow channel: risk_on             | CLEAR  |
-| Oil shock (XLE leadership) | XLE signal: strong_positive       | FIRED  |
-| AI capex turn (guidance cut) | No FY27 capex cuts announced      | CLEAR  |
-| Carry stress (USDJPY < 140) | Dollar strength: dollar_rising, uptrend | CLEAR  |
+| Tripwire                   | Signal / Threshold                    | Reading                                           | Status |
+| :------------------------- | :------------------------------------ | :------------------------------------------------ | :----- |
+| Carry unwind               | `^VIX/^VIX3M > 1.0`                   | `vix_vix3m_5d_median`: 0.858                      | CLEAR  |
+| Credit cracks              | `HYG/LQD 63d rel-mom < -2%`           | `hyg_lqd_63d_relmom`: 0.0218                      | CLEAR  |
+| Breadth break              | `canary 13612W both negative`         | `canary.state`: half_defensive (TLT negative)     | CLEAR  |
+| Trend break                | `SPY < 200d SMA (month-end)`          | `slow_channel.state`: risk_on (8.29% above SMA200) | CLEAR  |
+| Oil shock                  | `XLE momentum vs SPY sustained leadership` | `xle.signal`: strong_positive (7.63% momentum)    | FIRED  |
+| AI capex turn              | `hyperscaler guidance any FY27 capex cut` | No explicit FY27 capex cut guidance reported.      | CLEAR  |
+| Carry stress               | `USDJPY rapid < 140 move`             | `dollar_strength.trend`: neutral                  | CLEAR  
 
 **2. Marker Watch**
 
-*   **BoJ June meeting (guidance)**: No news on BoJ guidance.
-*   **May-July CPI prints** : News indicates "Commodity inflation is hot" and "Inflation expectations high but steady," not consistently < 3.5%.
-*   **SpaceX IPO performance**: No news on $135 line or first-month performance.
-*   **Q2 hyperscaler capex guidance**: News reports long-term AI infrastructure investment projections, but no explicit FY27 capex cuts from hyperscalers. Some regulatory headwinds for data centers noted.
-*   **Hormuz**: Multiple headlines on Iran-backed attacks threatening oil chokepoints and pushing Brent crude toward $100. Not "full closure week+" yet.
+*   **BoJ June meeting:** No new news on guidance after the June 15-16 expected hike.
+*   **May-July CPI prints:** News indicates Fed rate hike decision hinges on inflation reports in the next two days, following May CPI at 4.2% y/y.
+*   **SpaceX IPO first-month performance:** Marker date (mid-July) passed. No new performance update against $135 issue price.
+*   **Q2 earnings hyperscaler capex guidance:** News highlights "AI Infrastructure Will Cost Trillions More" and "Global AI infrastructure spending could top $31T," suggesting increasing, not cutting, FY27 capex.
+*   **Hormuz: full closure week+:** News reports "U.S.-Iran tanker war escalates" and "Iran and US hit tankers in biggest wave of attacks," but no confirmation of full Strait of Hormuz closure for a week+.
 
 **3. Delta**
 
-The "Oil shock" tripwire is FIRED due to strong positive momentum in XLE, driven by escalating energy geopolitics (Iran-backed attacks, Strait of Hormuz threats) pushing oil prices toward $100. New concerns emerged regarding a U.S.-Canada trade war. Inflation is noted as "hot" in commodities. Meanwhile, strong long-term AI infrastructure investment is projected, though some regional pushback on data centers is appearing.
+Geopolitical tensions have significantly escalated today. Multiple headlines confirm the US-Iran tanker war escalation, with oil prices topping $101 a barrel and XLE momentum strongly positive, firing the 'Oil shock' tripwire. Additionally, Trump escalated a trade war with Canada, imposing import bans. Fed rate hike uncertainty remains a key focus, with two inflation reports due in the next two days. Rising US Treasury yields are also noted.
 
 **4. Scenario Pressure**
 
-Today's evidence, particularly the fired "Oil shock" tripwire and escalating geopolitical tensions driving oil prices, puts pressure towards **Scenario A: Grind-with-violence (range-bound with repeated 5-10% air pockets)**. The sticky commodity inflation also maintains pressure towards **Scenario B: Slow bear** by sustaining inflation above the Fed's comfort zone, without immediate signs of AI capex cuts that would accelerate it. No concurrent triggers for a "Fast crash" (Scenario C) are present.
+Today's escalating US-Iran conflict and the new US-Canada trade war, coupled with rising oil prices and yields, put increased pressure on **Scenario A (Grind-with-violence)**, characterized by repeated 5-10% air pockets and increased volatility. While no immediate "Fast crash" (Scenario C) triggers like a full Hormuz closure are confirmed, the significant escalation of geopolitical risks warrants close monitoring. The continued strong AI capex narrative (though not a market-wide driver today) somewhat offsets deeper downside pressure on equities overall, but the risk-off sentiment is pronounced. The intermarket regime is "Transitional" with "low confidence" for today, consistent with heightened uncertainty.
