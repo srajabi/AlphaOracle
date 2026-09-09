@@ -1,39 +1,30 @@
 {
-  "last_updated_utc": "2026-09-04T22:36:02.640076+00:00",
+  "last_updated_utc": "2026-09-09T22:46:39.736977+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 25000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 20000
+        "notional_value": 10000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "XLF",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 5000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "SPY",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 4000
       },
       "status": "skipped",
       "reason": "No available buying power."
