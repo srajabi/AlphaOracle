@@ -1,437 +1,458 @@
 ---
 title: Technical Analyst Report
-date: "2026-09-10"
+date: "2026-09-11"
 ---
 
 ## Model: gemini/gemini-2.5-flash
 
-Here is a technical analysis of the provided tickers, focusing solely on price action and the requested indicators (SMA_20, SMA_50, SMA_200, RSI, MACD, and Bollinger Bands), without incorporating any news or macro context.
+Here's a purely price action-based technical analysis for each ticker, ignoring all news and macro context as requested.
 
-***
+---
 
-**1. VOO (S&P 500 proxy)**
-*   **Price vs. SMAs:** Current price (700.87) is below SMA_20 (706.22) but above SMA_50 (696.78) and SMA_200 (653.38). This suggests a short-term dip within a broader medium-to-long term uptrend. The SMA_20 is starting to dip below the SMA_50, indicating potential short-term weakness.
-*   **RSI:** RSI (48.12) is neutral, well within the 30-70 range, not indicating overbought or oversold conditions.
-*   **MACD:** MACD (1.96) is below its Signal Line (3.02), and the MACD Histogram (-1.06) is negative and declining. This is a bearish crossover, suggesting downward momentum is currently in play.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (698.03), suggesting it's testing potential support at the lower end of its recent volatility range. The bands are moderately wide.
-*   **Technical Setup:** Short-term bearish momentum is present, pushing price towards the lower Bollinger Band and below the 20-day SMA, but it remains above longer-term support. Could be testing short-term support, but MACD suggests caution.
+**STX Technical Analysis**
+*   **Price Action:** Price is slightly above the SMA_20 and SMA_50, but still well above the SMA_200, indicating a long-term uptrend. The SMA_20 is slightly above the SMA_50, suggesting a recent bullish turn in the shorter term, but the sequence 20 > 50 > 200 is healthy.
+*   **Momentum (RSI/MACD):** RSI (51.34) is neutral. MACD (0.34) is positive and has just crossed above its signal line (-4.54), with a positive and rising histogram (4.88), indicating bullish momentum building up.
+*   **Volatility (Bollinger Bands):** Price is within the Bollinger Bands, leaning slightly towards the middle. The bands are relatively wide, suggesting no immediate squeeze.
+*   **Technical Setup:** Trend continuation (long-term uptrend), with developing bullish momentum on MACD after recent price consolidation.
+*   **Commentary:** STX is in a strong long-term uptrend, showing renewed bullish momentum on the MACD after a period of neutrality. Price is holding above short-term moving averages.
 
-**2. XLP (Consumer Staples)**
-*   **Price vs. SMAs:** Current price (83.05) is significantly below SMA_20 (85.44) and SMA_50 (84.99), but above SMA_200 (82.73). This indicates a short-to-medium term downtrend approaching long-term support.
-*   **RSI:** RSI (37.95) is neutral but leaning towards oversold, suggesting selling pressure but not yet extreme.
-*   **MACD:** MACD (-0.25) is below its Signal Line (0.05), and the MACD Histogram (-0.31) is negative and declining. This is a bearish crossover, reinforcing downward momentum.
-*   **Bollinger Bands:** Price is just below the lower Bollinger Band (83.55), indicating strong recent selling pressure that has pushed it outside the typical volatility range. The bands are moderately wide.
-*   **Technical Setup:** Strong short-term bearish pressure, with price breaking below the lower Bollinger Band and all short-to-medium term SMAs. It is testing the 200-day SMA. This could be interpreted as a potential mean reversion bounce opportunity if it holds 200 SMA support, but caution is warranted given the strong bearish MACD and break of the lower band.
+**QQQ Technical Analysis**
+*   **Price Action:** Price (708.69) is below both SMA_20 (716.53) and SMA_50 (710.61) but well above the SMA_200 (658.62), suggesting a short-term pullback within a long-term uptrend. The SMA_20 is below the SMA_50, indicating short-term weakness.
+*   **Momentum (RSI/MACD):** RSI (46.32) is neutral, leaning bearish. MACD (0.70) is positive but has crossed below its signal line (1.29), and the histogram (-0.59) is negative and declining, indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is near the lower Bollinger Band (701.95), suggesting potential for a bounce or a break lower. The bands are moderately wide.
+*   **Technical Setup:** Short-term downtrend/pullback within a long-term uptrend, with bearish momentum. Potential for mean reversion bounce if lower band holds, or continuation of weakness.
+*   **Commentary:** QQQ is experiencing a short-term pullback with bearish momentum, trading below its 20 and 50-day SMAs and near the lower Bollinger Band. The long-term trend remains positive.
 
-**3. INTC (Intel)**
-*   **Price vs. SMAs:** Current price (106.24) is significantly above SMA_20 (94.72), SMA_50 (99.62), and SMA_200 (74.86). This indicates a strong short-to-long term uptrend.
-*   **RSI:** RSI (63.36) is strong and neutral, indicating good upward momentum without being overbought.
-*   **MACD:** MACD (-0.19) is above its Signal Line (-2.21), and the MACD Histogram (2.01) is positive and increasing. This is a bullish crossover, confirming strong upward momentum.
-*   **Bollinger Bands:** Price is near the upper Bollinger Band (107.48), indicating strong buying pressure. The bands are moderately wide.
-*   **Technical Setup:** Strong trend continuation setup. Price is in a clear uptrend across all SMAs, supported by bullish RSI and MACD. Riding the upper Bollinger Band suggests strong current momentum.
+**AVGO Technical Analysis**
+*   **Price Action:** Price (360.83) is below its SMA_20 (370.29), SMA_50 (383.23), and close to the SMA_200 (369.32), indicating short-to-medium term weakness. The SMA_20 is below the SMA_50, and both are below the SMA_200, signalling a developing downtrend or significant correction.
+*   **Momentum (RSI/MACD):** RSI (41.40) is neutral to weak. MACD (-7.71) is negative and has crossed below its signal line (-7.61), with a negative and declining histogram (-0.10), confirming bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is below the midpoint of the Bollinger Bands and approaching the lower band (340.41), indicating downside pressure.
+*   **Technical Setup:** Short-term downtrend/correction. Bearish momentum is firming, and price is testing support levels established by long-term averages.
+*   **Commentary:** AVGO is facing sustained selling pressure, trading below all key short-term SMAs with strengthening bearish MACD momentum.
 
-**4. TLT (Long-term Bonds)**
-*   **Price vs. SMAs:** Current price (81.73) is below SMA_20 (82.13), SMA_50 (82.75), and SMA_200 (84.55). This indicates a clear short-to-long term downtrend.
-*   **RSI:** RSI (43.37) is neutral, not indicating overbought or oversold conditions, but leaning bearish.
-*   **MACD:** MACD (-0.17) is slightly above its Signal Line (-0.18), and the MACD Histogram (0.009) is barely positive. This indicates a potential very slight bullish divergence or flat momentum, but within a negative trend context.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (81.10). The bands are relatively narrow, suggesting a volatility contraction.
-*   **Technical Setup:** Clear downtrend. The narrow Bollinger Bands and MACD potentially flattening (or slightly crossing bullishly from a low base) suggest a volatility contraction or potential for a short-term bounce within a larger downtrend. It's currently testing the lower Bollinger Band.
+**QUAL Technical Analysis**
+*   **Price Action:** Price (218.42) is below its SMA_20 (223.07) and SMA_50 (221.20) but above the SMA_200 (207.78), indicating a short-term pullback within a longer-term uptrend. The SMA_20 is below the SMA_50, showing recent weakness.
+*   **Momentum (RSI/MACD):** RSI (37.41) is neutral, approaching oversold conditions. MACD (-0.40) is negative and below its signal line (0.33), with a declining histogram (-0.73), confirming bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the lower Bollinger Band (219.02), which typically suggests oversold conditions and potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate. Price is oversold by Bollinger Bands and nearing oversold RSI territory, but with clear bearish momentum.
+*   **Commentary:** QUAL is experiencing a sharp pullback, appearing oversold on Bollinger Bands and RSI, suggesting a potential for a near-term bounce despite bearish MACD.
 
-**5. GLD (Gold ETF)**
-*   **Price vs. SMAs:** Current price (403.35) is below SMA_20 (409.87) but significantly above SMA_50 (390.09). It is below SMA_200 (415.70). This suggests a short-term dip within a mixed medium-to-long term trend (above 50, below 200).
-*   **RSI:** RSI (50.19) is neutral.
-*   **MACD:** MACD (3.37) is below its Signal Line (5.99), and the MACD Histogram (-2.61) is negative and declining. This is a bearish crossover, indicating downward momentum.
-*   **Bollinger Bands:** Price is well within the Bollinger Bands, not close to either extreme. Bands are moderately wide.
-*   **Technical Setup:** Short-term downward momentum, as indicated by MACD and price below SMA_20. It's consolidated within its Bollinger Bands. The overall picture is mixed, with bearish short-term signals in the context of a longer-term undecided trend.
+**XLB Technical Analysis**
+*   **Price Action:** Price (50.76) is below its SMA_20 (52.57) and SMA_50 (51.84) but slightly above the SMA_200 (49.96). The SMA_20 is below the SMA_50, and both are now testing the SMA_200, indicating a shift from uptrend to consolidation or potential downtrend.
+*   **Momentum (RSI/MACD):** RSI (37.16) is neutral, approaching oversold. MACD (-0.09) is negative and below its signal line (0.19), with a negative and declining histogram (-0.28), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the lower Bollinger Band (51.07), suggesting oversold conditions and potential for a bounce.
+*   **Technical Setup:** Mean reversion bounce candidate. Price is technically oversold, but the breakdown below short-term SMAs and testing of the 200-day average, coupled with bearish MACD, implies significant pressure.
+*   **Commentary:** XLB is testing critical support at its 200-day SMA, currently oversold per Bollinger Bands, but with strong bearish momentum in the short term. A bounce is possible if the 200-day holds.
 
-**6. CRWD (CrowdStrike)**
-*   **Price vs. SMAs:** Current price (207.80) is just below SMA_20 (209.10) but well above SMA_50 (201.95) and SMA_200 (143.29). This suggests a minor short-term dip within a strong medium-to-long term uptrend.
-*   **RSI:** RSI (50.58) is neutral.
-*   **MACD:** MACD (3.13) is below its Signal Line (3.62), and the MACD Histogram (-0.49) is negative and declining. This is a bearish crossover, indicating weakening upward momentum.
-*   **Bollinger Bands:** Price is well within the Bollinger Bands, not close to either extreme. Bands are wide, indicating higher volatility.
-*   **Technical Setup:** The stock is in a strong longer-term uptrend but showing short-term bearish momentum via the MACD crossover and price slightly below the 20-day SMA. The wide Bollinger Bands suggest continued volatility. This looks like a minor pullback within a larger uptrend.
+**TLN Technical Analysis**
+*   **Price Action:** Price (311.54) is significantly below all its SMAs (20, 50, 200), with the SMAs in a bearish order (20 < 50 < 200), indicating a clear and established downtrend.
+*   **Momentum (RSI/MACD):** RSI (43.97) is neutral. MACD (-9.11) is negative, but has crossed above its signal line (-11.97), and the histogram (2.86) is positive and rising, suggesting nascent bullish momentum.
+*   **Volatility (Bollinger Bands):** Price is within the lower half of the Bollinger Bands, and the bands are wide, indicating high volatility.
+*   **Technical Setup:** Emerging bullish momentum within a strong downtrend. Could be a counter-trend bounce or a consolidation before further downside.
+*   **Commentary:** TLN is in a clear downtrend but showing early signs of bullish MACD divergence, which could signal a temporary bounce or a slowing of the decline.
 
-**7. UPRO (3x Leveraged SPY)**
-*   **Price vs. SMAs:** Current price (147.19) is below SMA_20 (151.33) but above SMA_50 (146.60) and SMA_200 (127.28). This suggests a short-term pullback within a medium-to-long term uptrend.
-*   **RSI:** RSI (46.37) is neutral, leaning bearish.
-*   **MACD:** MACD (0.66) is below its Signal Line (1.32), and the MACD Histogram (-0.66) is negative and declining. This is a bearish crossover, indicating downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (145.58), suggesting it's testing support. Bands are moderately wide.
-*   **Technical Setup:** Similar to VOO, UPRO is experiencing a short-term bearish pullback within a longer-term uptrend. The price is testing the lower Bollinger Band and the SMA_50, while MACD signals downward momentum. Due to its leveraged nature, these moves are amplified.
+**SLV Technical Analysis**
+*   **Price Action:** Price (57.50) is below SMA_20 (60.10) and SMA_200 (65.51) but slightly above SMA_50 (56.37). The SMAs are mixed, indicating a neutral-to-bearish short-term trend within a longer-term struggle.
+*   **Momentum (RSI/MACD):** RSI (45.70) is neutral. MACD (0.62) is positive but has crossed below its signal line (1.04), and the histogram (-0.43) is negative and declining, indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the midpoint of the Bollinger Bands and near the lower band (56.77), suggesting some downside pressure.
+*   **Technical Setup:** Short-term bearish momentum within a choppy, neutral-to-bearish trend.
+*   **Commentary:** SLV is experiencing short-term bearish momentum, trading below its 20-day SMA. The overall trend is not clearly defined, suggesting a choppy market.
 
-**8. XLRE (Real Estate)**
-*   **Price vs. SMAs:** Current price (43.41) is below SMA_20 (44.59) and SMA_50 (44.79), but above SMA_200 (42.67). This indicates a short-to-medium term downtrend, approaching long-term support.
-*   **RSI:** RSI (35.03) is neutral but leaning towards oversold, indicating some selling pressure.
-*   **MACD:** MACD (-0.31) is below its Signal Line (-0.18), and the MACD Histogram (-0.13) is negative but appears to be turning up slightly. This is a bearish crossover, but the histogram suggests weakening downward momentum.
-*   **Bollinger Bands:** Price is just below the lower Bollinger Band (43.44), indicating recent strong selling pressure has pushed it outside its typical range. The bands are narrow, suggesting a potential volatility contraction or exhaustion of the recent move.
-*   **Technical Setup:** Short-term bearish, with price breaking below the lower Bollinger Band and approaching the 200-day SMA. The narrowing Bollinger Bands and potentially bottoming MACD histogram could hint at a mean reversion bounce or a pause in the downtrend, but a confirmed reversal signal is not yet present.
+**SCHD Technical Analysis**
+*   **Price Action:** Price (33.99) is below its SMA_20 (34.75) and SMA_50 (33.76), but above SMA_200 (30.95). The SMA_20 is above the SMA_50, but the current price action is weak, suggesting a pullback within an uptrend.
+*   **Momentum (RSI/MACD):** RSI (41.90) is neutral, leaning weak. MACD (0.16) is positive but has crossed below its signal line (0.34), and the histogram (-0.18) is negative and declining, indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the lower Bollinger Band (34.05), suggesting oversold conditions and a potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate. Price is technically oversold by Bollinger Bands, but with clear bearish momentum in the short term.
+*   **Commentary:** SCHD is showing signs of being oversold on Bollinger Bands after a pullback, indicating a potential bounce, though short-term momentum remains bearish.
 
-**9. VTI (Total US Market)**
-*   **Price vs. SMAs:** Current price (375.56) is below SMA_20 (379.17) but above SMA_50 (374.27) and SMA_200 (350.52). This indicates a short-term dip within a medium-to-long term uptrend.
-*   **RSI:** RSI (46.99) is neutral.
-*   **MACD:** MACD (0.81) is below its Signal Line (1.46), and the MACD Histogram (-0.64) is negative and declining. This is a bearish crossover, indicating downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (374.23), suggesting it's testing potential support. Bands are moderately wide.
-*   **Technical Setup:** Similar to VOO and UPRO, VTI is experiencing a short-term bearish pullback within a longer-term uptrend. Price is testing the lower Bollinger Band and the SMA_50, while MACD signals downward momentum.
+**HYG Technical Analysis**
+*   **Price Action:** Price (78.62) is below its SMA_20 (79.21) and SMA_50 (78.99) but above SMA_200 (78.16). The SMAs are tightly coiled (20 < 50 < 200 but close), and price is below all of them, suggesting weakness in a consolidated range.
+*   **Momentum (RSI/MACD):** RSI (35.07) is neutral, approaching oversold. MACD (-0.01) is negative and below its signal line (0.07), with a declining histogram (-0.08), confirming bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the lower Bollinger Band (78.83), implying oversold conditions and potential for a bounce.
+*   **Technical Setup:** Mean reversion bounce candidate. Price is technically oversold on Bollinger Bands within a tight trading range.
+*   **Commentary:** HYG is in a tight range and appears oversold on Bollinger Bands, suggesting a short-term bounce, but overall momentum is bearish and the trend is weak.
 
-**10. XLU (Utilities)**
-*   **Price vs. SMAs:** Current price (42.94) is below SMA_20 (43.34) and SMA_50 (44.32), and slightly below SMA_200 (44.29). This indicates a short-to-medium term downtrend that has now broken below the long-term SMA.
-*   **RSI:** RSI (43.29) is neutral, leaning bearish.
-*   **MACD:** MACD (-0.37) is above its Signal Line (-0.43), and the MACD Histogram (0.05) is positive and increasing. This is a bullish crossover from deeply negative territory, suggesting a potential short-term upward momentum shift.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (42.17). The bands are narrow, suggesting a volatility contraction or potential for a squeeze.
-*   **Technical Setup:** Bearish trend on SMAs, with price dropping below the 200-day SMA. However, the bullish MACD crossover from an oversold-like state and narrow Bollinger Bands suggest a potential mean reversion bounce or a volatility squeeze is forming.
+**XLK Technical Analysis**
+*   **Price Action:** Price (185.22) is slightly below its SMA_20 (185.68) but above its SMA_50 (182.69) and SMA_200 (160.86). The SMAs are in a bullish order (20 > 50 > 200), indicating a solid uptrend with a minor recent dip.
+*   **Momentum (RSI/MACD):** RSI (50.82) is neutral. MACD (0.96) is positive and has just crossed above its signal line (0.93), with a positive and rising histogram (0.03), indicating nascent bullish momentum.
+*   **Volatility (Bollinger Bands):** Price is in the middle of the Bollinger Bands, which are moderately wide.
+*   **Technical Setup:** Trend continuation (uptrend). Minor pullback with signs of renewed bullish momentum.
+*   **Commentary:** XLK is in a strong uptrend, currently consolidating near its 20-day SMA, with MACD indicating a possible resumption of bullish momentum.
 
-**11. VXUS (Total International)**
-*   **Price vs. SMAs:** Current price (87.41) is just below SMA_20 (87.53) but above SMA_50 (85.90) and SMA_200 (81.30). This suggests a very minor short-term dip within a strong medium-to-long term uptrend.
-*   **RSI:** RSI (52.81) is neutral, showing healthy momentum.
-*   **MACD:** MACD (0.51) is below its Signal Line (0.58), and the MACD Histogram (-0.07) is negative. This is a bearish crossover, indicating a slight loss of upward momentum.
-*   **Bollinger Bands:** Price is well within the Bollinger Bands, not close to either extreme. Bands are narrow, suggesting low volatility.
-*   **Technical Setup:** Strong longer-term uptrend, with short-term consolidation/slight weakness indicated by price below SMA_20 and bearish MACD crossover. The narrow Bollinger Bands suggest a period of low volatility.
+**^IRX Technical Analysis**
+*   **Price Action:** Price (3.845) is above its SMA_20 (3.73), SMA_50 (3.72), and SMA_200 (3.63), with all SMAs in a bullish order (20 > 50 > 200), indicating a clear uptrend.
+*   **Momentum (RSI/MACD):** RSI (71.41) is overbought, suggesting potential for a pullback. MACD (0.024) is positive and above its signal line (0.012), with a positive and rising histogram (0.012), confirming strong bullish momentum.
+*   **Volatility (Bollinger Bands):** Price is above the upper Bollinger Band (3.82), indicating overextended conditions and potential for a mean reversion pullback.
+*   **Technical Setup:** Overextended uptrend, ripe for mean reversion pullback. Strong bullish momentum.
+*   **Commentary:** ^IRX is in a strong, overextended uptrend, with price above the upper Bollinger Band and RSI in overbought territory, suggesting a high probability of a near-term pullback.
 
-**12. EWA (Australia Proxy)**
-*   **Price vs. SMAs:** Current price (29.62) is below SMA_20 (29.95) but above SMA_50 (29.35) and SMA_200 (28.10). This indicates a short-term dip within a medium-to-long term uptrend.
-*   **RSI:** RSI (46.69) is neutral.
-*   **MACD:** MACD (0.15) is below its Signal Line (0.21), and the MACD Histogram (-0.07) is negative. This is a bearish crossover, indicating slight downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (29.45). The bands are very narrow, indicating a significant volatility contraction.
-*   **Technical Setup:** A short-term bearish pullback within a strong uptrend. The very narrow Bollinger Bands suggest a volatility squeeze is in effect, indicating a potential for a sharp move in either direction. Current MACD is bearish, while price is testing the lower band.
+**EWA Technical Analysis**
+*   **Price Action:** Price (29.08) is below its SMA_20 (29.91) and SMA_50 (29.37) but above SMA_200 (28.12). The SMA_20 is below the SMA_50, indicating short-term weakness within a longer-term uptrend.
+*   **Momentum (RSI/MACD):** RSI (39.58) is neutral, leaning bearish. MACD (0.06) is positive but below its signal line (0.18), with a negative and declining histogram (-0.12), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is below the midpoint and near the lower Bollinger Band (29.28), indicating downside pressure.
+*   **Technical Setup:** Short-term pullback within a long-term uptrend, with bearish momentum.
+*   **Commentary:** EWA is experiencing a pullback, trading below its short-term SMAs with bearish MACD momentum. The long-term trend is still positive.
 
-**13. SCHD (Dividend Growth)**
-*   **Price vs. SMAs:** Current price (34.09) is just below SMA_20 (34.76) and SMA_50 (33.71), but well above SMA_200 (30.91). This suggests a short-term downtrend that is testing medium-term support.
-*   **RSI:** RSI (43.55) is neutral, leaning bearish.
-*   **MACD:** MACD (0.23) is below its Signal Line (0.38), and the MACD Histogram (-0.15) is negative and declining. This is a bearish crossover, indicating downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (34.11). The bands are narrow, indicating a volatility contraction.
-*   **Technical Setup:** Short-term bearish momentum is pushing price towards the lower Bollinger Band and testing the SMA_50. The narrow bands suggest a potential volatility squeeze. The overall trend is still long-term bullish.
+**XLU Technical Analysis**
+*   **Price Action:** Price (42.52) is below its SMA_20 (43.28), SMA_50 (44.27), and SMA_200 (44.28), with SMAs in a bearish order (20 < 50 < 200), indicating a downtrend.
+*   **Momentum (RSI/MACD):** RSI (39.34) is neutral, approaching oversold. MACD (-0.39) is negative but has just crossed above its signal line (-0.42), with a positive and rising histogram (0.03), suggesting nascent bullish momentum (potential divergence).
+*   **Volatility (Bollinger Bands):** Price is near the lower Bollinger Band (42.07), suggesting oversold conditions.
+*   **Technical Setup:** Potential mean reversion bounce or slowing of downtrend, with nascent bullish MACD divergence in oversold territory.
+*   **Commentary:** XLU is in a downtrend and appears oversold on Bollinger Bands, showing early signs of positive MACD divergence, which could lead to a temporary bounce.
 
-**14. IWM (Russell 2000 Small Caps)**
-*   **Price vs. SMAs:** Current price (290.64) is below SMA_20 (298.08), SMA_50 (296.74), but above SMA_200 (272.59). This indicates a short-to-medium term downtrend within a broader long-term uptrend.
-*   **RSI:** RSI (39.93) is neutral but approaching oversold, indicating significant selling pressure.
-*   **MACD:** MACD (-1.15) is below its Signal Line (-0.29), and the MACD Histogram (-0.85) is negative and declining. This is a strong bearish crossover, indicating significant downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (289.87), indicating strong selling pressure. The bands are moderately wide.
-*   **Technical Setup:** Strong short-to-medium term bearish momentum, with price pushing the lower Bollinger Band and falling below both short and medium-term SMAs. Approaching oversold RSI levels. This could present a mean reversion bounce opportunity if short-term selling exhausts, but the momentum is clearly down.
+**SPY Technical Analysis**
+*   **Price Action:** Price (757.83) is below its SMA_20 (767.56) and very close to its SMA_50 (758.25), but well above SMA_200 (711.50). The SMA_20 is above the SMA_50, but price is dipping below them, suggesting a short-term pullback within a long-term uptrend.
+*   **Momentum (RSI/MACD):** RSI (44.12) is neutral, leaning bearish. MACD (1.25) is positive but has crossed below its signal line (2.87), with a negative and declining histogram (-1.62), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is exactly on the lower Bollinger Band (757.77), indicating oversold conditions and a potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate. Price is oversold on Bollinger Bands, but bearish momentum is currently strong.
+*   **Commentary:** SPY is undergoing a short-term pullback, currently sitting on its lower Bollinger Band, suggesting a potential bounce. However, MACD indicates strong bearish momentum.
 
-**15. STX (Seagate)**
-*   **Price vs. SMAs:** Current price (885.92) is above SMA_20 (861.78), SMA_50 (851.96), and SMA_200 (599.21). This indicates a strong short-to-long term uptrend.
-*   **RSI:** RSI (54.53) is neutral, showing healthy upward momentum.
-*   **MACD:** MACD (-0.64) is above its Signal Line (-5.76), and the MACD Histogram (5.12) is positive and increasing. This is a strong bullish crossover, confirming upward momentum.
-*   **Bollinger Bands:** Price is well within the Bollinger Bands, not close to either extreme. Bands are wide, indicating higher volatility.
-*   **Technical Setup:** Clear trend continuation setup. Price is in a strong uptrend across all SMAs, with bullish MACD momentum.
+**NFLX Technical Analysis**
+*   **Price Action:** Price (76.01) is below its SMA_20 (79.49) and SMA_200 (86.38) but slightly above its SMA_50 (75.64). The SMAs are mixed and not in a clear bullish or bearish order, indicating a choppy or consolidating trend.
+*   **Momentum (RSI/MACD):** RSI (43.60) is neutral. MACD (0.55) is positive but has crossed below its signal line (1.30), with a negative and declining histogram (-0.75), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is near the lower Bollinger Band (75.15), suggesting potential for a bounce.
+*   **Technical Setup:** Consolidation/choppy trend with short-term bearish momentum. Potential for a mean reversion bounce from the lower Bollinger Band.
+*   **Commentary:** NFLX is in a choppy market, showing recent bearish momentum and trading near the lower Bollinger Band, hinting at a possible bounce.
 
-**16. NFLX (Netflix)**
-*   **Price vs. SMAs:** Current price (76.03) is below SMA_20 (79.40) and SMA_200 (86.53), but above SMA_50 (75.54). This indicates a short-term downtrend and long-term weakness, with recent support from the 50-day SMA.
-*   **RSI:** RSI (43.65) is neutral, leaning bearish.
-*   **MACD:** MACD (0.87) is below its Signal Line (1.49), and the MACD Histogram (-0.62) is negative and declining. This is a bearish crossover, indicating downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (74.72), indicating it's testing potential support. Bands are moderately wide.
-*   **Technical Setup:** Bearish momentum is driving price towards the lower Bollinger Band and below the 20-day SMA. While finding support at the 50-day SMA, the longer-term 200-day SMA is still acting as resistance. This could be a mean reversion bounce if the 50-day SMA holds.
+**UPRO Technical Analysis**
+*   **Price Action:** Price (144.50) is below its SMA_20 (150.83) and SMA_50 (146.66) but above its SMA_200 (127.49). The SMA_20 is above the SMA_50, indicating some recent strength, but price is currently breaking below both, signaling a short-term pullback within a long-term uptrend.
+*   **Momentum (RSI/MACD):** RSI (42.54) is neutral, leaning weak. MACD (0.17) is positive but has crossed below its signal line (1.09), with a negative and declining histogram (-0.92), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the lower Bollinger Band (144.56), suggesting oversold conditions and potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate. Price is oversold on Bollinger Bands, but bearish momentum is currently strong.
+*   **Commentary:** UPRO is experiencing a sharp pullback, currently oversold on Bollinger Bands. While the long-term trend is up, short-term momentum is bearish, suggesting a potential bounce from current levels.
 
-**17. MTZ (MasTec)**
-*   **Price vs. SMAs:** Current price (240.68) is significantly below SMA_20 (258.49), SMA_50 (302.43), and SMA_200 (304.93). This indicates a strong short-to-long term downtrend.
-*   **RSI:** RSI (37.33) is neutral but approaching oversold, suggesting significant selling pressure.
-*   **MACD:** MACD (-17.86) is above its Signal Line (-19.45), and the MACD Histogram (1.59) is positive and increasing. This is a bullish crossover from deeply negative territory, suggesting a potential short-term upward momentum shift (mean reversion).
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (215.70), indicating strong selling pressure. The bands are wide, reflecting high volatility.
-*   **Technical Setup:** Strong downtrend across all SMAs. However, the bullish MACD crossover from a deeply oversold state suggests a potential mean reversion bounce could be underway. Price is near the lower Bollinger Band.
+**PLTR Technical Analysis**
+*   **Price Action:** Price (165.86) is below its SMA_20 (176.14) but above its SMA_50 (153.10) and SMA_200 (151.46). The SMA_20 is well above the SMA_50, and the SMA_50 is above the SMA_200, indicating a strong overall uptrend, but with a recent pullback.
+*   **Momentum (RSI/MACD):** RSI (48.09) is neutral. MACD (4.74) is positive but has crossed sharply below its signal line (7.83), with a negative and declining histogram (-3.09), indicating strong bearish momentum in the short term.
+*   **Volatility (Bollinger Bands):** Price is just above the lower Bollinger Band (164.56), indicating it's testing potential support.
+*   **Technical Setup:** Pullback within a strong uptrend. Short-term bearish momentum is strong. Potential for a bounce if the lower Bollinger Band and nearby SMAs hold as support.
+*   **Commentary:** PLTR is pulling back within a strong long-term uptrend, with current bearish momentum on MACD. Price is testing the lower Bollinger Band, which might act as support.
 
-**18. XLC (Communication Services)**
-*   **Price vs. SMAs:** Current price (110.83) is below SMA_20 (111.77) and SMA_200 (113.61), but just above SMA_50 (110.75). This indicates a short-term downtrend within a longer-term mixed-to-bearish trend, with the 50-day SMA providing tenuous support.
-*   **RSI:** RSI (47.60) is neutral.
-*   **MACD:** MACD (0.29) is below its Signal Line (0.42), and the MACD Histogram (-0.13) is negative and declining. This is a bearish crossover, indicating downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (109.88), suggesting it's testing potential support. The bands are narrow, indicating low volatility.
-*   **Technical Setup:** Short-term bearish momentum is evident. Price is consolidating near the lower Bollinger Band and the 50-day SMA, which is acting as immediate support. The narrow bands suggest a volatility squeeze and a potential sharp move.
+**IWM Technical Analysis**
+*   **Price Action:** Price (287.70) is below its SMA_20 (297.33) and SMA_50 (296.49) but above SMA_200 (272.89). The SMA_20 is above the SMA_50, but price is breaking below both.
+*   **Momentum (RSI/MACD):** RSI (36.21) is neutral, approaching oversold. MACD (-1.67) is negative and well below its signal line (-0.57), with a declining histogram (-1.10), indicating strong bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the lower Bollinger Band (288.25), suggesting oversold conditions and potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate. Price is oversold on Bollinger Bands, but bearish momentum is strong.
+*   **Commentary:** IWM is in a strong short-term downtrend, hitting oversold territory on Bollinger Bands, suggesting a possible bounce despite strong bearish MACD.
 
-**19. META (Meta Platforms)**
-*   **Price vs. SMAs:** Current price (653.69) is significantly above SMA_20 (580.54), SMA_50 (598.58), and SMA_200 (622.02). This indicates a very strong short-to-long term uptrend.
-*   **RSI:** RSI (70.43) is just crossing into overbought territory, suggesting strong buying pressure that might be unsustainable in the very short term.
-*   **MACD:** MACD (8.71) is above its Signal Line (-0.80 - this looks like a typo in the provided data, as MACD is usually close to its signal, but assuming the MACD is significantly positive compared to signal, indicating strong bullish momentum). The MACD Histogram (9.51) is positive and strongly increasing. This signals very strong upward momentum.
-*   **Bollinger Bands:** Price is significantly above the upper Bollinger Band (634.75), indicating an extended move and potentially overbought conditions. The bands are wide.
-*   **Technical Setup:** Very strong trend continuation. Price is aggressively breaking above the upper Bollinger Band, indicating parabolic-like upward movement. RSI is overbought. This suggests a very strong rally that might be due for a pause or pullback due to extension.
+**VGK Technical Analysis**
+*   **Price Action:** Price (89.42) is below its SMA_20 (91.79) and SMA_50 (90.52) but above SMA_200 (86.04). The SMAs are mixed (20 < 50), indicating short-term weakness within a longer-term uptrend.
+*   **Momentum (RSI/MACD):** RSI (36.56) is neutral, approaching oversold. MACD (-0.08) is negative and below its signal line (0.30), with a declining histogram (-0.38), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is below the lower Bollinger Band (90.00), suggesting oversold conditions and potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate. Price is oversold on Bollinger Bands, but momentum is bearish.
+*   **Commentary:** VGK is currently oversold by Bollinger Bands and showing bearish momentum, suggesting a potential for a short-term bounce within its overall trend.
 
-**20. QQQ (Nasdaq 100 proxy)**
-*   **Price vs. SMAs:** Current price (716.31) is just below SMA_20 (717.28) but above SMA_50 (711.17) and SMA_200 (657.99). This indicates a very minor short-term dip within a strong medium-to-long term uptrend.
-*   **RSI:** RSI (51.66) is neutral.
-*   **MACD:** MACD (1.35) is below its Signal Line (1.44), and the MACD Histogram (-0.08) is negative and declining. This is a bearish crossover, indicating slight downward momentum.
-*   **Bollinger Bands:** Price is well within the Bollinger Bands, not close to either extreme. The bands are moderately wide.
-*   **Technical Setup:** Similar to VOO/VTI, QQQ is seeing a very minor short-term pullback within a strong broader uptrend. MACD shows slight bearish momentum.
+**^TNX Technical Analysis**
+*   **Price Action:** Price (4.944) is above its SMA_20 (4.737), SMA_50 (4.662), and SMA_200 (4.371), with all SMAs in a bullish order (20 > 50 > 200), indicating a strong uptrend.
+*   **Momentum (RSI/MACD):** RSI (71.97) is overbought, suggesting potential for a pullback. MACD (0.056) is positive and above its signal line (0.040), with a positive and rising histogram (0.016), confirming strong bullish momentum.
+*   **Volatility (Bollinger Bands):** Price is above the upper Bollinger Band (4.88), indicating overextended conditions and potential for a mean reversion pullback.
+*   **Technical Setup:** Overextended uptrend, ripe for mean reversion pullback. Strong bullish momentum.
+*   **Commentary:** ^TNX is in a very strong, overextended uptrend, with price significantly above its upper Bollinger Band and RSI in overbought territory, indicating a high likelihood of a near-term pullback.
 
-**21. VGK (Europe proxy)**
-*   **Price vs. SMAs:** Current price (90.21) is below SMA_20 (91.93) and SMA_50 (90.50), but above SMA_200 (85.98). This indicates a short-to-medium term downtrend within a broader long-term uptrend.
-*   **RSI:** RSI (41.11) is neutral, leaning bearish.
-*   **MACD:** MACD (0.089) is below its Signal Line (0.39), and the MACD Histogram (-0.30) is negative and declining. This is a bearish crossover, indicating downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (90.50). The bands are narrow, suggesting a volatility contraction.
-*   **Technical Setup:** Short-to-medium term bearish momentum pushing price towards the lower Bollinger Band. The narrow Bollinger Bands suggest a squeeze is forming. The longer-term trend remains positive.
+**VXUS Technical Analysis**
+*   **Price Action:** Price (86.28) is below its SMA_20 (87.47) and also below the lower Bollinger Band (86.35), but above its SMA_50 (85.91) and SMA_200 (81.38). The SMA_20 is above the SMA_50, indicating a mixed but generally upward trend in the longer term with recent weakness.
+*   **Momentum (RSI/MACD):** RSI (45.26) is neutral. MACD (0.37) is positive but has crossed below its signal line (0.54), with a negative and declining histogram (-0.17), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the lower Bollinger Band (86.35), suggesting oversold conditions and potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate. Price is technically oversold by Bollinger Bands, but with short-term bearish momentum.
+*   **Commentary:** VXUS is experiencing a pullback and appears oversold on Bollinger Bands, indicating potential for a bounce, despite recent bearish MACD momentum.
 
-**22. XLI (Industrials)**
-*   **Price vs. SMAs:** Current price (171.79) is significantly below SMA_20 (179.02) and SMA_50 (180.83), but above SMA_200 (170.44). This indicates a strong short-to-medium term downtrend, now testing long-term support.
-*   **RSI:** RSI (32.17) is neutral but approaching oversold, indicating significant selling pressure.
-*   **MACD:** MACD (-2.40) is below its Signal Line (-1.67), and the MACD Histogram (-0.73) is negative and declining. This is a strong bearish crossover, indicating strong downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (169.64). The bands are moderately wide.
-*   **Technical Setup:** Strong short-to-medium term bearish momentum, with price pushing towards the lower Bollinger Band and the 200-day SMA, indicating a test of long-term support. MACD reinforces the bearish outlook, while RSI approaches oversold levels.
+**VOO Technical Analysis**
+*   **Price Action:** Price (696.65) is below its SMA_20 (705.54) and very close to its SMA_50 (696.98), but well above SMA_200 (653.89). The SMA_20 is above the SMA_50, but price is dipping below them, suggesting a short-term pullback within a long-term uptrend.
+*   **Momentum (RSI/MACD):** RSI (44.11) is neutral, leaning bearish. MACD (1.16) is positive but has crossed below its signal line (2.65), with a negative and declining histogram (-1.48), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is exactly on the lower Bollinger Band (696.58), indicating oversold conditions and a potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate. Price is oversold on Bollinger Bands, but bearish momentum is currently strong.
+*   **Commentary:** VOO is undergoing a short-term pullback, currently sitting on its lower Bollinger Band, suggesting a potential bounce. However, MACD indicates strong bearish momentum.
 
-**23. ORCL (Oracle)**
-*   **Price vs. SMAs:** Current price (161.63) is significantly above SMA_20 (149.69) and SMA_50 (140.33), but below SMA_200 (167.33). This indicates a strong short-to-medium term uptrend, but facing resistance from the long-term SMA.
-*   **RSI:** RSI (62.42) is strong and neutral, indicating healthy upward momentum.
-*   **MACD:** MACD (3.99) is above its Signal Line (2.38), and the MACD Histogram (1.61) is positive and increasing. This is a bullish crossover, confirming strong upward momentum.
-*   **Bollinger Bands:** Price is near the upper Bollinger Band (162.30), indicating strong buying pressure. The bands are moderately wide.
-*   **Technical Setup:** Strong short-to-medium term bullish trend, with price riding the upper Bollinger Band and supported by bullish MACD. It's currently testing the 200-day SMA as a potential resistance point. Trend continuation is dominant.
+**INTC Technical Analysis**
+*   **Price Action:** Price (100.32) is above its SMA_20 (94.69), SMA_50 (98.83), and SMA_200 (75.19), with all SMAs in a bullish order (20 > 50 > 200), indicating a strong uptrend.
+*   **Momentum (RSI/MACD):** RSI (54.80) is neutral, leaning bullish. MACD (0.18) is positive and has just crossed above its signal line (-1.73), with a positive and sharply rising histogram (1.91), indicating strong bullish momentum developing.
+*   **Volatility (Bollinger Bands):** Price is within the upper half of the Bollinger Bands, which are moderately wide.
+*   **Technical Setup:** Trend continuation. Strong bullish momentum is building within an established uptrend.
+*   **Commentary:** INTC is in a strong uptrend, and recent price action, coupled with a bullish MACD crossover and rising histogram, suggests a continuation of this upward momentum.
 
-**24. NVDA (Nvidia)**
-*   **Price vs. SMAs:** Current price (223.67) is above SMA_20 (220.80), SMA_50 (211.80), and SMA_200 (196.94). This indicates a strong short-to-long term uptrend.
-*   **RSI:** RSI (54.32) is neutral, showing healthy upward momentum.
-*   **MACD:** MACD (3.69) is above its Signal Line (3.28), and the MACD Histogram (0.42) is positive and increasing. This is a bullish crossover, confirming upward momentum.
-*   **Bollinger Bands:** Price is well within the Bollinger Bands, not close to either extreme. Bands are moderately wide.
-*   **Technical Setup:** Clear trend continuation. Price is in a strong uptrend across all SMAs, supported by bullish RSI and MACD.
+**AMD Technical Analysis**
+*   **Price Action:** Price (503.60) is above its SMA_20 (480.38), SMA_50 (497.04), and SMA_200 (345.35), with all SMAs in a bullish order (20 > 50 > 200), indicating a strong uptrend.
+*   **Momentum (RSI/MACD):** RSI (55.09) is neutral, leaning bullish. MACD (0.98) is positive and has just crossed above its signal line (-4.81), with a positive and sharply rising histogram (5.79), indicating strong bullish momentum developing.
+*   **Volatility (Bollinger Bands):** Price is in the upper half of the Bollinger Bands, suggesting strength.
+*   **Technical Setup:** Trend continuation. Strong bullish momentum is building within an established uptrend.
+*   **Commentary:** AMD is in a strong uptrend, and recent price action, coupled with a bullish MACD crossover and sharply rising histogram, suggests a continuation of this upward momentum.
 
-**25. PLTR (Palantir)**
-*   **Price vs. SMAs:** Current price (169.53) is below SMA_20 (176.40) but well above SMA_50 (152.11) and SMA_200 (151.41). This suggests a short-term dip within a strong medium-to-long term uptrend.
-*   **RSI:** RSI (50.74) is neutral.
-*   **MACD:** MACD (5.91) is below its Signal Line (8.60), and the MACD Histogram (-2.70) is negative and declining. This is a bearish crossover, indicating downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (165.54). The bands are moderately wide.
-*   **Technical Setup:** Short-term bearish momentum is pushing price towards the lower Bollinger Band within a strong longer-term uptrend. This looks like a pullback testing short-term support.
+**UUP Technical Analysis**
+*   **Price Action:** Price (28.03) is below its SMA_20 (28.05) and SMA_50 (28.22) but above SMA_200 (27.63). The SMAs are tightly clustered, indicating a neutral short-term trend within a longer-term slightly bullish bias.
+*   **Momentum (RSI/MACD):** RSI (46.37) is neutral. MACD (-0.04) is negative but has just crossed above its signal line (-0.04), with a positive and rising histogram (0.004), suggesting nascent bullish momentum.
+*   **Volatility (Bollinger Bands):** Price is between the middle and lower Bollinger Band, and the bands are very narrow, indicating a volatility contraction squeeze.
+*   **Technical Setup:** Volatility contraction squeeze. Price is consolidating with minimal bullish MACD momentum. A breakout is likely.
+*   **Commentary:** UUP is experiencing a volatility squeeze, trading in a tight range with closely clustered SMAs. Nascent bullish MACD suggests a potential upside breakout, but the direction is not yet confirmed.
 
-**26. MSFT (Microsoft)**
-*   **Price vs. SMAs:** Current price (491.65) is below SMA_20 (494.22) but well above SMA_50 (448.47) and SMA_200 (429.44). This indicates a very minor short-term dip within a strong medium-to-long term uptrend.
-*   **RSI:** RSI (54.82) is neutral, showing healthy upward momentum.
-*   **MACD:** MACD (12.48) is below its Signal Line (16.15), and the MACD Histogram (-3.67) is negative and declining. This is a bearish crossover, indicating a loss of upward momentum.
-*   **Bollinger Bands:** Price is well within the Bollinger Bands, not close to either extreme. Bands are moderately wide.
-*   **Technical Setup:** Strong longer-term uptrend. Short-term bearish momentum is present as MACD has crossed over, suggesting a pause or minor pullback.
+**TSLA Technical Analysis**
+*   **Price Action:** Price (363.56) is above its SMA_20 (353.86) and SMA_50 (355.70) but significantly below its SMA_200 (399.05). The SMA_20 is above the SMA_50, indicating short-term strength within a longer-term downtrend.
+*   **Momentum (RSI/MACD):** RSI (53.74) is neutral, leaning bullish. MACD (4.95) is positive and well above its signal line (2.72), with a positive and rising histogram (2.23), confirming strong bullish momentum.
+*   **Volatility (Bollinger Bands):** Price is in the upper half of the Bollinger Bands, suggesting upward pressure.
+*   **Technical Setup:** Short-term trend continuation (uptrend) within a longer-term downtrend. Strong bullish momentum is building.
+*   **Commentary:** TSLA is showing strong short-term bullish momentum, trading above its 20 and 50-day SMAs. This appears to be a counter-trend rally against a longer-term downtrend.
 
-**27. IAU (Gold ETF Alt)**
-*   **Price vs. SMAs:** Current price (82.69) is below SMA_20 (84.02) and SMA_200 (85.17), but above SMA_50 (79.96). This indicates a short-term downtrend and long-term weakness, with recent support from the 50-day SMA.
-*   **RSI:** RSI (50.22) is neutral.
-*   **MACD:** MACD (0.70) is below its Signal Line (1.23), and the MACD Histogram (-0.54) is negative and declining. This is a bearish crossover, indicating downward momentum.
-*   **Bollinger Bands:** Price is well within the Bollinger Bands, not close to either extreme. Bands are moderately wide.
-*   **Technical Setup:** Similar to GLD, IAU shows short-term bearish momentum. Price is consolidating within its bands after crossing below the 20-day SMA.
+**NVDA Technical Analysis**
+*   **Price Action:** Price (218.36) is slightly below its SMA_20 (220.28) but above its SMA_50 (211.94) and SMA_200 (196.91). The SMAs are in a bullish order (20 > 50 > 200), indicating a strong uptrend with a minor recent dip.
+*   **Momentum (RSI/MACD):** RSI (50.00) is neutral. MACD (3.10) is positive but has just crossed below its signal line (3.24), with a negative and declining histogram (-0.13), indicating nascent bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is in the middle of the Bollinger Bands, which are moderately wide.
+*   **Technical Setup:** Short-term consolidation/minor pullback within a strong uptrend. Bearish momentum is very slight.
+*   **Commentary:** NVDA is in a strong uptrend, currently consolidating near its 20-day SMA. MACD shows a very slight recent bearish crossover, but overall momentum is neutral.
 
-**28. ^TNX (10y yield)**
-*   **Price vs. SMAs:** Current price (4.837) is above SMA_20 (4.724), SMA_50 (4.651), and SMA_200 (4.366). This indicates a strong short-to-long term uptrend (rising yields).
-*   **RSI:** RSI (64.73) is strong and neutral, indicating healthy upward momentum without being overbought.
-*   **MACD:** MACD (0.045) is above its Signal Line (0.036), and the MACD Histogram (0.009) is positive and increasing. This is a bullish crossover, confirming upward momentum.
-*   **Bollinger Bands:** Price is near the upper Bollinger Band (4.838), indicating strong buying pressure (rising yields). The bands are narrow, suggesting a volatility squeeze in an upward trend.
-*   **Technical Setup:** Clear trend continuation (rising yields) with strong upward momentum. The price is challenging the upper Bollinger Band, while the narrow bands suggest a squeeze.
+**VT Technical Analysis**
+*   **Price Action:** Price (158.53) is below its SMA_20 (160.76) and SMA_50 (158.46) but above its SMA_200 (149.18). The SMA_20 is above the SMA_50, but price is dipping, suggesting a short-term pullback within a long-term uptrend.
+*   **Momentum (RSI/MACD):** RSI (43.92) is neutral. MACD (0.39) is positive but has crossed below its signal line (0.73), with a negative and declining histogram (-0.35), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the lower Bollinger Band (158.83), suggesting oversold conditions and potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate. Price is oversold on Bollinger Bands, but bearish momentum is currently strong.
+*   **Commentary:** VT is undergoing a short-term pullback, currently sitting just below its lower Bollinger Band, suggesting a potential bounce. However, MACD indicates bearish momentum.
 
-**29. AAPL (Apple)**
-*   **Price vs. SMAs:** Current price (315.34) is above SMA_20 (314.06) but below SMA_50 (316.32), and well above SMA_200 (283.92). This suggests a mixed short-term trend within a strong long-term uptrend.
-*   **RSI:** RSI (49.40) is neutral.
-*   **MACD:** MACD (1.84) is above its Signal Line (1.43), and the MACD Histogram (0.42) is positive and increasing. This is a bullish crossover, confirming upward momentum.
-*   **Bollinger Bands:** Price is well within the Bollinger Bands, not close to either extreme. Bands are moderately wide.
-*   **Technical Setup:** Mixed short-term signals as price hovers around the 20- and 50-day SMAs, but MACD shows renewed bullish momentum. Long-term trend is up.
+**EWC Technical Analysis**
+*   **Price Action:** Price (60.29) is below its SMA_20 (61.78) and SMA_50 (60.37) but above SMA_200 (56.94). The SMA_20 is above the SMA_50, but price is dipping below both, suggesting a short-term pullback within a long-term uptrend.
+*   **Momentum (RSI/MACD):** RSI (42.39) is neutral. MACD (0.16) is positive but has crossed below its signal line (0.41), with a negative and declining histogram (-0.25), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is below the lower Bollinger Band (60.56), suggesting oversold conditions and potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate. Price is oversold on Bollinger Bands, but bearish momentum is currently strong.
+*   **Commentary:** EWC is experiencing a short-term pullback, currently trading below its lower Bollinger Band, suggesting a potential bounce despite bearish MACD momentum.
 
-**30. ^IRX (13w bill)**
-*   **Price vs. SMAs:** Current price (3.805) is above SMA_20 (3.724), SMA_50 (3.721), and SMA_200 (3.629). This indicates a strong short-to-long term uptrend (rising short-term yields).
-*   **RSI:** RSI (66.36) is strong and neutral, indicating healthy upward momentum.
-*   **MACD:** MACD (0.018) is above its Signal Line (0.009), and the MACD Histogram (0.0086) is positive and increasing. This is a bullish crossover, confirming upward momentum.
-*   **Bollinger Bands:** Price is near the upper Bollinger Band (3.792), indicating strong buying pressure (rising yields). The bands are narrow, suggesting a volatility squeeze in an upward trend.
-*   **Technical Setup:** Strong trend continuation (rising short-term yields) with upward momentum and a bullish MACD crossover. Price is challenging the upper Bollinger Band with narrow bands, suggesting a squeeze.
+**XLC Technical Analysis**
+*   **Price Action:** Price (111.50) is below its SMA_20 (111.84) but above its SMA_50 (110.84) and SMA_200 (113.63). The SMAs are tightly clustered and mixed, indicating a sideways or choppy trend.
+*   **Momentum (RSI/MACD):** RSI (50.10) is neutral. MACD (0.24) is positive but has crossed below its signal line (0.38), with a negative and declining histogram (-0.14), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is in the middle of the Bollinger Bands, which are relatively narrow, indicating potential for a volatility contraction squeeze.
+*   **Technical Setup:** Volatility contraction squeeze, with mild bearish momentum. A breakout is likely.
+*   **Commentary:** XLC is in a tight trading range, showing early bearish MACD momentum within a volatility squeeze. A breakout is expected soon.
 
-**31. NBIS (AI Infrastructure)**
-*   **Price vs. SMAs:** Current price (240.35) is significantly above SMA_20 (228.90), SMA_50 (212.73), and SMA_200 (156.28). This indicates a strong short-to-long term uptrend.
-*   **RSI:** RSI (57.16) is strong and neutral, indicating healthy upward momentum.
-*   **MACD:** MACD (3.04) is above its Signal Line (1.18), and the MACD Histogram (1.86) is positive and increasing. This is a bullish crossover, confirming strong upward momentum.
-*   **Bollinger Bands:** Price is well within the Bollinger Bands, not close to either extreme. Bands are wide, indicating higher volatility.
-*   **Technical Setup:** Strong trend continuation. Price is in a clear uptrend across all SMAs, supported by bullish RSI and MACD.
+**TLT Technical Analysis**
+*   **Price Action:** Price (80.78) is below its SMA_20 (82.08), SMA_50 (82.66), and SMA_200 (84.53), with SMAs in a bearish order (20 < 50 < 200), indicating a clear downtrend.
+*   **Momentum (RSI/MACD):** RSI (35.84) is neutral, approaching oversold. MACD (-0.27) is negative and below its signal line (-0.20), with a declining histogram (-0.07), confirming bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the lower Bollinger Band (80.90), suggesting oversold conditions and potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate within a downtrend. Price is oversold on Bollinger Bands, but bearish momentum is strong.
+*   **Commentary:** TLT is in a strong downtrend and appears oversold on Bollinger Bands, suggesting a potential short-term bounce, but overall momentum remains bearish.
 
-**32. GOOGL (Alphabet)**
-*   **Price vs. SMAs:** Current price (330.65) is below SMA_20 (341.81), SMA_50 (347.92), and SMA_200 (335.96). This indicates a short-to-long term downtrend.
-*   **RSI:** RSI (39.47) is neutral, but leaning towards oversold, indicating significant selling pressure.
-*   **MACD:** MACD (-3.58) is below its Signal Line (-2.85), and the MACD Histogram (-0.73) is negative and declining. This is a bearish crossover, indicating strong downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (333.17), indicating strong selling pressure. The bands are moderately wide.
-*   **Technical Setup:** Clear downtrend across all SMAs. Strong bearish momentum with MACD reinforcing the sell-off. Price is testing the lower Bollinger Band, and RSI is approaching oversold territory, suggesting potential for a mean reversion bounce if selling exhausts.
+**LQD Technical Analysis**
+*   **Price Action:** Price (104.36) is below its SMA_20 (105.64), SMA_50 (105.97), and SMA_200 (106.91), with SMAs in a bearish order (20 < 50 < 200), indicating a clear downtrend.
+*   **Momentum (RSI/MACD):** RSI (33.08) is neutral, approaching oversold. MACD (-0.25) is negative and below its signal line (-0.16), with a declining histogram (-0.09), confirming strong bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the lower Bollinger Band (104.71), suggesting oversold conditions and potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate within a downtrend. Price is oversold on Bollinger Bands, but bearish momentum is strong.
+*   **Commentary:** LQD is in a clear downtrend and appears oversold by Bollinger Bands, suggesting a potential temporary bounce, but overall momentum is strongly bearish.
 
-**33. WDC (Western Digital)**
-*   **Price vs. SMAs:** Current price (482.28) is above SMA_20 (468.26), but below SMA_50 (501.25), and well above SMA_200 (375.86). This indicates a strong short-term uptrend within a mixed medium-term and strong long-term uptrend.
-*   **RSI:** RSI (51.59) is neutral.
-*   **MACD:** MACD (-9.81) is above its Signal Line (-14.64), and the MACD Histogram (4.82) is positive and increasing. This is a bullish crossover from deeply negative territory, suggesting a potential short-term upward momentum shift (mean reversion).
-*   **Bollinger Bands:** Price is well within the Bollinger Bands, not close to either extreme. Bands are wide, indicating high volatility.
-*   **Technical Setup:** Longer-term uptrend. A bullish MACD crossover from a significant dip suggests a mean reversion rally in progress, despite still being below the 50-day SMA.
+**AMZN Technical Analysis**
+*   **Price Action:** Price (251.89) is below its SMA_20 (259.38) and SMA_50 (254.95) but above its SMA_200 (239.62). The SMA_20 is above the SMA_50, but price is dipping, suggesting a short-term pullback within a long-term uptrend.
+*   **Momentum (RSI/MACD):** RSI (43.62) is neutral. MACD (-0.88) is negative and below its signal line (0.55), with a declining histogram (-1.43), indicating strong bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just above the lower Bollinger Band (251.48), indicating it is testing potential support.
+*   **Technical Setup:** Pullback within a long-term uptrend. Short-term bearish momentum is strong. Potential for a bounce if the lower Bollinger Band holds as support.
+*   **Commentary:** AMZN is experiencing a pullback within a long-term uptrend, with strong bearish MACD momentum. Price is testing the lower Bollinger Band, which may offer support.
 
-**34. TQQQ (3x Leveraged QQQ)**
-*   **Price vs. SMAs:** Current price (71.55) is below SMA_20 (72.24) but above SMA_50 (71.42) and SMA_200 (61.58). This suggests a short-term dip within a strong medium-to-long term uptrend.
-*   **RSI:** RSI (49.95) is neutral.
-*   **MACD:** MACD (-0.018) is above its Signal Line (-0.030), and the MACD Histogram (0.012) is positive and increasing. This is a slight bullish crossover, suggesting very minor upward momentum shift from a low base.
-*   **Bollinger Bands:** Price is well within the Bollinger Bands, not close to either extreme. Bands are moderately wide.
-*   **Technical Setup:** Similar to QQQ, TQQQ is experiencing a short-term dip within a larger uptrend. The bullish MACD crossover, though weak, might suggest a slight turning point after the dip.
+**META Technical Analysis**
+*   **Price Action:** Price (644.38) is well above its SMA_20 (583.81), SMA_50 (600.20), and SMA_200 (622.30), with all SMAs in a bullish order (20 > 50 > 200). The current price is at the upper Bollinger Band (644.73), indicating a strong uptrend and potentially overextended conditions.
+*   **Momentum (RSI/MACD):** RSI (66.38) is neutral, approaching overbought. MACD (11.60) is positive and well above its signal line (1.68), with a positive and sharply rising histogram (9.92), indicating extremely strong bullish momentum.
+*   **Volatility (Bollinger Bands):** Price is at the upper Bollinger Band, suggesting it is overextended and could face resistance or a slight pullback.
+*   **Technical Setup:** Strong trend continuation. Price is at the upper Bollinger Band, indicating strength but also potential for a slight mean reversion pullback or consolidation.
+*   **Commentary:** META is in a powerful uptrend, hitting the upper Bollinger Band with extremely strong bullish MACD momentum. This suggests continued strength, but a temporary consolidation could occur.
 
-**35. VT (Total World Stock)**
-*   **Price vs. SMAs:** Current price (159.89) is below SMA_20 (160.91) but above SMA_50 (158.43) and SMA_200 (149.05). This indicates a short-term dip within a strong medium-to-long term uptrend.
-*   **RSI:** RSI (49.43) is neutral.
-*   **MACD:** MACD (0.60) is below its Signal Line (0.82), and the MACD Histogram (-0.22) is negative and declining. This is a bearish crossover, indicating slight downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (159.25). The bands are narrow, suggesting a volatility contraction.
-*   **Technical Setup:** Short-term bearish momentum is pushing price towards the lower Bollinger Band within a strong longer-term uptrend. The narrow bands suggest a potential volatility squeeze.
+**CRWD Technical Analysis**
+*   **Price Action:** Price (208.86) is slightly above its SMA_20 (208.45), SMA_50 (202.31), and well above its SMA_200 (143.70), with all SMAs in a bullish order (20 > 50 > 200), indicating a strong uptrend.
+*   **Momentum (RSI/MACD):** RSI (51.10) is neutral. MACD (2.80) is positive but has crossed below its signal line (3.46), with a negative and declining histogram (-0.66), indicating nascent bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is in the middle of the Bollinger Bands, which are wide, indicating moderate volatility.
+*   **Technical Setup:** Consolidation within a strong uptrend. Slight bearish momentum in the short-term.
+*   **Commentary:** CRWD is in a strong uptrend and consolidating near its 20-day SMA. MACD shows a slight bearish turn, suggesting a temporary pause in upward momentum.
 
-**36. AVGO (Broadcom)**
-*   **Price vs. SMAs:** Current price (364.38) is below SMA_20 (373.05) and SMA_50 (383.57), but above SMA_200 (369.24). This indicates a short-to-medium term downtrend, with price now below its 200-day SMA. This is a bearish development for the long-term trend.
-*   **RSI:** RSI (43.19) is neutral, leaning bearish.
-*   **MACD:** MACD (-7.76) is below its Signal Line (-7.58), and the MACD Histogram (-0.18) is negative and declining. This is a bearish crossover (or continuation of bearish momentum, depending on exact timing not fully visible).
-*   **Bollinger Bands:** Price is well within the Bollinger Bands, not close to either extreme. Bands are wide, indicating higher volatility.
-*   **Technical Setup:** Bearish short-to-medium term trend, with price now falling below the 200-day SMA, which is a significant bearish signal. MACD indicates continued downward momentum. This suggests further downside could be possible.
+**TQQQ Technical Analysis**
+*   **Price Action:** Price (69.21) is below its SMA_20 (71.97) and SMA_50 (71.18) but above its SMA_200 (61.70). The SMA_20 is above the SMA_50, but price is breaking below both, signaling a short-term pullback within a long-term uptrend.
+*   **Momentum (RSI/MACD):** RSI (44.61) is neutral, leaning weak. MACD (-0.20) is negative and below its signal line (-0.06), with a declining histogram (-0.14), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just above the lower Bollinger Band (67.28), indicating it's testing potential support.
+*   **Technical Setup:** Pullback within a long-term uptrend. Short-term bearish momentum. Potential for a bounce if the lower Bollinger Band holds.
+*   **Commentary:** TQQQ is experiencing a pullback within a long-term uptrend, with short-term bearish MACD momentum. Price is testing the lower Bollinger Band, which may act as support.
 
-**37. XLB (Materials)**
-*   **Price vs. SMAs:** Current price (51.39) is below SMA_20 (52.66) and SMA_50 (51.84), but above SMA_200 (49.92). This indicates a short-to-medium term downtrend, still above long-term support.
-*   **RSI:** RSI (41.29) is neutral, leaning bearish.
-*   **MACD:** MACD (0.04) is below its Signal Line (0.26), and the MACD Histogram (-0.22) is negative and declining. This is a bearish crossover, indicating downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (51.41). The bands are narrow, suggesting a volatility contraction.
-*   **Technical Setup:** Short-to-medium term bearish momentum pushing price towards the lower Bollinger Band. The narrow bands suggest a volatility squeeze. Still above long-term support.
+**MU Technical Analysis**
+*   **Price Action:** Price (977.41) is above its SMA_20 (961.54), SMA_50 (929.74), and SMA_200 (618.09), with all SMAs in a bullish order (20 > 50 > 200), indicating a strong uptrend.
+*   **Momentum (RSI/MACD):** RSI (53.29) is neutral. MACD (19.68) is positive and well above its signal line (13.59), with a positive and rising histogram (6.09), indicating strong bullish momentum.
+*   **Volatility (Bollinger Bands):** Price is near the midpoint of the Bollinger Bands, which are wide, indicating high volatility.
+*   **Technical Setup:** Strong trend continuation. Bullish momentum is firm.
+*   **Commentary:** MU is in a robust uptrend with strong bullish MACD momentum, suggesting a continuation of its upward trajectory after recent gains.
 
-**38. XEQT.TO (CAD Global Equity ETF)**
-*   **Price vs. SMAs:** Current price (45.20) is below SMA_20 (45.76) but above SMA_50 (45.38) and SMA_200 (42.35). This suggests a short-term dip within a strong medium-to-long term uptrend.
-*   **RSI:** RSI (43.68) is neutral, leaning bearish.
-*   **MACD:** MACD (0.028) is below its Signal Line (0.11), and the MACD Histogram (-0.084) is negative and declining. This is a bearish crossover, indicating slight downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (45.13). The bands are narrow, suggesting a volatility contraction.
-*   **Technical Setup:** Short-term bearish momentum pushing price towards the lower Bollinger Band. The narrow bands suggest a volatility squeeze. Overall, a minor pullback within a healthy uptrend.
+**VTI Technical Analysis**
+*   **Price Action:** Price (373.24) is below its SMA_20 (378.74) and SMA_50 (374.34) but above its SMA_200 (350.80). The SMA_20 is above the SMA_50, but price is dipping below them, suggesting a short-term pullback within a long-term uptrend.
+*   **Momentum (RSI/MACD):** RSI (43.15) is neutral, leaning bearish. MACD (0.37) is positive but has crossed below its signal line (1.24), with a negative and declining histogram (-0.87), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the lower Bollinger Band (373.33), suggesting oversold conditions and potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate. Price is oversold on Bollinger Bands, but bearish momentum is currently strong.
+*   **Commentary:** VTI is undergoing a short-term pullback, currently sitting just below its lower Bollinger Band, suggesting a potential bounce. However, MACD indicates strong bearish momentum.
 
-**39. ^VIX (Volatility Index)**
-*   **Price vs. SMAs:** Current price (16.46) is above SMA_20 (15.21), SMA_50 (16.10), but below SMA_200 (18.12). This indicates a short-to-medium term uptrend (rising volatility) approaching long-term resistance.
-*   **RSI:** RSI (54.79) is neutral, showing healthy upward momentum.
-*   **MACD:** MACD (-0.16) is above its Signal Line (-0.34), and the MACD Histogram (0.18) is positive and increasing. This is a bullish crossover, confirming upward momentum.
-*   **Bollinger Bands:** Price is near the upper Bollinger Band (16.51), indicating strong buying pressure (rising volatility). The bands are moderately wide.
-*   **Technical Setup:** Strong upward momentum (increasing fear/volatility) with a bullish MACD crossover. Price is challenging the upper Bollinger Band. This suggests increasing risk aversion.
+**KLAC Technical Analysis**
+*   **Price Action:** Price (177.18) is below its SMA_20 (185.23) and SMA_50 (200.02) but above its SMA_200 (172.23). The SMA_20 is below the SMA_50, indicating a short-to-medium term downtrend within a longer-term uptrend.
+*   **Momentum (RSI/MACD):** RSI (41.89) is neutral. MACD (-5.76) is negative but has crossed above its signal line (-6.79), with a positive and rising histogram (1.03), suggesting nascent bullish momentum (potential divergence).
+*   **Volatility (Bollinger Bands):** Price is near the lower Bollinger Band (164.04), which could offer support.
+*   **Technical Setup:** Potential mean reversion bounce or slowing of downtrend, with nascent bullish MACD divergence.
+*   **Commentary:** KLAC is in a short-term downtrend but showing early signs of bullish MACD divergence near its 200-day SMA, which could lead to a temporary bounce.
 
-**40. QUAL (Quality Factor ETF)**
-*   **Price vs. SMAs:** Current price (219.56) is below SMA_20 (223.42) but above SMA_50 (221.22) and SMA_200 (207.63). This indicates a short-term dip within a medium-to-long term uptrend.
-*   **RSI:** RSI (40.44) is neutral, leaning towards oversold, indicating some selling pressure.
-*   **MACD:** MACD (-0.11) is below its Signal Line (0.51), and the MACD Histogram (-0.62) is negative and declining. This is a bearish crossover, indicating downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (219.86). The bands are narrow, suggesting a volatility contraction.
-*   **Technical Setup:** Short-term bearish momentum is pushing price towards the lower Bollinger Band. The narrow bands suggest a volatility squeeze. Still within a longer-term uptrend.
+**MSFT Technical Analysis**
+*   **Price Action:** Price (492.44) is below its SMA_20 (494.27) but well above its SMA_50 (450.87) and SMA_200 (429.52), with SMAs in a bullish order (20 > 50 > 200), indicating a strong uptrend.
+*   **Momentum (RSI/MACD):** RSI (55.22) is neutral, leaning bullish. MACD (11.22) is positive but has crossed below its signal line (15.17), with a negative and declining histogram (-3.94), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is in the middle of the Bollinger Bands, which are moderately wide.
+*   **Technical Setup:** Short-term pullback/consolidation within a strong uptrend. Bearish momentum is present.
+*   **Commentary:** MSFT is in a strong uptrend, currently experiencing a short-term pullback with bearish MACD momentum. Price is holding above key longer-term SMAs.
 
-**41. SLV (Silver ETF)**
-*   **Price vs. SMAs:** Current price (60.72) is above SMA_20 (60.18) and SMA_50 (56.29), but below SMA_200 (65.46). This indicates a short-to-medium term uptrend, but facing resistance from the long-term SMA.
-*   **RSI:** RSI (55.49) is neutral, showing healthy upward momentum.
-*   **MACD:** MACD (0.88) is below its Signal Line (1.15), and the MACD Histogram (-0.27) is negative and declining. This is a bearish crossover, indicating a loss of upward momentum.
-*   **Bollinger Bands:** Price is well within the Bollinger Bands, not close to either extreme. Bands are moderately wide.
-*   **Technical Setup:** Strong short-to-medium term uptrend, but short-term momentum has turned bearish as MACD crosses over. It's consolidating within its bands.
+**XLE Technical Analysis**
+*   **Price Action:** Price (64.93) is above its SMA_20 (63.51), SMA_50 (59.89), and SMA_200 (54.69), with all SMAs in a bullish order (20 > 50 > 200), indicating a strong uptrend.
+*   **Momentum (RSI/MACD):** RSI (65.24) is neutral, approaching overbought. MACD (1.42) is positive and very close to its signal line (1.43), with a flat histogram (-0.01), indicating fading bullish momentum.
+*   **Volatility (Bollinger Bands):** Price is near the upper Bollinger Band (65.87), suggesting strength but also potentially overextended conditions.
+*   **Technical Setup:** Strong trend continuation, but bullish momentum is fading, suggesting potential for consolidation or a slight pullback.
+*   **Commentary:** XLE is in a strong uptrend, but its bullish momentum is starting to fade near the upper Bollinger Band, indicating a possible pause or minor pullback.
 
-**42. AMD (Advanced Micro Devices)**
-*   **Price vs. SMAs:** Current price (521.10) is above SMA_20 (479.35), SMA_50 (498.59), and SMA_200 (343.86). This indicates a strong short-to-long term uptrend.
-*   **RSI:** RSI (60.43) is strong and neutral, indicating healthy upward momentum.
-*   **MACD:** MACD (-0.76) is above its Signal Line (-6.25), and the MACD Histogram (5.50) is positive and increasing. This is a strong bullish crossover, confirming upward momentum.
-*   **Bollinger Bands:** Price is near the upper Bollinger Band (516.61), indicating strong buying pressure. The bands are moderately wide.
-*   **Technical Setup:** Strong trend continuation. Price is riding the upper Bollinger Band, indicating strong buying pressure, supported by bullish RSI and a strong bullish MACD crossover.
+**XEQT.TO Technical Analysis**
+*   **Price Action:** Price (44.85) is below its SMA_20 (45.69) and SMA_50 (45.38) but above its SMA_200 (42.38). The SMA_20 is above the SMA_50, but price is dipping, suggesting a short-term pullback within a long-term uptrend.
+*   **Momentum (RSI/MACD):** RSI (38.87) is neutral, approaching oversold. MACD (-0.03) is negative and below its signal line (0.08), with a declining histogram (-0.12), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the lower Bollinger Band (44.98), suggesting oversold conditions and potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate. Price is oversold on Bollinger Bands, but bearish momentum is currently strong.
+*   **Commentary:** XEQT.TO is undergoing a short-term pullback, currently sitting just below its lower Bollinger Band, suggesting a potential bounce. However, MACD indicates strong bearish momentum.
 
-**43. TSM (Taiwan Semiconductor Manufacturing)**
-*   **Price vs. SMAs:** Current price (435.36) is above SMA_20 (421.63), SMA_50 (420.15), and SMA_200 (373.42). This indicates a strong short-to-long term uptrend.
-*   **RSI:** RSI (59.10) is strong and neutral, indicating healthy upward momentum.
-*   **MACD:** MACD (3.07) is above its Signal Line (0.99), and the MACD Histogram (2.08) is positive and increasing. This is a strong bullish crossover, confirming upward momentum.
-*   **Bollinger Bands:** Price is near the upper Bollinger Band (438.10), indicating strong buying pressure. The bands are moderately wide.
-*   **Technical Setup:** Strong trend continuation. Price is riding the upper Bollinger Band, indicating strong buying pressure, supported by bullish RSI and a strong bullish MACD crossover.
+**XLP Technical Analysis**
+*   **Price Action:** Price (83.09) is below its SMA_20 (85.34), SMA_50 (84.99), and very close to its SMA_200 (82.77), with SMAs in a bearish order (20 < 50 < 200), indicating a downtrend.
+*   **Momentum (RSI/MACD):** RSI (38.24) is neutral, approaching oversold. MACD (-0.38) is negative and well below its signal line (-0.03), with a sharply declining histogram (-0.35), confirming strong bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the lower Bollinger Band (83.19), suggesting oversold conditions and potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate within a downtrend. Price is oversold on Bollinger Bands, but bearish momentum is strong.
+*   **Commentary:** XLP is in a downtrend and appears oversold on Bollinger Bands, suggesting a potential short-term bounce, but overall momentum is strongly bearish.
 
-**44. XLY (Consumer Discretionary)**
-*   **Price vs. SMAs:** Current price (112.46) is significantly below SMA_20 (116.56), SMA_50 (116.15), and SMA_200 (116.69). This indicates a strong short-to-long term downtrend.
-*   **RSI:** RSI (37.96) is neutral but approaching oversold, indicating strong selling pressure.
-*   **MACD:** MACD (-0.66) is below its Signal Line (-0.14), and the MACD Histogram (-0.52) is negative and declining. This is a strong bearish crossover, indicating strong downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (113.29). The bands are moderately wide.
-*   **Technical Setup:** Strong downtrend across all SMAs. Strong bearish momentum with MACD reinforcing the sell-off. Price is testing the lower Bollinger Band, and RSI is approaching oversold territory, suggesting potential for a mean reversion bounce if selling exhausts.
+**XLI Technical Analysis**
+*   **Price Action:** Price (170.55) is significantly below its SMA_20 (178.25) and SMA_50 (180.54) and is now trading around its SMA_200 (170.56). The SMAs are in a bearish order (20 < 50), indicating a short-to-medium term downtrend.
+*   **Momentum (RSI/MACD):** RSI (30.13) is neutral, just above oversold territory. MACD (-2.65) is negative and well below its signal line (-1.86), with a declining histogram (-0.78), indicating strong bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just above the lower Bollinger Band (168.73), indicating downside pressure and approaching oversold levels.
+*   **Technical Setup:** Downtrend continuation, testing long-term support. Price is nearing oversold on RSI and Bollinger Bands, suggesting a potential short-term bounce is possible, but momentum is strongly bearish.
+*   **Commentary:** XLI is in a clear short-term downtrend, testing its 200-day SMA, with strong bearish momentum. It's approaching oversold levels, which might lead to a temporary bounce.
 
-**45. XLF (Financials)**
-*   **Price vs. SMAs:** Current price (57.06) is below SMA_20 (57.80), but just above SMA_50 (57.00) and well above SMA_200 (53.28). This suggests a short-term downtrend, with the 50-day SMA providing tenuous support, within a strong long-term uptrend.
-*   **RSI:** RSI (46.04) is neutral.
-*   **MACD:** MACD (0.18) is below its Signal Line (0.33), and the MACD Histogram (-0.15) is negative and declining. This is a bearish crossover, indicating downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (56.91). The bands are narrow, suggesting a volatility contraction.
-*   **Technical Setup:** Short-term bearish momentum pushing price towards the lower Bollinger Band. Price is consolidating around the 50-day SMA, indicating a potential test of support within a narrow volatility range.
+**CEG Technical Analysis**
+*   **Price Action:** Price (285.97) is above its SMA_20 (281.17) and SMA_50 (268.30) but below its SMA_200 (294.68). The SMA_20 is above the SMA_50, indicating short-term strength.
+*   **Momentum (RSI/MACD):** RSI (54.80) is neutral, leaning bullish. MACD (6.29) is positive and above its signal line (5.36), with a positive and rising histogram (0.94), indicating bullish momentum.
+*   **Volatility (Bollinger Bands):** Price is in the middle of the Bollinger Bands, which are wide, indicating moderate volatility.
+*   **Technical Setup:** Short-term trend continuation (uptrend), attempting to break above its long-term resistance (SMA_200).
+*   **Commentary:** CEG is showing strong short-term bullish momentum, trading above its 20 and 50-day SMAs and attempting to reverse its longer-term downtrend by breaking above the 200-day SMA.
 
-**46. XLK (Technology)**
-*   **Price vs. SMAs:** Current price (187.87) is above SMA_20 (185.86), SMA_50 (182.79), and SMA_200 (160.61). This indicates a strong short-to-long term uptrend.
-*   **RSI:** RSI (56.21) is neutral, showing healthy upward momentum.
-*   **MACD:** MACD (1.10) is above its Signal Line (0.92), and the MACD Histogram (0.18) is positive and increasing. This is a bullish crossover, confirming upward momentum.
-*   **Bollinger Bands:** Price is well within the Bollinger Bands, not close to either extreme. Bands are moderately wide.
-*   **Technical Setup:** Strong trend continuation. Price is in a clear uptrend across all SMAs, supported by bullish RSI and MACD.
+**SSO Technical Analysis**
+*   **Price Action:** Price (68.50) is below its SMA_20 (70.44) and SMA_50 (69.02) but above its SMA_200 (62.20). The SMA_20 is above the SMA_50, but price is dipping below them, suggesting a short-term pullback within a long-term uptrend.
+*   **Momentum (RSI/MACD):** RSI (42.90) is neutral, leaning weak. MACD (0.10) is positive but has crossed below its signal line (0.39), with a negative and declining histogram (-0.29), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the lower Bollinger Band (68.52), suggesting oversold conditions and potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate. Price is oversold on Bollinger Bands, but bearish momentum is currently strong.
+*   **Commentary:** SSO is experiencing a sharp pullback, currently oversold on Bollinger Bands. While the long-term trend is up, short-term momentum is bearish, suggesting a potential bounce from current levels.
 
-**47. UUP (US Dollar Index ETF)**
-*   **Price vs. SMAs:** Current price (27.98) is below SMA_20 (28.055) and SMA_50 (28.226), but above SMA_200 (27.627). This indicates a short-to-medium term downtrend, still above long-term support.
-*   **RSI:** RSI (43.39) is neutral, leaning bearish.
-*   **MACD:** MACD (-0.041) is above its Signal Line (-0.045), and the MACD Histogram (0.0037) is positive and increasing. This is a very slight bullish crossover from negative territory, suggesting potential for a minor bounce.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (27.85). The bands are narrow, suggesting a volatility contraction.
-*   **Technical Setup:** Short-to-medium term downtrend. The narrow Bollinger Bands and slight bullish MACD crossover suggest a potential volatility squeeze or a minor mean reversion bounce may be underway.
+**DIA Technical Analysis**
+*   **Price Action:** Price (520.75) is below its SMA_20 (532.02) and SMA_50 (528.78) but above its SMA_200 (497.15). The SMA_20 is below the SMA_50, indicating short-term weakness within a longer-term uptrend.
+*   **Momentum (RSI/MACD):** RSI (38.69) is neutral, approaching oversold. MACD (-0.71) is negative and well below its signal line (0.96), with a sharply declining histogram (-1.67), indicating strong bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is well below the midpoint and approaching the lower Bollinger Band (523.40), indicating strong downside pressure.
+*   **Technical Setup:** Short-term downtrend/pullback within a long-term uptrend, with strong bearish momentum. Potential for a mean reversion bounce if lower band holds.
+*   **Commentary:** DIA is experiencing a significant short-term pullback, trading below its 20 and 50-day SMAs with strong bearish MACD momentum. It's approaching oversold levels on RSI.
 
-**48. TSLA (Tesla)**
-*   **Price vs. SMAs:** Current price (367.81) is above SMA_20 (352.05) but below SMA_50 (356.84) and SMA_200 (399.21). This indicates a short-term uptrend within a medium-to-long term downtrend.
-*   **RSI:** RSI (55.57) is neutral, showing healthy upward momentum.
-*   **MACD:** MACD (4.94) is above its Signal Line (2.16), and the MACD Histogram (2.77) is positive and increasing. This is a strong bullish crossover, confirming strong upward momentum.
-*   **Bollinger Bands:** Price is near the upper Bollinger Band (376.01), indicating strong buying pressure. The bands are moderately wide.
-*   **Technical Setup:** Short-term bullish rally, with price riding the upper Bollinger Band and supported by a strong bullish MACD. This is a powerful upward move that is attempting to reverse the medium-to-long term downtrend.
+**^VIX3M Technical Analysis**
+*   **Price Action:** Price (20.54) is above its SMA_20 (19.53) and SMA_50 (20.08) but below its SMA_200 (20.95). The SMA_20 is below the SMA_50, indicating mixed short-term signals.
+*   **Momentum (RSI/MACD):** RSI (55.52) is neutral, leaning bullish. MACD (-0.20) is negative but has just crossed above its signal line (-0.32), with a positive and rising histogram (0.12), suggesting nascent bullish momentum.
+*   **Volatility (Bollinger Bands):** Price is in the middle of the Bollinger Bands, which are relatively wide.
+*   **Technical Setup:** Consolidation/choppy trend with nascent bullish momentum.
+*   **Commentary:** ^VIX3M is consolidating, showing early signs of bullish MACD momentum, suggesting potential for an increase in longer-term implied volatility.
 
-**49. ^VIX3M (3M VIX)**
-*   **Price vs. SMAs:** Current price (20.54) is above SMA_20 (19.53) and SMA_50 (20.08), but below SMA_200 (20.95). This indicates a short-to-medium term uptrend (rising volatility) approaching long-term resistance.
-*   **RSI:** RSI (55.52) is neutral, showing healthy upward momentum.
-*   **MACD:** MACD (-0.198) is above its Signal Line (-0.321), and the MACD Histogram (0.123) is positive and increasing. This is a bullish crossover, confirming upward momentum.
-*   **Bollinger Bands:** Price is well within the Bollinger Bands, not close to either extreme. Bands are moderately wide.
-*   **Technical Setup:** Similar to ^VIX, ^VIX3M shows strong upward momentum (increasing implied volatility) with a bullish MACD crossover. It's consolidating slightly below its 200-day SMA.
+**AAPL Technical Analysis**
+*   **Price Action:** Price (326.57) is above its SMA_20 (315.28), SMA_50 (317.07), and SMA_200 (284.23), with all SMAs in a bullish order (20 > 50 > 200), indicating a strong uptrend.
+*   **Momentum (RSI/MACD):** RSI (58.99) is neutral, leaning bullish. MACD (2.40) is positive and above its signal line (1.62), with a positive and rising histogram (0.78), indicating bullish momentum.
+*   **Volatility (Bollinger Bands):** Price is near the upper Bollinger Band (329.06), suggesting strength but also potentially overextended conditions.
+*   **Technical Setup:** Strong trend continuation. Price is at the upper Bollinger Band, indicating strength but also potential for a slight mean reversion pullback or consolidation.
+*   **Commentary:** AAPL is in a strong uptrend with clear bullish momentum on MACD, currently testing the upper Bollinger Band, indicating robust buying interest.
 
-**50. XLE (Energy)**
-*   **Price vs. SMAs:** Current price (65.31) is significantly above SMA_20 (63.32), SMA_50 (59.66), and SMA_200 (54.58). This indicates a very strong short-to-long term uptrend.
-*   **RSI:** RSI (68.38) is strong and approaching overbought territory, indicating very strong buying pressure.
-*   **MACD:** MACD (1.45) is above its Signal Line (1.44), and the MACD Histogram (0.016) is positive and increasing. This is a bullish crossover, confirming strong upward momentum.
-*   **Bollinger Bands:** Price is near the upper Bollinger Band (65.82), indicating strong buying pressure. The bands are moderately wide.
-*   **Technical Setup:** Very strong trend continuation. Price is aggressively pushing towards the upper Bollinger Band, indicating parabolic-like upward movement. RSI is approaching overbought.
+**IAU Technical Analysis**
+*   **Price Action:** Price (81.27) is below its SMA_20 (83.93) and SMA_200 (85.19) but above its SMA_50 (80.07). The SMAs are mixed, indicating a neutral-to-bearish short-term trend within a longer-term struggle.
+*   **Momentum (RSI/MACD):** RSI (45.76) is neutral. MACD (0.48) is positive but has crossed below its signal line (1.08), with a negative and declining histogram (-0.60), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is below the midpoint of the Bollinger Bands and near the lower band (79.81), indicating downside pressure.
+*   **Technical Setup:** Short-term bearish momentum within a choppy, neutral-to-bearish trend. Potential for mean reversion if the lower band holds.
+*   **Commentary:** IAU is experiencing short-term bearish momentum, trading below its 20-day SMA. The overall trend is not clearly defined, suggesting a choppy market with recent weakness.
 
-**51. XLV (Healthcare)**
-*   **Price vs. SMAs:** Current price (166.58) is below SMA_20 (171.18) but above SMA_50 (165.98) and SMA_200 (154.71). This indicates a short-term downtrend within a strong medium-to-long term uptrend.
-*   **RSI:** RSI (43.59) is neutral, leaning bearish.
-*   **MACD:** MACD (1.16) is below its Signal Line (2.18), and the MACD Histogram (-1.01) is negative and declining. This is a bearish crossover, indicating downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (165.46). The bands are moderately wide.
-*   **Technical Setup:** Short-term bearish momentum pushing price towards the lower Bollinger Band and testing the 50-day SMA support, within a longer-term uptrend.
+**XLV Technical Analysis**
+*   **Price Action:** Price (165.66) is below its SMA_20 (171.04) but above its SMA_50 (166.12) and SMA_200 (154.79). The SMA_20 is above the SMA_50, but price is dipping below them, suggesting a short-term pullback within a long-term uptrend.
+*   **Momentum (RSI/MACD):** RSI (41.65) is neutral, leaning weak. MACD (0.70) is positive but has crossed below its signal line (1.88), with a negative and declining histogram (-1.18), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the lower Bollinger Band (164.94), suggesting oversold conditions and potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate. Price is oversold on Bollinger Bands, but bearish momentum is currently strong.
+*   **Commentary:** XLV is undergoing a short-term pullback, currently sitting just below its lower Bollinger Band, suggesting a potential bounce. However, MACD indicates strong bearish momentum.
 
-**52. IBIT (Bitcoin ETF proxy)**
-*   **Price vs. SMAs:** Current price (44.29) is above SMA_20 (41.98) and SMA_50 (38.47), but below SMA_200 (42.31). This indicates a strong short-to-medium term uptrend, now above long-term resistance (bullish breakout).
-*   **RSI:** RSI (62.26) is strong and neutral, indicating healthy upward momentum.
-*   **MACD:** MACD (2.05) is above its Signal Line (2.01), and the MACD Histogram (0.038) is positive and increasing. This is a bullish crossover, confirming strong upward momentum.
-*   **Bollinger Bands:** Price is near the upper Bollinger Band (49.44). The bands are very wide, indicating significantly increased volatility.
-*   **Technical Setup:** Strong bullish trend continuation, breaking above the 200-day SMA. Strong momentum with a bullish MACD crossover and price riding the upper Bollinger Band. The wide bands suggest high volatility.
+**GLD Technical Analysis**
+*   **Price Action:** Price (396.36) is below its SMA_20 (409.44) and SMA_200 (415.81) but above its SMA_50 (390.65). The SMAs are mixed, indicating a neutral-to-bearish short-term trend within a longer-term struggle.
+*   **Momentum (RSI/MACD):** RSI (45.71) is neutral. MACD (2.30) is positive but has crossed below its signal line (5.25), with a negative and declining histogram (-2.95), indicating strong bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is in the middle of the Bollinger Bands, which are wide.
+*   **Technical Setup:** Short-term bearish momentum within a choppy, neutral-to-bearish trend.
+*   **Commentary:** GLD is experiencing short-term bearish momentum, trading below its 20-day SMA. The overall trend is not clearly defined, suggesting a choppy market with recent weakness.
 
-**53. TMF (3x Leveraged TLT)**
-*   **Price vs. SMAs:** Current price (30.34) is below SMA_20 (30.92), SMA_50 (31.89), and SMA_200 (35.40). This indicates a strong short-to-long term downtrend.
-*   **RSI:** RSI (41.44) is neutral, leaning bearish.
-*   **MACD:** MACD (-0.31) is below its Signal Line (-0.33), and the MACD Histogram (0.017) is positive and increasing. This is a very slight bullish crossover from negative territory, suggesting potential for a minor bounce.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (29.81). The bands are narrow, suggesting a volatility contraction.
-*   **Technical Setup:** Strong downtrend. The narrow Bollinger Bands and slight bullish MACD crossover from deeply negative territory suggest a potential mean reversion bounce or volatility squeeze, but within a powerful underlying downtrend.
+**XLF Technical Analysis**
+*   **Price Action:** Price (56.87) is below its SMA_20 (57.75) and SMA_50 (57.06) but above its SMA_200 (53.31). The SMA_20 is above the SMA_50, but price is dipping below them, suggesting a short-term pullback within a long-term uptrend.
+*   **Momentum (RSI/MACD):** RSI (44.46) is neutral, leaning bearish. MACD (0.10) is positive but has crossed below its signal line (0.29), with a negative and declining histogram (-0.18), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the lower Bollinger Band (56.78), suggesting oversold conditions and potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate. Price is oversold on Bollinger Bands, but bearish momentum is currently strong.
+*   **Commentary:** XLF is undergoing a short-term pullback, currently sitting just below its lower Bollinger Band, suggesting a potential bounce. However, MACD indicates strong bearish momentum.
 
-**54. SPY (S&P 500 ETF)**
-*   **Price vs. SMAs:** Current price (762.40) is below SMA_20 (768.29) but above SMA_50 (758.02) and SMA_200 (710.95). This suggests a short-term dip within a strong medium-to-long term uptrend.
-*   **RSI:** RSI (48.07) is neutral.
-*   **MACD:** MACD (2.11) is below its Signal Line (3.27), and the MACD Histogram (-1.16) is negative and declining. This is a bearish crossover, indicating downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (759.37), suggesting it's testing potential support. Bands are moderately wide.
-*   **Technical Setup:** Short-term bearish momentum pushing price towards the lower Bollinger Band and the 50-day SMA, within a strong longer-term uptrend. This looks like a pullback testing short-term support.
+**TSM Technical Analysis**
+*   **Price Action:** Price (428.03) is above its SMA_20 (421.57), SMA_50 (419.15), and SMA_200 (374.19), with all SMAs in a bullish order (20 > 50 > 200), indicating a strong uptrend.
+*   **Momentum (RSI/MACD):** RSI (54.10) is neutral, leaning bullish. MACD (3.16) is positive and above its signal line (1.42), with a positive and rising histogram (1.74), indicating strong bullish momentum.
+*   **Volatility (Bollinger Bands):** Price is within the upper half of the Bollinger Bands, suggesting strength.
+*   **Technical Setup:** Strong trend continuation. Bullish momentum is firm.
+*   **Commentary:** TSM is in a strong uptrend with robust bullish MACD momentum, suggesting a continuation of its upward trajectory.
 
-**55. TLN (Power for Data Centers)**
-*   **Price vs. SMAs:** Current price (319.67) is near SMA_20 (319.71), but below SMA_50 (344.42) and SMA_200 (357.45). This indicates a short-term consolidation within a medium-to-long term downtrend.
-*   **RSI:** RSI (47.71) is neutral.
-*   **MACD:** MACD (-9.65) is above its Signal Line (-12.69), and the MACD Histogram (3.03) is positive and increasing. This is a bullish crossover from deeply negative territory, suggesting a potential short-term upward momentum shift (mean reversion).
-*   **Bollinger Bands:** Price is well within the Bollinger Bands, not close to either extreme. Bands are wide, indicating higher volatility.
-*   **Technical Setup:** Bearish longer-term trend. However, the bullish MACD crossover from deeply negative territory suggests a potential mean reversion bounce is gaining momentum, moving price toward the 20-day SMA.
+**ORCL Technical Analysis**
+*   **Price Action:** Price (152.94) is above its SMA_20 (149.68) and SMA_50 (140.46) but below its SMA_200 (167.05). The SMA_20 is above the SMA_50, indicating short-term strength, but the price is still below its long-term average.
+*   **Momentum (RSI/MACD):** RSI (53.48) is neutral, leaning bullish. MACD (3.70) is positive and above its signal line (2.65), with a positive and rising histogram (1.06), indicating bullish momentum.
+*   **Volatility (Bollinger Bands):** Price is in the middle of the Bollinger Bands, which are wide.
+*   **Technical Setup:** Short-term trend continuation (uptrend), attempting to break above its long-term resistance (SMA_200).
+*   **Commentary:** ORCL is showing strong short-term bullish momentum, trading above its 20 and 50-day SMAs and attempting to reverse its longer-term downtrend by breaking above the 200-day SMA.
 
-**56. SSO (2x Leveraged SPY)**
-*   **Price vs. SMAs:** Current price (69.35) is below SMA_20 (70.59) but above SMA_50 (69.00) and SMA_200 (62.12). This suggests a short-term dip within a strong medium-to-long term uptrend.
-*   **RSI:** RSI (46.82) is neutral.
-*   **MACD:** MACD (0.26) is below its Signal Line (0.46), and the MACD Histogram (-0.21) is negative and declining. This is a bearish crossover, indicating downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (68.84), suggesting it's testing potential support. Bands are moderately wide.
-*   **Technical Setup:** Similar to SPY, SSO is experiencing a short-term bearish pullback within a longer-term uptrend. Price is testing the lower Bollinger Band and the SMA_50, while MACD signals downward momentum. Due to its leveraged nature, these moves are amplified.
+**WDC Technical Analysis**
+*   **Price Action:** Price (460.93) is below its SMA_20 (468.61) and SMA_50 (497.70) but above its SMA_200 (377.47). The SMA_20 is below the SMA_50, indicating short-to-medium term weakness within a longer-term uptrend.
+*   **Momentum (RSI/MACD):** RSI (46.77) is neutral. MACD (-9.41) is negative but has crossed above its signal line (-13.59), with a positive and rising histogram (4.18), suggesting nascent bullish momentum (potential divergence).
+*   **Volatility (Bollinger Bands):** Price is within the lower half of the Bollinger Bands, and the bands are wide, indicating high volatility.
+*   **Technical Setup:** Emerging bullish momentum within a short-term downtrend. Could be a counter-trend bounce or a consolidation before further downside.
+*   **Commentary:** WDC is in a short-term downtrend but showing early signs of bullish MACD divergence, which could signal a temporary bounce or a slowing of the decline.
 
-**57. DIA (Dow Jones 30)**
-*   **Price vs. SMAs:** Current price (524.07) is below SMA_20 (532.82) and SMA_50 (528.80), but above SMA_200 (496.81). This indicates a short-to-medium term downtrend within a strong long-term uptrend.
-*   **RSI:** RSI (41.78) is neutral, leaning bearish.
-*   **MACD:** MACD (0.12) is below its Signal Line (1.37), and the MACD Histogram (-1.25) is negative and declining. This is a bearish crossover, indicating strong downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (525.69). The bands are moderately wide.
-*   **Technical Setup:** Strong short-to-medium term bearish momentum, with price pushing towards the lower Bollinger Band. MACD reinforces the bearish outlook, while RSI is leaning towards oversold levels.
+**MTZ Technical Analysis**
+*   **Price Action:** Price (232.20) is significantly below all its SMAs (20, 50, 200), with the SMAs in a bearish order (20 < 50 < 200), indicating a clear and established downtrend.
+*   **Momentum (RSI/MACD):** RSI (34.34) is neutral, approaching oversold. MACD (-17.65) is negative but has just crossed above its signal line (-19.09), with a positive and rising histogram (1.44), suggesting nascent bullish momentum (potential divergence).
+*   **Volatility (Bollinger Bands):** Price is near the lower Bollinger Band (213.11), suggesting oversold conditions.
+*   **Technical Setup:** Potential mean reversion bounce or slowing of downtrend, with nascent bullish MACD divergence in oversold territory.
+*   **Commentary:** MTZ is in a strong downtrend and appears oversold on Bollinger Bands, showing early signs of positive MACD divergence, which could lead to a temporary bounce.
 
-**58. EWC (Canada TSX proxy)**
-*   **Price vs. SMAs:** Current price (60.99) is below SMA_20 (61.85) but above SMA_50 (60.32) and SMA_200 (56.89). This suggests a short-term dip within a strong medium-to-long term uptrend.
-*   **RSI:** RSI (47.43) is neutral.
-*   **MACD:** MACD (0.29) is below its Signal Line (0.47), and the MACD Histogram (-0.18) is negative and declining. This is a bearish crossover, indicating slight downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (60.85). The bands are narrow, suggesting a volatility contraction.
-*   **Technical Setup:** Short-term bearish momentum pushing price towards the lower Bollinger Band. The narrow bands suggest a volatility squeeze. Still within a longer-term uptrend.
+**IBIT Technical Analysis**
+*   **Price Action:** Price (43.68) is above its SMA_20 (42.37), SMA_50 (38.68), and SMA_200 (42.28), with all SMAs in a bullish order (20 > 50 > 200), indicating a strong uptrend.
+*   **Momentum (RSI/MACD):** RSI (58.94) is neutral, leaning bullish. MACD (1.89) is positive but has crossed below its signal line (1.98), with a negative and declining histogram (-0.10), indicating nascent bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is in the middle of the Bollinger Bands, which are wide, indicating moderate volatility.
+*   **Technical Setup:** Consolidation within a strong uptrend. Slight bearish momentum in the short-term.
+*   **Commentary:** IBIT is in a strong uptrend, currently consolidating near its 20-day SMA. MACD shows a slight bearish turn, suggesting a temporary pause in upward momentum.
 
-**59. HYG (High Yield Credit)**
-*   **Price vs. SMAs:** Current price (78.98) is below SMA_20 (79.23) but near SMA_50 (78.99) and above SMA_200 (78.15). This indicates a short-term downtrend, consolidating around the medium-term SMA, within a longer-term uptrend.
-*   **RSI:** RSI (44.49) is neutral, leaning bearish.
-*   **MACD:** MACD (0.039) is below its Signal Line (0.088), and the MACD Histogram (-0.049) is negative and declining. This is a bearish crossover, indicating slight downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (78.97). The bands are very narrow, indicating a significant volatility contraction.
-*   **Technical Setup:** Short-term bearish momentum. The very narrow Bollinger Bands indicate a squeeze is forming, often preceding a sharp breakout. Current price is testing the lower Bollinger Band.
+**GOOGL Technical Analysis**
+*   **Price Action:** Price (332.60) is below its SMA_20 (341.27) and SMA_50 (347.43) but above its SMA_200 (336.18). The SMA_20 is below the SMA_50, and price is dipping below them, suggesting a short-term pullback within a long-term uptrend.
+*   **Momentum (RSI/MACD):** RSI (41.40) is neutral, leaning bearish. MACD (-3.85) is negative and below its signal line (-3.05), with a declining histogram (-0.80), indicating bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just above the lower Bollinger Band (331.79), indicating it's testing potential support.
+*   **Technical Setup:** Pullback within a long-term uptrend. Short-term bearish momentum is strong. Potential for a bounce if the lower Bollinger Band holds as support.
+*   **Commentary:** GOOGL is experiencing a pullback within a long-term uptrend, with strong bearish MACD momentum. Price is testing the lower Bollinger Band, which may offer support.
 
-**60. KLAC (Semi Equipment)**
-*   **Price vs. SMAs:** Current price (182.91) is below SMA_20 (186.77) and SMA_50 (202.50), but above SMA_200 (171.89). This indicates a short-to-medium term downtrend within a broader long-term uptrend.
-*   **RSI:** RSI (45.65) is neutral.
-*   **MACD:** MACD (-5.79) is above its Signal Line (-7.05), and the MACD Histogram (1.27) is positive and increasing. This is a bullish crossover from deeply negative territory, suggesting a potential short-term upward momentum shift (mean reversion).
-*   **Bollinger Bands:** Price is well within the Bollinger Bands, not close to either extreme. Bands are wide, indicating higher volatility.
-*   **Technical Setup:** Longer-term uptrend, but a short-to-medium term pullback. A bullish MACD crossover from deeply negative territory suggests a mean reversion rally is underway.
+**^VIX Technical Analysis**
+*   **Price Action:** Price (17.84) is above its SMA_20 (15.37) and SMA_50 (16.12) but below its SMA_200 (18.11). The SMA_20 is above the SMA_50, indicating short-term strength.
+*   **Momentum (RSI/MACD):** RSI (60.62) is neutral, leaning bullish. MACD (0.045) is positive and above its signal line (-0.27), with a positive and rising histogram (0.31), indicating bullish momentum.
+*   **Volatility (Bollinger Bands):** Price is above the upper Bollinger Band (17.07), indicating overextended conditions and potential for a mean reversion pullback.
+*   **Technical Setup:** Overextended uptrend, ripe for mean reversion pullback. Strong bullish momentum.
+*   **Commentary:** ^VIX is in a strong, overextended uptrend, with price above the upper Bollinger Band and RSI in bullish territory, suggesting a high probability of a near-term pullback in volatility (i.e., a return to lower levels).
 
-**61. LQD (Investment Grade Credit)**
-*   **Price vs. SMAs:** Current price (105.31) is below SMA_20 (105.71), SMA_50 (106.04), and SMA_200 (106.92). This indicates a short-to-long term downtrend.
-*   **RSI:** RSI (42.89) is neutral, leaning bearish.
-*   **MACD:** MACD (-0.16) is below its Signal Line (-0.14), and the MACD Histogram (-0.028) is negative and declining. This is a bearish crossover, indicating downward momentum.
-*   **Bollinger Bands:** Price is near the lower Bollinger Band (104.98). The bands are narrow, suggesting a volatility contraction.
-*   **Technical Setup:** Clear downtrend across all SMAs. Bearish momentum pushing price towards the lower Bollinger Band. The narrow bands suggest a volatility squeeze.
+**XLRE Technical Analysis**
+*   **Price Action:** Price (43.05) is below its SMA_20 (44.52), SMA_50 (44.77), and very close to its SMA_200 (42.69), with SMAs in a bearish order (20 < 50 < 200), indicating a downtrend.
+*   **Momentum (RSI/MACD):** RSI (31.90) is neutral, just above oversold territory. MACD (-0.38) is negative and well below its signal line (-0.22), with a declining histogram (-0.16), indicating strong bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just above the lower Bollinger Band (43.19), indicating downside pressure and approaching oversold levels.
+*   **Technical Setup:** Downtrend continuation, testing long-term support. Price is nearing oversold on RSI and Bollinger Bands, suggesting a potential short-term bounce is possible, but momentum is strongly bearish.
+*   **Commentary:** XLRE is in a clear short-term downtrend, testing its 200-day SMA, with strong bearish momentum. It's approaching oversold levels, which might lead to a temporary bounce.
+
+**NBIS Technical Analysis**
+*   **Price Action:** Price (228.11) is slightly above its SMA_20 (227.35) and SMA_50 (211.77) but well above its SMA_200 (157.00), with all SMAs in a bullish order (20 > 50 > 200), indicating a strong uptrend.
+*   **Momentum (RSI/MACD):** RSI (52.70) is neutral, leaning bullish. MACD (3.24) is positive and above its signal line (1.59), with a positive and rising histogram (1.65), indicating strong bullish momentum.
+*   **Volatility (Bollinger Bands):** Price is within the upper half of the Bollinger Bands, suggesting strength.
+*   **Technical Setup:** Strong trend continuation. Bullish momentum is firm.
+*   **Commentary:** NBIS is in a strong uptrend with robust bullish MACD momentum, suggesting a continuation of its upward trajectory after recent gains.
+
+**TMF Technical Analysis**
+*   **Price Action:** Price (29.30) is below its SMA_20 (30.85), SMA_50 (31.76), and SMA_200 (35.35), with SMAs in a bearish order (20 < 50 < 200), indicating a clear downtrend.
+*   **Momentum (RSI/MACD):** RSI (34.36) is neutral, approaching oversold. MACD (-0.41) is negative and below its signal line (-0.34), with a declining histogram (-0.07), confirming bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the lower Bollinger Band (29.53), suggesting oversold conditions and potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate within a downtrend. Price is oversold on Bollinger Bands, but bearish momentum is strong.
+*   **Commentary:** TMF is in a strong downtrend and appears oversold on Bollinger Bands, suggesting a potential short-term bounce, but overall momentum remains bearish.
+
+**XLY Technical Analysis**
+*   **Price Action:** Price (111.96) is below its SMA_20 (116.27), SMA_50 (116.04), and SMA_200 (116.70), with SMAs in a bearish order (20 < 50 < 200), indicating a downtrend.
+*   **Momentum (RSI/MACD):** RSI (36.73) is neutral, approaching oversold. MACD (-0.88) is negative and well below its signal line (-0.29), with a sharply declining histogram (-0.60), confirming strong bearish momentum.
+*   **Volatility (Bollinger Bands):** Price is just below the lower Bollinger Band (112.50), suggesting oversold conditions and potential for a mean reversion bounce.
+*   **Technical Setup:** Mean reversion bounce candidate within a downtrend. Price is oversold on Bollinger Bands, but bearish momentum is strong.
+*   **Commentary:** XLY is in a downtrend and appears oversold on Bollinger Bands, suggesting a potential short-term bounce, but overall momentum is strongly bearish.
