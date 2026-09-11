@@ -1,4 +1,4 @@
-# AlphaOracle Daily - 2026-09-10
+# AlphaOracle Daily - 2026-09-11
 
 ## Signals (rules govern; everything below is commentary)
 
@@ -8,8 +8,8 @@
 |---|---|---|
 | Trend (monthly 200dma) | risk_on | 8.29% vs SMA, as of 2026-08-31 |
 | VIX term structure | clear | ratio 0.858 |
-| Credit (HYG/LQD 63d) | clear | 0.0237 |
-| Canary breadth | half_defensive | negative: ['TLT'] |
+| Credit (HYG/LQD 63d) | clear | 0.0277 |
+| Canary breadth | full_defensive | negative: ['EWA', 'TLT'] |
 
 ## Thesis Sentinel
 
@@ -68,7 +68,7 @@ Given the clear signals for heightened risk and the defensive posture, our prima
 | dev | insufficient_history |
 | prod_1 | insufficient_history |
 | prod_2 | on_script |
-| prod_3 | on_script |
+| prod_3 | watch |
 | prod_4 | on_script |
 | prod_5 | insufficient_history |
 
