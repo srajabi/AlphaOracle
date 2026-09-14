@@ -2,6 +2,16 @@
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 13000
+        "notional_value": 20000
+    },
+    {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 20000
+    },
+    {
+        "ticker": "XLF",
+        "action": "buy",
+        "notional_value": 20000
     }
 ]
