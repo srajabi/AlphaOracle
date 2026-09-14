@@ -1,11 +1,36 @@
 [
     {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 20000
+        "ticker": "TQQQ",
+        "action": "sell",
+        "qty": "all"
     },
     {
-        "ticker": "GLD",
+        "ticker": "UPRO",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "SSO",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "TLT",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "TMF",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "XLE",
+        "action": "buy",
+        "notional_value": 30000
+    },
+    {
+        "ticker": "XLU",
         "action": "buy",
         "notional_value": 20000
     },
@@ -13,5 +38,10 @@
         "ticker": "XLF",
         "action": "buy",
         "notional_value": 20000
+    },
+    {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 17184.98
     }
 ]
