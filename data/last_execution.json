@@ -1,57 +1,30 @@
 {
-  "last_updated_utc": "2026-09-14T23:27:07.788192+00:00",
+  "last_updated_utc": "2026-09-15T23:13:27.193179+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "TQQQ",
-        "action": "sell",
-        "qty": "all"
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 10000
       },
-      "status": "failed",
-      "reason": "{\"code\":40410000,\"message\":\"position not found: TQQQ\"}"
-    },
-    {
-      "trade": {
-        "ticker": "UPRO",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "failed",
-      "reason": "{\"code\":40410000,\"message\":\"position not found: UPRO\"}"
-    },
-    {
-      "trade": {
-        "ticker": "SSO",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "failed",
-      "reason": "{\"code\":40410000,\"message\":\"position not found: SSO\"}"
-    },
-    {
-      "trade": {
-        "ticker": "TLT",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "submitted",
-      "order_type": "close_position"
-    },
-    {
-      "trade": {
-        "ticker": "TMF",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "failed",
-      "reason": "{\"code\":40410000,\"message\":\"position not found: TMF\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 30000
+        "notional_value": 10000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "UUP",
+        "action": "buy",
+        "notional_value": 5000
       },
       "status": "skipped",
       "reason": "No available buying power."
@@ -60,25 +33,34 @@
       "trade": {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 20000
+        "notional_value": 5000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "XLF",
+        "ticker": "XLP",
         "action": "buy",
-        "notional_value": 20000
+        "notional_value": 5000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "GLD",
+        "ticker": "QUAL",
         "action": "buy",
-        "notional_value": 17184.98
+        "notional_value": 2500
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "SCHD",
+        "action": "buy",
+        "notional_value": 2500
       },
       "status": "skipped",
       "reason": "No available buying power."

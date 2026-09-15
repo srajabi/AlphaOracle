@@ -3,32 +3,32 @@ title: Thesis Sentinel Daily Brief
 date: "2026-09-15"
 ---
 
-Here is your daily brief:
+Here is your daily Thesis Sentinel brief:
 
 **1. Tripwire status**
 
-| Tripwire                   | Signal reading (today)         | Status  |
-| :------------------------- | :----------------------------- | :------ |
-| Carry unwind (^VIX/^VIX3M) | VIX/VIX3M 5d median: 0.858     | CLEAR   |
-| Credit cracks (HYG/LQD)    | HYG/LQD 63d rel-mom: 0.0288    | CLEAR   |
-| Breadth break (canary)     | EWA momentum: -0.0021, TLT momentum: -0.0277 | FIRED   |
-| Trend break (SPY < 200d SMA) | Slow channel state: risk_on    | CLEAR   |
-| Oil shock (XLE leadership) | XLE trend: strong_uptrend, momentum: 4.23% | FIRED   |
-| AI capex turn              | No explicit FY27 capex cut guidance | CLEAR   |
-| Carry stress (USDJPY)      | Dollar strength: dollar_rising | CLEAR   |
+| Tripwire                   | Signal reading                          | Status |
+| :------------------------- | :-------------------------------------- | :----- |
+| Carry unwind (^VIX/^VIX3M) | `vix_vix3m_5d_median = 0.858`           | CLEAR  |
+| Credit cracks (HYG/LQD)    | `hyg_lqd_63d_relmom = 0.0288`           | CLEAR  |
+| Breadth break (Canary)     | `negative_canaries = ["EWA", "TLT"]`   | FIRED  |
+| Trend break (SPY < 200d)   | `slow_channel: risk_on`                 | CLEAR  |
+| Oil shock (XLE momentum)   | `xle: strong_uptrend, positive`         | FIRED  |
+| AI capex turn              | *No explicit FY27 capex cut news*       | CLEAR  |
+| Carry stress (USDJPY)      | *Dollar rising; no JPY < 140 news*      | CLEAR  |
 
 **2. Marker watch**
 
-*   **BoJ June meeting**: No new specific news today regarding BoJ guidance or USDJPY < 145 trigger.
-*   **May-July CPI prints**: "CPI +3.4%" reported (from DIA news), but a second consecutive print below 3.5% is needed to meet the marker.
-*   **SpaceX IPO first-month performance**: News of potential Tesla-SpaceX merger, but no update on SpaceX IPO performance vs. $135 issue price post mid-July.
-*   **Q2 earnings hyperscaler capex guidance**: Discussion on AI spending slowdown and Wall Street pushing back on warnings, but no explicit hyperscaler FY27 capex guidance cuts reported.
-*   **Hormuz**: Multiple headlines on Saudi supply crunch, Libya outage, Iran War, and Middle East attacks directly impacting oil prices and Hormuz shipping, pointing to escalating supply disruption.
+*   **BoJ guidance**: No new guidance reported today.
+*   **CPI prints**: No new May-July CPI data reported today.
+*   **SpaceX IPO**: No news today on performance relative to $135 or first-month performance.
+*   **Hyperscaler capex guidance**: No news today indicating FY27 capex cuts.
+*   **Hormuz**: News reports "Hormuz risk escalates" and "Oil Prices Climb" but no "full closure week+" reported.
 
 **3. Delta**
 
-Today's market is characterized by escalating oil-related geopolitical tensions with multiple headlines reporting crude rallies amid Saudi supply crunch, Libya outage, and Iran war impacts, pushing oil prices above $100/b. This directly caused the XLE momentum to register as a "strong_uptrend," triggering the "Oil shock" tripwire. The Fed is widely expected to hike rates, contributing to 10-year Treasury yields topping 5% for the first time since 2023. This combination of inflationary pressure from energy and rising rates is a significant shift. The canary signal has moved to "full_defensive" with both EWA and TLT showing negative momentum, indicating a mechanical de-risking for DAA strategies. Sentiment around AI is mixed, with warnings of slowdowns contrasting with continued spending expectations.
+The **Canary signal has FIRED** for "full_defensive" positioning, with both EWA and TLT exhibiting negative momentum. This is a material shift in mandate. The "Oil shock" tripwire also remains FIRED, with oil prices climbing and Hormuz risk escalating. Intermarket indicators show a "Transitional" regime with "cautious" risk sentiment and "rising_rates" as a significant headwind. News consistently points to a Fed rate hike anticipation and surging Treasury yields past 5%.
 
 **4. Scenario pressure**
 
-The combination of a "FIRED" Breadth break (canary full defensive) and a "FIRED" Oil shock tripwire, alongside rising interest rates and inflationary pressure, pushes today's evidence towards **Scenario B (Slow bear)**, characterized by sticky CPI and potential for prolonged drawdown. While not a simultaneous crash trigger for Scenario C, the worsening geopolitical and inflation landscape creates a challenging environment.
+The firing of both the Canary and Oil Shock tripwires, coupled with the persistent backdrop of rising interest rates and geopolitical energy-led inflation, exerts pressure towards **Scenario B (Slow bear)** or **Scenario C (Fast crash)**. While the market's initial absorption of the SpaceX IPO might have implied some resilience (supporting A), the current confluence of defensive signals and macro headwinds indicates a heightened risk environment beyond merely "grind-with-violence" (A). The rule-based signals govern positioning, triggering a full defensive stance.
