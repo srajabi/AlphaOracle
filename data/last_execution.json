@@ -1,7 +1,25 @@
 {
-  "last_updated_utc": "2026-09-15T23:13:27.193179+00:00",
+  "last_updated_utc": "2026-09-16T23:17:25.363374+00:00",
   "error": "",
   "results": [
+    {
+      "trade": {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 10000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLP",
+        "action": "buy",
+        "notional_value": 10000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
     {
       "trade": {
         "ticker": "GLD",
@@ -15,52 +33,16 @@
       "trade": {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 8000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "UUP",
+        "ticker": "XLF",
         "action": "buy",
-        "notional_value": 5000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 5000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 5000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "QUAL",
-        "action": "buy",
-        "notional_value": 2500
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "SCHD",
-        "action": "buy",
-        "notional_value": 2500
+        "notional_value": 5500
       },
       "status": "skipped",
       "reason": "No available buying power."
