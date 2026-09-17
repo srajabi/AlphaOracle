@@ -1,36 +1,31 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-09-16"
+date: "2026-09-17"
 ---
 
-Here is your daily Thesis Sentinel brief:
+**Daily Thesis Brief: 2026-09-17**
 
-**Tripwire Status**
+**1. Tripwire status**
 
-| Tripwire                   | Signal/Reading                   | Status   |
-| :------------------------- | :------------------------------- | :------- |
-| Carry unwind (^VIX/^VIX3M) | `fast_channel.vix_vix3m_5d_median`: 0.858 | CLEAR    |
-| Credit cracks (HYG/LQD)    | `credit.hyg_lqd_63d_relmom`: 0.0256 | CLEAR    |
-| Breadth break (Canary)     | `canary.negative_canaries`: [EWA, TLT] | FIRED    |
-| Trend break (SPY < 200d SMA) | `slow_channel.state`: risk_on (as of 2026-08-31) | CLEAR    |
-| Oil shock (XLE momentum)   | `commodity_strength.xle.signal`: strong_positive | FIRED    |
-| AI capex turn              | No direct signal in JSON         | N/A      |
-| Carry stress (USDJPY < 140) | No direct USDJPY data in JSON   | N/A      |
+| Tripwire                   | Today's Reading     | Status  |
+| :------------------------- | :------------------ | :------ |
+| Carry unwind (^VIX/^VIX3M) | 0.858               | CLEAR   |
+| Credit cracks (HYG/LQD)    | 0.0258              | CLEAR   |
+| Breadth break (Canary)     | EWA, TLT negative   | FIRED   |
+| Trend break (SPY < 200d)   | SPY 754.05 > SMA200 713.39 | CLEAR   |
+| Oil shock (XLE leadership) | XLE positive, SPY negative | FIRED   |
+| AI capex turn              | No FY27 cuts reported | CLEAR   |
+| Carry stress (USDJPY < 140) | No rapid < 140 move | CLEAR   |
 
-**Marker Watch**
+**2. Marker watch**
+*   **BoJ Guidance**: No new explicit hawkish BoJ guidance or USDJPY below 145 today. BOE left rates unchanged.
+*   **May-July CPI prints**: No new CPI prints for May-July reported today.
+*   **SpaceX IPO performance**: SpaceX stock pops ahead of Starship launch, listed as an early winner today.
+*   **Q2 Hyperscaler Capex Guidance**: No news of Q2 earnings hyperscaler capex guidance *cuts* for FY27; some headlines suggest continued data center spending growth.
+*   **Hormuz Closure**: Oil prices decline as Middle East supply concerns ease; US is clearing Hormuz traffic.
 
-*   **BoJ June meeting**: No new news today on BoJ guidance.
-*   **May-July CPI prints**: No new specific CPI prints reported. Fed's rate hike implies continued inflation concern.
-*   **SpaceX IPO first-month performance**: No news indicating SpaceX broke its issue price ($135) in the first month.
-*   **Q2 earnings hyperscaler capex guidance**: News indicates strong data center capex growth (e.g., 92% in 2Q 2026), not cuts.
-*   **Hormuz full closure week+**: News reports "Shipping slows" and "Crude rows back from highs," indicating disruptions but not a sustained full closure.
+**3. Delta**
+Today marks a material shift in the market regime, from "Bull Quiet" to "Bear Quiet." The Canary signal has moved to "full_defensive" with both EWA and TLT exhibiting negative momentum. The Fed raised interest rates, a move previously described as "cornered" given 4.2% CPI and an active war. Multiple macro news headlines highlight recessionary signals like rising unemployment and weak economic conditions. Counter-intuitively, oil prices are declining and supply concerns are easing.
 
-**Delta**
-
-The most significant shift today is the Federal Reserve's decision to raise interest rates for the first time since 2023, as confirmed by multiple macro headlines. This directly contradicts the June 12 thesis's "Fed (new Chair Warsh) on hold" condition, signaling an active tightening phase. Consequently, the intermarket `real_rates` signal has shifted from "declining_rates" to "rising_rates."
-
-Furthermore, the `canary` mandate signal is now "full_defensive" with both EWA and TLT showing negative momentum, indicating a rules-based de-risking. The `market_regime` is officially "Bear Quiet," transitioning from the "Transitional (low confidence)" state noted in June. While oil market disruptions persist, some crude prices are "rowing back from highs." Meanwhile, global and domestic recession signals are emerging (Brazil rate cut, rising US long-term unemployment).
-
-**Scenario Pressure**
-
-The combination of the Fed's rate hike, persistent inflation concerns, rising rates, a "Bear Quiet" regime, and a "full_defensive" canary signal puts significant pressure toward **Scenario B (Slow bear)**. This scenario posits sticky inflation and a prolonged drawdown. While geopolitical oil concerns (Factor 2) remain active, the absence of a complete Hormuz closure for a week and the `fast_channel` remaining CLEAR keeps pressure off a **Scenario C (Fast crash)**. The explicit tightening by the Fed also detracts from a simple "Grind-with-violence" (Scenario A) narrative. The authoritative rules-based signals now dictate a more defensive posture.
+**4. Scenario pressure**
+The combination of a "Bear Quiet" market regime, triggered "full_defensive" breadth break, rising real rates (due to Fed hike and TLT downtrend), and explicit recessionary signals in news flow collectively puts significant pressure towards **Scenario B (Slow bear)**. While easing oil prices might reduce the immediate tail risk of a "Fast crash" (Scenario C) related to Hormuz closure, the broader macroeconomic picture suggests a grinding, prolonged downturn is more likely. The strength in XLE, despite oil price easing, suggests sector-specific factors are at play, not necessarily broad war escalation.

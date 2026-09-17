@@ -1,90 +1,83 @@
 ---
 title: Technical Analyst Report
-date: "2026-09-16"
+date: "2026-09-17"
 ---
 
 ## Model: gemini/gemini-2.5-flash
 
-Here's a technical analysis of the provided tickers based purely on price action and the specified indicators, ignoring news context.
+Here's an evaluation of the market setups based purely on price action and technical indicators for each ticker:
 
-**Market Context (from Intermarket Indicators):**
-*   **Market Regime:** Bear Quiet (Risk: Cautious | Dollar: Strong Dollar | Rates: Rising Rates).
-*   **Risk Sentiment:** Cautious (VIX rising).
-*   **Dollar Strength:** Strong uptrend.
-*   **Real Rates:** Rising (TLT downtrend).
-*   **Commodity Strength:** Mixed (Gold/Silver negative, Energy strong positive).
+**Summary of Market Tone (Technical-Only):**
+The overall market is exhibiting short-term weakness and downward momentum across many broad indices (SPY, QQQ, VOO, IWM, VTI) and several sector ETFs (XLF, XLI, XLU, XLRE). Prices are generally below their 20-day and 50-day Simple Moving Averages (SMAs), with RSI indicators in weak or oversold territory, and MACD histograms showing declining or negative momentum. Many are at or below their lower Bollinger Bands. However, crucially, most broad market indices and many stocks remain above their 200-day SMAs, suggesting that the current downturn is a significant pullback or correction within a longer-term uptrend.
+
+Volatility (^VIX) and short-term interest rates (^IRX) are showing strong bullish breakouts, indicating rising market uncertainty and increasing short-term borrowing costs. The US Dollar (UUP) is also in a strong uptrend, breaking out of its Bollinger Bands and in overbought territory. This confluence often points to risk-off sentiment.
+
+A few individual stocks (INTC, AMD, META, CRWD) are displaying robust bullish momentum, often above all key SMAs, indicating strong relative strength against the broader market.
 
 ---
 
-### Technical Analysis by Setup Category:
+**Individual Ticker Analysis:**
 
-**1. Strong Trend Continuation (Potential Overextension/Overbought):**
-These assets are exhibiting strong upward momentum, often with prices near or exceeding their upper Bollinger Bands and/or high RSI readings, indicating potential short-term overextension but robust underlying trends.
-
-*   **CRWD:** In a strong uptrend with all SMAs ascending and price above them. Strong bullish MACD momentum. Price is above the upper Bollinger Band, indicating short-term overextension.
-*   **META:** Very strong uptrend with all SMAs ascending and price significantly above them. Exceptionally strong bullish MACD momentum. RSI is in overbought territory (71.65), and price is near the upper Bollinger Band, signaling short-term overextension.
-*   **XLE:** Strong uptrend with all SMAs ascending. RSI is strong (67.29) and price is very close to the upper Bollinger Band. MACD shows slightly weakening but still positive momentum.
-*   **UUP:** In an uptrend with all SMAs ascending and a recent bullish MACD crossover. Price is at the upper Bollinger Band, indicating short-term overextension.
-*   **AAPL:** Strong uptrend across all timeframes with robust bullish MACD momentum. Price is very close to the upper Bollinger Band and RSI is strong (61.36), suggesting short-term overextension.
-*   **AMD:** In a strong uptrend across all timeframes with a very strong bullish MACD crossover and positive MACD_hist. Price is comfortably within the upper half of the Bollinger Bands.
-*   **^IRX:** Strong uptrend across all timeframes with bullish MACD momentum. RSI is strongly overbought (80.78), and price is above the upper Bollinger Band, indicating extreme short-term overextension and rising short-term rates.
-*   **^TNX:** Strong uptrend across all timeframes with bullish MACD momentum. RSI is overbought (73.58), and price is at the upper Bollinger Band, indicating strong short-term overextension and rising long-term rates.
-
-**2. Potential Mean Reversion Bounce Candidates (Oversold/Approaching Lower BB):**
-These assets have experienced recent selling pressure, pushing their prices to or below their lower Bollinger Bands or into oversold RSI territory, suggesting a potential for a short-term rebound. The underlying trend may still be bearish.
-
-*   **STX:** Price is close to the lower Bollinger Band, within a short-term downtrend but longer-term uptrend. MACD is bearish.
-*   **XLRE:** Price is very close to the lower Bollinger Band. SMAs are intertwined (sideways trend). MACD is bearish.
-*   **TQQQ:** Price is at or below the lower Bollinger Band. RSI is neutral but MACD is bearish. Strong candidate for a bounce from extreme levels.
-*   **SPY:** Price is at the lower Bollinger Band, and MACD shows strong bearish momentum. Longer-term uptrend provides some underlying support.
-*   **DIA:** Price is very close to the lower Bollinger Band with strong bearish MACD momentum. Longer-term uptrend provides some underlying support.
-*   **HYG:** Price is at or below the lower Bollinger Band, and RSI is oversold (29.96). Strongest mean reversion candidate. MACD is bearish.
-*   **QQQ:** Price is very close to the lower Bollinger Band with strong bearish MACD momentum. Longer-term uptrend provides some underlying support.
-*   **XLI:** Price is very close to the lower Bollinger Band and RSI is nearing oversold. Strong downtrend with bearish MACD. A bounce could be short-lived.
-*   **EWC:** Price is very close to the lower Bollinger Band with bearish MACD momentum.
-*   **LQD:** Price is very close to the lower Bollinger Band and RSI is nearing oversold. Strong downtrend with bearish MACD.
-*   **VXUS:** Price is at or just below the lower Bollinger Band. MACD is bearish.
-*   **KLAC:** Price is very close to the lower Bollinger Band. Downtrend confirmed by SMAs and bearish MACD.
-*   **UPRO:** Price is at or just below the lower Bollinger Band. MACD is strongly bearish.
-*   **TLN:** Price is at or just below the lower Bollinger Band, and RSI is nearing oversold. Strong downtrend with bearish MACD.
-*   **TMF:** Price is very close to the lower Bollinger Band and RSI is nearing oversold. Strong downtrend with bearish MACD.
-*   **EWA:** Price is at or just below the lower Bollinger Band with bearish MACD momentum.
-*   **XEQT.TO:** Price is very close to the lower Bollinger Band with bearish MACD momentum.
-*   **AMZN:** Price is at or just below the lower Bollinger Band. Strong short-term downtrend with bearish MACD momentum.
-*   **XLY:** Price is at or just below the lower Bollinger Band. Strong downtrend with bearish MACD.
-*   **VOO:** Price is very close to the lower Bollinger Band with strong bearish MACD momentum.
-*   **WDC:** Price is at or just below the lower Bollinger Band. Very strong short-term downtrend with bearish MACD.
-*   **VT:** Price is at or just below the lower Bollinger Band. Strong bearish MACD momentum.
-*   **IWM:** Price is very close to the lower Bollinger Band and RSI is nearing oversold. Strong short-term downtrend with bearish MACD.
-*   **AVGO:** Price is at or just below the lower Bollinger Band, and RSI is nearing oversold. Strong downtrend with bearish MACD.
-*   **XLU:** Price is at or just below the lower Bollinger Band, and RSI is oversold (30.03). Strongest mean reversion candidate among utilities. Strong downtrend with bearish MACD.
-*   **XLF:** Price is very close to the lower Bollinger Band with bearish MACD momentum.
-
-**3. Weakening Momentum / Pullback in Uptrend:**
-These assets are still in an overall uptrend but show recent signs of bearish momentum or a slight pullback from highs, typically with MACD turning negative or price crossing below short-term SMAs.
-
-*   **IBIT:** Price consolidating near SMA20. MACD shows weakening bullish momentum (negative MACD_hist).
-*   **XLK:** In an uptrend but price is below SMA20. MACD shows weakening bullish momentum (negative MACD_hist).
-*   **TSLA:** Short-term bullish MACD crossover, but remains below SMA200 (long-term downtrend). Price is consolidating.
-*   **XLP:** Price is below SMA20 and SMA50, but above SMA200. MACD is bearish, indicating short-term weakness in a mostly sideways long-term trend.
-*   **MSFT:** Strong uptrend but a significant bearish MACD crossover with strong negative MACD_hist, indicating a loss of bullish momentum. Price still above all SMAs.
-*   **MU:** Strong long-term uptrend but price is below SMA20 and just above SMA50. Strong bearish MACD crossover indicates a significant pullback.
-*   **SCHD:** In an uptrend but price is below SMA20. MACD shows weakening bullish momentum (negative MACD_hist). Price holding above SMA50.
-*   **NBIS:** Strong long-term uptrend but price is below SMA20 and SMA50. Strong bearish MACD crossover indicates a significant pullback.
-*   **SLV:** Mixed trend. Price below SMA20 and SMA200, but clinging to SMA50. Bearish MACD crossover indicates weakening momentum.
-*   **XLV:** Long-term uptrend, but price is below SMA20. Strong bearish MACD crossover with negative MACD_hist, indicating a pullback. Price holding above SMA50.
-*   **TSM:** Strong long-term uptrend but price is below SMA20 and SMA50. Bearish MACD crossover indicates a pullback.
-*   **PLTR:** Strong long-term uptrend but price is below SMA20. Strong bearish MACD crossover with negative MACD_hist, indicating a pullback.
-*   **ORCL:** In a downtrend. Strong bearish MACD crossover with negative MACD_hist indicates continued weakness. Price below SMA20 and SMA50.
-
-**4. Volatility Contraction Squeeze / Consolidation:**
-These assets show relatively narrow Bollinger Bands and/or price oscillating within a tight range around their SMAs, suggesting a period of low volatility often preceding a significant price move in either direction.
-
-*   **GOOGL:** Price consolidating within relatively narrow Bollinger Bands. Bullish MACD crossover suggests a potential breakout to the upside.
-
-**5. Bullish Crossover in Downtrend (Counter-Trend Rally Potential):**
-These assets are in a longer-term downtrend but are showing a recent bullish MACD crossover, suggesting a potential for a short-term counter-trend rally or a bottoming process.
-
-*   **INTC:** Price below SMA50, but above SMA20 and SMA200. Recent bullish MACD crossover after being negative. This could signal a reversal or a strong counter-trend rally.
-*   **MTZ:** Strong downtrend across all SMAs. However, a bullish MACD crossover with positive MACD_hist suggests a potential for a short-term counter-trend rally from near oversold conditions.
-*   **GLD:** In a downtrend across multiple timeframes. MACD shows strong bearish momentum but price is just above SMA50, which could act as support. The current options ideas suggest both long call and long put plays, reflecting potential volatility around this pivot.
+*   **VXUS:** **Potential Mean Reversion Bounce / Short-term Weakness.** Price is just below its 20-SMA and 50-SMA and touching the lower Bollinger Band, suggesting short-term oversold conditions. However, MACD histogram is negative and declining, indicating persistent bearish momentum. Longer-term (200-SMA) remains supportive.
+*   **AVGO:** **Downtrend Continuation / Oversold in Downtrend.** Price is significantly below all major SMAs (20, 50, 200), in a clear downtrend. RSI is approaching oversold territory, and price is just below the lower Bollinger Band. MACD signals strong bearish momentum.
+*   **INTC:** **Strong Uptrend Continuation / Breakout Potential.** Price is above all key SMAs in bullish alignment (20>50>200). RSI is healthy, and MACD shows a fresh bullish crossover with increasing positive momentum. Price is nearing the upper Bollinger Band.
+*   **TLN:** **Downtrend Continuation / Potential Exhaustion of Sell-off.** Price is well below all major SMAs and near its lower Bollinger Band. While MACD is deeply negative, the histogram is becoming less negative, suggesting a possible deceleration of selling pressure, but the overall trend remains bearish.
+*   **CEG:** **Downtrend Continuation / Weakness.** Price is below all key SMAs and very close to the lower Bollinger Band. MACD shows a strong bearish crossover with accelerating negative momentum, indicating persistent weakness.
+*   **XLK:** **Consolidation/Pullback within Uptrend.** Price is just below its 20-SMA but remains above its 50-SMA and 200-SMA. RSI is neutral, but MACD histogram is negative and declining, indicating a recent loss of short-term bullish momentum within a larger uptrend.
+*   **EWC:** **Downtrend within Uptrend / Potential Mean Reversion Bounce.** Price is below its 20-SMA and 50-SMA but above its 200-SMA. RSI is weak, and price is at the lower Bollinger Band. MACD shows recent bearish crossover and declining momentum.
+*   **NVDA:** **Pullback / Short-term Weakness within Uptrend.** Price is below its 20-SMA and barely above its 50-SMA, but well above its 200-SMA. MACD histogram is negative and declining, indicating a loss of recent momentum. The longer-term trend remains positive.
+*   **QQQ:** **Pullback to Lower Bollinger Band / Short-term Downtrend within Long-term Uptrend.** Price is below its 20-SMA and 50-SMA and at its lower Bollinger Band. RSI is weak, and MACD shows strong bearish momentum. The 200-SMA remains a strong long-term support.
+*   **META:** **Strong Uptrend Continuation / Overbought.** Price is significantly above all key SMAs with strong bullish alignment. RSI is in overbought territory, and MACD shows robust positive momentum. Price is near the upper Bollinger Band, suggesting potential for a short-term pullback.
+*   **XLC:** **Short-term Uptrend / Consolidation.** Price is above its 20-SMA and 50-SMA but slightly below its 200-SMA. MACD indicates a recent bullish crossover with slight increasing momentum.
+*   **XLY:** **Downtrend Continuation / Potential Mean Reversion Bounce from Lower BB.** Price is significantly below all key SMAs and at its lower Bollinger Band. RSI is nearing oversold, and MACD confirms strong bearish momentum.
+*   **AAPL:** **Strong Uptrend Continuation / Approaching Overbought.** Price is above all key SMAs with bullish alignment. RSI is strong, and MACD shows strong and increasing positive momentum. Price is nearing the upper Bollinger Band.
+*   **TLT:** **Downtrend Continuation / Potential for a Short-term Bounce.** Price is below all key SMAs, indicating a clear downtrend. RSI is weak, and price is near the lower Bollinger Band. MACD shows negative momentum.
+*   **XEQT.TO:** **Pullback to Lower Bollinger Band / Short-term Weakness.** Price is below its 20-SMA and 50-SMA but above its 200-SMA. RSI is weak, and price is near the lower Bollinger Band. MACD shows bearish momentum.
+*   **XLP:** **Pullback / Short-term Downtrend.** Price is below its 20-SMA and 50-SMA, with weak RSI and bearish MACD momentum. It is slightly above its 200-SMA, suggesting a short-term downturn within a broader neutral-to-up trend.
+*   **TMF:** **Downtrend Continuation / Oversold.** Price is significantly below all key SMAs, with weak and nearing oversold RSI. MACD confirms strong negative momentum. Price is just above its lower Bollinger Band.
+*   **^VIX:** **Volatility Expansion / Breakout.** Price is above its 20-SMA and 50-SMA and hitting its upper Bollinger Band. RSI is strong, and MACD shows a bullish crossover with increasing positive momentum, signaling rising market fear.
+*   **NBIS:** **Pullback / Short-term Downtrend within Long-term Uptrend.** Price is below its 20-SMA and 50-SMA, but well above its 200-SMA. MACD shows a bearish crossover with increasing negative momentum.
+*   **MTZ:** **Downtrend Continuation / Potential for Mean Reversion Bounce.** Price is significantly below all key SMAs and near its lower Bollinger Band. RSI is weak/nearing oversold. MACD is deeply negative, but the histogram suggests a slight easing of the decline.
+*   **MU:** **Pullback / Short-term Downtrend within Long-term Uptrend.** Price is below its 20-SMA and just above its 50-SMA, but well above its 200-SMA. MACD shows a strong bearish crossover with accelerating negative momentum.
+*   **AMD:** **Strong Uptrend Continuation / Breakout Potential.** Price is above all key SMAs with bullish alignment. RSI is healthy, and MACD shows a strong bullish crossover with accelerating positive momentum. Price is nearing the upper Bollinger Band.
+*   **STX:** **Strong Pullback / Short-term Downtrend within Long-term Uptrend.** Price is significantly below its 20-SMA and 50-SMA, but still well above its 200-SMA. RSI is weak, and price is nearing its lower Bollinger Band. MACD confirms strong bearish momentum.
+*   **WDC:** **Strong Pullback / Short-term Downtrend within Long-term Uptrend / Mean Reversion Bounce.** Price is significantly below its 20-SMA and 50-SMA, but above its 200-SMA. RSI is weak, and price is at its lower Bollinger Band. MACD confirms strong bearish momentum, but the lower BB contact suggests a potential bounce.
+*   **XLI:** **Downtrend Continuation / Oversold Mean Reversion Potential.** Price is below all key SMAs. RSI is oversold, and price is near its lower Bollinger Band. MACD shows strong negative momentum.
+*   **QUAL:** **Pullback to Lower Bollinger Band / Short-term Downtrend within Long-term Uptrend.** Price is below its 20-SMA and 50-SMA, but above its 200-SMA. RSI is weak, and price is right at its lower Bollinger Band. MACD shows negative momentum.
+*   **SSO:** **Pullback to Lower Bollinger Band / Short-term Downtrend within Long-term Uptrend.** Price is below its 20-SMA and 50-SMA, but above its 200-SMA. RSI is weak, and price is just below its lower Bollinger Band. MACD shows bearish momentum.
+*   **^TNX:** **Strong Uptrend Continuation / Volatility Expansion / Overbought.** Price is above all key SMAs, hitting its upper Bollinger Band. RSI is deeply overbought, and MACD shows strong positive momentum, indicating a clear and strong bullish trend in yields.
+*   **PLTR:** **Pullback within Uptrend.** Price is just below its 20-SMA but well above its 50-SMA and 200-SMA. MACD shows a bearish crossover and declining momentum, indicating a loss of short-term bullish momentum.
+*   **XLV:** **Pullback / Short-term Downtrend within Long-term Uptrend.** Price is below its 20-SMA, but above its 50-SMA and 200-SMA. MACD shows a strong bearish crossover with rapidly declining momentum.
+*   **GOOGL:** **Consolidation / Mixed Signals.** Price is slightly above its 20-SMA, but below its 50-SMA and above its 200-SMA. MACD shows overall negative momentum, but the histogram indicates a recent uptick in bullish short-term momentum.
+*   **KLAC:** **Downtrend Continuation / Oversold.** Price is below all key SMAs and near its lower Bollinger Band. RSI is weak/nearing oversold. MACD confirms strong negative momentum.
+*   **LQD:** **Downtrend Continuation / Oversold.** Price is below all key SMAs and near its lower Bollinger Band. RSI is weak/nearing oversold. MACD confirms negative momentum.
+*   **NFLX:** **Consolidation / Short-term Downtrend.** Price is below its 20-SMA and 200-SMA, but just above its 50-SMA. MACD shows bearish momentum, and price is near the lower Bollinger Band.
+*   **AMZN:** **Pullback to Lower Bollinger Band / Short-term Downtrend within Long-term Uptrend.** Price is below its 20-SMA and 50-SMA, and just below its lower Bollinger Band. RSI is weak, and MACD shows strong bearish momentum.
+*   **GLD:** **Downtrend Continuation / Weakness.** Price is below all key SMAs. RSI is weak, and MACD shows a strong bearish crossover with deeply negative momentum.
+*   **UUP:** **Strong Uptrend Continuation / Breakout.** Price is above all key SMAs with bullish alignment, breaking above its upper Bollinger Band. RSI is strong/overbought, and MACD confirms robust positive momentum.
+*   **XLB:** **Downtrend within Long-term Support / Potential Mean Reversion Bounce.** Price is below its 20-SMA and 50-SMA, but just above its 200-SMA. RSI is weak, and price is near the lower Bollinger Band. MACD shows negative momentum.
+*   **XLRE:** **Downtrend Continuation / Oversold Mean Reversion Potential.** Price is below all key SMAs and near its lower Bollinger Band. RSI is oversold, and MACD confirms negative momentum.
+*   **DIA:** **Strong Downtrend / Oversold.** Price is significantly below its 20-SMA and 50-SMA, and below its lower Bollinger Band. RSI is weak/nearing oversold, and MACD shows strong bearish momentum.
+*   **MSFT:** **Pullback within Uptrend.** Price is below its 20-SMA but well above its 50-SMA and 200-SMA. MACD shows a bearish crossover and declining momentum, indicating a loss of short-term bullish momentum.
+*   **XLE:** **Pullback / Short-term Weakness within Uptrend.** Price is just below its 20-SMA but well above its 50-SMA and 200-SMA (bullish alignment). MACD shows a bearish crossover and declining momentum, indicating a loss of recent bullish momentum.
+*   **XLF:** **Downtrend Continuation / Oversold.** Price is below its 20-SMA and 50-SMA, and below its lower Bollinger Band. RSI is weak, and MACD confirms bearish momentum.
+*   **IBIT:** **Pullback within Uptrend.** Price is below its 20-SMA but above its 50-SMA and 200-SMA. MACD shows a bearish crossover and declining momentum.
+*   **TSLA:** **Short-term Consolidation / Weakness within Downtrend.** Price is just above its 20-SMA and 50-SMA, but well below its 200-SMA. MACD has recently turned bearish. Mixed signals, with short-term support but longer-term downtrend.
+*   **SLV:** **Consolidation / Short-term Downtrend.** Price is below its 20-SMA and 200-SMA, but just above its 50-SMA. RSI is weak, and MACD shows bearish momentum.
+*   **VOO:** **Strong Pullback / Short-term Downtrend within Long-term Uptrend / Oversold.** Price is below its 20-SMA and 50-SMA, and below its lower Bollinger Band. RSI is weak, and MACD shows strong bearish momentum. The 200-SMA remains a strong long-term support.
+*   **CRWD:** **Strong Uptrend Continuation / Breakout Potential.** Price is significantly above all key SMAs in bullish alignment. RSI is strong, and MACD shows a strong bullish crossover with increasing positive momentum. Price is nearing the upper Bollinger Band.
+*   **IAU:** **Downtrend / Short-term Weakness.** Price is below its 20-SMA, 50-SMA, and 200-SMA. RSI is weak, and MACD shows bearish momentum.
+*   **UPRO:** **Strong Pullback / Short-term Downtrend within Long-term Uptrend / Oversold.** Price is significantly below its 20-SMA and 50-SMA, and below its lower Bollinger Band. RSI is weak, and MACD shows strong bearish momentum. The 200-SMA remains a strong long-term support.
+*   **ORCL:** **Consolidation / Short-term Downtrend.** Price is below its 20-SMA and 200-SMA, but above its 50-SMA. MACD shows bearish momentum.
+*   **IWM:** **Strong Pullback / Short-term Downtrend within Long-term Uptrend / Oversold.** Price is significantly below its 20-SMA and 50-SMA, and just below its lower Bollinger Band. RSI is nearing oversold, and MACD shows strong bearish momentum. The 200-SMA remains a strong long-term support.
+*   **VT:** **Pullback to Lower Bollinger Band / Short-term Downtrend within Long-term Uptrend.** Price is below its 20-SMA and 50-SMA, and just below its lower Bollinger Band. RSI is weak, and MACD shows bearish momentum. The 200-SMA remains a long-term support.
+*   **XLU:** **Downtrend Continuation / Oversold Mean Reversion Potential.** Price is below all key SMAs and at its lower Bollinger Band. RSI is oversold, and MACD confirms strong negative momentum.
+*   **^IRX:** **Strong Uptrend Continuation / Extreme Overbought / Breakout.** Price is above all key SMAs, breaking above its upper Bollinger Band. RSI is extremely overbought, and MACD shows strong positive momentum, indicating a clear and strong bullish trend in short-term yields.
+*   **SCHD:** **Pullback to Lower Bollinger Band / Short-term Downtrend within Long-term Uptrend.** Price is below its 20-SMA and 50-SMA, and right at its lower Bollinger Band. RSI is weak, and MACD shows a bearish crossover. The 200-SMA remains a long-term support.
+*   **VTI:** **Strong Pullback / Short-term Downtrend within Long-term Uptrend / Oversold.** Price is below its 20-SMA and 50-SMA, and below its lower Bollinger Band. RSI is weak, and MACD shows strong bearish momentum. The 200-SMA remains a strong long-term support.
+*   **SPY:** **Strong Pullback / Short-term Downtrend within Long-term Uptrend / Oversold.** Price is below its 20-SMA and 50-SMA, and below its lower Bollinger Band. RSI is weak, and MACD shows strong bearish momentum. The 200-SMA remains a strong long-term support.
+*   **HYG:** **Downtrend Continuation / Oversold Mean Reversion Potential.** Price is below its 20-SMA and 50-SMA, and just below its lower Bollinger Band. RSI is oversold, and MACD confirms bearish momentum. The 200-SMA is just below current price, suggesting marginal support.
+*   **TSM:** **Pullback within Uptrend.** Price is just below its 20-SMA, but above its 50-SMA and well above its 200-SMA. MACD shows a bearish crossover and declining momentum, indicating a loss of short-term bullish momentum.
+*   **TQQQ:** **Strong Pullback / Short-term Downtrend within Long-term Uptrend / Oversold.** Price is below its 20-SMA and 50-SMA, and below its lower Bollinger Band. RSI is weak, and MACD shows bearish momentum. The 200-SMA remains a long-term support.
+*   **EWA:** **Downtrend Continuation / Oversold.** Price is below its 20-SMA and 50-SMA, and below its lower Bollinger Band. RSI is weak/nearing oversold, and MACD confirms bearish momentum. The 200-SMA offers some distant support.
+*   **VGK:** **Downtrend Continuation / Oversold Mean Reversion Potential.** Price is below its 20-SMA and 50-SMA, and at its lower Bollinger Band. RSI is weak/nearing oversold, and MACD confirms bearish momentum. The 200-SMA offers some distant support.
