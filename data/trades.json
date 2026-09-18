@@ -10,38 +10,18 @@
         "notional_value": 10000
     },
     {
-        "ticker": "XLU",
+        "ticker": "QQQ",
         "action": "buy",
         "notional_value": 10000
     },
     {
-        "ticker": "SCHD",
+        "ticker": "MSFT",
         "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "QUAL",
-        "action": "buy",
-        "notional_value": 10000
+        "notional_value": 5000
     },
     {
         "ticker": "CRWD",
         "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "AAPL",
-        "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "AMD",
-        "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "INTC",
-        "action": "buy",
-        "notional_value": 7184.98
+        "notional_value": 5000
     }
 ]
