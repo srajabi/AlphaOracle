@@ -1,26 +1,26 @@
 [
     {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 10000
-    },
-    {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 15000
     },
     {
-        "ticker": "QQQ",
+        "ticker": "XLP",
         "action": "buy",
         "notional_value": 10000
     },
     {
-        "ticker": "MSFT",
+        "ticker": "QUAL",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 10000
     },
     {
-        "ticker": "CRWD",
+        "ticker": "UUP",
+        "action": "buy",
+        "notional_value": 8000
+    },
+    {
+        "ticker": "XLE",
         "action": "buy",
         "notional_value": 5000
     }

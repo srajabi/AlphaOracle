@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-18T22:47:07.741479+00:00",
+  "generated_at_utc": "2026-09-21T19:48:22.549155+00:00",
   "ips": "claude/ips_case_study.md",
   "signals": {
     "slow_channel": {
@@ -12,20 +12,21 @@
     "fast_channel": {
       "state": "clear",
       "vix_vix3m_5d_median": 0.887,
-      "as_of": "2026-09-17"
+      "as_of": "2026-09-18"
     },
     "credit": {
       "state": "clear",
-      "hyg_lqd_63d_relmom": 0.0237
+      "hyg_lqd_63d_relmom": 0.0247
     },
     "canary": {
-      "state": "half_defensive",
+      "state": "full_defensive",
       "negative_canaries": [
+        "EWA",
         "TLT"
       ],
       "momentum": {
-        "EWA": 0.0042,
-        "TLT": -0.0122
+        "EWA": -0.0161,
+        "TLT": -0.0304
       }
     }
   },
