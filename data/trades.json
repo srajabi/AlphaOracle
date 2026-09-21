@@ -5,23 +5,53 @@
         "notional_value": 15000
     },
     {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "QUAL",
-        "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "UUP",
-        "action": "buy",
-        "notional_value": 8000
-    },
-    {
         "ticker": "XLE",
         "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "MSFT",
+        "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "AMZN",
+        "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "VOO",
+        "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "SPY",
+        "action": "buy",
         "notional_value": 5000
+    },
+    {
+        "ticker": "PLTR",
+        "action": "buy",
+        "notional_value": 7000
+    },
+    {
+        "ticker": "NBIS",
+        "action": "buy",
+        "notional_value": 7000
+    },
+    {
+        "ticker": "ORCL",
+        "action": "buy",
+        "notional_value": 7000
+    },
+    {
+        "ticker": "VTI",
+        "action": "buy",
+        "notional_value": 5000
+    },
+    {
+        "ticker": "XLF",
+        "action": "buy",
+        "notional_value": 1000
     }
 ]
