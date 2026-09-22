@@ -1,7 +1,12 @@
 [
     {
-        "ticker": "GLD",
+        "ticker": "XLK",
         "action": "buy",
-        "notional_value": 20000
+        "notional_value": 15000
+    },
+    {
+        "ticker": "XLP",
+        "action": "buy",
+        "notional_value": 10000
     }
 ]

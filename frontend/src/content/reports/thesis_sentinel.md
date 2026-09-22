@@ -3,32 +3,32 @@ title: Thesis Sentinel Daily Brief
 date: "2026-09-22"
 ---
 
-Here is your daily brief:
+**DAILY THESIS BRIEF - 2026-09-22**
 
-### 1. Tripwire Status
+**1. Tripwire Status**
 
-| Tripwire                   | Signal/Reading                     | Status  |
-| :------------------------- | :--------------------------------- | :------ |
-| Carry unwind (`^VIX/^VIX3M`) | 0.822                              | CLEAR   |
-| Credit cracks (`HYG/LQD` 63d rel-mom) | 0.0213                             | CLEAR   |
-| Breadth break (canary `EWA,TLT`) | `TLT` negative, `EWA` positive     | CLEAR   |
-| Trend break (`SPY < 200d SMA`) | `SPY` (773.5) > `SMA_200` (712.98) | CLEAR   |
-| Oil shock (XLE momentum)   | Negative momentum for `XLE`        | CLEAR   |
-| AI capex turn (hyperscaler guidance) | No FY27 capex cuts reported        | CLEAR   |
-| Carry stress (`USDJPY < 140`) | Not available in provided signals  | CLEAR   |
+| Tripwire | Threshold | Today's Reading | Status |
+| :------------------------- | :----------------------------- | :-------------------------------- | :----- |
+| Carry unwind | `^VIX/^VIX3M > 1.0` | `0.832` | CLEAR |
+| Credit cracks | `HYG/LQD 63d rel-mom < -2%` | `0.0213 (2.13%)` | CLEAR |
+| Breadth break | `canary 13612W (EWA,TLT) both negative` | `Only TLT negative` | CLEAR |
+| Trend break | `SPY < 200d SMA (month-end)` | `SPY 773.5 > 200d SMA 712.98` | CLEAR |
+| Oil shock | `XLE momentum vs SPY sustained leadership` | `XLE momentum -1.27% (negative)` | CLEAR |
+| AI capex turn | `any FY27 capex cut` | `No cuts reported` | CLEAR |
+| Carry stress | `USDJPY rapid < 140 move` | `No rapid move < 140 reported` | CLEAR |
 
-### 2. Marker Watch
+**2. Marker Watch**
 
-*   **BoJ guidance**: No news today specifically on BoJ guidance or USDJPY action.
-*   **May-July CPI prints**: No new CPI data reported today. May CPI remains at 4.2% y/y as per thesis.
-*   **SpaceX IPO performance**: No news today on SpaceX's performance relative to the $135 issue price.
-*   **Q2 hyperscaler capex guidance**: News indicates continued high spending on data centers and AI infrastructure; no cuts reported.
-*   **Hormuz full closure**: News of easing supply concerns and diplomacy hopes; no full closure reported.
+*   **BoJ June meeting (guidance hawkish & USDJPY < 145):** No new relevant news today; marker period has passed.
+*   **May-July CPI prints (two consecutive < 3.5%):** Fed officials express continued inflation concerns; no new CPI data for May-July.
+*   **SpaceX IPO first-month performance (breaks issue price $135):** No new relevant news today; marker period has passed.
+*   **Q2 earnings hyperscaler capex guidance (any cut):** News indicates continued strong AI/data center spending (e.g., TSMC capex +42%); no cuts reported.
+*   **Hormuz (full closure week+):** News suggests easing US-Iran tensions and falling oil prices due to diplomacy hopes.
 
-### 3. Delta
+**3. Delta**
 
-Today's macro news presents mixed signals but largely aligns with the "Bull Quiet" regime. Oil prices are reportedly falling due to U.S.-Iran diplomacy hopes and easing supply concerns, a positive shift from earlier conflict reports. Fed officials continue to comment on rate hikes and their toolkit, reflecting persistent inflation concerns, despite the standing thesis indicating the Fed is "on hold" and rule-based real rates being "stable." Strong AI infrastructure spending and demand for chips (TSM, NVDA, AMD, INTC) continue to be a dominant theme. Unemployment signals persist globally. All rule-based tripwires remain clear.
+Today's market is characterized by a "Bull Quiet" regime and strong risk-on sentiment, with the VIX falling further to low levels. This contrasts with the thesis's "war on" context for oil, as crude prices are declining on US-Iran diplomacy hopes. Tech and AI-related stocks are performing strongly, with AMD reaching a $1T market cap and Intel up 25% in 5 days, fueled by continued AI infrastructure spending plans. Fed officials (Barkin, Williams) maintain a hawkish stance on inflation, implying potentially stable to higher rates, while the US Dollar (UUP) shows a strong uptrend. Financials (XLF) and Utilities (XLU) are seeing weakness. TLT remains a negative canary.
 
-### 4. Scenario Pressure
+**4. Scenario Pressure**
 
-Today's evidence primarily reinforces **Scenario A (Grind-with-violence)**. The "Bull Quiet" market regime, coupled with easing oil concerns and continued strong AI sector demand, suggests resilient risk appetite and underlying growth, albeit with potential for volatility. While news of Fed rate hikes and rising unemployment provides a subtle undercurrent of **Scenario B (Slow bear)**, these are not currently strong enough to trigger any tripwires. The lack of a major escalation in geopolitical events keeps **Scenario C (Fast crash)** at bay for now.
+Today's evidence primarily pushes towards **Scenario A (Grind-with-violence)**. The robust performance of AI/Tech, sustained AI capex plans, easing geopolitical concerns around oil supply, and falling VIX all point to continued market strength and narrow leadership, consistent with the "grind" aspect. There is no evidence supporting an immediate "violence" or shift towards Scenarios B or C. The Fed's hawkish tone on inflation, however, maintains an underlying tension for the broader market.

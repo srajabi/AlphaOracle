@@ -1,10 +1,10 @@
 {
-  "last_updated_utc": "2026-09-21T23:38:38.188208+00:00",
+  "last_updated_utc": "2026-09-22T23:16:41.365015+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "GLD",
+        "ticker": "XLK",
         "action": "buy",
         "notional_value": 15000
       },
@@ -13,90 +13,9 @@
     },
     {
       "trade": {
-        "ticker": "XLE",
+        "ticker": "XLP",
         "action": "buy",
         "notional_value": 10000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "MSFT",
-        "action": "buy",
-        "notional_value": 10000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "AMZN",
-        "action": "buy",
-        "notional_value": 10000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "VOO",
-        "action": "buy",
-        "notional_value": 10000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "SPY",
-        "action": "buy",
-        "notional_value": 5000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "PLTR",
-        "action": "buy",
-        "notional_value": 7000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "NBIS",
-        "action": "buy",
-        "notional_value": 7000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "ORCL",
-        "action": "buy",
-        "notional_value": 7000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "VTI",
-        "action": "buy",
-        "notional_value": 5000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "XLF",
-        "action": "buy",
-        "notional_value": 1000
       },
       "status": "skipped",
       "reason": "No available buying power."
