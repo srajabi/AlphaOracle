@@ -1,6 +1,6 @@
-# [INFO] AlphaOracle signal change - 2026-09-22 18:23 UTC
+# [INFO] AlphaOracle signal change - 2026-09-24 18:44 UTC
 
-- **Canary breadth**: `full_defensive` -> `half_defensive` (negative=TLT)
+- **Canary breadth**: `half_defensive` -> `full_defensive` (negative=EWA,TLT)
 
 ## Current state
 
@@ -9,9 +9,9 @@
 | Mandate P equity sleeve | `SLEEVE_INVESTED` |
 | Mandate Y core sleeve | `SLEEVE_INVESTED` |
 | Mandate Y satellite | `see registered champion state (canary signal above for canary_daa_*)` |
-| Canary breadth | `half_defensive` |
+| Canary breadth | `full_defensive` |
 | Credit (HYG/LQD 63d) | `clear` |
 | VIX term structure | `clear` |
 | Trend (monthly 200dma) | `risk_on` |
 
-Signals generated 2026-09-22T18:23:50.395998+00:00. Paper trading research, not advice.
+Signals generated 2026-09-24T18:44:29.695248+00:00. Paper trading research, not advice.
