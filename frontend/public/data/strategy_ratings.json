@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T18:44:27.306108Z",
+  "generated_at": "2026-09-24T23:20:07.830882Z",
   "strategies": {
     "sma_200_trend": {
       "name": "200 SMA Trend Following",
@@ -53,7 +53,15 @@
     }
   },
   "ratings": {
-    "NBIS": {
+    "SPY": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "buy",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "hold",
+      "dual_momentum": "sell",
+      "leveraged_etf_timing": "n/a"
+    },
+    "SSO": {
       "sma_200_trend": "buy",
       "sma_trend_20_50": "buy",
       "rsi_mean_reversion": "hold",
@@ -61,7 +69,23 @@
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "IAU": {
+    "VGK": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "sell",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "sell",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "^VIX3M": {
+      "sma_200_trend": "sell",
+      "sma_trend_20_50": "sell",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "hold",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "CEG": {
       "sma_200_trend": "sell",
       "sma_trend_20_50": "buy",
       "rsi_mean_reversion": "hold",
@@ -69,12 +93,28 @@
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "SPY": {
+    "XLP": {
+      "sma_200_trend": "sell",
+      "sma_trend_20_50": "sell",
+      "rsi_mean_reversion": "buy",
+      "breakout_20d": "hold",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "EWC": {
       "sma_200_trend": "buy",
       "sma_trend_20_50": "buy",
       "rsi_mean_reversion": "hold",
-      "breakout_20d": "hold",
-      "dual_momentum": "sell",
+      "breakout_20d": "sell",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "EWA": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "buy",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "sell",
+      "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
     "HYG": {
@@ -85,23 +125,47 @@
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "VOO": {
+    "XLB": {
       "sma_200_trend": "buy",
-      "sma_trend_20_50": "buy",
+      "sma_trend_20_50": "sell",
       "rsi_mean_reversion": "hold",
       "breakout_20d": "hold",
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "XLRE": {
-      "sma_200_trend": "sell",
+    "IWM": {
+      "sma_200_trend": "buy",
       "sma_trend_20_50": "sell",
       "rsi_mean_reversion": "buy",
       "breakout_20d": "sell",
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "VT": {
+    "PLTR": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "buy",
+      "rsi_mean_reversion": "sell",
+      "breakout_20d": "buy",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "KLAC": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "sell",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "hold",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "MTZ": {
+      "sma_200_trend": "sell",
+      "sma_trend_20_50": "sell",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "hold",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "MU": {
       "sma_200_trend": "buy",
       "sma_trend_20_50": "buy",
       "rsi_mean_reversion": "hold",
@@ -109,15 +173,23 @@
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "XLC": {
-      "sma_200_trend": "sell",
+    "INTC": {
+      "sma_200_trend": "buy",
       "sma_trend_20_50": "buy",
-      "rsi_mean_reversion": "hold",
+      "rsi_mean_reversion": "sell",
       "breakout_20d": "hold",
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "SSO": {
+    "TSLA": {
+      "sma_200_trend": "sell",
+      "sma_trend_20_50": "buy",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "buy",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "XLV": {
       "sma_200_trend": "buy",
       "sma_trend_20_50": "buy",
       "rsi_mean_reversion": "hold",
@@ -133,171 +205,19 @@
       "dual_momentum": "sell",
       "leveraged_etf_timing": "n/a"
     },
-    "^VIX": {
+    "IAU": {
       "sma_200_trend": "sell",
-      "sma_trend_20_50": "sell",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "hold",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "PLTR": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "buy",
-      "rsi_mean_reversion": "sell",
-      "breakout_20d": "buy",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "META": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "buy",
-      "rsi_mean_reversion": "sell",
-      "breakout_20d": "buy",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "STX": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "sell",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "buy",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "WDC": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "sell",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "hold",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "MSFT": {
-      "sma_200_trend": "buy",
       "sma_trend_20_50": "buy",
       "rsi_mean_reversion": "hold",
       "breakout_20d": "hold",
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "XLB": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "sell",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "hold",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "AMZN": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "sell",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "hold",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "XLF": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "sell",
+    "NFLX": {
+      "sma_200_trend": "sell",
+      "sma_trend_20_50": "buy",
       "rsi_mean_reversion": "buy",
       "breakout_20d": "sell",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "TMF": {
-      "sma_200_trend": "sell",
-      "sma_trend_20_50": "sell",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "sell",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "INTC": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "buy",
-      "rsi_mean_reversion": "sell",
-      "breakout_20d": "hold",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "KLAC": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "sell",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "hold",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "TSLA": {
-      "sma_200_trend": "sell",
-      "sma_trend_20_50": "buy",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "buy",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "CEG": {
-      "sma_200_trend": "sell",
-      "sma_trend_20_50": "buy",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "hold",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "QUAL": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "sell",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "hold",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "UPRO": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "buy",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "hold",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "buy"
-    },
-    "XLU": {
-      "sma_200_trend": "sell",
-      "sma_trend_20_50": "sell",
-      "rsi_mean_reversion": "buy",
-      "breakout_20d": "sell",
-      "dual_momentum": "sell",
-      "leveraged_etf_timing": "n/a"
-    },
-    "MU": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "buy",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "hold",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "QQQ": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "buy",
-      "rsi_mean_reversion": "sell",
-      "breakout_20d": "hold",
-      "dual_momentum": "buy",
-      "leveraged_etf_timing": "n/a"
-    },
-    "XLK": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "buy",
-      "rsi_mean_reversion": "sell",
-      "breakout_20d": "buy",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "AMD": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "buy",
-      "rsi_mean_reversion": "sell",
-      "breakout_20d": "hold",
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
@@ -309,31 +229,15 @@
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "EWC": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "buy",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "sell",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "TSM": {
+    "CRWD": {
       "sma_200_trend": "buy",
       "sma_trend_20_50": "buy",
       "rsi_mean_reversion": "sell",
-      "breakout_20d": "hold",
+      "breakout_20d": "buy",
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "XLE": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "buy",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "hold",
-      "dual_momentum": "sell",
-      "leveraged_etf_timing": "n/a"
-    },
-    "AAPL": {
+    "VT": {
       "sma_200_trend": "buy",
       "sma_trend_20_50": "buy",
       "rsi_mean_reversion": "hold",
@@ -341,47 +245,7 @@
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "GOOGL": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "sell",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "hold",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "GLD": {
-      "sma_200_trend": "sell",
-      "sma_trend_20_50": "buy",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "hold",
-      "dual_momentum": "sell",
-      "leveraged_etf_timing": "n/a"
-    },
-    "XLP": {
-      "sma_200_trend": "sell",
-      "sma_trend_20_50": "sell",
-      "rsi_mean_reversion": "buy",
-      "breakout_20d": "hold",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "SLV": {
-      "sma_200_trend": "sell",
-      "sma_trend_20_50": "buy",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "hold",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "VGK": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "sell",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "sell",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "CRWD": {
+    "^IRX": {
       "sma_200_trend": "buy",
       "sma_trend_20_50": "buy",
       "rsi_mean_reversion": "sell",
@@ -397,15 +261,31 @@
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "AVGO": {
-      "sma_200_trend": "sell",
+    "QQQ": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "buy",
+      "rsi_mean_reversion": "sell",
+      "breakout_20d": "hold",
+      "dual_momentum": "buy",
+      "leveraged_etf_timing": "n/a"
+    },
+    "MSFT": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "buy",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "hold",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "QUAL": {
+      "sma_200_trend": "buy",
       "sma_trend_20_50": "sell",
       "rsi_mean_reversion": "hold",
       "breakout_20d": "hold",
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "^IRX": {
+    "^TNX": {
       "sma_200_trend": "buy",
       "sma_trend_20_50": "buy",
       "rsi_mean_reversion": "sell",
@@ -413,7 +293,7 @@
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "DIA": {
+    "GOOGL": {
       "sma_200_trend": "buy",
       "sma_trend_20_50": "sell",
       "rsi_mean_reversion": "hold",
@@ -421,23 +301,15 @@
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "^VIX3M": {
-      "sma_200_trend": "sell",
-      "sma_trend_20_50": "sell",
-      "rsi_mean_reversion": "hold",
+    "TQQQ": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "buy",
+      "rsi_mean_reversion": "sell",
       "breakout_20d": "hold",
       "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
+      "leveraged_etf_timing": "buy"
     },
-    "IWM": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "sell",
-      "rsi_mean_reversion": "buy",
-      "breakout_20d": "sell",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "VTI": {
+    "VXUS": {
       "sma_200_trend": "buy",
       "sma_trend_20_50": "buy",
       "rsi_mean_reversion": "hold",
@@ -445,7 +317,23 @@
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "NVDA": {
+    "NBIS": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "buy",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "hold",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "STX": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "sell",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "buy",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "VOO": {
       "sma_200_trend": "buy",
       "sma_trend_20_50": "buy",
       "rsi_mean_reversion": "hold",
@@ -461,43 +349,11 @@
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "^TNX": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "buy",
-      "rsi_mean_reversion": "sell",
-      "breakout_20d": "buy",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "EWA": {
-      "sma_200_trend": "buy",
-      "sma_trend_20_50": "buy",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "sell",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
     "SCHD": {
       "sma_200_trend": "buy",
       "sma_trend_20_50": "buy",
       "rsi_mean_reversion": "buy",
       "breakout_20d": "sell",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "NFLX": {
-      "sma_200_trend": "sell",
-      "sma_trend_20_50": "buy",
-      "rsi_mean_reversion": "buy",
-      "breakout_20d": "sell",
-      "dual_momentum": "n/a",
-      "leveraged_etf_timing": "n/a"
-    },
-    "MTZ": {
-      "sma_200_trend": "sell",
-      "sma_trend_20_50": "sell",
-      "rsi_mean_reversion": "hold",
-      "breakout_20d": "hold",
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
@@ -517,7 +373,15 @@
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "XLV": {
+    "UPRO": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "buy",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "hold",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "buy"
+    },
+    "NVDA": {
       "sma_200_trend": "buy",
       "sma_trend_20_50": "buy",
       "rsi_mean_reversion": "hold",
@@ -525,11 +389,107 @@
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
+    "XLRE": {
+      "sma_200_trend": "sell",
+      "sma_trend_20_50": "sell",
+      "rsi_mean_reversion": "buy",
+      "breakout_20d": "sell",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "GLD": {
+      "sma_200_trend": "sell",
+      "sma_trend_20_50": "buy",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "hold",
+      "dual_momentum": "sell",
+      "leveraged_etf_timing": "n/a"
+    },
     "XLY": {
       "sma_200_trend": "sell",
       "sma_trend_20_50": "sell",
       "rsi_mean_reversion": "hold",
       "breakout_20d": "hold",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "XLK": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "buy",
+      "rsi_mean_reversion": "sell",
+      "breakout_20d": "buy",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "TMF": {
+      "sma_200_trend": "sell",
+      "sma_trend_20_50": "sell",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "sell",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "META": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "buy",
+      "rsi_mean_reversion": "sell",
+      "breakout_20d": "buy",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "XLE": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "buy",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "hold",
+      "dual_momentum": "sell",
+      "leveraged_etf_timing": "n/a"
+    },
+    "UUP": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "sell",
+      "rsi_mean_reversion": "sell",
+      "breakout_20d": "buy",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "AAPL": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "buy",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "hold",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "AMZN": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "sell",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "hold",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "XLU": {
+      "sma_200_trend": "sell",
+      "sma_trend_20_50": "sell",
+      "rsi_mean_reversion": "buy",
+      "breakout_20d": "sell",
+      "dual_momentum": "sell",
+      "leveraged_etf_timing": "n/a"
+    },
+    "AVGO": {
+      "sma_200_trend": "sell",
+      "sma_trend_20_50": "sell",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "hold",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "XLF": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "sell",
+      "rsi_mean_reversion": "buy",
+      "breakout_20d": "sell",
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
@@ -541,15 +501,23 @@
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "UUP": {
+    "TSM": {
       "sma_200_trend": "buy",
-      "sma_trend_20_50": "sell",
+      "sma_trend_20_50": "buy",
       "rsi_mean_reversion": "sell",
-      "breakout_20d": "buy",
+      "breakout_20d": "hold",
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "VXUS": {
+    "DIA": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "sell",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "hold",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "VTI": {
       "sma_200_trend": "buy",
       "sma_trend_20_50": "buy",
       "rsi_mean_reversion": "hold",
@@ -557,13 +525,45 @@
       "dual_momentum": "n/a",
       "leveraged_etf_timing": "n/a"
     },
-    "TQQQ": {
+    "WDC": {
+      "sma_200_trend": "buy",
+      "sma_trend_20_50": "sell",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "hold",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "SLV": {
+      "sma_200_trend": "sell",
+      "sma_trend_20_50": "buy",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "hold",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "^VIX": {
+      "sma_200_trend": "sell",
+      "sma_trend_20_50": "sell",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "hold",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "XLC": {
+      "sma_200_trend": "sell",
+      "sma_trend_20_50": "buy",
+      "rsi_mean_reversion": "hold",
+      "breakout_20d": "hold",
+      "dual_momentum": "n/a",
+      "leveraged_etf_timing": "n/a"
+    },
+    "AMD": {
       "sma_200_trend": "buy",
       "sma_trend_20_50": "buy",
       "rsi_mean_reversion": "sell",
       "breakout_20d": "hold",
       "dual_momentum": "n/a",
-      "leveraged_etf_timing": "buy"
+      "leveraged_etf_timing": "n/a"
     }
   },
   "summary": {
@@ -571,8 +571,8 @@
     "total_strategies": 6,
     "most_bullish": [
       "UPRO",
-      "NBIS",
-      "VOO"
+      "SSO",
+      "PLTR"
     ],
     "most_bearish": [
       "TLT",
