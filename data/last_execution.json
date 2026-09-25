@@ -1,48 +1,21 @@
 {
-  "last_updated_utc": "2026-09-24T23:25:40.684509+00:00",
+  "last_updated_utc": "2026-09-25T23:30:32.806840+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "NVDA",
-        "action": "buy",
-        "notional_value": 11624.66
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "TSM",
-        "action": "buy",
-        "notional_value": 11624.66
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "PLTR",
-        "action": "buy",
-        "notional_value": 11624.66
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 17436.99
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 13077.75
+        "notional_value": 15000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLP",
+        "action": "buy",
+        "notional_value": 10000
       },
       "status": "skipped",
       "reason": "No available buying power."
