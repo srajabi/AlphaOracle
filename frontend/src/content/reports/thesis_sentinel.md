@@ -3,32 +3,34 @@ title: Thesis Sentinel Daily Brief
 date: "2026-09-29"
 ---
 
-**Thesis Sentinel Daily Brief - 2026-09-29**
+**Thesis Sentinel Daily Brief: 2026-09-29**
 
-**1. Tripwire Status**
+1.  **Tripwire Status**
 
-| Tripwire                   | Signal Reading (2026-09-29)              | Status |
-| :------------------------- | :--------------------------------------- | :----- |
-| Carry unwind (^VIX/^VIX3M) | VIX/VIX3M 5d median: 0.838               | CLEAR  |
-| Credit cracks (HYG/LQD)    | HYG/LQD 63d rel-mom: 0.0383              | CLEAR  |
-| Breadth break (canary DAA) | Canary state: Full Defensive (EWA, TLT)  | FIRED  |
-| Trend break (SPY < 200d SMA) | SPY price (765.61) > SMA200 (715.29), SPY strong_uptrend | CLEAR  |
-| Oil shock (XLE leadership) | XLE momentum negative; XLE signal negative | CLEAR  |
-| AI capex turn (hyperscaler) | No FY27 capex cuts reported              | CLEAR  |
-| Carry stress (USDJPY < 140) | No USDJPY data                           | CLEAR  |
+| Tripwire                   | Signal / Threshold                    | Today's Reading                   | Status |
+| :------------------------- | :------------------------------------ | :-------------------------------- | :----- |
+| Carry unwind               | `^VIX/^VIX3M > 1.0`                   | `0.838`                           | CLEAR  |
+| Credit cracks              | `HYG/LQD 63d rel-mom < -2%`           | `0.0383`                          | CLEAR  |
+| Breadth break              | `canary 13612W (EWA,TLT) both negative` | `EWA: -0.0185, TLT: -0.0614`      | FIRED  |
+| Trend break                | `SPY < 200d SMA (month-end)`          | `SPY 765.61 > SMA200 715.29`      | CLEAR  |
+| Oil shock                  | `XLE momentum vs SPY sustained leadership` | `XLE momentum negative`           | CLEAR  |
+| AI capex turn              | `hyperscaler guidance any FY27 capex cut` | No explicit FY27 capex cut reported | CLEAR  |
+| Carry stress               | `USDJPY rapid < 140 move`             | `UUP strong_uptrend`              | CLEAR  |
 
-**2. Marker Watch**
+2.  **Marker Watch**
+    *   **BoJ June meeting**: No news on hawkish guidance from BoJ.
+    *   **May-July CPI prints**: No new CPI data released.
+    *   **SpaceX IPO first-month performance**: No new updates on SpaceX performance vs. issue price since 2026-06-12 datum.
+    *   **Q2 earnings hyperscaler capex guidance**: News indicates "AI Data Center Boom" and "AI needs $6tn in annual revenue to justify data centre boom," but no explicit capex *cuts* reported.
+    *   **Hormuz**: "Gulf oil producers keep massive crude flows moving through Strait of Hormuz," indicating no full closure.
 
-*   **BoJ June meeting:** No new news regarding June guidance or USDJPY impact today.
-*   **May-July CPI prints:** Fed's main inflation measure due Wednesday; May CPI was 4.2% y/y.
-*   **SpaceX IPO performance:** No new news.
-*   **Q2 hyperscaler capex guidance:** No explicit news of FY27 capex cuts; Bain notes AI needs $6T annual revenue.
-*   **Hormuz closure:** Saudi Arabia resuming Red Sea oil exports; risks persist, but no full closure reported.
+3.  **Delta**
+    *   The `canary` signal is now `full_defensive`, with both EWA and TLT showing negative momentum, officially firing the "Breadth break" tripwire.
+    *   The overall `market_regime` has shifted to "Bear Quiet" (from "Bull Quiet" previously and "Transitional" in the thesis doc). This aligns with a `cautious` risk sentiment, `strong_dollar`, and `rising_rates`.
+    *   Treasury yields are climbing, with the US Dollar at a 16-month high, reinforcing the "rising_rates" and "strong_dollar" indicators.
+    *   "South Korean corporate bankruptcies rise 18%" and "Consumer confidence sags to 12-year low" are new recession signals.
+    *   "Fed's Williams sees no urgency for next Fed rate hike" is a nuanced Fed signal amidst broader market speculation about rate hikes.
+    *   US ban on Canadian alcohol and dairy indicates an active "trade_policy" environment.
 
-**3. Delta**
-
-The market regime has transitioned to "Bear Quiet" from "Bull Quiet" yesterday (as per `market_regime` component of `RULE-BASED SIGNAL STATES TODAY`). The canary signal has moved to "full_defensive", indicating EWA and TLT are both negative, triggering a breadth break tripwire. Dollar strength is pronounced with UUP in a strong uptrend and high RSI. Real rates are rising, with TLT in a downtrend and low RSI. Geopolitical news regarding crude oil indicates easing of immediate supply shock with Saudi exports resuming, though Strait of Hormuz risks are still mentioned. A US ban on Canadian alcohol and dairy products has taken effect, reflecting ongoing trade policy tensions.
-
-**4. Scenario Pressure**
-
-The shift to a "Bear Quiet" market regime and the "FIRED" status of the `Breadth break` tripwire (canary DAA full_defensive) exert pressure toward **Scenario B (Slow bear)**, characterized by a grinding drawdown. The "strong dollar" and "rising rates" signals also align with a challenging environment for growth and international assets, consistent with Scenario B. News of easing oil supply fears somewhat reduces immediate pressure on **Scenario C (Fast crash)** mechanics (Hormuz full closure), but overall risk sentiment remains cautious due to the canary signal and trade policy tensions.
+4.  **Scenario Pressure**
+    Today's data, particularly the `full_defensive` canary signal and the `Bear Quiet` market regime with `rising_rates` and `strong_dollar`, pushes towards **Scenario B (Slow bear)**. The new recessionary signals and active trade policy further reinforce this cautious outlook. Lack of VIX backwardation and confirmed Hormuz closure keeps pressure off Scenario C. Note that the rule-based signals govern positioning, irrespective of current scenario pressure.
