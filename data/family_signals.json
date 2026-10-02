@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-10-01T19:58:07.634709+00:00",
+  "generated_at_utc": "2026-10-02T00:04:04.018464+00:00",
   "ips": "claude/ips_case_study.md",
   "signals": {
     "slow_channel": {
       "state": "risk_on",
-      "as_of_month_end": "2026-08-31",
-      "price": 45.53,
-      "sma200": 42.04,
-      "distance_pct": 8.29
+      "as_of_month_end": "2026-09-30",
+      "price": 45.57,
+      "sma200": 42.71,
+      "distance_pct": 6.69
     },
     "fast_channel": {
       "state": "clear",
       "vix_vix3m_5d_median": 0.882,
-      "as_of": "2026-09-30"
+      "as_of": "2026-10-01"
     },
     "credit": {
       "state": "clear",
