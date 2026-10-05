@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-10-03T00:00:32.501488+00:00",
+  "generated_at_utc": "2026-10-05T21:47:36.990072+00:00",
   "accounts": {
     "dev": {
       "ok": true,
       "strategy": null,
       "metrics": {
-        "observations": 152,
+        "observations": 153,
         "total_return": -0.12815,
-        "annualized_return": -0.203367,
-        "sharpe": -2.207042,
+        "annualized_return": -0.202182,
+        "sharpe": -2.199678,
         "max_dd": -0.12815,
         "current_dd": -0.12815
       },
@@ -21,12 +21,12 @@
       "ok": true,
       "strategy": null,
       "metrics": {
-        "observations": 138,
-        "total_return": -0.058489,
-        "annualized_return": -0.104216,
-        "sharpe": -0.437091,
+        "observations": 139,
+        "total_return": -0.045558,
+        "annualized_return": -0.081061,
+        "sharpe": -0.311751,
         "max_dd": -0.157845,
-        "current_dd": -0.147617
+        "current_dd": -0.13591
       },
       "vs_expectation": {
         "status": "insufficient_history",
@@ -37,10 +37,10 @@
       "ok": true,
       "strategy": "reddit_200sma_tqqq",
       "metrics": {
-        "observations": 138,
+        "observations": 139,
         "total_return": 0.999313,
-        "annualized_return": 2.543517,
-        "sharpe": 1.892014,
+        "annualized_return": 2.511411,
+        "sharpe": 1.885099,
         "max_dd": -0.404553,
         "current_dd": -0.137251
       },
@@ -58,10 +58,10 @@
       "ok": true,
       "strategy": "dual_momentum_rotation",
       "metrics": {
-        "observations": 138,
+        "observations": 139,
         "total_return": 0.184651,
-        "annualized_return": 0.362645,
-        "sharpe": 0.884105,
+        "annualized_return": 0.359615,
+        "sharpe": 0.88091,
         "max_dd": -0.228249,
         "current_dd": -0.061894
       },
@@ -79,10 +79,10 @@
       "ok": true,
       "strategy": "sector_momentum_top3_filtered",
       "metrics": {
-        "observations": 138,
+        "observations": 139,
         "total_return": 0.065485,
-        "annualized_return": 0.122804,
-        "sharpe": 0.731168,
+        "annualized_return": 0.121869,
+        "sharpe": 0.728527,
         "max_dd": -0.06875,
         "current_dd": -0.048327
       },
@@ -100,10 +100,10 @@
       "ok": true,
       "strategy": null,
       "metrics": {
-        "observations": 138,
+        "observations": 139,
         "total_return": -0.00243,
-        "annualized_return": -0.004432,
-        "sharpe": -0.05327,
+        "annualized_return": -0.004401,
+        "sharpe": -0.053078,
         "max_dd": -0.039402,
         "current_dd": -0.004536
       },
