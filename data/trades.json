@@ -1,12 +1,37 @@
 [
     {
-        "ticker": "GLD",
+        "ticker": "MSFT",
+        "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "NVDA",
+        "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "TSM",
+        "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "CRWD",
+        "action": "buy",
+        "notional_value": 8000
+    },
+    {
+        "ticker": "CEG",
         "action": "buy",
         "notional_value": 5000
     },
     {
-        "ticker": "XLE",
+        "ticker": "QQQ",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 10000
+    },
+    {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 2000
     }
 ]
