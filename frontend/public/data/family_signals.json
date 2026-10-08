@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-07T20:16:00.545338+00:00",
+  "generated_at_utc": "2026-10-08T00:21:48.512483+00:00",
   "ips": "claude/ips_case_study.md",
   "signals": {
     "slow_channel": {
@@ -11,8 +11,8 @@
     },
     "fast_channel": {
       "state": "clear",
-      "vix_vix3m_5d_median": 0.862,
-      "as_of": "2026-10-06"
+      "vix_vix3m_5d_median": 0.851,
+      "as_of": "2026-10-07"
     },
     "credit": {
       "state": "clear",

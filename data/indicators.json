@@ -15,10 +15,10 @@
           "spy_trend": "strong_uptrend",
           "spy_price": 779.0900268554688,
           "vix_level": "normal",
-          "vix_value": 15.010000228881836,
+          "vix_value": 15.079999923706055,
           "vix_trend": "falling"
         },
-        "timestamp": "2026-10-07T20:15:57.932168"
+        "timestamp": "2026-10-08T00:21:45.731412"
       },
       "dollar_strength": {
         "name": "Dollar Strength",
@@ -35,7 +35,7 @@
             "sma200": 27.75589488983154
           }
         },
-        "timestamp": "2026-10-07T20:15:57.935130"
+        "timestamp": "2026-10-08T00:21:45.734480"
       },
       "real_rates": {
         "name": "Real Rates",
@@ -48,11 +48,11 @@
           "momentum": -5.60675298500154,
           "smas": {
             "sma20": 79.53650970458985,
-            "sma50": 80.9326008605957,
+            "sma50": 80.93260055541992,
             "sma200": 83.65495788574219
           }
         },
-        "timestamp": "2026-10-07T20:15:57.937960"
+        "timestamp": "2026-10-08T00:21:45.737358"
       },
       "commodity_strength": {
         "name": "Commodity Strength",
@@ -82,10 +82,10 @@
             "signal": "negative"
           }
         },
-        "timestamp": "2026-10-07T20:15:57.946237"
+        "timestamp": "2026-10-08T00:21:45.745864"
       }
     },
-    "timestamp": "2026-10-07T20:15:57.946266"
+    "timestamp": "2026-10-08T00:21:45.745895"
   },
   "indicators": {
     "risk_sentiment": {
@@ -97,10 +97,10 @@
         "spy_trend": "strong_uptrend",
         "spy_price": 779.0900268554688,
         "vix_level": "normal",
-        "vix_value": 15.010000228881836,
+        "vix_value": 15.079999923706055,
         "vix_trend": "falling"
       },
-      "timestamp": "2026-10-07T20:15:57.932168"
+      "timestamp": "2026-10-08T00:21:45.731412"
     },
     "dollar_strength": {
       "name": "Dollar Strength",
@@ -117,7 +117,7 @@
           "sma200": 27.75589488983154
         }
       },
-      "timestamp": "2026-10-07T20:15:57.935130"
+      "timestamp": "2026-10-08T00:21:45.734480"
     },
     "real_rates": {
       "name": "Real Rates",
@@ -130,11 +130,11 @@
         "momentum": -5.60675298500154,
         "smas": {
           "sma20": 79.53650970458985,
-          "sma50": 80.9326008605957,
+          "sma50": 80.93260055541992,
           "sma200": 83.65495788574219
         }
       },
-      "timestamp": "2026-10-07T20:15:57.937960"
+      "timestamp": "2026-10-08T00:21:45.737358"
     },
     "commodity_strength": {
       "name": "Commodity Strength",
@@ -164,11 +164,11 @@
           "signal": "negative"
         }
       },
-      "timestamp": "2026-10-07T20:15:57.946237"
+      "timestamp": "2026-10-08T00:21:45.745864"
     }
   },
   "metadata": {
-    "generated_at": "2026-10-07T20:15:57.946269",
+    "generated_at": "2026-10-08T00:21:45.745898",
     "data_source": "EOD historical data",
     "lookback_days": 250
   }

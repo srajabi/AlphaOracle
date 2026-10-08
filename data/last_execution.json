@@ -1,21 +1,21 @@
 {
-  "last_updated_utc": "2026-10-06T01:30:03.453900+00:00",
+  "last_updated_utc": "2026-10-08T00:25:31.077343+00:00",
   "error": "",
   "results": [
     {
       "trade": {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 26000
+        "notional_value": 5000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "XLU",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 17500
+        "notional_value": 5000
       },
       "status": "skipped",
       "reason": "No available buying power."
