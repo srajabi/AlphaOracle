@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-09T00:39:04.423520+00:00",
+  "generated_at_utc": "2026-10-09T19:59:02.258723+00:00",
   "note": "GIPS-style geometric monthly returns; git history is the audit trail",
   "monthly_returns": {
     "dev": {
@@ -21,7 +21,7 @@
       "2026-07": 0.042474,
       "2026-08": 0.06673,
       "2026-09": -0.104506,
-      "2026-10": 0.035162
+      "2026-10": 0.052668
     },
     "prod_2": {
       "2026-03": 0.0,
