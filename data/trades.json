@@ -1,1 +1,22 @@
-[]
+[
+    {
+        "ticker": "XLE",
+        "action": "buy",
+        "notional_value": 3200
+    },
+    {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 3200
+    },
+    {
+        "ticker": "XLP",
+        "action": "buy",
+        "notional_value": 3200
+    },
+    {
+        "ticker": "QUAL",
+        "action": "buy",
+        "notional_value": 3200
+    }
+]

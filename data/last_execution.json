@@ -1,21 +1,12 @@
 {
-  "last_updated_utc": "2026-10-09T00:38:55.833768+00:00",
+  "last_updated_utc": "2026-10-10T00:19:27.938425+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 21796
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 21796
+        "notional_value": 3200
       },
       "status": "skipped",
       "reason": "No available buying power."
@@ -24,28 +15,28 @@
       "trade": {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 13077
+        "notional_value": 3200
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "SPY261030P00754000",
+        "ticker": "XLP",
         "action": "buy",
-        "qty": 13
+        "notional_value": 3200
       },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"options market orders are only allowed during market hours\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "QQQ261030P00735000",
+        "ticker": "QUAL",
         "action": "buy",
-        "qty": 5
+        "notional_value": 3200
       },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"options market orders are only allowed during market hours\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
     }
   ]
 }
