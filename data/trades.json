@@ -1,22 +1,17 @@
 [
     {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 3200
-    },
-    {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 3200
+        "notional_value": 10000
     },
     {
-        "ticker": "XLP",
+        "ticker": "SCHD",
         "action": "buy",
-        "notional_value": 3200
+        "notional_value": 10000
     },
     {
-        "ticker": "QUAL",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 3200
+        "notional_value": 10000
     }
 ]
