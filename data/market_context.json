@@ -3,29 +3,80 @@
     "regime": "Bull Quiet",
     "macro_news": [
         {
+            "headline": "Bitcoin Stalls at $84,000 Resistance as Stronger Dollar, Higher Treasury Yields Weigh - bloomingbit",
+            "source": "bloomingbit",
+            "published_utc": "2026-10-13T23:35:49+00:00",
+            "summary": "Bitcoin Stalls at $84,000 Resistance as Stronger Dollar, Higher Treasury Yields Weigh bloomingbit",
+            "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE90RF9fT1FhREJmcDNJYlh6Y0pqWnZMT0loYXlsZXowVGNydE9pcU04RVRVZHRJdmpFZ0FfdnNMNXhJUTBQSHdPQ0tsQUhzNmc3eGRHTw?oc=5",
+            "topic": "bonds_usd",
+            "impact_tags": []
+        },
+        {
+            "headline": "News Content Hub - Strait of Hormuz tanker attacks surge: two missing after attack off Oman; US 'disables' vessel - Riviera Maritime Media",
+            "source": "Riviera Maritime Media",
+            "published_utc": "2026-10-13T22:52:30+00:00",
+            "summary": "News Content Hub - Strait of Hormuz tanker attacks surge: two missing after attack off Oman; US 'disables' vessel Riviera Maritime Media",
+            "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcXd0LVNON2lpNkxTM0F2UDl2WnpyRDByWkJ5bWRNWjRkS0JCa2QwWlJyUVZsNWpzR2gtOW9uRE5mT0VHc1ZzWlc4TXJGbjRjUG1pV3ZzY0NnRnM1OFYybGlTem1XcHNkd1hoNGRTd2xrN3lyUHBFWEhBOUE1VkRqSE5TWl9VUEJTcW82VndidFQzei15VENuRHhpZlBYQ2szTnVVbmdTNlA?oc=5",
+            "topic": "energy_geopolitics",
+            "impact_tags": [
+                {
+                    "event_type": "geopolitical_supply_shock",
+                    "direction": "inflationary_risk_off",
+                    "assets_impacted": [
+                        "XLE",
+                        "GLD",
+                        "TLT",
+                        "SPY"
+                    ],
+                    "confidence": "medium"
+                }
+            ]
+        },
+        {
+            "headline": "Boston Fed\u2019s Collins wants to raise rates \u2018a bit more\u2019 before the end of the year - Yahoo Finance",
+            "source": "Yahoo Finance",
+            "published_utc": "2026-10-13T21:27:36+00:00",
+            "summary": "Boston Fed\u2019s Collins wants to raise rates \u2018a bit more\u2019 before the end of the year Yahoo Finance",
+            "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxObmdQdVZqMFUzaFBFZzI0MXFWZzd0a0JmbXA4eEJ6eExYY0VMMFBFX1pPVDRhTEZ4X1pMOVRfdkNoRW9rdHNOQTdZcmpEc0JnUnVsZWQxdXo2ZHhBejJBTXZxU2xCRTc5XzNyRThUUlRwMjJtSmxLVHd1M1k5bkhRSjBOR25qOG5pd19YYVdhU2tPNUJna3B2VzFaMFpzRTZYeXdsTUVpVEk1eFlOaThPZ1puZ1BQd1lMY1NId21vdndzdHlZT0FTem9xUG4yRTZKVW1lS19hVDVFZw?oc=5",
+            "topic": "fed_rates",
+            "impact_tags": []
+        },
+        {
+            "headline": "USD/CAD Forecast: Canadian Dollar Holds Firm as Markets Await U.S. CPI Data - FOREX.com",
+            "source": "FOREX.com",
+            "published_utc": "2026-10-13T20:09:38+00:00",
+            "summary": "USD/CAD Forecast: Canadian Dollar Holds Firm as Markets Await U.S. CPI Data FOREX.com",
+            "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQldqempYUG1lbE51R25zX0lDXzJWWVBsbjJLbzBvWTk1bmJnSFRjZVNzZFJEV3YwaFlnTzdsYy1zeGFidjRUUHNMbUl0dTZlMVVSbWdNUEtkSTkyandwNEpWQWRJZGEwUi1lN1hvTmxQdy1BLTNLenFGYTV5b182ZXEwRFpZMWVxZHpUbnJ0X3RoRVlHMnZsbFJ3T3I3dGRkTlFMSFNieXRYOXZacXZhX2MyZDR3TFB2Nl9YLQ?oc=5",
+            "topic": "bonds_usd",
+            "impact_tags": [
+                {
+                    "event_type": "policy_rate_shift",
+                    "direction": "rates_sensitive",
+                    "assets_impacted": [
+                        "SPY",
+                        "QQQ",
+                        "TLT",
+                        "^VIX"
+                    ],
+                    "confidence": "medium"
+                }
+            ]
+        },
+        {
+            "headline": "Fed's Collins sees another rate hike on the table before end of 2026 - Reuters",
+            "source": "Reuters",
+            "published_utc": "2026-10-13T20:08:52+00:00",
+            "summary": "Fed's Collins sees another rate hike on the table before end of 2026 Reuters",
+            "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQTNoWUtZWjdLcTc2ZmNycnptRmR1cmluWThZU2ZTYU5JUkdaazY1Z2hEdjIxNWZ3VU5RSVZvejc3VnlueGZoN0JyNlNmdkptQk9ZNEZqU1MyLTNUblpOaF9FMkdGbnZhX1hTVllLTzYxNFEwamlyazZKem00N1k1UFBablNQSVRCZTgySWNNR3pHemxzSEl1S0VBeE1DQlYyS0Ntdw?oc=5",
+            "topic": "fed_rates",
+            "impact_tags": []
+        },
+        {
             "headline": "One More U.S. Interest-Rate Increase May Be Appropriate, Fed\u2019s Williams Says - WSJ",
             "source": "WSJ",
-            "published_utc": "2026-10-13T20:07:00+00:00",
+            "published_utc": "2026-10-13T20:08:19+00:00",
             "summary": "One More U.S. Interest-Rate Increase May Be Appropriate, Fed\u2019s Williams Says WSJ",
             "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSW1RS05MdnMwMjY4RW1VR0dhSkw0dUpSdkp6NFBFcllqMTdmcVpqZkZhbEx3ZWZSMnR3UVYzbTZVUEZkUVFOUWxMWFpzZDZ0SkxZOTBnYVVJNWFMTGZkd3IxaFBobG1JV2tmSm8yQTVqNm5rSDhwMEpPbVBQejFWM0VzR2ZOMmJ6YU5RR0RyeHF4LUZBb3ZfQkJpczVKd01yRFBpcXV1UWh3ZC11ajM4VjdjdHZxaFlfMFpTRmxEOTV0RWNG?oc=5",
-            "topic": "fed_rates",
-            "impact_tags": []
-        },
-        {
-            "headline": "Fed's Collins sees another rate hike on the table before end of 2026 - Yahoo Finance",
-            "source": "Yahoo Finance",
-            "published_utc": "2026-10-13T20:01:22+00:00",
-            "summary": "Fed's Collins sees another rate hike on the table before end of 2026 Yahoo Finance",
-            "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZDNSTDF0Tk9SVlgzYjZxNTJjNi1DSV9GYnZxRExDOTdZa1RFVkQyR0JzbEUta2tKWEY2WVd5bmZaeXMyZHpSU29zZzNpamZLTXBBU1pmMmZDS3RWdTVJZEFFanlyYmREcmk1NjAxYVVDTGVnY1ZFU3VPcnFoQldRbk5wLWkydS1EVDZaSHB0eVVzb2k1cXZXQ25JUQ?oc=5",
-            "topic": "fed_rates",
-            "impact_tags": []
-        },
-        {
-            "headline": "Fed\u2019s Collins Sees Higher Rates Likely This Year to Tame Prices - Bloomberg.com",
-            "source": "Bloomberg.com",
-            "published_utc": "2026-10-13T20:00:00+00:00",
-            "summary": "Fed\u2019s Collins Sees Higher Rates Likely This Year to Tame Prices Bloomberg.com",
-            "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPblhrenBSaG5hbXFGMWlESlVpYklwVnhCWHdJc2stVUVhZUdRUG9uTVdfS0ZnTjZOQ1VvRzBoWWUwNV9keThBUlJVYXNIYU16dGxUalBWckUwMjdzWHpLWG1vd3RLOW5KMHVjVjl1S1Znc1lqakxtd1JPdjVWTlZRM3ZOMUNsQ011V0czd0NzX3RnUW5DMXBramQyZ1FfNnVfVTBtUTJWTndFdkNkYThwSjBDTzc?oc=5",
             "topic": "fed_rates",
             "impact_tags": []
         },
@@ -46,69 +97,6 @@
             "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVlpnSjdVeERKaFdNRkxCTHhRNmY5Y0FFN3k0by1ndE9MYXIzN0pybnJzUFBqR1hOaHpUYjFjODI1ZGNSMjVLRF83S19ZNXB6eGU0YU5MUUVMWEFtSjN4UlRReUpsWFktZ2lfX1pQZDBNS1Qtbk02bXNGRVNQZUlSS2pKZ2wxRUtGZzBWYUxCdGJpbHZkOFlMYWhtb0lRNFZEMDd6ZnY2RjdDRXpVdWhsUVhwN3ZsZ1k?oc=5",
             "topic": "fed_rates",
             "impact_tags": []
-        },
-        {
-            "headline": "Hormuz ships pummeled with worst attacks of the Iran War \u2014 as oil flows plummet - New York Post",
-            "source": "New York Post",
-            "published_utc": "2026-10-13T18:43:00+00:00",
-            "summary": "Hormuz ships pummeled with worst attacks of the Iran War \u2014 as oil flows plummet New York Post",
-            "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbDRzVVN2aEZGcW5ydngyVTFMNFhpQWNkV2RNRkFtc1lidWVQM2pjbHNWTGFCVWRIR1BtSndXVHBHaHV5b0NwNkxoOVBlU1B5SVo2RUs0NEpRUnpiUnNjUnJ4ZWQ5WFNvcEJNSUxaNTBqVWpDRWpWcks5b2txNEd4cjVnbS1YaTY2cHBycU8tSlpWSWZUTEVyckQ4VHJtcDZ0VEFxdFdXN01qTzJYXzdqUjhnc2lDU3B4dGE4?oc=5",
-            "topic": "energy_geopolitics",
-            "impact_tags": [
-                {
-                    "event_type": "geopolitical_supply_shock",
-                    "direction": "inflationary_risk_off",
-                    "assets_impacted": [
-                        "XLE",
-                        "GLD",
-                        "TLT",
-                        "SPY"
-                    ],
-                    "confidence": "medium"
-                }
-            ]
-        },
-        {
-            "headline": "Iranian Army Navy Says Oil Tanker Caught Fire After Illegally Crossing Strait of Hormuz: how 5 outlets framed it - NewsCord",
-            "source": "NewsCord",
-            "published_utc": "2026-10-13T17:27:29+00:00",
-            "summary": "Iranian Army Navy Says Oil Tanker Caught Fire After Illegally Crossing Strait of Hormuz: how 5 outlets framed it NewsCord",
-            "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNbGhRa3ZVcWZSbFRCeTdQdnB3Sy1tQ3gyUHlXWHRIOS1JRVB6THdpcUJsRU9EVG1UWExVaU0zUTFyQVJRZGh0Wm1FOHRUWUQ5NGpubTBWRUphMmMyVE84bV80VjhGSS1fSXdXQlZ2RTlQa1JSSWE2U3NsTFNNSXZLbUJJbndhVFZNRWxtdHhlZkdkU09EVGo1a3Y4WTN4Vkg4T0lHdmpHQ1RPNXpTaUR5M2U2YWN1alM1a3EzVjRVX0g3WWRMX0lsUDk1MTFRRFRtTDRMXzh1dEdMdFlobkVoMjVERWJDVHAzR3c?oc=5",
-            "topic": "energy_geopolitics",
-            "impact_tags": [
-                {
-                    "event_type": "geopolitical_supply_shock",
-                    "direction": "inflationary_risk_off",
-                    "assets_impacted": [
-                        "XLE",
-                        "GLD",
-                        "TLT",
-                        "SPY"
-                    ],
-                    "confidence": "medium"
-                }
-            ]
-        },
-        {
-            "headline": "A US official told Al Jazeera we are closely monitoring Iran's attacks on maritime shipping in the Strait of Hormuz, which are unjustified acts of aggression. - Newsquawk",
-            "source": "Newsquawk",
-            "published_utc": "2026-10-13T15:41:38+00:00",
-            "summary": "A US official told Al Jazeera we are closely monitoring Iran's attacks on maritime shipping in the Strait of Hormuz, which are unjustified acts of aggression. Newsquawk",
-            "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPM294Y3ljNVk3LWlSckpzejBHWGFQdjVXek5FYW1aVTEzcm03dl9rRDZFWFZ1UlV2SHN5QTNvVzVoQUNuTWhFWEN6WDZtdjdIUk5mdXRYWmJHNjRMMXA2VDItLVBtNkNiRE1LQzZFNURjdGFKSjNHSHFJaUR6dHBHRWt0cE9CeEYwclgtUUNXOHhLRlVQYWliaDNjZFdJRFd5WXp3aElfWUxZeTFvTDBZZ1RNYUtXeXlCRzBHT0liQ3Q1ZTZGYVdveFBCNmMxdUlNdkFyNXYtVDk5V3Bua3ZzRGJLd1dxd25tN2RzVTlOb040THBmb1U2b3FLbjVNWTZzeU5vQkxLUEJLTnYxR295Y2NzemI4VEdPMTNn?oc=5",
-            "topic": "energy_geopolitics",
-            "impact_tags": [
-                {
-                    "event_type": "geopolitical_supply_shock",
-                    "direction": "inflationary_risk_off",
-                    "assets_impacted": [
-                        "XLE",
-                        "GLD",
-                        "TLT",
-                        "SPY"
-                    ],
-                    "confidence": "medium"
-                }
-            ]
         }
     ],
     "macro_news_by_topic": {
@@ -119,6 +107,15 @@
                 "published_utc": "2026-10-13T19:23:55+00:00",
                 "summary": "Fed's Williams sees no need for rate hike in 2027, Bloomberg News reports Reuters",
                 "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVlpnSjdVeERKaFdNRkxCTHhRNmY5Y0FFN3k0by1ndE9MYXIzN0pybnJzUFBqR1hOaHpUYjFjODI1ZGNSMjVLRF83S19ZNXB6eGU0YU5MUUVMWEFtSjN4UlRReUpsWFktZ2lfX1pQZDBNS1Qtbk02bXNGRVNQZUlSS2pKZ2wxRUtGZzBWYUxCdGJpbHZkOFlMYWhtb0lRNFZEMDd6ZnY2RjdDRXpVdWhsUVhwN3ZsZ1k?oc=5",
+                "topic": "fed_rates",
+                "impact_tags": []
+            },
+            {
+                "headline": "One More U.S. Interest-Rate Increase May Be Appropriate, Fed\u2019s Williams Says - WSJ",
+                "source": "WSJ",
+                "published_utc": "2026-10-13T20:08:19+00:00",
+                "summary": "One More U.S. Interest-Rate Increase May Be Appropriate, Fed\u2019s Williams Says WSJ",
+                "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSW1RS05MdnMwMjY4RW1VR0dhSkw0dUpSdkp6NFBFcllqMTdmcVpqZkZhbEx3ZWZSMnR3UVYzbTZVUEZkUVFOUWxMWFpzZDZ0SkxZOTBnYVVJNWFMTGZkd3IxaFBobG1JV2tmSm8yQTVqNm5rSDhwMEpPbVBQejFWM0VzR2ZOMmJ6YU5RR0RyeHF4LUZBb3ZfQkJpczVKd01yRFBpcXV1UWh3ZC11ajM4VjdjdHZxaFlfMFpTRmxEOTV0RWNG?oc=5",
                 "topic": "fed_rates",
                 "impact_tags": []
             },
@@ -137,15 +134,6 @@
                 "published_utc": "2026-10-12T09:30:45+00:00",
                 "summary": "Fed officials are warning of more pain. Many Americans are already feeling it CNN",
                 "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5KOEVDdVNYS0FUZGlpbEJTYVRMT1U0MzE1ZVUzM1pfcjdIeUhJN1ExRm1oYWZzR0lLcU8zYVJRZkI5dm9wckNpWkplUnRVQmhqUkFwb1hSN3dEbTl5ZFJOTkthcWYwYWh0ZjNBbEtkV1NDTUNnOURuVw?oc=5",
-                "topic": "fed_rates",
-                "impact_tags": []
-            },
-            {
-                "headline": "One More U.S. Interest-Rate Increase May Be Appropriate, Fed\u2019s Williams Says - WSJ",
-                "source": "WSJ",
-                "published_utc": "2026-10-13T20:07:00+00:00",
-                "summary": "One More U.S. Interest-Rate Increase May Be Appropriate, Fed\u2019s Williams Says WSJ",
-                "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSW1RS05MdnMwMjY4RW1VR0dhSkw0dUpSdkp6NFBFcllqMTdmcVpqZkZhbEx3ZWZSMnR3UVYzbTZVUEZkUVFOUWxMWFpzZDZ0SkxZOTBnYVVJNWFMTGZkd3IxaFBobG1JV2tmSm8yQTVqNm5rSDhwMEpPbVBQejFWM0VzR2ZOMmJ6YU5RR0RyeHF4LUZBb3ZfQkJpczVKd01yRFBpcXV1UWh3ZC11ajM4VjdjdHZxaFlfMFpTRmxEOTV0RWNG?oc=5",
                 "topic": "fed_rates",
                 "impact_tags": []
             },
@@ -171,31 +159,43 @@
                 ]
             },
             {
-                "headline": "Fed's Collins sees another rate hike on the table before end of 2026 - Yahoo Finance",
+                "headline": "Fed's Collins sees another rate hike on the table before end of 2026 - Reuters",
+                "source": "Reuters",
+                "published_utc": "2026-10-13T20:08:52+00:00",
+                "summary": "Fed's Collins sees another rate hike on the table before end of 2026 Reuters",
+                "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQTNoWUtZWjdLcTc2ZmNycnptRmR1cmluWThZU2ZTYU5JUkdaazY1Z2hEdjIxNWZ3VU5RSVZvejc3VnlueGZoN0JyNlNmdkptQk9ZNEZqU1MyLTNUblpOaF9FMkdGbnZhX1hTVllLTzYxNFEwamlyazZKem00N1k1UFBablNQSVRCZTgySWNNR3pHemxzSEl1S0VBeE1DQlYyS0Ntdw?oc=5",
+                "topic": "fed_rates",
+                "impact_tags": []
+            },
+            {
+                "headline": "Boston Fed\u2019s Collins wants to raise rates \u2018a bit more\u2019 before the end of the year - Yahoo Finance",
                 "source": "Yahoo Finance",
-                "published_utc": "2026-10-13T20:01:22+00:00",
-                "summary": "Fed's Collins sees another rate hike on the table before end of 2026 Yahoo Finance",
-                "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZDNSTDF0Tk9SVlgzYjZxNTJjNi1DSV9GYnZxRExDOTdZa1RFVkQyR0JzbEUta2tKWEY2WVd5bmZaeXMyZHpSU29zZzNpamZLTXBBU1pmMmZDS3RWdTVJZEFFanlyYmREcmk1NjAxYVVDTGVnY1ZFU3VPcnFoQldRbk5wLWkydS1EVDZaSHB0eVVzb2k1cXZXQ25JUQ?oc=5",
+                "published_utc": "2026-10-13T21:27:36+00:00",
+                "summary": "Boston Fed\u2019s Collins wants to raise rates \u2018a bit more\u2019 before the end of the year Yahoo Finance",
+                "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxObmdQdVZqMFUzaFBFZzI0MXFWZzd0a0JmbXA4eEJ6eExYY0VMMFBFX1pPVDRhTEZ4X1pMOVRfdkNoRW9rdHNOQTdZcmpEc0JnUnVsZWQxdXo2ZHhBejJBTXZxU2xCRTc5XzNyRThUUlRwMjJtSmxLVHd1M1k5bkhRSjBOR25qOG5pd19YYVdhU2tPNUJna3B2VzFaMFpzRTZYeXdsTUVpVEk1eFlOaThPZ1puZ1BQd1lMY1NId21vdndzdHlZT0FTem9xUG4yRTZKVW1lS19hVDVFZw?oc=5",
                 "topic": "fed_rates",
                 "impact_tags": []
             },
             {
-                "headline": "A Top Fed Official Casts Further Doubt on a Rate Rise This Month - The New York Times",
+                "headline": "Rising Interest Rates Bite Some Wall St. Banks - The New York Times",
                 "source": "The New York Times",
-                "published_utc": "2026-10-08T08:38:57+00:00",
-                "summary": "A Top Fed Official Casts Further Doubt on a Rate Rise This Month The New York Times",
-                "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNckNMd0xCc1RMemJpSlNXQVBEeVFKUktQWmFwTlBZWTFrM19DWTA1d1dtN3djS0tSbTY3VzhWYlp2NEdpQ1RIdUthT2xGMVhPNmxqRXFyUEloVVNRQWZ6S3VQeHlZaklEbGh2SWRmckNONnZXaV81TjItOTAwZlBPakZsTzRoVHpMUDVEYlFpbTJraXM?oc=5",
+                "published_utc": "2026-10-13T18:32:57+00:00",
+                "summary": "Rising Interest Rates Bite Some Wall St. Banks The New York Times",
+                "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRWthN0FFWDQyd3RDcEtibDVnM2NwZFYyc1p3WXRXcTlOeFJtQUYyZG5ybExDekhqYTdtYmcybElvQ24zT2RnWWxZa3hxV3hRejlTRWJJN1ZNbkdXeVd5XzJwTWd0VDl3Ym5IVzBmMldPbnJ3N3N3UkFfSFN0dzMtNkRxNl9CYXRzRElZeEVHbnZGSEVjYlZV?oc=5",
                 "topic": "fed_rates",
-                "impact_tags": []
-            },
-            {
-                "headline": "Fed\u2019s Collins Sees Higher Rates Likely This Year to Tame Prices - Bloomberg.com",
-                "source": "Bloomberg.com",
-                "published_utc": "2026-10-13T20:00:00+00:00",
-                "summary": "Fed\u2019s Collins Sees Higher Rates Likely This Year to Tame Prices Bloomberg.com",
-                "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPblhrenBSaG5hbXFGMWlESlVpYklwVnhCWHdJc2stVUVhZUdRUG9uTVdfS0ZnTjZOQ1VvRzBoWWUwNV9keThBUlJVYXNIYU16dGxUalBWckUwMjdzWHpLWG1vd3RLOW5KMHVjVjl1S1Znc1lqakxtd1JPdjVWTlZRM3ZOMUNsQ011V0czd0NzX3RnUW5DMXBramQyZ1FfNnVfVTBtUTJWTndFdkNkYThwSjBDTzc?oc=5",
-                "topic": "fed_rates",
-                "impact_tags": []
+                "impact_tags": [
+                    {
+                        "event_type": "policy_rate_shift",
+                        "direction": "rates_sensitive",
+                        "assets_impacted": [
+                            "SPY",
+                            "QQQ",
+                            "TLT",
+                            "^VIX"
+                        ],
+                        "confidence": "medium"
+                    }
+                ]
             }
         ],
         "energy_geopolitics": [
@@ -205,48 +205,6 @@
                 "published_utc": "2026-10-09T18:01:09+00:00",
                 "summary": "Tanker attacks in Strait of Hormuz surge to wartime high as Iran tries to choke off oil exports CNBC",
                 "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQLXQ5SXNEMzB0UFVEM09pZjB6S29PbXBPZWdwQ1VUei1iSkJ4RWx6d0pvOUhRVXdiVTZKeHUzUkVVSUE5bmtENm5OOXFrN24zYjhYdlN5R1VfckRfaGt3eXJlLXVNSFR6OE5lTTdWT19mRGVRNDQ5QTltV09OdXdSd2h6c9IBiAFBVV95cUxOeXViRmlFc2pYOS1vS3htNzF6Q0hLcEt1Vm1VUEJkb0NrWENIcFRtSXNiUDUxMk5DbFVQbXpBaTdsU25vajNhd3lQTW93bk05RGVWdlNkWFRtRkZxa1M5c3ZBTkxRWGxHOEwyM1dYS1hTczRJNjNZUk5MUXVGS0ROcWlYX0lzdkVD?oc=5",
-                "topic": "energy_geopolitics",
-                "impact_tags": [
-                    {
-                        "event_type": "geopolitical_supply_shock",
-                        "direction": "inflationary_risk_off",
-                        "assets_impacted": [
-                            "XLE",
-                            "GLD",
-                            "TLT",
-                            "SPY"
-                        ],
-                        "confidence": "medium"
-                    }
-                ]
-            },
-            {
-                "headline": "Iranian Army Navy Says Oil Tanker Caught Fire After Illegally Crossing Strait of Hormuz: how 5 outlets framed it - NewsCord",
-                "source": "NewsCord",
-                "published_utc": "2026-10-13T17:27:29+00:00",
-                "summary": "Iranian Army Navy Says Oil Tanker Caught Fire After Illegally Crossing Strait of Hormuz: how 5 outlets framed it NewsCord",
-                "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNbGhRa3ZVcWZSbFRCeTdQdnB3Sy1tQ3gyUHlXWHRIOS1JRVB6THdpcUJsRU9EVG1UWExVaU0zUTFyQVJRZGh0Wm1FOHRUWUQ5NGpubTBWRUphMmMyVE84bV80VjhGSS1fSXdXQlZ2RTlQa1JSSWE2U3NsTFNNSXZLbUJJbndhVFZNRWxtdHhlZkdkU09EVGo1a3Y4WTN4Vkg4T0lHdmpHQ1RPNXpTaUR5M2U2YWN1alM1a3EzVjRVX0g3WWRMX0lsUDk1MTFRRFRtTDRMXzh1dEdMdFlobkVoMjVERWJDVHAzR3c?oc=5",
-                "topic": "energy_geopolitics",
-                "impact_tags": [
-                    {
-                        "event_type": "geopolitical_supply_shock",
-                        "direction": "inflationary_risk_off",
-                        "assets_impacted": [
-                            "XLE",
-                            "GLD",
-                            "TLT",
-                            "SPY"
-                        ],
-                        "confidence": "medium"
-                    }
-                ]
-            },
-            {
-                "headline": "After oil increasingly left the Gulf, Iran is trying to regain its stranglehold on shipping - CNN",
-                "source": "CNN",
-                "published_utc": "2026-10-11T16:28:49+00:00",
-                "summary": "After oil increasingly left the Gulf, Iran is trying to regain its stranglehold on shipping CNN",
-                "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE43VjFQRFkxRVVwaTRiTHBubTY3M19MS1I2RFZsbWxHakhPUlNfc0Y5WVFvQ2xrY3FaSTAycE1sVmU3QXhnZ1RRTGlndVNPX3MyVVplNXllaFpGN1F6MjMtUnkzRl9JVDNCcWhyaVhOc0otM3lsbXZuWGljYw?oc=5",
                 "topic": "energy_geopolitics",
                 "impact_tags": [
                     {
@@ -284,11 +242,53 @@
                 ]
             },
             {
-                "headline": "A US official told Al Jazeera we are closely monitoring Iran's attacks on maritime shipping in the Strait of Hormuz, which are unjustified acts of aggression. - Newsquawk",
-                "source": "Newsquawk",
-                "published_utc": "2026-10-13T15:41:38+00:00",
-                "summary": "A US official told Al Jazeera we are closely monitoring Iran's attacks on maritime shipping in the Strait of Hormuz, which are unjustified acts of aggression. Newsquawk",
-                "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPM294Y3ljNVk3LWlSckpzejBHWGFQdjVXek5FYW1aVTEzcm03dl9rRDZFWFZ1UlV2SHN5QTNvVzVoQUNuTWhFWEN6WDZtdjdIUk5mdXRYWmJHNjRMMXA2VDItLVBtNkNiRE1LQzZFNURjdGFKSjNHSHFJaUR6dHBHRWt0cE9CeEYwclgtUUNXOHhLRlVQYWliaDNjZFdJRFd5WXp3aElfWUxZeTFvTDBZZ1RNYUtXeXlCRzBHT0liQ3Q1ZTZGYVdveFBCNmMxdUlNdkFyNXYtVDk5V3Bua3ZzRGJLd1dxd25tN2RzVTlOb040THBmb1U2b3FLbjVNWTZzeU5vQkxLUEJLTnYxR295Y2NzemI4VEdPMTNn?oc=5",
+                "headline": "After oil increasingly left the Gulf, Iran is trying to regain its stranglehold on shipping - CNN",
+                "source": "CNN",
+                "published_utc": "2026-10-11T16:28:49+00:00",
+                "summary": "After oil increasingly left the Gulf, Iran is trying to regain its stranglehold on shipping CNN",
+                "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE43VjFQRFkxRVVwaTRiTHBubTY3M19MS1I2RFZsbWxHakhPUlNfc0Y5WVFvQ2xrY3FaSTAycE1sVmU3QXhnZ1RRTGlndVNPX3MyVVplNXllaFpGN1F6MjMtUnkzRl9JVDNCcWhyaVhOc0otM3lsbXZuWGljYw?oc=5",
+                "topic": "energy_geopolitics",
+                "impact_tags": [
+                    {
+                        "event_type": "geopolitical_supply_shock",
+                        "direction": "inflationary_risk_off",
+                        "assets_impacted": [
+                            "XLE",
+                            "GLD",
+                            "TLT",
+                            "SPY"
+                        ],
+                        "confidence": "medium"
+                    }
+                ]
+            },
+            {
+                "headline": "News Content Hub - Strait of Hormuz tanker attacks surge: two missing after attack off Oman; US 'disables' vessel - Riviera Maritime Media",
+                "source": "Riviera Maritime Media",
+                "published_utc": "2026-10-13T22:52:30+00:00",
+                "summary": "News Content Hub - Strait of Hormuz tanker attacks surge: two missing after attack off Oman; US 'disables' vessel Riviera Maritime Media",
+                "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcXd0LVNON2lpNkxTM0F2UDl2WnpyRDByWkJ5bWRNWjRkS0JCa2QwWlJyUVZsNWpzR2gtOW9uRE5mT0VHc1ZzWlc4TXJGbjRjUG1pV3ZzY0NnRnM1OFYybGlTem1XcHNkd1hoNGRTd2xrN3lyUHBFWEhBOUE1VkRqSE5TWl9VUEJTcW82VndidFQzei15VENuRHhpZlBYQ2szTnVVbmdTNlA?oc=5",
+                "topic": "energy_geopolitics",
+                "impact_tags": [
+                    {
+                        "event_type": "geopolitical_supply_shock",
+                        "direction": "inflationary_risk_off",
+                        "assets_impacted": [
+                            "XLE",
+                            "GLD",
+                            "TLT",
+                            "SPY"
+                        ],
+                        "confidence": "medium"
+                    }
+                ]
+            },
+            {
+                "headline": "Iranian Army Navy Says Oil Tanker Caught Fire After Illegally Crossing Strait of Hormuz: how 5 outlets framed it - NewsCord",
+                "source": "NewsCord",
+                "published_utc": "2026-10-13T17:27:29+00:00",
+                "summary": "Iranian Army Navy Says Oil Tanker Caught Fire After Illegally Crossing Strait of Hormuz: how 5 outlets framed it NewsCord",
+                "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNbGhRa3ZVcWZSbFRCeTdQdnB3Sy1tQ3gyUHlXWHRIOS1JRVB6THdpcUJsRU9EVG1UWExVaU0zUTFyQVJRZGh0Wm1FOHRUWUQ5NGpubTBWRUphMmMyVE84bV80VjhGSS1fSXdXQlZ2RTlQa1JSSWE2U3NsTFNNSXZLbUJJbndhVFZNRWxtdHhlZkdkU09EVGo1a3Y4WTN4Vkg4T0lHdmpHQ1RPNXpTaUR5M2U2YWN1alM1a3EzVjRVX0g3WWRMX0lsUDk1MTFRRFRtTDRMXzh1dEdMdFlobkVoMjVERWJDVHAzR3c?oc=5",
                 "topic": "energy_geopolitics",
                 "impact_tags": [
                     {
@@ -326,11 +326,11 @@
                 ]
             },
             {
-                "headline": "Oil prices rise on Saudi Arabia attacks, overshadowing Trump's diesel deal - Reuters",
-                "source": "Reuters",
-                "published_utc": "2026-10-12T18:36:35+00:00",
-                "summary": "Oil prices rise on Saudi Arabia attacks, overshadowing Trump's diesel deal Reuters",
-                "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQM0xoWVo4eTNVMU5uQXk0Rk9WeWlMaWN0TFlDbWwzX1FqNy1iWW5iUzk0REtlMGNVSnlGWkRCb0tySkQwRFZ0NzVDQzRFVk1IcWNqVFIteWpOVTRVM01xblZ0TzN1dWdlNUdYWTRMUUFBOGhwQ2xTYl9NaTF0bmk5UllSanctMGJDT1g3MnVuX1IxTWpwR193RHoyV1BEd2FqOWlDcg?oc=5",
+                "headline": "A US official told Al Jazeera we are closely monitoring Iran's attacks on maritime shipping in the Strait of Hormuz, which are unjustified acts of aggression. - Newsquawk",
+                "source": "Newsquawk",
+                "published_utc": "2026-10-13T15:41:38+00:00",
+                "summary": "A US official told Al Jazeera we are closely monitoring Iran's attacks on maritime shipping in the Strait of Hormuz, which are unjustified acts of aggression. Newsquawk",
+                "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPM294Y3ljNVk3LWlSckpzejBHWGFQdjVXek5FYW1aVTEzcm03dl9rRDZFWFZ1UlV2SHN5QTNvVzVoQUNuTWhFWEN6WDZtdjdIUk5mdXRYWmJHNjRMMXA2VDItLVBtNkNiRE1LQzZFNURjdGFKSjNHSHFJaUR6dHBHRWt0cE9CeEYwclgtUUNXOHhLRlVQYWliaDNjZFdJRFd5WXp3aElfWUxZeTFvTDBZZ1RNYUtXeXlCRzBHT0liQ3Q1ZTZGYVdveFBCNmMxdUlNdkFyNXYtVDk5V3Bua3ZzRGJLd1dxd25tN2RzVTlOb040THBmb1U2b3FLbjVNWTZzeU5vQkxLUEJLTnYxR295Y2NzemI4VEdPMTNn?oc=5",
                 "topic": "energy_geopolitics",
                 "impact_tags": [
                     {
@@ -347,11 +347,11 @@
                 ]
             },
             {
-                "headline": "Oil prices jump on tanker attacks and slowing flows through Strait of Hormuz - Financial Times",
-                "source": "Financial Times",
-                "published_utc": "2026-10-08T10:46:10+00:00",
-                "summary": "Oil prices jump on tanker attacks and slowing flows through Strait of Hormuz Financial Times",
-                "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObGR0SVVFQU9OSU5CX1gzN0x4dnBWUklqeTZtdG54VDZDVXNzNVNGZ1lSRXZTeW1oeUZSMnMwZ1laMkx5VTA0U0xub0JIcVdGQVFYYXkxUEcxaXNWOVFtV0lGOTNKZFJieDlvZU5lYVMzaERaZm02QS13bXhrejZpcEtrbC0?oc=5",
+                "headline": "Oil prices rise on Saudi Arabia attacks, overshadowing Trump's diesel deal - Reuters",
+                "source": "Reuters",
+                "published_utc": "2026-10-12T18:36:35+00:00",
+                "summary": "Oil prices rise on Saudi Arabia attacks, overshadowing Trump's diesel deal Reuters",
+                "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQM0xoWVo4eTNVMU5uQXk0Rk9WeWlMaWN0TFlDbWwzX1FqNy1iWW5iUzk0REtlMGNVSnlGWkRCb0tySkQwRFZ0NzVDQzRFVk1IcWNqVFIteWpOVTRVM01xblZ0TzN1dWdlNUdYWTRMUUFBOGhwQ2xTYl9NaTF0bmk5UllSanctMGJDT1g3MnVuX1IxTWpwR193RHoyV1BEd2FqOWlDcg?oc=5",
                 "topic": "energy_geopolitics",
                 "impact_tags": [
                     {
@@ -488,26 +488,6 @@
                 ]
             },
             {
-                "headline": "China Moves to Stave Off Wider EU Trade War With Hybrid Deal - Bloomberg.com",
-                "source": "Bloomberg.com",
-                "published_utc": "2026-10-12T03:47:00+00:00",
-                "summary": "China Moves to Stave Off Wider EU Trade War With Hybrid Deal Bloomberg.com",
-                "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUFFlQ2RWX2k2c19mRUlseHB2TDlOM0xYSVdXc29YSHBVS2o0OE1qRHFXQU1JR093ellFZ2xSNEg3cUZISWx1SllLdmpuQWNBaFoyQmJHU1RaMHZ0YlFXN3l0eVZkNlhvQlRaTElKWExxTFh4cmNOc0xIeVdpdWh0MHdicmVsajVQMEdtMkZRRzFMOXpyRzBXQmdDQ2lpUlFKVlRMdzVlSXR3aE51ZU9ZZA?oc=5",
-                "topic": "trade_policy",
-                "impact_tags": [
-                    {
-                        "event_type": "trade_policy_shock",
-                        "direction": "risk_off",
-                        "assets_impacted": [
-                            "SPY",
-                            "GLD",
-                            "^VIX"
-                        ],
-                        "confidence": "medium"
-                    }
-                ]
-            },
-            {
                 "headline": "Trading Places: The U.S. and Europe on China and Russia - Council on Foreign Relations",
                 "source": "Council on Foreign Relations",
                 "published_utc": "2026-10-09T18:13:54+00:00",
@@ -537,13 +517,24 @@
                 ]
             },
             {
-                "headline": "A first step, but no real rebalancing in the European Union\u2019s trade deal with China - Bruegel",
-                "source": "Bruegel",
-                "published_utc": "2026-10-12T15:16:11+00:00",
-                "summary": "A first step, but no real rebalancing in the European Union\u2019s trade deal with China Bruegel",
-                "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOenpTWDYzYjQxQWk0V3dpMTZGSy1UTncxOVF1Q1hkby13QVU3YnN5eVdsc3drc3BuWENZX1NSbHpCcTFJLWxOWXR6NmVLNmVrNmV0VlRJRC1YNURYWlRVVnpDa28wUlJjMk1HYTV1WldVZ05XeC1oZXlPWXhDRWlLblZzbGNvTEZOeFg5bDJNYllPUVU4NkRKbXhlT0JVN1JpX1E?oc=5",
+                "headline": "China Moves to Stave Off Wider EU Trade War With Hybrid Deal - Bloomberg.com",
+                "source": "Bloomberg.com",
+                "published_utc": "2026-10-12T03:47:00+00:00",
+                "summary": "China Moves to Stave Off Wider EU Trade War With Hybrid Deal Bloomberg.com",
+                "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUFFlQ2RWX2k2c19mRUlseHB2TDlOM0xYSVdXc29YSHBVS2o0OE1qRHFXQU1JR093ellFZ2xSNEg3cUZISWx1SllLdmpuQWNBaFoyQmJHU1RaMHZ0YlFXN3l0eVZkNlhvQlRaTElKWExxTFh4cmNOc0xIeVdpdWh0MHdicmVsajVQMEdtMkZRRzFMOXpyRzBXQmdDQ2lpUlFKVlRMdzVlSXR3aE51ZU9ZZA?oc=5",
                 "topic": "trade_policy",
-                "impact_tags": []
+                "impact_tags": [
+                    {
+                        "event_type": "trade_policy_shock",
+                        "direction": "risk_off",
+                        "assets_impacted": [
+                            "SPY",
+                            "GLD",
+                            "^VIX"
+                        ],
+                        "confidence": "medium"
+                    }
+                ]
             },
             {
                 "headline": "The US Is Badly Losing Its Trade War with China - Cato Institute",
@@ -566,11 +557,11 @@
                 ]
             },
             {
-                "headline": "The Month in International Trade \u2013 September 2026 - Crowell & Moring LLP",
-                "source": "Crowell & Moring LLP",
-                "published_utc": "2026-10-07T04:12:09+00:00",
-                "summary": "The Month in International Trade \u2013 September 2026 Crowell & Moring LLP",
-                "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQktMWTFfbnUxMllxNWpfdi1DcUNOYXdoWmhObGlxQmgwWjNJUUUwYkUwM1dyN3NnTl82Z0UzSXVjbUJ0REpoX2pjZzFWVkVMNEI1Y09reFBhZzlTR1RkWmpQMnhrWVNST3d6b2dYSVY2U0Itc1VwVjR0YjN3M0Q1a3NBaXdMdjY3bEpyOXdvUDJsZmZwN0UzeFdMb1drUQ?oc=5",
+                "headline": "A first step, but no real rebalancing in the European Union\u2019s trade deal with China - Bruegel",
+                "source": "Bruegel",
+                "published_utc": "2026-10-12T15:16:11+00:00",
+                "summary": "A first step, but no real rebalancing in the European Union\u2019s trade deal with China Bruegel",
+                "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOenpTWDYzYjQxQWk0V3dpMTZGSy1UTncxOVF1Q1hkby13QVU3YnN5eVdsc3drc3BuWENZX1NSbHpCcTFJLWxOWXR6NmVLNmVrNmV0VlRJRC1YNURYWlRVVnpDa28wUlJjMk1HYTV1WldVZ05XeC1oZXlPWXhDRWlLblZzbGNvTEZOeFg5bDJNYllPUVU4NkRKbXhlT0JVN1JpX1E?oc=5",
                 "topic": "trade_policy",
                 "impact_tags": []
             },
@@ -593,6 +584,15 @@
                         "confidence": "medium"
                     }
                 ]
+            },
+            {
+                "headline": "The Month in International Trade \u2013 September 2026 - Crowell & Moring LLP",
+                "source": "Crowell & Moring LLP",
+                "published_utc": "2026-10-07T04:12:09+00:00",
+                "summary": "The Month in International Trade \u2013 September 2026 Crowell & Moring LLP",
+                "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQktMWTFfbnUxMllxNWpfdi1DcUNOYXdoWmhObGlxQmgwWjNJUUUwYkUwM1dyN3NnTl82Z0UzSXVjbUJ0REpoX2pjZzFWVkVMNEI1Y09reFBhZzlTR1RkWmpQMnhrWVNST3d6b2dYSVY2U0Itc1VwVjR0YjN3M0Q1a3NBaXdMdjY3bEpyOXdvUDJsZmZwN0UzeFdMb1drUQ?oc=5",
+                "topic": "trade_policy",
+                "impact_tags": []
             }
         ],
         "bonds_usd": [
@@ -629,7 +629,7 @@
             {
                 "headline": "Gold firms as dollar, yields and oil retreat before CPI - Kitco AM Report - Kitco",
                 "source": "Kitco",
-                "published_utc": "2026-10-13T09:54:00+00:00",
+                "published_utc": "2026-10-13T13:06:56+00:00",
                 "summary": "Gold firms as dollar, yields and oil retreat before CPI - Kitco AM Report Kitco",
                 "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdTNJS0pZa1BndjBFTmhTYjRXNWxpVFpkbU9qY1ZRVWk0OG1wMDUtZEJ2VjJDMWt6eUNNTzdGRFc1blB6WTE0VndMaTdWcXl5blE4V0dSMDRZckhRdHpZMHBVaXZUZXFkbU42YXZWUU42SnpEYTlsOFVQZXI5eFlPWkdFaVk2N3hPZDBOS3lwVWZTdjlRTE9keS1pZUU0X2R6SXdRQ1RZM3E2UQ?oc=5",
                 "topic": "bonds_usd",
@@ -659,6 +659,36 @@
                 ]
             },
             {
+                "headline": "USD/CAD Forecast: Canadian Dollar Holds Firm as Markets Await U.S. CPI Data - FOREX.com",
+                "source": "FOREX.com",
+                "published_utc": "2026-10-13T20:09:38+00:00",
+                "summary": "USD/CAD Forecast: Canadian Dollar Holds Firm as Markets Await U.S. CPI Data FOREX.com",
+                "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQldqempYUG1lbE51R25zX0lDXzJWWVBsbjJLbzBvWTk1bmJnSFRjZVNzZFJEV3YwaFlnTzdsYy1zeGFidjRUUHNMbUl0dTZlMVVSbWdNUEtkSTkyandwNEpWQWRJZGEwUi1lN1hvTmxQdy1BLTNLenFGYTV5b182ZXEwRFpZMWVxZHpUbnJ0X3RoRVlHMnZsbFJ3T3I3dGRkTlFMSFNieXRYOXZacXZhX2MyZDR3TFB2Nl9YLQ?oc=5",
+                "topic": "bonds_usd",
+                "impact_tags": [
+                    {
+                        "event_type": "policy_rate_shift",
+                        "direction": "rates_sensitive",
+                        "assets_impacted": [
+                            "SPY",
+                            "QQQ",
+                            "TLT",
+                            "^VIX"
+                        ],
+                        "confidence": "medium"
+                    }
+                ]
+            },
+            {
+                "headline": "Bitcoin Stalls at $84,000 Resistance as Stronger Dollar, Higher Treasury Yields Weigh - bloomingbit",
+                "source": "bloomingbit",
+                "published_utc": "2026-10-13T23:35:49+00:00",
+                "summary": "Bitcoin Stalls at $84,000 Resistance as Stronger Dollar, Higher Treasury Yields Weigh bloomingbit",
+                "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE90RF9fT1FhREJmcDNJYlh6Y0pqWnZMT0loYXlsZXowVGNydE9pcU04RVRVZHRJdmpFZ0FfdnNMNXhJUTBQSHdPQ0tsQUhzNmc3eGRHTw?oc=5",
+                "topic": "bonds_usd",
+                "impact_tags": []
+            },
+            {
                 "headline": "The pullback in U.S. Treasury yields from recent highs has driven the U.S. Dollar Index down from its year-to-date peak. - Moomoo",
                 "source": "Moomoo",
                 "published_utc": "2026-10-12T07:29:28+00:00",
@@ -682,36 +712,6 @@
                 "published_utc": "2026-10-13T06:08:58+00:00",
                 "summary": "US Dollar Index Price Forecast: Likely extend advance to near 103.00 FXStreet",
                 "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMGFWTXJFcnllbncxUHF6TnRwYXdKMEVfdW8yRWQxYnpVTDYxSklaWUVORjVGMDVqMUh4ZVZXRHN2TVdDY1VRNzQ0RHV3U240eTNNU1NxZ0xVcHIzMzlwSU5ORkd2SEdyallrX1M5X3o1V0FGOHBzQzZGUmFjc1RWWUVEb1JtaWNUVHZXMkJ0b3RWT1c5NUV2eWY2Vmw3am80bHNLY0hEcUZqVUFTT3c?oc=5",
-                "topic": "bonds_usd",
-                "impact_tags": []
-            },
-            {
-                "headline": "US Treasury Yields Have Turned Lower. Will the Dollar Follow Before CPI? - Action Forex",
-                "source": "Action Forex",
-                "published_utc": "2026-10-13T09:14:53+00:00",
-                "summary": "US Treasury Yields Have Turned Lower. Will the Dollar Follow Before CPI? Action Forex",
-                "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZldicnFfd3BXV1FWMEtaeEQzQjJXdXNoTU1TczdycmxTSmp1RkZ4cmdIU2xNNWhGUElPM2c4SW9ZOXgwSUVPaFBVRkVrUG9jZDc2aThSQktTNE5TcVVqLUF3bjdFX3BwVkpIV29iNmt3OW5penM4UU9oTzVkR05PZ1JCWWZFS3lHNjZOWkhXaEdQdXdLMDhNUk5PQXFMZTVqbUd4YTNyT2RpY0RRVEZXbzRNUVdGRkZzSl9RMGhHYTQ4clBEcHpyZ3pvV01FM0FwZU9F?oc=5",
-                "topic": "bonds_usd",
-                "impact_tags": [
-                    {
-                        "event_type": "policy_rate_shift",
-                        "direction": "rates_sensitive",
-                        "assets_impacted": [
-                            "SPY",
-                            "QQQ",
-                            "TLT",
-                            "^VIX"
-                        ],
-                        "confidence": "medium"
-                    }
-                ]
-            },
-            {
-                "headline": "Gold struggles below $4,200 despite retreat in US Dollar, Treasury yields - Mitrade",
-                "source": "Mitrade",
-                "published_utc": "2026-10-13T11:13:33+00:00",
-                "summary": "Gold struggles below $4,200 despite retreat in US Dollar, Treasury yields Mitrade",
-                "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOeG1TUGlQRUpfamNHZmVzU2ZMeGE5bXFNTjM4N0lTaU83eDM5U0p3TXpWVFlvSmNBNl80RWVkQUhJQUZOWmJOSGNST2F6VHMtNnBCY3BNem9DRFNROUxSWDdzMjdsaGtmUmxzcFRlYXRTa2trTFNreTJySXRCMFBYUUhtOA?oc=5",
                 "topic": "bonds_usd",
                 "impact_tags": []
             }
@@ -762,6 +762,28 @@
                 ]
             },
             {
+                "headline": "A new measure of financial conditions shows the US economy heading for a rough patch - Business Insider",
+                "source": "Business Insider",
+                "published_utc": "2026-09-23T07:00:00+00:00",
+                "summary": "A new measure of financial conditions shows the US economy heading for a rough patch Business Insider",
+                "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObEpyVGFseTdhVFQ2WVNFdnk1eWFpd3VVYjFmY1JlWmRLUkdTcGxLSGVNVW02VjBNWFJ5ZVcyNGg1V0dPLTQxb2tjMUhvWldZUEVaQ0NXT2hmMXdTWHAzQUJCQ0JKeFlvTGI1dXBrbGZ0Qkt6ai1JbWFqUWc5bHhXRmhhQmtoSjUweXI4ZW1ia25YenBrV2JHcWNpbDdobkdSenczanpGR2hYZUU?oc=5",
+                "topic": "recession_signals",
+                "impact_tags": [
+                    {
+                        "event_type": "recession_signal",
+                        "direction": "risk_off",
+                        "assets_impacted": [
+                            "SPY",
+                            "QQQ",
+                            "TLT",
+                            "GLD",
+                            "XLU"
+                        ],
+                        "confidence": "medium"
+                    }
+                ]
+            },
+            {
                 "headline": "Australia\u2019s inflation among the worst and unemployment rising: IMF - AFR",
                 "source": "AFR",
                 "published_utc": "2026-10-13T02:15:00+00:00",
@@ -780,28 +802,6 @@
                         ],
                         "confidence": "medium"
                     },
-                    {
-                        "event_type": "recession_signal",
-                        "direction": "risk_off",
-                        "assets_impacted": [
-                            "SPY",
-                            "QQQ",
-                            "TLT",
-                            "GLD",
-                            "XLU"
-                        ],
-                        "confidence": "medium"
-                    }
-                ]
-            },
-            {
-                "headline": "A new measure of financial conditions shows the US economy heading for a rough patch - Business Insider",
-                "source": "Business Insider",
-                "published_utc": "2026-09-23T07:00:00+00:00",
-                "summary": "A new measure of financial conditions shows the US economy heading for a rough patch Business Insider",
-                "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObEpyVGFseTdhVFQ2WVNFdnk1eWFpd3VVYjFmY1JlWmRLUkdTcGxLSGVNVW02VjBNWFJ5ZVcyNGg1V0dPLTQxb2tjMUhvWldZUEVaQ0NXT2hmMXdTWHAzQUJCQ0JKeFlvTGI1dXBrbGZ0Qkt6ai1JbWFqUWc5bHhXRmhhQmtoSjUweXI4ZW1ia25YenBrV2JHcWNpbDdobkdSenczanpGR2hYZUU?oc=5",
-                "topic": "recession_signals",
-                "impact_tags": [
                     {
                         "event_type": "recession_signal",
                         "direction": "risk_off",
@@ -874,7 +874,7 @@
             {
                 "headline": "Australia facing biggest jobless rate rise of developed world - SMH.com.au",
                 "source": "SMH.com.au",
-                "published_utc": "2026-10-13T02:00:00+00:00",
+                "published_utc": "2026-10-13T04:52:56+00:00",
                 "summary": "Australia facing biggest jobless rate rise of developed world SMH.com.au",
                 "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbW1wWURYeTB1YlI0U0JnR3dFWU1KNkxpcHpVTDN2cGJ4YjNXUDhyVmtUUlZIclFJNWtRWWtLNHpYZmYtS1NSZ0R2RXpialBoUzdGc3FkdEs0UTFVZW1Fd0Fxd1pmdndiMVBYc2lIVEY0Q3VYRG5kZURjN2JHY0s0Q0dNWjZ0UGowblJLMHdYOFF4NTA3dG9JU1JvZVgyUVpPQXI5dElGUWRRSHZHelFBY1FqSUs4RHdiN0FzSFdTdnI?oc=5",
                 "topic": "recession_signals",
@@ -920,11 +920,11 @@
     "theme_news": {
         "energy": [
             {
-                "headline": "Saudi leads jump in OPEC+ oil output in September, despite Iran war disruption - Reuters",
+                "headline": "Occidental oil prices jump as supply concerns lift crude - Reuters",
                 "source": "Reuters",
-                "published_utc": "2026-10-13T13:58:40+00:00",
-                "summary": "Saudi leads jump in OPEC+ oil output in September, despite Iran war disruption Reuters",
-                "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWWdiOFh3ZXNEdWNtbEZLVlFDZ2dJQTZaanZ3dUtaNVgycEpwX0tDZWVYVF9PQlpRX085YWNwTkdtZVNmY0R2S0hHcllmRVlxcnAyYm9fTEZQa3YtYlljLXd6ZlROZ3VOTFktSmZnNFFkdGkxUkwyRmJ0R1JiQ0FtLXUzZTdSZGY1dlJCUndmd2FjQkxrT2dWRGFvMmcteFU0VVNQMEdxQVN4eVE5QjdBYg?oc=5",
+                "published_utc": "2026-10-13T12:01:09+00:00",
+                "summary": "Occidental oil prices jump as supply concerns lift crude Reuters",
+                "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcWhnUmlGS0Y5eEs2Vm13V3cxZFZSWmUzMjZ6OEdCdzhoN294ZEl2Wk1YeVNLb2VhWThLZXlnbHpNMmxwak8zVXBxdDM1N3ZLeFRxUHBOclVEdXBHZUVWTXJrYUs3ZGZHdEo0eUpDVHh3SlJRQjVXVFdNNE5iMnJtLTRhTTJnT0l5Z2FPckNfcFJFcEVfVVlnRmQ4SWpEYTY5WGpRaDJ5c0g?oc=5",
                 "topic": "energy",
                 "impact_tags": [
                     {
@@ -939,15 +939,6 @@
                         "confidence": "medium"
                     }
                 ]
-            },
-            {
-                "headline": "Energy prices rise after Trump\u2019s \u2018energy ceasefire\u2019 fails to move Russia or Ukraine - NBC News",
-                "source": "NBC News",
-                "published_utc": "2026-10-12T21:42:27+00:00",
-                "summary": "Energy prices rise after Trump\u2019s \u2018energy ceasefire\u2019 fails to move Russia or Ukraine NBC News",
-                "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTGFrRDRZWWhPUnEtNVNhbnBFZFc4cS00MmhuZC1hZDJzc0dROWpwU18waGpMY1hRNWFGS19LZXNUc0ZhSUgwRDUyR0hnaHhHRkRZbXRXVlN0YUU2MzVTbVo1cVBESFgyQUdfQUs5d201TUJ6YW56NVB3aDVLazNnZUlLdHowVHpPLUI5MFk4Tk9yMkFR?oc=5",
-                "topic": "energy",
-                "impact_tags": []
             },
             {
                 "headline": "Best Oil Stocks To Follow Today - October 13th - MarketBeat",
@@ -971,11 +962,11 @@
                 ]
             },
             {
-                "headline": "OPEC crude production jumps 920,000 bpd in September - Anadolu Ajans\u0131",
-                "source": "Anadolu Ajans\u0131",
-                "published_utc": "2026-10-13T12:24:57+00:00",
-                "summary": "OPEC crude production jumps 920,000 bpd in September Anadolu Ajans\u0131",
-                "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYzVpUmsxeWdTZ1dsYmNGN2d4SVJwVHR4bXVzUDJfM2E4UllSZWY4cE83aTFDRW41Rl9NT2hpV0JwZ2tZeGdVdEhZN0R4YW5WOWxXaUgwQ1BQMDd0cHN0ZjJPYmtJcHh1TEo5NmhmNlFtS19TTzdGUTZ0RlUwOTVDd3FTZ2hkaTFzb0ZFRkRtOFBBUThDRTJPaGtB0gGiAUFVX3lxTE16bmlFSExiZmRHVGlFQ0tGQXJBZEx5YVd2ZERaOUwwaUFuWUJzOVJyTVRMZ01GODRobHB6TE9sLV9TOWpwb25qUS13YlJDVS1Ga2hZNzFQWFdPTDVjM1YwaXJmRFREc3pVR2ZUamw4Z3AtLXlQNWQ0MzB3SEJHUzJHdnBwSGR3TDdjaUtZUHlvc3JWZWtINldIaGQ3b0JTc0ExZw?oc=5",
+                "headline": "OPEC eyes oil demand rebound in 2027 - Oil & Gas 360",
+                "source": "Oil & Gas 360",
+                "published_utc": "2026-10-13T16:41:12+00:00",
+                "summary": "OPEC eyes oil demand rebound in 2027 Oil & Gas 360",
+                "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9EMldqZXpEbnUwcl96R09SYmpZZE55TmVfb0JiX0xUSlRTcWlVWmhnVXJkM2FNLS11LXk1RXVJdlFFcGtFMzV3VHNnWURmUlN6V0ZHYjdnMVAtdWJGMWYwd3l6N2s4ZFBmNDdmcC1YRUtEVzZa?oc=5",
                 "topic": "energy",
                 "impact_tags": [
                     {
@@ -992,11 +983,32 @@
                 ]
             },
             {
-                "headline": "OPEC eyes oil demand rebound in 2027 - Oil & Gas 360",
-                "source": "Oil & Gas 360",
-                "published_utc": "2026-10-13T16:41:12+00:00",
-                "summary": "OPEC eyes oil demand rebound in 2027 Oil & Gas 360",
-                "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9EMldqZXpEbnUwcl96R09SYmpZZE55TmVfb0JiX0xUSlRTcWlVWmhnVXJkM2FNLS11LXk1RXVJdlFFcGtFMzV3VHNnWURmUlN6V0ZHYjdnMVAtdWJGMWYwd3l6N2s4ZFBmNDdmcC1YRUtEVzZa?oc=5",
+                "headline": "Murphy Oil Meets, Exceeds Expectations with Offshore Milestones - Hart Energy",
+                "source": "Hart Energy",
+                "published_utc": "2026-10-13T19:49:00+00:00",
+                "summary": "Murphy Oil Meets, Exceeds Expectations with Offshore Milestones Hart Energy",
+                "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQcW4wd2UxM0ZNUzJRY2FJWE45UERKZlZ4cjNkMTdBX1FVQ2FfQkNLWVR5dElfZ3UwUFZ1REJwLWgteFVFN25Mc0dPOGluT05SbXo3T192T2pPVDRwMzF4VkpzeVJiQUkxX0k4NDFzMU9MN1RMY3BVbDlrLVdtb1lxZUhOSThzNG45WFl2TmZ4X1B5RGZsZHJYZ1Q0VFNJZVVyZTZSZUFuYmQtdjFDdzZndVE5SkFOM1p5MkFUemowUQ?oc=5",
+                "topic": "energy",
+                "impact_tags": [
+                    {
+                        "event_type": "geopolitical_supply_shock",
+                        "direction": "inflationary_risk_off",
+                        "assets_impacted": [
+                            "XLE",
+                            "GLD",
+                            "TLT",
+                            "SPY"
+                        ],
+                        "confidence": "medium"
+                    }
+                ]
+            },
+            {
+                "headline": "Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production - CNBC",
+                "source": "CNBC",
+                "published_utc": "2026-10-08T01:46:00+00:00",
+                "summary": "Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production CNBC",
+                "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9nV016TlVYUUlsNUNkSDVBaExxQnljQjE5N09hZDBZMlZ3SWpUUjlPWVRaYVk1VHNxeW1JdmxMVkFYMUNjXzNuSGFxcDB6Wm5rYWpoX3cwLUlFMkIzSE9Oamp4VTRHd3c2UWNoY0tMSGNpLWRWSEh4LXJR0gF_QVVfeXFMT1RHelpkMjVlSDdmLXk1OFV3Y1BvV2YwY0l6M01GLXYwNTRsQ3o2Z25qQU1ISE1NcnlnemxDN0hNaWM2aWVBd2FBZ016dWtGOWI0eGVucS1MbWh0VzVBQ0xlRktRZjRMQkdJSS1mR1lWOEZ0OGVSdkFPSmxCWl9rSQ?oc=5",
                 "topic": "energy",
                 "impact_tags": [
                     {
@@ -1131,11 +1143,11 @@
                 ]
             },
             {
-                "headline": "Between Amazon and Alphabet One\u2019s Gotten Much More Bang for Their 200 Billion Bucks - 24/7 Wall St.",
-                "source": "24/7 Wall St.",
-                "published_utc": "2026-10-13T12:45:00+00:00",
-                "summary": "Between Amazon and Alphabet One\u2019s Gotten Much More Bang for Their 200 Billion Bucks 24/7 Wall St.",
-                "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOR2RKRUVJcXpoVFg2R1ZJSHowRndLWTZJTEFDb0ZVQnFhQTY0TFhENUpFTG85cUtsejJEbElDbWppZjdBdDlQbEt3WlFtYjNKbUo0STNOVVZVNFBtT0VMQWpRaWZGcnFadEJOLVg2dWxPdDZvQzZXeWgxbGtNSG1QM2ZuRW1NdlA0dEZja0o5NWplZEFfSGp6ZjFrVUROSEhwQ3VTV0VuY2wtQkpmdG9ZVTN3WTBoLWgzRWhJX2hpQ0FzNzUw?oc=5",
+                "headline": "Microsoft Weighs 20% Cost Cuts In Azure Vertical Amid Soaring AI Data Center Spending: Report - Stocktwits",
+                "source": "Stocktwits",
+                "published_utc": "2026-10-13T23:40:00+00:00",
+                "summary": "Microsoft Weighs 20% Cost Cuts In Azure Vertical Amid Soaring AI Data Center Spending: Report Stocktwits",
+                "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNY1AwQzZUOW5ELVJQanVmbDZFTUxHYTdYY0hlZFZONE9PeUVnT3JkSVp4VlZBTFNQaU9peDRfV2Vnb3NtTFlIUXlMdE4xSXZPVEdKaEJ5c0F0bUtkVGI2T0lDSEFROENFTEMwVzJ1NzVVV2tMYlRVSFUxb2tzUzE0UFhkZjEtTGVXcDQybVNsV0lhNHAtaUkxNw?oc=5",
                 "topic": "semiconductors",
                 "impact_tags": [
                     {
@@ -1154,11 +1166,11 @@
                 ]
             },
             {
-                "headline": "Jensen Huang Reaffirmed His Forecast That AI Infrastructure Spending Will Hit $3 Trillion to $4 Trillion by 2030, a Projection He's Now Repeated for Several Years Running. Is Nvidia Still a Buy at These Levels? - The Motley Fool",
-                "source": "The Motley Fool",
-                "published_utc": "2026-10-13T14:53:00+00:00",
-                "summary": "Jensen Huang Reaffirmed His Forecast That AI Infrastructure Spending Will Hit $3 Trillion to $4 Trillion by 2030, a Projection He's Now Repeated for Several Years Running. Is Nvidia Still a Buy at These Levels? The Motley Fool",
-                "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbUsyN1E1LXRac0lIcHJ1cjMwOUlKOXh3U01ieXhHVVVzWjNWSUhUaGRLelhjVnNUV2k4elFwUTNqV3BRUnBhWkVjRE9yNHowYXBaWm5lUFdhZlcyeGpDYldNU3Q2aUhIUnBkVDVHQTA5cDJOZEdFUVFwZU5uQko4U2ttc3Z6U2J5bkhEZS1vcjVoU0ZYanBESQ?oc=5",
+                "headline": "Between Amazon and Alphabet One\u2019s Gotten Much More Bang for Their 200 Billion Bucks - 24/7 Wall St.",
+                "source": "24/7 Wall St.",
+                "published_utc": "2026-10-13T12:45:00+00:00",
+                "summary": "Between Amazon and Alphabet One\u2019s Gotten Much More Bang for Their 200 Billion Bucks 24/7 Wall St.",
+                "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOR2RKRUVJcXpoVFg2R1ZJSHowRndLWTZJTEFDb0ZVQnFhQTY0TFhENUpFTG85cUtsejJEbElDbWppZjdBdDlQbEt3WlFtYjNKbUo0STNOVVZVNFBtT0VMQWpRaWZGcnFadEJOLVg2dWxPdDZvQzZXeWgxbGtNSG1QM2ZuRW1NdlA0dEZja0o5NWplZEFfSGp6ZjFrVUROSEhwQ3VTV0VuY2wtQkpmdG9ZVTN3WTBoLWgzRWhJX2hpQ0FzNzUw?oc=5",
                 "topic": "semiconductors",
                 "impact_tags": [
                     {
@@ -1215,16 +1227,43 @@
                 "impact_tags": []
             },
             {
-                "headline": "Missouri pushes nuclear power to reduce reliance on out-of-s... - seMissourian",
-                "source": "seMissourian",
-                "published_utc": "2026-10-13T12:10:31+00:00",
-                "summary": "Missouri pushes nuclear power to reduce reliance on out-of-s... seMissourian",
-                "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdEswY3gzOGtMWnBrcHFjT0hPZVBLNmlsWGo4UXVVcnRlSjZGQUFRWlRPRXNaYlhLb2k2Z002R2tDTEtiUFNub1lZQmE1TzExdlhaR3NTZ2xTS3M1dWs0SHVsSFRkbDI5cDM4cnFxZHB1RmN0ZU5mSk5KUVR5X0ppaEZBSjRUVTdiUlhsZmRqcmlOMVRUWG41d3FPRHpMQ0hERWpQc1o1eDJub1N1SmNfT0FxaDFMbGUtMFh3?oc=5",
+                "headline": "U.S. Data Center Tracker: Power, Facilities & Growth (2026) - Electric Choice",
+                "source": "Electric Choice",
+                "published_utc": "2026-10-08T02:48:56+00:00",
+                "summary": "U.S. Data Center Tracker: Power, Facilities & Growth (2026) Electric Choice",
+                "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9acDEzM3A0SWNlUWl6NjN3UXUyZkxpRE9hZ3BtNVJkMUZ2M2dyVWkyQ0RESC1OLWZHY2oxYzlXMW1vSHdXUjNHWjZIMmNLRjhtU2d4dk53?oc=5",
                 "topic": "utilities_power",
                 "impact_tags": []
             }
         ],
         "software_ai": [
+            {
+                "headline": "7 Enterprise AI Stocks to Watch as Software Spending Soars 60% - MarketWise",
+                "source": "MarketWise",
+                "published_utc": "2026-10-13T19:00:00+00:00",
+                "summary": "7 Enterprise AI Stocks to Watch as Software Spending Soars 60% MarketWise",
+                "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPOTZBMUhlSUtWNmVkWk9LMzdDSE5SNU5WZmxsRU9FYkRGdWtxUkpkdFl3UXdHVWFYak5rS09VcXZrd1hMOVZPQVNTYXVjRDlYTThDNklRanBGRm1JcVBFV0t0b1U3eFA4ZE9jcHRRbDJJTnNabDN5MGdjbjlMU2JQZTlvWXc4eEJKWGNXakk3X05aQkx1ZEc4LUltWVJBaDc5aXIxcV9DRk94QQ?oc=5",
+                "topic": "software_ai",
+                "impact_tags": []
+            },
+            {
+                "headline": "Everyone Declared Software Dead in April. This ETF Is Up 41% Since Then. - 24/7 Wall St.",
+                "source": "24/7 Wall St.",
+                "published_utc": "2026-10-13T17:03:00+00:00",
+                "summary": "Everyone Declared Software Dead in April. This ETF Is Up 41% Since Then. 24/7 Wall St.",
+                "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOEZrQ0IzWGFKTzlvZTFib3JHTkI1ZWdwdVlyM2pMdkplcEVzNC1QWUc0UkMzRzZFa1lGSlUtUjdOLTZfTDZuMW1BdkV0RjRVd2J4WVYyOUNGRzBycllHNmVvSVlNQ3hqQTY3QzBPR05TRndDM0RBYjNRRmprZUQxYzFzYmpOcF9LVVh0UkxYUE5uUXJsSmZWOUFQSF9vakh3N1lRWEVEdVZ2bFVNSURsMzdUWQ?oc=5",
+                "topic": "software_ai",
+                "impact_tags": []
+            },
+            {
+                "headline": "Why Is Varonis Systems (VRNS) Stock Soaring Today - TradingView",
+                "source": "TradingView",
+                "published_utc": "2026-10-13T20:20:48+00:00",
+                "summary": "Why Is Varonis Systems (VRNS) Stock Soaring Today TradingView",
+                "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNa1pyLV9URDdnLXNQTmRhNXcyWFVvY0huLTQ4eVd5QjJra3NvZjI4ZU95ZmNOY0x5bnNhOEMxY29NMy00OU9jR0FPaWdxbThCTFVuWlNlbm92M2NNRWZNSzdUTkJtYlZUR09Lb2VxQWV0NTI2ajJUXzBBZFFrZW5rOERCRW56NjV6UVZrVnpzQlRoN2drZzY4NWVfdHFESFA3Rm5EMFdZdkRlcm1S?oc=5",
+                "topic": "software_ai",
+                "impact_tags": []
+            },
             {
                 "headline": "Dutch Tax Authority Ditches Microsoft 365 for Open Source - The Tech Buzz",
                 "source": "The Tech Buzz",
@@ -1240,33 +1279,6 @@
                 "published_utc": "2026-10-12T16:50:51+00:00",
                 "summary": "Link Coasters Announces SaaS Link Building Services for Enterprise Software Companies Detroit Free Press",
                 "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOYXpCdzR5dDdDM09TcmNWQWdlVWt1Z193bXpNaGZ5ZktfMERwZF93dm94U0VLaUMwWEJLcVVMV2Nfc1l1OVJKQW9pOHkxbVd6d0ZRVnpVOVI5MEpUcmN4MExHSElKOW1idWJOLXp5Tzc5aTl3d3ZwR1hFTTRaNHJyS3Q0M1lKbS0zNGRibU9JX2h5VWE1U3R5U0djZFpDcEtmSDZnZWpVZUVLYWgzY21yWmp2cWtGNk9IcUgzZ0Itd2VYS05uNmlKalRaZHRMeTdM?oc=5",
-                "topic": "software_ai",
-                "impact_tags": []
-            },
-            {
-                "headline": "3 Stocks Riding The OpenAI Spending Wave In Enterprise AI Infrastructure - Yahoo Finance",
-                "source": "Yahoo Finance",
-                "published_utc": "2026-10-09T16:15:17+00:00",
-                "summary": "3 Stocks Riding The OpenAI Spending Wave In Enterprise AI Infrastructure Yahoo Finance",
-                "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMDVjNHFLWkN5TE5uOFh5dkhENEZmcUFiOGpuaW5QZXVPR2s0TjJnbU50aXY5YjdqTGtmaDJFWDdxUTFfTC01Z2kyNFlHbnd6MGQ1R1JZdWJ4X2VWR0hMR09sZkJYczQ1dERad2hBdi0zRDd4OGxxNlpyMDJRVzZnbUJiYmpneXVERmtfeGk3TGZjVGRNbHViaEE3OA?oc=5",
-                "topic": "software_ai",
-                "impact_tags": []
-            },
-            {
-                "headline": "Spotify Debuts Enterprise Software Site - SaasRise",
-                "source": "SaasRise",
-                "published_utc": "2026-10-09T10:00:39+00:00",
-                "summary": "Spotify Debuts Enterprise Software Site SaasRise",
-                "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSGQtMzJQX3k5Zm5fRmVheTdKSm12RzEtNmJhdmhVdjZBbkQ3d0xRS1BqWHBEck1tWUQ4enZTNWJ1ZFhvTlR2MURMTmZ4UlIwRmQ0SGowU0VtY1o0UE8tREg1MXdEeEN5OVJXazU3V1ZuYTBBX2hIY0V3bHhhNV9mR1llTlczTXFCMjVkYjhQVlA3eXZ5Z08yZjZwRVJEbS05eVd6WUJiaUNSN1E1RDFYd2ZCc2Vqbk5seWpZZHBDS0J6OGx1b0xJX1hidUJucV82dVA4UV9Gd1BmVFV6QXVWTEFQbmxNNUxmcEVjUXNR?oc=5",
-                "topic": "software_ai",
-                "impact_tags": []
-            },
-            {
-                "headline": "Convenience Stores Put Vertical SaaS to a Multi-Business Test - PYMNTS.com",
-                "source": "PYMNTS.com",
-                "published_utc": "2026-10-12T15:48:33+00:00",
-                "summary": "Convenience Stores Put Vertical SaaS to a Multi-Business Test PYMNTS.com",
-                "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWXBKRXZzM2dQS3hwWjlxTVFoZ3E3czZUaGhYd1VHQm84dDJyRzh0ZzIxc0c3NUs2cGJSX3o3Mkh6ZXliMDJFQTRLWmw3bE1POUhieWVUUmhsdFNxTXEyd0Z0bEhLVXRJN1h5MjNaVWRhRl9iWDVQNjIyT3hObF9LQjIxLURUZm54TVc1SURDZ3B1aXJwbUI2b1QyYnNhQmltck1hdU1mRzREcmtELVpXOVlvczM?oc=5",
                 "topic": "software_ai",
                 "impact_tags": []
             }
@@ -1345,583 +1357,29 @@
                 ]
             },
             {
-                "headline": "Asia Stocks Battered as Semiconductor Stocks Dive - WSJ",
-                "source": "WSJ",
-                "published_utc": "2026-10-13T05:50:00+00:00",
-                "summary": "Asia Stocks Battered as Semiconductor Stocks Dive WSJ",
-                "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVk5uUzN5NzdZNkh6U3AtRFNyMzQ3WU9vcTJNdmJCMW9FUVZJOVltaEFMS1FFUnduSHJOTUctYzlCVnJKdmF0WkY0ZEVyWFlpVzRrZDA4c0N4c0JVTFRJSUFJWVg5RWJialRCMXdOVlNIWWRQcW1WTmtWak5DcE4weGFqNnE1SFlPcVdlenMwM3VXdTUzQTFkczZtdTFZTnBrVnplVDhEVVZkajBw?oc=5",
+                "headline": "Hedge Funds Are Cautious on Stocks amid Rates and Energy Volatility - Goldman Sachs",
+                "source": "Goldman Sachs",
+                "published_utc": "2026-10-09T14:57:09+00:00",
+                "summary": "Hedge Funds Are Cautious on Stocks amid Rates and Energy Volatility Goldman Sachs",
+                "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWWJLY0MtU2FGWnh4YmtSSXFlM2hZTEVTamZxVmFMcUxhTDRSb1lKYlUxbUsteUNZcjNJZDUyM0hYOE5GODZNUE1FVmdqa0N1bmFtV3RDVjR6Z0U4Q2pqYktwMTBYUmh1NGFzVlVyaGY2djQ3MkFCT2VVVnRFeVd3YWNTb3lHTFNjUThiSFk1Qm9NYzVCM25ZMHBUVDlMMlhCTnpQQ1VwLUhtSmRxR3AzSTRUaEc3ZzBq?oc=5",
                 "topic": "international",
-                "impact_tags": [
-                    {
-                        "event_type": "china_taiwan_tension",
-                        "direction": "risk_off",
-                        "assets_impacted": [
-                            "TSM",
-                            "NVDA",
-                            "AMD",
-                            "INTC",
-                            "GLD",
-                            "^VIX"
-                        ],
-                        "confidence": "medium"
-                    }
-                ]
+                "impact_tags": []
             }
         ]
     },
     "data": {
-        "IAU": {
-            "close": 78.33999633789062,
-            "volume": 5468900.0,
-            "sma_20": 79.44300003051758,
-            "sma_50": 81.43500015258789,
-            "sma_200": 85.13689994812012,
-            "rsi_14": 43.87171487798283,
-            "macd": -1.024940054702256,
-            "macd_signal": -0.9826632246043816,
-            "macd_hist": -0.04227683009787442,
-            "bb_lower": 76.15072258283635,
-            "bb_upper": 82.73527747819881,
-            "news": [],
-            "news_items": []
-        },
-        "TLN": {
-            "close": 379.7699890136719,
-            "volume": 1565400.0,
-            "sma_20": 321.51949920654295,
-            "sma_50": 322.73719970703127,
-            "sma_200": 351.69519989013673,
-            "rsi_14": 69.64403488865206,
-            "macd": 15.944906230966353,
-            "macd_signal": 7.002212769644778,
-            "macd_hist": 8.942693461321575,
-            "bb_lower": 256.3114253922191,
-            "bb_upper": 386.72757302086677,
-            "news": [],
-            "news_items": []
-        },
-        "AAPL": {
-            "close": 340.9700012207031,
-            "volume": 25900600.0,
-            "sma_20": 335.7835037231445,
-            "sma_50": 323.00309692382814,
-            "sma_200": 290.74907051086427,
-            "rsi_14": 60.220851451234076,
-            "macd": 3.645802704282403,
-            "macd_signal": 3.835675371796668,
-            "macd_hist": -0.18987266751426501,
-            "bb_lower": 328.84719797551685,
-            "bb_upper": 342.7198094707722,
-            "news": [],
-            "news_items": []
-        },
-        "VT": {
-            "close": 159.5,
-            "volume": 1167700.0,
-            "sma_20": 159.1541862487793,
-            "sma_50": 159.74902099609375,
-            "sma_200": 151.07544761657715,
-            "rsi_14": 50.87721993138297,
-            "macd": 0.07161233499058994,
-            "macd_signal": 0.022013735583414865,
-            "macd_hist": 0.04959859940717508,
-            "bb_lower": 156.96102405924418,
-            "bb_upper": 161.3473484383144,
-            "news": [],
-            "news_items": []
-        },
-        "TSLA": {
-            "close": 378.0299987792969,
-            "volume": 20244300.0,
-            "sma_20": 369.6124969482422,
-            "sma_50": 356.08139770507813,
-            "sma_200": 390.0668992614746,
-            "rsi_14": 56.44703643496045,
-            "macd": 5.143393845638855,
-            "macd_signal": 4.229311600474709,
-            "macd_hist": 0.9140822451641455,
-            "bb_lower": 349.2102895980895,
-            "bb_upper": 390.0147042983949,
-            "news": [],
-            "news_items": []
-        },
-        "INTC": {
-            "close": 101.3499984741211,
-            "volume": 74171900.0,
-            "sma_20": 114.03400039672852,
-            "sma_50": 103.30360015869141,
-            "sma_200": 83.35770002365112,
-            "rsi_14": 40.25962164832117,
-            "macd": 1.2128096724251947,
-            "macd_signal": 3.7167940478726145,
-            "macd_hist": -2.50398437544742,
-            "bb_lower": 97.2207550844917,
-            "bb_upper": 130.84724570896532,
-            "news": [],
-            "news_items": []
-        },
-        "SSO": {
-            "close": 72.04000091552734,
-            "volume": 2061200.0,
-            "sma_20": 70.455033493042,
-            "sma_50": 70.42661865234375,
-            "sma_200": 63.53572395324707,
-            "rsi_14": 58.63767931651552,
-            "macd": 0.5824810648495742,
-            "macd_signal": 0.38907272314662866,
-            "macd_hist": 0.19340834170294552,
-            "bb_lower": 67.8660842917876,
-            "bb_upper": 73.04398269429639,
-            "news": [],
-            "news_items": []
-        },
-        "DIA": {
-            "close": 517.9099731445312,
-            "volume": 2906800.0,
-            "sma_20": 514.3942214965821,
-            "sma_50": 524.8773260498047,
-            "sma_200": 500.74556198120115,
-            "rsi_14": 51.01963132257922,
-            "macd": -2.686043473485711,
-            "macd_signal": -3.5655039607896897,
-            "macd_hist": 0.8794604873039789,
-            "bb_lower": 507.8133508233813,
-            "bb_upper": 520.9750921697829,
-            "news": [],
-            "news_items": []
-        },
-        "TQQQ": {
-            "close": 79.61000061035156,
-            "volume": 31741200.0,
-            "sma_20": 77.99808044433594,
-            "sma_50": 74.38172882080079,
-            "sma_200": 64.21690843582154,
-            "rsi_14": 55.07898096782794,
-            "macd": 2.4307464748948746,
-            "macd_signal": 2.3944450859919284,
-            "macd_hist": 0.03630138890294621,
-            "bb_lower": 68.81434829046174,
-            "bb_upper": 87.18181259821014,
-            "news": [],
-            "news_items": []
-        },
-        "ORCL": {
-            "close": 137.38999938964844,
-            "volume": 21533100.0,
-            "sma_20": 141.23021392822267,
-            "sma_50": 145.38033264160157,
-            "sma_200": 160.23778335571288,
-            "rsi_14": 44.914268902829605,
-            "macd": -1.860340348953315,
-            "macd_signal": -1.7456286851078622,
-            "macd_hist": -0.11471166384545284,
-            "bb_lower": 131.77534183471099,
-            "bb_upper": 150.68508602173435,
-            "news": [],
-            "news_items": []
-        },
-        "XLV": {
-            "close": 171.99000549316406,
-            "volume": 5826800.0,
-            "sma_20": 168.7677764892578,
-            "sma_50": 168.6671563720703,
-            "sma_200": 156.00641365051268,
-            "rsi_14": 60.56416644846151,
-            "macd": 0.39729631902801543,
-            "macd_signal": 0.16766182723230166,
-            "macd_hist": 0.22963449179571377,
-            "bb_lower": 165.40420867920017,
-            "bb_upper": 172.13134429931546,
-            "news": [],
-            "news_items": []
-        },
-        "XLI": {
-            "close": 169.14999389648438,
-            "volume": 3802400.0,
-            "sma_20": 169.19585876464845,
-            "sma_50": 175.17742584228515,
-            "sma_200": 171.93853759765625,
-            "rsi_14": 44.5197531756595,
-            "macd": -1.3775040567194026,
-            "macd_signal": -1.746037067303092,
-            "macd_hist": 0.3685330105836895,
-            "bb_lower": 167.14052428474267,
-            "bb_upper": 171.25119324455423,
-            "news": [],
-            "news_items": []
-        },
-        "TMF": {
-            "close": 26.079999923706055,
-            "volume": 3025100.0,
-            "sma_20": 27.159195709228516,
-            "sma_50": 29.14254940032959,
-            "sma_200": 33.78760989189148,
-            "rsi_14": 35.87245723585684,
-            "macd": -1.1453319957398271,
-            "macd_signal": -1.16547888942325,
-            "macd_hist": 0.020146893683422817,
-            "bb_lower": 23.757067841640147,
-            "bb_upper": 30.561323576816886,
-            "news": [],
-            "news_items": []
-        },
-        "MSFT": {
-            "close": 541.1500244140625,
-            "volume": 18314900.0,
-            "sma_20": 511.8864990234375,
-            "sma_50": 501.7345654296875,
-            "sma_200": 432.9914083862305,
-            "rsi_14": 69.9101052860301,
-            "macd": 11.619393880650875,
-            "macd_signal": 9.687228395244356,
-            "macd_hist": 1.9321654854065198,
-            "bb_lower": 482.87438156477384,
-            "bb_upper": 540.8986164821011,
-            "news": [],
-            "news_items": []
-        },
-        "GLD": {
-            "close": 382.1499938964844,
-            "volume": 4874400.0,
-            "sma_20": 387.4720001220703,
-            "sma_50": 397.24000061035156,
-            "sma_200": 415.4973501586914,
-            "rsi_14": 43.9336930062442,
-            "macd": -5.0248356344483796,
-            "macd_signal": -4.820612375195683,
-            "macd_hist": -0.20422325925269647,
-            "bb_lower": 371.3437815408457,
-            "bb_upper": 403.6002187032949,
-            "news": [],
-            "news_items": []
-        },
-        "^VIX3M": {
-            "close": 17.93000030517578,
-            "volume": 0.0,
-            "sma_20": 18.223000049591064,
-            "sma_50": 18.40620002746582,
-            "sma_200": 20.421250076293944,
-            "rsi_14": 46.81595292613418,
-            "macd": -0.18662914193578217,
-            "macd_signal": -0.16494521227376435,
-            "macd_hist": -0.02168392966201782,
-            "bb_lower": 17.18617610474344,
-            "bb_upper": 19.25982399443869,
-            "news": [],
-            "news_items": []
-        },
-        "SPY": {
-            "close": 778.0999755859375,
-            "volume": 18685000.0,
-            "sma_20": 768.5563537597657,
-            "sma_50": 766.942060546875,
-            "sma_200": 720.1351889038086,
-            "rsi_14": 59.914366653707916,
-            "macd": 3.878131896801847,
-            "macd_signal": 2.824748024783031,
-            "macd_hist": 1.0533838720188156,
-            "bb_lower": 753.4879129214515,
-            "bb_upper": 783.6247945980798,
-            "news": [],
-            "news_items": []
-        },
-        "CEG": {
-            "close": 293.8900146484375,
-            "volume": 2631100.0,
-            "sma_20": 269.5674987792969,
-            "sma_50": 274.5064886474609,
-            "sma_200": 285.11791091918946,
-            "rsi_14": 59.61531259567926,
-            "macd": 5.223681923003028,
-            "macd_signal": 1.036642699918014,
-            "macd_hist": 4.187039223085014,
-            "bb_lower": 238.58861878074208,
-            "bb_upper": 300.5463787778517,
-            "news": [],
-            "news_items": []
-        },
         "XLRE": {
             "close": 41.91999816894531,
             "volume": 8421800.0,
             "sma_20": 41.59348640441895,
             "sma_50": 43.11829704284668,
-            "sma_200": 42.582708473205564,
-            "rsi_14": 49.460432742660025,
-            "macd": -0.5630585089012996,
-            "macd_signal": -0.6878893570282663,
-            "macd_hist": 0.12483084812696665,
-            "bb_lower": 40.17766152649421,
-            "bb_upper": 43.00931128234368,
-            "news": [],
-            "news_items": []
-        },
-        "NVDA": {
-            "close": 226.32000732421875,
-            "volume": 70690300.0,
-            "sma_20": 227.5020004272461,
-            "sma_50": 222.45620025634764,
-            "sma_200": 202.01665412902832,
-            "rsi_14": 49.409047495269625,
-            "macd": 3.3144207940774493,
-            "macd_signal": 3.7588776722184036,
-            "macd_hist": -0.44445687814095436,
-            "bb_lower": 213.57059664743971,
-            "bb_upper": 241.43340420705246,
-            "news": [],
-            "news_items": []
-        },
-        "IBIT": {
-            "close": 46.86000061035156,
-            "volume": 21488900.0,
-            "sma_20": 46.903500175476076,
-            "sma_50": 43.29160003662109,
-            "sma_200": 41.85822496414185,
-            "rsi_14": 55.04867091783309,
-            "macd": 0.9967103168825489,
-            "macd_signal": 1.3630489314310537,
-            "macd_hist": -0.3663386145485048,
-            "bb_lower": 43.39314798400629,
-            "bb_upper": 50.41385236694586,
-            "news": [],
-            "news_items": []
-        },
-        "VOO": {
-            "close": 715.1300048828125,
-            "volume": 3635500.0,
-            "sma_20": 706.430078125,
-            "sma_50": 704.9258239746093,
-            "sma_200": 661.7951184082032,
-            "rsi_14": 59.80044714496716,
-            "macd": 3.5624223788449854,
-            "macd_signal": 2.605790993953043,
-            "macd_hist": 0.9566313848919425,
-            "bb_lower": 692.5766058631057,
-            "bb_upper": 720.2835503868944,
-            "news": [],
-            "news_items": []
-        },
-        "AMD": {
-            "close": 594.239990234375,
-            "volume": 15379900.0,
-            "sma_20": 603.1144989013671,
-            "sma_50": 531.2827996826172,
-            "sma_200": 387.2157501983643,
-            "rsi_14": 52.983752869408605,
-            "macd": 26.91200185332002,
-            "macd_signal": 31.93318194727043,
-            "macd_hist": -5.021180093950409,
-            "bb_lower": 523.3423890611713,
-            "bb_upper": 682.886608741563,
-            "news": [],
-            "news_items": []
-        },
-        "QQQ": {
-            "close": 746.0399780273438,
-            "volume": 25147700.0,
-            "sma_20": 739.2362884521484,
-            "sma_50": 725.1775891113281,
-            "sma_200": 671.5066296386718,
-            "rsi_14": 56.71227124220974,
-            "macd": 9.003112465009735,
-            "macd_signal": 8.93187281415205,
-            "macd_hist": 0.07123965085768624,
-            "bb_lower": 707.8905715683613,
-            "bb_upper": 770.5820053359355,
-            "news": [],
-            "news_items": []
-        },
-        "XLE": {
-            "close": 66.01000213623047,
-            "volume": 19885200.0,
-            "sma_20": 63.301053810119626,
-            "sma_50": 62.54674713134766,
-            "sma_200": 56.51587875366211,
-            "rsi_14": 66.40916636117322,
-            "macd": 0.6093321523048729,
-            "macd_signal": 0.3250955063643395,
-            "macd_hist": 0.28423664594053344,
-            "bb_lower": 60.65493710132044,
-            "bb_upper": 65.94717051891881,
-            "news": [],
-            "news_items": []
-        },
-        "XLF": {
-            "close": 55.04999923706055,
-            "volume": 19685600.0,
-            "sma_20": 54.626909255981445,
-            "sma_50": 56.357837524414066,
-            "sma_200": 53.32972160339355,
-            "rsi_14": 49.98187774999073,
-            "macd": -0.5833880627278063,
-            "macd_signal": -0.7283150951077377,
-            "macd_hist": 0.14492703237993143,
-            "bb_lower": 52.83799191350503,
-            "bb_upper": 56.41582659845786,
-            "news": [],
-            "news_items": []
-        },
-        "QUAL": {
-            "close": 227.72000122070312,
-            "volume": 429300.0,
-            "sma_20": 223.1969985961914,
-            "sma_50": 222.99289611816405,
-            "sma_200": 210.23619338989258,
-            "rsi_14": 67.40254955724635,
-            "macd": 1.5180936459280474,
-            "macd_signal": 1.0114760281155046,
-            "macd_hist": 0.5066176178125428,
-            "bb_lower": 217.4925335109905,
-            "bb_upper": 228.9014636813923,
-            "news": [],
-            "news_items": []
-        },
-        "XLB": {
-            "close": 49.439998626708984,
-            "volume": 5798000.0,
-            "sma_20": 49.59428062438965,
-            "sma_50": 51.14503601074219,
-            "sma_200": 50.38206514358521,
-            "rsi_14": 44.13643401920613,
-            "macd": -0.5214872635804113,
-            "macd_signal": -0.6032356623240981,
-            "macd_hist": 0.08174839874368678,
-            "bb_lower": 48.44623162447075,
-            "bb_upper": 50.742329624308546,
-            "news": [],
-            "news_items": []
-        },
-        "VXUS": {
-            "close": 84.44000244140625,
-            "volume": 4350300.0,
-            "sma_20": 85.57177124023437,
-            "sma_50": 86.4413752746582,
-            "sma_200": 82.59125785827636,
-            "rsi_14": 42.33976580922404,
-            "macd": -0.4948973071282978,
-            "macd_signal": -0.36777194369621585,
-            "macd_hist": -0.12712536343208197,
-            "bb_lower": 83.89202635450096,
-            "bb_upper": 87.25151612596778,
-            "news": [],
-            "news_items": []
-        },
-        "SLV": {
-            "close": 54.349998474121094,
-            "volume": 8447200.0,
-            "sma_20": 56.471999931335446,
-            "sma_50": 57.98319984436035,
-            "sma_200": 65.72115007400512,
-            "rsi_14": 41.79807662013436,
-            "macd": -1.1721901407930986,
-            "macd_signal": -0.9502203291078883,
-            "macd_hist": -0.22196981168521024,
-            "bb_lower": 52.151372111101466,
-            "bb_upper": 60.79262775156943,
-            "news": [],
-            "news_items": []
-        },
-        "VTI": {
-            "close": 381.57000732421875,
-            "volume": 1949400.0,
-            "sma_20": 377.5263900756836,
-            "sma_50": 377.7401599121094,
-            "sma_200": 354.9715023803711,
-            "rsi_14": 57.81187623445404,
-            "macd": 1.4517416283973148,
-            "macd_signal": 0.9479966060651213,
-            "macd_hist": 0.5037450223321935,
-            "bb_lower": 370.7390725678932,
-            "bb_upper": 384.313707583474,
-            "news": [],
-            "news_items": []
-        },
-        "IWM": {
-            "close": 277.8999938964844,
-            "volume": 16770600.0,
-            "sma_20": 281.5610015869141,
-            "sma_50": 290.6520361328125,
-            "sma_200": 276.04935234069825,
-            "rsi_14": 37.11933372043728,
-            "macd": -3.2869319418960004,
-            "macd_signal": -3.397087083967024,
-            "macd_hist": 0.11015514207102362,
-            "bb_lower": 275.70537931104155,
-            "bb_upper": 287.4166238627866,
-            "news": [],
-            "news_items": []
-        },
-        "XLU": {
-            "close": 41.630001068115234,
-            "volume": 16550400.0,
-            "sma_20": 40.41662406921387,
-            "sma_50": 41.9663468170166,
-            "sma_200": 43.768689727783205,
-            "rsi_14": 56.97783593968295,
-            "macd": -0.24796194744562428,
-            "macd_signal": -0.5625339223397082,
-            "macd_hist": 0.31457197489408395,
-            "bb_lower": 38.8582921954109,
-            "bb_upper": 41.97495594301684,
-            "news": [],
-            "news_items": []
-        },
-        "XLC": {
-            "close": 111.44999694824219,
-            "volume": 7171200.0,
-            "sma_20": 111.94005699157715,
-            "sma_50": 111.64463973999024,
-            "sma_200": 113.0022611618042,
-            "rsi_14": 49.408838597786186,
-            "macd": -0.16925978413432574,
-            "macd_signal": -0.04840589706335206,
-            "macd_hist": -0.12085388707097368,
-            "bb_lower": 109.35501854603757,
-            "bb_upper": 114.52509543711673,
-            "news": [],
-            "news_items": []
-        },
-        "META": {
-            "close": 742.9600219726562,
-            "volume": 24882400.0,
-            "sma_20": 722.9448760986328,
-            "sma_50": 643.1336083984374,
-            "sma_200": 629.5795211791992,
-            "rsi_14": 62.31064165708421,
-            "macd": 24.89984156404796,
-            "macd_signal": 29.72117509432191,
-            "macd_hist": -4.82133353027395,
-            "bb_lower": 665.4280650506754,
-            "bb_upper": 780.4616871465902,
-            "news": [],
-            "news_items": []
-        },
-        "NFLX": {
-            "close": 70.61000061035156,
-            "volume": 24200200.0,
-            "sma_20": 71.17750091552735,
-            "sma_50": 75.30420028686524,
-            "sma_200": 83.33989986419678,
-            "rsi_14": 44.8741901085375,
-            "macd": -1.7663248267461995,
-            "macd_signal": -2.0136948016733727,
-            "macd_hist": 0.24736997492717316,
-            "bb_lower": 65.6211995797703,
-            "bb_upper": 76.73380225128439,
-            "news": [],
-            "news_items": []
-        },
-        "CRWD": {
-            "close": 263.010009765625,
-            "volume": 7166600.0,
-            "sma_20": 259.0900016784668,
-            "sma_50": 230.14500061035156,
-            "sma_200": 158.03287506103516,
-            "rsi_14": 56.86118284426261,
-            "macd": 12.592323431321233,
-            "macd_signal": 13.65960848997452,
-            "macd_hist": -1.0672850586532867,
-            "bb_lower": 236.3715569578752,
-            "bb_upper": 281.8084463990584,
+            "sma_200": 42.58270845413208,
+            "rsi_14": 49.46043274283489,
+            "macd": -0.56305850889445,
+            "macd_signal": -0.6878893570181921,
+            "macd_hist": 0.12483084812374212,
+            "bb_lower": 40.17766152649479,
+            "bb_upper": 43.009311282343106,
             "news": [],
             "news_items": []
         },
@@ -1940,48 +1398,123 @@
             "news": [],
             "news_items": []
         },
-        "UPRO": {
-            "close": 155.4600067138672,
-            "volume": 1092600.0,
-            "sma_20": 150.56164321899413,
-            "sma_50": 150.75865936279297,
-            "sma_200": 131.21499324798583,
-            "rsi_14": 58.22022441518872,
-            "macd": 1.7278105077238592,
-            "macd_signal": 1.1037771743219686,
-            "macd_hist": 0.6240333334018906,
-            "bb_lower": 142.44179314955926,
-            "bb_upper": 158.681493288429,
+        "SSO": {
+            "close": 72.04000091552734,
+            "volume": 2061200.0,
+            "sma_20": 70.455033493042,
+            "sma_50": 70.42661865234375,
+            "sma_200": 63.53572374343872,
+            "rsi_14": 58.63767930696457,
+            "macd": 0.5824810655948482,
+            "macd_signal": 0.38907272424345785,
+            "macd_hist": 0.1934083413513904,
+            "bb_lower": 67.8660842917817,
+            "bb_upper": 73.04398269430229,
             "news": [],
             "news_items": []
         },
-        "SCHD": {
-            "close": 33.2599983215332,
-            "volume": 16933400.0,
-            "sma_20": 33.131098937988284,
-            "sma_50": 33.784464035034176,
-            "sma_200": 31.421509618759156,
-            "rsi_14": 49.63048290431659,
-            "macd": -0.2341047468419717,
-            "macd_signal": -0.27886489290513417,
-            "macd_hist": 0.044760146063162476,
-            "bb_lower": 32.359666798756585,
-            "bb_upper": 33.90253107721998,
+        "IWM": {
+            "close": 277.8999938964844,
+            "volume": 16770600.0,
+            "sma_20": 281.5610015869141,
+            "sma_50": 290.6520361328125,
+            "sma_200": 276.04935363769533,
+            "rsi_14": 37.119333636776545,
+            "macd": -3.2869319446995746,
+            "macd_signal": -3.3970870880884005,
+            "macd_hist": 0.11015514338882593,
+            "bb_lower": 275.70537931104514,
+            "bb_upper": 287.416623862783,
             "news": [],
             "news_items": []
         },
-        "EWC": {
-            "close": 59.45000076293945,
-            "volume": 1162000.0,
-            "sma_20": 59.336499977111814,
-            "sma_50": 60.61260009765625,
-            "sma_200": 57.7238790512085,
-            "rsi_14": 48.98843657709222,
-            "macd": -0.5203960618589605,
-            "macd_signal": -0.5601907845619573,
-            "macd_hist": 0.039794722702996776,
-            "bb_lower": 57.75009136398101,
-            "bb_upper": 60.92290859024262,
+        "TLT": {
+            "close": 78.05000305175781,
+            "volume": 15441000.0,
+            "sma_20": 78.9385555267334,
+            "sma_50": 80.58914672851563,
+            "sma_200": 83.5178018951416,
+            "rsi_14": 38.224672939498085,
+            "macd": -0.9805227070331171,
+            "macd_signal": -0.9982694059372321,
+            "macd_hist": 0.017746698904115066,
+            "bb_lower": 75.82687513204684,
+            "bb_upper": 82.05023592141995,
+            "news": [],
+            "news_items": []
+        },
+        "VT": {
+            "close": 159.5,
+            "volume": 1167700.0,
+            "sma_20": 159.1541862487793,
+            "sma_50": 159.74902099609375,
+            "sma_200": 151.07544776916504,
+            "rsi_14": 50.877219931270574,
+            "macd": 0.07161233495719443,
+            "macd_signal": 0.022013735534292832,
+            "macd_hist": 0.0495985994229016,
+            "bb_lower": 156.96102405924296,
+            "bb_upper": 161.34734843831563,
+            "news": [],
+            "news_items": []
+        },
+        "MSFT": {
+            "close": 541.1500244140625,
+            "volume": 18314900.0,
+            "sma_20": 511.8864990234375,
+            "sma_50": 501.7345654296875,
+            "sma_200": 432.99140869140626,
+            "rsi_14": 69.91010528731442,
+            "macd": 11.619393879493998,
+            "macd_signal": 9.68722839354369,
+            "macd_hist": 1.9321654859503088,
+            "bb_lower": 482.8743815647849,
+            "bb_upper": 540.8986164820901,
+            "news": [],
+            "news_items": []
+        },
+        "AMD": {
+            "close": 594.239990234375,
+            "volume": 15379900.0,
+            "sma_20": 603.1144989013671,
+            "sma_50": 531.2827996826172,
+            "sma_200": 387.2157501983643,
+            "rsi_14": 52.983752869408605,
+            "macd": 26.91200185332002,
+            "macd_signal": 31.93318194727043,
+            "macd_hist": -5.021180093950409,
+            "bb_lower": 523.3423890611713,
+            "bb_upper": 682.886608741563,
+            "news": [],
+            "news_items": []
+        },
+        "WDC": {
+            "close": 386.94000244140625,
+            "volume": 5410800.0,
+            "sma_20": 433.11950225830077,
+            "sma_50": 454.3720880126953,
+            "sma_200": 406.7544345855713,
+            "rsi_14": 36.39621395220684,
+            "macd": -16.852339142667176,
+            "macd_signal": -11.467691957506345,
+            "macd_hist": -5.384647185160832,
+            "bb_lower": 381.40788052016933,
+            "bb_upper": 484.8311239964322,
+            "news": [],
+            "news_items": []
+        },
+        "SPY": {
+            "close": 778.0999755859375,
+            "volume": 18685000.0,
+            "sma_20": 768.5563537597657,
+            "sma_50": 766.942060546875,
+            "sma_200": 720.1351889038086,
+            "rsi_14": 59.91436665369924,
+            "macd": 3.8781318968026426,
+            "macd_signal": 2.8247480247842622,
+            "macd_hist": 1.0533838720183804,
+            "bb_lower": 753.4879129214735,
+            "bb_upper": 783.6247945980579,
             "news": [],
             "news_items": []
         },
@@ -1990,133 +1523,13 @@
             "volume": 6979800.0,
             "sma_20": 102.90581970214843,
             "sma_50": 104.25902145385743,
-            "sma_200": 106.06419452667237,
-            "rsi_14": 41.661842420961904,
-            "macd": -0.6333655345043638,
-            "macd_signal": -0.7078808184507185,
-            "macd_hist": 0.07451528394635465,
-            "bb_lower": 100.84059762419645,
-            "bb_upper": 104.97104178010042,
-            "news": [],
-            "news_items": []
-        },
-        "EWA": {
-            "close": 28.670000076293945,
-            "volume": 1296200.0,
-            "sma_20": 28.53549995422363,
-            "sma_50": 29.34699996948242,
-            "sma_200": 28.477368745803833,
-            "rsi_14": 48.512936118866286,
-            "macd": -0.24138084043881491,
-            "macd_signal": -0.2952848357630666,
-            "macd_hist": 0.05390399532425166,
-            "bb_lower": 27.930736260701813,
-            "bb_upper": 29.14026364774545,
-            "news": [],
-            "news_items": []
-        },
-        "^TNX": {
-            "close": 5.239999771118164,
-            "volume": 0.0,
-            "sma_20": 5.160599970817566,
-            "sma_50": 4.904179964065552,
-            "sma_200": 4.483684980869294,
-            "rsi_14": 65.30379649228665,
-            "macd": 0.10967735001654955,
-            "macd_signal": 0.12000009225977014,
-            "macd_hist": -0.010322742243220592,
-            "bb_lower": 4.907543912858321,
-            "bb_upper": 5.413656028776812,
-            "news": [],
-            "news_items": []
-        },
-        "^IRX": {
-            "close": 4.050000190734863,
-            "volume": 0.0,
-            "sma_20": 4.019750082492829,
-            "sma_50": 3.852440047264099,
-            "sma_200": 3.673190006017685,
-            "rsi_14": 68.13439114580288,
-            "macd": 0.05489470783016026,
-            "macd_signal": 0.06225110881814863,
-            "macd_hist": -0.007356400987988371,
-            "bb_lower": 3.9469877253423844,
-            "bb_upper": 4.092512439643273,
-            "news": [],
-            "news_items": []
-        },
-        "MU": {
-            "close": 989.0399780273438,
-            "volume": 23983800.0,
-            "sma_20": 1041.5054962158204,
-            "sma_50": 979.5063989257812,
-            "sma_200": 705.134765625,
-            "rsi_14": 44.65640077519946,
-            "macd": 15.706235180345857,
-            "macd_signal": 26.087297953670433,
-            "macd_hist": -10.381062773324576,
-            "bb_lower": 942.3313195507898,
-            "bb_upper": 1140.6796728808508,
-            "news": [],
-            "news_items": []
-        },
-        "AMZN": {
-            "close": 259.5299987792969,
-            "volume": 26577900.0,
-            "sma_20": 252.3190010070801,
-            "sma_50": 258.85459991455076,
-            "sma_200": 242.2884999847412,
-            "rsi_14": 55.57687470546155,
-            "macd": 0.7583885878361514,
-            "macd_signal": -0.6955165578317909,
-            "macd_hist": 1.4539051456679424,
-            "bb_lower": 242.7535477953193,
-            "bb_upper": 261.8844542188409,
-            "news": [],
-            "news_items": []
-        },
-        "XLP": {
-            "close": 84.41000366210938,
-            "volume": 7324100.0,
-            "sma_20": 82.17009773254395,
-            "sma_50": 83.63495651245117,
-            "sma_200": 82.85585056304932,
-            "rsi_14": 61.267184112078176,
-            "macd": -0.16983491775867776,
-            "macd_signal": -0.5504739982667568,
-            "macd_hist": 0.38063908050807904,
-            "bb_lower": 80.11357689573678,
-            "bb_upper": 84.22661856935112,
-            "news": [],
-            "news_items": []
-        },
-        "TSM": {
-            "close": 444.3500061035156,
-            "volume": 8867200.0,
-            "sma_20": 451.73515167236326,
-            "sma_50": 432.5759344482422,
-            "sma_200": 390.8214923095703,
-            "rsi_14": 47.79393522917942,
-            "macd": 8.983021159857628,
-            "macd_signal": 10.859169833640863,
-            "macd_hist": -1.8761486737832342,
-            "bb_lower": 415.22237850998044,
-            "bb_upper": 488.2479248347461,
-            "news": [],
-            "news_items": []
-        },
-        "STX": {
-            "close": 753.25,
-            "volume": 4095700.0,
-            "sma_20": 855.9582000732422,
-            "sma_50": 852.67482421875,
-            "sma_200": 665.2390325927735,
-            "rsi_14": 37.453240931222076,
-            "macd": -17.610197301107746,
-            "macd_signal": -0.7661617473145004,
-            "macd_hist": -16.844035553793248,
-            "bb_lower": 730.3005690334519,
-            "bb_upper": 981.6158311130325,
+            "sma_200": 106.06419437408448,
+            "rsi_14": 41.66184208042128,
+            "macd": -0.6333655334932473,
+            "macd_signal": -0.7078808169767427,
+            "macd_hist": 0.07451528348349534,
+            "bb_lower": 100.84059762419845,
+            "bb_upper": 104.97104178009842,
             "news": [],
             "news_items": []
         },
@@ -2135,48 +1548,63 @@
             "news": [],
             "news_items": []
         },
-        "HYG": {
-            "close": 77.29000091552734,
-            "volume": 21847900.0,
-            "sma_20": 77.50540008544922,
-            "sma_50": 78.26834701538085,
-            "sma_200": 77.90398372650147,
-            "rsi_14": 39.06816503355087,
-            "macd": -0.3429097869893667,
-            "macd_signal": -0.3703354110167655,
-            "macd_hist": 0.027425624027398787,
-            "bb_lower": 76.46870361465491,
-            "bb_upper": 78.54209655624354,
+        "INTC": {
+            "close": 101.3499984741211,
+            "volume": 74171900.0,
+            "sma_20": 114.03400039672852,
+            "sma_50": 103.30360015869141,
+            "sma_200": 83.35770002365112,
+            "rsi_14": 40.25962164832117,
+            "macd": 1.2128096724251947,
+            "macd_signal": 3.7167940478726145,
+            "macd_hist": -2.50398437544742,
+            "bb_lower": 97.2207550844917,
+            "bb_upper": 130.84724570896532,
             "news": [],
             "news_items": []
         },
-        "^VIX": {
-            "close": 15.210000038146973,
+        "VXUS": {
+            "close": 84.44000244140625,
+            "volume": 4350300.0,
+            "sma_20": 85.57177124023437,
+            "sma_50": 86.4413752746582,
+            "sma_200": 82.59125770568848,
+            "rsi_14": 42.33976582093878,
+            "macd": -0.49489730825499123,
+            "macd_signal": -0.367771945351428,
+            "macd_hist": -0.12712536290356324,
+            "bb_lower": 83.8920263544986,
+            "bb_upper": 87.25151612597014,
+            "news": [],
+            "news_items": []
+        },
+        "^IRX": {
+            "close": 4.050000190734863,
             "volume": 0.0,
-            "sma_20": 15.559000062942506,
-            "sma_50": 15.475800037384033,
-            "sma_200": 18.076050033569334,
-            "rsi_14": 47.82021640671562,
-            "macd": -0.15741404979533336,
-            "macd_signal": -0.0943503527470862,
-            "macd_hist": -0.06306369704824716,
-            "bb_lower": 13.893564552089728,
-            "bb_upper": 17.224435573795283,
+            "sma_20": 4.019750082492829,
+            "sma_50": 3.852440047264099,
+            "sma_200": 3.673190006017685,
+            "rsi_14": 68.13439114580288,
+            "macd": 0.05489470783016026,
+            "macd_signal": 0.06225110881814863,
+            "macd_hist": -0.007356400987988371,
+            "bb_lower": 3.9469877253423844,
+            "bb_upper": 4.092512439643273,
             "news": [],
             "news_items": []
         },
-        "XLK": {
-            "close": 196.36000061035156,
-            "volume": 5200700.0,
-            "sma_20": 195.0770606994629,
-            "sma_50": 189.32135009765625,
-            "sma_200": 166.2919135284424,
-            "rsi_14": 55.27676434474468,
-            "macd": 3.244963226743778,
-            "macd_signal": 3.410982114195601,
-            "macd_hist": -0.16601888745182336,
-            "bb_lower": 184.81935686317604,
-            "bb_upper": 205.33476453574974,
+        "XLY": {
+            "close": 112.2699966430664,
+            "volume": 3936600.0,
+            "sma_20": 110.73826904296875,
+            "sma_50": 114.16302627563476,
+            "sma_200": 115.62881870269776,
+            "rsi_14": 52.03570547655862,
+            "macd": -0.49998255036850026,
+            "macd_signal": -0.9908857946671722,
+            "macd_hist": 0.49090324429867194,
+            "bb_lower": 108.35720909821897,
+            "bb_upper": 113.11932898771853,
             "news": [],
             "news_items": []
         },
@@ -2186,27 +1614,27 @@
             "sma_20": 189.39650115966796,
             "sma_50": 188.08476348876954,
             "sma_200": 179.73918758392335,
-            "rsi_14": 48.90381831185117,
-            "macd": 3.1671953080863773,
-            "macd_signal": 2.8724918610573953,
-            "macd_hist": 0.294703447028982,
-            "bb_lower": 166.68974345999396,
-            "bb_upper": 212.10325885934196,
+            "rsi_14": 48.90381831185118,
+            "macd": 3.1671953080864057,
+            "macd_signal": 2.8724918610574326,
+            "macd_hist": 0.2947034470289731,
+            "bb_lower": 166.68974345999695,
+            "bb_upper": 212.10325885933898,
             "news": [],
             "news_items": []
         },
-        "VGK": {
-            "close": 85.81999969482422,
-            "volume": 3786500.0,
-            "sma_20": 87.42434196472168,
-            "sma_50": 89.85046905517578,
-            "sma_200": 86.70767642974853,
-            "rsi_14": 36.4895063828852,
-            "macd": -1.1580974067602199,
-            "macd_signal": -1.054586072438769,
-            "macd_hist": -0.10351133432145088,
-            "bb_lower": 84.73618679656931,
-            "bb_upper": 90.11249713287404,
+        "TSM": {
+            "close": 444.3500061035156,
+            "volume": 8867200.0,
+            "sma_20": 451.73515167236326,
+            "sma_50": 432.5759344482422,
+            "sma_200": 390.8214924621582,
+            "rsi_14": 47.79393523551095,
+            "macd": 8.983021160510418,
+            "macd_signal": 10.859169834597257,
+            "macd_hist": -1.8761486740868385,
+            "bb_lower": 415.22237850998545,
+            "bb_upper": 488.24792483474107,
             "news": [],
             "news_items": []
         },
@@ -2215,58 +1643,148 @@
             "volume": 16336800.0,
             "sma_20": 355.620751953125,
             "sma_50": 370.711279296875,
-            "sma_200": 367.142188873291,
-            "rsi_14": 46.52368958074144,
-            "macd": -0.796803842811471,
-            "macd_signal": -2.421991344384332,
-            "macd_hist": 1.625187501572861,
-            "bb_lower": 335.80817331010536,
-            "bb_upper": 375.4333305961447,
+            "sma_200": 367.142190246582,
+            "rsi_14": 46.52368959469146,
+            "macd": -0.7968038412392957,
+            "macd_signal": -2.421991342083115,
+            "macd_hist": 1.6251875008438192,
+            "bb_lower": 335.8081733101142,
+            "bb_upper": 375.4333305961358,
             "news": [],
             "news_items": []
         },
-        "WDC": {
-            "close": 386.94000244140625,
-            "volume": 5410800.0,
-            "sma_20": 433.11950225830077,
-            "sma_50": 454.3720880126953,
-            "sma_200": 406.7544345855713,
-            "rsi_14": 36.3962139522069,
-            "macd": -16.852339142667176,
-            "macd_signal": -11.467691957506387,
-            "macd_hist": -5.384647185160789,
-            "bb_lower": 381.40788052016865,
-            "bb_upper": 484.8311239964329,
+        "MU": {
+            "close": 989.0399780273438,
+            "volume": 23983800.0,
+            "sma_20": 1041.5054962158204,
+            "sma_50": 979.5063989257812,
+            "sma_200": 705.134765625,
+            "rsi_14": 44.65640077520688,
+            "macd": 15.706235180462272,
+            "macd_signal": 26.08729795384171,
+            "macd_hist": -10.381062773379437,
+            "bb_lower": 942.331319550789,
+            "bb_upper": 1140.6796728808517,
             "news": [],
             "news_items": []
         },
-        "XLY": {
-            "close": 112.2699966430664,
-            "volume": 3936600.0,
-            "sma_20": 110.73826904296875,
-            "sma_50": 114.16302627563476,
-            "sma_200": 115.62881874084472,
-            "rsi_14": 52.03570547639182,
-            "macd": -0.49998255038732964,
-            "macd_signal": -0.9908857946948254,
-            "macd_hist": 0.49090324430749577,
-            "bb_lower": 108.3572090982201,
-            "bb_upper": 113.11932898771741,
+        "XLI": {
+            "close": 169.14999389648438,
+            "volume": 3802400.0,
+            "sma_20": 169.19585876464845,
+            "sma_50": 175.17742584228515,
+            "sma_200": 171.93853759765625,
+            "rsi_14": 44.51975317567453,
+            "macd": -1.3775040567186068,
+            "macd_signal": -1.7460370673019667,
+            "macd_hist": 0.36853301058335997,
+            "bb_lower": 167.14052428471618,
+            "bb_upper": 171.25119324458072,
             "news": [],
             "news_items": []
         },
-        "TLT": {
-            "close": 78.05000305175781,
-            "volume": 15441000.0,
-            "sma_20": 78.9385555267334,
-            "sma_50": 80.58914672851563,
-            "sma_200": 83.51780197143555,
-            "rsi_14": 38.224676015454335,
-            "macd": -0.9805226798303863,
-            "macd_signal": -0.9982693656833235,
-            "macd_hist": 0.01774668585293715,
-            "bb_lower": 75.826875132046,
-            "bb_upper": 82.05023592142079,
+        "XLV": {
+            "close": 171.99000549316406,
+            "volume": 5826800.0,
+            "sma_20": 168.7677764892578,
+            "sma_50": 168.6671563720703,
+            "sma_200": 156.00641365051268,
+            "rsi_14": 60.56416644846149,
+            "macd": 0.39729631902801543,
+            "macd_signal": 0.1676618272323016,
+            "macd_hist": 0.22963449179571382,
+            "bb_lower": 165.40420867918743,
+            "bb_upper": 172.1313442993282,
+            "news": [],
+            "news_items": []
+        },
+        "QQQ": {
+            "close": 746.0399780273438,
+            "volume": 25147700.0,
+            "sma_20": 739.2362884521484,
+            "sma_50": 725.1775891113281,
+            "sma_200": 671.5066296386718,
+            "rsi_14": 56.712271242209766,
+            "macd": 9.003112465009735,
+            "macd_signal": 8.93187281415205,
+            "macd_hist": 0.07123965085768624,
+            "bb_lower": 707.8905715683284,
+            "bb_upper": 770.5820053359685,
+            "news": [],
+            "news_items": []
+        },
+        "ORCL": {
+            "close": 137.38999938964844,
+            "volume": 21533100.0,
+            "sma_20": 141.23021392822267,
+            "sma_50": 145.38033264160157,
+            "sma_200": 160.2377830505371,
+            "rsi_14": 44.914268889512286,
+            "macd": -1.8603403551722693,
+            "macd_signal": -1.7456286942458572,
+            "macd_hist": -0.11471166092641205,
+            "bb_lower": 131.77534183472196,
+            "bb_upper": 150.68508602172338,
+            "news": [],
+            "news_items": []
+        },
+        "TLN": {
+            "close": 379.7699890136719,
+            "volume": 1565400.0,
+            "sma_20": 321.51949920654295,
+            "sma_50": 322.73719970703127,
+            "sma_200": 351.69519989013673,
+            "rsi_14": 69.64403488865206,
+            "macd": 15.944906230966353,
+            "macd_signal": 7.002212769644778,
+            "macd_hist": 8.942693461321575,
+            "bb_lower": 256.3114253922191,
+            "bb_upper": 386.72757302086677,
+            "news": [],
+            "news_items": []
+        },
+        "NVDA": {
+            "close": 226.32000732421875,
+            "volume": 70690300.0,
+            "sma_20": 227.5020004272461,
+            "sma_50": 222.45620025634764,
+            "sma_200": 202.01665412902832,
+            "rsi_14": 49.40904749568414,
+            "macd": 3.3144207945226754,
+            "macd_signal": 3.7588776728725177,
+            "macd_hist": -0.4444568783498424,
+            "bb_lower": 213.57059664743417,
+            "bb_upper": 241.433404207058,
+            "news": [],
+            "news_items": []
+        },
+        "TSLA": {
+            "close": 378.0299987792969,
+            "volume": 20244300.0,
+            "sma_20": 369.6124969482422,
+            "sma_50": 356.08139770507813,
+            "sma_200": 390.0668992614746,
+            "rsi_14": 56.44703643496045,
+            "macd": 5.143393845638855,
+            "macd_signal": 4.229311600474709,
+            "macd_hist": 0.9140822451641455,
+            "bb_lower": 349.2102895980895,
+            "bb_upper": 390.0147042983949,
+            "news": [],
+            "news_items": []
+        },
+        "SCHD": {
+            "close": 33.2599983215332,
+            "volume": 16933400.0,
+            "sma_20": 33.131098937988284,
+            "sma_50": 33.784464035034176,
+            "sma_200": 31.421509618759156,
+            "rsi_14": 49.63048290431593,
+            "macd": -0.234104746841993,
+            "macd_signal": -0.27886489290516975,
+            "macd_hist": 0.04476014606317674,
+            "bb_lower": 32.35966679875678,
+            "bb_upper": 33.90253107721979,
             "news": [],
             "news_items": []
         },
@@ -2285,6 +1803,351 @@
             "news": [],
             "news_items": []
         },
+        "GLD": {
+            "close": 382.1499938964844,
+            "volume": 4874400.0,
+            "sma_20": 387.4720001220703,
+            "sma_50": 397.24000061035156,
+            "sma_200": 415.4973501586914,
+            "rsi_14": 43.9336930062442,
+            "macd": -5.0248356344483796,
+            "macd_signal": -4.820612375195683,
+            "macd_hist": -0.20422325925269647,
+            "bb_lower": 371.3437815408457,
+            "bb_upper": 403.6002187032949,
+            "news": [],
+            "news_items": []
+        },
+        "QUAL": {
+            "close": 227.72000122070312,
+            "volume": 429300.0,
+            "sma_20": 223.1969985961914,
+            "sma_50": 222.99289611816405,
+            "sma_200": 210.23619354248046,
+            "rsi_14": 67.40254955714725,
+            "macd": 1.518093645917645,
+            "macd_signal": 1.011476028100234,
+            "macd_hist": 0.5066176178174111,
+            "bb_lower": 217.4925335109865,
+            "bb_upper": 228.9014636813963,
+            "news": [],
+            "news_items": []
+        },
+        "^TNX": {
+            "close": 5.239999771118164,
+            "volume": 0.0,
+            "sma_20": 5.160599970817566,
+            "sma_50": 4.904179964065552,
+            "sma_200": 4.483684980869294,
+            "rsi_14": 65.30379649228665,
+            "macd": 0.10967735001654955,
+            "macd_signal": 0.12000009225977014,
+            "macd_hist": -0.010322742243220592,
+            "bb_lower": 4.907543912858321,
+            "bb_upper": 5.413656028776812,
+            "news": [],
+            "news_items": []
+        },
+        "STX": {
+            "close": 753.25,
+            "volume": 4095700.0,
+            "sma_20": 855.9582000732422,
+            "sma_50": 852.67482421875,
+            "sma_200": 665.2390330505372,
+            "rsi_14": 37.45324093117458,
+            "macd": -17.610197301203016,
+            "macd_signal": -0.76616174745477,
+            "macd_hist": -16.844035553748245,
+            "bb_lower": 730.3005690334534,
+            "bb_upper": 981.615831113031,
+            "news": [],
+            "news_items": []
+        },
+        "XLP": {
+            "close": 84.41000366210938,
+            "volume": 7324100.0,
+            "sma_20": 82.17009773254395,
+            "sma_50": 83.63495651245117,
+            "sma_200": 82.85585010528564,
+            "rsi_14": 61.26718411264893,
+            "macd": -0.16983491773513038,
+            "macd_signal": -0.5504739982321118,
+            "macd_hist": 0.3806390804969815,
+            "bb_lower": 80.1135768957395,
+            "bb_upper": 84.2266185693484,
+            "news": [],
+            "news_items": []
+        },
+        "SLV": {
+            "close": 54.349998474121094,
+            "volume": 8447200.0,
+            "sma_20": 56.471999931335446,
+            "sma_50": 57.98319984436035,
+            "sma_200": 65.72115007400512,
+            "rsi_14": 41.79807662013436,
+            "macd": -1.1721901407930986,
+            "macd_signal": -0.9502203291078883,
+            "macd_hist": -0.22196981168521024,
+            "bb_lower": 52.151372111101466,
+            "bb_upper": 60.79262775156943,
+            "news": [],
+            "news_items": []
+        },
+        "^VIX": {
+            "close": 15.210000038146973,
+            "volume": 0.0,
+            "sma_20": 15.559000062942506,
+            "sma_50": 15.475800037384033,
+            "sma_200": 18.076050033569334,
+            "rsi_14": 47.82021640671562,
+            "macd": -0.15741404979533336,
+            "macd_signal": -0.0943503527470862,
+            "macd_hist": -0.06306369704824716,
+            "bb_lower": 13.893564552089728,
+            "bb_upper": 17.224435573795283,
+            "news": [],
+            "news_items": []
+        },
+        "XLE": {
+            "close": 66.01000213623047,
+            "volume": 19885200.0,
+            "sma_20": 63.301053810119626,
+            "sma_50": 62.54674713134766,
+            "sma_200": 56.51587881088257,
+            "rsi_14": 66.40916636040319,
+            "macd": 0.609332152308383,
+            "macd_signal": 0.3250955063695202,
+            "macd_hist": 0.2842366459388628,
+            "bb_lower": 60.65493710131592,
+            "bb_upper": 65.94717051892333,
+            "news": [],
+            "news_items": []
+        },
+        "IBIT": {
+            "close": 46.86000061035156,
+            "volume": 21488900.0,
+            "sma_20": 46.903500175476076,
+            "sma_50": 43.29160003662109,
+            "sma_200": 41.85822496414185,
+            "rsi_14": 55.04867091783309,
+            "macd": 0.9967103168825489,
+            "macd_signal": 1.3630489314310537,
+            "macd_hist": -0.3663386145485048,
+            "bb_lower": 43.39314798400629,
+            "bb_upper": 50.41385236694586,
+            "news": [],
+            "news_items": []
+        },
+        "EWC": {
+            "close": 59.45000076293945,
+            "volume": 1162000.0,
+            "sma_20": 59.336499977111814,
+            "sma_50": 60.61260009765625,
+            "sma_200": 57.7238790512085,
+            "rsi_14": 48.98843657709222,
+            "macd": -0.5203960618589605,
+            "macd_signal": -0.5601907845619573,
+            "macd_hist": 0.039794722702996776,
+            "bb_lower": 57.75009136398138,
+            "bb_upper": 60.922908590242244,
+            "news": [],
+            "news_items": []
+        },
+        "GOOGL": {
+            "close": 352.7200012207031,
+            "volume": 19076400.0,
+            "sma_20": 346.08849945068357,
+            "sma_50": 346.07520385742185,
+            "sma_200": 339.86329910278323,
+            "rsi_14": 57.28955265992342,
+            "macd": 1.6861828152301541,
+            "macd_signal": 0.6315523295025347,
+            "macd_hist": 1.0546304857276194,
+            "bb_lower": 336.8294783361545,
+            "bb_upper": 355.3475205652126,
+            "news": [],
+            "news_items": []
+        },
+        "XEQT.TO": {
+            "close": 46.15999984741211,
+            "volume": 681600.0,
+            "sma_20": 45.6774242401123,
+            "sma_50": 45.62588623046875,
+            "sma_200": 42.94608848571777,
+            "rsi_14": 57.18291619147529,
+            "macd": 0.14884100403335054,
+            "macd_signal": 0.12028209080638733,
+            "macd_hist": 0.028558913226963217,
+            "bb_lower": 44.88811632590682,
+            "bb_upper": 46.46673215431778,
+            "news": [],
+            "news_items": []
+        },
+        "^VIX3M": {
+            "close": 17.93000030517578,
+            "volume": 0.0,
+            "sma_20": 18.223000049591064,
+            "sma_50": 18.40620002746582,
+            "sma_200": 20.421250076293944,
+            "rsi_14": 46.81595292613418,
+            "macd": -0.18662914193578217,
+            "macd_signal": -0.16494521227376435,
+            "macd_hist": -0.02168392966201782,
+            "bb_lower": 17.18617610474344,
+            "bb_upper": 19.25982399443869,
+            "news": [],
+            "news_items": []
+        },
+        "CRWD": {
+            "close": 263.010009765625,
+            "volume": 7166600.0,
+            "sma_20": 259.0900016784668,
+            "sma_50": 230.14500061035156,
+            "sma_200": 158.03287506103516,
+            "rsi_14": 56.86118284426261,
+            "macd": 12.592323431321233,
+            "macd_signal": 13.65960848997452,
+            "macd_hist": -1.0672850586532867,
+            "bb_lower": 236.3715569578752,
+            "bb_upper": 281.8084463990584,
+            "news": [],
+            "news_items": []
+        },
+        "EWA": {
+            "close": 28.670000076293945,
+            "volume": 1296200.0,
+            "sma_20": 28.53549995422363,
+            "sma_50": 29.34699996948242,
+            "sma_200": 28.477368745803833,
+            "rsi_14": 48.512936118866286,
+            "macd": -0.24138084043881491,
+            "macd_signal": -0.2952848357630666,
+            "macd_hist": 0.05390399532425166,
+            "bb_lower": 27.93073626070263,
+            "bb_upper": 29.140263647744632,
+            "news": [],
+            "news_items": []
+        },
+        "IAU": {
+            "close": 78.33999633789062,
+            "volume": 5468900.0,
+            "sma_20": 79.44300003051758,
+            "sma_50": 81.43500015258789,
+            "sma_200": 85.13689994812012,
+            "rsi_14": 43.87171487798283,
+            "macd": -1.024940054702256,
+            "macd_signal": -0.9826632246043816,
+            "macd_hist": -0.04227683009787442,
+            "bb_lower": 76.15072258283635,
+            "bb_upper": 82.73527747819881,
+            "news": [],
+            "news_items": []
+        },
+        "NFLX": {
+            "close": 70.61000061035156,
+            "volume": 24200200.0,
+            "sma_20": 71.17750091552735,
+            "sma_50": 75.30420028686524,
+            "sma_200": 83.33989986419678,
+            "rsi_14": 44.8741901085375,
+            "macd": -1.7663248267461995,
+            "macd_signal": -2.0136948016733727,
+            "macd_hist": 0.24736997492717316,
+            "bb_lower": 65.6211995797703,
+            "bb_upper": 76.73380225128439,
+            "news": [],
+            "news_items": []
+        },
+        "XLF": {
+            "close": 55.04999923706055,
+            "volume": 19685600.0,
+            "sma_20": 54.626909255981445,
+            "sma_50": 56.357837524414066,
+            "sma_200": 53.329721698760984,
+            "rsi_14": 49.981877749891986,
+            "macd": -0.5833880627336967,
+            "macd_signal": -0.7283150951163951,
+            "macd_hist": 0.14492703238269844,
+            "bb_lower": 52.83799191350621,
+            "bb_upper": 56.41582659845668,
+            "news": [],
+            "news_items": []
+        },
+        "TMF": {
+            "close": 26.079999923706055,
+            "volume": 3025100.0,
+            "sma_20": 27.159195709228516,
+            "sma_50": 29.14254940032959,
+            "sma_200": 33.78760962486267,
+            "rsi_14": 35.87245723673314,
+            "macd": -1.1453319957180206,
+            "macd_signal": -1.1654788893911812,
+            "macd_hist": 0.020146893673160582,
+            "bb_lower": 23.757067841639795,
+            "bb_upper": 30.561323576817237,
+            "news": [],
+            "news_items": []
+        },
+        "DIA": {
+            "close": 517.9099731445312,
+            "volume": 2906800.0,
+            "sma_20": 514.3942214965821,
+            "sma_50": 524.8773297119141,
+            "sma_200": 500.7455613708496,
+            "rsi_14": 51.01963110764394,
+            "macd": -2.686043703401083,
+            "macd_signal": -3.5655042537657025,
+            "macd_hist": 0.8794605503646196,
+            "bb_lower": 507.8133508233541,
+            "bb_upper": 520.9750921698101,
+            "news": [],
+            "news_items": []
+        },
+        "HYG": {
+            "close": 77.29000091552734,
+            "volume": 21847900.0,
+            "sma_20": 77.50540008544922,
+            "sma_50": 78.26834701538085,
+            "sma_200": 77.90398502349854,
+            "rsi_14": 39.068159504807696,
+            "macd": -0.3429098501999732,
+            "macd_signal": -0.370335502607564,
+            "macd_hist": 0.02742565240759076,
+            "bb_lower": 76.46870361465308,
+            "bb_upper": 78.54209655624537,
+            "news": [],
+            "news_items": []
+        },
+        "XLK": {
+            "close": 196.36000061035156,
+            "volume": 5200700.0,
+            "sma_20": 195.0770606994629,
+            "sma_50": 189.32135009765625,
+            "sma_200": 166.2919136428833,
+            "rsi_14": 55.27676433387265,
+            "macd": 3.2449632285620282,
+            "macd_signal": 3.410982116867547,
+            "macd_hist": -0.1660188883055187,
+            "bb_lower": 184.81935686316848,
+            "bb_upper": 205.3347645357573,
+            "news": [],
+            "news_items": []
+        },
+        "VGK": {
+            "close": 85.81999969482422,
+            "volume": 3786500.0,
+            "sma_20": 87.42434196472168,
+            "sma_50": 89.85046905517578,
+            "sma_200": 86.70767597198487,
+            "rsi_14": 36.48950624536361,
+            "macd": -1.158097408446963,
+            "macd_signal": -1.0545860749163278,
+            "macd_hist": -0.10351133353063524,
+            "bb_lower": 84.7361867965634,
+            "bb_upper": 90.11249713287995,
+            "news": [],
+            "news_items": []
+        },
         "PLTR": {
             "close": 209.0,
             "volume": 24308800.0,
@@ -2300,33 +2163,168 @@
             "news": [],
             "news_items": []
         },
-        "XEQT.TO": {
-            "close": 46.15999984741211,
-            "volume": 681600.0,
-            "sma_20": 45.6774242401123,
-            "sma_50": 45.62588623046875,
-            "sma_200": 42.9460884475708,
-            "rsi_14": 57.182916192027186,
-            "macd": 0.14884100402250056,
-            "macd_signal": 0.12028209079042243,
-            "macd_hist": 0.028558913232078126,
-            "bb_lower": 44.888116325912506,
-            "bb_upper": 46.4667321543121,
+        "CEG": {
+            "close": 293.8900146484375,
+            "volume": 2631100.0,
+            "sma_20": 269.5674987792969,
+            "sma_50": 274.5064886474609,
+            "sma_200": 285.11791038513184,
+            "rsi_14": 59.61531259579966,
+            "macd": 5.2236819230049605,
+            "macd_signal": 1.0366426999208678,
+            "macd_hist": 4.187039223084093,
+            "bb_lower": 238.58861878074453,
+            "bb_upper": 300.54637877784927,
             "news": [],
             "news_items": []
         },
-        "GOOGL": {
-            "close": 352.7200012207031,
-            "volume": 19076400.0,
-            "sma_20": 346.08849945068357,
-            "sma_50": 346.07520385742185,
-            "sma_200": 339.863299407959,
-            "rsi_14": 57.28955267040299,
-            "macd": 1.6861828135267842,
-            "macd_signal": 0.6315523269966773,
-            "macd_hist": 1.0546304865301068,
-            "bb_lower": 336.8294783361552,
-            "bb_upper": 355.34752056521194,
+        "TQQQ": {
+            "close": 79.61000061035156,
+            "volume": 31741200.0,
+            "sma_20": 77.99808044433594,
+            "sma_50": 74.38172882080079,
+            "sma_200": 64.21690843582154,
+            "rsi_14": 55.078980967827945,
+            "macd": 2.4307464748948746,
+            "macd_signal": 2.3944450859919284,
+            "macd_hist": 0.03630138890294621,
+            "bb_lower": 68.81434829046042,
+            "bb_upper": 87.18181259821147,
+            "news": [],
+            "news_items": []
+        },
+        "UPRO": {
+            "close": 155.4600067138672,
+            "volume": 1092600.0,
+            "sma_20": 150.56164321899413,
+            "sma_50": 150.75865936279297,
+            "sma_200": 131.21499324798583,
+            "rsi_14": 58.22022441518874,
+            "macd": 1.7278105077238877,
+            "macd_signal": 1.1037771743219973,
+            "macd_hist": 0.6240333334018904,
+            "bb_lower": 142.4417931495572,
+            "bb_upper": 158.68149328843106,
+            "news": [],
+            "news_items": []
+        },
+        "VOO": {
+            "close": 715.1300048828125,
+            "volume": 3635500.0,
+            "sma_20": 706.430078125,
+            "sma_50": 704.9258239746093,
+            "sma_200": 661.7951174926758,
+            "rsi_14": 59.80044714489113,
+            "macd": 3.562422379086911,
+            "macd_signal": 2.605790994308775,
+            "macd_hist": 0.9566313847781358,
+            "bb_lower": 692.5766058631018,
+            "bb_upper": 720.2835503868982,
+            "news": [],
+            "news_items": []
+        },
+        "VTI": {
+            "close": 381.57000732421875,
+            "volume": 1949400.0,
+            "sma_20": 377.5263900756836,
+            "sma_50": 377.7401599121094,
+            "sma_200": 354.971502532959,
+            "rsi_14": 57.81187626272577,
+            "macd": 1.4517416262930283,
+            "macd_signal": 0.9479966029816076,
+            "macd_hist": 0.5037450233114207,
+            "bb_lower": 370.7390725678346,
+            "bb_upper": 384.31370758353256,
+            "news": [],
+            "news_items": []
+        },
+        "XLC": {
+            "close": 111.44999694824219,
+            "volume": 7171200.0,
+            "sma_20": 111.94005699157715,
+            "sma_50": 111.64463973999024,
+            "sma_200": 113.0022611618042,
+            "rsi_14": 49.4088385950217,
+            "macd": -0.16925978512642814,
+            "macd_signal": -0.04840589851669171,
+            "macd_hist": -0.12085388660973642,
+            "bb_lower": 109.35501854603143,
+            "bb_upper": 114.52509543712287,
+            "news": [],
+            "news_items": []
+        },
+        "XLB": {
+            "close": 49.439998626708984,
+            "volume": 5798000.0,
+            "sma_20": 49.59428062438965,
+            "sma_50": 51.14503601074219,
+            "sma_200": 50.38206535339356,
+            "rsi_14": 44.13643402245608,
+            "macd": -0.5214872633352101,
+            "macd_signal": -0.6032356619644631,
+            "macd_hist": 0.08174839862925298,
+            "bb_lower": 48.44623162446946,
+            "bb_upper": 50.74232962430983,
+            "news": [],
+            "news_items": []
+        },
+        "AAPL": {
+            "close": 340.9700012207031,
+            "volume": 25900600.0,
+            "sma_20": 335.7835037231445,
+            "sma_50": 323.00309692382814,
+            "sma_200": 290.7490701293945,
+            "rsi_14": 60.220851451388235,
+            "macd": 3.645802704288201,
+            "macd_signal": 3.8356753718052095,
+            "macd_hist": -0.1898726675170086,
+            "bb_lower": 328.84719797554703,
+            "bb_upper": 342.719809470742,
+            "news": [],
+            "news_items": []
+        },
+        "XLU": {
+            "close": 41.630001068115234,
+            "volume": 16550400.0,
+            "sma_20": 40.41662406921387,
+            "sma_50": 41.9663468170166,
+            "sma_200": 43.76868968963623,
+            "rsi_14": 56.97783593962804,
+            "macd": -0.2479619474393573,
+            "macd_signal": -0.562533922330489,
+            "macd_hist": 0.31457197489113176,
+            "bb_lower": 38.8582921954102,
+            "bb_upper": 41.974955943017534,
+            "news": [],
+            "news_items": []
+        },
+        "AMZN": {
+            "close": 259.5299987792969,
+            "volume": 26577900.0,
+            "sma_20": 252.3190010070801,
+            "sma_50": 258.85459991455076,
+            "sma_200": 242.2884999847412,
+            "rsi_14": 55.57687470546155,
+            "macd": 0.7583885878361514,
+            "macd_signal": -0.6955165578317909,
+            "macd_hist": 1.4539051456679424,
+            "bb_lower": 242.7535477953193,
+            "bb_upper": 261.8844542188409,
+            "news": [],
+            "news_items": []
+        },
+        "META": {
+            "close": 742.9600219726562,
+            "volume": 24882400.0,
+            "sma_20": 722.9448760986328,
+            "sma_50": 643.1336083984374,
+            "sma_200": 629.5795202636718,
+            "rsi_14": 62.31064166379577,
+            "macd": 24.89984155691377,
+            "macd_signal": 29.72117508384952,
+            "macd_hist": -4.821333526935749,
+            "bb_lower": 665.4280650506644,
+            "bb_upper": 780.4616871466012,
             "news": [],
             "news_items": []
         }
