@@ -1,34 +1,34 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-10-13"
+date: "2026-10-14"
 ---
 
-Here is your Thesis Sentinel Daily Brief for 2026-10-13:
+**Daily Thesis Brief: October 14, 2026**
 
-1.  **Tripwire Status**
+**1. Tripwire Status**
 
-| Tripwire                   | Today's Reading                   | Status     |
-| :------------------------- | :-------------------------------- | :--------- |
-| Carry unwind (^VIX/^VIX3M) | VIX/VIX3M 5d median: 0.851        | CLEAR      |
-| Credit cracks (HYG/LQD)    | HYG/LQD 63d rel-mom: 0.0153       | CLEAR      |
-| Breadth break (Canary)     | Negative Canaries: EWA, TLT       | FIRED      |
-| Trend break (SPY < 200d)   | SPY: 778.10 > SMA200: 720.14      | CLEAR      |
-| Oil shock (XLE vs SPY mom) | XLE mom: 2.90, SPY mom: 3.88      | CLEAR      |
-| AI capex turn              | *No direct signal*                | WATCH/WARN |
-| Carry stress (USDJPY < 140)| Dollar strength: strong_uptrend   | CLEAR      |
+| Tripwire                   | Threshold                               | Today's Reading     | Status |
+| :------------------------- | :-------------------------------------- | :------------------ | :----- |
+| Carry unwind               | ^VIX/^VIX3M > 1.0 (backwardation)       | 0.85                | CLEAR  |
+| Credit cracks              | HYG/LQD 63d rel-mom < -2%               | 0.0147              | CLEAR  |
+| Breadth break              | canary 13612W (EWA,TLT) both negative   | EWA neg, TLT neg    | FIRED  |
+| Trend break                | SPY < 200d SMA (month-end)              | SPY > SMA200        | CLEAR  |
+| Oil shock                  | XLE momentum vs SPY sustained leadership| XLE strong uptrend, positive signal | FIRED  |
+| AI capex turn              | hyperscaler guidance any FY27 capex cut | No explicit cut     | CLEAR  |
+| Carry stress               | USDJPY rapid < 140 move                 | USD strengthening   | CLEAR  |
 
-2.  **Marker Watch**
+**2. Marker Watch**
 
-*   **BoJ June meeting**: No new news.
-*   **May-July CPI prints**: US CPI data awaited; German inflation rose sharply (headline context).
-*   **SpaceX IPO first-month performance**: No new news.
-*   **Q2 earnings hyperscaler capex guidance**: Microsoft reportedly weighs 20% cost cuts in Azure vertical. This is a warning for "AI capex turn" marker.
-*   **Hormuz**: Tanker attacks surged, two missing; US disables vessel; oil flows plummet, US official monitoring aggression. Escalating situation.
+*   **BoJ June meeting (guidance hawkish & USDJPY < 145):** No BoJ guidance news today. Dollar strengthening.
+*   **May-July CPI prints (two consecutive < 3.5%):** "Hot inflation data" reported today, raising Fed hike bets, inconsistent with CPI falling below 3.5%.
+*   **SpaceX IPO first-month performance (breaks issue price $135):** No news on SpaceX IPO performance today.
+*   **Q2 earnings hyperscaler capex guidance (any cut):** Barclays downgraded some enterprise AI stocks on spending trends, but no explicit hyperscaler FY27 capex cut announced.
+*   **Hormuz (full closure week+):** Tanker attacks and shipping risks escalating sharply in Hormuz, but "full closure week+" threshold not met.
 
-3.  **Delta**
+**3. Delta**
 
-The `canary` signal has shifted to "full_defensive" as both EWA and TLT are now exhibiting negative momentum. Geopolitical tensions around the Strait of Hormuz have significantly escalated with multiple reports of tanker attacks and US involvement. Fed officials Collins and Williams indicated a potential for one more rate hike in 2026, though Williams sees no need for a 2027 hike. A report indicates Microsoft is considering 20% cost cuts in its Azure division amidst rising AI data center spending, directly impacting the "AI capex turn" marker.
+Today's news highlights escalating geopolitical supply shock risks (Strait of Hormuz tanker attacks), leading to rising oil prices (XLE strong uptrend). Simultaneously, hot inflation data has increased Fed rate hike probabilities, pushing up Treasury yields and strengthening the USD (highest since April 2025). The canary breadth tripwire has fired, indicating both EWA and TLT are now negative.
 
-4.  **Scenario Pressure**
+**4. Scenario Pressure**
 
-Today's evidence increases pressure towards **Scenario B (Slow bear)** due to potential AI capex cuts (Microsoft news) and continued hawkish Fed commentary for 2026. There is also increased pressure on **Scenario C (Fast crash)** due to the significant escalation of the Strait of Hormuz conflict, a direct component of this risk. Note that while the canary signal is "full_defensive," the `fast_channel` (VIX term structure) remains CLEAR, indicating the fastest brake for a "Fast crash" has not yet triggered.
+Today's evidence builds pressure towards Scenario B (Slow bear) due to persistent high inflation, rising rates, and the breadth break. The escalating Hormuz attacks also increase the risk profile towards Scenario C (Fast crash), although the "full closure week+" threshold has not been met. However, the overall market regime remains "Bull Quiet" and risk sentiment is "risk_on" according to the rule-based signals, favoring Scenario A (Grind-with-violence) from a pure market action perspective. As per thesis, rules govern positioning.
