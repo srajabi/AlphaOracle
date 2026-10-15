@@ -2,21 +2,23 @@
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 10000
+    },
+    {
+        "ticker": "SPY",
+        "action": "buy",
+        "option_contract_symbol": "SPY261106P00749000",
+        "contracts": 1
+    },
+    {
+        "ticker": "QQQ",
+        "action": "buy",
+        "option_contract_symbol": "QQQ261106P00706000",
+        "contracts": 1
     },
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 15000
-    },
-    {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 10000
+        "notional_value": 2500
     }
 ]

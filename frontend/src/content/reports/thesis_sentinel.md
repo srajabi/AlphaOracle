@@ -3,32 +3,32 @@ title: Thesis Sentinel Daily Brief
 date: "2026-10-15"
 ---
 
-**Daily Thesis Brief - October 15, 2026**
+Here is your daily brief:
 
-**1. Tripwire Status**
+**1. Tripwire status**
 
-| Tripwire                   | Today's Reading (Rule-Based Signal) | Status |
-| :------------------------- | :---------------------------------- | :----- |
-| Carry unwind (^VIX/^VIX3M) | VIX/VIX3M 5d median: 0.85           | CLEAR  |
-| Credit cracks (HYG/LQD)    | HYG/LQD 63d rel-mom: 0.0095         | CLEAR  |
-| Breadth break (Canary)     | Canary state: FULL_DEFENSIVE (EWA, TLT negative) | FIRED  |
-| Trend break (SPY 200d SMA) | SPY Close (769.60) > SMA200 (721.02) | CLEAR  |
-| Oil shock (XLE leadership) | XLE trend: Strong uptrend (6.25% momentum) | FIRED  |
-| AI capex turn (FY27 cuts)  | No explicit FY27 capex cut guidance | CLEAR  |
-| Carry stress (USDJPY < 140) | UUP strong uptrend                  | CLEAR  |
+| Tripwire                   | Today's Reading                       | Status |
+| :------------------------- | :------------------------------------ | :----- |
+| Carry unwind (^VIX/^VIX3M) | `fast_channel.vix_vix3m_5d_median`: 0.85 | CLEAR  |
+| Credit cracks (HYG/LQD)    | `credit.hyg_lqd_63d_relmom`: 0.0095   | CLEAR  |
+| Breadth break (canary)     | `canary.negative_canaries`: EWA, TLT  | FIRED  |
+| Trend break (SPY < 200d SMA) | SPY Close (769.60) > 200d SMA (721.02) | CLEAR  |
+| Oil shock (XLE leadership) | XLE `signal`: "strong_positive"       | FIRED  |
+| AI capex turn (hyperscaler guidance) | Microsoft weighing 20% Azure cost cuts | FIRED  |
+| Carry stress (USDJPY < 140) | Not applicable (USDJPY data not provided) | N/A    |
 
-**2. Marker Watch**
+**2. Marker watch**
 
-*   **BoJ June meeting:** No new information today regarding BoJ guidance or yen carry unwind consequences since the June 15-16 hike.
-*   **May-July CPI prints:** Today's PPI at 6.3% (US PPI) and "Wholesale Inflation Hit Four-Year High" indicate continued high inflation, not consecutive prints below 3.5%.
-*   **SpaceX vs $135:** No new information today. The initial post-IPO performance indicated above the issue price as of 2026-06-12.
-*   **Hyperscaler capex guidance:** News reports "Gartner warns AI data center capex is \u2018unsustainable\u2019" and "Microsoft Weighs 20% Cost Cuts In Azure Vertical", suggesting potential future deceleration, but no confirmed FY27 capex cuts.
-*   **Hormuz:** News continues to highlight "Hormuz Shipping Risks" and "Iran steps up Hormuz surveillance: Attacks soar", but no report of "full closure week+".
+*   **BoJ June meeting**: No specific news on BoJ guidance today.
+*   **May-July CPI prints**: "Hot inflation data", "Soaring Energy Prices Push Inflation Higher", "Wholesale inflation hits levels not seen since 2022", "Hot PPI" all reported, indicating CPI is above 3.5%.
+*   **SpaceX IPO first-month performance**: No news on SpaceX IPO performance or the $135 price line.
+*   **Q2 earnings hyperscaler capex guidance**: News reports "Gartner warns AI data center capex is \u2018unsustainable\u2019" and "Microsoft Weighs 20% Cost Cuts In Azure Vertical amid Soaring AI Data Center Spending".
+*   **Hormuz: full closure week+**: Multiple headlines report ongoing tanker attacks and shipping risks in Hormuz, though none confirm full closure for a week or more; "Gulf Oil Is Still Flowing".
 
 **3. Delta**
 
-The `canary` signal shifted to `full_defensive` today, with both EWA and TLT showing negative momentum. This is a material change from a neutral or risk-on stance. Separately, the Intermarket Regime signal officially moved to "Transitional" and "risk cautious," despite the general market context stating "Bull Quiet." The rule-based signal (Transitional) governs. PPI data confirmed "hot inflation," reinforcing a sticky CPI environment. Oil prices are mixed but geopolitical risks in Hormuz persist, leading to XLE showing sustained leadership, which marks the oil shock tripwire as fired.
+Three tripwires are currently FIRED: Breadth break (Canary indicating full defensive posture), Oil shock (XLE sustained leadership), and AI capex turn (Microsoft weighing cost cuts, echoing Gartner's warnings on unsustainable capex). The market regime remains Transitional with cautious risk sentiment, a strong dollar, and mixed commodity signals. Inflation data continues to be reported as hot.
 
-**4. Scenario Pressure**
+**4. Scenario pressure**
 
-Today's evidence, particularly the `canary` signal firing to `full_defensive` and persistent hot inflation data (PPI), exerts pressure towards **Scenario B (Slow bear)**. The ongoing geopolitical energy risks (Hormuz) and early warnings about AI capex sustainability also align with a more challenging, grind-with-violence, or slow bear environment, supporting a cautious outlook without altering official scenario weights.
+Today's evidence, particularly the firing of the "Breadth break" and "AI capex turn" tripwires alongside persistent hot inflation and geopolitical oil risks, indicates increasing pressure towards **Scenario B (Slow bear)**. The ongoing, but not fully escalated, Hormuz tensions continue to support elements of **Scenario A (Grind-with-violence)**. Rules govern positioning.
