@@ -2,31 +2,26 @@
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 7000
+        "notional_value": 20000
     },
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 7000
-    },
-    {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 5000
+        "notional_value": 20000
     },
     {
         "ticker": "XLP",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 15000
     },
     {
-        "ticker": "SCHD",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 10000
     },
     {
-        "ticker": "QUAL",
+        "ticker": "UUP",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 10000
     }
 ]
