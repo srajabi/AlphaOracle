@@ -1,4 +1,4 @@
-# AlphaOracle Daily - 2026-10-22
+# AlphaOracle Daily - 2026-10-23
 
 ## Signals (rules govern; everything below is commentary)
 
@@ -7,85 +7,105 @@
 | Signal | State | Detail |
 |---|---|---|
 | Trend (monthly 200dma) | risk_on | 6.69% vs SMA, as of 2026-09-30 |
-| VIX term structure | clear | ratio 0.912 |
-| Credit (HYG/LQD 63d) | clear | 0.0022 |
-| Canary breadth | half_defensive | negative: ['TLT'] |
+| VIX term structure | clear | ratio 0.941 |
+| Credit (HYG/LQD 63d) | clear | -0.0067 |
+| Canary breadth | risk_on | negative: [] |
 
 ## Thesis Sentinel
 
-Here is your daily Thesis Sentinel brief for 2026-10-22:
+Here is your daily Thesis Sentinel brief:
 
-**1. Tripwire status**
+**1. Tripwire Status**
 
-| Tripwire                   | Signal reading            | Status  |
-| :------------------------- | :------------------------ | :------ |
-| Carry unwind (^VIX/^VIX3M) | 0.89                      | CLEAR   |
-| Credit cracks (HYG/LQD)    | 0.0022                    | CLEAR   |
-| Breadth break (Canary)     | EWA: 0.0148, TLT: -0.0241 | CLEAR   |
-| Trend break (SPY < 200d)   | SPY: 773.09 > SMA200: 723.23 | CLEAR   |
-| Oil shock (XLE mom vs SPY) | strong_positive           | FIRED   |
-| AI capex turn              | No new FY27 capex cuts reported | CLEAR   |
-| Carry stress (USDJPY)      | Data unavailable          | UNKNOWN |
+| Tripwire             | Signal Reading                                                                                                                                                                                                                            | Status    |
+| :------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------- |
+| Carry unwind         | VIX/VIX3M ratio: 0.946 (below 1.0 threshold). `fast_channel` state: CLEAR.                                                                                                                                                                | CLEAR     |
+| Credit cracks        | HYG/LQD 63d rel-mom: -0.0067 (above -2% threshold). `credit` state: CLEAR.                                                                                                                                                                | CLEAR     |
+| Breadth break        | Canary momentum (EWA: 0.0212, TLT: 0.0041). No `negative_canaries` reported. `canary` state: RISK_ON.                                                                                                                                     | CLEAR     |
+| Trend break          | SPY close: 763.96 vs. SPY 200d SMA: 723.62 (SPY > SMA200). `slow_channel` state: RISK_ON. (Note: Not month-end close).                                                                                                                     | CLEAR     |
+| Oil shock            | XLE `momentum`: 7.939 (`strong_uptrend`, `strong_positive`). Multiple headlines confirm "Oil Prices Jump After Houthi Strikes and Iranian Shipping Attacks" and "7 oil tankers attacked in the Strait of Hormuz". Sustained leadership confirmed. | FIRED     |
+| AI capex turn        | BofA forecasts data center spending to more than double to $2.1 trillion by 2028, implying continued growth, not FY27 capex cuts.                                                                                                         | CLEAR     |
+| Carry stress         | USDJPY data not available. UUP (`dollar_strength`) trend: UPTREND.                                                                                                                                                                        | CLEAR     |
 
-**2. Marker watch**
+**2. Marker Watch**
 
-*   **BoJ June meeting**: No new guidance news reported today.
-*   **May-July CPI prints**: No new CPI data reported today.
-*   **SpaceX IPO first-month performance**: No new performance data relative to $135 issue price reported today.
-*   **Q2 earnings hyperscaler capex guidance**: No explicit FY27 capex guidance cuts reported today.
-*   **Hormuz**: Multiple headlines confirm ongoing vessel attacks in the Strait of Hormuz and resulting oil price jumps. Not yet a "full closure week+".
+*   **BoJ guidance**: No explicit news today regarding BoJ guidance or its impact on Yen carry post-June 2026 hike.
+*   **CPI prints**: Federal Reserve's October Inflation Forecast is "terrible news" (Yahoo Finance) and "hot inflation data" is noted by WSJ. No new official CPI print below 3.5%.
+*   **SpaceX vs $135**: No current news on SpaceX performance relative to its $135 IPO price (marker for July 2026 is past).
+*   **Hyperscaler capex**: BofA forecasts data center spending to more than double by 2028, indicating no FY27 capex cuts.
+*   **Hormuz**: Multiple reports of Houthi/Iranian attacks on 7 oil tankers in the Strait of Hormuz, driving oil prices up.
 
 **3. Delta**
 
-*   **Oil Shock Tripwire FIRED**: Geopolitical tensions in the Strait of Hormuz have escalated, with several reports of shipping attacks and oil price surges, triggering this tripwire.
-*   **Market Regime Confirmation**: Rule-based signals confirm a "Transitional" market regime with "cautious" risk sentiment and a "strong dollar," aligning with our defensive posture. (Note: Market data context reports "Bull Quiet" regime, but rule-based signals are authoritative for positioning.)
-*   **Recession Signals Rising**: A cluster of news indicates increasing economic slowdown and unemployment risks (e.g., "Growth to Moderate, Unemployment to Edge Higher").
-*   **AI Sentiment Test**: Nasdaq and broader tech markets are facing "a major AI sentiment test" amid investor concerns over AI spending returns, as per news headlines.
+The `Oil shock` tripwire has FIRED today due to verified attacks on oil tankers in the Strait of Hormuz, directly impacting geopolitical risk and commodity prices. The rule-based market regime is `Transitional` (low confidence), contradicting the "Bull Quiet" macro news regime label; the rule-based `Transitional` governs. Risk sentiment is `cautious` with `VIX` rising, while the dollar is strengthening and rates are declining. Key tech/semiconductor names (e.g., QQQ, NVDA, AMD, TSM, INTC) exhibit notable weakness in technicals (below SMAs, negative MACD). Fed's "terrible news" October inflation forecast underlines persistent inflation concerns.
 
-**4. Scenario pressure**
+**4. Scenario Pressure**
 
-*   **Scenario A (Grind-with-violence)**: Elevated pressure due to persistent geopolitical conflict (Hormuz attacks) and confirmed cautious risk sentiment, suggesting continued market choppiness.
-*   **Scenario B (Slow bear)**: Increased pressure from growing recession signals in the news and investor worries regarding the sustainability of AI-driven returns, though no direct capex cuts have been reported.
-*   **Scenario C (Fast crash)**: Geopolitical events keep this tail risk present, but key quantitative tripwires (VIX/VIX3M) are not yet triggered.
+Today's evidence primarily reinforces **Scenario A (Grind-with-violence)** due to the explicit "war headlines" manifesting as the `Oil shock` tripwire firing and contributing to expected "5-10% air pockets". The `Transitional` (low confidence) regime with `cautious` risk sentiment and mixed commodity signals also aligns with a volatile, range-bound environment. Simultaneously, the "terrible news" inflation forecast and weakening tech technicals (despite no official capex cuts) add pressure toward **Scenario B (Slow bear)**, hinting at longer-term earnings or returns-on-capex questions. While a key element of `Scenario C (Fast crash)` (Hormuz attacks) is active, the absence of simultaneous BoJ shock and clear VIX-term-structure backwardation means a full `Fast crash` trigger is not yet signaled by rules.
 
 ## Portfolio Manager Synthesis
 
-# Lead Portfolio Manager Report: 2026-10-22
+As the Lead Portfolio Manager, I've thoroughly reviewed the market data, options insights, current portfolio state (cash only), watchlist, rule-based signals, and the overarching investment thesis. I've also synthesized the reports from the Risk Manager and Technical Analyst, addressing key areas of agreement and divergence.
 
-**Market Overview & Thesis Alignment:**
-Today's market presents a complex and increasingly challenging landscape, strongly aligning with our "Defensive-leaning, gap-risk aware" macroeconomic posture. While the broader "Slow Channel" remains `risk_on`, shorter-term signals are dissonant and cautious. The market regime is officially deemed `Transitional` with `low confidence`, driven by `cautious` risk sentiment (VIX rising), a `strong dollar` (headwind for international assets and most commodities), `rates declining` (though long bonds themselves are suspect as hedges), and `commodities mixed` (strong energy, weak precious metals).
+**Overall Market Posture:**
+The authoritative `RULE_BASED_SIGNAL_STATES_TODAY` indicates a "Transitional" regime with "low confidence" and "cautious" risk sentiment. This is a critical override to the "Bull Quiet" notation in the raw `MARKET_DATA`. The macro thesis dictates a "Defensive-leaning, gap-risk aware" posture, which is strongly supported by the rising VIX, ongoing US-Iran conflict, persistent inflation (May CPI 4.2%), the "cornered" Fed, and the looming "AI capex turn" concerns.
 
-The primary drivers of this caution are:
-1.  **Escalating Geopolitical Risks:** The "Active US-Iran war" thesis is being actively confirmed with multiple headlines detailing "Houthi Strikes and Iranian Shipping Attacks" near the Strait of Hormuz, pushing oil prices to a five-month high. Iran's threats of a "wider response" introduce significant supply shock and inflationary risks, directly triggering our "Oil shock" tripwire (XLE sustained leadership is observed).
-2.  **Persistent Trade Policy Tensions:** The "Endless Chip War" continues to escalate with "Tokyo Electron Increasing Lobbying on Semiconductor Export Controls" and "China Proposes Expanded Export Controls." This fosters `risk_off` sentiment, particularly for the semiconductor sector, validating our concerns about "China-Taiwan tension" and "trade policy shock" as defined by impact tags.
-3.  **Deteriorating AI Sentiment:** The Nasdaq's sharp decline, fueled by investor worries that "massive AI spending won't pay off," directly addresses the "AI capex cycle" danger identified in our thesis. This suggests a shift from euphoria to a "RETURNS-ON-CAPEX question," pushing us closer to the "Slow bear" scenario.
-4.  **Emerging Recession Signals:** Multiple news items highlight "Growth to Moderate, Unemployment to Edge Higher," reinforcing the narrative of an economic slowdown. Crucially, our "Canary" signal is `half_defensive` due to negative momentum in TLT, underscoring the "TLT-as-hedge remains suspect" tenet of our thesis, even as broader "rates declining" signals emerge. The Fed remains "cornered," unable to easily cut into inflation or hike into a war economy.
+While the "slow_channel" and "canary" signals are currently "risk_on," and credit markets remain "clear," the confluence of geopolitical, inflationary, and late-cycle AI capex risks demands immediate caution. The "Grind-with-violence" (Scenario A) remains the most probable 12-month scenario, but the significant probabilities of a "Slow bear" (Scenario B, 30%) or "Fast crash" (Scenario C, 20%) necessitate a proactive defensive stance. The prompt's emphasis on "gap-risk aware" is paramount.
 
-**Inter-Report Analysis & Disagreements:**
-*   **Regime Classification:** I will heavily weigh the `RULE-BASED SIGNAL STATES TODAY` (Transitional, Cautious) over the `market_data` header ("Bull Quiet"). The granular signals and escalating news better reflect a challenging environment.
-*   **TLT as a Hedge:** Both Risk Manager and Macro Strategist inputs correctly highlight the "TLT-as-hedge remains suspect" due to its `negative canary` status, despite the `real_rates` indicator showing "rates declining." This implies that bond market concerns about inflation or real rates supersede the technical movement, making TLT a less reliable defensive asset in this specific environment.
-*   **AI Sector:** Both analysts concur on the high risk in the AI/Semiconductor space due to geopolitical tensions and deteriorating sentiment. The technical analyst's detailed breakdown of individual semiconductor stocks (AMD, NVDA, TSM, INTC, MU, KLAC) showing significant corrections and bearish momentum provides strong confirmation to avoid new long positions.
-*   **Cash-Secured Puts:** The Risk Manager rightly cautions against selling CSPs on individual tech/semiconductor names due to high assignment risk in a rapidly deteriorating market. Given our current 100% cash position and defensive posture, introducing equity exposure via CSPs at this juncture is inappropriate.
+**Key Agreements & Debates:**
 
-**Strategic Positioning & Actions:**
-Given the confluence of rising geopolitical tension, a clear shift in AI sentiment, and emerging recession signals, alongside our explicit "defensive-leaning, gap-risk aware" posture, preserving capital is paramount. Our current substantial cash holding is a strong starting point. We will make highly selective allocations to inflation hedges and defensive sectors. We will avoid speculative or highly exposed assets.
+1.  **Cash Allocation:** Both the Risk Manager and Macro Strategist strongly advocate for increasing cash holdings. Given our starting portfolio is entirely cash, this means maintaining a substantial cash reserve and being highly selective with new deployments. **High conviction: Maintain significant cash.**
+2.  **Broad Market & Leveraged ETFs:** The Risk Manager recommends trimming broad market ETFs (SPY, QQQ, VOO, VTI) and liquidating all leveraged ETFs (UPRO, SSO, TQQQ). The Technical Analyst confirms significant weakness and "extreme downtrend" or "failed setup" for many of these. **High conviction: Avoid new long positions in broad market ETFs and definitely avoid leveraged ETFs.**
+3.  **Semiconductors & AI-related Growth Tech:** Both analysts agree on severe technical weakness across key semiconductor and AI-leveraged tech stocks (TSM, NVDA, AMD, INTC, MU, KLAC, AVGO, GOOGL, META, WDC, ORCL, NBIS, CRWD, MSFT, STX, XLC, XLK). The Macro Strategist and Risk Manager highlight the compounding geopolitical risks ("chip war," China-Taiwan tensions) and potential "AI capex turn." While the Technical Analyst notes some "mean reversion bounce" potential from oversold conditions, the fundamental and macro headwinds outweigh tactical bounces for capital deployment. **High conviction: Avoid new long positions in these highly exposed and technically weak sectors/tickers.**
+4.  **Energy (XLE):** The ongoing US-Iran conflict and resulting oil price shock make Energy a strong inflation and geopolitical hedge. XLE shows a "strong uptrend" with positive momentum across all reports. **High conviction: Initiate a long position in XLE.**
+5.  **Gold (GLD, IAU):** This is a key divergence. The Investment Thesis generally favors gold as an inflation hedge in a "Trump factor" regime. However, all three analyst inputs note GLD and IAU are in "extreme downtrends" with "unexpected weakness," possibly due to margin calls and dollar strength. The "adaptive defense" principle in our thesis allows for adjusting positions based on current market dynamics. **Medium conviction: Avoid new long positions in GLD/IAU, prioritizing capital preservation over a theoretical long-term hedge that is currently underperforming.**
+6.  **Defensive Sectors (XLU, XLP, XLV):** All reports identify these sectors as showing strength and providing stability. XLU, in particular, aligns with recession signals and AI data center demand. **High conviction: Initiate long positions in XLU, XLP, and XLV for defensive allocation.**
+7.  **Bonds (TLT, TMF):** The Investment Thesis explicitly cautions against relying on TLT as a primary hedge due to the 2022 lesson in an inflationary environment. While TLT shows a bullish technical breakout currently, the overall macro context of persistent inflation and a "cornered" Fed means avoiding long-duration bonds as a primary defensive asset remains prudent. The "clear" credit signal from HYG/LQD is a positive, but not a reason to commit to long-duration bonds. **High conviction: Avoid new long positions in TLT/TMF.**
+8.  **Options Strategy:** The fund is currently equity-only for execution. While protective puts were suggested, I will adhere to the instruction to not emit options trades in the final JSON. The recommendation to avoid new cash-secured puts is well-taken given the current volatility and downside risk.
 
-| Action (Buy/Sell/Hold) | Ticker/Asset | Conviction Level (High/Medium/Low) | Timeframe | Justification                                                                                                                                                                                                                                                                                                            |
-| :--------------------- | :----------- | :-------------------------------- | :-------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Buy                    | XLE          | High                              | Short-Medium | Direct beneficiary of escalating US-Iran conflict and Strait of Hormuz tensions, leading to oil-led inflation and supply shocks. Exhibiting "strong_uptrend" and "strong_positive" momentum (technical + intermarket). Aligns with investment thesis tilt towards energy as an inflation hedge.                  |
-| Buy                    | GLD          | High                              | Short-Medium | Safe-haven asset amidst geopolitical uncertainty and rising inflation expectations (4.2% CPI + oil spikes). Favored by our thesis in an inflation-tolerant, negative real-rate drift environment. Technicals indicate a potential short-term bounce within a broader downtrend, offering a tactical entry point. |
-| Buy                    | XLU          | Medium                            | Medium    | Defensive sector play. Recession signals and a `cautious` risk environment support allocation to utilities. XLU shows a strong "mean reversion bounce" with bullish MACD and is above its 20-day and 50-day SMAs, indicating relative strength.                                                                 |
-| Hold                   | CASH         | High                              | Ongoing   | The overwhelmingly cautious macro and geopolitical backdrop necessitates a significant cash buffer to preserve capital and maintain optionality. Our `half_defensive` canary signal reinforces prudence.                                                                                              |
-| Avoid Buying           | QQQ          | High                              | Short-Medium | Tech-heavy index is experiencing a "Correction / Failed Trend Continuation" with strong bearish MACD. "Nasdaq dives more than 750 points" due to deteriorating AI sentiment. Unsuitable for new long positions in a `cautious` regime.                                                                 |
-| Avoid Buying           | NVDA         | High                              | Short-Medium | Semiconductor leader, highly exposed to "China-Taiwan tension" and "trade policy shock" risks. Technicals show "Correction / Failed Trend Continuation" with strong bearish MACD. Declining AI sentiment directly impacts future revenue expectations.                                                    |
-| Avoid Buying           | AMD          | High                              | Short-Medium | Semiconductor competitor, similarly exposed to trade policy and AI sentiment risks. Technicals show "Significant Correction within Uptrend" with very strong bearish MACD.                                                                                                                                 |
-| Avoid Buying           | TSM          | High                              | Short-Medium | Foundry leader, direct exposure to "China-Taiwan tension" and export control risks. Technicals show "Correction within Uptrend" with strong bearish MACD.                                                                                                                                             |
-| Avoid Buying           | INTC         | High                              | Short-Medium | Semiconductor stock, exposed to trade policy risks and exhibiting "Strong Downtrend Continuation" with bearish MACD and nearing oversold RSI.                                                                                                                                                        |
-| Avoid Buying           | Leveraged ETFs | High                              | Short-Medium | (`TQQQ`, `UPRO`, `TMF`). Our "Defensive-leaning, gap-risk aware" posture and the current `Transitional`, `cautious` regime make these inherently dangerous due to amplified volatility and potential gap losses.                                                                                         |
-| Avoid Selling Puts     | All          | High                              | Short-Medium | Given the current 100% cash position and the high probability of adverse market moves (Grind-with-violence, Slow Bear), selling cash-secured puts, even OTM, introduces unnecessary assignment risk in a period demanding capital preservation.                                                         |
+---
 
-**Execution Plan:**
-We will tactically deploy approximately 40% of our current cash into core defensive and inflation-hedging assets, retaining significant liquidity for future opportunities or further de-risking if conditions worsen.
+### **Actionable Plan**
+
+Given the current cash position and the strong mandate for a "Defensive-leaning, gap-risk aware" approach in a "Transitional" market regime with "cautious" risk sentiment, I will deploy approximately 50-60% of the available cash into high-conviction defensive and inflation-hedging assets, retaining a significant cash buffer for liquidity and future opportunities.
+
+| Action (Buy/Sell/Hold) | Ticker/Asset | Conviction Level (High/Medium/Low) | Timeframe | Justification |
+| :--------------------- | :----------- | :--------------------------------- | :-------- | :------------ |
+| **BUY**                | **XLE**      | High                               | Short-Mid | Strong hedge against geopolitical supply shock and inflation from ongoing US-Iran conflict; confirmed strong uptrend. |
+| **BUY**                | **XLU**      | High                               | Short-Mid | Defensive sector showing strong technicals and benefiting from AI data center power demand; aligns with recession signals. |
+| **BUY**                | **XLP**      | High                               | Short-Mid | Classic defensive sector demonstrating strong technicals, providing stability in a cautious market. |
+| **BUY**                | **XLV**      | High                               | Short-Mid | Defensive Healthcare sector with strong technicals, offering stability and broad diversification. |
+| **AVOID LONG**         | UPRO         | High                               | Short     | Leveraged ETF that amplifies downside risk; contradicts defensive posture in a volatile, cautious regime. |
+| **AVOID LONG**         | SSO          | High                               | Short     | Leveraged ETF that amplifies downside risk; contradicts defensive posture in a volatile, cautious regime. |
+| **AVOID LONG**         | TQQQ         | High                               | Short     | Leveraged ETF that amplifies downside risk; contradicts defensive posture in a volatile, cautious regime. |
+| **AVOID LONG**         | TSM          | High                               | Short-Mid | Direct exposure to "chip war" and China-Taiwan tensions; severe technical weakness and negative macro outlook. |
+| **AVOID LONG**         | NVDA         | High                               | Short-Mid | Vulnerable to "chip war" and potential AI capex deceleration; current technical weakness indicates risk. |
+| **AVOID LONG**         | AMD          | High                               | Short-Mid | Vulnerable to "chip war" and potential AI capex deceleration; current technical weakness indicates risk. |
+| **AVOID LONG**         | INTC         | High                               | Short-Mid | Vulnerable to "chip war" and potential AI capex deceleration; current technical weakness indicates risk. |
+| **AVOID LONG**         | MU           | High                               | Short-Mid | AI memory exposure but facing severe technical weakness and broader semiconductor headwinds. |
+| **AVOID LONG**         | KLAC         | High                               | Short-Mid | Semiconductor equipment player; extreme technical weakness, vulnerable to "chip war." |
+| **AVOID LONG**         | AVGO         | High                               | Short-Mid | AI custom silicon player; severe technical weakness and broader semiconductor headwinds. |
+| **AVOID LONG**         | GOOGL        | High                               | Short-Mid | Large-cap tech showing significant technical breakdown; vulnerable to risk-off in tech. |
+| **AVOID LONG**         | META         | High                               | Short-Mid | Large-cap tech showing significant technical breakdown; vulnerable to risk-off in tech. |
+| **AVOID LONG**         | WDC          | High                               | Short-Mid | Storage/memory cycle stock with severe technical weakness and broader tech headwinds. |
+| **AVOID LONG**         | ORCL         | High                               | Short-Mid | Cloud/database tech showing technical weakness; vulnerable to risk-off in tech. |
+| **AVOID LONG**         | NBIS         | High                               | Short-Mid | AI infrastructure play but showing extreme technical weakness. |
+| **AVOID LONG**         | CRWD         | High                               | Short-Mid | AI-driven security showing strong bearish momentum despite long-term thesis. |
+| **AVOID LONG**         | MSFT         | High                               | Short-Mid | Large-cap tech showing loss of momentum and bearish MACD crossover; warrants caution. |
+| **AVOID LONG**         | STX          | High                               | Short-Mid | Storage player with extreme technical weakness and broader tech headwinds. |
+| **AVOID LONG**         | XLC          | High                               | Short-Mid | Communication Services ETF showing strong downtrend and persistent weakness. |
+| **AVOID LONG**         | XLK          | High                               | Short-Mid | Technology Sector ETF showing strong downtrend and persistent weakness. |
+| **AVOID LONG**         | SPY          | High                               | Short-Mid | Broad market ETF; cautious sentiment and macro headwinds suggest reducing exposure. |
+| **AVOID LONG**         | QQQ          | High                               | Short-Mid | Broad tech ETF; cautious sentiment and macro headwinds suggest reducing exposure. |
+| **AVOID LONG**         | VOO          | High                               | Short-Mid | Broad market ETF; cautious sentiment and macro headwinds suggest reducing exposure. |
+| **AVOID LONG**         | VTI          | High                               | Short-Mid | Broad market ETF; cautious sentiment and macro headwinds suggest reducing exposure. |
+| **AVOID LONG**         | GLD          | Medium                             | Short     | Gold showing an "extreme downtrend" despite inflation concerns; adaptive defense prioritizes capital preservation. |
+| **AVOID LONG**         | IAU          | Medium                             | Short     | Gold showing an "extreme downtrend" despite inflation concerns; adaptive defense prioritizes capital preservation. |
+| **AVOID LONG**         | TLT          | High                               | Short-Mid | Long-duration bonds are a suspect hedge in this inflationary regime as per thesis; avoid new positions. |
+| **AVOID LONG**         | TMF          | High                               | Short-Mid | Leveraged bond ETF; high risk and suspect hedge in this inflationary regime. |
+| **HOLD CASH**          | CASH         | High                               | Short-Mid | Maintain significant liquidity as primary defensive posture in a "gap-risk aware" environment. |
+
+---
 
 ## Paper-Account Attribution
 
@@ -94,7 +114,7 @@ We will tactically deploy approximately 40% of our current cash into core defens
 | dev | insufficient_history |
 | prod_1 | insufficient_history |
 | prod_2 | on_script |
-| prod_3 | on_script |
+| prod_3 | watch |
 | prod_4 | on_script |
 | prod_5 | insufficient_history |
 
