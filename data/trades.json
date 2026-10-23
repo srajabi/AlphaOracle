@@ -2,21 +2,21 @@
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 20000
+    },
+    {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 20000
     },
     {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 12000
+        "notional_value": 20000
     },
     {
         "ticker": "XLP",
         "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 10000
+        "notional_value": 20000
     }
 ]
