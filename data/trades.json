@@ -1,10 +1,5 @@
 [
     {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 10000
-    },
-    {
         "ticker": "XLU",
         "action": "buy",
         "notional_value": 10000
@@ -20,9 +15,19 @@
         "notional_value": 10000
     },
     {
-        "ticker": "GLD",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 12000
+        "notional_value": 10000
+    },
+    {
+        "ticker": "DIA",
+        "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "SCHD",
+        "action": "buy",
+        "notional_value": 10000
     },
     {
         "ticker": "TLT",
@@ -33,15 +38,5 @@
         "ticker": "AAPL",
         "action": "buy",
         "notional_value": 10000
-    },
-    {
-        "ticker": "MSFT",
-        "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "CRWD",
-        "action": "buy",
-        "notional_value": 5184.98
     }
 ]
