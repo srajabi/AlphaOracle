@@ -1,4 +1,4 @@
-# AlphaOracle Daily - 2026-10-27
+# AlphaOracle Daily - 2026-10-28
 
 ## Signals (rules govern; everything below is commentary)
 
