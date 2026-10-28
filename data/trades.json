@@ -1,42 +1,22 @@
 [
     {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 10000
-    },
-    {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 25000
     },
     {
-        "ticker": "DIA",
+        "ticker": "CEG",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 20000
     },
     {
-        "ticker": "SCHD",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 25000
     },
     {
-        "ticker": "TLT",
+        "ticker": "EWA",
         "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "AAPL",
-        "action": "buy",
-        "notional_value": 10000
+        "notional_value": 15000
     }
 ]
