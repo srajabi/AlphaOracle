@@ -1,37 +1,42 @@
 [
     {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 15000
-    },
-    {
-        "ticker": "GLD",
+        "ticker": "SPY",
         "action": "buy",
         "notional_value": 15000
     },
     {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 12000
+        "notional_value": 10000
     },
     {
-        "ticker": "XLP",
+        "ticker": "XLE",
         "action": "buy",
-        "notional_value": 12000
+        "notional_value": 10000
     },
     {
-        "ticker": "XLB",
+        "ticker": "GLD",
         "action": "buy",
         "notional_value": 10000
     },
     {
         "ticker": "CRWD",
         "action": "buy",
-        "notional_value": 13000
+        "notional_value": 7500
     },
     {
-        "ticker": "PLTR",
+        "ticker": "ORCL",
         "action": "buy",
-        "notional_value": 10184.98
+        "notional_value": 7500
+    },
+    {
+        "ticker": "XLP",
+        "action": "buy",
+        "notional_value": 7500
+    },
+    {
+        "ticker": "EWA",
+        "action": "buy",
+        "notional_value": 5000
     }
 ]
