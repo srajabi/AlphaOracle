@@ -1,39 +1,12 @@
 {
-  "last_updated_utc": "2026-10-27T00:03:34.182878+00:00",
+  "last_updated_utc": "2026-10-29T00:17:46.215133+00:00",
   "error": "",
   "results": [
     {
       "trade": {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 10000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 10000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 10000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 10000
+        "notional_value": 15000
       },
       "status": "skipped",
       "reason": "No available buying power."
@@ -42,6 +15,15 @@
       "trade": {
         "ticker": "GLD",
         "action": "buy",
+        "notional_value": 15000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLU",
+        "action": "buy",
         "notional_value": 12000
       },
       "status": "skipped",
@@ -49,25 +31,16 @@
     },
     {
       "trade": {
-        "ticker": "TLT",
+        "ticker": "XLP",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 12000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "AAPL",
-        "action": "buy",
-        "notional_value": 10000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "MSFT",
+        "ticker": "XLB",
         "action": "buy",
         "notional_value": 10000
       },
@@ -78,7 +51,16 @@
       "trade": {
         "ticker": "CRWD",
         "action": "buy",
-        "notional_value": 5184.98
+        "notional_value": 13000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "PLTR",
+        "action": "buy",
+        "notional_value": 10184.98
       },
       "status": "skipped",
       "reason": "No available buying power."
