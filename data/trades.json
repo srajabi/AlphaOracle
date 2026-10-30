@@ -1,27 +1,27 @@
 [
     {
-        "ticker": "SPY",
-        "action": "buy",
-        "notional_value": 30000
-    },
-    {
-        "ticker": "QQQ",
-        "action": "buy",
-        "notional_value": 25000
-    },
-    {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 20000
     },
     {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 20000
     },
     {
-        "ticker": "GLD",
+        "ticker": "XLF",
         "action": "buy",
-        "notional_value": 7000
+        "notional_value": 20000
+    },
+    {
+        "ticker": "XLP",
+        "action": "buy",
+        "notional_value": 13000
+    },
+    {
+        "ticker": "XLV",
+        "action": "buy",
+        "notional_value": 13000
     }
 ]

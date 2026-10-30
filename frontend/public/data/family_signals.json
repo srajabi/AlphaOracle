@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-30T00:08:50.018620+00:00",
+  "generated_at_utc": "2026-10-30T19:47:53.308297+00:00",
   "ips": "claude/ips_case_study.md",
   "signals": {
     "slow_channel": {
@@ -16,14 +16,14 @@
     },
     "credit": {
       "state": "clear",
-      "hyg_lqd_63d_relmom": 0.0002
+      "hyg_lqd_63d_relmom": -0.0029
     },
     "canary": {
       "state": "risk_on",
       "negative_canaries": [],
       "momentum": {
-        "EWA": 0.0367,
-        "TLT": 0.0153
+        "EWA": 0.0393,
+        "TLT": 0.0267
       }
     }
   },

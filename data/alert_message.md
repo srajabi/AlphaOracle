@@ -1,6 +1,6 @@
-# [INFO] AlphaOracle signal change - 2026-10-23 18:47 UTC
+# AlphaOracle heartbeat - 2026-10-30 19:47 UTC
 
-- **Canary breadth**: `half_defensive` -> `risk_on`
+No signal changes in the last 7 days. This message exists so that silence stays meaningful.
 
 ## Current state
 
@@ -14,4 +14,4 @@
 | VIX term structure | `clear` |
 | Trend (monthly 200dma) | `risk_on` |
 
-Signals generated 2026-10-23T18:47:50.215153+00:00. Paper trading research, not advice.
+Signals generated 2026-10-30T19:47:53.308297+00:00. Paper trading research, not advice.
