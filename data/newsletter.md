@@ -1,4 +1,4 @@
-# AlphaOracle Daily - 2026-10-31
+# AlphaOracle Daily - 2026-11-02
 
 ## Signals (rules govern; everything below is commentary)
 
@@ -8,7 +8,7 @@
 |---|---|---|
 | Trend (monthly 200dma) | risk_on | 6.69% vs SMA, as of 2026-09-30 |
 | VIX term structure | clear | ratio 0.895 |
-| Credit (HYG/LQD 63d) | clear | -0.0029 |
+| Credit (HYG/LQD 63d) | clear | -0.005 |
 | Canary breadth | risk_on | negative: [] |
 
 ## Thesis Sentinel
