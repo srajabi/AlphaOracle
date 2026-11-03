@@ -1,32 +1,58 @@
 [
     {
-        "ticker": "VOO",
-        "action": "buy",
-        "notional_value": 15000
+        "ticker": "SPY",
+        "action": "buy_option",
+        "option_type": "put",
+        "expiration": "2026-11-27",
+        "strike": 730.0,
+        "contracts": 1
     },
     {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 15000
-    },
-    {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 15000
-    },
-    {
-        "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 10000
+        "ticker": "QQQ",
+        "action": "buy_option",
+        "option_type": "put",
+        "expiration": "2026-11-27",
+        "strike": 665.0,
+        "contracts": 1
     },
     {
         "ticker": "XLE",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 17091.99
     },
     {
-        "ticker": "GLD",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 8545.99
+    },
+    {
+        "ticker": "XLP",
+        "action": "buy",
+        "notional_value": 8545.99
+    },
+    {
+        "ticker": "XLV",
+        "action": "buy",
+        "notional_value": 8545.99
+    },
+    {
+        "ticker": "TLT",
+        "action": "buy",
+        "notional_value": 12818.99
+    },
+    {
+        "ticker": "EWA",
+        "action": "buy",
+        "notional_value": 4272.99
+    },
+    {
+        "ticker": "EWC",
+        "action": "buy",
+        "notional_value": 4272.99
+    },
+    {
+        "ticker": "VGK",
+        "action": "buy",
+        "notional_value": 4272.99
     }
 ]
