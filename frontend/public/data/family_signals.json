@@ -1,29 +1,29 @@
 {
-  "generated_at_utc": "2026-11-02T22:57:37.758438+00:00",
+  "generated_at_utc": "2026-11-03T02:34:26.470859+00:00",
   "ips": "claude/ips_case_study.md",
   "signals": {
     "slow_channel": {
       "state": "risk_on",
-      "as_of_month_end": "2026-09-30",
-      "price": 45.57,
-      "sma200": 42.71,
-      "distance_pct": 6.69
+      "as_of_month_end": "2026-10-30",
+      "price": 44.64,
+      "sma200": 43.31,
+      "distance_pct": 3.07
     },
     "fast_channel": {
       "state": "clear",
       "vix_vix3m_5d_median": 0.895,
-      "as_of": "2026-10-30"
+      "as_of": "2026-11-02"
     },
     "credit": {
       "state": "clear",
-      "hyg_lqd_63d_relmom": -0.005
+      "hyg_lqd_63d_relmom": -0.0035
     },
     "canary": {
       "state": "risk_on",
       "negative_canaries": [],
       "momentum": {
-        "EWA": 0.0452,
-        "TLT": 0.0285
+        "EWA": 0.0302,
+        "TLT": 0.0286
       }
     }
   },
