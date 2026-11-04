@@ -1,43 +1,7 @@
 {
-  "last_updated_utc": "2026-11-03T02:38:28.783235+00:00",
+  "last_updated_utc": "2026-11-04T00:52:36.569277+00:00",
   "error": "",
   "results": [
-    {
-      "trade": {
-        "ticker": "VOO",
-        "action": "buy",
-        "notional_value": 15000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 15000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 15000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 10000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
     {
       "trade": {
         "ticker": "XLE",
@@ -49,7 +13,7 @@
     },
     {
       "trade": {
-        "ticker": "GLD",
+        "ticker": "CEG",
         "action": "buy",
         "notional_value": 10000
       },
