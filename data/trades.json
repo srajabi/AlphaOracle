@@ -1,62 +1,112 @@
 [
     {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 10000
+        "ticker": "TQQQ",
+        "action": "sell",
+        "qty": "all"
     },
     {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 10000
+        "ticker": "UPRO",
+        "action": "sell",
+        "qty": "all"
     },
     {
-        "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 10000
+        "ticker": "SSO",
+        "action": "sell",
+        "qty": "all"
     },
     {
-        "ticker": "XLF",
-        "action": "buy",
-        "notional_value": 5000
+        "ticker": "INTC",
+        "action": "sell",
+        "qty": "all"
     },
     {
-        "ticker": "TLT",
-        "action": "buy",
-        "notional_value": 15000
+        "ticker": "NBIS",
+        "action": "sell",
+        "qty": "all"
     },
     {
-        "ticker": "XLE",
-        "action": "buy",
-        "notional_value": 10000
+        "ticker": "CEG",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "ORCL",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "PLTR",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "TSLA",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "META",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "NFLX",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "GOOGL",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "XLC",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "VXUS",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "VGK",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "EWC",
+        "action": "sell",
+        "qty": "all"
     },
     {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 30000
     },
     {
-        "ticker": "SPY",
+        "ticker": "IAU",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 20000
     },
     {
-        "ticker": "SCHD",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 25000
     },
     {
-        "ticker": "QUAL",
+        "ticker": "XLP",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 20000
     },
     {
-        "ticker": "MSFT",
+        "ticker": "XLV",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 20000
     },
     {
-        "ticker": "AMZN",
+        "ticker": "XLRE",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 15000
     }
 ]

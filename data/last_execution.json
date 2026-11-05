@@ -1,21 +1,201 @@
 {
-  "last_updated_utc": "2026-11-04T00:52:36.569277+00:00",
+  "last_updated_utc": "2026-11-05T01:07:51.379177+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "XLE",
+        "ticker": "TQQQ",
+        "action": "sell",
+        "qty": "all"
+      },
+      "status": "failed",
+      "reason": "{\"code\":40410000,\"message\":\"position not found: TQQQ\"}"
+    },
+    {
+      "trade": {
+        "ticker": "UPRO",
+        "action": "sell",
+        "qty": "all"
+      },
+      "status": "failed",
+      "reason": "{\"code\":40410000,\"message\":\"position not found: UPRO\"}"
+    },
+    {
+      "trade": {
+        "ticker": "SSO",
+        "action": "sell",
+        "qty": "all"
+      },
+      "status": "failed",
+      "reason": "{\"code\":40410000,\"message\":\"position not found: SSO\"}"
+    },
+    {
+      "trade": {
+        "ticker": "INTC",
+        "action": "sell",
+        "qty": "all"
+      },
+      "status": "failed",
+      "reason": "{\"code\":40410000,\"message\":\"position not found: INTC\"}"
+    },
+    {
+      "trade": {
+        "ticker": "NBIS",
+        "action": "sell",
+        "qty": "all"
+      },
+      "status": "failed",
+      "reason": "{\"code\":40410000,\"message\":\"position not found: NBIS\"}"
+    },
+    {
+      "trade": {
+        "ticker": "CEG",
+        "action": "sell",
+        "qty": "all"
+      },
+      "status": "submitted",
+      "order_type": "close_position"
+    },
+    {
+      "trade": {
+        "ticker": "ORCL",
+        "action": "sell",
+        "qty": "all"
+      },
+      "status": "failed",
+      "reason": "{\"code\":40410000,\"message\":\"position not found: ORCL\"}"
+    },
+    {
+      "trade": {
+        "ticker": "PLTR",
+        "action": "sell",
+        "qty": "all"
+      },
+      "status": "failed",
+      "reason": "{\"code\":40410000,\"message\":\"position not found: PLTR\"}"
+    },
+    {
+      "trade": {
+        "ticker": "TSLA",
+        "action": "sell",
+        "qty": "all"
+      },
+      "status": "failed",
+      "reason": "{\"code\":40410000,\"message\":\"position not found: TSLA\"}"
+    },
+    {
+      "trade": {
+        "ticker": "META",
+        "action": "sell",
+        "qty": "all"
+      },
+      "status": "failed",
+      "reason": "{\"code\":40410000,\"message\":\"position not found: META\"}"
+    },
+    {
+      "trade": {
+        "ticker": "NFLX",
+        "action": "sell",
+        "qty": "all"
+      },
+      "status": "failed",
+      "reason": "{\"code\":40410000,\"message\":\"position not found: NFLX\"}"
+    },
+    {
+      "trade": {
+        "ticker": "GOOGL",
+        "action": "sell",
+        "qty": "all"
+      },
+      "status": "failed",
+      "reason": "{\"code\":40410000,\"message\":\"position not found: GOOGL\"}"
+    },
+    {
+      "trade": {
+        "ticker": "XLC",
+        "action": "sell",
+        "qty": "all"
+      },
+      "status": "failed",
+      "reason": "{\"code\":40410000,\"message\":\"position not found: XLC\"}"
+    },
+    {
+      "trade": {
+        "ticker": "VXUS",
+        "action": "sell",
+        "qty": "all"
+      },
+      "status": "submitted",
+      "order_type": "close_position"
+    },
+    {
+      "trade": {
+        "ticker": "VGK",
+        "action": "sell",
+        "qty": "all"
+      },
+      "status": "submitted",
+      "order_type": "close_position"
+    },
+    {
+      "trade": {
+        "ticker": "EWC",
+        "action": "sell",
+        "qty": "all"
+      },
+      "status": "failed",
+      "reason": "{\"code\":40410000,\"message\":\"position not found: EWC\"}"
+    },
+    {
+      "trade": {
+        "ticker": "GLD",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 30000
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "CEG",
+        "ticker": "IAU",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 20000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLU",
+        "action": "buy",
+        "notional_value": 25000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLP",
+        "action": "buy",
+        "notional_value": 20000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLV",
+        "action": "buy",
+        "notional_value": 20000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLRE",
+        "action": "buy",
+        "notional_value": 15000
       },
       "status": "skipped",
       "reason": "No available buying power."
