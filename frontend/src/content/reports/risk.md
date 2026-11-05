@@ -5,110 +5,111 @@ date: "2026-11-05"
 
 ## Model: gemini/gemini-2.5-flash
 
-As the expert Risk Manager for this quantitative hedge fund, my focus is entirely on downside protection and geopolitical risk, especially given the fund's "Defensive-leaning, gap-risk aware" posture and the complex "Transitional" market regime with low confidence. While several quantitative signals (slow_channel, canary) currently indicate "risk_on," the detailed macro and theme news presents a confluence of severe geopolitical and macroeconomic risks that mandate a highly cautious approach. The fund's own thesis acknowledges a 50% chance of "Grind-with-violence," 30% of "Slow bear," and 20% of "Fast crash" within 12 months.
+The market context reveals a complex and volatile environment, despite some of our mandate signals remaining "risk_on" or "clear." The "Transitional" market regime with "low confidence" is particularly telling. Our core thesis, with an 80% probability of either a "Grind-with-violence" or "Slow bear" scenario, strongly emphasizes the need for downside protection and acute awareness of geopolitical risks.
 
-Here's an analysis of the critical geopolitical catalysts and actionable recommendations:
+Today's news is dominated by several significant geopolitical and sector-specific catalysts, which necessitate immediate risk management actions.
 
----
+## Downside Protection and Geopolitical Risk Analysis
 
-### **1. Escalating Iran-US / Strait of Hormuz Tensions**
+### 1. Strait of Hormuz / Middle East Tensions (Iran-US Conflict, Energy Supply Shocks)
 
-*   **What happened and severity (8/10):**
-    *   Iran has reportedly launched strikes on multiple tankers and deployed mines near the Strait of Hormuz, with some vessels ablaze. This indicates an active and severe escalation of hostilities, posing a direct threat to global oil supply. While some news mentions "peace hopes" leading to oil price plunges, the physical attacks are a concrete risk. OPEC maintaining steady output amid these threats does little to alleviate supply concerns.
-*   **Which sectors/tickers are most exposed (bullish/bearish):**
-    *   **Bullish:** Energy sector (XLE) due to potential oil price spikes. Gold (GLD, IAU) as a traditional safe haven asset against geopolitical instability and inflation.
-    *   **Bearish:** Broad market indices (SPY, QQQ, VOO, VTI, DIA) susceptible to an "inflationary_risk_off" sentiment and economic disruption.
-*   **Recommended hedges (protective puts, safe havens, sector rotation):**
-    *   **Protective Puts:** Acquire protective puts on broad market indices such as **SPY** (e.g., SPY 730P or 732P for Nov 20/27) and **QQQ** (e.g., QQQ 665P for Nov 20/27) to hedge against a broader market sell-off triggered by escalation.
-    *   **Safe Havens:** Increase allocation to **GLD** and **IAU**. While both are in a downtrend, their role as a crisis hedge is paramount.
-    *   **Sector Rotation:** Maintain or increase exposure to **XLE** as a direct inflation hedge, but be aware that a severe risk-off event could still pressure it. Avoid highly discretionary sectors like XLY.
-*   **Time horizon:** Immediate to Days. The situation is highly fluid, and headlines can trigger rapid market movements.
+*   **What happened and severity:** Multiple reports confirm tankers struck in the Strait of Hormuz, with Iran implicated amidst fears of new US attacks. This directly impacts global oil supply. Additionally, Ukraine attacks on Russian refineries contribute to energy supply concerns.
+    *   **Severity:** 7/10 (High impact, ongoing, with direct inflationary and supply chain consequences). This is an active, escalating geopolitical risk.
+*   **Sectors/Tickers Exposed:**
+    *   **Bullish (as inflation hedge):** Energy sector (XLE). News directly links these events to "higher oil prices" and "Crude Oil Prices Rebound."
+    *   **Bearish (risk-off, inflation concern):** Broad market indices (SPY, QQQ, DIA, VOO, VTI, IWM) due to elevated inflation and increased geopolitical risk. Long-duration bonds (TLT) could face pressure if inflation concerns outweigh safe-haven demand.
+*   **Recommended Hedges:**
+    *   **Increase Safe Haven Allocation:** Despite current GLD momentum being neutral/negative, the underlying macro thesis (inflation-tolerant administration, sticky CPI) and escalating geopolitical risks create a strong fundamental case for gold. **Increase allocation to GLD and IAU** as primary inflation and geopolitical hedges.
+    *   **Sector Exposure:** Maintain or slightly increase exposure to **Energy (XLE)**. While a cyclical sector, in this specific environment, it acts as a **natural hedge against oil price inflation**.
+    *   **Protective Puts:** Implement protective puts on broader market indices to hedge against generalized risk-off sentiment. Consider **Long Put on SPY** (e.g., `SPY261120P00711000` or `SPY261127P00710000`) or **Long Put on QQQ** (e.g., `QQQ261120P00630000` or `QQQ261127P00630000`).
+*   **Time Horizon:** Immediate (ongoing conflict, daily monitoring required).
 
----
+### 2. AI Capex Reassessment & Tech/Semiconductor Sell-off (Post-US Midterm Elections)
 
-### **2. Mounting China-Taiwan / Semiconductor Supply Chain Risk**
+*   **What happened and severity:** A Democratic sweep in the US midterm elections is now being linked to fears of "AI data center curbs" in key states (e.g., Texas affecting CEG, TLN) and broader "AI regulation fears." This has triggered a significant "AI trade meltdown" and "chip sector crash," leading to substantial value destruction in leading tech and semiconductor names.
+    *   **Severity:** 8/10 (High impact, immediate, widespread sector-specific sell-off). This is the most acute and actively unfolding risk today.
+*   **Sectors/Tickers Exposed:**
+    *   **Bearish (direct impact):**
+        *   **Semiconductors:** NVDA (lost $1.4T), TSM (sinks 10%), AMD (sinks), MU (sinks 17%), INTC (sinks 8%), KLAC (drops 12%), AVGO, WDC, STX. Many are showing extremely weak technicals (RSI below 35, prices well below multiple SMAs, hitting Bollinger Band lowers).
+        *   **AI Infrastructure/Cloud:** NBIS (falls 14%), ORCL (falls 9.3%), CEG (falls), TLN (utility for data centers).
+        *   **Broader Tech/FAANG:** GOOGL (RSI 30.21), META, TSLA (tumbles as "Democratic sweep raises questions on merger prospects, AI build-out"), PLTR (tumbles), CRWD (sinks 9%).
+        *   **Leveraged Tech ETFs:** TQQQ (volume surges, "dip buyers getting crushed," RSI 37.12, below SMAs).
+    *   **Bullish:** None directly from this event, rather a flight to safety elsewhere.
+*   **Recommended Hedges (SELL, TRIM, PROTECT):**
+    *   **Aggressive Selling/Trimming:** Drastically reduce exposure to individual AI-centric technology and semiconductor stocks. Prioritize selling positions in those with the most extreme technical weakness and direct negative news mentions: **MU, INTC, NVDA, TSM, WDC, STX, GOOGL, META, PLTR, CRWD, NBIS, ORCL, CEG, TLN, TSLA**.
+    *   **De-leverage Completely:** Liquidate all positions in leveraged ETFs. The volatility amplified by "daily rebalancing tax" in **TQQQ, UPRO, SSO, TMF** is detrimental during these sell-offs.
+    *   **Trim Broader Tech ETFs:** Reduce exposure to **QQQ** and **XLK** given their heavy concentration in the aforementioned struggling names.
+    *   **Protective Puts:** For any remaining core long positions in SPY, QQQ, or large-cap tech. Refer to the existing **Long Put on QQQ** and **Long Put on SPY** options ideas.
+*   **Time Horizon:** **IMMEDIATE.** This sell-off is active and severe; timely action is critical.
 
-*   **What happened and severity (7/10):**
-    *   Taiwan is tightening chip export controls, increasing the risk of supply chain disruption. Geopolitical discussions highlight ongoing tensions in the Taiwan Strait. Domestically, the Democratic sweep in US midterms is generating concerns about increased scrutiny and potential moratoriums on AI data center construction in states like Texas. This could reduce demand for advanced chips, compounding geopolitical supply risks with demand-side uncertainty.
-*   **Which sectors/tickers are most exposed (bullish/bearish):**
-    *   **Bearish:** Semiconductor companies (**TSM, NVDA, AMD, INTC, KLAC, MU**), AI infrastructure plays (**NBIS, ORCL, CEG, TLN**), and broader technology ETFs (**XLK, QQQ**). The general market (SPY, VOO, VTI) will also be impacted due to the heavy weighting of tech.
-    *   **Bullish:** Gold (**GLD, IAU**). Volatility index (**^VIX**).
-*   **Recommended hedges (protective puts, safe havens, sector rotation):**
-    *   **Protective Puts:** Essential for semiconductor and AI-related stocks. Acquire puts on **AMD** (e.g., AMD 450P for Nov 20, 455P for Nov 27) and consider puts on **TSM, NVDA, INTC**. Also, puts on **QQQ** and **XLK** are crucial. For specific AI infrastructure names, puts on **CEG** (e.g., CEG 260P for Nov 20) are relevant given the localized policy risk.
-    *   **Avoidance/Trimming:** Significantly reduce exposure to individual semiconductor names (TSM, NVDA, AMD, INTC) and highly correlated AI infrastructure plays (NBIS, CEG).
-    *   **Safe Havens:** Increase allocation to **GLD/IAU**.
-*   **Time horizon:** Days to Weeks. Export controls and regulatory impacts will evolve, but market sentiment on these critical sectors is immediate.
+### 3. Trade War / Sanctions / Export Controls
 
----
+*   **What happened and severity:** Taiwan tightens chip export controls to China. China is stepping up its own export control enforcement. Opinion pieces suggest the trade war will continue or worsen under the new Democratic-controlled Congress.
+    *   **Severity:** 6/10 (Moderate impact, persistent, adds to global economic uncertainty and supply chain risks).
+*   **Sectors/Tickers Exposed:**
+    *   **Bearish:** Global equities, especially those with high exposure to US-China trade (VT, VXUS, EWC, EWA). Technology and Semiconductor sectors (TSM, NVDA, AMD, INTC) due to potential disruptions in global supply chains. Broad market indices (SPY, QQQ).
+    *   **Bullish:** Gold (GLD, IAU) as a traditional hedge against trade and economic uncertainty.
+*   **Recommended Hedges:**
+    *   **Long Gold:** Reinforce existing strategy to be long **GLD/IAU**.
+    *   **Diversify International Exposure:** Carefully consider international allocations. While "narrow breadth" argues for non-US diversification, trade tensions introduce risks. Favor European equities which are currently showing some relative strength ("European Stocks Hit Fresh Record," "VGK Is Quietly Creeping Toward Record Highs") as seen with **VGK**'s strong technicals.
+    *   **Protective Puts:** On broad market ETFs like **SPY** and **QQQ** to cover general market weakness from trade escalations.
+*   **Time Horizon:** Ongoing (weeks to months).
 
-### **3. Persistent Global Trade War / Sanctions / Export Controls**
+### 4. Fed Policy & Recession Signals
 
-*   **What happened and severity (6/10):**
-    *   China is intensifying export control enforcement. The US election outcome, with Democrats gaining control of Congress, is interpreted by some as likely to continue or even worsen existing trade wars, including tariffs, rather than ease them. This implies an enduring structural headwind for global trade.
-*   **Which sectors/tickers are most exposed (bullish/bearish):**
-    *   **Bearish:** Broad market indices (**SPY, VOO, QQQ, VTI**), and companies with extensive global supply chains and international revenue exposure (e.g., **AAPL, AMZN, MSFT, GOOGL**). International ETFs (**VXUS, VGK, EWC, EWA**) face persistent headwinds due to the "strong_dollar" regime.
-    *   **Bullish:** Gold (**GLD, IAU**). Volatility index (**^VIX**).
-*   **Recommended hedges (protective puts, safe havens, sector rotation):**
-    *   **Protective Puts:** On diversified US equity ETFs (**SPY, QQQ**) and international equity ETFs (**VXUS**).
-    *   **Safe Havens:** Increase **GLD/IAU** allocation.
-    *   **Avoidance/Trimming:** Reduce exposure to companies heavily reliant on globalized supply chains and international trade where tariffs or sanctions could significantly impact margins.
-*   **Time horizon:** Weeks to Months. Trade policy effects are often slower-moving but persistent.
-
----
-
-### **4. Fed Policy Cornered / Rate Uncertainty**
-
-*   **What happened and severity (7/10):**
-    *   With CPI at 4.2% and an active war economy, the Fed is in a "cornered" position: unable to cut rates (high inflation) or hike rates (economic fragility). This creates extreme uncertainty for future monetary policy, despite current "rates declining" signals in intermarket data. The upcoming jobs report on Friday and December Fed meeting are critical watchpoints for a policy "surprise" or shift.
-*   **Which sectors/tickers are most exposed (bullish/bearish):**
-    *   **Bearish (if hawkish surprise):** Growth stocks, high-valuation tech (**NVDA, AMD, TSM, INTC, META, GOOGL, MSFT, AAPL, AMZN**), and high-yield bonds (**HYG**).
-    *   **Sensitive:** Broad market indices (**SPY, QQQ, TLT, ^VIX**). Utilities (**XLU**) as a yield-sensitive sector.
-*   **Recommended hedges (protective puts, safe havens, sector rotation):**
-    *   **Protective Puts:** Focus on rate-sensitive growth tech ETFs (**QQQ, XLK**).
-    *   **Avoidance/Trimming:** High-flying growth stocks with stretched valuations.
-    *   **Safe Havens:** Maintain high **CASH** levels. Increase **GLD/IAU** for inflation hedging.
-    *   **Bonds:** Adhere to the thesis to favor adaptive defense (gold/cash) over long-duration bonds like TLT, as the "2022 lesson" on TLT's unreliability as a hedge is noted.
-*   **Time horizon:** Days to Weeks, with the upcoming jobs report and December Fed meeting as near-term catalysts.
-
----
-
-### **5. Rising Recession Signals / Labor Market Contradictions**
-
-*   **What happened and severity (6/10):**
-    *   Multiple headlines indicate rising unemployment (long-term, youth), a "surprise slowdown" in US economic growth, and a contradiction where job openings are rising but hiring is the slowest since 2013. These are clear indicators of economic stress and potential recession, despite some areas of strength.
-*   **Which sectors/tickers are most exposed (bullish/bearish):**
-    *   **Bearish:** Cyclical sectors (Consumer Discretionary - **XLY**, Industrials - **XLI**, Materials - **XLB**, Financials - **XLF**). Broad market indices (**SPY, QQQ, VOO, VTI, DIA**). High-yield corporate bonds (**HYG**).
-    *   **Bullish:** Defensive sectors (**XLU, XLV, XLP**). Gold (**GLD, IAU**).
-*   **Recommended hedges (protective puts, safe havens, sector rotation):**
-    *   **Protective Puts:** On broad market ETFs (**SPY, QQQ, IWM**) and cyclical sector ETFs (**XLY, XLI, XLB, XLF**).
-    *   **Safe Havens:** Increase **GLD/IAU** allocation. Maintain high **CASH** levels.
-    *   **Sector Rotation:** Overweight defensive sectors (**XLU, XLV, XLP**). **XLU** and **XLV** show strong RSI and bullish MACD crosses, indicating relative strength.
-    *   **Credit Monitoring:** Closely monitor **HYG/LQD** spread. While currently "clear", a shift here would be a strong confirmation of credit deterioration.
-*   **Time horizon:** Weeks to Months, as recessionary pressures typically build over time, but market reaction can be sharp.
+*   **What happened and severity:** The Federal Reserve holds interest rates steady but inflation (4.2% CPI) remains a concern, with some Fed members favoring "gradual rate-hike path." Macro view states Fed policy is "CORNERED." Concurrently, recession signals like rising long-term unemployment and economic slowdowns are noted.
+    *   **Severity:** 5/10 (Moderate impact, creates policy uncertainty, potential for future shocks and systemic slowdown).
+*   **Sectors/Tickers Exposed:**
+    *   **Bearish (if rates stay high/rise):** Growth stocks, rates-sensitive sectors.
+    *   **Bearish (recession):** Cyclical sectors (XLI, XLY, XLF, XLB), small caps (IWM), and broad market.
+    *   **Bullish (inflation hedge):** Gold (GLD, IAU), Energy (XLE).
+    *   **Bullish (defensive):** Utilities (XLU), Consumer Staples (XLP).
+*   **Recommended Hedges:**
+    *   **Reinforce Inflation Hedges:** Continue to favor **Gold (GLD, IAU)** and **Energy (XLE)**.
+    *   **Increase Defensive Allocation:** Rotate capital into defensive sectors. **XLU (Utilities)** shows strong technicals (RSI 65.22, positive MACD, above all SMAs) and is a prime candidate for increased allocation. Consider **XLP (Consumer Staples)** as well.
+    *   **Avoid Long-Duration Bonds as Sole Hedge:** The investment thesis correctly identifies TLT as "suspect" as a fixed defense. While TLT has positive momentum currently, its effectiveness in a "cornered Fed" / sticky inflation scenario is questionable. Rely on adaptive defense (GLD/cash/defensive equities) over TLT for rate-related hedges.
+*   **Time Horizon:** Medium-term (months), monitoring for "Slow bear" scenario.
 
 ---
 
-### **Consolidated Actionable Recommendations:**
+## Actionable Recommendations: Sell, Trim, Hedge, or Avoid
 
-Given the array of high-severity risks and the fund's defensive mandate, the following actions are recommended:
+Based on the analysis, here is the prioritized action plan:
 
-1.  **Aggressive Trimming/Selling of High-Beta, Growth & AI-Exposed Assets:**
-    *   **Sell/Trim:** **INTC, AMD, NVDA, TSM, NBIS, CEG, TLN, META, NFLX, GOOGL, TSLA, ORCL, MSFT, AAPL, AMZN**. Prioritize those with poor technicals (bearish MACD, low RSI, below SMAs) and direct exposure to current geopolitical and regulatory headwinds. TSLA is particularly vulnerable due to its high volatility and direct tie to Elon Musk's election bet fallout.
-    *   **Avoid:** Initiating new positions in speculative tech, AI infrastructure, or cyclicals. Explicitly avoid leveraged ETFs like **TQQQ, UPRO, SSO** as they exacerbate risk in "grind-with-violence" or "fast crash" scenarios.
+**1. IMMEDIATE LIQUIDATION/REDUCTION (SELL/TRIM - TODAY/NEXT FEW DAYS):**
 
-2.  **Increase Safe Haven and Defensive Allocation:**
-    *   **Increase Cash (CASH):** Maintain and potentially increase the current cash holding of $87k. Capital preservation is paramount.
-    *   **Increase Gold Exposure (GLD, IAU):** These are critical hedges against inflation and geopolitical turmoil.
-    *   **Overweight Defensive Sectors:** Rotate into **XLU, XLV, XLP**. These sectors typically outperform during downturns and offer stability.
+*   **AI-Centric Tech & Semiconductors:**
+    *   **SELL/SIGNIFICANTLY TRIM:** **MU, INTC, NVDA, TSM, WDC, STX, GOOGL, META, PLTR, CRWD, NBIS, ORCL, CEG, TLN, TSLA.** These tickers are at the epicenter of the current "AI trade meltdown" and policy reassessment. Their technicals are broken (low RSIs, below key SMAs), and negative news flow is intense. The fund's capital needs to be protected from further rapid erosion.
+    *   **TRIM:** **QQQ, XLK** to reduce concentrated exposure to the technology sector.
+*   **Leveraged ETFs:**
+    *   **SELL ALL POSITIONS:** **TQQQ, UPRO, SSO, TMF.** These amplify losses dramatically during periods of high volatility and sharp downturns. The explicit warnings in the market data and thesis against "daily rebalancing tax" and "amplifying the next market selloff" demand their complete removal from the portfolio in this environment.
 
-3.  **Implement Portfolio-Wide Downside Hedging:**
-    *   **Protective Puts (Mandatory):** Implement protective puts on remaining broad market exposure and larger individual tech holdings.
-        *   **SPY & QQQ:** Utilize the provided options for **SPY** (e.g., SPY 261127P00730000, SPY 261120P00732000) and **QQQ** (e.g., QQQ 261127P00665000, QQQ 261120P00665000).
-        *   **Individual Equities:** For any remaining positions in **AAPL, AMD, AMZN, AVGO, CRWD, CEG, DIA**, use the available slightly out-of-the-money puts. These offer crucial protection against sudden drops.
-    *   **Avoid Writing Cash-Secured Puts:** The current environment of high uncertainty and significant downside risk makes writing new cash-secured puts (e.g., on AAPL, AMD, AMZN, AVGO, CEG, CRWD, DIA) unduly risky. The premium might not compensate for the assignment risk in a sharp downturn.
+**2. HEDGE (IMPLEMENT PROTECTIVE OPTIONS - IMMEDIATE TO DAYS):**
 
-4.  **Continuous Monitoring:**
-    *   **Actively monitor all "Tripwires"** defined in the investment thesis, especially VIX/VIX3M for "Fast Crash" signals and HYG/LQD for "Slow Bear" confirmation.
-    *   Stay alert for any new developments in the Strait of Hormuz, China-Taiwan relations, trade policy, Fed rhetoric, and economic data.
+*   **Broad Market Protective Puts:**
+    *   Acquire **Long Puts on SPY** (e.g., `SPY261120P00711000` or `SPY261127P00710000`) and **Long Puts on QQQ** (e.g., `QQQ261120P00630000` or `QQQ261127P00630000`) to provide downside protection for remaining equity exposure. These are direct hedges against the "Grind-with-violence" and "Slow bear" scenarios.
+*   **Individual Stock Puts:** Consider acquiring long puts on any remaining core tech holdings (e.g., AAPL, AMZN, MSFT if not fully sold) that are still vulnerable to sector rotation or broader market weakness.
 
-This comprehensive defensive strategy aligns with the fund's risk posture and aims to protect capital against the identified severe geopolitical and macroeconomic headwinds.
+**3. REALLOCATE/INCREASE EXPOSURE (BUY/DCA - DAYS TO WEEKS):**
+
+*   **Increase Cash Balance (from sales):** The sales above will significantly increase the CASH balance (currently $87184.98). This dry powder is crucial for managing future volatility and seizing opportunities.
+*   **Defensive Rotation:**
+    *   **Utilities (XLU):** Increase allocation. It demonstrates strong technical performance (RSI 65.22, positive MACD, above SMAs) and is a classic defensive sector during economic slowdown fears.
+    *   **Consumer Staples (XLP):** Increase allocation for defensive positioning.
+*   **Inflation & Geopolitical Hedges:**
+    *   **Gold (GLD, IAU):** Systematically increase allocation to GLD and IAU. The thesis favors gold due to "inflation-tolerant administration + negative real-rate drift" and current geopolitical risks. Consider using **Long Call on GLD** (e.g., `GLD261120C00387000` or `GLD261127C00387000`) to express an upside view for inflation hedging.
+    *   **Energy (XLE):** Maintain or slightly increase allocation. It is a critical hedge against the ongoing oil-led inflation stemming from Middle East tensions.
+*   **Diversification (away from concentrated US Tech):**
+    *   **European Equities (VGK):** Increase allocation. VGK shows strong relative performance and provides geographical diversification away from current US tech weakness. News indicates European stocks hitting records.
+    *   **Quality Factor (QUAL, SCHD):** Consider increasing exposure to these ETFs, which focus on fundamentally strong, stable businesses that tend to outperform in defensive or transitional regimes.
+*   **Dollar-Cost Averaging (DCA-6m):** As per the thesis, if deploying cash, use a DCA-6m approach into the chosen allocations to mitigate timing risk in volatile markets.
+
+**4. AVOID:**
+
+*   **Cash-Secured Puts (CSPs) in current market:** Given the high downside risk, initiating new CSPs on volatile tech names (AAPL, AMD, AMZN, AVGO, CRWD, DIA) is not advisable. The potential for assignment at a falling strike price outweighs the premium earned, exposing capital to unwanted long positions in weakening assets. The spreads on some (e.g., CEG) are also very wide, indicating poor liquidity.
+*   **Unprofitable AI Application Startups:** Explicitly mentioned in sector preferences to avoid.
+*   **Directional War Bets:** As per the macro thesis, "Do not directionally trade war headlines; both tails (escalation spike / relief rally) are live." Our hedging strategy is adaptive via asset allocation.
+
+**Summary of Mandate Signal Alignment:**
+
+While the "Slow Channel," "Fast Channel," and "Credit" signals are currently `risk_on` or `clear`, indicating no *systemic* alarm, the "Market Regime" is `Transitional` with `low confidence`, and the qualitative news analysis points to significant, active downside risks. The "Canary" signal is `risk_on`, but its components (EWA, TLT) are being re-evaluated in the context of broader geopolitical and market shifts. Our strategy is proactive and defensive, anticipating potential deterioration in these broader signals based on the acute geopolitical and sector-specific news. We are acting on the spirit of the "Grind-with-violence" and "Slow bear" scenarios which represent an 80% probability in our macro thesis.

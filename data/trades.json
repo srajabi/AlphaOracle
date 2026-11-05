@@ -1,112 +1,32 @@
 [
     {
-        "ticker": "TQQQ",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "UPRO",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "SSO",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "INTC",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "NBIS",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "CEG",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "ORCL",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "PLTR",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "TSLA",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "META",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "NFLX",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "GOOGL",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "XLC",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "VXUS",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "VGK",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "EWC",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 30000
-    },
-    {
-        "ticker": "IAU",
-        "action": "buy",
-        "notional_value": 20000
-    },
-    {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 25000
+        "notional_value": 15000
     },
     {
         "ticker": "XLP",
         "action": "buy",
-        "notional_value": 20000
+        "notional_value": 15000
     },
     {
-        "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 20000
-    },
-    {
-        "ticker": "XLRE",
+        "ticker": "SCHD",
         "action": "buy",
         "notional_value": 15000
+    },
+    {
+        "ticker": "VGK",
+        "action": "buy",
+        "notional_value": 15000
+    },
+    {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 10000
+    },
+    {
+        "ticker": "TLT",
+        "action": "buy",
+        "notional_value": 10000
     }
 ]
