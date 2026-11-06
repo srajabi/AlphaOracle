@@ -1,4 +1,4 @@
-# AlphaOracle Daily - 2026-11-05
+# AlphaOracle Daily - 2026-11-06
 
 ## Signals (rules govern; everything below is commentary)
 
@@ -7,7 +7,7 @@
 | Signal | State | Detail |
 |---|---|---|
 | Trend (monthly 200dma) | risk_on | 3.07% vs SMA, as of 2026-10-30 |
-| VIX term structure | clear | ratio 0.935 |
+| VIX term structure | clear | ratio 0.979 |
 | Credit (HYG/LQD 63d) | clear | -0.0057 |
 | Canary breadth | risk_on | negative: [] |
 
