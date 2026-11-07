@@ -1,204 +1,69 @@
 {
-  "last_updated_utc": "2026-11-05T01:07:51.379177+00:00",
+  "last_updated_utc": "2026-11-07T00:19:44.889674+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "TQQQ",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "failed",
-      "reason": "{\"code\":40410000,\"message\":\"position not found: TQQQ\"}"
-    },
-    {
-      "trade": {
-        "ticker": "UPRO",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "failed",
-      "reason": "{\"code\":40410000,\"message\":\"position not found: UPRO\"}"
-    },
-    {
-      "trade": {
-        "ticker": "SSO",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "failed",
-      "reason": "{\"code\":40410000,\"message\":\"position not found: SSO\"}"
-    },
-    {
-      "trade": {
-        "ticker": "INTC",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "failed",
-      "reason": "{\"code\":40410000,\"message\":\"position not found: INTC\"}"
-    },
-    {
-      "trade": {
-        "ticker": "NBIS",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "failed",
-      "reason": "{\"code\":40410000,\"message\":\"position not found: NBIS\"}"
-    },
-    {
-      "trade": {
-        "ticker": "CEG",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "submitted",
-      "order_type": "close_position"
-    },
-    {
-      "trade": {
-        "ticker": "ORCL",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "failed",
-      "reason": "{\"code\":40410000,\"message\":\"position not found: ORCL\"}"
-    },
-    {
-      "trade": {
-        "ticker": "PLTR",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "failed",
-      "reason": "{\"code\":40410000,\"message\":\"position not found: PLTR\"}"
-    },
-    {
-      "trade": {
-        "ticker": "TSLA",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "failed",
-      "reason": "{\"code\":40410000,\"message\":\"position not found: TSLA\"}"
-    },
-    {
-      "trade": {
-        "ticker": "META",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "failed",
-      "reason": "{\"code\":40410000,\"message\":\"position not found: META\"}"
-    },
-    {
-      "trade": {
-        "ticker": "NFLX",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "failed",
-      "reason": "{\"code\":40410000,\"message\":\"position not found: NFLX\"}"
-    },
-    {
-      "trade": {
-        "ticker": "GOOGL",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "failed",
-      "reason": "{\"code\":40410000,\"message\":\"position not found: GOOGL\"}"
-    },
-    {
-      "trade": {
-        "ticker": "XLC",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "failed",
-      "reason": "{\"code\":40410000,\"message\":\"position not found: XLC\"}"
-    },
-    {
-      "trade": {
-        "ticker": "VXUS",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "submitted",
-      "order_type": "close_position"
-    },
-    {
-      "trade": {
-        "ticker": "VGK",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "submitted",
-      "order_type": "close_position"
-    },
-    {
-      "trade": {
-        "ticker": "EWC",
-        "action": "sell",
-        "qty": "all"
-      },
-      "status": "failed",
-      "reason": "{\"code\":40410000,\"message\":\"position not found: EWC\"}"
-    },
-    {
-      "trade": {
-        "ticker": "GLD",
-        "action": "buy",
-        "notional_value": 30000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "IAU",
-        "action": "buy",
-        "notional_value": 20000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 25000
+        "notional_value": 8000
       },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 20000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
+      "status": "submitted",
+      "order_id": "af082723-5f91-4e40-9be2-38b9b1f56e71"
     },
     {
       "trade": {
         "ticker": "XLV",
         "action": "buy",
-        "notional_value": 20000
+        "notional_value": 9000
       },
-      "status": "skipped",
-      "reason": "No available buying power."
+      "status": "submitted",
+      "order_id": "547a2d2f-e4e6-46fb-9a41-19f694ccad7f"
     },
     {
       "trade": {
-        "ticker": "XLRE",
+        "ticker": "XLP",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 9000
       },
-      "status": "skipped",
-      "reason": "No available buying power."
+      "status": "failed",
+      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+    },
+    {
+      "trade": {
+        "ticker": "SCHD",
+        "action": "buy",
+        "notional_value": 4500
+      },
+      "status": "failed",
+      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+    },
+    {
+      "trade": {
+        "ticker": "QUAL",
+        "action": "buy",
+        "notional_value": 4200
+      },
+      "status": "failed",
+      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+    },
+    {
+      "trade": {
+        "ticker": "GLD",
+        "action": "buy",
+        "notional_value": 9000
+      },
+      "status": "failed",
+      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+    },
+    {
+      "trade": {
+        "ticker": "UUP",
+        "action": "buy",
+        "notional_value": 4000
+      },
+      "status": "failed",
+      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
     }
   ]
 }

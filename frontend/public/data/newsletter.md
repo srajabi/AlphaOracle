@@ -1,4 +1,4 @@
-# AlphaOracle Daily - 2026-11-06
+# AlphaOracle Daily - 2026-11-07
 
 ## Signals (rules govern; everything below is commentary)
 
@@ -8,130 +8,91 @@
 |---|---|---|
 | Trend (monthly 200dma) | risk_on | 3.07% vs SMA, as of 2026-10-30 |
 | VIX term structure | clear | ratio 0.979 |
-| Credit (HYG/LQD 63d) | clear | -0.0103 |
+| Credit (HYG/LQD 63d) | clear | -0.0136 |
 | Canary breadth | risk_on | negative: [] |
 
 ## Thesis Sentinel
 
-Here is your daily Thesis Sentinel brief for 2026-11-06:
+**Daily Thesis Brief: November 7, 2026**
 
-### 1. Tripwire Status
+**1. Tripwire Status**
 
-| Tripwire         | Thesis Threshold                   | Today's Reading                   | Status  |
-| :--------------- | :--------------------------------- | :-------------------------------- | :------ |
-| Carry unwind     | `^VIX/^VIX3M > 1.0` (backwardation) | `^VIX/^VIX3M = 1.10`              | **FIRED** |
-| Credit cracks    | `HYG/LQD 63d rel-mom < -2%`        | `HYG/LQD 63d rel-mom = -1.03%`    | CLEAR   |
-| Breadth break    | `canary (EWA,TLT) both negative`   | `canary negative_canaries = []`   | CLEAR   |
-| Trend break      | `SPY < 200d SMA (month-end)`       | `SPY (733.0) > SMA200 (727.39)`   | CLEAR   |
-| Oil shock        | `XLE momentum vs SPY leadership`   | `XLE momentum negative`           | CLEAR   |
-| AI capex turn    | `hyperscaler guidance any FY27 cut` | No new FY27 cuts reported         | CLEAR   |
-| Carry stress     | `USDJPY rapid < 140 move`          | No USDJPY data available          | NO DATA |
+| Tripwire                   | Today's Reading (`as of 2026-11-06`) | Status |
+| :------------------------- | :----------------------------------- | :----- |
+| Carry unwind (^VIX/^VIX3M) | `fast_channel: clear (0.979)`        | CLEAR  |
+| Credit cracks (HYG/LQD)    | `credit: clear (-0.0136)`            | CLEAR  |
+| Breadth break (Canary)     | `canary: risk_on (both positive)`    | CLEAR  |
+| Trend break (SPY < 200d SMA) | `slow_channel: risk_on`              | CLEAR  |
+| Oil shock (XLE leadership) | `XLE: strong_negative momentum`      | CLEAR  |
+| AI capex turn              | `OpenAI weighs smaller data plans`   | FIRED  |
+| Carry stress (USDJPY < 140)| `dollar_strength: strong_uptrend`    | CLEAR  |
 
-*Note on Carry unwind:* The `fast_channel` rule-based signal is "clear", which seemingly contradicts the "Carry unwind" tripwire firing based on the raw `VIX/^VIX3M` ratio. Per mandate, the specific tripwire threshold `> 1.0` governs its status.
+**2. Marker Watch**
 
-### 2. Marker Watch
+*   **BoJ June meeting (guidance hawkish & USDJPY < 145)**: No specific news on BoJ guidance or USDJPY < 145. Fed officials continue to express concern over high inflation.
+*   **May-July CPI prints (two consecutive < 3.5%)**: No news indicating two consecutive CPI prints below 3.5%. Fed's Daly noted Americans are on a "treadmill of high inflation."
+*   **SpaceX IPO first-month performance (breaks $135 issue price)**: News indicates SpaceX/Tesla market value losses this week, but no specific report on SpaceX breaking its $135 IPO price within the first month (which concluded mid-July).
+*   **Q2 earnings hyperscaler capex guidance (any FY27 capex cut)**: News reports OpenAI is "weighing smaller data center plans" and mentions "AI slowdown poses recession risk." This aligns with potential FY27 capex cuts.
+*   **Hormuz (full closure week+)**: Strait of Hormuz attacks increased, but oil prices recently plunged and then rebounded slightly on hopes of an Iran peace deal, suggesting no full closure yet.
 
-*   **BoJ June meeting:** No new guidance news today.
-*   **May-July CPI prints:** No new CPI data released today.
-*   **SpaceX IPO first-month performance:** News regarding Elon Musk's ambitious revenue targets for SpaceX (TSLA news) keeps its performance under scrutiny.
-*   **Q2 earnings hyperscaler capex guidance:** News highlights continued/delayed AI data center spending (IREN, Google), not FY27 capex cuts.
-*   **Hormuz:** News reports Iran turning to "Guerrilla Tactics" and "tankers struck by mines" in the Strait, indicating escalation risk.
+**3. Delta**
 
-### 3. Delta
+The most material shift is the emerging narrative around an "AI capex turn," with news explicitly stating that OpenAI is considering smaller data center plans and an "AI slowdown poses recession risk." This directly signals a potential deceleration in hyperscaler spending, a key falsifiable marker. Geopolitical news is mixed, with continued attacks in Hormuz alongside hopes for an Iran peace deal.
 
-*   **Volatility Surge:** The `^VIX/^VIX3M` ratio has pushed above 1.0, and VIX itself saw a significant jump (VIX news: "Wall Street\u2019s Fear Gauge Just Had Its Third-Biggest Jump Since 1990"), indicating rising fear and short-term backwardation in volatility.
-*   **Tech Sell-off Continuation:** Major tech/AI names (QQQ, NVDA, AMD, INTC, PLTR, GOOGL, META) continue to experience significant declines, though some individual names showed attempts at rebound. News widely confirms a "crisis-sized day" for tech and "global stocks fall amid \u2018big worries over AI\u2019".
-*   **Contradictory Oil Signals:** While geopolitical news indicates escalating tensions in Hormuz (WSJ, DW.com, NewsNation), other headlines report "OIL PRICES FALL AGAIN as U.S. Election Results Fuel Hopes of Middle East Peace" (EnergyNow.com), presenting a mixed picture for energy.
+**4. Scenario Pressure**
 
-### 4. Scenario Pressure
-
-The **Carry unwind** tripwire firing (`^VIX/^VIX3M > 1.0`) and the sharp rise in VIX place significant pressure towards **Scenario C (Fast crash)**, even though other tripwires remain clear. The continued tech/AI sector sell-off, despite some intraday bounces, also adds weight to the downside risk, aligning with components of both **Scenario B (Slow bear)** and the "repeated 5-10% air pockets" of **Scenario A (Grind-with-violence)**. The conflicting oil price narratives add uncertainty to the immediate inflation outlook but do not mitigate the underlying geopolitical risk.
+Today's evidence, particularly the emerging signals of a deceleration in AI capex, places increased pressure towards **Scenario B. Slow bear** (30%). While geopolitical conflict persists, there is no immediate indication of a "Fast crash" (Scenario C) trigger (e.g., full Hormuz closure or BoJ shock). The general market sentiment remains "cautious" with elevated VIX, supporting the "Grind-with-violence" (Scenario A) aspect, but the AI capex news leans more directly into a slowdown.
+*(Note: Official scenario weights remain unchanged until the next monthly review.)*
 
 ## Portfolio Manager Synthesis
 
-Here's my analysis and actionable plan, followed by the JSON array of trades.
+As the Lead Portfolio Manager, I've reviewed the comprehensive market data, analyst reports, and our standing investment thesis. The current market environment on 2026-11-07 presents a complex and contradictory set of signals, demanding a nuanced approach that prioritizes capital preservation while seeking resilient opportunities.
 
-## Lead Portfolio Manager Analysis: 2026-11-06
+**Overall Market Context and Mandate Signals Assessment:**
 
-**Overall Assessment:**
-The market is at a critical juncture. While some long-term mandate signals (slow channel, canary, credit) from the fund's internal models remain "risk_on" or "clear," the immediate market dynamics are dominated by extreme volatility. The Risk Manager's report (generated by Gemini 2.5 Flash), which I heavily weigh due to its direct application of a critical tripwire from our investment thesis, points to a **"Fast crash (20%)" scenario**. This is triggered by the `VIX/^VIX3M` ratio breaching 1.0 (currently 1.10), indicating a significant and sudden spike in near-term implied volatility. This override takes precedence over less severe market regime interpretations.
+Our `market_regime` indicator flags a "Transitional" environment with "low confidence," coupled with "cautious" risk sentiment and an "elevated/rising VIX." This strongly supports our investment thesis's "Defensive-leaning, gap-risk aware" posture, particularly in light of the 50% probability assigned to a "Grind-with-violence" scenario and 30% to a "Slow bear" in our 12-month outlook.
 
-The macroeconomic thesis highlights persistent inflation (driven by the US-Iran war and Strait of Hormuz tensions), a Fed that is "cornered" (cannot cut into 4.2% CPI, cannot hike into a war economy, yet indicates more hikes likely), and concerns about the AI capex cycle deceleration. This environment demands a **defensive-leaning, gap-risk aware posture** with paramount importance placed on capital preservation.
+While our slower `slow_channel` and `canary` mandate signals are currently "risk_on" (indicating `SLEEVE_INVESTED`), this must be reconciled with the immediate "Transitional" regime and rising volatility. The IPS explicitly states that "waiting is not free" in a 4.2% inflation environment, implying that capital should be deployed, but prudently. The emphasis is on "holding strategies that react within days-to-weeks" and using "adaptive defense (GLD/cash)" over fixed hedges like TLT.
 
-The Technical Analyst's report (also Gemini 2.5 Flash) details widespread "Extreme Mean Reversion Bounce Potential" for many high-beta tech/AI stocks (NVDA, AMD, TSM, INTC, MU, PLTR, GOOGL, META, etc.), indicating severely oversold conditions. While these observations are technically accurate, in a confirmed "Fast crash" scenario, attempting to "catch falling knives" is a high-risk endeavor that deviates from our capital preservation mandate. Any short-term bounces are likely to be fleeting and against a powerful bearish tide.
+**Debating Analyst Inputs:**
 
-Conversely, defensive sectors (XLP, XLV, XLU) are showing strong uptrends and bullish technical momentum, confirming a clear flight-to-safety rotation. Gold (GLD/IAU) shows a potential short-term bullish reversal in momentum, aligning with its strategic role as an inflation and geopolitical hedge in our macro thesis, despite the broader "commodities weak" signal.
+1.  **Risk Manager (Gemini Flash):** I largely concur with the Risk Manager's defensive stance. The comprehensive overview of geopolitical, Fed policy, trade, and recession risks (AI slowdown) reinforces the need for caution. The recommendation to "Reduce Overall Risk Exposure" and "Increase Cash Allocation" is sound, aligning with our defensive posture and the IPS's preference for adaptive defense. The recommendation to implement downside hedges with long puts on QQQ, SPY, and GLD is strategically correct for downside protection.
 
-**Disagreements & Resolution:**
-The primary disagreement is between the Technical Analyst's "oversold/mean reversion bounce potential" calls for high-beta tech and the Risk Manager's "Fast crash" directive. In this situation, the macro-level, rule-based "Fast crash" signal, derived from our established tripwires, takes precedence. Capital preservation is the priority. Therefore, while oversold conditions might tempt short-term speculative plays, our fund's mandate in a "Fast crash" dictates avoiding such risks and de-risking aggressively.
+    *   **Disagreement Point:** The Risk Manager advises *avoiding* Cash-Secured Puts (CSPs) as they don't provide downside protection. While true for hedging existing positions, CSPs on high-quality watchlist names at appropriate out-of-the-money strikes can be a valid income-generation and opportunistic entry strategy for long-term accumulation in a volatile, range-bound market (our "Grind-with-violence" scenario). However, given the constraint of not emitting options trades in the executable JSON, this point becomes moot for the final trade list.
 
-**Portfolio Actions (starting with $87,184.98 in CASH):**
+2.  **Technical Analyst (Gemini Flash):** The Technical Analyst identifies numerous assets as "Strong Mean Reversion Bounce Candidates" due to oversold conditions (low RSIs, below Bollinger Bands) and flags VIX as overbought. This suggests a potential short-term bounce for equities.
 
-Given the "Fast crash" signal, the strategy is to:
-1.  Maintain a high cash position for maximum safety and liquidity.
-2.  Allocate a strategic, but limited, portion of capital to truly defensive sectors and gold, which align with both tactical strength and macro hedging.
-3.  Avoid any long positions in high-beta, leveraged, or structurally challenged assets.
+    *   **Disagreement Point:** While technically accurate regarding oversold conditions, in a "Transitional" regime with significant macro headwinds (AI capex deceleration risk, geopolitical uncertainty, Fed policy uncertainty), such bounces can be fleeting or part of a larger downtrend. My strategy will acknowledge these technical signals but will prioritize the overarching macro caution. We will not initiate new long positions in high-beta/growth assets based solely on short-term oversold bounces, but rather maintain a defensive core and cash.
+
+**Synthesized Strategy and Actions:**
+
+Given the current portfolio holds only cash and the mandate implies deployment, my strategy focuses on building a resilient, defensively tilted core while maintaining a significant cash buffer. We will avoid initiating positions in high-beta, growth-oriented tech and semiconductor names identified as vulnerable, despite some being technically oversold.
+
+**Key Drivers for Positioning:**
+
+*   **Defensive Tilt:** Rotation into defensive sectors (Utilities, Healthcare, Consumer Staples) is observed and aligns with cautious sentiment.
+*   **Inflation Hedge:** Our IPS favors gold (GLD) due to the "inflation-tolerant administration" and "negative real-rate drift," despite current rule-based commodity weakness. Geopolitical risk (Iran) adds to its long-term appeal.
+*   **Dollar Strength:** The "strong_dollar" signal (UUP in a strong uptrend) provides a natural hedge against global uncertainty.
+*   **AI Capex Deceleration:** The IPS's warning about 2027 capex guidance deceleration and "AI slowdown poses recession risk" (macro news) makes initiating long positions in pure-play AI/semiconductor names risky at this juncture, despite their technical oversold conditions.
+*   **Cash Buffer:** Maintain ample cash to manage potential "gap risk" and exploit future opportunities.
+
+---
+
+### **Actionable Plan for Lead Portfolio Manager:**
 
 | Action (Buy/Sell/Hold) | Ticker/Asset | Conviction Level (High/Medium/Low) | Timeframe | Justification |
 | :--------------------- | :----------- | :--------------------------------- | :-------- | :------------ |
-| **HOLD**               | CASH         | High                               | Immediate | Primary defense in a "Fast crash" scenario triggered by VIX/VIX3M breach. Capital preservation is paramount. |
-| **BUY**                | XLP          | High                               | Short-to-Medium | Consumer Staples is a defensive sector showing strong technical uptrend (SMA20 > SMA50 > SMA200, bullish MACD). Aligns with rotation to safety amid recession signals. |
-| **BUY**                | XLV          | High                               | Short-to-Medium | Healthcare is a defensive sector showing strong technical uptrend (SMA20 > SMA50 > SMA200, bullish MACD). Aligns with rotation to safety amid recession signals. |
-| **BUY**                | XLU          | High                               | Short-to-Medium | Utilities is a defensive sector showing short-term bullish reversal (MACD crossover, price above SMA20/50). Aligns with rotation to safety amid recession signals. |
-| **BUY**                | GLD          | Medium                             | Short-to-Medium | Strategic hedge against persistent inflation from geopolitical shocks (Iran war) and a "cornered" Fed. Technicals show a short-term bullish MACD crossover, suggesting potential for a bounce. |
-| **HOLD**               | TLT          | Medium                             | N/A       | Macro thesis identifies TLT as "suspect" for long-term adaptive defense, preferring GLD/cash. While showing a short-term bullish reversal, it's not a primary defensive allocation in this regime. |
-| **HOLD**               | XLE          | Low                                | N/A       | While energy geopolitics are a macro tailwind, XLE is in a strong technical downtrend and currently registers as "strong_negative" in commodity strength. Avoiding speculative long positions. |
-| **HOLD**               | LQD          | Low                                | N/A       | IG credit showing short-term bullish momentum, but "credit clear" signal is lagging equity market. Not deploying capital here in a "Fast crash" context. |
-| **HOLD**               | HYG          | Low                                | N/A       | HY credit showing short-term bullish momentum, but "credit clear" signal is lagging equity market. Not deploying capital here in a "Fast crash" context. |
-| **AVOID BUYING**       | NVDA         | High                               | Short     | Severely oversold tech stock in an extreme downtrend. Attempting to catch a falling knife in a "Fast crash" is against mandate. |
-| **AVOID BUYING**       | AMD          | High                               | Short     | Severely oversold tech stock in an extreme downtrend. Attempting to catch a falling knife in a "Fast crash" is against mandate. The cash-secured put idea for AMD is also in-the-money and would result in an immediate loss. |
-| **AVOID BUYING**       | INTC         | High                               | Short     | Severely oversold tech stock in an extreme downtrend. Attempting to catch a falling knife in a "Fast crash" is against mandate. |
-| **AVOID BUYING**       | TSM          | High                               | Short     | Severely oversold tech stock in an extreme downtrend. Attempting to catch a falling knife in a "Fast crash" is against mandate. |
-| **AVOID BUYING**       | MU           | High                               | Short     | Severely oversold tech stock in an extreme downtrend. Attempting to catch a falling knife in a "Fast crash" is against mandate. |
-| **AVOID BUYING**       | PLTR         | High                               | Short     | Severely oversold tech stock in an extreme downtrend. Attempting to catch a falling knife in a "Fast crash" is against mandate. |
-| **AVOID BUYING**       | STX          | High                               | Short     | Severely oversold tech stock in an extreme downtrend. Attempting to catch a falling knife in a "Fast crash" is against mandate. |
-| **AVOID BUYING**       | WDC          | High                               | Short     | Severely oversold tech stock in an extreme downtrend. Attempting to catch a falling knife in a "Fast crash" is against mandate. |
-| **AVOID BUYING**       | NBIS         | High                               | Short     | Severely oversold tech stock in an extreme downtrend. Attempting to catch a falling knife in a "Fast crash" is against mandate. |
-| **AVOID BUYING**       | ORCL         | High                               | Short     | Oversold tech stock in a strong downtrend. Attempting to catch a falling knife in a "Fast crash" is against mandate. |
-| **AVOID BUYING**       | GOOGL        | High                               | Short     | Severely oversold tech stock in an extreme downtrend. Attempting to catch a falling knife in a "Fast crash" is against mandate. |
-| **AVOID BUYING**       | META         | High                               | Short     | Tech stock in a powerful downtrend. Attempting to catch a falling knife in a "Fast crash" is against mandate. |
-| **AVOID BUYING**       | MSFT         | Medium                             | Short     | Tech stock in an uptrend but with weakening momentum and broad tech weakness. Prudence dictates avoiding new long exposure in "Fast crash." |
-| **AVOID BUYING**       | AMZN         | Medium                             | Short     | Tech/Consumer Discretionary stock showing short-term bullish momentum but overall market uncertainty and AI capex concerns warrant caution. |
-| **AVOID BUYING**       | QQQ          | High                               | Short     | Severely oversold broad tech index in an extreme downtrend. Amplified losses in "Fast crash." |
-| **AVOID BUYING**       | XLK          | High                               | Short     | Severely oversold tech sector ETF in an extreme downtrend. Amplified losses in "Fast crash." |
-| **AVOID BUYING**       | TQQQ         | High                               | Immediate | 3x leveraged ETF; immediate and aggressive liquidation is critical in "Fast crash" scenario. |
-| **AVOID BUYING**       | UPRO         | High                               | Immediate | 3x leveraged ETF; immediate and aggressive liquidation is critical in "Fast crash" scenario. |
-| **AVOID BUYING**       | SSO          | High                               | Immediate | 2x leveraged ETF; immediate and aggressive liquidation is critical in "Fast crash" scenario. |
-| **AVOID BUYING**       | TMF          | High                               | Immediate | 3x leveraged bond ETF; immediate and aggressive liquidation is critical in "Fast crash" scenario. |
-| **AVOID BUYING**       | SPY          | Medium                             | Short     | Broad market ETF showing significant short-term weakness; avoid new longs in "Fast crash." |
-| **AVOID BUYING**       | VOO          | Medium                             | Short     | Broad market ETF showing significant short-term weakness; avoid new longs in "Fast crash." |
-| **AVOID BUYING**       | VTI          | Medium                             | Short     | Broad market ETF showing significant short-term weakness; avoid new longs in "Fast crash." |
-| **AVOID BUYING**       | IWM          | Medium                             | Short     | Small-cap index showing short-term downtrend. Avoid new longs in "Fast crash." |
-| **AVOID BUYING**       | DIA          | Medium                             | Short     | Dow Jones index showing short-term breakdown; avoid new longs in "Fast crash." |
-| **AVOID BUYING**       | EWA          | Low                                | Short     | International diversification supported by thesis, but overall "Fast crash" risk outweighs new long positions in broader international. |
-| **AVOID BUYING**       | EWC          | Low                                | Short     | International diversification supported by thesis, but overall "Fast crash" risk outweighs new long positions in broader international. |
-| **AVOID BUYING**       | VGK          | Low                                | Short     | International diversification supported by thesis, but overall "Fast crash" risk outweighs new long positions in broader international. |
-| **AVOID BUYING**       | VXUS         | Low                                | Short     | International diversification supported by thesis, but overall "Fast crash" risk outweighs new long positions in broader international. |
-| **AVOID BUYING**       | XEQT.TO      | Low                                | Short     | International diversification supported by thesis, but overall "Fast crash" risk outweighs new long positions in broader international. |
-| **AVOID BUYING**       | XLF          | Low                                | Short     | Financials show uptrend but not a priority for capital deployment in "Fast crash" scenario. |
-| **AVOID BUYING**       | XLB          | Low                                | Short     | Materials sector in an uptrend, but overall "Fast crash" risk outweighs new long positions in a cyclical sector. |
-| **AVOID BUYING**       | SCHD         | Medium                             | Short     | Dividend growth ETF in an uptrend. While defensive, prioritizing pure defensive sectors (XLU, XLP, XLV) and cash in this extreme risk environment. |
-| **AVOID BUYING**       | QUAL         | Low                                | Short     | Quality factor ETF showing oversold condition but with bearish momentum. Not a priority for new longs in "Fast crash." |
-| **AVOID BUYING**       | IBIT         | High                               | Short     | Bitcoin ETF; severely oversold but highly volatile. Extreme risk in "Fast crash" scenario. |
-| **AVOID BUYING**       | TSLA         | High                               | Short     | Highly volatile stock in a downtrend. Extreme risk in "Fast crash" scenario. |
-| **AVOID BUYING**       | MTZ          | High                               | Short     | Infrastructure stock in a strong downtrend. Extreme risk in "Fast crash" scenario. |
-| **AVOID BUYING**       | AAPL         | Medium                             | Short     | Tech stock in an uptrend with weakening momentum. While less severe than others, given the "Fast crash" signal, new buys are not advised. |
-| **HOLD**               | NFLX         | Low                                | N/A       | Communication Services stock in a downtrend but showing potential short-term reversal. Not a priority for capital deployment. |
-| **HOLD**               | ^VIX         | N/A (Index)                        | N/A       | Monitor: Key signal for "Fast crash." |
-| **HOLD**               | ^VIX3M       | N/A (Index)                        | N/A       | Monitor: Key signal for "Fast crash." |
-| **HOLD**               | ^TNX         | N/A (Index)                        | N/A       | Monitor: 10Y yield showing potential for mean reversion bounce. |
-| **HOLD**               | ^IRX         | N/A (Index)                        | N/A       | Monitor: 13W bill showing volatility contraction. |
-| **HOLD**               | UUP          | N/A (Currency)                     | N/A       | Dollar strength signal is neutral; monitor for impact on commodities. |
-| **HOLD**               | SLV          | N/A (Commodity)                    | N/A       | Silver in strong downtrend; monitor for broader commodity trends. |
-| **HOLD**               | IAU          | N/A (Commodity)                    | N/A       | Alternative gold ETF, holding for diversification with GLD. |
-| **HOLD**               | CEG          | Low                                | N/A       | Energy company in a strong downtrend. While part of a relevant theme, currently too risky to initiate a new long. |
+| **Buy**                | XLU          | High                               | Short-term | Defensive sector (Utilities) showing strong technical uptrend and favored in a cautious, transitional regime. |
+| **Buy**                | XLV          | High                               | Short-term | Defensive sector (Healthcare) showing strong technical uptrend and favored in a cautious, transitional regime. |
+| **Buy**                | XLP          | High                               | Short-term | Defensive sector (Consumer Staples) showing strong technical uptrend and favored in a cautious, transitional regime. |
+| **Buy**                | SCHD         | Medium                             | Medium-term | Quality dividend growth ETF, provides stable income and aligns with a defensive-leaning, long-term portfolio in an uncertain environment. Technical uptrend. |
+| **Buy**                | QUAL         | Medium                             | Medium-term | Quality factor ETF, screens for strong fundamentals, suitable for resilience in a volatile market. Technical uptrend. |
+| **Buy**                | GLD          | Medium                             | Long-term | Long-term inflation hedge (IPS thesis), favored against negative real rates and geopolitical risk (Iran war). Provides adaptive defense. |
+| **Buy**                | UUP          | Medium                             | Short-term | Capitalizes on the "strong_dollar" signal, acting as a hedge against global risk-off and international asset headwinds. |
+| **Hold**               | CASH         | High                               | Immediate | Maintain a significant cash buffer to mitigate "gap risk," fund future tactical deployments, and adhere to a defensive-leaning posture. |
+| **Hold**               | All other assets from Watchlist | Low | N/A | Avoid initiating positions in high-beta tech, semiconductors, or leveraged ETFs due to current market volatility, AI capex deceleration risks, and other macro headwinds. No existing positions to sell. |
 
-**Final Trades (JSON):**
+---
 
 ## Paper-Account Attribution
 
