@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-11-07T00:19:57.082016+00:00",
+  "generated_at_utc": "2026-11-09T23:43:31.484076+00:00",
   "accounts": {
     "dev": {
       "ok": true,
       "strategy": null,
       "metrics": {
-        "observations": 177,
+        "observations": 178,
         "total_return": -0.12815,
-        "annualized_return": -0.177369,
-        "sharpe": -2.042461,
+        "annualized_return": -0.176466,
+        "sharpe": -2.036621,
         "max_dd": -0.12815,
         "current_dd": -0.12815
       },
@@ -21,12 +21,12 @@
       "ok": true,
       "strategy": null,
       "metrics": {
-        "observations": 163,
-        "total_return": -0.012268,
-        "annualized_return": -0.018903,
-        "sharpe": 0.036581,
+        "observations": 164,
+        "total_return": -0.01666,
+        "annualized_return": -0.025484,
+        "sharpe": 0.007205,
         "max_dd": -0.157845,
-        "current_dd": -0.105772
+        "current_dd": -0.109748
       },
       "vs_expectation": {
         "status": "insufficient_history",
@@ -37,10 +37,10 @@
       "ok": true,
       "strategy": "reddit_200sma_tqqq",
       "metrics": {
-        "observations": 163,
+        "observations": 164,
         "total_return": 0.225541,
-        "annualized_return": 0.369481,
-        "sharpe": 0.900619,
+        "annualized_return": 0.366857,
+        "sharpe": 0.89786,
         "max_dd": -0.600824,
         "current_dd": -0.471151
       },
@@ -58,17 +58,17 @@
       "ok": true,
       "strategy": "dual_momentum_rotation",
       "metrics": {
-        "observations": 163,
-        "total_return": -0.069072,
-        "annualized_return": -0.104752,
-        "sharpe": 0.073019,
+        "observations": 164,
+        "total_return": -0.057119,
+        "annualized_return": -0.086411,
+        "sharpe": 0.109182,
         "max_dd": -0.262814,
-        "current_dd": -0.262814
+        "current_dd": -0.253348
       },
       "vs_expectation": {
         "status": "watch",
         "breaches": [
-          "sharpe 0.07 < band low 0.31"
+          "sharpe 0.11 < band low 0.31"
         ],
         "expected_sharpe_band": [
           0.3063,
@@ -81,10 +81,10 @@
       "ok": true,
       "strategy": "sector_momentum_top3_filtered",
       "metrics": {
-        "observations": 163,
+        "observations": 164,
         "total_return": 0.076199,
-        "annualized_return": 0.120228,
-        "sharpe": 0.713672,
+        "annualized_return": 0.119453,
+        "sharpe": 0.711489,
         "max_dd": -0.084649,
         "current_dd": -0.038758
       },
@@ -102,10 +102,10 @@
       "ok": true,
       "strategy": null,
       "metrics": {
-        "observations": 163,
+        "observations": 164,
         "total_return": -0.00243,
-        "annualized_return": -0.003754,
-        "sharpe": -0.049015,
+        "annualized_return": -0.003731,
+        "sharpe": -0.048865,
         "max_dd": -0.039402,
         "current_dd": -0.004536
       },

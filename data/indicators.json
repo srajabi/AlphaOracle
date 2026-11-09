@@ -18,7 +18,7 @@
           "vix_value": 25.639999389648438,
           "vix_trend": "rising"
         },
-        "timestamp": "2026-11-07T00:14:27.207494"
+        "timestamp": "2026-11-09T23:38:51.213509"
       },
       "dollar_strength": {
         "name": "Dollar Strength",
@@ -35,7 +35,7 @@
             "sma200": 27.967500019073487
           }
         },
-        "timestamp": "2026-11-07T00:14:27.209606"
+        "timestamp": "2026-11-09T23:38:51.216123"
       },
       "real_rates": {
         "name": "Real Rates",
@@ -48,11 +48,11 @@
           "momentum": 5.052570713516635,
           "smas": {
             "sma20": 80.71599960327148,
-            "sma50": 80.36557235717774,
-            "sma200": 83.4448666381836
+            "sma50": 80.216240234375,
+            "sma200": 83.15340217590332
           }
         },
-        "timestamp": "2026-11-07T00:14:27.211518"
+        "timestamp": "2026-11-09T23:38:51.218535"
       },
       "commodity_strength": {
         "name": "Commodity Strength",
@@ -82,10 +82,10 @@
             "signal": "strong_negative"
           }
         },
-        "timestamp": "2026-11-07T00:14:27.217012"
+        "timestamp": "2026-11-09T23:38:51.225514"
       }
     },
-    "timestamp": "2026-11-07T00:14:27.217037"
+    "timestamp": "2026-11-09T23:38:51.225544"
   },
   "indicators": {
     "risk_sentiment": {
@@ -100,7 +100,7 @@
         "vix_value": 25.639999389648438,
         "vix_trend": "rising"
       },
-      "timestamp": "2026-11-07T00:14:27.207494"
+      "timestamp": "2026-11-09T23:38:51.213509"
     },
     "dollar_strength": {
       "name": "Dollar Strength",
@@ -117,7 +117,7 @@
           "sma200": 27.967500019073487
         }
       },
-      "timestamp": "2026-11-07T00:14:27.209606"
+      "timestamp": "2026-11-09T23:38:51.216123"
     },
     "real_rates": {
       "name": "Real Rates",
@@ -130,11 +130,11 @@
         "momentum": 5.052570713516635,
         "smas": {
           "sma20": 80.71599960327148,
-          "sma50": 80.36557235717774,
-          "sma200": 83.4448666381836
+          "sma50": 80.216240234375,
+          "sma200": 83.15340217590332
         }
       },
-      "timestamp": "2026-11-07T00:14:27.211518"
+      "timestamp": "2026-11-09T23:38:51.218535"
     },
     "commodity_strength": {
       "name": "Commodity Strength",
@@ -164,11 +164,11 @@
           "signal": "strong_negative"
         }
       },
-      "timestamp": "2026-11-07T00:14:27.217012"
+      "timestamp": "2026-11-09T23:38:51.225514"
     }
   },
   "metadata": {
-    "generated_at": "2026-11-07T00:14:27.217040",
+    "generated_at": "2026-11-09T23:38:51.225547",
     "data_source": "EOD historical data",
     "lookback_days": 250
   }
