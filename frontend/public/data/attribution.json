@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-11-10T02:57:18.660929+00:00",
+  "generated_at_utc": "2026-11-10T21:08:48.113634+00:00",
   "accounts": {
     "dev": {
       "ok": true,
       "strategy": null,
       "metrics": {
-        "observations": 178,
+        "observations": 179,
         "total_return": -0.12815,
-        "annualized_return": -0.176466,
-        "sharpe": -2.036621,
+        "annualized_return": -0.175572,
+        "sharpe": -2.03083,
         "max_dd": -0.12815,
         "current_dd": -0.12815
       },
@@ -21,12 +21,12 @@
       "ok": true,
       "strategy": null,
       "metrics": {
-        "observations": 164,
-        "total_return": -0.01666,
-        "annualized_return": -0.025484,
-        "sharpe": 0.007205,
+        "observations": 165,
+        "total_return": 0.039451,
+        "annualized_return": 0.060875,
+        "sharpe": 0.365223,
         "max_dd": -0.157845,
-        "current_dd": -0.109748
+        "current_dd": -0.058948
       },
       "vs_expectation": {
         "status": "insufficient_history",
@@ -37,10 +37,10 @@
       "ok": true,
       "strategy": "reddit_200sma_tqqq",
       "metrics": {
-        "observations": 164,
+        "observations": 165,
         "total_return": 0.225541,
-        "annualized_return": 0.366857,
-        "sharpe": 0.89786,
+        "annualized_return": 0.364271,
+        "sharpe": 0.895126,
         "max_dd": -0.600824,
         "current_dd": -0.471151
       },
@@ -58,18 +58,16 @@
       "ok": true,
       "strategy": "dual_momentum_rotation",
       "metrics": {
-        "observations": 164,
-        "total_return": -0.057119,
-        "annualized_return": -0.086411,
-        "sharpe": 0.109182,
+        "observations": 165,
+        "total_return": 0.033709,
+        "annualized_return": 0.051938,
+        "sharpe": 0.372372,
         "max_dd": -0.262814,
-        "current_dd": -0.253348
+        "current_dd": -0.181422
       },
       "vs_expectation": {
-        "status": "watch",
-        "breaches": [
-          "sharpe 0.11 < band low 0.31"
-        ],
+        "status": "on_script",
+        "breaches": [],
         "expected_sharpe_band": [
           0.3063,
           0.9543
@@ -81,12 +79,12 @@
       "ok": true,
       "strategy": "sector_momentum_top3_filtered",
       "metrics": {
-        "observations": 164,
-        "total_return": 0.076199,
-        "annualized_return": 0.119453,
-        "sharpe": 0.711489,
+        "observations": 165,
+        "total_return": 0.127354,
+        "annualized_return": 0.20091,
+        "sharpe": 1.056888,
         "max_dd": -0.084649,
-        "current_dd": -0.038758
+        "current_dd": 0.0
       },
       "vs_expectation": {
         "status": "on_script",
@@ -102,10 +100,10 @@
       "ok": true,
       "strategy": null,
       "metrics": {
-        "observations": 164,
+        "observations": 165,
         "total_return": -0.00243,
-        "annualized_return": -0.003731,
-        "sharpe": -0.048865,
+        "annualized_return": -0.003708,
+        "sharpe": -0.048717,
         "max_dd": -0.039402,
         "current_dd": -0.004536
       },
