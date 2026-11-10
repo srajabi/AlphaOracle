@@ -1,48 +1,75 @@
 {
-  "last_updated_utc": "2026-11-07T00:19:44.889674+00:00",
+  "last_updated_utc": "2026-11-10T02:57:09.435703+00:00",
   "error": "",
   "results": [
     {
       "trade": {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 8000
+        "notional_value": 8700
       },
       "status": "submitted",
-      "order_id": "af082723-5f91-4e40-9be2-38b9b1f56e71"
-    },
-    {
-      "trade": {
-        "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 9000
-      },
-      "status": "submitted",
-      "order_id": "547a2d2f-e4e6-46fb-9a41-19f694ccad7f"
+      "order_id": "1902da54-bef5-453a-a0d1-e1e6bb382d0b"
     },
     {
       "trade": {
         "ticker": "XLP",
         "action": "buy",
-        "notional_value": 9000
+        "notional_value": 8700
       },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
-    },
-    {
-      "trade": {
-        "ticker": "SCHD",
-        "action": "buy",
-        "notional_value": 4500
-      },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+      "status": "submitted",
+      "order_id": "5ce30f4a-e3ae-4c3f-853e-c477ca865542"
     },
     {
       "trade": {
         "ticker": "QUAL",
         "action": "buy",
-        "notional_value": 4200
+        "notional_value": 8700
+      },
+      "status": "submitted",
+      "order_id": "59e13bad-be54-45bb-bc85-4d1f3cc9435d"
+    },
+    {
+      "trade": {
+        "ticker": "SCHD",
+        "action": "buy",
+        "notional_value": 8700
+      },
+      "status": "submitted",
+      "order_id": "4c329e42-6154-4386-a297-5e3d371978b4"
+    },
+    {
+      "trade": {
+        "ticker": "XLF",
+        "action": "buy",
+        "notional_value": 8700
+      },
+      "status": "failed",
+      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+    },
+    {
+      "trade": {
+        "ticker": "VGK",
+        "action": "buy",
+        "notional_value": 8700
+      },
+      "status": "failed",
+      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+    },
+    {
+      "trade": {
+        "ticker": "EWA",
+        "action": "buy",
+        "notional_value": 8700
+      },
+      "status": "failed",
+      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+    },
+    {
+      "trade": {
+        "ticker": "VXUS",
+        "action": "buy",
+        "notional_value": 4300
       },
       "status": "failed",
       "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
@@ -51,16 +78,25 @@
       "trade": {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 9000
+        "notional_value": 4300
       },
       "status": "failed",
       "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
     },
     {
       "trade": {
-        "ticker": "UUP",
+        "ticker": "MSFT",
         "action": "buy",
-        "notional_value": 4000
+        "notional_value": 4300
+      },
+      "status": "failed",
+      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+    },
+    {
+      "trade": {
+        "ticker": "AMZN",
+        "action": "buy",
+        "notional_value": 4300
       },
       "status": "failed",
       "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
