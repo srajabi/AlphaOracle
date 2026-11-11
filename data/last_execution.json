@@ -1,105 +1,69 @@
 {
-  "last_updated_utc": "2026-11-10T02:57:09.435703+00:00",
+  "last_updated_utc": "2026-11-11T00:54:09.477409+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "XLU",
+        "ticker": "CASH",
         "action": "buy",
-        "notional_value": 8700
+        "notional_value": 47184.98
       },
-      "status": "submitted",
-      "order_id": "1902da54-bef5-453a-a0d1-e1e6bb382d0b"
-    },
-    {
-      "trade": {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 8700
-      },
-      "status": "submitted",
-      "order_id": "5ce30f4a-e3ae-4c3f-853e-c477ca865542"
-    },
-    {
-      "trade": {
-        "ticker": "QUAL",
-        "action": "buy",
-        "notional_value": 8700
-      },
-      "status": "submitted",
-      "order_id": "59e13bad-be54-45bb-bc85-4d1f3cc9435d"
-    },
-    {
-      "trade": {
-        "ticker": "SCHD",
-        "action": "buy",
-        "notional_value": 8700
-      },
-      "status": "submitted",
-      "order_id": "4c329e42-6154-4386-a297-5e3d371978b4"
-    },
-    {
-      "trade": {
-        "ticker": "XLF",
-        "action": "buy",
-        "notional_value": 8700
-      },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
-    },
-    {
-      "trade": {
-        "ticker": "VGK",
-        "action": "buy",
-        "notional_value": 8700
-      },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
-    },
-    {
-      "trade": {
-        "ticker": "EWA",
-        "action": "buy",
-        "notional_value": 8700
-      },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
-    },
-    {
-      "trade": {
-        "ticker": "VXUS",
-        "action": "buy",
-        "notional_value": 4300
-      },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
         "ticker": "GLD",
         "action": "buy",
-        "notional_value": 4300
+        "notional_value": 10000
       },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "MSFT",
+        "ticker": "UUP",
         "action": "buy",
-        "notional_value": 4300
+        "notional_value": 5000
       },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "AMZN",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 4300
+        "notional_value": 7500
       },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLP",
+        "action": "buy",
+        "notional_value": 7500
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLV",
+        "action": "buy",
+        "notional_value": 10000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "XLF",
+        "action": "buy",
+        "notional_value": 2500
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
     }
   ]
 }
