@@ -1,6 +1,6 @@
 {
-  "updated_at_utc": "2026-11-13T01:22:21.692833+00:00",
-  "last_message_utc": "2026-11-06T20:39:59.327852+00:00",
+  "updated_at_utc": "2026-11-13T21:03:02.980541+00:00",
+  "last_message_utc": "2026-11-13T21:03:02.980541+00:00",
   "states": {
     "mandate:P_sleeve": "SLEEVE_INVESTED",
     "mandate:Y_core_sleeve": "SLEEVE_INVESTED",
@@ -8,6 +8,6 @@
     "signal:slow_channel": "risk_on",
     "signal:fast_channel": "clear",
     "signal:credit": "clear",
-    "signal:canary": "risk_on"
+    "signal:canary": "half_defensive"
   }
 }
