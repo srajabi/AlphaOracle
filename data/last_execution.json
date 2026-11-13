@@ -1,19 +1,10 @@
 {
-  "last_updated_utc": "2026-11-11T00:54:09.477409+00:00",
+  "last_updated_utc": "2026-11-13T01:26:01.425633+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "CASH",
-        "action": "buy",
-        "notional_value": 47184.98
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "GLD",
+        "ticker": "XLU",
         "action": "buy",
         "notional_value": 10000
       },
@@ -22,27 +13,9 @@
     },
     {
       "trade": {
-        "ticker": "UUP",
-        "action": "buy",
-        "notional_value": 5000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 7500
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
         "ticker": "XLP",
         "action": "buy",
-        "notional_value": 7500
+        "notional_value": 10000
       },
       "status": "skipped",
       "reason": "No available buying power."
@@ -58,9 +31,63 @@
     },
     {
       "trade": {
-        "ticker": "XLF",
+        "ticker": "SPY",
         "action": "buy",
-        "notional_value": 2500
+        "notional_value": 20000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "AMD",
+        "action": "buy",
+        "notional_value": 5000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "AVGO",
+        "action": "buy",
+        "notional_value": 5000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "AAPL",
+        "action": "buy",
+        "notional_value": 5000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "MSFT",
+        "action": "buy",
+        "notional_value": 5000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "AMZN",
+        "action": "buy",
+        "notional_value": 5000
+      },
+      "status": "skipped",
+      "reason": "No available buying power."
+    },
+    {
+      "trade": {
+        "ticker": "LQD",
+        "action": "buy",
+        "notional_value": 10000
       },
       "status": "skipped",
       "reason": "No available buying power."
