@@ -1,16 +1,7 @@
 {
-  "generated_at_utc": "2026-11-13T21:03:02.980541+00:00",
-  "tier": "INFO",
-  "alerts": [
-    {
-      "key": "signal:canary",
-      "label": "Canary breadth",
-      "from": "risk_on",
-      "to": "half_defensive",
-      "tier": "INFO",
-      "detail": "negative=TLT"
-    }
-  ],
+  "generated_at_utc": "2026-11-14T00:59:55.411089+00:00",
+  "tier": "NONE",
+  "alerts": [],
   "states": {
     "mandate:P_sleeve": "SLEEVE_INVESTED",
     "mandate:Y_core_sleeve": "SLEEVE_INVESTED",

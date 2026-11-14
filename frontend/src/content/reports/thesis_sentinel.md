@@ -1,35 +1,34 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-11-13"
+date: "2026-11-14"
 ---
 
-Here is your daily Thesis Sentinel brief for 2026-11-13:
+**Thesis Sentinel Daily Brief - 2026-11-14**
 
-### 1. Tripwire Status
+1.  **Tripwire status**
 
-| Tripwire                   | Thesis Threshold                           | Today's Reading (Rule-Based)                          | Status    |
-| :------------------------- | :----------------------------------------- | :---------------------------------------------------- | :-------- |
-| Carry unwind               | ^VIX/^VIX3M > 1.0                          | `vix_vix3m_5d_median`: 0.943                          | **CLEAR** |
-| Credit cracks              | HYG/LQD 63d rel-mom < -2%                  | `hyg_lqd_63d_relmom`: -0.0036 (-0.36%)                | **CLEAR** |
-| Breadth break              | canary 13612W (EWA,TLT) both negative      | `canary` state: risk_on; EWA, TLT momentum positive   | **CLEAR** |
-| Trend break                | SPY < 200d SMA (month-end)                 | `slow_channel` state: risk_on (as of 2026-10-30)      | **CLEAR** |
-| Oil shock                  | XLE momentum vs SPY sustained leadership   | XLE momentum: -6.29897751669346 (strong_negative)     | **CLEAR** |
-| AI capex turn              | hyperscaler guidance any FY27 capex cut    | No explicit FY27 capex cuts reported                  | **CLEAR** |
-| Carry stress               | USDJPY rapid < 140 move                    | Dollar strengthening; no rapid USDJPY < 140 move      | **CLEAR** |
+| Tripwire                   | Today's Reading                   | Status  |
+| :------------------------- | :-------------------------------- | :------ |
+| Carry unwind (^VIX/^VIX3M) | 0.936 (vix/vix3m 5d median)       | CLEAR   |
+| Credit cracks (HYG/LQD)    | -0.0036 (63d rel-mom)             | CLEAR   |
+| Breadth break (EWA, TLT)   | TLT negative, EWA positive        | CLEAR   |
+| Trend break (SPY < 200d SMA) | SPY > 200d SMA (754.37 > 729.32)  | CLEAR   |
+| Oil shock (XLE momentum)   | XLE momentum negative (-4.81%)    | CLEAR   |
+| AI capex turn (hyperscaler) | Nebius raised 2027 capex forecast | CLEAR   |
+| Carry stress (USDJPY < 140) | Yen weakens toward 160            | CLEAR   |
 
-### 2. Marker Watch
+2.  **Marker watch**
 
-*   **BoJ June meeting (guidance / USDJPY < 145)**: No new BoJ guidance or specific USDJPY movements related to carry stress reported today.
-*   **May-July CPI prints (< 3.5%)**: "Inflation remained elevated in October" (Politico). This contradicts the <3.5% marker.
-*   **SpaceX IPO first-month performance (breaks $135)**: "SpaceX, Telsa merger talks begin to take shape." The original IPO performance marker is historical.
-*   **Q2 earnings hyperscaler capex guidance (any cut)**: Nebius pares back 2026 revenue forecast due to capacity delays, but no explicit FY27 capex cuts for hyperscalers confirmed.
-*   **Hormuz (full closure week+)**: "Oil Prices Squeezed Between Peace Hopes and Iran Escalation Risk," "Four tankers struck by explosions" - indicates ongoing risk/disruption, but not full closure.
+*   **BoJ June meeting**: Yen weakening toward 160, not falling below 145.
+*   **May-July CPI prints**: Wholesale inflation (PPI) hit 6.5% YoY, not below 3.5%.
+*   **SpaceX IPO first-month performance**: IPO absorbed $75B, day-1 close $160.95, above $135 issue price. Merger talks with Tesla are reported for December.
+*   **Q2 earnings hyperscaler capex guidance**: Nebius (AI infrastructure) lowered 2026 revenue but *raised* its 2027 capital spending forecast.
+*   **Hormuz**: Multiple shipping attacks and disruptions continue, driving oil prices higher, but no explicit "full closure week+" reported.
 
-### 3. Delta
+3.  **Delta**
 
-A significant development is the widespread reporting of Jensen Huang's resignation as Nvidia CEO amid scandals, leading to a notable decline in NVDA shares and impacting the broader tech sector (XLK, QQQ). This creates fresh uncertainty around the AI capex cycle, as the thesis highlights reliance on top-10 names. Concurrently, news continues to emphasize sticky inflation and Fed's policy being "cornered" (unable to cut into high inflation, or hike into war economy), alongside persistent geopolitical risks in the Strait of Hormuz. Dollar strength is confirmed by multiple sources and indicators.
+Today's data points to continued inflationary pressures, with the Producer Price Index (PPI) at 6.5% YoY. This reinforces Fed hawkishness and rate hike expectations, as reflected in rising rates and a strong dollar. The AI sector saw significant volatility with news of Nvidia CEO Jensen Huang's resignation and subsequent stock slump, prompting discussion of competitors and market shifts. Ongoing disruptions in the Strait of Hormuz continue to impact oil markets.
 
-### 4. Scenario Pressure
+4.  **Scenario pressure**
 
-Today's context suggests increasing pressure towards **Scenario A (Grind-with-violence)** due to the substantial Nvidia-related uncertainty hitting key leadership stocks and persistent geopolitical risks contributing to "violence" in the market. Continued elevated inflation and hints of potential capex re-evaluation (Nebius delays) also add underlying support to **Scenario B (Slow bear)**, as these factors align with a grinding drawdown. All major tripwires are currently clear, which mitigates immediate pressure towards **Scenario C (Fast crash)**, though the underlying risks noted in the thesis remain.
-The "Bull Quiet" regime stated in market data, combined with clear tripwires, suggests resilience, but the NVDA situation is a significant new input testing the "narrow breadth" thesis.
+The persistent high inflation (PPI 6.5%), coupled with increasing rate hike expectations (multiple Fed news, TLT downtrend, UUP uptrend) and recent volatility in the leading AI sector (Nvidia CEO exit, tech slump), exerts pressure towards **Scenario A (Grind-with-violence)** due to repeated air pockets and potential for broader market corrections. If AI capex deceleration becomes more evident in future guidance, this could shift pressure towards **Scenario B (Slow bear)**. The market regime remains "Transitional" with low confidence, indicating shifting underlying dynamics. Note: The rule-based signals remain CLEAR, which governs positioning.

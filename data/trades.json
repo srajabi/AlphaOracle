@@ -1,52 +1,22 @@
 [
     {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 10000
-    },
-    {
         "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 10000
-    },
-    {
-        "ticker": "SPY",
         "action": "buy",
         "notional_value": 20000
     },
     {
-        "ticker": "AMD",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 20000
     },
     {
-        "ticker": "AVGO",
+        "ticker": "XLF",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 20000
     },
     {
-        "ticker": "AAPL",
+        "ticker": "SCHD",
         "action": "buy",
-        "notional_value": 5000
-    },
-    {
-        "ticker": "MSFT",
-        "action": "buy",
-        "notional_value": 5000
-    },
-    {
-        "ticker": "AMZN",
-        "action": "buy",
-        "notional_value": 5000
-    },
-    {
-        "ticker": "LQD",
-        "action": "buy",
-        "notional_value": 10000
+        "notional_value": 20000
     }
 ]

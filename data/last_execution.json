@@ -1,96 +1,42 @@
 {
-  "last_updated_utc": "2026-11-13T01:26:01.425633+00:00",
+  "last_updated_utc": "2026-11-14T01:04:10.588120+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 10000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "XLP",
-        "action": "buy",
-        "notional_value": 10000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
         "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 10000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "SPY",
         "action": "buy",
         "notional_value": 20000
       },
-      "status": "skipped",
-      "reason": "No available buying power."
+      "status": "submitted",
+      "order_id": "9a2c5de4-b262-45a9-bb13-b360c7fa5eeb"
     },
     {
       "trade": {
-        "ticker": "AMD",
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 20000
       },
-      "status": "skipped",
-      "reason": "No available buying power."
+      "status": "submitted",
+      "order_id": "3967e171-41fc-40d8-892c-84ea140a12b6"
     },
     {
       "trade": {
-        "ticker": "AVGO",
+        "ticker": "XLF",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 20000
       },
-      "status": "skipped",
-      "reason": "No available buying power."
+      "status": "failed",
+      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
     },
     {
       "trade": {
-        "ticker": "AAPL",
+        "ticker": "SCHD",
         "action": "buy",
-        "notional_value": 5000
+        "notional_value": 20000
       },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "MSFT",
-        "action": "buy",
-        "notional_value": 5000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "AMZN",
-        "action": "buy",
-        "notional_value": 5000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "LQD",
-        "action": "buy",
-        "notional_value": 10000
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
+      "status": "failed",
+      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
     }
   ]
 }
