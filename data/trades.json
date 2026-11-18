@@ -1,7 +1,102 @@
 [
     {
-        "ticker": "XLU",
+        "ticker": "TQQQ",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "UPRO",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "TMF",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "NVDA",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "TSM",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "INTC",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "MU",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "AMD",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "QQQ",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "XLK",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "PLTR",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "CRWD",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "NBIS",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "EWA",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "IWM",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "XLI",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "XLY",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "VGK",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "VXUS",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "UUP",
         "action": "buy",
-        "notional_value": 8700
+        "notional_value": 15000
     }
 ]
