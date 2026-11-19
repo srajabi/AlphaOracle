@@ -10,12 +10,27 @@
         "qty": "all"
     },
     {
+        "ticker": "SSO",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
         "ticker": "TMF",
         "action": "sell",
         "qty": "all"
     },
     {
+        "ticker": "TLT",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
         "ticker": "NVDA",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "AMD",
         "action": "sell",
         "qty": "all"
     },
@@ -35,37 +50,7 @@
         "qty": "all"
     },
     {
-        "ticker": "AMD",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
         "ticker": "QQQ",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "XLK",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "PLTR",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "CRWD",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "NBIS",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "EWA",
         "action": "sell",
         "qty": "all"
     },
@@ -75,12 +60,7 @@
         "qty": "all"
     },
     {
-        "ticker": "XLI",
-        "action": "sell",
-        "qty": "all"
-    },
-    {
-        "ticker": "XLY",
+        "ticker": "EWA",
         "action": "sell",
         "qty": "all"
     },
@@ -95,8 +75,83 @@
         "qty": "all"
     },
     {
-        "ticker": "UUP",
+        "ticker": "EWC",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "XEQT.TO",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "MSFT",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "AAPL",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "AMZN",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "META",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "GOOGL",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "CRWD",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "PLTR",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "NBIS",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "ORCL",
+        "action": "sell",
+        "qty": "all"
+    },
+    {
+        "ticker": "XLU",
         "action": "buy",
-        "notional_value": 15000
+        "notional_value": 17437
+    },
+    {
+        "ticker": "XLP",
+        "action": "buy",
+        "notional_value": 17437
+    },
+    {
+        "ticker": "CEG",
+        "action": "buy",
+        "notional_value": 17437
+    },
+    {
+        "ticker": "MTZ",
+        "action": "buy",
+        "notional_value": 17437
+    },
+    {
+        "ticker": "TLN",
+        "action": "buy",
+        "notional_value": 17436.98
     }
 ]
