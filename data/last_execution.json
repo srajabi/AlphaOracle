@@ -1,42 +1,5 @@
 {
-  "last_updated_utc": "2026-11-14T01:04:10.588120+00:00",
+  "last_updated_utc": "2026-11-20T01:56:13.101271+00:00",
   "error": "",
-  "results": [
-    {
-      "trade": {
-        "ticker": "XLV",
-        "action": "buy",
-        "notional_value": 20000
-      },
-      "status": "submitted",
-      "order_id": "9a2c5de4-b262-45a9-bb13-b360c7fa5eeb"
-    },
-    {
-      "trade": {
-        "ticker": "XLU",
-        "action": "buy",
-        "notional_value": 20000
-      },
-      "status": "submitted",
-      "order_id": "3967e171-41fc-40d8-892c-84ea140a12b6"
-    },
-    {
-      "trade": {
-        "ticker": "XLF",
-        "action": "buy",
-        "notional_value": 20000
-      },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
-    },
-    {
-      "trade": {
-        "ticker": "SCHD",
-        "action": "buy",
-        "notional_value": 20000
-      },
-      "status": "failed",
-      "reason": "{\"code\":42210000,\"message\":\"notional amount must be \\u003e= 1.00\"}"
-    }
-  ]
+  "results": []
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-19T22:31:27.357090+00:00",
+  "generated_at_utc": "2026-11-20T01:52:30.928985+00:00",
   "ips": "claude/ips_case_study.md",
   "signals": {
     "slow_channel": {
@@ -10,9 +10,9 @@
       "distance_pct": 3.07
     },
     "fast_channel": {
-      "state": "clear",
-      "vix_vix3m_5d_median": 0.995,
-      "as_of": "2026-11-18"
+      "state": "backwardation",
+      "vix_vix3m_5d_median": 1.011,
+      "as_of": "2026-11-19"
     },
     "credit": {
       "state": "clear",
@@ -31,8 +31,8 @@
     }
   },
   "mandates": {
-    "P_sleeve": "SLEEVE_INVESTED",
-    "Y_core_sleeve": "SLEEVE_INVESTED",
+    "P_sleeve": "SLEEVE_TO_TREASURIES",
+    "Y_core_sleeve": "SLEEVE_TO_TREASURIES",
     "Y_satellite": "see registered champion state (canary signal above for canary_daa_*)"
   }
 }

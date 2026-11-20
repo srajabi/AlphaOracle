@@ -1,13 +1,38 @@
 {
-  "generated_at_utc": "2026-11-19T22:31:27.400417+00:00",
-  "tier": "NONE",
-  "alerts": [],
+  "generated_at_utc": "2026-11-20T01:52:30.967693+00:00",
+  "tier": "ACTION",
+  "alerts": [
+    {
+      "key": "mandate:P_sleeve",
+      "label": "Mandate P equity sleeve",
+      "from": "SLEEVE_INVESTED",
+      "to": "SLEEVE_TO_TREASURIES",
+      "tier": "ACTION",
+      "detail": ""
+    },
+    {
+      "key": "mandate:Y_core_sleeve",
+      "label": "Mandate Y core sleeve",
+      "from": "SLEEVE_INVESTED",
+      "to": "SLEEVE_TO_TREASURIES",
+      "tier": "ACTION",
+      "detail": ""
+    },
+    {
+      "key": "signal:fast_channel",
+      "label": "VIX term structure",
+      "from": "clear",
+      "to": "backwardation",
+      "tier": "INFO",
+      "detail": "vix_vix3m_5d_median=1.011"
+    }
+  ],
   "states": {
-    "mandate:P_sleeve": "SLEEVE_INVESTED",
-    "mandate:Y_core_sleeve": "SLEEVE_INVESTED",
+    "mandate:P_sleeve": "SLEEVE_TO_TREASURIES",
+    "mandate:Y_core_sleeve": "SLEEVE_TO_TREASURIES",
     "mandate:Y_satellite": "see registered champion state (canary signal above for canary_daa_*)",
     "signal:slow_channel": "risk_on",
-    "signal:fast_channel": "clear",
+    "signal:fast_channel": "backwardation",
     "signal:credit": "clear",
     "signal:canary": "full_defensive"
   }
