@@ -8,7 +8,7 @@
 |---|---|---|
 | Trend (monthly 200dma) | risk_on | 3.07% vs SMA, as of 2026-10-30 |
 | VIX term structure | backwardation | ratio 1.011 |
-| Credit (HYG/LQD 63d) | clear | -0.0066 |
+| Credit (HYG/LQD 63d) | clear | -0.0093 |
 | Canary breadth | full_defensive | negative: ['EWA', 'TLT'] |
 
 ## Thesis Sentinel

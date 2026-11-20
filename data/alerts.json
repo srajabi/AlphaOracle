@@ -1,32 +1,7 @@
 {
-  "generated_at_utc": "2026-11-20T01:52:30.967693+00:00",
-  "tier": "ACTION",
-  "alerts": [
-    {
-      "key": "mandate:P_sleeve",
-      "label": "Mandate P equity sleeve",
-      "from": "SLEEVE_INVESTED",
-      "to": "SLEEVE_TO_TREASURIES",
-      "tier": "ACTION",
-      "detail": ""
-    },
-    {
-      "key": "mandate:Y_core_sleeve",
-      "label": "Mandate Y core sleeve",
-      "from": "SLEEVE_INVESTED",
-      "to": "SLEEVE_TO_TREASURIES",
-      "tier": "ACTION",
-      "detail": ""
-    },
-    {
-      "key": "signal:fast_channel",
-      "label": "VIX term structure",
-      "from": "clear",
-      "to": "backwardation",
-      "tier": "INFO",
-      "detail": "vix_vix3m_5d_median=1.011"
-    }
-  ],
+  "generated_at_utc": "2026-11-20T22:01:29.256775+00:00",
+  "tier": "NONE",
+  "alerts": [],
   "states": {
     "mandate:P_sleeve": "SLEEVE_TO_TREASURIES",
     "mandate:Y_core_sleeve": "SLEEVE_TO_TREASURIES",
