@@ -1,35 +1,34 @@
 ---
 title: Thesis Sentinel Daily Brief
-date: "2026-11-21"
+date: "2026-11-24"
 ---
 
-**Daily Thesis Brief - 2026-11-21**
+Here is your daily brief:
 
-**1. Tripwire Status**
+1.  **Tripwire status**
 
-| Tripwire                   | Signal (Today's Reading)                       | Status |
-| :------------------------- | :--------------------------------------------- | :----- |
-| Carry unwind (`^VIX/^VIX3M`) | 1.019 (backwardation)                          | FIRED  |
-| Credit cracks (HYG/LQD)    | -0.0093                                        | CLEAR  |
-| Breadth break (canary)     | EWA: -0.0644, TLT: -0.0037                     | FIRED  |
-| Trend break (SPY < 200d SMA) | SPY close 715.87 < 200d SMA 730.20 (daily)     | FIRED* |
-| Oil shock (XLE momentum)   | XLE strong_negative (momentum -9.89%)          | CLEAR  |
-| AI capex turn              | No explicit hyperscaler capex cut guidance     | CLEAR  |
-| Carry stress (USDJPY < 140) | No direct USDJPY data in signals/news          | CLEAR  |
+| Tripwire         | Today's Reading                                     | Status |
+| :--------------- | :-------------------------------------------------- | :----- |
+| Carry unwind     | ^VIX/^VIX3M 5d median = 1.044 (Backwardation)       | FIRED  |
+| Credit cracks    | HYG/LQD 63d rel-mom = -0.0164                       | CLEAR  |
+| Breadth break    | Canary (EWA, TLT) both negative                     | FIRED  |
+| Trend break      | SPY close (689.81) < 200d SMA (730.29)              | FIRED  |
+| Oil shock        | XLE momentum strong_negative (-12.72)               | CLEAR  |
+| AI capex turn    | No explicit FY27 capex cuts reported                | CLEAR  |
+| Carry stress     | USDJPY not provided in rule-based signals; Dollar strong | CLEAR  |
 
-*Note on Trend Break: The thesis specifies "month-end close below" the 200d SMA. While today's daily close is below, final confirmation for this tripwire awaits month-end.*
+2.  **Marker watch**
+    *   **BoJ June meeting**: No new hawkish guidance reported today.
+    *   **May-July CPI prints**: Inflation remains a concern; no consecutive <3.5% CPI prints reported.
+    *   **SpaceX IPO first-month performance**: No news indicating SpaceX IPO has broken its $135 issue price downwards; positive sentiment noted on performance.
+    *   **Q2 earnings hyperscaler capex guidance**: No explicit FY27 hyperscaler capex guidance cuts reported; general mentions of AI spending slowdown noted.
+    *   **Hormuz**: Increased cyberattacks and shipping incidents noted, but no "full closure week+" reported, and oil prices are falling.
 
-**2. Marker Watch**
+3.  **Delta**
+    *   **Market Divergence:** Headlines report a significant tech-led S&P 500 and Nasdaq rally today following Nvidia CEO's reinstatement, however, the authoritative `risk_sentiment` indicator remains `risk_off` with SPY in downtrend and VIX elevated/rising.
+    *   **Fed Posture:** Fed's Williams signaled more rate hikes are possible as inflation remains too high.
+    *   **Geopolitics:** New reports of US eyeing Iran as culprit in cyberattacks against ships, intensifying Strait of Hormuz tensions, yet oil prices are falling due to supply rebound.
+    *   **Recession Signals:** Australia faces 50% recession risk as unemployment surges.
 
-*   **BoJ Guidance:** No new direct news on BoJ guidance today beyond prior expectations; focus remains on hawkish Fed rate hike expectations.
-*   **SpaceX IPO:** "SpaceX mega-IPO this week ($75B raise, biggest ever) - mechanical liquidity drain + classic late-cycle marker" confirms the marker is active as a late-cycle liquidity event.
-*   **Hyperscaler Capex Guidance:** No explicit hyperscaler capex *cut* guidance reported in today's news.
-*   **Hormuz Closure:** Reports of intensified attacks on ships in the Strait of Hormuz continue, leading to rising oil prices and potential export declines; however, not yet explicitly a "full closure week+".
-
-**3. Delta**
-
-The market is in a pronounced "Bear Volatile" regime with elevated and rising volatility (`^VIX` at 35.89) and a strengthening US Dollar (`UUP` strong uptrend, 2.53% momentum). The fast channel is now in "backwardation", and the canary signal indicates "full_defensive" positioning, sharply contrasting with the slow channel's "risk_on" status (as of Oct 30). Multiple tripwires related to extreme risk-off sentiment and potential systemic stress are now fired (Carry unwind, Breadth break, daily Trend break). A broad AI-related stock sell-off is accelerating, with recent IPOs (e.g., Anthropic) failing to calm fears, and the SpaceX mega-IPO explicitly noted as a "classic late-cycle marker". Geopolitical tensions around the Strait of Hormuz continue to escalate.
-
-**4. Scenario Pressure**
-
-Today's evidence heavily pressures **Scenario C (Fast crash)**, primarily driven by the explicit "backwardation" signal (`^VIX/^VIX3M > 1.0`), escalating Hormuz tensions, and the broad AI-related tech stock sell-off / IPO failures aligning with "IPO failure" as a trigger. There is also strong pressure towards **Scenario B (Slow bear)** due to the "full defensive" canary signal and the SPY daily close below its 200-day SMA, coupled with persistent inflation concerns (Fed rate hike expectations). The slow channel's "risk_on" status (dated Oct 30) suggests a lag in its signal compared to the rapidly deteriorating current conditions.
+4.  **Scenario pressure**
+    Today's evidence presents conflicting pressures. The authoritative `RULE-BASED SIGNAL STATES` (fast channel backwardation, canary full_defensive, SPY < 200d SMA) strongly indicate pressure toward defensive scenarios, specifically **Scenario B (Slow bear)** or **Scenario C (Fast crash)**, triggering corresponding de-risking actions per mandate. This directly contradicts the bullish headlines regarding the tech rally driven by Nvidia CEO's return, which would otherwise suggest **Scenario A (Grind-with-violence)** or a market rebound. The signals govern positioning, reinforcing a defensive stance. Oil price decline, despite Hormuz tensions, somewhat dampens the direct "oil shock" component of a fast crash for now.
