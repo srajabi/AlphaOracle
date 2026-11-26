@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-26T03:01:02.256009+00:00",
+  "last_updated_utc": "2026-11-26T23:29:43.286376+00:00",
   "accounts": {
     "dev": {
       "account_id": "dev",
@@ -7,7 +7,7 @@
       "strategy": "Advanced LLM Strategy",
       "frequency": "2x Daily (10 AM & 3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-11-26T03:01:01.913255+00:00",
+      "last_updated_utc": "2026-11-26T23:29:42.751080+00:00",
       "ok": true,
       "error": "",
       "account": {
@@ -25,32 +25,32 @@
       "strategy": "Standard LLM Strategy",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-11-26T03:01:01.974792+00:00",
+      "last_updated_utc": "2026-11-26T23:29:42.788346+00:00",
       "ok": true,
       "error": "",
       "account": {
         "status": "ACTIVE",
         "cash": -244670.41,
-        "equity": 335358.542964,
+        "equity": 335193.704161,
         "buying_power": 0.0,
-        "portfolio_value": 90688.13
+        "portfolio_value": 90523.29
       },
       "positions": [
         {
           "symbol": "AVGO",
           "qty": 10.328482377,
-          "market_value": 3139.858643,
-          "current_price": 304.0,
+          "market_value": 3107.427208,
+          "current_price": 300.86,
           "avg_entry_price": 422.06007,
-          "unrealized_pl": -1219.381352
+          "unrealized_pl": -1251.812787
         },
         {
           "symbol": "CRWD",
           "qty": 15.610769023,
-          "market_value": 3272.017187,
-          "current_price": 209.6,
+          "market_value": 3267.333957,
+          "current_price": 209.3,
           "avg_entry_price": 223.396426,
-          "unrealized_pl": -215.37282
+          "unrealized_pl": -220.05605
         },
         {
           "symbol": "GLD",
@@ -79,18 +79,18 @@
         {
           "symbol": "NVDA",
           "qty": 23.683251164,
-          "market_value": 3581.381241,
-          "current_price": 151.22,
+          "market_value": 3535.909399,
+          "current_price": 149.3,
           "avg_entry_price": 220.877191,
-          "unrealized_pl": -1649.70875
+          "unrealized_pl": -1695.180592
         },
         {
           "symbol": "QQQ",
           "qty": 12.09723242,
-          "market_value": 7700.759436,
-          "current_price": 636.572,
+          "market_value": 7668.798548,
+          "current_price": 633.93,
           "avg_entry_price": 721.31705,
-          "unrealized_pl": -1025.180566
+          "unrealized_pl": -1057.141454
         },
         {
           "symbol": "QUAL",
@@ -119,10 +119,10 @@
         {
           "symbol": "TSM",
           "qty": 10.348026519,
-          "market_value": 3592.834807,
-          "current_price": 347.2,
+          "market_value": 3542.543399,
+          "current_price": 342.34,
           "avg_entry_price": 421.262933,
-          "unrealized_pl": -766.405195
+          "unrealized_pl": -816.696603
         },
         {
           "symbol": "VOO",
@@ -196,7 +196,7 @@
       "strategy": "TQQQ Momentum",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-11-26T03:01:02.031691+00:00",
+      "last_updated_utc": "2026-11-26T23:29:43.073788+00:00",
       "ok": true,
       "error": "",
       "account": {
@@ -214,15 +214,15 @@
       "strategy": "Dual Momentum",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-11-26T03:01:02.078568+00:00",
+      "last_updated_utc": "2026-11-26T23:29:43.111323+00:00",
       "ok": true,
       "error": "",
       "account": {
         "status": "ACTIVE",
-        "cash": -223690.55,
+        "cash": -223690.56,
         "equity": 313197.9,
         "buying_power": 0.0,
-        "portfolio_value": 89507.35
+        "portfolio_value": 89507.34
       },
       "positions": [
         {
@@ -241,7 +241,7 @@
       "strategy": "Sector Rotation",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-11-26T03:01:02.141287+00:00",
+      "last_updated_utc": "2026-11-26T23:29:43.144839+00:00",
       "ok": true,
       "error": "",
       "account": {
@@ -284,7 +284,7 @@
       "strategy": "Mean Reversion",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-11-26T03:01:02.203745+00:00",
+      "last_updated_utc": "2026-11-26T23:29:43.250996+00:00",
       "ok": true,
       "error": "",
       "account": {
