@@ -1,17 +1,22 @@
 [
     {
-        "ticker": "GLD",
+        "ticker": "TLT",
         "action": "buy",
-        "notional_value": 10000
+        "notional_value": 43592.49
     },
     {
-        "ticker": "SPY",
+        "ticker": "GLD261218C00336000",
         "action": "buy",
-        "notional_value": 5000
+        "contracts": 1
     },
     {
-        "ticker": "QQQ",
+        "ticker": "QQQ261218P00615000",
         "action": "buy",
-        "notional_value": 5000
+        "contracts": 1
+    },
+    {
+        "ticker": "SPY261218P00695000",
+        "action": "buy",
+        "contracts": 1
     }
 ]
