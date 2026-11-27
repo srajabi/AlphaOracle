@@ -1,12 +1,27 @@
 [
     {
-        "ticker": "XLP",
+        "ticker": "TLT",
         "action": "buy",
-        "notional_value": 10898.12
+        "notional_value": 17400
     },
     {
         "ticker": "XLU",
         "action": "buy",
-        "notional_value": 10898.12
+        "notional_value": 17400
+    },
+    {
+        "ticker": "XLP",
+        "action": "buy",
+        "notional_value": 17400
+    },
+    {
+        "ticker": "SCHD",
+        "action": "buy",
+        "notional_value": 17400
+    },
+    {
+        "ticker": "LQD",
+        "action": "buy",
+        "notional_value": 17400
     }
 ]
