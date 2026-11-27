@@ -1,160 +1,530 @@
 <!DOCTYPE html><html lang="en" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/AlphaOracle/favicon.svg"><link rel="icon" href="/AlphaOracle/favicon.ico"><meta name="generator" content="Astro v5.18.0"><title>Technical Analyst Report</title><style>:root{--bg: #0b0e14;--panel-bg: #131722;--panel-bg-raised: #1e2230;--border: #2a2e39;--text: #f8f9fa;--text-body: #d1d4dc;--text-muted: #8f949e;--accent: #2962ff;--accent-soft: #c4d4ff;--green: #28a745;--red: #dc3545;--red-bright: #f6465d;--yellow: #ffc107}.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}.panel{background:var(--panel-bg);border:1px solid var(--border);border-radius:12px;padding:1.25rem;margin-bottom:1rem}.muted{color:var(--text-muted)}.btn{text-decoration:none;color:#fff;background:var(--accent);border-radius:8px;padding:.5rem .85rem;font-size:.85rem;font-weight:600}html,body{margin:0;width:100%;height:100%;background:#0b0e14;color:#f8f9fa;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif}.site-header[data-astro-cid-sckkx6r4]{position:sticky;top:0;z-index:100;background:#0b0e14eb;backdrop-filter:blur(8px);border-bottom:1px solid #2a2e39}.site-header-inner[data-astro-cid-sckkx6r4]{max-width:1100px;margin:0 auto;padding:.7rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}.brand[data-astro-cid-sckkx6r4]{color:#f8f9fa;text-decoration:none;font-weight:800;font-size:1.1rem;letter-spacing:.01em}.site-nav[data-astro-cid-sckkx6r4]{display:flex;gap:.25rem;flex-wrap:wrap}.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]{color:#8f949e;text-decoration:none;font-size:.9rem;font-weight:600;padding:.35rem .7rem;border-radius:8px}.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]:hover,.site-nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4].active{color:#f8f9fa;background:#1e2230}
 main[data-astro-cid-ipuyqs4v]{max-width:850px;margin:0 auto;padding:3rem 1.5rem;line-height:1.7;color:#d1d4dc}header[data-astro-cid-ipuyqs4v]{margin:0 0 3rem;border-bottom:1px solid #2a2e39;padding-bottom:1.5rem}h1[data-astro-cid-ipuyqs4v]{margin:0;font-size:3rem;color:#fff;font-weight:800;letter-spacing:-.02em}.date[data-astro-cid-ipuyqs4v]{color:#8f949e;margin-top:.5rem}article[data-astro-cid-ipuyqs4v]{font-size:1.15rem}article[data-astro-cid-ipuyqs4v] h2{margin-top:3rem;color:#fff;font-size:1.75rem;border-bottom:1px solid #2a2e39;padding-bottom:.5rem}article[data-astro-cid-ipuyqs4v] h3{margin-top:2rem;color:#fff}article[data-astro-cid-ipuyqs4v] p{margin-bottom:1.5rem}article[data-astro-cid-ipuyqs4v] table{width:100%;border-collapse:collapse;margin:2.5rem 0;background:#131722;border-radius:8px;overflow:hidden;border:1px solid #2a2e39}article[data-astro-cid-ipuyqs4v] th,article[data-astro-cid-ipuyqs4v] td{border:1px solid #2a2e39;padding:1rem;text-align:left}article[data-astro-cid-ipuyqs4v] th{background:#1c212d;color:#8f949e;text-transform:uppercase;font-size:.8rem;letter-spacing:.05em}article[data-astro-cid-ipuyqs4v] strong{color:#fff}
 </style></head> <body data-astro-cid-sckkx6r4> <header class="site-header" data-astro-cid-sckkx6r4> <div class="site-header-inner" data-astro-cid-sckkx6r4> <a class="brand" href="/AlphaOracle/" data-astro-cid-sckkx6r4>AlphaOracle</a> <nav class="site-nav" data-astro-cid-sckkx6r4> <a href="/AlphaOracle/" data-astro-cid-sckkx6r4> Analysis </a><a href="/AlphaOracle/news-events/" data-astro-cid-sckkx6r4> News </a><a href="/AlphaOracle/indicators/" data-astro-cid-sckkx6r4> Indicators </a><a href="/AlphaOracle/tickers/" data-astro-cid-sckkx6r4> Tickers </a><a href="/AlphaOracle/backtests/" data-astro-cid-sckkx6r4> Backtests </a><a href="/AlphaOracle/research/" data-astro-cid-sckkx6r4> Research </a><a href="/AlphaOracle/paper-trading/" data-astro-cid-sckkx6r4> Paper Trading </a> </nav> </div> </header>  <main data-astro-cid-ipuyqs4v> <header data-astro-cid-ipuyqs4v> <h1 data-astro-cid-ipuyqs4v>Technical Analyst Report</h1> <p class="date" data-astro-cid-ipuyqs4v>2026-11-27</p> </header> <article data-astro-cid-ipuyqs4v> <h2 id="model-geminigemini-25-flash">Model: gemini/gemini-2.5-flash</h2>
-<p>The market is currently characterized as <strong>Bear Volatile</strong>, with a clear <strong>Risk Off</strong> sentiment reflected in falling equities and elevated, rising volatility. The <strong>US Dollar is Strong</strong>, while <strong>Commodities are Weak</strong>. Interestingly, <strong>Rates are Declining</strong>, as indicated by the uptrend in long-term Treasuries (TLT), suggesting a flight to safety in fixed income amidst equity weakness. The credit market, as per the <code>credit</code> signal, is “clear” (no immediate stress). The <code>canary</code> signal is “half_defensive” with EWA showing negative momentum.</p>
-<p>Here’s a technical evaluation of selected assets based purely on price action and technical indicators:</p>
+<p>Here’s a technical analysis of the provided tickers, focusing purely on price action and technical indicators, as requested:</p>
+<p><strong>Market Regime (Technical Only):</strong>
+The <code>market_regime</code> indicator states “Bear Volatile”. This is supported by:</p>
+<ul>
+<li><code>SPY</code> trend: downtrend, <code>SPY</code> price: 716.70</li>
+<li><code>VIX</code> level: elevated (26.80), <code>VIX</code> trend: rising.</li>
+<li><code>UUP</code> (Dollar): strong uptrend, momentum 1.86.</li>
+<li><code>TLT</code> (Rates): uptrend, momentum 1.97, suggesting rates declining (bond prices rising).</li>
+<li><code>Commodity Strength</code>: weak across the board for Gold, Silver, and Energy.</li>
+</ul>
+<p>Overall, the market is exhibiting characteristics of a risk-off environment with equities falling, volatility rising, and a strong dollar. Declining rates (rising bond prices) are present, which <em>could</em> be moderately favorable for equities in some contexts, but the overwhelming risk-off sentiment takes precedence. Commodities are generally weak, aligning with a strong dollar and disinflationary pressures.</p>
 <hr>
-<h3 id="market-index-etfs-spy-qqq-voo-iwm-dia"><strong>Market Index ETFs (SPY, QQQ, VOO, IWM, DIA)</strong></h3>
+<p><strong>Individual Ticker Technical Analysis:</strong></p>
 <ul>
-<li><strong>SPY (S&#x26;P 500 Proxy):</strong> The close of 716.70 is significantly below its short-term (SMA20: 740.32), medium-term (SMA50: 757.85), and long-term (SMA200: 730.77) moving averages, indicating a confirmed <strong>downtrend</strong> across all timeframes. RSI at 39.85 suggests it’s approaching oversold but isn’t deeply there yet. MACD (-12.93) is well below its signal line (-9.99) with a negative and expanding histogram (-2.93), confirming strong bearish momentum. Price is near the lower Bollinger Band (700.42), implying potential for a short-term bounce if buying interest emerges, but the overall trend remains down.</li>
-<li><strong>QQQ (Nasdaq 100 Proxy) / TQQQ (3x Leveraged QQQ):</strong> Similar to SPY, QQQ (633.93) is in a strong <strong>downtrend</strong>, trading below all key SMAs (SMA20: 666.73, SMA50: 707.01, SMA200: 682.54). RSI at 38.58 is bearish. MACD (-20.14) is below its signal line (-17.63) with a strong negative histogram (-2.50). This indicates significant bearish momentum in tech. TQQQ (45.28) is experiencing an even more aggressive <strong>downtrend</strong> due to its leverage, trading far below all SMAs. Its RSI (35.61) is also bearish, and MACD confirms strong downside momentum. Both suggest caution and a lack of conviction for upside.</li>
-<li><strong>VOO (S&#x26;P 500 Proxy):</strong> Technicals mirror SPY, indicating a <strong>downtrend</strong> with price below all SMAs (SMA20: 680.63, SMA50: 696.65, SMA200: 671.62). RSI (39.58) and MACD (-11.83 below signal -9.14) confirm bearish momentum.</li>
-<li><strong>IWM (Russell 2000 Small Caps):</strong> At 268.87, IWM is also in a <strong>downtrend</strong>, below all SMAs (SMA20: 274.38, SMA50: 277.15, SMA200: 278.72). RSI (45.01) is neutral-to-bearish. MACD (-3.69 below signal -2.78) confirms bearish momentum. Small caps are clearly participating in the risk-off move.</li>
-<li><strong>DIA (Dow Jones 30):</strong> Closing at 501.27, DIA is also in a <strong>downtrend</strong> across all timeframes (SMA20: 511.75, SMA50: 514.65, SMA200: 504.85). RSI (43.75) is neutral-to-bearish. MACD (-6.26 below signal -4.16) indicates bearish momentum.</li>
-</ul>
-<p><em>Interpretation</em>: A broad-market <strong>downtrend</strong> is firmly established across large-cap, tech, and small-cap indices. Momentum indicators confirm selling pressure, but RSI is generally not yet in deeply oversold territory for major bounces. This aligns with the “Bear Volatile” regime. Leveraged long positions (TQQQ, UPRO, SSO) face severe headwinds.</p>
-<h3 id="volatility--bonds-vix-vix3m-tlt-tmf-tnx-irx-lqd-hyg"><strong>Volatility &#x26; Bonds (^VIX, ^VIX3M, TLT, TMF, ^TNX, ^IRX, LQD, HYG)</strong></h3>
+<li>
+<p><strong>KLAC (KLA Corporation):</strong></p>
 <ul>
-<li><strong>^VIX (CBOE Volatility Index):</strong> Closing at 26.80, VIX is in a clear <strong>uptrend</strong>, trading above all SMAs (SMA20: 23.60, SMA50: 19.24, SMA200: 18.81). RSI (55.44) is comfortably in bullish territory, and MACD (2.65 above signal 2.28) confirms strong upward momentum. This reflects rising market fear and aligns with the “Bear Volatile” regime.</li>
-<li><strong>^VIX3M (3-Month VIX):</strong> Similar to VIX, at 26.29, it is in a strong <strong>uptrend</strong> above all SMAs (SMA20: 23.04, SMA50: 20.37, SMA200: 20.82). RSI (58.15) and MACD (1.84 above signal 1.46) confirm bullish momentum. The fact that VIX (26.80) is above VIX3M (26.29) indicates <strong>backwardation</strong>, a short-term risk-off signal often preceding further downside for equities.</li>
-<li><strong>TLT (20+ Year Treasury Bond ETF):</strong> At 82.24, TLT is in a well-defined <strong>uptrend</strong>, trading above its SMA20 (81.01) and SMA50 (79.85). While slightly below SMA200 (82.57), the recent momentum is strongly positive. RSI (63.48) is bullish, and MACD (0.33 above signal 0.22) shows strong positive momentum with an expanding histogram (0.10). This indicates investors are seeking refuge in long-duration bonds, driving rates down.</li>
-<li><strong>TMF (3x Leveraged TLT):</strong> Mirroring TLT’s strength, TMF (30.33) is also in a strong <strong>uptrend</strong>, trading above SMA20 (29.17) and SMA50 (28.18). RSI (61.97) is bullish, and MACD (0.23 above signal 0.12) shows strong positive momentum.</li>
-<li><strong>^TNX (10-Year Treasury Yield):</strong> The yield (4.848) is in a <strong>downtrend</strong>, trading below its SMA20 (4.969) and SMA50 (5.070), confirming falling long-term rates. RSI (37.30) is bearish, and MACD (-0.028 below signal -0.014) confirms this negative momentum.</li>
-<li><strong>^IRX (13-Week Treasury Bill Yield):</strong> The yield (4.155) is in an <strong>uptrend</strong>, above all SMAs (SMA20: 4.08, SMA50: 4.05, SMA200: 3.75). RSI (64.94) and MACD (0.037 above signal 0.032) confirm bullish momentum. This indicates a <strong>flattening or inverting yield curve</strong>, as short-term rates are rising while long-term rates are falling, a classic recessionary signal.</li>
-<li><strong>LQD (Investment Grade Corporate Bonds):</strong> LQD (104.29) is in a slight <strong>uptrend</strong> in the short and medium term (above SMA20: 103.73, SMA50: 103.10), but below its long-term SMA200 (105.19). RSI (59.80) is bullish, and MACD (0.11 above signal 0.07) is positive. Corporate bonds are holding up, but below the 200-SMA, indicating intermediate-term resistance.</li>
-<li><strong>HYG (High Yield Corporate Bonds):</strong> HYG (76.52) is in a <strong>slight downtrend</strong> in the short term (below SMA20: 76.92) and slightly below longer SMAs (SMA50: 76.90, SMA200: 77.46). RSI (42.29) is bearish, and MACD (-0.15 below signal -0.09) is negative. The weakness in high-yield bonds compared to investment-grade (LQD) implies some credit quality concerns, despite the “clear” <code>credit</code> signal.</li>
-</ul>
-<p><em>Interpretation</em>: The fixed income market signals a distinct <strong>flight to safety</strong>, with long-duration Treasuries (TLT, TMF) rallying as yields fall (^TNX). However, the rising short-term rates (^IRX) combined with falling long-term rates suggest a flattening or inverting yield curve, signaling potential economic slowdown ahead. Elevated and rising VIX confirms increased market fear.</p>
-<h3 id="technology--ai-related-equities-nvda-tsm-avgo-amd-mu-klac-intc-msft-aapl-amzn-meta-pltr-crwd-nbis-orcl-wdc-stx"><strong>Technology &#x26; AI-Related Equities (NVDA, TSM, AVGO, AMD, MU, KLAC, INTC, MSFT, AAPL, AMZN, META, PLTR, CRWD, NBIS, ORCL, WDC, STX)</strong></h3>
-<ul>
-<li><strong>NVDA (AI Chips Leader) / AVGO (Custom AI Silicon) / AMD (GPU Competitor) / MU (AI Memory):</strong> These key semiconductor and AI infrastructure stocks are all in clear and often severe <strong>downtrends</strong>.
-<ul>
-<li><strong>NVDA (149.30):</strong> Far below all SMAs (SMA20: 172.47, SMA50: 203.65, SMA200: 202.62). RSI (37.45) is bearish. MACD (-16.91 below signal -16.23) strongly bearish. Price is trending towards the lower Bollinger Band (125.95), indicating significant selling pressure.</li>
-<li><strong>AVGO (300.86):</strong> Also far below all SMAs (SMA20: 326.98, SMA50: 340.52, SMA200: 366.43). RSI (40.75) is bearish. MACD (-7.33 below signal -4.23) is strongly bearish.</li>
-<li><strong>AMD (406.03):</strong> Dramatically below all SMAs (SMA20: 489.22, SMA50: 548.35, SMA200: 432.96). RSI (38.01) is bearish. MACD (-28.06 below signal -18.40) is very strongly bearish.</li>
-<li><strong>MU (601.25):</strong> Severe <strong>downtrend</strong>, far below all SMAs (SMA20: 742.80, SMA50: 895.41, SMA200: 776.30). RSI (35.68) is bearish. MACD (-72.00 below signal -64.23) is extremely bearish. Price is very close to the lower Bollinger Band (562.91), indicating potential for a bounce but the trend is clearly down.</li>
-<li><strong>TSM (342.34):</strong> Below all SMAs (SMA20: 379.50, SMA50: 418.26, SMA200: 402.23). RSI (38.87) is bearish. MACD (-20.67 below signal -17.57) is strongly bearish.</li>
-<li><strong>KLAC (134.20):</strong> Below all SMAs (SMA20: 147.02, SMA50: 166.68, SMA200: 181.30). RSI (40.74) is bearish. MACD (-8.08 below signal -7.69) is bearish.</li>
-<li><strong>INTC (54.47):</strong> Trading at a significant discount to all SMAs (SMA20: 59.36, SMA50: 87.69, SMA200: 87.65). RSI (35.92) is nearing oversold. MACD (-8.81 but <em>above</em> signal -9.96 with positive histogram 1.14) shows a potential bullish crossover or slowing bearish momentum, suggesting it might be trying to find a bottom or stage a short-term bounce despite the overall downtrend.</li>
+<li><strong>Price Action:</strong> Close (134.20) is significantly below all SMAs (SMA20: 147.02, SMA50: 166.69, SMA200: 181.30), indicating a strong downtrend. The price is currently near the lower Bollinger Band (126.11), suggesting it’s oversold in the short term.</li>
+<li><strong>Indicators:</strong> RSI (40.75) is trending lower but not yet in deeply oversold territory. MACD (-8.08) is below its signal (-7.70) and negative, confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Potential Mean Reversion Bounce (short-term)</strong> if it holds above the lower BB, given the recent sharp move down. However, the overall trend is strongly bearish.</li>
 </ul>
 </li>
-<li><strong>MSFT (Hyperscaler) / AAPL (Hyperscaler) / AMZN (Hyperscaler) / META (Hyperscaler) / GOOGL (Hyperscaler):</strong> The FAANG/Hyperscaler group generally shows strong <strong>downtrends</strong>.
+<li>
+<p><strong>XLF (Financial Select Sector SPDR Fund):</strong></p>
 <ul>
-<li><strong>MSFT (489.93):</strong> Below all SMAs (SMA20: 516.37, SMA50: 518.64, SMA200: 443.22). RSI (38.99) is bearish. MACD (-8.34 below signal -4.14) is strongly bearish.</li>
-<li><strong>AAPL (355.58):</strong> Above SMA20 (348.54) and SMA50 (342.83), but still in long-term uptrend (SMA200: 303.95). RSI (58.04) is neutral-to-bullish. MACD (3.02 but <em>below</em> signal 3.15 with negative histogram -0.12) suggests recent upside momentum is waning, possibly forming a bearish crossover soon. It’s an outlier in tech, showing relative strength but momentum is turning.</li>
-<li><strong>AMZN (244.43):</strong> Below all SMAs (SMA20: 257.18, SMA50: 255.11, SMA200: 245.78). RSI (41.95) is bearish. MACD (-0.98 below signal 0.90) is strongly bearish with a large negative histogram -1.88.</li>
-<li><strong>META (609.89):</strong> Below all SMAs (SMA20: 615.26, SMA50: 672.39, SMA200: 626.85). RSI (45.70) is bearish. MACD (-18.26 below signal -17.99) is bearish, but the histogram (-0.27) is small, suggesting momentum might be slowing.</li>
-<li><strong>GOOGL (273.10):</strong> Significantly below all SMAs (SMA20: 283.04, SMA50: 318.24, SMA200: 336.06). RSI (36.93) is bearish. MACD (-12.06 but <em>above</em> signal -12.67 with positive histogram 0.60) shows a potential bullish crossover or slowing bearish momentum from extreme lows, similar to INTC.</li>
+<li><strong>Price Action:</strong> Close (56.51) is slightly below SMA20 (57.20) but above SMA50 (55.83) and SMA200 (53.79). This indicates a mixed short-term signal within a broader uptrend. Price is within the Bollinger Bands.</li>
+<li><strong>Indicators:</strong> RSI (49.51) is neutral. MACD (-0.06) is below its signal (0.22) and negative, showing recent bearish momentum but close to zero.</li>
+<li><strong>Setup:</strong> <strong>Neutral/Weakening Trend Continuation.</strong> The short-term momentum is waning, but the longer-term trend remains positive. Could see consolidation or a slight pullback.</li>
 </ul>
 </li>
-<li><strong>PLTR (AI Data Platforms):</strong> At 163.59, PLTR is below SMA20 (166.31) and SMA50 (182.53), but above SMA200 (154.29). RSI (45.13) is bearish. MACD (-7.69 but <em>above</em> signal -7.72 with positive histogram 0.036) shows a potential bullish crossover. It’s trying to hold its long-term trend.</li>
-<li><strong>CRWD (AI-driven Security):</strong> At 209.30, CRWD is below SMA20 (229.74) and SMA50 (245.24), but significantly above SMA200 (177.81). RSI (38.31) is bearish. MACD (-7.67 below signal -5.81) is strongly bearish.</li>
-<li><strong>NBIS (AI Infrastructure):</strong> In a severe <strong>downtrend</strong>, far below all SMAs (SMA20: 122.68, SMA50: 174.12, SMA200: 179.74). RSI (33.06) is nearing oversold. MACD (-24.28 below signal -22.52) is strongly bearish. Price is very close to the lower Bollinger Band (71.62), indicating extreme selling pressure.</li>
-<li><strong>ORCL (Database/Cloud AI):</strong> In a severe <strong>downtrend</strong>, far below all SMAs (SMA20: 118.80, SMA50: 129.94, SMA200: 151.55). RSI (37.78) is bearish. MACD (-6.56 below signal -5.49) is strongly bearish. Price is near the lower Bollinger Band (100.75).</li>
-<li><strong>WDC (Memory/Storage) / STX (HDD/Data Storage):</strong> Both are in severe <strong>downtrends</strong>.
+<li>
+<p><strong>META (Meta Platforms):</strong></p>
 <ul>
-<li><strong>WDC (272.45):</strong> Far below all SMAs (SMA20: 302.79, SMA50: 364.97, SMA200: 422.24). RSI (39.73) is bearish. MACD (-25.29 <em>above</em> signal -26.69 with positive histogram 1.39) shows a potential bullish crossover or slowing bearish momentum.</li>
-<li><strong>STX (472.33):</strong> Far below all SMAs (SMA20: 531.76, SMA50: 686.13, SMA200: 703.35). RSI (37.47) is bearish. MACD (-54.26 <em>above</em> signal -58.79 with positive histogram 4.53) shows a strong bullish crossover, indicating potential for a mean reversion bounce from extreme lows.</li>
+<li><strong>Price Action:</strong> Close (609.89) is below all SMAs (SMA20: 615.27, SMA50: 672.40, SMA200: 626.86), indicating a bearish trend. The price is near the lower Bollinger Band (577.05).</li>
+<li><strong>Indicators:</strong> RSI (45.70) is in bearish territory but not oversold. MACD (-18.27) is negative and slightly below its signal (-18.00), confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Downtrend).</strong> The price is making lower highs and lower lows, and indicators confirm bearish sentiment.</li>
 </ul>
 </li>
-<li><strong>NFLX (FAANG core):</strong> At 59.41, NFLX is in a clear <strong>downtrend</strong>, trading below all SMAs (SMA20: 61.68, SMA50: 66.23, SMA200: 79.59). RSI (38.78) is bearish. MACD (-2.37 below signal -2.29) confirms negative momentum.</li>
-</ul>
-<p><em>Interpretation</em>: The AI/Tech sector is broadly experiencing a significant <strong>downtrend</strong>, with many names trading well below their key moving averages and showing strong bearish momentum. Some, like INTC, GOOGL, WDC, and STX, are showing signs of slowing selling pressure or potential bullish MACD crossovers, suggesting they might be candidates for a mean reversion bounce after steep declines. AAPL shows relative strength but waning momentum. This sector is confirming the “Risk Off” macro regime.</p>
-<h3 id="defensive--other-sectors-xlu-xlv-xlp-xly-xlf-xli-xlb-xlre-xlc-schd-qual"><strong>Defensive &#x26; Other Sectors (XLU, XLV, XLP, XLY, XLF, XLI, XLB, XLRE, XLC, SCHD, QUAL)</strong></h3>
+<li>
+<p><strong>ORCL (Oracle Corporation):</strong></p>
 <ul>
-<li><strong>XLU (Utilities):</strong> At 43.61, XLU is generally <strong>neutral</strong>, consolidating around its SMAs (SMA20: 43.50, SMA50: 42.04, SMA200: 43.91). RSI (56.58) is neutral-to-bullish. MACD (0.28 below signal 0.38) shows slight negative momentum. The narrow Bollinger Bands (lower: 42.81, upper: 44.18) suggest <strong>volatility contraction</strong> and a potential squeeze setup.</li>
-<li><strong>XLP (Consumer Staples):</strong> At 92.30, XLP is in a solid <strong>uptrend</strong>, trading above all SMAs (SMA20: 90.87, SMA50: 86.83, SMA200: 84.34). RSI (61.43) is bullish. MACD (1.19 below signal 1.37) shows waning positive momentum but remains positive overall. This is a clear defensive outperformer in the current environment.</li>
-<li><strong>XLV (Healthcare):</strong> At 183.68, XLV is generally <strong>neutral to slightly bullish</strong> in the short-to-medium term (below SMA20: 184.82, above SMA50: 177.36) and in a long-term uptrend (SMA200: 160.43). RSI (53.44) is neutral. MACD (1.01 below signal 1.99) shows declining positive momentum.</li>
-<li><strong>SCHD (Dividend Growth):</strong> At 35.29, SCHD is relatively <strong>neutral-to-slightly bullish</strong>, just below SMA20 (35.38), but above SMA50 (34.36) and SMA200 (32.49). RSI (53.54) is neutral. MACD (0.03 below signal 0.18) shows negative momentum, but the histogram is small (-0.15).</li>
-<li><strong>QUAL (Quality Factor):</strong> At 54.03, QUAL is in a slight <strong>downtrend</strong> in the short-to-medium term (below SMA20: 55.03, SMA50: 55.64) but still above SMA200 (53.39). RSI (43.55) is bearish. MACD (-0.60 below signal -0.43) confirms negative momentum. It’s struggling to maintain its “quality” characteristic in this environment.</li>
-<li><strong>XLY (Consumer Discretionary):</strong> At 117.49, XLY is largely <strong>neutral</strong>, hovering near its SMA20 (118.15) but above SMA50 (114.51) and SMA200 (115.01). RSI (51.52) is neutral. MACD (0.47 below signal 0.93) shows waning positive momentum. The relative stability here is notable given the broader market.</li>
-<li><strong>XLF (Financials):</strong> At 56.51, XLF is mostly <strong>neutral to slightly bearish</strong> in the short term (below SMA20: 57.19) but above SMA50 (55.83) and SMA200 (53.79). RSI (49.50) is neutral. MACD (-0.05 below signal 0.22) shows negative momentum.</li>
-<li><strong>XLI (Industrials):</strong> At 162.95, XLI is in a <strong>downtrend</strong>, below all SMAs (SMA20: 165.99, SMA50: 167.49, SMA200: 172.54). RSI (45.06) is bearish. MACD (-1.87 below signal -1.38) confirms negative momentum.</li>
-<li><strong>XLB (Materials):</strong> At 51.20, XLB is generally <strong>neutral</strong>, below SMA20 (51.74) but above SMA50 (50.77) and SMA200 (50.91). RSI (50.46) is neutral. MACD (-0.33 below signal -0.08) shows strong negative momentum with an expanding histogram.</li>
-<li><strong>XLRE (Real Estate):</strong> At 43.86, XLRE is largely <strong>neutral</strong>, hovering around its SMA20 (43.82) and SMA200 (43.07) and above SMA50 (42.58). RSI (54.97) is neutral. MACD (0.15 below signal 0.29) shows declining positive momentum.</li>
-<li><strong>XLC (Communication Services):</strong> At 105.38, XLC is in a <strong>downtrend</strong>, below SMA50 (108.03) and SMA200 (111.36), though above SMA20 (104.53). RSI (49.10) is neutral. MACD (-0.93 <em>above</em> signal -0.98 with positive histogram 0.05) suggests a potential bullish crossover or slowing bearish momentum.</li>
-</ul>
-<p><em>Interpretation</em>: Defensive sectors (XLP, XLU, XLV) show relative strength or stability, confirming their traditional role in risk-off environments. XLP is a standout performer. Some cyclical sectors (XLI, XLB) are showing weakness. XLU’s narrow Bollinger Bands indicate a low volatility period, which often precedes a significant move.</p>
-<h3 id="commodities--currency-gld-iau-slv-uup"><strong>Commodities &#x26; Currency (GLD, IAU, SLV, UUP)</strong></h3>
-<ul>
-<li><strong>GLD (Gold) / IAU (Gold Alt):</strong> Both gold ETFs are in clear and steep <strong>downtrends</strong>.
-<ul>
-<li><strong>GLD (327.45):</strong> Far below all SMAs (SMA20: 354.03, SMA50: 371.04, SMA200: 403.83). RSI (31.71) is approaching oversold. MACD (-12.79 below signal -9.71) confirms strong bearish momentum. Price is near the lower Bollinger Band (319.64).</li>
-<li><strong>IAU (67.16):</strong> Similar to GLD, far below all SMAs (SMA20: 72.59, SMA50: 76.07, SMA200: 82.76). RSI (31.74) is approaching oversold. MACD (-2.61 below signal -1.98) confirms strong bearish momentum.</li>
+<li><strong>Price Action:</strong> Close (103.88) is significantly below all SMAs (SMA20: 118.80, SMA50: 129.95, SMA200: 151.56), indicating a strong downtrend. The price is very close to the lower Bollinger Band (100.75).</li>
+<li><strong>Indicators:</strong> RSI (37.78) is low, approaching oversold conditions. MACD (-6.56) is negative and below its signal (-5.49), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Strong Downtrend) / Potential Mean Reversion Bounce.</strong> The asset is in a clear downtrend and appears oversold in the short term, hinting at a potential short-lived bounce if the lower BB holds.</li>
 </ul>
 </li>
-<li><strong>SLV (Silver ETF):</strong> In a severe <strong>downtrend</strong>, significantly below all SMAs (SMA20: 43.44, SMA50: 49.83, SMA200: 60.54). RSI (27.03) is <strong>oversold</strong>, indicating potential for a mean reversion bounce. MACD (-3.52 below signal -2.97) confirms strong bearish momentum, but the oversold RSI is a key signal. Price is close to the lower Bollinger Band (36.03).</li>
-<li><strong>UUP (US Dollar Index ETF):</strong> At 29.60, UUP is in a robust <strong>uptrend</strong>, trading above all SMAs (SMA20: 29.31, SMA50: 29.04, SMA200: 28.14). RSI (64.09) is strong, and MACD (0.20 above signal 0.18) confirms strong positive momentum with an expanding histogram.</li>
-</ul>
-<p><em>Interpretation</em>: Gold and Silver are showing significant weakness, with SLV entering oversold territory. This contradicts the traditional inflation hedge narrative but aligns with the “Commodities Weak” and “Strong Dollar” intermarket signals. The strong dollar (UUP) is a key factor here.</p>
-<h3 id="international-equities-vxus-vgk-ewc-ewa-xeqtto"><strong>International Equities (VXUS, VGK, EWC, EWA, XEQT.TO)</strong></h3>
+<li>
+<p><strong>SSO (ProShares Ultra S&#x26;P500):</strong></p>
 <ul>
-<li><strong>VXUS (Total International):</strong> At 78.02, VXUS is in a clear <strong>downtrend</strong>, below all SMAs (SMA20: 80.94, SMA50: 83.21, SMA200: 83.19). RSI (38.10) is bearish. MACD (-1.62 below signal -1.27) confirms strong bearish momentum.</li>
-<li><strong>VGK (Europe Proxy):</strong> At 84.95, VGK is in a clear <strong>downtrend</strong>, below all SMAs (SMA20: 87.33, SMA50: 87.19, SMA200: 87.11). RSI (42.10) is bearish. MACD (-0.84 below signal -0.39) confirms strong bearish momentum.</li>
-<li><strong>EWC (Canada TSX Proxy):</strong> At 56.89, EWC is in a clear <strong>downtrend</strong>, below all SMAs (SMA20: 59.14, SMA50: 59.54, SMA200: 58.51). RSI (39.15) is bearish. MACD (-1.08 below signal -0.67) confirms strong bearish momentum.</li>
-<li><strong>EWA (Australia Proxy):</strong> At 27.37, EWA is in a clear <strong>downtrend</strong>, below all SMAs (SMA20: 28.65, SMA50: 28.69, SMA200: 28.79). RSI (35.67) is bearish. MACD (-0.50 below signal -0.28) confirms strong bearish momentum. This aligns with the <code>canary</code> signal indicating “negative canary.”</li>
-<li><strong>XEQT.TO (Global Equity CAD):</strong> At 43.49, XEQT.TO is in a clear <strong>downtrend</strong>, below SMA20 (44.35) and SMA50 (45.13). While slightly below SMA200 (43.66), the short/medium term trend is down. RSI (43.09) is bearish. MACD (-0.57 below signal -0.42) confirms negative momentum.</li>
-</ul>
-<p><em>Interpretation</em>: International equities are broadly in a <strong>downtrend</strong>, aligning with the “Risk Off” sentiment and “Strong Dollar” environment, which typically makes international assets less attractive to US investors. EWA being a negative canary confirms broad-based weakness.</p>
-<h3 id="individual-themes-ceg-tln-tsla-ibit"><strong>Individual Themes (CEG, TLN, TSLA, IBIT)</strong></h3>
-<ul>
-<li><strong>CEG (Nuclear for Data Centers):</strong> At 235.28, CEG is in a strong <strong>downtrend</strong>, significantly below all SMAs (SMA20: 259.45, SMA50: 264.83, SMA200: 277.06). RSI (38.98) is bearish. MACD (-5.56 below signal -2.61) is strongly bearish. Price is near the lower Bollinger Band (231.03).</li>
-<li><strong>TLN (Power for Data Centers):</strong> At 351.61, TLN is mostly <strong>neutral to slightly bearish</strong>, just below SMA20 (352.85) but above SMA50 (342.35) and SMA200 (349.26). RSI (50.08) is neutral. MACD (2.67 below signal 4.41) shows declining positive momentum, possibly indicating a bearish crossover.</li>
-<li><strong>MTZ (Grid/Center Construction):</strong> At 154.17, MTZ is in a severe <strong>downtrend</strong>, far below all SMAs (SMA20: 174.26, SMA50: 191.48, SMA200: 295.83). RSI (38.55) is bearish. MACD (-10.52 below signal -8.89) is strongly bearish. Price is near the lower Bollinger Band (145.54).</li>
-<li><strong>TSLA (High Volatility Swing Trade):</strong> At 380.14, TSLA is consolidating in a <strong>neutral short-term trend</strong>, hovering around all its SMAs (SMA20: 382.14, SMA50: 377.16, SMA200: 381.14). RSI (50.30) is perfectly neutral. MACD (-0.23 below signal 0.62) shows recent negative momentum, with a negative and expanding histogram (-0.86), indicating downside risk from this consolidation.</li>
-<li><strong>IBIT (Bitcoin ETF Proxy):</strong> At 34.07, IBIT is in a strong <strong>downtrend</strong>, significantly below all SMAs (SMA20: 39.60, SMA50: 44.00, SMA200: 40.79). RSI (26.89) is <strong>oversold</strong>, indicating potential for a mean reversion bounce. MACD (-3.04 below signal -2.45) confirms strong bearish momentum. Price is very close to the lower Bollinger Band (31.22).</li>
-</ul>
-<p><em>Interpretation</em>: Energy infrastructure related to data centers (CEG, MTZ) is experiencing strong downtrends. TSLA is consolidating with bearish momentum, potentially indicating further downside. IBIT is deeply oversold, suggesting a possible bounce, but in a strong bearish trend.</p>
-<hr>
-<h3 id="summary-of-key-setups--observations"><strong>Summary of Key Setups &#x26; Observations</strong></h3>
-<p><strong>Strong Downtrends (Bearish Continuation / Approaching Mean Reversion Bounce):</strong></p>
-<ul>
-<li><strong>Equity Indices</strong>: SPY, QQQ, VOO, IWM, DIA (all confirming broad risk-off, heavy selling)</li>
-<li><strong>Tech/Semiconductors</strong>: NVDA, AVGO, AMD, MU, TSM, KLAC, MSFT, AMZN, CRWD, NBIS, ORCL, NFLX (sector-wide correction with strong bearish momentum; some nearing extreme lows).</li>
-<li><strong>International Equities</strong>: VXUS, VGK, EWC, EWA, XEQT.TO (broad international weakness, compounded by strong dollar).</li>
-<li><strong>Commodities</strong>: GLD, IAU (gold weakness, despite macro inflation narrative).</li>
-<li><strong>Leveraged Long</strong>: TQQQ, UPRO, SSO (extreme downtrends, high risk).</li>
-<li><strong>Data Center/Infrastructure</strong>: CEG, MTZ (pullback in this theme).</li>
-</ul>
-<p><strong>Potential Mean Reversion Bounce (Oversold):</strong></p>
-<ul>
-<li><strong>SLV (Silver):</strong> RSI 27.03 (oversold), near lower BB.</li>
-<li><strong>IBIT (Bitcoin ETF):</strong> RSI 26.89 (oversold), near lower BB.</li>
-<li><strong>INTC (Intel):</strong> RSI 35.92 (nearing oversold), bullish MACD crossover.</li>
-<li><strong>GOOGL (Alphabet):</strong> RSI 36.93 (nearing oversold), bullish MACD crossover.</li>
-<li><strong>WDC (Western Digital):</strong> RSI 39.73 (nearing oversold), bullish MACD crossover.</li>
-<li><strong>STX (Seagate):</strong> RSI 37.47 (nearing oversold), bullish MACD crossover.</li>
-<li><strong>MU (Micron):</strong> RSI 35.68 (nearing oversold), near lower BB.</li>
-</ul>
-<p><strong>Strong Uptrends (Bullish Continuation / Strength):</strong></p>
-<ul>
-<li><strong>Bonds (Safety Play):</strong> TLT, TMF (^TNX in downtrend). This reflects the “Rates Declining” signal and a flight to safety.</li>
-<li><strong>US Dollar:</strong> UUP (Strong Dollar signal).</li>
-<li><strong>Volatility:</strong> ^VIX, ^VIX3M (confirming “Bear Volatile” regime).</li>
-<li><strong>Defensive Sectors</strong>: XLP (Consumer Staples) - outperforming.</li>
-</ul>
-<p><strong>Consolidation / Neutral / Volatility Contraction (Potential for Breakout):</strong></p>
-<ul>
-<li><strong>XLU (Utilities):</strong> Narrow Bollinger Bands, consolidating around SMAs (potential squeeze).</li>
-<li><strong>TSLA (Tesla):</strong> Consolidating around SMAs with slight bearish tilt (potential breakdown).</li>
-<li><strong>AAPL (Apple):</strong> Relative strength but waning positive momentum; watching for trend reversal signals.</li>
-</ul>
-<p><strong>Yield Curve Dynamics:</strong></p>
-<ul>
-<li><strong>Flattening/Inverting Yield Curve:</strong> Short-term rates (^IRX) rising while long-term rates (^TNX) are falling, indicating potential economic deceleration or contraction ahead.</li>
-</ul>
-<p><strong>Overall Context for Trading:</strong>
-Given the “Bear Volatile” regime, a flight to safety in bonds (TLT) and a strong dollar (UUP) are technically robust. Equities broadly face significant headwinds. Short positions or hedging strategies (long VIX, long puts on equity indices) are favored. For mean reversion plays in deeply beaten-down assets, caution is advised as strong downtrends can persist, but oversold conditions with MACD reversals could signal temporary bounces.</p>
-<hr>
-<p><strong>Options Ideas &#x26; Chain Snapshot Review:</strong></p>
-<ul>
-<li><strong>Cash-Secured Puts (CSPs):</strong> The proposed CSPs on AAPL, AMD, AMZN, AVGO, CEG, CRWD, DIA are all Out-of-the-Money (OTM). Given the prevailing downtrends and risk-off sentiment in equities, selling puts carries significant risk of assignment at prices that could become further depreciated. While implied volatility is generally elevated (especially for AMD, AVGO, CRWD), offering attractive premiums, the risk of a continued slide makes these technically challenging for entry <em>unless</em> the intention is truly to acquire the shares at a lower price as part of a long-term strategy for these currently declining assets. For INTC, GOOGL, WDC, STX, IBIT where MACD signals or RSI are hinting at a bottom/bounce, a CSP might be reasonable <em>if</em> the strike reflects a truly desired entry point given the overall bear market context. However, for most, current technicals suggest further downside is plausible.</li>
-<li><strong>Long Option Ideas:</strong>
-<ul>
-<li><strong>Long Calls (GLD, QQQ, SPY):</strong> Long calls on GLD, QQQ, SPY are directional bets on upside. Given the confirmed downtrends in QQQ and SPY (and the broader market), and GLD’s weakness, these are <strong>contrarian bets</strong> against current price action. While a short-term bounce is possible from oversold levels, the overall technical picture does not support strong upward conviction.</li>
-<li><strong>Long Puts (GLD, QQQ, SPY):</strong> Long puts on GLD, QQQ, SPY align with the prevailing bearish trends. For QQQ and SPY, these would be <strong>trend-following bearish plays</strong>, leveraging the current risk-off environment and confirmed downtrends. For GLD, despite its downtrend, it is approaching oversold levels, so a long put here would require conviction that it will break below current support.
-The spreads on SPY and QQQ options are generally tight, indicating good liquidity for these index products.</li>
+<li><strong>Price Action:</strong> Close (60.18) is significantly below all SMAs (SMA20: 64.70, SMA50: 68.19, SMA200: 64.82), indicating a strong downtrend. The price is near the lower Bollinger Band (57.47).</li>
+<li><strong>Indicators:</strong> RSI (38.49) is in bearish territory. MACD (-2.47) is negative and below its signal (-1.95), confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Strong Downtrend) / Potential Mean Reversion Bounce.</strong> As a leveraged ETF, its moves are amplified. The strong downtrend is clear, but the price is approaching oversold levels at the lower BB.</li>
 </ul>
 </li>
+<li>
+<p><strong>TMF (Direxion Daily 20+ Year Treasury Bull 3X Shares):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (30.33) is above SMA20 (29.17) and SMA50 (28.19), but below SMA200 (32.54), indicating a short-term uptrend within a longer-term downtrend. The price is near the upper Bollinger Band (31.17).</li>
+<li><strong>Indicators:</strong> RSI (61.98) is strong and approaching overbought. MACD (0.23) is positive and above its signal (0.12), confirming bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Short-Term Uptrend).</strong> This is a leveraged long bond ETF; its recent strength aligns with the “rates declining” signal in the overall market regime.</li>
 </ul>
-<p><em>Overall Options Recommendation</em>: In a “Bear Volatile” regime with confirmed equity downtrends, selling OTM cash-secured puts is risky, as desired entry levels could be breached. Directional long calls are highly speculative against the trend. Long puts on equity indices like SPY and QQQ are more aligned with the current technical momentum for downside protection or bearish plays.</p> </article> </main>  </body></html> 
+</li>
+<li>
+<p><strong>WDC (Western Digital Corporation):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (272.45) is significantly below all SMAs (SMA20: 302.79, SMA50: 364.98, SMA200: 422.25), indicating a strong downtrend. The price is currently near the lower Bollinger Band (233.12).</li>
+<li><strong>Indicators:</strong> RSI (39.73) is in bearish territory. MACD (-25.30) is negative but has crossed above its signal (-26.69), suggesting a potential bullish divergence or easing of selling pressure.</li>
+<li><strong>Setup:</strong> <strong>Potential Mean Reversion Bounce / Easing Downtrend.</strong> While the long-term trend is very bearish, the MACD crossover and proximity to the lower BB suggest a short-term relief rally or stabilization could be forming.</li>
+</ul>
+</li>
+<li>
+<p><strong>^VIX3M (CBOE Volatility Index 3-Month):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (26.29) is above all SMAs (SMA20: 23.05, SMA50: 20.37, SMA200: 20.82), indicating a strong uptrend in implied volatility. The price is near the upper Bollinger Band (29.31).</li>
+<li><strong>Indicators:</strong> RSI (58.16) is strong and rising. MACD (1.84) is positive and above its signal (1.47), confirming strong upward momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Uptrend in Volatility).</strong> This aligns with a “Bear Volatile” regime and risk-off sentiment.</li>
+</ul>
+</li>
+<li>
+<p><strong>QUAL (iShares Edge MSCI USA Quality Factor ETF):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (54.03) is below SMA20 (55.04) and SMA50 (55.65) but above SMA200 (53.39), indicating short-term weakness within a longer-term neutral/slightly positive trend. Price is within the Bollinger Bands, near the lower band (52.68).</li>
+<li><strong>Indicators:</strong> RSI (43.55) is in bearish territory but not oversold. MACD (-0.61) is negative and below its signal (-0.44), confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Weakening Trend / Potential Support Test.</strong> The asset is showing short-term weakness, possibly testing long-term support (SMA200).</li>
+</ul>
+</li>
+<li>
+<p><strong>VTI (Vanguard Total Stock Market ETF):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (353.20) is below all SMAs (SMA20: 364.38, SMA50: 372.38, SMA200: 360.05), indicating a downtrend. The price is near the lower Bollinger Band (345.00).</li>
+<li><strong>Indicators:</strong> RSI (40.14) is in bearish territory. MACD (-6.14) is negative and below its signal (-4.70), confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> The overall market weakness is reflected here, but it’s approaching short-term oversold levels.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLV (Health Care Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (183.68) is slightly below SMA20 (184.83) but well above SMA50 (177.37) and SMA200 (160.44), indicating a short-term pullback within a strong long-term uptrend. Price is within the Bollinger Bands, near the mid-point.</li>
+<li><strong>Indicators:</strong> RSI (53.45) is neutral/slightly bullish. MACD (1.02) is positive but has crossed below its signal (1.99), indicating weakening bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Weakening Uptrend / Consolidation.</strong> The strong bullish momentum has paused, suggesting a period of consolidation or further slight pullback.</li>
+</ul>
+</li>
+<li>
+<p><strong>AAPL (Apple Inc.):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (355.58) is above SMA20 (348.54), SMA50 (342.84), and SMA200 (303.96), indicating an uptrend across all timeframes. Price is near the upper Bollinger Band (361.09).</li>
+<li><strong>Indicators:</strong> RSI (58.04) is strong and rising. MACD (3.03) is positive but has crossed below its signal (3.16), suggesting a slight deceleration in bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Uptrend), but momentum easing.</strong> The MACD signal suggests the recent rally might be taking a breather, potentially leading to a small pullback or consolidation before further upside.</li>
+</ul>
+</li>
+<li>
+<p><strong>IAU (iShares Gold Trust):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (67.16) is significantly below all SMAs (SMA20: 72.59, SMA50: 76.08, SMA200: 82.76), indicating a strong downtrend. The price is near the lower Bollinger Band (65.56).</li>
+<li><strong>Indicators:</strong> RSI (31.75) is low, approaching oversold territory. MACD (-2.62) is negative and below its signal (-1.99), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> Gold is under significant pressure, but short-term oversold conditions suggest a potential minor bounce. This aligns with the “commodities weak” signal.</li>
+</ul>
+</li>
+<li>
+<p><strong>EWC (iShares MSCI Canada ETF):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (56.89) is below all SMAs (SMA20: 59.15, SMA50: 59.54, SMA200: 58.52), indicating a downtrend across all timeframes. The price is near the lower Bollinger Band (55.13).</li>
+<li><strong>Indicators:</strong> RSI (39.15) is in bearish territory. MACD (-1.08) is negative and below its signal (-0.68), confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Downtrend).</strong> Clear bearish signals across price and momentum indicators.</li>
+</ul>
+</li>
+<li>
+<p><strong>INTC (Intel Corporation):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (54.47) is significantly below all SMAs (SMA20: 59.36, SMA50: 87.70, SMA200: 87.66), indicating a very strong downtrend. The price is within the Bollinger Bands, but closer to the lower band (42.83).</li>
+<li><strong>Indicators:</strong> RSI (35.93) is in bearish territory, approaching oversold. MACD (-8.82) is negative and has crossed above its signal (-9.97), suggesting a potential easing of selling pressure.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Downtrend) / Potential Easing of Selling Pressure.</strong> While the downtrend is dominant, the MACD crossover could hint at a short-term bounce or consolidation.</li>
+</ul>
+</li>
+<li>
+<p><strong>UPRO (ProShares UltraPro S&#x26;P500):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (116.80) is significantly below all SMAs (SMA20: 131.46, SMA50: 142.94, SMA200: 134.39), indicating a strong downtrend. The price is near the lower Bollinger Band (108.75).</li>
+<li><strong>Indicators:</strong> RSI (37.58) is in bearish territory. MACD (-8.00) is negative and below its signal (-6.34), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> As a leveraged ETF, the amplified downtrend is clear, with short-term oversold conditions.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLP (Consumer Staples Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (92.30) is above all SMAs (SMA20: 90.88, SMA50: 86.84, SMA200: 84.35), indicating a strong uptrend. The price is near the upper Bollinger Band (93.13).</li>
+<li><strong>Indicators:</strong> RSI (61.44) is strong. MACD (1.19) is positive but has crossed below its signal (1.37), indicating weakening bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Uptrend), but momentum easing.</strong> The sector shows resilience, but the recent upward drive might be pausing.</li>
+</ul>
+</li>
+<li>
+<p><strong>^TNX (CBOE 10 Year Treasury Note Yield):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (4.85) is below SMA20 (4.97) and SMA50 (5.07) but above SMA200 (4.61), indicating a short-term downtrend in yields within a longer-term uptrend. The price is near the lower Bollinger Band (4.77).</li>
+<li><strong>Indicators:</strong> RSI (37.30) is low, approaching oversold. MACD (-0.03) is negative and below its signal (-0.01), confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Short-Term Downtrend Continuation (in Yields) / Potential Mean Reversion Bounce.</strong> Yields are falling, but reaching levels where a short-term bounce (yields rising) could occur. This aligns with <code>TLT</code>’s uptrend.</li>
+</ul>
+</li>
+<li>
+<p><strong>MSFT (Microsoft Corporation):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (489.93) is below all SMAs (SMA20: 516.38, SMA50: 518.64, SMA200: 443.23), indicating a short-term downtrend within a longer-term uptrend. The price is near the lower Bollinger Band (479.98).</li>
+<li><strong>Indicators:</strong> RSI (38.99) is low, approaching oversold. MACD (-8.35) is negative and below its signal (-4.15), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Short-Term Downtrend) / Potential Mean Reversion Bounce.</strong> Microsoft is experiencing a significant pullback, but the low RSI and proximity to the lower BB suggest a potential short-term bounce.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLK (Technology Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (155.79) is significantly below all SMAs (SMA20: 167.88, SMA50: 182.87, SMA200: 171.28), indicating a strong downtrend. The price is near the lower Bollinger Band (149.77).</li>
+<li><strong>Indicators:</strong> RSI (36.96) is low, approaching oversold. MACD (-7.47) is negative and below its signal (-6.68), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> The tech sector is under heavy selling pressure, but short-term oversold conditions are present.</li>
+</ul>
+</li>
+<li>
+<p><strong>MU (Micron Technology):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (601.25) is significantly below all SMAs (SMA20: 742.80, SMA50: 895.41, SMA200: 776.30), indicating a very strong downtrend. The price is near the lower Bollinger Band (562.92).</li>
+<li><strong>Indicators:</strong> RSI (35.68) is low, approaching oversold. MACD (-72.01) is strongly negative and below its signal (-64.23), confirming extreme bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Extreme Downtrend) / Potential Mean Reversion Bounce.</strong> The selling pressure is immense, pushing it towards deeply oversold levels, making a short-term bounce possible, but the underlying trend is very negative.</li>
+</ul>
+</li>
+<li>
+<p><strong>TLN (Talen Energy Corporation):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (351.61) is slightly below SMA20 (352.86) but above SMA50 (342.35) and SMA200 (349.26). This suggests short-term neutral/weakening movement within a broader consolidation around the long-term moving averages.</li>
+<li><strong>Indicators:</strong> RSI (50.08) is neutral. MACD (2.67) is positive but has crossed below its signal (4.42), indicating weakening bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Consolidation / Weakening Momentum.</strong> The asset appears to be in a sideways consolidation phase, with recent bullish momentum losing steam.</li>
+</ul>
+</li>
+<li>
+<p><strong>NFLX (Netflix Inc.):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (59.41) is below all SMAs (SMA20: 61.68, SMA50: 66.24, SMA200: 79.59), indicating a downtrend across all timeframes. The price is near the lower Bollinger Band (56.58).</li>
+<li><strong>Indicators:</strong> RSI (38.78) is in bearish territory. MACD (-2.38) is negative and slightly below its signal (-2.30), confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> The downtrend is clear, but short-term oversold conditions exist.</li>
+</ul>
+</li>
+<li>
+<p><strong>AMZN (Amazon.com Inc.):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (244.43) is below all SMAs (SMA20: 257.19, SMA50: 255.12, SMA200: 245.78), indicating a downtrend. The price is near the lower Bollinger Band (238.76).</li>
+<li><strong>Indicators:</strong> RSI (41.95) is in bearish territory. MACD (-0.98) is negative and below its signal (0.91), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> Clear bearish pressure, but approaching short-term oversold levels.</li>
+</ul>
+</li>
+<li>
+<p><strong>GLD (SPDR Gold Shares):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (327.45) is significantly below all SMAs (SMA20: 354.04, SMA50: 371.04, SMA200: 403.83), indicating a very strong downtrend. The price is near the lower Bollinger Band (319.64).</li>
+<li><strong>Indicators:</strong> RSI (31.71) is low, approaching oversold. MACD (-12.79) is strongly negative and below its signal (-9.72), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> Gold is under heavy selling pressure, aligning with “commodities weak”, but nearing a level for a short-term bounce.</li>
+</ul>
+</li>
+<li>
+<p><strong>^VIX (CBOE Volatility Index):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (26.80) is above all SMAs (SMA20: 23.60, SMA50: 19.25, SMA200: 18.82), indicating a strong uptrend in volatility. The price is within the Bollinger Bands, closer to the upper band (33.02).</li>
+<li><strong>Indicators:</strong> RSI (55.44) is strong. MACD (2.65) is positive and above its signal (2.29), confirming strong upward momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Uptrend in Volatility).</strong> This confirms the “Bear Volatile” regime and overall risk-off sentiment.</li>
+</ul>
+</li>
+<li>
+<p><strong>NBIS (Neocloud Inc.):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (84.99) is significantly below all SMAs (SMA20: 122.68, SMA50: 174.12, SMA200: 179.74), indicating a very strong downtrend. The price is near the lower Bollinger Band (71.62).</li>
+<li><strong>Indicators:</strong> RSI (33.06) is low, approaching oversold. MACD (-24.29) is strongly negative and below its signal (-22.53), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Extreme Downtrend) / Potential Mean Reversion Bounce.</strong> Significant selling pressure, but reaching levels where a short-term bounce is plausible, though the primary trend is down.</li>
+</ul>
+</li>
+<li>
+<p><strong>CEG (Constellation Energy Corporation):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (235.28) is below all SMAs (SMA20: 259.46, SMA50: 264.83, SMA200: 277.07), indicating a downtrend. The price is near the lower Bollinger Band (231.04).</li>
+<li><strong>Indicators:</strong> RSI (38.98) is in bearish territory. MACD (-5.56) is negative and below its signal (-2.61), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> Clear selling pressure, with short-term oversold conditions appearing.</li>
+</ul>
+</li>
+<li>
+<p><strong>VXUS (Vanguard Total International Stock ETF):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (78.02) is below all SMAs (SMA20: 80.95, SMA50: 83.22, SMA200: 83.20), indicating a downtrend across all timeframes. The price is near the lower Bollinger Band (76.23).</li>
+<li><strong>Indicators:</strong> RSI (38.10) is in bearish territory. MACD (-1.62) is negative and below its signal (-1.27), confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> International equities are also under pressure, but nearing short-term oversold levels.</li>
+</ul>
+</li>
+<li>
+<p><strong>HYG (iShares iBoxx $ High Yield Corporate Bond ETF):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (76.52) is below SMA20 (76.92) but around SMA50 (76.91) and SMA200 (77.46), suggesting a short-term downtrend within a longer-term consolidation. Price is near the lower Bollinger Band (76.21).</li>
+<li><strong>Indicators:</strong> RSI (42.29) is bearish. MACD (-0.15) is negative and below its signal (-0.09), confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Weakening Consolidation / Slight Downtrend.</strong> High yield credit is showing slight weakness, consistent with a risk-off environment, but not a full breakdown yet.</li>
+</ul>
+</li>
+<li>
+<p><strong>^IRX (CBOE 13-Week Treasury Bill Yield):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (4.155) is above all SMAs (SMA20: 4.083, SMA50: 4.055, SMA200: 3.755), indicating an uptrend in short-term yields. The price is near the upper Bollinger Band (4.218).</li>
+<li><strong>Indicators:</strong> RSI (64.94) is strong and approaching overbought. MACD (0.037) is positive and above its signal (0.032), confirming bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Uptrend in Short-Term Yields).</strong> This indicates short-term rates are rising, potentially signaling tighter monetary conditions or increased short-term liquidity demand.</li>
+</ul>
+</li>
+<li>
+<p><strong>STX (Seagate Technology Holdings):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (472.33) is significantly below all SMAs (SMA20: 531.76, SMA50: 686.14, SMA200: 703.36), indicating a very strong downtrend. The price is currently well above the lower Bollinger Band (408.05).</li>
+<li><strong>Indicators:</strong> RSI (37.48) is in bearish territory. MACD (-54.26) is strongly negative but has crossed above its signal (-58.79), suggesting a potential easing of selling pressure.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Downtrend) / Potential Easing of Selling Pressure.</strong> Similar to WDC, the downtrend is severe, but the MACD crossover suggests some short-term relief could be seen.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLY (Consumer Discretionary Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (117.49) is slightly below SMA20 (118.15) but above SMA50 (114.51) and SMA200 (115.01), suggesting a mixed short-term picture within a longer-term uptrend. Price is within the Bollinger Bands.</li>
+<li><strong>Indicators:</strong> RSI (51.52) is neutral. MACD (0.48) is positive but has crossed below its signal (0.93), indicating weakening bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Weakening Uptrend / Consolidation.</strong> The recent bullish push appears to be losing steam, suggesting consolidation or a minor pullback.</li>
+</ul>
+</li>
+<li>
+<p><strong>GOOGL (Alphabet Inc. Class A):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (273.10) is significantly below all SMAs (SMA20: 283.05, SMA50: 318.24, SMA200: 336.06), indicating a strong downtrend. The price is near the lower Bollinger Band (267.67).</li>
+<li><strong>Indicators:</strong> RSI (36.93) is low, approaching oversold. MACD (-12.07) is negative but has crossed above its signal (-12.68), suggesting a potential easing of selling pressure.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Downtrend) / Potential Easing of Selling Pressure.</strong> The bearish trend is dominant, but indicators suggest a potential short-term bounce or stabilization.</li>
+</ul>
+</li>
+<li>
+<p><strong>TSLA (Tesla Inc.):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (380.14) is around all SMAs (SMA20: 382.15, SMA50: 377.17, SMA200: 381.15), indicating a neutral/sideways trend. Price is within the Bollinger Bands.</li>
+<li><strong>Indicators:</strong> RSI (50.31) is neutral. MACD (-0.23) is negative and below its signal (0.63), suggesting slight bearish momentum, but very close to zero.</li>
+<li><strong>Setup:</strong> <strong>Volatility Contraction Squeeze / Neutral.</strong> The price is consolidating tightly around its moving averages, and indicators are flat, suggesting an impending move, but direction is unclear.</li>
+</ul>
+</li>
+<li>
+<p><strong>AMD (Advanced Micro Devices):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (406.03) is significantly below all SMAs (SMA20: 489.22, SMA50: 548.35, SMA200: 432.96), indicating a strong downtrend. The price is near the lower Bollinger Band (387.08).</li>
+<li><strong>Indicators:</strong> RSI (38.01) is in bearish territory. MACD (-28.07) is strongly negative and below its signal (-18.41), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> The asset is in a clear and strong downtrend, but approaching levels that could trigger a short-term bounce.</li>
+</ul>
+</li>
+<li>
+<p><strong>VGK (Vanguard FTSE Europe ETF):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (84.95) is below all SMAs (SMA20: 87.33, SMA50: 87.20, SMA200: 87.12), indicating a downtrend. The price is near the lower Bollinger Band (83.18).</li>
+<li><strong>Indicators:</strong> RSI (42.11) is in bearish territory. MACD (-0.84) is negative and below its signal (-0.40), confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> European equities are also seeing a pullback, and nearing short-term oversold levels.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLC (Communication Services Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (105.38) is above SMA20 (104.54) but below SMA50 (108.04) and SMA200 (111.37), suggesting short-term strength within a broader downtrend. Price is within the Bollinger Bands.</li>
+<li><strong>Indicators:</strong> RSI (49.11) is neutral. MACD (-0.94) is negative but has crossed above its signal (-0.99), suggesting a potential bullish divergence or easing of selling pressure.</li>
+<li><strong>Setup:</strong> <strong>Weakening Downtrend / Potential Bottoming.</strong> The MACD crossover suggests some stabilization or potential reversal from the recent downtrend, possibly attempting to reclaim shorter-term moving averages.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLRE (Real Estate Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (43.86) is around SMA20 (43.83) and above SMA50 (42.59) and SMA200 (43.07), suggesting short-term consolidation within a longer-term uptrend. Price is tightly within the Bollinger Bands.</li>
+<li><strong>Indicators:</strong> RSI (54.98) is neutral/slightly bullish. MACD (0.15) is positive but has crossed below its signal (0.29), indicating weakening bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Volatility Contraction Squeeze / Consolidation.</strong> The price is consolidating tightly around its short-term moving averages with weakening momentum, indicating a potential squeeze setup.</li>
+</ul>
+</li>
+<li>
+<p><strong>DIA (SPDR Dow Jones Industrial Average ETF Trust):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (501.27) is below all SMAs (SMA20: 511.76, SMA50: 514.65, SMA200: 504.86), indicating a downtrend. The price is near the lower Bollinger Band (486.17).</li>
+<li><strong>Indicators:</strong> RSI (43.76) is in bearish territory. MACD (-6.27) is negative and below its signal (-4.16), confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> The Dow is showing bearish pressure, but nearing short-term oversold conditions.</li>
+</ul>
+</li>
+<li>
+<p><strong>SCHD (Schwab U.S. Dividend Equity ETF):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (35.29) is slightly below SMA20 (35.39) but above SMA50 (34.36) and SMA200 (32.50), suggesting short-term consolidation within a longer-term uptrend. Price is tightly within the Bollinger Bands.</li>
+<li><strong>Indicators:</strong> RSI (53.55) is neutral/slightly bullish. MACD (0.03) is positive but has crossed below its signal (0.19), indicating weakening bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Volatility Contraction Squeeze / Consolidation.</strong> The price is consolidating tightly around its short-term moving averages with weakening momentum, indicating a potential squeeze setup.</li>
+</ul>
+</li>
+<li>
+<p><strong>UUP (Invesco DB US Dollar Index Bullish Fund):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (29.60) is above all SMAs (SMA20: 29.32, SMA50: 29.04, SMA200: 28.14), indicating a strong uptrend. The price is near the upper Bollinger Band (29.91).</li>
+<li><strong>Indicators:</strong> RSI (64.09) is strong and approaching overbought. MACD (0.20) is positive and above its signal (0.18), confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Uptrend).</strong> The dollar is showing significant strength, aligning with the “strong dollar” market regime signal.</li>
+</ul>
+</li>
+<li>
+<p><strong>TQQQ (ProShares UltraPro QQQ):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (45.28) is significantly below all SMAs (SMA20: 54.82, SMA50: 67.48, SMA200: 65.41), indicating a strong downtrend. The price is near the lower Bollinger Band (41.36).</li>
+<li><strong>Indicators:</strong> RSI (35.61) is low, approaching oversold. MACD (-6.08) is strongly negative and below its signal (-5.46), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Extreme Downtrend) / Potential Mean Reversion Bounce.</strong> As a leveraged tech ETF, its downtrend is amplified, but it’s approaching short-term oversold levels.</li>
+</ul>
+</li>
+<li>
+<p><strong>IWM (iShares Russell 2000 ETF):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (268.87) is below all SMAs (SMA20: 274.39, SMA50: 277.16, SMA200: 278.73), indicating a downtrend. The price is within the Bollinger Bands, closer to the lower band (259.52).</li>
+<li><strong>Indicators:</strong> RSI (45.01) is in bearish territory. MACD (-3.69) is negative and below its signal (-2.78), confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Downtrend).</strong> Small caps are showing clear bearish pressure.</li>
+</ul>
+</li>
+<li>
+<p><strong>PLTR (Palantir Technologies Inc.):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (163.59) is below SMA20 (166.31) and SMA50 (182.54) but above SMA200 (154.30), indicating short-term weakness within a longer-term uptrend. Price is within the Bollinger Bands.</li>
+<li><strong>Indicators:</strong> RSI (45.13) is in bearish territory. MACD (-7.69) is negative and has crossed above its signal (-7.73), suggesting a potential bullish divergence or easing of selling pressure.</li>
+<li><strong>Setup:</strong> <strong>Weakening Uptrend / Potential Support Test / Easing Selling Pressure.</strong> The MACD crossover suggests a pause in the recent selling, possibly finding support near the SMA200.</li>
+</ul>
+</li>
+<li>
+<p><strong>VOO (Vanguard S&#x26;P 500 ETF):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (658.87) is below all SMAs (SMA20: 680.63, SMA50: 696.66, SMA200: 671.62), indicating a downtrend. The price is near the lower Bollinger Band (644.30).</li>
+<li><strong>Indicators:</strong> RSI (39.59) is low, approaching oversold. MACD (-11.84) is negative and below its signal (-9.14), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> The S&#x26;P 500 proxy shows clear bearish pressure, but nearing short-term oversold levels.</li>
+</ul>
+</li>
+<li>
+<p><strong>SLV (iShares Silver Trust):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (37.10) is significantly below all SMAs (SMA20: 43.45, SMA50: 49.84, SMA200: 60.54), indicating a very strong downtrend. The price is near the lower Bollinger Band (36.03).</li>
+<li><strong>Indicators:</strong> RSI (27.04) is deeply oversold. MACD (-3.52) is strongly negative and below its signal (-2.98), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Extreme Downtrend) / High Probability Mean Reversion Bounce.</strong> Silver is in a severe downtrend and is deeply oversold, making a short-term bounce highly probable, though the overall trend remains very bearish. This aligns with “commodities weak” signal.</li>
+</ul>
+</li>
+<li>
+<p><strong>LQD (iShares iBoxx $ Inv Grade Corporate Bond ETF):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (104.29) is above SMA20 (103.73) and SMA50 (103.10) but below SMA200 (105.19), indicating a short-term uptrend within a longer-term neutral/slightly downtrend. The price is near the upper Bollinger Band (104.95).</li>
+<li><strong>Indicators:</strong> RSI (59.81) is strong and rising. MACD (0.11) is positive and above its signal (0.08), confirming bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Short-Term Uptrend).</strong> Investment-grade credit is showing strength, possibly reflecting a flight to quality or expectation of declining rates.</li>
+</ul>
+</li>
+<li>
+<p><strong>TSM (Taiwan Semiconductor Manufacturing Company Ltd.):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (342.34) is significantly below all SMAs (SMA20: 379.50, SMA50: 418.26, SMA200: 402.23), indicating a strong downtrend. The price is near the lower Bollinger Band (323.46).</li>
+<li><strong>Indicators:</strong> RSI (38.87) is in bearish territory. MACD (-20.68) is strongly negative and below its signal (-17.57), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> Clear bearish pressure on the chip leader, but nearing short-term oversold levels.</li>
+</ul>
+</li>
+<li>
+<p><strong>XEQT.TO (iShares Core Equity ETF Portfolio - CAD):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (43.49) is below all SMAs (SMA20: 44.35, SMA50: 45.13, SMA200: 43.66), indicating a downtrend across all timeframes. The price is within the Bollinger Bands, near the lower band (42.35).</li>
+<li><strong>Indicators:</strong> RSI (43.10) is in bearish territory. MACD (-0.57) is negative and below its signal (-0.43), confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Downtrend).</strong> A broad global equity ETF in Canadian dollars showing bearish pressure.</li>
+</ul>
+</li>
+<li>
+<p><strong>QQQ (Invesco QQQ Trust):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (633.93) is significantly below all SMAs (SMA20: 666.73, SMA50: 707.02, SMA200: 682.54), indicating a strong downtrend. The price is near the lower Bollinger Band (617.31).</li>
+<li><strong>Indicators:</strong> RSI (38.59) is low, approaching oversold. MACD (-20.14) is strongly negative and below its signal (-17.63), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> The tech-heavy Nasdaq proxy is under significant bearish pressure, but nearing short-term oversold conditions.</li>
+</ul>
+</li>
+<li>
+<p><strong>IBIT (iShares Bitcoin Trust):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (34.07) is significantly below all SMAs (SMA20: 39.60, SMA50: 44.00, SMA200: 40.79), indicating a strong downtrend. The price is near the lower Bollinger Band (31.22).</li>
+<li><strong>Indicators:</strong> RSI (26.90) is deeply oversold. MACD (-3.04) is strongly negative and below its signal (-2.45), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Extreme Downtrend) / High Probability Mean Reversion Bounce.</strong> Bitcoin ETF is experiencing heavy selling and is deeply oversold, making a short-term bounce highly probable, but the overall trend is very bearish.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLE (Energy Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (60.90) is below SMA20 (63.36) and SMA50 (64.42) but above SMA200 (59.34), suggesting short-term weakness within a longer-term neutral/slightly positive trend. Price is near the lower Bollinger Band (57.75).</li>
+<li><strong>Indicators:</strong> RSI (38.63) is in bearish territory. MACD (-1.36) is negative and below its signal (-0.99), confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Weakening Trend / Potential Support Test.</strong> The energy sector is showing short-term weakness, approaching its long-term moving average support, aligning with the “commodities weak” signal.</li>
+</ul>
+</li>
+<li>
+<p><strong>TLT (iShares 20+ Year Treasury Bond ETF):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (82.24) is above SMA20 (81.02) and SMA50 (79.85) but slightly below SMA200 (82.58), indicating a short-term uptrend within a broader consolidation around its long-term average. The price is near the upper Bollinger Band (82.83).</li>
+<li><strong>Indicators:</strong> RSI (63.49) is strong and approaching overbought. MACD (0.33) is positive and above its signal (0.23), confirming strong bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Short-Term Uptrend).</strong> Long-duration bonds are showing significant strength, aligning with the “rates declining” signal in the market regime.</li>
+</ul>
+</li>
+<li>
+<p><strong>SPY (SPDR S&#x26;P 500 ETF Trust):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (716.70) is below all SMAs (SMA20: 740.33, SMA50: 757.85, SMA200: 730.77), indicating a downtrend. The price is near the lower Bollinger Band (700.42).</li>
+<li><strong>Indicators:</strong> RSI (39.85) is low, approaching oversold. MACD (-12.93) is strongly negative and below its signal (-9.99), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> The broad market is under significant bearish pressure, but nearing short-term oversold conditions.</li>
+</ul>
+</li>
+<li>
+<p><strong>VT (Vanguard Total World Stock ETF):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (147.54) is below all SMAs (SMA20: 152.42, SMA50: 156.16, SMA200: 152.84), indicating a downtrend. The price is near the lower Bollinger Band (144.07).</li>
+<li><strong>Indicators:</strong> RSI (39.41) is in bearish territory. MACD (-2.75) is negative and below its signal (-2.15), confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> Global equities are under bearish pressure, but nearing short-term oversold conditions.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLU (Utilities Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (43.61) is around SMA20 (43.50) and above SMA50 (42.05) but slightly below SMA200 (43.91), suggesting short-term consolidation within a longer-term uptrend. Price is tightly within the Bollinger Bands.</li>
+<li><strong>Indicators:</strong> RSI (56.59) is neutral/slightly bullish. MACD (0.28) is positive but has crossed below its signal (0.39), indicating weakening bullish momentum.</li>
+<li><strong>Setup:</strong> <strong>Volatility Contraction Squeeze / Consolidation.</strong> The price is consolidating tightly around its short-term moving averages with weakening momentum, indicating a potential squeeze setup.</li>
+</ul>
+</li>
+<li>
+<p><strong>AVGO (Broadcom Inc.):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (300.86) is significantly below all SMAs (SMA20: 326.99, SMA50: 340.53, SMA200: 366.43), indicating a strong downtrend. The price is near the lower Bollinger Band (286.07).</li>
+<li><strong>Indicators:</strong> RSI (40.75) is in bearish territory. MACD (-7.33) is strongly negative and below its signal (-4.24), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> Clear bearish pressure on the chip stock, but nearing short-term oversold levels.</li>
+</ul>
+</li>
+<li>
+<p><strong>CRWD (CrowdStrike Holdings Inc.):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (209.30) is significantly below all SMAs (SMA20: 229.74, SMA50: 245.24, SMA200: 177.82), indicating a downtrend. The price is near the lower Bollinger Band (201.99).</li>
+<li><strong>Indicators:</strong> RSI (38.31) is in bearish territory. MACD (-7.68) is strongly negative and below its signal (-5.81), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> The cybersecurity stock is experiencing clear bearish pressure, but nearing short-term oversold conditions.</li>
+</ul>
+</li>
+<li>
+<p><strong>MTZ (MasTec Inc.):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (154.17) is significantly below all SMAs (SMA20: 174.26, SMA50: 191.48, SMA200: 295.84), indicating a very strong downtrend. The price is near the lower Bollinger Band (145.54).</li>
+<li><strong>Indicators:</strong> RSI (38.56) is in bearish territory. MACD (-10.52) is strongly negative and below its signal (-8.89), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Extreme Downtrend) / Potential Mean Reversion Bounce.</strong> The infrastructure stock is under very heavy selling pressure, but nearing short-term oversold levels.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLI (Industrial Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (162.95) is below all SMAs (SMA20: 165.99, SMA50: 167.50, SMA200: 172.55), indicating a downtrend. The price is within the Bollinger Bands, closer to the lower band (158.05).</li>
+<li><strong>Indicators:</strong> RSI (45.07) is in bearish territory. MACD (-1.88) is negative and below its signal (-1.38), confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Downtrend).</strong> The industrial sector is showing clear bearish pressure.</li>
+</ul>
+</li>
+<li>
+<p><strong>XLB (Materials Select Sector SPDR Fund):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (51.21) is below SMA20 (51.74) but above SMA50 (50.77) and SMA200 (50.91), suggesting short-term weakness within a longer-term neutral/slightly positive trend. Price is within the Bollinger Bands.</li>
+<li><strong>Indicators:</strong> RSI (50.46) is neutral. MACD (-0.34) is negative and below its signal (-0.08), confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Weakening Trend / Consolidation.</strong> The materials sector is showing short-term weakness, possibly consolidating around its long-term moving averages.</li>
+</ul>
+</li>
+<li>
+<p><strong>NVDA (NVIDIA Corporation):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (149.30) is significantly below all SMAs (SMA20: 172.48, SMA50: 203.65, SMA200: 202.62), indicating a strong downtrend. The price is near the lower Bollinger Band (125.96).</li>
+<li><strong>Indicators:</strong> RSI (37.45) is low, approaching oversold. MACD (-16.92) is strongly negative and below its signal (-16.24), confirming strong bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Strong Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> The AI chip leader is under severe bearish pressure, but nearing short-term oversold levels.</li>
+</ul>
+</li>
+<li>
+<p><strong>EWA (iShares MSCI Australia ETF):</strong></p>
+<ul>
+<li><strong>Price Action:</strong> Close (27.37) is below all SMAs (SMA20: 28.65, SMA50: 28.70, SMA200: 28.80), indicating a downtrend across all timeframes. The price is near the lower Bollinger Band (26.67).</li>
+<li><strong>Indicators:</strong> RSI (35.68) is low, approaching oversold. MACD (-0.50) is negative and below its signal (-0.29), confirming bearish momentum.</li>
+<li><strong>Setup:</strong> <strong>Trend Continuation (Downtrend) / Potential Mean Reversion Bounce.</strong> Australian equities are under clear bearish pressure, but nearing short-term oversold levels.</li>
+</ul>
+</li>
+</ul> </article> </main>  </body></html> 
