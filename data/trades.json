@@ -1,22 +1,12 @@
 [
     {
-        "ticker": "TLT",
+        "ticker": "XLP",
         "action": "buy",
-        "notional_value": 43592.49
+        "notional_value": 10898.12
     },
     {
-        "ticker": "GLD261218C00336000",
+        "ticker": "XLU",
         "action": "buy",
-        "contracts": 1
-    },
-    {
-        "ticker": "QQQ261218P00615000",
-        "action": "buy",
-        "contracts": 1
-    },
-    {
-        "ticker": "SPY261218P00695000",
-        "action": "buy",
-        "contracts": 1
+        "notional_value": 10898.12
     }
 ]

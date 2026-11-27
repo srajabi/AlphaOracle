@@ -1,41 +1,21 @@
 {
-  "last_updated_utc": "2026-11-25T03:44:42.568419+00:00",
+  "last_updated_utc": "2026-11-27T03:11:34.508023+00:00",
   "error": "",
   "results": [
     {
       "trade": {
-        "ticker": "TLT",
-        "action": "buy",
-        "notional_value": 62298.65
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
         "ticker": "XLP",
         "action": "buy",
-        "notional_value": 17787.33
+        "notional_value": 10898.12
       },
       "status": "skipped",
       "reason": "No available buying power."
     },
     {
       "trade": {
-        "ticker": "SPY261218P00698000",
+        "ticker": "XLU",
         "action": "buy",
-        "qty": 4,
-        "notional_value": 4112.0
-      },
-      "status": "skipped",
-      "reason": "No available buying power."
-    },
-    {
-      "trade": {
-        "ticker": "QQQ261218P00620000",
-        "action": "buy",
-        "qty": 2,
-        "notional_value": 2987.0
+        "notional_value": 10898.12
       },
       "status": "skipped",
       "reason": "No available buying power."
