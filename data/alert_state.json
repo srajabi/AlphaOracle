@@ -1,6 +1,6 @@
 {
-  "updated_at_utc": "2026-11-27T23:02:50.056816+00:00",
-  "last_message_utc": "2026-11-26T03:00:31.995625+00:00",
+  "updated_at_utc": "2026-11-28T02:54:42.416721+00:00",
+  "last_message_utc": "2026-11-28T02:54:42.416721+00:00",
   "states": {
     "mandate:P_sleeve": "SLEEVE_TO_TREASURIES",
     "mandate:Y_core_sleeve": "SLEEVE_TO_TREASURIES",
@@ -8,6 +8,6 @@
     "signal:slow_channel": "risk_on",
     "signal:fast_channel": "backwardation",
     "signal:credit": "clear",
-    "signal:canary": "half_defensive"
+    "signal:canary": "full_defensive"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-27T23:06:36.412044+00:00",
+  "last_updated_utc": "2026-11-28T02:58:43.715462+00:00",
   "accounts": {
     "dev": {
       "account_id": "dev",
@@ -7,7 +7,7 @@
       "strategy": "Advanced LLM Strategy",
       "frequency": "2x Daily (10 AM & 3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-11-27T23:06:34.732720+00:00",
+      "last_updated_utc": "2026-11-28T02:58:41.968760+00:00",
       "ok": true,
       "error": "",
       "account": {
@@ -25,7 +25,7 @@
       "strategy": "Standard LLM Strategy",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-11-27T23:06:35.017445+00:00",
+      "last_updated_utc": "2026-11-28T02:58:42.265400+00:00",
       "ok": true,
       "error": "",
       "account": {
@@ -196,7 +196,7 @@
       "strategy": "TQQQ Momentum",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-11-27T23:06:35.299996+00:00",
+      "last_updated_utc": "2026-11-28T02:58:42.557838+00:00",
       "ok": true,
       "error": "",
       "account": {
@@ -214,7 +214,7 @@
       "strategy": "Dual Momentum",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-11-27T23:06:35.576016+00:00",
+      "last_updated_utc": "2026-11-28T02:58:42.860689+00:00",
       "ok": true,
       "error": "",
       "account": {
@@ -241,14 +241,14 @@
       "strategy": "Sector Rotation",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-11-27T23:06:35.855622+00:00",
+      "last_updated_utc": "2026-11-28T02:58:43.142548+00:00",
       "ok": true,
       "error": "",
       "account": {
         "status": "ACTIVE",
         "cash": 114992.19,
         "equity": 0,
-        "buying_power": 459968.76,
+        "buying_power": 21908.43,
         "portfolio_value": 114992.19
       },
       "positions": []
@@ -259,7 +259,7 @@
       "strategy": "Mean Reversion",
       "frequency": "EOD (3:30 PM ET)",
       "paper_trading": true,
-      "last_updated_utc": "2026-11-27T23:06:36.128847+00:00",
+      "last_updated_utc": "2026-11-28T02:58:43.423939+00:00",
       "ok": true,
       "error": "",
       "account": {
